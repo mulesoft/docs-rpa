@@ -53,7 +53,7 @@ Finally, RPA Manager provides different management and monitoring options for yo
 
 == RPA Applications
 
-MuleSoft RPA provides different applications that enable you to succeed during each phase of the development lifecycle.
+MuleSoft RPA provides the following applications that enable you to manage the complete development lifecycle of your automation projects:
 
 [%header%autowidth.spread, cols="a,a,a"]
 |===
