@@ -1,0 +1,46 @@
+= Process evaluation
+
+An evaluation comprises the benefits and feasibility of the automation of a real-life business process. It includes details on its costs, duration, and frequency.
+
+If you want to propose a process candidate for automation, you evaluate it based on preconfigured criteria.
+
+As a member of a center of excellence, you approve process candidates eligible for automation.
+
+== Getting Started
+
+. Think
+.. What processes are there in your company?
+.. Who is responsible for the processes?
+.. Which criteria are necessary and suitable to evaluate the processes?
+.. How can these criteria be described clearly and comprehensively?
+.. Where does the data for evaluating the processes come from?
+.. Which systems and data are needed to automate the processes?
+
+. Prepare
+.. In the User Management view, give your users the privileges and properties they need.
+.. After you have made the necessary systems available, define the applications, credentials, and global variables needed to automate the processes in the Process Automation module.
+
+. Configure
+.. First, in the Evaluation Criteria view, create all the additional criteria you need to evaluate your processes.
+.. Then, in the Evaluation Templates view, compile all the criteria you need to evaluate certain process types.
+
+. Evaluate
+.. In the Process Evaluation view, create an evaluation, based on a template, for each of your processes.
+
+. Automate
+.. Select the processes to be automated and delegate the implementation to a Center of Excellence.
+
+. Administrate
+.. Manage the automation projects in the Process Management view of the Process Automation module.
+
+== Definitions
+
+=== Center of Excellence
+
+If the users of a User Group cover the entire range of competencies that are required for a specific part of the automation, we refer to the group as a Center of Excellence (COE). Only user groups that are explicitly designated as a Center of Excellence can accept process automation tasks.
+
+== See also
+
+* xref:manager-processevaluation-defining.adoc[Defining process evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a process candidate]
+* xref:manager-processevaluation-approving.adoc[Approving a process]

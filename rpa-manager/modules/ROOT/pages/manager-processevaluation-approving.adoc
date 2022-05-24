@@ -1,0 +1,44 @@
+= Approving a process
+
+You approve an evaluated process candidate to refer it to a project manager or a center of excellence for automation.
+
+== Before you begin
+
+. Obtain the Privileges you need:
+* To approve an automation process for a Center of Excellence, you must have the Privilege *Process Evaluation Approval to a CoE*.
+* To approve directly for a Project Manager, you need the Privilege *Process Evaluation Approval to a Project Manager*.
+. You can only approve evaluated process candidates.
+. You can only refer processes to users tagged as Project Manager or user groups tagged as Center of Excellence.
+
+== Select a process for approval
+
+Processes with high ratings for feasibility can be automated.
+
+Consider the costs and benefits of a process's automation, too.
+
+. Filter the process list in the view *Process Evaluation* of the module *Process Evaluation to show only newly created evaluations.
+. View the Process Matrix. If you cannot see it, click the < in the green half-circle expand icon on the right-hand side of the view.
+. Hover over the dots to see the names of the corresponding processes.
+. Click one of the dots in the green area to select it.
+
+== Approve a process
+
+Approve the selected process to refer it to a project manager or a center of excellence for automation.
+
+After approval the process is also displayed in the personal backlog of the project manager (My RPA - My processes).
+
+. In the *Process Evaluation* view of the *Process Evaluation* module click *Approve* in the table row of the evaluation you want to approve.
+. Choose a user or a center of excellence as Project Manager.
+. Click OK.
+
+== See also
+
+* xref:manager-.adoc[Assigning Privileges to a user]
+* xref:manager-.adoc[Assigning special attributes to users]
+* xref:manager-.adoc[Creating Centers of Excellence]
+
+* xref:manager-processevaluation-overview.adoc[Overview Process evaluations]
+* xref:manager-processevaluation-defining.adoc[Defining process evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a process candidate]
+
+* xref:manager-.adoc[Managing automation projects]
