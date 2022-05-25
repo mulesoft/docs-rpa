@@ -15,7 +15,7 @@ You evaluate a process candidate to propose it for automation.
 
 Process evaluations assess the feasibility and benefits of a process’s automation.
 
-=== Create a process evaluation
+=== Create a Process Evaluation
 
 Create a process evaluation to propose a process candidate for automation.
 
@@ -29,7 +29,7 @@ Create a process evaluation to propose a process candidate for automation.
 * *Qualifiers/Benefits*: Drag the slider to the appropriate values. *Exclude* unnecessary criteria.
 . Click *Save*
 
-=== Edit a process evaluation
+=== Edit a Process Evaluation
 
 Edit a process evaluation to correct errors.
 
@@ -37,7 +37,7 @@ Edit a process evaluation to correct errors.
 . Edit the form *Edit <evaluation>*.
 . Click *Save*.
 
-=== Delete a process evaluation
+=== Delete a Process Evaluation
 
 Delete process evaluations no longer needed.
 

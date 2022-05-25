@@ -1,4 +1,4 @@
-= Defining process evaluations
+= Defining Process Evaluations
 
 Process evaluations are based on templates.
 
@@ -6,7 +6,7 @@ Evaluation templates contain criteria to assess feasibility and benefits of a pr
 
 You create criteria and templates adapted to your processes.
 
-== Before you begin
+== Before You Begin
 
 * Obtain the Privileges you need
 ** To open and manage the *Process Evaluation* module, you require the Privileges *Process Evaluation Open* and *Process Evaluation Administration*.
@@ -15,11 +15,11 @@ You create criteria and templates adapted to your processes.
 ** To open the *Evaluation Templates* view, you also need the Privilege *Evaluation Templates Open*.
 ** To create, change, and delete evaluation criteria, you need the Privileges *Evaluation Template Create*, *Evaluation Template Edit*, and *Evaluation Template Delete*.
 
-== Manage Process evaluation criteria
+== Manage Process Evaluation Criteria
 
 Process evaluation criteria are properties of the process that are used to assess feasibility and benefits of a process’s automation. They are graded according to the extent of their existence in the process. You can create, edit and delete criteria.
 
-=== Create process evaluation criteria
+=== Create Process Evaluation Criteria
 
 Create criteria adapted to your process.
 
@@ -33,7 +33,7 @@ When you create a process evaluation, you will then find the same checkbox next 
 * *Gradation*: Move the slide control to the right to increase the number of gradations of the criteria from 2 to 5 in increments. You can enter a description for each gradation level. The higher the level, the better the feasibility or benefits of the process automation are rated.
 . Click *Save*.
 
-=== Edit Process evaluation criteria
+=== Edit Process Evaluation Criteria
 
 Edit criteria to make it more useful.
 
@@ -45,7 +45,7 @@ The changed form of the criterion is used in the templates as soon as the change
 . Edit the form *Edit <criterion>*.
 . Click *Save*.
 
-=== Delete Process evaluation criteria
+=== Delete Process Evaluation Criteria
 
 Delete criteria you don’t use any more.
 
@@ -60,7 +60,7 @@ Process evaluation templates combine criteria suitable for a specific type of pr
 
 You can create, copy, edit and delete templates.
 
-=== Create process evaluation templates
+=== Create Process Evaluation Templates
 
 Create different templates for different types of processes.
 
@@ -72,7 +72,7 @@ Instead of creating a new empty template you can also copy and edit an existing 
 * *Exclude MuleSoft default evaluation criteria*: select the checkbox to exclude the MuleSoft default criteria from the selection lists.
 . Click *Save*.
 
-=== Copy Process evaluation templates
+=== Copy Process Evaluation Templates
 
 Copy and edit templates instead of creating new empty ones to save time.
 
@@ -80,7 +80,7 @@ Copy and edit templates instead of creating new empty ones to save time.
 . Edit the form *Copy <template>*.
 . Click *Save*.
 
-=== Edit Process evaluation templates
+=== Edit Process Evaluation Templates
 
 Edit templates to make them more useful.
 
@@ -88,7 +88,7 @@ Edit templates to make them more useful.
 . Edit the form *Edit <template>*.
 . Click Save.
 
-=== Delete Process evaluation templates
+=== Delete Process Evaluation Templates
 
 Delete templates you no longer use.
 
@@ -97,10 +97,10 @@ Evaluations of a process that use a template that has been deleted are not chang
 . In the *Evaluation Templates* view of the *Process Evaluation* module click [icon] *Delete* in the table row of the template you want to delete.
 . Confirm the removal of the template.
 
-== See also
+== See Also
 
-* xref:manager-.adoc[Assigning Privileges to a user]
+* xref:manager-.adoc[Assigning Privileges to a User]
 
-* xref:manager-processevaluation-overview.adoc[Overview Process evaluations]
-* xref:manager-processevaluation-proposing.adoc[Proposing a process candidate]
-* xref:manager-processevaluation-approving.adoc[Approving a process]
+* xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
+* xref:manager-processevaluation-approving.adoc[Approving a Process]

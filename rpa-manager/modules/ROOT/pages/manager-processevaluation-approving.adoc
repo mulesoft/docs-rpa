@@ -10,18 +10,18 @@ You approve an evaluated process candidate to refer it to a project manager or a
 . You can only approve evaluated process candidates.
 . You can only refer processes to users tagged as Project Manager or user groups tagged as Center of Excellence.
 
-== Select a process for approval
+== Select a Process for Approval
 
 Processes with high ratings for feasibility can be automated.
 
 Consider the costs and benefits of a process's automation, too.
 
-. Filter the process list in the view *Process Evaluation* of the module *Process Evaluation to show only newly created evaluations.
+. Filter the process list in the view *Process Evaluation* of the module *Process Evaluation to show only newly-created evaluations.
 . View the Process Matrix. If you cannot see it, click the < in the green half-circle expand icon on the right-hand side of the view.
 . Hover over the dots to see the names of the corresponding processes.
 . Click one of the dots in the green area to select it.
 
-== Approve a process
+== Approve a Process
 
 Approve the selected process to refer it to a project manager or a center of excellence for automation.
 

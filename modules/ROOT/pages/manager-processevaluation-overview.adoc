@@ -1,4 +1,4 @@
-= Process evaluation
+= Process Evaluation
 
 An evaluation comprises the benefits and feasibility of the automation of a real-life business process. It includes details on its costs, duration, and frequency.
 
