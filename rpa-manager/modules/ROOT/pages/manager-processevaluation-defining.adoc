@@ -1,4 +1,4 @@
-= Defining process evaluations
+= Defining Process Evaluations
 
 Process evaluations are based on templates.
 
@@ -6,7 +6,7 @@ Evaluation templates contain criteria to assess feasibility and benefits of a pr
 
 You create criteria and templates adapted to your processes.
 
-== Before you begin
+== Before You Begin
 
 * Obtain the Privileges you need
 ** To open and manage the *Process Evaluation* module, you require the Privileges *Process Evaluation Open* and *Process Evaluation Administration*.
@@ -97,10 +97,10 @@ Evaluations of a process that use a template that has been deleted are not chang
 . In the *Evaluation Templates* view of the *Process Evaluation* module click [icon] *Delete* in the table row of the template you want to delete.
 . Confirm the removal of the template.
 
-== See also
+== See Also
 
-* xref:manager-.adoc[Assigning Privileges to a user]
+* xref:manager-.adoc[Assigning Privileges to a User]
 
-* xref:manager-processevaluation-overview.adoc[Overview Process evaluations]
-* xref:manager-processevaluation-proposing.adoc[Proposing a process candidate]
-* xref:manager-processevaluation-approving.adoc[Approving a process]
+* xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
+* xref:manager-processevaluation-approving.adoc[Approving a Process]

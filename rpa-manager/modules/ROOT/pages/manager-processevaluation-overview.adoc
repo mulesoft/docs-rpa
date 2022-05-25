@@ -39,8 +39,8 @@ As a member of a center of excellence, you approve process candidates eligible f
 
 If the users of a User Group cover the entire range of competencies that are required for a specific part of the automation, we refer to the group as a Center of Excellence (COE). Only user groups that are explicitly designated as a Center of Excellence can accept process automation tasks.
 
-== See also
+== See Also
 
-* xref:manager-processevaluation-defining.adoc[Defining process evaluations]
-* xref:manager-processevaluation-proposing.adoc[Proposing a process candidate]
-* xref:manager-processevaluation-approving.adoc[Approving a process]
+* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
+* xref:manager-processevaluation-approving.adoc[Approving a Process]

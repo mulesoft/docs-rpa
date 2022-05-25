@@ -1,8 +1,8 @@
-= Approving a process
+= Approving a Process
 
 You approve an evaluated process candidate to refer it to a project manager or a center of excellence for automation.
 
-== Before you begin
+== Before You Begin
 
 . Obtain the Privileges you need:
 * To approve an automation process for a Center of Excellence, you must have the Privilege *Process Evaluation Approval to a CoE*.
@@ -10,7 +10,7 @@ You approve an evaluated process candidate to refer it to a project manager or a
 . You can only approve evaluated process candidates.
 . You can only refer processes to users tagged as Project Manager or user groups tagged as Center of Excellence.
 
-== Select a process for approval
+== Select a Process for Approval
 
 Processes with high ratings for feasibility can be automated.
 
@@ -21,7 +21,7 @@ Consider the costs and benefits of a process's automation, too.
 . Hover over the dots to see the names of the corresponding processes.
 . Click one of the dots in the green area to select it.
 
-== Approve a process
+== Approve a Process
 
 Approve the selected process to refer it to a project manager or a center of excellence for automation.
 
@@ -31,14 +31,14 @@ After approval the process is also displayed in the personal backlog of the proj
 . Choose a user or a center of excellence as Project Manager.
 . Click OK.
 
-== See also
+== See Also
 
-* xref:manager-.adoc[Assigning Privileges to a user]
-* xref:manager-.adoc[Assigning special attributes to users]
+* xref:manager-.adoc[Assigning Privileges to a User]
+* xref:manager-.adoc[Assigning Special Attributes to Users]
 * xref:manager-.adoc[Creating Centers of Excellence]
 
-* xref:manager-processevaluation-overview.adoc[Overview Process evaluations]
-* xref:manager-processevaluation-defining.adoc[Defining process evaluations]
-* xref:manager-processevaluation-proposing.adoc[Proposing a process candidate]
+* xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
 
-* xref:manager-.adoc[Managing automation projects]
+* xref:manager-.adoc[Managing Automation Projects]

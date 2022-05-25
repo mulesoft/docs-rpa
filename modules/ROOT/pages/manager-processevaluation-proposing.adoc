@@ -1,8 +1,8 @@
-= Proposing a process candidate
+= Proposing a Process Candidate
 
 You evaluate a process candidate to propose it for automation.
 
-== Before you begin
+== Before You Begin
 
 . Obtain the Privileges you need:
 * To use the *Process Evaluation* module, you require the Privilege *Process Evaluation Open*.
@@ -44,12 +44,12 @@ Delete process evaluations no longer needed.
 . In the *Process Evaluation* view of the *Process Evaluation* module click [icon] *Delete* in the table row of the evaluation you want to delete.
 . Confirm the deletion.
 
-== See also
+== See Also
 
-* xref:manager-.adoc[Assigning Privileges to a user]
+* xref:manager-.adoc[Assigning Privileges to a User]
 
 * xref:manager-.adoc[Categorizing processes]
 
-* xref:manager-processevaluation-overview.adoc[Overview Process evaluations]
-* xref:manager-processevaluation-defining.adoc[Defining process evaluations]
-* xref:manager-processevaluation-approving.adoc[Approving a process]
+* xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
+* xref:manager-processevaluation-approving.adoc[Approving a Process]
