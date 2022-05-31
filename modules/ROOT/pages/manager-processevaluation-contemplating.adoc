@@ -51,19 +51,28 @@ Benefits are properties of a process that you use to determine how useful the au
 |===
 |*Benefit* |*Description*
 
-|
-|
+|High costs of manual execution
+|A process is costly if either one manual execution takes a lot of time or if it is carried out very often. Automating an expensive process frees employee time for work that cannot be automated.
 
-|
-|
+|Error-prone
+|The quality of the process result can be improved if automation helps to prevent errors. Fewer errors will lower process costs on the one hand, and increase the satisfaction of customers on the other.
 
-|
-|
+|Risky
+|Risks include all events and occurrences that can lead to additional costs or losses, such as breaking the law and associated penalties, fraud, loss of customers and sales, the costs of inefficiencies, poor decisions and corrective action, damaging the company’s reputation, illness and the loss of employees. Automation reduces risks.
 
-|
-|
+|Use of legacy systems
+|Automate a process to connect or migrate legacy systems to your state of the art.
 
-|
-|
+|Speed-sensitive
+|Automate processes, which need to be finished fast. Bots work faster than humans.
+
+|Occuring irregularly
+|Processes that occur only in irregular time spans and volume make inefficient use of employees. Bots wait patiently for their turn and can be scaled according to need in case of peak demand.
 
 |===
+
+== Order
+
+Provided that a process can be automated after consideration of the Qualifiers, you should begin with simpler processes in order to support the learn curve and to produce quick results. You can tackle more complex processes if they are well documented and experienced designers are available.
+
+The more frequently a process is carried out, the higher the costs and the more effective the automation. For this reason, you should not only consider the position of the process in the heat map Prioritization, but also the costs of the process to determine whether and how early it should be automated.
