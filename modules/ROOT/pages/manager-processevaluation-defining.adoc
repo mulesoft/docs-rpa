@@ -19,7 +19,7 @@ You create criteria and templates adapted to your processes.
 
 Process evaluation criteria are properties of the process that are used to assess feasibility and benefits of a process’s automation. They are graded according to the extent of their existence in the process. You can create, edit and delete criteria.
 
-=== Create Process Evaluation Criteria
+=== Create process Evaluation Criteria
 
 Create criteria adapted to your process.
 
@@ -86,7 +86,7 @@ Edit templates to make them more useful.
 
 . In the *Evaluation Templates* view of the *Process Evaluation* module click [icon] *Edit* in the table row of the template you want to edit.
 . Edit the form *Edit <template>*.
-. Click Save.
+. Click *Save*.
 
 === Delete Process Evaluation Templates
 

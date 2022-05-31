@@ -86,7 +86,7 @@ Edit templates to make them more useful.
 
 . In the *Evaluation Templates* view of the *Process Evaluation* module click [icon] *Edit* in the table row of the template you want to edit.
 . Edit the form *Edit <template>*.
-. Click Save.
+. Click *Save*.
 
 === Delete Process Evaluation Templates
 

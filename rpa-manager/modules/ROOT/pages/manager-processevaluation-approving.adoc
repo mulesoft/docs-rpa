@@ -12,12 +12,10 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 == Select a Process for Approval
 
-Processes with high ratings for feasibility can be automated.
-
-Consider the costs and benefits of a process's automation, too.
+You can automate processes with high ratings for feasibility. Consider the benefits before automating a process. Automate simple processes first.
 
 . Filter the process list in the view *Process Evaluation* of the module *Process Evaluation to show only newly-created evaluations.
-. View the Process Matrix. If you cannot see it, click the < in the green half-circle expand icon on the right-hand side of the view.
+. View the Process Matrix. If you cannot see it, click [icon] *Expand*.
 . Hover over the dots to see the names of the corresponding processes.
 . Click one of the dots in the green area to select it.
 
@@ -25,11 +23,11 @@ Consider the costs and benefits of a process's automation, too.
 
 Approve the selected process to refer it to a project manager or a center of excellence for automation.
 
-After approval the process is also displayed in the personal backlog of the project manager (My RPA - My processes).
+After approval, the process is displayed in the personal backlog of the project manager (My RPA - My processes).
 
-. In the *Process Evaluation* view of the *Process Evaluation* module click *Approve* in the table row of the evaluation you want to approve.
-. Choose a user or a center of excellence as Project Manager.
-. Click OK.
+. In the *Process Evaluation* view of the *Process Evaluation* module, click *Approve* in the table row of the evaluation you want to approve.
+. Choose a user or a center of excellence as *Project Manager*.
+. Click *OK*.
 
 == See Also
 

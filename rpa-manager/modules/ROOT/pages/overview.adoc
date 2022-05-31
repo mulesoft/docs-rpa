@@ -1,0 +1,113 @@
+= MuleSoft Robotic Process Automation (RPA)
+
+MuleSoft Robotic Process Automation (RPA) enables you to automate business processes and tasks by using bots, which helps save time and prevent introducing human errors.
+
+MuleSoft RPA can automate processes that require human input and also interact with systems where an API is not available for consumption. RPA bots can interact with applications, extract data, read images, and manipulate computer input faster and more accurately than humans.
+
+//Evaluate including a diagram of how different RPA components interact.
+
+== Use Cases
+
+Your company can benefit in many ways by implementing RPA into their processes, either by saving time, reducing costs, or preventing errors caused by human input.
+
+The most common use cases for RPA include:
+
+* Data Extraction and Data Entry
++
+Extract data from PDF,CSV, and other file formats and send this data to other systems.
+* Payroll Processing
++
+Automate payroll data entry and validate the information across multiple systems.
+* Price Comparisons
++
+Automate the monitoring of input prices and competitor prices.
+* Processing Refunds
++
+Automate the processing of customer refund requests to make them quicker and provide the best experience for customers.
+* Customer Information Updates
++
+Update customer information automatically across different systems that do not have an API and are accessible only through the UI.
+
+== RPA Lifecycle
+
+MuleSoft provides a complete solution to manage the RPA development lifecycle, which includes the following phases:
+
+* Evaluation
++
+In this phase you use the Process Evaluation module in RPA Manager to determine if a business process qualifies to be automated by evaluating the costs savings and benefits of building the automation based on the process’s complexity, stability, and other key values.
+* Design
++
+After the evaluation is complete, if the process qualifies for automation you start designing the workflow of the automation which specifies the actions to perform and under which conditions. RPA Manager uses the Business Process Model Notation (BPMN) to create the workflows. You can design the workflow manually by using the drag and drop tools in RPA Manager, or automatically by using the RPA Recorder.
+* Build
++
+The build phase is where you fill the previously created process with specific instructions for humans and bots. With RPA Builder you can import a BPMN generated in RPA Manager, and then drag and drop operations or record key inputs to specify the action steps. When you finish building the process, you upload it to RPA Manager.
+* Test
++
+During the test phase you create different testing scenarios for your automation projects to confirm that they work as expected. This phase works as the quality assurance step of the development process, you can create real world test scenarios using different parameters and troubleshoot failed steps when there are errors.
+* Deployment
++
+When the automation project successfully completes the testing phase, you are ready to deploy. In the deployment phase, you use RPA Manager to set up the production parameter values, configure the process execution schedule, and select the RPA bots to run the process. You can deploy one automation process to one or multiple RPA bots.
+* Monitor
++
+Finally, RPA Manager provides different management and monitoring options for your deployed automations. You can monitor the performance of the deployed automations, configure alerts and notifications when there is an issue, and locate the source of these issues.
+
+== RPA Applications
+
+MuleSoft RPA provides the following applications that enable you to manage the complete development lifecycle of your automation projects:
+
+[%header%autowidth.spread, cols="a,a,a"]
+|===
+|Application | Description | Features
+|RPA Manager
+ | RPA Manager is the cloud-based control plane for the automations that is integrated into Anypoint Platform.
+  |
+* Manage user access and permissions
+* Evaluate the viability and financial benefits of implementing an automation
+* Design and document RPA processes
+* Test and deploy automations
+* Manage and monitor deployed automations
+| RPA Builder
+ | RPA Builder is the on-premise application that enables you to build the automations by specifying the steps of the process.
+  |
+* Download and upload automation assets to RPA Manager
+* Add the automation logic to the processes
+* Run local tests for the automations
+| RPA Recorder
+ | RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording actions steps from your local environment.
+  |
+* Capture keyboard and mouse input
+* Open applications and interact with them
+* Execute operating system tasks
+| RPA Bot
+ | RPA Bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
+  |
+* Execute the automations
+* Read text and images
+|===
+
+////
+== RPA Manager
+
+RPA Manager is the cloud-based control plane for the automations. RPA Manager is integrated into Anypoint Platform and enables you to:
+
+Manage user access and permissions
+Evaluate the viability and financial benefits of implementing an automation
+Design and document RPA processes
+Test and deploy automations
+Manage and monitor deployed automations
+
+== RPA Builder
+
+RPA Builder is the on-premise application that enables you to build the automations by specifying the steps of the process. With RPA Builder you can download and upload automation assets to RPA Manager, add the automation logic to the processes, and also run local tests for the automations.
+
+
+
+== RPA Recorder
+
+RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording actions steps from your local environment. RPA Recorder is able to capture keyboard and mouse input, and also open applications and execute operating system tasks.
+
+== RPA Bot
+
+
+RPA Bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
+////
