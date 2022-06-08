@@ -4,9 +4,9 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 == Before You Begin
 
-. Obtain the Privileges you need:
-* To approve an automation process for a Center of Excellence, you must have the Privilege *Process Evaluation Approval to a CoE*.
-* To approve directly for a Project Manager, you need the Privilege *Process Evaluation Approval to a Project Manager*.
+. Obtain the privileges you need:
+* To approve an automation process for a Center of Excellence, you must have the privilege *Process Evaluation Approval to a CoE*.
+* To approve directly for a Project Manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
 . You can only approve evaluated process candidates.
 . You can only refer processes to users tagged as Project Manager or user groups tagged as Center of Excellence.
 
@@ -15,7 +15,7 @@ You approve an evaluated process candidate to refer it to a project manager or a
 You can automate processes with high ratings for feasibility. Consider the benefits before automating a process. Automate simple processes first.
 
 . Filter the process list in the view *Process Evaluation* of the module *Process Evaluation to show only newly-created evaluations.
-. View the Process Matrix. If you cannot see it, click [icon] *Expand*.
+. View the Process Matrix. If you cannot see it, click image:-icon.png[The  icon,5%,5%] *Expand*.
 . Hover over the dots to see the names of the corresponding processes.
 . Click one of the dots in the green area to select it.
 

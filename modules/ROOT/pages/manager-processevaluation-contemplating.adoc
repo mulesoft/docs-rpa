@@ -15,7 +15,7 @@ There might be several ways in which your company processes the same task. So be
 * Compare
 * Compile
 
-Ask all employees how they complete a certain task. Compare the answers to get the necessary steps. If possible, compile the necessary steps into one process manual and make it a standard in your company.
+Ask all employees how they complete a certain task. Compare the answers to get the necessary steps. If possible, compile the necessary steps into one process description and make it a standard in your company.
 
 Standardizing business processes helps to prepare automation and avoids automating one task in multiple ways.
 
@@ -64,15 +64,24 @@ Benefits are properties of a process that you use to determine how useful the au
 |Automate a process to connect or migrate legacy systems to your state of the art.
 
 |Speed-sensitive
-|Automate processes, which need to be finished fast. Bots work faster than humans.
+|Automate processes, which need to be finished in short time. Bots work faster than humans.
 
-|Occuring irregularly
+|Occurring irregularly
 |Processes that occur only in irregular time spans and volume make inefficient use of employees. Bots wait patiently for their turn and can be scaled according to need in case of peak demand.
 
 |===
 
 == Order
 
-Provided that a process can be automated after consideration of the Qualifiers, you should begin with simpler processes in order to support the learn curve and to produce quick results. You can tackle more complex processes if they are well documented and experienced designers are available.
+Provided that a process can be automated after consideration of the qualifiers, you should begin with simpler processes in order to support the learning curve and to produce quick results. You can tackle more complex processes if they are well documented and if experienced designers are available.
 
-The more frequently a process is carried out, the higher the costs and the more effective the automation. For this reason, you should not only consider the position of the process in the heat map Prioritization, but also the costs of the process to determine whether and how early it should be automated.
+The more frequently a process is carried out, the higher the costs and the more effective the automation. For this reason, you should not only consider the position of the process in the *Prioritization Matrix* heat map in the view *Process Evaluation*, but also the costs of the process to determine whether and how soon it should be automated.
+
+
+== See Also
+
+* xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
+//* xref:manager-processevaluation-contemplating.adoc[Contemplating Which Processes to Automate]
+* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
+* xref:manager-processevaluation-approving.adoc[Approving a Process]

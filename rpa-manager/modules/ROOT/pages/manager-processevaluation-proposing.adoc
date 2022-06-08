@@ -4,11 +4,11 @@ You evaluate a process candidate to propose it for automation.
 
 == Before You Begin
 
-. Obtain the Privileges you need:
-* To use the *Process Evaluation* module, you require the Privilege *Process Evaluation Open*.
-* The Privilege *Process Evaluation Open* only lets you view processes that you have created yourself, that is, for which you are the Process Owner. To display all the processes for a Customer in the *Process Evaluation* view, you must have the Privilege *Global Process Evaluation View*.
-* To create, edit, and delete evaluations, you must also have the Privilege *Process Evaluation Administration*.
-* To approve an automation process for a Center of Excellence, you must have the Privilege *Process Evaluation Approval to a CoE*. To approve directly for a Project Manager, you need the Privilege *Process Evaluation Approval to a Project Manager*.
+. Obtain the privileges you need:
+* To use the *Process Evaluation* module, you require the privilege *Process Evaluation Open*.
+* The privilege *Process Evaluation Open* only lets you view processes that you have created yourself, that is, for which you are the Process Owner. To display all the processes for a Customer in the *Process Evaluation* view, you must have the privilege *Global Process Evaluation View*.
+* To create, edit, and delete evaluations, you must also have the privilege *Process Evaluation Administration*.
+* To approve an automation process for a Center of Excellence, you must have the privilege *Process Evaluation Approval to a CoE*. To approve directly for a Project Manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
 . Create appropriate Categories in the view *Process Management* in the module *Process Automation*.
 
 == Manage Process Evaluations
@@ -33,7 +33,7 @@ Create a process evaluation to propose a process candidate for automation.
 
 Edit a process evaluation to correct errors.
 
-. In the *Process Evaluation* view of the *Process Evaluation* module click [icon] *Edit* in the table row of the evaluation you want to edit.
+. In the *Process Evaluation* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Edit* in the table row of the evaluation you want to edit.
 . Edit the form *Edit <evaluation>*.
 . Click *Save*.
 
@@ -41,7 +41,7 @@ Edit a process evaluation to correct errors.
 
 Delete process evaluations no longer needed.
 
-. In the *Process Evaluation* view of the *Process Evaluation* module click [icon] *Delete* in the table row of the evaluation you want to delete.
+. In the *Process Evaluation* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Delete* in the table row of the evaluation you want to delete.
 . Confirm the deletion.
 
 == See Also

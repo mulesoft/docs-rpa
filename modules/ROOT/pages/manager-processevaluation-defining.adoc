@@ -8,12 +8,12 @@ You create criteria and templates adapted to your processes.
 
 == Before You Begin
 
-* Obtain the Privileges you need
-** To open and manage the *Process Evaluation* module, you require the Privileges *Process Evaluation Open* and *Process Evaluation Administration*.
-** To open the *Evaluation Criteria* view, you also need the Privilege *Evaluation Criteria Open*.
-** To create, change, and delete evaluation criteria, you need the Privileges *Evaluation Criteria Create*, *Evaluation Criteria Edit* and *Evaluation Criteria Delete*.
-** To open the *Evaluation Templates* view, you also need the Privilege *Evaluation Templates Open*.
-** To create, change, and delete evaluation criteria, you need the Privileges *Evaluation Template Create*, *Evaluation Template Edit*, and *Evaluation Template Delete*.
+* Obtain the privileges you need
+** To open and manage the *Process Evaluation* module, you require the privileges *Process Evaluation Open* and *Process Evaluation Administration*.
+** To open the *Evaluation Criteria* view, you need the privilege *Evaluation Criteria Open*.
+** To create, change, and delete evaluation criteria, you need the privileges *Evaluation Criteria Create*, *Evaluation Criteria Edit* and *Evaluation Criteria Delete*.
+** To open the *Evaluation Templates* view, you need the privilege *Evaluation Templates Open*.
+** To create, change, and delete evaluation criteria, you need the privileges *Evaluation Template Create*, *Evaluation Template Edit*, and *Evaluation Template Delete*.
 
 == Manage Process Evaluation Criteria
 
@@ -23,25 +23,21 @@ Process evaluation criteria are properties of the process that are used to asses
 
 Create criteria adapted to your process.
 
-. In the *Evaluation Criteria* view of the *Process Evaluation* module click *Create Qualifier* or *Create Benefit*.
-// Which?
-. Fill the form *Create new <criterion>*:
-OR
- In the view that opens, fill the form:
+. In the *Evaluation Criteria* view of the *Process Evaluation* module, click *Create Qualifier* or *Create Benefit*.
+. Fill the form *Create new <[Qualifier,Benefit]]>*:
 * *Exclude*: Select the *Exclude* checkbox if the criterion can be excluded from a process evaluation, that is, it does not necessarily have to be evaluated.
-When you create a process evaluation, you will then find the same checkbox next to the criterion.
-* *Gradation*: Move the slide control to the right to increase the number of gradations of the criteria from 2 to 5 in increments. You can enter a description for each gradation level. The higher the level, the better the feasibility or benefits of the process automation are rated.
+When you create a process evaluation, you will then find the same checkbox next to the criterion. Excluded criteria are not used in the computation of the rating.
+* *Gradation*: Move the slide control to the right to increase the number of gradations of the criterion from 2 to 5 in increments. You can enter a description for each gradation level. The higher the level, the better the feasibility or benefits of the process automation are rated.
 . Click *Save*.
 
 === Edit Process Evaluation Criteria
 
 Edit criteria to make it more useful.
 
-Evaluations of a Process that were created based on a template that contains the edited criterion are not changed. They continue to contain the criterion in its original form.
+Evaluations of a process that were created based on a template that contains the edited criterion are not changed. They continue to contain the criterion in its original form.
 The changed form of the criterion is used in the templates as soon as the changes are saved.
 
-// Insert Icon image
-. In the *Evaluation Criteria* view of the *Process Evaluation* module click [icon] *Edit* in the table row of the criterion you want to edit.
+. In the *Evaluation Criteria* view of the *Process Evaluation* module, click image:edit-icon.png[The edit icon,1.5%,1.5%] *Edit* in the table row of the criterion you want to edit.
 . Edit the form *Edit <criterion>*.
 . Click *Save*.
 
@@ -51,7 +47,7 @@ Delete criteria you don’t use any more.
 
 Evaluations of a Process that were created based on one of these templates are not changed and continue to contain the criterion even after it is deleted.
 
-. In the *Evaluation Criteria* view of the *Process Evaluation* module click [icon] *Delete* in the table row of the criterion you want to delete.
+. In the *Evaluation Criteria* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Delete* in the table row of the criterion you want to delete.
 . Confirm the removal of the criterion from the templates it is used in.
 
 == Manage Process Evaluation Templates
@@ -76,7 +72,7 @@ Instead of creating a new empty template you can also copy and edit an existing 
 
 Copy and edit templates instead of creating new empty ones to save time.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module click [icon] *Copy* in the table row of the template you want to copy.
+. In the *Evaluation Templates* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Copy* in the table row of the template you want to copy.
 . Edit the form *Copy <template>*.
 . Click *Save*.
 
@@ -84,7 +80,7 @@ Copy and edit templates instead of creating new empty ones to save time.
 
 Edit templates to make them more useful.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module click [icon] *Edit* in the table row of the template you want to edit.
+. In the *Evaluation Templates* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Edit* in the table row of the template you want to edit.
 . Edit the form *Edit <template>*.
 . Click *Save*.
 
@@ -94,7 +90,7 @@ Delete templates you no longer use.
 
 Evaluations of a process that use a template that has been deleted are not changed.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module click [icon] *Delete* in the table row of the template you want to delete.
+. In the *Evaluation Templates* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Delete* in the table row of the template you want to delete.
 . Confirm the removal of the template.
 
 == See Also
@@ -102,5 +98,7 @@ Evaluations of a process that use a template that has been deleted are not chang
 * xref:manager-.adoc[Assigning Privileges to a User]
 
 * xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:manager-processevaluation-contemplating.adoc[Contemplating Which Processes to Automate]
+//* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
 * xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
 * xref:manager-processevaluation-approving.adoc[Approving a Process]
