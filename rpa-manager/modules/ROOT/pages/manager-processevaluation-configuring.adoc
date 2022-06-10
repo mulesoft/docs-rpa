@@ -1,10 +1,10 @@
-= Defining Process Evaluations
+= Configuring Process Evaluations
 
 Process evaluations are based on templates.
 
 Evaluation templates contain criteria to assess feasibility and benefits of a process’s automation.
 
-You create criteria and templates adapted to your processes.
+You create criteria and templates adapted to your needs.
 
 == Before You Begin
 
@@ -17,7 +17,7 @@ You create criteria and templates adapted to your processes.
 
 == Manage Process Evaluation Criteria
 
-Process evaluation criteria are properties of the process that are used to assess feasibility and benefits of a process’s automation. They are graded according to the extent of their existence in the process. You can create, edit and delete criteria.
+Process evaluation criteria are properties of the process that are used to assess feasibility and benefits of a process’s automation. They are graded according to the extent of their existence in the process. You can create, edit and remove criteria.
 
 === Create process Evaluation Criteria
 
@@ -37,24 +37,24 @@ Edit criteria to make it more useful.
 Evaluations of a process that were created based on a template that contains the edited criterion are not changed. They continue to contain the criterion in its original form.
 The changed form of the criterion is used in the templates as soon as the changes are saved.
 
-. In the *Evaluation Criteria* view of the *Process Evaluation* module, click image:edit-icon.png[The edit icon,1.5%,1.5%] *Edit* in the table row of the criterion you want to edit.
-. Edit the form *Edit <criterion>*.
+. In the *Evaluation Criteria* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the criterion you want to edit.
+. Edit the form *Edit <criterion type>*.
 . Click *Save*.
 
-=== Delete Process Evaluation Criteria
+=== Remove Process Evaluation Criteria
 
-Delete criteria you don’t use any more.
+Remove criteria you don’t use any more.
 
-Evaluations of a Process that were created based on one of these templates are not changed and continue to contain the criterion even after it is deleted.
+Evaluations of a Process that were created based on one of these templates are not changed and continue to contain the criterion even after it is removed.
 
-. In the *Evaluation Criteria* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Delete* in the table row of the criterion you want to delete.
+. In the *Evaluation Criteria* view of the *Process Evaluation* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the criterion you want to delete.
 . Confirm the removal of the criterion from the templates it is used in.
 
 == Manage Process Evaluation Templates
 
 Process evaluation templates combine criteria suitable for a specific type of process.
 
-You can create, copy, edit and delete templates.
+You can create, copy, edit and remove templates.
 
 === Create Process Evaluation Templates
 
@@ -63,34 +63,34 @@ Create different templates for different types of processes.
 Instead of creating a new empty template you can also copy and edit an existing template.
 
 . In the *Evaluation Templates* view of the *Process Evaluation* module click *Create*.
-. Fill the form *Create new <template>*:
-* *Available/Assigned <criteria>*:Click on a criterion to move it from Available to Assigned and vice versa.
-* *Exclude MuleSoft default evaluation criteria*: select the checkbox to exclude the MuleSoft default criteria from the selection lists.
+. Fill the form *Create a new Evaluation Template*:
+* *Available/Assigned <criteria>*: Click on a criterion to move it from *Available* to *Assigned* and vice versa.
+* *Exclude MuleSoft default evaluation criteria*: Select the checkbox to exclude the MuleSoft default criteria from the selection lists.
 . Click *Save*.
 
 === Copy Process Evaluation Templates
 
 Copy and edit templates instead of creating new empty ones to save time.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Copy* in the table row of the template you want to copy.
-. Edit the form *Copy <template>*.
+. In the *Evaluation Templates* view of the *Process Evaluation* module, click the *Copy* icon image:copy-icon.png[copy symbol,1.5%,1.5%] in the table row of the template you want to copy.
+. Edit the form *Copy an Evaluation Template*.
 . Click *Save*.
 
 === Edit Process Evaluation Templates
 
 Edit templates to make them more useful.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Edit* in the table row of the template you want to edit.
-. Edit the form *Edit <template>*.
+. In the *Evaluation Templates* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the template you want to edit.
+. Edit the form *Edit an Evaluation Template*.
 . Click *Save*.
 
-=== Delete Process Evaluation Templates
+=== Remove Process Evaluation Templates
 
-Delete templates you no longer use.
+Remove templates you no longer use.
 
-Evaluations of a process that use a template that has been deleted are not changed.
+Evaluations of a process that use a template that has been removed are not changed.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Delete* in the table row of the template you want to delete.
+. In the *Evaluation Templates* view of the *Process Evaluation* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the template you want to delete.
 . Confirm the removal of the template.
 
 == See Also
@@ -98,7 +98,7 @@ Evaluations of a process that use a template that has been deleted are not chang
 * xref:manager-.adoc[Assigning Privileges to a User]
 
 * xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
-* xref:manager-processevaluation-contemplating.adoc[Contemplating Which Processes to Automate]
-//* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
-* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
-* xref:manager-processevaluation-approving.adoc[Approving a Process]
+* xref:manager-processevaluation-considering.adoc[Considering Which Processes to Automate]
+//* xref:manager-processevaluation-configuring.adoc[Configuring Process Evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
+* xref:manager-processevaluation-approving.adoc[Approving a Process for Automation]

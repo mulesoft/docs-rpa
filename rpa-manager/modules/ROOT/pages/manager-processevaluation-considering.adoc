@@ -1,4 +1,4 @@
-= Contemplating Which Processes to Automate
+= Considering Which Processes to Automate
 
 Consider four factors before starting robotic process automation:
 
@@ -67,7 +67,7 @@ Benefits are properties of a process that you use to determine how useful the au
 |Automate processes, which need to be finished in short time. Bots work faster than humans.
 
 |Occurring irregularly
-|Processes that occur only in irregular time spans and volume make inefficient use of employees. Bots wait patiently for their turn and can be scaled according to need in case of peak demand.
+|Processes that occur only in irregular time intervals and to varying volume make inefficient use of employees. Bots wait patiently for their turn and can be scaled according to need in case of peak demand.
 
 |===
 
@@ -75,13 +75,13 @@ Benefits are properties of a process that you use to determine how useful the au
 
 Provided that a process can be automated after consideration of the qualifiers, you should begin with simpler processes in order to support the learning curve and to produce quick results. You can tackle more complex processes if they are well documented and if experienced designers are available.
 
-The more frequently a process is carried out, the higher the costs and the more effective the automation. For this reason, you should not only consider the position of the process in the *Prioritization Matrix* heat map in the view *Process Evaluation*, but also the costs of the process to determine whether and how soon it should be automated.
+The more frequently a process is carried out, the higher the costs and the more effective the automation. For this reason, you should not only consider the position of the process in the *Process Matrix* heat map in the view *Process Evaluation*, but also the costs of the process to determine whether and how soon it should be automated.
 
 
 == See Also
 
 * xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
-//* xref:manager-processevaluation-contemplating.adoc[Contemplating Which Processes to Automate]
-* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
-* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
-* xref:manager-processevaluation-approving.adoc[Approving a Process]
+//* xref:manager-processevaluation-considering.adoc[Considering Which Processes to Automate]
+* xref:manager-processevaluation-configuring.adoc[Configuring Process Evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
+* xref:manager-processevaluation-approving.adoc[Approving a Process for Automation]

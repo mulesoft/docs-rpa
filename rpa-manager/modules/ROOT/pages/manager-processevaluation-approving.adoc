@@ -1,23 +1,23 @@
-= Approving a Process
+= Approving a Process for Automation
 
 You approve an evaluated process candidate to refer it to a project manager or a center of excellence for automation.
 
 == Before You Begin
 
-. Obtain the privileges you need:
-* To approve an automation process for a Center of Excellence, you must have the privilege *Process Evaluation Approval to a CoE*.
-* To approve directly for a Project Manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
-. You can only approve evaluated process candidates.
-. You can only refer processes to users tagged as Project Manager or user groups tagged as Center of Excellence.
+* Obtain the privileges you need:
+** To approve an automation process for a center of excellence, you must have the privilege *Process Evaluation Approval to a CoE*.
+** To approve directly for a Project Manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
+* You can only approve evaluated process candidates.
+* You can only refer processes to users tagged as project manager or user groups tagged as center of excellence.
 
 == Select a Process for Approval
 
 You can automate processes with high ratings for feasibility. Consider the benefits before automating a process. Automate simple processes first.
 
-. Filter the process list in the view *Process Evaluation* of the module *Process Evaluation to show only newly-created evaluations.
-. View the Process Matrix. If you cannot see it, click image:-icon.png[The  icon,5%,5%] *Expand*.
+. Filter the process list in the view *Process Evaluation* of the module *Process Evaluation* to show only newly-created evaluations.
+. View the *Process Matrix*. If you cannot see it, click the *Expand* image button image:expand-imagebutton.png[less-than symbol in a green half-circle,1.5%,1.5%].
 . Hover over the dots to see the names of the corresponding processes.
-. Click one of the dots in the green area to select it.
+. Click one of the toggle-dots in the green area to select it and to reduce the table to the corresponding processes.
 
 == Approve a Process
 
@@ -36,7 +36,9 @@ After approval, the process is displayed in the personal backlog of the project 
 * xref:manager-.adoc[Creating Centers of Excellence]
 
 * xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
-* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
-* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
+* xref:manager-processevaluation-considering.adoc[Considering Which Processes to Automate]
+* xref:manager-processevaluation-configuring.adoc[Configuring Process Evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
+//* xref:manager-processevaluation-approving.adoc[Approving a Process for Automation]
 
 * xref:manager-.adoc[Managing Automation Projects]

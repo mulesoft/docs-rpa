@@ -1,6 +1,0 @@
-* xref::rpa-manager-overview.adoc[RPA Manager Overview]
-** xref::manager-processevaluation-overview.adoc[Process Evaluation]
-*** xref::manager-processevaluation-contemplating.adoc[Contemplating Which Processes to Automate]
-*** xref::manager-processevaluation-defining.adoc[Defining Process Evaluations]
-*** xref::manager-processevaluation-proposing.adoc[Proposing a Process Candidate]
-*** xref::manager-processevaluation-approving.adoc[Approving a Process]

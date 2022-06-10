@@ -1,15 +1,15 @@
-= Proposing a Process Candidate
+= Proposing a Process Candidate for Automation
 
 You evaluate a process candidate to propose it for automation.
 
 == Before You Begin
 
-. Obtain the privileges you need:
-* To use the *Process Evaluation* module, you require the privilege *Process Evaluation Open*.
-* The privilege *Process Evaluation Open* only lets you view processes that you have created yourself, that is, for which you are the Process Owner. To display all the processes for a Customer in the *Process Evaluation* view, you must have the privilege *Global Process Evaluation View*.
-* To create, edit, and delete evaluations, you must also have the privilege *Process Evaluation Administration*.
-* To approve an automation process for a Center of Excellence, you must have the privilege *Process Evaluation Approval to a CoE*. To approve directly for a Project Manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
-. Create appropriate Categories in the view *Process Management* in the module *Process Automation*.
+* Obtain the privileges you need:
+** To use the *Process Evaluation* module, you require the privilege *Process Evaluation Open*.
+** The privilege *Process Evaluation Open* only lets you view processes that you have created yourself, that is, for which you are the process owner. To display all the processes for a customer in the *Process Evaluation* view, you must have the privilege *Global Process Evaluation View*.
+** To create, edit, and delete evaluations, you must also have the privilege *Process Evaluation Administration*.
+** To approve an automation process for a center of excellence, you must have the privilege *Process Evaluation Approval to a CoE*. To approve directly for a project manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
+* Create appropriate categories in the view *Process Management* in the module *Process Automation*.
 
 == Manage Process Evaluations
 
@@ -22,7 +22,7 @@ Create a process evaluation to propose a process candidate for automation.
 . In the *Process Evaluation* view of the *Process Evaluation* module click *Create*.
 . Fill the form *Create Evaluation*.
 . Click *OK*
-. Fill the form *<process evaluation>*:
+. Fill the form *Process Evaluation*:
 * *Manual process execution time*: time that an employee requires to carry out the process once. In the list of evaluated processes, the value *Manual process execution time* is multiplied by the value *Frequency per month* to calculate the value *Effort/month*.
 * *Costs per process run*: Costs for one-time execution of the process. In the list of evaluated processes, the value *Costs per process Run* is multiplied by the value *Effort/month* to calculate the *Costs/month(€)* value.
 * *Frequency per month*: Number of times the process is carried out within a one-month period. This field can only be filled if a value has already been entered in the *Manual process execution time* field. In the list of evaluated processes, the value *Frequency per month* is multiplied by the value *Manual process execution time* to calculate the *Effort/month* value.
@@ -33,15 +33,15 @@ Create a process evaluation to propose a process candidate for automation.
 
 Edit a process evaluation to correct errors.
 
-. In the *Process Evaluation* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Edit* in the table row of the evaluation you want to edit.
-. Edit the form *Edit <evaluation>*.
+. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the evaluation you want to edit.
+. Edit the form *Process Evaluation*.
 . Click *Save*.
 
 === Delete a Process Evaluation
 
 Delete process evaluations no longer needed.
 
-. In the *Process Evaluation* view of the *Process Evaluation* module , click image:-icon.png[The  icon,5%,5%] *Delete* in the table row of the evaluation you want to delete.
+. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the evaluation you want to delete.
 . Confirm the deletion.
 
 == See Also
@@ -51,5 +51,7 @@ Delete process evaluations no longer needed.
 * xref:manager-.adoc[Categorizing processes]
 
 * xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
-* xref:manager-processevaluation-defining.adoc[Defining Process Evaluations]
-* xref:manager-processevaluation-approving.adoc[Approving a Process]
+* xref:manager-processevaluation-considering.adoc[Considering Which Processes to Automate]
+* xref:manager-processevaluation-configuring.adoc[Configuring Process Evaluations]
+//* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
+* xref:manager-processevaluation-approving.adoc[Approving a Process for Automation]
