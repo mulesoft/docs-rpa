@@ -23,7 +23,7 @@ You can automate processes with high ratings for feasibility. Consider the benef
 
 Approve the selected process to refer it to a project manager or a center of excellence for automation.
 
-After approval, the process is displayed in the personal backlog of the project manager (My RPA - My processes).
+After approval, the process is displayed either in the personal backlog of the project manager (*My RPA* - *My Backlog*) or in the team backlog of the center of excellence (*My RPA* - *Team Backlog*).
 
 . In the *Process Evaluation* view of the *Process Evaluation* module, click *Approve* in the table row of the evaluation you want to approve.
 . Choose a user or a center of excellence as *Project Manager*.
@@ -41,4 +41,5 @@ After approval, the process is displayed in the personal backlog of the project 
 * xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
 //* xref:manager-processevaluation-approving.adoc[Approving a Process for Automation]
 
+* xref:manager-.adoc[Starting Automation Projects]
 * xref:manager-.adoc[Managing Automation Projects]
