@@ -4,8 +4,6 @@ MuleSoft Robotic Process Automation (RPA) enables you to automate business proce
 
 MuleSoft RPA can automate processes that require human input and also interact with systems where an API is not available for consumption. RPA bots can interact with applications, extract data, read images, and manipulate computer input faster and more accurately than humans.
 
-//Evaluate including a diagram of how different RPA components interact.
-
 == Use Cases
 
 Your company can benefit in many ways by implementing RPA into their processes, either by saving time, reducing costs, or preventing errors caused by human input.
@@ -75,9 +73,10 @@ MuleSoft RPA provides the following applications that enable you to manage the c
 | RPA Recorder
  | RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording actions steps from your local environment.
   |
-* Capture keyboard and mouse input
-* Open applications and interact with them
-* Execute operating system tasks
+* Build a BPMN based on user actions
+* Capture keyboard input, mouse clicks, and used applications
+* Add comments and variables during the recording
+* Automatically take screenshots per each mouse click
 | RPA Bot
  | RPA Bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
   |
@@ -85,29 +84,7 @@ MuleSoft RPA provides the following applications that enable you to manage the c
 * Read text and images
 |===
 
-////
-== RPA Manager
+== See Also
 
-RPA Manager is the cloud-based control plane for the automations. RPA Manager is integrated into Anypoint Platform and enables you to:
-
-Manage user access and permissions
-Evaluate the viability and financial benefits of implementing an automation
-Design and document RPA processes
-Test and deploy automations
-Manage and monitor deployed automations
-
-== RPA Builder
-
-RPA Builder is the on-premise application that enables you to build the automations by specifying the steps of the process. With RPA Builder you can download and upload automation assets to RPA Manager, add the automation logic to the processes, and also run local tests for the automations.
-
-
-
-== RPA Recorder
-
-RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording actions steps from your local environment. RPA Recorder is able to capture keyboard and mouse input, and also open applications and execute operating system tasks.
-
-== RPA Bot
-
-
-RPA Bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
-////
+// Link to Hardware and software requirements
+// Tutorial
