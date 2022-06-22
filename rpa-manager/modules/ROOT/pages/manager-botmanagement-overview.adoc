@@ -1,0 +1,55 @@
+= Bot Management
+
+Bots are software robots. They look out for work and automatically carry out any processes step by step. To do so, they need a computer where the applications required for the processes are installed, configurations, and specific instructions - the Activities that are created in RPA Builder for each process step.
+
+You manage your bots in the *Bot Management* module. Every Bot is assigned to a _customer_ through an API key. After installation, the bot logs in to the RPA Manager automatically at defined intervals. You can then assign licenses, applications, and service times to the bot, deploy processes to it for execution, and monitor its status and the results of the process runs it carries out.
+
+== Getting Started
+
+==== Install
+* Before you begin installing bots, create an API key for each bot.
+* After successful installation, the bots log on to the RPA Manager automatically.
+
+==== License
+* After you have installed all bots, open the *Bots* view in the *Bot Management* module and assign _secure session_ licenses to each bot.
+
+==== Assign Service Times
+* If a bot should only be available to execute processes at certain times, first create the corresponding service times.
+* You can then assign any number of service times to each individual bot.
+
+==== Assign Applications
+* In the view *Process Applications* in module *Process Automation* and enter all the applications needed to execute your processes.
+* Then assign the applications to the bots that can access them in the view *Bots* in module *Bot Management*.
+
+==== Assign phases
+* You can individually define the authorizations of a bot for deployment in the test and production phases.
+
+==== Create processes
+* To enable deployment of these bots, first create one or more processes in the *Process Evaluation* module and manage the corresponding projects in the *Process Automation* module.
+
+==== Deploying bots
+* Suitable bots for the process are displayed in the process configurations in the view *Process Management* in module *Process Automation*.
+
+==== Monitoring Bots
+* The *Bot Execution Plans* view shows which bot is to execute which processes and when.
+* The *Robot State and Operation* view and the *Deployment Map* view in module *Process Monitoring* shows you what the bots are doing right now.
+* The *Process Run Statistics* view shows the results of the processes that have been deployed to the bots.
+* The widgets *Current Robot Status* and *Bot Workload* can be added to a *Dashboard* in the module of the same name.
+
+== Definitions
+
+==== Customer
+
+...
+
+==== Secure session
+
+...
+
+== See Also
+
+//* xref:manager-botmanagement-overview.adoc[Bot Management]
+* xref::manager-botmanagement-catering.adoc[Catering to the Needs of Your Bots]
+* xref::manager-botmanagement-knowing.adoc[Getting to Know Your Bots]
+* xref::manager-botmanagement-managing.adoc[Managing Your Bots]
+* xref::manager-botmanagement-troubleshooting.adoc[Troubleshooting Your Bots]
