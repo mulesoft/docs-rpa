@@ -1,5 +1,66 @@
 = Catering to the Needs of Your Bots
 
+A bot needs to know who it belongs to. You create API keys which your bot uses to connect to RPA Manager.
+If a bot only needs to work at specific times, you assign it these service times.
+
+== Before You Begin
+
+* To open the *Bot Management* module, obtain the privilege *Robot Management Open*.
+* To manage service times, obtain the privileges *Servicetime Create*, *Servicetime Edit* and *Servicetime Delete*.
+
+== Manage API Keys
+
+API keys are required during installation of an X1 Bot. The Bot logs on to the server with its API key.
+
+=== Create an API Key
+
+Create a new API key for each bot before installation.
+
+. In the *API Key* view of the *Bot Management* module, click *Create*.
+. In the window *Create Bot API Key*, enter a name and description and click *OK*.
+
+=== Edit an API Key
+
+Edit an API key to change its name or description.
+
+. In the *API Key* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the API key you want to edit.
+. In the window *Edit Bot API Key*, change name or description and click *OK*.
+
+=== Remove an API Key
+
+Remove API keys you no longer need.
+
+When you delete an API key, the system does not check whether the key is assigned to a Bot. If you have deleted an API key that is in use, the Bot can no longer log on to the X1 Server until a new API key is assigned.
+
+. In the *API Key* view of the *Bot Management* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the API key you want to edit.
+. In the window *Edit Bot API Key*, change name or description and click *OK*.
+
+
+
+
+=== Copy an API to the Clipboard
+
+Copy an API key to the clipboard to paste it into the according field during installation or configuration of a bot.
+
+. In the *API Key* view of the *Bot Management* module, click c in the table row of the API key you want to edit.
+
+
+
+== Manage Service Times
+
+Service Times are any repeatable time intervals that define when a service is available. They can be assigned to X1 Bots and then determine when a Bot can execute processes.
+
+You can use a Service Time to simulate the regular weekly working hours at your company, for example. The X1 Bot can then work at the same time as its human colleagues, if tasks are interdependent, or at different times if you want it to use resources that other employees are not currently using.
+
+Processes that are deployed to the Bot are only executed by the Bot if it is within one of its Service Times.
+
+You can assign multiple Service Times to a Bot. If you do not assign any Service Times to a Bot, it can work 24/7.
+
+A Service Time is specified in a specific time zone. If the Bot is in a different time zone, the time interval is converted accordingly.
+
+
+
+
 
 == See Also
 
