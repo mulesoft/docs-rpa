@@ -6,7 +6,7 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 * Obtain the privileges you need:
 ** To approve an automation process for a center of excellence, you must have the privilege *Process Evaluation Approval to a CoE*.
-** To approve directly for a Project Manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
+** To approve directly for a project manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
 * You can only approve evaluated process candidates.
 * You can only refer processes to users tagged as project manager or user groups tagged as center of excellence.
 
@@ -17,13 +17,13 @@ You can automate processes with high ratings for feasibility. Consider the benef
 . Filter the process list in the view *Process Evaluation* of the module *Process Evaluation* to show only newly-created evaluations.
 . View the *Process Matrix*. If you cannot see it, click the *Expand* image button image:expand-imagebutton.png[less-than symbol in a green half-circle,1.5%,1.5%].
 . Hover over the dots to see the names of the corresponding processes.
-. Click one of the toggle-dots in the green area to select it and to reduce the table to the corresponding processes.
+. Click one of the toggle-dots in the upper right half of the matrix to select it and to reduce the table to the corresponding processes.
 
 == Approve a Process
 
 Approve the selected process to refer it to a project manager or a center of excellence for automation.
 
-After approval, the process is displayed either in the personal backlog of the project manager (*My RPA* - *My Backlog*) or in the team backlog of the center of excellence (*My RPA* - *Team Backlog*).
+After approval, the process is also displayed either in the personal backlog of the project manager (*My RPA* - *My Backlog*) or in the team backlog of the center of excellence (*My RPA* - *Team Backlog*).
 
 . In the *Process Evaluation* view of the *Process Evaluation* module, click *Approve* in the table row of the evaluation you want to approve.
 . Choose a user or a center of excellence as *Project Manager*.

@@ -2,7 +2,7 @@
 
 Process evaluations are based on templates.
 
-Evaluation templates contain criteria to assess feasibility and benefits of a process’s automation.
+Evaluation templates contain criteria to assess the feasibility and benefits of a process’s automation.
 
 You create criteria and templates adapted to your needs.
 
@@ -11,7 +11,7 @@ You create criteria and templates adapted to your needs.
 * Obtain the privileges you need
 ** To open and manage the *Process Evaluation* module, you require the privileges *Process Evaluation Open* and *Process Evaluation Administration*.
 ** To open the *Evaluation Criteria* view, you need the privilege *Evaluation Criteria Open*.
-** To create, change, and delete evaluation criteria, you need the privileges *Evaluation Criteria Create*, *Evaluation Criteria Edit* and *Evaluation Criteria Delete*.
+** To create, change, and delete evaluation criteria, you need the privileges *Evaluation Criteria Create*, *Evaluation Criteria Edit*, and *Evaluation Criteria Delete*.
 ** To open the *Evaluation Templates* view, you need the privilege *Evaluation Templates Open*.
 ** To create, change, and delete evaluation criteria, you need the privileges *Evaluation Template Create*, *Evaluation Template Edit*, and *Evaluation Template Delete*.
 
@@ -24,10 +24,14 @@ Process evaluation criteria are properties of the process that are used to asses
 Create criteria adapted to your process.
 
 . In the *Evaluation Criteria* view of the *Process Evaluation* module, click *Create Qualifier* or *Create Benefit*.
-. Fill the form *Create new <[Qualifier,Benefit]]>*:
-* *Exclude*: Select the *Exclude* checkbox if the criterion can be excluded from a process evaluation, that is, it does not necessarily have to be evaluated.
+. Complete the form *Create new <[Qualifier,Benefit]]>*:
+* *Exclude*:
++
+Select this checkbox if the criterion can be excluded from a process evaluation.
 When you create a process evaluation, you will then find the same checkbox next to the criterion. Excluded criteria are not used in the computation of the rating.
-* *Gradation*: Move the slide control to the right to increase the number of gradations of the criterion from 2 to 5 in increments. You can enter a description for each gradation level. The higher the level, the better the feasibility or benefits of the process automation are rated.
+* *Gradation*:
++
+Move the slide control to the right to increase the number of gradations of the criterion step by step from 2 to 5. You can enter a description for each gradation level. The higher the level, the better the rating for the process automation's feasibility respectively benefits.
 . Click *Save*.
 
 === Edit Process Evaluation Criteria
@@ -45,7 +49,7 @@ The changed form of the criterion is used in the templates as soon as the change
 
 Remove criteria you don’t use any more.
 
-Evaluations of a Process that were created based on one of these templates are not changed and continue to contain the criterion even after it is removed.
+Process evaluations that have been created before are not changed and continue to contain the criterion even after it is removed.
 
 . In the *Evaluation Criteria* view of the *Process Evaluation* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the criterion you want to delete.
 . Confirm the removal of the criterion from the templates it is used in.
@@ -60,12 +64,16 @@ You can create, copy, edit and remove templates.
 
 Create different templates for different types of processes.
 
-Instead of creating a new empty template you can also copy and edit an existing template.
+Instead of creating a new, empty template, you can also copy and edit an existing template:
 
 . In the *Evaluation Templates* view of the *Process Evaluation* module click *Create*.
-. Fill the form *Create a new Evaluation Template*:
-* *Available/Assigned <criteria>*: Click on a criterion to move it from *Available* to *Assigned* and vice versa.
-* *Exclude MuleSoft default evaluation criteria*: Select the checkbox to exclude the MuleSoft default criteria from the selection lists.
+. Complete the form *Create a new Evaluation Template*:
+* *Available/Assigned <criteria>*:
++
+Click on a criterion to move it from *Available* to *Assigned* and vice versa.
+* *Exclude MuleSoft default evaluation criteria*:
++
+Select the checkbox to exclude the MuleSoft default criteria from the selection lists.
 . Click *Save*.
 
 === Copy Process Evaluation Templates
@@ -88,7 +96,7 @@ Edit templates to make them more useful.
 
 Remove templates you no longer use.
 
-Evaluations of a process that use a template that has been removed are not changed.
+Evaluations of a process that use a removed template are not changed.
 
 . In the *Evaluation Templates* view of the *Process Evaluation* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the template you want to delete.
 . Confirm the removal of the template.

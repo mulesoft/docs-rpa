@@ -9,19 +9,23 @@ Consider four factors before starting robotic process automation:
 
 == Standards
 
-There might be several ways in which your company processes the same task. So before proposing a business process for automation, follow these three steps:
+There might be several ways in which your company processes the same task. So before proposing a business process for automation, follow these steps:
 
-* Collect
-* Compare
-* Compile
-
-Ask all employees how they complete a certain task. Compare the answers to get the necessary steps. If possible, compile the necessary steps into one process description and make it a standard in your company.
+. Collect
++
+Ask all employees how they complete a certain task.
+. Compare
++
+Compare the answers to get the necessary steps.
+. Compile
++
+If possible, compile the necessary steps into one process description and make it a standard in your company.
 
 Standardizing business processes helps to prepare automation and avoids automating one task in multiple ways.
 
 == Qualifiers
 
-Qualifiers are properties of a process you use to determine whether a process can be automated and how easily this can be done.
+Qualifiers are process properties that help determine whether a process can be automated and how easily this can be done.
 
 The more of the following requirements your process meets, the easier it is to automate:
 
@@ -30,7 +34,7 @@ The more of the following requirements your process meets, the easier it is to a
 |*Qualifier* |*Description*
 
 |Data-driven
-|Processes that are based on texts or numbers can be automated easier than processes that require understanding of images or spoken language.
+|Processes based on texts or numbers are easier to automate than processes that require an understanding of images or spoken language.
 
 |Rule-based
 |The better a process can be described using rules, the higher the automation capacity. If a process has both judgement-based parts and rule-based parts, it can be partly automated. The bot carries out the rule-based process parts and waits for human decisions.
@@ -55,19 +59,19 @@ Benefits are properties of a process that you use to determine how useful the au
 |A process is costly if either one manual execution takes a lot of time or if it is carried out very often. Automating an expensive process frees employee time for work that cannot be automated.
 
 |Error-prone
-|The quality of the process result can be improved if automation helps to prevent errors. Fewer errors will lower process costs on the one hand, and increase the satisfaction of customers on the other.
+|Automation that helps prevent errors improves the quality of the process result. Fewer errors lower process costs and increase customer satisfaction.
 
 |Risky
 |Risks include all events and occurrences that can lead to additional costs or losses, such as breaking the law and associated penalties, fraud, loss of customers and sales, the costs of inefficiencies, poor decisions and corrective action, damaging the company’s reputation, illness and the loss of employees. Automation reduces risks.
 
 |Use of legacy systems
-|Automate a process to connect or migrate legacy systems to your state of the art.
+|Automate a process to connect or migrate legacy systems to your state of the art systems.
 
 |Speed-sensitive
 |Automate processes, which need to be finished in short time. Bots work faster than humans.
 
 |Occurring irregularly
-|Processes that occur only in irregular time intervals and to varying volume make inefficient use of employees. Bots wait patiently for their turn and can be scaled according to need in case of peak demand.
+|Processes that occur only in irregular time intervals and vary in volume make inefficient use of employees. Bots wait patiently for their turn and can be scaled according to need in case of peak demand.
 
 |===
 
