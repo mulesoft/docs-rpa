@@ -68,7 +68,7 @@ Benefits are properties of a process that you use to determine how useful the au
 |Automate a process to connect or migrate legacy systems to your state of the art systems.
 
 |Speed-sensitive
-|Automate processes, which need to be finished in short time. Bots work faster than humans.
+|Automate processes that must finish quickly. Bots work faster than humans.
 
 |Occurring irregularly
 |Processes that occur only in irregular time intervals and vary in volume make inefficient use of employees. Bots wait patiently for their turn and can be scaled according to need in case of peak demand.
