@@ -14,7 +14,7 @@ As a member of a center of excellence, you approve process candidates eligible f
 * Which criteria are necessary and suitable for evaluating the processes?
 * How can these criteria be described clearly and comprehensively?
 * Where does the data for evaluating the processes come from?
-* Which systems and data are needed to automate the processes?
+* Which systems and data are needed for automating the processes?
 
 ==== Prepare
 * In the *User Management* module, give your users the privileges and properties they need.
