@@ -21,7 +21,7 @@ As a member of a center of excellence, you approve process candidates eligible f
 * After making the necessary systems available, define the applications, credentials, and global variables needed to automate the processes in the *Process Automation* module.
 
 ==== Configure
-* First, in the *Evaluation Criteria* view, create all the additional criteria you need to evaluate your processes.
+. In the *Evaluation Criteria* view, create the additional criteria needed to evaluate your processes.
 * Then, in the *Evaluation Templates* view, compile all the criteria you need to evaluate certain process types.
 
 ==== Evaluate
