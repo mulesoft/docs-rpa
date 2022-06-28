@@ -4,7 +4,7 @@ You evaluate a process candidate to propose it for automation.
 
 == Before You Begin
 
-* Obtain the privileges you need:
+* Obtain the needed privileges:
 ** To use the *Process Evaluation* module, you require the privilege *Process Evaluation Open*.
 ** The privilege *Process Evaluation Open* only lets you view processes that you have created yourself, that is, for which you are the process owner. To display all the processes for a customer in the *Process Evaluation* view, you must have the privilege *Global Process Evaluation View*.
 ** To create, edit, and delete evaluations, you must also have the privilege *Process Evaluation Administration*.
