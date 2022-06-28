@@ -11,7 +11,7 @@ As a member of a center of excellence, you approve process candidates eligible f
 ==== Think
 * What processes are there in your company?
 * Who is responsible for the processes?
-* Which criteria are necessary and suitable to evaluate the processes?
+* Which criteria are necessary and suitable for evaluating the processes?
 * How can these criteria be described clearly and comprehensively?
 * Where does the data for evaluating the processes come from?
 * Which systems and data are needed to automate the processes?
