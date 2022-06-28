@@ -31,7 +31,6 @@ You create criteria and templates adapted to your needs.
 
 |===
 
-
 == Manage Process Evaluation Criteria
 
 Process evaluation criteria are properties of the process that are used to assess feasibility and benefits of automating a process. They are graded according to the extent to which they are present in the process. You can create, edit and remove criteria.
