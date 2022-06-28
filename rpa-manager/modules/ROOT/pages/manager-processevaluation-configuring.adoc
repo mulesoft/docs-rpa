@@ -8,12 +8,29 @@ You create criteria and templates adapted to your needs.
 
 == Before You Begin
 
-* Obtain the privileges you need
-** To open and manage the *Process Evaluation* module, you require the privileges *Process Evaluation Open* and *Process Evaluation Administration*.
-** To open the *Evaluation Criteria* view, you need the privilege *Evaluation Criteria Open*.
-** To create, change, and delete evaluation criteria, you need the privileges *Evaluation Criteria Create*, *Evaluation Criteria Edit*, and *Evaluation Criteria Delete*.
-** To open the *Evaluation Templates* view, you need the privilege *Evaluation Templates Open*.
-** To create, change, and delete evaluation criteria, you need the privileges *Evaluation Template Create*, *Evaluation Template Edit*, and *Evaluation Template Delete*.
+* Obtain the needed privileges:
++
+[cols="2,1"]
+|===
+|*Action* |*Required Privileges*
+
+|Open and manage the *Process Evaluation* module
+|*Process Evaluation Open*, *Process Evaluation Administration*
+
+|Open the *Evaluation Criteria* view
+|*Evaluation Criteria Open*
+
+|Create, change, and delete evaluation criteria
+|*Evaluation Criteria Create*, *Evaluation Criteria Edit*, *Evaluation Criteria Delete*
+
+|Open the *Evaluation Templates* view
+|*Evaluation Templates Open*
+
+|Create, change, and delete evaluation criteria
+|*Evaluation Template Create*, *Evaluation Template Edit*, *Evaluation Template Delete*.
+
+|===
+
 
 == Manage Process Evaluation Criteria
 

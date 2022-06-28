@@ -5,8 +5,19 @@ You approve an evaluated process candidate to refer it to a project manager or a
 == Before You Begin
 
 * Obtain the needed privileges:
-** To approve an automation process for a center of excellence, you must have the privilege *Process Evaluation Approval to a CoE*.
-** To approve directly for a project manager, you need the privilege *Process Evaluation Approval to a Project Manager*.
++
+[cols="2,1"]
+|===
+|*Action* |*Required Privileges*
+
+|Approve an automation process for a center of excellence
+|*Process Evaluation Approval to a CoE*
+
+|Approve directly for a project manager
+|*Process Evaluation Approval to a Project Manager*
+
+|===
+
 * You can only approve evaluated process candidates.
 * You can only refer processes to users tagged as project manager or user groups tagged as center of excellence.
 
