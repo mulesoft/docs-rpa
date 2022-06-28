@@ -77,9 +77,9 @@ Benefits are properties of a process that you use to determine how useful the au
 
 == Order
 
-Provided that a process can be automated after consideration of the qualifiers, you should begin with simpler processes in order to support the learning curve and to produce quick results. You can tackle more complex processes if they are well documented and if experienced designers are available.
+Begin with simpler processes to support the learning curve and to produce quick results. You can tackle more complex processes if they are well documented and if experienced designers are available.
 
-The more frequently a process is carried out, the higher the costs and the more effective the automation. For this reason, you should not only consider the position of the process in the *Process Matrix* heat map in the view *Process Evaluation*, but also the costs of the process to determine whether and how soon it should be automated.
+The more frequently a process is carried out, the higher the costs and the more effective the automation. For this reason, consider both the position of the process in the *Process Matrix* heat map in the view *Process Evaluation*, and the process costs to determine whether and when it should be automated.
 
 
 == See Also
