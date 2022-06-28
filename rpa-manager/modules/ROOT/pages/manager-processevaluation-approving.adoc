@@ -1,0 +1,56 @@
+= Approving a Process for Automation
+
+You approve an evaluated process candidate to refer it to a project manager or a center of excellence for automation.
+
+== Before You Begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Approve an automation process for a center of excellence
+|*Process Evaluation Approval to a CoE*
+
+|Approve directly for a project manager
+|*Process Evaluation Approval to a Project Manager*
+
+|===
+
+* You can only approve evaluated process candidates.
+* You can only refer processes to users assigned as project manager or user groups assigned as center of excellence.
+
+== Select a Process for Approval
+
+You can automate processes that have ratings for feasibility. Consider the benefits before automating a process. Automate simple processes first.
+
+. Filter the process list in the *Process Evaluation* view of the *Process Evaluation* module to show only newly-created evaluations.
+. View the *Process Matrix*. If you cannot see it, click *Expand*: image:expand-imagebutton.png[less-than symbol in a green half-circle,1.5%,1.5%].
+. Hover over the dots to see the names of the corresponding processes.
+. Click one of the toggle-dots in the upper right half of the matrix to select it and to display only the corresponding processes.
+
+== Approve a Process
+
+Approve the selected process to refer it to a project manager or a center of excellence for automation.
+
+After approval, the process is also displayed either in the personal backlog of the project manager (*My RPA* - *My Backlog*) or in the team backlog of the center of excellence (*My RPA* - *Team Backlog*).
+
+. In the *Process Evaluation* view of the *Process Evaluation* module, click *Approve* in the table row of the evaluation you want to approve.
+. Choose a user or a center of excellence as *Project Manager*.
+. Click *OK*.
+
+== See Also
+
+* xref:manager-.adoc[Assigning Privileges to a User]
+* xref:manager-.adoc[Assigning Special Attributes to Users]
+* xref:manager-.adoc[Creating Centers of Excellence]
+
+* xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:manager-processevaluation-considering.adoc[Considering Which Processes to Automate]
+* xref:manager-processevaluation-configuring.adoc[Configuring Process Evaluations]
+* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
+//* xref:manager-processevaluation-approving.adoc[Approving a Process for Automation]
+
+* xref:manager-.adoc[Starting Automation Projects]
+* xref:manager-.adoc[Managing Automation Projects]
