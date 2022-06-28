@@ -43,7 +43,7 @@ The more of the following requirements your process meets, the easier it is to a
 |For automation of a process, all involved documents should be present in digital, structured form if possible. Use the RPA Builder tools to digitize documents.
 
 |Stable
-|You can only automate a process if it always runs predictably. We refer to such a process as stable.
+|You can only automate a process if it always runs predictablythat is, if it is _stable_.
 
 |===
 

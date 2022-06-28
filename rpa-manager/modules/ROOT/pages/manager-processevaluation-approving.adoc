@@ -25,7 +25,7 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 You can automate processes with high ratings for feasibility. Consider the benefits before automating a process. Automate simple processes first.
 
-. Filter the process list in the view *Process Evaluation* of the module *Process Evaluation* to show only newly-created evaluations.
+. Filter the process list in the *Process Evaluation* view of the *Process Evaluation* module to show only newly-created evaluations.
 . View the *Process Matrix*. If you cannot see it, click the *Expand* image button image:expand-imagebutton.png[less-than symbol in a green half-circle,1.5%,1.5%].
 . Hover over the dots to see the names of the corresponding processes.
 . Click one of the toggle-dots in the upper right half of the matrix to select it and to display only the corresponding processes.
