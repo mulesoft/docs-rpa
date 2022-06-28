@@ -22,7 +22,7 @@ As a member of a center of excellence, you approve process candidates eligible f
 
 ==== Configure
 . In the *Evaluation Criteria* view, create the additional criteria needed to evaluate your processes.
-* Then, in the *Evaluation Templates* view, compile all the criteria you need to evaluate certain process types.
+. In the *Evaluation Templates* view, compile the criteria needed to evaluate certain process types.
 
 ==== Evaluate
 * In the *Process Evaluation* view, create an evaluation, based on a template, for each of your processes.
