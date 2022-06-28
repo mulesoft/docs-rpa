@@ -25,7 +25,7 @@ As a member of a center of excellence, you approve process candidates eligible f
 . In the *Evaluation Templates* view, compile the criteria needed to evaluate certain process types.
 
 ==== Evaluate
-* In the *Process Evaluation* view, create an evaluation, based on a template, for each of your processes.
+* In the *Process Evaluation* view, create an evaluation based on a template for each of your processes.
 
 ==== Automate
 * Select the processes to be automated and delegate the implementation to a center of excellence.
