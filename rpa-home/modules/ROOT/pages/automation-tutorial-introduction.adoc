@@ -16,7 +16,7 @@ Take your first end-to-end, automation journey in MuleSoft:
 * xref:automation-tutorial-monitor.adoc[Step 8: Manage and monitor the automation]
 * xref:automation-tutorial-composer.adoc[Step 9: Integrate the automation with Composer flows]
 
-After you've experienced the end-to-end journey by creating an example automation project, use the model to plan your next automation projects.
+After you've experienced the end-to-end journey, use the model you created to plan your next automation projects.
 
 == See Also
 
