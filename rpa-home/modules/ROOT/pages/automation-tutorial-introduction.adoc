@@ -2,7 +2,7 @@
 
 MuleSoft Automation enables you to automate workflows that contain time-consuming manual tasks and integrate them with your MuleSoft Composer flows.
 
-During this tutorial you create a simple automation project that accesses the MuleSoft website and subscribes to the newsletter, and then you configure a Composer flow to trigger the automated process.
+During this tutorial, you create a simple automation project that accesses the MuleSoft website and subscribes to the newsletter, and then you configure a Composer flow to trigger the automated process.
 
 Take your first end-to-end, automation journey in MuleSoft:
 
