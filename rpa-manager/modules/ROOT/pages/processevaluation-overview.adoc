@@ -49,7 +49,7 @@ If the users of a user group cover the entire range of competencies that are req
 
 == See Also
 
-* xref:processevaluation-considering.adoc[Considering Which Processes to Automate]
-* xref:processevaluation-configuring.adoc[Configuring Process Evaluations]
-* xref:processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
-* xref:processevaluation-approving.adoc[Approving a Process for Automation]
+* xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
+* xref:processevaluation-configure.adoc[Configuring Process Evaluations]
+* xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]
+* xref:processevaluation-approve.adoc[Approving a Process for Automation]

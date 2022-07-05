@@ -46,11 +46,11 @@ After approval, the process is also displayed either in the personal backlog of 
 * xref:manager-.adoc[Assigning Special Attributes to Users]
 * xref:manager-.adoc[Creating Centers of Excellence]
 
-* xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
-* xref:processevaluation-considering.adoc[Considering Which Processes to Automate]
-* xref:processevaluation-configuring.adoc[Configuring Process Evaluations]
-* xref:processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
-//* xref:processevaluation-approving.adoc[Approving a Process for Automation]
+* xref:processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
+* xref:processevaluation-configure.adoc[Configuring Process Evaluations]
+* xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]
+//* xref:processevaluation-approve.adoc[Approving a Process for Automation]
 
 * xref:manager-.adoc[Starting Automation Projects]
 * xref:manager-.adoc[Managing Automation Projects]
