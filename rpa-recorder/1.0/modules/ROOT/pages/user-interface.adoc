@@ -1,0 +1,30 @@
+= User Interface
+
+== Home
+
+The Home section contains the main controls of the recorder. If the recorder was started from the server, the existing BPMN of the process is also shown here.
+
+//Feedback about the X1 Process Recorder can be sent to Servicetrace via the hyperlink in the bottom right corner “Send Feedback”.
+
+== Recording
+
+New recording session is started via this button, or alternatively by the hotkey F8.
+When the recording has been started the main view gets collapsed into a minified view.
+
+On the right there is a timer which indicates total recording time, but also is a visual indicator if recording is running or paused. To pause the recording click on the red circled pause icon or use the hotkey F8. To continue press the recording icon or F8 again.
+
+Recording session is finished via this button. There is no hotkey to directly stop a recording. Right after the recording has been stopped, the application triggers the [Documents](xref:) and BPMN generations.
+
+Manual screenshots can be taken via this button, or alternatively by the hotkey F9. This opens the [Define screenshot](xref:) dialog, in which the user has the option between full-screen or partial area screenshot.
+
+Variables can be entered via this button, or alternatively by the hotkey F10. This opens the [Add variable](xref:) dialog.
+
+Comments can be entered via this button, or alternatively by the hotkey F11. This opens the [Add Comment](xref:) dialog, where user can enter a comment.
+
+
+New activities can be added directly to the recorded BPMN via this button, or alternatively by the hotkey F12. This opens the [Add Activity](xref:) dialog, where user can add a new activity.
+Activities can be X1 Bot Tasks, which represents Workflows done by X1 Bots, User Tasks or External Tasks.
+Also automatic creation of new X1 Bot tasks on application change can be enabled / disabled in the [Add Activity](xref:) dialog or in [settings](xref:) of X1 Process Recorder.
+
+During recording, each mouse click is automatically recorded with coordinates and type (left click, right click, etc.). If you want to record a mouse over hover action, hold the mouse pointer over the corresponding position and press the hotkey F2.
+This records the coordinates and a mouse over hover action for this position.
