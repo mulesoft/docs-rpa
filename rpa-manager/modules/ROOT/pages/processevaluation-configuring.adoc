@@ -122,7 +122,7 @@ Evaluations of a process that use a removed template are not changed.
 * xref:manager-.adoc[Assigning Privileges to a User]
 
 * xref:manager-processevaluation-overview.adoc[Overview Process Evaluation]
-* xref:manager-processevaluation-considering.adoc[Considering Which Processes to Automate]
-//* xref:manager-processevaluation-configuring.adoc[Configuring Process Evaluations]
-* xref:manager-processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
-* xref:manager-processevaluation-approving.adoc[Approving a Process for Automation]
+* xref:processevaluation-considering.adoc[Considering Which Processes to Automate]
+//* xref:processevaluation-configuring.adoc[Configuring Process Evaluations]
+* xref:processevaluation-proposing.adoc[Proposing a Process Candidate for Automation]
+* xref:processevaluation-approving.adoc[Approving a Process for Automation]
