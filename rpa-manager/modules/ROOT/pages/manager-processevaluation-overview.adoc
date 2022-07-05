@@ -1,6 +1,6 @@
 = Process Evaluation
 
-A process evaluation comprises the benefits and feasibility of the automation of a real-life business process. It includes details on a process's costs, duration, and frequency.
+A process evaluation comprises the benefits and feasibility of the automation of a real-life business process.
 
 To propose a process candidate for automation, you evaluate the candidate based on pre-configured criteria.
 
@@ -9,7 +9,7 @@ As a project manager or a member of a center of excellence, you approve process 
 == Getting Started
 
 ==== Think
-* What processes does your company use?
+* What processes does your organization use?
 * Who is responsible for the processes?
 * Which criteria are necessary and suitable for evaluating the processes?
 * How can these criteria be described clearly and comprehensively?
@@ -17,7 +17,7 @@ As a project manager or a member of a center of excellence, you approve process 
 * Which systems and data are needed for automating the processes?
 
 ==== Prepare
-* In the *User Management* module, give your users the privileges and properties they need.
+* In the *User Management* module, give involved users the privileges and properties they need.
 * After making the necessary systems available, define the applications, credentials, and global variables needed to automate the processes in the *Process Automation* module.
 
 ==== Configure
@@ -38,6 +38,10 @@ As a project manager or a member of a center of excellence, you approve process 
 ==== Process candidate
 
 A _process candidate_ is a real-life business process to propose for automation via a process evaluation.
+
+==== Project manager
+
+A _project manager_ is responsible for the automation of a process across all automation phases.
 
 ==== Center of excellence
 

@@ -63,7 +63,7 @@ The changed form of the criterion is used in the templates as soon as the change
 
 === Remove Process Evaluation Criteria
 
-Remove criteria you don’t use any more.
+Remove criteria you no longer use.
 
 Process evaluations that have been created before are not changed and continue to contain the criterion even after it is removed.
 

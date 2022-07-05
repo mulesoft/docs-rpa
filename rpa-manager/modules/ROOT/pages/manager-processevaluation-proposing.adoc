@@ -46,7 +46,7 @@ Create a process evaluation to propose a process candidate for automation:
 Time that an employee requires to carry out the process once. In the list of evaluated processes, the value *Manual process execution time* is multiplied by the value *Frequency per month* to calculate the value *Effort/month*.
 * *Costs per process run*:
 +
-Costs for a one-time execution of the process. In the list of evaluated processes, the value *Costs per process Run* is multiplied by the value *Effort/month* to calculate the *Costs/month(€)* value.
+Costs for a one-time execution of the process. In the list of evaluated processes, the value *Costs per process Run* is multiplied by the value *Effort/month* to calculate the *Costs/month* value.
 * *Frequency per month*:
 +
 Number of times the process is carried out within a one-month period. This field can only be completed if a value exists in the *Manual process execution time* field. In the list of evaluated processes, the value *Frequency per month* is multiplied by the value *Manual process execution time* to calculate the *Effort/month* value.
