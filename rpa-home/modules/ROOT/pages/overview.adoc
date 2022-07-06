@@ -35,10 +35,10 @@ MuleSoft provides a complete solution to manage the RPA development lifecycle, w
 In this phase you use the Process Evaluation module in RPA Manager to determine if a business process qualifies to be automated by evaluating the costs savings and benefits of building the automation based on the process’s complexity, stability, and other key values.
 * Design
 +
-If the evaluation is complete and the process qualifies for automation, you can start designing the workflow of the automation that specifies the actions to perform and the conditions under which to perform those actions. RPA Manager uses the Business Process Model Notation (BPMN) to create the workflows. You can design the workflow manually by using the drag and drop tools in RPA Manager, or automatically by using the RPA Recorder.
+If the evaluation is complete and the process qualifies for automation, you can start designing the workflow of the automation that specifies the actions to perform and the conditions under which to perform those actions. RPA Manager uses the Business Process Model and Notation (BPMN) to create the workflows. You can design the workflow manually by using the drag and drop tools in RPA Manager, or automatically by using the RPA Recorder.
 * Build
 +
-In the build phase, you fill the previously-created process with specific instructions for humans and bots. With RPA Builder you can import a BPMN generated in RPA Manager, and then drag and drop operations or record key inputs to specify the action steps. When you finish building the process, you upload it to RPA Manager.
+In the build phase, you fill the previously-created process with specific instructions for humans and bots. With RPA Builder you can import a BPMN diagram generated in RPA Manager, and then drag and drop operations or record key inputs to specify the action steps. When you finish building the process, you upload it to RPA Manager.
 * Test
 +
 During the test phase, you create different testing scenarios for your automation projects to confirm that they work as expected. This phase works as the quality assurance step of the development process. In this phase, you can create real-world test scenarios using different parameters and can troubleshoot failed steps when there are errors.
@@ -73,7 +73,7 @@ MuleSoft RPA provides the following applications that enable you to manage the c
 | RPA Recorder
  | RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording action steps from your local environment.
   |
-* Build a BPMN based on user actions.
+* Build a BPMN diagram based on user actions.
 * Capture keyboard input, mouse clicks, and used applications.
 * Add comments and variables during the recording.
 * Automatically take screenshots per each mouse click.
