@@ -1,5 +1,75 @@
 = Getting to Know Bots
 
+Bots have the following properties:
+
+[cols="1,2a"]
+|===
+|*Property* |*Description*
+
+|*Bot State*
+|State of the bot:
+
+* *OK*:
++
+The bot is ready for use.
+
+* *STOPPED*:
++
+The bot has been stopped.
+
+* *OVERDUE*:
++
+The bot is no longer connecting to RPA Manager.
+
+* *UNKNOWN*:
++
+The status of the bot cannot be determined.
+
+* *RESTARTPENDING*:
++
+The bot is restarting.
+
+* *OUT OF SERVICE TIME*:
++
+The X1 Bot is outside of its assigned Service Times.
+
+|*Processing*
+|
+
+* Cross symbol:
++
+The bot is currently not running any deployed processes.
+
+* Check mark symbol:
++
+The bot is currently running deployed processes.
+
+|*Timezone*
+|The timezone the bot's installation computer uses.
+
+|===
+
+== Before You begin
+
+* At least one bot must be installed on a separate computer
+* If you want to assign secure sessions to a bot, make sure that a terminal server software is installed on the computer of the bot
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Bot Management* module and view the bots
+|*Robot Management Open*
+
+|License, edit, and remove bots
+|*Robot Management Administration*
+
+|===
+
+== Find Bots
+
+Open the *Bots* view in the *Bot Management* module to view all bots connected to RPA Manager. Newly installed bots connect automatically.
 
 == See Also
 

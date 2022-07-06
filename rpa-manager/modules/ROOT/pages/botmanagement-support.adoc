@@ -74,6 +74,7 @@ The names of the service times do not have to be unique. For example, you can as
 
 . In the *Service Times* view of the *Bot Management* module, click *Create*.
 . In the window *Create Service Time*, complete the form:
+// This section should be a partial to be reused in Process Automation - Configuration - Schedule
 * *From*:
 +
 Start of the time interval. As of this time, the scheduled action is executed.
