@@ -1,0 +1,30 @@
+= Process Recording Editor
+
+When the recorder was started from the server web client the current BPMN of the process and all new recorded BPMNs can be viewed by selecting them via drop down menu in the main window. Choose one to start with and click on the “Edit, Merge and Upload Recodings” Button to open the Process Recording Editor.
+
+== Process Recording Editor Panels
+
+After clicking the icon, a new window “Process Recording Editor” will be opened, which consists of two main panels.
+
+* Automation – This panel provides a fully integrated BPMN modeler to edit the BPMN of the recording. The previously selected Recording session will be automatically loaded into the modeler to start editing.
+* Documentation – This panel shows the recorded documentation of each activity. Select an element in the Automation panel to view its recorded documentation. The documentation of every activity can be edited by clicking “Edit”. The Documentation panel provides a fully integrated text editor. After editing one documentation click “Save” to apply the changes.
+
+== Load BPMNs for Edit and Merge
+
+Additional BPMNs can be loaded into the BPMN modeler by clicking the “Load file” button.
+This opens a file selection window to select one or more recorded BPMNs. All recordings are stored in a separate folder per process and recording date. Select the BPMNs you want to add and click “Open”.
+
+The following pop-up dialog [Fig. 12] opens to ask if you want to merge the selected BPMN into the present BPMN in the modeler or if you want to create a new BPMN with the selected one.
+Click “Yes” to merge the selected BPMN into the existing BPMN shown in the modeler. After the import you can edit and rearrange the new BPMN via drag and drop.
+
+== Saving Edited BPMNs
+
+To locally save the edited and merged BPMN click on the “Save” icon. When saving for the first time a “Save recording as” dialog opens [Fig. 13]. Here you can change the name and add a process variant tag. This helps for better identifying the newly created BMPN for later processing.
+
+Click the folder icon to choose a different saving location. Click Save to save the BPMN.
+After saving for the first time, every further click on the Save icon just saves the changes to the selected filename and destination.
+To open the “Save recording as” dialog again, click the [::image] icon to choose a new name, variant tag and saving destination.
+
+== Upload BPMN Back to the Server
+
+When you are finished merging and editing the BPMN and documentation you can upload the new process BMPN by clicking the “Upload to server” [::image]icon. You will get a confirmation when the upload is completed. After this you can close the Process Recording Editor and the Process Recorder via the [::image] icons in the top right corners.
