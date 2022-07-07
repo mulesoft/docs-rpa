@@ -1,5 +1,37 @@
 = Managing Bots
 
+Bots can be licensed to use secure sessions. Some properties, like name, service times, and phase permissions can be edited. Deinstalled bots can be removed from RPA Manager.
+
+== Before You begin
+
+* At least one bot must be installed on a separate computer
+* If you want to assign secure sessions to a bot, make sure that a terminal server software is installed on the computer of the bot
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Bot Management* module and view the bots
+|*Robot Management Open*
+
+|License, edit, and remove bots
+|*Robot Management Administration*
+
+|===
+
+== License Bots for Secure Sessions
+
+If bots should run processes in a hidden session, assign them secure session licenses.
+
+The number of secure sessions that can be assigned to the bot is depends on the hardware of the computer on which the bot is inst
+
+. In the *Bots* view of the *Bot Management* module, click *Secure Session Assignment*.
+. Set the number of sessions the bot may use and click *Save*.
+
+== Edit a bot
+
+== Remove a bot
 
 == See Also
 
