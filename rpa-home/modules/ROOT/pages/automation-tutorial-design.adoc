@@ -1,0 +1,53 @@
+= Step 4. Design the BPMN Diagram for the Automation
+
+After creating a new automation project, you start designing the BPMN diagram for the process to automate. You can create the diagram manually or by using the RPA Recorder, which records your actions, creates each corresponding step in the diagram, and generates the action steps based on your mouse and keyboard interactions.
+
+== Step 4.1: Open the Project for Editing and Start RPA Recorder
+
+Follow these steps to edit your process BPMN diagram using RPA Recorder:
+
+. In RPA Manager, click the *My RPA* module.
+. Click *My Backlog*.
+. Search for the *MuleSoft newsletter sign-up* project in the process list and click the *Open process* (image:open-process.png[The open process icon,1.5%,1.5%]) button.
+. In the *Automation* panel, click the *Record BPMN* (image:record-process.png[The record process icon,1.5%,1.5%]) button.
++
+If you see a pop-up window asking for permissions, select the checkbox to allow RPA Manager to open RPA Recorder and click *Open*.
+. Complete your RPA login data and click *Login*.
+
+== Step 4.2: Record Activity Steps with RPA Recorder
+
+After you login to RPA Recorder, you start the activity recording process where you alternate between adding activity steps in RPA Recorder and performing the actual actions in your computer that you want to record and include in the BPMN diagram. This procedure continues until you perform the last action and finish the recording.
+
+To record actions with RPA Recorder and build the BPMN diagram, follow these steps:
+
+. In RPA Recorder, click the *Start Recording* (image:start-recording.png[The start recording icon,1.5%,1.5%]) button.
+.. Write *Open browser* in the activity name field and click *Add*
+.. Open a web browser of your choice
+. In the RPA Recorder panel, Click the *Add activity* (image:add-activity.png[The add activity icon,1.5%,1.5%]) button.
+.. Write *Open newsletter sign-up page* in the activity name field and click *Add*
+.. In the web browser, navigate to the +https://www.mulesoft.com/sign-up+ URL.
+. In the RPA Recorder panel, Click the *Add activity* (image:add-activity.png[The add activity icon,1.5%,1.5%]) button.
+.. Write *Sign-up for newsletter* in the activity name field and click *Add*
+.. Provide an email address of your choice to sign up for the newsletter and click the accept (>) button.
+. In the RPA Recorder panel, Click the *Stop recording* (image:stop-recording.png[The stop recording icon,1.5%,1.5%]) button.
+. Click the *Edit, Merge and Upload Recordings* (image:edit.png["The edit, merge and upload icon",1.5%,1.5%]) button.
+. In the *Automation* panel, click the *Save* (image:save.png[The save icon,1.5%,1.5%]) button.
+. Write *MuleSoft Newsletter* in the *Process name* field and click *Save*.
+. Click the *Upload to server* (image:upload-to-server.png[The upload to server icon,1.5%,1.5%]) button.
+. Click *OK*.
+. Close the *RPA Recording Editor* window.
+. Close the *RPA Recorder* window.
+. Return to RPA Manager and refresh the browser page.
+. Click *Publish*.
+. Click the confirmation checkbox and then click *Release to Build*.
+
+== What’s Next
+
+You created a BPMN diagram for your automation project and published it, now it is time to move to the build phase where you can edit the diagram and specify the actions to execute for each action step.
+
+Continue with: xref:automation-tutorial-build.adoc[Step 5: Build the automation from the BPMN diagram]
+
+== See Also
+
+//Link to RPA Recorder docs
+//Link to RPA Manager docs about manual BPMN design
