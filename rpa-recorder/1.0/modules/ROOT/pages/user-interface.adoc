@@ -4,7 +4,7 @@
 
 The Home section contains the main controls of the recorder. If the recorder was started from the server, the existing BPMN of the process is also shown here.
 
-//Feedback about the X1 Process Recorder can be sent to Servicetrace via the hyperlink in the bottom right corner “Send Feedback”.
+//Feedback about the RPA Recorder can be sent to MuleSoft via the hyperlink in the bottom right corner “Send Feedback”.
 
 == Recording
 
@@ -22,8 +22,8 @@ Variables can be entered via this button, or alternatively by the hotkey F10. Th
 Comments can be entered via this button, or alternatively by the hotkey F11. This opens the [Add Comment](xref:) dialog, where user can enter a comment.
 
 New activities can be added directly to the recorded BPMN via this button, or alternatively by the hotkey F12. This opens the [Add Activity](xref:) dialog, where user can add a new activity.
-Activities can be X1 Bot Tasks, which represents Workflows done by X1 Bots, User Tasks or External Tasks.
-Also automatic creation of new X1 Bot tasks on application change can be enabled / disabled in the [Add Activity](xref:) dialog or in [settings](xref:) of X1 Process Recorder.
+Activities can be RPA Bot tasks, which represents Workflows done by X1 Bots, User Tasks or External Tasks.
+Also automatic creation of new RPA Bot tasks on application change can be enabled / disabled in the [Add Activity](xref:) dialog or in [settings](xref:) of RPA Recorder.
 
 During recording, each mouse click is automatically recorded with coordinates and type (left click, right click, etc.). If you want to record a mouse over hover action, hold the mouse pointer over the corresponding position and press the hotkey F2.
 This records the coordinates and a mouse over hover action for this position.
@@ -40,7 +40,7 @@ The timer delay mechanism will take effect regardless of the chosen screenshot m
 
 == Add Variable
 
-The add variable pop-up window, opened with F10 while recording, allows the user to add variable information as part of the recording documentation, which will be useful during implementation of the process automation in X1 Design Studio [Fig. 5.1].
+The add variable pop-up window, opened with F10 while recording, allows the user to add variable information as part of the recording documentation, which will be useful during implementation of the process automation in RPA Builder [Fig. 5.1].
 
 The possible variable types are:
 * Alphanumeric
@@ -60,11 +60,11 @@ The add activity pop-up window, opened with F12 while recording or by clicking o
 The user also has the possibility to enable or disable the function of automatic creation of Activities on application changes.
 
 Possible activity types are:
-* X1 Bot Task
+* RPA Bot Task
 * User Task
 * External Task
 
-For User Task or External Task no documentation will be recorded. The user is required to enter a description instead. To continue recording add a X1 Bot Task.
+For User Task or External Task no documentation will be recorded. The user is required to enter a description instead. To continue recording add a RPA Bot Task.
 
 [NOTE]
 The recording must be paused to add an activity, or change creation mode of the activities. If the pop-up was opened via the respective hotkey, while recording was running, it will be automatically paused.
@@ -79,12 +79,12 @@ In the settings section the user can configure the recorder application and set 
 
 === Settings Section
 
-The settings are used to configure the X1 Process Recorder application [Fig. 8.1].
+The settings are used to configure the RPA Recorder application [Fig. 8.1].
 
 * Directory – Local directory folder where the documents (BPMN, PDF and XES) and application logs should be stored.
 * Create Process Documentation (PDF) – Option to select whether a process documentation file should be generated as PDF, when recording session has been stopped.
 * Create Process Mining files (XES) - Option to select whether a XES process file should be generated, when recording session has been stopped.
-* Automatic generation of activities – Option to select whether a X1 Bot Task activity should be genereated automatically when a change in applications is done. E.g. change from Outlook to Excel while recording will create a new Activity for Excel wherein click path documentation will be stored.
+* Automatic generation of activities – Option to select whether a RPA Bot Task activity should be genereated automatically when a change in applications is done. E.g. change from Outlook to Excel while recording will create a new Activity for Excel wherein click path documentation will be stored.
 * Take screenshot with every mouse click – Optional to choose whether to automatically take a screenshot on every mouse click or not.
 ** Area around the mouse click – Screenshot taken will be a cropped area around the mouse click, based on the Area size in % (expressed in screen resolution percentage).
     +
@@ -98,13 +98,13 @@ The settings are used to configure the X1 Process Recorder application [Fig. 8.1
 Number is expressed in seconds and can range from 2 to 10 seconds.
 * Verbosity level – Option to show detailed Process Information in Documentation. If 'Low' the information will not be shown in Documentation.
 * Licence type – Shows information about the type of License that is being used. Option to enter another license key by clicking on icon next to license information.
-* Automatically check for updates on startup – Automatically checks for newer versions of X1 Process Recorder when application is started. By clicking the icon a manual check for a new version can be done.
+* Automatically check for updates on startup – Automatically checks for newer versions of RPA Recorder when application is started. By clicking the icon a manual check for a new version can be done.
 
 === Language Section
 
-In the language section the user can set the language of the X1 Process Recorder.
+In the language section the user can set the language of the RPA Recorder.
 
-If the recorder is started from the X1 Server web client, the language is taken from the user profile.
+If the recorder is started from the RPA Manager web client, the language is taken from the user profile.
 
 If the recorder is started as standalone, the first time the language is English, but after a language change, next time it is started as standalone it will have the last saved language.
 
@@ -115,10 +115,10 @@ Hotkeys cannot be changed as of now.
 
 == About Screen
 
-The about screen contains general information about the X1 Process Recorder such as:
+The about screen contains general information about the RPA Recorder such as:
 
 * The Version number
 * Copyright information
 * Licensing information
-* Link to Servicetrace website
+* Link to MuleSoft website
 * Link to Support / Contact information

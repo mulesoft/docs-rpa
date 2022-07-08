@@ -1,6 +1,6 @@
 = Documents
 
-The X1 Process Recorder creates three document types at the end of a recording session:
+The RPA Recorder creates three document types at the end of a recording session:
 
 * BPMN
 * PDF
@@ -12,7 +12,7 @@ Recordings will be grouped by date and tagged with the timestamp of the recordin
 == BPMN
 
 The BPMN is a graphical representation of a business process model and is a crucial element of an automation project in the [XceleratorOne](xref) RPA platform.
-It also includes the recorded documentation, which can be viewed in X1 Server web client.
+It also includes the recorded documentation, which can be viewed in RPA Manager.
 
 The BPMN can also be opened with any workflow and decision automation platform which supports [BPMN v2.0](xref) standard, specified by the [Object Management Group](xref).
 
@@ -41,4 +41,4 @@ XES is the standard format for process mining. The recorder generates an XES fil
 A log file is created in the “Logs” subdirectory (found within the user defined directory in the [settings section](xref)). If the process recorder directory does not exist, it will be automatically created together with a log file.
 The log file contains valuable information about recording, but also warnings and errors that may have happened.
 
-As with every software, unexpected behavior may arise, in these cases the user can provide feedback to Servicetrace by sending over the log file.
+As with every software, unexpected behavior may arise, in these cases the user can provide feedback to MuleSoft by sending over the log file.

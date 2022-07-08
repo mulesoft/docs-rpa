@@ -1,17 +1,17 @@
 = Start and Installation
 
-== Using X1 Server Web Client
+== Using RPA Manager
 
-To start the X1 Process Recorder click onRecord BPMN in the design phase of a process in X1 Server. The X1 process recorder must be installed locally.
-If you have not yet installed the X1 Process Recorder, you can download the setup directly by clicking on the message.
+To start the RPA Recorder click onRecord BPMN in the design phase of a process in RPA Manager. The RPA Recorder must be installed locally.
+If you have not yet installed the RPA Recorder, you can download the setup directly by clicking on the message.
 
 [NOTE]
-It is possible that the setup download is prevented by a pop-up blocker. Please make sure that pop-ups are allowed from the X1 Server website and then retry the download.
+It is possible that the setup download is prevented by a pop-up blocker. Please make sure that pop-ups are allowed from RPA Manager and then retry the download.
 
 == Login Screen
 
-When the recorder is started via Record BPMN in X1 Server web client, the user is asked to open the process recorder.
+When the recorder is started via Record BPMN in RPA Manager, the user is asked to open the process recorder.
 
 Afterwards the login screen appears, and the user must provide the login credentials in order to be authenticated and to proceed further.
 
-To logout and close the X1 Process Recorder the user can click the Logout button.
+To logout and close the RPA Recorder the user can click the Logout button.
