@@ -1,2 +1,2 @@
-.xref:overview.adoc[RPA Bot]
-* xref:overview.adoc[RPA Bot Overview]
+.xref:index.adoc[RPA Bot]
+* xref:index.adoc[RPA Bot Overview]
