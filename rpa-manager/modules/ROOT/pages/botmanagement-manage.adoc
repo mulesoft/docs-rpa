@@ -24,21 +24,31 @@ Bots can be licensed to use secure sessions. Some properties, like name, service
 
 If bots should run processes in a hidden session, assign them secure session licenses.
 
-The number of secure sessions that can be assigned to the bot is depends on the hardware of the computer on which the bot is inst
+The number of secure sessions that can be assigned to the bot depends on the hardware of the computer on which the bot is installed. Please refer to the system and hardware requirements topic to assess the maximum number of secure sessions for the bot.
 
 . In the *Bots* view of the *Bot Management* module, click *Secure Session Assignment*.
-. Set the number of sessions the bot may use and click *Save*.
+. Set the number of sessions the bot may use.
+. Click *Save*.
 
 == Edit a bot
 
+Edit a bot to change its properties. Hostname, IP address, version, and timezone are fixed values taken from the computer the bot is installed on.
 
-
-
+. In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the row of the bot you want to edit.
+. Edit the form <*bot name*>
+. Click *Save*
 
 == Remove a bot
 
+After deinstallation, a bot is still shown in the *Bots* view. You need to manually remove the bot from the view.
+
+. In the *Bots* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the row of the bot you want to remove.
+. Confirm the removal.
+
+
 == See Also
 
+* xref:.adoc[System and Hardware Requirements]
 * xref:botmanagement-overview.adoc[Bot Management]
 * xref::botmanagement-support.adoc[Supporting Bots]
 * xref::botmanagement-know.adoc[Getting to Know Bots]

@@ -88,7 +88,6 @@ The Bot has been configured for a desktop session. It cannot use secure sessions
 == Before You begin
 
 * At least one bot must be installed on a separate computer
-* If you want to assign secure sessions to a bot, make sure that a terminal server software is installed on the computer of the bot
 * Obtain the needed privileges:
 +
 [cols="1,2"]
