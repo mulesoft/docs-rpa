@@ -2,7 +2,7 @@
 
 If a bot has status *OK*, but seems not to work properly, download its log files or restart the bot.
 
-If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on the computer the bot is installed and troubleshoot it there.
+If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on to the computer the bot is installed on and needs to troubleshoot it there.
 
 == Download the log files of a bot
 
@@ -10,7 +10,7 @@ Download the zipped bot log files to check for error or warning messages or to v
 
 The package contains the folders `RobotTrace` and `RpaBotLogfiles`. The trace folder contains the log files of the secure sessions, while the log files folder contains the installation and configuration data, as well as the execution log of the bot.
 
-This option is only available when the Bot has the status OK.
+This option is only available when the bot has the status OK.
 
 An IT administrator can configure the content of the package in the RPA Bot Configurator on the computer where the bot is installed.
 
@@ -19,7 +19,7 @@ An IT administrator can configure the content of the package in the RPA Bot Conf
 
 == Restart a bot
 
-Use this function to restart a bot instead of using the Task Manager on the computer where it is installed, to ensure that all the processes the bot is currently executing are completed properly before the bot is stopped.
+Use this function to restart a bot to ensure that all the processes the bot is currently executing are completed properly before the bot is stopped.
 
 Before a process is started, the bot has to check a variety of conditions. For example, whether it is within its assigned service time and whether all the applications that the process needs for execution are available.
 
@@ -27,7 +27,7 @@ The bot divides these tasks, which are independent from one another, into thread
 
 In rare cases, an individual thread could have an error due to unforeseen circumstances, but cannot report it back to the bot. In this case, the Bot remains in wait status and cannot execute any more processes.
 
-You can tell this has occurred when the bot has the status OK and a deployed process is within an effective runtime interval, but no process has been started for several minutes.
+The latter might be the case when the bot has the status OK and a deployed process is within an effective runtime interval, but no process has been started for several minutes.
 
 When you restart the bot, the bot and all of its threads are initially stopped after the pending tasks have been completed. The subsequent restart is then performed in a clean environment, which means the problem should no longer occur.
 

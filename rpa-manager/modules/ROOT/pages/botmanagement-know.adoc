@@ -31,7 +31,7 @@ The bot is restarting.
 
 * *OUT OF SERVICE TIME*:
 +
-The X1 Bot is outside of its assigned Service Times.
+The bot is outside of its assigned service times.
 
 |*Processing*
 |
@@ -78,10 +78,10 @@ Maximum number of secure sessions the bot may use at the same time. This number 
 
 * Shield symbol:
 +
-The Bot has been configured for a desktop session. It cannot use secure sessions.
+The bot has been configured for a desktop session. It cannot use secure sessions.
 
 |*Deployed sessions*
-|Number of sessions that have been deployed to the Bot for executing processes. The number of deployed sessions can exceed the number of licensed sessions. This may cause individual process executions to be skipped.
+|Number of sessions that have been deployed to the bot for executing processes. The number of deployed sessions can exceed the number of licensed sessions. This may cause individual process executions to be skipped.
 
 |===
 
