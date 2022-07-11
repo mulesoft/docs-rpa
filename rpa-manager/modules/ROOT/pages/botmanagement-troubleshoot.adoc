@@ -1,4 +1,40 @@
-= Troubleshooting Your Bots
+= Troubleshooting Bots
+
+If a bot has status *OK*, but seems not to work properly, download its log files or restart the bot.
+
+If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on the computer the bot is installed and troubleshoot it there.
+
+== Download the log files of a bot
+
+Download the zipped bot log files to check for error or warning messages or to view screenshots.
+
+The package contains the folders `RobotTrace` and `RpaBotLogfiles`. The trace folder contains the log files of the secure sessions, while the log files folder contains the installation and configuration data, as well as the execution log of the bot.
+
+This option is only available when the Bot has the status OK.
+
+An IT administrator can configure the content of the package in the RPA Bot Configurator on the computer where the bot is installed.
+
+. In the *Bots* view of the *Bot Management* module, click the *Download Logfiles* icon in the table row of the bot whose log files you want to read.
+. Extract the contents and view the relevant files.
+
+== Restart a bot
+
+Use this function to restart a bot instead of using the Task Manager on the computer where it is installed, to ensure that all the processes the bot is currently executing are completed properly before the bot is stopped.
+
+Before a process is started, the bot has to check a variety of conditions. For example, whether it is within its assigned service time and whether all the applications that the process needs for execution are available.
+
+The bot divides these tasks, which are independent from one another, into threads, which can run simultaneously (asynchronously). The bot then waits until all the tasks are complete and then either continues with starting the process or checks the conditions again.
+
+In rare cases, an individual thread could have an error due to unforeseen circumstances, but cannot report it back to the bot. In this case, the Bot remains in wait status and cannot execute any more processes.
+
+You can tell this has occurred when the bot has the status OK and a deployed process is within an effective runtime interval, but no process has been started for several minutes.
+
+When you restart the bot, the bot and all of its threads are initially stopped after the pending tasks have been completed. The subsequent restart is then performed in a clean environment, which means the problem should no longer occur.
+
+Restarting a bot will only work if that bot has the status OK. Otherwise it is placed in the task list and is executed as soon as the bot is OK again.
+
+. In the *Bots* view of the *Bot Management* module, click the *Restart* icon in the table row of the bot you want to restart.
+. Wait a few seconds and refresh the browser to see the effect.
 
 
 == See Also
