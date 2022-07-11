@@ -1,2 +1,2 @@
-.xref:overview.adoc[RPA]
-* xref:overview.adoc[RPA Overview]
+.xref:index.adoc[RPA]
+* xref:index.adoc[RPA Overview]
