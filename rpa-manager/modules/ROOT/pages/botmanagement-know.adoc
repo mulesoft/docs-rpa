@@ -1,6 +1,6 @@
 = Getting to Know Bots
 
-Bots have the following properties:
+Besides a name, a description, a version, and a host, bots have the following properties:
 
 [cols="1,2a"]
 |===
@@ -44,8 +44,44 @@ The bot is currently not running any deployed processes.
 +
 The bot is currently running deployed processes.
 
+|*Test*
+|
+
+* Cross symbol:
++
+The bot should not be used in the test phase.
+
+* Check mark symbol:
++
+The bot can be used in the test phase.
+
+|*Production*
+|
+
+* Cross symbol:
++
+The bot should not be used in the production phase.
+
+* Check mark symbol:
++
+The bot can be used in the production phase.
+
 |*Timezone*
-|The timezone the bot's installation computer uses.
+|The timezone the bot's installation computer uses. The bot will interpret all times where no time zone is assigned to be set in its own time zone.
+
+|*Licensed sessions*
+|
+
+* Shield with a check mark symbol and a number:
++
+Maximum number of secure sessions the bot may use at the same time. This number depends on the hardware the bot is installed on.
+
+* Shield symbol:
++
+The Bot has been configured for a desktop session. It cannot use secure sessions.
+
+|*Deployed sessions*
+|Number of sessions that have been deployed to the Bot for executing processes. The number of deployed sessions can exceed the number of licensed sessions. This may cause individual process executions to be skipped.
 
 |===
 
@@ -61,9 +97,6 @@ The bot is currently running deployed processes.
 
 |Open the *Bot Management* module and view the bots
 |*Robot Management Open*
-
-|License, edit, and remove bots
-|*Robot Management Administration*
 
 |===
 
