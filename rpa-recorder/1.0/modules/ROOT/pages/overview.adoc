@@ -1,10 +1,17 @@
 = RPA Recorder Overview
 
-The RPA Recorder is used to record a business process.
+RPA Recorder is MuleSoft’s tool for recording a business process.
 
-All actions like mouse clicks, keyboard inputs and used applications will be recorded. Additionally, comments and variable information can be added during the recording.
-Screenshots are taken automatically per mouse click, but screenshots can also be taken manually at any time.
+RPA Recorder allows you to:
 
-The RPA Recorder can be started directly from the RPA Manager in the design phase. The recorded BPMN process model is then uploaded with the documentation after the recording is finished.
-In addition to the BPMN uploaded to the server, a PDF containing this information will also be created locally. The RPA Recorder can also be used standalone without server connection, in which case the BPMN is also stored locally.
-An XES file is also created for further processing in process mining tools.
+* Record actions like mouse clicks, keyboard inputs and used applications.
+* Add comments and variable information during the recording.
+* Take screenshots automatically per mouse click, or manually at any time.
+
+You can start RPA Recorder either directly from the RPA Manager in the design phase, or as a standalone tool without server connection.
+
+If started from the RPA Manager, RPA Recorder automatically uploads the recorded BPMN process model with the documentation into the server, and creates a local PDF with the same information after the recording is finished.
+
+Is used without server connection, RPA Recorder creates the BPMN and stores it locally.
+
+In either case, RPA Recorder also creates a XES file for further processing in process mining tools.
