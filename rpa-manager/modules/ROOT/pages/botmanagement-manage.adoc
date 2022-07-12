@@ -60,7 +60,6 @@ If you accidentally remove a bot that is still being executed, it will reappear 
 . In the *Bots* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the row of the bot you want to remove.
 . Confirm the removal.
 
-
 == See Also
 
 * xref:.adoc[System and Hardware Requirements]
