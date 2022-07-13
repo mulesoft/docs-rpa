@@ -1,18 +1,24 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Step 1. Prerequisites for Creating an Automation
 
 Before you begin your automation journey, verify that you have the required tools and access:
 
-* Username and password to access RPA Manager. If you don't have access yet, ask an administrator from your organization to provide you access credentials.
-* Username and password to access MuleSoft Composer. If you don't have access yet, ask an administrator from your organization to provide you access credentials.
-* Download RPA Builder, the application that enables you to build the automations by specifying action steps in the process.
+* Username and password to access RPA Manager
++
+If you don't have access yet, ask an administrator from your organization to provide you access credentials.
+* Username and password to access MuleSoft Composer
++
+If you don't have access yet, ask an administrator from your organization to provide you access credentials.
+* Download RPA Builder, the application that enables you to build the automations by specifying activity steps in the process.
 +
 //TODO: Add link to download RPA Builder
 link:------["Download RPA Builder^", role="button-primary"]
-* Download RPA Recorder, the tool that assists you during the creation of the BPMN in RPA Manager by capturing and recording input from your local environment.
+* Download RPA Recorder, the tool that assists you during the creation of the BPMN diagram in RPA Manager by capturing and recording input from your local environment.
 +
 //TODO: Add link to download RPA Recorder
 link:------["Download RPA Recorder^", role="button-primary"]
-* Download RPA Bot, the tool that provides the robots that run in your on=premise environment and execute the assigned automations.
+* Download RPA Bot, the software robot that runs in your on-premise environment and executes the assigned automations.
 +
 //TODO: Add link to download RPA Bot
 link:------["Download RPA Bot^", role="button-primary"]
