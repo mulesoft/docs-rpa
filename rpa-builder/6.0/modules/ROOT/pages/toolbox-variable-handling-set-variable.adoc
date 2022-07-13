@@ -44,7 +44,7 @@ _Mappings Editor_ (in this case, proceed as described in the
 step-by-step instructions below).
 * *New value* Enter the new value for the variable to be modified. You
 can also insert variables from the workflow. To do so, click the
-image:media\image2.PNG[image,width=17,height=24] button and select one
+image:media\image2.png[image,width=17,height=24] button and select one
 of the available variables.
 
 Variables from the _Test Master Data_ and the _BasePath_ *cannot* be
