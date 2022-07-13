@@ -1,0 +1,109 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== File Controlled Loop
+
+This _Flow Control Element_ reads data from a CSV file. The data is then
+made available as variables (see Section link:#UsingVariables[Using
+Variables]), whereby each column represents one variable. During
+execution, the _File controlled Loop_ will iterate over each row of data
+and run through all its contents for each row individually.
+
+The file you use must be a valid, well-formatted CSV file that uses
+semicolons as a delimiter. This means that all rows need to have the
+same number of columns, separated by semicolons. If the file differs
+from this format, an error will occur. Also, the first line is
+considered the "header line". These headers will be used as variable
+names and will not be used as actual variable values.
+
+=== Properties
+
+* *External File*
+** *Import Filename* The full path of the file that is imported
+** *Relative to 3rd Party Folder* Decides whether or not the file should
+be loaded from the 3rd party folder
+** *Shuffle* Shuffles the data rows during execution
+* *Miscellaneous*
+** *Iteration Count* If _Limit iterations_ is selected, this limits the
+maximum iteration count used by the loop. Only applicable when the file
+is imported at runtime.
+** *Limit iterations* Decides whether iteration count is limited or not.
+Only applicable when the file is imported at runtime.
+** *Separate File Path for Execution* When _Use separate File Path for
+Execution_ is selected the file will be read from this path instead of
+the path given in _Import Filename_. Only applicable when the file is
+imported at runtime.
+** *Use separate File Path for Execution* Select this setting to load
+the file from a different path during execution. Useful if you want to
+read the file from a network location. Only applicable when the file is
+imported at runtime.
+** *Use type string only* Converts *all* data to type String during
+runtime. In the wizard you can convert the data per column.
+
+=== Inbound Variables
+
+The Action Step File Controlled Loop has no properties.
+
+=== Outbound Variables
+
+Within the _Action Steps File Controlled Loop_ the respective column
+contents are returned as variables.
+
+The names of the variables follow the pattern [Action Step name].[column
+name].
+
+=== Wizard
+
+When you first open the wizard, you need to decide whether to import the
+file now or during execution – the wizard will have a different
+appearance depending on this decision.
+
+The main difference between the two modes is that when you import the
+file at design time you can use its variables in timers and the data is
+fixed. If you import the file during execution, you can read the file
+from anywhere – including network locations. This allows you to alter
+the data without touching the _Workflow_ at all (however you cannot use
+the variables within timer names).
+
+You can switch between the two modes, although you will lose all
+previously defined variable mappings when you switch. When importing the
+file during execution, you may also use variables within the column
+filters; however any filters that contain variables will be deleted if
+you switch mode.
+
+=== Importing a File at Design Time
+
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=535,height=385]
+
+If you select _Read file at design time_, the wizard looks like it does
+above.
+
+First, you need to import a CSV file by clicking _Import File_
+image:media\image2.png[image,width=104,height=24]. _X1 Design Studio_
+will then read and analyze your file and display a content preview in
+the lower part of the wizard. You can then apply filters to each column
+by clicking image:media\image3.png[image,width=22,height=22].
+
+image:media\image4.png[image,width=255,height=110]
+
+When you enter text in the _Filter_ field, all rows that do not contain
+that text will be filtered out and only rows that match will be used.
+
+image:media\image5.png[image,width=136,height=89]
+
+With the help of the drop-down menu below the respective column name you
+can change the type of the column content to type string and back to the
+original type.
+
+=== Importing a File during Execution
+
+image:media\image6.png[image,width=416,height=300]
+
+When you wish to import a file during execution, the wizard looks
+slightly different. First, instead of an _Import File_ button, you have
+a normal edit field where you can use environment variables and relative
+paths. You can also define a different path for execution if the file
+you want to use is in a different location on your executing system
+compared to the computer you design the Workflow on. You can also limit
+the maximum number of rows used and use inline variables within column
+filters.

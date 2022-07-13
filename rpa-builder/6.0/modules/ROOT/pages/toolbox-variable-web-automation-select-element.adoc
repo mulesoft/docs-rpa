@@ -1,0 +1,60 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Select Element
+
+Use this _Web Automation_ object to select an option from a list box or
+a drop-down box.
+
+=== Properties
+
+*Select Index* The index of the option to be selected. Only applicable
+if _Selection Method_ is _Index_.
+
+*Select Text* The text of the option to be selected. Only applicable if
+_Selection Method_ is _Text_.
+
+*Select Value* The value of the option to be selected. Only applicable
+if _Selection Method_ is _Value_.
+
+*Selection Method* Decide which method should be used to identify the
+option which should be selected from the list or drop-down box. This can
+either be _Index_, _Text_, or _Value_.
+
+=== Inbound Variables
+
+link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+
+link:#WA_CommonProperties_WindowTitle[*Window Title*]
+
+=== Outbound Variables
+
+The Action Step _Select Element_ possesses no outbound variables.
+
+=== Wizard
+
+When you have to choose something on a website or in a web application,
+the available options are often offered in form of a list box or
+drop-down box. Use _Select Element_ to make your choice from such a box.
+
+image:media\image1.png[File:Drop-down list
+example.PNG,width=118,height=79]
+
+If the element you want to select has an underlying hyperlink, then it
+is not treated as an option in a list or drop-down box. Use _Click
+Element_ in such cases instead.
+
+When you use the _Browser Wizard_ to select the drop-down box that you
+want to choose an entry from, all current options will be displayed in
+the _Available Options_ field. Once you have selected one of the
+options, you can choose the method used to identify it. Once you have
+selected one of the options, you can choose the method used to identify
+it. An entry is selected as standard by the _Value_. On an average
+website, this should usually be the value that has potentially changed
+the least. The _Text_ for an entry is the text that you, as user, read
+in the picklist. Product names or the like are easy to select in text
+form. The _Index_ for an element may be imprecise, particularly on
+dynamic websites. If possible, therefore, _Index_ should only be used if
+the element that is selected is of secondary importance.
+
+When using _Internet Explorer_, selecting an option by index may take a
+very long time!

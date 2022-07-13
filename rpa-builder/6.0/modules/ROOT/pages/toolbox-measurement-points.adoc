@@ -1,0 +1,8 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Measurement Points
+
+Measurement Points are currently not supported by X1 Server 2021.1. This
+means that it is currently not possible to evaluate the data on the
+server. You can still use the Measurement Points in the X1 Design Studio
+because they are still displayed in the _Workflow Run Results_.
