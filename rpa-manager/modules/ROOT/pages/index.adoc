@@ -1,0 +1,20 @@
+= RPA Manager Overview
+
+RPA Manager is the cloud-based control plane for the automations that is integrated into Anypoint Platform.
+
+RPA Manager enables you to do the following:
+
+* Manage user access and permissions.
+* Evaluate the viability and financial benefits of implementing an automation.
+* Design and document RPA processes.
+* Test and deploy automations.
+* Manage and monitor deployed automations.
+
+//== Get started
+
+// A table with roles and starting modules for these roles?
+
+//== See Also
+
+// Links to all RPA Manager modules
+// Links to all RPA Products
