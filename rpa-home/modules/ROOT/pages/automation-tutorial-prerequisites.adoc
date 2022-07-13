@@ -10,15 +10,15 @@ If you don't have access yet, ask an administrator from your organization to pro
 * Username and password to access MuleSoft Composer
 +
 If you don't have access yet, ask an administrator from your organization to provide you access credentials.
-* Download RPA Builder, the application that enables you to build the automations by specifying activity steps in the process.
+* Download and install RPA Builder, the application that enables you to build the automations by specifying activity steps in the process.
 +
 //TODO: Add link to download RPA Builder
 link:------["Download RPA Builder^", role="button-primary"]
-* Download RPA Recorder, the tool that assists you during the creation of the BPMN diagram in RPA Manager by capturing and recording input from your local environment.
+* Download and install RPA Recorder, the tool that assists you during the creation of the BPMN diagram in RPA Manager by capturing and recording input from your local environment.
 +
 //TODO: Add link to download RPA Recorder
 link:------["Download RPA Recorder^", role="button-primary"]
-* Download RPA Bot, the software robot that runs in your on-premise environment and executes the assigned automations.
+* Download and install RPA Bot, the software robot that runs in your on-premise environment and executes the assigned automations.
 +
 //TODO: Add link to download RPA Bot
 link:------["Download RPA Bot^", role="button-primary"]
@@ -36,3 +36,4 @@ Continue with: xref:automation-tutorial-evaluate.adoc[Step 2: Evaluate a process
 
 // link to user management article in RPA Manager
 // link to hardware and software requirements
+// link to installation guides?
