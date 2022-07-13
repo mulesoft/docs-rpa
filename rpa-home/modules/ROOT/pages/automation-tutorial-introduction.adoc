@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Tutorial: Build an Automation from Start to Finish
 
 MuleSoft Automation enables you to automate workflows that contain time-consuming manual tasks and integrate them with your MuleSoft Composer flows.
