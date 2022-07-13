@@ -37,7 +37,7 @@ the available options are often offered in form of a list box or
 drop-down box. Use _Select Element_ to make your choice from such a box.
 
 image:media\image1.png[File:Drop-down list
-example.PNG,width=118,height=79]
+example.png,width=118,height=79]
 
 If the element you want to select has an underlying hyperlink, then it
 is not treated as an option in a list or drop-down box. Use _Click
