@@ -92,7 +92,7 @@ read. If the option *Read to end file* is selected, the PDF is read to
 the end.
 ____
 
-image:media\image2.PNG[image,width=328,height=96]
+image:media\image2.png[image,width=328,height=96]
 
 * {blank}
 +
@@ -104,7 +104,7 @@ ____
 For this, you must select a PDF file under File Settings. Then click on
 *Define Area* and the PDF is opened in a separate window.
 
-image:media\image3.PNG[image,width=341,height=84]
+image:media\image3.png[image,width=341,height=84]
 
 Here you can select the required area using the mouse.
 

@@ -101,7 +101,7 @@ specify the Host and Base Path. With the *Url Extension*, you uniquely
 identify the resource. You can either just type in the URL or define it
 via the pin variable image:media\image2.png[image,width=16,height=20].
 
-image:media\image3.PNG[image,width=604,height=25]
+image:media\image3.png[image,width=604,height=25]
 
 In the *Parameters* area, you provide the required information to the
 end point. There are various options for this, you can enter the
@@ -118,7 +118,7 @@ https://tools.ietf.org/html/rfc7231[RFC 7231]).
 In addition, in the Parameters area, on the left of the screen, you can
 find the mapped variables and their *Test Values.* The mapping is
 carried out via the Pin variable
-image:media\image4.PNG[image,width=15,height=21]. With the Test Values,
+image:media\image4.png[image,width=15,height=21]. With the Test Values,
 you can check if the REST Call runs successfully. To do this, having
 entered all the data, click on *_Send_* at the bottom right of the
 wizard.
@@ -126,7 +126,7 @@ wizard.
 The (real) values of the mapped variables are not effective until the
 production run of the Workflow.
 
-image:media\image5.PNG[image,width=315,height=87]
+image:media\image5.png[image,width=315,height=87]
 
 To insert the variables with the test values, click
 
