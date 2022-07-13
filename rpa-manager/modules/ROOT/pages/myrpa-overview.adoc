@@ -1,8 +1,8 @@
-= My RPA - Overview
+= My RPA Overview
 
 In your personal module *My RPA*, you see an overview of your processes and your currently pending tasks. You can view process details, start automations and complete tasks.
 
-As a member of a center of excellence, in the *Team Backlog* view, you can assume responsibility for a previously evaluated process. As project manager, you can start the automation of your processes in the *My Backlog* view.
+As a member of a center of excellence, in the *Team Backlog* view, you can assume responsibility for a previously evaluated process. As a project manager, you can start the automation of processes in the *My Backlog* view.
 
 The *My Processes* view lists all processes for which you belong to the process team.
 
