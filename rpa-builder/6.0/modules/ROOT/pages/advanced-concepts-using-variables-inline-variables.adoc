@@ -1,0 +1,25 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Inline Variables
+
+Inline variables allow you to use any variable directly in a text field
+in combination with other text and variables. This option is available
+in most text field properties, but not in all. Names, for example,
+cannot use inline variables. To use an inline variable, simply reference
+it as follows:
+
+*+#var#+=$Variable_Name;*
+
+For example, to use the variable "Hostname", you can enter
+_++#var#++_=$Hostname; in any text field to insert the variable. To insert
+variables created in other _Action Steps_, you will typically find a
+drop-down list.
+
+
+Another notation for inline variables is to enclose them in curly
+brackets like this: _\{$Variable_Name}_
+
+You can also use the +#var#+ notation with all _AutoIT_/_ServiceTracer®
+Client_ _3_ functions, as documented in the additional _Help_ files
+
+Example usage: *+#var#+=TimerInit();*

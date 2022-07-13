@@ -1,0 +1,249 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Application Overview
+
+You can start _X1 Design Studio_ by clicking the desktop icon or from
+the Windows start menu.
+
+The _X1 Design Studio_ consists of the main areas menu bar, Business
+Process Modeler, Workbench, left window pane, right window pane and
+Workflow Run Results:
+
+image::getting-started-installation-and-first-use-application-overview-image1.png[Overview window panes]
+
+In addition to the Workflow Run Result, you will also find the Process
+Status in the lower area.
+
+image::getting-started-installation-and-first-use-application-overview-image2.png[Process Status pane]
+
+Most visual elements in the _X1 Design Studio_ have tooltips. If you
+ever want to know what a button or setting does, simply hover your mouse
+pointer over it for a few seconds.
+
+=== Menu Bar
+
+In the menu bar, you will find icons for saving, uploading, and
+validating projects. The other icons are shortcuts to various views in
+the _X1 Design Studio_.
+
+=== Tools
+
+*Open X1 Design Studio Log* This menu item opens the X1 Design Studio
+log file in your default text editor. The log is a text file containing
+a chronological list of all relevant events since X1 Design Studio was
+last launched. It also contains information about the executing system.
+
+*Open Regex Tester* Use this dialog to create and test regular
+expressions. You can also access the _Regex Tester_ directly from
+various _Action Steps_. The section on Using Regular Expressions includes a
+more detailed description of this dialog and of regular expressions in
+general.
+
+*Templates Manager* This menu item opens the _Templates Manager_. This
+provides an overview of all the templates which have been created in the
+X1 Design Studio already. Clicking the template name on the left-hand
+side of the window opens a preview of that template’s content. Use the
+_Delete_ button to delete individual templates. You can find out how to
+create and edit templates in the section entitled Save selected Workflow Objects as
+template.
+
+image::getting-started-installation-and-first-use-application-overview-image3.png[Example Templates]
+
+=== Options
+
+The menu _Options_ contains four sub-menus: _General_, _Autosave,_
+_Repository_ and _Visibility_. If you click on one of the menu items,
+the wizard automatically opens with the selected tab.
+
+image::getting-started-installation-and-first-use-application-overview-image4.png[Option General]
+
+*General timeout default for new projects*
+
+If you want to use the same timeout for every _Action Step_ containing
+this property, you can enter the value here.
+
+A timeout is the time span an _Action Step_ waits before reporting an
+error in case of failure.
+
+This value is only used for initialization when creating a new project
+and can be replaced within each _Action Step_ by a value that is valid
+only for that _Action Step_.
+
+If you want to change the default timeout value for a whole Workflow
+which has already been created, please use the _Default Timeout [sec]_
+setting in the _Workflow Properties_.
+
+*Use All Users as project home location*
+
+If this option is set, all projects as well as most common
+link:#options[options] and _Page Setup…_ und _Print Template Settings_
+for the link:#_The__Workflow[Workflow Run Protocol] and
+link:#_Print[Printing] of a Workflow are saved into the folder
+C:\Users\Public\Documents\ServiceTracerCommon\X1. Otherwise these
+settings are saved to the folder \Documents
+C:\Users\[UserName.Domain]\Documents\ Servicetrace\X1 of the respective
+user.
+
+*Open last project on start* Selecting this option means that the last
+project that you opened will be reloaded and displayed when you launch
+the X1 Design Studio.
+
+*Browser Options*
+
+Please run the X1 Design Studio with *administrator rights* for
+selecting the version of the Internet Explorer to be used in the
+_Browser Wizard_ of _Action Step Web Session_ contained in the plug-in
+_Web Automation_ and *restart* it afterwards.
+
+This setting affects *all* X1 Design Studio users.
+
+image::getting-started-installation-and-first-use-application-overview-image5.png[Option Autosave]
+
+*Autosave on script run*
+
+If this option is selected, the Workflow will be saved automatically
+before each local run.
+
+*Common Autosave*
+
+If this option is activated, projects will be saved automatically at
+intervals of a few minutes.
+
+It will be always saved the entire Business Process, including all
+Workflows.
+
+image::getting-started-installation-and-first-use-application-overview-image6.png[Option Repository]
+
+You can find a detailed description of the _Repository Settings_ in the
+chapter link:#_Configuring_the_WorkflowEditor[Configuring the X1 Design
+Studio].
+
+image::getting-started-installation-and-first-use-application-overview-image7.png[Option Visibility]
+
+*Show Action Step descriptions* (default: off) This option allows you to
+show and hide the descriptions of individual Workflow elements on the
+Workbench in the X1 Design Studio. This does not affect the visibility
+of the individual element descriptions for the Properties and tool tips,
+which are always visible. This option can also be modified via the _Show
+Action Step descriptions_ button or the CTRL+D shortcut. It is saved on
+an individual user basis.
+
+*Show Run Protocol after Workflow execution* If this option is set, the
+_Protocol Preview_ of the link:#_The__Workflow[_Workflow Run Protocols_]
+will be opened directly after the local run of the Workflow in the X1
+Design Studio.
+
+*Show system parameters dialog*
+
+If this option is set, the system parameters will be shown whenever a
+new Activity Workflow is created. These can also be shown via the menu
+_View_ -> _Show System Parameters_.
+
+*Plug-ins* All plug-ins will have been installed automatically. For
+clarity, you can individually disable the display of every single module
+in the _Toolbox_ here.
+
+=== Left Window Pane
+
+In the window pane on the left-hand side, you will find five tabs
+containing the views _Toolbox_, _Project,_ Activity Library,
+_Repository_ and _Outline_.
+
+If any of these views are not visible, you can always show them again by
+using the View menu from the menu bar.
+
+The *_Toolbox_* contains a list of all elements, such as _Action Steps_
+and _Control Blocks_, which can be inserted in a _Workflow_.
+
+Elements are organized in categories, so that you can find fitting ones
+easily. By clicking on the star symbol next to an element, you can add
+it to the category _Favorites_.
+
+Elements can be inserted into the Workflow using Drag&Drop.
+
+You can find a detailed description for each element in chapter
+link:#TheToolbox[The Toolbox].
+
+If you input text in the field _Filter_ the content of the _Toolbox_
+will be reduced successively to elements, the names of which contain
+this text.
+
+The filter is case-insensitive.
+
+
+The *_Project_* tab contains a list of all loaded Workflows of a project. If you click on one of the Workflows, it is also displayed in the Workbench. This way
+you can easily switch back and forth between Workflows
+
+Right-clicking a Workflow opens the context menu providing additional
+functions:
+
+* *Edit Workflow Properties* Opens the Properties pane of the selected
+Workflow
+* *Clear Run Results marking* Clears the markings of warnings and errors
+in the Workbench view of the selected project. These markings are shown
+after a failed local Workflow run or after the import of an analysis
+package.
+* *Open Workflow Location* Opens the folder containing the selected
+Workflow.
+
+If you are using the Repository for storing your Business Process, the tab *_Repository Explorer_* shows a list of all available Business Process. These can be
+downloaded for editing.
+
+Chapter Repository Explorer gives a detailed description of all functions.
+
+If you use the *_Activity Library,_* you can view and delete all available
+Activity Templates here.
+
+For a more detailed description of how to use the Activity Library, see
+the chapter Activity Library.
+
+The *_Workflow Outline_* is a shortened view of the open Workflow.
+
+You can double-click an element to mark it in the Workbench pane.
+
+Right-clicking an element opens a context menu:
+
+* *Run Wizard* Opens the Wizard of the selected element
+
+* *Delete* Deletes the selected element
+* *Expand all* Expands the view to show all elements, in the _Document
+Outline_ as well as on the Workbench
+* *Collapse all* Collapses the view to show only higher-level elements,
+in the _Document Outline_ as well as on the Workbench
+
+=== Workflow Run Results
+
+The _Workflow Run Results_ section shows detailed information on the
+last Activity Workflow that was run.
+
+=== Project Status
+
+The Project Status section provides detailed information about the
+validation and script generation of the project.
+
+=== Properties Panel
+
+The Properties Panel is located on the right side of the BP Modeler.
+Here you can see, among other things, the respective Workflow ID or
+Activity ID and change the name of the Activity. In addition, there are
+numerous possibilities to edit technical BPMN properties in particular.
+
+For more information about the Properties Panel, see the following
+links, for example:
+
+https://blog.camunda.com/post/2017/04/adding-custom-elements-to-bpmn-properties-panel/[https://blog.camunda.com/post/2017/04/adding-custom-elements-to-bpmn-properties-panel/^]
+
+https://github.com/bpmn-io/bpmn-js-properties-panel[https://github.com/bpmn-io/bpmn-js-properties-panel^]
+
+=== Workflow Properties Grid
+
+The _Workflow_ _Properties_ grid is located on the right-hand side of
+the screen. In the initial view it is set to _auto-hide_, but it will
+expand as soon as you have opened or created a _Workflow_. It displays
+all properties of the current selection within the _Workbench_.
+
+If you click on an element, a description will be shown in the lower
+part of the pane.
+
+If you enter text in the field _Filter_, the displayed properties are
+successively reduced to those containing the entered text.

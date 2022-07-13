@@ -1,0 +1,35 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Confirm Alert Box
+
+This _Web Automation_ object allows you to confirm or dismiss
+_JavaScript_ Alert Boxes, and enter text in _JavaScript_ input boxes.
+
+=== Properties
+
+[#AS_ConfirmAlertBox_P_ActionOnMessagebox .anchor]####**Action on
+Messagebox** Decide whether to accept a message box (equivalent to
+clicking _OK_) or dismiss it (equivalent to clicking _Cancel_). If you
+are handling an input box (a message box with a text input field) and
+want to enter text, set this to _Enter Text_.
+
+*Text to send* Text that should be entered. Only applicable for message
+boxes with a text input field when _Action on Messagebox_ is set to
+_Enter Text_.
+
+=== Inbound Variables
+
+link:#AS_ConfirmAlertBox_P_ActionOnMessagebox[*Action on Messagebox*]
+
+=== Outbound Variables
+
+The Action Step _Confirm Alert Box_ possesses no outbound variables.
+
+=== Wizard
+
+_JavaScript_ pop-ups are a bit difficult to identify. They look slightly
+different in each browser, but they always look a bit like system
+dialogs. Here are some example message boxes from _Internet Explorer_:
+
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=202,height=137]

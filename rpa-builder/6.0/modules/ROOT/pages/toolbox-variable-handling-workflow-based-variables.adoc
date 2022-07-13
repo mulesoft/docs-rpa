@@ -1,0 +1,156 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Workflow Based Variables
+
+The _Workflow Based Variables_ Action Step contains variables which can
+be used throughout the entire Workflow and which can be modified.
+
+The variables are typed. They may be structured as text
+(_alphanumeric_), whole numbers (_integers_) or floats
+(_floating_-_point numbers_), Boolean values (_Boolean_) and lists
+(_array_).
+
+Use the link:#AS_SetVariable[Set Variable] and the
+link:#_Set_Variable[Set Array Variable] Action Steps to overwrite the
+initial variable values with new values at a later point in the
+Workflow.
+
+The _Workflow Based Variables_ Action Step can only appear once in a
+Workflow and must be positioned in the _Workflow Initialization_
+section.
+
+=== Properties
+
+This Action Step contains no special properties other than the
+link:#CommonProperties[common] ones.
+
+=== Inbound Variables
+
+This Action Step possesses no inbound variables.
+
+=== Outbound Variables
+
+All _Workflow Based Variables_ are outbound variables.
+
+They are specified in the format Workflow Based Variables.[name of
+variables].
+
+In the _Variable Mappings_ for an Action Step only those _Workflow Based
+Variables_ of the appropriate type are shown.
+
+The symbols next to the variable names indicate the type.
+
+Action Steps which work with strings will show _Workflow Based
+Variables_ of all types except _Array_.
+
+image:media\image1.png[Ein Bild, das Tisch enthält. Automatisch
+generierte Beschreibung,width=271,height=132]
+
+Action Steps which work with arrays internally can also use alphanumeric
+variables.
+
+That is why such Action Steps will show array and alphanumeric _Workflow
+Based Variables_ to choose from.
+
+image:media\image2.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=265,height=103]
+
+(It is possible to populate the elements of an array via a string if
+this string contains comma separated values. For more information,
+please refer to the section entitled link:#_Set_Array_Variable[_Set
+Array Variable_].)
+
+=== Wizard
+
+Click on the image:media\image3.png[image,width=128,height=19] button to
+add a new variable.
+
+image:media\image4.png[Ein Bild, das Tisch enthält. Automatisch
+generierte Beschreibung,width=144,height=149]
+
+Then select the type of variable from the menu.
+
+image:media\image5.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=604,height=328]
+
+You can then enter the name, description, and value of the variables
+directly into the relevant fields.
+
+The variable names can be comprised of a combination of letters,
+numbers, and underscores.
+
+Special characters and spaces are not permitted.
+
+The variable name must be unique. It must not be used multiple times for
+different variables.
+
+The floating point variable will display up to 14 decimal digits. When
+entering more than 14 decimal digits the value will be rounded off to
+the nearest 14th place.
+
+The elements for array variables must be separated by commas.
+
+The values for array variables are initially saved as strings. That is
+why, when saving the Action Step, all array elements which are not yet
+presented in double quotes will automatically be placed in double
+quotes.
+
+image:media\image6.jpeg[image,width=604,height=89]
+
+If you want to include an element containing one or more commas in your
+list, you must place this element in double quotes before saving it.
+
+E.g. “4,2” or “many commas: ,,,, , , ”
+
+Text elements are permitted to contain single quotes:
+
+E.g. “This ‘text’ contains single quotation marks.”
+
+Text elements which need to contain double quotes must include another
+double quotation mark before each double quotation mark and the whole
+element also needs to be placed inside double quotes.
+
+E.g. “This “”text”” contains double quotation marks.”
+
+=== Example
+
+Car servicing is to be processed automatically at a workshop. For this
+purpose the variables required in the Workflow are to be created as
+Workflow Based Variables. For testing purposes, they may be
+pre-populated with meaningful values:
+
+image:media\image7.png[image,width=755,height=424]
+
+If all Transactions are active, the Workflow Based Variables in
+Transaction 120 are populated with data from the application using the
+_Set Variable_ Action Step.
+
+In the example, however, only Transactions 130 and above are intended to
+be tested.
+
+Because the variables are not generated first in Transaction 120 and
+instead are generally available as Workflow Based Variables,
+Transactions 100 – 120 can simply be deactivated and the other parts of
+the Workflow work with the initial values.
+
+=== Variable or Workflow Based Variables?
+
+The _Workflow Based Variables_ provide a clear overview and a place for
+all the variables used within a Workflow.
+
+They are already standardized and, by contrast to the variables in the
+_Variable_ Action Step, do not need to be converted to an appropriate
+type for use in a different Action Step.
+
+Because they are not first generated within a transaction, any parts of
+the Workflow can be _disabled_ or _enabled_ without breaking the mapping
+between variables.
+
+The possibility of initially populating the _Workflow Based Variables_
+means that different scenarios can be effected deliberately in the
+process. This makes it easier to test individual parts of a large
+Workflow.
+
+The _Variable_ Action Step is intended to be used if information is
+being stored that is only required within a single Transaction and is
+then not subsequently needed.

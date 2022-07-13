@@ -1,0 +1,34 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Close Web Session
+
+The Action Step _Close Web Session_ enables you to close a web session.
+
+To do so, the Action Step must be mapped to an existing web session ID,
+to enable unique identification of the web session to be closed.
+
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=290,height=125]
+
+The Action Step _Close Web Session_ can only be placed outside of a web
+session.
+
+=== Properties
+
+*Force error state if session could not be closed* If you activate this
+option, an error state is forced if the web session could not be opened
+or has already been closed. If this option is not set (default), the
+error is simply ignored.
+
+=== Inbound Variables
+
+*Web Session ID* The web session ID identifies the web session to be
+closed.
+
+link:#AS_CloseWebSession_P_ForceErrorState[*Force error state if session
+could not be closed*]
+
+=== Outbound Variables
+
+*Web Session closed* Indicates whether or not the web session was
+closed.

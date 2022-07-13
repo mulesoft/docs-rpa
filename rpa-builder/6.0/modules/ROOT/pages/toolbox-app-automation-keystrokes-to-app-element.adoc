@@ -1,0 +1,47 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Keystrokes to App Element
+
+The _Keystrokes to App Element_ emulates keyboard inputs that can be
+sent to an App Element. In contrast to “Set Text To App Element”,
+control keys such as “Alt”, “Ctrl”, and “Shift” can also be sent to the
+element.
+
+All the keyboard inputs are played back in sequence, which
+means if the sequence contains control keys that change the element in
+an app (such as “Tab”), the subsequent keystrokes might be sent to the
+element of the new focus.
+
+=== Properties
+
+*Keystroke Settings*
+
+*Keystrokes* that are sent to the element. The input text is interpreted
+as AutoIT language. The specific AutoIT buttons can be inserted using
+“Insert Special Character” and “Insert Macro”. Like in the _Set Text To
+App Element_ Action Step, you can use “Insert Script Variable” and
+“Insert Environment Variable” to insert placeholders that are replaced
+at runtime. The behavior here is identical to that in the _Keystrokes_
+Action Step.
+
+=== Inbound Variables
+
+*Keystrokes*
+
+*XPath to Element*
+
+*Window Title*
+
+=== Outbound Variables
+
+The _Keystrokes to App Element_ Action Step does not have any outbound
+variables.
+
+=== Wizard
+
+See Properties and the chapter Common Properties.
+
+You can find further information on environment variables (Insert
+Environment Variable) and script variables (Insert Script Variable) in
+the Chapter entitled Insert Special
+Character / Macro / Script Variable / Environment Variable and Settings.

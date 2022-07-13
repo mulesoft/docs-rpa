@@ -1,0 +1,68 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Get Element Text
+
+The _Get Element Text_ Action Step reads the _innerText_ of an element.
+It can then be transferred to other Action Steps by means of Pin
+Variables.
+
+This is how you can copy an e-mail address or other text from a web
+page, for example, to another application.
+
+=== Properties
+
+See link:#CommonProperties_WebAutomation[Common Properties].
+
+=== Inbound Variables
+
+link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+
+link:#WA_CommonProperties_WindowTitle[*Window Title*]
+
+=== Outbound Variables
+
+*Element Text* (string, default: blank) The _innerText_ of the selected
+element. If the element has no _innerText_ a blank string will be
+returned.
+
+=== Wizard
+
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=429,height=263]
+
+First click on Open Browser Wizard.
+
+image:media\image2.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=193,height=220]
+
+Select the desired element by holding the mouse cursor over it. When a
+blue border appears to frame the desired element, press F2.
+
+image:media\image3.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=327,height=396]
+
+The properties of the selected element will be shown in the right-hand
+side of the pane. In addition to the mandatory XPath you can also select
+other attributes here which should be used to define the correct
+element.
+
+Confirm your selection by clicking on the check mark in the top
+right-hand corner of the browser wizard.
+
+=== Example
+
+image:media\image4.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=604,height=141]
+
+In the example, _Get Element Text_ extracts the i__nnerText__ from the
+selected element on the _Servicetrace^®^_ website and transfers it to a
+text editor.
+
+image:media\image5.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=604,height=185]
+
+As you can see, the HTML tags are removed and only the text as legible
+on the website is returned in ASCII format.
+
+Line breaks, paragraphs, tabs and blank lines are retained, but other
+text formatting such as the font, font size, and font color are not.

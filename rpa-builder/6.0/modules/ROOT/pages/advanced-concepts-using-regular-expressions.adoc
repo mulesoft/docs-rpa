@@ -1,0 +1,8 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Using Regular Expressions
+
+Throughout this user guide, and within X1 Design Studio, you will see
+references to the term "Regular Expression" or "RegEx". Regular
+expressions are patterns that provide a means to specify and recognize
+texts.

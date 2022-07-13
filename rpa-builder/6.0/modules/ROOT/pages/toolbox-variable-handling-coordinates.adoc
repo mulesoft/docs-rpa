@@ -1,0 +1,41 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Coordinates
+
+The _Coordinates_ Action Step can be used to either specify a _Variable_
+of type _Coordinates_ in the _Workflow_ or to modify existing
+coordinates.
+
+The X and Y coordinates used in the _Action Step_ can either be defined
+individually as constant values or linked as a coordinate pair to
+another variable of type _Coordinates_. The _Coordinates_ Action Step
+can also be used to define offsets to both the X and Y coordinates. The
+X and Y offsets are added to the X and Y coordinates respectively. The
+final result of applying offsets to the coordinates is provided as an
+output variable from the _Coordinates_ Action Step.
+
+=== Properties
+
+*Common*
+
+* [#AS_Coordinate_P_CoordinateAsPoint .anchor]####**Coordinate as
+point** (default: 0.0) X and Y coordinates
+* [#AS_Coordinate_P_XOffset .anchor]####**X Offset** (default: 0) This
+value specifies the X value (horizontal) to be added to the X
+coordinate.
+* [#AS_Coordinate_P_YOffset .anchor]####**Y Offset** (default: This
+value specifies the X value (horizontal) to be added to the X
+coordinate.
+
+=== Inbound Variables
+
+link:#AS_Coordinate_P_CoordinateAsPoint[*Coordinate*]
+
+link:#AS_Coordinate_P_XOffset[*X Offset*]
+
+link:#AS_Coordinate_P_YOffset[*Y Offset*]
+
+=== Outbound Variables
+
+*Modified Coordinate* Coordinate pair calculated at _Workflow_ runtime
+from (X-coordinate + X-offset) and (Y-coordinate + Y-offset).
