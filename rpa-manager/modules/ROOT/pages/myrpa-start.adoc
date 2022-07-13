@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Starting Automation of Approved Processes
 
 The *Team Backlog* view contains a list of all previously evaluated processes for which you can claim or reject responsibility as project manager.

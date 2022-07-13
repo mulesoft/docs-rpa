@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = My RPA Overview
 
 In your personal module *My RPA*, you see an overview of your processes and your currently pending tasks. You can view process details, start automations and complete tasks.
