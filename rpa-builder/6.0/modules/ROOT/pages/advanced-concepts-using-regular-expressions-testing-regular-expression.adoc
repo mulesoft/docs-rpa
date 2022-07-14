@@ -1,0 +1,23 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Testing Regular Expression
+
+Open the _Regex Tester_ dialog using the "Tools -> Open Regex Tester"
+menu option or by clicking the icon
+image::advanced-concepts-using-regular-expressions-testing-regular-expression-image1.png[Regex Tester icon]. Use this dialog to
+create and test regular expressions. You can also access the _Regex
+Tester_ directly from various _Action Steps_. The regular expressions
+and, if present, text patterns associated with the _Action Step_ can
+then be transferred directly to the _Regex Tester_.
+
+image::advanced-concepts-using-regular-expressions-testing-regular-expression-image2.png[Regex Tester wizard]
+
+* *Regex* Enter the regular expression that you want to test. Commonly
+used regular expressions can be selected from the *Commonly used Regex*
+table by double clicking on the desired entry.
+* *Test Pattern* Enter a piece of text that you wish to use for testing
+the regular expression. Click the Execute Test button to run the
+test. Matches will be highlighted in the *Test Pattern* field.
+* *Commonly used Regex* This table contains commonly used regular
+expressions that can be used in the *Regex* field. Double click on the
+desired entry to transfer it to the _Regex_ field.

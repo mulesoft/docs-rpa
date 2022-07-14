@@ -1,0 +1,29 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== System Validation
+
+_System Validation_ compares various parameters (see Section
+link:#CheckingSystemParameters[Checking System Parameters]) between the
+system the _Workflow_ was created on and the system where it is
+executed. It does not have any additional properties on the _Properties
+grid_.
+
+=== Properties
+
+_Action Step_ _System Validation_ has no further properties__.__
+
+=== Variables
+
+_Action Step_ _System Validation_ possesses no variables.
+
+=== Wizard
+
+The wizard shows a list of all system parameters that are available to
+be checked; these can all be selected separately. The _Compare Value_
+column shows the current value that will be checked against. Click
+_Reset_ to set the value to the system's current value. Finally, you can
+choose what happens when two values differs. You can either select to
+display an _Info_, _Warning,_ or _Error_ message, or set an actual
+_Error State_ that causes the _Workflow_ to fail and throw a warning or
+error. For example, you could prevent a system with a different desktop
+resolution from executing the _Workflow_.

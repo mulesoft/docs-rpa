@@ -1,0 +1,91 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Website Load Time
+
+The _Website Load Time_ Action Step measures the time taken to load a
+website and the websites that it references. Referenced websites are
+websites that are embedded within a website and loaded automatically at
+the same time, e.g. visitor counters, analysis pages, Web stores,
+integrated payment systems, etc.
+
+The _Website Load Time_ Action Step logs all data measured in a special
+file, identified by a .har extension (har = Http ARchive). This file is
+located in Windows under "My Documents -> NameOfWorkflowStudioProject ->
+Robot -> trace -> http@www-website-xx.har“. The name of the .har file is
+derived from the website tested (e.g. http@www-wikipedia-de.har). The
+file is overwritten every time the _Workflow_ is executed.
+
+You can display the .har file using a suitable viewer. The viewer will
+show the load times of all website components in a waterfall diagram.
+There are many free viewers for .har files. The following list is not
+comprehensive:
+
+* http://www.softwareishard.com/har/viewer/
+* http://phantomjs.org/network-monitoring.html
+* http://yslow.org/
+
+Show the content of the waterfall file using a viewer, e.g.
+softwareishard, as described below:
+
+[arabic]
+. Open the .har file in an ASCII editor, e.g. Notepad++.
+. Select all using <CTRL> + <a> and copy the entire content of the file
+to the clipboard using <CTRL> + <c>.
+. Start the viewer, e.g. softwareishard, in a browser.
+. Paste the content of the clipboard into the input field on the website
+using <CTRL> + <v>
+. Click the <Preview> button.
+. The next page of softwareishard, which is on the "Preview" tab, shows
+the waterfall diagram of your measurement. The components of the website
+of interest are shown on the left of the page and the load times are
+shown on the right. The following example shows the waterfall diagram
+for the website www.wikipedia.de.
+
+image:media\image1.png[image,width=605,height=160]
+
+Error message: FAIL to load the address. The error message "FAIL to load
+the address" will be recorded in the .har log file if the _Website Load
+Time_ Action Step was unable to load the specified URL.
+
+It is also possible to perform further processing on the measured values
+for _Website Load Time_ using the _Website Load Time.Result_ variable.
+This variable has the same content as the .har file after the _Action
+Step_ has been executed.
+
+=== Properties
+
+*Load Time Settings*
+
+* [#AS_WebsiteLoadTime_P_WebsiteURL .anchor]####**WebsiteUrl** Enter the
+URL to be tested, e.g. www.wikipedia.de.
+
+Other Properties that are the same in all Action Steps in the _Web
+Automation_ are described in the section on
+link:#CommonProperties_WebAutomation[Common Properties.] For reasons of
+clarity they are not shown here.
+
+=== Inbound Variables
+
+link:#AS_WebsiteLoadTime_P_WebsiteURL[*Website Url*]
+
+=== Outbound Variables
+
+*Result* The _Website Load Time.Result_ variable provides the results of
+the load time measurement in the form of a log (the log has the same
+content as the .har file).
+
+*IsOnline* The _Website Load Time.IsOnline_ variable records whether the
+website tested was available or not (True/False).
+
+=== Wizard
+
+* *WebsiteUrl* Enter the URL to be tested, e.g. www.wikipedia.de. The
+URL can also be constructed by inserting variables from the _Workflow_.
+To do this, click on the
+image:media\image2.png[image,width=17,height=24] pin and select the
+available variables from the _Test Master Data_ area or use the
+_BasePath_ variable.
+
+Error message: FAIL to load the address. The error message "FAIL to load
+the address" will be recorded in the .har log file if the _Website Load
+Time_ Action Step was unable to load the specified URL.

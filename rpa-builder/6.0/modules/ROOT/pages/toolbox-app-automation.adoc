@@ -1,0 +1,137 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== App Automation
+
+App Automation lets you address elements directly through their XPaths.
+The appearance and coordinates are not relevant, in contrast to the
+Mouse Action and Pattern Search Action Steps. The advantage of this
+approach is that App Automation works even if the position or design of
+the target application changes on the desktop.
+
+In addition, App Automation makes it easier to create workflows, by
+recording clicks and keyboard inputs to generate Action Steps
+automatically.
+
+=== Generating Action Steps
+
+There are two ways to generate Action Steps automatically.
+
+* {blank}
++
+*X1 Server*: During the Design phase on the X1 Server, you have the
+option to record a process with a sequence of clicks and keyboard
+inputs. You can download the necessary Servicetrace Process Recorder
+directly there (for more information, see the X1 server online manual).
+Once you have finished the recording, you can upload it to the server,
+together with the generated process, and move the process to the Build
+phase. You can then download and open the process in the Design Studio.
+All the recorded information for generating the Action Steps
+automatically is now available.
+
+* {blank}
++
+*X1 Design Studio*: If the _App Session_ does not contain any elements
+yet, you can use the wizard to start a local recording, which you can
+then use to generate App Automation Action Steps automatically. After
+you select _Start Capturing_ in the wizard of the App Session and
+completed the recording, you can then click _OK & generate_. The Action
+Steps are then generated automatically.
+
+
+=== Example
+
+In this example, Microsoft Excel is called, a new Excel workbook is
+opened, and text is inserted in the first row. In the following, you
+will see the corresponding clicks and keyboard inputs, together with an
+example of a filled wizard for a Click App Element Action Step.
+
+image::toolbox-app-automation-image1.png[Example]
+
+You can now edit the generated workflow, for example, adding additional
+Action Steps or renaming existing ones.
+
+The red highlighting in the wizard preview immediately shows you where
+the click was executed.
+
+=== Supported applicationsSupported applications
+
+The following types of applications are supported:
+
+* {blank}
++
+
+Win32
+
+* {blank}
++
+
+Windows Forms
+
+* {blank}
++
+
+WPF
+
+* {blank}
++
+
+UWP
+
+
+=== Common Properties (App Automation)
+
+The _App Automation_ Action Steps also possess the _common properties_
+of the other Action Steps, as described in the chapter
+Common Properties.
+
+They also have the following properties:
+
+*Identify Element*
+
+The wizard contains the _Identify Element_ button in all Action Steps of
+the App Automation. This button sets the wizard to _a Capture Mode,_
+which lets you hover the mouse over a certain element and capture it by
+pressing F2.
+
+As soon as you hover the mouse over an element and press F2, the
+following happens:
+
+* {blank}
++
+
+A frame is drawn around the element.
+
+* {blank}
++
+
+The Element XPath and Window Title are filled with the values of the
+selected element.
+
+* {blank}
++
+
+The preview shows a screen shot with the selected element. The element
+is marked with red crosshairs.
+
+* {blank}
++
+
+If the selected element does not match the Action Step, a warning is
+displayed below the preview. This is the case, for example, if an
+element that does not support text entry is selected in a _Set Text to
+App Element_ Action Step. In this case, the frame is displayed in red
+instead of green.
+
+
+*Element _XPath_* XPath is short for “XML path language” and is used to
+identify and address elements. The XPath is read using the
+_Identify Element_, as described above, or can be entered manually. 
+
+*Window Title* The name of the window to use.
+
+*Use Regular Expression (Regex)* If this option is selected, the Window
+Title is interpreted as a regex expression.
+
+*Preview* You see a preview of the selected element here. It only
+appears if the element was selected using Identify Element or the if
+Action Step was generated automatically.

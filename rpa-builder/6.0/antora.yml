@@ -1,0 +1,6 @@
+name: rpa-builder
+title: RPA Builder
+version: '6.0'
+display_version: '6.0'
+nav:
+- modules/ROOT/nav.adoc

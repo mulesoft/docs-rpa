@@ -1,0 +1,62 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Flow Control
+
+=== Break Loop
+
+There are cases where you need to exit the _Loop Control Block_ before
+all iterations have been executed. _Break Loop_ should be used for this
+purpose.
+
+Using _Break Loop_ only makes sense in combination with a _Managed
+Control Block_, because otherwise it would be executed during the first
+iteration of a _Loop Control Block_, thus defeating the object of having
+a loop.
+
+==== Properties
+
+* *Exit Mode* Determines how the loop reacts _after_ using a _Break
+Loop_, i.e. with or without error
+
+==== Wizard
+
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=391,height=123]
+
+==== Example
+
+The following is an example of how to implement a retry loop into your
+_Workflow_ – in this case trying to reload a webpage until the content
+can be loaded successfully:
+
+image:media\image2.png[image,width=337,height=293]
+
+In the example, a _Managed Block_ is put into the _Loop_. Within the
+_DoAction_ section, the actual reload is triggered by sending an *_F5_*
+keystroke to _Internet Explorer_. We then use an _Image search_ to check
+if the content of the website was loaded.
+
+If this was successful, next the _Break Loop_ element in the _DoAction_
+section is executed with its _Exit Mode_ set to _Exit Loop without
+error_. This will force the _Workflow_ to leave the _Managed Block_ and
+its surrounding _Loop_ immediately without entering the error state. The
+_ServiceTracer® Client_ will then continue to process the rest of the
+_Workflow_.
+
+If the image could not be found within the given timeout period, the
+execution of the _DoAction_ section will be aborted, the _Break Loop_
+element will not be executed, and the _Workflow_ will enter the
+_OnError_ section of the _Managed Block_. Successfully executing an
+_OnError_ section of a _Managed Block_ resets the error state. By
+executing _Sleep,_ we do exactly that so at the end of the _Managed
+Block_ everything is OK and the next iteration of the _Loop_ will be
+executed.
+
+What if the desired content could not be loaded in any of the
+iterations? The end of the _Managed Block_ will still be OK, but the
+loop itself is not exited with the _Break Loop_ element. If we set the
+_At end of loop_ property of the _Loop_ to _Exit with error_, the
+_Workflow_ would enter the error state if the _Retry Loop_ was not able
+to find the desired content and reaches the end of the _Loop_ after
+executing the last iteration. Thus the normal error handling would be
+triggered after an unsuccessful _Retry Loop_.

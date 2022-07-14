@@ -1,0 +1,29 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Control
+
+=== Clear Screen
+
+This _Action Step_ will try to clear any open window from the screen.
+First, it will try to stop these processes: _SAPlogon.exe_, _cmd.exe_,
+and _SAPfewgsrv.exe_. Next, it will try to kill all windows that have
+the state _Visible_ (this may also include minimized windows!), except
+for any _ServiceTracer®_-related windows and the _System Shell_, which
+includes the _Desktop_ and the _Task Bar_.
+
+It is good practice to use a _Clear screen_ at the beginning of each
+_Workflow_. This will provide a clean state to run the _Workflow_ in
+without disturbances and thus improve _Workflow_ reliability.
+
+In draft mode, the Clear Screen Action Step is disabled. No windows are
+closed. After testing the Workflow using the Run Workflowt (F7) button,
+a yellow warning appears on the Workbench.
+
+==== Properties
+
+* *Action in case of failure* Define, what should be done if _Clear
+screen_ failed. Available actions are: _Make screenshot_, _Make
+screenshot and write log_, _Make reboot,_ and _Minimize windows_
+* *Action in case of success* Define what _ServiceTracer® Client_ should
+do if _Clear screen_ was successful. Available follow-up actions are:
+_Do nothing_ or _Write log_

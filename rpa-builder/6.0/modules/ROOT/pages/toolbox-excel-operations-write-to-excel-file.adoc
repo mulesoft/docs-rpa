@@ -1,0 +1,104 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Write to Excel File
+
+Use the _Write to Excel File_ Action Step if you want to write the
+content you have read from an Excel file using the _Read from Excel
+File_ Action Step either to the same or a different destination file.
+
+The _Write to Excel File_ Action Step can only be used inside an Excel
+Session. Specify the destination file in the
+link:#AS_ExcelSession[_Excel Session_].
+
+=== Properties
+
+*Excel Operation Settings*
+
+* *Add Sheet name if doesn't exist* If you select the checkbox here, the
+sheet will be created new if it does not already exist.
+* [#AS_WriteToExcel_P_Column .anchor]####**Column** This is where you
+enter the column to which you are writing. You can enter letters or
+numbers in this field. If you enter a number, this will correspond to
+the number of the column in the Excel file.
+
+* Example: Instead of A for column A, you can enter a 1 for column A, a
+2 for column B (instead of the letter B), and so on.
+
+* *Overwrite content* This is where you determine whether a cell, row or
+column which already has content is overwritten with new content.
+* *Range* (drop-down selection, default: Cell) There are three different
+modes available:
+** *Cell* If you select _Cell_, the text will be written to a specific
+cell.
+** *Row* If you select _Row_, the text will be written to a specific
+row.
+** *Column* If you select _Column_, the text will be written to a
+specific column.
+* [#AS_WriteToExcel_P_Row .anchor]####**Row** This is where you enter
+the precise cell or row number to which text is to be written.
+* [#AS_WriteToExcel_P_SheetName .anchor]####**Sheet name** Name of the
+spreadsheet. Under Properties you can only enter the name directly,
+unlike in the _Write to Excel File_ link:#wizard[Wizard].
+* [#AS_WriteToExcel_P_TextToWrite .anchor]####**Text to write** This is
+where you enter the free text that will populate the cell, row or
+column.
+
+* *Write value as* Here you can see whether the data in a cell is
+written as text or number.
+
+=== Inbound Variables
+
+link:#AS_WriteToExcel_P_SheetName[*Sheet name*]
+
+link:#AS_WriteToExcel_P_Column[*Column*]
+
+link:#AS_WriteToExcel_P_Row[*Row*]
+
+link:#AS_WriteToExcel_P_TextToWrite[*Text to write*]
+
+[#AS_WriteToExcel_IV_ArrayToWrite .anchor]####**Array to write** This
+variable is only used in Row and Column mode. It accepts an array as
+well as a string in CSV format.
+
+=== Outbound Variables
+
+*IsWritten* (Bool) This is how you check whether the text has been
+successfully written to a specific cell, row or column. The result is
+_True_ if the text was written successfully to the destination file.
+
+=== Wizard
+
+The _link:#AS_WriteToExcel_P_SheetName[Sheet name]_ field is for
+selecting the spreadsheet to which text should be written. You can type
+directly into the input field, select an existing sheet from the
+drop-down list or connect with a Pin Variable. The drop-down list
+contains all the sheets saved within the Excel file.
+
+If you add a checkmark next to _Add sheet if it doesn't exist_, the
+sheet will be created new if it doesn't already exist. You can also
+connect here with a Pin Variable.
+
+In _Excel Mode_ you specify via the drop-down list whether to write to a
+cell, a row or an entire column. You can enter letters or numbers as a
+value or connect with a Pin Variable.
+
+Under Write value as you specify whether the data in a cell is to be
+written as text or number. This function is only active if you have
+selected the Cell mode under Excel mode.
+
+image:media\image1.png[image,width=140,height=83]
+
+This is useful to avoid errors in calculations. If you enter a number
+and select Write value as _Number_, the value is treated as a number in
+the Excel sheet. The original formatting of the cell in the target file
+is retained.
+
+In the _Text to write_ field you can enter free text which is to be
+written to the Excel file or you can insert text via a Pin Variable.
+_Text to write_ appears if you have selected _Cell_ mode. In the Row and
+Column modes you will find the option
+link:#AS_WriteToExcel_IV_ArrayToWrite[_Array to write_] at this point.
+
+Selecting the checkbox next to _Overwrite content with text_ will
+overwrite a pre-populated cell, row or column with new content. You can
+also connect here with a Pin Variable.

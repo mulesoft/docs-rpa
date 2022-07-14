@@ -1,0 +1,99 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Window Set State
+
+This _Action Step_ allows you to change the state of a specific window.
+
+=== Properties
+
+* *Use RegEx* You can further distinguish between window titles by
+selecting this checkbox. The function is described in detail in Section
+Using Regular Expression.
+
+* *Window state* Choose which state the selected window should be set
+to. Available options are _Hide_, _Show_, _Minimize_, _Maximize_,
+_Restore_, _Activate_, _Close_, and _Kill_.
+
+* **Window text** Contains
+the captured _Window text_ for the window in question (only works if
+_Use window text_ is activated)
+
+* *Window title* Contains the captured _Window title_ for the window in
+question
+
+=== Inbound Variables
+
+*Window title*
+
+*Window text*
+
+=== Outbound Variables
+
+*Window Handle* The window handle of the window to be manipulated
+
+*Process ID* The process ID of the window to be manipulated
+
+=== Wizard
+
+* *Start* Starts capture
+* *Stop* Stops capture
+* *Collect window titles* Click this button to list all currently
+available window titles in the drop-down menu in the _Window title_
+field
+* *Hide window* Hides the wizard window when _Start_ is clicked (if you
+are using this option you need to press *_F10_* to stop the capture)
+* *Hide main window* Hides the X1 Design Studio window when _Start_ is
+clicked
+* *Use window text* Captures the _Window text_ in the window as well as
+the title
+* *Use RegEx* You can further distinguish between window titles by
+selecting this checkbox. The function is described in detail in Section
+Using Regular Expression.
+
+To capture a window, simply click _Start_, open the desired window, and
+click _Stop_ again. This will automatically capture the window title and
+text.
+
+You can also click _Collect window titles_ to display all available
+window titles within the drop-down box in the _Window title_ field.
+
+
+*Options for window state:*
+
+* *Hide* Sets the window to hidden state, which makes it invisible
+* *Show* Makes hidden windows visible
+* *Minimize* Minimizes a window to the task bar
+* *Maximize* Maximizes a window
+* *Restore* Tries to restore a window to its previous bounds. Will make
+hidden windows visible.
+* *Activate* Sets focus on the selected window
+* *Close* Attempts to "cleanly" close a window (equivalent to pressing
+the red *_X_* in the upper right corner or using *_ALT+F4_*)
+* *Kill* Kills the process that is associated with the selected window
+* *Wait Delay*
+** *Legacy mode* (Compatibility setting) The wait delay until the start
+of the search is the value entered *before the last saving*. *For
+Workflows built with a WorkflowEditor version earlier than 4.2 this
+value is 250 ms.*
+** *Normal mode* If this option is activated, you can enter a value of
+your choice in the field _Wait Delay_. The default value is 50 ms.
+*** This value can also be filled via Pin-Variable.
+
+Often the title of a window changes. In particular, the title of
+_Internet Explorer_ windows is dependent on the webpage that is shown.
+This means that if you want to use _Window wait_ for a certain URL, be
+sure to capture the correct title with the wizard or use regular
+expressions. You could also simply use only a part of the window title.
+
+Please consider, that _Wait Delay_ in _WorkflowEditor_ versions earlier
+than 4.2 was always 250 ms. For reasons of compatibility, _Wait Delay_
+is set to _Legacy mode,_ and thereby to 250 ms, in Workflows built with
+older versions.
+
+You can change this mode. However, this can lead to differences in the
+measurement results between the old and the new version of your
+Workflow.
+
+Before you perform an image search, maximize the affected window using
+_Set window state_. This makes defining a reliable search area for an
+image search much easier.

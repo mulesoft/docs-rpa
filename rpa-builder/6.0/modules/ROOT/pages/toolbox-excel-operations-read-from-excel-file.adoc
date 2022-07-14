@@ -1,0 +1,77 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Read from Excel File
+
+Use the _Read from Excel File_ Action Step to read the contents of an
+Excel file. The result will be saved as a string or an array, which you
+can then use as an Outbound Variable in subsequent Action Steps.
+
+The _Read from Excel File_ Action Step can only be used inside an Excel
+Session. Specify the source file in the link:#AS_ExcelSession[_Excel
+Session_].
+
+=== Properties
+
+*Excel Operation Settings*
+
+* [#AS_ReadFromExcelFile_P_Column .anchor]####**Column** This is where
+you enter the column that is to be read. You can enter letters or
+numbers in this field. If you enter a number, this will correspond to
+the number of the column in the Excel file.
+
+* Example: Instead of A for column A, you can enter a 1 for column A, a
+2 for column B (instead of the letter B), and so on.
+
+* *Range* (drop-down selection, default: Cell) There are three different
+modes available:
+** *Cell* Text will be read from a specific cell. The result will be
+output as a string.
+** *Row* Text will be read from a complete row. The result will be
+output as an array.
+** *Column* Text will be read from a complete column. The result will be
+output as an array.
+* [#AS_ReadFromExcelFile_P_Row .anchor]####**Row** This is where you
+enter the cell or row number that should be read.
+* [#AS_ReadFromExcelFile_P_SheetName .anchor]####**Sheet name** Name of
+the spreadsheet. Under Properties you can only enter the name directly,
+unlike in the link:#wizard[Wizard].
+
+=== Inbound Variables
+
+link:#AS_ReadFromExcelFile_P_SheetName[*Sheet name*]
+
+link:#AS_ReadFromExcelFile_P_Column[*Column*]
+
+link:#AS_ReadFromExcelFile_P_Row[*Row*]
+
+=== Outbound Variables
+
+*Read from Excel File.Result* This variable is output as a string. The
+result will only be shown to you if you have selected the _Cell_ mode.
+
+If you have selected _Row_ or _Column_ mode, an error message will be
+displayed and the Workflow cannot be executed.
+
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=604,height=112]
+
+*Read from Excel File.ResultAsArray* This variable will be output as an
+array if you have selected Column or Row as the mode.
+
+*Read from Excel File.HasContent* (Bool) This is how you check whether a
+specific cell, row or column has content. If there is content, the
+result will be _True_ and if there is no content the result will be
+_False_. If in the case of rows or columns only a single cell is
+populated, the result is _True_.
+
+=== Wizard
+
+The _link:#AS_WriteToExcel_P_SheetName[Sheet name]_ field is for
+selecting the spreadsheet from which text should be read. You can type
+directly into the input field, select an existing sheet from the
+drop-down list or connect with a Pin Variable. The drop-down lists
+contains all the sheets saved within the Excel file.
+
+In _Excel Mode_ you specify via the drop-down list whether to read a
+cell, a row or an entire column. You can enter letters or numbers as a
+value or connect with a Pin Variable.
