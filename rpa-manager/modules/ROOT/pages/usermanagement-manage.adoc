@@ -2,4 +2,31 @@ include::rpa-home::partial$pending-review.adoc[]
 
 = Managing Users
 
-...
+
+
+== Before You Begin
+
+* The tenant admin is created first and can create other users.
+* * Obtain the needed privileges:
+  +
+  [cols="1,2"]
+  |===
+  |*Action* |*Required Privileges*
+
+  |
+  |**
+
+  |
+  |**
+
+  |===
+
+== Create a User
+
+== Edit a User
+
+== Remove a User
+
+== Designate a User as Project Manager
+
+== Assign Users RPA Builder Access
