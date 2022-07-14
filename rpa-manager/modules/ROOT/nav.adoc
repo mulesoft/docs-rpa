@@ -1,2 +1,5 @@
 .xref:index.adoc[RPA Manager]
 * xref:index.adoc[RPA Manager Overview]
+** xref:usermanagement-overview.adoc[User Management]
+*** xref:usermanagement-manage.adoc[Managing Users]
+*** xref:usermanagement-assemble.adoc[Assembling Teams]
