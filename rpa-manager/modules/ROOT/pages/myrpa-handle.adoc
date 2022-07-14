@@ -8,6 +8,10 @@ Examples of such tasks include the input of data that could not be read automati
 
 If, during implementation of a process, the bot comes across a user task, it shows the task to all assigned users. As soon as an employee has completed processing the user task, the bot resumes its work automatically with the next process step.
 
+== Before You Begin
+
+* User tasks are configured in the RPA Builder and will show up during execution of the process.
+
 == Claim a User Tasks
 
 Claim a user task to reserve processing of the user task for yourself. The user task is then moved to your personal task list in the *My User Tasks* view.

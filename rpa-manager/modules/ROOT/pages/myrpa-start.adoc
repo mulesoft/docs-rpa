@@ -24,7 +24,7 @@ The center of excellence is a user group that, for the approval of an evaluated 
 
 == Claim a Processes
 
-Claim a process to assume the project manager role for the automation of this process. The process is moved to the *My Backlog* View of the *My RPA* module.
+Claim a process to assume the project manager role for the automation of this process. The process is moved to the *My Backlog* view of the *My RPA* module.
 
 . In the *Team Backlog* view of the *My RPA* module, click the icon *Claim*.
 
@@ -56,6 +56,6 @@ The initial investment for the acquisition of the MuleSoft RPA solution and the 
 
 == Reject a Process Project
 
-Reject processes that were approved to the wrong center of excellence. The Process is removed from the *Team Backlog* view in the *My RPA* module and appears with status *Rejected* in the *Process Evaluation* view in *Process Evaluation* module.
+Reject processes that were approved to the wrong center of excellence. The process is removed from the *Team Backlog* view in the *My RPA* module and appears with status *Rejected* in the *Process Evaluation* view in *Process Evaluation* module.
 
 . In the *Team Backlog* view of the *My RPA* module, click the icon *Reject*.
