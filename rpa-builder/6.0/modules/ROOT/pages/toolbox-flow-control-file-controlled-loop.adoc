@@ -79,7 +79,7 @@ If you select _Read file at design time_, the wizard looks like it does
 above.
 
 First, you need to import a CSV file by clicking _Import File_
-image:media\image2.png[image,width=104,height=24]. _X1 Design Studio_
+image:media\image2.png[image,width=104,height=24]. RPA Builder
 will then read and analyze your file and display a content preview in
 the lower part of the wizard. You can then apply filters to each column
 by clicking image:media\image3.png[image,width=22,height=22].

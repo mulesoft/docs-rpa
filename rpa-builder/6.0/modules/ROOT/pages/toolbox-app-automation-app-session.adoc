@@ -34,8 +34,7 @@ The _App Session_ does not have any outbound variables.
 === Wizard
 
 *Start Capturing* lets you record a variety of interactions within the
-Design Studio. The recording corresponds to the output of the SPR
-(Servicetrace Process Recorder). This button is only active if the App
+Design Studio. The recording corresponds to the output of RPA Recorder. This button is only active if the App
 Session does not contain any elements yet. During a recording, all
 actions – such as mouse movements and keystrokes – are captured. Press
 F10 to stop the recording. If the recording is successful, the “OK”

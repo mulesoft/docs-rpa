@@ -19,7 +19,7 @@ to what is visible on the screen during execution. Now imagine you
 capture a _Pattern image_ containing text on a system where _ClearType_
 is enabled (i.e. the left part of the picture above), but then execute
 the _Workflow_ on a system where _ClearType_ is disabled. The
-_ServiceTrace_ image search algorithm compares the left-hand image to
+_MuleSoft_ image search algorithm compares the left-hand image to
 the right-hand one and, although it still finds the image, the match
 precision will be very low.
 

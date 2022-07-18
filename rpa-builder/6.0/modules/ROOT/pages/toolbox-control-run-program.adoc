@@ -148,7 +148,7 @@ This variable depends on whether you are running a
 _C:\Program Files (x86)_ is the resulting variable. If you are running a
 64-bit program, _C:\Program Files_ is the resulting variable.
 
-_X1 Design Studio_ is usually run as a 64-bit program but the generated
+RPA Builder is usually run as a 64-bit program but the generated
 workflow code, on the other hand, is usually run as a 32-bit program.
 That is why the _Test Button_ in the wizard can provide you with a
 different result than the actual run does later on.

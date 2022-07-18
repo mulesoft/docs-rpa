@@ -54,7 +54,7 @@ the _Web Session_. This is useful if you want to avoid triggering hover
 effects on a website accidentally.
 * *Script Timeout [sec]* Maximum waiting time in seconds before the
 internal scripting of the web driver is aborted. You should only change
-this value if Servicetrace support advises you to do so.
+this value if MuleSoft Support advises you to do so.
 * *Start maximized* Decide if the browser window should start maximized
 * *Webdriver Retries* Number of retries to establish a successful web
 driver connection.
@@ -119,7 +119,7 @@ Explorer cache before starting the session. Note that this will also
 influence all other _MultiTracer_ sessions for the current user.
 * *Disable IE11 Check/Repair* This option disables the IE11’s
 compatibility check and repair. Change this setting after being advised
-by Servicetrace support only.
+by MuleSoft Support only.
 * *Enable detailed logging* (_Properties_ grid only): Add more
 information to the _Internet Explorer_ session log file. Only applicable
 if _Browser_ is set to _Internet Explorer_.
