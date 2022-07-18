@@ -22,7 +22,7 @@ The _Random_ variable is an integer value; all other variables are
 string variables.
 
 It is not possible to debug the _RunTime Variables_ Action Step. Debug
-functionality for this is therefore switched off in X1 Design Studio.
+functionality for this is therefore switched off in RPA Builder.
 This means that it is no longer possible to set a breakpoint for a
 _RunTime Variables_ Action Step.
 
