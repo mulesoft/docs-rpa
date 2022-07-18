@@ -1,8 +1,27 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Using Regular Expressions
+= Using Regular Expressions
 
 Throughout this user guide, and within X1 Design Studio, you will see
 references to the term "Regular Expression" or "RegEx". Regular
 expressions are patterns that provide a means to specify and recognize
 texts.
+
+== Further Information
+
+Regular expressions are a very powerful tool for text operations and
+there are whole books available on this topic. Going into too much
+detail would exceed the scope of this manual, so if you need further
+information and references, please search on the internet or buy a book
+about regular expressions.
+
+Here are some links to get you started:
+
+* Official _AutoIT_ RegEx documentation:
+https://www.autoitscript.com/autoit3/docs/pcrepattern.html[https://www.autoitscript.com/autoit3/docs/pcrepattern.html^]
+* Wikipedia on regular expressions: +
+http://en.wikipedia.org/wiki/Regular_expression[http://en.wikipedia.org/wiki/Regular_expression^]
+* RegEx tutorials, examples, and references: +
+http://www.regular-expressions.info/[http://www.regular-expressions.info/^]
+* Online RegEx tester (German): +
+http://regexp-tester.mediacix.de/exp/regex/[http://regexp-tester.mediacix.de/exp/regex/^]

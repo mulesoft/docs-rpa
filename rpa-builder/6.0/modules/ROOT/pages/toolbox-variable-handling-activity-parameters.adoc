@@ -82,8 +82,8 @@ The AP name must be unique. It must not be used multiple times for
 different variables.
 
 The predefined values are test values that are only used for a local run
-within the X1 Design Studio. The variables are registered automatically
-on the X1 Server when uploaded. There, you can modify the values of the
+within RPA Builder. The variables are registered automatically
+on RPA Manager when uploaded. There, you can modify the values of the
 variables and define them differently, depending on the station on which
 the Workflow is being executed (see also the chapter
 link:#UsingVariables[Using Variables] and the Servicetrace® X1 Server
