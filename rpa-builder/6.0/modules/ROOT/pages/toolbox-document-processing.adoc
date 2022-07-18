@@ -1,0 +1,7 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Document Processing
+
+Overview of section.
+
+Find articles that go in this section.
