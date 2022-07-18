@@ -2,7 +2,13 @@ include::rpa-home::partial$pending-review.adoc[]
 
 = Managing Users
 
+Manage the users of RPA Manager and RPA Builder:
 
+* Create and delete users.
+* Edit a user's personal data.
+* Assign privileges or roles to a user that enable a user to work in specific modules.
+* License users for RPA Builder access.
+* Mark a user as project manager.
 
 == Before You Begin
 
@@ -22,6 +28,16 @@ include::rpa-home::partial$pending-review.adoc[]
   |===
 
 == Create a User
+
+Create a user to give an employee access to RPA Manager and RPA Builder. After creation RPA Manager sends an email with a one-time password to the new user. The new user needs to log in to RPA Manager and set a new password within the expiration time mentioned in the email.
+
+. In the *Users* view of the *User Management* module, click *Create*.
+. Complete the form *Create a New User*:
++
+* *Time Zone*:
++
+Time zone ...
+
 
 == Edit a User
 

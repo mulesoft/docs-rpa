@@ -2,11 +2,16 @@ include::rpa-home::partial$pending-review.adoc[]
 
 = User Management Overview
 
-In the *User Management* module, you can manage the users of the RPA Manager and of the RPA Builder.
+In the *User Management* module, you manage the users of RPA Manager and RPA Builder:
 
-A user contains contact details such as name, time zone and e-mail address. The user has privileges that enable access to specific modules and their contents, and can be authorized to edit a process project in various phases. A user can have a license for the RPA Builder. A user can be marked as project manager or process owner to assume responsibility for a process.
-
-You can also assign roles to a user that contain all the needed privileges. Some important roles are already preconfigured. But you can also define your own roles.
+* Create and delete users.
+* Edit a user's personal data.
+* Assign privileges or roles to a user that enable a user to work in specific modules.
+* Create roles to combine privileges.
+* License users for RPA Builder access.
+* Mark a user as project manager.
+* Assemble teams for task sharing.
+* Mark teams as centers of excellence.
 
 // == Get Started
 
