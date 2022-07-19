@@ -22,7 +22,7 @@ After you create a category, follow these steps to create your automation projec
 . Provide the necessary information for the project:
 ** In *Process name*, write `MuleSoft newsletter sign-up`.
 ** In *Category*, select the *Web Automations* category, created in the previous step.
-** Disable *Use Process Board*.
+** Deselect *Use Process Board*.
 . Click *Save*
 
 == Next Steps
