@@ -2,123 +2,159 @@
 
 == Home
 
-The Home section contains the main controls of the recorder. If the recorder was started from the server, the existing BPMN of the process is also shown here.
+The Home section contains the main controls of the recorder. If the recorder is started from the server, the existing BPMN of the process also shows here.
 
-//Feedback about the RPA Recorder can be sent to MuleSoft via the hyperlink in the bottom right corner “Send Feedback”.
+image:rpa-recorder-home.png[RPA Recorder Home screen]
 
 == Recording
 
-New recording session is started via this button, or alternatively by the hotkey F8.
-When the recording has been started the main view gets collapsed into a minified view.
+The following functions are available in RPA Recorder while recording a process:
 
-On the right there is a timer which indicates total recording time, but also is a visual indicator if recording is running or paused. To pause the recording click on the red circled pause icon or use the hotkey F8. To continue press the recording icon or F8 again.
+[%header,cols="10,20,30,10"]
+|===
+|Icon |Name | Description | Hotkey
+|image:start-recording-icon.png[Start Recording icon] |Start Recording | Starts a new recording session. |`F8`
+|image:finish-recording-icon.png[Start Recording icon] | Finish Recording Session. | Finishes the current recording session, and triggers the generation of <<Documents>> | --
+|image:take-screenshot-icon.png[Take Screenshot icon] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
+|image:add-variable-icon.png[Add Variable icon]  | Add Variable | Opens the <<Add Variable>> dialog. | `F10`
+|image:add-comment-icon.png[Add Comment icon] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
+|image:add-activity-icon.png[Add Activity icon] | Add Activity | Opens the <<Add Activity>> dialog. | `F12`
+|===
 
-Recording session is finished via this button. There is no hotkey to directly stop a recording. Right after the recording has been stopped, the application triggers the [Documents](xref:) and BPMN generations.
 
-Manual screenshots can be taken via this button, or alternatively by the hotkey F9. This opens the [Define screenshot](xref:) dialog, in which the user has the option between full-screen or partial area screenshot.
+// New recording session is started via this button, or alternatively by the hotkey F8.
+// When the recording has been started the main view gets collapsed into a minified view.
+//
+// On the right there is a timer which indicates total recording time, but also is a visual indicator if recording is running or paused. To pause the recording click on the red circled pause icon or use the hotkey F8. To continue press the recording icon or F8 again.
+//
+// Recording session is finished via this button. There is no hotkey to directly stop a recording. Right after the recording has been stopped, the application triggers the [Documents](xref:) and BPMN generations.
+//
+// Manual screenshots can be taken via this button, or alternatively by the hotkey F9. This opens the [Define screenshot](xref:) dialog, in which the user has the option between full-screen or partial area screenshot.
+//
+// Variables can be entered via this button, or alternatively by the hotkey F10. This opens the [Add variable](xref:) dialog.
+//
+// Comments can be entered via this button, or alternatively by the hotkey F11. This opens the [Add Comment](xref:) dialog, where user can enter a comment.
 
-Variables can be entered via this button, or alternatively by the hotkey F10. This opens the [Add variable](xref:) dialog.
+// You can add new activities directly to the recorded BPMN by clicking the *Add Activity* button image:add-activity-icon.png[Add new activities], or by pressing `F12`. This opens the <<Add Activity>> dialog.
+//
+// Activities can be RPA Bot Tasks, which represent Workflows done by RPA Bots, User Tasks or External Tasks.
 
-Comments can be entered via this button, or alternatively by the hotkey F11. This opens the [Add Comment](xref:) dialog, where user can enter a comment.
+// During recording, each mouse click is automatically recorded with coordinates and type (left click, right click, etc.). If you want to record a mouse over hover action, hold the mouse pointer over the corresponding position and press the hotkey F2.
+// This records the coordinates and a mouse over hover action for this position.
 
-New activities can be added directly to the recorded BPMN via this button, or alternatively by the hotkey F12. This opens the [Add Activity](xref:) dialog, where user can add a new activity.
-Activities can be RPA Bot tasks, which represents Workflows done by X1 Bots, User Tasks or External Tasks.
-Also automatic creation of new RPA Bot tasks on application change can be enabled / disabled in the [Add Activity](xref:) dialog or in [settings](xref:) of RPA Recorder.
-
-During recording, each mouse click is automatically recorded with coordinates and type (left click, right click, etc.). If you want to record a mouse over hover action, hold the mouse pointer over the corresponding position and press the hotkey F2.
-This records the coordinates and a mouse over hover action for this position.
-
-== Toast Notifications while recording
-With each recording state change, a toast notification is shown indicating current state. The notification stays for 2 seconds and disappears automatically.
+== Toast Notifications While Recording
+When a recording state changes, a toast notification appears indicating current state. The notification stays for 2 seconds and disappears automatically.
 
 == Define Screenshot
-The Define screenshot pop-up window, opened with F9 while recording, provides the user with two options for taking screenshots manually [Fig. 4.1].
 
-Before a screenshot is taken the screen will be automatically freeze. The freezing can be delayed by selecting a delay (in seconds) from the dropdown [Fig. 4.2].
+Before you take a screenshot manually, the screen automatically freezes. You can select a method for taking for taking manual screenshots:
 
-The timer delay mechanism will take effect regardless of the chosen screenshot method.
+. Press `F9` while recording to open the Define Screenshot window.
+  +
+  image:define-screenshot-window.png[Define Screenshot window]
+
+. Select a freezing delay (in seconds), or no delay, from the dropdown menu.
+  +
+  image:select-freeze-delay.png[Select freezing delay]
+
+[NOTE]
+The timer delay mechanism takes effect regardless of the chosen screenshot method.
 
 == Add Variable
 
-The add variable pop-up window, opened with F10 while recording, allows the user to add variable information as part of the recording documentation, which will be useful during implementation of the process automation in RPA Builder [Fig. 5.1].
+You can add variable information as part of the recording documentation by pressing `F10` while recording. This is useful for the implementation of the process automation in RPA Builder.
+
+image:add-variable-window.png[Add Variable window]
 
 The possible variable types are:
+
 * Alphanumeric
 * Integer
 * Float
 * Boolean
 * Credential
 
-By clicking *Add* the variable information will be saved to the recording documentation.
+Click *Add* to save the variable information to the recording documentation.
+
+//Image necessary?
 
 [NOTE]
-The recording must be paused to add a variable. If the pop-up was opened via the respective hotkey, while recording was running, it will be automatically paused.
+You must pause the recording to add a variable. If you open the Add Variable window while the recording is running, it pauses automatically.
+
+== Add Comment
+
+You can add a comment as part of the recording to enrich the documentation with insight about a specific step.
+
+image:add-comment.png[Add Comment window]
+
+[NOTE]
+You must pause the recording to add a comment. If you open the Add Comment Window while the recording is running, it pauses automatically.
+
 
 == Add Activity
 
-The add activity pop-up window, opened with F12 while recording or by clicking on the button in the minified view, allows the user to manually add an activity as part of the BPMN recording. Enter a name for the Activity and select its type.
-The user also has the possibility to enable or disable the function of automatic creation of Activities on application changes.
+You can manually add an activity as part of the BPMN recording. Enter a name for the Activity and select its type.
+
+image:add-activity.png[Add Activity window]
 
 Possible activity types are:
+
+* Web Task
 * RPA Bot Task
 * User Task
-* External Task
 
-For User Task or External Task no documentation will be recorded. The user is required to enter a description instead. To continue recording add a RPA Bot Task.
+When you create a Web Task, you can choose to continue using the session of the last closed Web Task.
+
+For User Tasks, RPA Recorder does not save documentation. You need to enter a description instead.
+
+To continue recording, add an RPA Bot Task.
+
+You ca also enable or disable the automatic creation of Activities on application changes.
 
 [NOTE]
 The recording must be paused to add an activity, or change creation mode of the activities. If the pop-up was opened via the respective hotkey, while recording was running, it will be automatically paused.
 
-== Settings
+== RPA Recorder Configuration
 
-In the settings section the user can configure the recorder application and set preferences. The settings section is divided into three parts:
+You can configure RPA Recorder and set preferences.
 
-* Settings
-* Language
-* Hotkeys
+The configuration section is divided into two parts:
 
-=== Settings Section
+* <<Settings>>
+* <<Hotkeys>>
 
-The settings are used to configure the RPA Recorder application [Fig. 8.1].
+=== Settings
 
-* Directory – Local directory folder where the documents (BPMN, PDF and XES) and application logs should be stored.
-* Create Process Documentation (PDF) – Option to select whether a process documentation file should be generated as PDF, when recording session has been stopped.
-* Create Process Mining files (XES) - Option to select whether a XES process file should be generated, when recording session has been stopped.
-* Automatic generation of activities – Option to select whether a RPA Bot Task activity should be genereated automatically when a change in applications is done. E.g. change from Outlook to Excel while recording will create a new Activity for Excel wherein click path documentation will be stored.
-* Take screenshot with every mouse click – Optional to choose whether to automatically take a screenshot on every mouse click or not.
-** Area around the mouse click – Screenshot taken will be a cropped area around the mouse click, based on the Area size in % (expressed in screen resolution percentage).
+Use the following settings to configure RPA Recorder:
+
+* *Directory*: Specifies the local folder for storing the documents (BPMN, PDF and XES) and application logs.
+* *Create Process Documentation (PDF)*: If checked, a process documentation file is saved as PDF after the recording session stops.
+* *Create Process Mining files (XES)*: If checked, a XES process fileXES process file is generated after the recording session stops.
+* *Generate debug file with a list of raw recorded events*: If checked, a debug file is generated after the recording session stops.
+* *Take screenshot with every mouse click*: If checked, RPA Recorder automatically takes a screenshot on every mouse click.
+** *Area around the mouse click*: Screenshots are a cropped area around the mouse click, based on the Area size in % (expressed in screen resolution percentage).
     +
     Crop percentage can be within 20-50% screen resolution.
-** Full screen – Screenshot taken will include all screens that are connected to user’s machine.
-** Mouse click screenshot quality – Quality of the screenshots on every mouse click.
+** *Full screen*: Screenshots include all screens connected to your machine.
+** *Mouse click screenshot quality*: Specifies the quality of the screenshots on every mouse click.
 *** Compressed JPEG format
 *** Loss-free PNG format
-* Merge keystrokes – Keyboard entries entered during the recording can be concatenated into meaningful words & sentences based upon the timestamps when they were entered.
+* *Merge keystrokes*: Concatenates keyboard entries entered during the recording into meaningful words and sentences based upon the timestamps when they were entered.
 +
 Number is expressed in seconds and can range from 2 to 10 seconds.
-* Verbosity level – Option to show detailed Process Information in Documentation. If 'Low' the information will not be shown in Documentation.
-* Licence type – Shows information about the type of License that is being used. Option to enter another license key by clicking on icon next to license information.
-* Automatically check for updates on startup – Automatically checks for newer versions of RPA Recorder when application is started. By clicking the icon a manual check for a new version can be done.
+* *Verbosity level*: Defines wether to show detailed Process Information in Documentation. If you select *Low*, the information is not shown in Documentation.
 
-=== Language Section
+=== Hotkeys
 
-In the language section the user can set the language of the RPA Recorder.
+This section displays information about the specific hotkeys that can be used, and their description. Hotkeys cannot be customized.
 
-If the recorder is started from the RPA Manager web client, the language is taken from the user profile.
-
-If the recorder is started as standalone, the first time the language is English, but after a language change, next time it is started as standalone it will have the last saved language.
-
-=== Hotkeys Section
-
-The hotkeys section currently just displays information about the specific hotkeys that can be used, and their purpose.
-Hotkeys cannot be changed as of now.
+image:hotkeys.png[]
 
 == About Screen
 
-The about screen contains general information about the RPA Recorder such as:
+The about screen contains general information about RPA Recorder:
 
-* The Version number
+* Version number
 * Copyright information
-* Licensing information
-* Link to MuleSoft website
-* Link to Support / Contact information
+
+image:about-screen.png[About Screen]
