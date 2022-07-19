@@ -25,7 +25,7 @@ After you create a category, follow these steps to create your automation projec
 ** Disable *Use Process Board*.
 . Click *Save*
 
-== Next Step
+== Next Steps
 
 Now that you've created an automation project, it's time to move to the design phase, in which you create the BPMN diagram for the process.
 
