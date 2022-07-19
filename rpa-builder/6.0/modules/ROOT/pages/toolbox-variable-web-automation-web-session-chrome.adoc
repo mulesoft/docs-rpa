@@ -1,11 +1,11 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Web Session (Chrome)
+= Web Session (Chrome)
 
 include::partial$toolbox-variable-web-automation-web-session.adoc[tag=intro]
 
 [[properties]]
-=== Properties
+== Properties
 
 include::partial$toolbox-variable-web-automation-web-session.adoc[tag=commonProperties]
 * *Additional Chrome arguments* (_Properties_ grid only)
@@ -25,14 +25,14 @@ result. This usually does not have any effect on the Webdriver functions
 we use.
 * *Verbose Logging*
 
-=== Inbound Variables
+== Inbound Variables
 
 * Additional Chrome arguments
 * Alternative User Agent String
 * Web Session ID
 * Initial URL
 
-=== Outbound Variables
+== Outbound Variables
 
 This action step has no outbound variables.
 

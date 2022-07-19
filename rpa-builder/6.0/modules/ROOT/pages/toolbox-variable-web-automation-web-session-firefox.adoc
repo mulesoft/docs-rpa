@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Web Session (Firefox)
+= Web Session (Firefox)
 
 include::partial$toolbox-variable-web-automation-web-session.adoc[tag=intro]
 
@@ -31,7 +31,7 @@ Enable this option if you are having trouble with mouse hover during execution.
 +
 Defines the TCP/IP listener port number used for Firefox for communication between Firefox and a
 _ServiceTrace®_ robot. If set to `-1` an ephemeral port number is used
-(and may also be used for all concurrent _MultiTracer_ instances). 
+(and may also be used for all concurrent _MultiTracer_ instances).
 +
 To ensure optimal operation in a _MultiTracer_ environment, set it to `0`.
 In this case, the port used is calculated by the following function:
@@ -47,7 +47,7 @@ and generates a warning.
 Start Firefox with a specific profile. This profile must be created beforehand on the executing agent
 using the Firefox profile manager.
 
-=== Inbound Variables
+== Inbound Variables
 
 * Profile name
 * Prefer 64Bit Webdriver
@@ -58,7 +58,7 @@ using the Firefox profile manager.
 * Web Session ID
 * Initial URL
 
-=== Outbound Variables
+== Outbound Variables
 
 This action step has no outbound variables.
 
