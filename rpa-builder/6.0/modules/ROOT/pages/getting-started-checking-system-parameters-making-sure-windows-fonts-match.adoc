@@ -1,0 +1,27 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Making Sure Windows Fonts Match
+
+You also need to make sure that the window colors and metrics of the
+system a _Workflow_ is created on are identical to the systems the
+_Workflow_ is supposed to run on. The window colors and metrics
+determine how windows are displayed, including size, font and color of
+captions, buttons, and various control elements.
+
+To check these settings on Windows XP right-click on the Desktop and
+select "Properties". Next, open the "Window Color and Appearance" tab.
+
+image::getting-started-checking-system-parameters-making-sure-windows-fonts-match-image1.png[Performance options]
+
+On Windows 7 or Server
+2008, open the Start Menu and simply perform a search for "Change window
+colors and metrics"
+
+image::getting-started-checking-system-parameters-making-sure-windows-fonts-match-image2.png[Dialog]
+
+To check and/or change
+settings, select distinct elements by clicking on them in the upper part
+of the dialog box or using the "Item" drop-down list. Make sure the
+fonts, sizes, and colors are identical on every machine where the
+_Workflow_ will be run and also on the system used to record the
+_Workflow_.

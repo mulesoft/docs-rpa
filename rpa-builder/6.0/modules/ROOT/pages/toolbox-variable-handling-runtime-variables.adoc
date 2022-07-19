@@ -1,0 +1,57 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Run Time Variables
+
+The _RunTime Variables_ Action Step allows variables to be used that are
+completed at a _Workflow_'s runtime.
+
+The following variables can be used:
+
+* *Project Name* Name of the _Workflow_ project
+* *Project GUID* GUID belonging to the _Workflow_ project
+* *Run GUID* GUID relating to executing the _Workflow_ (regenerated for
+each run)
+* *Time* Actual time as local time or UTC in configurable format
+* *Time* Actual date as local time or UTC in configurable format
+* *HostName* Name of _Host_ system
+* *UserName* Name of the user
+* *Random* Positive random number (whole number) with configurable range
+of values. A different number is generated each time the workflow runs.
+
+The _Random_ variable is an integer value; all other variables are
+string variables.
+
+It is not possible to debug the _RunTime Variables_ Action Step. Debug
+functionality for this is therefore switched off in RPA Builder.
+This means that it is no longer possible to set a breakpoint for a
+_RunTime Variables_ Action Step.
+
+=== Properties
+
+*Write RunTime Variables to Logfile* If this option is enabled, the
+RunTime variables are written to the Stc log file.
+
+=== Outbound Variables
+
+*RunTime Variables.[ name of the _RunTime_ variables]* Content of
+_RunTime_ variables.
+
+=== Wizard
+
+The _RunTime Variables Action Step_ wizard is used to specify whether
+variables are to be made available in all subsequent transactions (_Make
+Variables available in all further Transactions_ checkbox). First select
+the type of variable you wish to add (_Add new RunTime Variable_ combo
+box).
+
+Use the _Delete_ button to remove any variables that are no longer
+required.
+
+The values listed under _Sample Data_ in the wizard are used in a local
+test. If the _Workflow_ is completed by a _Bot_, the values will
+re-determined at each runtime.
+
+image:media\image1.png[image,width=218,height=221]
+
+Then give a name to the variable to be produced and perform any settings
+required using the drop-down _Settings_ menu.

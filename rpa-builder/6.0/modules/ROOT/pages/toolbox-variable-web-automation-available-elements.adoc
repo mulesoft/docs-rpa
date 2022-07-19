@@ -1,0 +1,14 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Available Elements
+
+After you install the _Web Automation_ package, a new category is added
+to the _Toolbox_ called _Web Automation_:
+
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=150,height=207]
+
+These objects can be dragged and dropped into a _Workflow_ like any
+other _Workflow_ object. You must place a _Web Session_ object into your
+project as a container before you can use the other _Web Automation_
+objects.

@@ -1,0 +1,161 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Excel Session
+
+The _Excel Session_ is an element that encompasses all Excel operations.
+Excel operations include the reading, modification, and creation of
+entire files and file elements in the Excel format.
+
+To use Excel operations it is not necessary to have Microsoft Excel
+installed on the computer.
+
+In the Excel Session you define which Excel files should be opened,
+where these are located at what time, and how they should be used.
+
+By placing other Action Steps within the _Excel Session_ it is possible
+to process the information from the Excel files further.
+
+The Excel files are opened when the _Excel Session_ starts to be
+executed and are duly closed again at the end of the session.
+
+An _Excel Session_ may contain a maximum of one further Excel Session.
+To optimize computer performance, please never place an Excel Session
+inside a loop. If you wish to execute a loop across all the elements in
+a row or column in the Excel file, please place the relevant loop within
+the Excel Session.
+
+=== Properties
+
+*Destination Excel Operation Settings*
+
+The Destination Excel Operation Settings are only relevant if you have
+selected the mode Read from source and write to different file.
+
+* [#AS_ExcelSession_P_CreateDstIfNotExists .anchor]####**Create
+destination file** (Bool, default: False) Determines whether the
+destination file should be created if it doesn't exist already
+* *Destination file name* (string, no default) Name of the destination
+file, i.e. the file that will be written
+* *Different destination directory path for workflow run* If the option
+_Use different destination directory path for workflow run_ is
+activated, the alternative destination directory specified here is used
+at runtime.
+* *Different destination file name for workflow run* If the option _Use
+different destination file name for workflow run_ is activated, the
+alternative file name is used at runtime.
+* [#AS_ExcelSession_P_DirectoryPathDest .anchor]####**Directory Path**
+(string, default: %STWS_BASEPATH%)Path to the directory where the
+destination file is located
+
+[#AS_ExcelSession_P_FileNameDest .anchor]####Only a single file name is
+used for the destination file, regardless of whether a different
+directory path is used at the time of execution compared to the time of
+design.
+
+* *Sheet name to be added* (string, no default) Name of the sheet that
+is to be added to the destination file
+* *Use different destination directory path for workflow run* If this
+option is activated, an alternative path is used at runtime.
+* *Use different destination file name for workflow run* If this option
+is activated, an alternative file name is used at runtime.
+
+*Excel Operation Settings*
+
+* [#AS_ExcelSession_P_OperationMode .anchor]####**Operation mode**
+(drop-down selection, default: Read only) Type of _Excel Operation_.
+There are three different modes available:
+** *Read only* The source file is read only and cannot be modified
+** *Read and write to the same file* The source file is read and can be
+modified
+** *Read from source and write to different file* The source file is
+read but cannot be modified. Furthermore, a destination file is opened
+and this is where changes are made.
+
+[#AS_ExcelSession_P_Source .anchor]####**Source Excel Operation
+Settings**
+
+* *Different source directory path for workflow run* (string, no
+default) If _Use separate source directory path for Execution_ is
+selected, the path specified here will be used as the path to the
+directory in which the source file is located.
+* *Different source file name for workflow run* If the option _Use
+different source file name for workflow run_ is activated, the
+alternative file name is used at runtime.
+* [#AS_ExcelSession_P_DirectoryPathSource .anchor]####**Directory Path**
+(string, default: %STWS_BASEPATH%)Path to the directory where the source
+file is located
+
+* [#AS_ExcelSession_P_FileNameSource .anchor]####**Source file name**
+(string, no default) Name of the source file. This is the file that is
+read – and written to in the mode _Read and write to the same file_
+
+* [#AS_ExcelSession_P_SeparateSourceDirPath .anchor]####**Use different
+source directory path for workflow run** (Bool, default: False)
+Determines whether a different source directory should be used when
+executing the Workflow compared to that at the time of creation.
+* *Use different source file name for workflow run* (Bool., default:
+False) Determines whether an alternative file name should be used when
+running the workflow instead of the draft name.
+
+=== Inbound Variables
+
+* link:#AS_ExcelSession_P_DirectoryPathSource[_DirectoryPathSource_]
+* link:#AS_ExcelSession_P_FileNameSource[_FileNameSource_]
+* link:#AS_ExcelSession_P_SeparateSourceDirPath[_Separate source
+directory path for Execution_]
+* link:#AS_ExcelSession_P_DirectoryPathDest[_DirectoryPathDestination_]
+* link:#AS_ExcelSession_P_FileNameDest[_FileNameDestination_]
+* link:#AS_ExcelSession_P_CreateDstIfNotExists[_CreateDstIfNotExists_]
+* link:#AS_ExcelSession_P_SheetToBeCreated[_SheetToBeCreated_]
+* {blank}
+
+=== link:\l[_Separate destination directory path for Execution_]Outbound Variables
+
+This Action Step has no outbound variables.
+
+=== Wizard
+
+In the link:#AS_ExcelSession_P_OperationMode[Operation Mode] section,
+first choose whether you want to only read the Excel file, read and
+modify it or read it and write to a different Excel file. If the _Read
+Only_ mode is selected, the source file is read only and cannot be
+modified.
+
+The link:#AS_ExcelSession_P_Source[source file] is the file that should
+be read. You can write the path to the directory where the source file
+is located directly in the input field, insert Environment and Script
+Variables, make a selection using a file explorer
+image:media\image1.png[image,width=20,height=20] or connect with a Pin
+Variable. You also have the option of using a different file at the time
+of execution to at the time of creation. Simply select the checkbox
+image:media\image2.png[image,width=303,height=15].
+
+Please note that in this case the file name must be identical. You must
+always specify the file extension as well as the file name.
+
+You can use a second file as the
+link:#AS_ExcelSession_P_DirectoryPathDest[destination file]. In this
+case the source file is read only and cannot be modified. The
+destination file is for storing information. If the destination file
+does not exist yet, it will be created if you have selected the checkbox
+link:#AS_ExcelSession_P_CreateDstIfNotExists[_Create destination file if
+it doesn’t exist_].
+
+The options image:media\image3.png[image,width=247,height=20] and
+image:media\image4.png[image,width=264,height=17] enable you to use a
+dynamic Excel file at runtime for the Excel operations. The *Different
+file name* field can be used to specify a separate file for the
+execution time directly or map it using a pin variable.
+
+=== Related Elements
+
+The following sections may help you to better understand the
+relationships between the individual Excel Workflow elements:
+
+* link:#AS_ReadFromExcelFile[_Read from Excel File_]
+* link:#AS_WriteToExcel[_Write to Excel_]
+* {blank}
+* _link:\l[Workflow Based Variables]link:#Array_GetArrayCount[Get Array
+Count]_
+* link:#Array_ReadFromArray[_Read from Array_]
+* link:#_Set_Variable[_Set Array Variable_]

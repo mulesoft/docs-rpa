@@ -1,0 +1,164 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Keystrokes
+
+Like the _Enter String_ Action Step, the _Keystrokes_ Action Step
+emulates keyboard inputs. You can use this to enter search criteria or a
+URL in the browser address bar, for example. You can also use it to
+execute hotkeys or macros.
+
+
+=== Properties
+
+*Keyboard Settings*
+
+* *Key Down delay* (default 5 ms, maximum 1000 ms) Duration in ms
+specifying how long it takes for a key or combination of keys to be
+pressed down. The keyboard input is generated at the start of this time
+period.
+* *Key Up Delay* (default 5 ms, maximum 1000 ms) Duration in ms
+specifying how long it takes for a key or combination of keys to be
+released.
+* *Pause (ms)/Pause between keystrokes, ms* (default 500 ms) Pause
+between two input sequences. An input sequence starts with a pause.
+
+For a better understanding, please also see the example at the end of this sub-section.
+
+
+*Window Settings*
+
+* *Common window title* If the checkbox _Use common window title for all
+keystrokes_ is activated, the window title used to identify the window
+that keystrokes are sent to is displayed here
+* *Use common window title for all keystrokes* Select if all the
+keystrokes should be performed in the same window
+* *Use RegEx/Use a regular expression for window title* You can further
+distinguish between window titles by selecting this checkbox. For a
+short introduction to regular expressions, refer to Section
+Using Regular Expressions
+* *Use window text* Defines if, in addition to the window title, window
+text should also be used to identify the window that the keystrokes
+should be sent to
+
+=== Wizard
+
+* *Start* Starts the recording of keystrokes
+* *Stop* Stops the recording of keystrokes
+* *Raw* Records all keys as they are pressed. This also includes all
+modifier keys like *S__hift__*. Pressing the *_Shift_* key and *a*
+records the following key press sequence: "\{SHIFTDOWN}a\{SHIFTUP}".
+* *Norm* Records characters as they would appear in an editor like
+_Notepad_. Here, pressing the *_Shift_* key and *_a_* records a capital
+*_A_*
+* *Move* *keystroke* *sequence* Moves the selected keystroke sequence up
+or down
+* *Add keystroke* Calls the _Keystrokes Editor_ where you are able to
+enter a keystroke sequence manually. For more information about the
+_Keystrokes Editor_ see further down in this section.
+* *Edit keystroke sequence* Reconfigures an existing
+keystroke sequence manually with the _Keystrokes Editor_
+* *Delete* Deletes the selected keystroke sequence from the list
+* *Clear* Deletes all keystrokes within the _Action Step_
+* *Hide window when start* Hides the wizard window when _Start_ is
+clicked (if you are using this option, you need to press *_F10_* to stop
+the capture)
+* *Hide main window when start* Hides the RPA Builder window when
+_Start_ is clicked
+* *List of keystrokes* All the keystrokes defined for this _Action Step_
+are listed here
+* *Use window text* Defines if, in addition to the window title, window
+text should also be used to identify the window that the keystrokes
+should be sent to
+* *Use a regular expression for window title* You can further
+distinguish between window titles by selecting this checkbox. For a
+short introduction to regular expressions, refer to Section
+Using Regular Expressions.
+* *Use a common window title for all keystrokes* Selects if all
+keystrokes should be performed in the same window
+* *Collect Window Titles* Collects all titles of all windows that are
+currently opened; you may select the required title from a drop-down
+list provided by this function
+* *Pause (ms)/Pause between keystrokes, ms* (default 500 ms) Pause
+between two input sequences. An input sequence starts with a pause.
+* *Key Down delay* (default 5 ms, maximum 1000 ms) Duration in ms
+specifying how long it takes for a key or combination of keys to be
+pressed down. The keyboard input is generated at the start of this time
+period.
+* *Key Up Delay* (default 5 ms, maximum 1000 ms) Duration in ms
+specifying how long it takes for a key or combination of keys to be
+released.
+
+For a better understanding, please also see the example at the end of this sub-section.
+
+You can either manually add a keystroke sequence by clicking the plus button, which will open the
+_Keystrokes Editor_ (see further details below) or you can record
+keystrokes.
+
+Start the recording by clicking the start button. Each keystroke you now
+perform will be recorded. If you pause for around five seconds between
+two keystrokes, the following ones will be recorded as a new keystroke
+sequence. This means they will be recorded on a new line with a new ID
+in the _Keystrokes wizard_ and the _Pause between keystrokes_ delay will
+be performed before them during playback.
+
+Stop the recording by clicking the stop button. A keystroke
+sequence can be edited using the edit button or by
+double-clicking it. If you want to remove a single keystroke
+click X, if you want to
+clear the whole keystroke sequence click the clear button.
+
+Optionally, a window title can be specified for each keystroke and the
+pause time between the keystroke sequences can be altered. Error
+handling is configured as usual.
+
+Click the plus button to open the _Keystrokes Editor_.
+
+
+Here you can type a keystroke sequence into the _Keystroke_ field or you
+can paste into it from the clipboard. You can also use content from the
+drop-down menus _Insert special character_ (special characters e.g.
+*_Alt_*, *_Caps Lock_*, *_Esc_*, or the number pad keys) and _Insert
+Macro_ (complete macros, e.g. to close a window, select all elements,
+etc.).
+
+You can also use inline variable (see Section Inline Variables) by clicking _Insert script
+variable_ or by typing them as needed. It is also possible to use _Login
+Data_ defined within the _Workflow_. Simply use the inline variables
+\{$User0} and \{$Password0} and replace the 0 by the number of the login
+data item you want to use here.
+
+Finally, you can select and use any defined environment variable for a
+_Keystroke_ _Action Step_ by using the corresponding drop-down menu.
+
+If you want to type into an application that was started with
+administrator privileges, RPA Builder has to be started with
+administrator privileges too. Otherwise the key strokes are lost and
+won’t be displayed.
+
+If a _Workflow_ run stops at the point a keystroke should be performed
+and immediately indicates that an error has occurred, check if the
+common window title setting is correct. If you are not able to set a
+common window title that works, you can leave this field empty as a
+workaround.
+
+=== Delay and Pause Example
+
+image::toolbox-control-keystrokes-image1.png[Keystroke wizard]
+
+image::toolbox-control-keystrokes-image2.png[Example] The delay times will
+be applied differently depending on the keyboard inputs.
+
+Each sequence starts with a pause.
+
+In the example shown above, the _Alt_ and _TAB_ keys are pressed
+simultaneously. That is why there is only one _Key Up_ and one _Key Down
+Delay_.
+
+The next keys are pressed separately and therefore each have their own
+_Delays_.
+
+Because _MuleSoft_ starts with a capital _M_, which involves the
+keystrokes _SHIFT_ + _m_ , this _M_ has two _Delays_.
+
+Again, the next keys are pressed separately and therefore each have
+their own _Delay_ values.

@@ -1,0 +1,66 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== AI OCR (screen-based)
+
+The _AI OCR (screen-based)_ Action Step is a further development of the
+existing OCR Action Steps. In contrast to the other OCR Action Steps, it
+is based on concepts of neural networks. The available languages,
+therefore, are based on trained patterns that take account of the
+characteristics of the relevant language. In many cases, therefore, the
+correct recognition of texts that are, for example, barely legible or
+have little contrast or an unusual font, is improved with this Action
+Step.
+
+In contrast to the AI OCR (file-based) Action Step, which works with
+existing images, e.g. from document scans, the _AI OCR (screen-based)_
+Action Step works _with_ screenshots of the currently active
+desktop__.__ This means, it attempts to extract texts from a previously
+created screen copy.
+
+You should consider the Intelligent OCR 2020 Action Step if more than
+one language is to be recognized at once or if you wish to use your own
+dictionary.
+
+In the following Chapter, we will look at the key differences compared
+to the Action Step Legacy OCR. You can find a detailed description of
+the properties, variables, etc. in the Chapter entitled
+link:#OCR_TextRecognition[_Text Recognition – Legacy OCR_].
+
+=== Properties
+
+*OCR Image Preprocessing*
+
+See also link:#AS_AIOCRfilebased_P[Properties] in the Chapter entitled
+AI OCR (file-based).
+
+=== Inbound Variables
+
+*Scan Area relative to* (Coordinates) The defined Search Area is moved
+relative to these coordinates. The resulting result coordinates are then
+absolute and are with reference to the left screen corner.
+
+See also the Chapter entitled Search Pattern –
+link:#AS_SearchPattern_SearchSettings[Search Settings].
+
+This variable can only be mapped in the wizard.
+
+=== Outbound Variables
+
+*IsSucceeded* (Boolean) Shows whether text recognition has been carried
+out successfully or not.
+
+=== Wizard
+
+You can use *OCR Image Preprocessing* to improve the quality of the
+image so that the OCR operation can run optimally. This is always
+carried out in the specified sequence. Here, you can also switch the
+individual steps on or off.
+
+First, a screenshot is made of the currently active desktop. Using
+*Initial wait time*, you can delay this operation. This can be very
+useful if the image takes time to form, e.g. due to animations.
+
+You can find further explanations under
+link:#AS_AIOCRfilebased_P[Properties] in the Chapter entitled AI OCR
+(file-based) or in the Chapter entitled
+link:#OCR_TextRecognitionLegacy[Text Recognition – Legacy OCR].
