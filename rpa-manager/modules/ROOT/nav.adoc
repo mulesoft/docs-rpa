@@ -1,2 +1,5 @@
 .xref:index.adoc[RPA Manager]
 * xref:index.adoc[RPA Manager Overview]
+** xref:processoperations-overview.adoc[Process Operations]
+*** xref:processoperations-financeanalysis.adoc[Finance Analysis]
+**** xref:processoperations-financeanalysis-basics.adoc[Finance Analysis Basics]
