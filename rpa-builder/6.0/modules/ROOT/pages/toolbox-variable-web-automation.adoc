@@ -1,0 +1,9 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Web Automation
+
+_Web Automation_ is a plug-in created specifically to automate browsers
+and web-based applications. In contrast to the regular _Action Steps_,
+this new technique does not just simulate user operations, but is also
+able to handle and control objects within a web-based application. This
+can be used for any website or application that runs in a browser.

@@ -1,0 +1,113 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Service Check
+
+The _Service Check_ plug-in allows you to perform checks using various
+protocols and services, such as Ping, FTP, HTTP, etc., to see if a
+service is running and available on a particular server. This augments
+the classic end-to-end monitoring tools included with RPA Builder
+with some element monitoring checks.
+
+The _Service Check_ plug-in consists of a single new Action Step called
+_Service Check_ – this is accessed in the same place as the other Action
+Step elements.
+
+=== Properties
+
+[#ServiceCheck_P_BackupTargetHost .anchor]####**Backup Target Host**
+Enter the host name without protocol prefix. When the _Target Host_
+cannot be reached, the _Backup Host_ will be checked instead. Leave
+blank if not required.
+
+*Enable Error Trace* You can define a set of _Error Traces_ that will be
+executed when the check fails and this property is enabled
+
+[#ServiceCheck_P_IterationCountSucced .anchor]####**Iteration
+Count/Iteration must succeed** Define how often the check should be
+repeated and how often it needs to be successful
+
+*Iteration delay* If you defined more than one iteration, this specifies
+the pause in milliseconds between each iteration
+
+[#ServiceCheck_P_PacketSize .anchor]####**Packet Size (kb)** Shows you
+the payload of the sent packages. This is only relevant for TCP Ping.
+
+[#ServiceCheck_P_Protocol .anchor]####**Protocol** Protocol to use for
+this check. Available values are: _Ping, TCP Echo, FTP, HTTP, HTTPS,
+SMTP, POP3, IMAP,_ and _TCP Portcheck_.
+
+[#ServiceCheck_P_TargetHost .anchor]####**Target Host** Enter the DNS
+name or IP address of the host without protocol prefix to check.
+
+[#ServiceCheck_P_TargetPort .anchor]####**Target Port** Which port to
+check on. Will be populated with default protocol after protocol is
+selected within the wizard.
+
+*Timer Mode* When "Record Timer" is enabled and the _Ping_ is used in a
+loop, the following mode is for calculating the timer value:
+
+* *Last* The last time measured is saved
+* *Average* The Workflow calculates an average of all times measured and
+saves it
+* *Min* The fastest time measured is saved
+* *Max* The slowest time measured is saved
+
+Other Properties that are the same in all Action Steps are described in
+the section on link:#CommonProperties[Common Properties]. For reasons of
+clarity they are not shown here.
+
+=== Inbound Variables
+
+link:#ServiceCheck_P_TargetHost[*Target Host*]
+
+link:#ServiceCheck_P_BackupTargetHost[*Backup Target Host*]
+
+link:#ServiceCheck_P_TargetPort[*Target Port*]
+
+link:#ServiceCheck_P_PacketSize[*Packet Size*]
+
+*Suffix* can be used if the _Service Check_ is within the _Control
+Block_'s _File Controlled Loop_. A suffix is then added to the name of
+the _Service Check_ during every loop. Each suffix is a column entry in
+the file that was imported in the _File Controlled Loop_.
+
+=== Outbound Variables
+
+*Time* provides you the measured time.
+
+=== Wizard
+
+_Service Check_ will connect to the specified
+link:#ServiceCheck_P_TargetHost[_Target Host_] on the specified
+_link:#ServiceCheck_P_TargetPort[Port]_ and attempt to perform a default
+handshake for the chosen protocol. It will try as many times as defined
+in the link:#ServiceCheck_P_IterationCountSucced[_Iteration Count_]. If
+you have activated the _Record Timer,_ the response time of the check
+will be recorded as a timer and sent to the server. The name appearing
+in the reporting corresponds to the name of the Action Step.
+
+If it does not succeed after the defined number of attempts, it will
+fail and try again with the
+link:#ServiceCheck_P_BackupTargetHost[_Backup Host_]. If the _Backup
+Host_ fails too (or the field is empty), the _Error Traces_ will be
+created and logged. You can define _Error Traces_ by clicking the
+appropriate button.
+
+With _Define Error Traces_ you can configure the _Error Traces_. These
+are a set of checks that will be executed on failure. Each of these
+checks resembles a _Service Check_, but it only has the properties
+link:#ServiceCheck_P_Protocol[_Protocol_],
+link:#ServiceCheck_P_TargetHost[_Target Host_],
+link:#ServiceCheck_P_TargetPort[_Port_], and
+link:#CommonProperties[_Timeout_]. _Error Traces_ may also use
+_Traceroute_ as the protocol – this will perform a standard trace route
+command and log the results.
+
+Simply click in the empty row to create a new _Error Trace_. You can
+then choose the link:#ServiceCheck_P_Protocol[_Protocol_] (note that for
+_Error Traces_, _Traceroute_ is available), specify the
+link:#ServiceCheck_P_TargetHost[_Target Host_] and
+link:#ServiceCheck_P_TargetPort[_Port_], and change the
+link:#CommonProperties[_Timeout_] if required. Press *_Enter_* or click
+_OK_ when you are done. You can repeat this as often as you like to
+create as many _Error Traces_ as needed.

@@ -1,0 +1,50 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Recalculate Excel File
+
+The Recalculate Excel File Action Step can be used to recalculate an
+Excel sheet. If a value has subsequently changed, the values in the
+Excel sheet are updated. To be able to continue working with the new
+values, they must be read out again with the _Read from Excel File_
+Action Step.
+
+With the Action Step Recalculate Excel File you can determine exactly
+where a recalculation should take place in the Workflow.
+
+The recalculation is documented in the Workflow Run Results.
+
+The _Read from Excel File_ Action Step can only be used inside an Excel
+Session. Specify the source and destination file in the
+link:#AS_ExcelSession[_Excel Session_].
+
+Please note the operation mode that you have selected in the Excel
+session:
+
+* *Read and write to the same file* The recalculation is performed on
+the selected Excel sheet.
+* *Read from source and write to different file* The recalculation is
+only performed in the selected destination file.
+* *Read only* The Action Step cannot be executed in Read only mode.
+
+=== Properties
+
+*Excel Operation Settings*
+
+* *Sheet name* Name of the spreadsheet. In the properties, you can only
+enter the name directly. In the wizard, however, you can select the
+spreadsheet directly or via the pin variable.
+
+=== Inbound Variables
+
+link:#AS_RecalculateExcelFile_P_SheetName[*Sheet name*]
+
+*Apply calculation to* Here you specify which part of the Excel file is
+to be included in the recalculation.
+
+* *Whole Workbook* (default) The entire workbook is recalculated.
+* Or you can select a specific spreadsheet from the list.
+
+=== Outbound Variables
+
+The Action Step _Recalculate Excel File_ possesses no outbound
+variables.

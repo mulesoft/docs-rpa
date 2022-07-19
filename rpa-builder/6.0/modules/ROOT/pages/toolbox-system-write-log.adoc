@@ -1,0 +1,25 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Write Log
+
+This _Action Step_ can be used to leave a comment or brief description
+at a certain point in the _Workflow_. The comment will be logged in the
+_Trace Log_ and be shown in the _Workflow Run Results_. Note that if you
+set the _Workflow Run Result_ property to _Error_, it will *not* force
+the _Workflow_ to enter an error state.
+
+=== Properties
+
+[#AS_WriteLog_P_LogMessage .anchor]####**Log Message** The text that
+will be written into the log. You can use pin variables here.
+
+*Workflow Run Result* If activated, the _Message text_ also shows in the
+_Workflow Run Results_
+
+=== Inbound Variables
+
+link:#AS_WriteLog_P_LogMessage[*Log Message*]
+
+=== Outbound Variables
+
+The Action Step _Write Log_ possesses no outbound variables.

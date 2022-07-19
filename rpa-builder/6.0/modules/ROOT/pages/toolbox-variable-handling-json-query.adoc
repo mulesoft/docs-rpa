@@ -1,0 +1,49 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Json Query
+
+The _Json Query_ Action Step enables you to parse Json objects and to
+read individual values / elements from the object. The result can then
+be used in the remainder of the process run as a source variable.
+
+This Action Step can be combined particularly well with the _REST Call_
+Action Step in order to further refine the result that is output there.
+
+=== Properties
+
+*JsonPath Expression* Displays the JsonPath Expression, for example,
+$.access_token.
+
+=== Inbound Variables
+
+*Json Object* From this Json object, the required value is extracted
+using the JsonPath Expression. The result of a REST Call Action Step,
+which you can select from the drop-down list, serves as an object.
+
+*JsonPath Expression* Here, you use the JsonPath Expression to specify
+which value is to be extracted from the object, for example, $.Id., if
+you only require the ID as a result.
+
+=== Outbound Variables
+
+*IsSucceeded* (boolean) Shows whether the Action Step has been
+successfully run or not.
+
+*FirstItem* (array) The first element of the array is output as a string
+
+*ArrayCount* Indicates the number of elements of the returned array.
+
+=== Wizard
+
+See link:#inbound-variables[_Inbound Variables_].
+
+Note that an empty result is still a valid result and is not treated as
+an error.
+
+You can find more information on the JsonPath using the following links:
+
+https://jsoneditoronline.org/ A simple editor to display Json objects.
+
+https://jsonpath.com/ A JsonPath evaluator.
+
+https://goessner.net/articles/JsonPath/ Further information on JsonPath.

@@ -1,0 +1,7 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Getting Started
+
+In this section, you will learn about the basic features of
+_WorkflowStudio_, create your first functional _Workflow_, and upload it
+to your _Servicetrace Servicetrace® X1 Server_ .

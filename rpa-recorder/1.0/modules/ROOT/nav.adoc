@@ -1,2 +1,0 @@
-.xref:overview.adoc[RPA Recorder]
-* xref:overview.adoc[RPA Recorder Overview]
