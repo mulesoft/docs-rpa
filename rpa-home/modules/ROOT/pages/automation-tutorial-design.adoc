@@ -31,7 +31,7 @@ To record actions with RPA Recorder and create the BPMN diagram, follow these st
 . In the RPA Recorder panel, click the *Add activity* (image:add-activity.png[The add activity icon,1.5%,1.5%]) button and add a new activity step:
 .. Write `Sign-up for newsletter` in the activity name field.
 .. In the drop down menu, select *Web task*.
-.. Enable the *Continue with already existing web session* checkbox.
+.. Select the *Continue with already existing web session* checkbox.
 .. Click *Add*
 .. In the sign-up page, provide an email address of your choice and click the accept (>) button.
 . In the RPA Recorder panel, click the *Stop recording* (image:stop-recording.png[The stop recording icon,1.5%,1.5%]) button.
