@@ -1,0 +1,107 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Intelligent OCR (2020)
+
+The _Intelligent OCR (2020)_ Action Step represents a good alternative
+to the previous OCR (Legacy OCR). The new OCR contains the languages
+Arabic, Greek, Hebrew, and Thai.
+
+In the following Chapter, we will look at the key differences compared
+to the Action Step Legacy OCR. You can find a detailed description of
+the properties, variables, etc. in the Chapter entitled
+link:#OCR_TextRecognition[_Text Recognition – Legacy OCR_].
+
+=== Properties
+
+*Color Depth* (bpc) In documents with many images and colors, a setting
+with low color depth leads to faster search results. You can select a
+value between 0 and 8. Value 0 means that the color depth remains
+unchanged compared to the original.
+
+*Enhance Contrast* Adjusts the image contrast so that the legibility of
+the text is improved.
+
+*Image Type*
+
+* {blank}
++
+____
+*Auto* (default) The document type is determined automatically
+____
+* {blank}
++
+____
+*Document* Can improve the OCR operation of a document (PDF)
+____
+* {blank}
++
+____
+*Snippet* Can improve the OCR operation of selected text sections
+____
+
+*Recognition Strategy*
+
+* {blank}
++
+____
+*Fast* The OCR operation is carried out faster but this can lead to
+poorer scan quality
+____
+* {blank}
++
+____
+*Advanced* (default) The OCR operation can take longer but the results
+are optimal.
+____
+
+=== Outbound Variables
+
+The outbound variables are identical to those in the Legacy OCR.
+
+=== Wizard
+
+*Scaling Mode*
+
+*Auto Scale by Engine* (default) Scaling to a higher resolution takes
+place automatically if this improves the OCR operation. This can lead to
+slightly longer search operations and also requires more main memory.
+
+*Scale by 1* The scaling of the recorded image is set to 1.
+
+*Manual scale* In the _Manual scale_ mode, you can determine the scaling
+factor yourself. You can enter an enlargement value of between 1 and 4
+in each case. It is *not* recommended to use a high value (4) in
+combination with a large image excerpt.
+
+*Dictionary*
+
+The following languages are available here
+
+[cols=",",options="header",]
+|===
+|Arabic |Italian
+|Chinese (simplified) |Japanese
+|Chinese (traditional) |Korean
+|Czech |Norwegian
+|Danish |Polish
+|English |Portuguese
+|Finnish |Russian
+|French |Spanish
+|German |Swedish
+|Greek |Turkish
+|Hebrew |Thai
+|Hungarian |
+|===
+
+In contrast to the situation with Action Step _Legacy OCR,_ here you can
+combine the Asian languages with each other, and also with the other
+languages.
+
+You can select a maximum of two languages at any time.
+
+*Timing*
+
+*Retries [0..5]* (Default: 3) With this menu option, it is possible to
+repeat the search recognition up to 5 times. If the text recognition is
+successful, no further attempt is carried out. This option only appears
+if you have selected text, RegEx, or fuzzy comparison in search mode.

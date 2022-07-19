@@ -1,0 +1,161 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Select Case
+
+The _Select Case_ Action Step makes it possible to match the contents of
+a variable against certain predefined cases. For example, you can search
+the content of a text variable for specific information and specify
+different Action Steps to be executed depending on what is found. The
+“DoElse” component is always present. This is used to provide a default
+action for cases that have not been specified.
+
+=== Properties
+
+*Misc*
+
+* *CaseValue* Enter the comparison value for the selected case query.
+This is the value that will be compared with a variable or that will be
+searched for.
+* *Text Affinity* Value for the textual similarity in a fuzzy search,
+expressed as a percentage. A value of 0% denotes no similarity while a
+value of 100% means identical. The default value is 50%.
+* *CompareValue String*
+* *Compare Value Int* Integer
+* *Compare Value Bool*
+* *Compare Value Float*
+
+Other properties that are the same in all Action Steps are described in
+section link:#CommonProperties[_Common Properties_]. For reasons of
+clarity they are not shown here.
+
+=== Wizard
+
+* *Type* One of the following variable types:
+** *Integer* Positive or negative integer
+** *Alphanumeric* Characters that are either letters or numeric digits,
+or both (text)
+** *Boolean* Boolean value (True/False)
+** *Float* Positive or negative floating-point number
+
+If you have already defined cases and then change the type, a warning
+will be shown informing you that all the cases in _Select Case_ will be
+lost. This is because cases in a _Select Case_ are generated based on
+the previously selected data type and it is not possible to simply
+convert the type of existing cases without further consideration.
+
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=370,height=100]
+
+* *Cases* You can create one or more cases using the
+image:media\image2.png[image,width=105,height=29] button depending on
+which data type you have selected above. After you have created a case,
+you can use the image:media\image3.png[image,width=40,height=24] button
+to modify it. Use the image:media\image4.png[image,width=32,height=30]
+button to delete a case that was created unintentionally. A step-by-step
+guide to configuring _Select Case_ is provided below.
+
+Step-by-step – Configure _Select Case_ as follows (text variable as an
+example):
+
+[arabic]
+. Drag _Select Case_ to the desired place in the Workflow.
+. Open the _Select Case_ wizard.
+. In the drop-down “Type” menu, choose the data type of the variable
+that is to be checked. This example uses a text variable, so select the
+type “Alphanumeric”. A detailed description of the properties and
+configuration options for the various data types is provided in the
+section on “Data types and comparison options” below.
+
+Type conversion takes place in the following order of precedence: +
+Boolean -> Integer -> Float -> String +
+This means that if the variable being checked is of type Boolean, you
+can use variables of the types Boolean, Integer, Float or String when
+evaluating the case. If the variable being checked is of type Float, you
+can only use variables of the types Float or String to evaluate the
+case. If you are not sure what data type the variable being checked is,
+then is best to use the type String for case evaluation!
+
+[arabic, start=4]
+. Create a case using the
+image:media\image2.png[image,width=105,height=29] button.
+. image:media\image5.png[image,width=299,height=102]Edit the Case using
+the image:media\image3.png[image,width=40,height=24] button. The
+following dialog is displayed.
+. Enter the text for this case in the “Value” field in the “Edit Value
+Window” dialog. Next you will set up a search that will find part of
+this text.
+. In the drop-down “String Compare Mode“ menu select the item
+“Substring”.
+. Click OK to close the “Edit Value Window” dialog box.
+. You can now create additional cases and also delete cases that have
+been created unintentionally using the
+image:media\image4.png[image,width=32,height=30] button.
+. Click OK to close the _Select Case Wizard_.
+. Click on the pin for the _Select Case_ Action Step in the Workflow
+(see figure): +
+image:media\image6.png[image,width=341,height=35]
+. In the “Edit Variable Mappings for Select Case” dialog box, select one
+of the available variables in the corresponding drop-down menu. In this
+example, that would be a variable from the drop-down “Compare Value
+String” menu. Confirm your selection with OK.
+. The pin for the _Select Case_ Action Step will now be shown in red.
+. Drag at least one Action Step to be performed into the newly created
+Case in _Select Case_. This Action Step will now be performed if the
+condition specified for the case is met (steps 5 to 7 above).
+
+=== Data Types and Comparison Options
+
+[cols=",",options="header",]
+|===
+|*File type* |*Comparison options*
+|Integer (positive or negative whole number) a|
+= variable must match exactly
+
+≠ variable must not be a match
+
+< variable must be less than Value
+
+> variable must be greater than Value
+
+≤ variable must be less than or equal to Value.
+
+≥ variable must be greater than or equal to Value.
+
+|Alphanumeric (text) a|
+Full match: Value found must match exactly
+
+Substring: Part of the text in Value must match
+
+RegEx comparison: Search for matches for the regular expression entered
+as the Value. More information about _Regular Expressions_ is provided
+in the section on link:#UsingRegularExpression[Using Regular
+Expressions].
+
+Fuzzy: Search for text similar to that in Value Adjust the level of
+similarity, expressed as a percentage, using the slider under “Text
+Affinity”. The default value is 50%. A higher value means that fewer
+matches will be found.
+
+|Boolean (True or False) a|
+For Boolean there is only one case because this is sufficient in
+combination with “DoElse” to cover the two possibilities of True and
+False.
+
+False: Value in evaluated variable must be False.
+
+True: Value in evaluate variable must be True.
+
+|Float (positive or negative floating-point number) a|
+= variable must match exactly
+
+≠ variable must not be a match
+
+< variable must be less than Value
+
+> variable must be greater than Value
+
+≤ variable must be less than or equal to Value.
+
+≥ variable must be greater than or equal to Value.
+
+|===

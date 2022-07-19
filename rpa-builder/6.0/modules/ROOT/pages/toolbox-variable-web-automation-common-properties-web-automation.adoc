@@ -1,0 +1,24 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Common Properties (Web Automation)
+
+The _Web Automation_ _Action Steps_ share the
+link:#CommonProperties[_Common Properties_].
+
+Additionally, they have the following _Common Properties_:
+
+* *Element _XPath_* _XPath_ is short for _XML Path Language_. This is a
+special language used to uniquely identify elements within an XML
+document. Since HTML is based on XML, you can use the XPath to identify
+any object on a webpage. You can use the _Browser Wizard_ (see above) to
+generate XPaths or you can also enter them manually.
+* *Window Title* Title of the website where the referenced element is
+located. This will be set when using the _Browser Wizard_.
+* *Use Window Title* Determines whether or not the website title should
+be used to identify the correct browser tab
+* *Frame Indexes/ Frame Hierarchy* A series of indexes needed to
+identify elements that lie within frames. Each frame is referenced by
+its index, with individual frames separated by slashes. For example, a
+_Frame Index_ of _/2/1_ means that the element lies within the first
+sub-frame of the second frame of the main page. This will be set when
+using the _Browser Wizard_.

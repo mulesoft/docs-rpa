@@ -1,0 +1,48 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Lock Section
+
+The _Lock Section_ Action Step is used to synchronize access if multiple
+parallel _Workflows_ need to access a file or a mailbox, for example in
+the case of Robotic Applications. Synchronization is achieved by
+preventing other _Workflows_ from accessing the file when it is in use.
+
+A typical scenario where a _Lock Section_ might be used when a
+_Workflow_ is run in parallel in different sessions. In this case, a
+_Robot Secure_ is used that enables parallel secure sessions to be
+launched. If parallel secure sessions, such as in the example above, are
+running on virtual machines on a server, then a file can be locked in
+synchronization on this server in order to allow certain content to be
+read out alternately.
+
+=== Properties
+
+*Misc*
+
+* *Lock Token* Enter an individual token here. Individual tokens are
+typically only necessary if you work with virtual machines with
+identical installations running in parallel. Normally it is adequate to
+use the WorkflowGUID as the token.
+* *WorkflowGUID* This field shows the GUID (Globally Unique Identifier)
+of the present _Workflow_. This GUID is intended to be unique anywhere
+in the world. However, for parallel, identical installations that use
+_Robot Secure_ and individual _Secure Sessions_, there is no guarantee
+that this ID will be unique.
+
+Other Properties that are the same in all Action Steps are described in
+the section on Common Properties. For reasons of
+clarity they are not shown here.
+
+=== Wizard
+
+* *Lock on Workflow GUID* Enable this option if parallel executions of
+the same Workflow need to be synchronized across various _Secure
+Sessions_ when using _Robot Secure_. The GUID shown in the *Lock Token*
+field for the active Workflow makes use of this option.
+* *Lock on user defined token* Enable this option if parallel executions
+of the same Workflow need to be synchronized in various _Secure
+Sessions_ using the _Robot Secure_. This is the case for virtual
+machines and parallel identical installations, for example. This option
+uses the token entered in the *Lock Token* field.
+* *Lock Token* Enter an individual token here. All alphanumeric
+characters except \ and / are allowed.

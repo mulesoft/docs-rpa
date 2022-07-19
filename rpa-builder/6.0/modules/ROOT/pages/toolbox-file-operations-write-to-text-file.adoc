@@ -1,0 +1,86 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Write to Text File
+
+_Write to Text File_ writes text to a text file. There is an option to
+specify that new text should overwrite existing text. There is an option
+to specify that a new file should be created.
+
+=== Properties
+
+*File Operation Settings:*
+
+* *Add new line* Specify here whether a new line should be added after
+the new text.
+* *Create if file does not exist* Specify here whether a new file should
+be created if the specified file does not exist. This option prevent the
+_Workflow_ from ending with an error message if the file does not exist.
+* [#AS_WriteToTextFile_P_DirectoryPath .anchor]####**Directory path**
+Enter the path to the directory where the file to be written to is
+stored. You can specify an absolute or relative path. If a relative path
+is used, then the path refers to a storage location relative to the
+_Base Path_ variable.
+* *File name* Enter the name of the file that is to be written.
+* *Overwrite file content* Specify here whether the whole content of the
+destination file is to be deleted before writing. This option can be
+used if you want the specified file to contain only the text that is to
+be written. If this option is not selected, the new text will be
+appended at the end of the existing text.
+* *Text to write* Specify here the text that is to be written.
+
+Other Properties that are the same in all Action Steps are described in
+the section on link:#CommonProperties[Common Properties.] For reasons of
+clarity they are not shown here.
+
+=== Inbound Variables
+
+link:#AS_WriteToTextFile_P_DirectoryPath[*Directory path*]
+
+link:\l[*File name*]
+
+=== link:\l[*Text to write*]Outbound Variables
+
+*Text to write* The _Write to Text File.Text to write_ provides the text
+that is to be written.
+
+*IsWritten* The _Write to Text File.IsWritten_ variable indicates
+whether the text could be written to the file or not (True/False).
+
+*File name* The _Write to Text File.File Name_ variable provides the
+name of the file that is to be written.
+
+*Directory path* The _Write to Text File.Directory Path_ variable
+provides the path used.
+
+=== Wizard
+
+* *Directory path* Specify the path here to the file that is to be
+written. You can create an absolute path or a path relative to the _Base
+Path_ using the image:media\image1.png[image,width=175,height=22] and
+image:media\image2.png[image,width=129,height=22] buttons. The initial
+value is %STWS_BASEPATH%. Select an existing path using the
+image:media\image3.png[image,width=20,height=20] button. You can also
+insert variables from the _Workflow_ in order to construct the path. To
+do so, click on the pin and select one of the available variables.
+
+More information about the environment variables (Insert Environment
+Variable) and script variables (Insert Script Variable) can be found in
+the section link:#AS_Settings[Settings].
+
+* *File name* Enter the name of the file that is to be written. You can
+also insert a variable from the Workflow as the _File Name_. To do so,
+click on the pin and select one of the available variables.
+* *Text to write* Enter the text that is to be written. You can also
+insert a variable from the Workflow as the _Text to write_. To do so,
+click on the pin and select one of the available variables.
+* *Overwrite content with text* Specify here whether the whole content
+of the destination file is to be deleted before writing. This option can
+be used if you want the specified file to contain only the text that is
+to be written. If this option is not selected, the new text will be
+appended at the end of the existing text.
+* *Add a new line after text* Specify here whether a new line should be
+added after the new text.
+* *Create file if it does not exist* This option determines whether a
+new file should be created if the specified file does not exist. This
+option prevents the _Workflow_ from ending with an error message if the
+file does not exist.
