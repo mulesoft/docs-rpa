@@ -70,7 +70,7 @@ After you finish evaluating a process for automation and confirm that it is suit
 . In the *Project Manager* dropdown menu, select your username.
 . Click *OK*.
 
-== Next Step
+== Next Steps
 
 After the process evaluation finishes and the process is approved, the assigned Project Manager or Center of Excellence can start the automation project.
 
