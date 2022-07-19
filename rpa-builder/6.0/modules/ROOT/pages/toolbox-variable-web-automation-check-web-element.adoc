@@ -1,0 +1,76 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Check Element
+
+Use this _Web Automation_ object to verify if a website or web
+application element was loaded properly and how long this took. The
+_Check Element_ object can be used on any website element.
+
+=== Properties
+
+[#AS_CheckElement_P_AttributeToCheck .anchor]####**Attribute to check**
+Select an attribute to be checked in addition to the XPath element. The
+drop-down menu automatically contains the available attributes for this
+element.
+
+*Expected Value* Define the value that the attribute must have to be
+valid
+
+[#AS_CheckElement_P_UseRegularExpression .anchor]####**Use regular
+expression** Use this function if you want to use a regular expression
+when checking the value of a selected attribute. For an introduction to
+regular expressions, see Section link:#UsingRegularExpression[Using
+Regular Expressions].
+
+*Invert Check logic* If enabled, the _Check Element_ object waits until
+the defined web element cannot be found any more, instead of waiting for
+it to appear.
+
+=== Inbound Variables
+
+link:#AS_CheckElement_P_AttributeToCheck[*Attribute to Check*]
+
+*link:\l[Check Value]link:#AS_CheckElement_P_InvertCheckLogic[Invert
+Logic]*
+
+link:#AS_CheckElement_P_UseRegularExpression[*Regular expression*]
+
+*link:\l[Element XPath]link:#CommonProperties_WebAutomation[Window
+Title]*
+
+=== Outbound Variables
+
+The Action Step _Check Element_ possesses no outbound variables.
+
+=== Wizard
+
+When you select the element you want to check using the _Browser
+Wizard_, the available attributes for the element are listed in a
+drop-down menu. After you have chosen an attribute, an expected value
+must be defined for that attribute. The current value will automatically
+be set as the default.
+
+You can also use regular expressions to match the expected value. For
+more information about regular expressions see Section
+link:#UsingRegularExpression[Using Regular Expression].
+
+This check works as follows:
+
+[cols=",,",options="header",]
+|===
+| |*Normal check logic* |*Invert check logic*
+|*_Attribute to check_ is empty* |Only checks if there is an element at
+the given XPath for the given timeout period. Fails if no element can be
+found at the XPath for the whole timeout. |Checks if there is *no*
+element at the given XPath or waits until it disappears. Fails if an
+element is detected during the timeout period.
+
+|*_Attribute to check_ has an entry* |In addition to the check above, if
+the element is found, checks if the attribute to check is equal to the
+_Expected Value_. Fails if the attribute does not equal the expected
+value during the whole timeout period. |In addition to the check above,
+if the element is found, checks if the attribute to check is *not* equal
+to the _Expected Value_. Fails if the attribute equals the expected
+value at any point during the whole timeout. Note that this check will
+be instantly successful if the element cannot be found at all!
+|===

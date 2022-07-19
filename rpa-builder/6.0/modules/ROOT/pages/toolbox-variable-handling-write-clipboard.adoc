@@ -1,0 +1,38 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Write Clipboard
+
+Use _Write Clipboard_ to copy a piece of text to the clipboard. This
+will replace the content s of the clipboard with the text. This is
+similar to the copy function, <Ctrl>+<C>, used in a text editor to copy
+a selected piece of text, but in this case a value from the _Workflow_
+is used for the clipboard instead of selected text. You can either enter
+the text used by _Write Clipboard_ yourself, or use the value of a
+variable.
+
+=== Properties
+
+_Write Clipboard_ has no special properties.
+
+Other Properties that are the same in all Action Steps are described in
+the section on link:#CommonProperties[Common Properties].
+
+=== Inbound Variables
+
+*Clipboard Text* Enter the text that should be copied to the clipboard
+when this _Action Step_ is executed. You can also transfer the content
+of a _Workflow_ variable to the clipboard. To do so, click on the pin
+and select one of the available variables.
+
+=== Outbound Variables
+
+*Write Clipboard* The _Write Clipboard.ClipboardText_ variable provides
+the text to be written to the clipboard.
+
+=== Example
+
+_Write Clipboard_ can be useful in transactions and robotic applications
+when it is necessary to enter text quickly. This might be necessary, for
+example, when an article description or a password has to be entered
+automatically into a field. Another use for this function might be to
+transfer data (text) from application 'A' to GUI 'B'.

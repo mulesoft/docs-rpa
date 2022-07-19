@@ -1,0 +1,60 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Checking System Parameters
+
+=== Why Are System Parameters So Important?
+
+Some system parameters in _Microsoft Windows®_ significantly affect how
+the screen image is displayed. For example, turning _ClearType_ (a font
+smoothing algorithm built into _Microsoft Windows®_) on or off affects
+the rendering of almost all displayed text – this includes browsers,
+applications, system dialogs, menu bars, etc.
+
+image::getting-started-checking-system-parameters-why-are-system-parameters-so-important-image1.png[Example turning Clear Type on or off]
+
+As you can see, there
+is a big difference between the display of text when _ClearType_ is on
+or off. Our image search algorithm always compares a "_Pattern image_"
+to what is visible on the screen during execution. Now imagine you
+capture a _Pattern image_ containing text on a system where _ClearType_
+is enabled (i.e. the left part of the picture above), but then execute
+the _Workflow_ on a system where _ClearType_ is disabled. The
+_MuleSoft_ image search algorithm compares the left-hand image to
+the right-hand one and, although it still finds the image, the match
+precision will be very low.
+
+Aside from _ClearType_, the image search is also affected by the "Menu
+drop shadow" setting and the DPI setting.
+
+The display parameters on the system used to create a _Workflow_ should
+always be identical to the parameters on the system where the workflow
+is executed!
+
+You should also turn off any settings or programs that may disrupt the
+_Workflow_ during execution due to unexpected behavior, such as
+displaying sudden pop-up windows. Common causes of sudden W__orkflow__
+failures are automatic updates to _Windows_ and other programs you have
+installed.
+
+You should always configure your agent systems to show no unexpected
+behavior such as sudden pop-ups, screensavers, or similar.
+
+==== The Recommended Systems Settings Are:
+
+* Disable screen saver
+* Turn off all power option properties
+* Disable automatic _Windows_ updates
+* Disable _ClearType_
+* Disable menu drop shadow effects
+* Set desktop scaling to _100%_
+
+==== Checking the System Parameters
+
+The menu item _View_ -> _Show System Parameters_ opens an overview over
+the most important settings of your system.
+
+Settings marked with a green circle can be left this way.
+
+Settings marked with a red circle should be changed.
+
+With the button Refresh you can check if setting changes have led to an optimization of the status.

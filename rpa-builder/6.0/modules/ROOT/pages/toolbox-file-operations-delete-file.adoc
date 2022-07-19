@@ -1,0 +1,72 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Delete File
+
+_Delete File_ will delete a file located at the specified path. The
+Action Step can be used, for example, to delete files which were
+generated within a _Workflow_. If the file for deletion does not exist,
+the Action Step does *not* terminate the Workflow with an error. There
+is however an option that enables the generation of an error message in
+the event of a non-existent file.
+
+=== Properties
+
+*File Operation Settings*
+
+* *Directory path* Enter the path to the directory from which the file
+is to be deleted. You can specify an absolute or relative path. If a
+relative path is used, then the path relates to the _Base Path_
+variable.
+* *File Name* Enter the name of the file that is to be deleted.
+
+Placeholders are not permitted. For further information please refer to
+the section on link:#AS_Settings_InvalidCharacters[Invalid characters].
+
+* *Force error if file does not exist* If this option has been enabled,
+an error message will interrupt the _Workflow_ if the file for deletion
+does not exist. If this option is not enabled and the file does not
+exist, the _Workflow_ will continue and no error message will be
+generated.
+
+Other Properties that are the same in all Action Steps are described in
+the section on link:#CommonProperties[Common Properties]. For reasons of
+clarity they are not shown here.
+
+=== Inbound Variables
+
+link:\l[*Directory path*]
+
+=== link:\l[*File name*]Outbound Variables
+
+*IsDeleted* The _Delete File.IsDeleted_ variable indicates whether the
+file could be deleted or not (True/False).
+
+*File Name* The _Delete File.File Name_ variable provides the name of
+the file that is to be deleted.
+
+*Directory path* The _Delete File.Directory Path_ variable provides the
+path that is used.
+
+=== Wizard
+
+* *Directory path* Specify the path to the file that is to be deleted.
+You can create an absolute path or a path relative to the _Base Path_
+using the image:media\image1.png[image,width=175,height=22] and
+image:media\image2.png[image,width=129,height=22] buttons. The initial
+value is %STWS_BASEPATH%. Select an existing path using the
+image:media\image3.png[image,width=20,height=20] button. You can also
+insert variables from the _Workflow_ in order to construct the path. To
+do so, click on the pin and select one of the available variables.
+
+More information about the environment variables (Insert Environment
+Variable) and script variables (Insert Script Variable) can be found in
+the section link:#AS_Settings[Settings].
+
+* *File name* Enter the name of the file that is to be deleted. You can
+also insert a variable from the Workflow as the _File Name_. To do so,
+click on the pin and select one of the available variables.
+* *Force error if file does not exist* If this option has been enabled,
+an error message will interrupt the _Workflow_ if the file for deletion
+does not exist. If this option is not enabled and the file does not
+exist, the _Workflow_ will continue and no error message will be
+generated.

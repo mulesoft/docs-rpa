@@ -1,0 +1,7 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Installation
+
+Please refer to the document _Servicetrace_InstallationGuide._ To
+download the document please log in to the customer download area on
+http://www.servicetrace.com/[www.servicetrace.com].
