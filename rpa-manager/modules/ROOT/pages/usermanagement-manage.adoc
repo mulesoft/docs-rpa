@@ -97,6 +97,7 @@ Both the computer on which the RPA Manager is installed, and the mobile device o
 Remove obsolete users. A user cannot be deleted if it is the owner or manager of a process. Deleted users cannot be restored. Use the *Deactivate* function to remove a user only temporary.
 
 . In the *Users* view of the *User Management* module, click the icon *Remove* in the table row of the user you want to edit.
+. Confirm the removal.
 
 == Designate a User as Project Manager
 
