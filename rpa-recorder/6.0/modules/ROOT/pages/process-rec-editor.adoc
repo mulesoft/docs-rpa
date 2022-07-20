@@ -4,7 +4,7 @@ include::rpa-home::partial$pending-review.adoc[]
 
 If you start the recorder from RPA Builder, you can view the current process BPMN and all new recorded BPMNs by selecting them from the drop-down menu.
 
-Select a process and click on the *Edit, Merge and Upload Recordings* button (image:edit-process-button.png[Edit, Merge and Upload Recordings button, 0.2%, 0.2%]) to open the Process Recording Editor.
+Select a process and click on the *Edit, Merge and Upload Recordings* button (image:edit-process-button.png[Edit, Merge and Upload Recordings button, 0.025%, 0.025%]) to open the Process Recording Editor.
 
 image:rpa-recorder-home.png[RPA Recorder Home screen]
 
