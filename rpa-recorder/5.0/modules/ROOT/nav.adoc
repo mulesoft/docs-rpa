@@ -1,2 +1,0 @@
-.xref:index.adoc[RPA Recorder]
-* xref:index.adoc[RPA Recorder Overview]
