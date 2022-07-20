@@ -15,12 +15,12 @@ The following functions are available in RPA Recorder while recording a process:
 [%header,cols="10,20,30,10"]
 |===
 |Icon |Name | Description | Hotkey
-|image:start-recording-icon.png[Start Recording icon, 25%, 25%] |Start Recording | Starts a new recording session. |`F8`
-|image:finish-recording-icon.png[Start Recording icon, 25%, 25%] | Finish Recording Session. | Finishes the current recording session, and triggers the generation of xref:documents.adoc[Documents] | --
-|image:take-screenshot-icon.png[Take Screenshot icon, 25%, 25%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
-|image:add-variable-icon.png[Add Variable icon, 25%, 25%]  | Add Variable | Opens the <<Add Variable>> dialog. | `F10`
-|image:add-comment-icon.png[Add Comment icon, 25%, 25%] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
-|image:add-activity-icon.png[Add Activity icon, 25%, 25%] | Add Activity | Opens the <<Add Activity>> dialog. | `F12`
+|image:start-recording-icon.png[Start Recording icon, 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
+|image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session. | Finishes the current recording session, and triggers the generation of xref:documents.adoc[Documents] | --
+|image:take-screenshot-icon.png[Take Screenshot icon, 20%, 20%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
+|image:add-variable-icon.png[Add Variable icon, 20%, 20%]  | Add Variable | Opens the <<Add Variable>> dialog. | `F10`
+|image:add-comment-icon.png[Add Comment icon, 20%, 20%] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
+|image:add-activity-icon.png[Add Activity icon, 20%, 20%] | Add Activity | Opens the <<Add Activity>> dialog. | `F12`
 |===
 
 
