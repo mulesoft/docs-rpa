@@ -1,4 +1,4 @@
-rpa-home::partial$pending-review.adoc
+include::rpa-home::partial$pending-review.adoc[]
 
 = RPA Recorder Overview
 
@@ -15,4 +15,4 @@ You can start RPA Recorder either directly from RPA Manager in the design phase,
 * If started from RPA Manager, RPA Recorder automatically uploads the recorded BPMN process model with the documentation into the server, and creates a local PDF with the same information after the recording is finished.
 * If used without server connection, RPA Recorder creates the BPMN and stores it locally.
 
-In either case, RPA Recorder also creates a XES file for further processing in process mining tools.
+In either case, RPA Recorder also creates an XES file for further processing in process mining tools.

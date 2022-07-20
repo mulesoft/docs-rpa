@@ -1,4 +1,4 @@
-rpa-home::partial$pending-review.adoc
+include::rpa-home::partial$pending-review.adoc[]
 
 = Documents
 
@@ -46,3 +46,7 @@ RPA Recorder creates and stores a log file in the *Logs* subdirectory, within th
 The log file contains valuable information about the recording, but also warnings and errors that may have happened.
 
 If any unexpected behavior arises, you can provide feedback to MuleSoft by sending over the log file.
+
+= See Also
+
+* xref:user-interface.adoc#settings[User Interface]
