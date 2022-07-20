@@ -1,0 +1,81 @@
+= Step 2. Evaluate a Process for Automation
+
+Before you start designing a process for automation, think about the following questions:
+
+* What processes are there in your company?
+* Who is responsible for the processes?
+* Which criteria are necessary and suitable to evaluate the processes?
+* How can these criteria be described clearly and comprehensively?
+* Where does the data for evaluating the processes come from?
+* Which systems and data are needed to automate the processes?
+
+After gathering this information, you can use the default evaluation template or create your own evaluation criteria and templates to assess the feasibility and benefits of automating a process.
+
+== Step 2.1: Create an Evaluation Criterion
+
+Create a new evaluation criterion to use during the process evaluation:
+
+. Open RPA Manager.
+. Click the *Process Evaluation* module.
+. Click *Evaluation Criteria*.
+. Click *Create Benefit*.
+** In the *Name* field, write: `Concurrency`.
+** Click the *Exclude* checkbox.
+** In the *Definition Gradation 1* field, write: `Yes, allows parallel executions`.
+** In the *Definition Gradation 2* field, write: `No, only one execution at a time`.
+. Click *Save*.
+
+== Step 2.2: Create an Evaluation Template
+
+After you create new criteria for evaluation, create a new evaluation template that includes that criteria:
+
+. In RPA Manager, Click the *Process Evaluation* module.
+. Click *Evaluation Templates*.
+. Click *Create*.
+** In the *Name* field, write: `My custom template`.
+** Scroll down and verify that the *Exclude muleSoft default evaluation criteria* checkbox is unselected.
+//TODO: Need to add icon in these steps
+** Inside the *Available qualifiers* section, click the *Move All* (->->) button.
+** Inside the *Available benefits* section, click the *Move All* (->->) button.
++
+Note that the *Concurrency* criterion created in the previous step appears in this section.
+. Click *Save*.
+
+== Step 2.3: Create a Process Evaluation
+
+When creating a process evaluation, you can select the default evaluation template or a custom template you created.
+
+To create a new process evaluation using the custom template created in the previous step:
+
+. In RPA Manager, Click the *Process Evaluation* module.
+. Click *Process Evaluation*.
+** In the *Name* field, write: `MuleSoft newsletter sign-up`.
+** Click the *Template* dropdown and select *My custom template*.
+. Click *OK*.
+
+After confirming these details, you are redirected to the evaluation view where you specify the *Costs*, *Qualifiers* and *Benefits* for this process:
+
+. Set the *Manual process execution time* field to `00:10:00`.
+. In the *Benefits* section, set the *Concurrency* slider to *No, only one execution at a time*.
+. Click *Save*.
+
+== Step 2.4: Submit the Process to Start an Automation Project
+
+After you finish evaluating a process for automation and confirm that it is suitable, submit the process to the next step to start an automation project:
+
+. In RPA Manager, Click the *Process Evaluation* module.
+. Click *Process Evaluation*.
+. Search for the *MuleSoft newsletter sign-up* project in the process list and click the *Approve* (image:approve-icon.png[The approve icon,1.5%,1.5%]) button.
+. In the window that opens, enable the *Project Manager* option.
+. In the *Project Manager* dropdown menu, select your username.
+. Click *OK*.
+
+== Next Steps
+
+After the process evaluation finishes and the process is approved, the assigned Project Manager or Center of Excellence can start the automation project.
+
+Continue with: xref:automation-tutorial-create.adoc[Step 3: Create the automation project]
+
+== See Also
+
+* xref:rpa-manager::processevaluation-overview.adoc[Process Evaluation]
