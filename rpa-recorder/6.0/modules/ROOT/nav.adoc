@@ -1,2 +1,6 @@
 .xref:index.adoc[RPA Recorder]
 * xref:index.adoc[RPA Recorder Overview]
+* xref:getting-started.adoc[Getting Started]
+* xref:user-interface.adoc[User Interface]
+* xref:process-rec-editor.adoc[Process Recording Editor]
+* xref:documents.adoc[Documents]
