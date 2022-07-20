@@ -6,3 +6,5 @@
 ** xref:automation-tutorial-create.adoc[Step 3: Create the Automation Project]
 ** xref:automation-tutorial-design.adoc[Step 4: Design the BPMN Diagram for the Automation]
 ** xref:automation-tutorial-build.adoc[Step 5: Build the Automation From the BPMN Diagram]
+** xref:automation-tutorial-test.adoc[Step 6: Test the Automation]
+** xref:automation-tutorial-deploy.adoc[Step 7: Deploy the Automation]
