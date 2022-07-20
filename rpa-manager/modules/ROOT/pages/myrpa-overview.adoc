@@ -6,7 +6,7 @@ In your personal module *My RPA*, you see an overview of your processes and your
 
 As a member of a center of excellence, in the *Team Backlog* view, you can assume responsibility for a previously evaluated process. As a project manager, you can start the automation of processes in the *My Backlog* view.
 
-The *My Processes* view lists all processes for which you belong to the process team.
+The *My Processes* view lists all processes for which you are part of the process team.
 
 In the *My Process Board* view, you see your administrative process tasks.
 

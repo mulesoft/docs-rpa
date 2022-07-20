@@ -6,7 +6,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 
 Examples of such tasks include the input of data that could not be read automatically, or decisions that must be reviewed by humans for legal reasons.
 
-If, during implementation of a process, the bot comes across a user task, it shows the task to all assigned users. As soon as an employee has completed processing the user task, the bot resumes its work automatically with the next process step.
+If, during execution of a process, the bot comes across a user task, it shows the task to all assigned users. As soon as an employee has completed processing the user task, the bot resumes its work automatically with the next process step.
 
 == Before You Begin
 
