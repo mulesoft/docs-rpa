@@ -17,7 +17,7 @@ To create a test plan, open RPA Manager and follow these steps:
 . Click *Next*(this process has no activity parameters).
 . Click *Next*(this process has no user tasks).
 . Select *Run test in secure session* and click *Next*.
-. Select *My Bot* and click *Finish*
+. Select any of your configured bots and click *Finish*
 
 == Step 6.2: Run the Test, Examine the Results, and Publish to Production
 
@@ -27,7 +27,9 @@ To run the test plan and see the results, follow these steps:
 . In the *Test Results* panel, click *Update*.
 +
 If there are no results, wait a few minutes for the test to end and click *Update* again.
-. Verify that there is a new entry for *My Bot* showing *1* in the *Success* column.
+. Verify that there is a new entry for the RPA bot showing *1* in the *Success* column.
++
+image:bot-test-success.png[The Test Results window showing a successful execution]
 . Click *Publish(Production)*.
 //. Any additional confirmation here?
 . After the test finishes, click *Publish (Production)*.
