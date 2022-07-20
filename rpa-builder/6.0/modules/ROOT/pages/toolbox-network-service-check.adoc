@@ -5,7 +5,7 @@ include::rpa-home::partial$pending-review.adoc[]
 The _Service Check_ plug-in allows you to perform checks using various
 protocols and services, such as Ping, FTP, HTTP, etc., to see if a
 service is running and available on a particular server. This augments
-the classic end-to-end monitoring tools included with X1 Design Studio
+the classic end-to-end monitoring tools included with RPA Builder
 with some element monitoring checks.
 
 The _Service Check_ plug-in consists of a single new Action Step called

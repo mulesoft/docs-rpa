@@ -70,7 +70,7 @@ automatically in the corresponding text field.
 * *Collect Window Titles* Click this button to show all window titles
 available now in the drop-down menu of the text field _Window Title_
 * *Hide window* Hides the wizard while recording the window title
-* *Hide main window* Hides the X1 Design Studio while recording the
+* *Hide main window* Hides the RPA Builder while recording the
 window title
 * *Use window text* If checked _Window Text_ will be used for the
 identification of the window

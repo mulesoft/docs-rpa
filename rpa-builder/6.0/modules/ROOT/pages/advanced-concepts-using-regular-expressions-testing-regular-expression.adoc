@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Testing Regular Expression
+= Testing Regular Expression
 
 Open the _Regex Tester_ dialog using the "Tools -> Open Regex Tester"
 menu option or by clicking the icon

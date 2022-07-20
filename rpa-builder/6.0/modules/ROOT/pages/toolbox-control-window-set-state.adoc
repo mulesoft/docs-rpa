@@ -42,7 +42,7 @@ available window titles in the drop-down menu in the _Window title_
 field
 * *Hide window* Hides the wizard window when _Start_ is clicked (if you
 are using this option you need to press *_F10_* to stop the capture)
-* *Hide main window* Hides the X1 Design Studio window when _Start_ is
+* *Hide main window* Hides the RPA Builder window when _Start_ is
 clicked
 * *Use window text* Captures the _Window text_ in the window as well as
 the title

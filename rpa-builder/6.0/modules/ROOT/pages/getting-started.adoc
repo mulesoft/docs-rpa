@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Getting Started
+= Getting Started
 
 In this section, you will learn about the basic features of
 _WorkflowStudio_, create your first functional _Workflow_, and upload it

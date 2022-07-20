@@ -293,9 +293,9 @@ excluded is limited to 50.
 
 As described above, patterns to be excluded from the search can be
 inserted here using a
-file:///C:/Users/seberhard.SERVICETRACE/Desktop/WorkInProgress/HandbuchWE3/Handbuch_WE3.0_inBearbeitung_NeueTexte_EN.docx#_Einen_Screenshot_eines[screenshot]
+//file:///C:/Users/seberhard.SERVICETRACE/Desktop/WorkInProgress/HandbuchWE3/Handbuch_WE3.0_inBearbeitung_NeueTexte_EN.docx#_Einen_Screenshot_eines[screenshot]
 or from the
-file:///C:/Users/seberhard.SERVICETRACE/Desktop/WorkInProgress/HandbuchWE3/Handbuch_WE3.0_inBearbeitung_NeueTexte_EN.docx#_Ein_Muster_aus[Pattern
+//file:///C:/Users/seberhard.SERVICETRACE/Desktop/WorkInProgress/HandbuchWE3/Handbuch_WE3.0_inBearbeitung_NeueTexte_EN.docx#_Ein_Muster_aus[Pattern
 Gallery].
 
 Example: Search for the word staff as a noun but only if it doesn't form

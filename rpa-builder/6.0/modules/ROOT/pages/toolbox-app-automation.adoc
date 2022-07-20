@@ -18,11 +18,11 @@ There are two ways to generate Action Steps automatically.
 
 * {blank}
 +
-*X1 Server*: During the Design phase on the X1 Server, you have the
+*RPA Manager*: During the Design phase on RPA Manager, you have the
 option to record a process with a sequence of clicks and keyboard
-inputs. You can download the necessary Servicetrace Process Recorder
+inputs. You can download RPA Recorder
 directly there (for more information, see the X1 server online manual).
-Once you have finished the recording, you can upload it to the server,
+Once you have finished the recording, you can upload it to RPA Manager,
 together with the generated process, and move the process to the Build
 phase. You can then download and open the process in the Design Studio.
 All the recorded information for generating the Action Steps
@@ -30,7 +30,7 @@ automatically is now available.
 
 * {blank}
 +
-*X1 Design Studio*: If the _App Session_ does not contain any elements
+*RPA Builder*: If the _App Session_ does not contain any elements
 yet, you can use the wizard to start a local recording, which you can
 then use to generate App Automation Action Steps automatically. After
 you select _Start Capturing_ in the wizard of the App Session and

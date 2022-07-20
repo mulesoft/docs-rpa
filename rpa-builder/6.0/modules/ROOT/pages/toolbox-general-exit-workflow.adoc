@@ -22,15 +22,13 @@ set either under Properties or directly within the wizard:
 This is where you define the status for the Workflow that you are
 ending. You can choose between OK and Error. The default is Error.
 
-* _Error:_ In this case the exit code 120 will be shown. In the _X1
-Server_, for example in the Schedule Run Results__,__ this Workflow is
-shown as failed (red). In the Workflow Run Results in the _X1 Design
-Studio_ it will be noted that this involves a user exit.
+* _Error:_ In this case the exit code 120 will be shown. In RPA Manager, for example in the Schedule Run Results__,__ this Workflow is
+shown as failed (red). In the Workflow Run Results in RPA Builder it will be noted that this involves a user exit.
 * OK: In this case the exit code 500 will be shown. Unlike with the
 error status, here the Workflow is deemed to have ended successfully. In
-the _X1 Server_ there will be a warning (yellow) shown for it. As in a
+RPA Manager there will be a warning (yellow) shown for it. As in a
 normal case, there will be a check whether timers/checkpoints could not
-be measured. The Workflow Run Results in the X1 Design Studio will be
+be measured. The Workflow Run Results in RPA Builder will be
 annotated accordingly.
 
 For a description of exit codes, please see link:#Exit_Codes[Section

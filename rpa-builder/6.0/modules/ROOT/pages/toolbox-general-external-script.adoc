@@ -1,5 +1,5 @@
 include::rpa-home::partial$pending-review.adoc[]
-
+//This one is not in RPA Builder, confirm if we need to include it
 == External Script
 
 The _Servicetrace®_ script engine utilizes the automation scripting
@@ -184,7 +184,7 @@ This external script would then be used at the end of a _Workflow_.
 *Example 2: Creating your own Parameters and Variables:*
 
 A customer wanted to change the IP Address for a _Ping_ _Action Step_
-without using the X1 Design Studio. The result was this simple external
+without using RPA Builder. The result was this simple external
 script:
 
 global $PingTarget = "127.0.0.1"
