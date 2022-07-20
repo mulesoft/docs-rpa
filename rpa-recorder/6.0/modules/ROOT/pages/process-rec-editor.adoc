@@ -1,3 +1,5 @@
+rpa-home::partial$pending-review.adoc
+
 = Process Recording Editor
 
 If you start the recorder from RPA Builder, you can view the current process BPMN and all new recorded BPMNs by selecting them from the drop-down menu.

@@ -1,3 +1,5 @@
+rpa-home::partial$pending-review.adoc
+
 = Documents
 
 RPA Recorder creates three document types at the end of a recording session:
