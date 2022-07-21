@@ -16,5 +16,7 @@
 * xref::processautomation-overview.adoc[Process Automation]
 * xref::processmonitoring-overview.adoc[Process Monitoring]
 * xref::processoperations-overview.adoc[Process Operations]
+** xref:processoperations-financeanalysis.adoc[Finance Analysis]
+*** xref:processoperations-financeanalysis-basics.adoc[Finance Analysis Basics]
 * xref::dashboard-overview.adoc[Dashboard]
 * xref::alerting-overview.adoc[Alerting]
