@@ -1,0 +1,112 @@
+= Getting to Know Bots
+
+Besides a name, a description, a version, and a host, bots have the following properties:
+
+[cols="1,2a"]
+|===
+|*Property* |*Description*
+
+|*Bot State*
+|State of the bot:
+
+* *OK*:
++
+The bot is ready for use.
+
+* *STOPPED*:
++
+The bot has been stopped.
+
+* *OVERDUE*:
++
+The bot is no longer connecting to RPA Manager.
+
+* *UNKNOWN*:
++
+The status of the bot cannot be determined.
+
+* *RESTARTPENDING*:
++
+The bot is restarting.
+
+* *OUT OF SERVICE TIME*:
++
+The bot is outside of its assigned service times.
+
+|*Processing*
+|
+
+* Cross symbol:
++
+The bot is currently not running any deployed processes.
+
+* Check mark symbol:
++
+The bot is currently running deployed processes.
+
+|*Test*
+|
+
+* Cross symbol:
++
+The bot should not be used in the test phase.
+
+* Check mark symbol:
++
+The bot can be used in the test phase.
+
+|*Production*
+|
+
+* Cross symbol:
++
+The bot should not be used in the production phase.
+
+* Check mark symbol:
++
+The bot can be used in the production phase.
+
+|*Timezone*
+|The timezone the bot's installation computer uses. The bot will interpret all times where no time zone is assigned to be set in its own time zone.
+
+|*Licensed sessions*
+|
+
+* Shield with a check mark symbol and a number:
++
+Maximum number of secure sessions the bot may use at the same time. This number depends on the hardware the bot is installed on.
+
+* Shield symbol:
++
+The bot has been configured for a desktop session. It cannot use secure sessions.
+
+|*Deployed sessions*
+|Number of sessions that have been deployed to the bot for executing processes. The number of deployed sessions can exceed the number of licensed sessions. This may cause individual process executions to be skipped.
+
+|===
+
+== Before You begin
+
+* At least one bot must be installed on a separate computer
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Bot Management* module and view the bots
+|*Robot Management Open*
+
+|===
+
+== Find Bots
+
+Open the *Bots* view in the *Bot Management* module to view all bots connected to RPA Manager. Newly installed bots connect automatically.
+
+== See Also
+
+* xref:botmanagement-overview.adoc[Bot Management]
+* xref::botmanagement-support.adoc[Supporting Bots]
+//* xref::botmanagement-know.adoc[Getting to Know Bots]
+* xref::botmanagement-manage.adoc[Managing Bots]
+* xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
