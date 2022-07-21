@@ -1,0 +1,58 @@
+= Bot Management
+
+Bots are software. They look out for work and automatically carry upcoming processes step by step. They need a computer with the applications required for the processes installed and specific instructions.
+
+You manage the bots in the *Bot Management* module. Every bot is assigned to RPA Manager through an API key. After installation, the bot connects to the RPA Manager automatically at defined intervals. You can then assign licenses, applications, and service times to the bot.
+
+== Getting Started
+
+==== Install
+. Create an API key for each bot before installation.
+. Install each bot on a separate computer, where the applications needed to run the processes are installed.
+. After successful installation, the bots connects to the RPA Manager automatically.
+
+==== License
+* After you have installed all bots, open the *Bots* view module and assign _secure session_ licenses to each bot that should run processes invisibly.
+
+==== Assign service times
+. If a bot should only be available to execute processes at certain times, create the corresponding service times in the *Service Times* view module.
+. Assign any number of service times to a bot by editing each bot in the *Bots* view.
+
+==== Assign applications
+. In the *Process Applications* view in the *Process Automation* module, enter all the applications needed to run processes.
+. Assign the applications to the bots that can access them by editing each bot in the *Bots* view.
+
+==== Assign phases
+* Authorize bots for deployment in the test or production phase by editing each bot in the *Bots* view.
+
+==== Create processes
+* Create processes in the *Process Evaluation* module and automate them in the *Process Automation* module.
+
+==== Deploy processes
+* Deploy processes to suitable bots in the process configurations in the *Process Management* view in the *Process Automation* module.
+
+==== Monitor
+* The *Bot Execution Plans* view shows which bot is to execute which processes and when.
+* The *Process Run Statistics* view shows the results of the processes that have been deployed to the bots.
+* The *Robot State and Operation* view and the *Deployment Map* view in module *Process Monitoring* shows you what the bots are doing right now.
+* The widgets *Current Robot Status* and *Bot Workload* can be added to a *Dashboard* in the module of the same name.
+
+== Definitions
+
+==== Secure session
+
+A _secure session_ is a hidden Windows session that runs invisibly and closed in a separate user account. The screen does not show what is happening or what information is being processed.
+
+== See Also
+
+* xref::.adoc[Installing and Configuring Bots]
+
+//* xref:botmanagement-overview.adoc[Bot Management]
+* xref::botmanagement-support.adoc[Supporting Bots]
+* xref::botmanagement-know.adoc[Getting to Know Bots]
+* xref::botmanagement-manage.adoc[Managing Bots]
+* xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
+
+* xref::.adoc[Process Evaluation]
+* xref::.adoc[Process Automation]
+* xref::.adoc[Process Monitoring]

@@ -80,7 +80,7 @@ MuleSoft RPA provides the following applications that enable you to manage the c
 * Add comments and variables during the recording.
 * Automatically take screenshots per each mouse click.
 | RPA Bot
- | RPA Bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
+ | RPA bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
   |
 * Execute the automations.
 * Read text and images.
