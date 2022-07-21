@@ -1,3 +1,31 @@
 include::rpa-home::partial$pending-review.adoc[]
 
 = Preparing Automations
+
+Create and document the environment for the automation of processes.
+
+== Prepare Projects
+
+=== Create Categories
+
+Create categories to group processes. Assign a process to a category during evaluation or project creation.
+
+. In the *Process Management* view of the *Process Automation* module, click *Create*.
+. Enter a name in the *Create a category* window.
+. Click *OK*.
+
+=== List Applications
+
+List all applications required for the execution of processes. Assign required applications to processes. Assign applications installed on a computer a bot is installed on to that bot. Applications are not available during down-times. A process can be deployed on a bot which has assigned the required processes. During the down-time of a required application, the process cannot be executed.
+
+. In the *Process Applications* view of the *Process Automation* module, click *Create*.
+. Complete the form *Create a new application*:
++
+* *Time Zone*:
++
+Time zone for defining downtimes.
+* *Downtimes*
++
+Click *Create* to add a downtime to the application.
+
+== Prepare Deployment
