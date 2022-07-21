@@ -26,7 +26,7 @@ link:------["Download RPA Bot^", role="button-primary"]
 [TIP]
 Use two browser windows: One to read instructions and one to perform the tasks.
 
-== What’s Next
+== Next Steps
 
 After you set up your environment with the necessary applications and credentials, you are ready to start evaluating processes for automation.
 

@@ -1,0 +1,71 @@
+= Hardware and Software Requirements
+
+Before using MuleSoft RPA, ensure that your environment meets the minimum hardware and software requirements to use the cloud-based control plane and the on-premise RPA applications.
+
+== Hardware Requirements
+
+The following table contains the minimum hardware requirements and the recommended setup to run the on-premise RPA applications:
+
+[%header%autowidth.spread,cols=".^a,.^a]
+|===
+| Minimum | Recommended
+| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
+| 8 GB of RAM | 16 GB of RAM
+| 30 GB of disk space | 30 GB of disk space
+|===
+
+== Software Requirements
+
+Following are the software requirements to run each RPA application.
+
+=== RPA Manager
+
+Verify that you use any of the supported web browsers to access the platform:
+
+* Microsoft Edge
+* Google Chrome
+* Apple Safari
+
+=== RPA Builder
+
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+ | 4.7.2
+| Operating System
+ a|
+Any of the following:
+
+* Windows 10 (64-bit version)
+* Windows Server 2016
+| Java
+ a|
+Any of the following:
+
+* Java Runtime Environment 11 (JRE, 64-bit version) or higher
+* AdoptOpenJDK 11 (JRE, 64-bit version) or higher
+|===
+
+=== RPA Bot
+
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+ a|
+* 4.5
+* 4.7.2
+| Operating System
+ a|
+Any of the following:
+
+* Windows 8.1
+* Windows 10
+* Windows Server 2016
+|===
+
+=== RPA Recorder
+
+
+== See Also
