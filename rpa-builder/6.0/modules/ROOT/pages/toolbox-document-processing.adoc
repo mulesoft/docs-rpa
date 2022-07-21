@@ -2,6 +2,20 @@ include::rpa-home::partial$pending-review.adoc[]
 
 = Document Processing
 
-Overview of section.
+The document processing action steps enable you to extract data from documents and translate text by using the Amazon Translate and Amazon Textract services.
 
-Find articles that go in this section.
+To use these action steps, you need an active subscription to AWS.
+
+* xref:toolbox-aws-operations-credentials-for-aws.adoc[Credentials For AWS]
+* xref:toolbox-aws-operations-entities-with-aws.adoc[Entitites With AWS]
+* xref:toolbox-aws-operations-erp-docs-with-aws.adoc[ERP Docs With AWS]
+* xref:toolbox-aws-operations-key-values-with-aws.adoc[Key Values With AWS]
+* xref:toolbox-aws-operations-ocr-with-aws.adoc[OCR With AWS]
+* xref:toolbox-aws-operations-tables-with-aws.adoc[Tables With AWS]
+* xref:toolbox-aws-operations-translate-with-aws.adoc[Translate With AWS]
+
+== See Also
+
+* https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html[Amazon Comprehend^]
+* https://docs.aws.amazon.com/textract/latest/dg/what-is.html[Amazon Textract^]
+* https://docs.aws.amazon.com/translate/latest/dg/what-is.html[Amazon Translate^]
