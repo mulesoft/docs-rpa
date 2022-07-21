@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Step 6: Test the Automation
 
 You finished the build phase and the automation project is ready to move to the testing phase, where you create a test plan to execute the necessary tests on your automation project. You can create multiple configurations to test your process using different activity parameters and testing user tasks completion.

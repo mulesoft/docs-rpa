@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Step 2. Evaluate a Process for Automation
 
 Before you start designing a process for automation, think about the following questions:
