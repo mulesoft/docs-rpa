@@ -9,4 +9,4 @@
 ** xref:automation-tutorial-test.adoc[Step 6: Test the Automation]
 ** xref:automation-tutorial-deploy.adoc[Step 7: Deploy the Automation]
 ** xref:automation-tutorial-monitor.adoc[Step 8: Manage and Monitor the Automation]
-** xref:invoke-rpa-services.adoc[Invoke RPA Services from Composer]
+* xref:invoke-rpa-services.adoc[Invoke RPA Services from Composer]
