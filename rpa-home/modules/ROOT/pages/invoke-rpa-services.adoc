@@ -16,4 +16,4 @@ The polling trigger feature enables you to create listeners that check the statu
 
 Using the RPA Connector features in Composer requires you to connect with your MuleSoft RPA account by configuring the corresponding API key and RPA API URL.
 
-Refer to the [TO_DO: xref to Composer::RPA Connector article] documentation in Composer for configuration and usage details.
+Refer to the xref:composer::ms_composer_rpa_reference.adoc[RPA Connector] documentation in Composer for configuration and usage details.
