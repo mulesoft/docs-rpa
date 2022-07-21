@@ -1,4 +1,6 @@
-= Step 5: Build the Automation From the BPMN diagram
+include::rpa-home::partial$pending-review.adoc[]
+
+= Step 5: Build the Automation from the BPMN diagram
 
 Now that the BPMN diagram for the process to automate is ready, it's time to use RPA Builder to specify each of the actions the RPA bot executes when it runs this process. Because you used RPA Recorder to create the diagram, each existing task already contains the action steps for the bot to execute. During this step, you add a new task to confirm that the sign-up process was successful by reading the confirmation text on the screen.
 

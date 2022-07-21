@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = MuleSoft Robotic Process Automation (RPA)
 
 MuleSoft Robotic Process Automation (RPA) enables you to automate business processes and tasks by using bots, which helps save time and prevent introducing human errors.

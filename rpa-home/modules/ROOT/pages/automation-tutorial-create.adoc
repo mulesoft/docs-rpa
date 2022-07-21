@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Step 3. Create the Automation Project
 
 After evaluating and approving a process for automation, create an automation project from the approved process proposal and assign it a category. You can either use a category that exists in your organization or you can create a new one.

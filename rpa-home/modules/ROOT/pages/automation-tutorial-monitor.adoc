@@ -1,3 +1,4 @@
+include::rpa-home::partial$pending-review.adoc[]
 
 = Step 8: Manage and Monitor the Automation
 
