@@ -10,7 +10,7 @@ Before you start defining the actions, configure RPA Builder to connect with you
 
 To connect RPA Builder with your RPA Manager repository:
 
-. Open RPA Builder
+. Open RPA Builder.
 . In the top menu bar, go to *Options* > *Repository*.
 . Provide the required information:
 ** *RPA Manager Address:* The URL of the RPA Manager instance you want to connect to
@@ -21,7 +21,7 @@ For example: myorganization.rpa.mulesoft.com.
 . Click *Test Connection*
 ** If the test fails, ensure the provided information is correct and try again
 ** If the test succeeds, click *OK* to close the message
-. Click *OK*
+. Click *OK*.
 
 == Step 5.2: Import the Project From the RPA Manager Repository
 
@@ -75,7 +75,7 @@ To upload the updated automation project to RPA Manager:
 
 . In RPA Builder, go to *File* > *Upload Project*.
 . Provide a description in the *Changes:* field and click *Upload*.
-. Confirm that the upload was successful and click *OK*
+. Confirm that the upload was successful and click *OK*.
 . Close RPA Builder.
 
 == Next Steps
@@ -87,6 +87,4 @@ Continue with: xref:automation-tutorial-test.adoc[Step 6: Test the automation]
 == See Also
 
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
-* xref:rpa-builder::toolbox.adoc[Toolbox]
-//Link to RPA Builder docs: Getting Started?
-//Link to RPA Builder docs: Toolbox
+* xref:rpa-builder::toolbox.adoc[Toolbox Reference]

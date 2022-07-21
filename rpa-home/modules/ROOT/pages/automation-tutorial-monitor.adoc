@@ -4,20 +4,21 @@ include::rpa-home::partial$pending-review.adoc[]
 
 After deploying the process, use the Process Monitoring module to see a summary of the deployed RPA bots and the process executions.
 
-== Step 8.1: See the Stream of the Deployed Process
+== Step 8.1: See a Live Stream of the Deployed Process
 
-To see the stream of a deployed process:
+To see a live stream of the deployed process:
 
 . In RPA Manager, open the *Process Monitoring* module.
 . Click on *Process Streaming*.
 
-The *Process Streaming* section shows a window for each run configuration that is currently executing. You can click the *On* button to enable screen captures of the process the bot is carrying out.
+The *Process Streaming* section shows a window for each run configuration that is currently executing. The stream consists of a sequence of images that the RPA bot records during process execution.
 
 image:process-streaming.png[The process streaming window showing a process running, 50%, 50%]
 
+The *On* button enables screen captures of the process the bot is carrying out.
+
 [TIP]
 If this section shows empty, it is possible that the execution of the process has already finished, meaning that it is not running now and it cannot provide a stream of the process.
-
 
 == Step 8.2: Monitor the Deployed Process
 
@@ -30,7 +31,7 @@ The *Bot State and Operation* section shows a list of your configured bots and t
 
 image:process-monitor.png[The Bot state and operation window showing process execution results]
 
-Note that the *Work done* column shows `1`, which confirms the execution of the process finished one time.
+Note that the *Work done* column shows *1*, which confirms that the execution of the process finished one time.
 
 == Step 8.3: Revoke the Deployed Process
 

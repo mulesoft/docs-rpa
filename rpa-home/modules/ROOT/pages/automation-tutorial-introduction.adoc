@@ -5,7 +5,7 @@ include::rpa-home::partial$pending-review.adoc[]
 MuleSoft Automation enables you to automate workflows that contain time-consuming manual tasks and integrate them with your MuleSoft Composer flows.
 
 //During this tutorial, you create a simple automation project that accesses the MuleSoft website and subscribes to the newsletter, and then you configure a Composer flow to trigger the automated process.
-During this tutorial, you create a simple automation project that accesses the MuleSoft website, subscribes to the newsletter, and then user optical character recognition(OCR) to confirm the process.
+During this tutorial, you create a simple automation project that accesses the MuleSoft website, subscribes to the newsletter, and then uses optical character recognition (OCR) to confirm that the process finishes successfully.
 
 Follow these steps to complete the end-to-end automation journey:
 
@@ -23,4 +23,4 @@ After you've experienced the end-to-end journey, use the model you created to pl
 
 == See Also
 
-* xref:overview.adoc[RPA Overview]
+* xref:index.adoc[RPA Overview]
