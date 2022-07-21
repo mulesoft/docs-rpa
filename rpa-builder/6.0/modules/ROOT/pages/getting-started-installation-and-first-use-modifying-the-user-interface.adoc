@@ -1,0 +1,34 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Modifying the User Interface
+
+With the exception of the menu bar, all areas can be resized and
+positioned anywhere in the graphical user interface (GUI). Simply click
+on the title bar of the view you wish to move and drag the frame. It is
+possible to position the frame anywhere in the GUI by dropping it onto
+the positioning icons which appear when a frame is moved.
+
+For example, drag the _Workflow Outline_ tab and drop it onto the
+positioning icon on the far right-hand side:
+
+The _Workflow Outline_ is now docked to the right-hand edge:
+
+image::getting-started-installation-and-first-use-modifying-the-user-interface-image1.png[Example drag and drop the frames]
+
+You can also show any view as a standalone window. Again, start dragging
+a view by its title bar, but instead of dropping it onto a positioning
+icon, simply drop it anywhere else:
+
+image::getting-started-installation-and-first-use-modifying-the-user-interface-image2.png[Example stand alone]
+
+Furthermore, every frame can be hidden to make more working space
+available. +
+To hide a frame, click on the pin icon in its title bar:
+
+image::getting-started-installation-and-first-use-modifying-the-user-interface-image3.png[Example to hide a frame]
+
+Hidden frames are accessible via the tabs located on the edges of the
+screen closest to their position before hiding. Move the mouse cursor
+over the tab and the frame will slide in again:
+
+image::getting-started-installation-and-first-use-modifying-the-user-interface-image4.png[How to slide in]

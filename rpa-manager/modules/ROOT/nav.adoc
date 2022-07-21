@@ -1,4 +1,5 @@
-* xref::overview.adoc[RPA Manager]
+.xref:index.adoc[RPA Manager]
+* xref:index.adoc[RPA Manager Overview]
 ** xref::organizationmanagement-overview.adoc[Organization Management]
 ** xref::usermanagement-overview.adoc[User Management]
 ** xref::botmanagement-overview.adoc[Bot Management]

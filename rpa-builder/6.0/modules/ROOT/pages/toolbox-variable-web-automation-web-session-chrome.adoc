@@ -1,0 +1,52 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Web Session (Chrome)
+
+include::partial$toolbox-variable-web-automation-web-session.adoc[tag=intro]
+
+[[properties]]
+== Properties
+
+include::partial$toolbox-variable-web-automation-web-session.adoc[tag=commonProperties]
+* *Additional Chrome arguments* (_Properties_ grid only)
++
+Define command-line parameters for _Google Chrome_. By default,
+_disable-translate_ is set. This disables the automatic translation bar
+feature of _Google Chrome_ because it may hinder _Workflow_ execution.
+* *Alternative User Agent String* (_Properties_ grid only)
++
+Override the default User Agent string for Google Chrome.
+* *Disable Unpacked Extensions support*
++
+If you want to prevent the use
+of unpacked extensions in the Chrome browser, select this checkbox.
+The communication between Webdriver and Chrome is restricted as a
+result. This usually does not have any effect on the Webdriver functions
+we use.
+* *Verbose Logging*
+
+== Inbound Variables
+
+* Additional Chrome arguments
+* Alternative User Agent String
+* Web Session ID
+* Initial URL
+
+== Outbound Variables
+
+This action step has no outbound variables.
+
+// Wizard
+include::partial$toolbox-variable-web-automation-web-session.adoc[tag=wizardCommon]
+
+*Browser specific settings*:
+
+image:toolbox-variable-web-automation-web-session-images/image5.png[An image showing the browser specific settings]
+
+See also <<properties, Properties>>.
+
+// activityWorkflowOverlappingWebSession
+include::partial$toolbox-variable-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
+
+//closingWebSession
+include::partial$toolbox-variable-web-automation-web-session.adoc[tag=closingWebSession]

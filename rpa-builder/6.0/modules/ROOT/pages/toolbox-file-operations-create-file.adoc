@@ -1,0 +1,98 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Create File
+
+_Create File_ is used to create an empty file at the specified path.
+
+=== Properties
+
+*File Operation Settings*
+
+* *Create directory if it does not exist* If this option is enabled,
+_Create File_ creates either the specified relative directory or the
+whole specified path, if this does not already exist.
+* [#AS_CreateFile_P_DirectoryPath .anchor]####**Directory path** This is
+where you enter the path to the directory where the file is to be
+created. You can specify an absolute or relative path. If a relative
+path is used, then the path relates to the _Base Path_ variable.
+* [#AS_CreateFile_P_FileName .anchor]####**File Name** Enter the name of
+the file that is to be created here.
+* *Force error if file exists* If this option has been enabled, an error
+message will interrupt the _Workflow_ if a file with the same name
+already exists. If this option has not been enabled and the file already
+exists, it will be replaced with an empty file and and no acknowledgment
+will be given.
+* *Open with associated application* If this option has been enabled,
+the newly created file will be opened with the application that is
+associated with the file name of the new file. For example, if the new
+file name ends in *.txt it will normally be opened with Notepad.
+
+Leave this option disabled if you want another _Action Step_ to be able
+to access the newly created file – otherwise it will be locked.
+
+Other Properties that are the same in all Action Steps are described in
+the section on link:#CommonProperties[Common Properties]. For reasons of
+clarity they are not shown here.
+
+=== Inbound Variables
+
+link:#AS_CreateFile_P_DirectoryPath[*Directory path*]
+
+link:#AS_CreateFile_P_FileName[*File name*]
+
+=== Outbound Variables
+
+*IsCreated* The _Create File.IsCreated_ variable indicates whether the
+file could be created or not (True/False).
+
+*File name* The _Create File.File Name_ variable provides the name of
+the file that has been created.
+
+*Directory path* The _Create File.Directory Path_ variable provides the
+path that is used.
+
+=== Wizard
+
+* *Directory path* Specify the path here to the file that is being newly
+created. You can create an absolute path or a path relative to the _Base
+Path_ using the image:media\image1.png[image,width=175,height=22] and
+image:media\image2.png[image,width=129,height=22] buttons. The initial
+value is %STWS_BASEPATH%. If you specify an absolute path and also
+enable the option “Create Directory if it does not exist”, the directory
+path will be created in full if it does not already exist. Select an
+existing path using the image:media\image3.png[image,width=20,height=20]
+button. You can also insert variables from the _Workflow_ in order to
+construct the path. To do so, click on the pin and select one of the
+available variables.
+
+More information about the environment variables (Insert Environment
+Variable) and script variables (Insert Script Variable) can be found in
+the section link:#AS_Settings[Settings].
+
+* *File name* Enter the name of the file here that is to be created. If
+you want the file to open with the associated program (option: Open
+created file with associated application), you must also specify a file
+extension. You can also insert a variable from the Workflow as the _File
+Name_. To do so, click on the pin and select one of the available
+variables.
+* *Force error if file exists* If this option has been enabled, an error
+message will interrupt the _Workflow_ if a file with the same name
+already exists. If this option has not been enabled and the file already
+exists, it will be replaced with an empty file and and no acknowledgment
+will be given.
+* *Open with associated application* If this option has been enabled,
+the newly created file will be opened with the application that is
+associated with the file name of the new file. For example, if the new
+file name ends in *.txt it will normally be opened with Notepad.
+* *Create directory if it does not exist* If this option is enabled,
+_Create File_ creates either the specified relative directory or the
+whole specified path, if this does not already exist.
+
+=== Example
+
+Create an empty file using the _Create File_ Action Step and write text
+to that file using the _Write to Text File_ Action Step. The _Write to
+Text File_ Action Step can be pointed directly to the newly created file
+using, for example, the _Create File.Directory Path_ and _Create
+File.FileName_ variables. This allows you to create your own log file
+containing text that is of interest to you.
