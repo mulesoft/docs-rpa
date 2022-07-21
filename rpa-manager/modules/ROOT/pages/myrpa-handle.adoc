@@ -1,0 +1,28 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Handling User Tasks
+
+User tasks are elements of a process model, which cannot be processed fully automatically by a bot, instead requiring the support of a human.
+
+Examples of such tasks include the input of data that could not be read automatically, or decisions that must be reviewed by humans for legal reasons.
+
+If, during execution of a process, the bot comes across a user task, it shows the task to all assigned users. As soon as an employee has completed processing the user task, the bot resumes its work automatically with the next process step.
+
+== Before You Begin
+
+* User tasks are configured in the RPA Builder and will show up during execution of the process.
+
+== Claim a User Tasks
+
+Claim a user task to reserve processing of the user task for yourself. The user task is then moved to your personal task list in the *My User Tasks* view.
+
+. In the *Team Tasks* view of the *My RPA* module, click *Claim Task* in the table row of the task you want to process.
+
+== Process a User Task
+
+Open a user task and review or change its data to continue the process. After you complete the task, the bot carries on.
+
+. In the *My User Tasks* view of the *My RPA* module, click *Open Task* in the table row of the task you want to process.
+. Review the data.
+. Input or change data if necessary.
+. Click *Finish*.
