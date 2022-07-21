@@ -1,0 +1,82 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Check Regex
+
+Use the _Check Regex_ Action Step to search for a text fragment using a
+regular expression. The text fragment can be searched for in a variable.
+
+The results of _Check Regex_ provide various Outbound Variables that can
+processed further in the _Workflow_.
+
+An introduction to regular expressions is provided in the section on
+link:#UsingRegularExpression[Using Regular Expressions].
+
+=== Properties
+
+*Check Regex Settings*
+
+* [#AS_CheckRegex_P_InputText .anchor]####**Input text** Enter the text
+that the regular expression is to be applied to. This property is only
+displayed if no variable has been specified in the _Check Regex_ wizard
+as the target of the regular expression search.
+* [#AS_CheckRegex_P_RegexPattern .anchor]####**Regex Pattern** Enter the
+regular expression that you want to use as the basis of the search.
+
+Other Properties that are the same in all Action Steps are described in
+the section on link:#CommonProperties[Common Properties]. For reasons of
+clarity they are not shown here.
+
+=== Inbound Variables
+
+link:#AS_CheckRegex_P_RegexPattern[*Regex Pattern*]
+
+link:#AS_CheckRegex_P_InputText[*Input text*]
+
+=== Outbound Variables
+
+*First Match* The_First Match.Check Regex_ variable stores the first
+match found for the search expression. The text to be searched is read
+from top to bottom and the first match is given as the output. The
+output text is truncated to a maximum length of 1024 characters.
+
+*IsMatched* The _IsMatched.Check Regex_ specifies whether the expression
+searched for was found (True/False).
+
+*Match Count* The _Match Count.Check Regex_ variable provides the number
+of matches found in the text searched.
+
+*Number of first line matched* The _Number of first line matched.Check
+Regex_ provides the line number of the first line that contains the text
+searched for.
+
+=== Wizard
+
+*Regex* Enter the regular expression that you want to use as the basis
+of the search. Instead of entering the regular expression directly here,
+you can store it in a variable. Use the pin next to the *Regex* field to
+assign a variable. Click the
+image:media\image1.png[image,width=21,height=20] button to open a dialog
+for testing the regular expression. The regular expression already
+specified in the *Regex* field will appear automatically in the _Regex
+Tester_ dialog.
+
+The regular expression can be modified in the _Regex Tester_ dialog.
+Enter the text that you want to use to test the regular expression into
+the *Test Pattern* field. Click the *Execute Test* button to run the
+test. Matches will be highlighted in the *Test Pattern* field. Click the
+*Apply* button to transfer the tested regular expression to the _Check
+Regex_ Action Step. Click the *Cancel* button to close the _Regex
+Tester_ and discard any changes.
+
+*Text Pattern* Enter the text that the regular expression should be
+applied to. Use the Outbound Variables from _Check Regex_ to determine
+if matches were found and what form the matches take. The _Text Pattern_
+can either be entered directly or read from the content of a variable.
+To read from a variable, click on the pin and select one of the
+available variables.
+
+*Please note the following with regard to error handling:* An error
+message will be displayed if, for example, the Regex syntax is incorrect
+or an internal error has occurred (e.g. API error). Conversely, if the
+regular expression is correct but no matching content is found
+(match=0), a warning message is displayed.

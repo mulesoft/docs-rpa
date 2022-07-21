@@ -1,2 +1,0 @@
-.xref:index.adoc[RPA Builder]
-* xref:index.adoc[RPA Builder Overview]

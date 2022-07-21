@@ -1,0 +1,55 @@
+= Process Evaluation
+
+A process evaluation comprises the benefits and feasibility of the automation of a real-life business process.
+
+To propose a process candidate for automation, you evaluate the candidate based on pre-configured criteria.
+
+As a project manager or a member of a center of excellence, you approve process candidates eligible for automation.
+
+== Getting Started
+
+==== Think
+* What processes does your organization use?
+* Who is responsible for the processes?
+* Which criteria are necessary and suitable for evaluating the processes?
+* How can these criteria be described clearly and comprehensively?
+* Where does the data for evaluating the processes come from?
+* Which systems and data are needed for automating the processes?
+
+==== Prepare
+* In the *User Management* module, give involved users the privileges and properties they need.
+* After making the necessary systems available, define the applications, credentials, and global variables needed to automate the processes in the *Process Automation* module.
+
+==== Configure
+. In the *Evaluation Criteria* view, create the additional criteria needed to evaluate your processes.
+. In the *Evaluation Templates* view, compile the criteria needed to evaluate certain process types.
+
+==== Evaluate
+* In the *Process Evaluation* view, create an evaluation based on a template for each of your processes.
+
+==== Automate
+* Select the processes to automate and delegate the implementation to a project manager or a center of excellence.
+
+==== Administer
+* Manage the automation projects in the *Process Management* view of the *Process Automation* module.
+
+== Definitions
+
+==== Process candidate
+
+A _process candidate_ is a real-life business process to propose for automation via a process evaluation.
+
+==== Project manager
+
+A _project manager_ is responsible for the automation of a process across all automation phases.
+
+==== Center of excellence
+
+If the users of a user group cover the entire range of competencies that are required for a specific part of the automation, the group is called a _center of excellence (CoE)_. Only user groups that are explicitly designated as centers of excellence can accept process automation tasks.
+
+== See Also
+
+* xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
+* xref:processevaluation-configure.adoc[Configuring Process Evaluations]
+* xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]
+* xref:processevaluation-approve.adoc[Approving a Process for Automation]

@@ -1,0 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+== Mail Operations
+
+Overview of section and operations.
