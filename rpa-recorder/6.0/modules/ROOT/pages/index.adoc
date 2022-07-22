@@ -6,9 +6,9 @@ RPA Recorder is MuleSoft’s tool for recording a business process.
 
 RPA Recorder enables you to:
 
-* Record actions like mouse clicks, keyboard inputs on your system or on a web browser, and used applications.
-* Add comments and variable information during the recording.
-* Take screenshots automatically per mouse click, or manually at any time.
+* Record actions like mouse clicks, keyboard inputs on your system or on a web browser, and used applications
+* Add comments and variable information during the recording
+* Take screenshots automatically per mouse click, or manually at any time
 
 You can start RPA Recorder either directly from RPA Manager in the design phase, or as a standalone tool without server connection.
 

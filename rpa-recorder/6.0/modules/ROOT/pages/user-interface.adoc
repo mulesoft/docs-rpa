@@ -2,9 +2,11 @@ include::rpa-home::partial$pending-review.adoc[]
 
 = User Interface
 
+Following are the descriptions of every section and element in the RPA Recorder UI.
+
 == Home
 
-The Home section contains the main controls of the recorder. If the recorder is started from the server, the existing BPMN of the process also shows here.
+The Home section contains the main controls of RPA recorder. If RPA recorder is started from RPA Manager, the existing BPMN of the process also shows here.
 
 image:rpa-recorder-home.png[RPA Recorder Home screen]
 
@@ -45,11 +47,12 @@ The following functions are available in RPA Recorder while recording a process:
 // This records the coordinates and a mouse over hover action for this position.
 
 == Toast Notifications While Recording
+
 When a recording state changes, a toast notification appears indicating current state. The notification stays for 2 seconds and disappears automatically.
 
 == Define Screenshot
 
-Before you take a screenshot manually, the screen automatically freezes. You can select a method for taking for taking manual screenshots:
+Before you take a screenshot manually, the screen automatically freezes. You can select a method for taking manual screenshots:
 
 . Press `F9` while recording to open the Define Screenshot window. +
 image:define-screenshot-window.png[Define Screenshot window]
@@ -79,7 +82,7 @@ Click *Add* to save the variable information to the recording documentation.
 //Image necessary?
 
 [NOTE]
-You must pause the recording to add a variable. If you open the Add Variable window while the recording is running, it pauses automatically.
+Pause the recording before adding a variable. If you open the Add Variable window while the recording is running, it pauses automatically.
 
 == Add Comment
 
@@ -88,7 +91,7 @@ You can add a comment as part of the recording to enrich the documentation with 
 image:add-comment.png[Add Comment window]
 
 [NOTE]
-You must pause the recording to add a comment. If you open the Add Comment Window while the recording is running, it pauses automatically.
+Pause the recording before adding a comment. If you open the Add Comment Window while the recording is running, it pauses automatically.
 
 
 == Add Activity
@@ -100,19 +103,19 @@ image:add-activity.png[Add Activity window]
 Possible activity types are:
 
 * Web Task
-* RPA Bot Task
+* Bot Task
 * User Task
 
 When you create a Web Task, you can choose to continue using the session of the last closed Web Task.
 
 For User Tasks, RPA Recorder does not save documentation. You need to enter a description instead.
 
-To continue recording, add an RPA Bot Task.
+To continue recording, add a Bot Task.
 
-You ca also enable or disable the automatic creation of Activities on application changes.
+You can also enable or disable the automatic creation of Activities on application changes.
 
 [NOTE]
-The recording must be paused to add an activity, or change creation mode of the activities. If the pop-up was opened via the respective hotkey, while recording was running, it will be automatically paused.
+Pause the recording before adding an activity or changing the creation mode of the activities. If you open the pop-up using the respective hotkey, while the recording is running, the recording automatically pauses.
 
 == RPA Recorder Configuration
 
@@ -155,7 +158,8 @@ The about screen contains general information about RPA Recorder:
 * Version number
 * Copyright information
 
-image:about-screen.png[About Screen]
+//Commenting since it shows version 5.0 and new release is 6.0
+//image:about-screen.png[About Screen]
 
 = See Also
 
