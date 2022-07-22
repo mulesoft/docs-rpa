@@ -30,4 +30,4 @@ Operations include, but are not limited to: lookup, validate, create, update, or
 
 == Options and Entitlements
 
-For specific information about MuleSoft automation credit purchase options, entitlements, and overage billing, contact you sales representative.
+For specific information about MuleSoft automation credit purchase options, entitlements, and overage billing, contact your sales representative.
