@@ -67,5 +67,18 @@ Any of the following:
 
 === RPA Recorder
 
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+ a|
+* 4.7.2
+| Operating System
+ a|
+Any of the following:
+
+* Windows 10 (64-bit version)
+* Windows 11 (64-bit version)
+|===
 
 == See Also
