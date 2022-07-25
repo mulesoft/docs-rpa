@@ -113,4 +113,5 @@ Credentials store login data for applications or web services. They can be used 
 
 == See also
 
-* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[Configuration and credential file settings^]
+* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
+//* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[Configuration and credential file settings^]
