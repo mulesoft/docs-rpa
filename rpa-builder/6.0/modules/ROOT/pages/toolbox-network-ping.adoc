@@ -56,8 +56,7 @@ _Invert Logic_ is off. If _Error handling_ is set to _Normal_, a failed
 _Ping_ will trigger the error handling.
 
 *Record Timer* If activated, the _Ping_ response time will be recorded
-like a _Timer_ or _Stopwatch_ and thus contribute to the reports in the
-_Servicetrace® X1 Server_
+like a _Timer_ or _Stopwatch_ and thus contribute to the reports in RPA Manager.
 
 *Timer Mode* When "Record Timer" is enabled and the _Ping_ is used in a
 loop, the following mode is for calculating the timer value:
@@ -70,7 +69,7 @@ saves it
 
 The Action Step _Ping_ is currently not supported by X1 Server 5.2. This
 means that it is currently not possible to evaluate the data on the
-server. You can still use the Ping in the X1 Design Studio because they
+server. You can still use the Ping in RPA Builder because they
 are still displayed in the _Workflow Run Results_.
 
 ==== Inbound Variables

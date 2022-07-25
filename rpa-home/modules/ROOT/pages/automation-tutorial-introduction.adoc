@@ -4,22 +4,23 @@ include::rpa-home::partial$pending-review.adoc[]
 
 MuleSoft Automation enables you to automate workflows that contain time-consuming manual tasks and integrate them with your MuleSoft Composer flows.
 
-During this tutorial, you create a simple automation project that accesses the MuleSoft website and subscribes to the newsletter, and then you configure a Composer flow to trigger the automated process.
+//During this tutorial, you create a simple automation project that accesses the MuleSoft website and subscribes to the newsletter, and then you configure a Composer flow to trigger the automated process.
+During this tutorial, you create a simple automation project that accesses the MuleSoft website, subscribes to the newsletter, and then uses optical character recognition (OCR) to confirm that the process finishes successfully.
 
 Follow these steps to complete the end-to-end automation journey:
 
 * xref:automation-tutorial-prerequisites.adoc[Step 1: Prerequisites]
-* xref:automation-tutorial-evaluate.adoc[Step 2: Evaluate a process for automation]
-* xref:automation-tutorial-create.adoc[Step 3: Create the automation project]
-* xref:automation-tutorial-design.adoc[Step 4: Design the BPMN diagram for the automation]
-* xref:automation-tutorial-build.adoc[Step 5: Build the automation from the BPMN diagram]
-* xref:automation-tutorial-test.adoc[Step 6: Test the automation]
-* xref:automation-tutorial-deploy.adoc[Step 7: Deploy the automation]
-* xref:automation-tutorial-monitor.adoc[Step 8: Manage and monitor the automation]
-* xref:automation-tutorial-composer.adoc[Step 9: Integrate the automation with Composer flows]
+* xref:automation-tutorial-evaluate.adoc[Step 2: Evaluate a Process for Automation]
+* xref:automation-tutorial-create.adoc[Step 3: Create the Automation Project]
+* xref:automation-tutorial-design.adoc[Step 4: Design the BPMN Diagram for the Automation]
+* xref:automation-tutorial-build.adoc[Step 5: Build the Automation from the BPMN Diagram]
+* xref:automation-tutorial-test.adoc[Step 6: Test the Automation]
+* xref:automation-tutorial-deploy.adoc[Step 7: Deploy the Automation]
+* xref:automation-tutorial-monitor.adoc[Step 8: Manage and Monitor the Automation]
+//* xref:automation-tutorial-composer.adoc[Step 9: Integrate the automation with Composer flows]
 
 After you've experienced the end-to-end journey, use the model you created to plan your next automation projects.
 
 == See Also
 
-* xref:overview.adoc[RPA Overview]
+* xref:index.adoc[RPA Overview]

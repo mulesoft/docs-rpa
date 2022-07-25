@@ -62,7 +62,7 @@ keystroke sequence manually with the _Keystrokes Editor_
 * *Hide window when start* Hides the wizard window when _Start_ is
 clicked (if you are using this option, you need to press *_F10_* to stop
 the capture)
-* *Hide main window when start* Hides the X1 Design Studio window when
+* *Hide main window when start* Hides the RPA Builder window when
 _Start_ is clicked
 * *List of keystrokes* All the keystrokes defined for this _Action Step_
 are listed here
@@ -131,7 +131,7 @@ Finally, you can select and use any defined environment variable for a
 _Keystroke_ _Action Step_ by using the corresponding drop-down menu.
 
 If you want to type into an application that was started with
-administrator privileges, the _X1 Design Studio_ has to be started with
+administrator privileges, RPA Builder has to be started with
 administrator privileges too. Otherwise the key strokes are lost and
 won’t be displayed.
 
@@ -157,8 +157,8 @@ Delay_.
 The next keys are pressed separately and therefore each have their own
 _Delays_.
 
-Because _Servicetrace_ starts with a capital _S_, which involves the
-keystrokes _SHIFT_ + _s_ , this _S_ has two _Delays_.
+Because _MuleSoft_ starts with a capital _M_, which involves the
+keystrokes _SHIFT_ + _m_ , this _M_ has two _Delays_.
 
 Again, the next keys are pressed separately and therefore each have
 their own _Delay_ values.

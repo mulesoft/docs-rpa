@@ -1,0 +1,46 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Step 6: Test the Automation
+
+You finished the build phase and the automation project is ready to move to the testing phase, where you create a test plan to execute the necessary tests on your automation project. You can create multiple configurations to test your process using different activity parameters and to test for the completion of user tasks.
+
+For this tutorial, create a simple test that confirms the proper deployment and execution of the automated process.
+
+== Step 6.1: Create a Test Plan
+
+To create a test plan, open RPA Manager and follow these steps:
+
+. In RPA Manager, go to *My RPA* > *My Processes*.
+. Click the *MuleSoft newsletter sign-up* project.
+. Click *Publish(Test)*.
+. Click the confirmation checkbox and then click *Release to Test*.
+. Inside *Test plans*, click the *Create new test plan* button.
+. In the *Test plan name* field, write *My Test* and click *Next*.
+. Click *Next*(this process has no activity parameters).
+. Click *Next*(this process has no user tasks).
+. Select *Run test in secure session* and click *Next*.
+. Select any of your configured bots and click *Finish*
+
+== Step 6.2: Run the Test, Examine the Results, and Publish to Production
+
+To run the test plan and see the results, follow these steps:
+
+. In the *Test plans* panel, click *Start tests*.
+. In the *Test Results* panel, click *Update*.
++
+If there are no results, wait a few minutes for the test to end and click *Update* again.
+. Verify that there is a new entry for the RPA bot showing *1* in the *Success* column.
++
+image:bot-test-success.png[The Test Results window showing a successful execution]
+. Click *Publish(Production)*.
+//. Any additional confirmation here?
+. After the test finishes, click *Publish (Production)*.
+. Click the confirmation checkbox and then click *Release to Production*.
+
+== What’s Next
+
+You created a test plan that executes the automation to ensure that the process runs successfully. Then, you finished testing the process and released it to the production phase. Now, it is time to configure the deployment settings for this process.
+
+Continue with: xref:automation-tutorial-deploy.adoc[Step 7: Deploy the automation]
+
+//== See Also

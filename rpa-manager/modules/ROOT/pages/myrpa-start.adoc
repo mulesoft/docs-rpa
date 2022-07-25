@@ -1,0 +1,61 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Starting Automation of Approved Processes
+
+The *Team Backlog* view contains a list of all previously evaluated processes for which you can claim or reject responsibility as project manager.
+
+The center of excellence is a user group that, for the approval of an evaluated process, has been selected as project manager in place of an individual user.
+
+== Before You Begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Start automation of a process.
+|*Process Automation Open*, *Process Create*
+
+|===
+
+* Your user must be marked as *Project Manager*.
+* If there is no fitting category for the process in the *Process Management* view of the *Process Automation* module, create a new one.
+
+== Claim a Processes
+
+Claim a process to assume the project manager role for the automation of this process. The process is moved to the *My Backlog* view of the *My RPA* module.
+
+. In the *Team Backlog* view of the *My RPA* module, click the icon *Claim*.
+
+== Create a Process Project
+
+Create a project for the process that contains administrative data.
+
+On the *Settings* tab, you enter general data that is required for running the Process. This includes team members and applications for execution of the Process.
+
+On the Process Costs tab, you enter data with which you can calculate the costs and the break-even point of the process automation. This data is required in the Finance Analysis view in the Process Operations module.
+
+
+. In the *My Backlog* view of the *My RPA* module, click the icon *Start automation*.
+. Complete the form *Create process*:
+* *Settings*:
+** *Process Owner*:
++
+User who proposed the process for automation via a process evaluation.
+** *Required Applications for Process*:
++
+Select all applications here that are required to carry out the process. All applications that have been created in the *Process Applications* view of the *Process Automation* module are displayed in the drop-down list and can be removed from the input field by clicking the *X*. It is important to select all required applications here to ensure that the process can only be implemented subsequently by robots that can use these applications.
+** *Process Team*:
++
+The process team is a group of employees who work together on execution of the process automation. Select all team members from the text selection field. Then, by selecting the relevant checkboxes in the table, you can authorize the team members to work on the processes in the various phases. By default, each team member has authorization to transfer the process from their own phase to the next phase. If approval for the next phase is only to be carried out by specific team members, then select the checkbox *Advanced Permissions* to assign authorizations for approval separately. All team members have read access to the project in all phases. The project manager is always part of the team and also always has all authorizations. If the checkbox *Advanced Permissions* is deselected, the values of this column are no longer taken into account. In that case, only that user who has authorization to work on a phase can transfer the Process to the next phase.
+* *Process Costs*:
+** *Initial Investment for the Process Automation*
++
+The initial investment for the acquisition of the MuleSoft RPA solution and the necessary infrastructure is required for the finance analysis.
+
+== Reject a Process Project
+
+Reject processes that were approved to the wrong center of excellence. The process is removed from the *Team Backlog* view in the *My RPA* module and appears with status *Rejected* in the *Process Evaluation* view in *Process Evaluation* module.
+
+. In the *Team Backlog* view of the *My RPA* module, click the icon *Reject*.

@@ -1,0 +1,39 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Install and Start RPA Recorder
+
+You can install RPA Recorder by manually downloading and running the installer or by starting the recorder from RPA Manager, which provides a link to download and install RPA Recorder.
+
+Every time you start RPA Recorder, you are required to log in using your RPA credentials.
+
+== Install RPA Recorder
+
+Install RPA Recorder using the following setup file: link:------["Download RPA Recorder^", role="button-primary"]
+
+Optionally, you can install RPA Recorder from the message prompt that shows in RPA Manager when you start the recording function.
+
+== Start RPA Recorder
+
+To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager.
+
+If RPA Recorder is not installed, a message shows with a link to download the RPA Recorder installation file.
+
+image:download-rpa-recorder-message.png[Download RPA Recorder message]
+
+[NOTE]
+Enable pop-ups from RPA Manager before downloading RPA Recorder.
+
+=== Log in to RPA Recorder
+
+After starting RPA recorder via Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager:
+
+. Open RPA recorder.
+. Provide your login credentials for user authentication.
+
+To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
+
+image:rpa-logout-screen.png[RPA Logout Screen]
+
+= See Also
+
+* xref:user-interface.adoc#settings[User Interface]

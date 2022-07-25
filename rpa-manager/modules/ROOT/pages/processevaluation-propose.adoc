@@ -1,0 +1,83 @@
+= Proposing a Process Candidate for Automation
+
+You evaluate a process candidate to propose it for automation.
+
+== Before You Begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Evaluation* module and view only processes that you have created yourself, that is, for which you are the process owner.
+|*Process Evaluation Open*
+
+|Display all processes in the *Process Evaluation* view
+|*Global Process Evaluation View*
+
+|Create, edit, and delete evaluations
+|*Process Evaluation Administration*
+
+|Open the *Evaluation Templates* view
+|*Evaluation Templates Open*
+
+|Create, change, and delete evaluation criteria
+|*Evaluation Template Create*, *Evaluation Template Edit*, *Evaluation Template Delete*.
+
+|===
+
+* Create appropriate categories in the view *Process Management* in the module *Process Automation*.
+
+== Manage Process Evaluations
+
+Process evaluations assess the feasibility and benefits of a process’s automation.
+
+=== Create a Process Evaluation
+
+Create a process evaluation to propose a process candidate for automation:
+
+. In the *Process Evaluation* view of the *Process Evaluation* module click *Create*.
+. Complete the form *Create Evaluation*.
+. Click *OK*
+. Complete the form *Process Evaluation*:
+* *Manual process execution time*:
++
+Time that an employee requires to carry out the process once. In the list of evaluated processes, the value *Manual process execution time* is multiplied by the value *Frequency per month* to calculate the value *Effort/month*.
+* *Costs per process run*:
++
+Costs for a one-time execution of the process. In the list of evaluated processes, the value *Costs per process Run* is multiplied by the value *Effort/month* to calculate the *Costs/month* value.
+* *Frequency per month*:
++
+Number of times the process is carried out within a one-month period. This field can only be completed if a value exists in the *Manual process execution time* field. In the list of evaluated processes, the value *Frequency per month* is multiplied by the value *Manual process execution time* to calculate the *Effort/month* value.
+* *Qualifiers/Benefits*:
++
+Drag the slider to the appropriate values. *Exclude* unnecessary criteria.
+. Click *Save*
+
+=== Edit a Process Evaluation
+
+Edit a process evaluation to correct errors:
+
+. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the evaluation you want to edit.
+. Edit the form *Process Evaluation*.
+. Click *Save*.
+
+=== Delete a Process Evaluation
+
+Delete process evaluations that you no longer need:
+
+. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the evaluation you want to delete.
+. Confirm the deletion.
+
+== See Also
+
+* xref:manager-.adoc[Assigning Privileges to a User]
+
+* xref:manager-.adoc[Categorizing processes]
+
+* xref:processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
+* xref:processevaluation-configure.adoc[Configuring Process Evaluations]
+//* xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]
+* xref:processevaluation-approve.adoc[Approving a Process for Automation]

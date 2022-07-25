@@ -1,0 +1,50 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Step 7: Deploy the Automation
+
+After finishing the testing phase, the process is now in the production phase. It is time to create deployment configurations to specify the execution settings for the process.
+
+== Step 7.1: Create a Run Configuration
+
+To create a run configuration for a process:
+
+. In RPA Manager, go to *My RPA* > *My Processes*.
+. Click the *MuleSoft newsletter sign-up* project.
+. In the *Production configurations* panel, click *Create run configuration*.
+. Specify a *Configuration name* and click *Next*.
+. Click *Next*(this process has no activity parameters).
+. Click *Next*(this test has no user tasks).
+. Select *Run test in secure session* and click *Next*.
+. Click *Add schedule* and fill the required fields:
+** *Name*: The name of the execution schedule
+** *From*: The starting date and time for the execution to run
+** *To*: The ending date and time for the execution to finish
++
+Use the current day and specify from `0:00` to `23:59`.
+. Click *Repeat* and specify the following values:
+** *Repeats*: `Minutely`
+** *Repeats every*: `1 minutes`
+** *Ends*: `After 1 occurrences`
++
+By specifying these options, you ensure that the bot executes only one time.
+. Click *Create schedule*.
+. Click *Next*.
+. Select the bot used in the testing phase and click *Save*.
+. Click the *Select action* dropdown menu and select *Deploy process*.
+. Select your run configuration and click *Execute*.
+
+
+== Step 7.2: Verify the Execution
+
+After deploying the process, wait a few minutes for the execution to finish and then follow these steps to verify the process execution results and stop the process:
+
+. In the *Run Results* panel, click *Update*
++
+If there are no results, wait a few minutes for the execution to end and click *Update* again.
+. Verify that there is a new entry for the bot showing *1* in the *Success* column.
+
+== Next Steps
+
+Now that you’ve deployed the process and confirmed its execution, it’s time to monitor the deployment.
+
+Continue with: xref:automation-tutorial-monitor.adoc[Step 8: Manage and Monitor the Automation]

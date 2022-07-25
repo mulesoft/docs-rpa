@@ -17,7 +17,7 @@ termination, in the latter case not.
 
 === *_DoAction_*
 
-This is the default path of the _Managed Block_. The _X1 Bot_ will first
+This is the default path of the _Managed Block_. The RPA Bot will first
 try to execute all _Action Steps_ within the _DoAction_ section. If an
 error occurs (e.g. an _Image search_ fails), the execution of the
 _DoAction_ section will be aborted and the _OnError_ section will be
