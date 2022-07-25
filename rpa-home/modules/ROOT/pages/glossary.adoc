@@ -1,8 +1,6 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Glossary
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-:keywords: glossary
 
 The following glossary helps you understand MuleSoft terminology.
 
