@@ -22,7 +22,7 @@ Manage the users of RPA Manager and RPA Builder:
 |Open the *User Management* module
 |*User Management Open*
 
-|Create, edit, license and delete users
+|Create, edit, license, and delete users
 |*User Management Administration*
 
 |===
@@ -58,7 +58,7 @@ Edit a user to change his data or permissions.
 
 === Reset a user password
 
-Reset a password if the user forgot it. RPA Manager will send an email containing a new temporary password to the user. The user can the create a new password.
+Reset a password if the user forgot it. RPA Manager will send an email containing a new temporary password to the user. The user can then create a new password.
 
 . In the *Users* view of the *User Management* module, click *Reset password* in the table row of the user you want to edit.
 
@@ -94,7 +94,7 @@ Both the computer on which the RPA Manager is installed, and the mobile device o
 
 == Remove a User
 
-Remove obsolete users. A user cannot be deleted if it is the owner or manager of a process. Deleted users cannot be restored. Use the *Deactivate* function to remove a user only temporary.
+Remove obsolete users. A user cannot be deleted if it is the owner or manager of a process. Deleted users cannot be restored. Use the *Deactivate* function to remove a user only temporarily.
 
 . In the *Users* view of the *User Management* module, click the icon *Remove* in the table row of the user you want to edit.
 . Confirm the removal.
@@ -109,7 +109,7 @@ Designate users responsible for the automation of processes as project managers 
 
 == Assign Users RPA Builder Access
 
-Assign users who will build the process automation RPA Builder access. Currently working users might not be able to save their work if their license gets revoked.
+Users who will build the process automation need RPA Builder access. Users currently working in RPA Builder might not be able to save their work if their license gets revoked.
 
 . In the *Users* view of the *User Management* module, click *MuleSoft RPA Builder assignment*.
 . Enable or disable access by clicking the appropriate cell in the column *MuleSoft RPA Builder access*.

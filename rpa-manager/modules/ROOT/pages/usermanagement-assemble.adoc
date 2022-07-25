@@ -58,6 +58,7 @@ Click on user names to assign them to or remove them from the user group.
 
 Delete user groups no longer needed. Check their usage and reassign their tasks first.
 
+. In the *User Groups* view of the *User Management* module, click the icon *Usage* in the table row of the user group you want to delete. Proceed only, if the user group is not needed anymore.
 . In the *User Groups* view of the *User Management* module, click *Remove* in the table row of the user group you want to delete.
 . Confirm the deletion.
 
