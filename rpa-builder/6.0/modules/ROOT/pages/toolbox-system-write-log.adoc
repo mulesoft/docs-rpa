@@ -10,15 +10,15 @@ the _Workflow_ to enter an error state.
 
 === Properties
 
-[#AS_WriteLog_P_LogMessage .anchor]####**Log Message** The text that
-will be written into the log. You can use pin variables here.
+*Log Message** The text that will be written into the log. You can use pin variables here.
 
 *Workflow Run Result* If activated, the _Message text_ also shows in the
 _Workflow Run Results_
 
 === Inbound Variables
 
-link:#AS_WriteLog_P_LogMessage[*Log Message*]
+//link:#AS_WriteLog_P_LogMessage[*Log Message*]
+*Log Message** The text that will be written into the log. You can use pin variables here.
 
 === Outbound Variables
 

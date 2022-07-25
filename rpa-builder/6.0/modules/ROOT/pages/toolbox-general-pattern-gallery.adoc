@@ -38,13 +38,13 @@ _Workflow._
 
 === Search Pattern Management
 
-image:media\image1.png[image,width=555,height=372]
+//image:media\image1.png[image,width=555,height=372]
 
-image:media\image2.png[image]
+//image:media\image2.png[image]
 
 The basic functionality of the _Pattern Strip_ shown here, which
 contains all the search patterns and menu bars, is described in the
-link:#PatternStrip[Pattern Strip] section. The _Pattern Gallery_ also
+*Pattern Strip* section. The _Pattern Gallery_ also
 provides two extra buttons, in addition to the standard functions:
 
 *Delete unused* deletes all _Search Patterns_ that are not used again in
@@ -53,10 +53,9 @@ the _Workflow_.
 *Show usage* opens a new _Pattern usage_ window that lists all the
 Action Steps that use the selected pattern, arranged by pattern.
 
-image:media\image3.png[image,width=492,height=354]
+//image:media\image3.png[image,width=492,height=354]
 
 All of the information displayed in this window about how the patterns
-are used can be copied to the clipboard by clicking the *Copy to
-clipboard* button. The names of the __Action Step__s that make use of
+are used can be copied to the clipboard by clicking the *Copy to clipboard* button. The names of the __Action Step__s that make use of
 the individual __Search Pattern__s can be copied to the clipboard by
 clicking the button in the _Usage in Action Steps_ area of the window.

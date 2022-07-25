@@ -17,7 +17,7 @@ message box (only works if _Use timeout_ is selected)
 
 *Use timeout* This option determines whether the message box should be
 closed automatically.
-
+////
 === Wizard
 
 image:media\image1.png[Ein Bild, das Text enthält. Automatisch
