@@ -23,7 +23,7 @@ as the target of the regular expression search.
 regular expression that you want to use as the basis of the search.
 
 Other Properties that are the same in all Action Steps are described in
-the section on link:#CommonProperties[Common Properties]. For reasons of
+the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
 === Inbound Variables

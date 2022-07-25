@@ -53,7 +53,7 @@ saves it
 * *Max* The slowest time measured is saved
 
 Other Properties that are the same in all Action Steps are described in
-the section on link:#CommonProperties[Common Properties]. For reasons of
+the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
 === Inbound Variables

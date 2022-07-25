@@ -18,7 +18,7 @@ There is no limit to the number of search patterns in a _Workflow_.
 === Properties
 
 The _Pattern Gallery Action Step_ does not contain any additional
-properties, other than the link:#CommonProperties[Common Properties].
+properties, other than the *Common Properties*.
 
 === Inbound Variables
 

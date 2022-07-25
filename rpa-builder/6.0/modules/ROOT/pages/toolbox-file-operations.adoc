@@ -3,4 +3,4 @@ include::rpa-home::partial$pending-review.adoc[]
 == File Operations
 
 Information about general settings for File Operations is provided in
-the link:#AS_Settings[Settings] section.
+the *Settings* section.

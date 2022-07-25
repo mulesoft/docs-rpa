@@ -108,6 +108,6 @@ of the variables available.
 
 You can find further information on the environment variables (Insert
 Environment Variable) and script variables (Insert Script Variable) in
-the Chapter entitled link:#AS_Settings[Settings].
+the Chapter entitled *Settings*.
 
 You can find further explanations under link:#properties[Properties].
