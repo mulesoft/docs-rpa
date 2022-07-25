@@ -1,0 +1,75 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Assembling User Groups
+
+In automation projects, several employees often work together on one task. These users can be assigned to user groups. User groups can be deployed for processing of user tasks during execution of a process. User groups marked as center of excellence may approve processes for automation.
+
+In the *User Groups* view in the *User Management* module, you can see all existing user groups.
+
+You can create new user groups, check their usage, edit them, and delete them.
+
+== Before you Begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the User Management module
+|*User Management Open.*
+
+|Create, edit, and delete user groups.
+|*User Group Create*, *User Group Edit*, *User Group Delete*
+
+|===
+
+== Create a User Group
+
+Create a new user group as defined.
+
+. In the *User Groups* view of the *User Management* module, click *Create*.
+. Complete the form *Create a New User Group*:
++
+* *Center of excellence*:
++
+Select the *Center of Excellence* checkbox to enable entry of the user group as a project manager for process approvals.
+* *Available/Assigned Users*:
++
+Click on user names to assign them to or remove them from the user group.
+. Click *Save*.
+
+== Edit a User Group
+
+Edit a user group to change its function or members.
+
+. In the *User Groups* view of the *User Management* module, click *Edit* in the table row of the user group you want to edit.
+. Edit the form *Edit User Group*:
++
+* *Center of excellence*:
++
+Select the *Center of Excellence* checkbox to enable entry of the user group as a project manager for process approvals.
+* *Available/Assigned Users*:
++
+Click on user names to assign them to or remove them from the user group.
+. Click *Save*.
+
+== Delete a User Group
+
+Delete user groups no longer needed. Check their usage and reassign their tasks first.
+
+. In the *User Groups* view of the *User Management* module, click the icon *Usage* in the table row of the user group you want to delete. Proceed only, if the user group is not needed anymore.
+. In the *User Groups* view of the *User Management* module, click *Remove* in the table row of the user group you want to delete.
+. Confirm the deletion.
+
+== Designate User Groups as Centers of Excellence
+
+User groups marked as center of excellence may approve processes for automation. You can designate user groups as centers of excellence on creation or edit this property afterwards.
+
+. In the *User Groups* view of the *User Management* module, click *Edit* in the table row of the user group you want to edit.
+. Edit the form *Edit User Group*:
++
+* *Center of excellence*:
++
+Select the *Center of Excellence* checkbox to enable entry of the user group as a project manager for process approvals.
+. Click *Save*.
