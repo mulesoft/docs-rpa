@@ -1,10 +1,10 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-# Connecting to MuleSoft Composer
+= Connecting to MuleSoft Composer
 
 User API keys are required for the integration of RPA processes in a MuleSoft Composer flow. Use your API key to configure an API connector in MuleSoft Composer.
 
-## Before You Begin
+== Before You Begin
 
 * Obtain the needed privileges:
 +
@@ -25,7 +25,7 @@ User API keys are required for the integration of RPA processes in a MuleSoft Co
 
 * The user who will use an API key must exist in the *Users* view of the *User Management* module.
 
-## Create an API key for a User
+== Create an API key for a User
 
 Create an API key for a user to configure an API connector in MuleSoft Composer. After the expiration date the user can no longer connect to RPA Manager via Composer. The expiration date can be moved.
 
@@ -36,13 +36,13 @@ Create an API key for a user to configure an API connector in MuleSoft Composer.
 Select an expiration date for the user API key from the calendar.
 . Click *OK*.
 
-## Copy an API key to the clipboard
+== Copy an API key to the clipboard
 
 Copy an API key to the clipboard to paste it into the configuration of an API connector in MuleSoft Composer.
 
 . In the *User API Keys* view of the *User Management* module, click the *Copy to clipboard* icon image:copy-to-clipboard-icon.png[sheet-on-clipboard symbol,1.5%,1.5%] in the table row of the user API key you want to use.
 
-## See Also
+== See Also
 
-* xref:https://docs.mulesoft.com/composer/ms_composer_rpa_reference[MuleSoft Composer RPA Connector]
-* xref:https://help.salesforce.com/s/articleView?id=sf.ms_composer_rpa_reference.htm&type=5[MuleSoft Composer for Salesforce RPA Connector]
+* xref:composer::ms_composer_rpa_reference.adoc[MuleSoft Composer RPA Connector]
+* https://help.salesforce.com/s/articleView?id=sf.ms_composer_rpa_reference.htm&type=5[MuleSoft Composer for Salesforce RPA Connector^]
