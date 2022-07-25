@@ -132,7 +132,8 @@ beyond its runtime.
 
 === Inbound Variables
 
-*link:#AS_PatternSelect_OV_FindCoordinate[Find Coordinate]*
+//*link:#AS_PatternSelect_OV_FindCoordinate[
+*Find Coordinate*
 
 If there is at least one other Action Step that uses patterns before the
 Action Step Search Pattern, the outbound variable _Find coordinate_
@@ -143,8 +144,8 @@ becomes the inbound variable for the subsequent Action Steps.
 *Pattern Case Index* returns the case index, which is executed based on
 a pattern found.
 
-[#AS_PatternSelect_OV_FindCoordinate .anchor]####**Find Coordinate** Top
-left corner of the pattern that has been found successfully. If a search
+//[#AS_PatternSelect_OV_FindCoordinate .anchor]####*
+*Find Coordinate* Top left corner of the pattern that has been found successfully. If a search
 is made for multiple patterns and they are found, the coordinates
 returned are of the image on the far left of the series of patterns
 being searched for as specified in the wizard. If multiple identical
@@ -169,8 +170,7 @@ The _Pattern Select_ wizard is for selecting _Search Patterns_ and the
 key search settings.
 
 The basic functionality of the _Pattern Strip_ shown here, including all
-pattern operations, is described in the section
-link:#PatternStrip[Pattern Strip].
+pattern operations, is described in the section *Pattern Strip*.
 
 Click _OK_ to confirm the configuration settings or _Cancel_ as
 applicable. The _Test_ button evaluates the search and displays the
@@ -188,12 +188,13 @@ the names House, House1, Mouse, and Mouse1, the search filter will find
 all images when use is entered, only House1 and Mouse1 when 1 is
 entered, and House and House1 in the case of H.
 
+////
 To make all the pattern images in the wizard larger or smaller, use the
 two buttons with a minus
 image:media\image1.png[image,width=15,height=15] or plus
 image:media\image2.png[image,width=15,height=15] symbol inside a
 magnifying glass.
-
+////
 === Regular Patterns
 
 This section lists patterns that are to be found. The number of patterns
@@ -201,8 +202,7 @@ that can be found is limited to 50.
 
 There are three ways of searching for patterns.
 
-image:media\image3.png[Ein Bild, das Tisch enthält. Automatisch
-generierte Beschreibung,width=276,height=97]
+//image:media\image3.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=276,height=97]
 
 *Match only one pattern* is successful if *exactly one* of the selected
 patterns is found in the _Search Area_. An error is returned if none or
@@ -237,10 +237,9 @@ terminated.
 Patterns may be chosen from the _Pattern Gallery_ or created by means of
 a screenshot (_Capture_).
 
-image:media\image4.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=422,height=151]
+//image:media\image4.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=422,height=151]
 
-image:media\image5.png[image,width=602,height=153]
+//image:media\image5.png[image,width=602,height=153]
 
 Click to select one or multiple patterns and delete or move them as a
 group. When a pattern is selected, a white tick will appear on a green
@@ -257,7 +256,7 @@ Matched Patterns]).
 One way of defining a pattern is to take a screenshot that shows it.
 
 The function of the _Capture Pattern_ button is described in the section
-link:#CapturingTheSearchPattern[Capturing the Search Pattern].
+*Capturing the Search Pattern*.
 
 All patterns captured using the _Pattern Select_ _Action Step_ are
 transferred to the _Workflow_'s _Pattern Gallery_.
@@ -265,9 +264,9 @@ transferred to the _Workflow_'s _Pattern Gallery_.
 === Add Pattern from Gallery
 
 If the _Pattern Gallery_ for the _Workflow_ already contains patterns,
-they can be added to the list of patterns for the _Action Step_ using
-the _Add Pattern from Gallery_ button
-image:media\image6.png[image,width=25,height=23].
+they can be added to the list of patterns for the _Action Step_.
+//using the _Add Pattern from Gallery_ button
+//image:media\image6.png[image,width=25,height=23].
 
 The _Select Patterns to add_ window shows all the images that the
 _Workflow_'s _Pattern Gallery_ contains. A white tick on a green
@@ -275,7 +274,7 @@ background in the top right corner indicates patterns which are already
 included in the _Search Pattern_ _Action Step_. Patterns already
 included in another category of the same _Action Step_ are not shown.
 
-image:media\image7.png[image,width=538,height=364]
+//image:media\image7.png[image,width=538,height=364]
 
 To add patterns to the search, simply use the mouse to click and select.
 Use the same method to deselect patterns which should no longer be
@@ -290,13 +289,14 @@ If checking for the single occurrence of a pattern that may be part of
 other patterns, you must exclude patterns containing the searched-for
 pattern within them from the search. The number of patterns that can be
 excluded is limited to 50.
-
+////
 As described above, patterns to be excluded from the search can be
 inserted here using a
 //file:///C:/Users/seberhard.SERVICETRACE/Desktop/WorkInProgress/HandbuchWE3/Handbuch_WE3.0_inBearbeitung_NeueTexte_EN.docx#_Einen_Screenshot_eines[screenshot]
 or from the
 //file:///C:/Users/seberhard.SERVICETRACE/Desktop/WorkInProgress/HandbuchWE3/Handbuch_WE3.0_inBearbeitung_NeueTexte_EN.docx#_Ein_Muster_aus[Pattern
 Gallery].
+////
 
 Example: Search for the word staff as a noun but only if it doesn't form
 part of another term, e.g. 'staffing'. This pattern must be included in
@@ -310,16 +310,16 @@ part of the pattern being searched for due to a lack of _features_.
 
 === Changing the Search Pattern Category
 
-image:media\image8.png[image,width=605,height=264]
+//image:media\image8.png[image,width=605,height=264]
 
 The patterns selected can be moved between the categories _Regular_ and
 _Ignored_. Use the _Move to…_ button in the menu bar to do this.
 
-image:media\image9.png[image,width=605,height=369]
+//image:media\image9.png[image,width=605,height=369]
 
 === Search Settings
 
-image:media\image10.png[image,width=604,height=246]
+//image:media\image10.png[image,width=604,height=246]
 
 The settings needed most frequently for all types of search can be set
 and modified using the _Search Pattern_ _Action Step_ wizard under
@@ -436,7 +436,7 @@ _Workflow_ execution and open the _Search Results_ window where the
 search is evaluated. This can provide hints about possible improvements
 that could be made to the _Search Settings_.
 
-image:media\image11.png[image,width=604,height=318]
+//image:media\image11.png[image,width=604,height=318]
 
 The screen content at the time the test was performed takes up the main
 part of the window _Search Result_.
@@ -498,7 +498,7 @@ an animated arrow pointing to this match in the screenshot. In the
 process, the screenshot is resized so it can be seen in its entirety
 within the window.
 
-image:media\image12.png[image,width=285,height=65]
+//image:media\image12.png[image,width=285,height=65]
 
 The tab _Search Results Summary_ shows a textual overview over the
 search settings and the search result.
