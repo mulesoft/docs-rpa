@@ -70,8 +70,6 @@ Any of the following:
 [%header%autowidth.spread,cols=".^a,.^a,]
 |===
 | Software | Required version
-|===
-| Software | Required version
 | Microsoft .NET Framework
  a|
 * 4.7.2
