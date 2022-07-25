@@ -110,3 +110,7 @@ Credentials store login data for applications or web services. They can be used 
 . In the *Credential Pool* view of the *Process Automation* module, click *Create*.
 . Complete the form *Create a New Credential*.
 . Click *OK*.
+
+== See also
+
+* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[Configuration and credential file settings^]
