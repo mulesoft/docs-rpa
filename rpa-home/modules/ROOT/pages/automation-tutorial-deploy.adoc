@@ -17,16 +17,16 @@ To create a run configuration for a process:
 . Select *Run test in secure session* and click *Next*.
 . Click *Add schedule* and fill the required fields:
 ** *Name*: The name of the execution schedule
-** *From*: The starting date and time for the execution to run.
-** *To*: The ending date and time for the execution to finish.
+** *From*: The starting date and time for the execution to run
+** *To*: The ending date and time for the execution to finish
 +
-Use the current day and specify From `0:00` to `23:59`.
+Use the current day and specify from `0:00` to `23:59`.
 . Click *Repeat* and specify the following values:
 ** *Repeats*: `Minutely`
 ** *Repeats every*: `1 minutes`
 ** *Ends*: `After 1 occurrences`
 +
-By specifying these options, you ensure that the bot executes at least and only one time.
+By specifying these options, you ensure that the bot executes only one time.
 . Click *Create schedule*.
 . Click *Next*.
 . Select the bot used in the testing phase and click *Save*.
@@ -36,7 +36,7 @@ By specifying these options, you ensure that the bot executes at least and only 
 
 == Step 7.2: Verify the Execution
 
-After deploying the process, wait a few minutes for the execution to finish and then, follow these steps to verify the process execution results and stop the process:
+After deploying the process, wait a few minutes for the execution to finish and then follow these steps to verify the process execution results and stop the process:
 
 . In the *Run Results* panel, click *Update*
 +

@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Step 4. Design the BPMN Diagram for the Automation
 
 After creating a new automation project, you can start designing the BPMN diagram for the process to automate. You can create the diagram manually or by using the RPA Recorder, which records your actions, creates each corresponding step in the diagram, and generates the action steps based on your mouse and keyboard interactions.
@@ -21,9 +23,6 @@ After you log in to RPA Recorder, you can start the activity recording process. 
 To record actions with RPA Recorder and create the BPMN diagram, follow these steps:
 
 . In RPA Recorder, click the *Start Recording* (image:start-recording.png[The start recording icon,1.5%,1.5%]) button and add the first activity step:
-//.. Write *Open browser* in the activity name field and click *Add*
-//.. Open a web browser of your choice
-//. In the RPA Recorder panel, Click the *Add activity* (image:add-activity.png[The add activity icon,1.5%,1.5%]) button.
 .. Write `Open newsletter sign-up page` in the activity name field.
 .. In the drop down menu, select *Web task*.
 .. Click *Add*.

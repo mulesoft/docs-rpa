@@ -1,4 +1,6 @@
-= Step 5: Build the Automation From the BPMN diagram
+include::rpa-home::partial$pending-review.adoc[]
+
+= Step 5: Build the Automation from the BPMN diagram
 
 Now that the BPMN diagram for the process to automate is ready, it's time to use RPA Builder to specify each of the actions the RPA bot executes when it runs this process. Because you used RPA Recorder to create the diagram, each existing task already contains the action steps for the bot to execute. During this step, you add a new task to confirm that the sign-up process was successful by reading the confirmation text on the screen.
 
@@ -8,7 +10,7 @@ Before you start defining the actions, configure RPA Builder to connect with you
 
 To connect RPA Builder with your RPA Manager repository:
 
-. Open RPA Builder
+. Open RPA Builder.
 . In the top menu bar, go to *Options* > *Repository*.
 . Provide the required information:
 ** *RPA Manager Address:* The URL of the RPA Manager instance you want to connect to
@@ -19,7 +21,7 @@ For example: myorganization.rpa.mulesoft.com.
 . Click *Test Connection*
 ** If the test fails, ensure the provided information is correct and try again
 ** If the test succeeds, click *OK* to close the message
-. Click *OK*
+. Click *OK*.
 
 == Step 5.2: Import the Project From the RPA Manager Repository
 
@@ -73,7 +75,7 @@ To upload the updated automation project to RPA Manager:
 
 . In RPA Builder, go to *File* > *Upload Project*.
 . Provide a description in the *Changes:* field and click *Upload*.
-. Confirm that the upload was successful and click *OK*
+. Confirm that the upload was successful and click *OK*.
 . Close RPA Builder.
 
 == Next Steps
@@ -85,6 +87,4 @@ Continue with: xref:automation-tutorial-test.adoc[Step 6: Test the automation]
 == See Also
 
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
-* xref:rpa-builder::toolbox.adoc[Toolbox]
-//Link to RPA Builder docs: Getting Started?
-//Link to RPA Builder docs: Toolbox
+* xref:rpa-builder::toolbox.adoc[Toolbox Reference]
