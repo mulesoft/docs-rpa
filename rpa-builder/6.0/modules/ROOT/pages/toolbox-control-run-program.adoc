@@ -107,14 +107,11 @@ too. Using _Select & Copy…_ fills out the _File name_ field and selects
 the checkbox automatically.
 
 To select the program to run, enter the full path manually into the
-_File name_ field or just browse to the executable file you want to run
-by clicking *_…_*.
+_File name_ field or just browse to the executable file you want to run.
+//by clicking *_…_*.
 
-Tip: If you intend to use an _Image search_ within the application when
-it is running, it is recommended that you use _Maximized_ _Start mode_
-so the application window will always be in the same position! This
-makes defining a reliable _Search area_ for the _Image search_ much
-easier.
+[TIP]
+If you intend to use an _Image search_ within the application when it is running, it is recommended that you use _Maximized_ _Start mode_ so the application window will always be in the same position! This makes defining a reliable _Search area_ for the _Image search_ much easier.
 
 As mentioned above, you can use _Microsoft Windows®_ environment
 variables in the _File name_ and _Parameters_ field. This can be done
@@ -129,11 +126,14 @@ have a completely different name, depending on the language used with
 your operating system, or it might even be installed on a different hard
 drive. To help avoid problems, the environment variable _%ProgramFiles%_
 is set automatically to the correct folder when _Microsoft Windows®_ is
-installed. So, if you put the following entry in the _File Name_ field
+installed.
+////
+So, if you put the following entry in the _File Name_ field
 of the _Run Program_ wizard, the executable file will be found on every
 _Microsoft Windows®_ system:
 
 image::toolbox-control-run-program-image1.png[Entry file name field]
+////
 
 Here is a list of the most important environment variables:
 

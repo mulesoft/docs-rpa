@@ -3,8 +3,7 @@ include::rpa-home::partial$pending-review.adoc[]
 == File Controlled Loop
 
 This _Flow Control Element_ reads data from a CSV file. The data is then
-made available as variables (see Section link:#UsingVariables[Using
-Variables]), whereby each column represents one variable. During
+made available as variables (see Section *Using Variables*), whereby each column represents one variable. During
 execution, the _File controlled Loop_ will iterate over each row of data
 and run through all its contents for each row individually.
 
@@ -72,24 +71,23 @@ you switch mode.
 
 === Importing a File at Design Time
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=535,height=385]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=535,height=385]
 
 If you select _Read file at design time_, the wizard looks like it does
 above.
 
-First, you need to import a CSV file by clicking _Import File_
-image:media\image2.png[image,width=104,height=24]. RPA Builder
-will then read and analyze your file and display a content preview in
-the lower part of the wizard. You can then apply filters to each column
-by clicking image:media\image3.png[image,width=22,height=22].
+First, you need to import a CSV file.
+//by clicking _Import File_ image:media\image2.png[image,width=104,height=24].
+RPA Builder will then read and analyze your file and display a content preview in
+the lower part of the wizard. You can then apply filters to each column.
+//by clicking image:media\image3.png[image,width=22,height=22].
 
-image:media\image4.png[image,width=255,height=110]
+//image:media\image4.png[image,width=255,height=110]
 
 When you enter text in the _Filter_ field, all rows that do not contain
 that text will be filtered out and only rows that match will be used.
 
-image:media\image5.png[image,width=136,height=89]
+//image:media\image5.png[image,width=136,height=89]
 
 With the help of the drop-down menu below the respective column name you
 can change the type of the column content to type string and back to the
@@ -97,7 +95,7 @@ original type.
 
 === Importing a File during Execution
 
-image:media\image6.png[image,width=416,height=300]
+//image:media\image6.png[image,width=416,height=300]
 
 When you wish to import a file during execution, the wizard looks
 slightly different. First, instead of an _Import File_ button, you have
