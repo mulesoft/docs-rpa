@@ -30,8 +30,7 @@ link:#OCR_TextRecognition[_Text Recognition – Legacy OCR_].
 
 *OCR Image Preprocessing*
 
-See also link:#AS_AIOCRfilebased_P[Properties] in the Chapter entitled
-AI OCR (file-based).
+See also xref:toolbox-text-recognition-ai-ocr-file-based.adoc#Properties[Properties] in the Chapter entitled *AI OCR (File-based)*.
 
 === Inbound Variables
 
@@ -39,8 +38,8 @@ AI OCR (file-based).
 relative to these coordinates. The resulting result coordinates are then
 absolute and are with reference to the left screen corner.
 
-See also the Chapter entitled Search Pattern –
-link:#AS_SearchPattern_SearchSettings[Search Settings].
+See also the Chapter entitled Search Pattern – *Search Settings*.
+//link:#AS_SearchPattern_SearchSettings[Search Settings].
 
 This variable can only be mapped in the wizard.
 
@@ -60,7 +59,6 @@ First, a screenshot is made of the currently active desktop. Using
 *Initial wait time*, you can delay this operation. This can be very
 useful if the image takes time to form, e.g. due to animations.
 
-You can find further explanations under
-link:#AS_AIOCRfilebased_P[Properties] in the Chapter entitled AI OCR
-(file-based) or in the Chapter entitled
-link:#OCR_TextRecognitionLegacy[Text Recognition – Legacy OCR].
+You can find further explanations under xref:toolbox-text-recognition-ai-ocr-file-based.adoc#Properties[Properties]
+//link:#AS_AIOCRfilebased_P[Properties]
+in the Chapter entitled AI OCR (file-based) or in the Chapter entitled l*Text Recognition – Legacy OCR*.

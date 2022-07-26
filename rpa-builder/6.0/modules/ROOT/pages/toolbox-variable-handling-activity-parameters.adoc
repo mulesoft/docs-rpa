@@ -16,19 +16,15 @@ Initialization_.
 
 *Defining Activity Parameters*
 
-You define the parameters in the Business Process Initialization that
-you find at the top right of the area of the Business Process Modeler.
+You define the parameters in the Business Process Initialization that you find at the top right of the area of the Business Process Modeler.
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=272,height=58]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=272,height=58]
 
-image:media\image2.png[image,width=423,height=210]
+//image:media\image2.png[image,width=423,height=210]
 
-First press image:media\image3.png[image,width=144,height=18] to select
-the type of variable.
+//First press image:media\image3.png[image,width=144,height=18] to selectthe type of variable.
 
-image:media\image4.png[Ein Bild, das Tisch enthält. Automatisch
-generierte Beschreibung,width=125,height=168]
+//image:media\image4.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=125,height=168]
 
 The following data types are available:
 
@@ -68,26 +64,23 @@ ____
 Screen coordinates (coordinates)
 ____
 
-You can enter a name, description, and a value for the parameters
-directly in the corresponding fields.
+You can enter a name, description, and a value for the parameters directly in the corresponding fields.
 
-The AP name may consist of a combination of letters, numbers, and
-underscores.
+The AP name may consist of a combination of letters, numbers, and underscores.
 
 Special characters and spaces must not be used.
 
 The initial letter of the name must be in lower case.
 
-The AP name must be unique. It must not be used multiple times for
-different variables.
+The AP name must be unique. It must not be used multiple times for different variables.
 
 The predefined values are test values that are only used for a local run
 within RPA Builder. The variables are registered automatically
 on RPA Manager when uploaded. There, you can modify the values of the
 variables and define them differently, depending on the station on which
 the Workflow is being executed (see also the chapter
-link:#UsingVariables[Using Variables] and the Servicetrace® X1 Server
-Online Manual).
+xref:advanced-concepts-using-variables.adoc[Using Variables].
+// and the Servicetrace® X1 ServerOnline Manual).
 
 Please note that the test value may change in the course of the BP due
 to the possible assignment of new values. If the BP is started again,
@@ -95,18 +88,14 @@ the value will be reset to its initial value.
 
 *Deleting Activity Parameters*
 
-You can delete APs by returning to the Business Process Initialization
-area. Press the image:media\image5.png[image,width=29,height=30] button
-to delete the desired AP.
+//You can delete APs by returning to the Business Process Initialization area. Press the image:media\image5.png[image,width=29,height=30] button to delete the desired AP.
 
-You can only delete an AP if it is not being used in a Workflow. If the
-AP is already connected to at least one Workflow, the following message
-appears:
+You can only delete an AP if it is not being used in a Workflow. If the AP is already connected to at least one Workflow, a pop-up message appears.
+// the following message appears:
 
-image:media\image6.png[image,width=466,height=155]
+//image:media\image6.png[image,width=466,height=155]
 
-All the Workflows in which the AP is used are displayed. To delete the
-AP, you must remove the connections in all Workflows.
+All the Workflows in which the AP is used are displayed. To delete the AP, you must remove the connections in all Workflows.
 
 *Changing the Name of an Activity Parameter*
 
@@ -125,19 +114,19 @@ To do this, you need the Action Step _Activity Parameters,_ which you
 insert into the _Workflow Initialization_. All activity parameters are
 listed in the wizard and can be connected to the Workflows in which they
 should be used. The Action Steps can then be filled with the content of
-the available APs with the aid of the pin variables
-image:media\image7.png[image,width=21,height=21].
+the available APs with the aid of the pin variables.
+//image:media\image7.png[image,width=21,height=21].
 
-image:media\image8.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=323,height=207]
+//image:media\image8.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=323,height=207]
 
 *Connecting Activity Parameters to a Gateway*
 
 If you click on the BPMN gateway, a small toolbox opens containing a
 puzzle icon. A wizard opens. You can enter the APs here. (see also
-chapter link:#GatewayConditionExpression[Gateway condition expression])
+chapter *Gateway condition expression*.
+//link:#GatewayConditionExpression[Gateway condition expression])
 
-image:media\image9.jpg[image,width=604,height=137]
+//image:media\image9.jpg[image,width=604,height=137]
 
 ==== Properties
 
@@ -148,8 +137,7 @@ enabled, the variable names and their values are written to the log file
 and the run protocol.
 
 For security reasons, passwords are not shown in the user account data.
-Simply leave this option disabled if the variables or their values
-contain confidential data.
+Simply leave this option disabled if the variables or their values contain confidential data.
 
 ==== Inbound Variables
 
@@ -167,8 +155,7 @@ Click to select the desired parameters on the left in the _Available
 Parameters_ column. You can use the arrows to drag them into the right
 column and thereby insert them into the Workflow.
 
-For more on *Write Variables to Log File /Run Protocol* see also
-link:#properties[Properties.]
+For more on *Write Variables to Log File /Run Protocol* see also <<Properties>>.
 
 ==== Handling for Activity Parameters When Importing a Workflow
 
@@ -184,8 +171,7 @@ project that have a different data type
 In such cases, you are notified about inconsistencies by means of a
 dialog.
 
-image:media\image10.png[Ein Bild, das Tisch enthält. Automatisch
-generierte Beschreibung,width=484,height=272]
+//image:media\image10.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=484,height=272]
 
 The dialog shows you all the affected APs and suggests a suitable action
 (_Suggested Auto-Correction_). Either missing APs are added or, if APs
@@ -194,7 +180,7 @@ have the same name but a different data type, deleted.
 You can accept the suggestions by clicking on _Proceed_. Click on
 _Remove Parameters from Workflow_ to remove all the APs of the imported
 Workflow. Clicking on _Cancel_ cancels the import of the Workflow.
-
+////
 ==== Related Elements
 
 The following chapters as a whole may help you in acquiring a better

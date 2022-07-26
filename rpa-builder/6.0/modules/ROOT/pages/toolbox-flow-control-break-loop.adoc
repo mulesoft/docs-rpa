@@ -18,10 +18,10 @@ a loop.
 * *Exit Mode* Determines how the loop reacts _after_ using a _Break
 Loop_, i.e. with or without error
 
+////
 ==== Wizard
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=391,height=123]
+image:media\image1.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=391,height=123]
 
 ==== Example
 
@@ -60,3 +60,4 @@ _Workflow_ would enter the error state if the _Retry Loop_ was not able
 to find the desired content and reaches the end of the _Loop_ after
 executing the last iteration. Thus the normal error handling would be
 triggered after an unsuccessful _Retry Loop_.
+////

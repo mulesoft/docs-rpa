@@ -24,15 +24,15 @@ to a different folder.
 *Read mail status* Indicates whether the e-mail is marked as read or
 unread.
 
-[#AS_SetMail_P_TargetFolder .anchor]####**Target folder** Name of the
-target folder.
+*Target folder* Name of the target folder.
 
 === Inbound Variables
 
 *Mail Info* Is made available only by the Read Mail Action Step. This
 can be used to uniquely identify an e-mail.
 
-*link:#AS_SetMail_P_TargetFolder[Target folder]*
+//*link:#AS_SetMail_P_TargetFolder[Target folder]*
+*Target folder* Name of the target folder.
 
 === Outbound Variables
 
@@ -40,4 +40,4 @@ can be used to uniquely identify an e-mail.
 
 === Wizard
 
-See link:#properties[Properties].
+See <<Properties>>.

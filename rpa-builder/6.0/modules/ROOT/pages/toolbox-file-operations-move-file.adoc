@@ -15,24 +15,28 @@ _Workflow_.
 where the file that is to be moved will be saved. You can specify an
 absolute or relative path. If a relative path is used, then the path
 relates to the _Base Path_ variable.
-* [#AS_MoveFile_P_DirectoryPath .anchor]####**Directory path** Enter the
+* *Directory path** Enter the
 path to the directory where the file to be moved is located. You can
 specify an absolute or relative path. If a relative path is used, then
 the path relates to the _Base Path_ variable.
-* [#AS_MoveFile_P_FileName .anchor]####**File Name** Enter the name here
+* *File Name* Enter the name here
 of the file that is to be moved.
 * *Overwrite existing file* This option enables you to overwrite an
 existing file with the same name in the destination folder.
 
 Other Properties that are the same in all Action Steps are described in
-the section on link:#CommonProperties[Common Properties]. For reasons of
+the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
 === Inbound Variables
 
-link:#AS_MoveFile_P_DirectoryPath[*Directory path*]
+*Directory path** Enter the
+path to the directory where the file to be moved is located. You can
+specify an absolute or relative path. If a relative path is used, then
+the path relates to the _Base Path_ variable.
 
-link:#AS_MoveFile_P_FileName[*File name*]
+*File Name* Enter the name here
+of the file that is to be moved.
 
 === Outbound Variables
 
@@ -52,14 +56,16 @@ path to the source directory.
 
 More information about the environment variables (Insert Environment
 Variable) and script variables (Insert Script Variable) used below can
-be found under link:#AS_Settings[Settings].
+be found under *Settings*.
 
 * *Directory path* Specify the path to the file that is to be moved. You
-can create an absolute path or a path relative to the _Base Path_ using
-the image:media\image1.png[image,width=175,height=22] and
-image:media\image2.png[image,width=129,height=22] buttons. The initial
-value is %STWS_BASEPATH%. Select an existing path using the
-image:media\image3.png[image,width=20,height=20] button. You can also
+can create an absolute path or a path relative to the _Base Path_.
+// using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=129,height=22] buttons.
+The initial
+value is %STWS_BASEPATH%. Select an existing path.
+//using the image:media\image3.png[image,width=20,height=20] button.
+You can also
 insert variables from the _Workflow_ in order to construct the path. To
 do so, click on the pin and select one of the available variables.
 * *File name* Enter the name of the file that is to be moved. You can
@@ -67,11 +73,13 @@ also insert a variable from the Workflow as the _File Name_. To do so,
 click on the pin and select one of the available variables.
 * *Destination directory* Specify the destination path for the file that
 is to be moved. You can create an absolute path or a path relative to
-the _Base Path_ using the
-image:media\image1.png[image,width=175,height=22] and
-image:media\image2.png[image,width=129,height=22] buttons. The initial
-value is %STWS_BASEPATH%. Select an existing path using the
-image:media\image3.png[image,width=20,height=20] button. You can also
+the _Base Path_.
+// using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=129,height=22] buttons.
+The initial
+value is %STWS_BASEPATH%. Select an existing path.
+// using the image:media\image3.png[image,width=20,height=20] button.
+You can also
 insert variables from the _Workflow_ in order to construct the path. To
 do so, click on the pin and select one of the available variables.
 * *Overwrite existing file* If this option has not been enabled, an

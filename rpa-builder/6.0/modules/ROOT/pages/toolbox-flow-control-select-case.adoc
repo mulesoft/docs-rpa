@@ -25,7 +25,7 @@ value of 100% means identical. The default value is 50%.
 * *Compare Value Float*
 
 Other properties that are the same in all Action Steps are described in
-section link:#CommonProperties[_Common Properties_]. For reasons of
+section *Common Properties*. For reasons of
 clarity they are not shown here.
 
 === Wizard
@@ -43,16 +43,17 @@ lost. This is because cases in a _Select Case_ are generated based on
 the previously selected data type and it is not possible to simply
 convert the type of existing cases without further consideration.
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=370,height=100]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=370,height=100]
 
-* *Cases* You can create one or more cases using the
-image:media\image2.png[image,width=105,height=29] button depending on
-which data type you have selected above. After you have created a case,
-you can use the image:media\image3.png[image,width=40,height=24] button
-to modify it. Use the image:media\image4.png[image,width=32,height=30]
-button to delete a case that was created unintentionally. A step-by-step
-guide to configuring _Select Case_ is provided below.
+* *Cases* You can create one or more cases
+//using the image:media\image2.png[image,width=105,height=29] button
+depending on which data type you have selected above. After you have created a case, you can
+//use the image:media\image3.png[image,width=40,height=24] button to
+modify it.
+//Use the image:media\image4.png[image,width=32,height=30] button to delete a case that was created unintentionally.
+
+////
+A step-by-step guide to configuring _Select Case_ is provided below.
 
 Step-by-step – Configure _Select Case_ as follows (text variable as an
 example):
@@ -60,11 +61,11 @@ example):
 [arabic]
 . Drag _Select Case_ to the desired place in the Workflow.
 . Open the _Select Case_ wizard.
-. In the drop-down “Type” menu, choose the data type of the variable
+. In the drop-down *Type* menu, choose the data type of the variable
 that is to be checked. This example uses a text variable, so select the
-type “Alphanumeric”. A detailed description of the properties and
+type *Alphanumeric*. A detailed description of the properties and
 configuration options for the various data types is provided in the
-section on “Data types and comparison options” below.
+section on *Data types and comparison options* below.
 
 Type conversion takes place in the following order of precedence: +
 Boolean -> Integer -> Float -> String +
@@ -102,6 +103,7 @@ String” menu. Confirm your selection with OK.
 . Drag at least one Action Step to be performed into the newly created
 Case in _Select Case_. This Action Step will now be performed if the
 condition specified for the case is met (steps 5 to 7 above).
+////
 
 === Data Types and Comparison Options
 
@@ -128,8 +130,7 @@ Substring: Part of the text in Value must match
 
 RegEx comparison: Search for matches for the regular expression entered
 as the Value. More information about _Regular Expressions_ is provided
-in the section on link:#UsingRegularExpression[Using Regular
-Expressions].
+in the section on *Using Regular Expressions*.
 
 Fuzzy: Search for text similar to that in Value Adjust the level of
 similarity, expressed as a percentage, using the slider under “Text

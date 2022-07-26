@@ -29,12 +29,13 @@ suggests the name of the surrounding _Transaction_ to be _Stopwatch_ by
 default. Just edit the name to change it if required.
 
 === Timer Modes (Using the Stopwatch within a Loop)
-
+////
 image:media\image1.png[image,width=303,height=128]The example to the
 left launches an application, checks if it is loaded via _Image search_,
 and then kills the application again. It will repeat this five times and
-each run will be measured by the _Stopwatch_. Use the _Timer mode_
-setting for the _Stopwatch_ to determine how the measurement value is
+each run will be measured by the _Stopwatch_.
+////
+Use the _Timer mode_ setting for the _Stopwatch_ to determine how the measurement value is
 calculated:
 
 * {blank}

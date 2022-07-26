@@ -2,8 +2,7 @@ include::rpa-home::partial$pending-review.adoc[]
 
 == System Validation
 
-_System Validation_ compares various parameters (see Section
-link:#CheckingSystemParameters[Checking System Parameters]) between the
+_System Validation_ compares various parameters (see Section *Checking System Parameters*) between the
 system the _Workflow_ was created on and the system where it is
 executed. It does not have any additional properties on the _Properties
 grid_.

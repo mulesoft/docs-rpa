@@ -31,8 +31,7 @@ normal case, there will be a check whether timers/checkpoints could not
 be measured. The Workflow Run Results in RPA Builder will be
 annotated accordingly.
 
-For a description of exit codes, please see link:#Exit_Codes[Section
-Exit Codes].
+For a description of exit codes, please see *Section Exit Codes*.
 
 ==== Inbound Variables
 
@@ -44,4 +43,4 @@ The _Exit Workflow_ Action Step possesses no outbound variables.
 
 ==== Wizard
 
-See link:#properties[Properties].
+See <<Properties>>.

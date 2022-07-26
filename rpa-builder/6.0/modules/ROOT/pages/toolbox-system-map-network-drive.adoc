@@ -12,16 +12,14 @@ drive letter.
 *Drive* The drive letter to map the network location to. Or, if you
 selected _Unmap Drive_, the drive letter to unmap.
 
-*Login required* Activate if the network location is password protected
+*Login required* Activate if the network location is password protected.
 
-[#AS_MapNetworkDrive_P_NetworkPath .anchor]####**Network Path** The path
-of the network location you want to map
+*Network Path* The path of the network location you want to map.
 
 *Password* The password required to access the network location. Only
 applicable if _Login required_ is selected.
 
-*Unmap drive* Select this if you want to unmap a drive instead of
-mapping it
+*Unmap drive* Select this if you want to unmap a drive instead of mapping it.
 
 *Username* The username required to access the network location. Only
 applicable if _Login required_ is activated.
@@ -32,7 +30,8 @@ warning instead.
 
 ==== Inbound Variable
 
-link:#AS_MapNetworkDrive_P_NetworkPath[*Network Path*]
+//link:#AS_MapNetworkDrive_P_NetworkPath[*Network Path*]
+*Network Path* The path of the network location you want to map.
 
 ==== Outbound Variables
 
