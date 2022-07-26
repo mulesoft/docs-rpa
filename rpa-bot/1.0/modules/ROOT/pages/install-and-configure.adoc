@@ -1,0 +1,141 @@
+= Install and Configure RPA Bot
+
+Before installing RPA Bot, ensure that your environment meets the minimum hardware and software requirements. After downloading and installing the bot, run the RPA Bot Configurator application to configure its connection and default settings.
+
+== Install RPA Bot
+
+Install RPA Bot using the latest setup file: link:------["Download RPA Recorder^", role="button-primary"]
+
+== Configure RPA Bot Settings
+
+Use the RPA Bot Configurator application to change the default settings of the bots. You can find the application in the start menu under *MuleSoft* > *RPA Bot Configurator*.
+
+The RPA Bot Configuration tool has five different configuration panels:
+
+* <<common-settings, Common>>
+* <<proxy-settings, Proxy>>
+* <<secure-session, Secure Session>>
+* <<connection-settings, Connection Settings>>
+* <<session-monitoring, Session Monitoring>>
+
+[TIP]
+After saving your changes, restart the RPA Bot Service for the changes to take effect.
+
+[[common-settings]]
+=== Common Settings
+
+image:bot-configurator-common.png[The RPA Bot configurator application showing the Common settings panel]
+
+* *RPA Bot ID*
++
+ID generated during the installation process of RPA bot, which identifies the bot in RPA Manager (even if the IP or MAC-Address changes). If you need a new ID, uninstall and then reinstall RPA bot.
+* *RPA Manager to connect*
++
+The URL address of the RPA Manager instance the bot connects to. There is no default setting.
+* *Use HTTPS as protocol layer*
++
+Specifies whether the server is to be addressed via HTTP or HTTPS.
+* *API Key*
++
+The API Key entered during the installation of the robot. You can change this setting.
+* *Alive interval*
++
+The measurement in which the client and RPA Manager communicate in one direction. This setting prevent the RPA Manager instance to search for the associated bots by sending calls into your IT infrastructure. Every communication starts with the bot connecting to RPA Manager.
+* *Check interval*
++
+The bot sends the measured data to RPA Manager and checks for provided packages to collect (such as Scheduling Tasks or Activities).
+* *Cleanup workflows on start*
++
+Select this option to delete the workflows that are no longer assigned to a configuration but are still stored locally in the bot.
+
+[[proxy-settings]]
+=== Proxy Settings
+
+image:bot-configurator-proxy.png[The RPA Bot configurator application showing the Proxy settings panel]
+
+* *Proxy*
++
+The bot and RPA Manager communicate through the HTTP protocol at Port 80. If you
+connect to the Internet through a proxy server, enter the proxy address in this field
++
+Format: `http://<Serveraddress>:<Port>`, for example: http://myproxy.de:881.
+
+[[secure-session]]
+=== Secure Session
+
+You can enable secure sessions by entering username and password of the user to impersonate for the secure session.
+
+image:bot-configurator-secure-session.png[The RPA Bot configurator application showing the Secure Session settings panel]
+
+* *Default Secure Session User*
++
+If it is a robot running in an environment that is embedded in a domain, ensure that a local administrator account can only be used if the complete hostname has been entered before, such as `.\Administrator` instead of in a domain `<domainname>\Administrator`.
+* *Activate certificate based login on SSL enabled terminal servers*
++
+Enable this option if you are installing the bot on a terminal server that only allows SSL protected RDP connections.
+* *Handle “Always prompt client for password” option*
++
+There is a Group Policy called `fPromptForPassword`. If this policy is enabled, the password has to be entered a second time, when the RDP session is established. If this is the case, enable this option. Also choose the correct form of dialog. On some machines the second password entry is requested by a separate window in form of
+a popup dialog. And on other machines it is an embedded screen like the normal windows login.
+//To determine if the option as to be used and which form of dialog needs to be configured, it is a good idea to execute the steps described in chapter Functional test.
+* *Handle a “Custom LogonMessage”*
++
+It is possible to configure an additional screen which is displayed after the login into an RDP session. It is called Custom Logon Message and normally needs to be acknowledged by pressing a button. If such a message appears when you connect to your system via RDP, enable this option.
+* *Allow usage of SmartCards inside Secure Sessions*
++
+Enables authentication via SmartCard within the secure session.
+* *Use the Credential Security Support Provider (CredSSP) for authentication*
++
+Select this option to use the CredSSP for authentication.
+* *Use alternative RDP handling for secure session login (recommended for Windows 10 and Windows Server 2016)*
++
+If the Group Policy _Always prompt for password upon connection_ is enabled, the password must be entered twice when logging into the RDP session. This might prevent the secure session from running smoothly, especially under Windows 2010 and Windows Server 2016. If this is the case, activate this option so that the credentials can be entered correctly in the second query.
++
+In this context, ensure that you have selected the option *Allow connections only from computers running Remote Desktop with Network Level Authentication (recommended)* in the Windows System Properties.
+
+==== Test Settings
+
+You have the possibility to test your connection settings for the secure session with the *TEST SETTINGS* button. Clicking this button opens the pop-up window Test Settings, in which you can enter test parameters for the secure session.
+
+image:bot-configurator-test-settings.png[The RPA Bot configurator application showing the Test Settings window]
+
+If you click on *TEST*, the application starts a non-operational secure session in which you can see your parameters for the secure session listed. Click the *Logout* button to end this non-operational secure session.
+
+=== Connection Settings
+
+image:bot-configurator-connection-settings.png[The RPA Bot configurator application showing the Connection settings panel]
+
+* *Connection settings*
++
+Here you can define the method how our RPA Bot components (Robot, StSec and StSem) communicate among themselves. These settings are only relevant for secure sessions. Therefore, you can choose between the Named Pipes protocol or TCP. Named Pipes is selected by default, as an uncomplicated method. In some cases, when using TCP, the firewall can block the connection even though it is an exclusive internal computer process.
+* *Session connection timeout*
++
+With an established connection, the session connection timeout defines the time that a call can remain unanswered before the bot cancels this call.
+////
+In other words: the Robot sends a request to the StSec, 'Give me your Logfile.' If the StSec have not
+answered to the request within 180 sec, the Call will be canceled and an error message occurs
+(timeout reached).
+////
+* *Retries in timeout*
++
+Defines how often the bot tries to reach a started StSec via session connection.
+* *Seconds to wait between each try*
++
+The wait time specifies how long the bot waits between every individual attempt.
+
+=== Session Monitoring
+
+image:bot-configurator-session-monitoring.png[The RPA Bot configurator application showing the Session Monitoring settings panel]
+
+* *Take Analysis Pictures*
++
+Specify whether the bot takes screenshots.
+* *Analyze Pictures Count*
++
+Specify the number of screenshots to take.
+* *Analyze Picture Seconds*
++
+Defines the interval at which the bot takes screenshots.
+* *Analysis package on OK*
++
+If you check this box, analysis packages are sent if the Activity Workflow is terminated with OK.
