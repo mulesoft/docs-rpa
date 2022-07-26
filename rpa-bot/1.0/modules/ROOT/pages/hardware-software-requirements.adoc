@@ -1,0 +1,35 @@
+= Hardware and Software Requirements
+
+Before installing RPA Bot, ensure that your environment meets the minimum hardware and software requirements.
+
+== Hardware Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a]
+|===
+| Minimum | Recommended
+| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
+| 8 GB of RAM | 16 GB of RAM
+| 5 GB of disk space | 10 GB (SSD) of disk space
+|===
+
+== Software Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+ a|
+* 4.5
+* 4.7.2
+| Operating System
+ a|
+Any of the following:
+
+* Windows 8.1
+* Windows 10
+* Windows Server 2016
+|===
+
+== See Also
+
+* xref:install-and-configure.adoc[Install and Configure RPA Bot]

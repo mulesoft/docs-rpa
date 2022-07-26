@@ -1,3 +1,4 @@
 .xref:index.adoc[RPA Bot]
 * xref:index.adoc[RPA Bot Overview]
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
 * xref:install-and-configure.adoc[Install and Configure RPA Bot]
