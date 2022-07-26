@@ -24,7 +24,7 @@ dictionary.
 In the following Chapter, we will look at the key differences compared
 to the Action Step Legacy OCR. You can find a detailed description of
 the properties, variables, etc. in the Chapter entitled
-link:#OCR_TextRecognition[_Text Recognition – Legacy OCR_].
+_Text Recognition – Legacy OCR_.
 
 === Properties
 
@@ -61,4 +61,4 @@ useful if the image takes time to form, e.g. due to animations.
 
 You can find further explanations under xref:toolbox-text-recognition-ai-ocr-file-based.adoc#Properties[Properties]
 //link:#AS_AIOCRfilebased_P[Properties]
-in the Chapter entitled AI OCR (file-based) or in the Chapter entitled l*Text Recognition – Legacy OCR*.
+in the Chapter entitled AI OCR (file-based) or in the Chapter entitled *Text Recognition – Legacy OCR*.

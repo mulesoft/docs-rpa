@@ -248,8 +248,7 @@ _Clear Selection_ button. A vertical black line indicates where the
 pattern can be moved to using drag and drop. If _Match one or more
 patterns_ is selected the first pattern in the list will have a blue
 border. This image can be used as a reference point for other Action
-Steps as the Workflow progresses (see link:#_Other_Uses_of[Other Uses of
-Matched Patterns]).
+Steps as the Workflow progresses (see <<Other Uses of Matched Patterns>>).
 
 === Capture Pattern
 

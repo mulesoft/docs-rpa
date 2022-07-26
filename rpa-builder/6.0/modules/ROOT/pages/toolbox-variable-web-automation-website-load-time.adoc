@@ -56,17 +56,17 @@ Step_ has been executed.
 
 *Load Time Settings*
 
-* [#AS_WebsiteLoadTime_P_WebsiteURL .anchor]####**WebsiteUrl** Enter the
-URL to be tested, e.g. www.wikipedia.de.
+* *WebsiteUrl* Enter the URL to be tested, e.g. www.wikipedia.de.
 
 Other Properties that are the same in all Action Steps in the _Web
-Automation_ are described in the section on
-link:#CommonProperties_WebAutomation[Common Properties.] For reasons of
-clarity they are not shown here.
+Automation_ are described in the section on  *Common Properties*.
+//link:#CommonProperties_WebAutomation[Common Properties.]
+For reasons of clarity they are not shown here.
 
 === Inbound Variables
 
-link:#AS_WebsiteLoadTime_P_WebsiteURL[*Website Url*]
+//link:#AS_WebsiteLoadTime_P_WebsiteURL[*Website Url*]
+*WebsiteUrl* Enter the URL to be tested, e.g. www.wikipedia.de.
 
 === Outbound Variables
 
@@ -81,10 +81,12 @@ website tested was available or not (True/False).
 
 * *WebsiteUrl* Enter the URL to be tested, e.g. www.wikipedia.de. The
 URL can also be constructed by inserting variables from the _Workflow_.
+////
 To do this, click on the
 image:media\image2.png[image,width=17,height=24] pin and select the
 available variables from the _Test Master Data_ area or use the
 _BasePath_ variable.
+////
 
 Error message: FAIL to load the address. The error message "FAIL to load
 the address" will be recorded in the .har log file if the _Website Load

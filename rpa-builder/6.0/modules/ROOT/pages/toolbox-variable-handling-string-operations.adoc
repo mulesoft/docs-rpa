@@ -13,7 +13,10 @@ the pin variables.
 
 === Inbound Variables
 
-link:\l[*Input text*]
+//link:\l[*Input text*]
+*Input Text* Here, enter the string that you want to modify. This can be
+entered using the keyboard or in the wizard, including with the help of
+the pin variables.
 
 If you have selected the _Find and replace text_ mode, the following
 variables are also displayed.
@@ -37,14 +40,12 @@ first have to select an operation.
 
 You can use one of the following modes:
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=333,height=163]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=333,height=163]
 
 With *Find and replace text*, you can search for specific parts of the
 text and replace them.
 
-image:media\image2.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=290,height=71]
+//image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=290,height=71]
 
 *Example:*
 
@@ -57,11 +58,10 @@ Replace with = FR
 Output = FR123456789
 
 *Left (take first characters)* Enter the number of characters that are
-to be output as the result. In the example below, the first 4 characters
-are displayed as the result.
+to be output as the result.
+//In the example below, the first 4 characters are displayed as the result.
 
-image:media\image3.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=305,height=56]
+//image:media\image3.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=305,height=56]
 
 *Example:*
 
@@ -77,7 +77,8 @@ from the end of the string are to be output as the result.
 *Trim left (remove first characters)* With this option, you can specify
 the length that the string is to be shortened by. Selecting _Trim left_
 means that the string is shortened from the
-beginning.image:media\image4.png[image,width=307,height=57]
+beginning.
+//image:media\image4.png[image,width=307,height=57]
 
 *Example:*
 

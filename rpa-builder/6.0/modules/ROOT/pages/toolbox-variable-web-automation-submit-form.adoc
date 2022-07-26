@@ -15,15 +15,17 @@ form.
 to use Regex when searching the window.*
 
 Other Properties that are the same in all Action Steps in the _Web
-Automation_ are described in the section on
-link:#CommonProperties_WebAutomation[Common Properties.] For reasons of
-clarity they are not shown here.
+Automation_ are described in the section on *Common Properties*.
+//link:#CommonProperties_WebAutomation[Common Properties.]
+For reasons of clarity they are not shown here.
 
 === Inbound Variables
 
-link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+//link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+*Element XPath*
 
-link:#WA_CommonProperties_WindowTitle[*Window Title*]
+//link:#WA_CommonProperties_WindowTitle[*Window Title*]
+*Window Title*
 
 === Outbound Variables
 

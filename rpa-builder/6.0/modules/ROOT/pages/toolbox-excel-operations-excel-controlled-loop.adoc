@@ -1,8 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Excel Operations
-
-=== Excel Controlled Loop
+== Excel Controlled Loop
 
 You can read data from an Excel table with the _Excel Controlled Loop_
 element. It works in a similar way to the
@@ -14,7 +12,7 @@ setting options for determining the start (Read mode) and the end
 You can only use the _Excel Controlled Loop_ Action Step within an Excel
 session. You enter the source file in the Excel Session.
 
-==== Properties
+=== Properties
 
 *Excel Operation Settings*
 
@@ -43,7 +41,7 @@ spreadsheet directly or via the pin variable.
 * *Stop (loop break) criterion* Here, you can see the selected
 termination criterion (Terminate Loop)
 
-==== Inbound Variables
+=== Inbound Variables
 
 * *Sheet name* Name of the spreadsheet. In the properties, you can only
 enter the name directly. In the wizard, however, you can select the
@@ -54,7 +52,7 @@ spreadsheet directly or via the pin variable.
 
 //link:\l[*Regex condition*]
 
-==== Outbound Variables
+=== Outbound Variables
 
 The contents of each column are returned as variables within the _Excel
 Controlled Loop Action Step_.
@@ -63,7 +61,7 @@ Controlled Loop Action Step_.
 
 *RowNumber* Shows you the number of lines that will be read.
 
-==== Wizard
+=== Wizard
 
 Two settings are particularly important, *Read mode* and *Terminate loop*.
 

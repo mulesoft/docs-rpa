@@ -179,7 +179,7 @@ captured.
 be performed can be defined based on a previously executed Action Step
 (see also <<Inbound Variables>>).
 
-*Mouse click timing* (see <<Properties>>)
+*Mouse click timing* (see <<Properties>>).
 
 === Creating Mouse Actions Relative to an Anchor Point
 

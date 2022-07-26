@@ -48,7 +48,7 @@ exactly the information that you require without having to use special
 scripting. This simplifies further processing for you as you can access
 the desired result immediately.
 
-With the _link:#AS_JsonQuery[Json Query]_ Action Step, you also have the
+With the _Json Query_ Action Step, you also have the
 option of reading individual values from the Json object and thus
 specifying the result further.
 
@@ -110,8 +110,7 @@ _Header Parameter_ or _Query Parameter_.
 With the *Request Body*, you send data to the server, including, for
 example, the form of communication between the server and the client.
 According to convention, the methods GET, HEAD and DELETE do not require
-a body (see also the network protocol
-https://tools.ietf.org/html/rfc7231[RFC 7231]).
+a body (see also the network protocol RFC 7231).
 
 In addition, in the Parameters area, on the left of the screen, you can
 find the mapped variables and their *Test Values.* The mapping is

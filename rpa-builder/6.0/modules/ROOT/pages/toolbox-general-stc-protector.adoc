@@ -51,8 +51,7 @@ title to decide whether it is a pop-up window to be closed.
 
 You can also distinguish between window titles by using the checkbox
 _Use regular expression for window title_. This function is described in
-detail in Section link:#UsingRegularExpression[Using Regular
-Expression].
+detail in Section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 
 === Example
 

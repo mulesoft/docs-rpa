@@ -80,8 +80,7 @@ password directly as free text or select it as a variable using the pin icon.
 
 You can find further information on environment variables (Insert
 Environment Variable) and script variables (Insert Script Variable) in
-the Chapter entitled link:#InsertSpecialCharacter[Insert Special
-Character / Macro / Script Variable / Environment Variable] and
+the Chapter entitled *InsertSpecialCharacter[Insert Special Character / Macro / Script Variable / Environment Variable* and
 *Settings*.
 
 In the *Read Mode* area, there are various modes available for reading a
