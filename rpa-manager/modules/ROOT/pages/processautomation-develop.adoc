@@ -1,3 +1,106 @@
 include::rpa-home::partial$pending-review.adoc[]
 
 = Developing Automations
+
+The first phase of process automation is the *Design* phase.
+
+In this phase, the flow of the process is modeled using BPMN.
+
+You can create a new model, import a model that has been created with other tools and edit it or record a process with RPA Process Recorder.
+
+As an option, you can have the model tested for formal correctness and completeness while it is being created. This enables you to quickly detect and resolve errors in the structure.
+
+The second phase of process automation is the *Build* phase.
+
+In the build phase, in the RPA Builder, the elements of the process model are filled with concrete instructions for the RPA Bot.
+
+As long as the project is in the build phase, it can be seen in the repository of the RPA Builder.
+
+== Before You Begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Automation Module*
+|*Process Automation Open*
+
+|Create processes
+|*Process Create*
+
+|Record processes with RPA Process Recorder
+|*Process Recording*
+
+|Open, use and edit the activity library in RPA Builder
+|*Activity Library Open*, *Activity Library Administration*
+
+|===
+
+* To record a process, RPA Recorder must be installed and connected to RPA Manager.
+* To build a process automation, RPA Builder must be installed and connected to RPA Manager.
+* To use RPA Builder, obtain an RPA Builder assignment in the *Users* view of the *User Management* module.
+* A project in design phase must exist in the *Project Management* view of the *Process Automation* module.
+* Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
+
+== Design a Process Model
+
+Create, record or import a model of the flow of the process using _Business Process Model and Notation (BPMN)_.
+
+The process model should include all possible paths and outcomes. You can ad documentation to each element of the diagram.
+
+=== Model a Process
+
+Create a process model by arranging the BPMN elements on the workbench.
+
+Each model must consist at least of a *Start Event*, a *Bot Task* or a *User Task* and an *End Event*. All elements must be connected by *Sequence Flows*. RPA Manager automatically checks the syntax of the model.
+
+After saving the process model, move the project to the *Build* phase and open it in RPA Builder. The model can be edited in RPA Builder, too.
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of the project to open it.
+. In the panel *Automation*, on the workbench, click on an element to select the next step from the context pad or drag and drop an element from the palette onto the workbench and connect it to the previous step with a *Flow* element.
+. Add documentation
+. Add, edit and remove elements until the model is finished.
+. On the workbench, click the icon *Save*.
+
+=== Record a Process
+
+If you record a process the model is prefilled with instructions for RPA Builder to generate code.
+
+After saving the recorded process model, move the project to the *Build* phase and open it in RPA Builder. The model can be edited in RPA Builder, too.
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of the project to open it.
+. In the panel *Automation*, on the workbench, click on the icon *Record BPMN* to start the RPA Recorder.
+. After recording, click the icon *Save* on the workbench.
+
+=== Import a Process
+
+Import a process model generated with another BPMN tool. Only the elements shown in the workbench are supported. Importing a model overwrites previously created models.
+
+After saving the recorded process model, move the project to the *Build* phase and open it in RPA Builder. The model can be edited in RPA Builder, too.
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of the project to open it.
+. In the panel *Automation*, on the workbench, click on the icon *Import BPMN* to select a file for import.
+. In the palette on the workbench, click the icon *Fit to Viewport* to see the complete model.
+. On the workbench, click the icon *Save*.
+
+== Build a Process
+
+In the build phase, use RPA Builder to fill the process model with bot-readable code.
+
+=== Open a Process in RPA Builder
+
+Publish a project to build phase to open it in RPA Builder.
+
+
+=== View a Process Build in RPA Manager
+
+== See Also
+
+* https://camunda.com/bpmn/[Camunda BPMN TutorialRec]
+BPMN Tutorial
+You can find a tutorial on the use of BPMN at camunda.com/bpmn/, for example.
