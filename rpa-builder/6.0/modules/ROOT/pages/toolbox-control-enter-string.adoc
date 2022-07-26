@@ -34,7 +34,7 @@ which a key or combination of keys is released.
 * *Use a regular expression for window title* If this option is active,
 the string entered in the _Window Title_ field will be interpreted as a
 regular expression (see also the section on
-xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions])
+xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]).
 * **Window title** Title of the window where the keyboard inputs are to be executed.
 
 === Inbound Variables

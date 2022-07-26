@@ -89,8 +89,7 @@ point is added to the drop-down list.
 +
 //image:media\image14.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=246,height=114]
 +
-Use image:media\image15.png[image,width=24,height=23] to insert the
-measurement points into the script.
+//Use image:media\image15.png[image,width=24,height=23] to insert themeasurement points into the script.
 * {blank}
 +
 ____

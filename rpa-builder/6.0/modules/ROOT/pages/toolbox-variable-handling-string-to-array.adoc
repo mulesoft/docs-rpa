@@ -8,23 +8,26 @@ as with the _Read from Array_ Action Step.
 
 === Properties
 
-[#AS_StringToArray_P_InputString .anchor]####**Input String** (string,
-empty with the default setting, must not be empty) String that can be
-entered using the keyboard or in the wizard, including with the help of
-the pin variables.
+*Input String* (string, empty with the default setting, must not be empty) String that can be
+entered using the keyboard or in the wizard, including with the help of the pin variables.
 
 *Separator* Define a separator that the string is to be separated after.
-In the wizard, you also have the option of entering the separator via a
-pin variable.
+In the wizard, you also have the option of entering the separator via a pin variable.
 
 The separator may comprise more than one character, such as //, or also
 be a space.
 
 === Inbound Variables
 
-*link:#AS_StringToArray_P_InputString[Input String]*
+//*link:#AS_StringToArray_P_InputString[Input String]*
+*Input String* (string, empty with the default setting, must not be empty) String that can be
+entered using the keyboard or in the wizard, including with the help of the pin variables.
 
-=== link:\l[*Separator*]Outbound Variables
+//link:\l[*Separator*]
+*Separator* Define a separator that the string is to be separated after.
+In the wizard, you also have the option of entering the separator via a pin variable.
+
+=== Outbound Variables
 
 *ResultAsArray* The converted string is output as an array.
 

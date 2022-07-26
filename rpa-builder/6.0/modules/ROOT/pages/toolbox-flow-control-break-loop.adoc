@@ -1,8 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Flow Control
-
-=== Break Loop
+== Break Loop
 
 There are cases where you need to exit the _Loop Control Block_ before
 all iterations have been executed. _Break Loop_ should be used for this
@@ -13,7 +11,7 @@ Control Block_, because otherwise it would be executed during the first
 iteration of a _Loop Control Block_, thus defeating the object of having
 a loop.
 
-==== Properties
+=== Properties
 
 * *Exit Mode* Determines how the loop reacts _after_ using a _Break
 Loop_, i.e. with or without error

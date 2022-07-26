@@ -36,7 +36,8 @@ setting, so for example, if you created an _Image search_ with a color
 depth of 32 bits, but the executing computer only has a color depth of
 16 bits, the original _Pattern image_ will be converted on the fly to
 match the current system's color depth. You can adjust this within the
-link:#WorkflowProperties[_Workflow Properties_].
+*Workflow Properties*.
+//link:#WorkflowProperties[_Workflow Properties_].
 
 === Properties
 
@@ -148,7 +149,7 @@ is unique, is initially visible at all screen resolutions the _Workflow_
 is intended to run with, and (ideally) does not change its position
 much.
 
-/image::toolbox-checks-image-search-image1.png[Select pattern image]
+//image::toolbox-checks-image-search-image1.png[Select pattern image]
 
 === Freezing the Desktop
 

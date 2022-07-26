@@ -79,7 +79,7 @@ window title has to be formed according to the rules of a correct
 regular expression. If the regular expression is not correct validation
 returns an error. The use of regular expressions also facilitates a
 case-insensitive search. You can find further information on this topic
-in chapter xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]
+in chapter xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 * *Window Title* Title of the window to be found.
 ** The entered title needs to be considered as part of the window title
 to be searched for. For example the entered title _Pad_ will find all
@@ -92,7 +92,7 @@ to be formed according to the rules of a correct regular expression. If
 the regular expression is not correct the validation returns an error.
 The use of regular expressions also facilitates a case-insensitive
 search. You can find further information on this topic in chapter
-xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]
+xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 * *Timeout* Length of time before a not successful search is aborted
 * *Wait for* Defines the mode of the window search
 ** *Window Appears (with Activation)* _Window Wait_ waits at most for

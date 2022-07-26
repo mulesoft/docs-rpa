@@ -4,7 +4,7 @@ include::rpa-home::partial$pending-review.adoc[]
 
 As a quick example of how _Web Automation_ works and how it can be used
 to make __Workflow__s much shorter, let us revisit our basic _Workflow_
-created in Section link:#CreatingTheWorkflow[_Creating the Workflow_],
+created in Section _Creating the Workflow_,
 this time using _Web Automation_.
 
 First, add a _Workflow_ to the project and enter the required
@@ -13,10 +13,9 @@ Session_ settings include launching the desired browser. It will also
 close this browser automatically after the session has been fully
 executed.
 
-image:media\image1.png[image,width=554,height=107]
+//image:media\image1.png[image,width=554,height=107]
 
-Since we want to measure the initial loading time of the webpage, we
-leave the _Initial URL_ as it is: _about:blank_.
+Since we want to measure the initial loading time of the webpage, weleave the _Initial URL_ as it is: _about:blank_.
 
 If a _Web Session_ (as in the example) is placed directly in the
 _Workflow_ and not in a _Transaction_, then all other _Transactions_ and
@@ -31,15 +30,14 @@ Place a _Transaction_ within the _Web Session_ and name it something
 like "Load Website". Insert a _Stopwatch_ into the _Transaction_ and use
 a _Navigate Action Step_ within the _Stopwatch_. Configure _Navigate_ to
 navigate to a specific URL and enter the URL of the site you want to
-load:
+load.
 
-image:media\image2.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=421,height=187]
-
+//image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=421,height=187]
+////
 Your _Workflow_ should now look like this:
 
 image:media\image3.png[Ein Bild, das Text enthält. Automatisch
 generierte Beschreibung,width=415,height=195]
-
+////
 The _Navigate Action Step_ finishes as soon as the browser stops loading
 the specified website.

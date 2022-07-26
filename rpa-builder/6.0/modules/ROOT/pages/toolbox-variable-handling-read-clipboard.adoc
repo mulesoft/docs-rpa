@@ -3,7 +3,7 @@ include::rpa-home::partial$pending-review.adoc[]
 == Read Clipboard
 
 This _Action Step_ simply copies the current clipboard content into a
-variable (see Section link:#UsingVariables[Using Variables]) for further
+variable (see Section xref:advanced-concepts-using-variables.adoc[Using Variables]) for further
 usage within the _Workflow_.
 
 === Properties
