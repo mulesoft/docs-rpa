@@ -10,12 +10,6 @@ When the tests are successful, transition to *Production* phase.
 
 The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. The difference is that you do not have to start the individual process runs manually. Instead you schedule a process run configuration which is then executed automatically at defined times. Or you create an invokable run configuration and publish it to Anypoint Exchange.
 
-Projects that have already been used productively can no longer be deleted.
-
-
-
-
-
 == Before You Begin
 
 * Obtain the needed privileges:
@@ -27,30 +21,24 @@ Projects that have already been used productively can no longer be deleted.
 |Open the *Process Automation Module*
 |*Process Automation Open*
 
-|Create processes
-|*Process Create*
-
-|Record processes with RPA Process Recorder
-|*Process Recording*
-
-|Open, use and edit the activity library in RPA Builder
-|*Activity Library Open*, *Activity Library Administration*
-
 |===
 
-* To record a process, RPA Recorder must be installed and connected to RPA Manager.
-* To build a process automation, RPA Builder must be installed and connected to RPA Manager.
-* To use RPA Builder, obtain an RPA Builder assignment in the *Users* view of the *User Management* module.
+* At least one RPA Bot must be installed to deploy a process.
 * A project must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
+== Test a Process Automation
 
+== Deploy a Process Automation
 
+== Publish a Process Automation to Anypoint Exchange
 
-
+Projects that have already been used productively can no longer be deleted.
 
 
 
 
 
 == See Also
+
+* xref:
