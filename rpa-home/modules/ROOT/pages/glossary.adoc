@@ -75,7 +75,7 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 To be defined.
 
-=== Invocable run configuration
+=== Invokable run configuration
 
 To be defined.
 
@@ -149,7 +149,7 @@ MuleSoft Robotic Process Automation (RPA) enables you to automate business proce
 
 === RPA Bots
 
-RPA bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
+RPA Bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
 
 === RPA API Call
 
