@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Process Monitoring
 
 The *Process Monitoring* module displays the execution of your processes in real time.
