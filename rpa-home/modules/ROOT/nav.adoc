@@ -12,4 +12,4 @@
 ** xref:automation-tutorial-deploy.adoc[Step 7: Deploy the Automation]
 ** xref:automation-tutorial-monitor.adoc[Step 8: Manage and Monitor the Automation]
 * xref:invoke-rpa-services.adoc[Invoke RPA Services from Composer]
-* xref:rpa-home::publish-process-automation-exchange.adoc[Publish a Process Automation to Exchange]
+* xref:rpa-home::publish-process-automation-exchange.adoc[Publishing Automation Assets to Anypoint Exchange]

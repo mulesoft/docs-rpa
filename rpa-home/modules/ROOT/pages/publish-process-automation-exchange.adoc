@@ -1,11 +1,21 @@
-= Publish a Process Automation to Anypoint Exchange
+= Publishing Automation Assets to Anypoint Exchange
 
-You can connect RPA Manager with your Anypoint Platform account, which enables you to publish a process automation to Exchange.
+You can connect RPA Manager with your Anypoint Platform account, which enables you to publish a process automation to Exchange. Connecting RPA Manager with your Anypoint Platform account requires a Connected App with the scope RPA Integrator configured in Access Management.
 
-== Prerequisites
+To publish automation assets to Exchange:
 
-* A Connected App configured in Access Management to grant access to RPA.
+. <<configure-connected-app-rpa, Configure a Connected App in Access Management>>
+. Connect RPA Manager with your Anypoint Platform Account
++
+See xref:rpa-manager::organizationmanagement-settings.adoc#configure-anypoint-credentials[Configure Anypoint Platform Credentials] for instructions.
+. Publish a Process Automation to Anypoint Exchange
++
+See xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange] for instructions.
+////
+If you don't have a Connected App, follow the instructions in <<configure-connected-app-rpa, Configure a Connected App in Access Management>> to create one for this purpose.
 
+After you configured a Connected App, you can <<connect-rpa-with-anypoint, >>
+////
 [[configure-connected-app-rpa]]
 == Configure a Connected App in Access Management
 
@@ -35,20 +45,20 @@ After you create a Connected App, it shows in the *Connected Apps* section of Ac
 image:share-assets-connected-app-credentials.png[The Connected Apps section in Access Management]
 
 Click either *Copy ID* or *Copy Secret* to copy the corresponding value to the clipboard for further use.
-
+////
+[[connect-rpa-with-anypoint]]
 == Connect RPA Manager with your Anypoint Platform Account
 
-To connect RPA Manager with your Anypoint Platform account:
+After you create a Connected App, you can configure your Connected App's Client ID and Client Secret in the *Organization Management* module of RPA Manager.
 
-. Configure your Connected App in RPA Manager
-+
-Configure your Connected App's Client ID and Client Secret in the *Organization Management* module of RPA Manager.
-+
 See xref:rpa-manager::organizationmanagement-settings.adoc[Configure Organization Settings] for instructions.
-. Publish a Process Automation to Anypoint Exchange
-+
-Create an invokable run configuration for an automation process in the deploy phase to publish the automation to Exchange.
+
+[[publish-process-exchange]]
+== Publish a Process Automation to Anypoint Exchange
+
+After you configure your Connected App credentials in RPA Manager, you can create an invokable run configuration for an automation process in the deploy phase and publish the automation asset to Exchange.
 +
 See xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange]
 
 == See Also
+////

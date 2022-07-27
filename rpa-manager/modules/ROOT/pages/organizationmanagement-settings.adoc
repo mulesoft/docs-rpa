@@ -32,6 +32,7 @@ The currency symbol RPA Manager shows in modules and dashboards.
 The decimal sign RPA Manager uses to show fractional numbers in modules and dashboards.
 . Click *Save*
 
+[[configure-anypoint-credentials]]
 == Configure Anypoint Platform Credentials
 
 Before you can connect with your Anypoint Platform account, ensure that you have configured a Connected App in Access Management to enable the RPA Connection. See xref:rpa-home::publish-process-automation-exchange.adoc#configure-connected-app-rpa[Configure a Connected App in Access Management] for instructions on creating a Connected App.
@@ -52,7 +53,7 @@ The Client Secret of the Connected App in Access Management.
 The URL of your Anypoint Platform instance you connect to.
 . Click *Next*.
 . Select the *Anypoint Organization* to connect to.
-. Click *Finish.
+. Click *Finish*.
 
 == See Also
 
