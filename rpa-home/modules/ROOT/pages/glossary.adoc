@@ -44,7 +44,7 @@ If the users of a user group cover the entire range of competencies required for
 
 === Composer Tasks
 
-A measurement unit that reflects any action that a Composer Connector executes, including, but not limited to: read, create, update, and delete actions. See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
+See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
 
 
 == D
@@ -153,11 +153,11 @@ RPA bots are software robots that run in an on-premise environment and execute t
 
 === RPA API Call
 
-A measurement unit used to calculate Automation Credits usage based on outbound REST API Calls that are made from an RPA Process. See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
+See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
 
 === RPA Bot Minute
 
-A measurement unit used to calculate Automation Credits usage based on RPA executions. See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
+See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
 
 === RPA Builder
 
