@@ -1,6 +1,6 @@
 = Hardware and Software Requirements
 
-Before using RPA Recorder, ensure that your environment meets the minimum hardware and software requirements.
+Before using RPA Builder, ensure that your environment meets the minimum hardware and software requirements.
 
 == Hardware Requirements
 
@@ -10,6 +10,8 @@ Before using RPA Recorder, ensure that your environment meets the minimum hardwa
 | Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
 | 8 GB of RAM | 16 GB of RAM
 | 5 GB of disk space | 10 GB (SSD) of disk space
+| a|
+* Graphics Accelerator
 |===
 
 == Software Requirements
@@ -19,19 +21,19 @@ Before using RPA Recorder, ensure that your environment meets the minimum hardwa
 | Software | Required version
 | Microsoft .NET Framework
  a|
-* 4.7.2
+* 4.7.1
 | Operating System
  a|
 Any of the following:
 
-* Windows 10 (64-bit version)
-* Windows 11 (64-bit version)
+* Windows 10 / 11
+* Windows Server 2016 / 2019 / 2022
+| Java
+ a|
+Any of the following:
+
+* Java Runtime Environment 11 (JRE, 64-bit version) or higher
+* AdoptOpenJDK 11 (JRE, 64-bit version) or higher
 |===
 
-=== Recommended System Settings
-
-* Display resolution: Full HD 1080p (1920 × 1080) or higher
-
 == See Also
-
-xref:getting-started.adoc[Install and Start RPA Recorder]

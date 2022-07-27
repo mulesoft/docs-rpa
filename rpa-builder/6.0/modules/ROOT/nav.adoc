@@ -1,5 +1,9 @@
 .xref:index.adoc[RPA Builder]
 * xref:index.adoc[RPA Builder Overview]
+
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
+* xref:getting-started-checking-system-parameters-why-are-system-parameters-so-important.adoc[Installing and Configuring RPA Builder]
+
 * xref:getting-started.adoc[Getting Started]
 ** xref:getting-started-installation-and-first-use-system-requirements.adoc[Hardware and Software Requirements]
 ** xref:getting-started-installation-and-first-use-installation.adoc[Installation]
@@ -9,7 +13,8 @@
 ** xref:getting-started-istallation-and-first-use-opening-rpa-builder-the-first-time.adoc[Connecting to RPA Manager]
 ** xref:getting-started-installation-and-first-use-application-overview.adoc[RPA Builder UI Overview]
 ** xref:getting-started-installation-and-first-use-modifying-the-user-interface.adoc[Modifying the User Interface]
-* xref:toolbox.adoc[]
+
+* xref:toolbox.adoc[Toolbox]
 ** xref:toolbox-app-automation.adoc[App Automation]
 *** xref:toolbox-app-automation-app-session.adoc[App Session]
 *** xref:toolbox-app-automation-click-app-element.adoc[Click App Element]
