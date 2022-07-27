@@ -2,6 +2,20 @@ include::rpa-home::partial$pending-review.adoc[]
 
 = Deploying Automations
 
+The third phase of process automation is the *Test* phase. In this phase, you can test the implemented process model in different configurations. You can transition back to *Build* phase to change the implementation.
+
+A test plan contains start values for the activity parameters defined in RPA Builder, users who process the user tasks, the configuration of the test environment, and the executing bots.
+
+When the tests are successful, transition to *Production* phase.
+
+The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. The difference is that you do not have to start the individual process runs manually. Instead you schedule a process run configuration which is then executed automatically at defined times. Or you create an invokable run configuration and publish it to Anypoint Exchange.
+
+Projects that have already been used productively can no longer be deleted.
+
+
+
+
+
 == Before You Begin
 
 * Obtain the needed privileges:
@@ -13,17 +27,30 @@ include::rpa-home::partial$pending-review.adoc[]
 |Open the *Process Automation Module*
 |*Process Automation Open*
 
-|Create and change global variables and credentials that can be used in the test phase
-|*Global Variables Create for Test phase*, *Global Variables Edit for Test phase*
+|Create processes
+|*Process Create*
 
-|Create and change global variables and credentials that can be used in the production phase
-|*Global Variables Create for Production phase*, *Global Variables Edit for Production phase*
+|Record processes with RPA Process Recorder
+|*Process Recording*
 
-|Delete global variables and credentials
-|*Global Variables Delete*
-
-// Will be implemented in a future release?
-//|Address the Global Variables via the RPA Public RESTful API
-//|*REST API Global Variables/Credential Pool*
+|Open, use and edit the activity library in RPA Builder
+|*Activity Library Open*, *Activity Library Administration*
 
 |===
+
+* To record a process, RPA Recorder must be installed and connected to RPA Manager.
+* To build a process automation, RPA Builder must be installed and connected to RPA Manager.
+* To use RPA Builder, obtain an RPA Builder assignment in the *Users* view of the *User Management* module.
+* A project must exist in the *Project Management* view of the *Process Automation* module.
+* Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
+
+
+
+
+
+
+
+
+
+
+== See Also

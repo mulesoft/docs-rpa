@@ -111,7 +111,7 @@ View the project in RPA Manager after the built process has been uploaded from R
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of the project to open it.
-. Click on an element of the diagram in panel *Automation* to view the outline of the implementation in the panel *Implementation*.
+. Click on a bot task in the diagram in the *Automation* panel to view the outline of the implementation in the panel *Implementation*.
 
 == See Also
 
