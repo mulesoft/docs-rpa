@@ -21,9 +21,6 @@ To be defined.
 == B
 
 ''''''
-=== Bot Minutes
-
-The total number of minutes running process automations across all bot sessions. A single bot may run multiple parallel sessions, with each parallel session counting as a separate bot session and RPA Bot Minutes will be aggregated across these parallel sessions. Multiple bots may be configured to run the same process, with each of the multiple bots counting as separate bot sessions and RPA Bot Minutes will be aggregated across these separate bot sessions. Test runs or process runs in the test phase are also counted towards RPA Bot Minutes.
 
 === Bot tasks
 
@@ -44,6 +41,10 @@ An editor that is available both inside RPA Manager and RPA builder to modify ex
 === Center of Excellence (CoE)
 
 If the users of a user group cover the entire range of competencies required for a specific part of the automation, the group is called a _Center of Excellence (CoE)_. Only user groups explicitly designated as Centers of Excellence can accept process automation tasks.
+
+=== Composer Tasks
+
+A measurement unit that reflects any action that a Composer Connector executes, including, but not limited to: read, create, update, and delete actions. See the xref:https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
 
 
 == D
@@ -102,10 +103,6 @@ To be defined.
 
 MuleSoft Automation enables you to automate workflows that contain time-consuming manual tasks and integrate them with your MuleSoft Composer flows.
 
-=== MuleSoft Composer
-
-MuleSoft Composer (Composer) makes it easy to build process automation for data, using clicks instead of code. When you create a secure process to connect the information stored in different systems, you build a real-time, integrated view of your customers and your business.
-
 
 == N
 
@@ -153,6 +150,14 @@ MuleSoft Robotic Process Automation (RPA) enables you to automate business proce
 === RPA Bot
 
 RPA bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
+
+=== RPA API Call
+
+A measurement unit used to calculate Automation Credits usage based on outbound REST API Calls that are made from an RPA Process. See the xref:https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
+
+=== RPA Bot Minute
+
+A measurement unit used to calculate Automation Credits usage based on RPA executions. See the xref:https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
 
 === RPA Builder
 
