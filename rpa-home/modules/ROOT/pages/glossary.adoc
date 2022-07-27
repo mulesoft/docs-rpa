@@ -32,7 +32,7 @@ Business Process Model and Notation (BPMN) is a standard specification for diagr
 
 === BPMN editor
 
-An editor that is available both inside RPA Manager and RPA builder to modify existing BPMNs.
+An editor that is available both inside RPA Manager and RPA Builder to modify existing BPMs.
 
 
 == C
@@ -42,7 +42,7 @@ An editor that is available both inside RPA Manager and RPA builder to modify ex
 
 If the users of a user group cover the entire range of competencies required for a specific part of the automation, the group is called a _Center of Excellence (CoE)_. Only user groups explicitly designated as Centers of Excellence can accept process automation tasks.
 
-=== Composer Tasks
+=== Composer Task
 
 See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
 
@@ -75,7 +75,7 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 To be defined.
 
-=== Invocable/Invokable (process/production/run) configuration
+=== Invocable run configuration
 
 To be defined.
 
@@ -114,7 +114,7 @@ MuleSoft Automation enables you to automate workflows that contain time-consumin
 
 === OCR
 
-Optical Character Recognition (OCR) enables you to convert images, or printed text into machine-encoded text.
+Optical Character Recognition (OCR) enables you to convert images of texts into machine-encoded text.
 
 === Organization
 
@@ -147,7 +147,7 @@ A project manager is responsible for the automation of a process across all auto
 
 MuleSoft Robotic Process Automation (RPA) enables you to automate business processes and tasks by using bots, which helps save time and prevent introducing human errors.
 
-=== RPA Bot
+=== RPA Bots
 
 RPA bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
 
@@ -161,7 +161,7 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 === RPA Builder
 
-RPA Builder is the on-premise application that enables you to build the automations by specifying the steps of the process.
+RPA Builder is an on-premise application that enables you to build the automations by specifying the steps of the process.
 
 === RPA Manager
 
