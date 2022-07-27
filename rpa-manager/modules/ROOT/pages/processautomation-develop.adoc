@@ -94,13 +94,25 @@ In the build phase, use RPA Builder to fill the process model with bot-readable 
 
 === Open a Process in RPA Builder
 
-Publish a project to build phase to open it in RPA Builder.
+Publish a project to build phase to open it in RPA Builder. The process is shown in the RPA Builder repository explorer while the project is in the build phase.
 
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of the project to open it.
+. Click *Publish*.
+. In the window *Release to Build*, add the needed applications.
+. Check *I confirm that the process should be released into the build phase and all responsible persons have agreed.*
+. Click *Release to Build* to confirm the transition.
+. Open RPA Builder.
+. In the explorer pane, in tab *Repository*, click *<process name>*.
 
 === View a Process Build in RPA Manager
 
+View the project in RPA Manager after the built process has been uploaded from RPA Builder. Move the project to *Test* phase to test the build.
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of the project to open it.
+. Click on an element of the diagram in panel *Automation* to view the outline of the implementation in the panel *Implementation*.
+
 == See Also
 
-* https://camunda.com/bpmn/[Camunda BPMN TutorialRec]
-BPMN Tutorial
-You can find a tutorial on the use of BPMN at camunda.com/bpmn/, for example.
+* https://camunda.com/bpmn/[Camunda BPMN Tutorial^]
