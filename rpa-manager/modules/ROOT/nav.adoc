@@ -24,6 +24,8 @@
 ** xref:processautomation-develop.adoc[Developing Automations]
 ** xref:processautomation-deploy.adoc[Deploying Automations]
 * xref:processmonitoring-overview.adoc[Process Monitoring]
+** xref:processmonitoring-stream.adoc[Streaming Processes]
+** xref:processmonitoring-queue.adoc[Queueing Process Sessions]
 * xref:processoperations-overview.adoc[Process Operations]
 ** xref:processoperations-financeanalysis.adoc[Finance Analysis]
 *** xref:processoperations-financeanalysis-basics.adoc[Finance Analysis Basics]

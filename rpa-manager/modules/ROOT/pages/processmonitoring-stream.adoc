@@ -1,0 +1,37 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Streaming Processes
+
+In the *Process Streaming* view, you see the number of configurations, RPA Bots, and sessions for each productive process. You can open a live view of the sessions of a process and watch the bot as it works.
+
+== Before you begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Streaming* view
+|*Process Streaming Open*
+
+|===
+* Only productive processes for which at least one configuration has been created and for which you are a member of the process team are displayed.
+
+== Watch a bot at work
+
+Watch the process stream to see what is happening right now.
+
+. In the *Process Streaming* view of the *Process Monitoring* module, click the icon *Show process streams* in the table row of the *Process* you want to watch.
+. Toggle *Off / On* to activate and deactivate a stream.
+. Click the *Full Screen* icon in the stream panel to display it in full-screen mode.
+. Press `ESC` to exit full-screen mode and return to the overview page.
+
+== See Also
+
+* xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
+* xref:processautomation-deploy.adoc[Deploying Automations]
+
+* xref:processmonitoring-overview.adoc[Process Monitoring]
+//* xref:processmonitoring-stream.adoc[Streaming Processes]
+* xref:processmonitoring-queue.adoc[Queueing Process Sessions]
