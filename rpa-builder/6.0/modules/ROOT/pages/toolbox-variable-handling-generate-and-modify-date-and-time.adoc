@@ -31,7 +31,7 @@ applied in both cases.
 * *Second* Number of seconds
 
 Other Properties that are the same in all Action Steps are described in
-the section on link:#CommonProperties[Common Properties]. For reasons of
+the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
 === Variables

@@ -7,23 +7,28 @@ variable type and makes it available as a set of new variables.
 
 === Properties
 
-[#AS_ConvertString_P_ConversionSource .anchor]####**Conversion Source**
-The string or variable that is converted
+*Conversion Source* The string or variable that is converted.
 
-[#AS_ConvertString_P_RegularExpression .anchor]####**Regular
-Expression** You may define a regular expression to use only a specific
+*Regular Expression* You may define a regular expression to use only a specific
 part of the given Conversion Source. For example, if your conversion
 source is "Price: €200" and you only want to use the number as an
 integer variable, you can set the Regular Expression [0-9]+ to extract
 the number from the conversion source. More information about regular
-expressions can be found in section
-link:#_Using_Regular_Expressions[Using Regular Expressions].
+expressions can be found in section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
+//link:#_Using_Regular_Expressions[Using Regular Expressions].
 
 === Inbound Variables
 
-link:#AS_ConvertString_P_ConversionSource[*Conversion Source*]
+//link:#AS_ConvertString_P_ConversionSource[*Conversion Source*]
+*Conversion Source* The string or variable that is converted.
 
-link:#AS_ConvertString_P_RegularExpression[*Regular Expression*]
+//link:#AS_ConvertString_P_RegularExpression[*Regular Expression*]
+*Regular Expression* You may define a regular expression to use only a specific
+part of the given Conversion Source. For example, if your conversion
+source is "Price: €200" and you only want to use the number as an
+integer variable, you can set the Regular Expression [0-9]+ to extract
+the number from the conversion source. More information about regular
+expressions can be found in section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 
 === Outbound Variables
 

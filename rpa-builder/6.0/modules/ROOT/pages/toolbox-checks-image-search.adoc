@@ -36,7 +36,8 @@ setting, so for example, if you created an _Image search_ with a color
 depth of 32 bits, but the executing computer only has a color depth of
 16 bits, the original _Pattern image_ will be converted on the fly to
 match the current system's color depth. You can adjust this within the
-link:#WorkflowProperties[_Workflow Properties_].
+*Workflow Properties*.
+//link:#WorkflowProperties[_Workflow Properties_].
 
 === Properties
 
@@ -118,28 +119,16 @@ activated)
 === Wizard
 
 
-* *Start from scratch* Starts the configuration using all steps
-* *_Search area_* Only reconfigures the _Search area_, using a
-previously captured image
+* *Start from scratch* Starts the configuration using all steps.
+* *_Search area_* Only reconfigures the _Search area_, using a previously captured image.
 * *_Pattern image_* Only recaptures the image to search for
-* *Refresh _Search area_* Refreshes the _Search area_ frame on the
-right-hand side of the wizard with the current desktop situation, so you
-can check if the defined _Search area_ still includes the image
-* *Check search* Evaluate the probability the captured image will be
-found. The result will be shown in a box above the _Pattern image_ frame
-and comprises the position of the image found, as well as the match
-precision in percent (this feature uses the current desktop and not the
-image shown in the _Search area_ frame).
-* *Show borders* If active; the _Pattern image_ is marked with a blue
-border and the _Search area_ is marked with a red border in the _Search
-area_ frame
-* *_Pattern image_* Shows the recorded image that will be used in
-searches
-* *_Search area_* Shows the desktop situation when the image was
-captured onscreen. If _Show Borders_ is active, borders of the search
-image are shown in blue and borders of the _Search area_ are shown in
-red. If you performed a _Check search_ and the image could be found, its
-position will be marked by a green border.
+* *Refresh _Search area_* Refreshes the _Search area_ frame on the right-hand side of the wizard with the current desktop situation, so you can check if the defined _Search area_ still includes the image.
+* *Check search* Evaluate the probability the captured image will be found. The result will be shown in a box above the _Pattern image_ frame and comprises the position of the image found, as well as the match precision in percent (this feature uses the current desktop and not the image shown in the _Search area_ frame).
+* *Show borders* If active; the _Pattern image_ is marked with a blue border and the _Search area_ is marked with a red border in the _Search area_ frame.
+* *_Pattern image_* Shows the recorded image that will be used in searches.
+* *_Search area_* Shows the desktop situation when the image was captured onscreen.
+If _Show Borders_ is active, borders of the search image are shown in blue and borders of the _Search area_ are shown in red.
+If you performed a _Check search_ and the image could be found, its position will be marked by a green border.
 
 To start configuring an _Image search_ _Action Step_ with the wizard,
 click _Start from scratch_. A blue selection frame appears that can be
@@ -160,7 +149,7 @@ is unique, is initially visible at all screen resolutions the _Workflow_
 is intended to run with, and (ideally) does not change its position
 much.
 
-image::toolbox-checks-image-search-image1.png[Select pattern image]
+//image::toolbox-checks-image-search-image1.png[Select pattern image]
 
 === Freezing the Desktop
 
@@ -192,7 +181,7 @@ Make sure the image contains as many contours as needed to identify the
 desired part of the screen with 100% certainty. Try to keep images as
 small as possible, because smaller images can be found faster and do not
 need as much CPU performance. Avoid leaving too much empty space around
-the image. If you are satisfied with the selection either press *_F10_*,
+the image. If you are satisfied with the selection either press `F10`,
 click _Capture_ or double-click anywhere on the frame to save the
 selected area as the _Pattern image_.
 
@@ -205,7 +194,7 @@ performance.
 After you captured the _Pattern image_, a red frame will appear to
 define the search area.
 
-image::toolbox-checks-image-search-image2.png[Example capturing the Search Area]
+/image::toolbox-checks-image-search-image2.png[Example capturing the Search Area]
 
 This is the area of the screen that will later be searched for the
 _Pattern image_. Again, this selection should be "as big as necessary,
@@ -219,11 +208,9 @@ so do not narrow the _Search area_ down too much.
 You can save the _Search area_ the same way you saved the _Pattern
 image_.
 
-After selecting the _Pattern image_ and the _Search area_, the X1 Design
-Studio evaluates the accuracy with which the defined image is currently
-found:
+After selecting the _Pattern image_ and the _Search area_, RPA Builder evaluates the accuracy with which the defined image is currently found.
 
-image::toolbox-checks-image-search-image3.png[Example accuracy]
+//image::toolbox-checks-image-search-image3.png[Example accuracy]
 
 A newly recorded image search should always be found with 100% accuracy.
 
@@ -267,14 +254,15 @@ with additional compensation for font smoothing.
 === Adjusting Threshold for Contour and Contour Plus Mode
 
 When you are using one of the contour modes, you can adjust the
-black/white threshold. The default value 10 is usually the optimal
+black/white threshold. The default value, 10, is usually the optimal
 setting for images with high contrast; you should not need to adjust it,
 particularly if you are searching for text. However, when searching for
 low contrast _Pattern images_ and actual pictures, you might need to
 adjust the slider until you see a clear contour.
 
-image::toolbox-checks-image-search-image4.png[Adjust the slider]
+//image::toolbox-checks-image-search-image4.png[Adjust the slider]
 
+////
 For example, we want to use the face of this woman as a _Pattern image_
 in _Contour_ mode:
 
@@ -293,19 +281,19 @@ ignored, so we can see a clear contour and the picture can be detected
 reliably:
 
 image::toolbox-checks-image-search-image7.png[Example pattern]
+////
 
 === Troubleshooting
 
 If you have problems finding the same picture on different machines, you
 should first make sure that the system parameters of these systems are
-all the same (see Section Checking System
-Parameters).
+all the same (see Section Checking System Parameters).
 
 If you are still having problems, you can decrease the required match
 precision – but be careful; if the required percentage is too low, you
 might get a "false positive", i.e. find the _Pattern image_ even though
 it does not exist.
 
-image::toolbox-checks-image-search-image8.png[Image search settings]
+//image::toolbox-checks-image-search-image8.png[Image search settings]
 
-We *strongly* recommend that you never use a match precision below 90%!
+We *strongly* recommend that you never use a match precision below 90%.

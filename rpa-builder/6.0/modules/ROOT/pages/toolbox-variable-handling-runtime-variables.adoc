@@ -51,7 +51,7 @@ The values listed under _Sample Data_ in the wizard are used in a local
 test. If the _Workflow_ is completed by a _Bot_, the values will
 re-determined at each runtime.
 
-image:media\image1.png[image,width=218,height=221]
+//image:media\image1.png[image,width=218,height=221]
 
 Then give a name to the variable to be produced and perform any settings
 required using the drop-down _Settings_ menu.

@@ -8,8 +8,7 @@ Arabic, Greek, Hebrew, and Thai.
 
 In the following Chapter, we will look at the key differences compared
 to the Action Step Legacy OCR. You can find a detailed description of
-the properties, variables, etc. in the Chapter entitled
-link:#OCR_TextRecognition[_Text Recognition – Legacy OCR_].
+the properties, variables, etc. in the Chapter entitled _Text Recognition – Legacy OCR_.
 
 === Properties
 

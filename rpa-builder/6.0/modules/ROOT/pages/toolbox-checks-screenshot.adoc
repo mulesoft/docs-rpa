@@ -21,7 +21,7 @@ JPG files or uncompressed BMP files or loss-free compressed PNG files.
 value refers to the length and the width of the image and not to its
 area or file size. You can enter any integer between 10 and 100. The
 default value is 50% for newly created Workflows and 100% for Workflows
-created with an older version of X1 Design Studio.
+created with an older version of RPA Builder.
 * *Width* The width of the screenshot. Set _Height_ *and* _Width_ to 0
 to capture the whole screen.
 * *X Coordinate/Offset* Defines the x-coordinate (horizontal axis) of
@@ -36,7 +36,7 @@ _None_, this defines the vertical offset from the relative coordinates.
 
 * *Filename* Defines which name the saved screenshot file should have.
 Leave empty for automatic name generation.
-* *Path* Where the screenshot is saved to
+* *Path* Where the screenshot is saved to.
 * *Use Custom Settings* Specifies whether to save the screenshot in a
 custom folder with a custom name. If not selected, screenshots will be
 saved within the usual trace folder (and will subsequently be part of

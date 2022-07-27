@@ -1,0 +1,122 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Preparing Automations
+
+Create and document the environment for the automation of processes.
+
+== Before You Begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Automation* module
+|*Process Automation Open*
+
+|Create and change global variables and credentials that can be used in the test phase
+|*Global Variables Create for Test phase*, *Global Variables Edit for Test phase*
+
+|Create and change global variables and credentials that can be used in the production phase
+|*Global Variables Create for Production phase*, *Global Variables Edit for Production phase*
+
+|Delete global variables and credentials
+|*Global Variables Delete*
+
+// Will be implemented in a future release?
+//|Address the Global Variables via the RPA Public RESTful API
+//|*REST API Global Variables/Credential Pool*
+
+|===
+
+== Prepare Projects
+
+=== Create Categories
+
+Create categories to group processes. Assign a process to a category during evaluation or project creation.
+
+. In the *Process Management* view of the *Process Automation* module, click *Create*.
+. Enter a name in the *Create a category* window.
+. Click *OK*.
+
+=== List Applications
+
+List all applications required for the execution of processes. Assign required applications to processes. Assign applications installed on a computer a bot is installed on to that bot. Applications are not available during down-times. A process can be deployed on a bot which has assigned the required processes. During the down-time of a required application, the process cannot be executed.
+
+. In the *Process Applications* view of the *Process Automation* module, click *Create*.
+. Complete the form *Create a new application*:
++
+* *Time Zone*:
++
+Time zone for defining downtimes.
+* *Downtimes*
++
+Click *Create* to add a downtime to the application.
+
+== Prepare Deployment
+
+=== Create Global Variables
+
+A global variable consists of a name, a description, a type, and a value. It may be used in the test or the production phase.
+
+Use global variables for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
+
+You can link global variables anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+
+Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (number_employees and answer).
+
+. In the *Global Variables* view of the *Process Automation* module, click *Create*.
+. Complete the form *Create a New Global Variable*:
+* *Phase affiliation*:
++
+Phases in which the variable is permitted to be deployed. When users create or change the variable, each user's individual privileges determine which phases the user can select:
++
+** *Test*:
++
+The variable can be deployed in the Test phase.
++
+** *Production*:
++
+The variable can be deployed in the Production phase.
+
+* *Type*:
++
+Type of the global variable. The type of variable determines where it can be used. The original value defined in RPA Builder is typed. Select one of the following types:
++
+** *Integer*:
++
+An integer number.
+** *Alphaumeric*:
++
+A character string.
+** *Boolean*:
++
+A logical value. Set the checkmark in the *Value* checkbox for the value `true// and remove the checkmark for the value `false`.
+** *Float*:
++
+A floating-point number.
+** *Coordinate*:
++
+Combination of two integer values for an X-Y coordinate. Use global coordinates, for example, as an offset to determine a screen coordinate.
+* *Value*:
++
+You can only enter values of the specified type.
+
+=== Create Credentials
+
+Credentials store login data for applications or web services. They can be used with different processes. Passwords are encrypted.
+
+. In the *Credential Pool* view of the *Process Automation* module, click *Create*.
+. Complete the form *Create a New Credential*.
+. Click *OK*.
+
+== See also
+
+* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
+//* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[AWS Configuration and credential file settings^]
+
+* xref:processautomation-overview.adoc[Process Automation]
+//* xref:processautomation-prepare.adoc[Preparing Process Automations]
+* xref:processautomation-develop.adoc[Developing Process Automations]
+* xref:processautomation-deploy.adoc[Deploying Process Automations]

@@ -9,22 +9,20 @@ after, and between variables.
 
 === Properties
 
-[#AS_CombineStrings_P_PatternText .anchor]####**Pattern Text** This text
-defines the sequence in which variables and texts will be concatenated.
+*Pattern Text* This text defines the sequence in which variables and texts will be concatenated.
 
 === Inbound Variables
 
-link:#AS_CombineStrings_P_PatternText[*Pattern*]
+//link:#AS_CombineStrings_P_PatternText[*Pattern*]
+*Pattern* This text defines the sequence in which variables and texts will be concatenated.
 
 === Outbound Variables
 
-*Combined String* The combined strings stated as a single string, as
-defined in the Pattern Text
+*Combined String* The combined strings stated as a single string, as defined in the Pattern Text
 
 === Wizard
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=376,height=222]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=376,height=222]
 
 The wizard contains the pattern text field which can be edited, two
 drop-down lists of script and environment variables, and links to the
