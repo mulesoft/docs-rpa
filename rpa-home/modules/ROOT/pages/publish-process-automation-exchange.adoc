@@ -1,0 +1,54 @@
+= Publish a Process Automation to Anypoint Exchange
+
+You can connect RPA Manager with your Anypoint Platform account, which enables you to publish a process automation to Exchange.
+
+== Prerequisites
+
+* A Connected App configured in Access Management to grant access to RPA.
+
+[[configure-connected-app-rpa]]
+== Configure a Connected App in Access Management
+
+To create a Connected App in your Anypoint Platform account:
+
+. Log in to https://anypoint.mulesoft.com/[Anypoint Platform^].
+. Open *Access Management*.
+. On the navigation panel, click *Connected Apps*.
+. Click *Create App*.
+. Specify a *Name* for the Connected App.
+. In *Type*, select *App acts on its own behalf(client credentials)*.
++
+image:share-assets-connected-app-type.png[The Connected App creation window, 50%, 50%]
+. Click *Add Scopes*.
+. In the filter box, type *RPA* and select *RPA Integrator* among the results.
++
+image:share-assets-connected-app-scopes.png[The Scopes selection window, 50%, 50%]
+. Click *Next*.
+. Select a *Business Group* and click *Review*.
+. Click *Add Scopes* to confirm.
+. Click *Save*.
+
+=== See the Client ID and Client Secret of a Connected App
+
+After you create a Connected App, it shows in the *Connected Apps* section of Access Management, where you can see the Connected App's Client ID and Client Secret.
+
+image:share-assets-connected-app-credentials.png[The Connected Apps section in Access Management]
+
+Click either *Copy ID* or *Copy Secret* to copy the corresponding value to the clipboard for further use.
+
+== Connect RPA Manager with your Anypoint Platform Account
+
+To connect RPA Manager with your Anypoint Platform account:
+
+. Configure your Connected App in RPA Manager
++
+Configure your Connected App's Client ID and Client Secret in the *Organization Management* module of RPA Manager.
++
+See xref:rpa-manager::organizationmanagement-settings.adoc[Configure Organization Settings] for instructions.
+. Publish a Process Automation to Anypoint Exchange
++
+Create an invokable run configuration for an automation process in the deploy phase to publish the automation to Exchange.
++
+See xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange]
+
+== See Also
