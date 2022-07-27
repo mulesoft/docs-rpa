@@ -10,8 +10,8 @@ Before using RPA Builder, ensure that your environment meets the minimum hardwar
 | Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
 | 8 GB of RAM | 16 GB of RAM
 | 5 GB of disk space | 10 GB (SSD) of disk space
-| a|
-* Graphics Accelerator
+| |
+Graphics Accelerator Card
 |===
 
 == Software Requirements

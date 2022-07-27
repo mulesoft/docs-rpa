@@ -1,12 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
-
-= Installing and Configuring RPA Builder
-
-After downloading and installing RPA Builder, ensure you configure the necessary system parameters in your Microsoft Windows installation to improve the overall performance of your system while you design automations.
-
-Download the latest RPA Builder installer from the *Home* page of RPA Manager.
-
-== Checking System Parameters
+= Checking System Parameters
 
 Some system parameters in _Microsoft Windows®_ significantly affect how
 the screen image is displayed. For example, turning _ClearType_ (a font
@@ -43,7 +35,7 @@ installed.
 You should always configure your agent systems to show no unexpected
 behavior such as sudden pop-ups, screensavers, or similar.
 
-=== Recommended Systems Settings
+== Recommended Systems Settings
 
 * Disable screen saver
 * Turn off all power option properties
@@ -52,7 +44,7 @@ behavior such as sudden pop-ups, screensavers, or similar.
 * Disable menu drop shadow effects
 * Set desktop scaling to _100%_
 
-=== Checking the System Parameters
+== Checking the System Parameters
 
 The menu item _View_ -> _Show System Parameters_ opens an overview over
 the most important settings of your system.
