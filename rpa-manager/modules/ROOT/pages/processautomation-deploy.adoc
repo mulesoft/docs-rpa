@@ -281,7 +281,7 @@ You can always transition the project back to build phase.
 . If you want details on a result, click a number.
 . In case of errors, click the *Download* icon.
 
-
+[[publish-automation-exchange]]
 == Publish a Process Automation to Anypoint Exchange
 
 Transition the project to the production phase to publish an invokable run configuration to Anypoint Exchange.
