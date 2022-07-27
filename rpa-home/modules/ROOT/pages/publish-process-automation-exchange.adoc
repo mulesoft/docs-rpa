@@ -1,0 +1,43 @@
+= Publishing Automation Assets to Anypoint Exchange
+
+You can connect RPA Manager with your Anypoint Platform account, which enables you to publish a process automation to Exchange. Connecting RPA Manager with your Anypoint Platform account requires a Connected App with the scope RPA Integrator configured in Access Management.
+
+To publish automation assets to Exchange:
+
+. <<configure-connected-app-rpa, Configure a Connected App in Access Management>>
+. Connect RPA Manager with your Anypoint Platform Account
++
+See xref:rpa-manager::organizationmanagement-settings.adoc#configure-anypoint-credentials[Configure Anypoint Platform Credentials] for instructions.
+. Publish a Process Automation to Anypoint Exchange
++
+See xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange] for instructions.
+
+[[configure-connected-app-rpa]]
+== Configure a Connected App in Access Management
+
+To create a Connected App in your Anypoint Platform account:
+
+. Log in to https://anypoint.mulesoft.com/[Anypoint Platform^].
+. Open *Access Management*.
+. On the navigation panel, click *Connected Apps*.
+. Click *Create App*.
+. Specify a *Name* for the Connected App.
+. In *Type*, select *App acts on its own behalf(client credentials)*.
++
+image:share-assets-connected-app-type.png[The Connected App creation window, 50%, 50%]
+. Click *Add Scopes*.
+. In the filter box, type *RPA* and select *RPA Integrator* among the results.
++
+image:share-assets-connected-app-scopes.png[The Scopes selection window, 50%, 50%]
+. Click *Next*.
+. Select a *Business Group* and click *Review*.
+. Click *Add Scopes* to confirm.
+. Click *Save*.
+
+=== See the Client ID and Client Secret of a Connected App
+
+After you create a Connected App, it shows in the *Connected Apps* section of Access Management, where you can see the Connected App's Client ID and Client Secret.
+
+image:share-assets-connected-app-credentials.png[The Connected Apps section in Access Management]
+
+Click either *Copy ID* or *Copy Secret* to copy the corresponding value to the clipboard for further use.

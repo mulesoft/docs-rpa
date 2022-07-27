@@ -1,0 +1,60 @@
+= Configure Organization Settings
+
+The *Settings* view enables you to configure the currency and decimal sign to show in RPA Manager modules and configure your Anypoint Platform credentials, which enables you to publish a process automation to Anypoint Exchange.
+
+== Before You Begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|View configured settings for your organization.
+|*Organization Management Open*
+
+|Add or modify settings for your organization.
+|*Organization Management Administration*
+|===
+
+== Configure Currency and Decimal Sign
+
+To configure the currency and decimal sign to show in RPA Manager modules:
+
+. In the *Organization Management* module, click *Settings*.
+. Ensure you are in the *General* tab.
+. Configure the following values:
+** *Currency*
++
+The currency symbol RPA Manager shows in modules and dashboards.
+** *Decimal Sign*
++
+The decimal sign RPA Manager uses to show fractional numbers in modules and dashboards.
+. Click *Save*
+
+[[configure-anypoint-credentials]]
+== Configure Anypoint Platform Credentials
+
+Before you can connect with your Anypoint Platform account, ensure that you have configured a Connected App in Access Management to enable the RPA Connection. See xref:rpa-home::publish-process-automation-exchange.adoc#configure-connected-app-rpa[Configure a Connected App in Access Management] for instructions on creating a Connected App.
+
+To connect RPA Manager with your Anypoint Platform account:
+
+. In the *Organization Management* module, click *Settings*.
+. Select the *Anypoint* tab.
+. Click *Configure Settings* and provide the following values:
+** *Client Id*
++
+The Client Id of the Connected App in Access Management.
+** *Client Secret*
++
+The Client Secret of the Connected App in Access Management.
+** *Domain*
++
+The URL of your Anypoint Platform instance you connect to.
+. Click *Next*.
+. Select the *Anypoint Organization* to connect to.
+. Click *Finish*.
+
+== See Also
+
+* xref:processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange]
