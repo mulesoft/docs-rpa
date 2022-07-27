@@ -36,7 +36,7 @@ The processes go through several phases in sequence. In the design phase, a mode
 . In the design phase, record a process with RPA Recorder or model the process using BPMN.
 . In the build phase, use RPA Builder to edit or create a machine-readable program from the model.
 . In the test phase, run an automated process in a test environment.
-. In the production phase, deploy the automated process to a bot and execute it either scheduled in RPA Manager or publish the configuration to Anypoint Exchange to use it with MuleSoft Composer.
+. In the production phase, deploy the automated process to a bot and execute it either scheduled in RPA Manager, or create and publish an invokable configuration to Anypoint Exchange and use it with MuleSoft Composer."
 
 == Definitions
 
@@ -52,3 +52,8 @@ _Business Process Model and Notation (BPMN)_ is a standard specification for dia
 
 * xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
 * xref:myrpa-start.adoc[Starting Automation of Approved Processes]
+
+//* xref:processautomation-overview.adoc[Process Automation]
+* xref:processautomation-prepare.adoc[Preparing Process Automations]
+* xref:processautomation-develop.adoc[Developing Process Automations]
+* xref:processautomation-deploy.adoc[Deploying Process Automations]

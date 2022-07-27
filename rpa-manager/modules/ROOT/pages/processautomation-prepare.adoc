@@ -12,7 +12,7 @@ Create and document the environment for the automation of processes.
 |===
 |*Action* |*Required Privileges*
 
-|Open the *Process Automation Module*
+|Open the *Process Automation* module
 |*Process Automation Open*
 
 |Create and change global variables and credentials that can be used in the test phase
@@ -67,10 +67,10 @@ You can link global variables anywhere that a globe symbol is displayed. A link 
 Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (number_employees and answer).
 
 . In the *Global Variables* view of the *Process Automation* module, click *Create*.
-. . Complete the form *Create a New Global Variable*:
+. Complete the form *Create a New Global Variable*:
 * *Phase affiliation*:
 +
-Phases in which the variable is permitted to be deployed. When users create or change the variable, each user's individual Privileges determine which phases the user can select:
+Phases in which the variable is permitted to be deployed. When users create or change the variable, each user's individual privileges determine which phases the user can select:
 +
 ** *Test*:
 +
@@ -80,19 +80,19 @@ The variable can be deployed in the Test phase.
 +
 The variable can be deployed in the Production phase.
 
-* *Type¶*:
+* *Type*:
 +
 Type of the global variable. The type of variable determines where it can be used. The original value defined in RPA Builder is typed. Select one of the following types:
 +
 ** *Integer*:
 +
-A whole number.
+An integer number.
 ** *Alphaumeric*:
 +
 A character string.
 ** *Boolean*:
 +
-A logical value. Set the checkmark in the *Value* checkbox for the value `true and remove the checkmark for the value `false`.
+A logical value. Set the checkmark in the *Value* checkbox for the value `true// and remove the checkmark for the value `false`.
 ** *Float*:
 +
 A floating-point number.
@@ -114,4 +114,9 @@ Credentials store login data for applications or web services. They can be used 
 == See also
 
 * https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
-//* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[Configuration and credential file settings^]
+//* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[AWS Configuration and credential file settings^]
+
+* xref:processautomation-overview.adoc[Process Automation]
+//* xref:processautomation-prepare.adoc[Preparing Process Automations]
+* xref:processautomation-develop.adoc[Developing Process Automations]
+* xref:processautomation-deploy.adoc[Deploying Process Automations]
