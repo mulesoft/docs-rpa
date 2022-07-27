@@ -6,15 +6,15 @@ The first phase of process automation is the *Design* phase.
 
 In this phase, the flow of the process is modeled using BPMN.
 
-You can create a new model, import a model that has been created with other tools and edit it or record a process with RPA Process Recorder.
+You can create a new model, import a model that has been created with other tools and edit it or record a process with RPA Recorder.
 
 As an option, you can have the model tested for formal correctness and completeness while it is being created. This enables you to quickly detect and resolve errors in the structure.
 
 The second phase of process automation is the *Build* phase.
 
-In the build phase, in the RPA Builder, the elements of the process model are filled with concrete instructions for the RPA Bot.
+In the build phase the elements of the process model are filled with concrete instructions in RPA Builder. RPA Bots execute these instructions when a process is deployed to them.
 
-As long as the project is in the build phase, it can be seen in the repository of the RPA Builder.
+As long as the project is in the build phase, it can be seen in the repository of RPA Builder.
 
 == Before You Begin
 
@@ -30,7 +30,7 @@ As long as the project is in the build phase, it can be seen in the repository o
 |Create processes
 |*Process Create*
 
-|Record processes with RPA Process Recorder
+|Record processes with RPA Recorder
 |*Process Recording*
 
 |Open, use and edit the activity library in RPA Builder
@@ -48,7 +48,7 @@ As long as the project is in the build phase, it can be seen in the repository o
 
 Create, record or import a model of the flow of the process using _Business Process Model and Notation (BPMN)_.
 
-The process model should include all possible paths and outcomes. You can ad documentation to each element of the diagram.
+The process model should include all possible paths and outcomes. You can add documentation to each element of the diagram.
 
 === Model a Process
 
@@ -107,7 +107,7 @@ Publish a project to build phase to open it in RPA Builder. The process is shown
 
 === View a Process Build in RPA Manager
 
-View the project in RPA Manager after the built process has been uploaded from RPA Builder. Move the project to *Test* phase to test the build.
+View the project in RPA Manager after the implemented process has been uploaded from RPA Builder. Move the project to *Test* phase to test the build.
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of the project to open it.
