@@ -15,7 +15,7 @@ variable.
 _Write Clipboard_ has no special properties.
 
 Other Properties that are the same in all Action Steps are described in
-the section on link:#CommonProperties[Common Properties].
+the section on *Common Properties*.
 
 === Inbound Variables
 

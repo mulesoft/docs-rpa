@@ -18,11 +18,11 @@ encoded.
 
 * *Delete line(s) after read* Specify whether the text should be deleted
 after it is read.
-* [#AS_ReadFromTextFile_P_DirectoryPath .anchor]####**Directory path**
+* *Directory path*
 Enter the path to the directory where the file to be read is stored. You
 can specify an absolute or relative path. If a relative path is used,
 then the path relates to the _Base Path_ variable.
-* [#AS_ReadFromTextFile_P_FileName .anchor]####**File name** Enter the
+* *File name* Enter the
 name here of the file that is to be read.
 * *Line count* Enter the number of lines to be read. This option can be
 used if you have specified that more than one line (_Range of lines_)
@@ -49,14 +49,20 @@ this option compared to the _Line count_ option is that you do not have
 to define how many lines are to be read when in _Range of lines_ mode.
 
 Other Properties that are the same in all Action Steps are described in
-the section on link:#CommonProperties[Common Properties]. For reasons of
+the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
 === Inbound Variables
 
-link:#AS_ReadFromTextFile_P_DirectoryPath[*Directory path*]
+*Directory path*
+Enter the path to the directory where the file to be read is stored. You
+can specify an absolute or relative path. If a relative path is used,
+then the path relates to the _Base Path_ variable.
 
-link:#AS_ReadFromTextFile_P_FileName[*File name*]
+*Directory path*
+Enter the path to the directory where the file to be read is stored. You
+can specify an absolute or relative path. If a relative path is used,
+then the path relates to the _Base Path_ variable.
 
 === Outbound Variables
 
@@ -78,17 +84,19 @@ provides the path that is used.
 === Wizard
 
 * *Directory path* Specify the path to the file that is to be read. You
-can create an absolute path or a path relative to the _Base Path_ using
-the image:media\image1.png[image,width=175,height=22] and
-image:media\image2.png[image,width=129,height=22] buttons. The initial
-value is %STWS_BASEPATH%. Select an existing path using the
-image:media\image3.png[image,width=20,height=20] button. You can also
+can create an absolute path or a path relative to the _Base Path_.
+// using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=129,height=22] buttons.
+The initial
+value is %STWS_BASEPATH%. Select an existing path.
+// using the image:media\image3.png[image,width=20,height=20] button.
+You can also
 insert variables from the _Workflow_ in order to construct the path. To
 do so, click on the pin and select one of the available variables.
 
 More information about the environment variables (Insert Environment
 Variable) and script variables (Insert Script Variable) can be found in
-the section link:#AS_Settings[Settings].
+the section *Settings*.
 
 * *File name* Enter the name here of the file that is to be read. You
 can also insert a variable from the Workflow as the _File Name_. To do

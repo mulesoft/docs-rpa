@@ -17,36 +17,29 @@ the Mail Session.
 *Body* Here, the content of the e-mail is displayed. A total of 3900
 characters are available.
 
-[#AS_SendMail_P_EnterErrorStateFileDoesNot .anchor]####**Enter error
-state when a file does not exist** If this checkbox is selected and if
+*Enter error state when a file does not exist* If this checkbox is selected and if
 one of the attached files is not found in the production run, the Action
 Step is ended with an error.
 
-[#AS_SendMail_P_FirstDirectoryPath .anchor]####**First directory path**
-Path to the directory, in which the first file to be attached, is
+*First directory path* Path to the directory, in which the first file to be attached, is
 located. Enter the absolute or relative path. If relative, then the path
 refers to the variable _Base Path_.
 
-[#AS_SendMail_P_FirstFileName .anchor]####**First file name** Contains
-the path to the first file that is to be attached.
+*First file name* Contains the path to the first file that is to be attached.
 
-[#AS_SendMail_P_SecondDirectoryPath .anchor]####**Second directory
-path** Path to the directory, in which the second file to be attached,
+*Second directory path* Path to the directory, in which the second file to be attached,
 is located. Enter the absolute or relative path. If relative, then the
 path refers to the variable _Base Path_.
 
-[#AS_SendMail_P_SecondFileName .anchor]####**Second file name** Contains
-the path to the second file that is to be attached.
+*Second file name* Contains the path to the second file that is to be attached.
 
-[#AS_SendMail_P_Subject .anchor]####**Subject** Subject of the e-mail.
+*Subject* Subject of the e-mail.
 
-[#AS_SendMail_P_ThirdDirectoryPath .anchor]####**Third directory path**
-Path to the directory, in which the third file to be attached, is
+*Third directory path* Path to the directory, in which the third file to be attached, is
 located. Enter the absolute or relative path. If relative, then the path
 refers to the variable _Base Path_.
 
-[#AS_SendMail_P_ThirdFileName .anchor]####**Third file name** Contains
-the path to the third file that is to be attached.
+*Third file name* Contains the path to the third file that is to be attached.
 
 === Inbound Variables
 
@@ -56,22 +49,37 @@ the path to the third file that is to be attached.
 
 *Bcc* Blind carbon copy.
 
-link:#AS_SendMail_P_Subject[*Subject*]
+//link:#AS_SendMail_P_Subject[*Subject*]
+*Subject* Subject of the e-mail.
 
-link:#AS_SendMail_P_FirstDirectoryPath[*First directory path*]
+//link:#AS_SendMail_P_FirstDirectoryPath[*First directory path*]
+*First directory path* Path to the directory, in which the first file to be attached, is
+located. Enter the absolute or relative path. If relative, then the path
+refers to the variable _Base Path_.
 
-link:#AS_SendMail_P_FirstFileName[*First file name*]
+//link:#AS_SendMail_P_FirstFileName[*First file name*]
+*First file name* Contains the path to the first file that is to be attached.
 
-link:#AS_SendMail_P_SecondDirectoryPath[*Second directory path*]
+//link:#AS_SendMail_P_SecondDirectoryPath[*Second directory path*]
+*Second directory path* Path to the directory, in which the second file to be attached,
+is located. Enter the absolute or relative path. If relative, then the
+path refers to the variable _Base Path_.
 
-link:#AS_SendMail_P_SecondFileName[*Second file name*]
+//link:#AS_SendMail_P_SecondFileName[*Second file name*]
+*Second file name* Contains the path to the second file that is to be attached.
 
-link:#AS_SendMail_P_ThirdDirectoryPath[*Third directory path*]
+//link:#AS_SendMail_P_ThirdDirectoryPath[*Third directory path*]
+*Third directory path* Path to the directory, in which the third file to be attached, is
+located. Enter the absolute or relative path. If relative, then the path
+refers to the variable _Base Path_.
 
-link:#AS_SendMail_P_ThirdFileName[*Third file name*]
+//link:#AS_SendMail_P_ThirdFileName[*Third file name*]
+*Third file name* Contains the path to the third file that is to be attached.
 
-*link:#AS_SendMail_P_EnterErrorStateFileDoesNot[Enter error state when a
-file does not exist]*
+//*link:#AS_SendMail_P_EnterErrorStateFileDoesNot[Enter error state when a file does not exist]*
+*Enter error state when a file does not exist* If this checkbox is selected and if
+one of the attached files is not found in the production run, the Action
+Step is ended with an error.
 
 === Outbound Variables
 
@@ -79,8 +87,7 @@ file does not exist]*
 
 === Wizard
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=650,height=269]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=650,height=269]
 
 The wizard is split into two tabs, *Message* and *Attachment*.
 
@@ -89,25 +96,23 @@ link the content with *Insert Available Variables*. You have defined the
 variables in advance either using the Activity Parameters or the
 Workflow Based Variables.
 
-The pin variable with image:media\image2.png[image,width=217,height=19]
-in the attachments area is only displayed if you have defined a variable
-of type Bool using the Activity Parameters or the Workflow Based
-Variables.
+The pin variable
+//with image:media\image2.png[image,width=217,height=19]in the attachments area
+is only displayed if you have defined a variable
+of type Bool using the Activity Parameters or the Workflow Based Variables.
 
 In the Attachment area, you can add up to three attachments to the
 e-mail. Under Directory path, you define the path to the new file to be
-created. You can create an absolute path or a path relative to the _Base
-Path_ using the buttons
-image:media\image3.png[image,width=141,height=17] and
-image:media\image4.png[image,width=108,height=18]. The default value is
-%STWS_BASEPATH%. You select an existing path using the button
-image:media\image5.png[image,width=18,height=18]. To construct the path,
-you can also insert variables from the workflow. To do this, click on
-the pin image:media\image6.png[image,width=17,height=24]and select one
-of the variables available.
+created. You can create an absolute path or a path relative to the _Base Path_.
+//using the buttons image:media\image3.png[image,width=141,height=17] and image:media\image4.png[image,width=108,height=18].
+The default value is %STWS_BASEPATH%. Select an existing path.
+//using the button image:media\image5.png[image,width=18,height=18].
+To construct the path, you can also insert variables from the workflow.
+//To do this, click on the pin image:media\image6.png[image,width=17,height=24]and select one
+//of the variables available.
 
 You can find further information on the environment variables (Insert
 Environment Variable) and script variables (Insert Script Variable) in
-the Chapter entitled link:#AS_Settings[Settings].
+the Chapter entitled *Settings*.
 
-You can find further explanations under link:#properties[Properties].
+You can find further explanations under <<Properties>>.

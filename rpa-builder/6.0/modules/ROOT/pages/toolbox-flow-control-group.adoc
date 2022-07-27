@@ -13,8 +13,7 @@ Initialization_ element. It is possible to position multiple _Group_
 blocks inside each other.
 
 The _Group_ block does *not* restrict the availability of variables in
-subsequent transactions such as the _Transaction_ Action Step, for
-example.
+subsequent transactions such as the _Transaction_ Action Step, for example.
 
 === Properties
 

@@ -2,7 +2,7 @@ include::rpa-home::partial$pending-review.adoc[]
 
 == Measurement Points
 
-Measurement Points are currently not supported by X1 Server 2021.1. This
+Measurement Points are currently not supported by RPA Manager. This
 means that it is currently not possible to evaluate the data on the
 server. You can still use the Measurement Points in RPA Builder
 because they are still displayed in the _Workflow Run Results_.

@@ -1,8 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Control
-
-=== Clear Screen
+== Clear Screen
 
 This _Action Step_ will try to clear any open window from the screen.
 First, it will try to stop these processes: _SAPlogon.exe_, _cmd.exe_,
@@ -19,7 +17,7 @@ In draft mode, the Clear Screen Action Step is disabled. No windows are
 closed. After testing the Workflow using the Run Workflowt (F7) button,
 a yellow warning appears on the Workbench.
 
-==== Properties
+=== Properties
 
 * *Action in case of failure* Define, what should be done if _Clear
 screen_ failed. Available actions are: _Make screenshot_, _Make

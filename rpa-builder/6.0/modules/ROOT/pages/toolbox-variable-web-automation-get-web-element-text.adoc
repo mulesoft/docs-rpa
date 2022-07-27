@@ -11,13 +11,15 @@ page, for example, to another application.
 
 === Properties
 
-See link:#CommonProperties_WebAutomation[Common Properties].
+See *Common Properties*.
 
 === Inbound Variables
 
-link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+//link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+*Element XPath*
 
-link:#WA_CommonProperties_WindowTitle[*Window Title*]
+//link:#WA_CommonProperties_WindowTitle[*Window Title*]
+*Window Title*
 
 === Outbound Variables
 
@@ -27,19 +29,16 @@ returned.
 
 === Wizard
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=429,height=263]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=429,height=263]
 
-First click on Open Browser Wizard.
+First click on *Open Browser Wizard*.
 
-image:media\image2.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=193,height=220]
+//image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=193,height=220]
 
 Select the desired element by holding the mouse cursor over it. When a
-blue border appears to frame the desired element, press F2.
+blue border appears to frame the desired element, press `F2`.
 
-image:media\image3.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=327,height=396]
+//image:media\image3.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=327,height=396]
 
 The properties of the selected element will be shown in the right-hand
 side of the pane. In addition to the mandatory XPath you can also select
@@ -48,7 +47,7 @@ element.
 
 Confirm your selection by clicking on the check mark in the top
 right-hand corner of the browser wizard.
-
+////
 === Example
 
 image:media\image4.png[Ein Bild, das Text enthält. Automatisch

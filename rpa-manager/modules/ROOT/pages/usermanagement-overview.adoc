@@ -1,1 +1,20 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = User Management Overview
+
+In the *User Management* module, you manage the users of RPA Manager and RPA Builder:
+
+* Create and delete users.
+* Edit a user's personal data.
+* Assign privileges or roles to a user that enable a user to work in specific modules.
+* Create roles to combine privileges.
+* License users for RPA Builder access.
+* Mark a user as project manager.
+* Assemble teams for task sharing.
+* Mark teams as centers of excellence.
+* Create user API keys to configure an API connector in MuleSoft Composer.
+
+
+// == Get Started
+
+// == See Also

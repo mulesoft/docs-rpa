@@ -18,24 +18,21 @@ output variable from the _Coordinates_ Action Step.
 
 *Common*
 
-* [#AS_Coordinate_P_CoordinateAsPoint .anchor]####**Coordinate as
-point** (default: 0.0) X and Y coordinates
-* [#AS_Coordinate_P_XOffset .anchor]####**X Offset** (default: 0) This
-value specifies the X value (horizontal) to be added to the X
-coordinate.
-* [#AS_Coordinate_P_YOffset .anchor]####**Y Offset** (default: This
-value specifies the X value (horizontal) to be added to the X
-coordinate.
+* *Coordinate as point* (default: 0.0) X and Y coordinates
+* *X Offset* (default: 0) This value specifies the X value (horizontal) to be added to the X coordinate.
+* *Y Offset** (default: This value specifies the X value (horizontal) to be added to the X coordinate.
 
 === Inbound Variables
 
-link:#AS_Coordinate_P_CoordinateAsPoint[*Coordinate*]
+//link:#AS_Coordinate_P_CoordinateAsPoint[*Coordinate*]
+*Coordinate* (default: 0.0) X and Y coordinates
 
-link:#AS_Coordinate_P_XOffset[*X Offset*]
+//link:#AS_Coordinate_P_XOffset[*X Offset*]
+*X Offset* (default: 0) This value specifies the X value (horizontal) to be added to the X coordinate.
 
-link:#AS_Coordinate_P_YOffset[*Y Offset*]
+//link:#AS_Coordinate_P_YOffset[*Y Offset*]
+*Y Offset** (default: This value specifies the X value (horizontal) to be added to the X coordinate.
 
 === Outbound Variables
 
-*Modified Coordinate* Coordinate pair calculated at _Workflow_ runtime
-from (X-coordinate + X-offset) and (Y-coordinate + Y-offset).
+*Modified Coordinate* Coordinate pair calculated at _Workflow_ runtime from (X-coordinate + X-offset) and (Y-coordinate + Y-offset).

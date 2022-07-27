@@ -17,13 +17,16 @@ to use Regex when searching the window.*
 
 Other Properties that are the same in all Action Steps in the _Web
 Automation_ are described in the section on
-link:#CommonProperties_WebAutomation[Common Properties.] For reasons of
-clarity they are not shown here.
+*Common Properties*. For reasons of clarity they are not shown here.
 
 === Inbound Variables
 
-link:\l[*Element XPath*]
+//link:\l[*Element XPath*]
+*Element XPath*
 
-=== link:\l[*Window Title*]Outbound Variables
+//link:\l[*Window Title*]
+*Window Title*
+
+=== Outbound Variables
 
 The Action Step _Clear Element_ possesses no outbound variables.

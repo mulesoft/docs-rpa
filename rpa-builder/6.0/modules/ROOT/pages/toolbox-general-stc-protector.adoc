@@ -19,7 +19,7 @@ pause between each keystroke sequence
 * *Use regular expression for window title* You can further distinguish
 between window titles by selecting this checkbox. For a short
 introduction to regular expressions, refer to Chapter
-link:#UsingRegularExpression[Using Regular Expressions].
+xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 * *Use window text* Defines if, in addition to the window title, window
 text should also be used to identify the window that the keystrokes
 should be sent to
@@ -51,25 +51,21 @@ title to decide whether it is a pop-up window to be closed.
 
 You can also distinguish between window titles by using the checkbox
 _Use regular expression for window title_. This function is described in
-detail in Section link:#UsingRegularExpression[Using Regular
-Expression].
+detail in Section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 
 === Example
 
 When there is more than one tab opened in _Internet Explorer_, the
 program asks you if they should all be closed when you wish to exit the
-application. This question is displayed in a pop-up window:
-
-image:media\image1.png[image,width=604,height=338]
-
+application. This question is displayed in a pop-up window.
+//image:media\image1.png[image,width=604,height=338]
+////
 When recorded with the _STC Protector_ using window text in addition to
 the window title you will get this:
 
-image:media\image2.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=378,height=302]
-
-Now, during execution, when the pop-up window appears, the _STC
-Protector_ will automatically send the *_Enter_* keystroke to it and
+image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=378,height=302]
+////
+Now, during execution, when the pop-up window appears, the _STC Protector_ will automatically send the *_Enter_* keystroke to it and
 thus close the window.
 
 To ensure that the window is closed as quickly as possible (to avoid any

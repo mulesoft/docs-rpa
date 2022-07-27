@@ -11,16 +11,15 @@ _Workflow_.
 
 *File Operation Settings:*
 
-* [#AS_CopyFile_P_DestinationDirectory .anchor]####**Destination
-directory** Enter the path to the target directory where the copied file
+* *Destination directory* Enter the path to the target directory where the copied file
 is to be saved here. You can specify an absolute or relative path. If a
 relative path is used, then the path relates to the _Base Path_
 variable.
-* [#AS_CopyFile_P_DirectoryPath .anchor]####**Directory path** This is
+* *Directory path* This is
 where you enter the path to the directory where the file to be copied
 from. You can specify an absolute or relative path. If a relative path
 is used, then the path relates to the _Base Path_ variable.
-* [#AS_CopyFile_P_FileName .anchor]####**File Name** Enter the name of
+* *File Name* Enter the name of
 the file that is to be copied here.
 * *New File Name* Enter a new name for the file that is to be inserted.
 This option will only be reported if the option *Use different file
@@ -31,17 +30,23 @@ existing file with the same name in the destination folder.
 file will be saved under a new name in the destination directory. Enter
 the new name in the *New File Name* field.
 
-Other Properties that are the same in all Action Steps are described in
-the section on link:#CommonProperties[Common Properties]. For reasons of
-clarity they are not shown here.
+// Other Properties that are the same in all Action Steps are described in
+// the section on *Common Properties*. For reasons of
+// clarity they are not shown here.
 
 === Inbound Variables
 
-link:#AS_CopyFile_P_DirectoryPath[*Directory path*]
+* *Directory path* This is
+where you enter the path to the directory where the file to be copied
+from. You can specify an absolute or relative path. If a relative path
+is used, then the path relates to the _Base Path_ variable.
 
-link:#AS_CopyFile_P_FileName[*File name*]
+* *File Name* Enter the name of the file that is to be copied here.
 
-link:#AS_CopyFile_P_DestinationDirectory[*Destination directory*]
+* *Destination directory* Enter the path to the target directory where the copied file
+is to be saved here. You can specify an absolute or relative path. If a
+relative path is used, then the path relates to the _Base Path_
+variable.
 
 === Outbound Variables
 
@@ -64,27 +69,27 @@ path to the source directory.
 
 More information about the environment variables (Insert Environment
 Variable) and script variables (Insert Script Variable) used below can
-be found under link:#AS_Settings[Settings].
+be found under *Settings*.
 
 * *Directory path* Specify the path to the file that is to be copied
-here. You can create an absolute path or a path relative to the _Base
-Path_ using the image:media\image1.png[image,width=175,height=22] and
-image:media\image2.png[image,width=129,height=22] buttons. The initial
-value is %STWS_BASEPATH%. Select an existing path using the
-image:media\image3.png[image,width=20,height=20] button. You can also
-insert variables from the _Workflow_ in order to construct the path. To
+here.
+You can create an absolute path or a path relative to the _Base
+Path_.
+//using the image:media\image1.png[image,width=175,height=22] and image:media\image2.png[image,width=129,height=22] buttons.
+The initial value is %STWS_BASEPATH%.
+//Select an existing path using the image:media\image3.png[image,width=20,height=20] button.
+You can also insert variables from the _Workflow_ in order to construct the path. To
 do so, click on the pin and select one of the available variables.
 * *File name* Enter the name of the file that is to be copied here. You
 can also insert a variable from the Workflow as the _File Name_. To do
 so, click on the pin and select one of the available variables.
 * *Destination directory* Specify the destination path for the file that
 is to be copied. You can create an absolute path or a path relative to
-the _Base Path_ using the
-image:media\image1.png[image,width=175,height=22] and
-image:media\image2.png[image,width=129,height=22] buttons. The initial
-value is %STWS_BASEPATH%. Select an existing path using the
-image:media\image3.png[image,width=20,height=20] button. You can also
-insert variables from the _Workflow_ in order to construct the path. To
+the _Base Path_.
+//using the image:media\image1.png[image,width=175,height=22] and image:media\image2.png[image,width=129,height=22] buttons.
+The initial value is %STWS_BASEPATH%.
+//Select an existing path using the image:media\image3.png[image,width=20,height=20] button.
+You can also insert variables from the _Workflow_ in order to construct the path. To
 do so, click on the pin and select one of the available variables.
 * *New file name* This field will only be shown if you have enabled the
 option *Use different file name for copy*. The wizard uses the file name

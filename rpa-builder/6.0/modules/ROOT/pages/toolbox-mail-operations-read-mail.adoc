@@ -39,20 +39,15 @@ Text Search
 
 *Read Mail Settings*
 
-[#AS_ReadMail_P_AttachmentFolderPath .anchor]####**Attachment folder
-path** Path to the folder in which the attachments of the e-mails are
-saved.
+*Attachment folder path** Path to the folder in which the attachments of the e-mails are saved.
 
-[#AS_ReadMail_P_Body .anchor]####**Body** Text to be contained in the
-body of the e-mail.
+*Body* Text to be contained in the body of the e-mail.
 
 *Create attachment folder* If a checkmark is set here, a folder is
 created if it did not already exist. In this folder, the attachments
 from the e-mails are saved.
 
-[#AS_ReadMail_P_FolderName .anchor]####**Folder name** Name for the
-folder that is specified in the Read Mail Action Step under _Inbox
-Folder Name_.
+*Folder name* Name for the folder that is specified in the Read Mail Action Step under _Inbox Folder Name_.
 
 You should ensure that the folder really exists in the mailbox you
 specified in the Mail Session.
@@ -71,63 +66,67 @@ begin with "Posteingang".
 POP3, however, does not support the folder structure in the inbox so you
 cannot specify a folder there.
 
-[#AS_ReadMail_P_MailInfo .anchor]####**Mail info** The ID of a specific
-e-mail that originates from a different Read Mail Action Step and can be
+*Mail info* The ID of a specific e-mail that originates from a different Read Mail Action Step and can be
 incorporated here as an inbound variable.
 
-[#AS_ReadMail_P_MaxEmailsToRead .anchor]####**Maximum emails to read**
-Displays the number of e-mails to be read. You can read up to 99
-e-mails.
+*Maximum emails to read* Displays the number of e-mails to be read. You can read up to 99 e-mails.
 
 *Read* Only those e-mails that have already been read are displayed.
 
-[#AS_ReadMail_P_RecipientCc .anchor]####**Recipient (Cc:)** The
-recipient address is sought in the Cc.
+*Recipient (Cc:)* The recipient address is sought in the Cc.
 
-[#AS_ReadMail_P_RecipientTo .anchor]####**Recipient (To:)** The
-recipient address is sought.
+*Recipient (To:)* The recipient address is sought.
 
 *Save attachments* If the checkbox is selected, the attachments of the
 e-mails that were found are saved in the specified folder. A separate
 folder is generated for each e-mail. The path to this subfolder is
 available as an outbound variable.
 
-[#AS_ReadMail_P_Sender .anchor]####**Sender** The entered text is to be
-contained in the sender address.
+*Sender* The entered text is to be contained in the sender address.
 
 *Sort mode* (Default: Newest first) Specifies the order in which the
 found e-mails are sorted. You can choose between Newest first and Oldest
 first.
 
-[#AS_ReadMail_P_Subject .anchor]####**Subject** Here, the text is sought
-only in the subject of the e-mail.
+*Subject* Here, the text is sought only in the subject of the e-mail.
 
-[#AS_ReadMail_P_TextSearch .anchor]####**Text search** This text is
-sought in the entire e-mail.
+*Text search** This text is sought in the entire e-mail.
 
 *Unread* Only unread e-mails are displayed.
 
 === Inbound Variables
 
-link:#AS_ReadMail_P_FolderName[*Folder Name*]
+//link:#AS_ReadMail_P_FolderName[*Folder Name*]
+*Folder name* Name for the folder that is specified in the Read Mail Action Step under _Inbox Folder Name_.
 
-link:#AS_ReadMail_P_Body[*Body*]
+//link:#AS_ReadMail_P_Body[*Body*]
+*Body* Text to be contained in the body of the e-mail.
 
-link:#AS_ReadMail_P_MailInfo[*Mail Info*]
+//link:#AS_ReadMail_P_MailInfo[*Mail Info*]
+*Mail info* The ID of a specific e-mail that originates from a different Read Mail Action Step and can be
+incorporated here as an inbound variable.
 
-link:#AS_ReadMail_P_RecipientTo[*Recipient (To:)*]
+//link:#AS_ReadMail_P_RecipientTo[*Recipient (To:)*]
+*Recipient (To:)* The recipient address is sought.
 
-link:#AS_ReadMail_P_RecipientCc[*Recipient (Cc:)*]
+//link:#AS_ReadMail_P_RecipientCc[*Recipient (Cc:)*]
+*Recipient (Cc:)* The recipient address is sought in the Cc.
 
-link:#AS_ReadMail_P_Sender[*Sender*]
+//link:#AS_ReadMail_P_Sender[*Sender*]
+*Sender* The entered text is to be contained in the sender address.
 
-link:#AS_ReadMail_P_Subject[*Subject*]
+//link:#AS_ReadMail_P_Subject[*Subject*]
+*Subject* Here, the text is sought only in the subject of the e-mail.
 
-link:#AS_ReadMail_P_TextSearch[*Text Search*]
+//link:#AS_ReadMail_P_TextSearch[*Text Search*]
+*Text search** This text is sought in the entire e-mail.
 
-link:#AS_ReadMail_P_MaxEmailsToRead[*Maximum emails to read*]
+//link:#AS_ReadMail_P_MaxEmailsToRead[*Maximum emails to read*]
+*Maximum emails to read* Displays the number of e-mails to be read. You can read up to 99 e-mails.
 
-link:#AS_ReadMail_P_AttachmentFolderPath[*Attachment folder path*]
+//link:#AS_ReadMail_P_AttachmentFolderPath[*Attachment folder path*]
+*Attachment folder path** Path to the folder in which the attachments of the e-mails are saved.
+
 
 === Outbound Variables
 
@@ -152,17 +151,17 @@ attachments of the current iterated e-mail.
 *MailCount* Indicates how many e-mails were found in total.
 
 === Wizard
-
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=273,height=328]
+////
+image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=273,height=328]
 
 Use the button image:media\image2.png[image,width=118,height=19] to
 select the filters.
 
-image:media\image3.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=270,height=393]
+image:media\image3.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=270,height=393]
 
 If the checkbox image:media\image4.png[image,width=186,height=18] is
 selected, and no folder exists, then a folder is created automatically.
 
-You can find further explanations under link:#properties[Properties].
+You can find further explanations under link:#properties
+////
+See <<Properties>>.

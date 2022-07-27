@@ -18,14 +18,13 @@ or text search, for example.
 
 *Relative To* (default: 0.0) Anchor point relative to which the mouse
 action is to be performed. If no _Pin_ variable has been assigned, this
-is the top-left corner of the screen. This anchor point can also be set
-as a placeholder (see also link:#inbound-variables[Inbound Variables]).
+is the top-left corner of the screen.  This anchor point can also be set as a placeholder (<<Inbound Variables>>).
 
 Please note that the _Action Step_ that returns the coordinates must
 occur within the same _Transaction_ in order to appear here as a
 possible _Pin_ variable.
 
-[#MouseClickTiming .anchor]##
+//[#MouseClickTiming .anchor]##
 
 *Mouse Click Timing*
 
@@ -50,16 +49,15 @@ coordinate rather than the top-left corner of the screen.
 
 The _Group_ block possesses no outbound variables.
 
-The following Action Steps can supply suitable coordinates:
+//The following Action Steps can supply suitable coordinates:
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=368,height=118]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=368,height=118]
 
 === Wizard
 
-image:media\image2.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=437,height=362]
+//image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=437,height=362]
 
+////
 _Capturing mouse actions_
 
 It is easy to capture the desired mouse action using the wizard for the
@@ -91,6 +89,7 @@ button. You can adjust the following settings from the _Mouse Action
 Edit Window_:
 
 image:media\image7.png[image,width=249,height=191]
+////
 
 *Click position* Pair of X and Y pixel coordinates where the mouse
 action is to be performed.
@@ -123,26 +122,21 @@ operation (moving the mouse with the button held down).
 
 *Click Count* (0-99) The number of clicks within the mouse action.
 
-When capturing a double-click, please make sure that the mouse doesn’t
-slip during the process.
+When capturing a double-click, please make sure that the mouse doesn’t slip during the process.
 
-Check how the operation has been captured in the wizard. If _LeftDown_
-and _LeftUp_ have been saved there because the coordinates differ,
-please correct this as follows:
+Check how the operation has been captured in the wizard. If _LeftDown_ and _LeftUp_ have been saved there because the coordinates differ, please correct this as follows:
 
-{empty}1. Remove one line from the incorrectly captured double-click.
+. Remove one line from the incorrectly captured double-click.
+. Set the _Mouse Action_ property to _Left_ and _Counts_ to _2_.
 
-{empty}2. Set the _Mouse Action_ property to _Left_ and _Counts_ to _2_.
+//image:media\image8.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=390,height=111]
 
-image:media\image8.png[Ein Bild, das Tisch enthält. Automatisch
-generierte Beschreibung,width=390,height=111]
+*Modifier* Mouse actions can be modified by combinations of keys. This makes it possible, for example, to mark related or individual elements using the mouse.
+////
+The following modifiers are available:
 
-*Modifier* Mouse actions can be modified by combinations of keys. This
-makes it possible, for example, to mark related or individual elements
-using the mouse. The following modifiers are available:
-
-image:media\image9.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=235,height=190]
+image:media\image9.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=235,height=190]
+////
 
 *Initial Action Delay [ms]* (default: 500 ms) You can enter a delay of
 between 0 and 999999999 ms between the cursor movement and the start of
@@ -155,34 +149,27 @@ enable this.
 property to be used.
 
 _Other wizard functionality_
-
+////
 image:media\image10.png[image,width=51,height=21] ends the process of
 capturing mouse actions. This button can only be used if the option
 _Hide this window when capturing_ has been disabled. Otherwise use the
 F10 key to end the capturing process.
-
-image:media\image11.png[image,width=49,height=22] *Move mouse action
-up/down* moves the selected mouse action up or down in the table. The ID
+////
+//image:media\image11.png[image,width=49,height=22]
+*Move mouse action up/down* moves the selected mouse action up or down in the table. The ID
 of the action remains unchanged. Mouse actions are performed in the
 order in which they appear in the table, regardless of their ID.
 
-image:media\image12.png[image,width=20,height=21] *Add mouse action* It
-is possible to add a mouse action that you configure solely using the
-wizard rather than actually capturing it. Clicking this button opens the
-_Mouse Action Edit Window_ described above. Click _OK_ to confirm what
-you have entered and the mouse action will be added at the end of the
-table. You can then use _Move mouse action up_ or _down_ to put it in
-the right position.
+//image:media\image12.png[image,width=20,height=21]
+*Add mouse action* It is possible to add a mouse action that you configure solely using the wizard rather than actually capturing it.
+//Clicking this button opens the_Mouse Action Edit Window_ described above.
+//Click _OK_ to confirm what you have entered and the mouse action will be added at the end of the table. You can then use _Move mouse action up_ or _down_ to put it in the right position.
 
-image:media\image13.png[image,width=25,height=23]This button deletes the
-selected mouse action. The other IDs are not changed in the process.
+//image:media\image13.png[image,width=25,height=23]This button deletes the selected mouse action. The other IDs are not changed in the process.
 
-image:media\image14.png[image,width=36,height=20] This button deletes
-all mouse actions.
+//image:media\image14.png[image,width=36,height=20] This button deletes all mouse actions.
 
-*Hide this window when capturing* (default: enabled) If this option is
-enabled, the _Mouse Action Wizard_ window is hidden while mouse actions
-are captured.
+*Hide this window when capturing* (default: enabled) If this option is enabled, the _Mouse Action Wizard_ window is hidden while mouse actions are captured.
 
 *Hide main window when capturing* (default: enabled) If this option is
 enabled, the _X1 Design Studio_ window is hidden while mouse actions are
@@ -190,30 +177,25 @@ captured.
 
 *Relative To* (default: none) The position where the mouse action is to
 be performed can be defined based on a previously executed Action Step
-(see also link:#inbound-variables[Inbound Variables]).
+(see also <<Inbound Variables>>).
 
-*Mouse click timing* (see link:#MouseClickTiming[Properties])
+*Mouse click timing* (see <<Properties>>).
 
 === Creating Mouse Actions Relative to an Anchor Point
 
 If the coordinate relative to which the mouse action is to be performed
-is not yet known at the time of designing the mouse action, the
-following notification will appear:
-
-image:media\image15.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=458,height=217]
-
+is not yet known at the time of designing the mouse action, a notification will appear.
+//image:media\image15.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=458,height=217]
 Click OK to confirm.
 
-Then click the mouse to set an anchor point at the position where you
-expect the coordinate to be and which the mouse action relates to. An
-anchor symbol will appear in this position:
+Then click the mouse to set an anchor point at the position where you expect the coordinate to be and which the mouse action relates to.
 
-image:media\image16.png[image,width=29,height=28]
+//An anchor symbol will appear in this position:
 
-Now capture the other mouse actions that relate to this.
+//image:media\image16.png[image,width=29,height=28]
 
-image:media\image17.png[image,width=264,height=169]
+Then capture the other mouse actions that relate to this.
 
-At runtime, the anchor point will be replaced with the actual coordinate
-that is calculated at the time.
+//image:media\image17.png[image,width=264,height=169]
+
+At runtime, the anchor point will be replaced with the actual coordinate that is calculated at the time.
