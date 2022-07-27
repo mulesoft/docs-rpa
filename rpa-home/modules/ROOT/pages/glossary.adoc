@@ -1,0 +1,213 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Glossary
+
+The following glossary helps you understand MuleSoft terminology.
+
+
+
+== A
+
+''''''
+=== Activity
+
+A basic unit of work in the Mule application flow. This can in turn be a connector that connects to an external system or a transform step that is used to transform data inside the application.
+
+=== Automation Credits
+
+To be defined.
+
+
+== B
+
+''''''
+
+=== Bot tasks
+
+Bot tasks contain the activities for the RPA bot to execute.
+
+=== BPMN
+
+Business Process Model and Notation (BPMN) is a standard specification for diagrams to depict business processes. Such diagrams can be created directly by the process owner and easily translated into a machine-executable program.
+
+=== BPMN editor
+
+An editor that is available both inside RPA Manager and RPA Builder to modify existing BPMs.
+
+
+== C
+
+''''''
+=== Center of Excellence (CoE)
+
+If the users of a user group cover the entire range of competencies required for a specific part of the automation, the group is called a _Center of Excellence (CoE)_. Only user groups explicitly designated as Centers of Excellence can accept process automation tasks.
+
+=== Composer Task
+
+See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
+
+
+== D
+
+''''''
+
+== E
+
+''''''
+
+== F
+
+''''''
+
+== G
+
+''''''
+
+== H
+
+''''''
+
+== I
+
+''''''
+
+=== Invocable API
+
+To be defined.
+
+=== Invokable run configuration
+
+To be defined.
+
+
+== J
+
+''''''
+
+== K
+
+''''''
+
+== L
+
+''''''
+
+== M
+
+''''''
+=== ((business) process) model
+
+To be defined.
+
+=== MuleSoft Automation
+
+MuleSoft Automation enables you to automate workflows that contain time-consuming manual tasks and integrate them with your MuleSoft Composer flows.
+
+
+== N
+
+''''''
+
+== O
+
+''''''
+
+=== OCR
+
+Optical Character Recognition (OCR) enables you to convert images of texts into machine-encoded text.
+
+=== Organization
+
+The container for everything in your RPA Platform account.
+
+== P
+
+''''''
+
+=== Process candidate
+
+A real-life business process about to be proposed for automation via process evaluation.
+
+=== Process owner
+
+To be defined.
+
+=== Project Manager
+
+A project manager is responsible for the automation of a process across all automation phases.
+
+== Q
+
+''''''
+
+== R
+
+''''''
+=== RPA
+
+MuleSoft Robotic Process Automation (RPA) enables you to automate business processes and tasks by using bots, which helps save time and prevent introducing human errors.
+
+=== RPA Bots
+
+RPA Bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
+
+=== RPA API Call
+
+See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
+
+=== RPA Bot Minute
+
+See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^] for additional details.
+
+=== RPA Builder
+
+RPA Builder is an on-premise application that enables you to build the automations by specifying the steps of the process.
+
+=== RPA Manager
+
+RPA Manager is the cloud-based control plane for the automations that is integrated into Anypoint Platform.
+
+=== RPA Recorder
+
+RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording action steps from your local environment.
+
+
+== S
+
+''''''
+=== Secure session
+
+Secure Session is a hidden Windows session that runs invisibly and closed in a separate user account. The screen does not show what is happening or what information is being processed.
+
+
+== T
+
+''''''
+
+== U
+
+''''''
+=== User tasks
+
+User tasks are elements of a process model, which cannot be processed fully automatically by a Robot, instead requiring the support of a human.
+
+
+== V
+
+''''''
+
+== W
+
+''''''
+
+== X
+
+''''''
+
+== Y
+
+''''''
+
+== Z
+
+''''''
