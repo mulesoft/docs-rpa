@@ -10,17 +10,17 @@ You can create new user groups, check their usage, edit them, and delete them.
 
 == Before you Begin
 
-* Obtain the needed privileges:
+The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the User Management module
-|*User Management Open.*
+|User Management Open
 
-|Create, edit, and delete user groups.
-|*User Group Create*, *User Group Edit*, *User Group Delete*
+|Create, edit, and delete user groups
+|User Group Create, User Group Edit, User Group Delete
 
 |===
 

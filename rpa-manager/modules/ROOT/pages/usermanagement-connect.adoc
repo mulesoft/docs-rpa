@@ -6,24 +6,24 @@ User API keys are required for the integration of RPA processes in a MuleSoft Co
 
 == Before You Begin
 
-* Obtain the needed privileges:
+The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *User Management* module
-|*User Management Open*
+|User Management Open
 
 |Create, edit, license, and delete users
-|*User Management Administration*
+|User Management Administration
 
 |Create, edit, and delete API keys
-|*User API Key Create*, *User API Key Edit*, *User API Key Delete*
+|User API Key Create, User API Key Edit, User API Key Delete
 
 |===
 
-* The user who will use an API key must exist in the *Users* view of the *User Management* module.
+Note that the user who will use an API key must exist in the *Users* view of the *User Management* module.
 
 == Create an API key for a User
 
