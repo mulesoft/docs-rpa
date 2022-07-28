@@ -1,6 +1,6 @@
 = Step 4. Design the BPMN Diagram for the Automation
 
-After creating a new automation project, you can start designing the Business Process Model (BPM) for the process to automate. You can create the diagram manually or by using the RPA Recorder, which records your actions, creates each corresponding step in the diagram, and generates the action steps based on your mouse and keyboard interactions.
+After creating a new automation project, you can start designing the BPMN diagram for the process to automate. You can create the diagram manually or by using the RPA Recorder, which records your actions, creates each corresponding step in the diagram, and generates the action steps based on your mouse and keyboard interactions.
 
 == Step 4.1: Open the Project for Editing and Start RPA Recorder
 
