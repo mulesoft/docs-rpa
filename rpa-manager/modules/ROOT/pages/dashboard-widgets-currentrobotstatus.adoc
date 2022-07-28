@@ -1,0 +1,50 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Current Robot Status
+
+In the *Current Robot Status* widget, you can see at a glance which of your bots are ready for use.
+
+== Data representation
+
+The numbers of Robots in each case are links displayed together with a graphical representation of the ratio of those Robots ready for use compared to those not ready.
+
+The length of the green line labeled with *Ready* corresponds to the number that are ready for use; the length of the red line labeled with *Not Ready* corresponds to the number not ready.
+
+== Configuration
+
+This widget cannot be configured.
+
+
+== Drill-down
+
+Click on a number to obtain a list of all Robots or only those Robots with a specific status.
+
+=== Data representation of the current Robot status
+
+The Robots are displayed in a list
+
+=== Columns of the *Current Robot Status* list
+
+==== Status
+
+===== OK
+
+The Robot is ready for use.
+
+===== Stopped
+
+The Robot is not ready for use because it has been stopped.
+
+===== No License
+
+The Robot is not ready for use because it is not licensed.
+
+==== Robot
+
+Name of the bot
+
+Click on the name of the bot to get to its detailed view.
+
+==== Processing
+
+Shows if a process configuration has been deployed to the bot.

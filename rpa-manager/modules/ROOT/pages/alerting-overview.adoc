@@ -1,1 +1,23 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Alerting Overview
+
+RPA Manager can alert you in case of errors.
+
+You define rules which the bot checks during process run. If a rule applies, a email is sent to the targets you specify.
+
+You can check for:
+
+* Activity run results
+* Process run results
+* Bot status
+
+The *Alerts* view shows you all triggered alerts.
+
+== See also
+
+* xref:processautomation-deploy.adoc#view-run-results[View Run Results]
+* xref:botmanagement-overview.adoc[Bot Management]
+
+* xref:alerting-target.adoc[Creating alerting email templates]
+* xref:alerting-rule.adoc[Defining Rules for Alerts]

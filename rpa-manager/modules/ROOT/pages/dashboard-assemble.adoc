@@ -1,0 +1,24 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Assembling Dashboards
+
+Arrange important widgets on a dashboard.
+
+== Create a Dashboard
+
+Create a dashboard that shows you the progress of your automation management within a defined time period on one page.
+
+. In the *Private Dashboards* view of the *Dashboard* module, click *Create*.
+. Complete the form *Create a Private Dashboard* and click *OK*.
+. In your new dashboard, click *Add Widget* and select one from the Dropdown.
+. Repeat the previous step until you added all necessary widgets.
+. Arrange the widgets by dragging and dropping them onto the dashboard.
+. Configure widgets by clicking on the *Configure* icon.
+. Click on the time frame string in the header of the page to adjust the time interval of the retrieved data.
+. Click *Save*
+
+== Publish a Dashboard
+
+Publish a Dashboard to share it with your colleagues. Published dashboards are copied and not synched with the private dashboards they are derived from.
+
+ . In the *Private Dashboard* view of the *Dashboard* module, click the *Publish* icon in the table row of the dashboard you want to publish.
