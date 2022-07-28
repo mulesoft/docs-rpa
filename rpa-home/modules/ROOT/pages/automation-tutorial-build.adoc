@@ -1,8 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Step 5: Build the Automation from the BPMN diagram
 
-Now that the BPMN diagram for the process to automate is ready, it's time to use RPA Builder to specify each of the actions the RPA bot executes when it runs this process. Because you used RPA Recorder to create the diagram, each existing task already contains the action steps for the bot to execute. During this step, you add a new task to confirm that the sign-up process was successful by reading the confirmation text on the screen.
+Now that the BPM for the process to automate is ready, it's time to use RPA Builder to specify each of the actions the RPA bot executes when it runs this process. Because you used RPA Recorder to create the diagram, each existing task already contains the action steps for the bot to execute. During this step, you add a new task to confirm that the sign-up process was successful by reading the confirmation text on the screen.
 
 Before you start defining the actions, configure RPA Builder to connect with your RPA Manager repository so you can import the designs and re-upload them after the build phase is finished.
 
@@ -11,7 +9,8 @@ Before you start defining the actions, configure RPA Builder to connect with you
 To connect RPA Builder with your RPA Manager repository:
 
 . Open RPA Builder.
-. In the top menu bar, go to *Options* > *Repository*.
+. If it is your first time opening RPA Builder, the connection dialog shows automatically. If the dialog does not show:
+** In the top menu bar, go to *Options* > *Repository*.
 . Provide the required information:
 ** *RPA Manager Address:* The URL of the RPA Manager instance you want to connect to
 +
@@ -30,22 +29,27 @@ To import the project from the RPA Manager repository:
 . In RPA Builder, click the *Repository Explorer* panel.
 +
 If this panel is not visible, go to the top menu bar and click *View* > *Show Repository Explorer*.
-. Find your project in the *Repository Explorer* and double-click it.
+. Find your project under the *Process* column and double-click it.
 
 == Step 5.3: Edit the Project and Add an Action Step
 
 To add a new action step into your automation project:
 
-. In RPA Builder, drag the *Create bot task* element from the BPMN editor into your process flow, after the *Sign-up to newsletter* task.
+. In RPA Builder, drag the *Create bot task* element (image:create-bot-task-icon.png[The Create bot task icon, 2%, 2%]) from the BPMN editor into your process flow, after the *Sign-up to newsletter* task.
++
+If the diagram does not automatically connects the new task, re-arrange the arrows to ensure that the new task comes after the *Sign-up to newsletter* task and connects to the *End recording* element.
 . In the new task element, Write `Confirm sign-up`.
 +
 image:add-bot-task-to-process.png[A BPMN diagram with three steps, open the newsletter page, sign up, and confirm sign-up]
 . Double-click the *Confirm sign-up* task to open the workflow in edit mode.
++
+This action opens the task for editing in the *Workbench* panel.
 . In the *Workflow Initialization* section, double-click *Activity Parameters*.
 +
 image:activity-parameters.png[The workflow Initialization section]
 . Double-click the *generatedWebSession1* parameter to move it to the *Used in this Workflow* session.
-+ Alternatively, you can use the arrow buttons to move this parameter.
++
+Alternatively, you can use the arrow buttons to move this parameter.
 . Click *OK*.
 . Click the *Toolbox* panel.
 +
@@ -67,9 +71,27 @@ image:activity-workflow-ocr.png[The Activity Workflow section with an Intelligen
 . Click *OK*.
 . In the top menu bar, click *File* > *Save Project*.
 
-After you add the text recognition task and save the project, click the *Run Process* (image:run-process.png[The Run process icon,1.5%,1.5%]) button in the BPMN editor to test the complete process and confirm that it works as expected.
+After you add the text recognition task and save the project, perform a local test of your process.
 
-== Step 5.5: Upload the Project to RPA Manager
+//click the *Run Process* (image:run-process.png[The Run process icon,1.5%,1.5%]) button in the BPMN editor to test the complete process and confirm that it works as expected.
+
+== Step 5.5: Perform a Local Test of the Process
+
+To perform a local test of the created process:
+
+. Ensure your project is open for edit.
+. In the BPMN editor, click the *Run Process* (image:run-process.png[The Run process icon,1.5%,1.5%]) button.
++
+This action starts the execution of the process and shows the *Test run information* window:
++
+image:builder-test-run-information.png[The test run information in RPA Builder, 50%, 50%]
++
+As the tasks start executing, notice that new entries appear in this window and show a *Task execution succeeded* (image:task-execution-icon.png[Task execution succeeded icon, 2%, 2%]) icon in the *Run state* column when they finish.
+. Click *Close* to close the *Test run information* window and return to RPA Builder. 
+
+After confirming that the test is successful, upload the project to RPA Manager.
+
+== Step 5.6: Upload the Project to RPA Manager
 
 To upload the updated automation project to RPA Manager:
 
@@ -87,4 +109,5 @@ Continue with: xref:automation-tutorial-test.adoc[Step 6: Test the automation]
 == See Also
 
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
+* xref:rpa-builder::install-and-configure.adoc[Installing and Configuring RPA Builder]
 * xref:rpa-builder::toolbox.adoc[Toolbox Reference]
