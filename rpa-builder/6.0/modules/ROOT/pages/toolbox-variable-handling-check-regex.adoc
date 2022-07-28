@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Check Regex
+= Check Regex
 
 Use the _Check Regex_ Action Step to search for a text fragment using a
 regular expression. The text fragment can be searched for in a variable.
@@ -10,7 +10,7 @@ processed further in the _Workflow_.
 
 An introduction to regular expressions is provided in the section on xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 
-=== Properties
+== Properties
 
 *Check Regex Settings*
 
@@ -20,7 +20,7 @@ displayed if no variable has been specified in the _Check Regex_ wizard as the t
 
 Other Properties that are the same in all Action Steps are described in the section on *Common Properties*. For reasons of clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#AS_CheckRegex_P_RegexPattern[*Regex Pattern*]
 *Regex Pattern* Enter the regular expression that you want to use as the basis of the search.
@@ -29,7 +29,7 @@ Other Properties that are the same in all Action Steps are described in the sect
 *Input text* Enter the text that the regular expression is to be applied to. This property is only
 displayed if no variable has been specified in the _Check Regex_ wizard as the target of the regular expression search.
 
-=== Outbound Variables
+== Outbound Variables
 
 *First Match* The_First Match.Check Regex_ variable stores the first
 match found for the search expression. The text to be searched is read
@@ -46,7 +46,7 @@ of matches found in the text searched.
 Regex_ provides the line number of the first line that contains the text
 searched for.
 
-=== Wizard
+== Wizard
 
 *Regex* Enter the regular expression that you want to use as the basis
 of the search. Instead of entering the regular expression directly here,

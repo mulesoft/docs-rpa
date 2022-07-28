@@ -1,8 +1,7 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== General
 
-=== Exit Workflow
+= Exit Workflow
 
 The _Exit Workflow_ Action Step allows you to end a Workflow in a
 controlled manner. Use it to end the Workflow with precision at a
@@ -12,7 +11,7 @@ Exec Tries_ these will be disregarded. As a result you can define exit
 points anywhere. This function is mainly required in the RPA
 environment.
 
-==== Properties
+== Properties
 
 The _Exit Workflow_ Action Step has precisely one property. This can be
 set either under Properties or directly within the wizard:
@@ -33,14 +32,14 @@ annotated accordingly.
 
 For a description of exit codes, please see *Section Exit Codes*.
 
-==== Inbound Variables
+== Inbound Variables
 
 The _Exit Workflow_ Action Step possesses no inbound variables.
 
-==== Outbound Variables
+== Outbound Variables
 
 The _Exit Workflow_ Action Step possesses no outbound variables.
 
-==== Wizard
+== Wizard
 
 See <<Properties>>.

@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Pattern Select
+= Pattern Select
 
 The _Pattern Select Action Step_ enables users to respond flexibly to
 non-predictable situations.
@@ -44,7 +44,7 @@ run through the different _Case_ branches by repeating the Action Step
 in _Debug_ mode while changing the displayed search pattern after
 breaking.
 
-=== Properties
+== Properties
 
 *Image Processing*
 
@@ -130,7 +130,7 @@ A value of 0 means that the position of the pattern found is not
 rechecked after having been found. The _Action Step_ does not then wait
 beyond its runtime.
 
-=== Inbound Variables
+== Inbound Variables
 
 //*link:#AS_PatternSelect_OV_FindCoordinate[
 *Find Coordinate*
@@ -139,7 +139,7 @@ If there is at least one other Action Step that uses patterns before the
 Action Step Search Pattern, the outbound variable _Find coordinate_
 becomes the inbound variable for the subsequent Action Steps.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Pattern Case Index* returns the case index, which is executed based on
 a pattern found.
@@ -164,7 +164,7 @@ _Found Matched Pattern Count_ is 0, if _Search Pattern_ returns an
 error. Even, if matches for patterns of the _Regular_ category are
 found.
 
-=== Wizard
+== Wizard
 
 The _Pattern Select_ wizard is for selecting _Search Patterns_ and the
 key search settings.
@@ -176,7 +176,7 @@ Click _OK_ to confirm the configuration settings or _Cancel_ as
 applicable. The _Test_ button evaluates the search and displays the
 results in the Search Results window.
 
-=== Filtering by Pattern Name and Resizing Pattern Images
+== Filtering by Pattern Name and Resizing Pattern Images
 
 Entering text into the _Filter…_ field hides in stages all patterns in
 the lower sections of the wizard with names not containing that text.
@@ -195,7 +195,7 @@ image:media\image1.png[image,width=15,height=15] or plus
 image:media\image2.png[image,width=15,height=15] symbol inside a
 magnifying glass.
 ////
-=== Regular Patterns
+== Regular Patterns
 
 This section lists patterns that are to be found. The number of patterns
 that can be found is limited to 50.
@@ -250,7 +250,7 @@ patterns_ is selected the first pattern in the list will have a blue
 border. This image can be used as a reference point for other Action
 Steps as the Workflow progresses (see <<Other Uses of Matched Patterns>>).
 
-=== Capture Pattern
+== Capture Pattern
 
 One way of defining a pattern is to take a screenshot that shows it.
 
@@ -260,7 +260,7 @@ The function of the _Capture Pattern_ button is described in the section
 All patterns captured using the _Pattern Select_ _Action Step_ are
 transferred to the _Workflow_'s _Pattern Gallery_.
 
-=== Add Pattern from Gallery
+== Add Pattern from Gallery
 
 If the _Pattern Gallery_ for the _Workflow_ already contains patterns,
 they can be added to the list of patterns for the _Action Step_.
@@ -282,7 +282,7 @@ included in the search.
 Click OK to confirm the selection and add it to the pattern list for the
 _Action Step_.
 
-=== Ignore All Matches within These Patterns
+== Ignore All Matches within These Patterns
 
 If checking for the single occurrence of a pattern that may be part of
 other patterns, you must exclude patterns containing the searched-for
@@ -307,7 +307,7 @@ It is therefore not sufficient in the above example to capture staff
 with free space at the right edge, because this free space will not form
 part of the pattern being searched for due to a lack of _features_.
 
-=== Changing the Search Pattern Category
+== Changing the Search Pattern Category
 
 //image:media\image8.png[image,width=605,height=264]
 
@@ -316,7 +316,7 @@ _Ignored_. Use the _Move to…_ button in the menu bar to do this.
 
 //image:media\image9.png[image,width=605,height=369]
 
-=== Search Settings
+== Search Settings
 
 //image:media\image10.png[image,width=604,height=246]
 
@@ -383,52 +383,27 @@ period. Otherwise the program enters an error state and executes the
 _OnError Case_. The _Timeout_ is therefore adjusted to the duration of
 the steps that need to be completed within the _Cases_.
 
-[cols="",]
-|===
-a|
 If the Option to _Repeat search until nothing is found_ is enabled, the
 following is to be noted with regard to the various search options:
 
-* {blank}
-+
-____
-*Match only one patterns* Here only one of the images from the selection
+* *Match only one patterns* Here only one of the images from the selection
 may be visible at any time. This option can be used if the patterns are
 layered on top of one another
-____
-* {blank}
-+
-____
-*Match one or more patterns* Here any of the search images may appear
-____
-* {blank}
-+
-____
-*Match all patterns* Here all images within the selection must be found
-____
+* *Match one or more patterns* Here any of the search images may appear
+* *Match all patterns* Here all images within the selection must be found
 
 For all modes, the following is applicable:
 
-* {blank}
-+
-____
-If multiple patterns are found the _Case_ branch is carried out for the
+* If multiple patterns are found the _Case_ branch is carried out for the
 image with top priority. In the graphical information that is the first
 search pattern and/ or the top _Case_ in the list.
-____
-* {blank}
-+
-____
-If the option to _Allow multiple instances of a found pattern_ is
+* If the option to _Allow multiple instances of a found pattern_ is
 enabled, the above priority is given and then the image that is located
 furthest to the left within the _Search Area_ is re-used. If multiple
 identical search images are located on top of each other in the same
 position on the left, the topmost image will be selected.
-____
 
-|===
-
-=== Test
+== Test
 
 Pressing the _Test_ button will launch the search independently of
 _Workflow_ execution and open the _Search Results_ window where the
@@ -505,7 +480,7 @@ search settings and the search result.
 If the search failed because of one single pattern, this pattern is
 shown in tab _Failure Reason_.
 
-=== Other Uses of Matched Patterns
+== Other Uses of Matched Patterns
 
 If mouse clicks are to be performed relative to a matched image and, at
 the same time, the search is for more than one image, the image that the

@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Window Wait
+= Window Wait
 
 The _Action Step Window Wait_ pauses the Workflow until a certain window
 is displayed or not displayed. This window is recognized by its window
@@ -14,7 +14,7 @@ you anticipate a dialog window as result of a preceding action.
 This allows you to continue the _Workflow_ and stop or start a timer at
 exactly the right moment.
 
-=== Properties
+== Properties
 
 *Enable Wait Delay* If this option is activated you can use an
 individual time value while waiting for a stable state. *If this option
@@ -35,13 +35,13 @@ captured _Window text_ to wait for in addition to the _Window title_
 
 **Window title** Contains the captured _Window title_ to wait for
 
-=== Inbound Variables
+== Inbound Variables
 
 *Window title*
 
 *Window text*
 
-=== Outbound Variables
+== Outbound Variables
 
 *Window Handle* hexadecimal reference value of the found window in text
 format. If no matching window was found this value is 0.

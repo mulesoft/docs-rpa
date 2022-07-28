@@ -1,10 +1,10 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Read PDF File
+= Read PDF File
 
 With the _Read PDF File_ Action Step, you can read text from a PDF file.
 
-=== Properties
+== Properties
 
 *File Settings*
 
@@ -22,26 +22,14 @@ password.
 
 The following options all belong to the Read Mode _Read page range_:
 
-* {blank}
-+
-____
-*Read text from page*
+* *Read text from page*
 (Integer) The text is read from this page onward.
-____
-* {blank}
-+
-____
-*Read text to page*
+* *Read text to page*
 (Integer) The text is read up to this page.
-____
-* {blank}
-+
-____
-*Read to end of file* (Boolean) If this option is selected, the text is
+* *Read to end of file* (Boolean) If this option is selected, the text is
 read up to the end of the document.
-____
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#AS_ReadPDFFile_P_DirectoryPath[*Directory path*]
 *Directory Path* (String)
@@ -62,11 +50,11 @@ password.
 *Read text to page*
 (Integer) The text is read up to this page.
 
-=== Outbound Variables
+== Outbound Variables
 
 *ReadText* (String) Specifies the content of the text that is read.
 
-=== Wizard
+== Wizard
 
 The wizard is split into two areas *File Settings* and *Read Mode*.
 
@@ -86,27 +74,15 @@ the Chapter entitled *InsertSpecialCharacter[Insert Special Character / Macro / 
 In the *Read Mode* area, there are various modes available for reading a
 PDF file:
 
-* {blank}
-+
-____
-With *Read entire file*, the entire text of the document is read.
-____
-* {blank}
-+
-____
-With *Read page range*, you can specify a specific range that is to be
+* With *Read entire file*, the entire text of the document is read.
+* With *Read page range*, you can specify a specific range that is to be
 read. If the option *Read to end file* is selected, the PDF is read to
 the end.
-____
 
 //image:media\image2.png[image,width=328,height=96]
 
-* {blank}
-+
-____
-With *Read text in selected area*, you can read the text from a selected
+* With *Read text in selected area*, you can read the text from a selected
 area in the document.
-____
 +
 For this, you must select a PDF file under File Settings. Then click on
 *Define Area* and the PDF is opened in a separate window.

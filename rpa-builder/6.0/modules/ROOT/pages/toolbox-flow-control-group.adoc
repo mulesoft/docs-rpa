@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Group
+= Group
 
 Using the _Group_ block gives you a clearer overview when designing your
 Workflows. It provides delineation both graphically and in terms of
@@ -15,14 +15,14 @@ blocks inside each other.
 The _Group_ block does *not* restrict the availability of variables in
 subsequent transactions such as the _Transaction_ Action Step, for example.
 
-=== Properties
+== Properties
 
 The _Group_ block has no properties.
 
-=== Inbound Variables
+== Inbound Variables
 
 The _Group_ block possesses no inbound variables.
 
-=== Outbound Variables
+== Outbound Variables
 
 The _Group_ block possesses no outbound variables.

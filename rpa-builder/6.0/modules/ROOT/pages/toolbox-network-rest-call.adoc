@@ -1,16 +1,16 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== REST Call
+= REST Call
 
 You can use the _REST Call Action Step_ to fetch data directly from a
-server and to collect the required information in a simple way
+server and to collect the required information in a simple way.
 
 You define the end point as you wish and you can assign parameters or
 process variables to the call. This enables you to flexibly address any
 REST interface. The response in JSON format (or XML) can be used as a
 source variable during the remainder of the process run.
 
-=== REST Call via a proxy
+== REST Call via a proxy
 
 You can also make the REST Call via a proxy server. To do this, the REST
 Call Action Step automatically retrieves the necessary information from
@@ -23,7 +23,7 @@ located in the Workflow Initialization block.
 For more information about the settings options, see chapter 2.6.5
 Settings.
 
-=== Properties
+== Properties
 
 *REST Call Settings*
 
@@ -36,10 +36,6 @@ recommend the user of a specific HTTP method for a specific type of
 calls to the server.
 
 //image:media\image1.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=103,height=123]
-
-You can find more information on HTTP methods here:
-
-https://www.w3schools.com/tags/ref_httpmethods.asp
 
 *Parse Type* You can choose between JsonPath and XPath.
 
@@ -61,7 +57,7 @@ encoded._
 
 *XPath* Displays the Xpath expression, for example, /root/access_token/text().
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#AS_RestCall_P_BaseUrl[*Base Url*]
 *Base Url* Here, the end point entered in the wizard is displayed.
@@ -75,7 +71,7 @@ encoded._
 //link:#AS_RestCall_P_XPath[*XPath Expression*]
 *XPath Expression* Displays the Xpath expression, for example, /root/access_token/text().
 
-=== Outbound Variables
+== Outbound Variables
 
 *IsSuccessful* (boolean) Shows whether the REST Call was successful or not.
 
@@ -89,7 +85,7 @@ transferred in the answer
 
 *ArrayCount* Indicates the number of elements of the returned array.
 
-=== Wizard
+== Wizard
 
 The wizard is split into the **Settings a**nd *Parameters* areas.
 
@@ -155,10 +151,6 @@ a user to a server.
 
 //image:media\image7.png[image,width=317,height=55]
 
-You can find more information on HTTP headers here:
-
-https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
-
 With the *Query Parameter*, you filter the resource and you can add
 further information such as login information.
 
@@ -172,7 +164,7 @@ specified with JsonPath or Xpath.
 
 For the other menu options, see also Properties.
 ////
-=== Example
+== Example
 
 In this example, login data is called up from a server via REST Call.
 

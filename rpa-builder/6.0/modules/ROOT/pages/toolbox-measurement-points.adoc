@@ -1,8 +1,18 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Measurement Points
+= Measurement Points
 
 Measurement Points are currently not supported by RPA Manager. This
 means that it is currently not possible to evaluate the data on the
 server. You can still use the Measurement Points in RPA Builder
 because they are still displayed in the _Workflow Run Results_.
+
+* xref:toolbox-measurement-points-checkpoint.adoc[Checkpoint]
++
+Checkpoints are integrated into a Workflow in order to ascertain which part of the Workflow was reached before an error occurred.
+* xref:toolbox-measurement-points-general-start-and-stop-timer.adoc[General Start and Stop Timer]
++
+General timers are used to measure whole Transactions.
+* xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
++
+The Stopwatch is basically a combined Start/Stop Timer with a clear graphical representation.

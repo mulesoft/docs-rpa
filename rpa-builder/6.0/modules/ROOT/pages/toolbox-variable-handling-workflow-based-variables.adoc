@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Workflow Based Variables
+= Workflow Based Variables
 
 The _Workflow Based Variables_ Action Step contains variables which can
 be used throughout the entire Workflow and which can be modified.
@@ -16,16 +16,16 @@ initial variable values with new values at a later point in the Workflow.
 The _Workflow Based Variables_ Action Step can only appear once in a
 Workflow and must be positioned in the _Workflow Initialization_ section.
 
-=== Properties
+== Properties
 
 This Action Step contains no special properties other than the
 _common_ ones.
 
-=== Inbound Variables
+== Inbound Variables
 
 This Action Step possesses no inbound variables.
 
-=== Outbound Variables
+== Outbound Variables
 
 All _Workflow Based Variables_ are outbound variables.
 
@@ -55,7 +55,7 @@ this string contains comma separated values. For more information,
 please refer to the section entitled link:#_Set_Array_Variable[_Set
 Array Variable_].)
 
-=== Wizard
+== Wizard
 
 //Click on the image:media\image3.png[image,width=128,height=19] button to
 Add a new variable.
@@ -101,7 +101,7 @@ element also needs to be placed inside double quotes.
 
 E.g. “This “”text”” contains double quotation marks.”
 
-=== Example
+== Example
 
 Car servicing is to be processed automatically at a workshop. For this
 purpose the variables required in the Workflow are to be created as
@@ -122,7 +122,7 @@ instead are generally available as Workflow Based Variables,
 Transactions 100 – 120 can simply be deactivated and the other parts of
 the Workflow work with the initial values.
 
-=== Variable or Workflow Based Variables?
+== Variable or Workflow Based Variables?
 
 The _Workflow Based Variables_ provide a clear overview and a place for
 all the variables used within a Workflow.

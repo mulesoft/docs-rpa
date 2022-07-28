@@ -1,10 +1,10 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Create File
+= Create File
 
 _Create File_ is used to create an empty file at the specified path.
 
-=== Properties
+== Properties
 
 *File Operation Settings*
 
@@ -32,7 +32,7 @@ Other Properties that are the same in all Action Steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 * *Directory path* This is where you enter the path to the directory where the file is to be
 created. You can specify an absolute or relative path. If a relative
@@ -40,7 +40,7 @@ path is used, then the path relates to the _Base Path_ variable.
 
 * *File Name** Enter the name of the file that is to be created here.
 
-=== Outbound Variables
+== Outbound Variables
 
 *IsCreated* The _Create File.IsCreated_ variable indicates whether the
 file could be created or not (True/False).
@@ -51,7 +51,7 @@ the file that has been created.
 *Directory path* The _Create File.Directory Path_ variable provides the
 path that is used.
 
-=== Wizard
+== Wizard
 
 * *Directory path* Specify the path here to the file that is being newly
 created. You can create an absolute path or a path relative to the _Base
@@ -89,7 +89,7 @@ file name ends in *.txt it will normally be opened with Notepad.
 _Create File_ creates either the specified relative directory or the
 whole specified path, if this does not already exist.
 
-=== Example
+== Example
 
 Create an empty file using the _Create File_ Action Step and write text
 to that file using the _Write to Text File_ Action Step. The _Write to

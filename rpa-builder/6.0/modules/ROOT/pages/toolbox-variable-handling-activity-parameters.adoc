@@ -1,8 +1,8 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Variable Handling
+= Variable Handling
 
-=== Activity Parameters
+== Activity Parameters
 
 The Action Step _Activity Parameters_ (AP) allows you to map variables
 that you can use not only in the Workflow, but also in the activities of
@@ -28,41 +28,13 @@ You define the parameters in the Business Process Initialization that you find a
 
 The following data types are available:
 
-* {blank}
-+
-____
-Texts (_alphanumeric_)
-____
-* {blank}
-+
-____
-Integers (_integer_)
-____
-* {blank}
-+
-____
-Floating point values (_floating_-_point_)
-____
-* {blank}
-+
-____
-Boolean values (_boolean_)
-____
-* {blank}
-+
-____
-Lists (_array_)
-____
-* {blank}
-+
-____
-Log-in data (user account)
-____
-* {blank}
-+
-____
-Screen coordinates (coordinates)
-____
+* Texts (_alphanumeric_)
+* Integers (_integer_)
+* Floating point values (_floating_-_point_)
+* Boolean values (_boolean_)
+* Lists (_array_)
+* Log-in data (user account)
+* Screen coordinates (coordinates)
 
 You can enter a name, description, and a value for the parameters directly in the corresponding fields.
 
@@ -128,7 +100,7 @@ chapter *Gateway condition expression*.
 
 //image:media\image9.jpg[image,width=604,height=137]
 
-==== Properties
+== Properties
 
 *Misc*
 
@@ -139,17 +111,17 @@ and the run protocol.
 For security reasons, passwords are not shown in the user account data.
 Simply leave this option disabled if the variables or their values contain confidential data.
 
-==== Inbound Variables
+== Inbound Variables
 
 The Action Step _Activity Parameters_ does not have any inbound
 variables.
 
-==== Outbound Variables
+== Outbound Variables
 
 The Action Step _Activity Parameters_ does not have any outbound
 variables.
 
-==== Wizard
+== Wizard
 
 Click to select the desired parameters on the left in the _Available
 Parameters_ column. You can use the arrows to drag them into the right
@@ -157,7 +129,7 @@ column and thereby insert them into the Workflow.
 
 For more on *Write Variables to Log File /Run Protocol* see also <<Properties>>.
 
-==== Handling for Activity Parameters When Importing a Workflow
+== Handling for Activity Parameters When Importing a Workflow
 
 If you import a Workflow with APs, e.g. from the Activity Library, into
 an existing project, inconsistencies may result.
@@ -181,7 +153,7 @@ You can accept the suggestions by clicking on _Proceed_. Click on
 _Remove Parameters from Workflow_ to remove all the APs of the imported
 Workflow. Clicking on _Cancel_ cancels the import of the Workflow.
 ////
-==== Related Elements
+== Related Elements
 
 The following chapters as a whole may help you in acquiring a better
 understanding of the relations between the activity parameters:

@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Mouse Actions
+= Mouse Actions
 
 The _Mouse Actions_ Action Step emulates mouse moves and clicks.
 Keyboard inputs can be used to modify the mouse clicks.
@@ -12,7 +12,7 @@ Mouse moves can be created relative to a specific coordinate. This
 coordinate may be determined by a previous _Action Step_ such as a image
 or text search, for example.
 
-=== Properties
+== Properties
 
 *Miscellaneous*
 
@@ -39,13 +39,13 @@ click. This setting is used to set the speed of this move. High values
 produce a slower movement. The value 0 disables the movement, meaning
 that the mouse jumps instantaneously.
 
-=== Inbound Variables
+== Inbound Variables
 
 The property _Relative To_ can be linked to a _Pin_ variable of the type
 _Coordinate_. The mouse action is then performed relative to this
 coordinate rather than the top-left corner of the screen.
 
-=== Outbound Variables
+== Outbound Variables
 
 The _Group_ block possesses no outbound variables.
 
@@ -53,7 +53,7 @@ The _Group_ block possesses no outbound variables.
 
 //image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=368,height=118]
 
-=== Wizard
+== Wizard
 
 //image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=437,height=362]
 
@@ -181,7 +181,7 @@ be performed can be defined based on a previously executed Action Step
 
 *Mouse click timing* (see <<Properties>>).
 
-=== Creating Mouse Actions Relative to an Anchor Point
+== Creating Mouse Actions Relative to an Anchor Point
 
 If the coordinate relative to which the mouse action is to be performed
 is not yet known at the time of designing the mouse action, a notification will appear.

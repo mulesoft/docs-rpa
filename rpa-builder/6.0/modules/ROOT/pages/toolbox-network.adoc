@@ -1,3 +1,15 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Network
+= Network
+
+Network Action Steps enable you to perform network operations as sending pings, making REST calls or perform checks using the FTP and HTTP protocols.
+
+* xref:toolbox-network-ping.adoc[Ping]
++
+This Action Step is used for sending a ping to a computer or network device.
+* xref:toolbox-network-rest-call.adoc[REST Call]
++
+You can use the REST Call Action Step to fetch data directly from a server and to collect the required information in a simple way.
+* xref:toolbox-network-service-check.adoc[Service Check]
++
+The Service Check plug-in allows you to perform checks using various protocols and services, such as Ping, FTP, HTTP, etc., to see if a service is running and available on a particular server.

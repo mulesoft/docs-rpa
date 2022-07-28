@@ -1,13 +1,13 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Move File
+= Move File
 
 This _Action Step_ moves a file from one directory to another. If the
 file to be moved if not available or the moved file is already located
 in the destination folder, an error message will interrupt the
 _Workflow_.
 
-=== Properties
+== Properties
 
 *File Operation Settings:*
 
@@ -28,7 +28,7 @@ Other Properties that are the same in all Action Steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Directory path** Enter the
 path to the directory where the file to be moved is located. You can
@@ -38,7 +38,7 @@ the path relates to the _Base Path_ variable.
 *File Name* Enter the name here
 of the file that is to be moved.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Destination directory* The _Move File.Destination directory_ variable
 provides the path to the destination directory.
@@ -52,7 +52,7 @@ file that has been moved.
 *Directory path* The _Move File.Directory Path_ variable provides the
 path to the source directory.
 
-=== Wizard
+== Wizard
 
 More information about the environment variables (Insert Environment
 Variable) and script variables (Insert Script Variable) used below can
