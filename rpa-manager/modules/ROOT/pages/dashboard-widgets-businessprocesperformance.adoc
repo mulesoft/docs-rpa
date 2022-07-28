@@ -1,0 +1,83 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Business Process Performance
+
+The *Business Process Performance* widget shows for each process how often the process has been executed within the analysis interval and how long the average execution time was.
+
+The number and average runtimes of this widget only take account of processes that have been completed successfully.
+
+== Data representation
+
+The processes are displayed in a list
+
+=== Columns of the list of Business Process Performance of all processes
+
+==== Process
+
+Name of the process
+
+Click on the name of a Process to see details of the individual process runs.
+
+==== Execution count
+
+Number of successful executions of the Process in the defined time period
+
+==== Average runtime
+
+Average runtime of all successful executions of the Process in the defined time period
+
+== Configuration
+
+This widget cannot be configured.
+
+Use the sort and filter options of the *Business Process Performance of an individual Process* list to highlight the information that is relevant for you.
+
+== Drill-down
+
+If you click on the name of a Process, you can view details of the individual runs of this Process.
+
+=== Data representation of the list of Business Process Performance of an individual Process
+
+The Process runs are displayed in a list.
+
+=== Columns of the list of Business Process Performance of an individual Process
+
+==== Robot
+
+Name of the Robot that executed the Process run successfully
+
+==== Configuration
+
+Name of the configuration that was used for the successful run
+
+==== Type
+
+Type of Process run
+
+===== Test
+
+The Process was executed as a test run
+
+===== Productive
+
+The Process was executed as a productive run
+
+==== Start time
+
+Time stamp of the start of the Process execution
+
+==== End Time
+
+Time stamp of the end of the Process execution
+
+==== Duration
+
+Duration of the Process execution
+
+==== Result
+
+Result of the process execution
+
+===== Success
+
+The Process run was executed successfully
