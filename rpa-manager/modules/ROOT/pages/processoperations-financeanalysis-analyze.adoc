@@ -1,0 +1,31 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Analyzing Costs and Savings
+
+Enter all expenses for automation of a process. On the basis of the costs of manual execution of the process and the number of process runs already carried out automatically, and the expected future number of monthly process runs, the *Net profit* per month and the expected *Break-Even Point* of the process are calculated.
+
+== Before you begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Finance Analysis* view and see all processes for which you are part of the process team.
+|*Finance Analysis Open*
+
+|Open the *Finance Analysis* view and see all processes of all teams.
+|*Global Finance Analysis View*
+
+|Edit finance analyses, add and edit cost entries, and change deprectation periods.
+|*Finance Analysis Edit*
+
+|===
+
+* For the Finance Analysis, you require the following values:
+** Actual and expected number of process runs per month.
+** Costs of a process run if this is carried out by a human
+** Initial Investment for acquisition of the MuleSoft RPA solution and all other investments.
+** Period in months for depreciation of the initial investment and all other investments
+** Monthly operating costs of process automation
