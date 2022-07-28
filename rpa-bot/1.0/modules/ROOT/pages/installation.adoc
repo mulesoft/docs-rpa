@@ -6,9 +6,7 @@ Before installing RPA Bot, ensure that your environment meets the minimum hardwa
 
 Follow these steps to download and install RPA Bot
 
-. Download the setup file.
-+
-link:------["Download RPA Bot 1.0^", role="button-primary"]
+. Download the latest RPA Bot installer from the *Home* page of RPA Manager.
 . Open the setup file to start the installation.
 . Provide the following details during the installation:
 ** *RPA Manager connection protocol*

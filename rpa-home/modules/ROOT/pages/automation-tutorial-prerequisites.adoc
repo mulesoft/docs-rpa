@@ -1,5 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Step 1. Prerequisites for Creating an Automation
 
 Before you begin your automation journey, verify that you have the required tools and access:
@@ -11,30 +9,30 @@ If you don't have a RPA Manager user, ask an administrator from your organizatio
 ** Enough privileges to access the automation modules
 ** Enough permissions to manage the different project phases
 ** The *Project Manager* flag enabled for your user
-** Access to RPA Builder set up for your user
+** Access to RPA Builder configured for your user
 +
-The xref:rpa-manager::usermanagement-overview.adoc[User Management Module] enables configuration of user privileges,  permissions, project managers, and RPA Builder assignments.
-* Username and password to access MuleSoft Composer
+The xref:rpa-manager::usermanagement-overview.adoc[User Management] module enables configuration of user privileges,  permissions, project managers, and RPA Builder assignments.
+* A user account to access MuleSoft Composer
 +
 If you don't have a Composer user, ask an administrator from your organization to set up your credentials.
 * RPA Builder installed and configured in your environment
 +
 //TODO: Add link to download RPA Builder
-link:------["Download RPA Builder^", role="button-primary"]
+//link:------["Download RPA Builder^", role="button-primary"]
 +
-See the <link to Builder installation guide> for installation and configuration instructions.
+See xref:rpa-builder::install-and-configure.adoc[Installing and Configuring RPA Builder] for installation and configuration instructions.
 * RPA Recorder installed and configured in your environment
 +
 //TODO: Add link to download RPA Recorder
-link:------["Download RPA Recorder^", role="button-primary"]
+//link:------["Download RPA Recorder^", role="button-primary"]
 +
-See xref:rpa-recorder::getting-started.adoc[Getting Started] for installation and configuration instructions.
+See xref:rpa-recorder::getting-started.adoc[Installing and Starting RPA Recorder] for installation and configuration instructions.
 * RPA Bot installed and configured in your environment
 +
 //TODO: Add link to download RPA Bot
-link:------["Download RPA Bot^", role="button-primary"]
+//link:------["Download RPA Bot^", role="button-primary"]
 +
-See the <link to Builder installation guide> for installation and configuration instructions.
+See xref:rpa-bot::installation.adoc[Installing RPA Bot] and xref:rpa-bot::configuration.adoc[Configuring RPA Bot] for installation and configuration instructions.
 
 [TIP]
 Use two browser windows: One to read instructions and one to perform the tasks.
