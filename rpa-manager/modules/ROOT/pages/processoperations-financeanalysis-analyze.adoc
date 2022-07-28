@@ -23,9 +23,87 @@ Enter all expenses for automation of a process. On the basis of the costs of man
 
 |===
 
+* A project must exist in the *Process Automation* module with the following values set in the *Process Costs* tab of the data sheet:
+** *Cost per process run for manual process execution*
+** *Frequency per month for manual process execution*
+
 * For the Finance Analysis, you require the following values:
 ** Actual and expected number of process runs per month.
 ** Costs of a process run if this is carried out by a human
 ** Initial Investment for acquisition of the MuleSoft RPA solution and all other investments.
 ** Period in months for depreciation of the initial investment and all other investments
 ** Monthly operating costs of process automation
+
+== Add analysis data
+
+Enter data to calculate the *Net profit* per month and the expected *Break-Even Point* of the process automation.
+
+Together with the values that are not displayed here, Actual number of process runs per month and *Cost per process run for manual process execution*, the entries in the *Finance Analysis: Cost entries* panel determine the shape of the curves in the graphics *Break Even Analysis* and *Cost Evaluation*.
+
+You can also use the entry options to analyze in which areas changes must be made to maximize the benefits of automation.
+
+The changes are shown graphically but are only saved in the detailed view if you Save the data.
+
+=== Add investments
+
+Add new investments as soon as they occur. The initial investment is copied from the process data sheet.
+
+. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the table row of the *Process* you want to add investments to.
+. In the panel *Finance Analysis: Cost entries*, click *Add investment*.
+. Complete the form *Finance Analysis: Cost entries*:
++
+* *Starting at*:
++
+Click on the calendar icon to select the month and year in which the investment was made.
+* *Total Invest*:
++
+Enter the investment amount.
+* *Deprecation period (in months)*:
++
+Specify the duration of the depreciation of the investment in months.
+. Click *OK*.
+. Click *Save*.
+
+=== Add operating costs
+
+The specified monthly operating costs are in each case the total monthly operating costs from the specified month. The previously entered operating costs are only valid in each case until the previous month of the next entry of operating costs. Therefore, the new operating costs replace the old.
+
+The initial operating costs are copied from the Process data sheet.
+
+Note that any changes to the operating costs will shift the date of the break-even point.
+
+. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the table row of the *Process* you want to add investments to.
+. In the panel *Finance Analysis: Cost entries*, click *Add change of operating costs*.
+. Complete the form *Finance Analysis: Cost entries*:
++
+* *Starting at*:
++
+Click on the calendar icon to select the month and year in which the investment was made.
+* *Operating costs*:
++
+Enter the new monthly operating costs.
+. Click *OK*.
+. Click *Save*.
+
+=== Forcast monthly process runs
+
+Expected number of automatically executed process runs in the current month and in coming months. This number initially equals the number of manually executed process runs per month so far (Frequency per month for manual process execution), but can be adjusted at any time.
+
+Estimate the expected number of process runs again every month on the basis of the pattern to date in order to forecast the break-even time as accurately as possible.
+
+=== Set Displayed Number of Months
+
+Move the slide control *Months* with the mouse to set the required number of months  displayed on the X-axis of the graphics.
+
+== View a Finance Analysis
+
+View the graphics *Break-Even Analysis* and *Cost Evaluation*.
+
+. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the table row of the *Process* you want to view.
+
+== See Also
+
+* xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
+* xref:myrpa-start.adoc[Starting Automation of Approved Processes]
+
+* xref:processoperations-financeanalysis-basics.adoc[Finance Analysis Basics]
