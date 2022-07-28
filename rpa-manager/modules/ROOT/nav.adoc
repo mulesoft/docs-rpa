@@ -33,4 +33,14 @@
 *** xref:processoperations-financeanalysis-basics.adoc[Finance Analysis Basics]
 *** xref:processoperations-financeanalysis-analyze.adoc[Analyze Costs and Savings]
 * xref:dashboard-overview.adoc[Dashboard]
-* xref:alerting-overview.adoc[Alerting]
+** xref:dashboard-assemble.adoc[Assembling Dashboards]
+** xref:dashboard-widgets-overview.adoc[Widgets]
+*** xref:dashboard-widgets-analysispackages.adoc
+*** xref:dashboard-widgets-automationmanagement.adoc
+*** xref:dashboard-widgets-botworkload.adoc
+*** xref:dashboard-widgets-businessprocesperformance.adoc
+*** xref:dashboard-widgets-currentrobotstatus.adoc
+*** xref:dashboard-widgets-profitanalysis-processfrequency.adoc
+*** xref:dashboard-widgets-profitanalysis-processtime.adoc
+*** xref:dashboard-widgets-triggerperformance.adoc
+*** xref:alerting-overview.adoc[Alerting]
