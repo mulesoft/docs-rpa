@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-= Creating an alerting email template
+= Creating Alerting Email Templates
 
 Create a template for an email that will be sent as an alert. Address the email to users within RPA Manager or to other persons that need to be aware of problems. Use keywords to extract the relevant information from the incident.
 

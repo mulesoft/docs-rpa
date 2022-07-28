@@ -12,10 +12,12 @@ You can check for:
 * Process run results
 * Bot status
 
+The *Alerts* view shows you all triggered alerts.
+
 == See also
 
 * xref:processautomation-deploy.adoc#view-run-results[View Run Results]
 * xref:botmanagement-overview.adoc[Bot Management]
 
-* xref:alerting-target.adoc[Creating an alerting email template]
+* xref:alerting-target.adoc[Creating alerting email templates]
 * xref:alerting-rule.adoc[Defining Rules for Alerts]
