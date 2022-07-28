@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Read from Excel File
+= Read from Excel File
 
 Use the _Read from Excel File_ Action Step to read the contents of an
 Excel file. The result will be saved as a string or an array, which you
@@ -10,7 +10,7 @@ The _Read from Excel File_ Action Step can only be used inside an Excel
 Session. Specify the source file in the xref:toolbox-excel-operations-excel-session.adoc[Excel
 Session].
 
-=== Properties
+== Properties
 
 *Excel Operation Settings*
 
@@ -32,7 +32,7 @@ output as an array.
 * *Row* This is where you enter the cell or row number that should be read.
 * *Sheet name* Name of the spreadsheet. Under Properties you can only enter the name directly, unlike in the <<Wizard>>.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Sheet name* Name of the spreadsheet.
 
@@ -43,7 +43,7 @@ the number of the column in the Excel file.
 
 *Row* This is where you enter the cell or row number that should be read.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Read from Excel File.Result* This variable is output as a string. The
 result will only be shown to you if you have selected the _Cell_ mode.
@@ -62,7 +62,7 @@ result will be _True_ and if there is no content the result will be
 _False_. If in the case of rows or columns only a single cell is
 populated, the result is _True_.
 
-=== Wizard
+== Wizard
 
 The *Sheet name* field is for
 selecting the spreadsheet from which text should be read. You can type

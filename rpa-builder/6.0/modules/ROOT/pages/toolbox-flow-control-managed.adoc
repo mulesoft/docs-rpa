@@ -1,12 +1,12 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Managed
+= Managed
 
 The _Managed_ block allows you to handle errors within your _Workflow_
 as they happen. It also can be used to make sure that certain _Action
 Steps_ or _Transactions_ are executed, even if an error occurred.
 
-=== Properties
+== Properties
 
 * *_OnError_ section behavior* If an error happens within the _OnError_
 section, it can either be handled like any other error (_Normal error
@@ -15,7 +15,7 @@ error_).
 * In the first case the DoAlways part will be executed before program
 termination, in the latter case not.
 
-=== *_DoAction_*
+== *_DoAction_*
 
 This is the default path of the _Managed Block_. The RPA Bot will first
 try to execute all _Action Steps_ within the _DoAction_ section. If an
@@ -25,7 +25,7 @@ executed. If the _OnError_ section is empty, an error within the
 _DoAction_ section will cause the _Managed Block_ to enter an error
 state.
 
-=== *_OnError_*
+== *_OnError_*
 
 This section will be executed if an _Action Step_ within the _DoAction_
 section has failed. You can try to handle the error here and restore a
@@ -45,7 +45,7 @@ steps, meaning the error can be handled by an enclosing _Managed Block_.
 If it is set to _Abort script on error_ the Workflow will be instantly
 aborted if any further error happens within the _OnError_ section.
 
-=== *_DoAlways_*
+== *_DoAlways_*
 
 The _DoAlways_ section will be executed at the end of the _Managed
 Block_, regardless of whether an error has occurred within the _Managed
@@ -57,7 +57,7 @@ will remain unchanged. Execution of the _DoAlways_ section has no
 influence on the error state, which will always be the same as at the
 time the section was entered.
 
-=== Example
+== Example
 
 The following example will show you how to react to common problems
 directly in your _Workflow_ using the _Managed Block_.

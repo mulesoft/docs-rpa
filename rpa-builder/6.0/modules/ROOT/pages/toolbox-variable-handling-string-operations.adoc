@@ -1,17 +1,17 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== String Operations
+= String Operations
 
 The String Operations Action Step allows you to modify strings. It
 provides a variety of operations for this purpose.
 
-=== Properties
+== Properties
 
 *Input Text* Here, enter the string that you want to modify. This can be
 entered using the keyboard or in the wizard, including with the help of
 the pin variables.
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:\l[*Input text*]
 *Input Text* Here, enter the string that you want to modify. This can be
@@ -28,12 +28,12 @@ any text you wish or define the text via the pin variable.
 what_. Again, you can enter any text you wish or define the text via the
 pin variable.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Result* The modified string is output as the result. You can then use
 it in the subsequent Action Steps.
 
-=== Wizard
+== Wizard
 
 _Undefined_ is the default value in the *String operation* field. You
 first have to select an operation.

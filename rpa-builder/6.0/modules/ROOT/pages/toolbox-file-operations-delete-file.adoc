@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Delete File
+= Delete File
 
 _Delete File_ will delete a file located at the specified path. The
 Action Step can be used, for example, to delete files which were
@@ -9,7 +9,7 @@ the Action Step does *not* terminate the Workflow with an error. There
 is however an option that enables the generation of an error message in
 the event of a non-existent file.
 
-=== Properties
+== Properties
 
 *File Operation Settings*
 
@@ -32,7 +32,7 @@ Other Properties that are the same in all Action Steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 * *Directory path* Enter the path to the directory from which the file
 is to be deleted. You can specify an absolute or relative path. If a
@@ -41,7 +41,7 @@ variable.
 
 * *File Name* Enter the name of the file that is to be deleted.
 
-=== Outbound Variables
+== Outbound Variables
 
 *IsDeleted* The _Delete File.IsDeleted_ variable indicates whether the
 file could be deleted or not (True/False).
@@ -52,7 +52,7 @@ the file that is to be deleted.
 *Directory path* The _Delete File.Directory Path_ variable provides the
 path that is used.
 
-=== Wizard
+== Wizard
 
 * *Directory path* Specify the path to the file that is to be deleted.
 You can create an absolute path or a path relative to the _Base Path_.

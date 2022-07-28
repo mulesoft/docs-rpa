@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Read from Text File
+= Read from Text File
 
 The _Read from Text File_ Action Step allows you to read from a text
 file and you use the _Read_ _Mode_ to specify which part of the file is
@@ -12,7 +12,7 @@ text should be deleted after reading.
 To achieve a correct result, the text file to be read has to be UTF-8
 encoded.
 
-=== Properties
+== Properties
 
 *File Operation Settings:*
 
@@ -52,7 +52,7 @@ Other Properties that are the same in all Action Steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Directory path*
 Enter the path to the directory where the file to be read is stored. You
@@ -64,7 +64,7 @@ Enter the path to the directory where the file to be read is stored. You
 can specify an absolute or relative path. If a relative path is used,
 then the path relates to the _Base Path_ variable.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Read text* The _Read from Text File.Read text_ variable provides the
 selected read mode (_Read file check mode_).
@@ -81,7 +81,7 @@ name of the file that is to be read.
 *Directory path* The _Read from Text File.Directory Path_ variable
 provides the path that is used.
 
-=== Wizard
+== Wizard
 
 * *Directory path* Specify the path to the file that is to be read. You
 can create an absolute path or a path relative to the _Base Path_.

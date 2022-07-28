@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== STC Protector
+= STC Protector
 
 When creating a _Workflow_ that needs to run stably and robustly for
 long periods, pop-up windows can be difficult to handle. Mostly they
@@ -12,7 +12,7 @@ process running parallel to your actual measurement _Workflow_, checking
 if any window appears onscreen, and then closing it in an instant by
 sending a predefined keystroke sequence.
 
-=== Properties
+== Properties
 
 * *Pause between keystrokes, ms* Define how long _the Robot_ should
 pause between each keystroke sequence
@@ -27,7 +27,7 @@ should be sent to
 merely exists or if it has to be active to be handled by _STC
 Protector._
 
-=== Wizard
+== Wizard
 
 Click _Start_ to begin recording the keystroke sequence for handling
 pop-up windows. Select the pop-up window with the mouse and press the
@@ -53,7 +53,7 @@ You can also distinguish between window titles by using the checkbox
 _Use regular expression for window title_. This function is described in
 detail in Section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 
-=== Example
+== Example
 
 When there is more than one tab opened in _Internet Explorer_, the
 program asks you if they should all be closed when you wish to exit the
@@ -72,7 +72,7 @@ To ensure that the window is closed as quickly as possible (to avoid any
 interference with the measurement), leave the _Pause between keystrokes_
 setting at "0".
 
-=== Troubleshooting
+== Troubleshooting
 
 In extremely rare cases, the _Workflow_ seems to stop and do nothing
 more after a pop-up window has been handled. This might be the case when

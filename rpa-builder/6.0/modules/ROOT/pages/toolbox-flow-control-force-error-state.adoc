@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Force Error State
+= Force Error State
 
 This _Action Step_ simply forces the _Workflow_ into an error state.
 This also means that if you do not handle this error within a _Managed Block_, the _Workflow_ will always abort at this point and return with

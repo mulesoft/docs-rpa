@@ -1,8 +1,8 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Text Recognition (OCR)
+= Text Recognition (OCR)
 
-=== AI OCR (file-based)
+== AI OCR (file-based)
 
 The _AI OCR (file-based)_ Action Step is a further development of the
 existing OCR Action Steps. In contrast to the other OCR Action Steps, it
@@ -27,7 +27,7 @@ In the following Chapter, we will look at the key differences compared
 to the Action Step Legacy OCR. You can find a detailed description of
 properties, variables, etc. in the Chapter entitled _Text Recognition – Legacy OCR_.
 
-==== Properties
+== Properties
 
 *OCR Image Preprocessing*
 
@@ -64,27 +64,15 @@ taken into consideration.
 *Area mode* Appears as soon as you define the search area under Scan
 Area. You can choose between:
 
-* {blank}
-+
-____
-*Actual Pixels* The image is used in its original resolution
-____
-* {blank}
-+
-____
-*Fit to DIN A4* The original image is enlarged in height or width until
+* *Actual Pixels* The image is used in its original resolution
+* *Fit to DIN A4* The original image is enlarged in height or width until
 it corresponds to the aspect ratio of a DIN A4 sheet. Depending on
 whether height or width is adjusted, there are areas that are augmented.
 The original resolution of the image remains intact.
-____
-* {blank}
-+
-____
-*Fit to DIN A3* Behaves as with DIN A4. Since DIN A4 and A5 have an
+* *Fit to DIN A3* Behaves as with DIN A4. Since DIN A4 and A5 have an
 identical aspect ratio, there is currently no difference. However, in
 the future, new algorithms are likely to have to take account of the
 size. Therefore, this selection is now available.
-____
 
 *Image file name** Name of the image file.
 
@@ -92,23 +80,11 @@ ____
 
 *Orientation* If you selected _Fit to A4_ or _A3_ in Area mode, you can select the format.
 
-* {blank}
-+
-____
-*Automatic*
-____
-* {blank}
-+
-____
-*Landscape*
-____
-* {blank}
-+
-____
-*Portrait*
-____
+* *Automatic*
+* *Landscape*
+* *Portrait*
 
-==== Inbound Variables
+== Inbound Variables
 
 //link:#AS_AIOCRfilebased_P_ImageFileName[*Image file name*]
 *Image file name** Name of the image file.
@@ -116,12 +92,12 @@ ____
 //link:#AS_AIOCRfilebased_P_ImageFolderPath[*Image folder path*]
 *Image folder path** The path to the folder in which the image file is located.
 
-==== Outbound Variables
+== Outbound Variables
 
 *IsSucceeded* (Boolean) Indicates whether text recognition has been
 carried out successfully or not.
 
-==== Wizard
+== Wizard
 
 You can use *OCR Image Preprocessing* to improve the quality of the
 image so that the OCR operation can run optimally. This is always

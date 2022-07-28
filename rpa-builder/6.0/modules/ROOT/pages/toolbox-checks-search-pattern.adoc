@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Search Pattern
+= Search Pattern
 
 The _Search Pattern_ _Action Step_ searches for one or more patterns
 within a defined _Search Area_ on the screen.
@@ -25,7 +25,7 @@ The search can be tested prior to executing the _Workflow_. An
 evaluation window shows possible matches and provides information about
 how search results could be improved.
 
-=== Properties
+== Properties
 
 *Image Processing*
 
@@ -100,7 +100,7 @@ either until it is successful or the _Action Step_ times out. A value of
 having been found. The _Action Step_ does not then wait beyond its
 runtime.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Find Coordinate*
 
@@ -108,7 +108,7 @@ If there is at least one other Action Step that uses patterns before the
 Action Step Search Pattern, the outbound variable _Find coordinate_
 becomes the inbound variable for the subsequent Action Steps.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Find Coordinate* Top
 left corner of the pattern that has been found successfully. If a search
@@ -130,7 +130,7 @@ _Found Matched Pattern Count_ is 0, if _Search Pattern_ returns an
 error. Even, if matches for patterns of the _Regular_ category are
 found.
 
-=== Wizard
+== Wizard
 
 
 The __Search Pattern W__izard enables you to select _Search Patterns_ and the
@@ -143,7 +143,7 @@ Click _OK_ to confirm the configuration settings or _Cancel_ as
 applicable. The _Test_ button evaluates the search and displays the
 results in the _Search Results]_ window.
 
-=== Regular Patterns
+== Regular Patterns
 
 This section lists patterns that are to be found. The number of patterns
 that can be found is limited to 25.
@@ -182,7 +182,7 @@ border. This image can be used as a reference point for other Action
 Steps as the Workflow progresses (see Other Uses of Matched Patterns).
 
 
-=== Capture Pattern
+== Capture Pattern
 
 One way of defining a pattern is to take a screenshot that shows it.
 
@@ -192,7 +192,7 @@ section Capturing the Search Pattern.
 All patterns captured using the _Search Pattern_ _Action Step_ are
 transferred to the _Workflow_'s _Pattern Gallery_.
 
-=== Add Pattern from Gallery
+== Add Pattern from Gallery
 
 If the _Pattern Gallery_ for the _Workflow_ already contains patterns,
 they can be added to the list of patterns for the _Action Step_ using
@@ -213,7 +213,7 @@ included in the search.
 Click OK to confirm the selection and add it to the pattern list for the
 _Action Step_.
 
-=== Ignore All Matches within These Patterns
+== Ignore All Matches within These Patterns
 
 //image::toolbox-checks-search-pattern-image3.png[Example pattern]
 
@@ -235,7 +235,7 @@ It is therefore not sufficient in the above example to capture staff
 with free space at the right edge, because this free space will not form
 part of the pattern being searched for due to a lack of _features_.
 
-=== Make Sure None of These Patterns Appear
+== Make Sure None of These Patterns Appear
 
 //image::toolbox-checks-search-pattern-image4.png[Example for exluded patterns]
 
@@ -251,13 +251,13 @@ As described above, patterns to be excluded from the search can be
 inserted here using a screenshot or from the Pattern Gallery. The number
 of patterns that can be excluded is limited to 25.
 
-=== Changing the Category for a Search Pattern
+== Changing the Category for a Search Pattern
 
 The patterns selected can be moved between the categories _Regular_ and
 _Ignored_. Use the _Move to..._ button in the menu bar to do this.
 
 
-=== Search Settings
+== Search Settings
 
 //image::toolbox-checks-search-pattern-image5.png[Search Settings wizard]
 
@@ -319,7 +319,7 @@ relates to. This means that the _Search Area_ at _Workflow_ runtime is
 positioned at exactly the same distance from the “Relative To”
 coordinate as at the time of design.
 
-=== Test
+== Test
 
 Pressing the _Test_ button will launch the search independently of
 _Workflow_ execution and open the _Search Results_ window where the
@@ -401,7 +401,7 @@ search settings and the search result.
 If the search failed because of one single pattern, this pattern is
 shown in tab _Failure Reason_.
 
-=== Other Uses of Matched Patterns
+== Other Uses of Matched Patterns
 
 If mouse clicks are to be performed relative to a matched image and, at
 the same time, the search is for more than one image, the image that the

@@ -1,13 +1,13 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Navigate
+= Navigate
 
 This _Web Automation_ object allows you to perform navigation
 operations, such as going backwards or forward in the navigation history
 or refreshing the current webpage. It can also be used to call a
 specific URL.
 
-=== Properties
+== Properties
 
 *Navigation Command* Decide if the current webpage should be refreshed.
 Use this to go backwards or forwards in the browsing history or if you
@@ -16,13 +16,13 @@ want to load a specific URL.
 *Navigate to this URL* If you have selected _Specify a URL to navigate to_ under _Navigation
 Command_, then enter the URL to be loaded here.
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#AS_Naviagte_P_NavigateToThisURL[*Navigate to this URL*]
 *Navigate to this URL* If you have selected _Specify a URL to navigate to_ under _Navigation
 Command_, then enter the URL to be loaded here.
 
-=== Outbound Variables
+== Outbound Variables
 
 The Action Step _Navigate_ possesses no outbound variables.
 
@@ -40,7 +40,7 @@ appear in the completely displayed page. A _PatternSearch_ could also be
 used at this juncture. You can use this anchor point as a stable
 starting point for subsequent actions.
 
-=== Example
+== Example
 
 Measurement of the initial page load is particularly relevant in
 connection with APM/TA. This is only possible if you can enclose the

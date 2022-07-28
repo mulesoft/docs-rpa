@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Transaction
+= Transaction
 
 _Transactions_ are used to split __Workflow__s into logical,
 self-contained units. They provide structure for your __Workflow__s,

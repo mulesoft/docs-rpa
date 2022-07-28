@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Read Mail
+= Read Mail
 
 With the _Read Mail_ Action Step, you can read the e-mails from a
 mailbox. You can easily restrict the results using the filter function,
@@ -19,27 +19,20 @@ the Mail Session.
 
 The following filter functions are available:
 
-Body
+* Body
+* Mail info
+* Read/ Unread
+* Recipient (To:)
+* Recipient (Cc:)
+* Sender
+* Subject
+* Text Search
 
-Mail info
-
-Read/ Unread
-
-Recipient (To:)
-
-Recipient (Cc:)
-
-Sender
-
-Subject
-
-Text Search
-
-=== Properties
+== Properties
 
 *Read Mail Settings*
 
-*Attachment folder path** Path to the folder in which the attachments of the e-mails are saved.
+*Attachment folder path* Path to the folder in which the attachments of the e-mails are saved.
 
 *Body* Text to be contained in the body of the e-mail.
 
@@ -90,11 +83,11 @@ first.
 
 *Subject* Here, the text is sought only in the subject of the e-mail.
 
-*Text search** This text is sought in the entire e-mail.
+*Text search* This text is sought in the entire e-mail.
 
 *Unread* Only unread e-mails are displayed.
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#AS_ReadMail_P_FolderName[*Folder Name*]
 *Folder name* Name for the folder that is specified in the Read Mail Action Step under _Inbox Folder Name_.
@@ -119,16 +112,16 @@ incorporated here as an inbound variable.
 *Subject* Here, the text is sought only in the subject of the e-mail.
 
 //link:#AS_ReadMail_P_TextSearch[*Text Search*]
-*Text search** This text is sought in the entire e-mail.
+*Text search* This text is sought in the entire e-mail.
 
 //link:#AS_ReadMail_P_MaxEmailsToRead[*Maximum emails to read*]
 *Maximum emails to read* Displays the number of e-mails to be read. You can read up to 99 e-mails.
 
 //link:#AS_ReadMail_P_AttachmentFolderPath[*Attachment folder path*]
-*Attachment folder path** Path to the folder in which the attachments of the e-mails are saved.
+*Attachment folder path* Path to the folder in which the attachments of the e-mails are saved.
 
 
-=== Outbound Variables
+== Outbound Variables
 
 *IsSucceeded* Indicates whether filtering of the e-mails was successful.
 
@@ -150,7 +143,7 @@ attachments of the current iterated e-mail.
 
 *MailCount* Indicates how many e-mails were found in total.
 
-=== Wizard
+== Wizard
 ////
 image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=273,height=328]
 

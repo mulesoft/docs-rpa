@@ -1,12 +1,12 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Read Clipboard
+= Read Clipboard
 
 This _Action Step_ simply copies the current clipboard content into a
 variable (see Section xref:advanced-concepts-using-variables.adoc[Using Variables]) for further
 usage within the _Workflow_.
 
-=== Properties
+== Properties
 
 *Clear Clipboard after reading* If activated, the clipboard will be
 cleared after it was read and saved into a variable
@@ -37,12 +37,12 @@ expired.
 Therefore, do not enter a value of 0 for the _Timeout_. This would
 result in the buffer being empty.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Clear Clipboard after reading* Contains the information if the
 clipboard should be cleared after reading or not.
 
-=== Outbound Variables
+== Outbound Variables
 
 *ClipboardContent* The content of the clipboard.
 
