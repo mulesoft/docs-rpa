@@ -1,3 +1,11 @@
 include::rpa-home::partial$pending-review.adoc[]
 
 = Process Operations
+
+In the *Process Operations* module, you can get information about processes in the production phase:
+
+* View the execution timetables of processes that are currently in the production phase.
+* View and manage the deployment of processes.
+* View which user tasks have not been processed yet and reassign them.
+* View pending process changes and implement them.
+* View, record, monitor and analyze the financial aspects of a process.
