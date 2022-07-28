@@ -1,0 +1,33 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= MuleSoft Automation Credits
+
+Your MuleSoft Automation subscription plan includes a quota of automation credits that you can use with RPA, Composer, or a combination of both products.
+As you use processes to create automations, your total credit quota is depleted.
+
+One automation credit is defined as follows:
+
+* 5 RPA Bot Minutes
+* 100 RPA API calls
+* 50 Composer tasks
+
+== RPA Bot Minutes
+
+Bot Minutes are calculated by adding the number of minutes that process automations are running across all Bot sessions. For example:
+
+* When a single Bot is running multiple, parallel sessions, all minutes spent in each parallel session are added as total Bot Minutes.
+* If multiple Bots are configured to run the same process, all minutes spent in each separate Bot session are added as total Bot Minutes.
+* Bot test runs or process runs in a test phase are added as total Bot Minutes.
+
+== Composer Tasks
+
+A Composer task is any action that a Composer Connector executes, including, but not limited to: read, create, update, and delete actions.
+
+== RPA API Calls
+
+RPA API calls occur when one or more APIs are invoked to perform an operation.
+Operations include, but are not limited to: lookup, validate, create, update, or delete data in a system as part of an RPA process.
+
+== Options and Entitlements
+
+For specific information about MuleSoft automation credit purchase options, entitlements, and overage billing, contact your sales representative.

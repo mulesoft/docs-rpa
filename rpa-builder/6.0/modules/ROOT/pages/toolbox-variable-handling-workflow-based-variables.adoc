@@ -10,19 +10,16 @@ The variables are typed. They may be structured as text
 (_floating_-_point numbers_), Boolean values (_Boolean_) and lists
 (_array_).
 
-Use the link:#AS_SetVariable[Set Variable] and the
-link:#_Set_Variable[Set Array Variable] Action Steps to overwrite the
-initial variable values with new values at a later point in the
-Workflow.
+Use the _Set Variable_ and the _Set Array Variable_ Action Steps to overwrite the
+initial variable values with new values at a later point in the Workflow.
 
 The _Workflow Based Variables_ Action Step can only appear once in a
-Workflow and must be positioned in the _Workflow Initialization_
-section.
+Workflow and must be positioned in the _Workflow Initialization_ section.
 
 === Properties
 
 This Action Step contains no special properties other than the
-link:#CommonProperties[common] ones.
+_common_ ones.
 
 === Inbound Variables
 
@@ -43,8 +40,7 @@ The symbols next to the variable names indicate the type.
 Action Steps which work with strings will show _Workflow Based
 Variables_ of all types except _Array_.
 
-image:media\image1.png[Ein Bild, das Tisch enthält. Automatisch
-generierte Beschreibung,width=271,height=132]
+//image:media\image1.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=271,height=132]
 
 Action Steps which work with arrays internally can also use alphanumeric
 variables.
@@ -52,8 +48,7 @@ variables.
 That is why such Action Steps will show array and alphanumeric _Workflow
 Based Variables_ to choose from.
 
-image:media\image2.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=265,height=103]
+//image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=265,height=103]
 
 (It is possible to populate the elements of an array via a string if
 this string contains comma separated values. For more information,
@@ -62,17 +57,11 @@ Array Variable_].)
 
 === Wizard
 
-Click on the image:media\image3.png[image,width=128,height=19] button to
-add a new variable.
-
-image:media\image4.png[Ein Bild, das Tisch enthält. Automatisch
-generierte Beschreibung,width=144,height=149]
-
+//Click on the image:media\image3.png[image,width=128,height=19] button to
+Add a new variable.
+//image:media\image4.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=144,height=149]
 Then select the type of variable from the menu.
-
-image:media\image5.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=604,height=328]
-
+//image:media\image5.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=604,height=328]
 You can then enter the name, description, and value of the variables
 directly into the relevant fields.
 
@@ -95,7 +84,7 @@ why, when saving the Action Step, all array elements which are not yet
 presented in double quotes will automatically be placed in double
 quotes.
 
-image:media\image6.jpeg[image,width=604,height=89]
+//image:media\image6.jpeg[image,width=604,height=89]
 
 If you want to include an element containing one or more commas in your
 list, you must place this element in double quotes before saving it.
@@ -117,9 +106,9 @@ E.g. “This “”text”” contains double quotation marks.”
 Car servicing is to be processed automatically at a workshop. For this
 purpose the variables required in the Workflow are to be created as
 Workflow Based Variables. For testing purposes, they may be
-pre-populated with meaningful values:
+pre-populated with meaningful values.
 
-image:media\image7.png[image,width=755,height=424]
+//image:media\image7.png[image,width=755,height=424]
 
 If all Transactions are active, the Workflow Based Variables in
 Transaction 120 are populated with data from the application using the

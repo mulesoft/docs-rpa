@@ -35,10 +35,9 @@ successfully run or not.
 
 === Wizard
 
-See link:#inbound-variables[_Inbound Variables_].
+See <<Inbound Variables>>.
 
-Note that an empty result is still a valid result and is not treated as
-an error.
+Note that an empty result is still a valid result and is not treated as an error.
 
 You can find more information on the JsonPath using the following links:
 

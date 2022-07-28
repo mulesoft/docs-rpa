@@ -1,1 +1,17 @@
-= Process Monitoring Overview
+include::rpa-home::partial$pending-review.adoc[]
+
+= Process Monitoring
+
+The *Process Monitoring* module displays the execution of your processes in real time.
+
+In the *Bot State and Operation* view, you see the current status, the current deployment, and the number of completed tasks of each Bot.
+
+In the *Process Streaming* view, you see the number of configurations, RPA Bots, and sessions for each productive process. You can open a live view of the sessions of a process and watch the bot as it works.
+
+In the *Session Queues* view, you see the order of the process runs. The processes are queued according to their priority.
+
+== See Also
+
+//* xref:processmonitoring-overview.adoc[Process Monitoring]
+* xref:processmonitoring-stream.adoc[Streaming Processes]
+* xref:processmonitoring-queue.adoc[Queueing Process Sessions]

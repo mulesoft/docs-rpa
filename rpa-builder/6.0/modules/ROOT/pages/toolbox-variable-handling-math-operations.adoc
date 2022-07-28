@@ -52,7 +52,7 @@ previously added using the Pin button.
 Up to ten variables can be mapped. These are displayed in the Wizard and
 can be selected for the calculation.
 
-image:media\image1.png[image,width=443,height=294]
+//image:media\image1.png[image,width=443,height=294]
 
 You can enter test values in the _Test Values_ field to test whether or
 not the formula is valid. Then click the _Test_ button. If the formula

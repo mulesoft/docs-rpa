@@ -1,3 +1,5 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Step 2. Evaluate a Process for Automation
 
 Before you start designing a process for automation, think about the following questions:
@@ -19,10 +21,10 @@ Create a new evaluation criterion to use during the process evaluation:
 . Click the *Process Evaluation* module.
 . Click *Evaluation Criteria*.
 . Click *Create Benefit*.
-** In the *Name* field, write: `Concurrency`.
-** Click the *Exclude* checkbox.
-** In the *Definition Gradation 1* field, write: `Yes, allows parallel executions`.
-** In the *Definition Gradation 2* field, write: `No, only one execution at a time`.
+** In the *Name* field, write: `Concurrency`
+** Click the *Exclude* checkbox
+** In the *Definition Gradation 1* field, write: `Yes, allows parallel executions`
+** In the *Definition Gradation 2* field, write: `No, only one execution at a time`
 . Click *Save*.
 
 == Step 2.2: Create an Evaluation Template
@@ -32,11 +34,10 @@ After you create new criteria for evaluation, create a new evaluation template t
 . In RPA Manager, Click the *Process Evaluation* module.
 . Click *Evaluation Templates*.
 . Click *Create*.
-** In the *Name* field, write: `My custom template`.
-** Scroll down and verify that the *Exclude muleSoft default evaluation criteria* checkbox is unselected.
-//TODO: Need to add icon in these steps
-** Inside the *Available qualifiers* section, click the *Move All* (->->) button.
-** Inside the *Available benefits* section, click the *Move All* (->->) button.
+** In the *Name* field, write: `My custom template`
+** Scroll down and verify that the *Exclude muleSoft default evaluation criteria* checkbox is unselected
+** Inside the *Available qualifiers* section, click the *Move All* (->->) button
+** Inside the *Available benefits* section, click the *Move All* (->->) button
 +
 Note that the *Concurrency* criterion created in the previous step appears in this section.
 . Click *Save*.
@@ -49,8 +50,8 @@ To create a new process evaluation using the custom template created in the prev
 
 . In RPA Manager, Click the *Process Evaluation* module.
 . Click *Process Evaluation*.
-** In the *Name* field, write: `MuleSoft newsletter sign-up`.
-** Click the *Template* dropdown and select *My custom template*.
+** In the *Name* field, write: `MuleSoft newsletter sign-up`
+** Click the *Template* dropdown and select *My custom template*
 . Click *OK*.
 
 After confirming these details, you are redirected to the evaluation view where you specify the *Costs*, *Qualifiers* and *Benefits* for this process:

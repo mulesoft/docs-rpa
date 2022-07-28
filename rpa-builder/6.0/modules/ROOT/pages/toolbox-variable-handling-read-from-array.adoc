@@ -18,8 +18,7 @@ Workflow which data type you wish to use.
 *Get entire array as CSV* (Bool, default: false) If active, the whole
 array is returned as a string in CSV format (comma separated values).
 
-[#Array_ReadFromArray_IndexTorReadAt .anchor]####**Index to read at**
-(integer, > 0, default: 1) Position within the array where the content
+*Index to read at**(integer, > 0, default: 1) Position within the array where the content
 of the array is to be read from. Indexing starts at 1.
 
 Please make sure that the index entered is not greater than the total
@@ -31,11 +30,11 @@ number of all elements within the array.
 
 The drop-down _Array to read from_ list contains all the arrays that
 have been created in the Workflow so far. These can be
-_link:#WorkflowBasedVariables[Workflow Based Variables]_ or return
-arrays from the link:#AS_ReadFromExcelFile[_Read from Excel File_]
-Action Step.
+_Workflow Based Variables_ or return arrays from the _Read from Excel File_ Action Step.
 
-link:#Array_ReadFromArray_IndexTorReadAt[*Index to read at*]
+//link:#Array_ReadFromArray_IndexTorReadAt[*Index to read at*]
+*Index to read at**(integer, > 0, default: 1) Position within the array where the content
+of the array is to be read from. Indexing starts at 1.
 
 === Outbound Variables
 
@@ -87,9 +86,8 @@ converting to the data type in the column header.
 
 The drop-down _Array to read from_ list contains all the arrays that
 have been created in the Workflow so far. These can be
-_link:#WorkflowBasedVariables[+++Workflow Based Variables+++]_ or return
-arrays from the link:#AS_ReadFromExcelFile[Read from Excel File] Action
-Step.
+_Workflow Based Variables_ or return
+arrays from the _Read from Excel File_ Action Step.
 
 If you select the checkbox _Get entire array as comma separated values_,
 the whole array will be returned as a string. The individual values
@@ -107,10 +105,8 @@ selected.
 
 === Example
 
-For a detailed example, please refer to the
-link:#Array_ArrayCount_Example[+++description of the _Get Array Count_
-Action Step+++].
-
+For a detailed example, please refer to the description of the _Get Array Count_ Action Step.
+////
 === Related Elements
 
 The following sections may help you to better understand the

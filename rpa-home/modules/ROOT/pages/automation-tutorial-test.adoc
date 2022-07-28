@@ -1,6 +1,8 @@
+include::rpa-home::partial$pending-review.adoc[]
+
 = Step 6: Test the Automation
 
-You finished the build phase and the automation project is ready to move to the testing phase, where you create a test plan to execute the necessary tests on your automation project. You can create multiple configurations to test your process using different activity parameters and testing user tasks completion.
+You finished the build phase and the automation project is ready to move to the testing phase, where you create a test plan to execute the necessary tests on your automation project. You can create multiple configurations to test your process using different activity parameters and to test for the completion of user tasks.
 
 For this tutorial, create a simple test that confirms the proper deployment and execution of the automated process.
 
@@ -41,4 +43,4 @@ You created a test plan that executes the automation to ensure that the process 
 
 Continue with: xref:automation-tutorial-deploy.adoc[Step 7: Deploy the automation]
 
-== See Also
+//== See Also

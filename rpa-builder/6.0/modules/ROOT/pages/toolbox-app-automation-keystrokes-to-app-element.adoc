@@ -41,7 +41,4 @@ variables.
 
 See Properties and the chapter Common Properties.
 
-You can find further information on environment variables (Insert
-Environment Variable) and script variables (Insert Script Variable) in
-the Chapter entitled Insert Special
-Character / Macro / Script Variable / Environment Variable and Settings.
+You can find further information on environment variables (Insert Environment Variable) and script variables (Insert Script Variable) in the Chapter entitled Insert Special Character / Macro / Script Variable / Environment Variable and Settings.
