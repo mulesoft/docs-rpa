@@ -22,7 +22,7 @@ As you use processes to create automations, your total credit quota is depleted.
 
 One automation credit is defined as follows:
 
-* 5 RPA Bot Minutes
+* 2 RPA Bot Minutes
 * 100 RPA API calls
 * 50 Composer tasks
 
