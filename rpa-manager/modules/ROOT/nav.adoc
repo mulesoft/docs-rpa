@@ -27,6 +27,8 @@
 ** xref:processmonitoring-stream.adoc[Streaming Processes]
 ** xref:processmonitoring-queue.adoc[Queueing Process Sessions]
 * xref:processoperations-overview.adoc[Process Operations]
+** xref:processoperations-deploymentmap.adoc[Deployment Map]
+** xref:processoperations-executionplans.adoc[Process Execution Plans]
 ** xref:processoperations-financeanalysis.adoc[Finance Analysis]
 *** xref:processoperations-financeanalysis-basics.adoc[Finance Analysis Basics]
 *** xref:processoperations-financeanalysis-analyze.adoc[Analyze Costs and Savings]
