@@ -1,6 +1,6 @@
 = Step 5: Build the Automation from the BPMN diagram
 
-Now that the BPM for the process to automate is ready, it's time to use RPA Builder to specify each of the actions the RPA bot executes when it runs this process. Because you used RPA Recorder to create the diagram, each existing task already contains the action steps for the bot to execute. During this step, you add a new task to confirm that the sign-up process was successful by reading the confirmation text on the screen.
+Now that the BPMN Diagram for the process to automate is ready, it's time to use RPA Builder to specify each of the actions the RPA bot executes when it runs this process. Because you used RPA Recorder to create the diagram, each existing task already contains the action steps for the bot to execute. During this step, you add a new task to confirm that the sign-up process was successful by reading the confirmation text on the screen.
 
 Before you start defining the actions, configure RPA Builder to connect with your RPA Manager repository so you can import the designs and re-upload them after the build phase is finished.
 
@@ -87,7 +87,7 @@ This action starts the execution of the process and shows the *Test run informat
 image:builder-test-run-information.png[The test run information in RPA Builder, 50%, 50%]
 +
 As the tasks start executing, notice that new entries appear in this window and show a *Task execution succeeded* (image:task-execution-icon.png[Task execution succeeded icon, 2%, 2%]) icon in the *Run state* column when they finish.
-. Click *Close* to close the *Test run information* window and return to RPA Builder. 
+. Click *Close* to close the *Test run information* window and return to RPA Builder.
 
 After confirming that the test is successful, upload the project to RPA Manager.
 
