@@ -1,13 +1,28 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = MuleSoft Automation Credits
 
+Your MuleSoft Automation subscription plan includes a quota of Automation Credits that you can use with MuleSoft RPA, MuleSoft Composer, or a combination of both products. As you use processes to create automations, your total credit quota is depleted.
+
+The following table shows the conversion rate between Automation Credits and different activities:
+
+[%header%autowidth.spread,cols=".^a,.^a,.^a]
+|===
+| RPA Bot Minutes | RPA API Calls | Composer Tasks
+| 1 MuleSoft Automation Credit = 5 | 1 MuleSoft Automation Credit = 100 | 1 MuleSoft Automation Credit = 50
+|===
+[NOTE]
+In the event that a task takes less than 1 minute, RPA Bot Minutes are rounded up to the nearest minute.
+
+You can use any combination of these activities, which aggregate over the term of your subscription (not per session), and are then converted to credits as shown. Then, the credits are deducted from your assigned quota for the subscription period.
+
+For detailed definitions and more information, see the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^].
+
+////
 Your MuleSoft Automation subscription plan includes a quota of automation credits that you can use with RPA, Composer, or a combination of both products.
 As you use processes to create automations, your total credit quota is depleted.
 
 One automation credit is defined as follows:
 
-* 5 RPA Bot Minutes
+* 2 RPA Bot Minutes
 * 100 RPA API calls
 * 50 Composer tasks
 

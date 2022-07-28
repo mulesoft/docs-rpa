@@ -29,11 +29,14 @@ Verify that you use any of the supported web browsers to access the platform:
 
 === RPA Builder
 
+The following table contains the required software to run the application.
+
 [%header%autowidth.spread,cols=".^a,.^a,]
 |===
 | Software | Required version
 | Microsoft .NET Framework
- | 4.7.2
+ |
+* 4.7.2
 | Operating System
  a|
 Any of the following:
@@ -48,7 +51,27 @@ Any of the following:
 * AdoptOpenJDK 11 (JRE, 64-bit version) or higher
 |===
 
+=== RPA Recorder
+
+The following table contains the required software to run the application.
+
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+ a|
+* 4.7.2
+| Operating System
+ a|
+Any of the following:
+
+* Windows 10 (64-bit version)
+* Windows 11 (64-bit version)
+|===
+
 === RPA Bot
+
+The following table contains the required software to run the application.
 
 [%header%autowidth.spread,cols=".^a,.^a,]
 |===
@@ -66,20 +89,6 @@ Any of the following:
 * Windows Server 2016
 |===
 
-=== RPA Recorder
+== See Also
 
-[%header%autowidth.spread,cols=".^a,.^a,]
-|===
-| Software | Required version
-| Microsoft .NET Framework
- a|
-* 4.7.2
-| Operating System
- a|
-Any of the following:
-
-* Windows 10 (64-bit version)
-* Windows 11 (64-bit version)
-|===
-
-// == See Also
+* xref:automation-tutorial-introduction.adoc[Tutorial: Create an Automation from Start to Finish]

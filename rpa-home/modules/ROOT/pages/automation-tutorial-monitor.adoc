@@ -1,8 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Step 8: Manage and Monitor the Automation
 
-After deploying the process, use the Process Monitoring module to see a summary of the deployed RPA bots and the process executions.
+After deploying the process, use the Process Monitoring module to see a summary of the deployed bots and the process executions.
 
 == Step 8.1: See a Live Stream of the Deployed Process
 
@@ -43,3 +41,7 @@ After monitoring the process, follow these steps to revoke the deployment:
 . In the *Production configurations* panel, click the *Select action* drop-down menu.
 . Click *Revoke process*.
 . Select your run configuration and click *Execute*.
+
+== See Also
+
+* xref:rpa-manager::processmonitoring-overview.adoc[Process Monitoring]

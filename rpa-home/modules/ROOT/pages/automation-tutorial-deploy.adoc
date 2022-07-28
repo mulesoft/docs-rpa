@@ -1,5 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Step 7: Deploy the Automation
 
 After finishing the testing phase, the process is now in the production phase. It is time to create deployment configurations to specify the execution settings for the process.
@@ -48,3 +46,7 @@ If there are no results, wait a few minutes for the execution to end and click *
 Now that you’ve deployed the process and confirmed its execution, it’s time to monitor the deployment.
 
 Continue with: xref:automation-tutorial-monitor.adoc[Step 8: Manage and Monitor the Automation]
+
+== See Also
+
+xref:rpa-manager::processautomation-deploy.adoc[Deploying Automations]

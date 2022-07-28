@@ -1,5 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Glossary
 
 The following glossary helps you understand MuleSoft terminology.
