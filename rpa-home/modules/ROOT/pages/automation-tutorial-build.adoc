@@ -75,7 +75,7 @@ After you add the text recognition task and save the project, perform a local te
 
 //click the *Run Process* (image:run-process.png[The Run process icon,1.5%,1.5%]) button in the BPMN editor to test the complete process and confirm that it works as expected.
 
-== Step 5.5: Perform a Local Test of the Process
+== Step 5.4: Perform a Local Test of the Process
 
 To perform a local test of the created process:
 
@@ -91,7 +91,7 @@ As the tasks start executing, notice that new entries appear in this window and 
 
 After confirming that the test is successful, upload the project to RPA Manager.
 
-== Step 5.6: Upload the Project to RPA Manager
+== Step 5.5: Upload the Project to RPA Manager
 
 To upload the updated automation project to RPA Manager:
 
