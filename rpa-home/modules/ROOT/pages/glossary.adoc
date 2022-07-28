@@ -169,7 +169,7 @@ RPA Manager is the cloud-based control plane for the automations that is integra
 
 === RPA Recorder
 
-RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording action steps from your local environment.
+RPA Recorder is an on-premise tool that assists during the process design phase by recording all user actions, creating a click path documentation and generating additional data to automatically create action steps in the build phase.
 
 
 == S
