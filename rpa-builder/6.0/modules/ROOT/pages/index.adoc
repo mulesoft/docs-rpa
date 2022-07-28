@@ -2,4 +2,13 @@ include::rpa-home::partial$pending-review.adoc[]
 
 = RPA Builder Overview
 
-Content is on development
+RPA Builder is the on-premise development environment that enables you to build the automations by specifying the steps of the process. RPA Builder enables you to:
+
+* Download and upload automation assets to RPA Manager.
+* Add the automation logic to the processes.
+* Run local tests for the automations.
+
+== See Also
+
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
+* xref:install-and-configure.adoc[Installing and Configuring RPA Builder]

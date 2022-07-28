@@ -1,8 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
-
-== Checking System Parameters
-
-=== Why Are System Parameters So Important?
+= Checking System Parameters
 
 Some system parameters in _Microsoft Windows®_ significantly affect how
 the screen image is displayed. For example, turning _ClearType_ (a font
@@ -32,14 +28,14 @@ is executed!
 
 You should also turn off any settings or programs that may disrupt the
 _Workflow_ during execution due to unexpected behavior, such as
-displaying sudden pop-up windows. Common causes of sudden W__orkflow__
+displaying sudden pop-up windows. Common causes of sudden __Workflow__
 failures are automatic updates to _Windows_ and other programs you have
 installed.
 
 You should always configure your agent systems to show no unexpected
 behavior such as sudden pop-ups, screensavers, or similar.
 
-==== The Recommended Systems Settings Are:
+== Recommended Systems Settings
 
 * Disable screen saver
 * Turn off all power option properties
@@ -48,7 +44,7 @@ behavior such as sudden pop-ups, screensavers, or similar.
 * Disable menu drop shadow effects
 * Set desktop scaling to _100%_
 
-==== Checking the System Parameters
+== Checking the System Parameters
 
 The menu item _View_ -> _Show System Parameters_ opens an overview over
 the most important settings of your system.
@@ -57,4 +53,4 @@ Settings marked with a green circle can be left this way.
 
 Settings marked with a red circle should be changed.
 
-With the button Refresh you can check if setting changes have led to an optimization of the status.
+With the *Refresh* button you can check if setting changes have led to an optimization of the status.

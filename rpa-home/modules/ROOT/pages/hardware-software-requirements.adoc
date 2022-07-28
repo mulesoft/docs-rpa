@@ -25,6 +25,7 @@ Verify that you use any of the supported web browsers to access the platform:
 * Microsoft Edge
 * Google Chrome
 * Apple Safari
+* Mozilla Firefox
 
 === RPA Builder
 
@@ -81,4 +82,4 @@ Any of the following:
 * Windows 11 (64-bit version)
 |===
 
-== See Also
+// == See Also
