@@ -12,18 +12,17 @@ Manage the users of RPA Manager and RPA Builder:
 
 == Before You Begin
 
-* The tenant admin is created first and can create other users.
-* If you are not a tenant admin, obtain the needed privileges:
+The tenant admin is created first and can create other users. If you are not a tenant admin, obtain the needed privileges as follows:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *User Management* module
-|*User Management Open*
+|User Management Open
 
 |Create, edit, license, and delete users
-|*User Management Administration*
+|User Management Administration
 
 |===
 

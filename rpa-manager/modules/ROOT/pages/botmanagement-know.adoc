@@ -87,15 +87,15 @@ The bot has been configured for a desktop session. It cannot use secure sessions
 
 == Before You begin
 
-* At least one bot must be installed on a separate computer
-* Obtain the needed privileges:
+Note that at least one bot must be installed on a separate computer.
+The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Bot Management* module and view the bots
-|*Robot Management Open*
+|Robot Management Open
 
 |===
 

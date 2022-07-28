@@ -12,7 +12,7 @@ You manage the bots in the *Bot Management* module. Every bot is assigned to RPA
 . After successful installation, the bots connects to the RPA Manager automatically.
 
 ==== License
-* After you have installed all bots, open the *Bots* view module and assign _secure session_ licenses to each bot that should run processes invisibly.
+After you have installed all bots, open the *Bots* view module and assign _secure session_ licenses to each bot that should run processes invisibly.
 
 ==== Assign service times
 . If a bot should only be available to execute processes at certain times, create the corresponding service times in the *Service Times* view module.
@@ -23,13 +23,13 @@ You manage the bots in the *Bot Management* module. Every bot is assigned to RPA
 . Assign the applications to the bots that can access them by editing each bot in the *Bots* view.
 
 ==== Assign phases
-* Authorize bots for deployment in the test or production phase by editing each bot in the *Bots* view.
+Authorize bots for deployment in the test or production phase by editing each bot in the *Bots* view.
 
 ==== Create processes
-* Create processes in the *Process Evaluation* module and automate them in the *Process Automation* module.
+Create processes in the *Process Evaluation* module and automate them in the *Process Automation* module.
 
 ==== Deploy processes
-* Deploy processes to suitable bots in the process configurations in the *Process Management* view in the *Process Automation* module.
+Deploy processes to suitable bots in the process configurations in the *Process Management* view in the *Process Automation* module.
 
 ==== Monitor
 * The *Bot Execution Plans* view shows which bot is to execute which processes and when.
@@ -47,12 +47,12 @@ A _secure session_ is a hidden Windows session that runs invisibly and closed in
 
 * xref::.adoc[Installing and Configuring Bots]
 
-//* xref:botmanagement-overview.adoc[Bot Management]
+//
+* xref::botmanagement-overview.adoc[Bot Management]
 * xref::botmanagement-support.adoc[Supporting Bots]
 * xref::botmanagement-know.adoc[Getting to Know Bots]
 * xref::botmanagement-manage.adoc[Managing Bots]
 * xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
-
-* xref::.adoc[Process Evaluation]
-* xref::.adoc[Process Automation]
-* xref::.adoc[Process Monitoring]
+* xref::processevaluation-overview.adoc[Process Evaluation]
+* xref::processautomation-overview.adoc[Process Automation]
+* xref::processmonitoring-overview.adoc[Process Monitoring]

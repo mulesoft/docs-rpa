@@ -5,17 +5,17 @@ If a bot only needs to work at specific times, you assign it service times.
 
 == Before You Begin
 
-* Obtain the needed privileges:
+The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Bot Management* module
-|*Robot Management Open*
+|Robot Management Open
 
 |Manage service times
-|*Servicetime Create*, *Servicetime Edit*, *Servicetime Delete*
+|Servicetime Create, Servicetime Edit, Servicetime Delete
 
 |===
 
