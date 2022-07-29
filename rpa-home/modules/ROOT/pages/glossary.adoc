@@ -11,10 +11,6 @@ The following glossary helps you understand MuleSoft terminology.
 
 A basic unit of work in the Mule application flow. This can in turn be a connector that connects to an external system or a transform step that is used to transform data inside the application.
 
-=== Automation Credits
-
-To be defined.
-
 
 == B
 
@@ -69,15 +65,6 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 ''''''
 
-=== Invocable API
-
-To be defined.
-
-=== Invokable run configuration
-
-To be defined.
-
-
 == J
 
 ''''''
@@ -93,9 +80,6 @@ To be defined.
 == M
 
 ''''''
-=== ((business) process) model
-
-To be defined.
 
 === MuleSoft Automation
 
@@ -125,10 +109,6 @@ The container for everything in your RPA Platform account.
 === Process candidate
 
 A real-life business process about to be proposed for automation via process evaluation.
-
-=== Process owner
-
-To be defined.
 
 === Project Manager
 
@@ -167,7 +147,7 @@ RPA Manager is the cloud-based control plane for the automations that is integra
 
 === RPA Recorder
 
-RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording action steps from your local environment.
+RPA Recorder is an on-premise tool that assists during the process design phase by recording all user actions, creating a click path documentation and generating additional data to automatically create action steps in the build phase.
 
 
 == S
