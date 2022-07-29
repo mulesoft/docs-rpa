@@ -21,9 +21,9 @@ The following table contains the needed privileges:
 
 |===
 
-Note that at least one RPA Bot must be installed to deploy a process.
-A project in build or test phase must exist in the *Project Management* view of the *Process Automation* module.
-Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
+* At least one RPA Bot must be installed to deploy a process.
+* A project in build or test phase must exist in the *Project Management* view of the *Process Automation* module.
+* Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
 == Test a Process Automation
 
