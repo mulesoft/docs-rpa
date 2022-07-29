@@ -20,11 +20,12 @@ created screen copy.
 You should consider the Intelligent OCR 2020 Action Step if more than
 one language is to be recognized at once or if you wish to use your own
 dictionary.
-
+////
 In the following Chapter, we will look at the key differences compared
 to the Action Step Legacy OCR. You can find a detailed description of
 the properties, variables, etc. in the Chapter entitled
 _Text Recognition – Legacy OCR_.
+////
 
 == Properties
 
@@ -38,7 +39,7 @@ See also xref:toolbox-text-recognition-ai-ocr-file-based.adoc#Properties[Propert
 relative to these coordinates. The resulting result coordinates are then
 absolute and are with reference to the left screen corner.
 
-See also the Chapter entitled Search Pattern – *Search Settings*.
+//See also the Chapter entitled Search Pattern – *Search Settings*.
 //link:#AS_SearchPattern_SearchSettings[Search Settings].
 
 This variable can only be mapped in the wizard.
@@ -59,6 +60,6 @@ First, a screenshot is made of the currently active desktop. Using
 *Initial wait time*, you can delay this operation. This can be very
 useful if the image takes time to form, e.g. due to animations.
 
-You can find further explanations under xref:toolbox-text-recognition-ai-ocr-file-based.adoc#Properties[Properties]
+You can find further explanations in xref:toolbox-text-recognition-ai-ocr-file-based.adoc#Properties[Properties].
 //link:#AS_AIOCRfilebased_P[Properties]
-in the Chapter entitled AI OCR (file-based) or in the Chapter entitled *Text Recognition – Legacy OCR*.
+//in the Chapter entitled AI OCR (file-based) or in the Chapter entitled *Text Recognition – Legacy OCR*.

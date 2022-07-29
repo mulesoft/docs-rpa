@@ -1,6 +1,4 @@
 
-include::rpa-home::partial$pending-review.adoc[]
-
 = Widgets
 
 The dashboard information consists of the contents of various widgets. A widget is a movable and scalable pane.

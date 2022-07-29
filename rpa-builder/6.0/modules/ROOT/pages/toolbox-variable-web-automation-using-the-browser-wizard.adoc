@@ -1,5 +1,4 @@
 
-
 = Using the Browser Wizard
 
 The _Browser Wizard_ can be used inside _Web Automation Action Step_
@@ -39,3 +38,4 @@ seconds, the highlighted object will automatically be selected.
 ////
 image:media\image3.png[Ein Bild, das Text enthält. Automatisch
 generierte Beschreibung,width=144,height=368]
+////

@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Streaming Processes
 
@@ -6,7 +6,7 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 
 == Before you begin
 
-* The following table contains the needed privileges:
+* Obtain the needed privileges:
 +
 [cols="1,2"]
 |===

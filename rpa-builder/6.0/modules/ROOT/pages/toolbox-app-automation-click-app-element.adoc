@@ -109,4 +109,4 @@ The Click App Element Action Step does not have any outbound variables.
 In the *Mouse action*, Operation Mode you determine the type of the action (such as Double Left Click), while *Trigger Count* defines the number of times this action is performed.
 The Action Step ensures that the clicks are grouped correctly. In other words, a configured double-click is executed directly, while a normal Left Click with two repetitions is executed with a time delay, to ensure that Windows does not register a double-click.
 
-Also see Properties and the chapter Common Properties.
+//Also see <<Properties>> and Common Properties.

@@ -45,6 +45,6 @@ The log file contains valuable information about the recording, but also warning
 
 If any unexpected behavior arises, you can provide feedback to MuleSoft by sending over the log file.
 
-= See Also
+== See Also
 
 * xref:user-interface.adoc#settings[User Interface]

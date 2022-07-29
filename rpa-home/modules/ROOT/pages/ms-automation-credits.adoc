@@ -7,7 +7,7 @@ The following table shows the conversion rate between Automation Credits and dif
 [%header%autowidth.spread,cols=".^a,.^a,.^a]
 |===
 | RPA Bot Minutes | RPA API Calls | Composer Tasks
-| 1 MuleSoft Automation Credit = 5 | 1 MuleSoft Automation Credit = 100 | 1 MuleSoft Automation Credit = 50
+| 1 MuleSoft Automation Credit = 2 | 1 MuleSoft Automation Credit = 100 | 1 MuleSoft Automation Credit = 50
 |===
 [NOTE]
 In the event that a task takes less than 1 minute, RPA Bot Minutes are rounded up to the nearest minute.
@@ -46,3 +46,4 @@ Operations include, but are not limited to: lookup, validate, create, update, or
 == Options and Entitlements
 
 For specific information about MuleSoft automation credit purchase options, entitlements, and overage billing, contact your sales representative.
+////

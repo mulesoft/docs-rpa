@@ -10,7 +10,7 @@ image:rpa-builder-ui-overview.png[Overview window panes]
 . Explorer pane
 . Menu bar
 . BPMN editor
-. Wrokflow Properties pane
+. Workflow Properties pane
 . Workbench
 . Workflow Run Results
 +
@@ -178,13 +178,12 @@ Workflow.
 If you are using the Repository for storing your Business Process, the tab *_Repository Explorer_* shows a list of all available Business Process. These can be
 downloaded for editing.
 
-Chapter Repository Explorer gives a detailed description of all functions.
+//Chapter Repository Explorer gives a detailed description of all functions.
 
 If you use the *_Activity Library,_* you can view and delete all available
 Activity Templates here.
 
-For a more detailed description of how to use the Activity Library, see
-the chapter Activity Library.
+//For a more detailed description of how to use the Activity Library, see the chapter Activity Library.
 
 The *_Workflow Outline_* is a shortened view of the open Workflow.
 

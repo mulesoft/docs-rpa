@@ -1,4 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
 
 = Profit Analysis: Process Frequency
 

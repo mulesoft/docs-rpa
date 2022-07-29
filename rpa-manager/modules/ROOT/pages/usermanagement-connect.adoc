@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Connecting to MuleSoft Composer
 
@@ -6,7 +6,7 @@ User API keys are required for the integration of RPA processes in a MuleSoft Co
 
 == Before You Begin
 
-* The following table contains the needed privileges:
+* Obtain the needed privileges:
 +
 [cols="1,2"]
 |===

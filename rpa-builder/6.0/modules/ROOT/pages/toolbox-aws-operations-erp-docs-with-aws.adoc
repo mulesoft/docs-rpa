@@ -2,7 +2,7 @@
 
 = ERP Docs With AWS
 
-The ERP Docs with AWS enables you to use Amazon Textract to analyze invoices and receipts to extract relevant data. 
+The ERP Docs with AWS enables you to use Amazon Textract to analyze invoices and receipts to extract relevant data.
 
 == Inbound Variables
 
@@ -40,10 +40,10 @@ The session token to use for authentication when *Use session token to authentic
 +
 The Json path to the property of the response object.
 * *File Settings*
-* *Directory path*
+** *Directory path*
 +
 The path to the directory where the file is located.
-* *File name*
+** *File name*
 +
 The name of the file to analyze. Supported file types: PDF, JPEG, and PNG.
 * *PDF Settings*

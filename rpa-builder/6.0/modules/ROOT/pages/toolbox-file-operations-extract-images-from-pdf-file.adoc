@@ -113,9 +113,10 @@ If you click on the Save button, the window closes and you return to the
 wizard. If you now click on the *Test button*, the image is saved in the
 folder you selected under *Save extracted images to*.
 
-You can find more details in the *Properties*.
-
+//You can find more details in the *Properties*.
+////
 You can find further information on environment variables (Insert
 Environment Variable) and script variables (Insert Script Variable) in
 the Chapter entitled *Insert Special Character / Macro / Script Variable / Environment Variable* and
 *Settings*.
+////

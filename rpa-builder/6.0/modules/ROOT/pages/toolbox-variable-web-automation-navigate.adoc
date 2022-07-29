@@ -63,3 +63,4 @@ used at this juncture.
 ////
 image:media\image1.png[Ein Bild, das Text enthält. Automatisch
 generierte Beschreibung,width=334,height=247]
+////

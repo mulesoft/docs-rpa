@@ -20,8 +20,10 @@ there.
 The Network Settings can be found in the Settings Action Step, which is
 located in the Workflow Initialization block.
 
+////
 For more information about the settings options, see chapter 2.6.5
 Settings.
+////
 
 == Properties
 
@@ -170,3 +172,4 @@ In this example, login data is called up from a server via REST Call.
 
 image:media\image10.png[Ein Bild, das Text enthält. Automatisch
 generierte Beschreibung,width=577,height=467]
+////

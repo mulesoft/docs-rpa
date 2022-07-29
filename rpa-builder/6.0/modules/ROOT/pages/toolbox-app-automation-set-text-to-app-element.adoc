@@ -26,6 +26,7 @@ variables.
 
 == Wizard
 
-See Properties and the chapter Common Properties.
-
+See xref:toolbox-app-automation.adoc#app-automation-common-properties[Common Properties (App Automation)].
+////
 You can find further information on environment variables (Insert Environment Variable) and script variables (Insert Script Variable) in the Chapter entitled Insert Special Character / Macro / Script Variable / Environment Variable and Settings.
+////

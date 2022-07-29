@@ -92,8 +92,8 @@ the available APs with the aid of the pin variables.
 *Connecting Activity Parameters to a Gateway*
 
 If you click on the BPMN gateway, a small toolbox opens containing a
-puzzle icon. A wizard opens. You can enter the APs here. (see also
-chapter *Gateway condition expression*.
+puzzle icon. A wizard opens. You can enter the APs here.
+//(see also chapter *Gateway condition expression*.
 //link:#GatewayConditionExpression[Gateway condition expression])
 
 //image:media\image9.jpg[image,width=604,height=137]
@@ -161,3 +161,4 @@ understanding of the relations between the activity parameters:
 * {blank}
 * link:\l[_Workflow Based Variables_] link:#UsingVariables[_Using
 Variables_]
+////

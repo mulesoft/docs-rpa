@@ -43,6 +43,6 @@ To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logou
 
 image:rpa-logout-screen.png[RPA Logout Screen]
 
-= See Also
+== See Also
 
 * xref:user-interface.adoc#settings[User Interface]

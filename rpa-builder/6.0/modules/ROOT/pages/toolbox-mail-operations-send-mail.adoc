@@ -110,9 +110,10 @@ The default value is %STWS_BASEPATH%. Select an existing path.
 To construct the path, you can also insert variables from the workflow.
 //To do this, click on the pin image:media\image6.png[image,width=17,height=24]and select one
 //of the variables available.
-
+////
 You can find further information on the environment variables (Insert
 Environment Variable) and script variables (Insert Script Variable) in
 the Chapter entitled *Settings*.
+////
 
 You can find further explanations under <<Properties>>.
