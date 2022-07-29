@@ -19,8 +19,8 @@ The following table contains the needed privileges:
 
 |===
 
-Your user must be marked as *Project Manager*.
-If there is no fitting category for the process in the *Process Management* view of the *Process Automation* module, create a new one.
+* Your user must be marked as *Project Manager*.
+* If there is no fitting category for the process in the *Process Management* view of the *Process Automation* module, create a new one.
 
 == Claim a Processes
 
