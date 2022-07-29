@@ -27,3 +27,4 @@ Result of the configuration shown above:
 
 image:media\image2.png[Ein Bild, das Text enthält. Automatisch
 generierte Beschreibung,width=332,height=152]
+////

@@ -4,7 +4,7 @@ You evaluate a process candidate to propose it for automation.
 
 == Before You Begin
 
-* The following table contains the needed privileges:
+* Obtain the needed privileges:
 +
 [cols="1,2"]
 |===
@@ -72,10 +72,8 @@ Delete process evaluations that you no longer need:
 
 == See Also
 
-* xref:manager-.adoc[Assigning Privileges to a User]
-
-* xref:manager-.adoc[Categorizing processes]
-
+//* xref:manager-.adoc[Assigning Privileges to a User]
+//* xref:manager-.adoc[Categorizing processes]
 * xref:processevaluation-overview.adoc[Process Evaluation]
 * xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
 * xref:processevaluation-configure.adoc[Configuring Process Evaluations]

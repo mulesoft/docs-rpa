@@ -215,3 +215,4 @@ Script_ Action Step.
 
 image:media\image24.png[Ein Bild, das Text enthält. Automatisch
 generierte Beschreibung,width=318,height=109]
+////

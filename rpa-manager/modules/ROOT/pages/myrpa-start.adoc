@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Starting Automation of Approved Processes
 
@@ -8,7 +8,7 @@ The center of excellence is a user group that, for the approval of an evaluated 
 
 == Before You Begin
 
-* The following table contains the needed privileges:
+* Obtain the needed privileges:
 +
 [cols="1,2"]
 |===

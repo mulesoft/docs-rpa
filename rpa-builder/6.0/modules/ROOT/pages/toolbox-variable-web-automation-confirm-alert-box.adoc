@@ -38,3 +38,4 @@ Here are some example message boxes from _Internet Explorer_:
 
 image:media\image1.png[Ein Bild, das Text enthält. Automatisch
 generierte Beschreibung,width=202,height=137]
+////

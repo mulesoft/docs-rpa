@@ -26,4 +26,4 @@ variables.
 
 == Wizard
 
-See Properties and the chapter Common Properties.
+See xref:toolbox-app-automation.adoc#app-automation-common-properties[Common Properties (App Automation)].

@@ -23,9 +23,11 @@ You should consider the Intelligent OCR 2020 Action Step if more than
 one language is to be recognized at once or if you wish to use your own
 dictionary.
 
+////
 In the following Chapter, we will look at the key differences compared
 to the Action Step Legacy OCR. You can find a detailed description of
 properties, variables, etc. in the Chapter entitled _Text Recognition – Legacy OCR_.
+////
 
 == Properties
 
@@ -125,4 +127,4 @@ image:media\image5.png[image,width=355,height=340]
 
 Here, you can also define the settings for image processing.
 ////
-You can find further explanations under <<Properties>> or in the Chapter entitled _Text Recognition – Legacy OCR_.
+You can find further explanations under <<Properties>>.

@@ -1,4 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
 
 = Process Automation
 
@@ -10,7 +9,7 @@ The processes go through several phases in sequence. In the design phase, a mode
 
 == Before you Begin
 
-* The following table contains the needed privileges:
+* Obtain the needed privileges:
 +
 [cols="1,2"]
 |===
@@ -40,7 +39,7 @@ The processes go through several phases in sequence. In the design phase, a mode
 
 == Definitions
 
-==== BPMN
+=== BPMN
 
 _Business Process Model and Notation (BPMN)_ is a standard specification for diagrams to depict business processes. Such diagrams can be created directly by the process owner and easily translated into a machine-executable program.
 

@@ -78,3 +78,4 @@ relationships between the individual Excel Workflow elements:
 * link:\l[_Workflow Based Variables_]
 * _link:\l[Get Array Count]link:#Array_ReadFromArray[Read from Array]_
 * link:#_Set_Variable[_Set Array Variable_]
+////

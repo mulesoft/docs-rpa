@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Deploying Automations
 
@@ -10,7 +10,7 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 
 == Before You Begin
 
-* The following table contains the needed privileges:
+* Obtain the needed privileges:
 +
 [cols="1,2"]
 |===

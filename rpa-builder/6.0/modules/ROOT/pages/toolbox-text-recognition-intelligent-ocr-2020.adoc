@@ -5,10 +5,11 @@
 The _Intelligent OCR (2020)_ Action Step represents a good alternative
 to the previous OCR (Legacy OCR). The new OCR contains the languages
 Arabic, Greek, Hebrew, and Thai.
-
+////
 In the following Chapter, we will look at the key differences compared
 to the Action Step Legacy OCR. You can find a detailed description of
 the properties, variables, etc. in the Chapter entitled _Text Recognition – Legacy OCR_.
+////
 
 == Properties
 

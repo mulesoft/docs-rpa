@@ -18,8 +18,7 @@ sending a predefined keystroke sequence.
 pause between each keystroke sequence
 * *Use regular expression for window title* You can further distinguish
 between window titles by selecting this checkbox. For a short
-introduction to regular expressions, refer to Chapter
-xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
+introduction to regular expressions, see xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 * *Use window text* Defines if, in addition to the window title, window
 text should also be used to identify the window that the keystrokes
 should be sent to

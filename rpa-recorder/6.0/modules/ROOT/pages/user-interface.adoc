@@ -158,6 +158,6 @@ The about screen contains general information about RPA Recorder:
 //Commenting since it shows version 5.0 and new release is 6.0
 //image:about-screen.png[About Screen]
 
-= See Also
+== See Also
 
 * xref:documents.adoc[Documents]

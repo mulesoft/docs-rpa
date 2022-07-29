@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Analysis Packages
 
@@ -8,7 +8,7 @@ The *Analysis Packages* widget displays the number of analysis packages of all R
 
 *Analysis packages* are normally only created in the event of errors.
 
-Robots, for which the option *Analysis Package on OK* is activated in the  *X1 Bot Configurator*, create an analysis package for each process element during each run.
+Robots, for which the option *Analysis Package on OK* is activated in the  *RPA Bot Configurator*, create an analysis package for each process element during each run.
 
 
 == Data Representation

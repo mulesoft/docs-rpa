@@ -53,7 +53,7 @@ Action Steps or renaming existing ones.
 The red highlighting in the wizard preview immediately shows you where
 the click was executed.
 
-== Supported applicationsSupported applications
+== Supported applications
 
 The following types of applications are supported:
 
@@ -77,14 +77,14 @@ WPF
 
 UWP
 
-
+[[app-automation-common-properties]]
 == Common Properties (App Automation)
-
+////
 The _App Automation_ Action Steps also possess the _common properties_
 of the other Action Steps, as described in the chapter
 Common Properties.
-
-They also have the following properties:
+////
+The following are properties common to all _App Automation_ Action Steps:
 
 *Identify Element*
 

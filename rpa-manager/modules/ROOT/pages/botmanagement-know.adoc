@@ -36,11 +36,11 @@ The bot is outside of its assigned service times.
 |*Processing*
 |
 
-* Cross symbol:
+* Pause symbol:
 +
 The bot is currently not running any deployed processes.
 
-* Check mark symbol:
+* Play symbol:
 +
 The bot is currently running deployed processes.
 
@@ -88,7 +88,7 @@ The bot has been configured for a desktop session. It cannot use secure sessions
 == Before You begin
 
 * At least one bot must be installed on a separate computer.
-* The following table contains the needed privileges:
+* Obtain the needed privileges:
 +
 [cols="1,2"]
 |===
