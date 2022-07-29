@@ -18,8 +18,8 @@ The following table contains the needed privileges:
 
 |===
 
-You can only approve evaluated process candidates.
-You can only refer processes to users assigned as project manager or user groups assigned as center of excellence.
+* You can only approve evaluated process candidates.
+* You can only refer processes to users assigned as project manager or user groups assigned as center of excellence.
 
 == Select a Process for Approval
 
