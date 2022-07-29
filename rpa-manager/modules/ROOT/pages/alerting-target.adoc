@@ -8,7 +8,7 @@ Combine targets to target groups to save time when creating alert rules.
 
 == Before You Begin
 
-The following table contains the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
