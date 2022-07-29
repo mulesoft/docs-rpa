@@ -18,6 +18,7 @@ The following functions are available in RPA Recorder while recording a process:
 |===
 |Icon |Name | Description | Hotkey
 |image:start-recording-icon.png[Start Recording icon, 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
+|image:pause-recording-icon.png[Pause Recording icon, 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
 |image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session. | Finishes the current recording session, and triggers the generation of xref:documents.adoc[Documents] | --
 |image:take-screenshot-icon.png[Take Screenshot icon, 20%, 20%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
 |image:add-variable-icon.png[Add Variable icon, 20%, 20%]  | Add Variable | Opens the <<Add Variable>> dialog. | `F10`
@@ -111,8 +112,6 @@ When you create a Web Task, you can choose to continue using the session of the 
 For User Tasks, RPA Recorder does not save documentation. You need to enter a description instead.
 
 To continue recording, add a Bot Task.
-
-You can also enable or disable the automatic creation of Activities on application changes.
 
 [NOTE]
 Pause the recording before adding an activity or changing the creation mode of the activities. If you open the pop-up using the respective hotkey, while the recording is running, the recording automatically pauses.
