@@ -6,25 +6,25 @@ The *Business Process Performance* widget shows for each process how often the p
 
 The number and average runtimes of this widget only take account of processes that have been completed successfully.
 
-== Data representation
+== Data Representation
 
-The processes are displayed in a list
+The processes are displayed in a list.
 
-=== Columns of the list of Business Process Performance of all processes
+=== Columns of the List of Business Process Performance of All Processes
 
 ==== Process
 
-Name of the process
+Name of the process.
 
 Click on the name of a Process to see details of the individual process runs.
 
-==== Execution count
+==== Execution Count
 
-Number of successful executions of the Process in the defined time period
+Number of successful executions of the Process in the defined time period.
 
-==== Average runtime
+==== Average Runtime
 
-Average runtime of all successful executions of the Process in the defined time period
+Average runtime of all successful executions of the Process in the defined time period.
 
 == Configuration
 
@@ -40,44 +40,44 @@ If you click on the name of a Process, you can view details of the individual ru
 
 The Process runs are displayed in a list.
 
-=== Columns of the list of Business Process Performance of an individual Process
+=== Columns of the List of Business Process Performance of an Individual Process
 
 ==== Robot
 
-Name of the Robot that executed the Process run successfully
+Name of the Robot that executed the Process run successfully.
 
 ==== Configuration
 
-Name of the configuration that was used for the successful run
+Name of the configuration that was used for the successful run.
 
 ==== Type
 
-Type of Process run
+Type of Process run.
 
 ===== Test
 
-The Process was executed as a test run
+The Process was executed as a test run.
 
 ===== Productive
 
-The Process was executed as a productive run
+The Process was executed as a productive run.
 
-==== Start time
+==== Start Time
 
-Time stamp of the start of the Process execution
+Time stamp of the start of the Process execution.
 
 ==== End Time
 
-Time stamp of the end of the Process execution
+Time stamp of the end of the Process execution.
 
 ==== Duration
 
-Duration of the Process execution
+Duration of the Process execution.
 
 ==== Result
 
-Result of the process execution
+Result of the process execution.
 
 ===== Success
 
-The Process run was executed successfully
+The Process run was executed successfully.

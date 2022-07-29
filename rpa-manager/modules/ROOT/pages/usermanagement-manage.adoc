@@ -12,18 +12,18 @@ Manage the users of RPA Manager and RPA Builder:
 
 == Before You Begin
 
-* The tenant admin is created first and can create other users.
-* If you are not a tenant admin, obtain the needed privileges:
+* The tenant admin is created first and can create other users. 
+* If you are not a tenant admin, obtain the needed privileges as follows:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *User Management* module
-|*User Management Open*
+|User Management Open
 
 |Create, edit, license, and delete users
-|*User Management Administration*
+|User Management Administration
 
 |===
 
@@ -56,13 +56,13 @@ Edit a user to change his data or permissions.
 . Edit the form *Edit a User*.
 . Click *Save*.
 
-=== Reset a user password
+=== Reset a User Password
 
 Reset a password if the user forgot it. RPA Manager will send an email containing a new temporary password to the user. The user can then create a new password.
 
 . In the *Users* view of the *User Management* module, click *Reset password* in the table row of the user you want to edit.
 
-=== Change your password
+=== Change Your Password
 
 Change your own password regularly. You will be logged out in the process and have to log in again. The password is used for login to RPA Manager and RPA Builder.
 
@@ -73,7 +73,7 @@ Change your own password regularly. You will be logged out in the process and ha
 . Click *OK*.
 . Log in with your new password.
 
-=== Enable 2FA for your user
+=== Enable 2FA for Your User
 
 Enable Two-Factor-Authentication for extra security.
 

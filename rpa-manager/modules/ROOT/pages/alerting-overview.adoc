@@ -19,5 +19,5 @@ The *Alerts* view shows you all triggered alerts.
 * xref:processautomation-deploy.adoc#view-run-results[View Run Results]
 * xref:botmanagement-overview.adoc[Bot Management]
 
-* xref:alerting-target.adoc[Creating alerting email templates]
+* xref:alerting-target.adoc[Creating Alerting Email Templates]
 * xref:alerting-rule.adoc[Defining Rules for Alerts]

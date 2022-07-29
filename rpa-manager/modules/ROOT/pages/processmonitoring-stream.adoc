@@ -6,14 +6,14 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 
 == Before you begin
 
-* Obtain the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Process Streaming* view
-|*Process Streaming Open*
+|Process Streaming Open
 
 |===
 * Only productive processes for which at least one configuration has been created and for which you are a member of the process team are displayed.
@@ -31,7 +31,6 @@ Watch the process stream to see what is happening right now.
 
 * xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
 * xref:processautomation-deploy.adoc[Deploying Automations]
-
 * xref:processmonitoring-overview.adoc[Process Monitoring]
 //* xref:processmonitoring-stream.adoc[Streaming Processes]
 * xref:processmonitoring-queue.adoc[Queueing Process Sessions]

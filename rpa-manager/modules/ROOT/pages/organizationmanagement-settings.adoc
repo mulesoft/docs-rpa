@@ -4,17 +4,17 @@ The *Settings* view enables you to configure the currency and decimal sign to sh
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
-|View configured settings for your organization.
-|*Organization Management Open*
+|View configured settings for your organization
+|Organization Management Open
 
-|Add or modify settings for your organization.
-|*Organization Management Administration*
+|Add or modify settings for your organization
+|Organization Management Administration
 |===
 
 == Configure Currency and Decimal Sign

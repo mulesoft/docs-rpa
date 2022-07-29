@@ -8,14 +8,14 @@ The center of excellence is a user group that, for the approval of an evaluated 
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Start automation of a process.
-|*Process Automation Open*, *Process Create*
+|Process Automation Open, Process Create
 
 |===
 
@@ -50,7 +50,7 @@ Select all applications here that are required to carry out the process. All app
 +
 The process team is a group of employees who work together on execution of the process automation. Select all team members from the text selection field. Then, by selecting the relevant checkboxes in the table, you can authorize the team members to work on the processes in the various phases. By default, each team member has authorization to transfer the process from their own phase to the next phase. If approval for the next phase is only to be carried out by specific team members, then select the checkbox *Advanced Permissions* to assign authorizations for approval separately. All team members have read access to the project in all phases. The project manager is always part of the team and also always has all authorizations. If the checkbox *Advanced Permissions* is deselected, the values of this column are no longer taken into account. In that case, only that user who has authorization to work on a phase can transfer the Process to the next phase.
 * *Process Costs*:
-** *Initial Investment for the Process Automation*
+** *Initial Investment for the Process Automation*:
 +
 The initial investment for the acquisition of the MuleSoft RPA solution and the necessary infrastructure is required for the finance analysis.
 
