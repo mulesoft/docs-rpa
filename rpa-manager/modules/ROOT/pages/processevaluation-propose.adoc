@@ -27,7 +27,7 @@ The following table contains the needed privileges:
 
 |===
 
-Create appropriate categories in the view *Process Management* in the module *Process Automation*.
+* Create appropriate categories in the view *Process Management* in the module *Process Automation*.
 
 == Manage Process Evaluations
 
