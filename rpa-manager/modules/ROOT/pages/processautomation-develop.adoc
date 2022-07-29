@@ -18,7 +18,7 @@ As long as the project is in the build phase, it can be seen in the repository o
 
 == Before You Begin
 
-The following table contains the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
