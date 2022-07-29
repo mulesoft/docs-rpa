@@ -87,6 +87,8 @@ The bot has been configured for a desktop session. It cannot use secure sessions
 
 == Before You begin
 
+* At least one bot must be installed on a separate computer.
+
 The following table contains the needed privileges:
 +
 [cols="1,2"]
@@ -97,8 +99,6 @@ The following table contains the needed privileges:
 |Robot Management Open
 
 |===
-
-* Note that at least one bot must be installed on a separate computer.
 
 == Find Bots
 
