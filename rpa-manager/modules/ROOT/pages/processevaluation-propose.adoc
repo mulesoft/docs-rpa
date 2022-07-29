@@ -4,30 +4,30 @@ You evaluate a process candidate to propose it for automation.
 
 == Before You Begin
 
-* Obtain the needed privileges:
+The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
-|Open the *Process Evaluation* module and view only processes that you have created yourself, that is, for which you are the process owner.
-|*Process Evaluation Open*
+|Open the *Process Evaluation* module and view only processes that you have created yourself, that is, for which you are the process owner
+|Process Evaluation Open
 
 |Display all processes in the *Process Evaluation* view
-|*Global Process Evaluation View*
+|Global Process Evaluation View
 
 |Create, edit, and delete evaluations
-|*Process Evaluation Administration*
+|Process Evaluation Administration
 
 |Open the *Evaluation Templates* view
-|*Evaluation Templates Open*
+|Evaluation Templates Open
 
 |Create, change, and delete evaluation criteria
-|*Evaluation Template Create*, *Evaluation Template Edit*, *Evaluation Template Delete*.
+|Evaluation Template Create, Evaluation Template Edit, Evaluation Template Delete
 
 |===
 
-* Create appropriate categories in the view *Process Management* in the module *Process Automation*.
+Create appropriate categories in the view *Process Management* in the module *Process Automation*.
 
 == Manage Process Evaluations
 
@@ -76,7 +76,7 @@ Delete process evaluations that you no longer need:
 
 * xref:manager-.adoc[Categorizing processes]
 
-* xref:processevaluation-overview.adoc[Overview Process Evaluation]
+* xref:processevaluation-overview.adoc[Process Evaluation]
 * xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
 * xref:processevaluation-configure.adoc[Configuring Process Evaluations]
 //* xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]

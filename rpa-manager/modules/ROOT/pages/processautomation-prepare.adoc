@@ -6,23 +6,23 @@ Create and document the environment for the automation of processes.
 
 == Before You Begin
 
-* Obtain the needed privileges:
+The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Process Automation* module
-|*Process Automation Open*
+|Process Automation Open
 
 |Create and change global variables and credentials that can be used in the test phase
-|*Global Variables Create for Test phase*, *Global Variables Edit for Test phase*
+|Global Variables Create for Test phase, Global Variables Edit for Test phase
 
 |Create and change global variables and credentials that can be used in the production phase
-|*Global Variables Create for Production phase*, *Global Variables Edit for Production phase*
+|*Global Variables Create for Production phase, Global Variables Edit for Production phase
 
 |Delete global variables and credentials
-|*Global Variables Delete*
+|Global Variables Delete
 
 // Will be implemented in a future release?
 //|Address the Global Variables via the RPA Public RESTful API

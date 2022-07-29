@@ -8,17 +8,17 @@ Combine targets to target groups to save time when creating alert rules.
 
 == Before You Begin
 
-* Obtain the needed privileges:
+The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Alerting* module
-|*Alerting Open*
+|Alerting Open
 
 |Create, edit and delete alerting targets and rules.
-|*Alerting Administration*
+|Alerting Administration
 
 |===
 
@@ -37,6 +37,5 @@ Click on the *Keywords* icon to add placeholders to the subject or the body of t
 == See Also
 
 * xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
-
 * xref:alerting-overview.adoc[Alerting Overview]
 * xref:alerting-rule.adoc[Defining Rules for Alerts]

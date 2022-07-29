@@ -44,7 +44,7 @@ Assign process applications to bots that can access them.
 . In the form *<bot name>* click on all service times and applications you want to assign.
 . Click *Save*.
 
-== Edit a bot
+== Edit a Bot
 
 Edit a bot to change its properties. Hostname, IP address, version, and timezone are fixed values taken from the computer the bot is installed on.
 
@@ -52,7 +52,7 @@ Edit a bot to change its properties. Hostname, IP address, version, and timezone
 . Edit the form <*bot name*>.
 . Click *Save*.
 
-== Remove a bot
+== Remove a Bot
 
 After deinstallation or reconfiguration, a bot is still shown in the *Bots* view. You need to manually remove the bot from the view.
 
@@ -63,7 +63,7 @@ If you accidentally remove a bot that is still being executed, it will reappear 
 
 == See Also
 
-* xref:.adoc[System and Hardware Requirements]
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
 * xref:botmanagement-overview.adoc[Bot Management]
 * xref::botmanagement-support.adoc[Supporting Bots]
 * xref::botmanagement-know.adoc[Getting to Know Bots]

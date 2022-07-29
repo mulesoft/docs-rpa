@@ -6,7 +6,7 @@ The widget *Profit Analysis: Process Time* shows the execution duration of a pro
 
 The times are shown individually for each configuration.
 
-== Data representation
+== Data Representation
 
 The execution duration of the individual configurations is shown as a line chart. A colored line corresponds to a configuration.
 

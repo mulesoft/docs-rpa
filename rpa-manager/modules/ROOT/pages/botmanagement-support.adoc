@@ -46,7 +46,7 @@ When you delete an API key, the system does not check whether the key is assigne
 . In the *API Key* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the API key you want to remove.
 . Confirm the removal.
 
-=== Copy an API key to the clipboard
+=== Copy an API Key to the Clipboard
 
 Copy an API key to the clipboard to paste it into the according field during installation or configuration of a bot.
 

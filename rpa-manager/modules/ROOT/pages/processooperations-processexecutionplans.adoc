@@ -12,17 +12,17 @@ Processes are executed if following prerequisites are fulfilled:
 
 == Before You Begin
 
-* Obtain the needed privileges:
+The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
-|Open the *Process Execution Plans* view and see all processes for which you are part of the process team.
-|*Process Execution Plans Open*
+|Open the *Process Execution Plans* view and see all processes for which you are part of the process team
+|Process Execution Plans Open
 
-|Open the *Process Execution Plans view and see all processes of all teams.
-|*Global Process Execution Plans View*
+|Open the *Process Execution Plans view and see all processes of all teams
+|Global Process Execution Plans View
 
 |===
 
@@ -40,5 +40,5 @@ If there are more sessions assigned than free sessions available, the number of 
 == See Also
 
 * xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
-* xref:processautomation-deploy.adoc[Deploying Process Automations]
+* xref:processautomation-deploy.adoc[Deploying Automations]
 * xref:processmonitoring-queue.adoc[Queuing Process Sessions]
