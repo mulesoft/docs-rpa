@@ -1,30 +1,28 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Combine Strings
+
+= Combine Strings
 
 The _Combine Strings Action Step_ allows multiple variables to be
 combined into a single new variable. Script variables, environment
 variables and _Pin_ variables can be used. Text can be inserted before,
 after, and between variables.
 
-=== Properties
+== Properties
 
-[#AS_CombineStrings_P_PatternText .anchor]####**Pattern Text** This text
-defines the sequence in which variables and texts will be concatenated.
+*Pattern Text* This text defines the sequence in which variables and texts will be concatenated.
 
-=== Inbound Variables
+== Inbound Variables
 
-link:#AS_CombineStrings_P_PatternText[*Pattern*]
+//link:#AS_CombineStrings_P_PatternText[*Pattern*]
+*Pattern* This text defines the sequence in which variables and texts will be concatenated.
 
-=== Outbound Variables
+== Outbound Variables
 
-*Combined String* The combined strings stated as a single string, as
-defined in the Pattern Text
+*Combined String* The combined strings stated as a single string, as defined in the Pattern Text
 
-=== Wizard
+== Wizard
 
-image:media\image1.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=376,height=222]
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=376,height=222]
 
 The wizard contains the pattern text field which can be edited, two
 drop-down lists of script and environment variables, and links to the
@@ -65,9 +63,9 @@ a new variable using different _Pattern Texts_:
 |===
 |*ActivityParameters.ap_alpha1* |*ActivityParameters.ap_alpha2*
 |*Pattern Text* |*Output Variable _(Combined String)_*
-|servicetrace |De |www.\{1}.\{2} |www.servicetrace.de
+|mulesoft |com |www.\{1}.\{2} |www.mulesoft.com
 
-|servicetrace |Info |www.\{1}.\{2} |www.servicetrace.info
+|mulesoft |Info |www.\{1}.\{2} |www.mulesoft.info
 
 |Ms |Miller |Dear \{1}. \{2}, |Dear Ms. Miller,
 

@@ -1,29 +1,29 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Read Text from App Element
+
+= Read Text from App Element
 
 The _Read Text From App Element_ Action Step lets you read the text from
 a selected App Element. The extracted text is then available for further
 processing as an outbound variable.
 
-=== PropertiesProperties
+== Properties
 
 The _Read Text from App Element_ Action Step does not have any special
 properties.
 
-=== Inbound Variables
+== Inbound Variables
 
 *XPath to Element*
 
 *Window Title*
 
-=== Outbound Variables
+== Outbound Variables
 
 *Read Text* Outputs the text that was read by the Action Step.
 
 *Has Content* Indicates whether the extracted text has content (true) or
 is blank (false).
 
-=== Wizard
+== Wizard
 
 See Properties and the chapter Common Properties.

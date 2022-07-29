@@ -1,9 +1,9 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Common Properties (Web Automation)
 
-The _Web Automation_ _Action Steps_ share the
-link:#CommonProperties[_Common Properties_].
+= Common Properties (Web Automation)
+
+The _Web Automation_ _Action Steps_ share the _Common Properties_.
+//link:#CommonProperties[_Common Properties_].
 
 Additionally, they have the following _Common Properties_:
 

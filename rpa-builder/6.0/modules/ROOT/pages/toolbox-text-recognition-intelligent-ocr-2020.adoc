@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Intelligent OCR (2020)
+
+= Intelligent OCR (2020)
 
 The _Intelligent OCR (2020)_ Action Step represents a good alternative
 to the previous OCR (Legacy OCR). The new OCR contains the languages
@@ -8,10 +8,9 @@ Arabic, Greek, Hebrew, and Thai.
 
 In the following Chapter, we will look at the key differences compared
 to the Action Step Legacy OCR. You can find a detailed description of
-the properties, variables, etc. in the Chapter entitled
-link:#OCR_TextRecognition[_Text Recognition – Legacy OCR_].
+the properties, variables, etc. in the Chapter entitled _Text Recognition – Legacy OCR_.
 
-=== Properties
+== Properties
 
 *Color Depth* (bpc) In documents with many images and colors, a setting
 with low color depth leads to faster search results. You can select a
@@ -23,42 +22,22 @@ the text is improved.
 
 *Image Type*
 
-* {blank}
-+
-____
-*Auto* (default) The document type is determined automatically
-____
-* {blank}
-+
-____
-*Document* Can improve the OCR operation of a document (PDF)
-____
-* {blank}
-+
-____
-*Snippet* Can improve the OCR operation of selected text sections
-____
+* *Auto* (default) The document type is determined automatically
+* *Document* Can improve the OCR operation of a document (PDF)
+* *Snippet* Can improve the OCR operation of selected text sections
 
 *Recognition Strategy*
 
-* {blank}
-+
-____
-*Fast* The OCR operation is carried out faster but this can lead to
+* *Fast* The OCR operation is carried out faster but this can lead to
 poorer scan quality
-____
-* {blank}
-+
-____
-*Advanced* (default) The OCR operation can take longer but the results
-are optimal.
-____
+* *Advanced* (default) The OCR operation can take longer but the results
+are optimal
 
-=== Outbound Variables
+== Outbound Variables
 
 The outbound variables are identical to those in the Legacy OCR.
 
-=== Wizard
+== Wizard
 
 *Scaling Mode*
 

@@ -1,0 +1,44 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Process Execution Plans
+
+The process execution plans show you the times processes are executed.
+
+Processes are executed if following prerequisites are fulfilled:
+
+* The current time lies inside the time interval defined by at least one schedule in the run configuration.
+* The current time lies inside the time interval defined by at least one service of the bot.
+* The current time lies and that lie outside of all downtimes of all application used by this process.
+
+== Before You Begin
+
+* The following table contains the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Execution Plans* view and see all processes for which you are part of the process team
+|Process Execution Plans Open
+
+|Open the *Process Execution Plans view and see all processes of all teams
+|Global Process Execution Plans View
+
+|===
+
+// Configure an Execution Timetable
+
+== View the Execution Timetable of a Process
+
+View the execution timetable to see the effective run time of a process.
+
+If there are more sessions assigned than free sessions available, the number of runs of a process within this timeframe depends on its priority.
+
+. In the *Process Execution Plans* view of the *Process Operations* module, click the icon *Execution timetable* in the table row of the process you want to view.
+. Click on the Gantt chart of a configuration to view the composition of the effective runtime.
+
+== See Also
+
+* xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
+* xref:processautomation-deploy.adoc[Deploying Automations]
+* xref:processmonitoring-queue.adoc[Queuing Process Sessions]

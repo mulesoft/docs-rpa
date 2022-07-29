@@ -1,10 +1,10 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Sleep
+
+= Sleep
 
 This _Action Step_ causes the _Workflow_ to be paused for the specified
 duration.
 
-=== Properties
+== Properties
 
 *Sleep interval, msec* Pause time in milliseconds

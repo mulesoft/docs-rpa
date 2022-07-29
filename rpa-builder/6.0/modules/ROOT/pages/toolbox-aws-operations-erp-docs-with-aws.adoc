@@ -1,8 +1,8 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = ERP Docs With AWS
 
-The ERP Docs with AWS enables you to use Amazon Textract to analyze invoices and receipts to extract relevant data. The Amazon Textract service requires an S3 document as input and an S3 bucket name. If the bucket does not exist, MuleSoft creates one with the provided name.
+The ERP Docs with AWS enables you to use Amazon Textract to analyze invoices and receipts to extract relevant data. 
 
 == Inbound Variables
 

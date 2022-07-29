@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== General Start and Stop Timer
+
+= General Start and Stop Timer
 
 _General timers_ are used to measure whole _Transactions_.
 
@@ -10,15 +10,15 @@ _Transaction_ elements for which the run time is to be measured.
 _General timers_ are *not* valid as _Measurement Points_ and cannot
 therefore be linked to a _Data Source_.
 
-=== Properties
+== Properties
 
 * *Timer name* Name that will be written to the output file.
 
-=== Inbound Variables
+== Inbound Variables
 
 The _General Timer Start and Stop Timer_ possesses no inbound variables.
 
-=== Outbound Variables
+== Outbound Variables
 
 The _General Timer Start and Stop Timer_ possesses no outbound
 variables.

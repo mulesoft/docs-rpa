@@ -4,21 +4,21 @@ Bots can be licensed to use secure sessions. Some properties, like name, service
 
 == Before You begin
 
-* At least one bot must be installed on a separate computer
-* If you want to assign secure sessions to a bot, make sure that a terminal server software is installed on the computer of the bot
+* At least one bot must be installed on a separate computer.
+* If you want to assign secure sessions to a bot, make sure that a terminal server software is installed on the computer of the bot.
 * If you want to assign service times to a bot, you need to create them in the *Service Times* view of the *Bot Management* module first.
 * If you want to assign process applications to a bot, you need to create them in the *Process Applications* view of the *Process Automation* module first.
-* Obtain the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Bot Management* module and view the bots
-|*Robot Management Open*
+|Robot Management Open
 
 |License, edit, and remove bots
-|*Robot Management Administration*
+|Robot Management Administration
 
 |===
 
@@ -41,17 +41,17 @@ Assign process applications to bots that can access them.
 
 . In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the row of the bot you want to edit.
 . In the form *<bot name>* click on all service times and applications you want to assign.
-. Click *Save*
+. Click *Save*.
 
-== Edit a bot
+== Edit a Bot
 
 Edit a bot to change its properties. Hostname, IP address, version, and timezone are fixed values taken from the computer the bot is installed on.
 
 . In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the row of the bot you want to edit.
-. Edit the form <*bot name*>
-. Click *Save*
+. Edit the form <*bot name*>.
+. Click *Save*.
 
-== Remove a bot
+== Remove a Bot
 
 After deinstallation or reconfiguration, a bot is still shown in the *Bots* view. You need to manually remove the bot from the view.
 
@@ -62,7 +62,7 @@ If you accidentally remove a bot that is still being executed, it will reappear 
 
 == See Also
 
-* xref:.adoc[System and Hardware Requirements]
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
 * xref:botmanagement-overview.adoc[Bot Management]
 * xref::botmanagement-support.adoc[Supporting Bots]
 * xref::botmanagement-know.adoc[Getting to Know Bots]

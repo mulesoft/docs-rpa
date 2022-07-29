@@ -1,52 +1,45 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Stopwatch
+
+= Stopwatch
 
 The _Stopwatch_ is basically a combined _Start/Stop Timer_ with a clear
 graphical representation. It also enables you to use additional timer
 modes in combination with the _Loop_ item.
 
-=== Properties
+== Properties
 
 *Timer mode* Decide how the measured time will be computed when the
 _Stopwatch_ is within a _Loop_. See below for details.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Suffix* can be used if the _Stopwatch_ is within the _Control Block_'s
 _File Controlled Loop_. A suffix is then added to the name of the
 _Stopwatch_ during every loop. Each suffix is a column entry in the file
 that was imported in the _File Controlled Loop_.
 
-=== Outbound Variables
+== Outbound Variables
 
 The Action Step _Stopwatch_ has no outbound variables.
 
-=== Wizard
+== Wizard
 
 The _Stopwatch_ wizard is similar to the _Transaction_ wizard. It
 suggests the name of the surrounding _Transaction_ to be _Stopwatch_ by
 default. Just edit the name to change it if required.
 
-=== Timer Modes (Using the Stopwatch within a Loop)
-
+== Timer Modes (Using the Stopwatch within a Loop)
+////
 image:media\image1.png[image,width=303,height=128]The example to the
 left launches an application, checks if it is loaded via _Image search_,
 and then kills the application again. It will repeat this five times and
-each run will be measured by the _Stopwatch_. Use the _Timer mode_
-setting for the _Stopwatch_ to determine how the measurement value is
+each run will be measured by the _Stopwatch_.
+////
+Use the _Timer mode_ setting for the _Stopwatch_ to determine how the measurement value is
 calculated:
 
-* {blank}
-+
-____
-*Last* The last measured time is saved
-____
-* {blank}
-+
-____
-*Average* The Workflow calculates an average value of all measured times
+* *Last* The last measured time is saved
+* *Average* The Workflow calculates an average value of all measured times
 and saves it
-____
 * *Min* The fastest measured time is saved
 * *Max* The slowest measured time is saved

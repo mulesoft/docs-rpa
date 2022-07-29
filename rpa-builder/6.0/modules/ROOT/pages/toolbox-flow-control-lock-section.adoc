@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Lock Section
+
+= Lock Section
 
 The _Lock Section_ Action Step is used to synchronize access if multiple
 parallel _Workflows_ need to access a file or a mailbox, for example in
@@ -15,7 +15,7 @@ running on virtual machines on a server, then a file can be locked in
 synchronization on this server in order to allow certain content to be
 read out alternately.
 
-=== Properties
+== Properties
 
 *Misc*
 
@@ -30,10 +30,9 @@ _Robot Secure_ and individual _Secure Sessions_, there is no guarantee
 that this ID will be unique.
 
 Other Properties that are the same in all Action Steps are described in
-the section on Common Properties. For reasons of
-clarity they are not shown here.
+the section on *Common Properties*. For reasons of clarity they are not shown here.
 
-=== Wizard
+== Wizard
 
 * *Lock on Workflow GUID* Enable this option if parallel executions of
 the same Workflow need to be synchronized across various _Secure

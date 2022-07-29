@@ -1,16 +1,16 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== REST Call
+
+= REST Call
 
 You can use the _REST Call Action Step_ to fetch data directly from a
-server and to collect the required information in a simple way
+server and to collect the required information in a simple way.
 
 You define the end point as you wish and you can assign parameters or
 process variables to the call. This enables you to flexibly address any
 REST interface. The response in JSON format (or XML) can be used as a
 source variable during the remainder of the process run.
 
-=== REST Call via a proxy
+== REST Call via a proxy
 
 You can also make the REST Call via a proxy server. To do this, the REST
 Call Action Step automatically retrieves the necessary information from
@@ -23,26 +23,19 @@ located in the Workflow Initialization block.
 For more information about the settings options, see chapter 2.6.5
 Settings.
 
-=== Properties
+== Properties
 
 *REST Call Settings*
 
-[#AS_RestCall_P_BaseUrl .anchor]####**Base Url** Here, the end point
-entered in the wizard is displayed.
+*Base Url* Here, the end point entered in the wizard is displayed.
 
-[#AS_RestCall_P_JsonPath .anchor]####**Json Path** Displays the JsonPath
-Expression, such as $.access_token.
+*Json Path* Displays the JsonPath Expression, such as $.access_token.
 
-[#AS_RestCall_P_MethodType .anchor]####**Method Type** REST guidelines
+*Method Type* REST guidelines
 recommend the user of a specific HTTP method for a specific type of
 calls to the server.
 
-image:media\image1.png[Ein Bild, das Tisch enthält. Automatisch
-generierte Beschreibung,width=103,height=123]
-
-You can find more information on HTTP methods here:
-
-https://www.w3schools.com/tags/ref_httpmethods.asp
+//image:media\image1.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=103,height=123]
 
 *Parse Type* You can choose between JsonPath and XPath.
 
@@ -51,7 +44,7 @@ exactly the information that you require without having to use special
 scripting. This simplifies further processing for you as you can access
 the desired result immediately.
 
-With the _link:#AS_JsonQuery[Json Query]_ Action Step, you also have the
+With the _Json Query_ Action Step, you also have the
 option of reading individual values from the Json object and thus
 specifying the result further.
 
@@ -60,26 +53,27 @@ specifying the result further.
 *Request Body Type* Here you can choose between _JSON_ and _Form URL
 encoded._
 
-[#AS_RestCall_P_UrlExtension .anchor]####**Url Extension** A path
-parameter that uniquely identifies the resource.
+*Url Extension* A path parameter that uniquely identifies the resource.
 
-[#AS_RestCall_P_XPath .anchor]####**XPath** Displays the Xpath
-expression, for example, /root/access_token/text().
+*XPath* Displays the Xpath expression, for example, /root/access_token/text().
 
-=== Inbound Variables
+== Inbound Variables
 
-link:#AS_RestCall_P_BaseUrl[*Base Url*]
+//link:#AS_RestCall_P_BaseUrl[*Base Url*]
+*Base Url* Here, the end point entered in the wizard is displayed.
 
-link:#AS_RestCall_P_UrlExtension[*Url Extension*]
+//link:#AS_RestCall_P_UrlExtension[*Url Extension*]
+*Url Extension* A path parameter that uniquely identifies the resource.
 
-link:#AS_RestCall_P_JsonPath[*JsonPath Expression*]
+//link:#AS_RestCall_P_JsonPath[*JsonPath Expression*]
+*Json Path Expression* Displays the JsonPath Expression, such as $.access_token.
 
-link:#AS_RestCall_P_XPath[*XPath Expression*]
+//link:#AS_RestCall_P_XPath[*XPath Expression*]
+*XPath Expression* Displays the Xpath expression, for example, /root/access_token/text().
 
-=== Outbound Variables
+== Outbound Variables
 
-*IsSuccessful* (boolean) Shows whether the REST Call was successful or
-not.
+*IsSuccessful* (boolean) Shows whether the REST Call was successful or not.
 
 *ResponseBody* (string) Returns the requested information as a string.
 
@@ -91,17 +85,17 @@ transferred in the answer
 
 *ArrayCount* Indicates the number of elements of the returned array.
 
-=== Wizard
+== Wizard
 
 The wizard is split into the **Settings a**nd *Parameters* areas.
 
-In *Settings*, you specify the link:#AS_RestCall_P_MethodType[*Method
-Type*], that is, the required HTTP method. In the *Base Url*, you
+In *Settings*, you specify the *Method Type*, that is, the required HTTP method. In the *Base Url*, you
 specify the Host and Base Path. With the *Url Extension*, you uniquely
-identify the resource. You can either just type in the URL or define it
-via the pin variable image:media\image2.png[image,width=16,height=20].
+identify the resource.
+You can either just type in the URL or define it via the pin variable.
+//image:media\image2.png[image,width=16,height=20].
 
-image:media\image3.png[image,width=604,height=25]
+//image:media\image3.png[image,width=604,height=25]
 
 In the *Parameters* area, you provide the required information to the
 end point. There are various options for this, you can enter the
@@ -112,13 +106,13 @@ _Header Parameter_ or _Query Parameter_.
 With the *Request Body*, you send data to the server, including, for
 example, the form of communication between the server and the client.
 According to convention, the methods GET, HEAD and DELETE do not require
-a body (see also the network protocol
-https://tools.ietf.org/html/rfc7231[RFC 7231]).
+a body (see also the network protocol RFC 7231).
 
 In addition, in the Parameters area, on the left of the screen, you can
 find the mapped variables and their *Test Values.* The mapping is
-carried out via the Pin variable
-image:media\image4.png[image,width=15,height=21]. With the Test Values,
+carried out via the Pin variable.
+//image:media\image4.png[image,width=15,height=21].
+With the Test Values,
 you can check if the REST Call runs successfully. To do this, having
 entered all the data, click on *_Send_* at the bottom right of the
 wizard.
@@ -126,7 +120,7 @@ wizard.
 The (real) values of the mapped variables are not effective until the
 production run of the Workflow.
 
-image:media\image5.png[image,width=315,height=87]
+//image:media\image5.png[image,width=315,height=87]
 
 To insert the variables with the test values, click
 
@@ -136,8 +130,7 @@ variables_
 . on the right, on the relevant variable (\{A}, \{B}, \{C},... ). The
 variable is then inserted at this position
 
-image:media\image6.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=213,height=183]
+//image:media\image6.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=213,height=183]
 
 In the upper area, the body is displayed with the contained variables,
 in the lower area, it is displayed with the broken down variables of the
@@ -156,27 +149,22 @@ be added with the ' X-’ prefix, for example, x-Customer – Customer ID.
 Here, you typically provide the login information for authentication of
 a user to a server.
 
-image:media\image7.png[image,width=317,height=55]
-
-You can find more information on HTTP headers here:
-
-https://en.wikipedia.org/wiki/List_of_HTTP_header_fields
+//image:media\image7.png[image,width=317,height=55]
 
 With the *Query Parameter*, you filter the resource and you can add
 further information such as login information.
 
-image:media\image8.png[image,width=331,height=85]
+//image:media\image8.png[image,width=331,height=85]
 
 In the *Result Viewer*, in the text results, you can view the entire
 returned body, and in the parsed results, you can view the result
 specified with JsonPath or Xpath.
 
-image:media\image9.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=604,height=136]
+//image:media\image9.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=604,height=136]
 
 For the other menu options, see also Properties.
-
-=== Example
+////
+== Example
 
 In this example, login data is called up from a server via REST Call.
 

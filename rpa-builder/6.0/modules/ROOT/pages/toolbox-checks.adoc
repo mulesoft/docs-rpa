@@ -1,5 +1,21 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Checks
 
-Overview of section.
+Checks are different types of validations that you can add as action steps of an automation project.
+
+* xref:toolbox-checks-check-process.adoc[Check Process]
++
+This Action Step enables you to check if a process is running or not and either kill it or launch another program.
+* xref:toolbox-checks-image-search.adoc[Image Search]
++
+This Action Step searches for a user-defined image, waits until it appears or disappears, and can also be used as a relative anchor point for mouse clicks.
+* xref:toolbox-checks-screenshot.adoc[Screenshot]
++
+This Action Step takes a screenshot and saves it to the trace folder. You can use it to get feedback on what is happening at any point in a Workflow.
+* xref:toolbox-checks-search-pattern.adoc[Search Pattern]
++
+The Search Pattern Action Step searches for one or more patterns within a defined Search Area on the screen.
+* xref:toolbox-checks-window-wait.adoc[Window Wait]
++
+The Action Step Window Wait pauses the Workflow until a certain window is displayed or not displayed.

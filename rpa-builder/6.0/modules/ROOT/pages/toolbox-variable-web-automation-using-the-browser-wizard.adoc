@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Using the Browser Wizard
+
+= Using the Browser Wizard
 
 The _Browser Wizard_ can be used inside _Web Automation Action Step_
 wizards. Essentially it behaves like a normal browser and enables
@@ -13,7 +13,7 @@ window that functions as a browser. The URL that was defined as the
 initial URL for the enclosing _Web Session_ will be loaded
 automatically.
 
-image:media\image1.png[image,width=539,height=278]
+//image:media\image1.png[image,width=539,height=278]
 
 If you started the _Web Session_ with _about:blank_, you can enter a URL
 to navigate to in the address bar at the top of the _Browser Wizard_.
@@ -24,11 +24,11 @@ check or use within a _Web Automation_ object. The element will be
 highlighted with a blue border. If moving the mouse over the elements
 does not highlight them, click on the website or web application within
 the _Browser Wizard_ to activate it first.
-
+////
 image:media\image2.png[Ein Bild, das Text, Screenshot, computer,
 Computer enthält. Automatisch generierte
 Beschreibung,width=504,height=265]
-
+////
 To select the highlighted element press *_F2_*. The border will turn
 blue and the _XPath_ and available attributes corresponding to this
 element will be shown on the right.
@@ -36,6 +36,6 @@ element will be shown on the right.
 Alternatively, first click the _Auto-Select after 5 Seconds_ button and
 then highlight the element by hovering the mouse over it. After five
 seconds, the highlighted object will automatically be selected.
-
+////
 image:media\image3.png[Ein Bild, das Text enthält. Automatisch
 generierte Beschreibung,width=144,height=368]

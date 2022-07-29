@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Search Pattern
+
+= Search Pattern
 
 The _Search Pattern_ _Action Step_ searches for one or more patterns
 within a defined _Search Area_ on the screen.
@@ -25,7 +25,7 @@ The search can be tested prior to executing the _Workflow_. An
 evaluation window shows possible matches and provides information about
 how search results could be improved.
 
-=== Properties
+== Properties
 
 *Image Processing*
 
@@ -100,7 +100,7 @@ either until it is successful or the _Action Step_ times out. A value of
 having been found. The _Action Step_ does not then wait beyond its
 runtime.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Find Coordinate*
 
@@ -108,7 +108,7 @@ If there is at least one other Action Step that uses patterns before the
 Action Step Search Pattern, the outbound variable _Find coordinate_
 becomes the inbound variable for the subsequent Action Steps.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Find Coordinate* Top
 left corner of the pattern that has been found successfully. If a search
@@ -130,10 +130,10 @@ _Found Matched Pattern Count_ is 0, if _Search Pattern_ returns an
 error. Even, if matches for patterns of the _Regular_ category are
 found.
 
-=== Wizard
+== Wizard
 
 
-The __Search Pattern W__izard is for selecting _Search Patterns_ and the
+The __Search Pattern W__izard enables you to select _Search Patterns_ and the
 key search settings.
 
 The basic functionality of the _Pattern Strip_, including all
@@ -141,9 +141,9 @@ pattern operations, is described in the section Pattern Strip.
 
 Click _OK_ to confirm the configuration settings or _Cancel_ as
 applicable. The _Test_ button evaluates the search and displays the
-results in the link:#test[Search Results] window.
+results in the _Search Results]_ window.
 
-=== Regular Patterns
+== Regular Patterns
 
 This section lists patterns that are to be found. The number of patterns
 that can be found is limited to 25.
@@ -170,7 +170,7 @@ the same pattern appears multiple times.
 Patterns may be chosen from the _Pattern Gallery_ or created by means of
 a screenshot (_Capture_).
 
-image::toolbox-checks-search-pattern-image1.png[Example patterns]
+//image::toolbox-checks-search-pattern-image1.png[Example patterns]
 
 Click to select one or multiple patterns and delete or move them as a
 group. When a pattern is selected, a white tick will appear on a green
@@ -182,7 +182,7 @@ border. This image can be used as a reference point for other Action
 Steps as the Workflow progresses (see Other Uses of Matched Patterns).
 
 
-=== Capture Pattern
+== Capture Pattern
 
 One way of defining a pattern is to take a screenshot that shows it.
 
@@ -192,7 +192,7 @@ section Capturing the Search Pattern.
 All patterns captured using the _Search Pattern_ _Action Step_ are
 transferred to the _Workflow_'s _Pattern Gallery_.
 
-=== Add Pattern from Gallery
+== Add Pattern from Gallery
 
 If the _Pattern Gallery_ for the _Workflow_ already contains patterns,
 they can be added to the list of patterns for the _Action Step_ using
@@ -204,7 +204,7 @@ background in the top right corner indicates patterns which are already
 included in the _Search Pattern_ _Action Step_. Patterns already
 included in another category of the same _Action Step_ are not shown.
 
-image::toolbox-checks-search-pattern-image2.png[Select patterns to add]
+//image::toolbox-checks-search-pattern-image2.png[Select patterns to add]
 
 To add patterns to the search, simply use the mouse to click and select.
 Use the same method to deselect patterns which should no longer be
@@ -213,9 +213,9 @@ included in the search.
 Click OK to confirm the selection and add it to the pattern list for the
 _Action Step_.
 
-=== Ignore All Matches within These Patterns
+== Ignore All Matches within These Patterns
 
-image::toolbox-checks-search-pattern-image3.png[Example pattern]
+//image::toolbox-checks-search-pattern-image3.png[Example pattern]
 
 If checking for the single occurrence of a pattern that may be part of
 other patterns, you must exclude patterns containing the searched-for
@@ -235,9 +235,9 @@ It is therefore not sufficient in the above example to capture staff
 with free space at the right edge, because this free space will not form
 part of the pattern being searched for due to a lack of _features_.
 
-=== Make Sure None of These Patterns Appear
+== Make Sure None of These Patterns Appear
 
-image::toolbox-checks-search-pattern-image4.png[Example for exluded patterns]
+//image::toolbox-checks-search-pattern-image4.png[Example for exluded patterns]
 
 The _Search Pattern_ _Action Step_ can also be used to check that a
 certain pattern does not appear.
@@ -251,15 +251,15 @@ As described above, patterns to be excluded from the search can be
 inserted here using a screenshot or from the Pattern Gallery. The number
 of patterns that can be excluded is limited to 25.
 
-=== Changing the Category for a Search Pattern
+== Changing the Category for a Search Pattern
 
 The patterns selected can be moved between the categories _Regular_ and
-_Ignored_. Use the _Move to…_ button in the menu bar to do this.
+_Ignored_. Use the _Move to..._ button in the menu bar to do this.
 
 
-=== Search Settings
+== Search Settings
 
-image::toolbox-checks-search-pattern-image5.png[Search Settings wizard]
+//image::toolbox-checks-search-pattern-image5.png[Search Settings wizard]
 
 The settings needed most frequently for all types of search can be set
 and modified using the _Search Pattern_ _Action Step_ wizard under
@@ -319,14 +319,14 @@ relates to. This means that the _Search Area_ at _Workflow_ runtime is
 positioned at exactly the same distance from the “Relative To”
 coordinate as at the time of design.
 
-=== Test
+== Test
 
 Pressing the _Test_ button will launch the search independently of
 _Workflow_ execution and open the _Search Results_ window where the
 search is evaluated. This can provide hints about possible improvements
 that could be made to the _Search Settings_.
 
-image::toolbox-checks-search-pattern-image6.png[Search Result screen]
+//image::toolbox-checks-search-pattern-image6.png[Search Result screen]
 
 The screen content at the time the test was performed takes up the main
 part of the window _Search Result_.
@@ -357,7 +357,7 @@ found but do not match the _Color Spot_ color at a specific position are
 marked in blue. You can see the type of every match in the details pane
 on the right side of the window.
 
-On opening the window the size of the screenshot is adjusted so, that
+On opening the window, the size of the screenshot is adjusted so that
 the whole screenshot is visible. You can zoom in to or out of the image
 by dragging the slider at the right side of the screenshot. It is also
 possible to do this by mouse wheel. Double click on the slider shows the
@@ -382,7 +382,7 @@ a color-marked listing of the found matches. For all matches, the
 coordinates of the upper left corner and the matching precision are
 displayed. The coloring is the same as described above.
 
-image::toolbox-checks-search-pattern-image7.png[Search Result screen]
+//image::toolbox-checks-search-pattern-image7.png[Search Result screen]
 
 Clicking a match in the details pane toggles the highlighting of the
 according matches in the screenshot. Highlighting of a Match is
@@ -393,7 +393,7 @@ Clicking a _Match_ in the details pane displays an animated arrow
 pointing to this match in the screenshot. In the process, the screenshot
 is resized so it can be seen in its entirety within the window.
 
-image::toolbox-checks-search-pattern-image8.png[Example animated arrow]
+//image::toolbox-checks-search-pattern-image8.png[Example animated arrow]
 
 The tab _Search Results Summary_ shows a textual overview over the
 search settings and the search result.
@@ -401,7 +401,7 @@ search settings and the search result.
 If the search failed because of one single pattern, this pattern is
 shown in tab _Failure Reason_.
 
-=== Other Uses of Matched Patterns
+== Other Uses of Matched Patterns
 
 If mouse clicks are to be performed relative to a matched image and, at
 the same time, the search is for more than one image, the image that the

@@ -1,6 +1,42 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== File Operations
 
-Information about general settings for File Operations is provided in
-the link:#AS_Settings[Settings] section.
+= File Operations
+
+File Operations enable you to interact with the file system where your automation is running.
+
+* xref:toolbox-file-operations-copy-file.adoc[Copy File]
++
+This Action Step copies a file from one directory to another.
+* xref:toolbox-file-operations-create-file.adoc[Create File]
++
+This Action Step creates an empty file at the specified path.
+* xref:toolbox-file-operations-delete-file.adoc[Delete File]
++
+This Action Step deletes a file located at the specified path.
+* xref:toolbox-file-operations-extract-images-from-pdf-file.adoc[Extract Images from PDF File]
++
+This Action Step enables you to extract images from a PDF file.
+* xref:toolbox-file-operations-file-check.adoc[File Check]
++
+This Action Step enables you to check whether a file exists or not.
+* xref:toolbox-file-operations-get-file-info.adoc[Get File Info]
++
+This Action Step fetches information about a file at the specified path.
+* xref:toolbox-file-operations-iterate-over-files.adoc[Iterate over Files]
++
+This Action Step performs various Action Steps on a specified number of files.
+* xref:toolbox-file-operations-move-file.adoc[Move File]
++
+This Action Step moves a file from one directory to another.
+* xref:toolbox-file-operations-read-from-text-file.adoc[Read from Text File]
++
+This Action Step enables you to read from a text file and use the Read Mode to specify which part of the file is to be read.
+* xref:toolbox-file-operations-read-pdf-file.adoc[Read PDF File]
++
+With the Read PDF File Action Step, you can read text from a PDF file.
+* xref:toolbox-file-operations-rename-file.adoc[Rename File]
++
+This Action Step renames a file.
+* xref:toolbox-file-operations-write-to-text-file.adoc[Write to Text File]
++
+Write to Text File writes text to a text file.

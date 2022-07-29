@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Checkpoint
+
+= Checkpoint
 
 _Checkpoints_ are integrated into a _Workflow_ in order to ascertain
 which part of the _Workflow_ was reached before an error occurred. When
@@ -8,22 +8,18 @@ a _Checkpoint_ is reached it is given the status True and saves the
 length of time from starting to execute the _Workflow_ until the
 _Checkpoint_ is reached.
 
-More information about _Data Sources_ and _Reporting_ can be found in
-the _Servicetrace® X1 Server_ manual in the section on _Reporting_ under
-the subsection _Widget Types_.
-
-=== Properties
+== Properties
 
 The Action Step _Checkpoint_ has no properties.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Suffix* can be used if the _Checkpoint_ is within the _Control Block_'s
 _File Controlled Loop_. A suffix is then added to the name of the
 _Checkpoint_ during every loop. Each suffix is a column entry in the
 file that was imported in the _File Controlled Loop_.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Was Reached* is given the status True if the _Checkpoint_ was executed
 

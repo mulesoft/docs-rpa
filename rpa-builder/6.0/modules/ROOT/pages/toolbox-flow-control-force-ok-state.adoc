@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Force OK State
+
+= Force OK State
 
 This Action Step can reset an error state to OK. A process can thus be
 continued despite an ERROR. In addition to this, it does not have any

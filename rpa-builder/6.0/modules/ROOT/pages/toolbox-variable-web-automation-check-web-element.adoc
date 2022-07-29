@@ -1,48 +1,51 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Check Element
+
+= Check Element
 
 Use this _Web Automation_ object to verify if a website or web
 application element was loaded properly and how long this took. The
 _Check Element_ object can be used on any website element.
 
-=== Properties
+== Properties
 
-[#AS_CheckElement_P_AttributeToCheck .anchor]####**Attribute to check**
-Select an attribute to be checked in addition to the XPath element. The
-drop-down menu automatically contains the available attributes for this
-element.
+
 
 *Expected Value* Define the value that the attribute must have to be
 valid
 
-[#AS_CheckElement_P_UseRegularExpression .anchor]####**Use regular
-expression** Use this function if you want to use a regular expression
+*Use regular expression* Use this function if you want to use a regular expression
 when checking the value of a selected attribute. For an introduction to
-regular expressions, see Section link:#UsingRegularExpression[Using
-Regular Expressions].
+regular expressions, see Section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 
 *Invert Check logic* If enabled, the _Check Element_ object waits until
 the defined web element cannot be found any more, instead of waiting for
 it to appear.
 
-=== Inbound Variables
+== Inbound Variables
 
-link:#AS_CheckElement_P_AttributeToCheck[*Attribute to Check*]
+//link:#AS_CheckElement_P_AttributeToCheck[*Attribute to Check*]
+*Attribute to check*
 
-*link:\l[Check Value]link:#AS_CheckElement_P_InvertCheckLogic[Invert
-Logic]*
+//*link:\l[Check Value]
+*Check Value*
 
-link:#AS_CheckElement_P_UseRegularExpression[*Regular expression*]
+//link:#AS_CheckElement_P_InvertCheckLogic[InvertLogic]*
+*InvertLogic*
 
-*link:\l[Element XPath]link:#CommonProperties_WebAutomation[Window
-Title]*
+//link:#AS_CheckElement_P_UseRegularExpression[*Regular expression*]
+*Regular expression*
 
-=== Outbound Variables
+//*link:\l[Element XPath]
+*Element XPath*
+
+//link:#CommonProperties_WebAutomation[WindowTitle]*
+*WindowTitle*
+
+== Outbound Variables
 
 The Action Step _Check Element_ possesses no outbound variables.
 
-=== Wizard
+== Wizard
 
 When you select the element you want to check using the _Browser
 Wizard_, the available attributes for the element are listed in a
@@ -51,8 +54,7 @@ must be defined for that attribute. The current value will automatically
 be set as the default.
 
 You can also use regular expressions to match the expected value. For
-more information about regular expressions see Section
-link:#UsingRegularExpression[Using Regular Expression].
+more information about regular expressions see Section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
 
 This check works as follows:
 

@@ -1,0 +1,116 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Managing Users
+
+Manage the users of RPA Manager and RPA Builder:
+
+* Create and delete users.
+* Edit a user's personal data.
+* Assign privileges or roles to a user that enable a user to work in specific modules.
+* License users for RPA Builder access.
+* Mark a user as project manager.
+
+== Before You Begin
+
+* The tenant admin is created first and can create other users. 
+* If you are not a tenant admin, obtain the needed privileges as follows:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *User Management* module
+|User Management Open
+
+|Create, edit, license, and delete users
+|User Management Administration
+
+|===
+
+== Create a User
+
+Create a user to give an employee access to RPA Manager and RPA Builder. After creation RPA Manager sends an email with a one-time password to the new user. The new user needs to log in to RPA Manager and set a new password within the expiration time mentioned in the email.
+
+. In the *Users* view of the *User Management* module, click *Create*.
+. Complete the form *Create a New User*:
++
+* *Login Name*:
++
+Name for the user to log on to the RPA Manager. After creation, the login name can no longer be changed.
+* *Time Zone*:
++
+Time zone the user works in. All times not marked otherwise are shown in the time zone of the user.
+* *Project Manager*:
++
+Check *Project Manager* if the user is responsible for the automation of processes. Only users assigned as project managers can approve of a process candidate or start automation.
+* *Available/Assigned Roles/Privileges*:
++
+Click on a role or privilege to assign it to or remove it from the user.
+. Click *Save*.
+
+== Edit a User
+
+Edit a user to change his data or permissions.
+
+. In the *Users* view of the *User Management* module, click the icon *Edit* in the table row of the user you want to edit.
+. Edit the form *Edit a User*.
+. Click *Save*.
+
+=== Reset a User Password
+
+Reset a password if the user forgot it. RPA Manager will send an email containing a new temporary password to the user. The user can then create a new password.
+
+. In the *Users* view of the *User Management* module, click *Reset password* in the table row of the user you want to edit.
+
+=== Change Your Password
+
+Change your own password regularly. You will be logged out in the process and have to log in again. The password is used for login to RPA Manager and RPA Builder.
+
+. Click on your user name in the navigation side bar.
+. Click *Profile* in the drop-down menu.
+. In the *Profile* view, click *Change password*.
+. Enter your old and new password.
+. Click *OK*.
+. Log in with your new password.
+
+=== Enable 2FA for Your User
+
+Enable Two-Factor-Authentication for extra security.
+
+When using Two-Factor Authentication (2FA), the user logs into the system with two mutually independent secret factors.
+
+If 2FA is activated for a user of the RPA Manager, the user enters their personal password on login and also a time-based one-time password (TOTP) to verify themselves.
+
+The TOTP (Time-Based One-Time Password Algorithm) is set up in a special app on a mobile device. Every thirty seconds, a new password is generated and this can be used for authentication within this time period.
+
+Both the computer on which the RPA Manager is installed, and the mobile device on which the app for generation of the one-time password is installed, must be able to determine the precise Unix time for verification of the user. For this reason, the time on the devices used should be synchronized with UTC (Universal Time Coordinated).
+
+. Click on your user name in the navigation side bar.
+. Click *Profile* in the drop-down menu.
+. In the *Profile* view, click *Enable Two-Factor Authentication*.
+. Follow the instructions in the window *Enable Two-Factor Authentication*.
+. Click *Enable Two-Factor Authentication*.
+. Log in using your password and 2FA.
+
+== Remove a User
+
+Remove obsolete users. A user cannot be deleted if it is the owner or manager of a process. Deleted users cannot be restored. Use the *Deactivate* function to remove a user only temporarily.
+
+. In the *Users* view of the *User Management* module, click the icon *Remove* in the table row of the user you want to edit.
+. Confirm the removal.
+
+== Designate a User as Project Manager
+
+Designate users responsible for the automation of processes as project managers to enable them to approve of a process candidate or to start an automation.
+
+. In the *Users* view of the *User Management* module, click the icon *Edit* in the table row of the user you want to designate as project manager.
+. In the form *Edit a User*, check *Project Manager*.
+. Click *Save*.
+
+== Assign Users RPA Builder Access
+
+Users who will build the process automation need RPA Builder access. Users currently working in RPA Builder might not be able to save their work if their license gets revoked.
+
+. In the *Users* view of the *User Management* module, click *MuleSoft RPA Builder assignment*.
+. Enable or disable access by clicking the appropriate cell in the column *MuleSoft RPA Builder access*.
+. Click *Save*.

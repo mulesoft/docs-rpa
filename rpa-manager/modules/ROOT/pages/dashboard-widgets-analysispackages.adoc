@@ -1,0 +1,100 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Analysis Packages
+
+The *Analysis Packages* widget displays the number of analysis packages of all RPA Bots collected during the analysis interval.
+
+*Analysis packages* contain data on the sequence of execution of an individual process element of type *Activity*.
+
+*Analysis packages* are normally only created in the event of errors.
+
+Robots, for which the option *Analysis Package on OK* is activated in the  *X1 Bot Configurator*, create an analysis package for each process element during each run.
+
+
+== Data Representation
+
+The number of analysis packages is a link.
+
+== Configuration
+
+This widget cannot be configured.
+
+Use the sorting and filter options of the [*Analysis Packages*](=drill-down) list to highlight the information that is relevant for you.
+
+== Drill-Down
+
+Click on the number of all collected analysis packages to obtain a list of all analysis packages listed individually.
+
+=== Data Representation of the Analysis Packages
+
+The analysis packages are displayed in a list.
+
+=== Columns of the *Analysis Packages* List
+
+==== Process
+
+Name of the process.
+
+==== Robot
+
+Name of the RPA Bot that carried out configuration of the Process.
+
+==== Configuration
+
+Name of the Configuration in which the process was executed.
+
+==== Category
+
+Category to which the Process belongs.
+
+==== Type
+
+Type of workflow to which the analysis package belongs.
+
+===== Activity
+
+Activity workflow.
+
+==== Run Type
+
+Type of process execution.
+
+===== Test
+
+The process was executed during the test phase.
+
+===== Productive
+
+The process was executed in production phase.
+
+==== Start Time
+
+Time stamp of the start of execution of the activity.
+
+==== End Time
+
+Time stamp of the end of execution of the activity.
+
+==== Duration
+
+Duration of execution of the activity.
+
+==== Result
+
+Result of the process execution.
+
+===== Triggered
+
+The trigger workflow was executed successfully but there was no task pending.
+
+===== Success
+
+The activity workflow was executed successfully.
+
+===== Execution Failure
+
+An error occurred during execution of a workflow.
+
+==== Download
+
+If an analysis package was created, you can download it by clicking on the icon  *Download*.

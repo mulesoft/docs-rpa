@@ -1,5 +1,18 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Mail Operations
 
-Overview of section and operations.
+= Mail Operations
+
+Mail Operations enable interactions with an email inbox.
+
+* xref:toolbox-mail-operations-mail-session.adoc[Mail Session]
++
+The Mail Session Action Step is an inclusive element for all mail operations.
+* xref:toolbox-mail-operations-read-mail.adoc[Read Mail]
++
+With the Read Mail Action Step, you can read the e-mails from a mailbox.
+* xref:toolbox-mail-operations-send-mail.adoc[Send Mail]
++
+With the Send Mail Action Step, you can send an e-mail with the SMTP protocol.
+* xref:toolbox-mail-operations-set-mail.adoc[Set Mail]
++
+With the Set Mail Action Step, you can change the status of an e-mail. 

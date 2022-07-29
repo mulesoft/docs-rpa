@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Set Variable
+
+= Set Variable
 
 The _Set Variable_ Action Step assigns a new value to a variable. You
 can either enter the new value directly or use an existing variable of
@@ -11,8 +11,8 @@ variable of type:Text with another variable of type:Text In order to
 ensure that the types are the same, this _Action Step_ has to be
 configured in several stages (see step-by-step instructions for the
 wizard below). Validation of variable types is performed when the
-_Action Step_ is launched, but you can also perform validation using the
-image:media\image1.png[image,width=21,height=25] button in the toolbar.
+_Action Step_ is launched.
+// but you can also perform validation using the image:media\image1.png[image,width=21,height=25] button in the toolbar.
 
 Variables from the _Test Master Data_ and the _BasePath_ *cannot* be
 modified using the _Set Variable_ Action Step. Attempting to do so will
@@ -24,7 +24,7 @@ _Workflow -_ Show Workflow Run Protocol). The logs record both the old
 and new values of the variables. Variable values that are longer than 16
 characters are shown in truncated form.
 
-=== Properties
+== Properties
 
 *Common*
 
@@ -35,7 +35,7 @@ the new value is based on another variable, the field is not displayed.
 Other properties that are the same in all Action Steps are described in
 section 2.2. For reasons of clarity they are not shown here.
 
-=== Wizard
+== Wizard
 
 * *Variable* The field displays the variable that will be overwritten
 with _Value_ as well as the variable's type. If "No Variable is mapped…"
@@ -43,15 +43,14 @@ is displayed, this means that no variable has been set using the
 _Mappings Editor_ (in this case, proceed as described in the
 step-by-step instructions below).
 * *New value* Enter the new value for the variable to be modified. You
-can also insert variables from the workflow. To do so, click the
-image:media\image2.png[image,width=17,height=24] button and select one
-of the available variables.
+can also insert variables from the workflow.
+//To do so, click the image:media\image2.png[image,width=17,height=24] button and select one of the available variables.
 
 Variables from the _Test Master Data_ and the _BasePath_ *cannot* be
 modified using the _Set Variable_ Action Step. Attempting to do so will
 generate an error message.
 
-=== Step-By-Step – Configure Set Variable as Follows
+== Step-By-Step – Configure Set Variable as Follows
 
 [arabic]
 . Drag the _Set Variable_ Action Step to the desired position in the

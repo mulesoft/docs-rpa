@@ -1,1 +1,59 @@
-= Process Automation Overview
+include::rpa-home::partial$pending-review.adoc[]
+
+= Process Automation
+
+The *Process Automation* module is the heart of the RPA Manager.
+
+After you have evaluated processes and approved them for automation in the *Process Evaluation* module, a project is created here for each process, which defines the framework conditions for execution and is managed by a team.
+
+The processes go through several phases in sequence. In the design phase, a model of the process is created using BPMN, and during the build phase in the RPA Builder, this is filled with concrete instructions for the bot. In the test phase, a check is run to see if the automated process delivers the required results. The process can be revised continuously before it is finally carried out fully automatically in the production phase.
+
+== Before you Begin
+
+* The following table contains the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Automation Module*
+|Process Automation Open
+
+|Create process projects
+|Process Create
+
+|===
+
+* There must be at least one process in the *My Backlog* view in the *My RPA* module.
+* RPA Builder, RPA Bot, and all applications required by the automated process must be installed and configured on one computer.
+* If you want to record processes, RPA Recorder must be installed on the same computer as RPA Builder and RPA Bot.
+
+== Getting Started
+
+. List applications required for the automation of a process in the *Process Applications* view of the *Process Automation* module.
+. Start the automation of a process in the *My Backlog* view of the *My RPA* module.
+. Create a project containing the settings and data of the process to be automated in the *Process Management* view of the *Process Automation* module.
+. In the design phase, record a process with RPA Recorder or model the process using BPMN.
+. In the build phase, use RPA Builder to edit or create a machine-readable program from the model.
+. In the test phase, run an automated process in a test environment.
+. In the production phase, deploy the automated process to a bot and execute it either scheduled in RPA Manager, or create and publish an invokable configuration to Anypoint Exchange and use it with MuleSoft Composer.
+
+== Definitions
+
+==== BPMN
+
+_Business Process Model and Notation (BPMN)_ is a standard specification for diagrams to depict business processes. Such diagrams can be created directly by the process owner and easily translated into a machine-executable program.
+
+
+
+
+
+== See also
+
+* xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
+* xref:myrpa-start.adoc[Starting Automation of Approved Processes]
+
+//* xref:processautomation-overview.adoc[Process Automation]
+* xref:processautomation-prepare.adoc[Preparing Process Automations]
+* xref:processautomation-develop.adoc[Developing Process Automations]
+* xref:processautomation-deploy.adoc[Deploying Process Automations]

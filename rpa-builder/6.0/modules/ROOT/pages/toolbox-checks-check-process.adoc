@@ -1,13 +1,12 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Checks
 
-=== Check Process
 
-This _Action Step_ allows you to check if a process is running or not
+= Check Process
+
+This _Action Step_ enables you to check if a process is running or not
 and either kill it or launch another program.
 
-==== Properties
+== Properties
 
 * Config Action
 ** *_Action_* to be performed when the check gives a positive result
@@ -20,7 +19,7 @@ does not exist
 ** *_Process name/PID_* Name or process ID of the process to check for
 as listed in the Task Manager
 
-==== Variables
+== Variables
 
 * *Start Process ID* The Process ID of the _Process_ started (only
 available when _Action_ is set to _Start program_)
@@ -31,18 +30,14 @@ Name]' [exists/does not exist/existed] [and program '[Path To
 Program/PID:[PID of Process to start]' [successfully started/was not
 started]]/[[and was killed]/]
 
-==== Wizard
+== Wizard
 
-First enter the process to check for in the _Process Name_ field. Either
-enter the process name or its ID manually in the field, then select the
-process from the drop-down menu there or navigate to an executable file
-using the … button and select it.
+First enter the process to check for in the _Process Name_ field.
+Either enter the process name or its ID manually in the field, then select the process from the drop-down menu there or navigate to an executable file and select it.
 
-Next, select from the _Check for_ drop-down menu whether to check if the
-process does or does not exist.
+Next, select from the _Check for_ drop-down menu whether to check if the process does or does not exist.
 
-Choose an action from the _Action_ drop-down menu to perform if the
-check is successful:
+Choose an action from the _Action_ drop-down menu to perform if the check is successful:
 
 *Do nothing* +
 Simply performs the check and does not do anything else
@@ -51,9 +46,6 @@ Simply performs the check and does not do anything else
 Starts the program defined in the _Program to start_ property
 
 *Kill process* +
-Kills the process you checked for. Not applicable if the check was for
-non-existence
+Kills the process you checked for. Not applicable if the check was for non-existence
 
-It is useful to check if applications started by the Bot are still running at the end of a workflow. If so, perform a
-_Kill process_ action to reset the PC into a clean state for the next
-run.
+It is useful to check if applications started by the Bot are still running at the end of a workflow. If so, perform a _Kill process_ action to reset the PC into a clean state for the next run.

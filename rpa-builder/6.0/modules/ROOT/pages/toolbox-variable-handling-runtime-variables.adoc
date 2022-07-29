@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Run Time Variables
+
+= Run Time Variables
 
 The _RunTime Variables_ Action Step allows variables to be used that are
 completed at a _Workflow_'s runtime.
@@ -26,17 +26,17 @@ functionality for this is therefore switched off in RPA Builder.
 This means that it is no longer possible to set a breakpoint for a
 _RunTime Variables_ Action Step.
 
-=== Properties
+== Properties
 
 *Write RunTime Variables to Logfile* If this option is enabled, the
 RunTime variables are written to the Stc log file.
 
-=== Outbound Variables
+== Outbound Variables
 
 *RunTime Variables.[ name of the _RunTime_ variables]* Content of
 _RunTime_ variables.
 
-=== Wizard
+== Wizard
 
 The _RunTime Variables Action Step_ wizard is used to specify whether
 variables are to be made available in all subsequent transactions (_Make
@@ -51,7 +51,7 @@ The values listed under _Sample Data_ in the wizard are used in a local
 test. If the _Workflow_ is completed by a _Bot_, the values will
 re-determined at each runtime.
 
-image:media\image1.png[image,width=218,height=221]
+//image:media\image1.png[image,width=218,height=221]
 
 Then give a name to the variable to be produced and perform any settings
 required using the drop-down _Settings_ menu.

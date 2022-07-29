@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Iterate over Files
+
+= Iterate over Files
 
 The _Iterate over Files_ Action Step performs various Action Steps on a
 specified number of files. Drag the Action Steps to be processed into
@@ -11,11 +11,11 @@ applied to all files located in a folder and, depending on the settings,
 its sub-folders. It is possible to set various parameters such as the
 maximum number of files to be processed.
 
-=== Properties
+== Properties
 
 *File Operation Settings:*
 
-* [#AS_IterateOverFiles_P_DirectoryPath .anchor]####**Directory path**
+* *Directory path*
 Enter the path to the directory where the files to be processed are
 located. You can specify an absolute or relative path. If a relative
 path is used, then the path relates to the _Base Path_ variable.
@@ -25,7 +25,7 @@ construct a search expression. The placeholder *.* is used by default.
 This will find all files in a directory.
 
 A list of invalid characters is provided in the section
-link:#AS_Settings_InvalidCharacters[Path/file name/invalid characters].
+*Path/file name/invalid characters*.
 
 Examples of how to construct search expressions are provided at the end
 of this section.
@@ -48,33 +48,43 @@ limit of up to 100,000 files. Set the limit in the field *Max
 iterations*.
 
 Other Properties that are the same in all Action Steps are described in
-the section on link:#CommonProperties[Common Properties]. For reasons of
+the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
-link:#AS_IterateOverFiles_P_DirectoryPath[*Directory path*]
+*Directory path*
+Enter the path to the directory where the files to be processed are
+located. You can specify an absolute or relative path. If a relative
+path is used, then the path relates to the _Base Path_ variable.
 
-=== link:\l[*File name*]Outbound Variables
+* *File name* Use placeholders here to specify the names of the files to
+be processed. Use the placeholders * and ? and all allowed characters to
+construct a search expression. The placeholder *.* is used by default.
+This will find all files in a directory.
+
+== Outbound Variables
 
 *Count Of Processed Elements* The _Iterate over Files.Count of Processed
 Elements_ variable provides the number of files that have been
 processed.
 
-=== Wizard
+== Wizard
 
 * *Directory path* Specify the path to the files here. You can create an
-absolute path or a path relative to the _Base Path_ using the
-image:media\image1.png[image,width=175,height=22] and
-image:media\image2.png[image,width=129,height=22] buttons. The initial
-value is %STWS_BASEPATH%. Select an existing path using the
-image:media\image3.png[image,width=20,height=20] button. You can also
+absolute path or a path relative to the _Base Path_.
+//using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=129,height=22] buttons.
+The initial
+value is %STWS_BASEPATH%. Select an existing path.
+//using the image:media\image3.png[image,width=20,height=20] button.
+You can also
 insert variables from the _Workflow_ in order to construct the path. To
 do so, click on the pin and select one of the available variables.
 
 More information about the environment variables (Insert Environment
 Variable) and script variables (Insert Script Variable) can be found in
-the section link:#AS_Settings[Settings].
+the section *Settings*.
 
 * *File name* Use placeholders here to specify the names of the files to
 be processed. Use the placeholders * and ? and all allowed characters to
@@ -84,7 +94,7 @@ from the Workflow as the _File Name_. To do so, click on the pin and
 select one of the available variables.
 
 A list of invalid characters is provided in section
-link:#FileOperation[File Operations].
+*File Operations*.
 
 Examples of how to construct search expressions are provided at the end
 of this section.
@@ -102,7 +112,7 @@ in that field has been reached.
 located in the specified *Directory path* and any files they may contain
 are to be included in the processing.
 
-=== Example
+== Example
 
 Use individual question marks (?) and allowed characters in the *File
 name* field to find a specific number of variable letters or numeric
@@ -115,7 +125,7 @@ _log in the file name. You can also omit the placeholder .* (this is
 used to search for the file extension).
 
 A list of invalid characters is provided in the section
-link:#AS_Settings_InvalidCharacters[Path/file name/invalid characters].
+*Path/file name/invalid characters*.
 
 Examples of how to construct search expressions are provided at the end
 of this section.

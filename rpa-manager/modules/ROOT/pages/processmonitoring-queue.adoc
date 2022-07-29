@@ -1,0 +1,34 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Queuing Process Sessions
+
+When there are more process configurations deployed than sessions available, RPA Manager must decide in which order the processes will be executed.
+
+You set the priority of a process configuration by assigning it a number between 1 and 200. The smaller the number, the higher the priority.
+
+RPA Manger inserts the deployed configurations in the session queue, as soon they are started.
+
+Test configurations and invokable run configurations always have the highest possible priority.
+
+The processes are executed in the following order:
+
+. Invokable process configurations.
+. Test configurations.
+. Production configurations in ascending order of their assigned priority numbers.
+
+If two or more configurations have the same priority, the ones deployed first are execute first.
+
+== View the Queue
+
+View the currently processed, waiting, and future process runs in the *Session Queues* view.
+
+. Open the *Session Queues* view of the *Process Monitoring* module.
+. Select the time interval for the future processes and click *Apply*.
+
+== See Also
+
+* xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
+* xref:processautomation-deploy.adoc[Deploying Automations]
+* xref:processmonitoring-overview.adoc[Process Monitoring]
+* xref:processmonitoring-stream.adoc[Streaming Processes]
+//xref:processmonitoring-queue.adoc[Queueing Process Sessions]

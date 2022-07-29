@@ -1,37 +1,32 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Extract Images from PDF File
 
-[#AS_ExtractImagesFromPDFFile_P .anchor]####With this Action Step, you
-can extract images from a PDF file.
+= Extract Images from PDF File
 
-=== Properties
+With this Action Step, you can extract images from a PDF file.
+
+== Properties
 
 *File Settings*
 
-[#AS_ExtractImagesFromPDFFile_P_DirPath .anchor]####**Directory Path**
+*Directory Path*
 (String) The path to the folder in which the PDF file is located.
 
-[#AS_ExtractImagesFromPDFFile_P_FileName .anchor]####**File Name**
+*File Name*
 (String) The name of the PDF file.
 
-[#AS_ExtractImagesFromPDFFile_P_PasswProte .anchor]####**Password
-protected** (Boolean) This indicates whether the PDF document is to be
+*Password protected* (Boolean) This indicates whether the PDF document is to be
 opened with a password.
 
 *Images Extraction Mode*
 
-[#AS_ExtractImagesFromPDFFile_P_ExImFrPa .anchor]####**Extract images
-from page** (Integer) The images are extracted from the PDF file from
+*Extract images from page* (Integer) The images are extracted from the PDF file from
 this page onward.
 
 *Extract images to end of file* (Boolean) If this option is selected,
-all images up to the end of the PDF file are extracted. Here, instead of
-specifying the last page, you can also select the checkbox
-image:media\image1.png[image,width=113,height=19] in the wizard.
+all images up to the end of the PDF file are extracted.
+//Here, instead of specifying the last page, you can also select the checkbox image:media\image1.png[image,width=113,height=19]  in the wizard.
 
-[#AS_ExtractImagesFromPDFFile_P_ExImToPa .anchor]####**Extract images to
-page** (Integer) The images are extracted from the PDF file up to this
+*Extract images to page* (Integer) The images are extracted from the PDF file up to this
 page.
 
 *Images Extraction Mode* The property displays which of the three modes
@@ -43,7 +38,7 @@ for extraction of images has been selected.
 selected and there is no folder, a target folder is created
 automatically and the images are saved in it.
 
-[#AS_ExtractImagesFromPDFFile_P_NamePrefix .anchor]####**Name prefix**
+*Name prefix*
 (String) The prefix for the name of the image.
 
 *Overwrite existing files with same name* (Boolean) If this option is
@@ -52,81 +47,75 @@ selected, files with the same name are overwritten.
 *Save extracted images in* (String) Indicates in which file format the
 images are saved, PNG or JPEG.
 
-[#AS_ExtractImagesFromPDFFile_P_SaveExImTo .anchor]####**Save extracted
-images to** (String) Specifies the path in which the extracted images
+*Save extracted images to* (String) Specifies the path in which the extracted images
 are to be saved.
 
-[#AS_ExtractImagesFromPDFFile_P_StartNumbN .anchor]####**Start number of
-name suffix** (Integer) A number is used as a suffix in the name of each
+*Start number of name suffix* (Integer) A number is used as a suffix in the name of each
 image. The start number is displayed here and this is used to count the
 first image. The number of each additional image increases by 1.
 
-=== Inbound Variables
+== Inbound Variables
 
-link:#AS_ExtractImagesFromPDFFile_P_DirPath[*Directory Path*]
+*Directory Path*
+(String) The path to the folder in which the PDF file is located.
 
-link:#AS_ExtractImagesFromPDFFile_P_FileName[*File Name*]
+*File Name*
+(String) The name of the PDF file.
 
-link:#AS_ExtractImagesFromPDFFile_P_PasswProte[*Password*]
+*Password* (Boolean) This indicates whether the PDF document is to be
+opened with a password.
 
-link:#AS_ExtractImagesFromPDFFile_P_ExImFrPa[*Extract images from page*]
+*Extract images from page* (Integer) The images are extracted from the PDF file from
+this page onward.
 
-link:#AS_ExtractImagesFromPDFFile_P_ExImToPa[*Extract images to page*]
+*Extract images to page* (Integer) The images are extracted from the PDF file up to this
+page.
 
-link:#AS_ExtractImagesFromPDFFile_P_SaveExImTo[*Save extracted images
-to*]
+*Save extracted images to* (String) Specifies the path in which the extracted images
+are to be saved.
 
-link:#AS_ExtractImagesFromPDFFile_P_NamePrefix[*Name prefix*]
+*Name prefix*
+(String) The prefix for the name of the image.
 
-link:#AS_ExtractImagesFromPDFFile_P_StartNumbN[*Start number of name
-suffix*]
+*Start number of name suffix* (Integer) A number is used as a suffix in the name of each
+image. The start number is displayed here and this is used to count the
+first image. The number of each additional image increases by 1.
 
-=== Outbound Variables
+== Outbound Variables
 
-The _Extract Images from PDF File_ Action Step has no outbound
-variables.
+The _Extract Images from PDF File_ Action Step has no outbound variables.
 
-=== Wizard
+== Wizard
 
 *Images Extraction Mode* displays various options for extracting the
 images:
 
-* {blank}
-+
-____
-*Extract all images* All images are extracted from the PDF file.
-____
-* {blank}
-+
-____
-*Extract from page range* All images from a defined starting page up to
+* *Extract all images* All images are extracted from the PDF file.
+* *Extract from page range* All images from a defined starting page up to
 and including a defined ending page are extracted. If you select the
 option “Extract to end of file”, all images up to the last page of the
 document are extracted.
-____
 +
-image:media\image2.png[image,width=276,height=61]
+//image:media\image2.png[image,width=276,height=61]
 +
 *Extract from selected area* The images are extracted from a specific
 area of the PDF document.
 +
-image:media\image3.png[image,width=323,height=58]
+//image:media\image3.png[image,width=323,height=58]
 +
-A “Define area” button opens the selected PDF document in a dialog and
+A *Define area* button opens the selected PDF document in a dialog and
 you can select the required area using the mouse. You can only define an
-area within a single page**.**
+area within a single page.
 +
-image:media\image4.png[image,width=274,height=192]
+//image:media\image4.png[image,width=274,height=192]
 
 If you click on the Save button, the window closes and you return to the
 wizard. If you now click on the *Test button*, the image is saved in the
 folder you selected under *Save extracted images to*.
 
-You can find more details in the
-link:#AS_ExtractImagesFromPDFFile_P[Properties].
+You can find more details in the *Properties*.
 
 You can find further information on environment variables (Insert
 Environment Variable) and script variables (Insert Script Variable) in
-the Chapter entitled link:#InsertSpecialCharacter[Insert Special
-Character / Macro / Script Variable / Environment Variable] and
-link:#AS_Settings[Settings].
+the Chapter entitled *Insert Special Character / Macro / Script Variable / Environment Variable* and
+*Settings*.

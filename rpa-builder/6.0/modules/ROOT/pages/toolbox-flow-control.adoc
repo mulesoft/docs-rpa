@@ -1,5 +1,39 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Flow Control
 
-Overview of section and operations.
+= Flow Control
+
+Flow Control Action Steps enable you to perform controlled iterations and loops during the automation.
+
+* xref:toolbox-flow-control-break-loop.adoc[Break Loop]
++
+Break Loop enables you to exit a _Loop_ control block during its execution.
+* xref:toolbox-flow-control-file-controlled-loop.adoc[File Controlled Loop]
++
+This _Flow Control Element_ reads data from a CSV file.
+* xref:toolbox-flow-control-force-error-state.adoc[Force Error State]
++
+This Action Step simply forces the Workflow into an error state.
+* xref:toolbox-flow-control-force-ok-state.adoc[Force OK State]
++
+This Action Step can reset an error state to OK.
+* xref:toolbox-flow-control-group.adoc[Group]
++
+The Group block enables you to group Action Steps for better visibility and readability.
+* xref:toolbox-flow-control-lock-section.adoc[Lock Section]
++
+This Action Step enables you to synchronize access if multiple parallel Workflows need to access a file or a mailbox, for example in the case of Robotic Applications.
+* xref:toolbox-flow-control-loop.adoc[Loop]
++
+A Loop block enables you to repeat the same Transaction and Action Steps two or more times.
+* xref:toolbox-flow-control-managed.adoc[Managed]
++
+The Managed block enables you to handle errors within your Workflow as they happen.
+* xref:toolbox-flow-control-pattern-select.adoc[Pattern Select]
++
+This Action Step enables you to respond flexibly to non-predictable situations.
+* xref:toolbox-flow-control-select-case.adoc[Select Case]
++
+This Action Step makes it possible to match the contents of a variable against certain predefined cases.
+* xref:toolbox-flow-control-transaction.adoc[Transaction]
++
+Transactions enable you to split Workflows into logical, self-contained units.

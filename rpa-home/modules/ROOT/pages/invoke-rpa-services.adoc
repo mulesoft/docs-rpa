@@ -1,8 +1,8 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Invoke RPA Services from Composer
 
 The RPA Connector for MuleSoft Composer enables you to invoke RPA processes and configure polling triggers from your Composer flows.
+
+Before you can invoke an RPA process, publish it to Exchange as an API. See xref:rpa-manager::processautomation-deploy.adoc#create-an-invokable-run-configuration[Create an invokable run configuration] for instructions to create and publish an invokable RPA process. 
 
 * *Invoke RPA Process*
 +
@@ -10,9 +10,9 @@ This feature enables you to make sync and async calls to RPA processes.
 +
 ** Sync calls wait for the RPA process to finish before continuing with the Composer flow execution.
 ** Async calls invoke an RPA process and continue the Composer flow execution while the RPA process executes in parallel.
-* *RPA Poll trigger*
+* *RPA Poll Trigger*
 +
-The polling trigger feature enables you to create listeners that check the status of an specific RPA process. When the RPA process finishes the execution, the polling trigger starts processing the configured activities in the Composer flow.
+This feature enables you to create listeners that check the status of an specific RPA process. When the RPA process finishes the execution, the polling trigger starts processing the configured activities in the Composer flow.
 
 Using the RPA Connector features in Composer requires you to connect with your MuleSoft RPA account by configuring the corresponding API key and RPA API URL.
 

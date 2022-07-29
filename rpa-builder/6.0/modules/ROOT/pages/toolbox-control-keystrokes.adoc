@@ -1,6 +1,6 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Keystrokes
+
+= Keystrokes
 
 Like the _Enter String_ Action Step, the _Keystrokes_ Action Step
 emulates keyboard inputs. You can use this to enter search criteria or a
@@ -8,7 +8,7 @@ URL in the browser address bar, for example. You can also use it to
 execute hotkeys or macros.
 
 
-=== Properties
+== Properties
 
 *Keyboard Settings*
 
@@ -40,7 +40,7 @@ Using Regular Expressions
 text should also be used to identify the window that the keystrokes
 should be sent to
 
-=== Wizard
+== Wizard
 
 * *Start* Starts the recording of keystrokes
 * *Stop* Stops the recording of keystrokes
@@ -141,12 +141,14 @@ common window title setting is correct. If you are not able to set a
 common window title that works, you can leave this field empty as a
 workaround.
 
-=== Delay and Pause Example
+//== Delay and Pause Example
 
-image::toolbox-control-keystrokes-image1.png[Keystroke wizard]
+//image::toolbox-control-keystrokes-image1.png[Keystroke wizard]
 
-image::toolbox-control-keystrokes-image2.png[Example] The delay times will
-be applied differently depending on the keyboard inputs.
+//image::toolbox-control-keystrokes-image2.png[Example]
+
+////
+The delay times will be applied differently depending on the keyboard inputs.
 
 Each sequence starts with a pause.
 
@@ -162,3 +164,4 @@ keystrokes _SHIFT_ + _m_ , this _M_ has two _Delays_.
 
 Again, the next keys are pressed separately and therefore each have
 their own _Delay_ values.
+////

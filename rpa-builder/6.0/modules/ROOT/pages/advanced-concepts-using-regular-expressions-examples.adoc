@@ -1,10 +1,11 @@
-include::rpa-home::partial$pending-review.adoc[]
 
 = Examples
 
+The following are some examples of using Regular Expressions.
+
 == Example 1: Identifying an Exact Window Title
 
-Action Steps identifiy window titles without using regular expressions
+Action Steps identify window titles without using regular expressions
 if the given string can be found in its entirety in an existing window
 title. It does not matter if there are any preceding or following
 characters.
@@ -14,7 +15,7 @@ one is contained in the other. A typical example is _SAP_, where you log
 on to a system with the _SAP Logon_ application. In this case you will
 have these two windows on your desktop:
 
-image::advanced-concepts-using-regular-expressions-examples-image1.png[Example SAP - two windows]
+image::advanced-concepts-using-regular-expressions-examples-image1.png[Example SAP - two windows, 50%, 50%]
 
 The usual way of identifying a window by searching for a part of its
 title will not work, since a search for the text "SAP" in the window
@@ -26,7 +27,7 @@ following pattern _^[exact_window_name]$_
 
 For this specific example the regular expression would look like this:
 
-image::advanced-concepts-using-regular-expressions-examples-image2.png[Example for regular expression]
+image::advanced-concepts-using-regular-expressions-examples-image2.png[Example for regular expression, 50%, 50%]
 
 The _^_ indicates that the expression starts here, there must be no
 preceding characters. The _$_ indicates that the end of the expression
@@ -44,13 +45,13 @@ consistently the same, but rather is separated by dynamic parts.
 
 One such application is _Microsoft Dynamics AX_.
 
-image::advanced-concepts-using-regular-expressions-examples-image3.png[Example for Microsoft Dynamics AX]
+image::advanced-concepts-using-regular-expressions-examples-image3.png[Example for Microsoft Dynamics AX, 50%, 50%]
 
 If you need to identify a "Dynamics AX" window that contains the text
 "cfu" near the end of the title, you can use the following regular
 expression:
 
-image::advanced-concepts-using-regular-expressions-examples-image4.png[Example for regular expression]
+image::advanced-concepts-using-regular-expressions-examples-image4.png[Example for regular expression, 50%, 50%]
 
 Using _.*_ allows there to be any number of alphanumeric characters
 before the term "Dynamics AX", thereby accounting for the word
@@ -82,7 +83,7 @@ If you want to identify the window title by using the environment
 variable you have to make sure the case does not matter. You achieve
 this by using _(?i)_ at the start of your regular expression.
 
-image::advanced-concepts-using-regular-expressions-examples-image5.png[Example for regular expression]
+image::advanced-concepts-using-regular-expressions-examples-image5.png[Example for regular expression, 50%, 50%]
 
 This regular expression would find a window title like "Document
 user.txt – Editor".

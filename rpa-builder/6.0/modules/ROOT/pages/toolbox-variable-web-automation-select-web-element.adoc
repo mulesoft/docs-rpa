@@ -1,11 +1,11 @@
-include::rpa-home::partial$pending-review.adoc[]
 
-== Select Element
+
+= Select Element
 
 Use this _Web Automation_ object to select an option from a list box or
 a drop-down box.
 
-=== Properties
+== Properties
 
 *Select Index* The index of the option to be selected. Only applicable
 if _Selection Method_ is _Index_.
@@ -20,24 +20,25 @@ if _Selection Method_ is _Value_.
 option which should be selected from the list or drop-down box. This can
 either be _Index_, _Text_, or _Value_.
 
-=== Inbound Variables
+== Inbound Variables
 
-link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+//link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+*Element XPath*
 
-link:#WA_CommonProperties_WindowTitle[*Window Title*]
+//link:#WA_CommonProperties_WindowTitle[*Window Title*]
+*Window Title*
 
-=== Outbound Variables
+== Outbound Variables
 
 The Action Step _Select Element_ possesses no outbound variables.
 
-=== Wizard
+== Wizard
 
 When you have to choose something on a website or in a web application,
 the available options are often offered in form of a list box or
 drop-down box. Use _Select Element_ to make your choice from such a box.
 
-image:media\image1.png[File:Drop-down list
-example.png,width=118,height=79]
+//image:media\image1.png[File:Drop-down listexample.png,width=118,height=79]
 
 If the element you want to select has an underlying hyperlink, then it
 is not treated as an option in a list or drop-down box. Use _Click

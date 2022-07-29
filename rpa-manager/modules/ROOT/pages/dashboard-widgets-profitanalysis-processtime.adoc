@@ -1,0 +1,29 @@
+include::rpa-home::partial$pending-review.adoc[]
+
+= Profit Analysis: Process Time
+
+The widget *Profit Analysis: Process Time* shows the execution duration of a process by a bot compared to the time that a human requires to execute the same process.
+
+The times are shown individually for each configuration.
+
+== Data Representation
+
+The execution duration of the individual configurations is shown as a line chart. A colored line corresponds to a configuration.
+
+The time interval is shown on the X axis, the execution duration of the individual runs is shown in seconds on the Y axis.
+
+The manual execution duration in seconds is represented by a horizontal red line.
+
+Drag the mouse over any point to see the exact data.
+
+== Configuration
+
+You can select an individual process, whose execution duration is to be displayed, from the drop-down list.
+
+The processes are displayed below their category. Categories and processes are sorted alphabetically.
+
+You can only select from those processes for which you are a member of the process team. Other processes are not displayed.
+
+== Drill-down
+
+This widget does not contain any drill-down data.

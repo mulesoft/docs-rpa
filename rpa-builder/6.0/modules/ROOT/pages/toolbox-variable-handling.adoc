@@ -1,3 +1,69 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 == Variable Handling
+
+Variable Handling enables you to perform multiple actions like mathematical operations, parse objects, read system variables, and also read and write variables for the automation workflow.
+
+* xref:toolbox-variable-handling-activity-parameters.adoc[Activity Parameters]
++
+The Action Step Activity Parameters (AP) enables you to map variables that you can use not only in the Workflow, but also in the activities of the business process and gateways.
+* xref:toolbox-variable-handling-check-regex.adoc[Check Regex]
++
+Use the Check Regex Action Step to search for a text fragment using a regular expression.
+* xref:toolbox-variable-handling-check-value.adoc[Check Value]
++
+This Action Step allows you to compare two numerical or alphanumerical (case-sensitive and case-insensitive) values to each other, using different comparison methods.
+* xref:toolbox-variable-handling-combine-strings.adoc[Combine Strings]
++
+The Combine Strings Action Step allows multiple variables to be combined into a single new variable.
+* xref:toolbox-variable-handling-convert-string.adoc[Convert String]
++
+This Action Step converts a given string or variable to any other variable type and makes it available as a set of new variables.
+* xref:toolbox-variable-handling-coordinates.adoc[Coordinates]
++
+The Coordinates Action Step can be used to either specify a Variable of type Coordinates in the Workflow or to modify existing coordinates.
+* xref:toolbox-variable-handling-generate-and-modify-date-and-time.adoc[Generate Date and Time]
++
+Use Generate date and time to create a configurable time stamp.
+* xref:toolbox-variable-handling-get-array-count.adoc[Get Array Count]
++
+The Get Array Count Action Step returns the number of elements in an array.
+* xref:toolbox-variable-handling-json-query.adoc[Json Query]
++
+The Json Query Action Step enables you to parse Json objects and to read individual values / elements from the object.
+* xref:toolbox-variable-handling-math-operations.adoc[Math Operations]
++
+You can use this Action Step to perform mathematical calculations.
+* xref:toolbox-variable-handling-read-clipboard.adoc[Read Clipboard]
++
+This Action Step simply copies the current clipboard content into a variable (see Section Using Variables) for further usage within the Workflow.
+* xref:toolbox-variable-handling-read-from-array.adoc[Read from Array]
++
+The Read from Array Action Step is used to access the content of an array.
+* xref:toolbox-variable-handling-runtime-variables.adoc[Run Time Variables]
++
+The RunTime Variables Action Step allows variables to be used that are completed at a Workflow's runtime.
+* xref:toolbox-variable-handling-set-array-variable.adoc[Set Array Variable]
++
+The Set Array Variable Action Step enables you to assign new values to an array.
+* xref:toolbox-variable-handling-set-variable.adoc[Set Variable]
++
+The Set Variable Action Step assigns a new value to a variable.
+* xref:toolbox-variable-handling-string-operations.adoc[String Operations]
++
+The String Operations Action Step allows you to modify strings.
+* xref:toolbox-variable-handling-string-to-array.adoc[String to Array]
++
+The String to Array Action Step allows you to split a string into arrays and to process them further in the subsequent Action Steps, such as with the Read from Array Action Step.
+* xref:toolbox-variable-handling-user-account-decrypter.adoc[User Account Decrypter]
++
+The Action Step User Account Decrypter allows you to accept the activity parameter User Account as an inbound variable and further process it as log-in data in the subsequent Action Steps.
+* xref:toolbox-variable-handling-variable.adoc[Variable]
++
+This Action Step makes it possible to set up a simple string variable.
+* xref:toolbox-variable-handling-workflow-based-variables.adoc[Workflow Based Variables]
++
+The Workflow Based Variables Action Step contains variables which can be used throughout the entire Workflow and which can be modified.
+* xref:toolbox-variable-handling-write-clipboard.adoc[Write Clipboard]
++
+Use Write Clipboard to copy a piece of text to the clipboard.
