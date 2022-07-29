@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Web Session (Firefox)
 
@@ -29,8 +29,7 @@ Override the default User Agent string for Firefox.
 Enable this option if you are having trouble with mouse hover during execution.
 * *Port* (_Properties_ grid only)
 +
-Defines the TCP/IP listener port number used for Firefox for communication between Firefox and a
-_ServiceTrace®_ robot. If set to `-1` an ephemeral port number is used
+Defines the TCP/IP listener port number used for Firefox for communication between Firefox and an RPA Bot. If set to `-1` an ephemeral port number is used
 (and may also be used for all concurrent _MultiTracer_ instances).
 +
 To ensure optimal operation in a _MultiTracer_ environment, set it to `0`.

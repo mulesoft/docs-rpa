@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Mouse Actions
 
@@ -172,7 +172,7 @@ order in which they appear in the table, regardless of their ID.
 *Hide this window when capturing* (default: enabled) If this option is enabled, the _Mouse Action Wizard_ window is hidden while mouse actions are captured.
 
 *Hide main window when capturing* (default: enabled) If this option is
-enabled, the _X1 Design Studio_ window is hidden while mouse actions are
+enabled, the RPA Builder window is hidden while mouse actions are
 captured.
 
 *Relative To* (default: none) The position where the mouse action is to

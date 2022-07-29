@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Checkpoint
 
@@ -7,10 +7,6 @@ which part of the _Workflow_ was reached before an error occurred. When
 a _Checkpoint_ is reached it is given the status True and saves the
 length of time from starting to execute the _Workflow_ until the
 _Checkpoint_ is reached.
-
-More information about _Data Sources_ and _Reporting_ can be found in
-the _Servicetrace® X1 Server_ manual in the section on _Reporting_ under
-the subsection _Widget Types_.
 
 == Properties
 

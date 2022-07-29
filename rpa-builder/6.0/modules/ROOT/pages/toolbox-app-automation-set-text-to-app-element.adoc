@@ -1,11 +1,11 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Set Text to App Element
 
 The _Set Text To App Element_ Action Step can be used to set text
 directly to a selected App Element.
 
-== PropertiesProperties
+== Properties
 
 *Input String (Input Text)* Is the text that will be written to the
 selected element. You can use _Insert environment variable_ and _Insert

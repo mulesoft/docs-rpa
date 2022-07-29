@@ -1,6 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
-
-== Changing the Most Important System Parameters with One Setting
+= Changing the Most Important System Parameters with One Setting
 
 _Microsoft Windows®_ has a general performance setting for visual
 effects that will turn off all settings relating to picture search at

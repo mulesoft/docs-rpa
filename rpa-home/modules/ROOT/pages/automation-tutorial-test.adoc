@@ -17,6 +17,8 @@ To create a test plan, open RPA Manager and follow these steps:
 . Click *Next*(this process has no activity parameters).
 . Click *Next*(this process has no user tasks).
 . Select *Run test in secure session* and click *Next*.
++
+Ensure you followed the steps to configure the xref:rpa-bot::configuration.adoc#secure-session[Secure Session]. Otherwise, the bot fails to run.
 . Select any of your configured bots and click *Finish*
 
 == Step 6.2: Run the Test, Examine the Results, and Publish to Production

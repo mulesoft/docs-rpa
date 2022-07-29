@@ -26,7 +26,7 @@ ID generated during the installation process of RPA Bot, which identifies the bo
 The URL address of the RPA Manager instance the bot connects to. There is no default setting.
 * *Use HTTPS as protocol layer*
 +
-Specifies whether the server is to be addressed via HTTP or HTTPS.
+Specifies whether the bot connects with RPA Manager via HTTP or HTTPS.
 * *API Key*
 +
 The API Key entered during the installation of the robot. You can change this setting.

@@ -32,4 +32,5 @@ If you don't have any APIKey, see xref:rpa-manager::botmanagement-support.adoc#m
 
 == See Also
 
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
 * xref:configuration.adoc[Configuring RPA Bot]

@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Read Mail
 
@@ -47,10 +47,10 @@ specified in the Mail Session.
 
 If you have selected the IMAP protocol in the Mail Session and you wish
 to call up a subfolder of the inbox, you must always specify the
-complete path under Folder Name, e.g. Inbox/Servicetrace/Alerts.
+complete path under Folder Name, e.g. Inbox/MuleSoft/Alerts.
 
-If the folder _Servicetrace_ is on the same level as the _Inbox_, then
-Servicetrace/Alerts would be sufficient as the path name.
+If the folder MuleSoft is on the same level as the _Inbox_, then
+MuleSoft/Alerts would be sufficient as the path name.
 
 Irrespective of whether you are using a German or English version of
 Outlook, with IMAP, the path must always begin with Inbox and must *not*

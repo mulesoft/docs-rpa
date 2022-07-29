@@ -1,6 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
-
-== Modifying the User Interface
+= Modifying the User Interface
 
 With the exception of the menu bar, all areas can be resized and
 positioned anywhere in the graphical user interface (GUI). Simply click

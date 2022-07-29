@@ -1,5 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = User Interface
 
 Following are the descriptions of every section and element in the RPA Recorder UI.

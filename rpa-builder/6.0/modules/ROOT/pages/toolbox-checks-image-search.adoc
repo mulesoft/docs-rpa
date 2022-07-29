@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Image Search
 
@@ -101,7 +101,7 @@ considered successful. If not, additional __Image search__es are
 performed until two subsequent ones have the same result or until the
 timeout is reached.
 * *Interrupt time [ms]* Mainly used for _Java_ Applications: time in
-milliseconds _ServiceTracer® Client_ stops searching for a picture to
+milliseconds the service stops searching for a picture to
 provide CPU resources to an application with bad performance (only
 applicable if _Load Optimizer_ is activated)
 * *Load Optimizer* If enabled, there is a pause between every attempt to

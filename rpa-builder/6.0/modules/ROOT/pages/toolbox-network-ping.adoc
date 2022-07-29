@@ -56,10 +56,12 @@ saves it
 * *Min* The fastest time measured is saved
 * *Max* The slowest time measured is saved
 
+////
 The Action Step _Ping_ is currently not supported by X1 Server 5.2. This
 means that it is currently not possible to evaluate the data on the
 server. You can still use the Ping in RPA Builder because they
 are still displayed in the _Workflow Run Results_.
+////
 
 == Inbound Variables
 

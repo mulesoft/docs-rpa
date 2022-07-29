@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 //This one is not in RPA Builder, confirm if we need to include it
 
 = External Script
@@ -8,11 +8,11 @@ language _AutoIT_. With the _External Script_ _Action Step,_ you can
 execute any _AutoIT_ code you like within a _Workflow_. This way, you
 can handle all additional requirements that cannot be implemented into a
 _Workflow_ using the regular built-in _Action Steps_.
-
+////
 You can find the AutoIT and STC API documentation via the Help button at
 the top right of the wizard. Alternatively, these files are located in
 your installation folder in _[Install Dir]_\ServiceTracerClient\bin\
-
+////
 Unlike all other _Action Steps_, the _External Script_ _Action Step_ can
 be integrated into the entire _Workflow_, not just a _Transaction_.
 

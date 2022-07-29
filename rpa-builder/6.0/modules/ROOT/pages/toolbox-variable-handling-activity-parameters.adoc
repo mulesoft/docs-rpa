@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Variable Handling
 
@@ -50,9 +50,7 @@ The predefined values are test values that are only used for a local run
 within RPA Builder. The variables are registered automatically
 on RPA Manager when uploaded. There, you can modify the values of the
 variables and define them differently, depending on the station on which
-the Workflow is being executed (see also the chapter
-xref:advanced-concepts-using-variables.adoc[Using Variables].
-// and the Servicetrace® X1 ServerOnline Manual).
+the Workflow is being executed. See xref:advanced-concepts-using-variables.adoc[Using Variables] for additional information.
 
 Please note that the test value may change in the course of the BP due
 to the possible assignment of new values. If the BP is started again,

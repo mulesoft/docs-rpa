@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = App Automation
 
@@ -21,10 +21,10 @@ There are two ways to generate Action Steps automatically.
 *RPA Manager*: During the Design phase on RPA Manager, you have the
 option to record a process with a sequence of clicks and keyboard
 inputs. You can download RPA Recorder
-directly there (for more information, see the X1 server online manual).
+directly there (for more information, see xref:rpa-manager::index.adoc[RPA Manager Overview]).
 Once you have finished the recording, you can upload it to RPA Manager,
 together with the generated process, and move the process to the Build
-phase. You can then download and open the process in the Design Studio.
+phase. You can then download and open the process in RPA Builder.
 All the recorded information for generating the Action Steps
 automatically is now available.
 

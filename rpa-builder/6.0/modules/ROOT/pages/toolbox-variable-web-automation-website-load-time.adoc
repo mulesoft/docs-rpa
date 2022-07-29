@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Website Load Time
 
@@ -10,7 +10,7 @@ integrated payment systems, etc.
 
 The _Website Load Time_ Action Step logs all data measured in a special
 file, identified by a `.har` extension (har = Http ARchive). This file is
-located in Windows under "My Documents -> NameOfWorkflowStudioProject ->
+located in Windows under "My Documents -> NameOfRPABuilderProject ->
 Robot -> trace -> http@www-website-xx.har“. The name of the `.har` file is
 derived from the website tested (e.g. http@www-wikipedia-de.har). The
 file is overwritten every time the _Workflow_ is executed.
