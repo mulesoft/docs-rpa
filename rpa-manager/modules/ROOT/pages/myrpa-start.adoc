@@ -8,7 +8,7 @@ The center of excellence is a user group that, for the approval of an evaluated 
 
 == Before You Begin
 
-The following table contains the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
