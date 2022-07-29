@@ -4,7 +4,7 @@ You evaluate a process candidate to propose it for automation.
 
 == Before You Begin
 
-The following table contains the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
