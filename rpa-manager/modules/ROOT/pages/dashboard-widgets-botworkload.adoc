@@ -6,7 +6,7 @@ The *Bot Workload* widget shows how many of the sessions of an *RPA Bot* are res
 
 This gives you an overview of the utilization of the bots and you can allocate resources flexibly.
 
-== Data representation
+== Data Representation
 
 The workloads of the Robots are displayed as a bar chart.
 

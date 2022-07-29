@@ -6,7 +6,7 @@ The widget *Profit Analysis: Process Frequency* shows how often a process has be
 
 You can see at a glance whether a process can be executed more frequently by an bot or by a human employee, and to what extent the frequencies differ.
 
-== Data representation
+== Data Representation
 
 The execution duration of the individual configurations is shown as a line chart. A colored line corresponds to a configuration.
 

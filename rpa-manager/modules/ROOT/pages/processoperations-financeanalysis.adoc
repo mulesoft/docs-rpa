@@ -13,16 +13,16 @@ Each change to the raw data is reflected directly in the graphic. This way, you 
 For the Finance Analysis, you require the following values:
 
 * Actual and expected number of process runs per month.
-* Costs of a process run if this is carried out by a human (*Cost per process run for manual process execution*)
+* Costs of a process run if this is carried out by a human (*Cost per process run for manual process execution*).
 * Initial Investment for acquisition of the MuleSoft RPA solution and all other investments.
-* Period in months for depreciation of the initial investment and all other investments (*Depreciation period for initial invest (in month)*)
-* Monthly operating costs of process automation (*Operating costs*)
+* Period in months for depreciation of the initial investment and all other investments (*Depreciation period for initial invest (in month)*).
+* Monthly operating costs of process automation (*Operating costs*).
 
 If these details are incomplete or are missing entirely, incorrect values or no values at all (*n/a*) are displayed in the table.
 
 You can see the overview of all processes in the *Processes for finance analysis* view and the overview of a single process in the detailed view.
 
-== See Also 
+== See Also
 
 * xref:processoperations-financeanalysis-basics.adoc[Finanace Analysis Basics]
 * xref:processoperations-financeanalysis-analyze.adoc[Analyze Costs and Savings]

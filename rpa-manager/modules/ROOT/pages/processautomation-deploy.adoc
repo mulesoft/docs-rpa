@@ -10,14 +10,14 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Process Automation Module*
-|*Process Automation Open*
+|Process Automation Open
 
 |===
 
@@ -33,7 +33,7 @@ Test configurations contain start values for the activity parameters defined in 
 
 Transition the project back to the build phase to change the implementation.
 
-=== Transition process to test phase
+=== Transition Process to Test Phase
 
 Transition the fully implemented process to test phase for testing.
 
@@ -44,7 +44,7 @@ Transition the fully implemented process to test phase for testing.
 . Check *I confirm that the process should be released into the test phase and all responsible persons have agreed.*
 . Click *Release to Test* to confirm the transition.
 
-=== Create a test configuration
+=== Create a Test Configuration
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -84,17 +84,17 @@ If one of the selected bots is not configured appropriately, a notification appe
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Finish*.
 
-=== Run tests
+=== Run Tests
 
 Run all tests in parallel. RPA Manger shows a warning in case of deployment problems. View the results in the *Test Results* panel.
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
-. Click *Start tests*
+. Click *Start tests*.
 . In the window *Select Configuration to deploy*, check all test configurations you want to run.
 . Click *Execute*.
 
-=== View test results
+=== View Test Results
 
 View the test results to decide if the project can transition to production phase.
 
@@ -115,7 +115,7 @@ Pause or revoke configurations to stop the execution temporarily. Transition the
 
 Projects that have already been used productively can no longer be deleted.
 
-=== Transition process to production phase
+=== Transition Process to Production Phase
 
 Transition the tested process to production phase for running it fully automatically or for publishing it to Anypoint Exchange.
 
@@ -126,7 +126,7 @@ Transition the tested process to production phase for running it fully automatic
 . Check *I confirm that the process should be released into the production phase and all responsible persons have agreed.*
 . Click *Release to Production* to confirm the transition.
 
-=== Create a run configuration
+=== Create a Run Configuration
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -255,7 +255,7 @@ If one of the selected bots is not configured appropriately, a notification appe
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Save*.
 
-=== Deploy configurations
+=== Deploy Configurations
 
 Deploy configuration to run them fully automatically in a productive environment.
 
@@ -266,7 +266,7 @@ Deploy configuration to run them fully automatically in a productive environment
 . In the window *Select Configuration to deploy*, check all configurations you want to run.
 . Click *Execute*.
 
-=== View run results
+=== View Run Results
 
 View the run results to check if everything runs as predicted.
 
@@ -288,7 +288,7 @@ Transition the project to the production phase to publish an invokable run confi
 
 Projects that have already been used productively can no longer be deleted. Deleted invokable run configurations are not deleted in Anypoint Exchange. Edited and updated invokable run configurations are published as new versions in  Anypoint Exchange.
 
-=== Transition process to production phase
+=== Transition Process to Production Phase
 
 Transition the tested process to production phase for running it fully automatically or for publishing it to Anypoint Exchange.
 
@@ -299,7 +299,7 @@ Transition the tested process to production phase for running it fully automatic
 . Check *I confirm that the process should be released into the production phase and all responsible persons have agreed.*
 . Click *Release to Production* to confirm the transition.
 
-=== Create an invokable run configuration
+=== Create an Invokable Run Configuration
 
 The invokable run configuration is published to Anypoint Exchange upon saving.
 
@@ -429,10 +429,8 @@ Hover the mouse pointer over the info label to display more detailed information
 
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
 * xref:rpa-bot::index.adoc[RPA Bot Overview]
-* xref:botmanagement-overview.adoc[Bot Management Overview]
-
-
+* xref:botmanagement-overview.adoc[Bot Management]
 * xref:processautomation-overview.adoc[Process Automation]
-* xref:processautomation-prepare.adoc[Preparing Process Automations]
-* xref:processautomation-develop.adoc[Developing Process Automations]
+* xref:processautomation-prepare.adoc[Preparing Automations]
+* xref:processautomation-develop.adoc[Developing Automations]
 //* xref:processautomation-deploy.adoc[Deploying Process Automations]

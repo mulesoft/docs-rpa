@@ -4,7 +4,7 @@ If a bot has status *OK*, but seems not to work properly, download its log files
 
 If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on to the computer the bot is installed on and needs to troubleshoot it there.
 
-== Download the log files of a bot
+== Download the Log Files of a Bot
 
 Download the zipped bot log files to check for error or warning messages or to view screenshots.
 
@@ -17,7 +17,7 @@ An IT administrator can configure the content of the package in the RPA Bot Conf
 . In the *Bots* view of the *Bot Management* module, click the *Download Logfiles* icon in the table row of the bot whose log files you want to read.
 . Extract the contents and view the relevant files.
 
-== Restart a bot
+== Restart a Bot
 
 Use this function to restart a bot to ensure that all the processes the bot is currently executing are completed properly before the bot is stopped.
 
