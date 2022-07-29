@@ -49,7 +49,7 @@ Follow these steps to upload the BPMN diagram created with RPA Recorder to RPA M
 . In the *Automation* panel, click the *Save* (image:save.png[The save icon,1.5%,1.5%]) button.
 . Write `MuleSoft Newsletter` in the *Process name* field and click *Save*.
 . Click the *Upload to server* (image:upload-to-server.png[The upload to server icon,1.5%,1.5%]) button.
-. Click *OK* to close the confirmation message that shows after the upload finishes successfully.
+. In the confirmation window that shows after the upload finishes successfully, Click *OK*.
 . Close the *RPA Recording Editor* window.
 . Close the *RPA Recorder* window.
 . Return to RPA Manager and refresh the browser page.

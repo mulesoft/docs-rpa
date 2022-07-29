@@ -17,7 +17,7 @@ RPA Recorder groups recordings by date and tags them with the timestamp of the r
 The BPMN is a graphical representation of a business process model. It is a crucial element of an automation project in the Mulesoft RPA platform.
 It also includes the recorded documentation, which can be viewed in RPA Manager.
 
-You can open BPMN with any workflow and decision automation platform which supports BPMN v1.0 standard, specified by the Object Management Group.
+You can open BPMN with any workflow and decision automation platform which supports BPMN v2.0 standard, specified by the Object Management Group.
 
 == PDF
 
