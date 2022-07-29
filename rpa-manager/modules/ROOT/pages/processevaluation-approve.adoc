@@ -4,7 +4,7 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 == Before You Begin
 
-The following table contains the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
