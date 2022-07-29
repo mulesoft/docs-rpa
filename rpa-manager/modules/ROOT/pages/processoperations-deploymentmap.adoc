@@ -22,8 +22,8 @@ The following table contains the needed privileges:
 
 |===
 
-You can only view processes for which you are part of the process team.
-To execute, pause or stop configurations obtain the needed team member permissions for the production phase.
+* You can only view processes for which you are part of the process team.
+* To execute, pause or stop configurations obtain the needed team member permissions for the production phase.
 
 == Manage Configuration Executions
 
