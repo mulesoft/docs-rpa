@@ -23,7 +23,7 @@ The following table contains the needed privileges:
 
 |===
 
-Note that the user who will use an API key must exist in the *Users* view of the *User Management* module.
+* The user who will use an API key must exist in the *Users* view of the *User Management* module.
 
 == Create an API Key for a User
 
