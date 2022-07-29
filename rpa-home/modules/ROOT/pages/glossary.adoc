@@ -13,10 +13,6 @@ The following glossary helps you understand MuleSoft terminology.
 
 A basic unit of work in the Mule application flow. This can in turn be a connector that connects to an external system or a transform step that is used to transform data inside the application.
 
-=== Automation Credits
-
-To be defined.
-
 
 == B
 
@@ -71,15 +67,6 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 ''''''
 
-=== Invocable API
-
-To be defined.
-
-=== Invokable run configuration
-
-To be defined.
-
-
 == J
 
 ''''''
@@ -95,9 +82,6 @@ To be defined.
 == M
 
 ''''''
-=== ((business) process) model
-
-To be defined.
 
 === MuleSoft Automation
 
@@ -127,10 +111,6 @@ The container for everything in your RPA Platform account.
 === Process candidate
 
 A real-life business process about to be proposed for automation via process evaluation.
-
-=== Process owner
-
-To be defined.
 
 === Project Manager
 
