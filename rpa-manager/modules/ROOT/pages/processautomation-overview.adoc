@@ -24,9 +24,9 @@ The following table contains the needed privileges:
 
 |===
 
-There must be at least one process in the *My Backlog* view in the *My RPA* module.
-RPA Builder, RPA Bot, and all applications required by the automated process must be installed and configured on one computer.
-If you want to record processes, RPA Recorder must be installed on the same computer as RPA Builder and RPA Bot.
+* There must be at least one process in the *My Backlog* view in the *My RPA* module.
+* RPA Builder, RPA Bot, and all applications required by the automated process must be installed and configured on one computer.
+* If you want to record processes, RPA Recorder must be installed on the same computer as RPA Builder and RPA Bot.
 
 == Getting Started
 
