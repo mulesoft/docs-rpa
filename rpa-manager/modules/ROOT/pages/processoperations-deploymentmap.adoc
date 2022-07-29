@@ -11,7 +11,7 @@ The interrelationships of processes, RPA Bots and Configurations are mapped by a
 
 == Before You Begin
 
-The following table contains the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
