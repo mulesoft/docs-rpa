@@ -38,9 +38,11 @@ The following table contains the needed privileges:
 
 |===
 
-To record a process, RPA Recorder must be installed and connected to RPA Manager; to build a process automation, RPA Builder must be installed and connected to RPA Manager; and to use RPA Builder, obtain an RPA Builder assignment in the *Users* view of the *User Management* module.
-A project must exist in the *Project Management* view of the *Process Automation* module.
-Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
+* To record a process, RPA Recorder must be installed and connected to RPA Manager. 
+* To build a process automation, RPA Builder must be installed and connected to RPA Manager. 
+* To use RPA Builder, obtain an RPA Builder assignment in the *Users* view of the *User Management* module.
+* A project must exist in the *Project Management* view of the *Process Automation* module.
+* Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
 == Design a Process Model
 
