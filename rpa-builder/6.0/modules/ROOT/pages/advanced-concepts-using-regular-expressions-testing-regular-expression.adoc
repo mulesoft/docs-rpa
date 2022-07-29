@@ -1,16 +1,14 @@
-include::rpa-home::partial$pending-review.adoc[]
 
 = Testing Regular Expression
 
-Open the _Regex Tester_ dialog using the "Tools -> Open Regex Tester"
-menu option or by clicking the icon
-image::advanced-concepts-using-regular-expressions-testing-regular-expression-image1.png[Regex Tester icon]. Use this dialog to
+Open the _Regex Tester_ dialog navigating to *Tools* -> *Open Regex Tester*
+menu option or by clicking the *Open Regex Tester* icon (image:advanced-concepts-using-regular-expressions-testing-regular-expression-image1.png[Regex Tester icon, 2%, 2%]). Use this dialog to
 create and test regular expressions. You can also access the _Regex
 Tester_ directly from various _Action Steps_. The regular expressions
 and, if present, text patterns associated with the _Action Step_ can
 then be transferred directly to the _Regex Tester_.
 
-image::advanced-concepts-using-regular-expressions-testing-regular-expression-image2.png[Regex Tester wizard]
+image::advanced-concepts-using-regular-expressions-testing-regular-expression-image2.png[Regex Tester wizard, 50%, 50%]
 
 * *Regex* Enter the regular expression that you want to test. Commonly
 used regular expressions can be selected from the *Commonly used Regex*

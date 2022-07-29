@@ -1,5 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Process Recording Editor
 
 If you start the recorder from RPA Builder, you can view the current process BPMN and all new recorded BPMNs by selecting them from the drop-down menu.
@@ -51,6 +49,6 @@ To open the *Save recording as* dialog box again, click the *Save as* button (im
 
 == Upload BPMN to RPA Manager
 
-After merging and editing the BPMN and documentation, you can upload the new process BMPN by clicking the *Upload to server* icon (image:upload-to-server-icon.png[Upload to Server icon, 2%, 2%]). A message opens confirming that the upload is completed.
+After merging and editing the BPMN and documentation, you can upload the new process BMPN by clicking the *Upload to RPA Manager* icon (image:upload-to-server-icon.png[Upload to RPA Manager icon, 2%, 2%]). A message opens confirming that the upload is completed.
 
-You can then close the Process Recording Editor and the Process Recorder by clicking the *Close* icon (image:close-icon.png[Close icon, 2%, 2%]) in the top right corner.
+You can then close the Process Recording Editor and RPA Recorder by clicking the *Close* icon (image:close-icon.png[Close icon, 2%, 2%]) in the top right corner.

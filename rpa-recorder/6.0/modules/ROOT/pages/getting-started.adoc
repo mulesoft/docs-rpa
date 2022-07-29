@@ -1,5 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Installing and Starting RPA Recorder
 
 You can install RPA Recorder by manually downloading and running the installer or by starting the recorder from RPA Manager, which provides a link to download and install RPA Recorder.

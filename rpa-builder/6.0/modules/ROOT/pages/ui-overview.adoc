@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = RPA Builder UI Overview
 
@@ -7,10 +7,10 @@ The RPA Builder user interface has the following main areas:
 //image::getting-started-installation-and-first-use-application-overview-image1.png[Overview window panes]
 image:rpa-builder-ui-overview.png[Overview window panes]
 
-. Left window pane
+. Explorer pane
 . Menu bar
-. Business Process Modeler
-. Right window pane
+. BPMN editor
+. Wrokflow Properties pane
 . Workbench
 . Workflow Run Results
 +
@@ -42,14 +42,13 @@ more detailed description of this dialog and of regular expressions in
 general.
 
 *Templates Manager* This menu item opens the _Templates Manager_. This
-provides an overview of all the templates which have been created in the
-X1 Design Studio already. Clicking the template name on the left-hand
+provides an overview of all the templates which have been created in RPA Builder already. Clicking the template name on the left-hand
 side of the window opens a preview of that template’s content. Use the
 _Delete_ button to delete individual templates. You can find out how to
 create and edit templates in the section entitled Save selected Workflow Objects as
 template.
 
-image::getting-started-installation-and-first-use-application-overview-image3.png[Example Templates]
+image::getting-started-installation-and-first-use-application-overview-image3.png[Example Templates, 50%, 50%]
 
 === Options
 
@@ -92,7 +91,7 @@ RPA Builder.
 
 *Browser Options*
 
-Please run the X1 Design Studio with *administrator rights* for
+Please run RPA Builder with *administrator rights* for
 selecting the version of the Internet Explorer to be used in the
 _Browser Wizard_ of _Action Step Web Session_ contained in the plug-in
 _Web Automation_ and *restart* it afterwards.
@@ -122,16 +121,11 @@ image::rpa-builder-options-visibility.png[Option Visibility, 50%, 50%]
 
 *Show Action Step descriptions* (default: off) This option allows you to
 show and hide the descriptions of individual Workflow elements on the
-Workbench in the X1 Design Studio. This does not affect the visibility
+Workbench in RPA Builder. This does not affect the visibility
 of the individual element descriptions for the Properties and tool tips,
 which are always visible. This option can also be modified via the _Show
 Action Step descriptions_ button or the CTRL+D shortcut. It is saved on
 an individual user basis.
-
-*Show Run Protocol after Workflow execution* If this option is set, the
-_Protocol Preview_ of the _Workflow Run Protocols_
-are opened directly after the local run of the Workflow in the X1
-Design Studio.
 
 *Show system parameters dialog*
 
@@ -139,11 +133,7 @@ If this option is set, the system parameters are shown whenever a
 new Activity Workflow is created. These can also be shown via the menu
 _View_ -> _Show System Parameters_.
 
-*Plug-ins* All plug-ins are installed automatically. For
-clarity, you can individually disable the display of every single module
-in the _Toolbox_ here.
-
-== Left Window Pane
+== Explorer Pane
 
 In the window pane on the left-hand side, you will find five tabs
 containing the views _Toolbox_, _Project_, _Activity Library_,
@@ -220,20 +210,6 @@ last Activity Workflow that was run.
 The Project Status section provides detailed information about the
 validation and script generation of the project.
 
-== Properties Panel
-
-The Properties Panel is located on the right side of the BP Modeler.
-Here you can see, among other things, the respective Workflow ID or
-Activity ID and change the name of the Activity. In addition, there are
-numerous possibilities to edit technical BPMN properties in particular.
-
-For more information about the Properties Panel, see the following
-links, for example:
-
-https://blog.camunda.com/post/2017/04/adding-custom-elements-to-bpmn-properties-panel/[https://blog.camunda.com/post/2017/04/adding-custom-elements-to-bpmn-properties-panel/^]
-
-https://github.com/bpmn-io/bpmn-js-properties-panel[https://github.com/bpmn-io/bpmn-js-properties-panel^]
-
 == Workflow Properties Grid
 
 The _Workflow_ _Properties_ grid is located on the right-hand side of
@@ -241,8 +217,7 @@ the screen. In the initial view it is set to _auto-hide_, but it will
 expand as soon as you have opened or created a _Workflow_. It displays
 all properties of the current selection within the _Workbench_.
 
-If you click on an element, a description will be shown in the lower
-part of the pane.
+If you click on an element, a description shows in the bottom of the pane.
 
 If you enter text in the field _Filter_, the displayed properties are
 successively reduced to those containing the entered text.

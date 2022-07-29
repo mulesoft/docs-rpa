@@ -7,9 +7,9 @@ Before using RPA Builder, ensure that your environment meets the minimum hardwar
 [%header%autowidth.spread,cols=".^a,.^a]
 |===
 | Minimum | Recommended
-| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
-| 8 GB of RAM | 16 GB of RAM
-| 5 GB of disk space | 10 GB (SSD) of disk space
+| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 2 GHz CPU (MMX/SSE compatible)
+| 4 GB of RAM | 8 GB of RAM
+| 30 GB of disk space | 30 GB (SSD) of disk space
 | |
 Graphics Accelerator Card
 |===
@@ -33,7 +33,7 @@ Any of the following:
 Any of the following:
 
 * Java Runtime Environment 11 (JRE, 64-bit version) or higher
-* AdoptOpenJDK 11 (JRE, 64-bit version) or higher
+* Adoptium 11 (JRE, 64-bit version) or higher
 |===
 
 == See Also

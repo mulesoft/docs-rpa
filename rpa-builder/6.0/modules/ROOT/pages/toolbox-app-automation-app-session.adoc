@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = App Session
 
@@ -23,11 +23,11 @@ when _Keep out Mouse_ is active. All four corners are available.
 every step in the App Session. Note here that some Action Steps move the
 mouse for execution (such as click element with “Left Click”).
 
-== Inbound VariablesInbound Variables
+== Inbound Variables
 
 The _App Session_ does not have any inbound variables.
 
-== Outbound VariablesOutbound Variables
+== Outbound Variables
 
 The _App Session_ does not have any outbound variables.
 

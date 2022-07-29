@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Click App Element
 
@@ -90,7 +90,7 @@ process, moves the mouse to the target element.
 *Trigger count* defines how often the configured action should be
 executed.
 
-== Inbound VariablesInbound Variables
+== Inbound Variables
 
 *Trigger Count*
 
@@ -100,7 +100,7 @@ executed.
 
 *Window Title*
 
-== Outbound VariablesOutbound Variables
+== Outbound Variables
 
 The Click App Element Action Step does not have any outbound variables.
 

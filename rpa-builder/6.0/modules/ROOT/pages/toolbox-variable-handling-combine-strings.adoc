@@ -1,4 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
+
 
 = Combine Strings
 
@@ -63,9 +63,9 @@ a new variable using different _Pattern Texts_:
 |===
 |*ActivityParameters.ap_alpha1* |*ActivityParameters.ap_alpha2*
 |*Pattern Text* |*Output Variable _(Combined String)_*
-|servicetrace |De |www.\{1}.\{2} |www.servicetrace.de
+|mulesoft |com |www.\{1}.\{2} |www.mulesoft.com
 
-|servicetrace |Info |www.\{1}.\{2} |www.servicetrace.info
+|mulesoft |Info |www.\{1}.\{2} |www.mulesoft.info
 
 |Ms |Miller |Dear \{1}. \{2}, |Dear Ms. Miller,
 
