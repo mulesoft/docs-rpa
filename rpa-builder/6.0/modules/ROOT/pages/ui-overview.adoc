@@ -6,7 +6,7 @@ The RPA Builder user interface has the following main areas:
 
 //image::getting-started-installation-and-first-use-application-overview-image1.png[Overview window panes]
 image:rpa-builder-ui-overview.png[Overview window panes]
-+
+
 . Left window pane
 . Menu bar
 . Business Process Modeler

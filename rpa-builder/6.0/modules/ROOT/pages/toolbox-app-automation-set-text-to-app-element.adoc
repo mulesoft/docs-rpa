@@ -1,17 +1,17 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Set Text to App Element
+= Set Text to App Element
 
 The _Set Text To App Element_ Action Step can be used to set text
 directly to a selected App Element.
 
-=== PropertiesProperties
+== PropertiesProperties
 
 *Input String (Input Text)* Is the text that will be written to the
 selected element. You can use _Insert environment variable_ and _Insert
 script_ _variable_ to swap in other values for the text at runtime.
 
-=== Inbound Variables
+== Inbound Variables
 
 *XPath to Element*
 
@@ -19,12 +19,12 @@ script_ _variable_ to swap in other values for the text at runtime.
 
 *Input Text*
 
-=== Outbound Variables
+== Outbound Variables
 
 The _Set Text to App Element_ Action Step does not have any outbound
 variables.
 
-=== Wizard
+== Wizard
 
 See Properties and the chapter Common Properties.
 

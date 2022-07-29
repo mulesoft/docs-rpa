@@ -1,11 +1,11 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Run Program
+= Run Program
 
 This _Action Step_ is used to run a program by directly calling its
 executable file.
 
-=== Properties
+== Properties
 
 *Domain* If a process is started with a specific user, this defines the
 domain of the user
@@ -56,7 +56,7 @@ wait until the window appears
 *Window Title* If _Wait for window_ _to appear_ is set, this defines the
 _Window Title_ to wait for
 
-=== Inbound Variables
+== Inbound Variables
 
 *File name*
 
@@ -72,7 +72,7 @@ _Window Title_ to wait for
 the newly opened window. (Only available if _Wait for window_ _to
 appear_ is set.)
 
-=== Outbound Variables
+== Outbound Variables
 
 *Process ID* The ID of the process that has been started
 
@@ -80,7 +80,7 @@ appear_ is set.)
 
 *Working Dir* The working directory of the process
 
-=== Wizard
+== Wizard
 
 *Insert* Environment *Variable* Select and use any defined environment
 variable as a path to the desired program file via the drop-down menu

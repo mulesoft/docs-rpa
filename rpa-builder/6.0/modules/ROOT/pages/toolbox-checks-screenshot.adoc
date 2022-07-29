@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Screenshot
+= Screenshot
 
 This _Action Step_ takes a screenshot and saves it to the trace folder.
 You can use it to get feedback on what is happening at any point in a
@@ -9,7 +9,7 @@ _Workflow_.
 This is especially helpful for debugging _Workflows_ running on
 distant machines.
 
-=== Properties
+== Properties
 
 *Capture Area*
 
@@ -42,7 +42,7 @@ custom folder with a custom name. If not selected, screenshots will be
 saved within the usual trace folder (and will subsequently be part of
 analysis packages).
 
-=== Wizard
+== Wizard
 
 *Define Screenshot Area* It is possible to restrict the screenshot to a
 certain part of the screen. This area is captured in the same way as

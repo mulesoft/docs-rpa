@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== AI OCR (screen-based)
+= AI OCR (screen-based)
 
 The _AI OCR (screen-based)_ Action Step is a further development of the
 existing OCR Action Steps. In contrast to the other OCR Action Steps, it
@@ -26,13 +26,13 @@ to the Action Step Legacy OCR. You can find a detailed description of
 the properties, variables, etc. in the Chapter entitled
 _Text Recognition – Legacy OCR_.
 
-=== Properties
+== Properties
 
 *OCR Image Preprocessing*
 
 See also xref:toolbox-text-recognition-ai-ocr-file-based.adoc#Properties[Properties] in the Chapter entitled *AI OCR (File-based)*.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Scan Area relative to* (Coordinates) The defined Search Area is moved
 relative to these coordinates. The resulting result coordinates are then
@@ -43,12 +43,12 @@ See also the Chapter entitled Search Pattern – *Search Settings*.
 
 This variable can only be mapped in the wizard.
 
-=== Outbound Variables
+== Outbound Variables
 
 *IsSucceeded* (Boolean) Shows whether text recognition has been carried
 out successfully or not.
 
-=== Wizard
+== Wizard
 
 You can use *OCR Image Preprocessing* to improve the quality of the
 image so that the OCR operation can run optimally. This is always

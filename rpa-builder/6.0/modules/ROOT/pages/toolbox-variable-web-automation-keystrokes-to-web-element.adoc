@@ -1,16 +1,16 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Keystrokes to Element
+= Keystrokes to Element
 
 Use this _Web Automation_ object to enter alphanumeric characters into
 fields on a website or within a web application.
 
-=== Properties
+== Properties
 
 *Input text* The text that will be entered in the given element. Can use
 script and environment variables.
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#CommonProperties_WebAutomation[*Element XPath*]
 *Element XPath*
@@ -18,11 +18,11 @@ script and environment variables.
 //link:#CommonProperties_WebAutomation[*Window Title*]
 *Window Title*]
 
-=== Outbound Variables
+== Outbound Variables
 
 The Action Step _Keystrokes to Element_ possesses no outbound variables.
 
-=== Wizard
+== Wizard
 
 _Keystrokes to Element_ enables you to fill in any field on a website,
 web application, or form that accepts content. You can manually define a

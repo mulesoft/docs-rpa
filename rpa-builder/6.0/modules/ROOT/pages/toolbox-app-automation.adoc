@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== App Automation
+= App Automation
 
 App Automation lets you address elements directly through their XPaths.
 The appearance and coordinates are not relevant, in contrast to the
@@ -12,7 +12,7 @@ In addition, App Automation makes it easier to create workflows, by
 recording clicks and keyboard inputs to generate Action Steps
 automatically.
 
-=== Generating Action Steps
+== Generating Action Steps
 
 There are two ways to generate Action Steps automatically.
 
@@ -38,7 +38,7 @@ completed the recording, you can then click _OK & generate_. The Action
 Steps are then generated automatically.
 
 
-=== Example
+== Example
 
 In this example, Microsoft Excel is called, a new Excel workbook is
 opened, and text is inserted in the first row. In the following, you
@@ -53,7 +53,7 @@ Action Steps or renaming existing ones.
 The red highlighting in the wizard preview immediately shows you where
 the click was executed.
 
-=== Supported applicationsSupported applications
+== Supported applicationsSupported applications
 
 The following types of applications are supported:
 
@@ -78,7 +78,7 @@ WPF
 UWP
 
 
-=== Common Properties (App Automation)
+== Common Properties (App Automation)
 
 The _App Automation_ Action Steps also possess the _common properties_
 of the other Action Steps, as described in the chapter

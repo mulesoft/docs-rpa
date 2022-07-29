@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Break Loop
+= Break Loop
 
 There are cases where you need to exit the _Loop Control Block_ before
 all iterations have been executed. _Break Loop_ should be used for this
@@ -11,17 +11,17 @@ Control Block_, because otherwise it would be executed during the first
 iteration of a _Loop Control Block_, thus defeating the object of having
 a loop.
 
-=== Properties
+== Properties
 
 * *Exit Mode* Determines how the loop reacts _after_ using a _Break
 Loop_, i.e. with or without error
 
 ////
-==== Wizard
+== Wizard
 
 image:media\image1.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=391,height=123]
 
-==== Example
+== Example
 
 The following is an example of how to implement a retry loop into your
 _Workflow_ – in this case trying to reload a webpage until the content

@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Image Search
+= Image Search
 
 The _Image search_ is a very important _Action Step_. It searches for a
 user-defined image, waits until it appears or disappears, and can also
@@ -39,7 +39,7 @@ match the current system's color depth. You can adjust this within the
 *Workflow Properties*.
 //link:#WorkflowProperties[_Workflow Properties_].
 
-=== Properties
+== Properties
 
 * *Compare Precision* This is an additional setting for the search
 algorithm modes _Color_ and _Gradient_. In these modes the actual color
@@ -112,11 +112,11 @@ on a single core computer.
 used for the _Image search_ (only applicable if _Load Optimizer_ is
 activated)
 
-=== Variables
+== Variables
 
 * *Find Coordinate* The X/Y coordinate of where the picture was found
 
-=== Wizard
+== Wizard
 
 
 * *Start from scratch* Starts the configuration using all steps.
@@ -151,7 +151,7 @@ much.
 
 //image::toolbox-checks-image-search-image1.png[Select pattern image]
 
-=== Freezing the Desktop
+== Freezing the Desktop
 
 If you want to capture a _Pattern image_ that is only visible for a
 short amount of time or under specific conditions, you can freeze the
@@ -165,7 +165,7 @@ show with direct mouse input, such as hover effects.
 Once the desktop is frozen, a big _Unfreeze_ button will appear on the
 selection frame. Click it to unfreeze the desktop again.
 
-=== Using Zoom View for Small Selections
+== Using Zoom View for Small Selections
 
 If you have to capture a very small part of the screen (which is always
 a good thing if this part is unique enough to be used for
@@ -175,7 +175,7 @@ in the blue frame and a zoom view window will appear onscreen. It will,
 however, only appear for small selections and disappear if your
 selection gets too big.
 
-=== Capturing the Image
+== Capturing the Image
 
 Make sure the image contains as many contours as needed to identify the
 desired part of the screen with 100% certainty. Try to keep images as
@@ -189,12 +189,12 @@ Your _Pattern image_ size should always follow the rule "as big as
 necessary, as small as possible" to ensure good, steady search
 performance.
 
-=== Capturing the Search Area
+== Capturing the Search Area
 
 After you captured the _Pattern image_, a red frame will appear to
 define the search area.
 
-/image::toolbox-checks-image-search-image2.png[Example capturing the Search Area]
+//image::toolbox-checks-image-search-image2.png[Example capturing the Search Area]
 
 This is the area of the screen that will later be searched for the
 _Pattern image_. Again, this selection should be "as big as necessary,
@@ -214,7 +214,7 @@ After selecting the _Pattern image_ and the _Search area_, RPA Builder evaluates
 
 A newly recorded image search should always be found with 100% accuracy.
 
-=== The Different Search Modes
+== The Different Search Modes
 
 *_Color_* +
 The simplest and fastest search algorithm. In the default configuration,
@@ -251,7 +251,7 @@ This search algorithm was created specifically to identify characters
 and writing. It basically uses the same technique as _Contour_ mode, but
 with additional compensation for font smoothing.
 
-=== Adjusting Threshold for Contour and Contour Plus Mode
+== Adjusting Threshold for Contour and Contour Plus Mode
 
 When you are using one of the contour modes, you can adjust the
 black/white threshold. The default value, 10, is usually the optimal
@@ -283,7 +283,7 @@ reliably:
 image::toolbox-checks-image-search-image7.png[Example pattern]
 ////
 
-=== Troubleshooting
+== Troubleshooting
 
 If you have problems finding the same picture on different machines, you
 should first make sure that the system parameters of these systems are

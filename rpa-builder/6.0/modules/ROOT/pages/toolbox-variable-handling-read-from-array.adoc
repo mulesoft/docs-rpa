@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Read from Array
+= Read from Array
 
 The _Read from Array_ Action Step is used to access the content of an
 array.
@@ -13,7 +13,7 @@ The _Read from Array_ Action Step provides the read values from the
 array automatically as various data types. You can decide later in the
 Workflow which data type you wish to use.
 
-=== Properties
+== Properties
 
 *Get entire array as CSV* (Bool, default: false) If active, the whole
 array is returned as a string in CSV format (comma separated values).
@@ -24,7 +24,7 @@ of the array is to be read from. Indexing starts at 1.
 Please make sure that the index entered is not greater than the total
 number of all elements within the array.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Array to read from* (Array) The array that is to be read from.
 
@@ -36,7 +36,7 @@ _Workflow Based Variables_ or return arrays from the _Read from Excel File_ Acti
 *Index to read at**(integer, > 0, default: 1) Position within the array where the content
 of the array is to be read from. Indexing starts at 1.
 
-=== Outbound Variables
+== Outbound Variables
 
 The __Read from Array__Action Step automatically supplies four different
 return values. Each one represents one of the possible data types.
@@ -82,7 +82,7 @@ Double <=0, false; if Double >= 0 true
 Each row refers to an outbound data type, each column to the result of
 converting to the data type in the column header.
 
-=== Wizard
+== Wizard
 
 The drop-down _Array to read from_ list contains all the arrays that
 have been created in the Workflow so far. These can be
@@ -103,11 +103,11 @@ select None. You can then enter a value manually in the input field. The
 input field and its content are deactivated if the checkbox above it is
 selected.
 
-=== Example
+== Example
 
 For a detailed example, please refer to the description of the _Get Array Count_ Action Step.
 ////
-=== Related Elements
+== Related Elements
 
 The following sections may help you to better understand the
 relationships between the individual array Workflow elements:

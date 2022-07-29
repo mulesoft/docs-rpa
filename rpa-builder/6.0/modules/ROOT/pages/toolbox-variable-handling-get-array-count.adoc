@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Get Array Count
+= Get Array Count
 
 The _Get Array Count_ Action Step returns the number of elements in an array.
 
@@ -10,12 +10,12 @@ An array is either created via the element _Workflow Based Variables_
 //link:#WorkflowBasedVariables[_+++Workflow Based Variables+++_]
 or returned as the result of the _Read from Excel File_ Action Step.
 
-=== Properties
+== Properties
 
 This Action Step contains no special properties other than the _general_ ones.
 //link:#CommonProperties[+++general+++]
 
-=== Inbound Variables
+== Inbound Variables
 
 * *Array to get count of* (array, default: blank) Array for which the
 number of elements is to be determined.
@@ -29,11 +29,11 @@ would like to use the _Array Count_ in a subsequent transaction, please
 copy the return array into an array which has previously been created in
 the Workflow Based Variables (see _Set_Array_Variable_).
 
-=== Outbound Variables
+== Outbound Variables
 
 * *Array Count* (integer, default 0) Number of elements in the array
 
-=== Wizard
+== Wizard
 
 //image:media\image1.png[Ein Bild, das Text enthält. Automatiscgenerierte Beschreibung,width=381,height=226]
 
@@ -41,7 +41,7 @@ All arrays which are available within the Workflow are shown in the drop-down li
 
 Please make sure that the array was previously correctly populated. An empty array returns an _Array Count_ of 0.
 
-=== Example
+== Example
 
 In this example, an auto repair shop wants to monitor automatically
 which _Services_ have been performed on a certain vehicle.
@@ -69,7 +69,7 @@ checklist is used later on in the Workflow to calculate costs.
 The configuration values of the individual Action Steps are passed on
 using (Pin) _Variables_.
 ////
-=== Related Elements
+== Related Elements
 
 The following sections may help you to better understand the
 relationships between the individual Excel Workflow elements:

@@ -1,11 +1,11 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Map Network Drive
+= Map Network Drive
 
 This _Action Step_ lets you map and unmap any network location and any
 drive letter.
 
-=== Properties
+== Properties
 
 *Drive* The drive letter to map the network location to. Or, if you
 selected _Unmap Drive_, the drive letter to unmap.
@@ -26,11 +26,11 @@ applicable if _Login required_ is activated.
 map a drive that is already mapped. Activate this if you only want a
 warning instead.
 
-=== Inbound Variable
+== Inbound Variable
 
 //link:#AS_MapNetworkDrive_P_NetworkPath[*Network Path*]
 *Network Path* The path of the network location you want to map.
 
-=== Outbound Variables
+== Outbound Variables
 
 The Action Step _Map Network Drive_ possesses no outbound variables.

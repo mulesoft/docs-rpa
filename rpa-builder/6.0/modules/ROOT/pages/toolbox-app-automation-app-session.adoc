@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== App Session
+= App Session
 
 The _App Session_ Action Step is, similar to the Excel Session, an
 inclusive element for all App Automation Action Steps. These steps can
@@ -10,7 +10,7 @@ be inserted in the App Session.
 Please note that an App Session *cannot* be added to another App
 Session.
 
-=== Properties
+== Properties
 
 *Keep out mouse* The mouse is parked in the position specified in the
 _Move mouse to_ property, to avoid triggering hover effects
@@ -23,15 +23,15 @@ when _Keep out Mouse_ is active. All four corners are available.
 every step in the App Session. Note here that some Action Steps move the
 mouse for execution (such as click element with “Left Click”).
 
-=== Inbound VariablesInbound Variables
+== Inbound VariablesInbound Variables
 
 The _App Session_ does not have any inbound variables.
 
-=== Outbound VariablesOutbound Variables
+== Outbound VariablesOutbound Variables
 
 The _App Session_ does not have any outbound variables.
 
-=== Wizard
+== Wizard
 
 *Start Capturing* lets you record a variety of interactions within RPA Builder. The recording corresponds to the output of RPA Recorder.
 This button is only active if the App Session does not contain any elements yet. During a recording, all actions – such as mouse movements and keystrokes – are captured.

@@ -1,7 +1,7 @@
 include::rpa-home::partial$pending-review.adoc[]
 //This one is not in RPA Builder, confirm if we need to include it
 
-== External Script
+= External Script
 
 The _MuleSoft_ script engine utilizes the automation scripting
 language _AutoIT_. With the _External Script_ _Action Step,_ you can
@@ -16,7 +16,7 @@ your installation folder in _[Install Dir]_\ServiceTracerClient\bin\
 Unlike all other _Action Steps_, the _External Script_ _Action Step_ can
 be integrated into the entire _Workflow_, not just a _Transaction_.
 
-=== Properties
+== Properties
 
 * *File Path* (_Properties_ grid only): The path to the external script
 file is displayed here (not editable)
@@ -25,64 +25,59 @@ containing the external script was created (not editable)
 * *Script Modification Date* (_Properties_ grid only): Date the file
 containing the external script was last modified (not editable)
 
-=== Wizard
+== Wizard
 
 The wizard contains a text editor featuring various options.
 
 //image:media\image1.png[image,width=22,height=21]
-_Open_ _Script_ opens an existing script for editing
+*Open Script* opens an existing script for editing
 
 //image:media\image2.png[image,width=24,height=23]
-_Cut_ removes the selected text
+*Cut* removes the selected text
 
 //image:media\image3.png[image,width=21,height=22]
-_Copy_ copies the selected text
+*Copy* copies the selected text
 
 //image:media\image4.png[image,width=19,height=23]
-_Paste_ inserts the previously cut or copied text
+*Paste* inserts the previously cut or copied text
 
 //image:media\image5.png[image,width=22,height=21]
-_Undo_ reverses the last step
+*Undo* reverses the last step
 
 //image:media\image6.png[image,width=25,height=22]
-_Redo_ reverses the last undo step
+*Redo* reverses the last undo step
 
 //image:media\image7.png[image,width=25,height=25]
-_Find_ searches for the text entered in the box
+*Find* searches for the text entered in the box
 //image:media\image8.png[image,width=33,height=27]
 //and image:media\image9.png[image,width=34,height=24] moves the cursor to the previous and next result found respectively.
 
-…_Decrease Indent_ reduces how far the selected text is positioned from the margin
+*Decrease Indent* reduces how far the selected text is positioned from the margin
 
-…_Increase Indent_ moves the selected text further from the margin
+*Increase Indent* moves the selected text further from the margin
 
 //image:media\image10.png[image,width=23,height=26]
-_Comment out selected lines_ ignores the selected lines
+*Comment out selected lines* ignores the selected lines
 
 //image:media\image11.png[image,width=25,height=22]
-_Uncomment selected lines_ ensures the selected lines of text are not ignored
+*Uncomment selected lines* ensures the selected lines of text are not ignored
 
-_Font Size_ changes the size of the text
+*Font Size* changes the size of the text
 
-_Insert script variable_ allows a value from a variable in the script to
+*Insert script variable* allows a value from a variable in the script to
 be added to a local variable. The name of the local variable matches
 that of the script variable with a Safe_ before it. (The original name
 must be used if a value from a script variable is to be changed.)
 
-Use _Insert Measurement Point_ to insert a measurement point that can be
+Use *Insert Measurement Point* to insert a measurement point that can be
 used for reporting in the external script. You have two options here:
 
-* {blank}
-+
-____
-You can
+* You can
 //use image:media\image12.png[image,width=158,height=20] to
 insert timers or checkpoints.
 //The following window is opened:
-____
 +
 //image:media\image13.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=248,height=105]
-+
 Under *Type*, select whether you want to insert a timer or a checkpoint.
 The *ID* is assigned automatically. When you click OK, the measurement
 point is added to the drop-down list.
@@ -90,17 +85,12 @@ point is added to the drop-down list.
 //image:media\image14.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=246,height=114]
 +
 //Use image:media\image15.png[image,width=24,height=23] to insert themeasurement points into the script.
-* {blank}
-+
-____
-You can
+* You can
 //use image:media\image16.png[image,width=220,height=19] to
 import the measurement points using a csv list.
 //The following dialog is opened:
-____
 +
 //image:media\image17.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=199,height=125]
-+
 Enter the *CSV file path* and the *Type* of the measurement points.
 +
 Also specify the *Column* you want to read. It gives the measurement
@@ -142,7 +132,7 @@ coordinates increase from top to bottom. The coordinate \{0;0} is the
 top-left corner of the screen.
 
 ////
-=== Examples
+== Examples
 
 *Example 1: Copy Trace Directory to Network Drive*
 
@@ -202,7 +192,7 @@ $Value has to be replaced by the variable which should be displayed. In
 the previous example, this could be StcDbgSetWatch ( "Ping Target",
 _$PingTarget_).
 
-=== StcFuncLib and StcUserApi
+== StcFuncLib and StcUserApi
 
 For more in-depth, tasks, there is an API for part of the script code
 called StcFuncLib. StcFuncLib takes responsibility for the control and

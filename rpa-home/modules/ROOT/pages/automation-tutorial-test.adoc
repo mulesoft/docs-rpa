@@ -1,5 +1,3 @@
-include::rpa-home::partial$pending-review.adoc[]
-
 = Step 6: Test the Automation
 
 You finished the build phase and the automation project is ready to move to the testing phase, where you create a test plan to execute the necessary tests on your automation project. You can create multiple configurations to test your process using different activity parameters and to test for the completion of user tasks.
@@ -26,10 +24,13 @@ To create a test plan, open RPA Manager and follow these steps:
 To run the test plan and see the results, follow these steps:
 
 . In the *Test plans* panel, click *Start tests*.
+. In the *Select Configuration to deploy* window, select your test plan and click *Execute*.
++
+image:test-config-deploy.png[The Select Configuration to deploy window, 50%, 50%]
 . In the *Test Results* panel, click *Update*.
 +
 If there are no results, wait a few minutes for the test to end and click *Update* again.
-. Verify that there is a new entry for the RPA bot showing *1* in the *Success* column.
+. Verify that there is a new entry for the bot showing *1* in the *Success* column.
 +
 image:bot-test-success.png[The Test Results window showing a successful execution]
 . Click *Publish(Production)*.
@@ -43,4 +44,7 @@ You created a test plan that executes the automation to ensure that the process 
 
 Continue with: xref:automation-tutorial-deploy.adoc[Step 7: Deploy the automation]
 
-//== See Also
+== See Also
+
+* xref:rpa-bot::installation.adoc[Installing RPA Bot]
+* xref:rpa-bot::configuration.adoc[Configuring RPA Bot]

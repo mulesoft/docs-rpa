@@ -1,17 +1,17 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Set Toggle App Element
+= Set Toggle App Element
 
 You can use the _Set Toggle App Element_ Action Step to set a toggle App
 Element to enabled or disabled. Examples of these elements include
 checkboxes and toggle buttons.
 
-=== PropertiesProperties
+== Properties
 
 *Set Element to* Lets you define the status you want to set the element
 to: enabled or disabled.
 
-=== Inbound VariablesInbound Variables
+== Inbound Variables
 
 *XPath to Element*
 
@@ -19,11 +19,11 @@ to: enabled or disabled.
 
 *Set Element to*
 
-=== Outbound Variables Outbound Variables
+== Outbound Variables
 
 The _Set Toggle App Element_ Action Step does not have any outbound
 variables.
 
-=== WizardWizard
+== Wizard
 
 See Properties and the chapter Common Properties.

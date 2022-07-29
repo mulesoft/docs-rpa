@@ -1,3 +1,15 @@
 include::rpa-home::partial$pending-review.adoc[]
 
 == Text Recognition
+
+Text Recognition enables you to use different methods of Optical Character Recognition(OCR) to analyze images and extract text from them.
+
+* xref:toolbox-text-recognition-ai-ocr-file-based.adoc[AI OCR (File-based)]
++
+Using the AI OCR (file-based) Action Step, existing images such as document scans can be recognized.
+* xref:toolbox-text-recognition-ai-ocr-screen-based.adoc[AI OCR (Screen-based)]
++
+The AI OCR (screen-based) Action Step attempts to extract texts from screenshots of the currently active desktop.
+* xref:toolbox-text-recognition-intelligent-ocr-2020.adoc[Intelligent OCR (2020)]
++
+The Intelligent OCR (2020) Action Step supports the following additional languages: Arabic, Greek, Hebrew, and Thai.

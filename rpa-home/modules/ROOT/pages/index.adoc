@@ -1,6 +1,4 @@
-include::rpa-home::partial$pending-review.adoc[]
-
-= MuleSoft Robotic Process Automation (RPA)
+= RPA Overview
 
 MuleSoft Robotic Process Automation (RPA) enables you to automate business processes and tasks by using bots, which helps save time and prevent introducing human errors.
 
@@ -73,7 +71,7 @@ MuleSoft RPA provides the following applications that enable you to manage the c
 * Add the automation logic to the processes.
 * Run local tests for the automations.
 | RPA Recorder
- | RPA Recorder is an on-premise tool that assists during the process building phase by automatically recording action steps from your local environment.
+ | RPA Recorder is an on-premise tool that assists during the building phase of a process by automatically recording action steps from your local environment.
   |
 * Build a BPMN diagram based on user actions.
 * Capture keyboard input, mouse clicks, and used applications.
@@ -88,5 +86,9 @@ MuleSoft RPA provides the following applications that enable you to manage the c
 
 == See Also
 
-// Link to Hardware and software requirements
-// Tutorial
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
+* xref:automation-tutorial-introduction.adoc[Tutorial: Build an Automation from Start to Finish]
+* xref:rpa-manager::index.adoc[RPA Manager Overview]
+* xref:rpa-builder::index.adoc[RPA Builder Overview]
+* xref:rpa-recorder::index.adoc[RPA Recorder Overview]
+* xref:rpa-bot::index.adoc[RPA Bot Overview]

@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-= Install and Start RPA Recorder
+= Installing and Starting RPA Recorder
 
 You can install RPA Recorder by manually downloading and running the installer or by starting the recorder from RPA Manager, which provides a link to download and install RPA Recorder.
 
@@ -8,20 +8,31 @@ Every time you start RPA Recorder, you are required to log in using your RPA cre
 
 == Install RPA Recorder
 
-Install RPA Recorder using the following setup file: link:------["Download RPA Recorder^", role="button-primary"]
+Download the latest RPA Recorder installer from the *Home* page of RPA Manager.
 
 Optionally, you can install RPA Recorder from the message prompt that shows in RPA Manager when you start the recording function.
-
-== Start RPA Recorder
-
-To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager.
-
-If RPA Recorder is not installed, a message shows with a link to download the RPA Recorder installation file.
 
 image:download-rpa-recorder-message.png[Download RPA Recorder message]
 
 [NOTE]
 Enable pop-ups from RPA Manager before downloading RPA Recorder.
+
+== Start RPA Recorder
+
+You can start RPA Recorder as a _standalone_ application or from _RPA Manager_.
+
+* *Standalone*
++
+Start RPA Recorder by opening the application from the *Start* menu or by opening the application's executable file. When you start RPA Recorder as a standalone application:
++
+** RPA Recorder does not request RPA Manager credentials to start recordings.
+** You cannot upload recordings to RPA Manager, you can only save them locally.
+* *RPA Manager*
++
+Start RPA Recorder by clicking the *Record BPMN* icon (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager. When you start RPA Recorder from RPA Manager:
++
+** RPA Recorder requires RPA Manager credentials to log in and start recordings.
+** You can upload recordings to RPA Manager.
 
 === Log in to RPA Recorder
 
