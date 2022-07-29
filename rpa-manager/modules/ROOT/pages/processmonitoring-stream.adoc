@@ -16,7 +16,7 @@ The following table contains the needed privileges:
 |Process Streaming Open
 
 |===
-Only productive processes for which at least one configuration has been created and for which you are a member of the process team are displayed.
+* Only productive processes for which at least one configuration has been created and for which you are a member of the process team are displayed.
 
 == Watch a bot at work
 
