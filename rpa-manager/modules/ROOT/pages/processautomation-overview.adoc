@@ -10,7 +10,7 @@ The processes go through several phases in sequence. In the design phase, a mode
 
 == Before you Begin
 
-The following table contains the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
