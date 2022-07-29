@@ -20,7 +20,7 @@ The following table contains the needed privileges:
 
 |===
 
-Appropriate alert targets must exist in the *Alert Target* view.
+* Appropriate alert targets must exist in the *Alert Target* view.
 
 == Create an Alert Rule
 
