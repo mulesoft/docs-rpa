@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Send Mail
+= Send Mail
 
 With the _Send Mail_ Action Step, you can send an e-mail with the SMTP
 protocol. You can enter the recipient, the subject, or send attachments
@@ -10,7 +10,7 @@ You can only use the Send Mail Action Step within a Mail Session. You
 enter the information required for the connection to the mail server in
 the Mail Session.
 
-=== Properties
+== Properties
 
 *Send Mail Settings*
 
@@ -41,7 +41,7 @@ refers to the variable _Base Path_.
 
 *Third file name* Contains the path to the third file that is to be attached.
 
-=== Inbound Variables
+== Inbound Variables
 
 *To* Recipient.
 
@@ -81,11 +81,11 @@ refers to the variable _Base Path_.
 one of the attached files is not found in the production run, the Action
 Step is ended with an error.
 
-=== Outbound Variables
+== Outbound Variables
 
 *IsSucceeded* Indicates whether an e-mail was sent successfully.
 
-=== Wizard
+== Wizard
 
 //image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=650,height=269]
 

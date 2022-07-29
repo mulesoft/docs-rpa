@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Service Check
+= Service Check
 
 The _Service Check_ plug-in allows you to perform checks using various
 protocols and services, such as Ping, FTP, HTTP, etc., to see if a
@@ -12,7 +12,7 @@ The _Service Check_ plug-in consists of a single new Action Step called
 _Service Check_ – this is accessed in the same place as the other Action
 Step elements.
 
-=== Properties
+== Properties
 
 *Backup Target Host*
 Enter the host name without protocol prefix. When the _Target Host_
@@ -53,7 +53,7 @@ Other Properties that are the same in all Action Steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#ServiceCheck_P_TargetHost[*Target Host*]
 *Target Host* Enter the DNS
@@ -78,11 +78,11 @@ Block_'s _File Controlled Loop_. A suffix is then added to the name of
 the _Service Check_ during every loop. Each suffix is a column entry in
 the file that was imported in the _File Controlled Loop_.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Time* provides you the measured time.
 
-=== Wizard
+== Wizard
 
 _Service Check_ will connect to the specified _Target Host_ on the specified
 _Port_ and attempt to perform a default

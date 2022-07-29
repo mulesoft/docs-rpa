@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Using the Browser Wizard
+= Using the Browser Wizard
 
 The _Browser Wizard_ can be used inside _Web Automation Action Step_
 wizards. Essentially it behaves like a normal browser and enables

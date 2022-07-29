@@ -1,12 +1,12 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Check Value
+= Check Value
 
 This _Action Step_ allows you to compare two numerical or alphanumerical
 (case-sensitive and case-insensitive) values to each other, using
 different comparison methods.
 
-=== Properties
+== Properties
 
 *Compare Settings*
 
@@ -27,7 +27,7 @@ should be greater than or smaller than the other.
 * *Value 1* Value to the left of the compare operator, e.g. a in a>b
 * *Value 2* Value to the right of the compare operator, e.g. b in a>b
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:\l[*Compare Value 1*]
 *Compare Value 1* Value to the left of the compare operator, e.g. a in a>b
@@ -35,11 +35,11 @@ should be greater than or smaller than the other.
 //link:\l[*Compare Value 2*]
 *Compare Value 2* Value to the right of the compare operator, e.g. b in a>b
 
-=== Outbound Variables
+== Outbound Variables
 
 *Compare Result* Returns whether the comparison was successful or not
 (Bool)
 
-=== Wizard
+== Wizard
 
 Note that both comparison values can be mapped to variables.

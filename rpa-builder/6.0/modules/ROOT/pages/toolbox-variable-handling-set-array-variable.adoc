@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Set Array Variable
+= Set Array Variable
 
 The Set Array Variable Action Step enables you to assign new values to an array.
 
@@ -8,12 +8,12 @@ One possible use is to copy a list to an array in order to iterate
 through all elements in the list more easily and to process individual
 list elements further.
 
-=== Properties
+== Properties
 
 The _Set Array Variable_ Action Step contains no other properties other than the _general_ ones.
 // link:#CommonProperties[+++general+++] ones.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Array to change* (Array) Array in which values are to be changed.
 
@@ -36,11 +36,11 @@ are deleted.
 By changing the values it is possible to also change the number of
 elements in the array (_Array Count_).
 
-=== Outbound Variables
+== Outbound Variables
 
 The _Set Array Variable_ Action Step possesses no outbound variables.
 
-=== Wizard
+== Wizard
 
 The _Array to change_ is the array with values to be overwritten. You
 can select it from a drop-down list if such an array already exists.
@@ -73,7 +73,7 @@ element also needs to be placed inside double quotes.
 
 E.g. “This “”text”” contains double quotation marks.”
 
-=== Example
+== Example
 
 Car servicing is to be automated at a workshop.
 
@@ -86,7 +86,7 @@ services are read from a scanned-in form, e.g. using _OCR_, and the
 array _Services_ in the _Set Array Variable_ Action Step is overwritten
 with the actual values.
 ////
-=== Related Elements
+== Related Elements
 
 The following sections may help you to better understand the
 relationships between the individual array Workflow elements:

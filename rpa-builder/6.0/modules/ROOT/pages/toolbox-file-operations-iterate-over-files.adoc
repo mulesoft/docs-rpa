@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Iterate over Files
+= Iterate over Files
 
 The _Iterate over Files_ Action Step performs various Action Steps on a
 specified number of files. Drag the Action Steps to be processed into
@@ -11,7 +11,7 @@ applied to all files located in a folder and, depending on the settings,
 its sub-folders. It is possible to set various parameters such as the
 maximum number of files to be processed.
 
-=== Properties
+== Properties
 
 *File Operation Settings:*
 
@@ -51,7 +51,7 @@ Other Properties that are the same in all Action Steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Directory path*
 Enter the path to the directory where the files to be processed are
@@ -63,13 +63,13 @@ be processed. Use the placeholders * and ? and all allowed characters to
 construct a search expression. The placeholder *.* is used by default.
 This will find all files in a directory.
 
-=== Outbound Variables
+== Outbound Variables
 
 *Count Of Processed Elements* The _Iterate over Files.Count of Processed
 Elements_ variable provides the number of files that have been
 processed.
 
-=== Wizard
+== Wizard
 
 * *Directory path* Specify the path to the files here. You can create an
 absolute path or a path relative to the _Base Path_.
@@ -112,7 +112,7 @@ in that field has been reached.
 located in the specified *Directory path* and any files they may contain
 are to be included in the processing.
 
-=== Example
+== Example
 
 Use individual question marks (?) and allowed characters in the *File
 name* field to find a specific number of variable letters or numeric

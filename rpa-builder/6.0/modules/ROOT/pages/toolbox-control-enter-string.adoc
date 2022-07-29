@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Enter String
+= Enter String
 
 Like the _Keystrokes_ Action Step, the _Enter String_ Action Step
 emulates keyboard inputs. You can use this to enter search criteria or a
@@ -10,7 +10,7 @@ execute hotkeys or macros.
 The text to be entered can be transferred to the _Enter String_ Action
 Step from a previously executed Action Step.
 
-=== Properties
+== Properties
 
 *Input String Settings*
 
@@ -37,17 +37,17 @@ regular expression (see also the section on
 xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]).
 * **Window title** Title of the window where the keyboard inputs are to be executed.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Input string*
 
 *Window title*
 
-=== Outbound Variables
+== Outbound Variables
 
 The _Enter String_ Action Step possesses no Outbound Variables.
 
-=== Wizard
+== Wizard
 
 *Input String Settings*
 
@@ -71,12 +71,12 @@ set for long enough to send the keyboard inputs to the correct window.
 There is a visual explaining Keyboard Settings in the section on Keystrokes.
 
 
-// === Example
+// == Example
 
 // image::toolbox-control-enter-string-image1.png[Example Enter String]
 
 
-=== Enter String or Keystrokes?
+== Enter String or Keystrokes?
 
 If you need the _window text_ to specify the input window or want to
 record the text that is to be entered directly via the keyboard, please

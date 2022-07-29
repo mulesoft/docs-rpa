@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Write to Excel File
+= Write to Excel File
 
 Use the _Write to Excel File_ Action Step if you want to write the
 content you have read from an Excel file using the _Read from Excel
@@ -9,7 +9,7 @@ File_ Action Step either to the same or a different destination file.
 The _Write to Excel File_ Action Step can only be used inside an Excel
 Session. Specify the destination file in the xref:toolbox-excel-operations-excel-session.adoc[Excel Session].
 
-=== Properties
+== Properties
 
 *Excel Operation Settings*
 
@@ -37,7 +37,7 @@ unlike in the _Write to Excel File_ <<Wizard>>.
 * *Write value as* Here you can see whether the data in a cell is
 written as text or number.
 
-=== Inbound Variables
+== Inbound Variables
 
 * *Sheet name* Name of the spreadsheet.
 
@@ -48,13 +48,13 @@ the number of the column in the Excel file.
 * *Text to write* This is where you enter the free text that will populate the cell, row or column.
 * *Array to write* This variable is only used in Row and Column mode. It accepts an array as well as a string in CSV format.
 
-=== Outbound Variables
+== Outbound Variables
 
 *IsWritten* (Bool) This is how you check whether the text has been
 successfully written to a specific cell, row or column. The result is
 _True_ if the text was written successfully to the destination file.
 
-=== Wizard
+== Wizard
 
 The *Sheet name* field is for
 selecting the spreadsheet to which text should be written. You can type

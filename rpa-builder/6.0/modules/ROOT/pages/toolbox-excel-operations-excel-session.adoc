@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Excel Session
+= Excel Session
 
 The _Excel Session_ is an element that encompasses all Excel operations.
 Excel operations include the reading, modification, and creation of
@@ -24,7 +24,7 @@ inside a loop. If you wish to execute a loop across all the elements in
 a row or column in the Excel file, please place the relevant loop within
 the Excel Session.
 
-=== Properties
+== Properties
 
 *Destination Excel Operation Settings*
 
@@ -90,7 +90,7 @@ executing the Workflow compared to that at the time of creation.
 False) Determines whether an alternative file name should be used when
 running the workflow instead of the draft name.
 
-=== Inbound Variables
+== Inbound Variables
 
 * *DirectoryPathSource*
 * *FileNameSource*
@@ -102,11 +102,11 @@ running the workflow instead of the draft name.
 
 //link:\l[_Separate destination directory path for Execution_]
 
-=== Outbound Variables
+== Outbound Variables
 
 This Action Step has no outbound variables.
 
-=== Wizard
+== Wizard
 
 In the *Operation Mode* section, first choose whether you want to only read the Excel file, read and
 modify it or read it and write to a different Excel file. If the _Read
@@ -131,7 +131,7 @@ You can use a dynamic Excel file at runtime for the Excel operations. The *Diffe
 execution time directly or map it using a pin variable.
 
 ////
-=== Related Elements
+== Related Elements
 
 The following sections may help you to better understand the
 relationships between the individual Excel Workflow elements:

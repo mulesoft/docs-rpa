@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Select Case
+= Select Case
 
 The _Select Case_ Action Step makes it possible to match the contents of
 a variable against certain predefined cases. For example, you can search
@@ -9,7 +9,7 @@ different Action Steps to be executed depending on what is found. The
 “DoElse” component is always present. This is used to provide a default
 action for cases that have not been specified.
 
-=== Properties
+== Properties
 
 *Misc*
 
@@ -28,7 +28,7 @@ Other properties that are the same in all Action Steps are described in
 section *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Wizard
+== Wizard
 
 * *Type* One of the following variable types:
 ** *Integer* Positive or negative integer
@@ -105,7 +105,7 @@ Case in _Select Case_. This Action Step will now be performed if the
 condition specified for the case is met (steps 5 to 7 above).
 ////
 
-=== Data Types and Comparison Options
+== Data Types and Comparison Options
 
 [cols=",",options="header",]
 |===
@@ -117,22 +117,22 @@ condition specified for the case is met (steps 5 to 7 above).
 
 < variable must be less than Value
 
-> variable must be greater than Value
++>+ variable must be greater than Value
 
-≤ variable must be less than or equal to Value.
+≤ variable must be less than or equal to Value
 
-≥ variable must be greater than or equal to Value.
+≥ variable must be greater than or equal to Value
 
 |Alphanumeric (text) a|
-Full match: Value found must match exactly
+*Full match*: Value found must match exactly
 
-Substring: Part of the text in Value must match
+*Substring*: Part of the text in Value must match
 
-RegEx comparison: Search for matches for the regular expression entered
+*RegEx comparison*: Search for matches for the regular expression entered
 as the Value. More information about _Regular Expressions_ is provided
 in the section on *Using Regular Expressions*.
 
-Fuzzy: Search for text similar to that in Value Adjust the level of
+*Fuzzy*: Search for text similar to that in Value Adjust the level of
 similarity, expressed as a percentage, using the slider under “Text
 Affinity”. The default value is 50%. A higher value means that fewer
 matches will be found.
@@ -142,9 +142,9 @@ For Boolean there is only one case because this is sufficient in
 combination with “DoElse” to cover the two possibilities of True and
 False.
 
-False: Value in evaluated variable must be False.
+*False*: Value in evaluated variable must be False.
 
-True: Value in evaluate variable must be True.
+*True*: Value in evaluate variable must be True.
 
 |Float (positive or negative floating-point number) a|
 = variable must match exactly
@@ -153,10 +153,10 @@ True: Value in evaluate variable must be True.
 
 < variable must be less than Value
 
-> variable must be greater than Value
++>+ variable must be greater than Value
 
-≤ variable must be less than or equal to Value.
+≤ variable must be less than or equal to Value
 
-≥ variable must be greater than or equal to Value.
+≥ variable must be greater than or equal to Value
 
 |===

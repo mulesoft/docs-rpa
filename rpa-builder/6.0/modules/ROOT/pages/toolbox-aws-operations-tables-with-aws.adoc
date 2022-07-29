@@ -71,4 +71,4 @@ Instructs the OCR service to continue reading until the end of the file.
 
 == See Also
 
-* https://docs.aws.amazon.com/textract/latest/dg/how-it-works-tables.html[Amazon Textract: Tables]
+* https://docs.aws.amazon.com/textract/latest/dg/how-it-works-tables.html[Amazon Textract: Tables^]

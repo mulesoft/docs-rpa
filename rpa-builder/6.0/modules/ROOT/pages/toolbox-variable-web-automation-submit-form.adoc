@@ -1,12 +1,12 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Submit Form
+= Submit Form
 
 This _Web Automation_ object allows you to submit a form on a webpage.
 It will work on any field contained within a form and submit the whole
 form.
 
-=== Properties
+== Properties
 
 *Webelement Find Options*
 
@@ -19,7 +19,7 @@ Automation_ are described in the section on *Common Properties*.
 //link:#CommonProperties_WebAutomation[Common Properties.]
 For reasons of clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#WA_CommonProperties_ElementXPath[*Element XPath*]
 *Element XPath*
@@ -27,11 +27,11 @@ For reasons of clarity they are not shown here.
 //link:#WA_CommonProperties_WindowTitle[*Window Title*]
 *Window Title*
 
-=== Outbound Variables
+== Outbound Variables
 
 The Action Step _Submit Form_ possesses no outbound variables.
 
-=== Wizard
+== Wizard
 
 Forms are often used on websites to collect various data. The most
 common example would be a registration form to get an account to log in

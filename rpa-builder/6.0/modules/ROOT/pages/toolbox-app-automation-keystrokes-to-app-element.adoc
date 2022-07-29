@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Keystrokes to App Element
+= Keystrokes to App Element
 
 The _Keystrokes to App Element_ emulates keyboard inputs that can be
 sent to an App Element. In contrast to “Set Text To App Element”,
@@ -12,7 +12,7 @@ means if the sequence contains control keys that change the element in
 an app (such as “Tab”), the subsequent keystrokes might be sent to the
 element of the new focus.
 
-=== Properties
+== Properties
 
 *Keystroke Settings*
 
@@ -24,7 +24,7 @@ App Element_ Action Step, you can use “Insert Script Variable” and
 at runtime. The behavior here is identical to that in the _Keystrokes_
 Action Step.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Keystrokes*
 
@@ -32,12 +32,12 @@ Action Step.
 
 *Window Title*
 
-=== Outbound Variables
+== Outbound Variables
 
 The _Keystrokes to App Element_ Action Step does not have any outbound
 variables.
 
-=== Wizard
+== Wizard
 
 See Properties and the chapter Common Properties.
 

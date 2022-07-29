@@ -1,10 +1,10 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Extract Images from PDF File
+= Extract Images from PDF File
 
 With this Action Step, you can extract images from a PDF file.
 
-=== Properties
+== Properties
 
 *File Settings*
 
@@ -54,7 +54,7 @@ are to be saved.
 image. The start number is displayed here and this is used to count the
 first image. The number of each additional image increases by 1.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Directory Path*
 (String) The path to the folder in which the PDF file is located.
@@ -81,28 +81,20 @@ are to be saved.
 image. The start number is displayed here and this is used to count the
 first image. The number of each additional image increases by 1.
 
-=== Outbound Variables
+== Outbound Variables
 
 The _Extract Images from PDF File_ Action Step has no outbound variables.
 
-=== Wizard
+== Wizard
 
 *Images Extraction Mode* displays various options for extracting the
 images:
 
-* {blank}
-+
-____
-*Extract all images* All images are extracted from the PDF file.
-____
-* {blank}
-+
-____
-*Extract from page range* All images from a defined starting page up to
+* *Extract all images* All images are extracted from the PDF file.
+* *Extract from page range* All images from a defined starting page up to
 and including a defined ending page are extracted. If you select the
 option “Extract to end of file”, all images up to the last page of the
 document are extracted.
-____
 +
 //image:media\image2.png[image,width=276,height=61]
 +

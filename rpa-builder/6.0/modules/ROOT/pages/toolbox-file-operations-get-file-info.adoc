@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Get File Info
+= Get File Info
 
 _Get File Info_ fetches information about a file at the specified path.
 You can retrieve the following information: date created, date modified,
@@ -9,7 +9,7 @@ saved in the appropriate variables for further processing. Dates are
 returned in UTC (coordinated universal time) format as follows
 (yyyyMM-ddTHH:mm:ssZ).
 
-=== Properties
+== Properties
 
 *File Operation Settings*
 
@@ -27,7 +27,7 @@ Other Properties that are the same in all Action Steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Directory path* Enter
 the path to the directory where the file is saved. You can specify an
@@ -37,7 +37,7 @@ relates to the _Base Path_ variable.
 *File Name* Enter the name
 of the file here that require information about.
 
-=== Outbound Variables
+== Outbound Variables
 
 *File Size* The _Get_ _File Info.File Size_ variable provides the size
 of the file.
@@ -61,7 +61,7 @@ of the file.
 *Directory path* The _Get_ _File Info.Directory Path_ variable provides
 the path that is used.
 
-=== Wizard
+== Wizard
 
 * *Directory path* Specify the path to the file that you require
 information about. You can create an absolute path or a path relative to

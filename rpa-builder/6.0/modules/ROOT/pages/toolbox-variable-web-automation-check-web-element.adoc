@@ -1,12 +1,12 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Check Element
+= Check Element
 
 Use this _Web Automation_ object to verify if a website or web
 application element was loaded properly and how long this took. The
 _Check Element_ object can be used on any website element.
 
-=== Properties
+== Properties
 
 
 
@@ -21,7 +21,7 @@ regular expressions, see Section xref:advanced-concepts-using-regular-expression
 the defined web element cannot be found any more, instead of waiting for
 it to appear.
 
-=== Inbound Variables
+== Inbound Variables
 
 //link:#AS_CheckElement_P_AttributeToCheck[*Attribute to Check*]
 *Attribute to check*
@@ -41,11 +41,11 @@ it to appear.
 //link:#CommonProperties_WebAutomation[WindowTitle]*
 *WindowTitle*
 
-=== Outbound Variables
+== Outbound Variables
 
 The Action Step _Check Element_ possesses no outbound variables.
 
-=== Wizard
+== Wizard
 
 When you select the element you want to check using the _Browser
 Wizard_, the available attributes for the element are listed in a

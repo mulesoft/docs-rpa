@@ -1,6 +1,6 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Set Mail
+= Set Mail
 
 With the _Set Mail_ Action Step, you can change the status of an e-mail.
 That is, you can mark it either as read or unread and/or move it to a
@@ -10,7 +10,7 @@ You can only use the Set Mail Action Step within the Read Mail Action
 Step. You enter the information required for the connection to the mail
 server in the Mail Session.
 
-=== Properties
+== Properties
 
 *Change Read/ Unread Status* The e-mail is marked as either read or
 unread.
@@ -26,7 +26,7 @@ unread.
 
 *Target folder* Name of the target folder.
 
-=== Inbound Variables
+== Inbound Variables
 
 *Mail Info* Is made available only by the Read Mail Action Step. This
 can be used to uniquely identify an e-mail.
@@ -34,10 +34,10 @@ can be used to uniquely identify an e-mail.
 //*link:#AS_SetMail_P_TargetFolder[Target folder]*
 *Target folder* Name of the target folder.
 
-=== Outbound Variables
+== Outbound Variables
 
 *IsSucceeded* Indicates whether the action was carried out successfully.
 
-=== Wizard
+== Wizard
 
 See <<Properties>>.

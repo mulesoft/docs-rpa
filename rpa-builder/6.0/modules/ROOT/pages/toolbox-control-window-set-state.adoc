@@ -1,10 +1,10 @@
 include::rpa-home::partial$pending-review.adoc[]
 
-== Window Set State
+= Window Set State
 
 This _Action Step_ allows you to change the state of a specific window.
 
-=== Properties
+== Properties
 
 * *Use RegEx* You can further distinguish between window titles by
 selecting this checkbox. The function is described in detail in Section
@@ -21,19 +21,19 @@ _Use window text_ is activated)
 * *Window title* Contains the captured _Window title_ for the window in
 question
 
-=== Inbound Variables
+== Inbound Variables
 
 *Window title*
 
 *Window text*
 
-=== Outbound Variables
+== Outbound Variables
 
 *Window Handle* The window handle of the window to be manipulated
 
 *Process ID* The process ID of the window to be manipulated
 
-=== Wizard
+== Wizard
 
 * *Start* Starts capture
 * *Stop* Stops capture
