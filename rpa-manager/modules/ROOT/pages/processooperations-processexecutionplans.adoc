@@ -12,7 +12,7 @@ Processes are executed if following prerequisites are fulfilled:
 
 == Before You Begin
 
-The following table contains the needed privileges:
+* The following table contains the needed privileges:
 +
 [cols="1,2"]
 |===
