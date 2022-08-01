@@ -12,10 +12,10 @@ This Action Step enables you to check if a process is running or not and either 
 This Action Step searches for a user-defined image, waits until it appears or disappears, and can also be used as a relative anchor point for mouse clicks.
 * xref:toolbox-checks-screenshot.adoc[Screenshot]
 +
-This Action Step takes a screenshot and saves it to the trace folder. You can use it to get feedback on what is happening at any point in a Workflow.
+This Action Step takes a screenshot and saves it to the trace folder. You can use it to get feedback on what is happening at any point in a workflow.
 * xref:toolbox-checks-search-pattern.adoc[Search Pattern]
 +
-The Search Pattern Action Step searches for one or more patterns within a defined Search Area on the screen.
+The Search Pattern Action Step searches for one or more patterns within a defined search area on the screen.
 * xref:toolbox-checks-window-wait.adoc[Window Wait]
 +
-The Action Step Window Wait pauses the Workflow until a certain window is displayed or not displayed.
+The Action Step *Window Wait* pauses the Workflow until a certain window is displayed or not displayed.

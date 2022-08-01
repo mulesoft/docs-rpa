@@ -46,7 +46,7 @@ be selected.
 
 * *Hide mouse* moves the cursor during the search to the upper left
 corner of the screen to the position with the coordinates x=0 and y=0.
-By this way unwanted mouse hover effects can be avoided. Independently
+This way unwanted mouse hover effects can be avoided. Independently
 of this setting the cursor is not included in the search. So also search
 patterns covered by the cursor symbol are found. After the search the
 cursor is set back to its original position.
@@ -110,8 +110,7 @@ becomes the inbound variable for the subsequent Action Steps.
 
 == Outbound Variables
 
-*Find Coordinate* Top
-left corner of the pattern that has been found successfully. If a search
+*Find Coordinate* Top left corner of the pattern that has been found successfully. If a search
 is made for multiple patterns and they are found, the coordinates
 returned are of the image on the far left of the series of patterns
 being searched for as specified in the wizard. If multiple identical
@@ -133,7 +132,7 @@ found.
 == Wizard
 
 
-The __Search Pattern W__izard enables you to select _Search Patterns_ and the
+The __Search Pattern_ wizard enables you to select _Search Patterns_ and the
 key search settings.
 
 The basic functionality of the _Pattern Strip_, including all
@@ -141,7 +140,7 @@ pattern operations, is described in the section Pattern Strip.
 
 Click _OK_ to confirm the configuration settings or _Cancel_ as
 applicable. The _Test_ button evaluates the search and displays the
-results in the _Search Results]_ window.
+results in the _Search Results_ window.
 
 == Regular Patterns
 
@@ -210,7 +209,7 @@ To add patterns to the search, simply use the mouse to click and select.
 Use the same method to deselect patterns which should no longer be
 included in the search.
 
-Click OK to confirm the selection and add it to the pattern list for the
+Click *OK* to confirm the selection and add it to the pattern list for the
 _Action Step_.
 
 == Ignore All Matches within These Patterns
@@ -231,9 +230,9 @@ the green field among the patterns being searched for. Other patterns
 containing this term, e.g. staffing or staffed must be added here.
 
 Areas in a single color are not taken into account within the pattern.
-It is therefore not sufficient in the above example to capture staff
-with free space at the right edge, because this free space will not form
-part of the pattern being searched for due to a lack of _features_.
+//It is therefore not sufficient in the above example to capture staff
+//with free space at the right edge, because this free space will not form
+//part of the pattern being searched for due to a lack of _features_.
 
 == Make Sure None of These Patterns Appear
 
@@ -248,7 +247,7 @@ be enabled in the _Search Settings_ and the interval value (_Wait for
 Image Steady Timeout [ms]_) cannot be 0.
 
 As described above, patterns to be excluded from the search can be
-inserted here using a screenshot or from the Pattern Gallery. The number
+inserted here using a screenshot or from the *Pattern Gallery*. The number
 of patterns that can be excluded is limited to 25.
 
 == Changing the Category for a Search Pattern
@@ -305,10 +304,10 @@ search area containing all _regular_ matches visible at the time of the
 definition of the search area. The _ResetTo Full Screen_ button turns
 the search area back to full screen.
 
-The Search Area can be set to either a _fixed_ or dynamic (_relative_)
-position. To define a dynamic position, use the _Relative To_ picklist,
+The search area can be set to either a _fixed_ or dynamic (_relative_)
+position. To define a dynamic position, use the _Relative To_ pick-list,
 which lists all variables of type _Coordinates_ that are available at
-this point; these include, for example, Outbound Variables from a
+this point; these include, for example, outbound variables from a
 previous _Search Pattern_ Action Step in the same transaction. When a
 coordinate is selected in the wizard as “Relative To”, an offset vector
 is immediately calculated. While the _Workflow_ is being designed, this
@@ -352,7 +351,7 @@ calculated by deducting the _Reduced Score_ from the _Score._ In each
 case, the precision of the match is stated.
 
 Matches outside of the _Search Area_ are marked in gray color
-irrespective of their type. . Patterns with a _Color Spot_ that are
+irrespective of their type. Patterns with a _Color Spot_ that are
 found but do not match the _Color Spot_ color at a specific position are
 marked in blue. You can see the type of every match in the details pane
 on the right side of the window.
@@ -371,8 +370,8 @@ shown in the screenshot is displayed dynamically.
 Mouse hover over a match shows the name, a thumbnail and the matching
 precision as a tooltip.
 
-Clicking on a found Pattern on the screenshot shows details to this
-Pattern on the right side of the window.
+Clicking on a found pattern on the screenshot shows details to this
+pattern on the right side of the window.
 
 Clicking a pattern in the tab _Pattern_ at the lower border of the
 window shows details to all matches to this pattern. Clicking a match in
@@ -385,7 +384,7 @@ displayed. The coloring is the same as described above.
 //image::toolbox-checks-search-pattern-image7.png[Search Result screen]
 
 Clicking a match in the details pane toggles the highlighting of the
-according matches in the screenshot. Highlighting of a Match is
+according matches in the screenshot. Highlighting of a match is
 indicated in the details pane by a colored border and the intensifying
 of its background color.
 

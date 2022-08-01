@@ -29,11 +29,11 @@ Using Regular Expressions.
 
 *Wait for* Defines the mode of the window search
 
-**Window text** Contains the
+*Window text* Contains the
 captured _Window text_ to wait for in addition to the _Window title_
 (only works if _Use window text_ checkbox is activated)
 
-**Window title** Contains the captured _Window title_ to wait for
+*Window title* Contains the captured _Window title_ to wait for
 
 == Inbound Variables
 
@@ -83,8 +83,8 @@ in xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressio
 * *Window Title* Title of the window to be found.
 ** The entered title needs to be considered as part of the window title
 to be searched for. For example the entered title _Pad_ will find all
-windows whose title contains the text _Pad_ (like NotePad - My
-Text.txt).
+windows whose title contains the text _Pad_ (like `NotePad - My
+Text.txt`).
 ** The search is *case-sensitive*!
 ** If this field remains empty all windows are considered.
 * If the option *_Use RegEx_* is activated, the entered window title has
@@ -144,9 +144,9 @@ This means that if you want to use Window wait for a certain URL, be
 sure to capture the correct title with the wizard or use regular
 expressions. You could also simply use only a part of the window title.
 
-Please consider, that Wait Delay in Workflow Editor versions earlier
-than 4.2 was always 250 ms. For reasons of compatibility, Wait Delay is
-set to Legacy mode, and thereby set to 250 ms, in Workflows built with
-older versions. You can change this mode. However, this can lead to
-differences in the measurement results between the old and the new
-version of your Workflow.
+//Please consider, that *Wait Delay* in Workflow Editor versions earlier
+//than 4.2 was always 250 ms. For reasons of compatibility, *Wait Delay* is
+//set to Legacy mode, and thereby set to 250 ms, in Workflows built with
+//older versions. You can change this mode. However, this can lead to
+//differences in the measurement results between the old and the new
+//version of your Workflow.

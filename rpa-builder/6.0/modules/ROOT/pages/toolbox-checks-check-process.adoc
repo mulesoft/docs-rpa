@@ -32,7 +32,7 @@ started]]/[[and was killed]/]
 
 == Wizard
 
-First enter the process to check for in the _Process Name_ field.
+First, enter the process to check for in the _Process Name_ field.
 Either enter the process name or its ID manually in the field, then select the process from the drop-down menu there or navigate to an executable file and select it.
 
 Next, select from the _Check for_ drop-down menu whether to check if the process does or does not exist.
@@ -46,6 +46,6 @@ Simply performs the check and does not do anything else
 Starts the program defined in the _Program to start_ property
 
 *Kill process* +
-Kills the process you checked for. Not applicable if the check was for non-existence
+Kills the process you checked for. Not applicable if the check was for non-existence.
 
-It is useful to check if applications started by the Bot are still running at the end of a workflow. If so, perform a _Kill process_ action to reset the PC into a clean state for the next run.
+It is useful to check if applications started by the bot are still running at the end of a workflow. If so, perform a _Kill process_ action to reset the PC into a clean state for the next run.

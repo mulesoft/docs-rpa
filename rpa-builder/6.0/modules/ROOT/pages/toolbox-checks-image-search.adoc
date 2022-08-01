@@ -18,7 +18,7 @@ can be seen.
 * When the measured application is running on a distant system and the
 Workflow has to use a Citrix client, VCN, or a similar remote connection
 tool that only displays the user interface graphically but does not give
-back handles, Image search is the only way to ascertain that the desired
+back handles, an image search is the only way to ascertain that the desired
 content has appeared onscreen.
 * Finally, the position of the image can be used to place a mouse click
 relatively to the image, for example to enter a URL in the address bar
@@ -289,7 +289,7 @@ If you have problems finding the same picture on different machines, you
 should first make sure that the system parameters of these systems are
 all the same (see Section Checking System Parameters).
 
-If you are still having problems, you can decrease the required match
+If you are still experiencing problems, you can decrease the required match
 precision – but be careful; if the required percentage is too low, you
 might get a "false positive", i.e. find the _Pattern image_ even though
 it does not exist.
