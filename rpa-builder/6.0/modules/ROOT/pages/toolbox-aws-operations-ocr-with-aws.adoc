@@ -7,13 +7,33 @@ The OCR with AWS action step enables you to recognize the text in a document by 
 
 == Inbound Variables
 
-This action step has no inbound variables.
+* *Directory Path*
+* *File Name*
+* *Password*
+* *Read text from page*
+* *Read text to page*
+* *AWS Credentials*
++
+Or, if *Use custom settings* is activated in the wizard:
++
+** *Client Id*
+** *Client Secret*
+** *Session Token*
+** *Use Session Token*
+** *Region Endpoint*
+* *Json Path*
 
 == Outbound Variables
 
-* Recognized result
+* *Raw Text*
 +
-The complete result in Json format parsed from the AWS response.
+The extracted raw text of the document.
+* *Normalized Json*
++
+The parsed result based on the normalized result and defined Json path.
+* *Raw Json*
++
+The complete AWS response.
 
 == Wizard
 

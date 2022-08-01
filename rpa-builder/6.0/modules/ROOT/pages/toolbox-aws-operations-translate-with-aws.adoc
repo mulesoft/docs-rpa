@@ -8,16 +8,32 @@ See https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html[Suppo
 
 == Inbound Variables
 
-This action step has no inbound variables.
+* *Text*
+* *AWS Credentials*
++
+Or, if *Use custom settings* is activated in the wizard:
++
+** *Client Id*
+** *Client Secret*
+** *Session Token*
+** *Use Session Token*
+** *Region Endpoint*
+* *Json Path*
 
 == Outbound Variables
 
-* Parsed result
+* *Raw Text*
++
+The extracted raw text of the document.
+* *Normalized Json*
 +
 The parsed result based on the normalized result and defined Json path.
-* AWS raw result
+* *Raw Json*
 +
 The complete AWS response.
+* *Detected Language*
++
+The detected language of the document's text.
 
 == Wizard
 

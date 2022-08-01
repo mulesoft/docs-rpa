@@ -6,14 +6,29 @@ The Entities with AWS action step enables you to use Amazon Comprehend to inspec
 
 == Inbound Variables
 
-This action step has no inbound variables.
+* *Text*
++
+The ext to analyze and extract entities from.
+* *Json Path*
++
+Json Path Expression to filter the Normalized Json outbound result.
+* *AWS Credentials*
++
+Or, if *Use custom settings* is activated in the wizard:
++
+** *Client Id*
+** *Client Secret*
+** *Session Token*
+** *Use Session Token*
+** *Region Endpoint*
+
 
 == Outbound Variables
 
-* Parsed result
+* *Normalized Json*
 +
 The parsed result based on the normalized result and defined Json path.
-* AWS raw result
+* *Raw Json*
 +
 The complete AWS response.
 
