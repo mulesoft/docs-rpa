@@ -1,6 +1,6 @@
 
 
-= Check Element
+= Check Web Element
 
 Use this _Web Automation_ object to verify if a website or web
 application element was loaded properly and how long this took. The

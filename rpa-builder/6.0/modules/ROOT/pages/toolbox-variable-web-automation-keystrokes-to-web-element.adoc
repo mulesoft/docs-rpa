@@ -1,6 +1,6 @@
 
 
-= Keystrokes to Element
+= Keystrokes to Web Element
 
 Use this _Web Automation_ object to enter alphanumeric characters into
 fields on a website or within a web application.

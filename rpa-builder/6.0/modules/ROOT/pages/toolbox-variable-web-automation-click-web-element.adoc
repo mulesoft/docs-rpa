@@ -1,6 +1,6 @@
 
 
-= Click Element
+= Click Web Element
 
 Use this element to simulate mouse input on a website element. This can
 be left-click, right-click, or no click (which represents a hover
