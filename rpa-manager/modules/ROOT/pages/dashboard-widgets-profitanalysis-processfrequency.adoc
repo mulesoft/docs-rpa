@@ -1,4 +1,3 @@
-
 = Profit Analysis: Process Frequency
 
 The widget *Profit Analysis: Process Frequency* shows how often a process has been executed productively within a specific interval compared to its previous frequency of execution.

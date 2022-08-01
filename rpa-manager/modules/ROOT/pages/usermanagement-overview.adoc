@@ -1,4 +1,3 @@
-
 = User Management Overview
 
 In the *User Management* module, you manage the users of RPA Manager and RPA Builder:

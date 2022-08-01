@@ -30,6 +30,8 @@ You create criteria and templates adapted to your needs.
 |Evaluation Template Create, Evaluation Template Edit, Evaluation Template Delete
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == Manage Process Evaluation Criteria
 
@@ -119,7 +121,6 @@ Evaluations of a process that use a removed template are not changed.
 
 == See Also
 
-//* xref:manager-.adoc[Assigning Privileges to a User]
 * xref:processevaluation-overview.adoc[Process Evaluation]
 * xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
 //* xref:processevaluation-configure.adoc[Configuring Process Evaluations]

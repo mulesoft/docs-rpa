@@ -17,6 +17,8 @@ You approve an evaluated process candidate to refer it to a project manager or a
 |Process Evaluation Approval to a Project Manager
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * You can only approve evaluated process candidates.
 * You can only refer processes to users assigned as project manager or user groups assigned as center of excellence.
@@ -42,15 +44,10 @@ After approval, the process is also displayed either in the personal backlog of 
 
 == See Also
 
-//* xref:manager-.adoc[Assigning Privileges to a User]
-//* xref:manager-.adoc[Assigning Special Attributes to Users]
-//* xref:manager-.adoc[Creating Centers of Excellence]
-
 * xref:processevaluation-overview.adoc[Process Evaluation]
 * xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
 * xref:processevaluation-configure.adoc[Configuring Process Evaluations]
 * xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]
 //* xref:processevaluation-approve.adoc[Approving a Process for Automation]
 
-//* xref:manager-.adoc[Starting Automation Projects]
-//* xref:manager-.adoc[Managing Automation Projects]
+* xref:myrpa-start.adoc[Starting Automation of Approved Processes]

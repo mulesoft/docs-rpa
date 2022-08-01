@@ -1,12 +1,10 @@
+= Current Bot Status
 
-
-= Current Robot Status
-
-In the *Current Robot Status* widget, you can see at a glance which of your bots are ready for use.
+In the *Current Bot Status* widget, you can see at a glance which of your bots are ready for use.
 
 == Data Representation
 
-The numbers of Robots in each case are links displayed together with a graphical representation of the ratio of those Robots ready for use compared to those not ready.
+The numbers of Bots in each case are links displayed together with a graphical representation of the ratio of those Bots ready for use compared to those not ready.
 
 The length of the green line labeled with *Ready* corresponds to the number that are ready for use; the length of the red line labeled with *Not Ready* corresponds to the number not ready.
 
@@ -17,29 +15,29 @@ This widget cannot be configured.
 
 == Drill-down
 
-Click on a number to obtain a list of all Robots or only those Robots with a specific status.
+Click on a number to obtain a list of all Bots or only those Bots with a specific status.
 
-=== Data Representation of the Current Robot Status
+=== Data Representation of the Current Bot Status
 
-The Robots are displayed in a list.
+The Bots are displayed in a list.
 
-=== Columns of the *Current Robot Status* List
+=== Columns of the *Current Bot Status* List
 
 ==== Status
 
 ===== OK
 
-The Robot is ready for use.
+The Bot is ready for use.
 
 ===== Stopped
 
-The Robot is not ready for use because it has been stopped.
+The Bot is not ready for use because it has been stopped.
 
 ===== No License
 
-The Robot is not ready for use because it is not licensed.
+The Bot is not ready for use because it is not licensed.
 
-==== Robot
+==== Bot
 
 Name of the bot.
 

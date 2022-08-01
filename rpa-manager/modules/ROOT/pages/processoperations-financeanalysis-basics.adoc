@@ -1,5 +1,3 @@
-
-
 = Finance Analysis Basics
 
 image:rpa_processOperations_FinanceAnalysis_Details_Overview.png[rpa_processOperations_FinanceAnalysis_Details_Overview]

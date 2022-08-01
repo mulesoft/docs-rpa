@@ -95,9 +95,11 @@ The bot has been configured for a desktop session. It cannot use secure sessions
 |*Action* |*Required Privileges*
 
 |Open the *Bot Management* module and view the bots
-|Robot Management Open
+|Bot Management Open
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == Find Bots
 

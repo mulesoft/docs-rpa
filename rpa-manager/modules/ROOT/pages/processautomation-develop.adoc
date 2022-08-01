@@ -1,5 +1,3 @@
-
-
 = Developing Automations
 
 The first phase of process automation is the *Design* phase.
@@ -37,9 +35,11 @@ As long as the project is in the build phase, it can be seen in the repository o
 |Activity Library Open, Activity Library Administration
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
-* To record a process, RPA Recorder must be installed and connected to RPA Manager. 
-* To build a process automation, RPA Builder must be installed and connected to RPA Manager. 
+* To record a process, RPA Recorder must be installed and connected to RPA Manager.
+* To build a process automation, RPA Builder must be installed and connected to RPA Manager.
 * To use RPA Builder, obtain an RPA Builder assignment in the *Users* view of the *User Management* module.
 * A project must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.

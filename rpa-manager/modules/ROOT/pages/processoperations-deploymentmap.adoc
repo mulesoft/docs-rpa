@@ -1,5 +1,3 @@
-
-
 = Deployment Map
 
 The deployment map shows you the current status of each productive configuration of all processes for which you are a team member.
@@ -21,6 +19,8 @@ The interrelationships of processes, RPA Bots and Configurations are mapped by a
 |Process Deployment Map Open.
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * You can only view processes for which you are part of the process team.
 * To execute, pause or stop configurations obtain the needed team member permissions for the production phase.
@@ -34,5 +34,4 @@ The actions *Deploy*, *Pause*, *Continue*, and *Revoke process* each refer to a 
 
 == See Also
 
-* xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
 * xref:processautomation-deploy.adoc[Deploying Automations]

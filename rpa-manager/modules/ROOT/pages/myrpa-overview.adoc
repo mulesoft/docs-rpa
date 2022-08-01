@@ -9,4 +9,3 @@ The *My Processes* view lists all processes for which you are part of the proces
 In the *My Process Board* view, you see your administrative process tasks.
 
 To view user tasks, which are to be processed by you or your center of excellence in ongoing productive processes, call up the *Team Tasks* view. User tasks, which you wish to process, are moved to your personal list *My User Tasks*.
-

@@ -34,8 +34,8 @@ You manage the bots in the *Bot Management* module. Every bot is assigned to RPA
 === Monitor
 * The *Bot Execution Plans* view shows which bot is to execute which processes and when.
 * The *Process Run Statistics* view shows the results of the processes that have been deployed to the bots.
-* The *Robot State and Operation* view and the *Deployment Map* view in module *Process Monitoring* shows you what the bots are doing right now.
-* The widgets *Current Robot Status* and *Bot Workload* can be added to a *Dashboard* in the module of the same name.
+* The *Bot State and Operation* view and the *Deployment Map* view in module *Process Monitoring* shows you what the bots are doing right now.
+* The widgets *Current Bot Status* and *Bot Workload* can be added to a *Dashboard* in the module of the same name.
 
 == Definitions
 

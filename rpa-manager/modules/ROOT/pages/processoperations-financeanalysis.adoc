@@ -1,12 +1,10 @@
-
-
 = Finance Analysis
 
 In the view *Finance Analysis*, you record, monitor, and analyze the financial aspects of a Process.
 
 You can enter all expenses for automation of the process. On the basis of the costs of manual execution of the process and the number of process runs already carried out automatically, and the expected future number of monthly process runs, the *Net profit* per month and the expected *Break-Even Point* of the process are calculated.
 
-Costs, savings, net profit, and break-even point are shown in line charts from the time of creation of the process. The data is shown from the start of automation] within a configurable time period of a maximum of 60 months.
+Costs, savings, net profit, and break-even point are shown in line charts from the time of creation of the process. The data is shown from the start of automation within a configurable time period of a maximum of 60 months.
 
 Each change to the raw data is reflected directly in the graphic. This way, you can analyze when the process automation pays for itself.
 

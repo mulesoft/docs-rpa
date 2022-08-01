@@ -1,0 +1,16 @@
+= Used Bot Minutes
+
+In the *Used Bot Minutes* widget, you see how many minutes all bots have used in the selected time interval.
+
+== Data Representation
+
+The used bot minutes are displayed as a number.
+
+== Configuration
+
+This widget cannot be configured.
+
+
+== Drill-down
+
+This widget has no drill-down.

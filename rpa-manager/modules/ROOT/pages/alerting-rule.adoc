@@ -1,5 +1,3 @@
-
-
 = Defining Rules for Alerts
 
 Specify the incidents that will trigger an alert. Each activated rule will be checked while configurations are deployed.
@@ -19,12 +17,27 @@ Specify the incidents that will trigger an alert. Each activated rule will be ch
 |Alerting Administration
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * Appropriate alert targets must exist in the *Alert Target* view.
 
 == Create an Alert Rule
 
-Create a rule to trigger an alert. The created alert rule is active upon saving. You can deactivate alert rules by clicking the *Deactivate* icon.
+Create a rule to trigger an alert.
+You can create alert rules for these types of incidents:
+
+* Activity Run Result
++
+Run result of a single bot task.
+* Process Run Result
++
+Run result of a process execution.
+* Bot Status
++
+Status of the bot.
+
+The created alert rule is active upon saving. You can deactivate alert rules by clicking the *Deactivate* icon.
 
 . In the *Alert Rules* view of the *Alerting* module, click *Create*.
 . Select the type of the incident, that will trigger the alert.
@@ -32,8 +45,6 @@ Create a rule to trigger an alert. The created alert rule is active upon saving.
 . Click *Save*.
 
 == See also
-
-* xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
 
 * xref:alerting-overview.adoc[Alerting Overview]
 * xref:alerting-target.adoc[Creating alerting email templates]

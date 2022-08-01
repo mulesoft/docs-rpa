@@ -12,12 +12,14 @@ If a bot only needs to work at specific times, you assign it service times.
 |*Action* |*Required Privileges*
 
 |Open the *Bot Management* module
-|Robot Management Open
+|Bot Management Open
 
 |Manage service times
 |Servicetime Create, Servicetime Edit, Servicetime Delete
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == Manage API Keys
 

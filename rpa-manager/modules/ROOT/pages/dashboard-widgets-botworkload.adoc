@@ -1,5 +1,3 @@
-
-
 = Bot Workload
 
 The *Bot Workload* widget shows how many of the sessions of an *RPA Bot* are reserved and how many are still free.
@@ -8,7 +6,7 @@ This gives you an overview of the utilization of the bots and you can allocate r
 
 == Data Representation
 
-The workloads of the Robots are displayed as a bar chart.
+The workloads of the Bots are displayed as a bar chart.
 
 The individual bars have different colors depending on the allocation between free sessions and those reserved for individual production configurations.
 

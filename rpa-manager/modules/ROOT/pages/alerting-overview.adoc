@@ -1,10 +1,8 @@
-
-
 = Alerting Overview
 
 RPA Manager can alert you in case of errors.
 
-You define rules which the bot checks during process run. If a rule applies, a email is sent to the targets you specify.
+You define rules which RPA Manager checks during process run. If a rule applies, an email is sent to the targets you specify.
 
 You can check for:
 
