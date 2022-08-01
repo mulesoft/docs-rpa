@@ -20,12 +20,14 @@ Following are the software requirements to run each RPA application.
 
 === RPA Manager
 
-Verify that you use any of the supported web browsers to access the platform:
-
-* Microsoft Edge
-* Google Chrome
-* Apple Safari
-* Mozilla Firefox
+* Use any of the supported web browsers to access the platform:
+** Microsoft Edge
+** Google Chrome
+** Apple Safari
+** Mozilla Firefox
+* Ensure you have access to your organization's RPA Manager instance
++
+The URL to access RPA Manager is `https://<tenant>.rpa.mulesoft.com`, where `<tenant>` represents your organization's instance. If you are not sure about the name of your instance, contact your organization's administrator. 
 
 === RPA Builder
 
