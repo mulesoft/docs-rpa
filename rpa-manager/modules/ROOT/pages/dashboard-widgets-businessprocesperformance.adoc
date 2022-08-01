@@ -1,5 +1,3 @@
-
-
 = Business Process Performance
 
 The *Business Process Performance* widget shows for each process how often the process has been executed within the analysis interval and how long the average execution time was.
@@ -42,9 +40,9 @@ The Process runs are displayed in a list.
 
 === Columns of the List of Business Process Performance of an Individual Process
 
-==== Robot
+==== Bot
 
-Name of the Robot that executed the Process run successfully.
+Name of the Bot that executed the Process run successfully.
 
 ==== Configuration
 

@@ -1,4 +1,3 @@
-
 = Process Operations
 
 In the *Process Operations* module, you can get information about processes in the production phase:

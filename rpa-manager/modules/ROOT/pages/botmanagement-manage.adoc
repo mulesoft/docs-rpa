@@ -15,12 +15,14 @@ Bots can be licensed to use secure sessions. Some properties, like name, service
 |*Action* |*Required Privileges*
 
 |Open the *Bot Management* module and view the bots
-|Robot Management Open
+|Bot Management Open
 
 |License, edit, and remove bots
-|Robot Management Administration
+|Bot Management Administration
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == License Bots for Secure Sessions
 

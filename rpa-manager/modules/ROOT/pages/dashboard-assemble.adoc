@@ -1,5 +1,3 @@
-
-
 = Assembling Dashboards
 
 Arrange important widgets on a dashboard.

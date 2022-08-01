@@ -1,5 +1,3 @@
-
-
 = Deploying Automations
 
 The third phase of process automation is the *Test* phase. In this phase, you can test the implemented process model in different configurations. You can transition back to *Build* phase to change the implementation.
@@ -20,6 +18,8 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 |Process Automation Open
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * At least one RPA Bot must be installed to deploy a process.
 * A project in build or test phase must exist in the *Project Management* view of the *Process Automation* module.
@@ -86,7 +86,7 @@ Hover the mouse pointer over the info label to display more detailed information
 
 === Run Tests
 
-Run all tests in parallel. RPA Manger shows a warning in case of deployment problems. View the results in the *Test Results* panel.
+Run all tests in parallel. RPA Manager shows a warning in case of deployment problems. View the results in the *Test Results* panel.
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.

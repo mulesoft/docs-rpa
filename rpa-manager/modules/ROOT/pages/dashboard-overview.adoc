@@ -1,5 +1,3 @@
-
-
 = Dashboard Overview
 
 The dashboard shows you the progress of your automation management within a defined time period on one page.
@@ -10,6 +8,7 @@ The data includes, but is not limited to:
 
 * The execution frequency and duration of processes
 * The utilization of the bots
+* An overview of the used bot minutes
 * An overview of the lifecycle
 * Information that helps to distribute resources efficiently
 * Comparisons between manual and automatic execution times

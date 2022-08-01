@@ -1,5 +1,3 @@
-
-
 = Profit Analysis: Process Time
 
 The widget *Profit Analysis: Process Time* shows the execution duration of a process by a bot compared to the time that a human requires to execute the same process.

@@ -1,10 +1,9 @@
-
 = Widgets
 
 The dashboard information consists of the contents of various widgets. A widget is a movable and scalable pane.
 
 We can roughly divide widgets into two groups. There are widgets that monitor the current situation and, for which, a shorter analysis interval and more frequent refreshes are appropriate. The second group of widgets enables an overview of the development of process automation over longer time periods.
 
-The widgets that are used to assess the current situation include  **Analysis Packages**, **Current Robot Status**, **Bot Workload**, **Trigger Performance** and **Business Process Performance**. If you keep an eye on these widgets, you can allocate resources flexibly and react quickly to problems.
+The widgets that are used to assess the current situation include  *Analysis Packages*, *Current Bot Status*, *Bot Workload*, *Used Bot Minutes*, and *Business Process Performance*. If you keep an eye on these widgets, you can allocate resources flexibly and react quickly to problems.
 
-The widgets that provide a more general overview of the progress of process automation in your company include **Automation Management**, **Profit Analysis: Process Time**, **Profit Analysis: Process Frequency**. These widgets help you to identify unexploited potential and to plan over the long term. You can see at a glance what advantages have accrued from the automation of a Process.
+The widgets that provide a more general overview of the progress of process automation in your company include *Automation Management*, *Profit Analysis: Process Time*, *Profit Analysis: Process Frequency*. These widgets help you to identify unexploited potential and to plan over the long term. You can see at a glance what advantages have accrued from the automation of a process.

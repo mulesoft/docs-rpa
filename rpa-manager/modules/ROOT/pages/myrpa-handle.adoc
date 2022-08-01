@@ -1,5 +1,3 @@
-
-
 = Handling User Tasks
 
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, instead requiring the support of a human.

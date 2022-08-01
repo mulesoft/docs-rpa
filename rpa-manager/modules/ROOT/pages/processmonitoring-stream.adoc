@@ -1,5 +1,3 @@
-
-
 = Streaming Processes
 
 In the *Process Streaming* view, you see the number of configurations, RPA Bots, and sessions for each productive process. You can open a live view of the sessions of a process and watch the bot as it works.
@@ -16,6 +14,9 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 |Process Streaming Open
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+
 * Only productive processes for which at least one configuration has been created and for which you are a member of the process team are displayed.
 
 == Watch a bot at work
@@ -29,7 +30,6 @@ Watch the process stream to see what is happening right now.
 
 == See Also
 
-* xref:usermanagement-manage.adoc#create-a-user[Assign Privileges to a User]
 * xref:processautomation-deploy.adoc[Deploying Automations]
 * xref:processmonitoring-overview.adoc[Process Monitoring]
 //* xref:processmonitoring-stream.adoc[Streaming Processes]

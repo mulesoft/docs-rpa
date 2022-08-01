@@ -8,7 +8,7 @@ If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator need
 
 Download the zipped bot log files to check for error or warning messages or to view screenshots.
 
-The package contains the folders `RobotTrace` and `RpaBotLogfiles`. The trace folder contains the log files of the secure sessions, while the log files folder contains the installation and configuration data, as well as the execution log of the bot.
+The package contains the folders `BotTrace` and `RpaBotLogfiles`. The trace folder contains the log files of the secure sessions, while the log files folder contains the installation and configuration data, as well as the execution log of the bot.
 
 This option is only available when the bot has the status OK.
 

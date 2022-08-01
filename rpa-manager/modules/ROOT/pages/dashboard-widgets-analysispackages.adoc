@@ -1,5 +1,3 @@
-
-
 = Analysis Packages
 
 The *Analysis Packages* widget displays the number of analysis packages of all RPA Bots collected during the analysis interval.
@@ -8,7 +6,7 @@ The *Analysis Packages* widget displays the number of analysis packages of all R
 
 *Analysis packages* are normally only created in the event of errors.
 
-Robots, for which the option *Analysis Package on OK* is activated in the  *RPA Bot Configurator*, create an analysis package for each process element during each run.
+Bots, for which the option *Analysis Package on OK* is activated in the  *RPA Bot Configurator*, create an analysis package for each process element during each run.
 
 
 == Data Representation
@@ -19,7 +17,7 @@ The number of analysis packages is a link.
 
 This widget cannot be configured.
 
-Use the sorting and filter options of the [*Analysis Packages*](=drill-down) list to highlight the information that is relevant for you.
+Use the sorting and filter options of the *Analysis Packages* list to highlight the information that is relevant for you.
 
 == Drill-Down
 
@@ -35,7 +33,7 @@ The analysis packages are displayed in a list.
 
 Name of the process.
 
-==== Robot
+==== Bot
 
 Name of the RPA Bot that carried out configuration of the Process.
 

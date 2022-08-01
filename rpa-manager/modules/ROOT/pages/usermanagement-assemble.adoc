@@ -1,5 +1,3 @@
-
-
 = Assembling User Groups
 
 In automation projects, several employees often work together on one task. These users can be assigned to user groups. User groups can be deployed for processing of user tasks during execution of a process. User groups marked as center of excellence may approve processes for automation.
@@ -23,6 +21,8 @@ You can create new user groups, check their usage, edit them, and delete them.
 |User Group Create, User Group Edit, User Group Delete
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == Create a User Group
 

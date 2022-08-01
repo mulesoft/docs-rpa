@@ -1,5 +1,3 @@
-
-
 = Preparing Automations
 
 Create and document the environment for the automation of processes.
@@ -29,6 +27,8 @@ Create and document the environment for the automation of processes.
 //|*REST API Global Variables/Credential Pool*
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == Prepare Projects
 

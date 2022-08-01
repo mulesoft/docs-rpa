@@ -26,6 +26,8 @@ You evaluate a process candidate to propose it for automation.
 |Evaluation Template Create, Evaluation Template Edit, Evaluation Template Delete
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * Create appropriate categories in the view *Process Management* in the module *Process Automation*.
 
@@ -72,8 +74,8 @@ Delete process evaluations that you no longer need:
 
 == See Also
 
-//* xref:manager-.adoc[Assigning Privileges to a User]
-//* xref:manager-.adoc[Categorizing processes]
+* xref:processautomation-prepare.adoc#create-categories[Create Process Categories]
+
 * xref:processevaluation-overview.adoc[Process Evaluation]
 * xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
 * xref:processevaluation-configure.adoc[Configuring Process Evaluations]

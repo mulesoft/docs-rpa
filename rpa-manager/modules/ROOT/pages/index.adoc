@@ -10,6 +10,12 @@ RPA Manager enables you to do the following:
 * Test and deploy automations.
 * Manage and monitor deployed automations.
 
+To access RPA Manager, navigate to `https://<tenant>.rpa.mulesoft.com`, where `<tenant>` represents your organization's instance. If you are not sure about this value, contact your organization's administrator.
+
+Ensure that access to this URL is possible from your organization.
+
+RPA Builder, RPA Bot, and RPA Recorder use this URL to connect to your RPA Manager instance.
+
 //== Get started
 
 // A table with roles and starting modules for these roles?

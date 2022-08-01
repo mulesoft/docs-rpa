@@ -1,5 +1,3 @@
-
-
 = Managing Users
 
 Manage the users of RPA Manager and RPA Builder:
@@ -12,7 +10,7 @@ Manage the users of RPA Manager and RPA Builder:
 
 == Before You Begin
 
-* The tenant admin is created first and can create other users. 
+* The tenant admin is created first and can create other users.
 * If you are not a tenant admin, obtain the needed privileges as follows:
 +
 [cols="1,2"]
@@ -26,6 +24,8 @@ Manage the users of RPA Manager and RPA Builder:
 |User Management Administration
 
 |===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == Create a User
 
@@ -56,6 +56,16 @@ Edit a user to change his data or permissions.
 . Edit the form *Edit a User*.
 . Click *Save*.
 
+== Assign Privileges to a User
+
+A user needs privileges to view and use the RPA Manager modules. This ensures that only authorized users can access the modules. Assign privileges to a user when you create a new user or edit an existing user.
+
+. In the *Users* view of the *User Management* module, click either *Create* in the header bar to create a new user or the icon *Edit* in the table row of the user you want to edit.
+. In the form *<[Create,Edit]> a [New] User*, scroll down to the selection list *Available Privileges*.
+. Click a privilege to assign it to the user.
+. Repeat the previous step until the user has all needed privileges.
+. Click *Save*.
+
 === Reset a User Password
 
 Reset a password if the user forgot it. RPA Manager will send an email containing a new temporary password to the user. The user can then create a new password.
@@ -73,11 +83,11 @@ Change your own password regularly. You will be logged out in the process and ha
 . Click *OK*.
 . Log in with your new password.
 
-=== Enable 2FA for Your User
+=== Enable Two-Factor Authentication for Your User
 
-Enable Two-Factor-Authentication for extra security.
+Enable Two-Factor Authentication (2FA) for extra security.
 
-When using Two-Factor Authentication (2FA), the user logs into the system with two mutually independent secret factors.
+When using Two-Factor Authentication, the user logs into the system with two mutually independent secret factors.
 
 If 2FA is activated for a user of the RPA Manager, the user enters their personal password on login and also a time-based one-time password (TOTP) to verify themselves.
 

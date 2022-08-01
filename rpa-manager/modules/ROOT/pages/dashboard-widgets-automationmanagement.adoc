@@ -1,5 +1,3 @@
-
-
 = Automation Management
 
 The *Automation Management* widget shows the progress of your process automation based on the distribution of the projects to the different phases of the lifecycle of a project.
