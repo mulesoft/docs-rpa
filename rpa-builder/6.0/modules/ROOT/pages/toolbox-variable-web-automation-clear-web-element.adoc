@@ -1,6 +1,6 @@
 
 
-= Clear Element
+= Clear Web Element
 
 This _Web Automation_ object is used to clear the content of fields on a
 website or in a web application. _Clear Element_ can be used on text

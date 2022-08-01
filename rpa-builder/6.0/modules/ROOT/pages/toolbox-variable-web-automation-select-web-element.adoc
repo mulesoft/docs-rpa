@@ -1,6 +1,6 @@
 
 
-= Select Element
+= Select Web Element
 
 Use this _Web Automation_ object to select an option from a list box or
 a drop-down box.

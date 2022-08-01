@@ -1,6 +1,6 @@
 
 
-= Get Element Text
+= Get Web Element Text
 
 The _Get Element Text_ Action Step reads the _innerText_ of an element.
 It can then be transferred to other Action Steps by means of Pin

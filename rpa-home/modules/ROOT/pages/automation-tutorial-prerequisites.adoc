@@ -33,6 +33,8 @@ See xref:rpa-recorder::getting-started.adoc[Installing and Starting RPA Recorder
 //link:------["Download RPA Bot^", role="button-primary"]
 +
 See xref:rpa-bot::installation.adoc[Installing RPA Bot] and xref:rpa-bot::configuration.adoc[Configuring RPA Bot] for installation and configuration instructions.
++
+** Ensure you configure the xref:rpa-bot::configuration.adoc#secure-session[Secure Session] in the RPA Bot Configurator tool.
 
 [TIP]
 Use two browser windows: One to read instructions and one to perform the tasks.
