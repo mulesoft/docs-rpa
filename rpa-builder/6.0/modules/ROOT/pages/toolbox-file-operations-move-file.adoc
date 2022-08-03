@@ -53,10 +53,11 @@ file that has been moved.
 path to the source directory.
 
 == Wizard
-
+////
 More information about the environment variables (Insert Environment
 Variable) and script variables (Insert Script Variable) used below can
 be found under *Settings*.
+////
 
 * *Directory path* Specify the path to the file that is to be moved. You
 can create an absolute path or a path relative to the _Base Path_.
