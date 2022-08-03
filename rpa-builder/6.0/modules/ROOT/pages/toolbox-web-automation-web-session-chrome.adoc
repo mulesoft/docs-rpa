@@ -2,12 +2,12 @@
 
 = Web Session (Chrome)
 
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=intro]
+include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
 
 [[properties]]
 == Properties
 
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=commonProperties]
+include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
 * *Additional Chrome arguments* (_Properties_ grid only)
 +
 Define command-line parameters for _Google Chrome_. By default,
@@ -37,7 +37,7 @@ we use.
 This action step has no outbound variables.
 
 // Wizard
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=wizardCommon]
+include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
 
 *Browser specific settings*:
 
@@ -46,7 +46,7 @@ image:toolbox-variable-web-automation-web-session-images/image5.png[An image sho
 See also <<properties, Properties>>.
 
 // activityWorkflowOverlappingWebSession
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
+include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
 
 //closingWebSession
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=closingWebSession]
+include::partial$toolbox-web-automation-web-session.adoc[tag=closingWebSession]

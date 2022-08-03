@@ -1,5 +1,4 @@
 
-
 = Navigate
 
 This _Web Automation_ object allows you to perform navigation
