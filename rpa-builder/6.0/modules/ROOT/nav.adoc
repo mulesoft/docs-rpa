@@ -70,7 +70,6 @@
 *** xref:toolbox-flow-control-transaction.adoc[Transaction]
 ** xref:toolbox-general.adoc[General]
 *** xref:toolbox-general-exit-workflow.adoc[Exit Workflow]
-*** xref:toolbox-general-external-script.adoc[External Script]
 *** xref:toolbox-general-pattern-gallery.adoc[Pattern Gallery]
 *** xref:toolbox-general-stc-protector.adoc[STC Protector]
 ** xref:toolbox-mail-operations.adoc[Mail Operations]
