@@ -1,6 +1,5 @@
 
-
-= General Start and Stop Timer
+= General Timer Stop
 
 _General timers_ are used to measure whole _Transactions_.
 
@@ -12,13 +11,19 @@ therefore be linked to a _Data Source_.
 
 == Properties
 
-* *Timer name* Name that will be written to the output file.
+* *Timer name*
++
+Name to write to the output file.
 
 == Inbound Variables
 
-The _General Timer Start and Stop Timer_ possesses no inbound variables.
+The _General Timer Stop_ Action Step has no inbound variables.
 
 == Outbound Variables
 
-The _General Timer Start and Stop Timer_ possesses no outbound
+The _General Timer Stop_ Action Step has no outbound
 variables.
+
+== See Also
+
+* xref:toolbox-measurement-points-general-timer-start.adoc[General Timer Start]

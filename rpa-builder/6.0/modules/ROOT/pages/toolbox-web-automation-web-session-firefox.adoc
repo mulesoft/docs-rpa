@@ -2,12 +2,12 @@
 
 = Web Session (Firefox)
 
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=intro]
+include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
 
 [[properties]]
 == Properties
 
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=commonProperties]
+include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
 
 * *Accept untrusted certificates* (_Properties_ grid only)
 +
@@ -62,7 +62,7 @@ using the Firefox profile manager.
 This action step has no outbound variables.
 
 // Wizard
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=wizardCommon]
+include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
 
 *Browser specific settings*
 
@@ -76,7 +76,7 @@ session.
 See also <<properties, Properties>>.
 
 // activityWorkflowOverlappingWebSession
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
+include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
 
 //closingWebSession
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=closingWebSession]
+include::partial$toolbox-web-automation-web-session.adoc[tag=closingWebSession]

@@ -13,7 +13,7 @@ This Action Step emulates keyboard inputs and accepts text transferred from a pr
 * xref:toolbox-control-keystrokes.adoc[Keystrokes]
 +
 This Action Step emulates keyboard inputs.
-* xref:toolbox-control-mouse-action.adoc[Mouse Actions]
+* xref:toolbox-control-mouse-actions.adoc[Mouse Actions]
 +
 The Mouse Actions Action Step emulates mouse moves and clicks.
 * xref:toolbox-control-run-program.adoc[Run Program]

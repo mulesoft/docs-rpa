@@ -19,7 +19,7 @@ show the load times of all website components in a waterfall diagram.
 There are many free viewers for `.har` files. The following list is not
 comprehensive:
 
-* http://www._softwareishard_.com/har/viewer/
+* http://www.softwareishard.com/har/viewer/
 * http://phantomjs.org/network-monitoring.html
 * http://yslow.org/
 

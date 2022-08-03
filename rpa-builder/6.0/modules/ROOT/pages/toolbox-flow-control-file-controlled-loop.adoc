@@ -103,5 +103,4 @@ a normal edit field where you can use environment variables and relative
 paths. You can also define a different path for execution if the file
 you want to use is in a different location on your executing system
 compared to the computer you design the Workflow on. You can also limit
-the maximum number of rows used and use inline variables within column
-filters.
+the maximum number of rows used.

@@ -2,14 +2,14 @@
 
 = Web Session (MS Edge)
 
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=intro]
+include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
 
 RPA Builder uses an earlier version of MS Edge, because the Chromium-based version of Edge launched in 2020 is not supported by the Selenium IDE. For new automation projects, use any of the other available web session browsers.
 
 [[properties]]
 == Properties
 
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=commonProperties]
+include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
 * *Pageload Strategy*
 ** *Default*: Not specified.
 ** *Normal*: Waits until the pages finish loading and _Ready State_ is _Complete_.
@@ -26,7 +26,7 @@ include::partial$toolbox-variable-web-automation-web-session.adoc[tag=commonProp
 This action step has no outbound variables.
 
 // Wizard
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=wizardCommon]
+include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
 
 *Browser specific settings*:
 
@@ -35,7 +35,7 @@ image:toolbox-variable-web-automation-web-session-images/image8.png[An image sho
 See also <<properties, Properties>>.
 
 // activityWorkflowOverlappingWebSession
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
+include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
 
 //closingWebSession
-include::partial$toolbox-variable-web-automation-web-session.adoc[tag=closingWebSession]
+include::partial$toolbox-web-automation-web-session.adoc[tag=closingWebSession]

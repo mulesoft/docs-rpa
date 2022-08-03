@@ -17,4 +17,4 @@ The Toolbox contains all action steps that you can configure to add logic to the
 * xref:toolbox-system.adoc[System]
 * xref:toolbox-text-recognition.adoc[Text Recognition]
 * xref:toolbox-variable-handling.adoc[Variable Handling]
-* xref:toolbox-variable-web-automation.adoc[Web Automation]
+* xref:toolbox-web-automation.adoc[Web Automation]
