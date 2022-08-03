@@ -25,7 +25,7 @@
 *** xref:toolbox-control-clear-screen.adoc[Clear Screen]
 *** xref:toolbox-control-enter-string.adoc[Enter String]
 *** xref:toolbox-control-keystrokes.adoc[Keystrokes]
-*** xref:toolbox-control-mouse-action.adoc[Mouse Actions]
+*** xref:toolbox-control-mouse-actions.adoc[Mouse Actions]
 *** xref:toolbox-control-run-program.adoc[Run Program]
 *** xref:toolbox-control-sleep.adoc[Sleep]
 *** xref:toolbox-control-window-set-state.adoc[Window Set State]
