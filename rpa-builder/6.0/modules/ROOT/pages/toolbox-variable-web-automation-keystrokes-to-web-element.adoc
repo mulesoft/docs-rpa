@@ -29,8 +29,6 @@ web application, or form that accepts content. You can manually define a
 keystroke sequence you want to use by typing into the _Input Text_
 field.
 
-It is also possible to use inline variables and environment variables (.
-
 All the different possibilities for creating an _Input Text_ can be
 combined into a single sequence.
 

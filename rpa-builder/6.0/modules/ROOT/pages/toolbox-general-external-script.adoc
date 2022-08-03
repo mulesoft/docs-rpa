@@ -178,13 +178,6 @@ global $PingTarget = "127.0.0.1"
 
 ; declare parameter $PingTarget and fill it with an IP Address
 
-You can use this variable subsequently with our inline variable system
-(see Section link:#InlineVariables[Inline Variables]), so in this
-example, enter \{$PingTarget} in the _Destination Host_ property of the
-_Ping_ _Action Step_:
-
-image:media\image21.png[image,width=176,height=26]
-
 To display user-defined variables in the _Workflow Debugger_, call the
 function StcDbgSetWatch( $VarDispName, $Value), where $VarDispName is a
 description of the displayed variable name or simply the name itself.
