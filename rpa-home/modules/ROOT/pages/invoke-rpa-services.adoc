@@ -1,6 +1,6 @@
 = Invoke RPA Services from Composer
 
-The RPA Connector for MuleSoft Composer enables you to invoke RPA processes and configure polling triggers from your Composer flows. You can use the RPA connector to invoke an RPA process, pass data to an RPA process and retrieve results from the RPA process.
+The MuleSoft RPA Connector for MuleSoft Composer enables you to invoke RPA processes and configure polling triggers from your Composer flows. You can use the RPA connector to invoke an RPA process, pass data to an RPA process and retrieve results from the RPA process.
 
 The RPA Connector for MuleSoft Composer enables you to:
 
@@ -18,6 +18,4 @@ Before you can invoke an RPA process, you need to publish it to Exchange. See xr
 
 Using the RPA Connector features in Composer requires you to connect with your MuleSoft RPA account by configuring the corresponding API key and RPA API URL.
 
-////
-Refer to the xref:composer::ms_composer_rpa_reference.adoc[RPA Connector] documentation in Composer for configuration and usage details.
-////
+Refer to the xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer] documentation for configuration and usage details.
