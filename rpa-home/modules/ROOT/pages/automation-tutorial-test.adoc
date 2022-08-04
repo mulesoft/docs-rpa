@@ -35,8 +35,6 @@ If there are no results, wait a few minutes for the test to end and click *Updat
 . Verify that there is a new entry for the bot showing *1* in the *Success* column.
 +
 image:bot-test-success.png[The Test Results window showing a successful execution]
-. Click *Publish(Production)*.
-//. Any additional confirmation here?
 . After the test finishes, click *Publish (Production)*.
 . Click the confirmation checkbox and then click *Release to Production*.
 

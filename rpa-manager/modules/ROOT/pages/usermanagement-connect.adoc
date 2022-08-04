@@ -42,7 +42,7 @@ Copy an API key to the clipboard to paste it into the configuration of an API co
 
 . In the *User API Keys* view of the *User Management* module, click the *Copy to clipboard* icon image:copy-to-clipboard-icon.png[sheet-on-clipboard symbol,1.5%,1.5%] in the table row of the user API key you want to use.
 
-//== See Also
+== See Also
 
-//* xref:composer::ms_composer_rpa_reference.adoc[MuleSoft Composer RPA Connector]
+* xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer]
 //* https://help.salesforce.com/s/articleView?id=sf.ms_composer_rpa_reference.htm&type=5[MuleSoft Composer for Salesforce RPA Connector^]
