@@ -28,6 +28,8 @@ To import the project from the RPA Manager repository:
 
 . In RPA Builder, click the *Repository Explorer* panel.
 +
+image:repository-explorer-panel.png[The Repository Explorer panel, 50%, 50%]
++
 If this panel is not visible, go to the top menu bar and click *View* > *Show Repository Explorer*.
 . Find your project under the *Process* column and double-click it.
 

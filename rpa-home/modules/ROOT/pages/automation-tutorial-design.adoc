@@ -11,6 +11,8 @@ Follow these steps to edit your process BPMN diagram using RPA Recorder:
 . Search for the *MuleSoft newsletter sign-up* project in the process list and click the *Open process* (image:open-process.png[The open process icon,1.5%,1.5%]) button.
 . In the *Automation* panel, click the *Record BPMN* (image:record-process.png[The record process icon,1.5%,1.5%]) button.
 +
+image:automation-panel-recording.png[The Record BPMN button inside the Automation Panel]
++
 If you see a pop-up window asking for permission, select the checkbox to allow RPA Manager to open RPA Recorder and click *Open*.
 . Provide your RPA Manager user account password and click *Login*.
 
@@ -39,9 +41,9 @@ image:rpa-recorder-panel.png[The recorder panel of RPA Recorder]
 +
 image:newsletter-bpmn-diagram.png[A BPMN diagram with two steps, open the newsletter page and subscribe]
 
-After you finish the recording process, upload the newly-created BPMN diagram to RPA Manager.
-
 == Step 4.3: Upload the BPMN Diagram to RPA Manager
+
+After you finish the recording process, upload the newly-created BPMN diagram to RPA Manager to update the model of your current automation project.
 
 Follow these steps to upload the BPMN diagram created with RPA Recorder to RPA Manager:
 
@@ -50,10 +52,14 @@ Follow these steps to upload the BPMN diagram created with RPA Recorder to RPA M
 . Write `MuleSoft Newsletter` in the *Process name* field and click *Save*.
 . Click the *Upload to server* (image:upload-to-server.png[The upload to server icon,1.5%,1.5%]) button.
 . In the confirmation window that shows after the upload finishes successfully, Click *OK*.
++
+image:bpmn-upload-successful.png[The BPMN upload confirmation message, 40%, 40%]
 . Close the *RPA Recording Editor* window.
 . Close the *RPA Recorder* window.
 . Return to RPA Manager and refresh the browser page.
 . Click *Publish*.
++
+image:publish-button.png[The Publish button, 40%, 40%]
 . Click the confirmation checkbox and then click *Release to Build*.
 
 == Next Steps
