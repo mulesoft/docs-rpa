@@ -11,7 +11,7 @@ page, for example, to another application.
 
 == Properties
 
-See xref:toolbox-variable-web-automation-common-properties-web-automation.adoc[Common Properties].
+See xref:toolbox-web-automation-common-properties-web-automation.adoc[Common Properties].
 
 == Inbound Variables
 

@@ -121,12 +121,6 @@ drop-down menus _Insert special character_ (special characters e.g.
 Macro_ (complete macros, e.g. to close a window, select all elements,
 etc.).
 
-You can also use inline variable (see Section Inline Variables) by clicking _Insert script
-variable_ or by typing them as needed. It is also possible to use _Login
-Data_ defined within the _Workflow_. Simply use the inline variables
-\{$User0} and \{$Password0} and replace the 0 by the number of the login
-data item you want to use here.
-
 Finally, you can select and use any defined environment variable for a
 _Keystroke_ _Action Step_ by using the corresponding drop-down menu.
 

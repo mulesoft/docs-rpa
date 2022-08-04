@@ -7,9 +7,6 @@ The General Action Steps enable to perform general operations related to the aut
 * xref:toolbox-general-exit-workflow.adoc[Exit Workflow]
 +
 The Exit Workflow Action Step enables you to end a Workflow in a controlled manner.
-* xref:toolbox-general-external-script.adoc[External Script]
-+
-The External Script Action Step enables you to execute any _AutoIT_ code you like within a Workflow.
 * xref:toolbox-general-pattern-gallery.adoc[Pattern Gallery]
 +
 All search patterns belonging to a Workflow are stored centrally in the Pattern Gallery. Search patterns are image files which are used in the Search Pattern and Pattern Select Action Steps to determine a state.

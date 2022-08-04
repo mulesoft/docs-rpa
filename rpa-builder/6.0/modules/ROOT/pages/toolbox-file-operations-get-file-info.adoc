@@ -74,10 +74,11 @@ value is %STWS_BASEPATH%. Select an existing path.
 You can also
 insert variables from the _Workflow_ in order to construct the path. To
 do so, click on the pin and select one of the available variables.
-
+////
 More information about the environment variables (Insert Environment
 Variable) and script variables (Insert Script Variable) can be found in
 the section *Settings*.
+////
 
 * *File name* Enter the name here of the file that you require
 information about. You can also insert a variable from the Workflow as
