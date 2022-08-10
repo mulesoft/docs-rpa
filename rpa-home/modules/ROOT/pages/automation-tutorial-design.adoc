@@ -41,9 +41,9 @@ image:rpa-recorder-panel.png[The recorder panel of RPA Recorder]
 +
 image:newsletter-bpmn-diagram.png[A BPMN diagram with two steps, open the newsletter page and subscribe]
 
-== Step 4.3: Upload the BPMN Diagram to RPA Manager
-
 After you finish the recording process, upload the newly-created BPMN diagram to RPA Manager to update the model of your current automation project.
+
+== Step 4.3: Upload the BPMN Diagram to RPA Manager
 
 Follow these steps to upload the BPMN diagram created with RPA Recorder to RPA Manager:
 
