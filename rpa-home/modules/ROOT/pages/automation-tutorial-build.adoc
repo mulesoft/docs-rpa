@@ -39,10 +39,10 @@ To add a new action step into your automation project:
 
 . In RPA Builder, drag the *Create bot task* element (image:create-bot-task-icon.png[The Create bot task icon, 2%, 2%]) from the BPMN editor into your process flow, after the *Sign-up to newsletter* task.
 +
-If the diagram does not automatically connects the new task, re-arrange the arrows to ensure that the new task comes after the *Sign-up to newsletter* task and connects to the *End recording* element.
-. In the new task element, Write `Confirm sign-up`.
-+
 image:add-bot-task-to-process.png[A BPMN diagram with three steps, open the newsletter page, sign up, and confirm sign-up]
++
+If the diagram does not automatically connect the new task, re-arrange the arrows to ensure that the new task comes after the *Sign-up to newsletter* task and connects to the *End recording* element.
+. In the new task element, write `Confirm sign-up`.
 . Double-click the *Confirm sign-up* task to open the workflow in edit mode.
 +
 This action opens the task for editing in the *Workbench* panel.
@@ -57,6 +57,8 @@ Alternatively, you can use the arrow buttons to move this parameter.
 +
 If this panel is not visible, in the top menu bar, go to *View* > *Show Toolbox*.
 . From the *Web Automation* section, drag a *Web Session(Chrome)* element into the *Activity Workflow* section.
++
+image:drag-web-session.png[The activity workflow with a Web Session element]
 +
 If you have a different web browser configured as the default, ensure that you use the corresponding *Web session* element that matches your default browser.
 . Double-click the *Web Session* element you just added in the *Activity Workflow*.
