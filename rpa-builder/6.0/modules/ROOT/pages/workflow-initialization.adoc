@@ -1,0 +1,111 @@
+= Workflow Initialization
+
+image:workflow-initialization.png[The Workflow Initialization window, 30%, 30%]
+
+The Workflow Initialization element groups different configuration elements. You can only insert suitable elements here, such as the Actions Steps Activity Parameters, STC Protector or Settings. Workflow Initialization is at the project level and cannot be deleted.
+
+The Workflow Initialization section contains additional elements that are not available in the Toolbox.
+
+The *Settings* Action Step is located in the global initialization section of a Workflow. It is always there and cannot be removed. This Action Step defines basic path information and checks paths for all Action Steps of the type File Operations.
+In addition, you can define the proxy settings for the Action Step REST Call in the Network Settings tab.
+
+[[properties]]
+== Workflow Settings Properties
+
+The following are the properties of the *Settings* Action Step.
+
+* *Misc*
+** *Base Path*
++
+Shows the currently selected base path.
+** *Generate Subfolder per run*
++
+When you enable this option, RPA Builder creates a temporary directory using a GUID (unique random number).
+** *Remove Base Path Subfolder after Run*
++
+When you enable this option, RPA Builder deletes the temporary directory after the Action Step runs.
+** *Use Allowed Paths limitation*
++
+When enabled, only the _allowed_ paths set in *Workflow Initialization* -> *Settings* are used.
++
+Note that before executing any Action Step of the type File Operations, the specified Directory Path is checked against the _Allowed Paths_. If the Directory Path specified in the Action Step is not allowed, the Workflow terminates and displays an error message.
++
+[WARNING]
+Do not disable the *Use Allowed Paths limitation* option if important data is stored on your system, because otherwise this information could be deleted by mistake.
+
+* *Network Settings*
+** *Proxy setting*
+*** *No Proxy* (Default)
++
+No proxy is used.
+*** *Use system proxy settings*
++
+The proxy settings of the operating system are used. No further configuration is necessary.
+*** *Manual proxy configuration*
++
+The connection data to the proxy can be entered manually in the wizard.
+** *Proxy url*
++
+Shows the address to the proxy server entered in the Wizard.
+** *Use Authentication*
++
+Shows if this option is enabled in the wizard.
+
+== Workflow Settings Wizard
+
+* *File Operation Settings*
++
+image:workflow-settings-wizard.png[The Workflow Settings Wizard, 60%, 60%]
++
+These settings apply for all File Operation Action Steps.
++
+** *Base Path Settings*
+*** *Base Path (%Stws_BasePath%)*
++
+Enter the base path to use for all Action Steps of the type File Operations here. Use the Browse button (image:browse-button.png[The browse button, 2%, 2%]) to browse the path. If you leave the path blank, the default `%Stws_BasePath%` is used internally as the path. To retrieve the specified base path later when configuring Action Steps of the type File Operations, use the Pin button (image:pin-icon.png[The Pin button, 2%, 2%]) and the `Settings-BasePath` option. The base path is shown in the Workflow Run Results, Print Preview, and the Workflow Run Protocol.
+*** *Base Path Preview*
++
+Shows the currently selected base path.
+*** *Generate subfolder per run*
++
+When you enable this option, RPA Builder creates a temporary directory using a GUID (unique random number). The temporary directory is shown in the *Base Path Preview* and appended with `\[RunGuidFolder]`.
+*** *Remove subfolder after run*
++
+Enabling this option means that the temporary directory is deleted after the Action Step has been run.
++
+** *Allowed Paths*
+*** *No path limitations for File Operation Action Steps (default)*
++
+Use this option if you don’t want to set any limitations on the path for executing the Action Step and allow all possible paths.
++
+[WARNING]
+Do not disable the *Use Allowed Paths limitation* option if important data is stored on your system, because otherwise this information could be deleted by mistake.
+
+*** *Allow File Operation Action Steps only in following paths*
++
+Use this option if you want to restrict Action Step execution to certain paths (Allowed Paths). The gray field then shows the path specified in *Base Path Settings*. This means that for File Operations only the base path
+is allowed. Add up to 10 more allowed paths using the (image:add-icon.png[The Add icon, 2%, 2%] *Add Allowed Path ...*) button. Enter a path in the field shown or browse for a path using the Browse (image:browse-button.png[The browse button, 2%, 2%]) button. Additional paths can be deleted using the *Delete Path* (image:delete-icon.png[The Delete Path button, 2%, 2%]) button. The paths calculated at runtime are checked against the *Allowed Paths*. Allowed Paths are shown in the Workflow Run Results, Print Preview, and the Workflow Run Protocol.
++
+Note that before executing any Action Step of the type File Operations, the specified Directory Path is checked against the *Allowed Paths*. If the specified Directory Path is not allowed in the Action Step, the Workflow terminates and displays an error message.
+
+
+* *Runtime Environment Settings*
++
+image:workflow-settings-environment-wizard.png[The Workflow Settings Wizard showing the Runtime Environment Settings tab, 60%, 60%]
++
+** *Name* and *Value*
++
+Create new environment variables using the (image:add-icon.png[The Add icon, 2%, 2%] *Add Environment Variable ...*) button. Enter the name of the new environment variables in the *Name* field enclosed in `%` signs, for example `%newPath%`. Enter a path for the new variable in the *Value* field. To enter path information, it is best to browse for the path using the Browse (image:browse-button.png[The browse button, 2%, 2%]) button. Additional variables can be deleted using the *Delete Environment Variable* (image:delete-icon.png[The Delete Path button, 2%, 2%]) button.
+
+* *Network Settings*
++
+image:workflow-settings-network-wizard.png[The Workflow Settings Wizard showing the Network Settings tab, 60%, 60%]
++
+To be able to run the Actions Step _REST Call_ via a proxy, configure the appropriate settings here. If an additional authentication is necessary, activate the checkbox *Use Authentication* and enter *Username* and *Password*.
+See <<properties>> for a detailed description of the Network Settings properties that are available in the Wizard.
+
+== See Also
+
+* xref:workflow-elements-in-detail.adoc[Workflow Elements in Detail]
+* xref:workflow-finalization.adoc[Workflow Finalization]
+* xref:toolbox-file-operations.adoc[File Operations]

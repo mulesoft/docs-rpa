@@ -1,0 +1,68 @@
+= Workflow Finalization
+
+Similar to the Workflow Initialization element, there is also the Workflow Finalization Action Block that is placed at the end of each Workflow with the default settings. It is used to end a Workflow in a controlled manner. This means that you can define different behavior depending on whether a Workflow has failed or has run successfully. This is important, for example, if the higher-order process is to continue to run despite a failed Workflow.
+You can add any Action Steps you wish in the Workflow Finalization Action Block. The Transaction and Exit Workflow Action Steps and the Measurement Points are exceptions.
+
+image:workflow-finalization.png[The Workflow Finalization window, 30%, 30%]
+
+* *Workflow run succeeded*
++
+If a Workflow has run successfully up to the Workflow Finalization block, the Workflow run succeeded section is automatically triggered. First, the system attempts to execute all the Action Steps that are located here. If an error occurs (for example an Image Search fails), execution is terminated. How the process continues depends on which settings you have selected in the Workflow Finalization Wizard for the particular error.
+
+* *Workflow run failed*
++
+This section is executed if the previous Workflow has failed at a prior point. You can deal with the error in the Workflow run failed section, and define the further behavior of the higher-order Business Process in the Workflow Finalization Wizard.
+
+* *Common finalization handling*
++
+The Common finalization handling section is executed at the end of the Workflow Finalization block with each execution, irrespective of whether an error has occurred or not in the Workflow or within the block. Execution of the section does not affect the error state; the state that applied at the time the section was entered is kept.
+
+== Wizard
+
+image:workflow-finalization-wizard.png[The Workflow Finalization Wizard window, 60%, 60%]
+
+The cases that can possibly occur and the ways they are dealt with, defined by the settings in the Wizard, are the following:
+
+* *Workflow run succeded*
++
+The Workflow execution succeeds but an Action Step within the section fails.
++
+For this scenario, you can define the following behaviors in the Wizard:
++
+** *Keep success state*
++
+The error is ignored and the success Workflow state is kept; the Business Process continues to run
+** *Proceed with Business Process execution*
++
+The Workflow's error state is kept and also documented but the higher-order Business Process continues to run nevertheless
+** *Terminate Business Process execution*
++
+The Workflow's error state is kept and the Workflow is also ended with Failed state. Execution of the higher-order Business Process is terminated.
+
+* *Workflow run failed*
++
+The Workflow execution fails and it is dealt with in the Workflow run failed section.
++
+The state of the Workflow is not changed in this scenario, regardless of the options configured in the Wizard. If a Workflow has failed, it cannot subsequently be set to Succeeded. If the Action Steps within the *Workflow run failed* section fail, this does not affect the settings concerning the further execution of the Business Process made in the wizard.
++
+For this scenario, you can define the following behaviors in the Wizard:
++
+** *Ignore error, proceed with Business Process execution*
++
+The error is recognized and documented as an error but the higher-order Business Process continues to run nevertheless
+** *Keep error, terminate Business Process execution*
++
+The Workflow's error state is kept and the Workflow is also ended with Failed state. Execution of the higher-order Business Process is terminated.
+
+* *Action Step failed in the Common finalization handling section*
++
+In this case, the Action Steps within the section are worked through but do not affect the Workflow's state. If the Workflow has failed, the Failed state is kept. If the Workflow was successful, the Succeeded state is kept. The behavior can be described as _neutral_.
++
+If the Workflow is ended via a user exit, such as the Exit Workflow Action Step, only the Common finalization handling section is run through.
++
+The advantage of the *Proceed with Business Process* mode is that it enables you to deal with the error states of a Workflow at Business Process level. For example, if you define a `LastActivityError` activity parameter and give it a value, irrespective of what has happened, a suitable error handling process can be modeled via a gateway at Business Process level.
+
+== See Also
+
+* xref:workflow-elements-in-detail.adoc[Workflow Elements in Detail]
+* xref:workflow-initialization.adoc[Workflow Initialization]
