@@ -67,7 +67,7 @@ The following characters are invalid:
 | `"` | Double quotes
 | `/` | Forward slash
 | `\` | Back slash
-| `/|` | Vertical bar
+| `\|` | Vertical bar
 | `?` | Question mark
 | `*` | Asterisk
 |===

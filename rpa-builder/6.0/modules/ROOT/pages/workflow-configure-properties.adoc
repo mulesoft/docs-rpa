@@ -57,7 +57,7 @@ A list of all processes that STC Guard that are not ended if an error occurs whi
 +
 Process names entered into this field must contain no spaces and be separated in the list by semicolons as in this example: `proc_1.exe;proc_2.exe;proc_N.exe`.
 +
-[IMPORTANT]
+[NOTE]
 Processes listed under *Kill on Exit* are ended in all circumstances.
 
 ** *Kill on Exit*
@@ -66,14 +66,14 @@ A list of all processes that STC Guard ends after a Workflow has been executed, 
 +
 Process names entered into this field must contain no spaces and be separated in the list by semicolons as in this example: `proc_1.exe;proc_2.exe;proc_N.exe.`
 +
-[IMPORTANT]
+[NOTE]
 The processes listed here are also ended if *STC Guard active* is not selected and even if the same process is listed under *Keep Alive*.
 
 ** *STC Guard active*
 +
 Defines the Activation of STC Guard.
 +
-[IMPORTANT]
+[NOTE]
 Processes listed under *Kill on Exit* are ended, irrespective of what is specified in this setting.
 
 * *Workflow Repository Info*
