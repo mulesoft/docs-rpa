@@ -1,0 +1,193 @@
+= Inserting Text Modules
+
+You can insert text modules in some text fields that elements of a Workflow use. Each of the Workflow elements that use text modules has drop-down insert lists in the Wizard that enable you to add the text modules.
+
+image:insert-text-module.png[The Enter String Action Step Wizard showing the differnt text module drop-down menus, 60%, 60%]
+
+Click on the appropriate element to insert the text module into the input field where the cursor is located.
+
+The following Workflow elements use insert lists:
+
+* xref:workflow-initialization.adoc[Workflow Initialization: Settings]
+* xref:toolbox-control-enter-string.adoc[Enter String] Action Step
+* xref:toolbox-control-keystrokes.adoc[Keystrokes] Action Step
+* xref:toolbox-control-run-program.adoc[Run Program] Action Step
+* Some xref:toolbox-file-operations.adoc[File Operation] Action Steps
+* xref:toolbox-flow-control-file-controlled-loop.adoc[File Controlled Loop] Action Step
+* xref:toolbox-variable-handling-combine-strings.adoc[Combine Strings] Action Step
+
+There are four types of insert lists: Insert Special Character, Insert Script Variable, Insert Macro, and
+Insert Environment Variable.
+
+== Insert Special Character
+
+image:insert-special-character.png[The Insert Special Character drop-down menu, 30%, 30%]
+
+Special Characters are keys and key combinations which are understood as commands rather than strings.
+
+For example, `{ENTER}` is not written, it emulates the *Enter* key on the keyboard.
+
+=== Available Special Characters:
+
+* `!`
+* `#`
+* `+`
+* `^`
+* `{`
+* `}`
+* `SPACE`
+* `ENTER`
+* `ALT`
+* `BACKSPACE`
+* `DELETE`
+* `UP`
+* `DOWN`
+* `LEFT`
+* `RIGHT`
+* `HOME`
+* `END`
+* `ESCAPE`
+* `INSERT`
+* `PGUP`
+* `PGDN`
+* `F1`
+* `F2`
+* `F3`
+* `F4`
+* `F5`
+* `F6`
+* `F7`
+* `F8`
+* `F9`
+* `F10`
+* `F11`
+* `F12`
+* `TAB`
+* `PRINTSCREEN`
+* `LWIN`
+* `RWIN`
+* `NUMLOCK on`
+* `NUMLOCK off`
+* `NUMLOCK toggle`
+* `CAPSLOCK on`
+* `CAPSLOCK off`
+* `CAPSLOCK toggle`
+* `SCROLLLOCK on`
+* `SCROLLLOCK off`
+* `SCROLLLOCK toggle`
+* `CTRLBREAK`
+* `PAUSE`
+* `NUMPAD0`
+* `NUMPAD1`
+* `NUMPAD2`
+* `NUMPAD3`
+* `NUMPAD4`
+* `NUMPAD5`
+* `NUMPAD6`
+* `NUMPAD7`
+* `NUMPAD8`
+* `NUMPAD9`
+* `NUMPADMULT`
+* `NUMPADADD`
+* `NUMPADSUB`
+* `NUMPADDIV`
+* `NUMPADDOT`
+* `NUMPADENTER`
+* `APPSKEY`
+* `LALT`
+* `RALT`
+* `LCTRL`
+* `RCTRL`
+* `LSHIFT`
+* `RSHIFT`
+* `SLEEP`
+* `ALTDOWN`
+* `ALTUP`
+* `SHIFTDOWN`
+* `SHIFTUP`
+* `CTRLDOWN`
+* `CTRLUP`
+* `LWINDOWN`
+* `LWINUP`
+* `RWINDOWN`
+* `RWINUP`
+* `ASC nnnn`
+
+== Insert Script Variable
+
+image:insert-script-variable.png[The Insert Script Variable drop-down menu, 30%, 30%]
+
+Script Variables are macros that are replaced by real values when the Action Step is executed, for example:
+
+* `{@UserName}` is replaced by the name of the user who is logged into the system during execution
+* `{@CRLF}` inserts a line break
+
+Script variables are generated at runtime, therefore the available list of variables looks different on each system. Usually, the list includes the computer and host name as well as formatting commands.
+
+== Insert Macro
+
+image:insert-macro.png[The Insert Macro drop-down menu, 30%, 30%]
+
+Macros are combinations of characters, Special Characters and Script Variables, which combine to create a meaningful command, for example:
+
+* `{$User0}{TAB}{$Password0}{ENTER}` performs a typical login action
+
+=== Available Macros:
+
+* Select All (CTRL+A): `{CTRLDOWN}a{CTRLUP}`
+* Show Desktop (WIN+D): `{LWINDOWN}d{LWINUP}`
+* Close Window (ALT+F4): `{ALTDOWN}{F4}{ALTUP}`
+* Close Pane (CTRL+F4): `{CTRLDOWN}{F4}{CTRLUP}`
+* Copy (CTRL+C): `{CTRLDOWN}c{CTRLUP}`
+* Cut (CTRL+X): `{CTRLDOWN}x{CTRLUP}`
+* Paste (CTRL+V): `{CTRLDOWN}v{CTRLUP}`
+* Dock Window Left (WIN+Left Arrow): `{LWINDOWN}{LEFT}{LWINUP}`
+* Dock Window Right (WIN+Right Arrow): `{LWINDOWN}{RIGHT}{LWINUP}`
+* Maximize Window (WIN+Up Arrow): `{LWINDOWN}{UP}{LWINUP}`
+* Minimize Window (WIN+Down Arrow): `{LWINDOWN}{DOWN}{LWINUP}`
+* Minimize all Windows (WIN+M): `{LWINDOWN}m{LWINUP}`
+* Close English application by menu: `{ALTDOWN}f{ALTUP}x`
+* Close German application by menu: `{ALTDOWN}d{ALTUP}e`
+* Find (CTRL+F): `{CTRLDOWN}f{CTRLUP}`
+* Open (CTRL+O): `{CTRLDOWN}o{CTRLUP}`
+* Save (CTRL+S): `{CTRLDOWN}s{CTRLUP}`
+* Undo (CTRL+Z): `{CTRLDOWN}z{CTRLUP}`
+* Redo (CTRL+Y): `{CTRLDOWN}y{CTRLUP}`
+* Print (CTRL+P): `{CTRLDOWN}p{CTRLUP}`
+* Typical Login Action: `{$User0}{TAB}{$Password0}{ENTER}`
+* Document Top (CTRL+POS1): `{CTRLDOWN}{HOME}{CTRLUP}`
+* Document End (CTRL+END): `{CTRLDOWN}{END}{CTRLUP}`
+* Current Date (deu): `++#var#++=StcGetLocalDate();`
+* Current Date (en): `++#var#++=StcGetLocalDate(\"en-us\");`
+* Current Time: `++#var#++=StcGetLocalTime();`
+
+== Insert Environment Variable
+
+image:insert-environment-variable.png[The Insert Environment Variable drop-down menu, 30%, 30%]
+
+Environment Variables are replaced by the names and paths of the system on which the Workflow is being created, for example:
+
+* `%COMPUTERNAME%` is replaced by the name of the relevant computer
+* `%ProgramFiles%` is replaced by the current path to Program Files, for example `C:\Program Files`
+
+If you want to replace these variables on execution only, use Insert Script Variable instead.
+
+=== Available Environment Variables
+
+The Environment Variables that you can select depend on the system on which RPA Builder is installed. RPA Builder replaces environment variables with the relevant value when inserted in an Action Step wizard and are not modified if they are subsequently executed or opened. Usually, environment variables include the computer name as well as some system paths.
+
+The following is a non-exhaustive list of available Environment Variables:
+
+* `%ALLUSERSPROFILE%`
+* `%APPDATA%`
+* `%COMPUTERNAME%`
+* `%ProgramFiles(x86)%`
+* `%ProgramFiles%`
+* `%USERPROFILE%`
+* `%SystemRoot%`
+* `%SystemDrive%`
+
+== See Also
+
+* xref:workflow-elements-in-detail.adoc[Workflow Elements in Detail]
+* xref:workflow-configure-properties.adoc[Configure Workflow Properties]
