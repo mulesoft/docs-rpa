@@ -17,7 +17,8 @@ This feature enables you to create listeners that check the status of an specifi
 Before you can invoke an RPA process, you need to publish it to Exchange. See xref:rpa-manager::processautomation-deploy.adoc#create-an-invokable-run-configuration[Create an invokable run configuration] for instructions to create and publish an invokable RPA process.
 
 Using the RPA connector features in Composer requires you to connect with your MuleSoft RPA account by configuring the corresponding API key and RPA API URL.
+
 * See xref:rpa-manager::botmanagement-support.adoc#create-an-api-key[Create an API Key] for instructions to create API Keys.
-* You can find the RPA API URL in Anypoint Exchange after creating and publishing an invokable run configuration. Example RPA API URL: `https://<tenant>.rpa.mulesoft.com/rpa/api/v1`.
+* The RPA API URL is the RPA Manager URL with `/rpa/api/v1` appended to it. For example, if your RPA Manager URL is `+https://myOrg.rpa.mulesoft.com+`, then the value in the RPA API URL field is `+https://myOrg.rpa.mulesoft.com/rpa/api/v1+`.
 
 Refer to the xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer] documentation for configuration and usage details.
