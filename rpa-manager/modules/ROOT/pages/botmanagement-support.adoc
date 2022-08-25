@@ -25,7 +25,6 @@ Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign 
 
 An API key is required during installation of a bot. The bot connects to the server with its API key.
 
-[[create-an-api-key]]
 === Create an API Key
 
 Create a new API key for each bot before installation.
