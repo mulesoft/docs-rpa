@@ -71,7 +71,7 @@ All the Workflows in which the Activity Parameter is used are displayed. To dele
 
 == Changing the Name of an Activity Parameter
 
-Activity Parameter names cannot be changed after creation. As soon as you close Wizard by clicking *OK*, the *Name* field remains grayed out and you can no longer change the name. You can still edit the fields
+Activity Parameter names cannot be changed after creation. After you close the Wizard by clicking *OK*, the *Name* field remains grayed out and you can no longer change the name. You can still edit the fields
 _Description_ and _Value_ at any time.
 
 If you want to subsequently change the name, delete the Activity Parameter and
