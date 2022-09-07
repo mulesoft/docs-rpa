@@ -1,0 +1,70 @@
+= Managing Automations
+
+When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a categorized process automation project in the *Process Management* view of the *Process Automation* module.
+
+If you already have evaluated a process with a third-party tool, you can create an automation project directly inside a category.
+
+You can edit the data of a project.
+
+You can delete a project, if it has never been in the production phase.
+
+You can transition projects forward and backward through all life-cycle phases.
+
+== Before You Begin
+
+* Obtain the needed privileges:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Automation* module
+|*Process Automation Open*
+
+|Create processes
+|*Process Create*
+
+|Change the process owner
+|*Change Process Owner*
+
+|Change the project manager
+|*Change Project Manager*
+
+|===
++
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+
+* To manage an automation project, a categorized project must exist  in the *Process Management* view of the *Process Automation* module.
+* To transition a project to another phase, obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
+
+== Create
+
+When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a categorized process automation project in the *Process Management* view of the *Process Automation* module.
+
+If you already have evaluated a process with a third-party tool, you can create an automation project directly inside a category:
+
+. In a category in the *Process Management* view of the *Process Automation* module, click *Create*.
+. Complete the form *Create process*:
++
+include::rpa-manager::partial$form-automationproject.adoc[]
+
+
+
+
+--Copy
+--Edit
+-- Change PO or PM
+-- Remove
+-- Finance Analysis
+-- Transition phases
+
+
+== See Also
+
+* xref:rpa-manager::myrpa-start.adoc[Starting Automation of Approved Processes]
+
+* xref:processautomation-overview.adoc[Process Automation]
+* xref:processautomation-prepare.adoc[Preparing Automations]
+* xref:processautomation-develop.adoc[Developing Automations]
+* xref:processautomation-deploy.adoc[Deploying Automations]
+//* xref:processautomation-manage.adoc[Managing Automations]
