@@ -99,7 +99,7 @@ To connect an Activity Parameter to a Gateway:
 . In the menu that opens, click the *Set Condition Expression* (image:cogs-icon.png[The Set Condition Expression button, 2%, 2%]) button.
 +
 image:set-expression-condition.png[The BPMN editor showing the Gateway settings, 60%, 60%]
-. In the Wizard that opens, click *Build Expression*
+. In the Wizard that opens, click *Build Expression*.
 +
 image:set-expression-condition-for-gateway.png[The Set Condition Expression for Gateway window, 60%, 60%]
 . Click *Add Expression* and build an expression by using the available Activity Parameters.
