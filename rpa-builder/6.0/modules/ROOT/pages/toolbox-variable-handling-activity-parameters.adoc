@@ -1,6 +1,6 @@
 = Activity Parameters
 
-The Action Step _Activity Parameters_ (Activity Parameter) allows you to map variables
+The Action Step _Activity Parameters_ enables you to map variables
 that you can use not only in the Workflow, but also in the activities of
 the business process and gateways. This allows the Activity Parameters to be exchanged
 among the different elements. For example, the BPMN gateway uses the Activity Parameters
