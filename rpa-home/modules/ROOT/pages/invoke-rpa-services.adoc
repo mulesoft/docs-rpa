@@ -18,4 +18,7 @@ Before you can invoke an RPA process, you need to publish it to Exchange. See xr
 
 Using the RPA connector features in Composer requires you to connect with your MuleSoft RPA account by configuring the corresponding API key and RPA API URL.
 
+* See xref:rpa-manager::usermanagement-connect.adoc#create-an-api-key-for-a-user[Create an API Key for a User] for instructions to create API Keys.
+* The RPA API URL is the RPA Manager URL with `/rpa/api/v1` appended to it. For example, if your RPA Manager URL is `+https://myOrg.rpa.mulesoft.com+`, then the value in the RPA API URL field is `+https://myOrg.rpa.mulesoft.com/rpa/api/v1+`.
+
 Refer to the xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer] documentation for configuration and usage details.
