@@ -117,7 +117,7 @@ For example, `{ENTER}` is not written, it emulates the *Enter* key on the keyboa
 
 image:insert-script-variable.png[The Insert Script Variable drop-down menu, 30%, 30%]
 
-Script Variables are macros that are replaced by real values when the Action Step is executed, for example:
+Script Variables are macros that the RPA bot replaces by real values during the execution of the Action Step, for example:
 
 * `{@UserName}` is replaced by the name of the user who is logged into the system during execution
 * `{@CRLF}` inserts a line break

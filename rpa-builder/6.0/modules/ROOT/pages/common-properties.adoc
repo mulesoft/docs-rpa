@@ -69,7 +69,7 @@ The highest value measured is saved.
 
 Depending on the way it is configured, every Action Step provides some of its values as Pin variables for subsequent Action Steps. Some Properties of Action Steps can be filled by these Pin variables. All completed variables are always on display to choose from.
 
-Variables are named as follows: `[Name of the Action Step in the Workflow].[Name of Variable]`. The user selects suitable variables.
+Variables are named as follows: `[Name of the Action Step in the Workflow].[Name of Variable]`.
 
 If a Property of an Action Step is filled by a variable, this Property no longer shows in the Properties window and can only be changed using the wizard.
 
