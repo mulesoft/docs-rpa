@@ -117,12 +117,12 @@ For example, `{ENTER}` is not written, it emulates the *Enter* key on the keyboa
 
 image:insert-script-variable.png[The Insert Script Variable drop-down menu, 30%, 30%]
 
-Script Variables are macros that the RPA bot replaces by real values during the execution of the Action Step, for example:
+Script Variables are macros that the RPA bot replaces with real values during the execution of the Action Step, for example:
 
 * `{@UserName}` is replaced by the name of the user who is logged into the system during execution
 * `{@CRLF}` inserts a line break
 
-Script variables are generated at runtime, therefore the available list of variables looks different on each system. Usually, the list includes the computer and host name as well as formatting commands.
+Because script variables are generated at runtime, the available list of variables looks different on each system. Usually, the list includes the computer and host name as well as formatting commands.
 
 == Insert Macro
 
@@ -165,7 +165,7 @@ Macros are combinations of characters, Special Characters and Script Variables, 
 
 image:insert-environment-variable.png[The Insert Environment Variable drop-down menu, 30%, 30%]
 
-Environment Variables are replaced by the names and paths of the system on which the Workflow is being created, for example:
+Environment Variables are replaced by the names and paths of the system on which you're creating the Workflow, for example:
 
 * `%COMPUTERNAME%` is replaced by the name of the relevant computer
 * `%ProgramFiles%` is replaced by the current path to Program Files, for example `C:\Program Files`

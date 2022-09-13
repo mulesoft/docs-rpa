@@ -67,7 +67,7 @@ The highest value measured is saved.
 
 == Variables
 
-Depending on the way it is configured, every Action Step provides some of its values as Pin variables for subsequent Action Steps. Some properties of Action Steps can be filled by these Pin variables. All completed variables are always on display to choose from.
+Depending on the way it is configured, every Action Step provides some of its values as Pin variables for subsequent Action Steps. Some properties of Action Steps can be filled by these Pin variables. You can choose from any displayed, completed variables.
 
 Variables are named as follows: `[Name of the Action Step in the Workflow].[Name of Variable]`.
 
@@ -75,7 +75,7 @@ If a Property of an Action Step is filled by a variable, this Property no longer
 
 == Suffixes
 
-Suffixes can be used for the names of the Checkpoint, Stop Watch, Ping, Service Check and Variable Action Steps, provided that the Action Steps occur within a Control Block's File Controlled Loop. A suffix is then added to the name of the Action Step during every loop. Each suffix is a column entry in the file that was imported in the File Controlled Loop.
+You can use suffixes for the names of the Checkpoint, Stop Watch, Ping, Service Check and Variable Action Steps, provided that the Action Steps occur within a Control Block's File Controlled Loop. A suffix is then added to the name of the Action Step during every loop. Each suffix is a column entry in the file that was imported in the File Controlled Loop.
 
 The _Suffix_ property shows in the Edit Variable Mappings window only if the Action Step occurs within a Control Block's File Controlled Loop. To open the Edit Variable Mappings window, click the Pin (image:pin-icon.png[The Pin Icon, 2%, 2%])button next to the Action Step you want to modify.
 
