@@ -1,6 +1,6 @@
 = Managing Automations
 
-When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a categorized process automation project in the *Process Management* view of the *Process Automation* module.
+When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a process automation project assigned to a category in the *Process Management* view of the *Process Automation* module.
 
 If you already have evaluated a process with a third-party tool, you can create or copy an automation project directly inside a category.
 
@@ -34,13 +34,13 @@ You can transition projects forward and backward through all life-cycle phases.
 +
 Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
-* To manage an automation project, a categorized project must exist  in the *Process Management* view of the *Process Automation* module.
+* To manage an automation project, a project assigned to a category must exist in the *Process Management* view of the *Process Automation* module.
 * To create or copy a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager].
 * To transition a project to another phase, obtain the needed permissions as a member of the process team in the xref:processautomation-manage.adoc#create-an-automation-project[project data sheet] in the *Project Management* view of the *Process Automation* module.
 
 == Create an Automation project
 
-When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a categorized process automation project in the *Process Management* view of the *Process Automation* module.
+When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a process automation project assigned to a category in the *Process Management* view of the *Process Automation* module.
 
 If you already have evaluated a process with a third-party tool, you can create an automation project directly inside a category:
 
@@ -52,7 +52,7 @@ include::rpa-manager::partial$form-automationproject.adoc[]
 
 == Copy an Automation project
 
-When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a categorized process automation project in the *Process Management* view of the *Process Automation* module.
+When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a process automation project assigned to a category in the *Process Management* view of the *Process Automation* module.
 
 If you already have evaluated a process with a third-party tool, you can copy and edit a similar automation project directly inside a category.
 
