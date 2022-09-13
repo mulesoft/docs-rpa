@@ -1,8 +1,8 @@
 = Checking System Parameters
 
-Some system parameters in _Microsoft Windows®_ significantly affect how
+Some system parameters in _Windows_ significantly affect how
 the screen image is displayed. For example, turning _ClearType_ (a font
-smoothing algorithm built into _Microsoft Windows®_) on or off affects
+smoothing algorithm built into _Windows_) on or off affects
 the rendering of almost all displayed text – this includes browsers,
 applications, system dialogs, menu bars, etc.
 
