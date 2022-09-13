@@ -1,13 +1,13 @@
 = Workflow Finalization
 
 Similar to the Workflow Initialization element, there is also the Workflow Finalization Action Block that is placed at the end of each Workflow with the default settings. It is used to end a Workflow in a controlled manner. This means that you can define different behavior depending on whether a Workflow has failed or has run successfully. This is important, for example, if the higher-order process is to continue to run despite a failed Workflow.
-You can add any Action Steps you wish in the Workflow Finalization Action Block. The Transaction and Exit Workflow Action Steps and the Measurement Points are exceptions.
+You can add any Action Steps in the Workflow Finalization Action Block. The Transaction and Exit Workflow Action Steps and the Measurement Points are exceptions.
 
 image:workflow-finalization.png[The Workflow Finalization window, 30%, 30%]
 
 * *Workflow run succeeded*
 +
-If a Workflow has run successfully up to the Workflow Finalization block, the Workflow run succeeded section is automatically triggered. First, the system attempts to execute all the Action Steps that are located here. If an error occurs (for example an Image Search fails), execution is terminated. How the process continues depends on which settings you have selected in the Workflow Finalization Wizard for the particular error.
+If a Workflow runs successfully up to the Workflow Finalization block, the Workflow run succeeded section is automatically triggered. First, the system attempts to execute all the Action Steps that are located here. If an error occurs (for example an Image Search fails), execution is terminated. How the process continues depends on which settings you have selected in the Workflow Finalization Wizard for the particular error.
 
 * *Workflow run failed*
 +
@@ -21,7 +21,7 @@ The Common finalization handling section is executed at the end of the Workflow 
 
 image:workflow-finalization-wizard.png[The Workflow Finalization Wizard window, 60%, 60%]
 
-The cases that can possibly occur and the ways they are dealt with, defined by the settings in the Wizard, are the following:
+The cases that can possibly occur and the ways they are dealt with, defined by the settings in the Wizard, are as follows:
 
 * *Workflow run succeded*
 +
@@ -31,10 +31,10 @@ For this scenario, you can define the following behaviors in the Wizard:
 +
 ** *Keep success state*
 +
-The error is ignored and the success Workflow state is kept; the Business Process continues to run
+The error is ignored and the success Workflow state is kept, and the Business Process continues to run.
 ** *Proceed with Business Process execution*
 +
-The Workflow's error state is kept and also documented but the higher-order Business Process continues to run nevertheless
+The Workflow's error state is kept and also documented but the higher-order Business Process continues to run.
 ** *Terminate Business Process execution*
 +
 The Workflow's error state is kept and the Workflow is also ended with Failed state. Execution of the higher-order Business Process is terminated.
@@ -49,7 +49,7 @@ For this scenario, you can define the following behaviors in the Wizard:
 +
 ** *Ignore error, proceed with Business Process execution*
 +
-The error is recognized and documented as an error but the higher-order Business Process continues to run nevertheless
+The error is recognized and documented as an error but the higher-order Business Process continues to run.
 ** *Keep error, terminate Business Process execution*
 +
 The Workflow's error state is kept and the Workflow is also ended with Failed state. Execution of the higher-order Business Process is terminated.

@@ -6,11 +6,11 @@ To display and configure Workflow properties:
 +
 image:workflow-open-properties.png[The BPMN editor showing a project with three tasks, 50%, 50%]
 . Open the *Project Explorer*.
-. Right-click the Workflow and select *Edit Workflow Properties* from the context menu.
+. Right-click the Workflow and, from the context menu, select *Edit Workflow Properties*.
 +
 image:workflow-properties-window.png[The Project Explorer showing the Workflow to edit, 50%, 50%]
 +
-The corresponding properties are then displayed on the properties panel of RPA Builder.
+The properties panel of RPA Builder displays the corresponding properties.
 
 == Properties
 
@@ -41,7 +41,7 @@ The analysis package contains additional information, so that you can view the c
 * *Image Processing*
 ** *Color Depth*
 +
-Compensate for color depth variations of different measurement robots by using the Automatic mode.
+Compensate for color depth variations of different measurement robots by using Automatic mode.
 * *Measurement Scheduling*
 +
 The Measurement Scheduling menu item is a legacy element and can still be found in the Workflow Properties for compatibility reasons. Do not make any changes.
@@ -50,12 +50,12 @@ The Measurement Scheduling menu item is a legacy element and can still be found 
 +
 A list of additional processes to end if an error occurs while executing a Workflow. Enable the *STC Guard active* setting to activate this feature. STC Guard always closes all visible and associated Windows processes. It is also possible to include windowless processes in the list.
 +
-Process names entered into this field must contain no spaces and be separated in the list by semicolons as in this example: `proc_1.exe;proc_2.exe;proc_N.exe`.
+Process names entered into this field must contain no spaces and must be separated in the list by semicolons, for example: `proc_1.exe;proc_2.exe;proc_N.exe`.
 ** *Keep Alive*
 +
-A list of all processes that STC Guard that are not ended if an error occurs while executing a Workflow.
+A list of all processes that STC Guard does not end if an error occurs while executing a Workflow.
 +
-Process names entered into this field must contain no spaces and be separated in the list by semicolons as in this example: `proc_1.exe;proc_2.exe;proc_N.exe`.
+Process names entered into this field must contain no spaces and must be separated in the list by semicolons, for example: `proc_1.exe;proc_2.exe;proc_N.exe`.
 +
 [NOTE]
 Processes listed under *Kill on Exit* are ended in all circumstances.
@@ -64,7 +64,7 @@ Processes listed under *Kill on Exit* are ended in all circumstances.
 +
 A list of all processes that STC Guard ends after a Workflow has been executed, irrespective of its success.
 +
-Process names entered into this field must contain no spaces and be separated in the list by semicolons as in this example: `proc_1.exe;proc_2.exe;proc_N.exe.`
+Process names entered into this field must contain no spaces and must be separated in the list by semicolons, for example: `proc_1.exe;proc_2.exe;proc_N.exe.`
 +
 [NOTE]
 The processes listed here are also ended if *STC Guard active* is not selected and even if the same process is listed under *Keep Alive*.
@@ -92,7 +92,7 @@ Date and time of the project's creation (automatically set by the program).
 Date and time the project was last modified (automatically set by the program).
 ** *Last Editor*
 +
-Microsoft Windows® Login ID of the last person to change the project (automatically set by the program).
+Windows Login ID of the last person to change the project (automatically set by the program).
 ** *Workflow Type*
 +
 The Workflow type (`End-to-End` or `Test automation`). The Workflow type is set at the creation of the project and cannot be changed.

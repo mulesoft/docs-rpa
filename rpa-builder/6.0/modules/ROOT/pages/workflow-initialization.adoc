@@ -31,7 +31,7 @@ When enabled, only the _allowed_ paths set in *Workflow Initialization* -> *Sett
 Note that before executing any Action Step of the type File Operations, the specified Directory Path is checked against the _Allowed Paths_. If the Directory Path specified in the Action Step is not allowed, the Workflow terminates and displays an error message.
 +
 [WARNING]
-Do not disable the *Use Allowed Paths limitation* option if important data is stored on your system, because otherwise this information could be deleted by mistake.
+Do not disable the *Use Allowed Paths limitation* option if important data is stored on your system, as this information could be deleted by mistake.
 
 * *Network Settings*
 ** *Proxy setting*
@@ -62,7 +62,7 @@ These settings apply for all File Operation Action Steps.
 ** *Base Path Settings*
 *** *Base Path (%Stws_BasePath%)*
 +
-Enter the base path to use for all Action Steps of the type File Operations here. Use the Browse button (image:browse-button.png[The browse button, 2%, 2%]) to browse the path. If you leave the path blank, the default `%Stws_BasePath%` is used internally as the path. To retrieve the specified base path later when configuring Action Steps of the type File Operations, use the Pin button (image:pin-icon.png[The Pin button, 2%, 2%]) and the `Settings-BasePath` option. The base path is shown in the Workflow Run Results, Print Preview, and the Workflow Run Protocol.
+Specifies the base path to use for all Action Steps of the type File Operations. Use the Browse button (image:browse-button.png[The browse button, 2%, 2%]) to browse the path. If you leave the path blank, the default `%Stws_BasePath%` is used internally as the path. To retrieve the specified base path later when configuring Action Steps of the type File Operations, use the Pin button (image:pin-icon.png[The Pin button, 2%, 2%]) and the `Settings-BasePath` option. The base path is shown in the Workflow Run Results, Print Preview, and the Workflow Run Protocol.
 *** *Base Path Preview*
 +
 Shows the currently selected base path.
@@ -79,7 +79,7 @@ Enabling this option means that the temporary directory is deleted after the Act
 Use this option if you don’t want to set any limitations on the path for executing the Action Step and allow all possible paths.
 +
 [WARNING]
-Do not disable the *Use Allowed Paths limitation* option if important data is stored on your system, because otherwise this information could be deleted by mistake.
+Do not disable the *Use Allowed Paths limitation* option if important data is stored on your system, as this information could be deleted by mistake.
 
 *** *Allow File Operation Action Steps only in following paths*
 +
