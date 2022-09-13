@@ -83,11 +83,9 @@ include::rpa-manager::partial$form-automationproject.adoc[]
 
 Change the owner of a process to represent changed responsibilities:
 
-. In a category in the *Process Management* view of the *Process Automation* module, click
-
-
-
-
+. In a category in the *Process Management* view of the *Process Automation* module, click the *New Process Owner* icon image:newprocessowner-icon.png[user-with-crown symbol,1.5%,1.5%] on the panel of the project for which you want to change the process owner.
+. In the window *New process owner*, select a user.
+. Click *OK*
 
 The new process owner is added to the process team with read access.
 
@@ -95,13 +93,45 @@ The previous process owner is removed from the process team independent of their
 
 == Change the Project Manager of an Automation Project
 
-The previous manager can be assigned to the Process as a team member.
+Change the manager of a project to represent changed responsibilities:
 
+. In a category in the *Process Management* view of the *Process Automation* module, click the *New Project Manager* icon image:newprojectmanager-icon.png[user-with-tie symbol,1.5%,1.5%] on the panel of the project for which you want to change the project manager.
+. In the window *New project manager*, select a user.
+. If you do not want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager will be added with no assigned phases and thus only able to see this project.*
+. Click *OK*
 
--- Remove
--- Finance Analysis
--- Transition phases
+You can assign additional permissions to the previous manager as a team member.
 
+== Remove an Automation Project
+
+Remove automation projects you no longer need. This cannot be undone and is neither logged nor reported.
+
+The *Delete* icon is only displayed if the logged-in user is the project's manager and the process has never been used productively. If the project has been transferred at least once to the production phase and deployed to an RPA Bot for processing, it can no longer be deleted.
+
+. In a category in the *Process Management* view of the *Process Automation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the project you want to delete.
+. Confirm the prompt.
+
+== Analyze the Financial Aspects of a Process
+
+Open the xref:processoperations-financeanalysis.adoc[view *Finance Analysis*] to record, monitor, and analyze the financial aspects of a process:
+
+. In a category in the *Process Management* view of the *Process Automation* module, click the *Finance Analysis* icon image:financeanalysis-icon.png[ symbol,1.5%,1.5%] the panel of the project you want to analyze.
+
+== Transition an Automation Project to Another Phase
+
+Once it's ready, transition the project to the next phase of its life-cycle. You can always transition back to change the project's design or implementation.
+
+=== Transition to the Next Phase
+
+. In a category in the *Process Management* view of the *Process Automation* module, click the name of a project.
+. If the project uses a process board with automatic phase release tasks, complete that task to enable the transition.
+. In the header, click *Publish <phase name>*.
+
+=== Transition to a Previous Phase
+
+. In a category in the *Process Management* view of the *Process Automation* module, click the name  of a project.
+. In the header, click *Back <phase name>*.
+. Repeat the previous step until you reach the desired phase.
 
 == See Also
 
