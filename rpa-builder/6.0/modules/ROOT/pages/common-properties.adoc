@@ -1,8 +1,8 @@
 = Common Properties
 
-All Action Steps have Properties that you can configure via the relevant Action Step wizard, its Properties window or by editing Variable Mappings.
+All Action Steps have properties that you can configure via the relevant Action Step wizard or its Properties window, or by editing Variable Mappings.
 
-The following Properties are common to all Action Steps:
+The following properties are common to all Action Steps:
 
 * *Common*
 ** *Description*
@@ -12,9 +12,9 @@ A custom description of the Action Step as defined by the user.
 +
 The error handling strategy to use. The default value is *Normal*.
 +
-When set to *None*, an error that occurs during this Action Step is disregarded. In this case, the error is also ignored within the _DoAction_ block of a Managed Control Block so that the content of the _OnError_ block is not executed. A corresponding note is added to the log file.
+When set to *None*, the error handling strategy disregards an error that occurs during this Action Step. In this case, the _DoAction_ block of a Managed Control Block ignores the error, it doesn't execute the content of the _OnError_ block, and adds a corresponding note the log file.
 +
-The *Force Error State* Action Step does not include Error Handling, because it is used to produce an error.
+The *Force Error State* Action Step does not include Error Handling because it is used to produce an error.
 +
 ** *Name*
 +
@@ -32,9 +32,9 @@ The time in seconds RPA Builder waits for an Action Step to finish its execution
 +
 ** *Use general timeout*
 +
-If this option is enabled, RPA Builder uses the time specified in seconds under _Default Timeout_ in the Properties of the Workflow as the Timeout for the Action Step.
+If this option is enabled, RPA Builder uses the time specified in seconds under _Default Timeout_ in the properties of the Workflow as the Timeout for the Action Step.
 
-The following Properties are also required for Action Steps that can be shown as Measurement Points in Data Sources:
+The following properties are also required for Action Steps that can be shown as Measurement Points in Data Sources:
 
 * *Common*
 ** *Timer Name*
@@ -67,7 +67,7 @@ The highest value measured is saved.
 
 == Variables
 
-Depending on the way it is configured, every Action Step provides some of its values as Pin variables for subsequent Action Steps. Some Properties of Action Steps can be filled by these Pin variables. All completed variables are always on display to choose from.
+Depending on the way it is configured, every Action Step provides some of its values as Pin variables for subsequent Action Steps. Some properties of Action Steps can be filled by these Pin variables. All completed variables are always on display to choose from.
 
 Variables are named as follows: `[Name of the Action Step in the Workflow].[Name of Variable]`.
 

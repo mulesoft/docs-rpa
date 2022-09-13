@@ -27,7 +27,7 @@ Special Characters are keys and key combinations which are understood as command
 
 For example, `{ENTER}` is not written, it emulates the *Enter* key on the keyboard.
 
-=== Available Special Characters:
+=== Available Special Characters
 
 * `!`
 * `#`
@@ -132,7 +132,7 @@ Macros are combinations of characters, Special Characters and Script Variables, 
 
 * `{$User0}{TAB}{$Password0}{ENTER}` performs a typical login action
 
-=== Available Macros:
+=== Available Macros
 
 * Select All (CTRL+A): `{CTRLDOWN}a{CTRLUP}`
 * Show Desktop (WIN+D): `{LWINDOWN}d{LWINUP}`
