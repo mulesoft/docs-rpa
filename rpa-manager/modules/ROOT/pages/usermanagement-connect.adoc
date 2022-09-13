@@ -25,6 +25,7 @@ Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign 
 
 * The user who will use an API key must exist in the *Users* view of the *User Management* module.
 
+[[create-an-api-key-for-a-user]]
 == Create an API Key for a User
 
 Create an API key for a user to configure an API connector in MuleSoft Composer. After the expiration date the user can no longer connect to RPA Manager via Composer. The expiration date can be moved.
