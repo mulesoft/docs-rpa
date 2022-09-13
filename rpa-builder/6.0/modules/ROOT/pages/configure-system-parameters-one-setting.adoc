@@ -1,6 +1,6 @@
 = Changing the Most Important System Parameters with One Setting
 
-_Microsoft Windows®_ has a general performance setting for visual
+_Windows_ has a general performance setting for visual
 effects that will turn off all settings relating to picture search at
 the same time. We *strongly recommend* adjusting this setting for all
 client systems and all systems used to create __Workflow__s. Simply go

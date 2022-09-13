@@ -138,3 +138,7 @@
 * xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]
 ** xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[Testing Regular Expressions]
 ** xref:advanced-concepts-using-regular-expressions-examples.adoc[Regex Examples]
+* xref:workflow-elements-in-detail.adoc[Workflow Elements in Detail]
+** xref:workflow-configure-properties.adoc[Configure Workflow Properties]
+** xref:workflow-initialization.adoc[Workflow Initialization]
+** xref:workflow-finalization.adoc[Workflow Finalization]
