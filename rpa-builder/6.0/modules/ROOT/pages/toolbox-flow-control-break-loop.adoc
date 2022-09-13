@@ -6,8 +6,7 @@ There are cases where you need to exit the _Loop Control Block_ before
 all iterations have been executed. _Break Loop_ should be used for this
 purpose.
 
-Using _Break Loop_ only makes sense in combination with a _Managed
-Control Block_, because otherwise it would be executed during the first
+Using _Break Loop_ only makes sense in combination with a _Managed Control Block_, because otherwise it would be executed during the first
 iteration of a _Loop Control Block_, thus defeating the object of having
 a loop.
 

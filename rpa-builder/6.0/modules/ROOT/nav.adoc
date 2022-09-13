@@ -134,6 +134,8 @@
 *** xref:toolbox-web-automation-web-session-firefox.adoc[Web Session (Firefox)]
 *** xref:toolbox-web-automation-web-session-ms-edge.adoc[Web Session (MS Edge)]
 *** xref:toolbox-web-automation-website-load-time.adoc[Website Load Time]
+* xref:common-properties.adoc[Common Properties]
+* xref:insert-text-modules.adoc[Inserting Text Modules]
 * xref:advanced-concepts-using-variables.adoc[Using Variables]
 * xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]
 ** xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[Testing Regular Expressions]
