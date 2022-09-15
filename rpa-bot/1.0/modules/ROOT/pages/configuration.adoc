@@ -134,4 +134,4 @@ If you check this box, analysis packages are sent if the Activity Workflow is te
 
 == See Also
 
-* xref:rpa-manager/botmanagement-overview#getting-started[Bot Management]
+* xref:rpa-manager::botmanagement-overview.adoc#getting-started[Bot Management]
