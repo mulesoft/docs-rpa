@@ -32,7 +32,7 @@ Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign 
 
 == Prepare Projects
 
-Projects are assigned to categories. A category describes the environment of a process in a few words.
+Projects are assigned to categories. A category describes the environment of a process in a few keywords.
 
 Applications that are used in processes are assigned to the process and to bots which can use them. A process can be deployed on a bot which has assigned the required processes.
 
@@ -40,7 +40,7 @@ Global variables and credentials are used for values that are the same in multip
 
 === Manage Categories
 
-Projects are assigned to categories. A category describes the environment of a process in a few words.
+Projects are assigned to categories. A category describes the environment of a process in a few keywords.
 
 A project can only be assigned to a single category. First create a standard category, so you can start with process automation quickly. You can change the category of a process later. After you have automated the first projects, it makes sense to create an archive category and move completed projects there.
 
