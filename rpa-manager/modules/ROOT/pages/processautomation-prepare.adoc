@@ -101,7 +101,7 @@ Remove an application if it is no longer available.
 . In the *Process Applications* view of the *Process Automation* module, click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the application you want to remove.
 . Confirm the removal.
 
-The application is removed from all processes and RPA Bots to which it was assigned without further confirmation.
+The application is removed from all processes and RPA Bots to which it was assigned to without further confirmation.
 
 == Prepare Deployment
 
