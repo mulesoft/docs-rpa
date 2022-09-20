@@ -2,8 +2,6 @@
 
 You can install RPA Recorder by manually downloading and running the installer or by starting the recorder from RPA Manager, which provides a link to download and install RPA Recorder.
 
-Every time you start RPA Recorder, you are required to log in using your RPA credentials.
-
 == Install RPA Recorder
 
 Download the latest RPA Recorder installer from the *Home* page of RPA Manager.
@@ -37,11 +35,11 @@ Start RPA Recorder by clicking the *Record BPMN* icon (image:record-bpmn-icon.pn
 After starting RPA recorder via Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager:
 
 . Open RPA recorder.
-. Provide your login credentials for user authentication.
-
-To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
+. Provide your login credentials for user authentication
 
 image:rpa-logout-screen.png[RPA Logout Screen]
+
+To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
 
 == See Also
 
