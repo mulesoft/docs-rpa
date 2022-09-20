@@ -66,27 +66,42 @@ Click *Create* to add a downtime to the application.
 
 Learn how to xref:myrpa-start.adoc#required-process-applications[assign required applications to a process].
 
+Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign required applications to a bot].
+
 ==== Edit an Application
 
 Edit an application to change its data or down-times:
 
 . In the *Process Applications* view of the *Process Automation* module, click *Create*.
-. Edit the form *Edit the application*
+. Edit the form *Edit the application*.
 . Click *Save*.
 
-==== Deactivate an Application
+==== Deactivate or Activate an Application
 
-Deactivate an application if it is down unexpectedly. Use down-times to schedule maintenance and down times. Deactivation periods are not added to the list of down-times.
+Deactivate an application if it is temporarily not available and you don't know when it will be available again.
 
-. In the *Process Applications* view of the *Process Automation* module, click the *Deactivate* icon.
+Use down-times to schedule maintenance and down times. Deactivation periods are not added to the list of down-times.
 
-...
+Processes whose applications are currently down are executed to completion and are not restarted until the downtime or deactivation period has ended.
 
+. In the *Process Applications* view of the *Process Automation* module, click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application you want to deactivate.
 
+An *Inactive* label is shown beneath the logo of the application.
 
-==== Delete an Application
+If a deactivated application becomes available again, you can activate it:
 
+. In the *Process Applications* view of the *Process Automation* module, click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application you want to activate.
 
+An *Active* label is shown beneath the logo of the application.
+
+==== Remove an Application
+
+Remove an application if it is no longer available.
+
+. In the *Process Applications* view of the *Process Automation* module, click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the application you want to remove.
+. Confirm the removal.
+
+The application is removed from all processes and RPA Bots to which it was assigned without further confirmation.
 
 == Prepare Deployment
 
