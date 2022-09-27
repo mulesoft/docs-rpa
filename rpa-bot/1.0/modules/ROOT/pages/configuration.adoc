@@ -131,3 +131,7 @@ Defines the interval at which the bot takes screenshots.
 * *Analysis package on OK*
 +
 If you check this box, analysis packages are sent if the Activity Workflow is terminated with OK.
+
+== See Also
+
+* xref:rpa-manager::botmanagement-overview.adoc#getting-started[Bot Management]
