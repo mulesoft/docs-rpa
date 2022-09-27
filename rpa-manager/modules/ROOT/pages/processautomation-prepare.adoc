@@ -32,13 +32,41 @@ Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign 
 
 == Prepare Projects
 
-=== Create Categories
+Projects are assigned to categories. A category describes the environment of a process in a few keywords.
+
+Applications that are used in processes are assigned to the process and to bots which can use them. A process can be deployed on a bot which has assigned the required processes.
+
+Global variables and credentials are used for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes. You can link global variables and credentials anywhere that a globe symbol is displayed.
+
+=== Manage Categories
+
+Projects are assigned to categories. A category describes the environment of a process in a few keywords.
+
+A project can only be assigned to a single category. First create a standard category, so you can start with process automation quickly. You can change the category of a process later. After you have automated the first projects, it makes sense to create an archive category and move completed projects there.
+
+==== Create a Category
 
 Create categories to group processes. Assign a process to a category during evaluation or project creation.
 
 . In the *Process Management* view of the *Process Automation* module, click *Create*.
 . Enter a name in the *Create a category* window.
 . Click *OK*.
+
+==== Edit a Category
+
+Edit a category to render its name more precisely.
+
+. In the *Process Management* view of the *Process Automation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the category you want to edit.
+. Change the name in the *Edit the category* window.
+. Click *OK*.
+
+==== Remove a Category
+
+Remove categories you no longer need.
+
+Only categories that do not contain processes can be deleted.
+
+. In the *Process Management* view of the *Process Automation* module, click the the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category you want to delete.
 
 === List Applications
 
