@@ -45,9 +45,9 @@ Create categories to group processes. Assign a process to a category during eval
 
 === Manage Applications
 
-In the view *Process Applications*, list all applications required for the execution of processes. In the view *Process Management*, assign required applications to processes at process creation or phase transition. In the module *Bot Management*, assign applications installed on a computer a bot is installed on to that bot.
+In the view *Process Applications*, list all applications required for the execution of processes. In the view *Process Management*, assign required applications to processes at process creation or phase transition. In the module *Bot Management*, assign applications to a bot that can execute them. Bots can execute all applications installed on their computer.
 
-Applications are not available during down-times or while deactivated. A process can be deployed on a bot which has assigned the required processes. Processes whose applications are currently down are executed to completion and are not restarted until the downtime or deactivation period has ended.
+Applications are not available during down-times or while deactivated. You can deploy a process on a bot which has assigned the required processes. Processes whose applications are currently down are executed to completion and are not restarted until the downtime or deactivation period has ended.
 
 ==== Create an Application
 
