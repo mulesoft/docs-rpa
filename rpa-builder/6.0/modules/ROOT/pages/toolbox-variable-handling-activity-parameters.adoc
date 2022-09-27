@@ -1,33 +1,32 @@
+= Activity Parameters
 
-
-= Variable Handling
-
-== Activity Parameters
-
-The Action Step _Activity Parameters_ (AP) allows you to map variables
+The Action Step _Activity Parameters_ enables you to map variables
 that you can use not only in the Workflow, but also in the activities of
-the business process and gateways. This allows the APs to be exchanged
-among the different elements. For example, the BPMN gateway uses the APs
+the business process and gateways. This allows the Activity Parameters to be exchanged
+among the different elements. For example, the BPMN gateway uses the Activity Parameters
 to decide which activity should be executed next.
 
-The Action Step _Activity Parameters_ can only be included once in a
-process and will be placed automatically in the _Workflow
-Initialization_.
+image:toolbox-activity-parameters.png[The Activity Parameters Action Step, 40%, 40%]
 
-*Defining Activity Parameters*
+Only one _Activity Parameters_ Action Step can exist in a process and it is automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
 
-You define the parameters in the Business Process Initialization that you find at the top right of the area of the Business Process Modeler.
+== Defining Activity Parameters
 
-//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=272,height=58]
+To define the Activity Parameters:
 
-//image:media\image2.png[image,width=423,height=210]
-
-//First press image:media\image3.png[image,width=144,height=18] to selectthe type of variable.
-
-//image:media\image4.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=125,height=168]
-
+. In the BPMN editor, click the *Business Process Initialization* (image:business-process-initialization-icon.png[The Business Process Initialization button, 2%, 2%]) button.
+. Click *Activity Parameters*.
++
+image:toolbox-activity-parameters-config.png[The Activity Parameters config window, 30%, 30%]
+. In the Business Process Initialization window, click (image:add-icon.png[The Add icon, 2%, 2%] *Add New Parameter ...*).
++
+image:business-process-initialization-window.png[The Business Process Initialization window, 75%, 75%]
+. Select the Activity Parameter to add from the list.
++
+image:add-new-parameters.png[The list of available activity parameters to add, 30%, 30%]
++
 The following data types are available:
-
++
 * Texts (_alphanumeric_)
 * Integers (_integer_)
 * Floating point values (_floating_-_point_)
@@ -35,16 +34,17 @@ The following data types are available:
 * Lists (_array_)
 * Log-in data (user account)
 * Screen coordinates (coordinates)
+* Browser Session ID (web session ID)
+* AWS log-in data (AWS credentials)
 
-You can enter a name, description, and a value for the parameters directly in the corresponding fields.
+You can enter a name, description, and a value for the parameters in the corresponding fields. Activity parameter names have the following requirements:
 
-The AP name may consist of a combination of letters, numbers, and underscores.
-
-Special characters and spaces must not be used.
-
-The initial letter of the name must be in lower case.
-
-The AP name must be unique. It must not be used multiple times for different variables.
+* The name consists of a combination of letters, numbers, and underscores.
+* The name contains no special characters or spaces.
+* The initial letter of the name is lower case.
+* The name is unique.
++
+You cannot use the same name multiple times for different variables.
 
 The predefined values are test values that are only used for a local run
 within RPA Builder. The variables are registered automatically
@@ -56,54 +56,60 @@ Please note that the test value may change in the course of the BP due
 to the possible assignment of new values. If the BP is started again,
 the value will be reset to its initial value.
 
-*Deleting Activity Parameters*
+== Deleting Activity Parameters
 
-//You can delete APs by returning to the Business Process Initialization area. Press the image:media\image5.png[image,width=29,height=30] button to delete the desired AP.
+To delete an Activity Parameter, click the *Delete* (image:delete-icon.png[The Delete icon, 2%, 2%]) button next to the Activity Parameter you want to delete.
 
-You can only delete an AP if it is not being used in a Workflow. If the AP is already connected to at least one Workflow, a pop-up message appears.
+image:business-process-initialization-window.png[The business process initialization window, 75%, 75%]
+
+You can only delete an Activity Parameter if it is not being used in a Workflow. If the Activity Parameter is already connected to at least one Workflow, a pop-up message appears indicating that the parameter is still in use.
 // the following message appears:
 
-//image:media\image6.png[image,width=466,height=155]
+image:delete-activity-parameter-warning.png[A warning message showing that a parameter cannot be deleted because it is still in use, 60%, 60%]
 
-All the Workflows in which the AP is used are displayed. To delete the AP, you must remove the connections in all Workflows.
+All the Workflows in which the Activity Parameter is used are displayed. To delete the Activity Parameter, you must remove the connections in all Workflows.
 
-*Changing the Name of an Activity Parameter*
+== Changing the Name of an Activity Parameter
 
-While you create a new AP, you can change the name at any time. As soon
-as the wizard is closed with _OK_, the field remains grayed out and you
-can no longer change the name. You can still edit the fields
+Activity Parameter names cannot be changed after creation. After you close the Wizard by clicking *OK*, the *Name* field remains grayed out and you can no longer change the name. You can still edit the fields
 _Description_ and _Value_ at any time.
 
-If you want to subsequently change the name, you can delete the AP and
-create it again with a new name. This only applies if the AP is not
+If you want to subsequently change the name, delete the Activity Parameter and
+create it again with a new name. This only applies if the Activity Parameter is not
 already being used in a process.
 
-*Connecting Activity Parameters to a Workflow*
+== Connecting Activity Parameters to a Workflow
 
-To do this, you need the Action Step _Activity Parameters,_ which you
-insert into the _Workflow Initialization_. All activity parameters are
-listed in the wizard and can be connected to the Workflows in which they
-should be used. The Action Steps can then be filled with the content of
-the available APs with the aid of the pin variables.
-//image:media\image7.png[image,width=21,height=21].
+To connect an Activity Parameter with a Workflow:
 
-//image:media\image8.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=323,height=207]
+. Click the *Edit Variable Mappings* (image:pin-icon.png[The Edit Variable Mappings button, 2%, 2%]) button next to the Action Step for which you want to connect an Activity Parameter.
++
+image:rpa-home::activity-workflow-ocr.png[The Activity Workflow window, 40%, 40%]
+. Select the Activity Parameter you want to connect.
++
+image:connect-activity-parameters.png[The Edit Variable Mappings window showing Activity Parameters, 50%, 50%]
 
-*Connecting Activity Parameters to a Gateway*
+The Wizard lists all Activity Parameters and you can connect them to the Workflows that support the available parameter types.
 
-If you click on the BPMN gateway, a small toolbox opens containing a
-puzzle icon. A wizard opens. You can enter the APs here.
-//(see also chapter *Gateway condition expression*.
-//link:#GatewayConditionExpression[Gateway condition expression])
+== Connecting Activity Parameters to a Gateway
 
-//image:media\image9.jpg[image,width=604,height=137]
+To connect an Activity Parameter to a Gateway:
+
+. In the BPMN editor, click any *Gateway* element in your model.
+. In the menu that opens, click the *Set Condition Expression* (image:cogs-icon.png[The Set Condition Expression button, 2%, 2%]) button.
++
+image:set-expression-condition.png[The BPMN editor showing the Gateway settings, 60%, 60%]
+. In the Wizard that opens, click *Build Expression*.
++
+image:set-expression-condition-for-gateway.png[The Set Condition Expression for Gateway window, 60%, 60%]
+. Click *Add Expression* and build an expression by using the available Activity Parameters.
 
 == Properties
 
-*Misc*
-
-* *Write Variables to Log File / Run Protocol* If this option is
-enabled, the variable names and their values are written to the log file
+* *Misc*
+** *Write Variables to Log File / Run Protocol*
++
+If this option is enabled, the variable names and their values are written to the log file
 and the run protocol.
 
 For security reasons, passwords are not shown in the user account data.
@@ -121,40 +127,39 @@ variables.
 
 == Wizard
 
-Click to select the desired parameters on the left in the _Available
-Parameters_ column. You can use the arrows to drag them into the right
-column and thereby insert them into the Workflow.
+image:activity-parameters-wizard.png[The Activity Parameters Wizard, 75%, 75%]
 
-For more on *Write Variables to Log File /Run Protocol* see also <<Properties>>.
+Click to select the desired parameters from the _Available Parameters_ column. You can use the arrows to drag them into the _Used in this Workflow_ column and thereby insert them into the Workflow.
 
-== Handling for Activity Parameters When Importing a Workflow
+For more information about the *Write Variables to Log File /Run Protocol* option, see <<Properties>>.
 
-If you import a Workflow with APs, e.g. from the Activity Library, into
-an existing project, inconsistencies may result.
+== Handling Inconsistencies When Importing a Workflow
 
-For example, if
+Importing a Workflow with Activity Parameters, for example from the Activity Library, into
+an existing project can cause inconsistencies.
 
-* the APs referenced in the Workflow does not exist in the project
-* the imported APs have the same names as APs already existing in the
+For example, if:
+
+* the Activity Parameters referenced in the Workflow do not exist in the project
+* the imported Activity Parameters have the same names as Activity Parameters already existing in the
 project that have a different data type
 
-In such cases, you are notified about inconsistencies by means of a
-dialog.
+In such cases, RPA Builder notifies these inconsistencies by showing a dialog.
 
-//image:media\image10.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=484,height=272]
+image:inconsistent-activity-parameters.png[The Inconsistent Activity Parameters dialog, 60%, 60%]
 
-The dialog shows you all the affected APs and suggests a suitable action
-(_Suggested Auto-Correction_). Either missing APs are added or, if APs
+The dialog shows you all the affected Activity Parameters and suggests a suitable action
+(_Suggested Auto-Correction_). Either missing Activity Parameters are added or, if Activity Parameters
 have the same name but a different data type, deleted.
 
 You can accept the suggestions by clicking on _Proceed_. Click on
-_Remove Parameters from Workflow_ to remove all the APs of the imported
+_Remove Parameters from Workflow_ to remove all the Activity Parameters of the imported
 Workflow. Clicking on _Cancel_ cancels the import of the Workflow.
 ////
 == Related Elements
 
 The following chapters as a whole may help you in acquiring a better
-understanding of the relations between the activity parameters:
+understanding of the relations between the Activity Parameters:
 
 * link:#BusinessProcessInitialization[_Business Process Initialization_]
 * link:#GatewayConditionExpression[_Gateway condition expression_]

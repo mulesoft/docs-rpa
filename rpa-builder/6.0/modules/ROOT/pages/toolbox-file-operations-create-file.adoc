@@ -14,7 +14,7 @@ whole specified path, if this does not already exist.
 * *Directory path* This is where you enter the path to the directory where the file is to be
 created. You can specify an absolute or relative path. If a relative
 path is used, then the path relates to the _Base Path_ variable.
-* *File Name** Enter the name of the file that is to be created here.
+* *File Name* Enter the name of the file that is to be created here.
 * *Force error if file exists* If this option has been enabled, an error
 message will interrupt the _Workflow_ if a file with the same name
 already exists. If this option has not been enabled and the file already
