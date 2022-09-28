@@ -1,0 +1,50 @@
+= Documents
+
+RPA Recorder creates three document types at the end of a recording session:
+
+* BPMN
+* PDF
+* XES
+
+RPA Recorder stores all created documents in the directory that is specified the xref:user-interface.adoc#settings[settings] section.
+
+RPA Recorder groups recordings by date and tags them with the timestamp of the recording session.
+
+== BPMN
+
+The BPMN is a graphical representation of a business process model. It is a crucial element of an automation project in the Mulesoft RPA platform.
+It also includes the recorded documentation, which can be viewed in RPA Manager.
+
+You can open BPMN with any workflow and decision automation platform which supports BPMN v2.0 standard, specified by the Object Management Group.
+
+== PDF
+
+The created PDF is an additional documentation of a recording and contains the following information:
+
+* Recording time
+* Process name (if opened from web client, otherwise default name *New Process* is assigned)
+* BPMN graphic
+* A table with the following information:
+** Element name: Start Event, Activity (Service Task), End Event
+** Application window title
+** Action type: System, mouse, keyboard, clipboard, window state, variable, comment, screenshot
+** Screenshots: Either screenshots taken on mouse clicks or manual screenshots
+** Info: Detailed information based upon the action type
+
+The table previously described displays a gray background row whenever a new activity is created, the proceeding rows have a white background to indicate that the sub elements are part of this activity.
+
+== XES
+
+XES is the standard format for process mining. You can open the created XES file with any process mining tool that supports the XES 1.0 format. The XES is used for further process mining purposes.
+
+== Logs
+
+RPA Recorder creates and stores multiple log files in the *Logs* subdirectory, within the directory you define in the xref:user-interface.adoc#settings[settings] section. If the RPA Recorder directory does not exist, it is automatically created together with a log file.
+
+The log file contains valuable information about the recording, but also warnings and errors that may have happened.
+
+If any unexpected behavior arises, you can provide feedback to MuleSoft by sending over the log file.
+
+== See Also
+
+* xref:user-interface.adoc#settings[User Interface]
