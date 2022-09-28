@@ -8,12 +8,12 @@ include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
 == Properties
 
 include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
-* *Additional Chrome arguments* (_Properties_ grid only)
+* *Additional Chrome arguments*
 +
 Define command-line parameters for _Google Chrome_. By default,
 _disable-translate_ is set. This disables the automatic translation bar
 feature of _Google Chrome_ because it may hinder _Workflow_ execution.
-* *Alternative User Agent String* (_Properties_ grid only)
+* *Alternative User Agent String*
 +
 Override the default User Agent string for Google Chrome.
 * *Disable Unpacked Extensions support*
