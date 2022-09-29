@@ -9,7 +9,7 @@ Before installing RPA Bot, ensure that your environment meets the minimum hardwa
 | Minimum | Recommended
 | Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
 | 8 GB of RAM | 16 GB of RAM
-| 30 GB of disk space | 300 GB (SSD) of disk space
+| 30 GB of disk space | 30 GB (SSD) of disk space
 |===
 
 === Unsupported Hardware Configurations
