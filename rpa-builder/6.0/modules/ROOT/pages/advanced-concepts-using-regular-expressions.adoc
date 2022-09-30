@@ -10,3 +10,7 @@ http://en.wikipedia.org/wiki/Regular_expression[http://en.wikipedia.org/wiki/Reg
 http://www.regular-expressions.info/[http://www.regular-expressions.info/^]
 * Online RegEx tester (German): +
 http://regexp-tester.mediacix.de/exp/regex/[http://regexp-tester.mediacix.de/exp/regex/^]
+
+RPA Builder includes the Regex Tester tool, which enables you to xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[test regular expressions].
+
+For specific use cases and examples, see xref:advanced-concepts-using-regular-expressions-examples.adoc[Regex Examples].

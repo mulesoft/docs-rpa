@@ -1,21 +1,35 @@
 
-= Testing Regular Expression
+= Testing Regular Expressions
 
-Open the _Regex Tester_ dialog navigating to *Tools* -> *Open Regex Tester*
-menu option or by clicking the *Open Regex Tester* icon (image:advanced-concepts-using-regular-expressions-testing-regular-expression-image1.png[Regex Tester icon, 2%, 2%]). Use this dialog to
-create and test regular expressions. You can also access the _Regex
-Tester_ directly from various _Action Steps_. The regular expressions
-and, if present, text patterns associated with the _Action Step_ can
-then be transferred directly to the _Regex Tester_.
+The _Regex Tester_ is a tool in RPA Builder that enables you create and test regular expressions.
+You can open the _Regex Tester_ in three different ways:
+
+* In the top menu bar, click *Tools* -> *Open Regex Tester*.
+* In the top menu bar, click the *Open Regex Tester* button (image:advanced-concepts-using-regular-expressions-testing-regular-expression-image1.png[Regex Tester icon, 2%, 2%]).
+* In an _Action Step_ that supports regex, click the *Test Regex* button (image:test-regex-icon.png[Regex Tester icon, 2%, 2%]).
++
+Opening the _Regex Tester_ this way automatically transfers any regular expressions and text patterns associated with the _Action Step_ to the tool.
+
+== Regex Tester Wizard
 
 image::advanced-concepts-using-regular-expressions-testing-regular-expression-image2.png[Regex Tester wizard, 50%, 50%]
 
-* *Regex* Enter the regular expression that you want to test. Commonly
+* *Regex* 
++
+Enter the regular expression that you want to test. Commonly
 used regular expressions can be selected from the *Commonly used Regex*
 table by double clicking on the desired entry.
-* *Test Pattern* Enter a piece of text that you wish to use for testing
+* *Test Pattern* 
++
+Enter a piece of text that you wish to use for testing
 the regular expression. Click the Execute Test button to run the
 test. Matches will be highlighted in the *Test Pattern* field.
-* *Commonly used Regex* This table contains commonly used regular
+* *Commonly used Regex* 
++
+This table contains commonly used regular
 expressions that can be used in the *Regex* field. Double click on the
 desired entry to transfer it to the _Regex_ field.
+
+== See Also
+
+* xref:advanced-concepts-using-regular-expressions-examples.adoc[Regex Examples]

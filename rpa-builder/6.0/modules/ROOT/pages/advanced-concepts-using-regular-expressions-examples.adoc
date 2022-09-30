@@ -87,3 +87,7 @@ image::advanced-concepts-using-regular-expressions-examples-image5.png[Example f
 
 This regular expression would find a window title like "Document
 user.txt – Editor".
+
+== See Also
+
+* xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[Testing Regular Expressions]
