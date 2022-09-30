@@ -1,12 +1,12 @@
 
 = Testing Regular Expressions
 
-The _Regex Tester_ is a tool in RPA Builder that enables you create and test regular expressions.
+The _Regex Tester_ is a tool in RPA Builder that enables you to create and test regular expressions.
 You can open the _Regex Tester_ in three different ways:
 
 * In the top menu bar, click *Tools* -> *Open Regex Tester*.
 * In the top menu bar, click the *Open Regex Tester* button (image:advanced-concepts-using-regular-expressions-testing-regular-expression-image1.png[Regex Tester icon, 2%, 2%]).
-* In an _Action Step_ that supports regex, click the *Test Regex* button (image:test-regex-icon.png[Regex Tester icon, 2%, 2%]).
+* In an _Action Step_ that supports Regex, click the *Test Regex* button (image:test-regex-icon.png[Regex Tester icon, 2%, 2%]).
 +
 Opening the _Regex Tester_ this way automatically transfers any regular expressions and text patterns associated with the _Action Step_ to the tool.
 

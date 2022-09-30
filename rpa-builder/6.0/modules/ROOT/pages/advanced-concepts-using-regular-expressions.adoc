@@ -1,14 +1,14 @@
 = Using Regular Expressions
 
-_Regular Expression_ or _RegEx_ are patterns that provide a means to specify and recognize texts.
+_Regular Expression_ or _Regex_ are patterns that provide a means to specify and recognize texts.
 
-If you need further information and references, following are some links to get you started with _RegEx_:
+If you need further information and references, following are some links to get you started with _Regex_:
 
 * Wikipedia on regular expressions: +
 http://en.wikipedia.org/wiki/Regular_expression[http://en.wikipedia.org/wiki/Regular_expression^]
-* RegEx tutorials, examples, and references: +
+* Regex tutorials, examples, and references: +
 http://www.regular-expressions.info/[http://www.regular-expressions.info/^]
-* Online RegEx tester (German): +
+* Online Regex tester (German): +
 http://regexp-tester.mediacix.de/exp/regex/[http://regexp-tester.mediacix.de/exp/regex/^]
 
 RPA Builder includes the Regex Tester tool, which enables you to xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[test regular expressions].

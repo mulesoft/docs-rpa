@@ -6,7 +6,7 @@ This _Action Step_ allows you to change the state of a specific window.
 
 == Properties
 
-* *Use RegEx* You can further distinguish between window titles by
+* *Use Regex* You can further distinguish between window titles by
 selecting this checkbox. The function is described in detail in Section
 Using Regular Expression.
 
@@ -46,7 +46,7 @@ are using this option you need to press *_F10_* to stop the capture)
 clicked
 * *Use window text* Captures the _Window text_ in the window as well as
 the title
-* *Use RegEx* You can further distinguish between window titles by
+* *Use Regex* You can further distinguish between window titles by
 selecting this checkbox. The function is described in detail in Section
 Using Regular Expression.
 
