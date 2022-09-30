@@ -1,5 +1,5 @@
 
-= Examples
+= Regex Examples
 
 The following are some examples of using Regular Expressions.
 
@@ -21,7 +21,7 @@ The usual way of identifying a window by searching for a part of its
 title will not work, since a search for the text "SAP" in the window
 title would return two valid results.
 
-In this case, best practice is to enable the _Use RegEx_ function and
+In this case, best practice is to enable the _Use Regex_ function and
 only allow exact matches for window titles. You can do this using the
 following pattern _^[exact_window_name]$_
 
@@ -87,3 +87,7 @@ image::advanced-concepts-using-regular-expressions-examples-image5.png[Example f
 
 This regular expression would find a window title like "Document
 user.txt – Editor".
+
+== See Also
+
+* xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[Testing Regular Expressions]

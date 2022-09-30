@@ -32,7 +32,7 @@ keystrokes_ is activated, the window title used to identify the window
 that keystrokes are sent to is displayed here
 * *Use common window title for all keystrokes* Select if all the
 keystrokes should be performed in the same window
-* *Use RegEx/Use a regular expression for window title* You can further
+* *Use a regular expression for window title* You can further
 distinguish between window titles by selecting this checkbox. For a
 short introduction to regular expressions, refer to Section
 Using Regular Expressions
