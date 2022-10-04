@@ -22,6 +22,9 @@ Create and document the environment for the automation of processes.
 |Delete global variables and credentials
 |*Global Variables Delete*
 
+|Create, change, and delete process applications
+|*Application Create*, *Application Edit*, *Application Delete*
+
 // Will be implemented in a future release?
 //|Address the Global Variables via the RPA Public RESTful API
 //|*REST API Global Variables/Credential Pool*
