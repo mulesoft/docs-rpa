@@ -151,8 +151,7 @@ Before editing a global variable, check its usage to avoid inadvertent side-effe
 
 . In the *Global Variables* view of the *Process Automation* module, click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the global variable you want to check.
 
-
-
+A window with a table shows you in which configurations the variable is used.
 
 ====  Edit a Global Variable
 
