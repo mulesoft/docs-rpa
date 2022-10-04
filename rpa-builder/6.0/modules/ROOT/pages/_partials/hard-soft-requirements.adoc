@@ -1,9 +1,3 @@
-= Hardware and Software Requirements
-
-Before using RPA Builder, ensure that your environment meets the minimum hardware and software requirements.
-
-include::partial$hard-soft-requirements.adoc[]
-////
 == Hardware Requirements
 
 [%header%autowidth.spread,cols=".^a,.^a]
@@ -37,7 +31,3 @@ Any of the following:
 * Java Runtime Environment 11 (JRE, 64-bit version) or higher
 * Adoptium 11 (JRE, 64-bit version) or higher
 |===
-////
-== See Also
-
-* xref:install-and-configure.adoc[Installing and Configuring RPA Builder]
