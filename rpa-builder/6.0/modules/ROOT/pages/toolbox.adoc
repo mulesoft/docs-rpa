@@ -7,6 +7,7 @@ The Toolbox contains all action steps that you can configure to add logic to the
 * xref:toolbox-app-automation.adoc[App Automation]
 * xref:toolbox-checks.adoc[Checks]
 * xref:toolbox-control.adoc[Control]
+* xref:toolbox-aws-document-processing.adoc[Document Processing]
 * xref:toolbox-excel-operations.adoc[Excel Operations]
 * xref:toolbox-file-operations.adoc[File Operations]
 * xref:toolbox-flow-control.adoc[Flow Control]
