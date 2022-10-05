@@ -1,0 +1,36 @@
+== Hardware Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a]
+|===
+| Minimum | Recommended
+| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
+| 8 GB of RAM | 16 GB of RAM
+| 30 GB of disk space | 30 GB (SSD) of disk space
+|===
+
+=== Unsupported Hardware Configurations
+
+* Notebooks with Intel Graphics 520 and 530
+
+== Software Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+ a|
+* 4.5
+* 4.7.2
+| Operating System
+ a|
+Any of the following:
+
+* Windows 8.1 / 10 / 11
+* Windows Server 2016 / 2019 / 2022
+|===
+
+=== Requirements for Secure Session Technology
+
+* Windows logins used for secure sessions have privileges to open a local RDP session on `127.0.0.2`.
+* 64-bit Operating System.
+* Dedicated Windows Server machine with enough resources to execute several Processes simultaneously (2 GB or more RAM per session)
