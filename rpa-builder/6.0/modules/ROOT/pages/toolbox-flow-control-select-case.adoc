@@ -128,7 +128,7 @@ condition specified for the case is met (steps 5 to 7 above).
 
 *Substring*: Part of the text in Value must match
 
-*RegEx comparison*: Search for matches for the regular expression entered
+*Regex comparison*: Search for matches for the regular expression entered
 as the Value. More information about _Regular Expressions_ is provided
 in the section on *Using Regular Expressions*.
 

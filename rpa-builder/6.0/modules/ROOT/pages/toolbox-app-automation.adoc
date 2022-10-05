@@ -130,7 +130,7 @@ _Identify Element_, as described above, or can be entered manually. 
 *Window Title* The name of the window to use.
 
 *Use Regular Expression (Regex)* If this option is selected, the Window
-Title is interpreted as a regex expression.
+Title is interpreted as a Regex expression.
 
 *Preview* You see a preview of the selected element here. It only
 appears if the element was selected using Identify Element or the if

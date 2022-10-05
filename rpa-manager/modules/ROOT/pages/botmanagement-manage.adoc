@@ -35,6 +35,7 @@ Please refer to the system and hardware requirements topic to assess the maximum
 . Set the number of sessions the bot may use.
 . Click *Save*.
 
+[[bot-assign-servicetimes-applications]]
 == Assign Service Times and Process Applications to Bots
 
 Assign service times to bots to determine when a bot may execute processes.
