@@ -133,13 +133,25 @@ The application is removed from all processes and RPA Bots to which it was assig
 
 == Prepare Deployment
 
-=== Create Global Variables
+Use global variables or credentials for values and login data that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
+
+You can link global variables or credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+
+=== Manage Global Variables
+
+Create global variables for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
+
+You can link global variables anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+
+Editing or deleting a global variable affects all configurations which use the variable.
+
+Check the usage of a variable before changing or deleting it.
+
+==== Create a Global Variable
 
 A global variable consists of a name, a description, a type, and a value. It may be used in the test or the production phase.
 
 Use global variables for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
-
-You can link global variables anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
 
 Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (number_employees and answer).
 
@@ -164,12 +176,12 @@ Type of the global variable. The type of variable determines where it can be use
 ** *Integer*:
 +
 An integer number.
-** *Alphaumeric*:
+** *Alphanumeric*:
 +
 A character string.
 ** *Boolean*:
 +
-A logical value. Set the checkmark in the *Value* checkbox for the value `true// and remove the checkmark for the value `false`.
+A logical value. Set the checkmark in the *Value* checkbox for the value `true` and remove the checkmark for the value `false`.
 ** *Float*:
 +
 A floating-point number.
@@ -179,6 +191,33 @@ Combination of two integer values for an X-Y coordinate. Use global coordinates,
 * *Value*:
 +
 You can only enter values of the specified type.
+
+You can link global variables anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+
+==== Check the Usage of a Global Variable
+
+Before editing a global variable, check its usage to avoid inadvertent side-effects.
+
+. In the *Global Variables* view of the *Process Automation* module, click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the global variable you want to check.
+
+A window with a table shows you in which configurations the variable is used.
+
+====  Edit a Global Variable
+
+Edit a global variable to change its name or value. You cannot change the type of a global variable. Check the usage of the variable first to avoid inadvertent side-effects.
+
+. In the *Global Variables* view of the *Process Automation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the global variable you want to edit.
+. Change date in the form *Edit the Global Variable*.
+. Click *Save*.
+
+The variable is changed everywhere it is used.
+
+==== Delete a Global Variable
+
+Delete global variables that will not be used anymore. Variables linked in configurations cannot be deleted.
+
+. In the *Global Variables* view of the *Process Automation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the global variable you want to delete.
+. Confirm the deletion.
 
 === Create Credentials
 
