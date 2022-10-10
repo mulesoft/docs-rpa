@@ -2,6 +2,8 @@
 * xref:index.adoc[RPA Overview]
 * xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
 * xref:ms-automation-credits.adoc[Mulesoft Automation Credits]
+* xref:automation-userrolesandpermissions.adoc[User Roles and Permissions]
+** xref:automation-userrolesandpermissions-privilegesbymodule.adoc¢[Privileges by Module]
 * xref:automation-tutorial-introduction.adoc[Tutorial: Create an Automation From Start to Finish]
 ** xref:automation-tutorial-prerequisites.adoc[Step 1: Prerequisites for Creating an Automation]
 ** xref:automation-tutorial-evaluate.adoc[Step 2: Evaluate a Process for Automation]
