@@ -1,3 +1,429 @@
 = List of Privileges by Module
 
-...
+RPA Manager has the following privileges, which can be assigned to individual users.
+
+To open any module, you always require the privilege for which the name ends in *Open*.
+
+Privileges that end with *Administration* authorize a user to create, change, and delete all types of objects in the corresponding module.
+If the authorization only applies to a single type of object in a module, the corresponding privileges end with  *Create*, *Edit*, and *Delete*.
+
+Privileges named *Global <...> View* authorize a user to see all the processes in the relevant view. A user who does not have this privilege can only see processes for which they belong to the project team.
+
+If you assign a role to a user, the user receives all the privileges contained in the role. These privileges are not displayed in the *Privileges* field in the user's profile.
+
+
+
+
+== Privileges of category *System*
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Logfile Download*
+|Download the log files from the server using the *Download logfiles* button in the *About* dialog
+
+|*Show Event Log*
+|Display the event log of the server using the *Open Event log* button in the *About* dialog
+
+|===
+
+
+
+
+== Privileges for the *User Management* module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*User Management Open*
+|Open all views of the *User Management* module.
+
+|*User Management Administration*
+|Create, change, and delete all objects of the *User Management* module.
+
+|*User Api Key Create*
+|Create user API keys
+
+|*User Api Key Edit*
+|Change user API keys
+
+|*User Api Key Delete*
+|Delete user API keys
+
+|*User Group Create*
+|Create user groups
+
+|*User Group Edit*
+|Change user groups
+
+|*User Group Delete*
+|Delete user groups
+
+|===
+
+
+
+
+== Privileges of the *Bot Management* module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Robot Management Open*
+|Open all views of the *Bot Management* module.
+
+|*Robot Management Administration*
+|Create, change, and delete all objects of the *Bot Management* module.
+
+|*Service Time Create*
+|Create bot service times
+
+|*Service Time Edit*
+|Change bot service times
+
+|*Service Time Delete*
+|Delete bot service times
+
+|===
+
+
+
+
+== Privileges of the *Process Evaluation* module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Process Evaluation Open*
+|Open the *Process Evaluation* view
+
+|*Process Evaluation Administration*
+|Create, change, and delete all objects of the *Process Evaluation* module
+
+|*Global Process Evaluation View*
+|Authorization to view all processes in the views *Process Evaluation* and *My X1* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
+
+|*Evaluation Criteria Open*
+|Open the *Evaluation Criteria* view
+
+|*Create Evaluation Criteria*
+|Create evaluation criteria
+
+|*Edit Evaluation Criteria*
+|Change evaluation criteria
+
+|*Delete Evaluation Criteria*
+|Delete evaluation criteria
+
+|*Process Evaluation Approval to a CoE*
+|Assign process automation to a Center of Excellence
+
+|*Process Evaluation Approval to a Project Manager*
+|Assign process automation to a Project Manager
+
+|*Open Evaluation Templates*
+|Open the *Evaluation Templates* view
+
+|*Create Evaluation Templates*
+|Create and copy evaluation templates
+
+|*Edit Evaluation Templates*
+|Change evaluation templates
+
+|*Delete Evaluation Templates*
+|Delete evaluation templates
+
+|===
+
+
+
+
+== Privileges of the *Process Automation* module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Process Automation Open*
+|Open all views of the *Process Automation* module
+
+|*Process Create*
+|Create and copy a process project
+
+|*Change Process Owner*
+|Change the process owner
+
+|*Change Project Manager*
+|Change the project manager
+
+|*Application Create*
+|Create an application in the *Process Applications* view
+
+|*Application Edit*
+|Change an application in the *Process Applications* view
+
+|*Application Delete*
+|Delete an application in the *Process Applications* view
+
+|*Global Variables Create for Production phase*
+|Create global variables in the *Global Variables* view for use project configurations in the production phase.
+
+|*Global Variables Create for Test phase*
+|Create global variables in the *Global Variables* view for use project configurations in the test phase.
+
+|*Global Variables Delete*
+|Delete global variables in the *Global Variables* view
+
+|*Global Variables Edit for Production phase*
+|Edit global variables in the *Global Variables* view for use project configurations in the production phase.
+
+|*Global Variables Edit for Test phase*
+|Edit global variables in the *Global Variables* view for use project configurations in the test phase.
+
+|*Process Recording*
+|Using the RPA Process Recorder
+
+|===
+
+
+
+
+== Privileges of the *Process Operations* module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Process Execution Plans Open*
+|Open the *Process Execution Plans* view.
+
+|*Global Process Execution Plans View*
+|Authorization to view all processes in the *Process Execution Plans* view, independently of whether or not the current user is a member of the process team
+
+|*Process Deployment Map Open*
+|Open the view *Deployment Map*
+
+|*Upcoming Process Changes Open*
+|Open the *Upcoming Process Changes* view.
+
+|*Upcoming Process Changes Administration*
+|Administer objects in the *Upcoming Process Changes* view
+
+|*Finance Analysis Open*
+|Open the *Finance Analysis* view with processes for which the current user is a member of the process team
+
+|*Global Finance Analysis View*
+|Open the *Finance Analysis* view with all processes, independently of whether the current user is a member of the process team
+
+|*Finance Analysis Edit*
+|Changing finance analyses
+
+|===
+
+
+
+
+== Privileges of the *Process Monitoring* module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Process Monitoring Open*
+|Open all views of the *Process Monitoring* module
+
+|*Robot State and Operation Open*
+|Open the *Robot State and Operation* view
+
+|*Process Streaming Open*
+|Open the *Process Streaming* view
+
+|===
+
+
+
+
+== Privileges of the *My RPA* module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|**
+|
+
+|**
+|
+
+|**
+|
+
+|===
+
+
+==== Global Process Evaluation View
+
+Authorization to view all processes in the views *Process Evaluation* and *My X1* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
+
+==== Unprocessed Task List Open
+
+Open the *Unprocessed Tasks* view.
+
+==== Unprocessed Task List Edit
+
+Change the *Unprocessed Tasks* view.
+
+
+
+
+== Privileges of the *Dashboard* module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|**
+|
+
+|**
+|
+
+|**
+|
+
+|===
+
+
+==== Dashboard Open
+
+Open all views of the *Dashboard* module
+
+==== Dashboard Administration
+
+Create, change, and delete all objects of the *Dashboard* module
+
+
+
+
+== Privileges of the *Alerting*
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|**
+|
+
+|**
+|
+
+|**
+|
+
+|===
+
+
+==== Alerting Open
+
+Open all views of the *Alerting* module
+
+==== Alerting Administration
+
+Create, change, and delete all objects of the *Alerting* module
+
+
+
+
+== Privileges of the *X1 Design Studio* category
+
+
+    The documentation of *X1 Design Studio* is available in the [Customer Portal on the Servicetrace home page](https://www.servicetrace.com/de/kunden-portal/).
+
+    [cols="1,2"]
+    |===
+    |*Privilege* |*Permitted Action*
+
+    |**
+    |
+
+    |**
+    |
+
+    |**
+    |
+
+    |===
+
+
+==== Activity Library Administration
+
+Authorization to manage the *Activity Library* in the *X1 Design Studio*.
+
+
+    The *Activity Library* is managed exclusively in the *X1 Design Studio*. If a user opens the *X1 Design Studio*, they can only change the *Activity Library* if they have the privilege *Activity Library Administration*. For more information, see the *X1 Design Studio Manual*.
+
+==== Activity Library Open
+
+Authorization to open the *Activity Library* in the *X1 Design Studio*.
+
+
+    The *Activity Library* is displayed exclusively in the *X1 Design Studio*. If a user opens the *X1 Design Studio*, they can only view the *Activity Library* if they have the privilege *Activity Library Open*. For more information, see the *X1 Design Studio Manual*.
+
+
+
+
+== Privileges of the *X1 Public REST API* category
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|**
+|
+
+|**
+|
+
+|**
+|
+
+|===
+
+
+You will require the special Privileges listed below to use the *X1 Public REST API*.
+
+
+    The individual Privileges you'll need to call can be found in the  *X1 Public REST API* documentation on the [Customer Portal on the Servicetrace home page](https://www.servicetrace.com/de/kunden-portal/).
+
+
+==== REST API Application
+
+Administration of Process Applications using the *X1 Public REST API*
+
+==== REST API Global Variables/Credential Pool
+
+Administration of Global Variables and the Credential Pool using the *X1 Public REST API*
+
+==== REST API Processes
+
+Administration of Processes using the *X1 Public REST API*
+
+==== REST API Process Board
+
+Administration of Process Boards using the *X1 Public REST API*
+
+==== REST API Production Configurations
+
+Administration of Process Configurations using the *X1 Public REST API*
+
+==== REST API Robots
+
+Administration of *X1 Bots* using the *X1 Public REST API*
+
+==== REST API Test Configurations
+
+Administration of Test Conifgurations using the *X1 Public REST API*
