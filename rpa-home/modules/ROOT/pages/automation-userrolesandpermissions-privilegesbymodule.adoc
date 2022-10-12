@@ -253,29 +253,16 @@ If you assign a role to a user, the user receives all the privileges contained i
 |===
 |*Privilege* |*Permitted Action*
 
-|**
-|
+|*Global Process Evaluation View*
+|Authorization to view all processes in the views *Process Evaluation* and *My RPA* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
 
-|**
-|
+|*Unprocessed Task List Open*
+|Open the *Unprocessed Tasks* view.
 
-|**
-|
+|*Unprocessed Task List Edit*
+|Change the *Unprocessed Tasks* view.
 
 |===
-
-
-==== Global Process Evaluation View
-
-Authorization to view all processes in the views *Process Evaluation* and *My X1* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
-
-==== Unprocessed Task List Open
-
-Open the *Unprocessed Tasks* view.
-
-==== Unprocessed Task List Edit
-
-Change the *Unprocessed Tasks* view.
 
 
 
@@ -286,144 +273,86 @@ Change the *Unprocessed Tasks* view.
 |===
 |*Privilege* |*Permitted Action*
 
-|**
-|
+|*Dashboard Open*
+|Open all views of the *Dashboard* module
 
-|**
-|
-
-|**
-|
+|*Dashboard Administration*
+|Create, change, and delete all objects of the *Dashboard* module
 
 |===
 
 
-==== Dashboard Open
-
-Open all views of the *Dashboard* module
-
-==== Dashboard Administration
-
-Create, change, and delete all objects of the *Dashboard* module
 
 
-
-
-== Privileges of the *Alerting*
+== Privileges of the *Alerting* module
 
 [cols="1,2"]
 |===
 |*Privilege* |*Permitted Action*
 
-|**
-|
+|*Alerting Open*
+|Open all views of the *Alerting* module
 
-|**
-|
-
-|**
-|
+|*Alerting Administration*
+|Create, change, and delete all objects of the *Alerting* module
 
 |===
 
 
-==== Alerting Open
-
-Open all views of the *Alerting* module
-
-==== Alerting Administration
-
-Create, change, and delete all objects of the *Alerting* module
 
 
+== Privileges of the *RPA Builder* category
 
+The *Activity Library* is managed exclusively in the RPA Builder.
 
-== Privileges of the *X1 Design Studio* category
-
-
-    The documentation of *X1 Design Studio* is available in the [Customer Portal on the Servicetrace home page](https://www.servicetrace.com/de/kunden-portal/).
-
-    [cols="1,2"]
-    |===
-    |*Privilege* |*Permitted Action*
-
-    |**
-    |
-
-    |**
-    |
-
-    |**
-    |
-
-    |===
-
-
-==== Activity Library Administration
-
-Authorization to manage the *Activity Library* in the *X1 Design Studio*.
-
-
-    The *Activity Library* is managed exclusively in the *X1 Design Studio*. If a user opens the *X1 Design Studio*, they can only change the *Activity Library* if they have the privilege *Activity Library Administration*. For more information, see the *X1 Design Studio Manual*.
-
-==== Activity Library Open
-
-Authorization to open the *Activity Library* in the *X1 Design Studio*.
-
-
-    The *Activity Library* is displayed exclusively in the *X1 Design Studio*. If a user opens the *X1 Design Studio*, they can only view the *Activity Library* if they have the privilege *Activity Library Open*. For more information, see the *X1 Design Studio Manual*.
-
-
-
-
-== Privileges of the *X1 Public REST API* category
+Learn how to xref:rpa-builder::ui-overview.adoc#explorer-pane[find the Activity Library in RPA Builder].
 
 [cols="1,2"]
 |===
 |*Privilege* |*Permitted Action*
 
-|**
-|
+|*Activity Library Administration*
+|Authorization to manage the *Activity Library* in the RPA Builder.
 
-|**
-|
-
-|**
-|
+|*Activity Library Open*
+|Authorization to open the *Activity Library* in the *X1 Design Studio*.
 
 |===
 
 
-You will require the special Privileges listed below to use the *X1 Public REST API*.
 
 
-    The individual Privileges you'll need to call can be found in the  *X1 Public REST API* documentation on the [Customer Portal on the Servicetrace home page](https://www.servicetrace.com/de/kunden-portal/).
-
-
-==== REST API Application
-
-Administration of Process Applications using the *X1 Public REST API*
-
-==== REST API Global Variables/Credential Pool
-
-Administration of Global Variables and the Credential Pool using the *X1 Public REST API*
-
-==== REST API Processes
-
-Administration of Processes using the *X1 Public REST API*
-
-==== REST API Process Board
-
-Administration of Process Boards using the *X1 Public REST API*
-
-==== REST API Production Configurations
-
-Administration of Process Configurations using the *X1 Public REST API*
-
-==== REST API Robots
-
-Administration of *X1 Bots* using the *X1 Public REST API*
-
-==== REST API Test Configurations
-
-Administration of Test Conifgurations using the *X1 Public REST API*
+// Future privileges
+//
+// == Privileges of the *RPA Public REST API* category
+//
+// You will require the special privileges listed below to use the *RPA Public REST API*.
+//
+// The individual Privileges you'll need to call can be found in the  *RPA Public REST API* documentation.
+//
+// [cols="1,2"]
+// |===
+// |*Privilege* |*Permitted Action*
+//
+// |*REST API Application*
+// |Administration of Process Applications using the *RPA Public REST API*
+//
+// |*REST API Global Variables/Credential Pool*
+// |Administration of Global Variables and the Credential Pool using the *RPA Public REST API*
+//
+// |*REST API Processes*
+// |Administration of Processes using the *RPA Public REST API*
+//
+// |*REST API Process Board*
+// |Administration of Process Boards using the *RPA Public REST API*
+//
+// |*REST API Production Configurations*
+// |Administration of Process Configurations using the *RPA Public REST API*
+//
+// |*REST API Robots*
+// |Administration of *X1 Bots* using the *RPA Public REST API*
+//
+// |*REST API Test Configurations*
+// |Administration of Test Configurations using the *RPA Public REST API*
+//
+// |===

@@ -28,16 +28,25 @@ Permissions have different scopes and purposes. They can be combined.
 
 === Privileges
 
-Privileges are fine-granular permissions to view and process data. They can be compiled to roles.
+Privileges are predefined fine-granular permissions to view and process data. They can be compiled to individual roles.
 For some tasks users need assignments or permissions additional to privileges.
 
 ==== Examples of Privileges
 
-Process Automation Open, Process Evaluation Approval to a Project Manager, Open Evaluation Templates, Create Global Variables, Edit Evaluation Templates, Change Project Manager, Upcoming Process Changes Administration, Download Logfiles
+You can guess the purpose of these example privileges from their name:
+
+* ``Process Automation Open``
+* ``Process Evaluation Approval to a Project Manager``
+* ``Open Evaluation Templates``
+* ``Create Global Variables``
+* ``Edit Evaluation Templates``
+* ``Change Project Manager``
+* ``Upcoming Process Changes Administration``
+* ``Download Logfiles``
 
 ==== Examples of Roles
 
- The role Business User should include the privileges Activity Library Administration, Activity Library Open, Dashboard Open, Process Automation Open, and Process Recording.
+The role ``Business User`` could include the privileges ``Activity Library Administration``, ``Activity Library Open``, ``Dashboard Open``, ``Process Automation Open``, and ``Process Recording``.
 
 ==== See Also
 
@@ -47,11 +56,11 @@ Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a
 
 === Assignments
 
-Assignments enable a user to either assume responsibility or to use another RPA product. Assignments can be combined with privileges.
+Assignments enable a user to either assume responsibility for a project or to use another RPA product. Assignments can be combined with privileges.
 
 ==== Examples of Assignments
 
-A user marked as Project Manager also needs the privilege Process Create to start the automation of a process.
+A user marked as ``Project Manager`` also needs the privilege ``Process Create`` to start the automation of a process.
 
 ==== See Also
 
@@ -65,22 +74,24 @@ Advanced permissions limit the granted permissions to one or more phases in the 
 
 ==== Examples of (Advanced) Permissions
 
-An RPA developer needs the privileges Process Automation Open to see which newly designed processes she can build. She needs to have RPA Builder access assigned to her and the permission for the build phase to work on the implementation in RPA Builder. If a senior RPA developer needs to check the build first before running tests in RPA Manager, only she may be assigned the advanced permissions Release to Test.
+An RPA developer needs the privileges ``Process Automation Open`` to see which newly designed processes she can build. She needs to have RPA Builder access assigned to her and the permission for the build phase to work on the implementation in RPA Builder. If a senior RPA developer needs to check the build first before running tests in RPA Manager, only she may be assigned the advanced permissions ``Release to Test``.
 
-==== See Also 
+==== See Also
 
-Learn how to xref:rpa-manager::processautomation-manage.adoc#process-team-permissions[Assign Permissions to a Process Team Member].
+Learn how to xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[Assign Permissions to a Process Team Member].
 
 == How are Permissions processed?
 
 === Granting permission
 
 All permissions are assigned to users who have access to RPA Manager.
-Some tasks can be offered to a group of users, but only a single user can complete the task.
+Some tasks can be offered to a designated group of users, but only a single user can complete the task.
 
 Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 Learn how to xref:rpa-manager::usermanagement-manage.adoc#designate-a-user-as-project-manager[Designate a User as Project Manager].
+
+Learn how to xref:rpa-manager::usermanagement-assemble.adoc#designate-user-groups-as-centers-of-excellence[Designate User Groups As Centers of Excellence].
 
 Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-users-rpa-builder-access[Assign Users RPA Builder Access].
 

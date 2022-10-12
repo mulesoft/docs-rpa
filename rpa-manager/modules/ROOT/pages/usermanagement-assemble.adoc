@@ -62,6 +62,7 @@ Delete user groups no longer needed. Check their usage and reassign their tasks 
 . In the *User Groups* view of the *User Management* module, click *Remove* in the table row of the user group you want to delete.
 . Confirm the deletion.
 
+[[designate-user-groups-as-centers-of-excellence]]
 == Designate User Groups as Centers of Excellence
 
 User groups marked as center of excellence may approve processes for automation. You can designate user groups as centers of excellence on creation or edit this property afterwards.
