@@ -14,17 +14,17 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of category *System*
+== Privileges of category *Organization Management*
 
 [cols="1,2"]
 |===
 |*Privilege* |*Permitted Action*
 
-|*Logfile Download*
-|Download the log files from the server using the *Download logfiles* button in the *About* dialog
+|*Organization Management Open*
+|Open all views of the *Organization Management* module
 
-|*Show Event Log*
-|Display the event log of the server using the *Open Event log* button in the *About* dialog
+|*Organization Management Administration*
+|Create, change, and delete objects in the *Organization Management* module.
 
 |===
 
@@ -41,10 +41,10 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Open all views of the *User Management* module.
 
 |*User Management Administration*
-|Create, change, and delete all objects of the *User Management* module.
+|Create, change, and delete objects in the *User Management* module.
 
 |*User Api Key Create*
-|Create user API keys
+|Create user API keys.
 
 |*User Api Key Edit*
 |Change user API keys
@@ -76,7 +76,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Open all views of the *Bot Management* module.
 
 |*Robot Management Administration*
-|Create, change, and delete all objects of the *Bot Management* module.
+|Create, change, and delete objects of the *Bot Management* module.
 
 |*Service Time Create*
 |Create bot service times
@@ -102,10 +102,10 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Open the *Process Evaluation* view
 
 |*Process Evaluation Administration*
-|Create, change, and delete all objects of the *Process Evaluation* module
+|Create, change, and delete objects of the *Process Evaluation* module
 
 |*Global Process Evaluation View*
-|Authorization to view all processes in the views *Process Evaluation* and *My X1* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
+|Authorization to view all processes in the views *Process Evaluation* and *My RPA* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
 
 |*Evaluation Criteria Open*
 |Open the *Evaluation Criteria* view
@@ -120,10 +120,10 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Delete evaluation criteria
 
 |*Process Evaluation Approval to a CoE*
-|Assign process automation to a Center of Excellence
+|Assign a process automation to a center of excellence. A center of excellence is a user group that is assigned `Center of Excellence` in the *User Management* module.
 
 |*Process Evaluation Approval to a Project Manager*
-|Assign process automation to a Project Manager
+|Assign a process automation to a project manager. A project manager is a user assigned `Project Manager` in the *User Management* module.
 
 |*Open Evaluation Templates*
 |Open the *Evaluation Templates* view
@@ -222,6 +222,9 @@ If you assign a role to a user, the user receives all the privileges contained i
 |*Finance Analysis Edit*
 |Changing finance analyses
 
+|*Billing Report Open*
+| Open the *Usage Summary* view
+
 |===
 
 
@@ -277,7 +280,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Open all views of the *Dashboard* module
 
 |*Dashboard Administration*
-|Create, change, and delete all objects of the *Dashboard* module
+|Create, change, and delete objects of the *Dashboard* module
 
 |===
 
@@ -294,7 +297,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Open all views of the *Alerting* module
 
 |*Alerting Administration*
-|Create, change, and delete all objects of the *Alerting* module
+|Create, change, and delete objects of the *Alerting* module
 
 |===
 
@@ -315,44 +318,6 @@ Learn how to xref:rpa-builder::ui-overview.adoc#explorer-pane[find the Activity 
 |Authorization to manage the *Activity Library* in the RPA Builder.
 
 |*Activity Library Open*
-|Authorization to open the *Activity Library* in the *X1 Design Studio*.
+|Authorization to open the *Activity Library* in the RPA Builder.
 
 |===
-
-
-
-
-// Future privileges
-//
-// == Privileges of the *RPA Public REST API* category
-//
-// You will require the special privileges listed below to use the *RPA Public REST API*.
-//
-// The individual Privileges you'll need to call can be found in the  *RPA Public REST API* documentation.
-//
-// [cols="1,2"]
-// |===
-// |*Privilege* |*Permitted Action*
-//
-// |*REST API Application*
-// |Administration of Process Applications using the *RPA Public REST API*
-//
-// |*REST API Global Variables/Credential Pool*
-// |Administration of Global Variables and the Credential Pool using the *RPA Public REST API*
-//
-// |*REST API Processes*
-// |Administration of Processes using the *RPA Public REST API*
-//
-// |*REST API Process Board*
-// |Administration of Process Boards using the *RPA Public REST API*
-//
-// |*REST API Production Configurations*
-// |Administration of Process Configurations using the *RPA Public REST API*
-//
-// |*REST API Robots*
-// |Administration of *X1 Bots* using the *RPA Public REST API*
-//
-// |*REST API Test Configurations*
-// |Administration of Test Configurations using the *RPA Public REST API*
-//
-// |===
