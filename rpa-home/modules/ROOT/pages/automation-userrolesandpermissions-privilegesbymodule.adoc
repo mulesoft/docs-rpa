@@ -44,7 +44,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Create, change, and delete objects in the *User Management* module.
 
 |*User Api Key Create*
-|Create user API keys. This privilege must be combined with the privilege *User Management Administration*.
+|Create user API keys. This privilege must be combined with the privilege *User Management Administration* to create a user key for another user. A user with only the privilege *User API Key Create* can create an API key for himself.
 
 |*User Api Key Edit*
 |Change user API keys. This privilege must be combined with the privilege *User Management Administration*.
