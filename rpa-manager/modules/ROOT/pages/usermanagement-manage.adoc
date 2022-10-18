@@ -89,7 +89,7 @@ Enable Two-Factor Authentication (2FA) for extra security.
 
 When using Two-Factor Authentication, the user logs into the system with two mutually independent secret factors.
 
-If 2FA is activated for a user of the RPA Manager, the user enters their personal password on login and also a time-based one-time password (TOTP) to verify themselves.
+If 2FA is activated for a user of the RPA Manager, the user enters their personal password on login followed by a time-based one-time password (TOTP) to verify themselves. There mustn't be a space between password and TOTP.
 
 The TOTP (Time-Based One-Time Password Algorithm) is set up in a special app on a mobile device. Every thirty seconds, a new password is generated and this can be used for authentication within this time period.
 
