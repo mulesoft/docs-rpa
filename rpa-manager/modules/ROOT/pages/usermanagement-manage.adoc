@@ -66,13 +66,13 @@ A user needs privileges to view and use the RPA Manager modules. This ensures th
 . Repeat the previous step until the user has all needed privileges.
 . Click *Save*.
 
-=== Reset a User Password
+== Reset a User Password
 
 Reset a password if the user forgot it. RPA Manager will send an email containing a new temporary password to the user. The user can then create a new password.
 
 . In the *Users* view of the *User Management* module, click *Reset password* in the table row of the user you want to edit.
 
-=== Change Your Password
+== Change Your Password
 
 Change your own password regularly. You will be logged out in the process and have to log in again. The password is used for login to RPA Manager and RPA Builder.
 
@@ -83,13 +83,13 @@ Change your own password regularly. You will be logged out in the process and ha
 . Click *OK*.
 . Log in with your new password.
 
-=== Enable Two-Factor Authentication for Your User
+== Enable Two-Factor Authentication for Your User
 
 Enable Two-Factor Authentication (2FA) for extra security.
 
 When using Two-Factor Authentication, the user logs into the system with two mutually independent secret factors.
 
-If 2FA is activated for a user of the RPA Manager, the user enters their personal password on login followed by a time-based one-time password (TOTP) to verify themselves. There mustn't be a space between password and TOTP.
+If 2FA is activated for a user of the RPA Manager, the user enters their personal password directly followed by a time-based one-time password (TOTP) on login to verify themselves.
 
 The TOTP (Time-Based One-Time Password Algorithm) is set up in a special app on a mobile device. Every thirty seconds, a new password is generated and this can be used for authentication within this time period.
 
