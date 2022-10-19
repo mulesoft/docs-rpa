@@ -42,13 +42,12 @@ You can guess the purpose of these example privileges from their name:
 * ``Edit Evaluation Templates``
 * ``Change Project Manager``
 * ``Upcoming Process Changes Administration``
-* ``Download Logfiles``
 
 ==== Examples of Roles
 
 The role ``Business User`` could include the privileges ``Activity Library Administration``, ``Activity Library Open``, ``Dashboard Open``, ``Process Automation Open``, and ``Process Recording``.
 
-==== See Also
+==== Resources
 
 View a xref:automation-userrolesandpermissions-privilegesbymodule.adoc[List of Privileges by Module].
 
@@ -62,7 +61,7 @@ Assignments enable a user to either assume responsibility for a project or to us
 
 A user marked as ``Project Manager`` also needs the privilege ``Process Create`` to start the automation of a process.
 
-==== See Also
+==== Resources
 
 Learn how to xref:rpa-manager::usermanagement-manage.adoc#designate-a-user-as-project-manager[Designate a User as Project Manager].
 
@@ -76,7 +75,7 @@ Advanced permissions limit the granted permissions to one or more phases in the 
 
 An RPA developer needs the privileges ``Process Automation Open`` to see which newly designed processes she can build. She needs to have RPA Builder access assigned to her and the permission for the build phase to work on the implementation in RPA Builder. If a senior RPA developer needs to check the build first before running tests in RPA Manager, only she may be assigned the advanced permissions ``Release to Test``.
 
-==== See Also
+==== Resources
 
 Learn how to xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[Assign Permissions to a Process Team Member].
 
