@@ -1,5 +1,4 @@
 
-
 = Image Search
 
 The _Image search_ is a very important _Action Step_. It searches for a
@@ -37,97 +36,142 @@ depth of 32 bits, but the executing computer only has a color depth of
 16 bits, the original _Pattern image_ will be converted on the fly to
 match the current system's color depth. You can adjust this within the
 *Workflow Properties*.
-//link:#WorkflowProperties[_Workflow Properties_].
+
+See xref:workflow-configure-properties.adoc#properties[Workflow Properties] for a complete list and description of the properties.
 
 == Properties
 
-* *Compare Precision* This is an additional setting for the search
+* *Compare Precision*
++
+This is an additional setting for the search
 algorithm modes _Color_ and _Gradient_. In these modes the actual color
 value of a pixel is recorded. The result is not the exact same value
 every time a pixel value is calculated by the GPU. By lowering the
 compare precision to 98% or 97%, you can allow the value to vary a
 little in the least significant bits.
-* *Edge detection threshold* Threshold for the difference (distance)
+
+* *Edge detection threshold*
++
+Threshold for the difference (distance)
 between colors that leads to the detection of an edge. A low threshold
 leads to many detected edges because even a small difference in a
 pixel's color value in comparison to its neighbors' is detected as an
-edge. Conversely, a high threshold leads to fewer edges in the _Pattern
-image_ the algorithm is searching for.
-* *Hide Mouse* If this option is enabled, the mouse pointer is moved to
+edge. Conversely, a high threshold leads to fewer edges in the _Pattern image_ the algorithm is searching for.
+
+* *Hide Mouse*
++
+If this option is enabled, the mouse pointer is moved to
 the upper left corner of the desktop during the _Image search_. Enable
 this to avoid triggering hover effects in applications and on websites.
 This is to ensure that the mouse pointer is not partly covering the
 image searched for. Afterwards it is moved back to the previous
 position.
-* *Image search algorithm* _Image search_ algorithm to be used.
-Selectable are _Color_, _Gradient_, _Contour_, and _Contour Plus_. Look
-below for descriptions of these modes.
-* *Image search type _Search for picture appear_* Search for the picture
-until it appears. As soon as it can be detected, the _Image search_ is
-considered successful.
-* *Image search type _Search for picture disappear_* The _Image search_
-is considered successful as soon as the image cannot be found. An image
-does not have to be found first, so if finding the image is necessary an
-_Image search_ with search type _Appear_ must be performed first.
-* *Original desktop color depth* (_Properties grid_ only): Color depth
-in bits at the time the image was recorded
-* *Original desktop height* (_Properties grid_ only): Desktop height in
-pixels at the time the image was recorded
-* *Original desktop width* (_Properties grid_ only): Desktop width in
-pixels at the time the image was recorded
-* *_Pattern Image_ File Path* (_Properties grid_ only): File location of
-the recorded image
-* *_Pattern image_ rect* (_Properties grid_ only): Original coordinates
-(upper left corner, lower right corner) of the rectangular area on the
-desktop enclosing the image to be searched
-* *Percentage required* Determines tolerance of the _Image search_, i.e.
-the minimum quality percentage threshold needed for successful
-identification of an image. A lower value means a higher tolerance, but
-also increases the likelihood of a "false positive". We *strongly*
-recommend never setting this below 90%!
-* *Relative To* Makes the _Search Area_ relative to a previous _Image
-search_, in the same way as for the _Mouse Clicks Action Step_
-* *_Search area_ rect* (_Properties grid_ only): Original coordinates
-(upper left corner, lower right corner) of the rectangular area on the
-desktop enclosing the _Search area_
-* *Wait time [ms]* The pause between two subsequent __Image search__es
-(only used if _Wait until image is steady_ is activated)
-* *Wait until image is steady* This function is used to perform a second
-_Image search_ after the image is detected and introduces an additional
-_Wait time._ The result of this second run compared to the previous one
+
+* *Image search algorithm*
++
+_Image search_ algorithm to use.
++
+Selectable options are _Color_, _Gradient_, _Contour_, and _Contour Plus_. See <<search-modes, The Different Search Modes>> for descriptions of these modes.
+
+* *Image search type _Search for picture appear_*
++
+Search for the picture until it appears. The _Image search_ is considered successful when it detects the picture.
+
+* *Image search type _Search for picture disappear_*
++
+The _Image search_ is considered successful when the image cannot be found. An image does not have to be found first, so if finding the image is necessary, perform an _Image search_ with search type _Appear_ first.
+
+* *Original desktop color depth* (_Properties grid_ only)
++
+Color depth in bits at the time the image was recorded.
+
+* *Original desktop height* (_Properties grid_ only)
++
+Desktop height in pixels at the time the image was recorded.
+* *Original desktop width* (_Properties grid_ only)
++
+Desktop width in pixels at the time the image was recorded.
+* *_Pattern Image_ File Path* (_Properties grid_ only)
++
+File location of the recorded image.
+* *_Pattern image_ rect* (_Properties grid_ only)
++
+Original coordinates (upper left corner, lower right corner) of the rectangular area on the
+desktop enclosing the image to be searched.
+* *Percentage required*
++
+Determines tolerance of the _Image search_ by setting the minimum quality percentage threshold needed for successful identification of an image. A lower value means a higher tolerance, but
+also increases the likelihood of a _false positive_. To avoid failures, do not set this value below `90%`.
+* *Relative To*
++
+Makes the _Search Area_ relative to a previous _Image search_, in the same way as for the _Mouse Clicks Action Step_.
+* *_Search area_ rect* (_Properties grid_ only)
++
+Original coordinates (upper left corner, lower right corner) of the rectangular area on the
+desktop enclosing the _Search area_.
+* *Wait time [ms]*
++
+The pause between two subsequent __Image search__es (only used if _Wait until image is steady_ is activated).
+* *Wait until image is steady*
++
+This function is used to perform a second _Image search_ after the image is detected and introduces an additional _Wait time._ The result of this second run compared to the previous one
 is to ensure that the image is still there and has not changed its
 position. If the results are equal, then the _Image search_ is
-considered successful. If not, additional __Image search__es are
-performed until two subsequent ones have the same result or until the
-timeout is reached.
-* *Interrupt time [ms]* Mainly used for _Java_ Applications: time in
+considered successful. If not, additional image searches are performed until two subsequent ones have the same result or until the timeout is reached.
+* *Interrupt time [ms]*
++
+Mainly used for _Java_ Applications. Time in
 milliseconds the service stops searching for a picture to
 provide CPU resources to an application with bad performance (only
-applicable if _Load Optimizer_ is activated)
-* *Load Optimizer* If enabled, there is a pause between every attempt to
+applicable if _Load Optimizer_ is activated).
+* *Load Optimizer*
++
+If enabled, there is a pause between every attempt to
 find the image onscreen, as defined by the _Interrupt time_ setting.
 This pause allows time for other programs to do something when running
 on a single core computer.
-* *Performance Limit (%)* Defines how much of the CPU performance can be
+* *Performance Limit (%)*
++
+Defines how much of the CPU performance can be
 used for the _Image search_ (only applicable if _Load Optimizer_ is
-activated)
+activated).
 
 == Variables
 
-* *Find Coordinate* The X/Y coordinate of where the picture was found
+* *Find Coordinate*
++
+The X/Y coordinate of where the picture was found.
 
 == Wizard
 
 
-* *Start from scratch* Starts the configuration using all steps.
-* *_Search area_* Only reconfigures the _Search area_, using a previously captured image.
-* *_Pattern image_* Only recaptures the image to search for
-* *Refresh _Search area_* Refreshes the _Search area_ frame on the right-hand side of the wizard with the current desktop situation, so you can check if the defined _Search area_ still includes the image.
-* *Check search* Evaluate the probability the captured image will be found. The result will be shown in a box above the _Pattern image_ frame and comprises the position of the image found, as well as the match precision in percent (this feature uses the current desktop and not the image shown in the _Search area_ frame).
-* *Show borders* If active; the _Pattern image_ is marked with a blue border and the _Search area_ is marked with a red border in the _Search area_ frame.
-* *_Pattern image_* Shows the recorded image that will be used in searches.
-* *_Search area_* Shows the desktop situation when the image was captured onscreen.
+* *Start from scratch*
++
+Starts the configuration using all steps.
+* *_Search area_*
++
+Only reconfigures the _Search area_, using a previously captured image.
+* *_Pattern image_*
++
+Only recaptures the image to search for
+* *Refresh _Search area_*
++
+Refreshes the _Search area_ frame on the right-hand side of the wizard with the current desktop situation, so you can check if the defined _Search area_ still includes the image.
+* *Check search*
++
+Evaluates the probability to find the captured image. The result shows in a box above the _Pattern image_ frame and comprises the position of the image found, as well as the match precision in percent (this feature uses the current desktop and not the image shown in the _Search area_ frame).
+* *Show borders*
++
+If active, the _Pattern image_ is marked with a blue border and the _Search area_ is marked with a red border in the _Search area_ frame.
+* *_Pattern image_*
++
+Shows the recorded image to use in searches.
+* *_Search area_*
++
+Shows the desktop situation when the image was captured onscreen.
++
 If _Show Borders_ is active, borders of the search image are shown in blue and borders of the _Search area_ are shown in red.
++
 If you performed a _Check search_ and the image could be found, its position will be marked by a green border.
 
 To start configuring an _Image search_ _Action Step_ with the wizard,
@@ -138,9 +182,9 @@ desktop view, so you can switch to any desktop section containing the
 image without losing sight of the selection frame. To narrow the
 selection frame down to the relevant content, grab the edges, and resize
 it. You can also fine-tune the frame by pressing the arrow keys on your
-keyboard, which will move the frame by 1 pixel at a time; if you press
-*_Ctrl_* + arrow key, the frame will move by 5 pixels at a time.
-Pressing *_Shift_* + arrow key will resize the frame 1 pixel at a time
+keyboard, which moves the frame by 1 pixel at a time; if you press
+*_Ctrl_* + arrow key, the frame moves by 5 pixels at a time.
+Pressing *_Shift_* + arrow key resizes the frame 1 pixel at a time
 (See also the section Hotkeys).
 
 Choosing and capturing the right pattern is essential for creating a
@@ -214,9 +258,11 @@ After selecting the _Pattern image_ and the _Search area_, RPA Builder evaluates
 
 A newly recorded image search should always be found with 100% accuracy.
 
+[[search-modes]]
 == The Different Search Modes
 
-*_Color_* +
+* *_Color_*
++
 The simplest and fastest search algorithm. In the default configuration,
 the color of the image searched must exactly match the color of the
 recorded image. However, because the color values of images can differ
@@ -225,12 +271,13 @@ hardware used), you may downscale the _Compare Precision_ settings to
 stabilize the image search. The color match precision can be downscaled
 from 100% (exact match) to 88% (ignoring the least significant four bits
 of the color value).
-
++
 Nevertheless, we strongly recommend using the _Color_ search algorithm
 only if the hardware the _Workflow_ runs on does not differ from the
 hardware it was created on.
 
-*_Gradient_* +
+* *_Gradient_*
++
 Uses edges to detect the _Pattern image_, but checks gray values before
 the actual edge search is performed. Thus it can detect the presence of
 an image faster than contour mode using a similar precision. Using gray
@@ -238,7 +285,8 @@ values has the side effect of being less tolerant regarding color
 variations than contour mode. Also, colors leading to the same gray
 value cannot be distinguished from one another.
 
-*_Contour_* +
+* *_Contour_*
++
 This is the recommended default search algorithm, because it is very
 stable regarding color variations and can handle changes in color depth
 and different desktop resolutions. It creates a contour search image
@@ -246,7 +294,8 @@ based on the transitions between the different color values in the
 _Pattern image_ by reducing all colors to black areas while edges become
 white lines.
 
-*_Contour Plus_* +
+* *_Contour Plus_*
++
 This search algorithm was created specifically to identify characters
 and writing. It basically uses the same technique as _Contour_ mode, but
 with additional compensation for font smoothing.
@@ -296,4 +345,4 @@ it does not exist.
 
 //image::toolbox-checks-image-search-image8.png[Image search settings]
 
-We *strongly* recommend that you never use a match precision below 90%.
+To avoid failures, do not use a match precision below 90%.
