@@ -1,6 +1,4 @@
-
-
-== The Toolbox
+= The Toolbox
 
 The Toolbox contains all action steps that you can configure to add logic to the tasks in your process automations. All actions are grouped in different containers and the documentation follows the same order as they appear in the RPA Builder UI.
 
