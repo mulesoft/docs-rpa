@@ -219,9 +219,28 @@ Delete global variables that will not be used anymore. Variables linked in confi
 . In the *Global Variables* view of the *Process Automation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the global variable you want to delete.
 . Confirm the deletion.
 
-=== Create Credentials
+=== Manage Credentials
 
 Credentials store login data for applications or web services. They can be used with different processes. Passwords are encrypted.
+
+The following types of credentials can be created:
+
+* *AWS Credentials*
++
+for accessing Amazon Web Services
+* *User Account Credentials*
++
+for accessing all other kinds of applications
+
+You can link credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+
+Editing or deleting a global variable affects all configurations which use the variable.
+
+Check the usage of a variable before changing or deleting it.
+
+==== Create Credentials
+
+Create credentials with which a bot can login to an external application during process runs.
 
 . In the *Credential Pool* view of the *Process Automation* module, click *Create*.
 . Complete the form *Create a New Credential*.
@@ -236,3 +255,7 @@ Credentials store login data for applications or web services. They can be used 
 //* xref:processautomation-prepare.adoc[Preparing Process Automations]
 * xref:processautomation-develop.adoc[Developing Process Automations]
 * xref:processautomation-deploy.adoc[Deploying Process Automations]
+
+* xref:rpa-builder::toolbox-aws-operations-credentials-for-aws.adoc[RPA Builder - Credentials for AWS]
+* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
+* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
