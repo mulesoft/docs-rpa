@@ -25,13 +25,12 @@ Create and document the environment for the automation of processes.
 |Create, change, and delete process applications
 |*Application Create*, *Application Edit*, *Application Delete*
 
-// Will be implemented in a future release?
-//|Address the Global Variables via the RPA Public RESTful API
-//|*REST API Global Variables/Credential Pool*
-
 |===
 +
 Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+* To use AWS credentials, you need an AWS account.
++
+Learn about https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
 
 == Prepare Projects
 
@@ -163,11 +162,11 @@ Phases in which the variable is permitted to be deployed. When users create or c
 +
 ** *Test*:
 +
-The variable can be deployed in the Test phase.
+The variable can be deployed in the test phase.
 +
 ** *Production*:
 +
-The variable can be deployed in the Production phase.
+The variable can be deployed in the production phase.
 
 * *Type*:
 +
@@ -207,7 +206,7 @@ A window with a table shows you in which configurations the variable is used.
 Edit a global variable to change its name or value. You cannot change the type of a global variable. Check the usage of the variable first to avoid inadvertent side-effects.
 
 . In the *Global Variables* view of the *Process Automation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the global variable you want to edit.
-. Change date in the form *Edit the Global Variable*.
+. Change data in the form *Edit the Global Variable*.
 . Click *Save*.
 
 The variable is changed everywhere it is used.
@@ -234,17 +233,64 @@ for accessing all other kinds of applications
 
 You can link credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
 
-Editing or deleting a global variable affects all configurations which use the variable.
+Editing or deleting a credential affects all configurations which use the credential.
 
-Check the usage of a variable before changing or deleting it.
+Check the usage of a credential before changing or deleting it.
 
 ==== Create Credentials
 
 Create credentials with which a bot can login to an external application during process runs.
 
 . In the *Credential Pool* view of the *Process Automation* module, click *Create*.
-. Complete the form *Create a New Credential*.
+. Complete the form *Create a New Credential*:
+* *Phase affiliation*:
++
+Phases in which the credential is permitted to be deployed. When users create or change the credential, each user's individual privileges determine which phases the user can select:
++
+** *Test*:
++
+The credential can be deployed in the test phase.
++
+** *Production*:
++
+The credential can be deployed in the production phase.
+
+* *Type*:
++
+Type of the global credential. The type of credential determines where it can be used. The original value defined in RPA Builder is typed. Select one of the following types:
++
+** *AWS Credentials*:
++
+The credential is used for accessing Amazon Web Services. Fill in client ID, client secret and region. Using a session token is optional.
+** *User Account Credentials*
++
+The credential is used for accessing all other kinds of applications. Fill in the username and password
 . Click *OK*.
+
+==== Check the Usage of a Credential
+
+Before editing a credential, check its usage to avoid inadvertent side-effects.
+
+. In the *Credential Pool* view of the *Process Automation* module, click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the credential you want to check.
+
+A window with a table shows you in which configurations the credential is used.
+
+====  Edit a Credential
+
+Edit a credential to change its data. You cannot change the type of a credential. Check the usage of the credential first to avoid inadvertent side-effects.
+
+. In the *Credential Pool* view of the *Process Automation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the credential you want to edit.
+. Change data in the form *Edit the Credential*.
+. Click *Save*.
+
+The credential is changed everywhere it is used.
+
+==== Delete a Credential
+
+Delete credentials that will not be used anymore. Credentials linked in configurations cannot be deleted.
+
+. In the *Credential Pool* view of the *Process Automation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the credential you want to delete.
+. Confirm the deletion.
 
 == See also
 
