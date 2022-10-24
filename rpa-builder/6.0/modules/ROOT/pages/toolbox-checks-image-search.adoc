@@ -1,10 +1,8 @@
 
 = Image Search
 
-The _Image search_ is a very important _Action Step_. It searches for a
-user-defined image, waits until it appears or disappears, and can also
-be used as a relative anchor point for mouse clicks. 'Image' in this
-sense does not only mean 'picture', but also includes the visual
+The _Image search_ _Action Step_ searches for a user-defined image, waits until it appears or disappears, and can also be used as a relative anchor point for mouse clicks. Image in this
+sense does not only mean _picture_, but also includes the visual
 representation of lettering or control elements like buttons.
 
 The main use cases for the _Image search_ are:
