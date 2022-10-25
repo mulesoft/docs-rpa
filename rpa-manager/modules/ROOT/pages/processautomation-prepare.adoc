@@ -31,6 +31,7 @@ Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign 
 * To use AWS credentials, you need an AWS account.
 +
 Learn about https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
+* Global variables and credentials can be linked to activity parameters defined in automations. The activity parameters for a process are defined in RPA Builder. Linking global variables or credentials overwrites the initial value of the linked activity parameters in a run configuration. 
 
 == Prepare Projects
 
@@ -302,6 +303,7 @@ Delete credentials that will not be used anymore. Credentials linked in configur
 * xref:processautomation-develop.adoc[Developing Process Automations]
 * xref:processautomation-deploy.adoc[Deploying Process Automations]
 
+* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder - Activity Parameters]
 * xref:rpa-builder::toolbox-aws-operations-credentials-for-aws.adoc[RPA Builder - Credentials for AWS]
 * xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
 * xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
