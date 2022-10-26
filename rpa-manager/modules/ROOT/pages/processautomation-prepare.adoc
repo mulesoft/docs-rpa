@@ -234,7 +234,7 @@ for accessing all other kinds of applications
 
 You can link credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
 
-Editing or deleting a credential affects all configurations which use the credential.
+Editing or deleting a credential affects all configurations that use the credential.
 
 Check the usage of a credential before changing or deleting it.
 
