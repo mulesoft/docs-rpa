@@ -265,7 +265,7 @@ Type of the global credential. The type of credential determines where it can be
 The credential is used for accessing Amazon Web Services. Fill in client ID, client secret and region. Using a session token is optional.
 ** *User Account Credentials*
 +
-The credential is used for accessing all other kinds of applications. Fill in the username and password
+The credential is used for accessing all other kinds of applications. Fill in the the username and password.
 . Click *OK*.
 
 ==== Check the Usage of a Credential
