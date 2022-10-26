@@ -14,7 +14,7 @@ Permissions determine what users of the RPA products can see and do:
 * Create objects
 * Edit data
 * Transition objects
-* Take Decisions
+* Take decisions
 * Use products
 * Analyze data
 * Monitor
@@ -79,9 +79,9 @@ An RPA developer needs the privileges ``Process Automation Open`` to see which n
 
 Learn how to xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[Assign Permissions to a Process Team Member].
 
-== How are Permissions processed?
+== How Are Permissions Processed?
 
-=== Granting permission
+=== Granting Permissions
 
 All permissions are assigned to users who have access to RPA Manager.
 Some tasks can be offered to a designated group of users, but only a single user can complete the task.
@@ -96,13 +96,13 @@ Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-users-rpa-build
 
 Learn how to xref:rpa-manager::processautomation-manage.adoc#process-team-permissions[Assign Permissions to a Process Team Member].
 
-=== Transferring permission
+=== Transferring Permissions
 
 API Keys are assigned to users whose identity and permission set is used to complete tasks via REST API.
 API Keys are needed for example when an RPA Manager Invokable Configuration is included into a Composer Flow.
 
 Learn how to xref:rpa-manager::usermanagement-connect.adoc#create-an-api-key-for-a-user[Create an API key for a User].
 
-== See also
+== See Also
 
 * xref:rpa-manager::index.adoc[RPA Manager Overview]

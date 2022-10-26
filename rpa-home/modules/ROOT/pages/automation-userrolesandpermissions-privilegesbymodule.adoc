@@ -14,7 +14,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of category *Organization Management*
+== Privileges for the Organization Management Module
 
 [cols="1,2"]
 |===
@@ -31,7 +31,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges for the *User Management* module
+== Privileges for the User Management Module
 
 [cols="1,2"]
 |===
@@ -66,7 +66,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *Bot Management* module
+== Privileges for the Bot Management Module
 
 [cols="1,2"]
 |===
@@ -92,7 +92,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *Process Evaluation* module
+== Privileges for the Process Evaluation Module
 
 [cols="1,2"]
 |===
@@ -142,7 +142,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *Process Automation* module
+== Privileges for the Process Automation Module
 
 [cols="1,2"]
 |===
@@ -192,7 +192,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *Process Operations* module
+== Privileges for the Process Operations Module
 
 [cols="1,2"]
 |===
@@ -230,7 +230,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *Process Monitoring* module
+== Privileges for the Process Monitoring Module
 
 [cols="1,2"]
 |===
@@ -250,7 +250,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *My RPA* module
+== Privileges for the My RPA Module
 
 [cols="1,2"]
 |===
@@ -270,7 +270,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *Dashboard* module
+== Privileges for the Dashboard Module
 
 [cols="1,2"]
 |===
@@ -287,7 +287,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *Alerting* module
+== Privileges for the Alerting Module
 
 [cols="1,2"]
 |===
@@ -304,7 +304,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 
 
-== Privileges of the *RPA Builder* category
+== Privileges of the RPA Builder Category
 
 The *Activity Library* is managed exclusively in the RPA Builder.
 
