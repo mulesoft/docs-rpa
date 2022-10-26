@@ -1,0 +1,323 @@
+= List of Privileges by Module
+
+RPA Manager has the following privileges, which can be assigned to individual users.
+
+To open any module, you always require the privilege for which the name ends in *Open*.
+
+Privileges that end with *Administration* authorize a user to create, change, and delete all types of objects in the corresponding module.
+If the authorization only applies to a single type of object in a module, the corresponding privileges end with  *Create*, *Edit*, and *Delete*.
+
+Privileges named *Global <...> View* authorize a user to see all the processes in the relevant view. A user who does not have this privilege can only see processes for which they belong to the project team.
+
+If you assign a role to a user, the user receives all the privileges contained in the role. These privileges are not displayed in the *Privileges* field in the user's profile.
+
+
+
+
+== Privileges for the Organization Management Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Organization Management Open*
+|Open all views of the *Organization Management* module
+
+|*Organization Management Administration*
+|Create, change, and delete objects in the *Organization Management* module.
+
+|===
+
+
+
+
+== Privileges for the User Management Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*User Management Open*
+|Open all views of the *User Management* module.
+
+|*User Management Administration*
+|Create, change, and delete objects in the *User Management* module.
+
+|*User Api Key Create*
+|Create user API keys. This privilege must be combined with the privilege *User Management Administration* to create a user key for another user. A user with only the privilege *User API Key Create* can create an API key for himself.
+
+|*User Api Key Edit*
+|Change user API keys. This privilege must be combined with the privilege *User Management Administration*.
+
+|*User Api Key Delete*
+|Delete user API keys. This privilege must be combined with the privilege *User Management Administration*.
+
+|*User Group Create*
+|Create user groups
+
+|*User Group Edit*
+|Change user groups
+
+|*User Group Delete*
+|Delete user groups
+
+|===
+
+
+
+
+== Privileges for the Bot Management Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Robot Management Open*
+|Open all views of the *Bot Management* module.
+
+|*Robot Management Administration*
+|Create, change, and delete objects of the *Bot Management* module.
+
+|*Service Time Create*
+|Create bot service times
+
+|*Service Time Edit*
+|Change bot service times
+
+|*Service Time Delete*
+|Delete bot service times
+
+|===
+
+
+
+
+== Privileges for the Process Evaluation Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Process Evaluation Open*
+|Open the *Process Evaluation* view
+
+|*Process Evaluation Administration*
+|Create, change, and delete objects of the *Process Evaluation* module
+
+|*Global Process Evaluation View*
+|Authorization to view all processes in the views *Process Evaluation* and *My RPA* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
+
+|*Evaluation Criteria Open*
+|Open the *Evaluation Criteria* view
+
+|*Create Evaluation Criteria*
+|Create evaluation criteria
+
+|*Edit Evaluation Criteria*
+|Change evaluation criteria
+
+|*Delete Evaluation Criteria*
+|Delete evaluation criteria
+
+|*Process Evaluation Approval to a CoE*
+|Assign a process automation to a center of excellence. A center of excellence is a user group that is assigned `Center of Excellence` in the *User Management* module.
+
+|*Process Evaluation Approval to a Project Manager*
+|Assign a process automation to a project manager. A project manager is a user assigned `Project Manager` in the *User Management* module.
+
+|*Open Evaluation Templates*
+|Open the *Evaluation Templates* view
+
+|*Create Evaluation Templates*
+|Create and copy evaluation templates
+
+|*Edit Evaluation Templates*
+|Change evaluation templates
+
+|*Delete Evaluation Templates*
+|Delete evaluation templates
+
+|===
+
+
+
+
+== Privileges for the Process Automation Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Process Automation Open*
+|Open all views of the *Process Automation* module
+
+|*Process Create*
+|Create and copy a process project
+
+|*Change Process Owner*
+|Change the process owner
+
+|*Change Project Manager*
+|Change the project manager
+
+|*Application Create*
+|Create an application in the *Process Applications* view
+
+|*Application Edit*
+|Change an application in the *Process Applications* view
+
+|*Application Delete*
+|Delete an application in the *Process Applications* view
+
+|*Global Variables Create for Production phase*
+|Create global variables in the *Global Variables* view for use project configurations in the production phase.
+
+|*Global Variables Create for Test phase*
+|Create global variables in the *Global Variables* view for use project configurations in the test phase.
+
+|*Global Variables Delete*
+|Delete global variables in the *Global Variables* view
+
+|*Global Variables Edit for Production phase*
+|Edit global variables in the *Global Variables* view for use project configurations in the production phase.
+
+|*Global Variables Edit for Test phase*
+|Edit global variables in the *Global Variables* view for use project configurations in the test phase.
+
+|*Process Recording*
+|Using the RPA Process Recorder
+
+|===
+
+
+
+
+== Privileges for the Process Operations Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Process Execution Plans Open*
+|Open the *Process Execution Plans* view.
+
+|*Global Process Execution Plans View*
+|Authorization to view all processes in the *Process Execution Plans* view, independently of whether or not the current user is a member of the process team
+
+|*Process Deployment Map Open*
+|Open the view *Deployment Map*
+
+|*Upcoming Process Changes Open*
+|Open the *Upcoming Process Changes* view.
+
+|*Upcoming Process Changes Administration*
+|Administer objects in the *Upcoming Process Changes* view
+
+|*Finance Analysis Open*
+|Open the *Finance Analysis* view with processes for which the current user is a member of the process team
+
+|*Global Finance Analysis View*
+|Open the *Finance Analysis* view with all processes, independently of whether the current user is a member of the process team
+
+|*Finance Analysis Edit*
+|Changing finance analyses
+
+|*Billing Report Open*
+| Open the *Usage Summary* view
+
+|===
+
+
+
+
+== Privileges for the Process Monitoring Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Process Monitoring Open*
+|Open all views of the *Process Monitoring* module
+
+|*Robot State and Operation Open*
+|Open the *Robot State and Operation* view
+
+|*Process Streaming Open*
+|Open the *Process Streaming* view
+
+|===
+
+
+
+
+== Privileges for the My RPA Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Global Process Evaluation View*
+|Authorization to view all processes in the views *Process Evaluation* and *My RPA* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
+
+|*Unprocessed Task List Open*
+|Open the *Unprocessed Tasks* view.
+
+|*Unprocessed Task List Edit*
+|Change the *Unprocessed Tasks* view.
+
+|===
+
+
+
+
+== Privileges for the Dashboard Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Dashboard Open*
+|Open all views of the *Dashboard* module
+
+|*Dashboard Administration*
+|Create, change, and delete objects of the *Dashboard* module
+
+|===
+
+
+
+
+== Privileges for the Alerting Module
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Alerting Open*
+|Open all views of the *Alerting* module
+
+|*Alerting Administration*
+|Create, change, and delete objects of the *Alerting* module
+
+|===
+
+
+
+
+== Privileges of the RPA Builder Category
+
+The *Activity Library* is managed exclusively in the RPA Builder.
+
+Learn how to xref:rpa-builder::ui-overview.adoc#explorer-pane[find the Activity Library in RPA Builder].
+
+[cols="1,2"]
+|===
+|*Privilege* |*Permitted Action*
+
+|*Activity Library Administration*
+|Authorization to manage the *Activity Library* in the RPA Builder.
+
+|*Activity Library Open*
+|Authorization to open the *Activity Library* in the RPA Builder.
+
+|===
