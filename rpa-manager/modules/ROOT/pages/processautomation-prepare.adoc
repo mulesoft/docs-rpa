@@ -297,13 +297,12 @@ Delete credentials that will not be used anymore. Credentials linked in configur
 
 * https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
 //* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[AWS Configuration and credential file settings^]
+* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder - Activity Parameters]
 
 * xref:processautomation-overview.adoc[Process Automation]
 //* xref:processautomation-prepare.adoc[Preparing Process Automations]
 * xref:processautomation-develop.adoc[Developing Process Automations]
 * xref:processautomation-deploy.adoc[Deploying Process Automations]
 
-* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder - Activity Parameters]
-* xref:rpa-builder::toolbox-aws-operations-credentials-for-aws.adoc[RPA Builder - Credentials for AWS]
 * xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
 * xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]

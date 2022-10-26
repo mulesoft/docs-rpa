@@ -155,6 +155,11 @@ have the same name but a different data type, deleted.
 You can accept the suggestions by clicking on _Proceed_. Click on
 _Remove Parameters from Workflow_ to remove all the Activity Parameters of the imported
 Workflow. Clicking on _Cancel_ cancels the import of the Workflow.
+
+== See Also
+
+xref:rpa-manager::processautomation-prepare.adoc#prepare-deployment[RPA Manager - Create Global Variables and Credentials as Initial Values for Activity Parameters]
+
 ////
 == Related Elements
 
