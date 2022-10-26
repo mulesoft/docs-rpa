@@ -31,7 +31,7 @@ Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign 
 * To use AWS credentials, you need an AWS account.
 +
 Learn about https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
-* Global variables and credentials can be linked to activity parameters defined in automations. The activity parameters for a process are defined in RPA Builder. Linking global variables or credentials overwrites the initial value of the linked activity parameters in a run configuration. 
+* Global variables and credentials can be linked to activity parameters defined in automations. The activity parameters for a process are defined in RPA Builder. Linking global variables or credentials overwrites the initial value of the linked activity parameters in a run configuration.
 
 == Prepare Projects
 
@@ -200,7 +200,7 @@ Before editing a global variable, check its usage to avoid inadvertent side-effe
 
 . In the *Global Variables* view of the *Process Automation* module, click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the global variable you want to check.
 
-A window with a table shows you in which configurations the variable is used.
+A window with a table shows you the configurations in which the global variable is used.
 
 ====  Edit a Global Variable
 
@@ -223,7 +223,7 @@ Delete global variables that will not be used anymore. Variables linked in confi
 
 Credentials store login data for applications or web services. They can be used with different processes. Passwords are encrypted.
 
-The following types of credentials can be created:
+You can create the following types of credentials:
 
 * *AWS Credentials*
 +
@@ -274,7 +274,7 @@ Before editing a credential, check its usage to avoid inadvertent side-effects.
 
 . In the *Credential Pool* view of the *Process Automation* module, click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the credential you want to check.
 
-A window with a table shows you in which configurations the credential is used.
+A window with a table shows you the configurations in which the credential is used.
 
 ====  Edit a Credential
 
