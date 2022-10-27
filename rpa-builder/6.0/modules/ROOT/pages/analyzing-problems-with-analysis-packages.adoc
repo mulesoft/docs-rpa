@@ -49,6 +49,5 @@ Note that when an RPA Bot executes the Workflow, it saves the analysis package o
 
 == See Also
 
-* xref:worbench-toolbar-overview.adoc#load-analysis-package[Load Analysis Package]
 * xref:running-workflows-and-using-workflow-run-results.adoc[Running Workflows and Using Workflow Run Results]
 * xref:using-workflow-debugger.adoc[Using Workflow Debugger]
