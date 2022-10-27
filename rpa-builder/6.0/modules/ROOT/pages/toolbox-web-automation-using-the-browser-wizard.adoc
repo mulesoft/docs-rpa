@@ -1,6 +1,6 @@
 = Using the Browser Wizard
 
-The _Browser Wizard_ is part of _Web Automation Action Step_ wizards. It behaves like a normal browser and enables you to select additional elements of a website and determine their _Xpath_. Using the _Browser Wizard_ is required by most _Web Automation_ objects embedded in a _Web Session._
+The _Browser Wizard_ is part of _Web Automation Action Step_ wizards. It behaves like a normal browser and enables you to select additional elements of a website and determine their _Xpath_. Using the _Browser Wizard_ is required by most _Web Automation_ objects embedded in a _Web Session_.
 
 image:open-browser-wizard-button.png[The Open Browser Wizard button, 50%, 50%]
 
@@ -14,7 +14,7 @@ If you start the _Web Session_ with `about:blank`, you can enter a URL in the ad
 
 == Selecting Web Elements
 
-When you position the cursor over the element you want to check or use within a _Web Automation_ object, the wizard highlights the element with a blue background. If moving the mouse over the elements does not highlight them, click on the website or web application within the _Browser Wizard_ to activate it first.
+When you position the cursor over the element you want to check or use within a _Web Automation_ object, the wizard highlights the element with a blue background. If hovering over the elements does not highlight them, click on the website or web application within the _Browser Wizard_ to activate it first.
 
 image:browser-wizard-highlight.png[The Browser Wizard window showing a highlighted element]
 
