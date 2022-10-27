@@ -1,0 +1,56 @@
+= Running Workflows and Viewing Workflow Run Results
+
+To perform a test run of a Workflow in RPA Builder, click *Run Workflow* (image:run-process.png[The Run Workflow icon, 2%, 2%]) on the Workbench toolbar or press _F7_ on your keyboard.
+
+//This action generates a _.stc3_ script file based on your Workflow and then executes it.
+The RPA Builder window is hidden while the Workflow executes, so the engine can now use the mouse and keyboard just like a normal user would and you can watch to confirm if the Workflow performs correctly. Do not use the mouse or keyboard while the Workflow is running.
+
+Depending on the settings you made for the *Show Message boxes* value in the _Project Properties_, additional information may appear during the run. Note that every message box takes a few seconds to disappear, which causes a corresponding pause in the Workflow and affects measured times and Workflow stability.
+
+Before using a Workflow for productive measurement, turn off debug message boxes and perform at least one test run afterward.
+
+== Pause or Exit a Workflow Run
+
+To pause or exit the Workflow during the execution:
+
+. Click the (image:test-script-tray-icon.png[Test script tray button, 2%, 2%]) tray icon.
+. Select either *Script Paused* or *Exit*.
++
+image:test-tray-options.png[The test script tray icon showing the Script Paused and Exit options, 25%, 25%]
+
+Pressing _Pause/Break_ on your keyboard also stops a running Workflow.
+
+== The Workflow Run Results Panel
+
+After you execute a Workflow from within RPA Builder by clicking Run Workflow (image:run-process.png[The Run Workflow icon, 2%, 2%]), information about the last run displays in the Workflow Run Results panel at the end of the RPA Builder screen:
+
+image:workflow-run-results-window.png[The Workflow Run Results window, 80%, 80%]
+
+This information helps identify problems and their causes in your Workflow much more quickly. If you do not see the Workflow Run Results window, click *Show Workflow Run Results* in the menu bar.
+
+The Workflow Run Results window lists information about measured response times, found images, errors that occurred, and captured screenshots. You can double-click an entry to navigate to its corresponding Workflow element.
+
+=== Identifying Errors
+
+Workflow elements that failed to execute successfully and caused an error are marked red:
+
+image:workflow-run-error.png[The Activity Workflow window showing the Workflow element that failed marked in red, 50%, 50%]
+
+Click on the expander arrows to get more detailed information about the error:
+
+image:workflow-run-error-detail.png[The Activity Workflow window showing the additional details for the Workflow element that failed, 75%, 75%]
+
+This panel provides detailed information about what failed. In this case, the _Web Session (Firefox)_ Action Step cannot start because it is not installed in the computer that is executing the test run for the Workflow.
+
+In addition, the error screenshot is displayed showing the desktop as it looked when the error occurred. The screenshot can be enlarged by clicking on it.
+
+== Opening the Trace Log
+
+The Trace Log contains even more detailed information about the last run. To open the Trace Log, click *Open Trace Log* in the Tools submenu inside the Workbench toolbar:
+
+image:workbench-tools-menu.png[The Workbench Tools menu, 25%, 25%]
+
+== See Also
+
+* xref:using-workflow-debugger.adoc[Using Workflow Debugger]
+* xref:analyzing-problems-with-analysis-packages.adoc[Analyzing Problems with Analysis Packages]
