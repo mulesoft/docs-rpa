@@ -77,7 +77,7 @@ The following template is a typical template for a normal Transaction with mouse
 
 image:template-transaction-mouse.png[A template showing a transaction with mouse activity, 50%, 50%]
 
-A useful variation of this template could be one that uses keystrokes:
+A useful variation of this template could use keystrokes:
 
 image:template-transaction-keystrokes.png[A template showing a transaction with mouse activity and keystrokes, 50%, 50%]
 

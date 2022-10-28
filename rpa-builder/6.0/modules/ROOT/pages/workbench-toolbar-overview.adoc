@@ -1,6 +1,6 @@
 = Workbench Toolbar Overview
 
-Next to the the Workbench tab bar is the Workbench toolbar, which enables you to perform different actions related to the Workflow and its elements.
+Next to the Workbench tab bar is the Workbench toolbar, which enables you to perform different actions related to the Workflow and its elements.
 
 image::workbench-toolbar.png[The Workbench Toolbar, 75%, 75%]
 
