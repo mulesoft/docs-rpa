@@ -22,23 +22,23 @@ To select more than one object, press and hold _Ctrl_ or _Shift_ while clicking 
 
 == Context Menu Options
 
-The following list includes the context menu elements and describes each of them.
+The context menu consists of the following elements:
 
 * *Disable/Enable*
 +
-Use this option to disable an Action Step and prevent its execution or to enable an Action Step that was previously disabled. Disabled Action Steps show greyed out on the workbench.
+Use this option to disable an Action Step and prevent its execution or to enable an Action Step that was previously disabled. Disabled Action Steps are greyed out on the workbench.
 * *Enable All Selected/Disable All Selected*
 +
 Use this option to disable or enable multiple Action Steps simultaneously.
 * *Save As Template*
 +
-Saves the selected Action Step with all settings as a template which you can use again later. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting Templates.
+Saves the selected Action Step and its settings as a template that you can use again later. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting Templates.
 * *Select all steps of same type*
 +
 Selects all Action Steps of the same type as the one you have clicked on. This option enables you to change the properties of these Action Steps uniformly.
 * *Mapped to Action Steps*
 +
-Shows all incoming Pin variables associated with this Action Step. Click on the name of a variable to select on the Workbench the Action Step that populates that variable.
+Shows all incoming Pin variables associated with this Action Step. Click on the name of a variable to select the Action Step that populates that variable.
 * *Set Breakpoint*
 +
 Sets a breakpoint for an Action Step, which causes the Workflow to stop at this point during its execution in Debug mode.
