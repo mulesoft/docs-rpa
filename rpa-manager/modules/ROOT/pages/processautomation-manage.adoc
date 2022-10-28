@@ -46,6 +46,8 @@ If you already have evaluated a process with a third-party tool, you can create 
 
 . In a category in the *Process Management* view of the *Process Automation* module, click *Create*.
 . Complete the form *Create process*:
+// team permissions included in form
+[[process-team-permissions]]
 +
 include::rpa-manager::partial$form-automationproject.adoc[]
 . Click *Save*.
