@@ -6,7 +6,7 @@ image::workbench-toolbar.png[The Workbench Toolbar, 75%, 75%]
 
 Some of these actions apply to the selected objects in the Workflow. The unavailable functions are grayed out depending on which Workflow object is selected.
 
-The following is a list of the available buttons in the Workbench Toolbar and their corresponding action:
+The Workbench Toolbar contains the following buttons:
 
 * (image:copy-icon.png[The copy icon, 2%, 2%]) <<copy-paste, Copy selected object(s)>>
 * (image:paste-icon.png[The paste icon, 2%, 2%]) <<copy-paste, Paste copied object(s)>>
@@ -144,9 +144,9 @@ Opens a window in which you can specify a text or an image to use as a watermark
 +
 Opens a window for choosing a logo for the print, the format of the page numbering, and the scaling of text and images.
 +
-RPA Builder saves the changes in settings of *Print Template Settings* according to your configuration for all users in common or for every user separately. It then uses these settings for the Print of a Workflow.
+RPA Builder saves the changes in *Print Template Settings* according to your configuration for all users in common or for every user separately. It then uses these settings for the Print of a Workflow.
 +
-The current page number is referenced by `{0}`, the total number of pages is referenced by `{1}`. In case of erroneous formatting the footer is set back to the default configuration `{0}/{1}`.
+The current page number is referenced by `{0}` and the total number of pages is referenced by `{1}`. If the formatting has errors, RPA Builder sets the footer back to the default configuration `{0}/{1}`.
 
 [[tools]]
 == Tools
@@ -164,7 +164,7 @@ After reloading a Workflow, you cannot use the undo function. Therefore, all uns
 
 === Save Selected Items as Template
 
-(image:save-as-template-icon.png[The Save Selected Items as Template icon, 2%, 2%]): To create a template, select the Workflow object you want to save as a template and click Save as template in the context menu. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about Creating, Importing, and Exporting User Templates.
+(image:save-as-template-icon.png[The Save Selected Items as Template icon, 2%, 2%]): To create a template, select the Workflow object you want to save as a template and click Save as template in the context menu. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting User Templates.
 
 === Open Trace Log
 
@@ -172,7 +172,7 @@ After reloading a Workflow, you cannot use the undo function. Therefore, all uns
 
 === Load Analysis Package
 
-(image:load-analysis-package.png[The Load Analysis Package icon, 2%, 2%]): RPA Manager provides analysis packages for Workflow runs that didn't execute successfully. RPA Builder is able to display errors that have occurred within a Workflow run, be it from a run started by RPA Builder or by reading the analysis package of a run executed in RPA Manager.
+(image:load-analysis-package.png[The Load Analysis Package icon, 2%, 2%]): RPA Manager provides analysis packages for Workflow runs that don't execute successfully. RPA Builder can display errors that occur within a Workflow run, whether from a run started by RPA Builder or by reading the analysis package of a run executed in RPA Manager.
 
 To load an analysis package:
 
@@ -180,19 +180,19 @@ To load an analysis package:
 . Open the File Explorer by clicking *File* > *Load Analysis Package*.
 . Browse to the analysis package you downloaded and then press *Open*.
 +
-Alternatively you can drag the package from the *Windows Explorer* and drop it into RPA Builder.
+Alternatively, you can drag the package from Windows Explorer and drop it into RPA Builder.
 +
 You can also select an Analysis Package directly in the Activity Workflow. Click the *Tools* button on the Workbench toolbar and select the *Load Analysis Package* entry.
 
-The analysis information given includes the trace file and Workflow Run Results. Error screenshots are also displayed and are accessible within RPA Builder. Besides, the current log file is replaced by the log file in the analysis package.
+The analysis information includes the trace file and Workflow Run Results. After loading and analysis package, RPA Builder displays the error screenshots and replaces the current log file with the log file in the analysis package.
 
 ==== Opening an analysis package
 
-When you import an analysis package into RPA Builder, the process and the relevant Activity Workflow open automatically. To make searching for the error easier, *Run Result Marking* immediately displays the Action Step in which the error occurred.
+When you import an analysis package into RPA Builder, the corresponding process and the relevant Activity Workflow open automatically. To make searching for the error easier, *Run Result Marking* immediately displays the Action Step in which the error occurred.
 
 image:run-result-marking.png[The Run Result Marking icon, 40%, 40%]
 
-If the process to open is not in the local cache, RPA Builder downloads it automatically from RPA Manager. Please note that, in this case, the process must be in the Build phase.
+If the process to open is not in the local cache, RPA Builder downloads it automatically from RPA Manager. In this case, the process must be in the Build phase.
 
 === Clear Run Results Markings
 
@@ -202,11 +202,11 @@ Errors and warnings are still displayed in the pane Workflow Run Results.
 [[search]]
 == Search
 
-At the end of the Workbench is the *Search...* (image:search-icon.png[The Search icon, 2%, 2%]) function. If you have given your Workflow elements descriptive names and want to detect them in a Workflow, type the name (or part of it) into the search field and press Enter. The first element with a matching name shows on the Workbench. If there are further matching occurrences, you can get to them by pressing _F3_.
+At the end of the Workbench is the *Search...* (image:search-icon.png[The Search icon, 2%, 2%]) function. If you gave your Workflow elements descriptive names and want to detect them in a Workflow, type the name (or part of it) into the search field and press Enter. The first element with a matching name shows on the Workbench. If there are additional matching occurrences, you can access them by pressing _F3_.
 
 image:search-bar.png[The Search bar, 40%, 40%]
 
-If there are several results, you can switch between the results with the arrow buttons.
+If there are multiple results, you can switch between the results with the arrow buttons.
 
 == See Also
 
