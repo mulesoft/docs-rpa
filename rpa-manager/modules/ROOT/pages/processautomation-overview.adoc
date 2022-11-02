@@ -1,10 +1,8 @@
 = Process Automation
 
-The *Process Automation* module is the heart of the RPA Manager.
+The *Process Automation* module is the heart of the RPA Manager. After you have evaluated processes and approved them for automation in the *Process Evaluation* module, you create a project here for each process by starting the automation from the *My RPA* module. A project defines the framework conditions for the execution of a process and is managed by a team.
 
-After you have evaluated processes and approved them for automation in the *Process Evaluation* module, a project is created here for each process, which defines the framework conditions for execution and is managed by a team.
-
-The processes go through several phases in sequence. In the design phase, a model of the process is created using BPMN, and during the build phase in the RPA Builder, this is filled with concrete instructions for the bot. In the test phase, a check is run to see if the automated process delivers the required results. The process can be revised continuously before it is finally carried out fully automatically in the production phase.
+Processes go through several phases in sequence. In the design phase, a model of the process is created using BPMN, and during the build phase in the RPA Builder, this model is filled with concrete instructions for the bot. In the test phase, a check is run to see if the automated process delivers the required results. The process can be revised continuously before it is finally carried out fully automatically in the production phase.
 
 == Before you Begin
 
