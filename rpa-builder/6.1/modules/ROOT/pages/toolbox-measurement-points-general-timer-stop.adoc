@@ -1,0 +1,29 @@
+
+= General Timer Stop
+
+_General timers_ are used to measure whole _Transactions_.
+
+First place the _Start Timer_ and then the _Stop Timer_ by the
+_Transaction_ elements for which the run time is to be measured.
+
+_General timers_ are *not* valid as _Measurement Points_ and cannot
+therefore be linked to a _Data Source_.
+
+== Properties
+
+* *Timer name*
++
+Name to write to the output file.
+
+== Inbound Variables
+
+The _General Timer Stop_ Action Step has no inbound variables.
+
+== Outbound Variables
+
+The _General Timer Stop_ Action Step has no outbound
+variables.
+
+== See Also
+
+* xref:toolbox-measurement-points-general-timer-start.adoc[General Timer Start]
