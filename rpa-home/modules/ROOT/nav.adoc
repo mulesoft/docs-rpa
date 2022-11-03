@@ -1,4 +1,5 @@
 .xref:index.adoc[RPA]
+* xref:release-notes.adoc[Release Notes] 
 * xref:index.adoc[RPA Overview]
 * xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
 * xref:ms-automation-credits.adoc[Mulesoft Automation Credits]

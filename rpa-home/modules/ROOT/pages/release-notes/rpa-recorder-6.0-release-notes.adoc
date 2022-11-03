@@ -1,0 +1,67 @@
+= RPA Recorder 6.0 Release Notes
+
+RPA Recorder is MuleSoft’s tool for recording a business process for automation.
+
+== August 1st, 2022
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+MuleSoft announces the release of RPA Recorder 6.0, the process-recording tool that enables you to:
+
+* Record actions like mouse clicks, keyboard inputs on your system or on a web browser, and used applications
+* Add comments and variable information during the recording
+* Take screenshots automatically per mouse click, or manually at any time
+
+// == Compatibility
+//include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+////
+Change the table entries as needed
+
+[%header%autowidth.spread]
+|===
+|Application/Service|Version
+|Mule |4.1.1 and later
+|Anypoint Studio |7.1 and later
+|===
+////
+
+// == Fixed Issues
+//include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+////
+Change the table entries as needed
+
+[%header,cols="2a,1a"]
+|===
+|Issue|ID
+|Message Flows now appear in chronological order. |W-12345678
+|Batch jobs no longer hang while using persistent queues. |W-91011121
+|`NullPointerException` errors no longer occur when using the HTTP Connector inside a connector built with XML SDK. |W-13141516
+|===
+////
+
+// == Known Issues
+//include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+1]
+
+////
+Change the table entries as needed. Remove the Workaround column if not needed.
+
+[%header,cols="2a,2a,1a"]
+|===
+|Known Issue|Workaround |ID
+|An error occurs when saving a new host profile. | Refresh the page. |W-12345678
+|X12 EDI Connector supports files up to 20MB. See xref:repo::adoc[]| |
+|===
+
+////
+
+// == Upgrade
+//include::partial$release-notes/rn-headings.adoc[tag=upgrade,leveloffset=+1]
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
