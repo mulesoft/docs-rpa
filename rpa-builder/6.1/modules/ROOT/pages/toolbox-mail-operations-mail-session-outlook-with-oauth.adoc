@@ -180,7 +180,7 @@ In the *Incoming Mail* area, you can configure all the settings necessary to imp
 
 The *Outgoing Mail* area opens if you select the *Send mails* checkbox. To send emails, enter the SMTP email server settings here.
 
-Use the *Send test mail* button to check the connection to the SMTP server and send a test email. Enter the email address under *Sendtest mail to*.
+Use the *Send test mail* button to check the connection to the SMTP server and send a test email to the email address specified in the *Sendtest mail to* field.
 
 == See Also
 
