@@ -15,7 +15,7 @@ You must have an Azure account to create an application for Outlook.
 The host address used to get the credentials. The default address for Outlook services is `+https://login.microsoftonline.com/common/oauth2/v2.0/+` . This address might change if the customer uses a self-hosted service.
 ** *Client ID*
 +
-To authenticate with the OAuth Host, an Azure application must be defined in the customer's space. This Azure application has an ID, that is unique in the entire OAuth Host space and it allows users to explicitly grant or revoke access for this Azure application to their accounts. For more information on how to create this Azure application for Outlook, see https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app[Quickstart: Register an application with the Microsoft identity platform^]
+To authenticate with the OAuth Host, an Azure application must be defined in the customer's space. This Azure application has an ID, that is unique in the entire OAuth Host space and it allows users to explicitly grant or revoke access for this Azure application to their accounts. For more information on how to create this Azure application for Outlook, visit https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app[Quickstart: Register an application with the Microsoft identity platform^].
 ** *Client Secret*
 +
 Allows RPA Builder to prove to the OAuth Host that it received permission to access user accounts on behalf of the registered Azure application. Without this permission, authentication is not possible.
@@ -29,13 +29,13 @@ Defines which permissions the user grants to the Azure application. By default, 
 *** *offline_access*
 +
 (*Required*) Enables access via a refresh token, which you can use to repeatedly log in to the email services without requiring user interaction each time.
-*** *https://outlook.office.com/IMAP.AccessAsUser.All*
+*** *+https://outlook.office.com/IMAP.AccessAsUser.All+*
 +
 (*Required* when using IMAP) Enables reading and moving emails from the Outlook IMAP server.
-*** *https://outlook.office.com/POP.AccessAsUser.All*
+*** *+https://outlook.office.com/POP.AccessAsUser.All+*
 +
 (*Required* when using POP3) Enables reading emails from the Outlook POP3 server.
-*** *https://outlook.office.com/SMTP.Send*
+*** *+https://outlook.office.com/SMTP.Send+*
 +
 (*Required* when using SMTP) Enables sending emails from the Outlook SMTP server.
 *** *openid email*
@@ -109,7 +109,7 @@ The wizard contains the following sections:
 * *Operation Mode*
 * *OAuth Authentication*
 * *Incoming Mail*
-* *Outgoing Mail*.
+* *Outgoing Mail*
 
 === Operation Mode
 
