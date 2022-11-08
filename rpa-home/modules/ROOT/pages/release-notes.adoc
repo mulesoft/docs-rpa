@@ -8,11 +8,13 @@
 == RPA Builder
 
 * xref:release-notes/rpa-builder-6.0-release-notes.adoc[RPA Builder 6.0 Release Notes]
+* xref:release-notes/rpa-builder-6.0.1-release-notes.adoc[RPA Builder 6.0.1 Release Notes]
 * xref:release-notes/rpa-builder-6.1-release-notes.adoc[RPA Builder 6.1 Release Notes]
 
 == RPA Recorder
 
 * xref:release-notes/rpa-recorder-6.0-release-notes.adoc[RPA Recorder 6.0 Release Notes]
+
 
 == RPA Bot
 
