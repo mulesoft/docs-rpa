@@ -14,6 +14,7 @@ This feature enables you to make sync and async calls to RPA processes.
 +
 This feature enables you to create listeners that check the status of an specific RPA process. When the RPA process finishes the execution, the polling trigger starts processing the configured activities in the Composer flow. This functionality is useful for retrieving results from RPA processes that take a long time to finish and are not suitable for synchronous consumption.
 
+Refer to the xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer] documentation for configuration and usage details.
 
 == Before you Begin
 
@@ -26,5 +27,4 @@ This feature enables you to create listeners that check the status of an specifi
 
 == See Also
 
-* xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer]
 * xref:composer::ms_composer_prerequisites.adoc[MuleSoft Composer: Getting Started]
