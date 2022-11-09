@@ -84,6 +84,32 @@ Change your own password regularly. You will be logged out in the process and ha
 . Click *OK*.
 . Log in with your new password.
 
+[[iforgotmypassword]]
+== Reset Your Password
+
+If you forgot your password or if your one-time password has expired, reset it by clicking the link on the RPA Manager login page. You need to know your user name for resetting your password.
+
+. Navigate to the RPA Manager login screen.
+. Click the *Forgot your credentials?* link.
+. In the *Forgot your credentials* form, enter your username.
+. Click *Continue*.
+
+A confirmation request for creating a new password is emailed to you.
+
+. Open the email in your email application.
+. Click *Request New Credentials*.
+
+A link to create a new password is emailed to you. The one-time password expires after 24 hours.
+
+. Open the email in your email application.
+. Copy or remember the one-time password.
+. Click *Sign In*.
+. In the RPA Manager login screen, enter your user name and the one-time password.
+. Click *Sign In*.
+. In the *Welcome to RPA Manager* form, enter a new password.
+. Confirm and remember the password.
+. Click *Reset Password*.
+
 == Enable Two-Factor Authentication for Your User
 
 Enable Two-Factor Authentication (2FA) for extra security.
