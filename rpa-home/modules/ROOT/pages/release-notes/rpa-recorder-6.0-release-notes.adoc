@@ -2,10 +2,26 @@
 
 RPA Recorder is MuleSoft’s tool for recording a business process for automation.
 
-== August 1st, 2022
+== 6.0.205
+
+*September 13, 2022*
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+| RPA Recorder no longer fails to log in when started from RPA Manager. | W-???
+|===
+
+== 6.0.78
+
+*August 1, 2022*
 
 // == What's New
-include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 MuleSoft announces the release of RPA Recorder 6.0, the process-recording tool that enables you to:
 
