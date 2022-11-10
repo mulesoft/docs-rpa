@@ -1,10 +1,10 @@
 = Process Automation
 
-The *Process Automation* module is the heart of the RPA Manager. After you have evaluated processes and approved them for automation in the *Process Evaluation* module, you create a project here for each process by starting the automation from the *My RPA* module. A project defines the framework conditions for the execution of a process and is managed by a team.
+The *Process Automation* module is the heart of the RPA Manager. After a citizen technologist has evaluated processes and approved them for automation in the *Process Evaluation* module, you - as a project manager - create a project here for each suitable process by starting the automation from the *My RPA* module. A project defines the framework conditions for the execution of a process and is managed by a team.
 
 Processes go through several phases in sequence. In the design phase, a model of the process is created using BPMN, and during the build phase in the RPA Builder, this model is filled with concrete instructions for the bot. In the test phase, a check is run to see if the automated process delivers the required results. The process can be revised continuously before it is finally carried out fully automatically in the production phase.
 
-== Before you Begin
+== Before You Begin
 
 * Obtain the needed privileges:
 +
@@ -23,12 +23,13 @@ Processes go through several phases in sequence. In the design phase, a model of
 Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * There must be at least one process in the *My Backlog* view in the *My RPA* module.
-* RPA Builder, RPA Bot, and all applications required by the automated process must be installed and configured on one computer.
-* If you want to record processes, RPA Recorder must be installed on the same computer as RPA Builder and RPA Bot.
+* RPA Builder, RPA Bot, and all applications required for executing the processes must be installed and configured on a computer.
+* If you want to record processes, RPA Recorder must be installed on a computer.
+* If not all RPA applications are installed on the same computer, ensure that the computers have the same configuration.
 
 == Getting Started
 
-. List applications required for the automation of a process in the *Process Applications* view of the *Process Automation* module.
+. List all applications required for the automation of a process in the *Process Applications* view of the *Process Automation* module.
 . Start the automation of a process in the *My Backlog* view of the *My RPA* module.
 . Create a project containing the settings and data of the process to be automated in the *Process Management* view of the *Process Automation* module.
 . In the design phase, record a process with RPA Recorder or model the process using BPMN.
