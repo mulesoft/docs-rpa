@@ -56,6 +56,7 @@ Edit a user to change his data or permissions.
 . Edit the form *Edit a User*.
 . Click *Save*.
 
+[[assign-privileges-to-a-user]]
 == Assign Privileges to a User
 
 A user needs privileges to view and use the RPA Manager modules. This ensures that only authorized users can access the modules. Assign privileges to a user when you create a new user or edit an existing user.
@@ -109,6 +110,7 @@ Remove obsolete users. A user cannot be deleted if it is the owner or manager of
 . In the *Users* view of the *User Management* module, click the icon *Remove* in the table row of the user you want to edit.
 . Confirm the removal.
 
+[[designate-a-user-as-project-manager]]
 == Designate a User as Project Manager
 
 Designate users responsible for the automation of processes as project managers to enable them to approve of a process candidate or to start an automation.
@@ -117,6 +119,7 @@ Designate users responsible for the automation of processes as project managers 
 . In the form *Edit a User*, check *Project Manager*.
 . Click *Save*.
 
+[[assign-users-rpa-builder-access]]
 == Assign Users RPA Builder Access
 
 Users who will build the process automation need RPA Builder access. Users currently working in RPA Builder might not be able to save their work if their license gets revoked.
