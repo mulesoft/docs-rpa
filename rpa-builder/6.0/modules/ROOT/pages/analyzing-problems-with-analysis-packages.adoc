@@ -1,8 +1,8 @@
 = Analyzing Problems with Analysis Packages
 
-After the business process runs locally in RPA Builder, you can upload it to RPA Manager, move it to the test phase, run it on an RPA Bot, and start a long-term test. We recommend a test period of three days before using the business process productively. If menu runs contain errors, RPA Manager generates Analysis Packages that you can download.
+After a business process runs locally in RPA Builder, you can upload it to RPA Manager, move it to the test phase, run it on an RPA Bot, and start a long-term test. Run tests for at least three days before using the business process productively. If menu runs contain errors, RPA Manager generates Analysis Packages that you can download.
 
-The Analysis Package provides detailed information on the run in the same format as if you had executed the Workflow locally and also enables you to fix the error. Elements, which have caused an error or a warning, are marked with an expandable red or yellow frame respectively. This frame contains more detailed information concerning the run results. Use the Analysis Packages to understand and fix errors for each failed Workflow run. If you see the same error repeatedly, fix the error once and start collecting results again.
+The Analysis Package provides detailed information on the run in the same format as if you had executed the Workflow locally. Use this information to fix any errors. Elements, which have caused an error or a warning, are marked with an expandable red or yellow frame. This frame contains more detailed information concerning the run results. Use the Analysis Packages to understand and fix errors for each failed Workflow run. If you see the same error repeatedly, fix the error once and start collecting results again.
 
 == Download and Analysis Package
 
@@ -21,7 +21,7 @@ image:test-plan-error.png[The Test Results window showing a Failure]
 If there are no errors, the *Failure* column shows `0` results and there's no Analysis Package available to download.
 . Click the *Download* button.
 +
-image:download-analysis-package.png[The Process Run Results Window and the Download analysis package button]
+image:download-analysis-package.png[The Process Run Results Window and the Download Analysis Package button]
 
 == Load and Analysis Package
 
@@ -35,13 +35,13 @@ image:workbench-tools-menu.png[The Workbench Tools Menu, 30%, 30%]
 
 == Analysis Package Directory
 
-RPA Builder creates the `custom` directory after you start the menu locally for the first time, either with the *Run Workflow* button or by pressing _F7_. The path to the `custom` directory is: `C:\Users\[UserName]\Documents\MuleSoft\Cache\[Process-GUID]\[Activity- GUID]\Robot\custom\`.
+After you start the workflow locally for the first time, either with the *Run Workflow* button or by pressing _F7_, RPA Builder creates the `custom` directory. The path to the `custom` directory is: `C:\Users\[UserName]\Documents\MuleSoft\Cache\[Process-GUID]\[Activity- GUID]\Robot\custom\`.
 
-You can right-click on the Workflow tab and select the *Open Workflow Location* option, which automatically redirects you to the `C:\Users\[UserName]\Documents\MuleSoft\Cache\[Process-GUID]\[Activity- GUID]\` folder.
+Right-click on the Workflow tab and select *Open Workflow Location* to open the `C:\Users\[UserName]\Documents\MuleSoft\Cache\[Process-GUID]\[Activity- GUID]\` folder.
 
-You can add extra data like screenshots or log files to the analysis package by saving them to the project’s `custom` folder. RPA Manager packs all files from this folder into the analysis package in case of an error.
+You can add extra data like screenshots or log files to the Analysis Package by saving them to the project’s `custom` folder. RPA Manager packs all files from this folder into the Analysis Package in case of an error.
 
-Note that when an RPA Bot executes the Workflow, it saves the analysis package on the machine on which the bot is running.
+Note that when an RPA Bot executes the Workflow, it saves the Analysis Package on the machine on which the bot is running.
 
 == See Also
 

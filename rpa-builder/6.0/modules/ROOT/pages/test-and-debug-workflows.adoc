@@ -15,13 +15,13 @@ RPA Builder also enables you to xref:analyzing-problems-with-analysis-packages.a
 
 When testing a Workflow, it is extremely important to distinguish errors caused by the Workflow from errors that occur because of the unavailability of the measured application. To understand the difference, verify the relevant details: where an error happened, why it happened, and what the screenshot tells you about it.
 
-There are several reasons why a Keystroke action might fail with a message stating that the specified window title could not be found, for example, it could mean the window was not there at all or that the specified window title was incorrect. Analyzing the screenshots enables you to distinguish between those two cases. If the window is not there at all, then the monitored application did not start in the expected time, meaning there's actual unavailability and there's no need to change the Workflow. If, on the contrary, the screenshot shows that the window is there, it means the Workflow has an error. In this case, looking at the screenshot helps see the actual window title and edit the Keystroke action accordingly.
+There are several reasons why a keystroke action might fail with a message stating that the specified window title could not be found. For example, it could mean the window was not there at all or that the specified window title was incorrect. Analyzing the screenshots enables you to distinguish between those two cases. If the window is not there at all, then the monitored application did not start in the expected time, meaning there's actual unavailability and there's no need to change the Workflow. If, on the contrary, the screenshot shows that the window is there, it means the Workflow has an error. In this case, looking at the screenshot helps see the actual window title and edit the keystroke action accordingly.
 
-The three most common reasons for a Workflow to fail are:
+Workflows commonly fail for these reasons:
 
-* An image could not be detected in the given timeout period
-* An application window could not be detected or did not disappear in the given timeout period
-* The target window of a Keystroke action could not be detected
+* An image could not be detected in the given timeout period.
+* An application window could not be detected or did not disappear in the given timeout period.
+* The target window of a Keystroke action could not be detected.
 
 == See Also
 
