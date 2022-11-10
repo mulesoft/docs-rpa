@@ -1,0 +1,30 @@
+= Testing and Debugging Workflows
+
+RPA Builder provides a framework for testing and debugging workflows.
+
+Before testing your workflows, learn how to <<differentiate-errors-from-unavailability, differentiate errors from unavailability>>.
+
+Then, you can xref:running-workflows-and-using-workflow-run-results.adoc[run a workflow and view Workflow Run results] to obtain detailed information about the workflow's execution.
+
+Use xref:using-workflow-debugger.adoc[Workflow Debugger] to set breakpoints and debug a workflow by stopping on each configured breakpoint to troubleshoot workflow elements.
+
+RPA Builder also enables you to xref:analyzing-problems-with-analysis-packages.adoc[analyze problems with analysis packages] downloaded from RPA Manager after a failed workflow run.
+
+[[differentiate-errors-from-unavailability]]
+== Differentiate Errors from Unavailability
+
+When testing a Workflow, it is extremely important to distinguish errors caused by the Workflow from errors that occur because of the unavailability of the measured application. To understand the difference, verify the relevant details: where an error happened, why it happened, and what the screenshot tells you about it.
+
+There are several reasons why a Keystroke action might fail with a message stating that the specified window title could not be found, for example, it could mean the window was not there at all or that the specified window title was incorrect. Analyzing the screenshots enables you to distinguish between those two cases. If the window is not there at all, then the monitored application did not start in the expected time, meaning there's actual unavailability and there's no need to change the Workflow. If, on the contrary, the screenshot shows that the window is there, it means the Workflow has an error. In this case, looking at the screenshot helps see the actual window title and edit the Keystroke action accordingly.
+
+The three most common reasons for a Workflow to fail are:
+
+* An image could not be detected in the given timeout period
+* An application window could not be detected or did not disappear in the given timeout period
+* The target window of a Keystroke action could not be detected
+
+== See Also
+
+* xref:running-workflows-and-using-workflow-run-results.adoc[Running Workflows and Using Workflow Run Results]
+* xref:using-workflow-debugger.adoc[Using Workflow Debugger]
+* xref:analyzing-problems-with-analysis-packages.adoc[Analyzing Problems with Analysis Packages]
