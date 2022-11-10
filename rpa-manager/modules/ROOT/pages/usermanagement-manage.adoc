@@ -100,6 +100,7 @@ A confirmation request for creating a new password is emailed to you.
 . Click *Request New Credentials*.
 
 A link to create a new password is emailed to you. The one-time password expires after 24 hours.
+If you use Two-Factor Authentication, append the time-based one-time password to your one-time password.
 
 . Open the email in your email application.
 . Copy or remember the one-time password.
