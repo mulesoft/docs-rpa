@@ -100,7 +100,7 @@ A confirmation request for creating a new password is emailed to you.
 . Click *Request New Credentials*.
 
 A link to create a new password is emailed to you. The one-time password expires after 24 hours.
-If you use Two-Factor Authentication, append the time-based one-time password to your one-time password.
+If you use two-factor authentication, append the time-based one-time password to your one-time password.
 
 . Open the email in your email application.
 . Copy or remember the one-time password.
@@ -113,9 +113,9 @@ If you use Two-Factor Authentication, append the time-based one-time password to
 
 == Enable Two-Factor Authentication for Your User
 
-Enable Two-Factor Authentication (2FA) for extra security.
+Enable two-factor authentication (2FA) for extra security.
 
-When using Two-Factor Authentication, the user logs into the system with two mutually independent secret factors.
+When using two-factor authentication, the user logs into the system with two mutually independent secret factors.
 
 If 2FA is activated for a user of the RPA Manager, the user enters their personal password directly followed by a time-based one-time password (TOTP) on login to verify themselves.
 
