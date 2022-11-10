@@ -87,7 +87,7 @@ Change your own password regularly. You will be logged out in the process and ha
 [[iforgotmypassword]]
 == Reset Your Password
 
-If you forgot your password or if your one-time password has expired, reset it by clicking the link on the RPA Manager login page. You need to know your user name for resetting your password.
+If you forget your password or if your one-time password expires, click the link on the RPA Manager login page to reset it. You need to know your user name to reset your password.
 
 . Navigate to the RPA Manager login screen.
 . Click the *Forgot your credentials?* link.
