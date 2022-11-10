@@ -2,7 +2,6 @@
 
 To perform a test run of a Workflow in RPA Builder, click *Run Workflow* (image:run-process.png[The Run Workflow icon, 2%, 2%]) on the Workbench toolbar or press _F7_ on your keyboard.
 
-//This action generates a _.stc3_ script file based on your Workflow and then executes it.
 The RPA Builder window is hidden while the Workflow executes, so the engine can now use the mouse and keyboard just like a normal user would and you can watch to confirm if the Workflow performs correctly. Do not use the mouse or keyboard while the Workflow is running.
 
 Depending on the settings you made for the *Show Message boxes* value in the _Project Properties_, additional information may appear during the run. Note that every message box takes a few seconds to disappear, which causes a corresponding pause in the Workflow and affects measured times and Workflow stability.

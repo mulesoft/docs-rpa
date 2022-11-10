@@ -22,9 +22,6 @@ If there are no errors, the *Failure* column shows `0` results and there's no An
 . Click the *Download* button.
 +
 image:download-analysis-package.png[The Process Run Results Window and the Download analysis package button]
-////
-If an error has occurred, it shows in the *Failure* column. If you click on the result, you get to the *Process Run Results* window. You can now download the Analysis Package here by clicking on the *Download* icon.
-////
 
 == Load and Analysis Package
 
@@ -35,9 +32,6 @@ To load an Analysis Package:
 . Click *Load Analysis Package* and select the location of the Analysis Package file.
 +
 image:workbench-tools-menu.png[The Workbench Tools Menu, 30%, 30%]
-
-//TODO: create anchor load-analysis-package in PR#84 and merge it before merging this content.
-//You can then load the Analysis Package into RPA Builder via the Workbench menu item *Tools* -> *Load Analysis Package*.
 
 == Analysis Package Directory
 
