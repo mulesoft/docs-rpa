@@ -76,12 +76,10 @@ setting in the _Workflow Properties_.
 
 *Use All Users as project home location*
 
-If this option is set, all projects as well as most common
-options and _Page Setup…_ und _Print Template Settings_
-for the Workflow Run Protocol and
-Printing of a Workflow are saved into the folder
-`C:\Users\Public\Documents\MuleSoft\RPA`. Otherwise these
-settings are saved to the folder
+If this option is set, RPA Builder saves all projects, the most common
+options, _Page Setup…_, and _Print Template Settings_
+for the Printing of a Workflow into the folder
+`C:\Users\Public\Documents\MuleSoft\RPA`. Otherwise, it saves the settings to the folder 
 `C:\Users\[UserName.Domain]\Documents\MuleSoft\RPA` of the respective
 user.
 

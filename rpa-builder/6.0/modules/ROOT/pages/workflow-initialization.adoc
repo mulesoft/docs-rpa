@@ -62,7 +62,7 @@ These settings apply for all File Operation Action Steps.
 ** *Base Path Settings*
 *** *Base Path (%Stws_BasePath%)*
 +
-Specifies the base path to use for all Action Steps of the type File Operations. Use the Browse button (image:browse-button.png[The browse button, 2%, 2%]) to browse the path. If you leave the path blank, the default `%Stws_BasePath%` is used internally as the path. To retrieve the specified base path later when configuring Action Steps of the type File Operations, use the Pin button (image:pin-icon.png[The Pin button, 2%, 2%]) and the `Settings-BasePath` option. The base path is shown in the Workflow Run Results, Print Preview, and the Workflow Run Protocol.
+Specifies the base path to use for all Action Steps of the type File Operations. Use the Browse button (image:browse-button.png[The browse button, 2%, 2%]) to browse the path. If you leave the path blank, the default `%Stws_BasePath%` is used internally as the path. To retrieve the specified base path later when configuring Action Steps of the type File Operations, use the Pin button (image:pin-icon.png[The Pin button, 2%, 2%]) and the `Settings-BasePath` option. The base path is shown in the Workflow Run Results and Print Preview.
 *** *Base Path Preview*
 +
 Shows the currently selected base path.
@@ -83,8 +83,7 @@ Do not disable the *Use Allowed Paths limitation* option if important data is st
 
 *** *Allow File Operation Action Steps only in following paths*
 +
-Use this option if you want to restrict Action Step execution to certain paths (Allowed Paths). The gray field then shows the path specified in *Base Path Settings*. This means that for File Operations only the base path
-is allowed. Add up to 10 more allowed paths using the (image:add-icon.png[The Add icon, 2%, 2%] *Add Allowed Path ...*) button. Enter a path in the field shown or browse for a path using the Browse (image:browse-button.png[The browse button, 2%, 2%]) button. Additional paths can be deleted using the *Delete Path* (image:delete-icon.png[The Delete Path button, 2%, 2%]) button. The paths calculated at runtime are checked against the *Allowed Paths*. Allowed Paths are shown in the Workflow Run Results, Print Preview, and the Workflow Run Protocol.
+Use this option if you want to restrict Action Step execution to certain paths (Allowed Paths). The gray field then shows the path specified in *Base Path Settings*, which means that, for File Operations, only the base path is allowed. Add up to 10 more allowed paths using the (image:add-icon.png[The Add icon, 2%, 2%] *Add Allowed Path ...*) button. Enter a path in the field shown or browse for a path using the Browse (image:browse-button.png[The browse button, 2%, 2%]) button. Additional paths can be deleted using the *Delete Path* (image:delete-icon.png[The Delete Path button, 2%, 2%]) button. The paths calculated at runtime are checked against the *Allowed Paths*. Allowed paths show in the Workflow Run Results and Print Preview.
 +
 Note that before executing any Action Step of the type File Operations, the specified Directory Path is checked against the *Allowed Paths*. If the specified Directory Path is not allowed in the Action Step, the Workflow terminates and displays an error message.
 
@@ -101,7 +100,7 @@ Create new environment variables using the (image:add-icon.png[The Add icon, 2%,
 +
 image:workflow-settings-network-wizard.png[The Workflow Settings Wizard showing the Network Settings tab, 60%, 60%]
 +
-To be able to run the Actions Step _REST Call_ via a proxy, configure the appropriate settings here. If an additional authentication is necessary, activate the checkbox *Use Authentication* and enter *Username* and *Password*.
+To run the Action Step _REST Call_ via a proxy, configure the appropriate settings here. If an additional authentication is necessary, activate the checkbox *Use Authentication* and enter *Username* and *Password*.
 See <<properties>> for a detailed description of the Network Settings properties that are available in the Wizard.
 
 == See Also

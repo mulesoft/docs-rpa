@@ -18,9 +18,7 @@ Variables from the _Test Master Data_ and the _BasePath_ *cannot* be
 modified using the _Set Variable_ Action Step. Attempting to do so will
 generate an error message.
 
-Changes to a variable are logged in both the _Workflow Run Results_
-(Menü: View - Workflow Run Results) and in the _Workflow_ log (Menü:
-_Workflow -_ Show Workflow Run Protocol). The logs record both the old
+Changes to a variable are logged in the _Workflow Run Results_. The logs record both the old
 and new values of the variables. Variable values that are longer than 16
 characters are shown in truncated form.
 
