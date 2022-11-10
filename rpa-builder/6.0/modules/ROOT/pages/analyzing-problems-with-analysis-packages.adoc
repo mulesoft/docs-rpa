@@ -41,7 +41,9 @@ image:workbench-tools-menu.png[The Workbench Tools Menu, 30%, 30%]
 
 == Analysis Package Directory
 
-RPA Builder creates the `custom` directory after you start the menu locally for the first time, either with the *Run Workflow* button or by pressing _F7_. The path to the `custom` directory is: `C:\Users\[UserName]\Documents\MuleSoft\Cache\[Process-GUID]\[Activity- GUID]\Robot\custom\`. You can also right-click on the Workflow tab and select the *Open Workflow Location* option, which automatically redirects you to the correct directory.
+RPA Builder creates the `custom` directory after you start the menu locally for the first time, either with the *Run Workflow* button or by pressing _F7_. The path to the `custom` directory is: `C:\Users\[UserName]\Documents\MuleSoft\Cache\[Process-GUID]\[Activity- GUID]\Robot\custom\`.
+
+You can right-click on the Workflow tab and select the *Open Workflow Location* option, which automatically redirects you to the `C:\Users\[UserName]\Documents\MuleSoft\Cache\[Process-GUID]\[Activity- GUID]\` folder.
 
 You can add extra data like screenshots or log files to the analysis package by saving them to the project’s `custom` folder. RPA Manager packs all files from this folder into the analysis package in case of an error.
 
