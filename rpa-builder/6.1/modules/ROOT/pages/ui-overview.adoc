@@ -1,10 +1,8 @@
 
-
 = RPA Builder UI Overview
 
 The RPA Builder user interface has the following main areas:
 
-//image::getting-started-installation-and-first-use-application-overview-image1.png[Overview window panes]
 image:rpa-builder-ui-overview.png[Overview window panes]
 
 . Explorer pane
@@ -30,94 +28,164 @@ RPA Builder.
 
 === Tools
 
-*Open MuleSoft RPA Builder Log* This menu item opens the RPA Builder
+* *Open MuleSoft RPA Builder Log*
++
+This menu item opens the RPA Builder
 log file in your default text editor. The log is a text file containing
 a chronological list of all relevant events since RPA Builder was
 last launched. It also contains information about the executing system.
 
-*Open Regex Tester* Use this dialog to create and test regular
+* *Open Regex Tester*
++
+Use this dialog to create and test regular
 expressions. You can also access the _Regex Tester_ directly from
 various _Action Steps_. The section on Using Regular Expressions includes a
 more detailed description of this dialog and of regular expressions in
 general.
 
-*Templates Manager* This menu item opens the _Templates Manager_. This
+* *Templates Manager*
++
+This menu item opens the _Templates Manager_. This
 provides an overview of all the templates which have been created in RPA Builder already. Clicking the template name on the left-hand
 side of the window opens a preview of that template’s content. Use the
 _Delete_ button to delete individual templates. You can find out how to
 create and edit templates in the section entitled Save selected Workflow Objects as
 template.
 
-image::getting-started-installation-and-first-use-application-overview-image3.png[Example Templates, 50%, 50%]
+image::getting-started-installation-and-first-use-application-overview-image3.png[Example Templates, 75%, 75%]
 
 === Options
 
-The menu _Options_ contains four sub-menus: _General_, _Autosave,_
-_Repository_ and _Visibility_. If you click on one of the menu items,
-the wizard automatically opens with the selected tab.
+The menu *Options* in the RPA Builder toolbar contains four sub-menus:
+
+* *General*
+* *Autosave*
+* *Repository*
+* *Visibility*
+
+Click any of these menu items to open the wizard with the selected tab.
+
+==== General
+
+The *General* options menu contains the following settings:
 
 image::rpa-builder-options-general.png[Option General, 50%, 50%]
 
-*General timeout default for new projects*
-
+* *Default Settings*
+** *General timeout default for new projects*
++
 If you want to use the same timeout for every _Action Step_ containing
 this property, you can enter the value here.
-
++
 A timeout is the time span an _Action Step_ waits before reporting an
 error in case of failure.
-
++
 This value is only used for initialization when creating a new project
 and can be replaced within each _Action Step_ by a value that is valid
 only for that _Action Step_.
-
++
 If you want to change the default timeout value for a whole Workflow
 which has already been created, please use the _Default Timeout [sec]_
 setting in the _Workflow Properties_.
 
-*Use All Users as project home location*
-
+** *Save Projects and Settings in All Users Folder*
++
 If this option is set, RPA Builder saves all projects, the most common
 options, _Page Setup…_, and _Print Template Settings_
 for the Printing of a Workflow into the folder
-`C:\Users\Public\Documents\MuleSoft\RPA`. Otherwise, it saves the settings to the folder 
+`C:\Users\Public\Documents\MuleSoft\RPA`. Otherwise, it saves the settings to the folder
 `C:\Users\[UserName.Domain]\Documents\MuleSoft\RPA` of the respective
 user.
 
-*Open last project on start* Selecting this option means that the last
+** *Open last project on start*
++
+Selecting this option means that the last
 project that you opened is reloaded and displayed when you launch
 RPA Builder.
 
-*Browser Options*
+==== Autosave
 
-Please run RPA Builder with *administrator rights* for
-selecting the version of the Internet Explorer to be used in the
-_Browser Wizard_ of _Action Step Web Session_ contained in the plug-in
-_Web Automation_ and *restart* it afterwards.
-
-This setting affects *all* RPA Builder users.
+The *Autosave* options menu contains the following settings:
 
 image::rpa-builder-options-autosave.png[Option Autosave, 50%, 50%]
 
-*Autosave on script run*
+* *Autosave on script run*
++
+If this option is selected, RPA Builder saves the Workflow before each local run.
 
-If this option is selected, the Workflow is saved automatically
-before each local run.
-
-*Common Autosave*
-
-If this option is activated, projects are saved automatically at
-intervals of a few minutes.
-
+* *Common Autosave*
+** *Activated*
++
+If this option is selected, RPA Builder saves projects automatically at the interval defined in *Time between savings, min*.
++
 RPA Builder always saves the entire Business Process, including all
 Workflows.
+** *Time between savings, min*
++
+The time interval in minutes at which RPA Builder saves the project automatically when the common autosave is activated.
+
+==== Repository
+
+The *Repository* options menu contains the following settings:
 
 image::repository-settings.png[Option Repository, 50%, 50%]
 
-You can find a detailed description of the _Repository Settings_ in xref:install-and-configure.adoc#connect-with-rpa-manager[Connect RPA Builder with RPA Manager].
+* *Repository Settings*
+** *RPA Manager Address*
++
+The URL of the RPA Manager instance RPA Builder connects to. Do not specify the protocol (`https://`) as part of this value.
+** *User Name*
++
+The RPA Manager user name that RPA Builder uses to log in.
+** *Password*
++
+The RPA Manager password that RPA Builder uses to log in.
+** *Save Password*
++
+Select this option if you want RPA Builder to save the password used to connect to the Repository.
+** *Use HTTPS*
++
+Select this option to connect to the repository using HTTPS.
+** *Auto-Connect to Repository*
++
+Select this option if you want RPA Builder to connect to the repository during start-up.
+
+* *Proxy Settings*
+** *Use System Proxy Settings*
++
+Select this option to use the proxy settings configured in the system.
+** *Manual Proxy Configuration*
++
+Select this option to manually configure a proxy.
+** *Proxy Address*
++
+The proxy address to use when *Manual Proxy Configuration* is selected.
++
+Specify the protocol to use when connecting to the proxy as part of the address. For example: `+http://your.proxy.host:1234/+`
+** *Use Authentication*
++
+Select this option if the specified proxy requires authentication.
+** *User Name*
++
+The user name to authenticate with the proxy.
+** *Password*
++
+The password to authenticate with the proxy.
+
+* *Test Connection*
++
+Tests the connection with the repository using the configured settings.
+
+==== Visibility
+
+The *Visibility* options menu contains the following settings:
 
 image::rpa-builder-options-visibility.png[Option Visibility, 50%, 50%]
 
-*Show Action Step descriptions* (default: off) This option allows you to
+* *General Visibility*
+** *Show Action Step descriptions*
++
+(default: off) This option enables you to
 show and hide the descriptions of individual Workflow elements on the
 Workbench in RPA Builder. This does not affect the visibility
 of the individual element descriptions for the Properties and tool tips,
@@ -125,8 +193,8 @@ which are always visible. This option can also be modified via the _Show
 Action Step descriptions_ button or the CTRL+D shortcut. It is saved on
 an individual user basis.
 
-*Show system parameters dialog*
-
+** *Show system parameters dialog*
++
 If this option is set, the system parameters are shown whenever a
 new Activity Workflow is created. These can also be shown via the menu
 _View_ -> _Show System Parameters_.
