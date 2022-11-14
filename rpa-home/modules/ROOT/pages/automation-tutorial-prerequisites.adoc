@@ -17,20 +17,11 @@ The xref:rpa-manager::usermanagement-overview.adoc[User Management] module enabl
 If you don't have a Composer user, ask an administrator from your organization to set up your credentials.
 * RPA Builder installed and configured in your environment
 +
-//TODO: Add link to download RPA Builder
-//link:------["Download RPA Builder^", role="button-primary"]
-+
 See xref:rpa-builder::install-and-configure.adoc[Installing and Configuring RPA Builder] for installation and configuration instructions.
 * RPA Recorder installed and configured in your environment
 +
-//TODO: Add link to download RPA Recorder
-//link:------["Download RPA Recorder^", role="button-primary"]
-+
 See xref:rpa-recorder::getting-started.adoc[Installing and Starting RPA Recorder] for installation and configuration instructions.
 * RPA Bot installed and configured in your environment
-+
-//TODO: Add link to download RPA Bot
-//link:------["Download RPA Bot^", role="button-primary"]
 +
 See xref:rpa-bot::installation.adoc[Installing RPA Bot] and xref:rpa-bot::configuration.adoc[Configuring RPA Bot] for installation and configuration instructions.
 +
