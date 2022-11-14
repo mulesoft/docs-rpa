@@ -21,6 +21,7 @@ image:test-tray-options.png[The test script tray icon showing the Script Paused 
 
 Pressing _Pause/Break_ on your keyboard also stops a running Workflow.
 
+[[workflow-run-results]]
 == The Workflow Run Results Panel
 
 After you execute a Workflow from within RPA Builder, information about the last run displays in the Workflow Run Results panel at the end of the RPA Builder screen:

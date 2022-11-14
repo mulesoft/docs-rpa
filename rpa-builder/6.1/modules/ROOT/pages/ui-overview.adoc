@@ -270,6 +270,8 @@ in the _Document Outline_ as well as on the Workbench
 The _Workflow Run Results_ section shows detailed information on the
 last Activity Workflow that was run.
 
+See xref:running-workflows-and-using-workflow-run-results.adoc#workflow-run-results[The Workflow Run Results Panel] for additional details. 
+
 == Project Status
 
 The Project Status section provides detailed information about the
