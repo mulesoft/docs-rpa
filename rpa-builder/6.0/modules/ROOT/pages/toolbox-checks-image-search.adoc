@@ -1,14 +1,12 @@
-
-
 = Image Search
 
-The _Image search_ is a very important _Action Step_. It searches for a
+The _Image search_ Action Step searches for a
 user-defined image, waits until it appears or disappears, and can also
-be used as a relative anchor point for mouse clicks. 'Image' in this
-sense does not only mean 'picture', but also includes the visual
+be used as a relative anchor point for mouse clicks. Image in this
+case does not only mean picture, but also includes the visual
 representation of lettering or control elements like buttons.
 
-The main use cases for the _Image search_ are:
+The main use cases for _Image search_ are:
 
 * To compute the loading time of a webpage or an application loading
 data from a distant server, it is not sufficient to wait for the window
@@ -25,8 +23,7 @@ relatively to the image, for example to enter a URL in the address bar
 of a web browser, or to enter login information into user and password
 fields.
 
-What the _Image search_ actually does is compare the recorded _Pattern
-image_ to the whole _Search area_. During execution, it takes a
+What the _Image search_ actually does is compare the recorded _Pattern image_ to the whole _Search area_. During execution, it takes a
 screenshot of the _Search area_, applies the selected _Image search_
 algorithm to it, and then compares it to the _Pattern image_. The
 _Search area_ will automatically be adjusted if the executing computer
@@ -60,8 +57,7 @@ This is to ensure that the mouse pointer is not partly covering the
 image searched for. Afterwards it is moved back to the previous
 position.
 * *Image search algorithm* _Image search_ algorithm to be used.
-Selectable are _Color_, _Gradient_, _Contour_, and _Contour Plus_. Look
-below for descriptions of these modes.
+Selectable are _Color_, _Gradient_, _Contour_, and _Contour Plus_. See <<search-modes>> for a descriptions of these modes.
 * *Image search type _Search for picture appear_* Search for the picture
 until it appears. As soon as it can be detected, the _Image search_ is
 considered successful.
@@ -83,8 +79,7 @@ desktop enclosing the image to be searched
 * *Percentage required* Determines tolerance of the _Image search_, i.e.
 the minimum quality percentage threshold needed for successful
 identification of an image. A lower value means a higher tolerance, but
-also increases the likelihood of a "false positive". We *strongly*
-recommend never setting this below 90%!
+also increases the likelihood of a false positive. To avoid false positives, do not set this value below 90%.
 * *Relative To* Makes the _Search Area_ relative to a previous _Image
 search_, in the same way as for the _Mouse Clicks Action Step_
 * *_Search area_ rect* (_Properties grid_ only): Original coordinates
@@ -118,6 +113,7 @@ activated)
 
 == Wizard
 
+image:image-search-wizard.png[The image search Wizard, 75%, 75%]
 
 * *Start from scratch* Starts the configuration using all steps.
 * *_Search area_* Only reconfigures the _Search area_, using a previously captured image.
@@ -140,8 +136,7 @@ selection frame down to the relevant content, grab the edges, and resize
 it. You can also fine-tune the frame by pressing the arrow keys on your
 keyboard, which will move the frame by 1 pixel at a time; if you press
 *_Ctrl_* + arrow key, the frame will move by 5 pixels at a time.
-Pressing *_Shift_* + arrow key will resize the frame 1 pixel at a time
-(See also the section Hotkeys).
+Pressing *_Shift_* + arrow key will resize the frame 1 pixel at a time.
 
 Choosing and capturing the right pattern is essential for creating a
 stable _Workflow_ – you need to select a pattern that does not change,
@@ -149,7 +144,7 @@ is unique, is initially visible at all screen resolutions the _Workflow_
 is intended to run with, and (ideally) does not change its position
 much.
 
-//image::toolbox-checks-image-search-image1.png[Select pattern image]
+image::image-selection-frame.png[The Select pattern image dialog, 50%, 50%]
 
 == Freezing the Desktop
 
@@ -194,7 +189,7 @@ performance.
 After you captured the _Pattern image_, a red frame will appear to
 define the search area.
 
-//image::toolbox-checks-image-search-image2.png[Example capturing the Search Area]
+image::capturing-search-area.png[Example of capturing the Search Area]
 
 This is the area of the screen that will later be searched for the
 _Pattern image_. Again, this selection should be "as big as necessary,
@@ -210,10 +205,11 @@ image_.
 
 After selecting the _Pattern image_ and the _Search area_, RPA Builder evaluates the accuracy with which the defined image is currently found.
 
-//image::toolbox-checks-image-search-image3.png[Example accuracy]
+image::example-image-search-accuracy.png[Example image search accuracy, 50%, 50%]
 
 A newly recorded image search should always be found with 100% accuracy.
 
+[[search-modes]]
 == The Different Search Modes
 
 *_Color_* +
@@ -260,40 +256,37 @@ particularly if you are searching for text. However, when searching for
 low contrast _Pattern images_ and actual pictures, you might need to
 adjust the slider until you see a clear contour.
 
-//image::toolbox-checks-image-search-image4.png[Adjust the slider]
+image::contour-threshold.png[The white and black threshold slider to adjust contour detection, 50%, 50%]
 
-////
-For example, we want to use the face of this woman as a _Pattern image_
-in _Contour_ mode:
+For example, consider that we want to use the two people in this image as a _Pattern image_ in _Contour_ mode:
 
-image::toolbox-checks-image-search-image5.png[Example pattern]
+image::example-image-contour-mode.png[An example image showing two people and Max the Mule, 50%, 50%]
 
-After recording the image, the default value of the threshold will
-produce this _Pattern image_:
+After recording the image, the default value of the threshold produces this _Pattern image_:
 
-image::toolbox-checks-image-search-image6.png[Example pattern]
+image::pattern-image-1.png[Example pattern where the contour is not very defined, 50%, 50%]
 
-Here you can see that a lot of the subtle variations in the color of the
-woman's face created edges in the contour picture.
+In this image, you can see that a lot of the subtle variations in the colors created edges in the contour picture.
 
-By increasing the black/white threshold, the subtle color variations are
-ignored, so we can see a clear contour and the picture can be detected
-reliably:
+By increasing the black/white threshold, the Image Search ignores the subtle color variations, resulting in a clear contour that allows for more reliable picture detection:
 
-image::toolbox-checks-image-search-image7.png[Example pattern]
-////
+image::pattern-image-2.png[Example pattern where the contour is clear due to higher threshold settings, 50%, 50%]
 
 == Troubleshooting
 
-If you have problems finding the same picture on different machines, you
-should first make sure that the system parameters of these systems are
-all the same (see Section Checking System Parameters).
+If you have problems finding the same picture on different machines, ensure that the system parameters of these systems are
+all the same.
 
 If you are still having problems, you can decrease the required match
-precision – but be careful; if the required percentage is too low, you
-might get a "false positive", i.e. find the _Pattern image_ even though
-it does not exist.
+precision. But be careful, if the required percentage is too low, the Image Search Action Step might find the _Pattern image_ even though it does not exist.
 
-//image::toolbox-checks-image-search-image8.png[Image search settings]
+image::image-search-match-precision.png[Image search match precision settings, 50%, 50%]
 
-We *strongly* recommend that you never use a match precision below 90%.
+[WARNING]
+To avoid false positives, do not set the match precision below 90%.
+
+== See Also
+
+* xref:checking-system-parameters.adoc[Checking System Parameters]
+* xref:configure-system-parameters-one-setting.adoc[Configuring System Parameters With One Setting]
+* xref:ensure-windows-fonts-match.adoc[Ensuring Windows Fonts Match]
