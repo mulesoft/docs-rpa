@@ -7,7 +7,14 @@ RPA Builder is the on-premise application that enables you to build automations 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* The new Mail Session (Outlook with OAuth) Action Step enables you to establish a connection to a mail server using MS Outlook and authenticate using OAuth to perform mail operations as reading, sending, and changing emails. 
+* The new Mail Session (Outlook with OAuth) Action Step enables you to establish a connection to a mail server using MS Outlook and authenticate using OAuth to perform mail operations such as reading, sending, and changing emails.
+* The new Credentials for OAuth Action Step enables you to configure OAuth credentials once and reuse them within other Action Steps.
+* The Combine String Action Step now supports 20 substrings as inbound variables.
+* The Tables with AWS and Key values with AWS Action Steps now include a `Confidence` attribute in the JSON output.
+* The Generate and Modify Date and Time Action Step outputs three new variables to allow easier comparison between dates:
+** *Elapsed days*: Contains the days elapsed from 01/01/01 at 00:00 to the defined date at 00:00. The result is in whole days.
+** *Elapsed hours*: Contains the hours elapsed from 01/01/01 at 00:00 to the defined date and hour (Xh:00min). The result is in whole days and hours.
+** *Elapsed minutes*: Contains the minutes elapsed from 01/01/01 at 00:00 to the defined date, hour and minutes (Xh:XXmin). The result is in whole days, hours, and minutes.
 
 // == Compatibility
 //include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
@@ -26,17 +33,31 @@ Change the table entries as needed
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 
-////
-Change the table entries as needed
 
 [%header,cols="2a,1a"]
 |===
-|Issue|ID
-|Message Flows now appear in chronological order. |W-12345678
-|Batch jobs no longer hang while using persistent queues. |W-91011121
-|`NullPointerException` errors no longer occur when using the HTTP Connector inside a connector built with XML SDK. |W-13141516
+| Issue Resolution | ID
+| The Process Run notification window now displays in the proper screen position. |W-11507122
+| Excel Session Actions Step no longer fails to write data when an Excel Session is reading and a nested Excel Session is writing. |W-11643883
+| The Export from Activity Library dialog now properly shows the *Workflow Name* and *Description* values and enables you to edit them before exporting a workflow. |W-11468915
+| The Activity Parameters Wizard now shows the help button (*?*) that links to the documentation. |W-11515249
+| Web Session (MS Edge) Action Step no longer shows an incorrect warning message when using multiple transactions that share a Websession ID. |W-11623542
+// This seems like a pre-release fix, do we need to include it? | |W-11887027 Send test mail with Exchange
+// This seems like a pre-release fix, do we need to include it?| |W-11918594 OutlookMailSession contains previous data
+// This seems like a pre-release fix, do we need to include it?| |W-11968720 Fixed Errorhandling None not working on various Control Blocks
+| The Message Box Action Step Wizard now validates that the Title and Text values are not empty. |W-11864908
+| The JSON output from Document Processing Action Steps that use AWS Textract now contains text entries in the same order as they were processed in the document. |W-11983243
+| The Read PDF File Action Step now shows an error message when *Read text in selected area* is selected and an invalid area is defined. |W-11769277
+| Workflows no longer fail to execute when the Keystrokes to Web Element Action Step specifies a long value in *Input Text*. |W-11395408
+| RPA Builder no longer shows an error when multiple users try to run the same process and the *Use All Users as project home location* option is selected in General Settings. |W-11789843
+| RPA Builder no longer fails to start if the `user.config` file inside the `AppData` folder is corrupt. |W-11766449
+// This one can be shown in What's new as an update | |W-12041665 Removed Online Manual Selection in Settings Dialog
+// This one can be shown in What's new as an update | |W-12041695 renamed "use all user folder" setting
+| The Message Box Action Step no longer fails to recognize a normalized JSON from an AWS Action Step as a pin variable.  |W-12065095
+// | |W-12065550
+// | |W-11508834
 |===
-////
+
 
 // == Known Issues
 //include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+1]
