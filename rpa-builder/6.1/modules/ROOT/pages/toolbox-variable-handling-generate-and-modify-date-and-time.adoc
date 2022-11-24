@@ -1,6 +1,4 @@
-
-
-= Generate Date and Time
+= Generate and Modify Date and Time
 
 Use _Generate date and time_ to create a configurable time stamp. Select
 a country-specific style for the time stamp from the selection of format
