@@ -2,12 +2,12 @@
 
 RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
 
-== August 5, 2022
+== August 8, 2022
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* The Chrome driver version is updated to `104`.
+* The Chrome driver version used in the Web Automation - Web Session (Chrome) action steps is updated to `104`.
 * The About window now shows updated information.
 * The RPA Builder installer performance is improved.
 
@@ -18,9 +18,9 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="2a,1a"]
 |===
 | Issue Resolution | ID
-| Document processing Action Steps no longer fail to read PDF files. | W-11506685
+| Document processing Action Steps with AWS no longer fail to read PDF files when running on the RPA Bot. | W-11506685
 | RPA Builder window title no longer changes after a failed run. | W-11490822
-| Pinned Activity Parameters now work properly for the *Read page range* settings in PDF Settings. | W-11452152
+| Pinned Activity Parameters now work properly for the *Read page range* PDF settings in the AWS textract action steps. | W-11452152
 |===
 
 // == See Also

@@ -8,7 +8,7 @@ RPA Bot is a software robot that run in an on-premise environment and executes t
 
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* You can now configure the webservice timeout value to avoid issues when download or uploading large packages from or to RPA Manager.
+* You can now configure the webservice timeout value to avoid issues when downloading or uploading large packages from or to RPA Manager.
 
 == 1.0.896
 
