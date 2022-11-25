@@ -43,6 +43,10 @@ various _Action Steps_. The section on Using Regular Expressions includes a
 more detailed description of this dialog and of regular expressions in
 general.
 
+* *Generate OAuth Refresh Token*
++
+Use this menu item to generate an OAuth token that you can use with the Mail Session (Outlook with OAuth) Action Step. This option opens the OAuth Token Creator, in which you specify your OAuth credentials to log in to the authentication server and generate the token.
+
 * *Templates Manager*
 +
 This menu item opens the _Templates Manager_. This
@@ -270,7 +274,7 @@ in the _Document Outline_ as well as on the Workbench
 The _Workflow Run Results_ section shows detailed information on the
 last Activity Workflow that was run.
 
-See xref:running-workflows-and-using-workflow-run-results.adoc#workflow-run-results[The Workflow Run Results Panel] for additional details. 
+See xref:running-workflows-and-using-workflow-run-results.adoc#workflow-run-results[The Workflow Run Results Panel] for additional details.
 
 == Project Status
 

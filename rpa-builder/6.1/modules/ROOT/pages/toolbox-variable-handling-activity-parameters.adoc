@@ -27,15 +27,16 @@ image:add-new-parameters.png[The list of available activity parameters to add, 3
 +
 The following data types are available:
 +
-* Texts (_alphanumeric_)
-* Integers (_integer_)
-* Floating point values (_floating_-_point_)
-* Boolean values (_boolean_)
-* Lists (_array_)
-* Log-in data (user account)
-* Screen coordinates (coordinates)
-* Browser Session ID (web session ID)
-* AWS log-in data (AWS credentials)
+* Texts (*alphanumeric*)
+* Integers (*integer*)
+* Floating point values (*floating-point*)
+* Boolean values (*boolean*)
+* Lists (*array*)
+* Log-in data (*user account*)
+* Screen coordinates (*coordinates*)
+* Browser Session ID (*Web Session id*)
+* AWS log-in data (*AWS Credentials*)
+* OAuth credentials (*OAuth Credentials*)
 
 You can enter a name, description, and a value for the parameters in the corresponding fields. Activity parameter names have the following requirements:
 

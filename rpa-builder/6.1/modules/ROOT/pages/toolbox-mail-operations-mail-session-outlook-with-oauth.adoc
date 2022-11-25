@@ -19,16 +19,16 @@ Select this option to specify custom OAuth credentials for this Action Step.
 +
 *** *OAuth Host*
 +
-The host address used to get the credentials. The default address for Outlook services is `+https://login.microsoftonline.com/common/oauth2/v2.0/+` . This address might change if the customer uses a self-hosted service.
+The host address used to get the credentials. The default address for Outlook services is `+https://login.microsoftonline.com/common/oauth2/v2.0/+`. This address might change if you use a self-hosted service.
 *** *Client ID*
 +
-To authenticate with the OAuth Host, an Azure application must be defined in the customer's space. This Azure application has an ID, that is unique in the entire OAuth Host space and it allows users to explicitly grant or revoke access for this Azure application to their accounts. For more information on how to create this Azure application for Outlook, visit https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app[Quickstart: Register an application with the Microsoft identity platform^].
+To authenticate with the OAuth Host, an Azure application must be defined in your space. This Azure application has an ID, that is unique in the entire OAuth Host space and it allows users to explicitly grant or revoke access for this Azure application to their accounts. For more information on how to create this Azure application for Outlook, visit https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app[Quickstart: Register an application with the Microsoft identity platform^].
 *** *Client Secret*
 +
 Allows RPA Builder to prove to the OAuth Host that it received permission to access user accounts on behalf of the registered Azure application. Without this permission, authentication is not possible.
 *** *Redirect Uri*
 +
-The URI to which the OAuth Host redirects after the user has completed the authentication attempt. This redirect URI must be registered with the Azure application. If the entered redirect URI matches one of the registered URIs, the OAuth Host allows the authentication.
+The URI to which the OAuth Host redirects after the user completes the authentication attempt. This redirect URI must be registered with the Azure application. If the entered redirect URI matches one of the registered URIs, the OAuth Host allows the authentication.
 *** *Scopes*
 +
 Defines which permissions the user grants to the Azure application. By default, RPA Builder requests the following permissions:
