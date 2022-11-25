@@ -8,7 +8,7 @@ RPA Builder is the on-premise application that enables you to build automations 
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * The new Mail Session (Outlook with OAuth) Action Step enables you to establish a connection to a mail server using MS Outlook and authenticate using OAuth to perform mail operations such as reading, sending, and changing emails.
-* The new Credentials for OAuth Action Step enables you to generate OAuth credentials at runtime and reuse them within other Action Steps.
+* The new Credentials for OAuth Action Step enables you to generate OAuth credentials at runtime and reuse them within other Action Steps in the Workflow.
 * The Combine String Action Step now supports 20 substrings as inbound variables.
 * The Tables with AWS and Key values with AWS Action Steps now include a `Confidence` attribute in the JSON output.
 * The Generate and Modify Date and Time Action Step outputs three new variables to allow easier comparison between dates:
