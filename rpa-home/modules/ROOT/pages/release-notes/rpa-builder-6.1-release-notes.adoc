@@ -45,7 +45,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | The Export from Activity Library dialog now properly shows the *Workflow Name* and *Description* values and enables you to edit them before exporting a workflow. |W-11468915
 | The Activity Parameters Wizard now shows the help button (*?*) that links to the documentation. |W-11515249
 | Web Session (MS Edge) Action Step no longer shows an incorrect warning message when using multiple transactions that share a Websession ID. |W-11623542
-| The Message Box Action Step Wizard now validates that the Title and Text values are not empty. |W-11864908
+| The Message Box Action Step Wizard now validates that the values in the *Title* and *Text* fields are not empty. |W-11864908
 | The JSON output from Document Processing Action Steps that use AWS Textract now contains text entries in the same order as they were processed in the document. |W-11983243
 | The Read PDF File Action Step now shows an error message when *Read text in selected area* is selected and an invalid area is defined. |W-11769277
 | Workflows no longer fail to execute when the Keystrokes to Web Element Action Step specifies a long value in *Input Text*. |W-11395408
