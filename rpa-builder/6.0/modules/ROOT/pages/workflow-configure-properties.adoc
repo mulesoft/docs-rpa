@@ -12,6 +12,7 @@ image:workflow-properties-window.png[The Project Explorer showing the Workflow t
 +
 The properties panel of RPA Builder displays the corresponding properties.
 
+[[properties]]
 == Properties
 
 * *Common*
