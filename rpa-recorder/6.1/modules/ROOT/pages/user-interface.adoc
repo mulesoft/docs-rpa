@@ -146,6 +146,10 @@ Use the following settings to configure RPA Recorder:
 
 This section displays information about the specific hotkeys that can be used, and their description. Hotkeys cannot be customized.
 
+You can activate or deactivate the hotkeys function by checking or unchecking the *Activate usage of hot keys* box. If activated, the hot keys invoke the corresponding action. If deactivated, the hot keys cannot control the recorder, and any hot key presses during a recording are recorded as normal key strokes.
+
+The hotkeys function is activated by default.
+
 image:hotkeys.png[]
 
 == About Screen
