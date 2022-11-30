@@ -116,8 +116,11 @@ Pause the recording before adding an activity or changing the creation mode of t
 
 == Web Recording Browser
 
-Use the Web Recording Browser to record web elements. It behaves like a normal browser and enables you to select additional elements of a website and determine their XPath.
-You can also save your attribute selection of a web element to reuse it when recording the same web elements on a website.
+Use the Web Recording Browser to record website navigation actions. It behaves as a normal web browser and enables you to:
+
+* Select additional elements of a website and determine their XPath and attributes.
+* Save your attribute selection of a web element to reuse it when recording the same web elements on a website.
+* Record mouse hover positioning during web navigation.
 
 Adding a web task opens the Web Recording Browser. If you choose to continue using the session of the last closed Web Task, the browser loads the URL that is defined as the initial URL for the enclosing Web Session.
 Otherwise, you can enter a URL in the address bar of the browser, and it loads this URL when you press Enter or click the image:play-icon.png[Play button].
@@ -144,6 +147,11 @@ You can save your attribute selection for a web element to use it for future rec
 If you select the saved element while recording the same website later on, the saved attribute displays as already selected in the attribute selection panel and appears as added to the extracted XPath.
 If you don't want to use the saved attribute or attributes for a given web element, click the image:default-icon.png[Default button] to revert back to the default extracted XPath for that particular web element.
 
+=== Save Mouse Hover
+
+You can record your mouse hover positioning while using the Web Recording Browser. This is particularly useful to capture navigation through drop down menus.
+
+To capture a mouse over hover action durig web recording, press `F2` on an web element. This capturing is indicated with a blue flashing box around the selected web element.
 
 == RPA Recorder Configuration
 
