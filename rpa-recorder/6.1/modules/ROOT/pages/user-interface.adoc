@@ -17,7 +17,7 @@ The following functions are available in RPA Recorder while recording a process:
 |Icon |Name | Description | Hotkey
 |image:start-recording-icon.png[Start Recording icon, 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
 |image:pause-recording-icon.png[Pause Recording icon, 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
-|image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session. | Finishes the current recording session, and triggers the generation of xref:documents.adoc[Documents] | --
+|image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session | Finishes the current recording session, and triggers the generation of xref:documents.adoc[Documents]. | --
 |image:take-screenshot-icon.png[Take Screenshot icon, 20%, 20%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
 |image:add-variable-icon.png[Add Variable icon, 20%, 20%]  | Add Variable | Opens the <<Add Variable>> dialog. | `F10`
 |image:add-comment-icon.png[Add Comment icon, 20%, 20%] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
@@ -113,6 +113,37 @@ To continue recording, add a Bot Task.
 
 [NOTE]
 Pause the recording before adding an activity or changing the creation mode of the activities. If you open the pop-up using the respective hotkey, while the recording is running, the recording automatically pauses.
+
+== Web Recording Browser
+
+Use the Web Recording Browser to record web elements. It behaves like a normal browser and enables you to select additional elements of a website and determine their XPath.
+You can also save your attribute selection of a web element to reuse it when recording the same web elements on a website.
+
+Adding a web task opens the Web Recording Browser. If you choose to continue using the session of the last closed Web Task, the browser loads the URL that is defined as the initial URL for the enclosing Web Session.
+Otherwise, you can enter a URL in the address bar of the browser, and it loads this URL when you press Enter or click the image:play-icon.png[Play button].
+
+image:web-recording-browser-blank.png[Web Recording Browser]
+
+=== Select Web Elements
+
+When you hover the cursor over a web element, the browser highlights it with a blue background.
+To select the highlighted element press `F2`. After selecting an element, its XPath and available attributes show on the Attribute Selection panel.
+
+image:web-recording-select-element.png[Select Web Element]
+
+By default, the Attribute Selection panel is hidden. Double-click on the right border of the browser to extend or collapse it.
+
+=== Save Web Element Attributes
+
+The Attribute Selection panel shows the default extracted XPath and all the attributes of the selected web element.
+Select one or more attributes by checking the box next to them.  After you select an attribute, it adds to the extracted XPath together with its value.
+
+image:add-attribute.png[Add Attribute to XPath]
+
+You can save your attribute selection for a web element to use it for future recorded events by checking the *Save selection*.
+If you select the saved element while recording the same website later on, the saved attribute displays as already selected in the attribute selection panel and appears as added to the extracted XPath.
+If you don't want to use the saved attribute or attributes for a given web element, click the image:default-icon.png[Default button] to revert back to the default extracted XPath for that particular web element.
+
 
 == RPA Recorder Configuration
 
