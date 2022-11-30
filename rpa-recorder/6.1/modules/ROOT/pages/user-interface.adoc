@@ -148,6 +148,14 @@ This section displays information about the specific hotkeys that can be used, a
 
 image:hotkeys.png[]
 
+=== Log files
+
+This section provides access to RPA Recorder log files and log directory.
+
+Click *Open Log File* to open the latest log file. Click *Open Log Directory* to open the folder containing all RPA Recorder logs in your local computer.
+
+image:log-files.png[Log Files Menu]
+
 == About Screen
 
 The about screen contains general information about RPA Recorder:
