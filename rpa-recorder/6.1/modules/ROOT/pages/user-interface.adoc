@@ -17,7 +17,7 @@ The following functions are available in RPA Recorder while recording a process:
 |Icon |Name | Description | Hotkey
 |image:start-recording-icon.png[Start Recording icon, 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
 |image:pause-recording-icon.png[Pause Recording icon, 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
-|image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session. | Finishes the current recording session, and triggers the generation of xref:documents.adoc[Documents] | --
+|image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session | Finishes the current recording session, and triggers the generation of xref:documents.adoc[Documents]. | --
 |image:take-screenshot-icon.png[Take Screenshot icon, 20%, 20%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
 |image:add-variable-icon.png[Add Variable icon, 20%, 20%]  | Add Variable | Opens the <<Add Variable>> dialog. | `F10`
 |image:add-comment-icon.png[Add Comment icon, 20%, 20%] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
@@ -113,6 +113,46 @@ To continue recording, add a Bot Task.
 
 [NOTE]
 Pause the recording before adding an activity or changing the creation mode of the activities. If you open the pop-up using the respective hotkey, while the recording is running, the recording automatically pauses.
+
+== Web Recording Browser
+
+Use the Web Recording Browser to record website navigation actions. It behaves as a regular web browser and enables you to:
+
+* Automatically identify elements of a website with which you interact and determine their XPath and attributes.
+* Save your attribute selection of a web element to reuse it when recording the same web elements on a website.
+* Record mouse hover positioning during web navigation.
+
+Adding a Web Task opens the Web Recording Browser. When you add more than one Web Task, you can select *Continue with already existing web session* to display the last loaded page from the previous Web Task and continue from that point.
+Otherwise, you can enter a URL in the address bar of the browser, and it loads this URL when you press *Enter* or click the image:play-icon.png[Play button].
+
+image:web-recording-browser-blank.png[Web Recording Browser]
+
+=== Select Web Elements
+
+When you hover the cursor over a web element, the browser highlights it with a blue background. After an interaction with an element (such as a mouse click or key press on the keyboard), the element's XPath and available attributes show on the Attribute Selection panel.
+
+To record the mouse hover event on a highlighted element, press `F2`.
+
+image:web-recording-select-element.png[Select Web Element]
+
+By default, the Attribute Selection panel is hidden. Click on the right border of the Web Recording Browser to extend or collapse it.
+
+=== Save Web Element Attributes
+
+The Attribute Selection panel shows the default extracted XPath and all the attributes of the selected web element.
+Select one or more attributes by checking the box next to them. After you select an attribute, RPA Recorder adds the attribute and its value to the extracted XPath.
+
+image:add-attribute.png[Add Attribute to XPath]
+
+You can save your attribute selection for a web element to use it for future recorded events by checking *Save selection*.
+If you select the saved element while recording the same website later on, the saved attribute displays as already selected in the attribute selection panel and appears as added to the extracted XPath.
+If you don't want to use the saved attributes for a given web element, click the image:default-icon.png[Default button] to revert back to the default extracted XPath for that web element.
+
+=== Save Mouse Hover
+
+You can record your mouse hover positioning while using the Web Recording Browser. This is particularly useful for capturing navigation through drop down menus.
+
+To capture a mouse hover action during web recording, press `F2` on a web element. This capture is indicated by a blue flashing box around the selected web element.
 
 == RPA Recorder Configuration
 
