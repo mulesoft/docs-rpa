@@ -2,7 +2,7 @@
 
 RPA Recorder is MuleSoft’s tool for recording a business process for automation.
 
-== TBD
+== December 6, 2022
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
@@ -22,7 +22,6 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 ** _Alt+Right arrow_ : Navigates forward.
 ** _Alt+Left arrow_ : Navigates back.
 ** _Ctrl+Enter_ : Adds `www.` and `.com` to the text in the URL bar and then navigates to this URL.
-// TBC - * RPA Recorder now adds the remote debugging port to the start arguments, which enables external access to the browser wizard.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]

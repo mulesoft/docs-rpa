@@ -17,7 +17,7 @@ The latest versions of RPA Builder, RPA Recorder, and RPA Bot become available f
 
 == RPA Recorder
 
-//* xref:release-notes/rpa-recorder-6.1.0-release-notes.adoc[RPA Recorder 6.1.0 Release Notes]
+* xref:release-notes/rpa-recorder-6.1.0-release-notes.adoc[RPA Recorder 6.1.0 Release Notes]
 * xref:release-notes/rpa-recorder-6.0-release-notes.adoc[RPA Recorder 6.0.0 Release Notes]
 
 == RPA Bot
