@@ -129,9 +129,9 @@ image:web-recording-browser-blank.png[Web Recording Browser]
 
 === Select Web Elements
 
-When you hover the cursor over a web element, the browser highlights it with a blue background. After highlighting an element, its XPath and available attributes show on the Attribute Selection panel.
+When you hover the cursor over a web element, the browser highlights it with a blue background. After interaction with an element (such as mouse click or key press on keyboard), its XPath and available attributes show on the Attribute Selection panel.
 
-To record the mouse hover event, press `F2`.
+To record the mouse hover event on a highlighted element, press `F2`.
 
 image:web-recording-select-element.png[Select Web Element]
 
