@@ -116,25 +116,26 @@ Pause the recording before adding an activity or changing the creation mode of t
 
 == Web Recording Browser
 
-Use the Web Recording Browser to record website navigation actions. It behaves as a normal web browser and enables you to:
+Use the Web Recording Browser to record website navigation actions. It behaves as a regular web browser and enables you to:
 
-* Select additional elements of a website and determine their XPath and attributes.
+* Automatically identify elements of a website with which you interact and determine their XPath and attributes.
 * Save your attribute selection of a web element to reuse it when recording the same web elements on a website.
 * Record mouse hover positioning during web navigation.
 
-Adding a web task opens the Web Recording Browser. If you choose to continue using the session of the last closed Web Task, the browser loads the URL that is defined as the initial URL for the enclosing Web Session.
+Adding a Web Task opens the Web Recording Browser. When you add more than one Web Task, you can select *Continue with already existing web session* to display the last loaded page from the previous Web Task and continue from that point.
 Otherwise, you can enter a URL in the address bar of the browser, and it loads this URL when you press Enter or click the image:play-icon.png[Play button].
 
 image:web-recording-browser-blank.png[Web Recording Browser]
 
 === Select Web Elements
 
-When you hover the cursor over a web element, the browser highlights it with a blue background.
-To select the highlighted element press `F2`. After selecting an element, its XPath and available attributes show on the Attribute Selection panel.
+When you hover the cursor over a web element, the browser highlights it with a blue background. After highlighting an element, its XPath and available attributes show on the Attribute Selection panel.
+
+To record the mouse hover event, press `F2`.
 
 image:web-recording-select-element.png[Select Web Element]
 
-By default, the Attribute Selection panel is hidden. Double-click on the right border of the browser to extend or collapse it.
+By default, the Attribute Selection panel is hidden. Click on the right border of the Web Recording Browser to extend or collapse it.
 
 === Save Web Element Attributes
 
