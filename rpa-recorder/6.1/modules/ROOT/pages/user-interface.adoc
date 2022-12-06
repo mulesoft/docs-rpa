@@ -150,7 +150,7 @@ You can activate or deactivate the hotkeys function by checking or unchecking th
 
 The hotkeys function is activated by default.
 
-image:hotkeys.png[]
+image:hotkeys.png[The hotkeys configuration window, 60%, 60%]
 
 === Log files
 
@@ -158,7 +158,7 @@ This section provides access to RPA Recorder log files and log directory.
 
 Click *Open Log File* to open the latest log file. Click *Open Log Directory* to open the folder containing all RPA Recorder logs in your local computer.
 
-image:log-files.png[Log Files Menu]
+image:log-files.png[Log Files Menu, 60%, 60%]
 
 == About Screen
 
