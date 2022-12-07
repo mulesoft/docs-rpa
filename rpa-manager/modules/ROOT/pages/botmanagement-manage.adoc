@@ -42,6 +42,16 @@ Assign service times to bots to determine when a bot may execute processes.
 
 Assign process applications to bots that can access them.
 
+Service times are repeatable time intervals that define when a service is available. You assign them to bots to determine when a bot may execute processes.
+You specify the service time in one time-zone. If the bot that you assign the service time to is installed on a computer using a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots will execute processes simultaneously. The time intervals may change depending on daylight saving time.
+
+For example, if you specify a service time starting at 9:30 AM and ending at 5:30 PM in Buenos Aires time (ART (UTC -3)) and the bot is installed on a computer in Berlin (CET (UTC +1)), the bot will execute processes between 1:30 PM and 9:30 PM in Berlin time.
+
+Learn how to xref:botmanagement-support.adoc#manage-service-times[manage service times].
+
+
+
+
 . In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the row of the bot you want to edit.
 . In the form *<bot name>* click on all service times and applications you want to assign.
 . Click *Save*.
@@ -51,7 +61,7 @@ Assign process applications to bots that can access them.
 Edit a bot to change its properties. Hostname, IP address, version, and timezone are fixed values taken from the computer the bot is installed on.
 
 . In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the row of the bot you want to edit.
-. Edit the form <*bot name*>.
+. Edit the form *<bot name>*.
 . Click *Save*.
 
 == Remove a Bot

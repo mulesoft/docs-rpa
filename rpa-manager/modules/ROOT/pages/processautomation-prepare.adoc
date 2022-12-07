@@ -35,21 +35,40 @@ Learn about https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quick
 
 == Prepare Projects
 
-Projects are assigned to categories. A category describes the environment of a process in a few keywords.
+The project manager organizes projects into categories. A category describes the environment of a process in a few keywords.
 
-Applications that are used in processes are assigned to the process and to bots which can use them. A process can be deployed on a bot which has assigned the required processes.
+Learn how to <<manage-categories, manage categories>>.
+
+Learn how to xref:processevaluation-propose.adoc#processevaluationdata-category[propose a category for a process].
+
+Learn how to xref:myrpa-start.adoc#projectdata-category[organize a project into a category].
+
+The project manager lists all applications that are used in processes and assigns applications to processes that use them. IT administrators assign applications to bots which can use them. A process can be deployed on a bot which has assigned the required applications.
+
+Learn how to <<manage-applications, manage applications>>.
+
+Learn how to xref:myrpa-start.adoc#projectdata-processapplications[assign applications to processes].
+
+Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign applications to bots].
 
 Global variables and credentials are used for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes. You can link global variables and credentials anywhere that a globe symbol is displayed.
 
+Learn how to manage <<manage-globalvariables, global variables>> and <<manage-credentials, credentials>>.
+
+Learn how to link global variables and credentials in a xref:processautomation-deploy.adoc#test-configuration-link-globals[test] and xref:processautomation-deploy.adoc#production-configuration-link-globals[production] configurations.
+
+[[manage-categories]]
 === Manage Categories
 
-Projects are assigned to categories. A category describes the environment of a process in a few keywords.
+The project manager organizes projects into categories. A category describes the environment of a process in a few keywords, for example `Customer Support Mystical University` or `Finance`.
 
-A project can only be assigned to a single category. First create a standard category, so you can start with process automation quickly. You can change the category of a process later. After you have automated the first projects, it makes sense to create an archive category and move completed projects there.
+A project can only belong to a single category.
+
+First, create a standard category, so you can start with process automation quickly. You can change the category of a process later. After you have automated the first projects, it makes sense to create an archive category and move completed projects there.
 
 ==== Create a Category
 
-Create categories to group processes. Assign a process to a category during evaluation or project creation.
+Create categories to organize processes. Assign a process to a category during evaluation or project creation.
 
 . In the *Process Management* view of the *Process Automation* module, click *Create*.
 . Enter a name in the *Create a category* window.
@@ -71,13 +90,20 @@ Only categories that do not contain processes can be deleted.
 
 . In the *Process Management* view of the *Process Automation* module, click the the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category you want to delete.
 
-=== Manage Applications
+[[manage-applications]]
+=== Manage Process Applications
 
 In the view *Process Applications*, list all applications required for the execution of processes. In the view *Process Management*, assign required applications to processes at process creation or phase transition. In the module *Bot Management*, assign applications to a bot that can execute them. Bots can execute all applications installed on their computer.
 
-Applications are not available during down-times or while deactivated. You can deploy a process on a bot which has assigned the required processes. Processes whose applications are currently down are executed to completion and are not restarted until the downtime or deactivation period has ended.
+You can deploy a process on a bot which has assigned the required applications. Down times are repeatable time intervals that define when an application is not available. Processes whose applications are currently down are executed to completion and are not restarted until the downtime period has ended.
 
-==== Create an Application
+You specify a down time in one time-zone. If the bot that you assign the down time to is installed on a computer using a different time zone, the down time interval is converted to the bot’s time zone.
+
+For example, if you specify a down time starting at 1am and ending at 5am in Tokyo time (JST (UTC +9)) and the bot is installed on a computer in San Francisco (PST (UTC -8)), the bot will not execute processes between 8am and 12pm in San Francisco time. If you assign the application to multiple bots in different time zones, all bots will pause executing processes using that application simultaneously.
+
+The time intervals may change depending on daylight saving time.
+
+==== Create a Process Application
 
 Create one entry for each application required for the execution of processes:
 
@@ -96,7 +122,7 @@ Learn how to xref:myrpa-start.adoc#required-process-applications[assign required
 
 Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign required applications to a bot].
 
-==== Edit an Application
+==== Edit a Process Application
 
 Edit an application to change its data or down-times:
 
@@ -104,7 +130,7 @@ Edit an application to change its data or down-times:
 . Edit the form *Edit the application*.
 . Click *Save*.
 
-==== Deactivate or Activate an Application
+==== Deactivate or Activate a Process Application
 
 Deactivate an application if it is temporarily not available and you don't know when it will be available again.
 
@@ -122,7 +148,7 @@ If a deactivated application becomes available again, you can activate it:
 
 An *Active* label is shown beneath the logo of the application.
 
-==== Remove an Application
+==== Remove a Process Application
 
 Remove an application if it is no longer available.
 
@@ -137,6 +163,7 @@ Use global variables or credentials for values and login data that are the same 
 
 You can link global variables or credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
 
+[[manage-globalvariables]]
 === Manage Global Variables
 
 Create global variables for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
@@ -219,6 +246,7 @@ Delete global variables that will not be used anymore. Variables linked in confi
 . In the *Global Variables* view of the *Process Automation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the global variable you want to delete.
 . Confirm the deletion.
 
+[[manage-credentials]]
 === Manage Credentials
 
 Credentials store login data for applications or web services. They can be used with different processes. Passwords are encrypted.

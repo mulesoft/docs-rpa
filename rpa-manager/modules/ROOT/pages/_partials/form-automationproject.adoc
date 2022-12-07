@@ -2,12 +2,15 @@
 ** *Process Owner*:
 +
 User who proposed the process for automation via a process evaluation.
-** *Required Applications for Process*:
+** [[projectdata-processapplications]] *Required Applications for Process*:
 +
 Select all applications here that are required to carry out the process. All applications that have been created in the *Process Applications* view of the *Process Automation* module are displayed in the drop-down list and can be removed from the input field by clicking the *X*. It is important to select all required applications here to ensure that the process can only be implemented subsequently by robots that can use these applications.
 ** [[projectdata-processteam]] *Process Team*:
 +
 The process team is a group of employees who work together on execution of the process automation. Select all team members from the text selection field. Then, by selecting the relevant checkboxes in the table, you can authorize the team members to work on the processes in the various phases. By default, each team member has authorization to transfer the process from their own phase to the next phase. If approval for the next phase is only to be carried out by specific team members, then select the checkbox *Advanced Permissions* to assign authorizations for approval separately. All team members have read access to the project in all phases. The project manager is always part of the team and also always has all authorizations. If the checkbox *Advanced Permissions* is deselected, the values of this column are no longer taken into account. In that case, only that user who has authorization to work on a phase can transfer the Process to the next phase.
+** [[projectdata-category]] *Category*:
++
+Organize the projects into a category. A category describes the environment of a process in a few keywords, for example `Customer Support Mystical University` or `Finance`. You can change the category prefilled by the citizen technologist that evaluated the process.
 ** *Use Process Board*:
 +
 Select this checkbox to use a process board. Process boards contain administrative process tasks. The tasks transition from *To-do* via *In progress* to *Completed*.
