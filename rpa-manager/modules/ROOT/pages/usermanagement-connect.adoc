@@ -21,7 +21,7 @@ User API keys are required for the integration of RPA processes in a MuleSoft Co
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * The user who will use an API key must exist in the *Users* view of the *User Management* module.
 

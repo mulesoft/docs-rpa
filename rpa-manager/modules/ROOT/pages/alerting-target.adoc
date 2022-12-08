@@ -20,7 +20,7 @@ Combine targets to target groups to save time when creating alert rules.
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 == Create Alert Targets
 

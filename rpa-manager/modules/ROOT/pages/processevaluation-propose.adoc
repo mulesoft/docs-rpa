@@ -27,9 +27,11 @@ You evaluate a process candidate to propose it for automation.
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * Create appropriate categories in the view *Process Management* in the module *Process Automation*.
++
+Learn how to xref:processautomation-prepare.adoc#manage-categories[manage categories].
 
 == Manage Process Evaluations
 

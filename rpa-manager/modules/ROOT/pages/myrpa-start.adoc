@@ -17,7 +17,7 @@ The center of excellence is a user group that, for the approval of an evaluated 
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * Your user must be marked as *Project Manager*.
 Learn how to xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[Designate a User as Project Manager].

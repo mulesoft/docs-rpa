@@ -19,11 +19,11 @@ If a bot only needs to work at specific times, you assign it service times.
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 == Manage API Keys
 
-An API key is required during installation of a bot. The bot connects to the server with its API key.
+An API key is required during installation of a bot. The bot connects to the RPA Manager with its API key.
 
 === Create an API Key
 
@@ -70,11 +70,15 @@ For example, if you specify a service time starting at 9:30 AM and ending at 5:3
 
 You can create, edit, and remove service times.
 
+Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign service times to a bot].
+
 == Create a Service Time
 
 Create service times to coordinate bot working hours.
 
-The names of the service times do not have to be unique. For example, you can assign the same name to a service time on working days for the business hours for different time zones. However, we recommend using different names, or at least different extensions to the same name, to rule out misunderstandings during interpretation of the effective schedule runtimes.
+The names of the service times do not have to be unique. To avoid misunderstandings of the interpretation of the effective schedule runtimes, include the time zone in the name of the service time.
+
+For example, `Regular working hours - 9 AM - 5 PM - Mystical University - Buenos Aires (ART (UTC -3))` and  `Low resource usage time - 5 PM - 9AM - Mystical University - Berlin (CET (UTC +1))`.
 
 . In the *Service Times* view of the *Bot Management* module, click *Create*.
 . In the window *Create Service Time*, complete the form:
@@ -112,3 +116,5 @@ The deleted service time is also removed from the service times of a bot. If the
 * xref::botmanagement-know.adoc[Getting to Know Bots]
 * xref::botmanagement-manage.adoc[Managing Bots]
 * xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
+
+* xref::processautomation-deploy.adoc[Deploying Automations]

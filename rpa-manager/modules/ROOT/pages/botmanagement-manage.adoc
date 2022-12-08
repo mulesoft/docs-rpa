@@ -22,7 +22,7 @@ Bots can be licensed to use secure sessions. Some properties, like name, service
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 == License Bots for Secure Sessions
 

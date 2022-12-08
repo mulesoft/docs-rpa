@@ -18,7 +18,7 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * You can only approve evaluated process candidates.
 * You can only refer processes to users assigned as project manager or user groups assigned as center of excellence.

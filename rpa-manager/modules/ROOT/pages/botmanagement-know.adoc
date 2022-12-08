@@ -99,7 +99,7 @@ The bot has been configured for a desktop session. It cannot use secure sessions
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 == Find Bots
 

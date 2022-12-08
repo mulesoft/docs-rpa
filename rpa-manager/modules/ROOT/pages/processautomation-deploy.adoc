@@ -19,9 +19,10 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * At least one RPA Bot must be installed to deploy a process.
+** Be aware that bots might live in different time zones.
 * A project in build or test phase must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
@@ -163,9 +164,32 @@ For implementation in a secure session, you can link the user with a global cred
 Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the test plan otherwise.
 +
 If the process uses elements of the Windows operating system like the start menu or the task bar, check *Requires Windows Shell*.
+//copy this item to invokable configs
 * *Process Trigger Execution*:
 +
 The productive run is carried out continuously within a fixed Schedule. For each schedule, you can define time intervals within which the process is to be executed.
++
+You create a schedule without specifying a time-zone. The bot you assign the production configuration to will execute the process at the specified times in its local time.
++
+For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule starting at 5:30 AM and ending at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots will execute the processes not simultaneously:
++
+[cols="1,2,2"]
+|===
+|*Bot* |*Execution time in the bot's local time zone* |*Execution time in the argentine user's local time zone*
+
+|Berlin bot
+|5:30 AM - 9:30 PM (Berlin time,  (CET (UTC +1)) =
+|1:30 AM - 5:30 PM (Buenos Aires time (ART (UTC -3)))
+
+|San Francisco bot
+|5:30 AM - 9:30 PM (San Francisco time, (PST (UTC -8)) =
+|10:30 AM - 2:30 AM (Buenos Aires time (ART (UTC -3)))
+
+|Tokyo bot
+|5:30 AM - 9:30 PM (Tokyo time, JST (UTC +9)) =
+|5:30 PM - 9:30 AM (Buenos Aires time (ART (UTC -3)))
+
+|===
 +
 You can create multiple schedules. These may also overlap. All schedules together make up a time frame within which the process may be executed. The executing bot checks every minute whether it is within this time frame or not. A new process run is not started until all conditions have been fulfilled.
 +

@@ -17,7 +17,7 @@ The *Settings* view enables you to configure the currency and decimal sign to sh
 |Organization Management Administration
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 == Configure Currency and Decimal Sign
 

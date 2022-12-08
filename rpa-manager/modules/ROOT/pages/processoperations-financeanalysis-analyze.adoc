@@ -21,7 +21,7 @@ Enter all expenses for automation of a process. On the basis of the costs of man
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * A project must exist in the *Process Automation* module with the following values set in the *Process Costs* tab of the data sheet:
 ** *Cost per process run for manual process execution*

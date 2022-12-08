@@ -36,7 +36,7 @@ As long as the project is in the build phase, it can be seen in the repository o
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * To record a process, RPA Recorder must be installed and connected to RPA Manager.
 * To build a process automation, RPA Builder must be installed and connected to RPA Manager.

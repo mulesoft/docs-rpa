@@ -24,7 +24,7 @@ Processes are executed if following prerequisites are fulfilled:
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 // Configure an Execution Timetable
 
