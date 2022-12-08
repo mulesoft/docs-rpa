@@ -126,6 +126,8 @@ For example, if you specify a down time starting at 1:30 AM and ending at 5:30 A
 +
 The time intervals may change depending on daylight saving time.
 +
+To avoid confusion, append the name of the time zone to the name of the application.
++
 * *Downtimes*
 +
 Click *Create* to add a downtime to the application.

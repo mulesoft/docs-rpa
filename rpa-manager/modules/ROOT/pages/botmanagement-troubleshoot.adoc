@@ -2,7 +2,26 @@
 
 If a bot has status *OK*, but seems not to work properly, download its log files or restart the bot.
 
+If the bot has status *SUSPENDED*, have a look at the execution plans.
+
 If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on to the computer the bot is installed on and needs to troubleshoot it there.
+
+== View the planned process executions
+
+If you are not sure why a bot is not processing, have a look at the execution plans:
+
+. In the module *Bot Management*, open the view *Bot Execution Plans*.
+. In the table click the *Execution timetable* icon image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%] in the row of the bot you want to check.
+
+The execution time table shows you the effective runtime of all configuration assigned to the bot.
+
+. Click the *Configure Execution Timetable* icon image:configure-icon.png[wrench symbol,1.5%,1.5%] to change the time interval of the table and to select the shown configurations.
+. Click *OK*.
+. In the *Execution Timetable*, click on a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
+
+A configuration is executed when the bot's servicetime overlaps with the schedule of the configuration. If the process uses applications, it is not executed during the downtimes of an application.
+
+All times are displayed in your local time. Times from bots and applications living in other time zones are converted to your local time. Hover over the bars to see which service times, downtimes and schedules are contained in the execution times.
 
 == Download the Log Files of a Bot
 
