@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="2a,1a"]
 |===
 |Issue Resolution |ID
-| RPA Manager no longer causes a delay in the execution of MuleSoft Composer flows when you run two asynchronous flows that execute RPA processes (new fix). | W-12173987 / W-12175608
+| RPA Manager no longer causes a delay in the execution of MuleSoft Composer flows when you run two asynchronous flows that execute RPA processes. | W-12173987 / W-12175608
 |===
 
 [[december-5-2022]]
