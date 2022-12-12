@@ -1,0 +1,25 @@
+= RPA Release Notes
+
+RPA Manager instances automatically update to the latest version available; you don’t need to perform any tasks to move to the new version.
+
+The latest versions of RPA Builder, RPA Recorder, and RPA Bot become available for download in RPA Manager as soon as they are released and you must manually update them on your local environment.
+
+== RPA Manager
+
+* xref:release-notes/rpa-manager-release-notes.adoc[RPA Manager Release Notes]
+
+== RPA Builder
+
+//* xref:release-notes/rpa-builder-6.1.1-release-notes.adoc[RPA Builder 6.1.1 Release Notes]
+//* xref:release-notes/rpa-builder-6.1.0-release-notes.adoc[RPA Builder 6.1.0 Release Notes]
+* xref:release-notes/rpa-builder-6.0.1-release-notes.adoc[RPA Builder 6.0.1 Release Notes]
+* xref:release-notes/rpa-builder-6.0-release-notes.adoc[RPA Builder 6.0.0 Release Notes]
+
+== RPA Recorder
+
+* xref:release-notes/rpa-recorder-6.1.0-release-notes.adoc[RPA Recorder 6.1.0 Release Notes]
+* xref:release-notes/rpa-recorder-6.0-release-notes.adoc[RPA Recorder 6.0.0 Release Notes]
+
+== RPA Bot
+
+* xref:release-notes/rpa-bot-1.0-release-notes.adoc[RPA Bot 1.0.0 Release Notes]
