@@ -6,7 +6,7 @@ If the bot has status *SUSPENDED*, have a look at the execution plans.
 
 If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on to the computer the bot is installed on and needs to troubleshoot it there.
 
-== View the planned process executions
+== View the Planned Process Executions
 
 If you are not sure why a bot is not processing, have a look at the execution plans:
 
@@ -22,6 +22,14 @@ The execution time table shows you the effective runtime of all configuration as
 A configuration is executed when the bot's servicetime overlaps with the schedule of the configuration. If the process uses applications, it is not executed during the downtimes of an application.
 
 All times are displayed in your local time. Times from bots and applications living in other time zones are converted to your local time. Hover over the bars to see which service times, downtimes and schedules are contained in the execution times.
+
+=== Example of the Effective Runtime Composition
+
+image::rpa_botmanagement_botexecutionplans_example_effectiveschedulecomposition.png[Overview of how the effective runtime is composed from schedules, service times and downtimes]
+
+The example shows the planned process executions from the view of a user who lives in the coordinated universal timezone. The shown configuration uses a schedule which is repeated daily from 12 PM to 20 PM. The bot is installed on a computer using the same timezone as the user. It has an asigned service time defined in German time. The application is installed on a computer in Germany as well, which has a daily down time from 15:30 PM to 16:30 PM.
+When schedule and service time overlap, the process can be executed. In this example, a downtime takes place in the middle of the scheduled time. The execution is interrrupted during that time. Because the service time is shorter than the scheduled run time, the execution is shortened, too.
+
 
 == Download the Log Files of a Bot
 
