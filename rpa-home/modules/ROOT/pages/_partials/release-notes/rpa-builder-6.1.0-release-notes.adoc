@@ -20,18 +20,14 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * The *Use All Users as project home location* option in Settings now reads *Save Projects and Settings in All Users Folder* for better clarity.
 
 // == Compatibility
-//include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
-
-////
-Change the table entries as needed
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
 
 [%header%autowidth.spread]
 |===
-|Application/Service|Version
-|Mule |4.1.1 and later
-|Anypoint Studio |7.1 and later
+|Application |Version
+|RPA Recorder | 6.0.0 and later
+|RPA Bot | 2.0.0 and later
 |===
-////
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
