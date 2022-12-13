@@ -64,7 +64,7 @@ Bots execute processes deployed to them only if they are within one of their ser
 
 You can assign multiple service times to a bot. If you do not assign any service times to a bot, it works 24/7.
 
-You specify the service time in one time-zone. If the bot that you assign the service time to is installed on a computer using a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots will execute processes simultaneously. The time intervals may change depending on daylight saving time.
+You specify the service time in one time zone. If the bot that you assign the service time to is installed on a computer using a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots will execute processes simultaneously. The time intervals may change depending on daylight saving time.
 
 For example, if you specify a service time starting at 9:30 AM and ending at 5:30 PM in Buenos Aires time (ART (UTC -3)) and the bot is installed on a computer in Berlin (CET (UTC +1)), the bot will execute processes between 1:30 PM and 9:30 PM in Berlin time.
 
@@ -78,12 +78,12 @@ Create service times to coordinate bot working hours.
 
 The names of the service times do not have to be unique. To avoid misunderstandings of the interpretation of the effective schedule runtimes, include the time zone in the name of the service time.
 
-For example, `Regular working hours - 9 AM - 5 PM - Mystical University - Buenos Aires (ART (UTC -3))` and  `Low resource usage time - 5 PM - 9AM - Mystical University - Berlin (CET (UTC +1))`.
+For example, name your service time `Regular working hours - 9 AM - 5 PM - Mystical University - Buenos Aires (ART (UTC -3))` or  `Low resource usage time - 5 PM - 9AM - Mystical University - Berlin (CET (UTC +1))`.
 
 . In the *Service Times* view of the *Bot Management* module, click *Create*.
 . In the window *Create Service Time*, complete the form:
 +
-* *Timezone*: You specify the service time in one time-zone. If the bot that you assign the service time to is installed on a computer using a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots will execute processes simultaneously. The time intervals may change depending on daylight saving time.
+* *Timezone*: You specify the service time in one time zone. If the bot that you assign the service time to is installed on a computer using a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots will execute processes simultaneously. The time intervals may change depending on daylight saving time.
 +
 For example, if you specify a service time starting at 9:30 AM and ending at 5:30 PM in Buenos Aires time (ART (UTC -3)) and the bot is installed on a computer in Berlin (CET (UTC +1)), the bot will execute processes between 1:30 PM and 9:30 PM in Berlin time.
 +

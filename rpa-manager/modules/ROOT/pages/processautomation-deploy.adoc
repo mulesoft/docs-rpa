@@ -129,6 +129,7 @@ Transition the tested process to production phase for running it fully automatic
 . Check *I confirm that the process should be released into the production phase and all responsible persons have agreed.*
 . Click *Release to Production* to confirm the transition.
 
+[[production-configuration]]
 === Create a Run Configuration
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
@@ -157,7 +158,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether the test run is to be carried out in an existing desktop session or in a secure session, and specify an appropriate user.
+Decide whether the productive run is to be carried out in an existing desktop session or in a secure session, and specify an appropriate user.
 +
 For implementation in a secure session, you can link the user with a global credential variable. To do this,  click on the *Link a global activity parameter* icon.
 +
@@ -167,9 +168,9 @@ If the process uses elements of the Windows operating system like the start menu
 //copy this item to invokable configs
 * *Process Trigger Execution*:
 +
-The productive run is carried out continuously within a fixed Schedule. For each schedule, you can define time intervals within which the process is to be executed.
+The productive run is carried out continuously within a fixed schedule. For each schedule, you can define time intervals within which the process is to be executed.
 +
-You create a schedule without specifying a time-zone. The bot you assign the production configuration to will execute the process at the specified times in its local time.
+You create a schedule without specifying a time zone. The bot you assign the production configuration to will execute the process at the specified times in its local time. The time intervals may change depending on daylight saving time.
 +
 For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule starting at 5:30 AM and ending at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots will execute the processes not simultaneously:
 +
@@ -195,7 +196,7 @@ You can create multiple schedules. These may also overlap. All schedules togethe
 +
 For this reason, the executing bot checks every minute whether it is within a service time and whether the required process applications are outside all downtimes. The process is not executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
 +
-Ongoing processes are always executed completely.
+Running processes are always executed completely.
 +
 When creating new schedules, you should pay attention to whether the new schedules overlap with schedules of other configurations and you should ensure that the executing bots have enough free sessions. Otherwise, trigger executions could be skipped.
 +
@@ -247,6 +248,7 @@ Transition the tested process to production phase for running it fully automatic
 . Check *I confirm that the process should be released into the production phase and all responsible persons have agreed.*
 . Click *Release to Production* to confirm the transition.
 
+[[invokable-configuration]]
 === Create an Invokable Run Configuration
 
 The invokable run configuration is published to Anypoint Exchange upon saving.
@@ -258,7 +260,7 @@ The invokable run configuration is published to Anypoint Exchange upon saving.
 +
 * *Activity Parameter*:
 +
-The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clickin on the relevant field in the *Value* column.
+The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clicking on the relevant field in the *Value* column.
 +
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
