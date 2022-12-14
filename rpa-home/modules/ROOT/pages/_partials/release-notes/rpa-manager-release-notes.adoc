@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="2a,1a"]
 |===
 |Issue Resolution |ID
-| RPA Manager no longer includes _userName_ and _password_ as required fields in the OpenAPI Specification (OAS) when you publish an invokable run configuration to Anypoint Exchange. | W-12141693
+| RPA Manager no longer includes _userName_ and _password_ as required fields for _AWS Credentials_ in the OpenAPI Specification (OAS) when you publish an invokable run configuration to Anypoint Exchange. | W-12141693
 | The RPA Manager UI now shows a note when a date and time are not in the same time zone as the logged-in user. | W-12028146
 |===
 
