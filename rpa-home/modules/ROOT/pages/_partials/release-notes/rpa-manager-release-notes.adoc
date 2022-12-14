@@ -3,6 +3,19 @@
 RPA Manager is the cloud-based control plane for your automation projects.
 
 
+[[december-14-2022]]
+== December 14, 2022
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="2a,1a"]
+|===
+|Issue Resolution |ID
+| The published OAS for invokable processes in Anypoint Exchange does no longer contain the wrong parameters _userName_ and _password_ for _AWS Credentials_. | W-12141693
+| Added explicit notes in the web UI if a date and time is not in the login user's time zone. | W-12028146
+|===
+
 [[december-8-2022]]
 == December 8, 2022
 
