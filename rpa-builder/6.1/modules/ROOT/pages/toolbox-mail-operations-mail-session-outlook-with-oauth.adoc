@@ -26,7 +26,7 @@ To authenticate with the OAuth Host, an Azure application must be defined in you
 *** *Client Secret*
 +
 Allows RPA Builder to prove to the OAuth Host that it received permission to access user accounts on behalf of the registered Azure application. Without this permission, authentication is not possible.
-*** *Redirect Uri*
+*** *Redirect URI*
 +
 The URI to which the OAuth Host redirects after the user completes the authentication attempt. This redirect URI must be registered with the Azure application. If the entered redirect URI matches one of the registered URIs, the OAuth Host allows the authentication.
 *** *Scopes*
