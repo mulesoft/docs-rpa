@@ -27,10 +27,23 @@ Create and document the environment for the automation of processes.
 
 |===
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
-* To use AWS credentials, you need an AWS account.
+Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
+* To create AWS credentials, you need an AWS account.
 +
-Learn about https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
+Learn about https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS configuration basics^]
+* To create OAuth credentials, you need an Azure account to create an application for Outlook.
++
+Learn about https://azure.microsoft.com/en-us/[Azure^].
++
+Learn how to https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[authenticate an EWS application by using OAuth^]
++
+Learn how to https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[authenticate an IMAP, POP or SMTP connection using OAuth^]
++
+If you want to use RPA Builder to generate a refresh token for your OAuth credentials, you must have RPA Builder access assigned.
++
+Learn how to xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assign users RPA Builder access].
++
+Learn how to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate an OAuth refresh token].
 * Global variables and credentials can be linked to activity parameters defined in automations. The activity parameters for a process are defined in RPA Builder. Linking global variables or credentials overwrites the initial value of the linked activity parameters in a run configuration.
 
 == Prepare Projects
@@ -228,6 +241,9 @@ You can create the following types of credentials:
 * *AWS Credentials*
 +
 for accessing Amazon Web Services
+* *OAuth Credentials*
++
+for accessing the Microsoft Outlook email application via Microsoft Azure.
 * *User Account Credentials*
 +
 for accessing all other kinds of applications
@@ -263,6 +279,50 @@ Type of the global credential. The type of credential determines where it can be
 ** *AWS Credentials*:
 +
 The credential is used for accessing Amazon Web Services. Fill in the client ID, client secret and region. Using a session token is optional.
+** *OAuth Credentials*
++
+The credential is used for accessing the Microsoft Outlook email application via Microsoft Azure.
++
+*** *OAuth Host*:
++
+The host address that is used to get the credentials. The default address for Outlook services is https://login.microsoftonline.com/common/oauth2/v2.0/ . This address might change if the customer uses a self hosted service.
+*** *Client ID*:
++
+In order to authenticate with the OAuth Host, an Azure application has to be defined in the customers space. This Azure application has an id, that is unique in the entire OAuth Host space and allows a user to explicitly grant or revoke access for this Azure application to his account. For more information how to create this Azure application for Outlook, see here: https:// learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
+*** *Client Secret*
++
+This secret allows RPA Manager to prove to the OAuth Host, that it has received the permission to access user accounts on behalf of the registered Azure application. Without it the authentication is not possible.
+*** *Redirect URI*
++
+This is the URI to which the OAuth Host will redirect after the user has completed the authentication attempt. This redirect URI has to be registered with the Azure application. Only if the entered redirect URI matches one of the registered URI, the OAuth Host will allow the authentication.
+*** *Scopes*
++
+The scopes define, which permission the user grants to the Azure application. By default, we request the following permissions:
++
+**** `offline_access`
++
+(*Required*) Enables access via a refresh token, which you can use to repeatedly log in to the mail services without requiring user interaction each time.
+**** `https://outlook.office.com/IMAP.AccessAsUser.All`
++
+(*Required* when using IMAP) Enables reading and moving emails from the Outlook IMAP server.
+**** `https://outlook.office.com/POP.AccessAsUser.All`
++
+(*Required* when using POP3) Enables reading emails from the Outlook POP3 server.
+**** `https://outlook.office.com/SMTP.Send`
++
+(*Required* when using SMTP) Enables sending emails from the Outlook SMTP server.
+**** `openid email`
++
+Enables RPA Manager to automatically detect the email account used to log in to the Azure application. If this scope is omitted, you must provide an email in RPA Builder.
++
+*** *Username*
++
+Email address for accessing the Azure account.
+*** *Refresh Token*
++
+Refresh token generated with the authentication properties.
++
+Learn how to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate an OAuth refresh token].
 ** *User Account Credentials*
 +
 The credential is used for accessing all other kinds of applications. Fill in the the username and password.
@@ -295,9 +355,12 @@ Delete credentials that will not be used anymore. Credentials linked in configur
 
 == See also
 
-* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS Configuration basics^]
+* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS configuration basics^]
 //* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[AWS Configuration and credential file settings^]
+* https://azure.microsoft.com/en-us/[Azure^].
 * xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder - Activity Parameters]
+* xref:rpa-builder::toolbox-aws-document-processing.adoc[RPA Builder - Document Processing with AWS]
+* xref:rpa-builder::toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[RPA Builder - Mail Session (Outlook with OAuth)]
 
 * xref:processautomation-overview.adoc[Process Automation]
 //* xref:processautomation-prepare.adoc[Preparing Process Automations]
