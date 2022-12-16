@@ -121,7 +121,7 @@ search_, in the same way as for the _Mouse Clicks Action Step_.
 desktop enclosing the _Search area_.
 * *Wait time [ms]*
 +
-The pause between two subsequent __Image search__es
+The pause between two subsequent image searches
 (only used if _Wait until image is steady_ is activated).
 * *Wait until image is steady*
 +
@@ -155,7 +155,7 @@ activated).
 
 * *Find Coordinate*
 +
-The X/Y coordinate of where the picture was found.
+The X and Y coordinates of where the picture was found.
 
 == Wizard
 
