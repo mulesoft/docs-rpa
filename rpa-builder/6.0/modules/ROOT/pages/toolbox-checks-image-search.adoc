@@ -32,12 +32,12 @@ fields.
 What the _Image search_ actually does is compare the recorded _Pattern image_ to the whole _Search area_. During execution, it takes a
 screenshot of the _Search area_, applies the selected _Image search_
 algorithm to it, and then compares it to the _Pattern image_. The
-_Search area_ will automatically be adjusted if the executing computer
+_Search area_ adjusts automatically if the executing computer
 has a different screen resolution to the computer the _Workflow_ was
-originally created on. Also, it will use the lowest common color depth
+originally created on. Also, uses the lowest common color depth
 setting, so for example, if you created an _Image search_ with a color
 depth of 32 bits, but the executing computer only has a color depth of
-16 bits, the original _Pattern image_ will be converted on the fly to
+16 bits, the original _Pattern image_ is converted on the fly to
 match the current system's color depth. You can adjust this within the
 Workflow Properties.
 
@@ -178,22 +178,21 @@ Refreshes the _Search area_ frame on the right-hand side of the wizard with the 
 If active; the _Pattern image_ is marked with a blue border and the _Search area_ is marked with a red border in the _Search area_ frame.
 * *_Pattern image_*
 +
-Shows the recorded image that will be used in searches.
+Shows the recorded image that is used in searches.
 +
 ** *Check search*
 +
-Evaluate the probability the captured image will be found. The result shows in a box before the _Pattern image_ frame and comprises the position of the image found, as well as the match precision in percent (this feature uses the current desktop and not the image shown in the _Search area_ frame).
+Evaluate the probability the captured image is found. The result shows in a box before the _Pattern image_ frame and comprises the position of the image found, as well as the match precision in percent (this feature uses the current desktop and not the image shown in the _Search area_ frame).
 * *_Search area_* Shows the desktop situation when the image was captured onscreen.
 If _Show Borders_ is active, borders of the search image are shown in blue and borders of the _Search area_ are shown in red.
-If you performed a _Check search_ and the image could be found, its position will be marked by a green border.
+If you performed a _Check search_ and the image could be found, its position is marked by a green border.
 
 == Starting the Capture Process
 
 To start configuring _Image search_ using the wizard:
 
 . Click *Start from scratch*.
-. Drag and drop the blue selection frame appears onto the desktop section that contains the image you
-want to search for.
+. Drag the blue selection frame onto the desktop section that contains the image you want to search.
 +
 image:image-selection-frame.png[The Select pattern image dialog, 50%, 50%]
 +
@@ -202,30 +201,28 @@ desktop view, so you can switch to any desktop section containing the
 image without losing sight of the selection frame.
 . Adjust the size of the selection frame to match the content.
 +
-To narrow the selection frame down to the relevant content, grab the edges, and resize
+To narrow the selection frame down to the relevant content, grab the edges and resize
 it. You can also fine-tune the frame by pressing the arrow keys on your
-keyboard, which will move the frame by 1 pixel at a time; if you press
-_Ctrl_ + arrow key, the frame will move by 5 pixels at a time.
-Pressing _Shift_ + arrow key will resize the frame 1 pixel at a time.
+keyboard, which moves the frame by 1 pixel at a time; if you press
+_Ctrl_ + arrow key, the frame moves by 5 pixels at a time.
+Pressing _Shift_ + arrow key resizes the frame 1 pixel at a time.
 
-Choosing and capturing the right pattern is essential for creating a
-stable _Workflow_ – you need to select a pattern that does not change,
-is unique, is initially visible at all screen resolutions the _Workflow_
-is intended to run with, and (ideally) does not change its position
-much.
+Choosing and capturing the correct pattern is essential for creating a
+stable _Workflow_. You need to select a pattern that does not change,
+is unique, is initially visible at all screen resolutions the _Workflow_ will run with, and (ideally) does not change its position much.
 
 === Freezing the Desktop
 
 If you want to capture a _Pattern image_ that is only visible for a
-short amount of time or under specific conditions, you can freeze the
+short time or under specific conditions, you can freeze the
 desktop in its current state to select the _Pattern image_. To freeze
-the desktop, simply press _Pause_ on your keyboard. You can also click
+the desktop, press _Pause_ on your keyboard. You can also click
 on the bar _Hover or click here to freeze Desktop_ to start a timer.
 Then you have five seconds to create the situation on the desktop that
 you want to capture. Use the freeze function to capture things that only
 show with direct mouse input, such as hover effects.
 
-Once the desktop is frozen, a big _Unfreeze_ button will appear on the
+Once the desktop is frozen, a big _Unfreeze_ button appears on the
 selection frame. Click it to unfreeze the desktop again.
 
 === Using Zoom View for Small Selections
@@ -233,10 +230,8 @@ selection frame. Click it to unfreeze the desktop again.
 If you have to capture a very small part of the screen (which is always
 a good thing if this part is unique enough to be used for
 identification), you might need an enhanced view of the _Pattern image_
-content. Just enable the checkbox _Show Zoom View for small selections_
-in the blue frame and a zoom view window will appear onscreen. It will,
-however, only appear for small selections and disappear if your
-selection gets too big.
+content. Enable the checkbox _Show Zoom View for small selections_
+in the blue frame to make a zoom view window appear onscreen. This window only appears for small selections and disappears if your selection gets too big.
 
 === Capturing the Image
 
@@ -249,12 +244,12 @@ click _Capture_ or double-click anywhere on the frame to save the
 selected area as the _Pattern image_.
 
 Your _Pattern image_ size should always follow the rule "as big as
-necessary, as small as possible" to ensure good, steady search
+necessary, as small as possible" to ensure a good, steady search
 performance.
 
 === Capturing the Search Area
 
-After you captured the _Pattern image_, a red frame will appear to
+After you captured the _Pattern image_, a red frame appears to
 define the search area.
 
 image::capturing-search-area.png[Example of capturing the Search Area]
@@ -263,7 +258,7 @@ This is the area of the screen that will later be searched for the
 _Pattern image_. Again, this selection should be "as big as necessary,
 as small as possible" – it needs to be large enough to always contain
 the _Pattern image_, but as small as possible to reduce the CPU load
-during the search. A larger _Search area_ always means higher CPU load
+during the search. A larger _Search area_ always means a higher CPU load
 and higher response times. However, keep in mind that the _Pattern
 image_ to be identified may be displayed in different desktop positions,
 so do not narrow the _Search area_ down too much.
@@ -280,7 +275,7 @@ A newly recorded image search should always be found with 100% accuracy.
 [[search-modes]]
 == The Different Search Modes
 
-The _Image Search_ Action Steps supports the following search modes:
+The _Image Search_ Action Step supports the following search modes:
 
 * *_Color_* +
 The simplest and fastest search algorithm. In the default configuration,
@@ -301,7 +296,7 @@ Uses edges to detect the _Pattern image_, but checks gray values before
 the actual edge search is performed. Thus it can detect the presence of
 an image faster than contour mode using a similar precision. Using gray
 values has the side effect of being less tolerant regarding color
-variations than contour mode. Also, colors leading to the same gray
+variations than in contour mode. Also, colors leading to the same gray
 value cannot be distinguished from one another.
 
 * *_Contour_* +
@@ -314,12 +309,12 @@ white lines.
 
 * *_Contour Plus_* +
 This search algorithm was created specifically to identify characters
-and writing. It basically uses the same technique as _Contour_ mode, but
+and writing. It uses the same technique as _Contour_ mode, but
 with additional compensation for font smoothing.
 
 == Adjusting Threshold for Contour and Contour Plus Mode
 
-When you are using one of the contour modes, you can adjust the
+When you use one of the contour modes, you can adjust the
 black/white threshold. The default value, 10, is usually the optimal
 setting for images with high contrast; you should not need to adjust it,
 particularly if you are searching for text. However, when searching for
