@@ -20,7 +20,9 @@ RPA Builder, RPA Bot, and RPA Recorder use this URL to connect to your RPA Manag
 
 // A table with roles and starting modules for these roles?
 
-//== See Also
+== See Also
+
+* xref:usermanagement-manage.adoc#iforgotmypassword[What to Do if You Forgot Your Password]
 
 // Links to all RPA Manager modules
 // Links to all RPA Products
