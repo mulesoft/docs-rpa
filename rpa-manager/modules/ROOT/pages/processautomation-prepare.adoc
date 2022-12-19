@@ -315,9 +315,9 @@ The scopes define, which permission the user grants to the Azure application. By
 +
 Enables RPA Manager to automatically detect the email account used to log in to the Azure application. If this scope is omitted, you must provide an email in RPA Builder.
 +
-*** *Username*
+*** *E-Mail Address*
 +
-Email address for accessing the Azure account.
+Email address for accessing Outlook.
 *** *Refresh Token*
 +
 Refresh token generated with the authentication properties.
