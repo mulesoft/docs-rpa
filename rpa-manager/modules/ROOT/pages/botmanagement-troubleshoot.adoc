@@ -19,7 +19,7 @@ The execution time table shows you the effective runtime of all configuration as
 . Click *OK*.
 . In the *Execution Timetable*, click on a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
 
-A configuration is executed when the bot's servicetime overlaps with the schedule of the configuration. If the process uses applications, it is not executed during the downtimes of an application.
+A configuration is executed when the bot's service time overlaps with the schedule of the configuration. If the process uses applications, it is not executed during the downtimes of an application.
 
 All times are displayed in your local time. Times from bots and applications living in other time zones are converted to your local time. Hover over the bars to see which service times, downtimes and schedules are contained in the execution times.
 
@@ -27,10 +27,17 @@ All times are displayed in your local time. Times from bots and applications liv
 
 image::rpa_botmanagement_botexecutionplans_example_effectiveschedulecomposition.png[Overview of how the effective runtime is composed from schedules, service times and downtimes]
 
-The example shows the planned process executions from the view of a user who lives in the Coordinated Universal timezone. All times are converted to the user's time zone.
+The example shows the planned process executions from the view of a user who lives in Rome (GMT+01:00). All shown times are converted to the user's time zone.
 
-The shown configuration uses a schedule which is repeated daily from 12 PM to 20 PM. The bot is installed on a computer using the same timezone as the user. It has an assigned service time defined in German time. The application is installed on a computer in Germany as well, which has a daily down time from 15:30 PM to 16:30 PM.
-When schedule and service time overlap and all applications are active, the bot executes the process. In this example, a downtime takes place in the middle of the scheduled time. The execution is interrupted during that time. Because the service time ends before the scheduled run time, the effective runtime is shortened, too.
+The shown configuration uses a schedule which is repeated daily from 12:30 PM to 20:30 PM regardless of time zones.
+
+The bot is installed on a computer using UTC timezone. It has an assigned service time defined in Japanese time (GMT+09:00).
+
+The process uses an application installed on a computer in Buenos Aires (GMT-03:00). There was a power outage during which the application was down from 10:00 AM till 10:30 AM.
+
+When schedules and service times overlap and no used applications is down, the bot executes the process.
+
+In this example, a downtime takes place in the middle of the scheduled time. The execution is interrupted during that time. Because the service time ends before the scheduled run time, the effective runtime is shortened, too.
 
 As you can see in the *Schedule Chart*, the service times and the downtimes are converted to the bots timezone. They are observed simultaneously across all time zones. The schedule is interpreted to be in the bot's time zone. It is observed at different times across all time zones.
 
