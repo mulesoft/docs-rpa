@@ -16,7 +16,7 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1
 |===
 |Application |Version
 |RPA Recorder | 6.0.0 and later
-|RPA Bot | 2.0.0 and later
+|RPA Bot | (TBD)
 |===
 
 // == Fixed Issues
