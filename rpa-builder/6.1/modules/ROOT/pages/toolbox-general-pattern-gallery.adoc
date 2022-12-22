@@ -1,0 +1,61 @@
+
+
+= Pattern Gallery
+
+All search patterns belonging to a _Workflow_ are stored centrally in
+the _Pattern Gallery._ Search patterns are image files which are used in
+the _Search Pattern_ and _Pattern Select Action Steps_ to determine a
+state.
+
+Search patterns can be created directly in the _Pattern Gallery Wizard_.
+They are also automatically transferred from the _Search Pattern_ and
+_Pattern Select Action Steps_.
+
+Search patterns that are not used can be deleted from the _Workflow._
+
+There is no limit to the number of search patterns in a _Workflow_.
+
+== Properties
+
+The _Pattern Gallery Action Step_ does not contain any additional
+properties, other than the *Common Properties*.
+
+== Inbound Variables
+
+The _Pattern Gallery Action Step_ does not produce any inbound
+variables.
+
+== Outbound Variables
+
+The _Pattern Gallery Action Step_ does not produce any outbound
+variables.
+
+== Wizard
+
+The _Pattern Gallery Wizard_ enables search patterns to be created,
+processed, and searched for, which can be used throughout the entire
+_Workflow._
+
+== Search Pattern Management
+
+//image:media\image1.png[image,width=555,height=372]
+
+//image:media\image2.png[image]
+
+The basic functionality of the _Pattern Strip_ shown here, which
+contains all the search patterns and menu bars, is described in the
+*Pattern Strip* section. The _Pattern Gallery_ also
+provides two extra buttons, in addition to the standard functions:
+
+*Delete unused* deletes all _Search Patterns_ that are not used again in
+the _Workflow_.
+
+*Show usage* opens a new _Pattern usage_ window that lists all the
+Action Steps that use the selected pattern, arranged by pattern.
+
+//image:media\image3.png[image,width=492,height=354]
+
+All of the information displayed in this window about how the patterns
+are used can be copied to the clipboard by clicking the *Copy to clipboard* button. The names of the __Action Step__s that make use of
+the individual __Search Pattern__s can be copied to the clipboard by
+clicking the button in the _Usage in Action Steps_ area of the window.

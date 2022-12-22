@@ -1,0 +1,103 @@
+
+
+= Read PDF File
+
+With the _Read PDF File_ Action Step, you can read text from a PDF file.
+
+== Properties
+
+*File Settings*
+
+*Directory Path* (String)
+The path to the folder in which the PDF file is located.
+
+*File Name* (String) The name of the PDF file.
+
+*Password protected* (Boolean) This indicates whether the PDF document is to be opened with a
+password.
+
+*Read Mode*
+
+*Read Mode* Read mode for the PDF document.
+
+The following options all belong to the Read Mode _Read page range_:
+
+* *Read text from page*
+(Integer) The text is read from this page onward.
+* *Read text to page*
+(Integer) The text is read up to this page.
+* *Read to end of file* (Boolean) If this option is selected, the text is
+read up to the end of the document.
+
+== Inbound Variables
+
+//link:#AS_ReadPDFFile_P_DirectoryPath[*Directory path*]
+*Directory Path* (String)
+The path to the folder in which the PDF file is located.
+
+//link:#AS_ReadPDFFile_P_FileName[*File name*]
+*File Name* (String) The name of the PDF file.
+
+//link:#AS_ReadPDFFile_P_PasswordProtected[*Password*]
+*Password* (Boolean) This indicates whether the PDF document is to be opened with a
+password.
+
+//link:#AS_ReadPDFFile_P_ReadTextFromPage[*Read text from page*]
+*Read text from page*
+(Integer) The text is read from this page onward.
+
+//link:#AS_ReadPDFFile_P_ReadTextToPage[*Read text to page*]
+*Read text to page*
+(Integer) The text is read up to this page.
+
+== Outbound Variables
+
+*ReadText* (String) Specifies the content of the text that is read.
+
+== Wizard
+
+The wizard is split into two areas *File Settings* and *Read Mode*.
+
+In the *File Settings*, you specify the path to the folder in which the
+file is located and the name of the file.
+////
+If the PDF is password protected, select the option
+image:media\image1.png[image,width=166,height=20]. You can now enter the
+password directly as free text or select it as a variable using the pin icon.
+////
+////
+You can find further information on environment variables (Insert
+Environment Variable) and script variables (Insert Script Variable) in
+the Chapter entitled *InsertSpecialCharacter[Insert Special Character / Macro / Script Variable / Environment Variable* and
+*Settings*.
+////
+
+In the *Read Mode* area, there are various modes available for reading a
+PDF file:
+
+* With *Read entire file*, the entire text of the document is read.
+* With *Read page range*, you can specify a specific range that is to be
+read. If the option *Read to end file* is selected, the PDF is read to
+the end.
+
+//image:media\image2.png[image,width=328,height=96]
+
+* With *Read text in selected area*, you can read the text from a selected
+area in the document.
++
+For this, you must select a PDF file under File Settings. Then click on
+*Define Area* and the PDF is opened in a separate window.
+
+//image:media\image3.png[image,width=341,height=84]
+
+Here you can select the required area using the mouse.
+
+//image:media\image4.png[image,width=358,height=251]
+
+When you have selected the area, close the window with _Save_.
+
+If you have selected an area to be read with one of the various Read
+Modes, you can use the *Test button* at the bottom right of the wizard
+in the Action Step to display the result.
+
+//image:media\image5.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=364,height=256]
