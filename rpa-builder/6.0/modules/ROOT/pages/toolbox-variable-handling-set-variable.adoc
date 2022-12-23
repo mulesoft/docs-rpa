@@ -14,7 +14,7 @@ wizard below). Validation of variable types is performed when the
 _Action Step_ is launched.
 // but you can also perform validation using the image:media\image1.png[image,width=21,height=25] button in the toolbar.
 
-Variables from the _Test Master Data_ and the _BasePath_ *cannot* be
+Variables from the _BasePath_ *cannot* be
 modified using the _Set Variable_ Action Step. Attempting to do so will
 generate an error message.
 
@@ -44,7 +44,7 @@ step-by-step instructions below).
 can also insert variables from the workflow.
 //To do so, click the image:media\image2.png[image,width=17,height=24] button and select one of the available variables.
 
-Variables from the _Test Master Data_ and the _BasePath_ *cannot* be
+Variables from the _BasePath_ *cannot* be
 modified using the _Set Variable_ Action Step. Attempting to do so will
 generate an error message.
 
