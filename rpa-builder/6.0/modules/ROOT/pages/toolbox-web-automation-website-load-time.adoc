@@ -79,12 +79,6 @@ website tested was available or not (True/False).
 
 * *WebsiteUrl* Enter the URL to be tested, e.g. www.wikipedia.de. The
 URL can also be constructed by inserting variables from the _Workflow_.
-////
-To do this, click on the
-image:media\image2.png[image,width=17,height=24] pin and select the
-available variables from the _Test Master Data_ area or use the
-_BasePath_ variable.
-////
 
 Error message: FAIL to load the address. The error message "FAIL to load
 the address" will be recorded in the `.har` log file if the _Website Load
