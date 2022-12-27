@@ -39,32 +39,35 @@ Learn how to https://learn.microsoft.com/en-us/exchange/client-developer/exchang
 +
 Learn how to https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[authenticate an IMAP, POP or SMTP connection using OAuth^]
 +
-If you want to use RPA Builder to generate a refresh token for your OAuth credentials, you must have RPA Builder access assigned.
+To use RPA Builder to generate a refresh token for your OAuth credentials, you must have RPA Builder access assigned.
 +
 Learn how to xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assign users RPA Builder access].
 +
 Learn how to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate an OAuth refresh token].
-* Global variables and credentials can be linked to activity parameters defined in automations. The activity parameters for a process are defined in RPA Builder. Linking global variables or credentials overwrites the initial value of the linked activity parameters in a run configuration.
+* You can link global variables and credentials to activity parameters in automations. The RPA developer defines activity parameters for a process in RPA Builder. When you link global variables or credentials in a run configuration you overwrite the initial value of the activity parameter.
 
 == Prepare Projects
 
-Projects are assigned to categories. A category describes the environment of a process in a few keywords.
+Project managers organize projects into categories. A category describes the environment of a process in a few keywords.
 
-Applications that are used in processes are assigned to the process and to bots which can use them. A process can be deployed on a bot which has assigned the required processes.
+Administrators list available applications and assign them to bots which can access them. Citizen technologists assign used applications to processes. You can deploy a process on a bot which has assigned the required processes.
 
-Global variables and credentials are used for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes. You can link global variables and credentials anywhere that a globe symbol is displayed.
+You use global variables and credentials for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes. You can link global variables and credentials anywhere that a globe symbol is displayed.
 
 === Manage Categories
 
-Projects are assigned to categories. A category describes the environment of a process in a few keywords.
+Project managers organize projects into categories. A category describes the environment of a process in a few keywords.
 
-A project can only be assigned to a single category. First create a standard category, so you can start with process automation quickly. You can change the category of a process later. After you have automated the first projects, it makes sense to create an archive category and move completed projects there.
+A project can only belong to a single category. First, create a standard category, so you can start with process automation quickly. You can change the category of a process later. After you have automated the first projects, create an archive category and move completed projects there.
 
 ==== Create a Category
 
-Create categories to group processes. Assign a process to a category during evaluation or project creation.
+Create categories to group processes.
 
-. In the *Process Management* view of the *Process Automation* module, click *Create*.
+Assign a process to a category during evaluation or project creation.
+
+. Open the *Process Management* view of the *Process Automation* module.
+. Click *Create*.
 . Enter a name in the *Create a category* window.
 . Click *OK*.
 
@@ -72,7 +75,8 @@ Create categories to group processes. Assign a process to a category during eval
 
 Edit a category to render its name more precisely.
 
-. In the *Process Management* view of the *Process Automation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the category you want to edit.
+. Open the *Process Management* view of the *Process Automation* module.
+. Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the category you want to edit.
 . Change the name in the *Edit the category* window.
 . Click *OK*.
 
@@ -80,9 +84,10 @@ Edit a category to render its name more precisely.
 
 Remove categories you no longer need.
 
-Only categories that do not contain processes can be deleted.
+You can only remove categories that do not contain processes.
 
-. In the *Process Management* view of the *Process Automation* module, click the the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category you want to delete.
+. Open the *Process Management* view of the *Process Automation* module.
+. Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category you want to delete.
 
 === Manage Applications
 
@@ -94,8 +99,9 @@ Applications are not available during down-times or while deactivated. You can d
 
 Create one entry for each application required for the execution of processes:
 
-. In the *Process Applications* view of the *Process Automation* module, click *Create*.
-. Complete the form *Create a new application*:
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click *Create*.
+. [[form-create-process-applictions]] Complete the form *Create a new application*:
 +
 * *Time Zone*:
 +
@@ -113,8 +119,11 @@ Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications
 
 Edit an application to change its data or down-times:
 
-. In the *Process Applications* view of the *Process Automation* module, click *Create*.
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click *Create*.
 . Edit the form *Edit the application*.
++
+The properties are explained in the form <<form-create-process-applictions, *Create a new application*>>.
 . Click *Save*.
 
 ==== Deactivate or Activate an Application
@@ -123,15 +132,17 @@ Deactivate an application if it is temporarily not available and you don't know 
 
 Use down-times to schedule maintenance and down times. Deactivation periods are not added to the list of down-times.
 
-Processes whose applications are currently down are executed to completion and are not restarted until the downtime or deactivation period has ended.
+RPA Bots execute processes whose applications are currently down to completion and do not restart them until the downtime or deactivation period has ended.
 
-. In the *Process Applications* view of the *Process Automation* module, click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application you want to deactivate.
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application you want to deactivate.
 
 An *Inactive* label is shown beneath the logo of the application.
 
 If a deactivated application becomes available again, you can activate it:
 
-. In the *Process Applications* view of the *Process Automation* module, click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application you want to activate.
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application you want to activate.
 
 An *Active* label is shown beneath the logo of the application.
 
@@ -139,10 +150,11 @@ An *Active* label is shown beneath the logo of the application.
 
 Remove an application if it is no longer available.
 
-. In the *Process Applications* view of the *Process Automation* module, click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the application you want to remove.
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the application you want to remove.
 . Confirm the removal.
 
-The application is removed from all processes and RPA Bots to which it was assigned to without further confirmation.
+The application is removed from all processes and RPA Bots to which it was assigned to.
 
 == Prepare Deployment
 
@@ -168,8 +180,9 @@ Use global variables for values that are the same in multiple processes and whic
 
 Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (number_employees and answer).
 
-. In the *Global Variables* view of the *Process Automation* module, click *Create*.
-. Complete the form *Create a New Global Variable*:
+. Open the *Global Variables* view of the *Process Automation* module.
+. Click *Create*.
+. [[form-create-globalvariable]] Complete the form *Create a New Global Variable*:
 * *Phase affiliation*:
 +
 Phases in which the variable is permitted to be deployed. When users create or change the variable, each user's individual privileges determine which phases the user can select:
@@ -211,7 +224,8 @@ You can link global variables anywhere that a globe symbol is displayed. A link 
 
 Before editing a global variable, check its usage to avoid inadvertent side-effects.
 
-. In the *Global Variables* view of the *Process Automation* module, click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the global variable you want to check.
+. Open the *Global Variables* view of the *Process Automation* module.
+. Click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the global variable you want to check.
 
 A window with a table shows you the configurations in which the global variable is used.
 
@@ -219,22 +233,26 @@ A window with a table shows you the configurations in which the global variable 
 
 Edit a global variable to change its name or value. You cannot change the type of a global variable. Check the usage of the variable first to avoid inadvertent side-effects.
 
-. In the *Global Variables* view of the *Process Automation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the global variable you want to edit.
+. Open the *Global Variables* view of the *Process Automation* module.
+. Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the global variable you want to edit.
 . Change data in the form *Edit the Global Variable*.
++
+The properties are explained in the form <<form-create-globalvariable, *Create a New Global Variable*>>.
 . Click *Save*.
 
 The variable is changed everywhere it is used.
 
 ==== Delete a Global Variable
 
-Delete global variables that will not be used anymore. Variables linked in configurations cannot be deleted.
+Delete global variables that no one will use anymore. You cannot delete variables linked in configurations.
 
-. In the *Global Variables* view of the *Process Automation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the global variable you want to delete.
+. Open the *Global Variables* view of the *Process Automation* module.
+. Click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the global variable you want to delete.
 . Confirm the deletion.
 
 === Manage Credentials
 
-Credentials store login data for applications or web services. They can be used with different processes. Passwords are encrypted.
+Credentials store login data for applications or web services. You can use them with different processes. Passwords are encrypted.
 
 You can create the following types of credentials:
 
@@ -258,8 +276,9 @@ Check the usage of a credential before changing or deleting it.
 
 Create credentials with which a bot can login to an external application during process runs.
 
-. In the *Credential Pool* view of the *Process Automation* module, click *Create*.
-. Complete the form *Create a New Credential*:
+. Open the *Credential Pool* view of the *Process Automation* module.
+. Click *Create*.
+. [[form-create-credential]] Complete the form *Create a New Credential*:
 * *Phase affiliation*:
 +
 Phases in which the credential is permitted to be deployed. When users create or change the credential, each user's individual privileges determine which phases the user can select:
@@ -274,21 +293,23 @@ The credential can be deployed in the production phase.
 
 * *Type*:
 +
-Type of the global credential. The type of credential determines where it can be used. The original value defined in RPA Builder is typed. Select one of the following types:
+Type of the global credential. The type of credential determines where you can use it. The original value defined in RPA Builder is typed. Select one of the following types:
 +
 ** *AWS Credentials*:
 +
-The credential is used for accessing Amazon Web Services. Fill in the client ID, client secret and region. Using a session token is optional.
+Use this credential for accessing Amazon Web Services. Fill in the client ID, client secret and region. Using a session token is optional.
 ** *OAuth Credentials*
 +
-The credential is used for accessing the Microsoft Outlook email application via Microsoft Azure.
+Use this credential for accessing the Microsoft Outlook email application via Microsoft Azure.
 +
 *** *OAuth Host*:
 +
-The host address that is used to get the credentials. The default address for Outlook services is https://login.microsoftonline.com/common/oauth2/v2.0/ . This address might change if the customer uses a self hosted service.
+The host address used to get the credentials. The default address for Outlook services is https://login.microsoftonline.com/common/oauth2/v2.0/ . This address might change if the customer uses a self hosted service.
 *** *Client ID*:
 +
-In order to authenticate with the OAuth Host, an Azure application has to be defined in the customers space. This Azure application has an id, that is unique in the entire OAuth Host space and allows a user to explicitly grant or revoke access for this Azure application to his account. For more information how to create this Azure application for Outlook, see here: https:// learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
+To authenticate with the OAuth Host, an Azure application has to be defined in the customers space. This Azure application has an id, that is unique in the entire OAuth Host space and allows a user to explicitly grant or revoke access for this Azure application to his account.
++
+For more information how to create this Azure application for Outlook, see https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app[Quickstart: Register an application with the Microsoft identity platform^]
 *** *Client Secret*
 +
 This secret allows RPA Manager to prove to the OAuth Host, that it has received the permission to access user accounts on behalf of the registered Azure application. Without it the authentication is not possible.
@@ -322,17 +343,18 @@ Email address for accessing Outlook.
 +
 Refresh token generated with the authentication properties.
 +
-Learn how to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate an OAuth refresh token].
+Learn how to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate an OAuth refresh token with RPA Builder].
 ** *User Account Credentials*
 +
-The credential is used for accessing all other kinds of applications. Fill in the the username and password.
+Use this credential for accessing all other kinds of applications. Fill in the the username and password.
 . Click *OK*.
 
 ==== Check the Usage of a Credential
 
 Before editing a credential, check its usage to avoid inadvertent side-effects.
 
-. In the *Credential Pool* view of the *Process Automation* module, click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the credential you want to check.
+. Open the *Credential Pool* view of the *Process Automation* module.
+. Click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the credential you want to check.
 
 A window with a table shows you the configurations in which the credential is used.
 
@@ -340,17 +362,21 @@ A window with a table shows you the configurations in which the credential is us
 
 Edit a credential to change its data. You cannot change the type of a credential. Check the usage of the credential first to avoid inadvertent side-effects.
 
-. In the *Credential Pool* view of the *Process Automation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the credential you want to edit.
+. Open the *Credential Pool* view of the *Process Automation* module.
+. Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the credential you want to edit.
 . Change data in the form *Edit the Credential*.
++
+The properties are explained in the form <<form-create-credential, *Create a New Credential*>>.
 . Click *Save*.
 
 The credential is changed everywhere it is used.
 
 ==== Delete a Credential
 
-Delete credentials that will not be used anymore. Credentials linked in configurations cannot be deleted.
+Delete credentials that no one will use anymore. You cannot delete credentials linked in configurations.
 
-. In the *Credential Pool* view of the *Process Automation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the credential you want to delete.
+. Open the *Credential Pool* view of the *Process Automation* module.
+. Click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the credential you want to delete.
 . Confirm the deletion.
 
 == See also
