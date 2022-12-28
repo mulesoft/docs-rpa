@@ -91,9 +91,11 @@ You can only remove categories that do not contain processes.
 
 === Manage Applications
 
-In the view *Process Applications*, list all applications required for the execution of processes. In the view *Process Management*, assign required applications to processes at process creation or phase transition. In the module *Bot Management*, assign applications to a bot that can execute them. Bots can execute all applications installed on their computer.
+In the view *Process Applications*, you list all applications required for the execution of processes.
 
-Applications are not available during down-times or while deactivated. You can deploy a process on a bot which has assigned the required processes. Processes whose applications are currently down are executed to completion and are not restarted until the downtime or deactivation period has ended.
+In the view *Process Management*, the project manager assigns required applications to processes at process creation or phase transition. In the module *Bot Management*, the administrator assigns applications to bots that can execute them. Bots can execute all applications installed on their computer.
+
+Applications are not available during down-times or while deactivated. A member of the process team can deploy a process on a bot which has assigned the required processes. The bot executes processes whose applications are currently down to completion and restarts them when the downtime or deactivation period has ended.
 
 ==== Create an Application
 
@@ -130,43 +132,49 @@ The properties are explained in the form <<form-create-process-applictions, *Cre
 
 Deactivate an application if it is temporarily not available and you don't know when it will be available again.
 
-Use down-times to schedule maintenance and down times. Deactivation periods are not added to the list of down-times.
+Use down-times to schedule maintenance and planned down times. Deactivation periods are not added to the list of down-times.
 
 RPA Bots execute processes whose applications are currently down to completion and do not restart them until the downtime or deactivation period has ended.
+
+If a application is not available, deactivate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application you want to deactivate.
 
-An *Inactive* label is shown beneath the logo of the application.
+RPA Manager shows an *Inactive* label beneath the logo of the application.
 
-If a deactivated application becomes available again, you can activate it:
+If a deactivated application becomes available again, activate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application you want to activate.
 
-An *Active* label is shown beneath the logo of the application.
+RPA Manager shows an *Active* label beneath the logo of the application.
 
 ==== Remove an Application
 
-Remove an application if it is no longer available.
+Remove an application if it is no longer available:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the application you want to remove.
 . Confirm the removal.
 
-The application is removed from all processes and RPA Bots to which it was assigned to.
+RPA Manager removes the application from all processes and RPA Bots to which it was assigned to.
 
 == Prepare Deployment
 
 Use global variables or credentials for values and login data that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
 
-You can link global variables or credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+A member of the process team can link global variables or credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+
+
 
 === Manage Global Variables
 
 Create global variables for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
 
 You can link global variables anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+
+By linking a global variable or credential you overwrite the initial value of an activity parameter that an RPA Developer has defined for the process implementation in RPA Builder.
 
 Editing or deleting a global variable affects all configurations which use the variable.
 
@@ -176,8 +184,6 @@ Check the usage of a variable before changing or deleting it.
 
 A global variable consists of a name, a description, a type, and a value. It may be used in the test or the production phase.
 
-Use global variables for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
-
 Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (number_employees and answer).
 
 . Open the *Global Variables* view of the *Process Automation* module.
@@ -185,7 +191,7 @@ Use descriptive names for global variables and only use the variables in an appr
 . [[form-create-globalvariable]] Complete the form *Create a New Global Variable*:
 * *Phase affiliation*:
 +
-Phases in which the variable is permitted to be deployed. When users create or change the variable, each user's individual privileges determine which phases the user can select:
+Phases in which the variable is permitted to be deployed. When you create or change the variable, your individual privileges determine which phases you can select:
 +
 ** *Test*:
 +
@@ -207,7 +213,7 @@ An integer number.
 A character string.
 ** *Boolean*:
 +
-A logical value. Set the checkmark in the *Value* checkbox for the value `true` and remove the checkmark for the value `false`.
+A logical value. Set the checkmark in the *Value* checkbox for the value `true` or remove the checkmark for the value `false`.
 ** *Float*:
 +
 A floating-point number.
