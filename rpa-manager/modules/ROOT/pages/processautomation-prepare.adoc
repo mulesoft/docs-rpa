@@ -4,7 +4,7 @@ Create and document the environment for the automation of processes.
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges:
 +
 [cols="1,2"]
 |===
@@ -26,25 +26,11 @@ Create and document the environment for the automation of processes.
 |*Application Create*, *Application Edit*, *Application Delete*
 
 |===
+* If you have access to an Amazon Web Services (AWS) account and want to create AWS credentials for xref:rpa-builder::toolbox-aws-document-processing.adoc[RPA Builder - Document Processing with AWS], follow the instructions in https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS configuration basics^].
+* If you have access to a Microsoft Azure account and want to create OAuth credentials for xref:rpa-builder::toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[RPA Builder - Mail Session (Outlook with OAuth)]
+, create an application for Outlook, https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[authenticate an EWS application by using OAuth^] and https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[authenticate an IMAP, POP or SMTP connection using OAuth^]
 +
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
-* To create AWS credentials, you need an AWS account.
-+
-Learn about https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS configuration basics^]
-* To create OAuth credentials, you need an Azure account to create an application for Outlook.
-+
-Learn about https://azure.microsoft.com/en-us/[Azure^].
-+
-Learn how to https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[authenticate an EWS application by using OAuth^]
-+
-Learn how to https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[authenticate an IMAP, POP or SMTP connection using OAuth^]
-+
-To use RPA Builder to generate a refresh token for your OAuth credentials, you must have RPA Builder access assigned.
-+
-Learn how to xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assign users RPA Builder access].
-+
-Learn how to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate an OAuth refresh token].
-* Process team members can link global variables and credentials to activity parameters in automations. The RPA developer defines activity parameters for a process in RPA Builder. When you link global variables or credentials in a run configuration you overwrite the initial value of the activity parameter.
+If you want to use RPA Builder to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate a refresh token for your OAuth credentials], ask an administrator to xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assign you RPA Builder access].
 
 == Prepare Projects
 
@@ -56,7 +42,7 @@ You use global variables and credentials for values that are the same in multipl
 
 === Manage Categories
 
-Project managers organize projects into categories. A category describes the environment of a process in a few keywords.
+Project managers organize projects into categories. A category describes the environment of a process in a few keywords, for example `Customer Support Mystical University` or `Finance`.
 
 A project can only belong to a single category. First, create a standard category, so you can start with process automation quickly. You can change the category of a process later. After you have automated the first projects, create an archive category and move completed projects there.
 
@@ -93,7 +79,9 @@ You can only remove categories that do not contain processes.
 
 In the view *Process Applications*, you list all applications required for the execution of processes.
 
-In the view *Process Management*, the project manager assigns required applications to processes at process creation or phase transition. In the module *Bot Management*, the administrator assigns applications to bots that can execute them. Bots can execute all applications installed on their computer.
+In the view *Process Management*, the project manager xref:myrpa-start.adoc#required-process-applications[assigns required applications to a process] at process creation or phase transition.
+
+In the module *Bot Management*, the administrator xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assigns required applications to bots] that can execute them. Bots can execute all applications installed on their computer.
 
 Applications are not available during down-times or while deactivated. A member of the process team can deploy a process on a bot which has assigned the required processes. The bot executes processes whose applications are currently down to completion and restarts them when the downtime or deactivation period has ended.
 
@@ -112,10 +100,6 @@ Time zone for defining downtimes.
 +
 Click *Create* to add a downtime to the application.
 . Click *Save*.
-
-Learn how to xref:myrpa-start.adoc#required-process-applications[assign required applications to a process].
-
-Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign required applications to a bot].
 
 ==== Edit an Application
 
@@ -141,14 +125,14 @@ If a application is not available, deactivate it:
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application you want to deactivate.
 
-RPA Manager shows an *Inactive* label beneath the logo of the application.
+RPA Manager displays an *Inactive* label beneath the logo of the application.
 
 If a deactivated application becomes available again, activate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application you want to activate.
 
-RPA Manager shows an *Active* label beneath the logo of the application.
+RPA Manager displays an *Active* label beneath the logo of the application.
 
 ==== Remove an Application
 
@@ -166,15 +150,16 @@ Use global variables or credentials for values and login data that are the same 
 
 A member of the process team can link global variables or credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
 
-
-
 === Manage Global Variables
 
 Create global variables for values that are the same in multiple processes and which frequently change. This way you can reduce the time involved and the error rate in the maintenance of your processes.
 
-You can link global variables anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+The RPA developer defines xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[activity parameters for a process in RPA Builder]. When you link global variables or credentials in a run configuration you overwrite the initial value of the activity parameter.
 
-By linking a global variable or credential you overwrite the initial value of an activity parameter that an RPA Developer has defined for the process implementation in RPA Builder.
+Process team members can link global variables to activity parameters in automations:
+
+* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
+* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
 
 Editing or deleting a global variable affects all configurations which use the variable.
 
@@ -184,7 +169,7 @@ Check the usage of a variable before changing or deleting it.
 
 A global variable consists of a name, a description, a type, and a value. It may be used in the test or the production phase.
 
-Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (number_employees and answer).
+Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (`number_employees` and `answer`).
 
 . Open the *Global Variables* view of the *Process Automation* module.
 . Click *Create*.
@@ -224,8 +209,6 @@ Combination of two integer values for an X-Y coordinate. Use global coordinates,
 +
 You can only enter values of the specified type.
 
-You can link global variables anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
-
 ==== Check the Usage of a Global Variable
 
 Before editing a global variable, check its usage to avoid inadvertent side-effects.
@@ -264,15 +247,18 @@ You can create the following types of credentials:
 
 * *AWS Credentials*
 +
-for accessing Amazon Web Services
+for accessing Amazon Web Services to use them with xref:rpa-builder::toolbox-aws-document-processing.adoc[RPA Builder - Document Processing with AWS]
 * *OAuth Credentials*
 +
-for accessing the Microsoft Outlook email application via Microsoft Azure.
+for accessing the Microsoft Outlook email application via Microsoft Azure with xref:rpa-builder::toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[RPA Builder - Mail Session (Outlook with OAuth)]
 * *User Account Credentials*
 +
 for accessing all other kinds of applications
 
-You can link credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
+Process team members can link global credentials to activity parameters in automations:
+
+* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
+* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
 
 Editing or deleting a credential affects all configurations that use the credential.
 
@@ -387,17 +373,5 @@ Delete credentials that no one will use anymore. You cannot delete credentials l
 
 == See also
 
-* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS configuration basics^]
-//* https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html[AWS Configuration and credential file settings^]
-* https://azure.microsoft.com/en-us/[Azure^].
-* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder - Activity Parameters]
-* xref:rpa-builder::toolbox-aws-document-processing.adoc[RPA Builder - Document Processing with AWS]
-* xref:rpa-builder::toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[RPA Builder - Mail Session (Outlook with OAuth)]
-
+* xref:index.adoc[RPA Manager]
 * xref:processautomation-overview.adoc[Process Automation]
-//* xref:processautomation-prepare.adoc[Preparing Process Automations]
-* xref:processautomation-develop.adoc[Developing Process Automations]
-* xref:processautomation-deploy.adoc[Deploying Process Automations]
-
-* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
-* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
