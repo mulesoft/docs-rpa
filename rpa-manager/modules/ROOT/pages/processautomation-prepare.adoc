@@ -44,7 +44,7 @@ To use RPA Builder to generate a refresh token for your OAuth credentials, you m
 Learn how to xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assign users RPA Builder access].
 +
 Learn how to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate an OAuth refresh token].
-* You can link global variables and credentials to activity parameters in automations. The RPA developer defines activity parameters for a process in RPA Builder. When you link global variables or credentials in a run configuration you overwrite the initial value of the activity parameter.
+* Process team members can link global variables and credentials to activity parameters in automations. The RPA developer defines activity parameters for a process in RPA Builder. When you link global variables or credentials in a run configuration you overwrite the initial value of the activity parameter.
 
 == Prepare Projects
 
@@ -287,7 +287,7 @@ Create credentials with which a bot can login to an external application during 
 . [[form-create-credential]] Complete the form *Create a New Credential*:
 * *Phase affiliation*:
 +
-Phases in which the credential is permitted to be deployed. When users create or change the credential, each user's individual privileges determine which phases the user can select:
+Phases in which the credential is permitted to be deployed. When you create or change the credential, your privileges determine which phases the user can select:
 +
 ** *Test*:
 +
