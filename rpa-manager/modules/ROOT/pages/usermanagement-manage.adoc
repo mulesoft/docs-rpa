@@ -32,7 +32,7 @@ Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign 
 Create a user to give an employee access to RPA Manager and RPA Builder. After creation RPA Manager sends an email with a one-time password to the new user. The new user needs to log in to RPA Manager and set a new password within the expiration time mentioned in the email.
 
 . In the *Users* view of the *User Management* module, click *Create*.
-. Complete the form *Create a New User*:
+. [[form-create-user]] Complete the form *Create a New User*:
 +
 * *Login Name*:
 +
@@ -48,14 +48,6 @@ Check *Project Manager* if the user is responsible for the automation of process
 Click on a role or privilege to assign it to or remove it from the user.
 . Click *Save*.
 
-== Edit a User
-
-Edit a user to change his data or permissions.
-
-. In the *Users* view of the *User Management* module, click the icon *Edit* in the table row of the user you want to edit.
-. Edit the form *Edit a User*.
-. Click *Save*.
-
 [[assign-privileges-to-a-user]]
 == Assign Privileges to a User
 
@@ -66,6 +58,33 @@ A user needs privileges to view and use the RPA Manager modules. This ensures th
 . Click a privilege to assign it to the user.
 . Repeat the previous step until the user has all needed privileges.
 . Click *Save*.
+
+== Change Process Assignments of a User
+
+Instead of editing a project and adding a user to its project team, you can change several project assignments of a user at once:
+
+. Open the *Users* view of the *User Management* module.
+. Click the *Assign Project* icon image:assignproject-icon.png[process-diagram symbol,1.5%,1.5%] in the panel of the user whose project assignments you want to change.
+
+The view *Assign Process* shows you a list of all processes where the user is part of the process team.
+
+Change permissions for assigned projects to adapt to changed responsibilities. You cannot cannot change permissions for the project manager who always has permissions for every phase.
+
+. In the view *Assign Process*, for each process, select the checkboxes to permit the phases to the user.
+. Click *Save*.
+
+Learn how to xref:processautomation-manage.adoc#process-team-permissions[assign advanced permissions].
+
+Assign additional processes to a user to support the process team:
+
+. In the view *Assign Process*, select a process from the dropdown *Select Process*.
+. In the table *Process List*, in the row of the added process, select the checkboxes of all phases you want to permit to the user.
+. Click *Save*.
+
+Remove processes from the user
+
+
+
 
 == Reset a User Password
 
@@ -129,6 +148,16 @@ Both the computer on which the RPA Manager is installed, and the mobile device o
 . Follow the instructions in the window *Enable Two-Factor Authentication*.
 . Click *Enable Two-Factor Authentication*.
 . Log in using your password and 2FA.
+
+== Edit a User
+
+Edit a user to change his data or permissions.
+
+. In the *Users* view of the *User Management* module, click the icon *Edit* in the table row of the user you want to edit.
+. Edit the form *Edit a User*.
++
+The properties are explained in the form <<form-create-user, *Create a new User*>>.
+. Click *Save*.
 
 == Remove a User
 
