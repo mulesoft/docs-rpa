@@ -27,7 +27,7 @@ Create and document the environment for the automation of processes.
 
 |===
 * If you have access to an Amazon Web Services (AWS) account and want to create AWS credentials for xref:rpa-builder::toolbox-aws-document-processing.adoc[RPA Builder - Document Processing with AWS], follow the instructions in https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS configuration basics^].
-* If you have access to a Microsoft Azure account and want to create OAuth credentials for xref:rpa-builder::toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[RPA Builder - Mail Session (Outlook with OAuth)], create an application for Outlook, https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[authenticate an EWS application by using OAuth^], and https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[authenticate an IMAP, POP or SMTP connection using OAuth^].
+* If you have access to a Microsoft Azure account and want to create OAuth credentials for xref:rpa-builder::toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[RPA Builder - Mail Session (Outlook with OAuth)], create an application for Outlook, https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[authenticate an EWS application by using OAuth^], and https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[authenticate an IMAP, POP, or SMTP connection using OAuth^].
 * If you want to use RPA Builder to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate a refresh token for your OAuth credentials], ask an administrator to xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assign you RPA Builder access].
 
 == Prepare Projects
@@ -114,7 +114,7 @@ Use down-times to schedule maintenance and planned down times. Deactivation peri
 
 Applications are not available during down-times or while deactivated. A member of the process team can deploy a process on a bot that has assigned the required processes. If an application becomes non-available, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
 
-If a application is not available, deactivate it:
+If an application is not available, deactivate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application you want to deactivate.
@@ -290,15 +290,15 @@ Use this credential for accessing the Microsoft Outlook email application via Mi
 +
 *** *OAuth Host*:
 +
-The host address used to get the credentials. The default address for Outlook services is https://login.microsoftonline.com/common/oauth2/v2.0/ . This address might change if the customer uses a self hosted service.
+The host address used to get the credentials. The default address for Outlook services is `https://login.microsoftonline.com/common/oauth2/v2.0/`. This address might change if the customer uses a self hosted service.
 *** *Client ID*:
 +
-To authenticate with the OAuth Host, an Azure application must be defined in the customer's space. This Azure application has an ID, that is unique in the entire OAuth Host space and that allows users to explicitly grant or revoke access for this Azure application to their accounts.
+To authenticate with the OAuth Host, an Azure application must be defined in the customer's space. This Azure application has an ID that is unique in the entire OAuth Host space and that allows users to explicitly grant or revoke access for this Azure application to their accounts.
 +
 For more information about how to create this Azure application for Outlook, see https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app[Quickstart: Register an application with the Microsoft identity platform^].
 *** *Client Secret*
 +
-This secret allows RPA Manager to prove to the OAuth Host that it received the permission to access user accounts on behalf of the registered Azure application. Without it, the authentication is not possible.
+This secret enables RPA Manager to prove to the OAuth Host that it received the permission to access user accounts on behalf of the registered Azure application. Without it, the authentication is not possible.
 *** *Redirect URI*
 +
 The URI to which the OAuth Host redirects after the user completes the authentication attempt. This redirect URI must be registered with the Azure application. The OAuth Host allows the authentication only if the entered redirect URI matches one of the registered URIs.
