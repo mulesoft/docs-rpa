@@ -3,15 +3,16 @@
 Manage the users of RPA Manager and RPA Builder:
 
 * Create and delete users.
-* Edit a user's personal data.
-* Assign privileges or roles to a user that enable a user to work in specific modules.
+* Edit the user's personal data.
+* Assign privileges or roles to users that enable them to work in specific modules.
 * License users for RPA Builder access.
 * Mark a user as project manager.
+* Assign a user to a process team.
 
 == Before You Begin
 
 * The tenant admin is created first and can create other users.
-* If you are not a tenant admin, obtain the needed privileges as follows:
+* If you are not a tenant admin, ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
@@ -24,8 +25,6 @@ Manage the users of RPA Manager and RPA Builder:
 |User Management Administration
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == Create a User
 
@@ -61,30 +60,34 @@ A user needs privileges to view and use the RPA Manager modules. This ensures th
 
 == Change Process Assignments of a User
 
-Instead of editing a project and adding a user to its project team, you can change several project assignments of a user at once:
+Instead of editing a project and adding a user to its project team, change several project assignments of a user at once:
 
 . Open the *Users* view of the *User Management* module.
 . Click the *Assign Project* icon image:assignproject-icon.png[process-diagram symbol,1.5%,1.5%] in the panel of the user whose project assignments you want to change.
 
 The view *Assign Process* shows you a list of all processes where the user is part of the process team.
 
-Change permissions for assigned projects to adapt to changed responsibilities. You cannot cannot change permissions for the project manager who always has permissions for every phase.
+Change permissions for assigned projects to adapt to changed responsibilities:
 
 . In the view *Assign Process*, for each process, select the checkboxes to permit the phases to the user.
 . Click *Save*.
 
-Learn how to xref:processautomation-manage.adoc#process-team-permissions[assign advanced permissions].
+You cannot cannot change permissions for the project manager, who always has permissions for every phase.
+
+The table does not show advanced permissions, which are sometimes needed to transfer a process to the next phase. To change these, xref:processautomation-manage.adoc#edit-an-automation-project[edit the process data sheet] in the *Process Management* view of the *Process Automation* module.
 
 Assign additional processes to a user to support the process team:
 
 . In the view *Assign Process*, select a process from the dropdown *Select Process*.
-. In the table *Process List*, in the row of the added process, select the checkboxes of all phases you want to permit to the user.
+. In the table *Process List*, in the row of the added process, select the checkboxes of all phases the user needs to work in.
 . Click *Save*.
 
-Remove processes from the user
+Remove a user from a process team:
 
+. In the view *Assign process*, click the the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] for each process you want to remove from the user.
+. Click *Save*.
 
-
+The project manager and the project owner cannot be deleted. To change them, use the function xref:processautomation-manage.adoc#change-the-process-owner-of-an-automation-project[*New Process Owner*] or xref:processautomation-manage.adoc#change-the-project-manager-of-an-automation-project[*New Project Manager*] in the *Process Management* view of the *Process Automation* module.
 
 == Reset a User Password
 
