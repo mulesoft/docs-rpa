@@ -1,14 +1,17 @@
 = Managing Automations
 
-When a project manager clicks the icon *Start automation* in the *My Backlog* view of the *My RPA* module, he creates a process automation project assigned to a category in the *Process Management* view of the *Process Automation* module.
+When a project manager clicks the icon *Start automation* for a process in the *My Backlog* view of the *My RPA* module, RPA Manager creates a project for the automation of the process.
 
-If you already have evaluated a process with a third-party tool, you can create or copy an automation project directly inside a category.
+To automate a process already evaluated with a third-party tool, a project manager can create an automation project inside a category directly in the *Process Automation* module.
 
-You can edit the data of a project.
+The *Process Management* view shows the categories for organizing the projects.
 
-You can delete a project if it has never been in the production phase.
+Within a category, you can manage the process automation projects:
 
-You can transition projects forward and backward through all life-cycle phases.
+* Create, copy, edit, and delete projects.
+* View the status of projects, including financial analysis.
+* Transition projects forward and backward through all life-cycle phases.
+* Create boards for managing project tasks.
 
 == Before You Begin
 
@@ -112,6 +115,12 @@ The *Delete* icon is only displayed if the logged-in user is the project's manag
 
 . In a category in the *Process Management* view of the *Process Automation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the project you want to delete.
 . Confirm the prompt.
+
+== Manage Process Project Tasks
+
+...
+
+. Click the *Open process board* icon image:processboard-icon.png[column symbol,1.5%,1.5%] to open the process board.
 
 == Analyze the Financial Aspects of a Process
 
