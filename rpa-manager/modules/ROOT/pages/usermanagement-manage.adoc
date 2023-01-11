@@ -3,7 +3,7 @@
 Manage the users of RPA Manager and RPA Builder:
 
 * Create and delete users.
-* Edit the user's personal data.
+* Edit the users' personal data.
 * Assign privileges or roles to users that enable them to work in specific modules.
 * License users for RPA Builder access.
 * Mark a user as project manager.
@@ -159,7 +159,7 @@ Edit a user to change his data or permissions.
 . In the *Users* view of the *User Management* module, click the icon *Edit* in the table row of the user you want to edit.
 . Edit the form *Edit a User*.
 +
-The properties are explained in the form <<form-create-user, *Create a new User*>>.
+The properties are explained in the topic <<form-create-user, *Create a new User*>>.
 . Click *Save*.
 
 == Remove a User
