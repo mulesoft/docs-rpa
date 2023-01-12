@@ -8,8 +8,8 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* A new Activity Parameter of type OAuth credentials has been added.
-* Now, time zones are explicitly declared if they differ from the login user's time zone.
+* A new Activity Parameter of type OAuth credentials has been added. (W-11801477)
+* Now, time zones are explicitly declared if they differ from the login user's time zone. (W-12028146)
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
