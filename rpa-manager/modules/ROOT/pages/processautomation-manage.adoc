@@ -15,27 +15,25 @@ Within a category, you can manage the process automation projects:
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Process Automation* module
-|*Process Automation Open*
+|Process Automation Open
 
 |Create, edit and delete processes
-|*Process Create*
+|Process Create
 
 |Change the process owner
-|*Change Process Owner*
+|Change Process Owner
 
 |Change the project manager
-|*Change Project Manager*
+|Change Project Manager
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * To manage an automation project, a project assigned to a category must exist in the *Process Management* view of the *Process Automation* module.
 * To create or copy a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager].

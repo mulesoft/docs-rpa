@@ -4,24 +4,22 @@ Enter all expenses for automation of a process. On the basis of the costs of man
 
 == Before you begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Finance Analysis* view and see all processes for which you are part of the process team.
-|*Finance Analysis Open*
+|Finance Analysis Open
 
 |Open the *Finance Analysis* view and see all processes of all teams.
-|*Global Finance Analysis View*
+|Global Finance Analysis View
 
-|Edit finance analyses, add and edit cost entries, and change deprectation periods.
-|*Finance Analysis Edit*
+|Edit finance analyses, add and edit cost entries, and change deprecation periods.
+|Finance Analysis Edit
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * A project must exist in the *Process Automation* module with the following values set in the *Process Costs* tab of the data sheet:
 ** *Cost per process run for manual process execution*

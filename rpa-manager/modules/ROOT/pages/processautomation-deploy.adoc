@@ -8,7 +8,7 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
@@ -18,8 +18,6 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 |Process Automation Open
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * At least one RPA Bot must be installed to deploy a process.
 * A project in build or test phase must exist in the *Project Management* view of the *Process Automation* module.
