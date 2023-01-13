@@ -8,8 +8,8 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* A new Activity Parameter of type OAuth credentials has been added. (W-11801477)
-* Now, time zones are explicitly declared if they differ from the login user's time zone. (W-12028146)
+* Added a new Activity Parameter of type OAuth credentials.
+* Now, RPA Manager explicitly declares time zones if they differ from the logged user's time zone.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -17,10 +17,10 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="2a,1a"]
 |===
 |Issue Resolution |ID
-| The published OpenAPI specification to Anypoint Exchange contained a wrong *required* specification. | W-12141693
-| Invokable run configuration are no longer configurable from the Deployment Map. | W-12148933
+| Published OpenAPI specifications to Anypoint Exchange no longer contain a wrong *required* specification. | W-12141693
+| Invokable run configurations are no longer configurable from the Deployment Map. | W-12148933
 | The team members of a process are now shown in the process' tile. | W-12186972
-| The user's configurations are now properly saved in its workspace. | W-12194534
+| The user's configurations are now properly saved in their workspace. | W-12194534
 |===
 
 [[december-16-2022]]
