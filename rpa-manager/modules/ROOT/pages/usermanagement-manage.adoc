@@ -60,7 +60,7 @@ A user needs privileges to view and use the RPA Manager modules. This ensures th
 
 == Change Process Assignments of a User
 
-Instead of editing a project and adding a user to its project team, change several project assignments of a user at once:
+Instead of editing a project and adding a user to its project team, you can change several project assignments of a user at once:
 
 . Open the *Users* view of the *User Management* module.
 . Click the *Assign Project* icon image:assignproject-icon.png[process-diagram symbol,1.5%,1.5%] in the panel of the user whose project assignments you want to change.
@@ -154,12 +154,12 @@ Both the computer on which the RPA Manager is installed, and the mobile device o
 
 == Edit a User
 
-Edit a user to change his data or permissions.
+Edit users to change their data or permissions.
 
 . In the *Users* view of the *User Management* module, click the icon *Edit* in the table row of the user you want to edit.
 . Edit the form *Edit a User*.
 +
-The properties are explained in the topic <<form-create-user, *Create a new User*>>.
+For an explanation of the properties, see <<form-create-user, *Create a new User*>>.
 . Click *Save*.
 
 == Remove a User
