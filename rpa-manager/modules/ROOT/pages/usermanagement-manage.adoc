@@ -67,7 +67,7 @@ Instead of editing a project and adding a user to its project team, you can chan
 
 The view *Assign Process* shows you a list of all processes where the user is part of the process team.
 
-Change permissions for assigned projects to reflect changed user responsibilities:
+To change permissions for assigned projects to reflect changed user responsibilities:
 
 . In the view *Assign Process*, for each process, select the checkboxes to permit the phases to the user.
 . Click *Save*.
@@ -76,13 +76,13 @@ You cannot cannot change permissions for the project manager, who always has per
 
 The table does not show advanced permissions, which are sometimes needed to transfer a process to the next phase. To change these, xref:processautomation-manage.adoc#edit-an-automation-project[edit the process data sheet] in the *Process Management* view of the *Process Automation* module.
 
-Assign additional processes to a user to support the process team:
+To assign additional processes to a user to support the process team:
 
 . In the view *Assign Process*, select a process from the dropdown *Select Process*.
 . In the table *Process List*, in the row of the added process, select the checkboxes of all phases the user needs to work in.
 . Click *Save*.
 
-Remove a user from a process team:
+To remove a user from a process team:
 
 . In the view *Assign process*, click the the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] for each process you want to remove from the user.
 . Click *Save*.
