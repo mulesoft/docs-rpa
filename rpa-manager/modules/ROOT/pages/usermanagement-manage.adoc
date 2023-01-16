@@ -67,7 +67,7 @@ Instead of editing a project and adding a user to its project team, you can chan
 
 The view *Assign Process* shows you a list of all processes where the user is part of the process team.
 
-Change permissions for assigned projects to adapt to changed responsibilities:
+Change permissions for assigned projects to reflect changed user responsibilities:
 
 . In the view *Assign Process*, for each process, select the checkboxes to permit the phases to the user.
 . Click *Save*.
