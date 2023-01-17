@@ -65,7 +65,7 @@ Copy a project to automate a similar process faster:
 . In the *<category name>* view, click the *Copy* icon image:copy-icon.png[copy symbol,1.5%,1.5%] on the panel of the project you want to copy.
 . Check and edit the form *Copy process*:
 +
-The properties are explained in the topic <<form-createprocess, *Create process*>>.
+For an explanation of the properties, see <<form-createprocess, *Create process*>>.
 . Click *Save*.
 
 To complete copying of the project, first transfer the project to the *Build* phase. Then open it in the xref:rpa-builder::index.adoc[RPA Builder]. The project then receives its own identification values. The copied project can only transition to the *Test* phase after it has been uploaded from the RPA Builder to the RPA Manager.
@@ -79,7 +79,7 @@ Edit an automation project to update it:
 . In the *<category name>* view, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the project you want to edit.
 . Check and edit the form *Copy process*:
 +
-The properties are explained in the topic <<form-createprocess, *Create process*>>.
+For an explanation of the properties, see <<form-createprocess, *Create process*>>.
 . Click *Save*.
 
 == Change the Process Owner of an Automation Project
@@ -124,13 +124,39 @@ To remove a project:
 
 == Manage Process Project Tasks
 
-...
+You can manage all tasks that arise in association with automating a process via an agile process board.
+
+A process board is a table with three columns:
+
+* *To-do*
++
+The *To-do* column contains all the tasks that have not been processed yet. You create new tasks here. If you have enabled the creation of automatically generated tasks for phase transitions, RPA Manager creates a new corresponding task during each phase transition. Remember to move tasks that are being processed into the *In progress* area.
+* *In progress*
++
+The *In progress* column contains all the tasks that someone is currently working on. Remember to move tasks that have been completed into the *Completed* area.
+* *Completed*
++
+The *Completed* column contains all the tasks that have already been completed. You can edit and move completed tasks, too. If you have enabled the creation of automatically generated tasks for the phase transitions, the button for the transition to the next phase is not released until this task has been moved to the *Completed* column.
+
+A task consists of a name, a description, an owner, a priority, a due date, and an effort estimate. You can drag tasks across the board to reflect their progress. Automatically created tasks for phase transitions must be moved to the *Completed* column to enable the transition of the project to the next phase.
+
+Each user’s process tasks are also displayed in the *My RPA* module, in the *My Process Board* view.
+
+Whether a Process Board should be created for a Process is usually decided by the Project Manager directly during project creation. You can also decide to introduce a Process Board for any Process later.
+
+To open a process board:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Open process board* icon image:processboard-icon.png[column symbol,1.5%,1.5%] to open the process board.
+. In the *<category name>* view, click the *Open process board* icon image:processboard-icon.png[column symbol,1.5%,1.5%] on the project panel to open the process board.
+
+...
 
 === Create Tasks
+
+...
+
+=== Edit Tasks
 
 ...
 
