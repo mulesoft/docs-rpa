@@ -29,9 +29,13 @@ For Hardware and Software requirements for earlier RPA Recorder versions, refer 
 
 * xref:6.0@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.0 Hardware and Software Requirements]
 
-== RPA Bot 1.0
+== RPA Bot 1.1
 
 include::rpa-bot::partial$hard-soft-requirements.adoc[leveloffset=+1]
+
+For Hardware and Software requirements for earlier RPA Bot versions, refer to the corresponding product documentation:
+
+* xref:1.0@rpa-bot::hardware-software-requirements.adoc[RPA Bot 1.0 Hardware and Software Requirements]
 
 == See Also
 
