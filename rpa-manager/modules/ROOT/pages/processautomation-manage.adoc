@@ -126,7 +126,7 @@ To remove a project:
 
 You can manage all tasks that arise in association with automating a process via an agile process board.
 
-A process board is a table with three columns:
+A process board is a table with three columns, across which you can arrange task items:
 
 * *To-do*
 +
