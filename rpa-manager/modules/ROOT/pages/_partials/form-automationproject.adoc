@@ -15,7 +15,7 @@ Select this checkbox to use a process board. Process boards contain administrati
 If you deselect this checkbox, the previous tasks remain, but are no longer displayed and are no longer considered for phase transitions.
 +
 As soon as you select the checkbox again, the tasks are displayed and taken into account again.
-** *Create automatic Phase Release Tasks*:
+** [[createautomaticephasereleasetasks]] *Create automatic Phase Release Tasks*:
 +
 Select this checkbox to create automatic phase release tasks.
 +

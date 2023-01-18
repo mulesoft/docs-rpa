@@ -126,43 +126,89 @@ To remove a project:
 
 You can manage all tasks that arise in association with automating a process via an agile process board.
 
+A task consists of a name, a description, an owner, a priority, a due date, and an effort estimate. You can drag tasks across the board to reflect their progress.
+
 A process board is a table with three columns, across which you can arrange task items:
 
 * *To-do*
 +
-The *To-do* column contains all the tasks that have not been processed yet. You create new tasks here. If you have enabled the creation of automatically generated tasks for phase transitions, RPA Manager creates a new corresponding task during each phase transition. Remember to move tasks that are being processed into the *In progress* area.
-* *In progress*
+The *To-do* column contains all the tasks that have not been processed yet. You create new tasks here. If you have <<createautomaticephasereleasetasks, enabled the creation of automatically generated tasks for phase transitions>>, RPA Manager creates a new corresponding task during each phase transition. Remember to move tasks that are being processed into the *In Progress* area.
+* *In Progress*
 +
-The *In progress* column contains all the tasks that someone is currently working on. Remember to move tasks that have been completed into the *Completed* area.
+The *In Progress* column contains all the tasks that someone is currently working on. Remember to move tasks that have been completed into the *Completed* area.
 * *Completed*
 +
-The *Completed* column contains all the tasks that have already been completed. You can edit and move completed tasks, too. If you have enabled the creation of automatically generated tasks for the phase transitions, the button for the transition to the next phase is not released until this task has been moved to the *Completed* column.
+The *Completed* column contains all the tasks that have already been completed. You can edit and move completed tasks, too. If you have enabled the creation of automatically generated tasks for the phase transitions, the button for the transition to the next phase disabled until this task has been moved to the *Completed* column.
 
-A task consists of a name, a description, an owner, a priority, a due date, and an effort estimate. You can drag tasks across the board to reflect their progress. Automatically created tasks for phase transitions must be moved to the *Completed* column to enable the transition of the project to the next phase.
+Each user’s process tasks are also displayed in the *My Process Board* view of the *My RPA* module.
 
-Each user’s process tasks are also displayed in the *My RPA* module, in the *My Process Board* view.
+Whether a process board should be created for a process is usually decided by the project manager directly during project creation. You can also decide to introduce a process board for any process later.
 
-Whether a Process Board should be created for a Process is usually decided by the Project Manager directly during project creation. You can also decide to introduce a Process Board for any Process later.
+[[openprocessboard]]
+=== Open a Process Board
 
 To open a process board:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Open process board* icon image:processboard-icon.png[column symbol,1.5%,1.5%] on the project panel to open the process board.
+. In the *<category name>* view, click the *Open process board* icon image:processboard-icon.png[column symbol,1.5%,1.5%] on the project panel or in an already opened project.
 
-...
+Click *Back to Process* to return to or open the project.
 
+[[form-createprocessboardtask]]
 === Create Tasks
 
-...
+Create a process project task to enhance the automation.
+
+Examples of such tasks could be `Design: Leaning (Remove superfluous elements from the graph, check for dead ends and double doors)`, `Add missing process documentation (Prepare decision table)` or `Kick-off Meeting`.
+
+To create tasks:
+
+. <<openprocessboard, Open a process board>>.
+. Click *+ Create Task* in the *To-do* column.
+. Complete the form *Create new task*:
+* *Task Owner*:
++
+The task owner is responsible for completing the task. Choose a user from the process team. The task item displays the user's profile picture. RPA Manager shows all tasks of the task owners on their personal *My Process Board* view in the *My RPA* module.
+* *Priority*:
++
+You can set the priority of the task to low, medium, or high. The task item displays a grey, yellow or red label, respectively.
+* *Due date*:
++
+Date on which the task should be completed.
+* *Effort*:
++
+Time the task will approximately take.
+. Click Save.
 
 === Edit Tasks
 
-...
+Edit tasks to reflect changed requirements:
+
+. <<openprocessboard, Open a process board>>.
+. Click a task item.
+. Edit the form *Edit task*.
++
+For an explanation of the properties, see <<form-createprocessboardtask, *Create new task*>>.
+. Click *Save*
+
+=== Delete Tasks
+
+Delete obsolete tasks:
+
+. <<openprocessboard, Open a process board>>.
+. Click a task item.
+. Click *Delete*.
+. Confirm the deletion.
 
 === Move Tasks
 
-...
+Move tasks within a column to sort them or across columns to reflect their progress:
+
+. <<openprocessboard, Open a process board>>.
+. Drag a task item to its new place.
+
+If you have enabled the creation of automatically generated tasks for the phase transitions, move this task to the *Completed* column after all other tasks have been completed to enable the transition of the project to the next phase.
 
 == Analyze the Financial Aspects of a Process
 
