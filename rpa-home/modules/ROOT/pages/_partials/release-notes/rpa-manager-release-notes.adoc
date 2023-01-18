@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Two-Factor-Authentication (2FA) can now be deactivated for other users. | W-12367549
-| List views (as option to grid views) now load and show their containing entities. | W-12288330
+| List views now load properly and show their containing entities. | W-12288330
 |===
 
 [[january-13-2023]]
