@@ -154,7 +154,22 @@ Both the computer on which the RPA Manager is installed, and the mobile device o
 . In the *Profile* view, click *Enable Two-Factor Authentication*.
 . Follow the instructions in the window *Enable Two-Factor Authentication*.
 . Click *Enable Two-Factor Authentication*.
-. Log in using your password and 2FA.
+
+Log in using your password and 2FA.
+
+== Disable Two-Factor Authentication for Your User
+
+Two-factor authentication can also be deactivated for you by an administrator.
+
+To disable two-factor authentication for yourself:
+
+. Click on your user name in the navigation side bar.
+. Click *Profile* in the drop-down menu.
+. In the *Profile* view, click *Disable Two-Factor Authentication*.
+
+Log in using only your password.
+
+You can <<enable2faforyourself, enable 2FA>> again.
 
 == Deactivate Two-Factor Authentication for a User
 
