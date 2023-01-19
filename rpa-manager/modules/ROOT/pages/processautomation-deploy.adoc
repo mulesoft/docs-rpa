@@ -182,13 +182,13 @@ Click on the button *Add Schedule* to assign a (further) schedule to this config
 include::rpa-manager::partial$form-scheduling.adoc[]
 * *Bots*:
 +
-Select all RPA Bots that are to carry out the test configuration.
+Select all RPA Bots that are to carry out the production configuration.
 +
 Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
 +
 When you select a bot, ensure that it is configured for the required session type, is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the test plan configuration.
+If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the configuration .
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Save*.
 
@@ -268,13 +268,13 @@ Make sure the bot you want to execute the process is configured for the executio
 If the process uses elements of the Windows operating system like the start menu or the task bar, check *Requires Windows Shell*.
 * *Bots*:
 +
-Select all RPA Bots that are to carry out the test configuration.
+Select all RPA Bots that are to carry out the invokable configuration.
 +
 Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
 +
 When you select a bot, ensure that it is configured for the required session type, is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the test plan configuration.
+If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Save & Publish*.
 
