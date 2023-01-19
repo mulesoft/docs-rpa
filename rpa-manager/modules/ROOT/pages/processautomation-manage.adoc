@@ -124,7 +124,7 @@ To remove a project:
 
 == Manage Process Project Tasks
 
-You can manage all tasks that arise in association with automating a process via an agile process board.
+You can manage all tasks that arise in association with automating a process via an agile process board if you have <<projectdata-useprocessboard, enabled it for the project>>.
 
 A task consists of a name, a description, an owner, a priority, a due date, and an effort estimate. You can drag tasks across the board to reflect their progress.
 
@@ -132,7 +132,7 @@ A process board is a table with three columns, across which you can arrange task
 
 * *To-do*
 +
-The *To-do* column contains all the tasks that have not been processed yet. You create new tasks here. If you have <<createautomaticephasereleasetasks, enabled the creation of automatically generated tasks for phase transitions>>, RPA Manager creates a new corresponding task during each phase transition. Remember to move tasks that are being processed into the *In Progress* area.
+The *To-do* column contains all the tasks that have not been processed yet. You create new tasks here. If you have <<projectdata-phasereleasetasks, enabled the creation of automatically generated tasks for phase transitions>>, RPA Manager creates a new corresponding task during each phase transition. Remember to move tasks that are being processed into the *In Progress* area.
 * *In Progress*
 +
 The *In Progress* column contains all the tasks that someone is currently working on. Remember to move tasks that have been completed into the *Completed* area.
@@ -156,13 +156,13 @@ To open a process board:
 Click *Back to Process* to return to or open the project.
 
 [[form-createprocessboardtask]]
-=== Create Tasks
+=== Create a Task
 
 Create a process project task to enhance the automation.
 
 Examples of such tasks could be `Design: Leaning (Remove superfluous elements from the graph, check for dead ends and double doors)`, `Add missing process documentation (Prepare decision table)` or `Kick-off Meeting`.
 
-To create tasks:
+To create a task:
 
 . <<openprocessboard, Open a process board>>.
 . Click *+ Create Task* in the *To-do* column.
@@ -181,7 +181,7 @@ Date on which the task should be completed.
 Time the task will approximately take.
 . Click Save.
 
-=== Edit Tasks
+=== Edit a Task
 
 Edit tasks to reflect changed requirements:
 
@@ -189,10 +189,10 @@ Edit tasks to reflect changed requirements:
 . Click a task item.
 . Edit the form *Edit task*.
 +
-For an explanation of the properties, see <<form-createprocessboardtask, *Create new task*>>.
+For an explanation of the properties, see <<form-createprocessboardtask, *Create a task*>>.
 . Click *Save*
 
-=== Delete Tasks
+=== Delete a Task
 
 Delete obsolete tasks:
 
@@ -201,7 +201,7 @@ Delete obsolete tasks:
 . Click *Delete*.
 . Confirm the deletion.
 
-=== Move Tasks
+=== Move a Task
 
 Move tasks within a column to sort them or across columns to reflect their progress:
 
