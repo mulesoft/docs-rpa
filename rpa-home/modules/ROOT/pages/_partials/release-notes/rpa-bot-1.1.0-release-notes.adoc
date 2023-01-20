@@ -2,7 +2,9 @@
 
 RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
 
-This version is deprecated. All of the features and fixed issues for this version are in version 1.1.6.
+This version is deprecated. All of the features and fixed issues for this version are in version xref::rpa-home/release-notes/rpa-bot-1.1.6-release-notes.adoc[1.1.6].
+
+xref:rpa-home::release-notes/rpa-bot-1.1.6-release-notes.adoc[1.1.6].
 
 
 // == See Also
