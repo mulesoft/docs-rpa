@@ -1,0 +1,32 @@
+
+
+= Set Text to App Element
+
+The _Set Text To App Element_ Action Step can be used to set text
+directly to a selected App Element.
+
+== Properties
+
+*Input String (Input Text)* Is the text that will be written to the
+selected element. You can use _Insert environment variable_ and _Insert
+script_ _variable_ to swap in other values for the text at runtime.
+
+== Inbound Variables
+
+*XPath to Element*
+
+*Window Title*
+
+*Input Text*
+
+== Outbound Variables
+
+The _Set Text to App Element_ Action Step does not have any outbound
+variables.
+
+== Wizard
+
+See xref:toolbox-app-automation.adoc#app-automation-common-properties[Common Properties (App Automation)].
+////
+You can find further information on environment variables (Insert Environment Variable) and script variables (Insert Script Variable) in the Chapter entitled Insert Special Character / Macro / Script Variable / Environment Variable and Settings.
+////
