@@ -138,7 +138,7 @@ The *To-do* column contains all the tasks that have not been processed yet. You 
 The *In Progress* column contains all the tasks that someone is currently working on. Remember to move tasks that have been completed into the *Completed* area.
 * *Completed*
 +
-The *Completed* column contains all the tasks that have already been completed. You can edit and move completed tasks, too. If you have enabled the creation of automatically generated tasks for the phase transitions, the button for the transition to the next phase disabled until this task has been moved to the *Completed* column.
+The *Completed* column contains all tasks that have already been completed. You can edit and move completed tasks. If you enabled the creation of automatically generated tasks for the phase transitions, the button for the transition to the next phase is disabled until this task has been moved to the *Completed* column.
 
 Each user’s process tasks are also displayed in the *My Process Board* view of the *My RPA* module.
 
