@@ -126,7 +126,7 @@ To remove a project:
 
 You can manage all tasks that arise in association with automating a process via an agile process board if you have <<projectdata-useprocessboard, enabled it for the project>>.
 
-A task consists of a name, a description, an owner, a priority, a due date, and an effort estimate. You can drag tasks across the board to reflect their progress.
+A task consists of a name, description, owner, priority, due date, and effort estimate. You can drag tasks across the board to reflect their progress.
 
 A process board is a table with three columns, across which you can arrange task items:
 
