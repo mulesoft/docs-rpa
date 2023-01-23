@@ -58,7 +58,7 @@ RPA Manager returns to the *<category name>* view. Your new project is sorted in
 
 A copy of an automation project contains all information from the original project, including the most recent revision of all workflows, with the exception of the bot assignments to test and productive configurations.
 
-Copy a project to automate a similar process faster:
+Copy a project to automate a similar process more quickly:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category in which you want to create the new project.
