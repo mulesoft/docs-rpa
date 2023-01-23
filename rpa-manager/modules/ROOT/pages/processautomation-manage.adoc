@@ -56,7 +56,7 @@ RPA Manager returns to the *<category name>* view. Your new project is sorted in
 
 == Copy an Automation project
 
-A copy of an automation project contains all information from the original project including the most recent revision of all workflows with the exception of the bot assignments to test and productive configurations.
+A copy of an automation project contains all information from the original project, including the most recent revision of all workflows, with the exception of the bot assignments to test and productive configurations.
 
 Copy a project to automate a similar process faster:
 
