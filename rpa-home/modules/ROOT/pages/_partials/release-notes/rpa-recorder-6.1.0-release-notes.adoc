@@ -23,6 +23,16 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 ** _Alt+Left arrow_ : Navigates back.
 ** _Ctrl+Enter_ : Adds `www.` and `.com` to the text in the URL bar and then navigates to this URL.
 
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.0.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 

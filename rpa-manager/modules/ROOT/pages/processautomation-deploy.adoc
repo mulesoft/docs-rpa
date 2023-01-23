@@ -20,7 +20,7 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 |===
 
 * At least one RPA Bot must be installed to deploy a process.
-* A project in build or test phase must exist in the *Project Management* view of the *Process Automation* module.
+* A project in test or production phase must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
 == Test a Process Automation
@@ -33,7 +33,7 @@ Transition the project back to the build phase to change the implementation.
 
 === Transition Process to Test Phase
 
-Transition the fully implemented process to test phase for testing.
+Transition the fully implemented process to test phase for testing:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -43,6 +43,8 @@ Transition the fully implemented process to test phase for testing.
 . Click *Release to Test* to confirm the transition.
 
 === Create a Test Configuration
+
+To create a test configuration:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -78,7 +80,7 @@ Select all RPA Bots that are to carry out the test configuration.
 +
 Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
 +
-When you select a bot, ensure that it is configured for the required session type, is allowed to be deployed in the relevant phase, and that it can operate the required applications.
+When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
 If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the test plan configuration.
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
@@ -86,7 +88,9 @@ Hover the mouse pointer over the info label to display more detailed information
 
 === Run Tests
 
-Run all tests in parallel. RPA Manager shows a warning in case of deployment problems. View the results in the *Test Results* panel.
+Run all tests in parallel. RPA Manager shows a warning in case of deployment problems.
+
+View the results in the *Test Results* panel:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -96,9 +100,9 @@ Run all tests in parallel. RPA Manager shows a warning in case of deployment pro
 
 === View Test Results
 
-View the test results to decide if the project can transition to production phase.
+View the test results to decide if the project can transition to production phase. In case of errors, download an analysis package and open it in RPA Builder.
 
-In case of errors, download an analysis package and open it in RPA Builder.
+To view the test results and to download an analysis package:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -117,7 +121,7 @@ Projects that have already been used productively can no longer be deleted.
 
 === Transition Process to Production Phase
 
-Transition the tested process to production phase for running it fully automatically or for publishing it to Anypoint Exchange.
+Transition the tested process to production phase for running it fully automatically or for publishing it to Anypoint Exchange:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -128,10 +132,12 @@ Transition the tested process to production phase for running it fully automatic
 
 === Create a Run Configuration
 
+To create a run configuration:
+
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
 . Click *Create run configuration*.
-. Complete the wizard *Create production configuration*:
+. Complete the form *Create production configuration*:
 +
 * *Settings*:
 +
@@ -144,9 +150,7 @@ The activity parameters for each process are created in RPA Builder and are give
 +
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
-
-[[production-configuration-link-globals]]
-Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%]. Only those variables assigned to the phase will be displayed for linking. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
+[[production-configuration-link-globals]] Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%]. Only those variables assigned to the phase will be displayed for linking. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
 * *User Task*:
 +
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
@@ -176,10 +180,21 @@ When creating new schedules, you should pay attention to whether the new schedul
 Click on the button *Add Schedule* to assign a (further) schedule to this configuration and complete the form *Create a new schedule*:
 +
 include::rpa-manager::partial$form-scheduling.adoc[]
+* *Bots*:
++
+Select all RPA Bots that are to carry out the production configuration.
++
+Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
++
+When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
++
+If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the configuration .
+Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
+. Click *Save*.
 
 === Deploy Configurations
 
-Deploy configuration to run them fully automatically in a productive environment.
+Deploy configuration to run them fully automatically in a productive environment:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -190,11 +205,9 @@ Deploy configuration to run them fully automatically in a productive environment
 
 === View Run Results
 
-View the run results to check if everything runs as predicted.
+View the run results to check if everything runs as predicted. In case of errors, download an analysis package and open it in RPA Builder. You can always transition the project back to build phase.
 
-In case of errors, download an analysis package and open it in RPA Builder.
-
-You can always transition the project back to build phase.
+To view the run results and to download an analysis package:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -212,7 +225,7 @@ Projects that have already been used productively can no longer be deleted. Dele
 
 === Transition Process to Production Phase
 
-Transition the tested process to production phase for running it fully automatically or for publishing it to Anypoint Exchange.
+Transition the tested process to production phase for running it fully automatically or for publishing it to Anypoint Exchange:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -225,10 +238,12 @@ Transition the tested process to production phase for running it fully automatic
 
 The invokable run configuration is published to Anypoint Exchange upon saving.
 
+To create an invokable run configuration:
+
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
 . Click *Create an invokable run configuration*.
-. Complete the wizard *Create production configuration*:
+. Complete the form *Create production configuration*:
 +
 * *Activity Parameter*:
 +
@@ -251,99 +266,15 @@ For implementation in a secure session, you can link the user with a global cred
 Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the test plan otherwise.
 +
 If the process uses elements of the Windows operating system like the start menu or the task bar, check *Requires Windows Shell*.
-* *Process Trigger Execution*:
+* *Bots*:
 +
-The productive run is carried out continuously within a fixed Schedule. For each schedule, you can define time intervals within which the process is to be executed.
-+
-You can create multiple schedules. These may also overlap. All schedules together make up a time frame within which the process may be executed. The executing bot checks every minute whether it is within this time frame or not. A new process run is not started until all conditions have been fulfilled.
-+
-For this reason, the executing bot checks every minute whether it is within a service time and whether the required process applications are outside all downtimes. The process is not executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
-+
-Ongoing processes are always executed completely.
-+
-When creating new schedules, you should pay attention to whether the new schedules overlap with schedules of other configurations and you should ensure that the executing bots have enough free sessions. Otherwise, trigger executions could be skipped.
-+
-Click on the button *Add Schedule* to assign a (further) schedule to this configuration and complete the form *Create a new schedule*:
-+
-//todo: create partial for following section
-** *From*:
-+
-Start of the time interval. As of this time, the scheduled action is executed.
-The start time must not be in the past and it must not be later than the end time.
-Even if you specify a Repeat on a specific day of the week or month that does not correspond to the start time, the schedule is started at this time anyway. The day specified under Repeat is then taken into account from the first repetition onward.
-** *To*:
-+
-End of the time interval. As of this time, the scheduled action is no longer executed.
-The end time must not be earlier than the start time.
-If you use the Repeat option, the duration of the time interval is defined by the difference between the From and To times.
-** *All day*:
-+
-Select the checkbox *All day* to execute the action throughout the day.
-It then begins on the first day at 12:00 midnight and stops being executed at 12:00 midnight of the next day (in the case of one-day intervals) or at 12:00 midnight on the day after the last day (in the case of multi-day intervals).
-** *Repeat*:
-+
-Select the checkbox *Repeat* if the selected time interval is to be used repeatedly.
-+
-Then, under *Repeats*, you can choose whether the *From-To* time interval is to be repeated every minute, hourly, daily, weekly, monthly, or yearly.
-+
-The duration of the contained time interval and the start time are taken into account. The duration of the time interval is defined as the difference between the *From* and *To* times. The *From* time is the start time of the first execution. The start time of repetitions depends on the other set values.
-+
-If you wish to execute the repeats only with reference to the time of day, you should ensure that the start and end date are identical. If the interval specified  covers multiple days, a new multi-day interval begins with every repetition. This can lead to a situation whereby the scheduled time interval lasts longer than expected because the full number of days contained in the *From-To* interval is executed once again during the last repetition.
-+
-With schedules that are not all day, the actions in each repetition are executed for the duration of the interval specified in *From* and *To*.
-
-*** *Repeat minutely*:
-+
-If you select *Repeat minutely*, the planned action is executed every minute during the interval specified above.
-+
-You can select whether you want to repeat the action every minute or only every _n_-th minute. _n_ here stands for any integer number between 1 and 59.
-*** *Repeat hourly*:
-+
-If you select *Repeat hourly*, the planned action is executed hourly during the interval specified above.You can select whether you want to repeat the action every hour or only every _n_-th hour. _n_ here stands for any integer number between 1 and 23.
-*** *Repeat daily*:
-+
-If you select *Repeat daily*, the planned action is executed daily during the interval specified above.
-+
-You can select whether you want to repeat the action every day or only every _n_-th day. _n_ here stands for any integer number between 1 and 31.
-*** *Repeat weekly*:
-+
-If you select Repeat weekly, the planned action is executed weekly during the interval specified above.
-+
-You can select whether you want to repeat the action every week or only every _n_-th week. _n_ here stands for any integer number between 1 and 52.
-+
-You can also select the weekday on which the scheduled action is to be executed.
-*** *Repeat monthly*:
-+
-If you select Repeat monthly, the planned action is executed monthly during the interval specified above.
-+
-You can select whether you want to repeat the action every month or only every _n_-th month. _n_ here stands for any integer number between 1 and 12.
-+
-You can also choose whether the repeat refers to the day of the month or the day of the week.
-+
-If the selected day is the last day of a month, you can also choose whether the execution day is always the last day of a month, as the number of days in each month is different.
-+
-If the selected day is the fourth such weekday of a month, you can also choose whether the execution day is always the fourth or last such weekday of a month, as the number of weeks in each month is different.
-*** *Repeat yearly*:
-+
-If you select *Repeat yearly*, the planned action is executed annually during the interval specified above.
-+
-You can select whether you want to repeat the action every year or only every _n_-th year. _n_ here stands for any integer number between 1 and 20.
-** *Ends*:
-+
-If you select *Never* under Ends, the time period is repeated over and over.
-+
-If you select *After n occurrences* under *Ends*, the time period is repeated _n_ times. _n_ here stands for any integer number between 1 and 100.
-+
-If you select *Ends on <date>*, the time interval is no longer repeated after this date.
-** *Bots*:
-+
-Select all RPA Bots that are to carry out the test configuration.
+Select all RPA Bots that are to carry out the invokable configuration.
 +
 Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
 +
-When you select a bot, ensure that it is configured for the required session type, is allowed to be deployed in the relevant phase, and that it can operate the required applications.
+When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the test plan configuration.
+If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Save & Publish*.
 
@@ -353,6 +284,3 @@ Hover the mouse pointer over the info label to display more detailed information
 * xref:rpa-bot::index.adoc[RPA Bot Overview]
 * xref:botmanagement-overview.adoc[Bot Management]
 * xref:processautomation-overview.adoc[Process Automation]
-* xref:processautomation-prepare.adoc[Preparing Automations]
-* xref:processautomation-develop.adoc[Developing Automations]
-//* xref:processautomation-deploy.adoc[Deploying Process Automations]
