@@ -68,7 +68,12 @@ Copy a project to automate a similar process more quickly:
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
 . Click *Save*.
 
-To complete copying of the project, first transfer the project to the *Build* phase. Then open it in the xref:rpa-builder::index.adoc[RPA Builder]. The project then receives its own identification values. The copied project can only transition to the *Test* phase after it has been uploaded from the RPA Builder to the RPA Manager.
+To complete copying the project:
+
+. Transfer the project to the *Build* phase.
+. Open it in the xref:rpa-builder::index.adoc[RPA Builder].
+
+The project then receives its own identification values. The copied project can only transition to the *Test* phase after it is uploaded from the RPA Builder to the RPA Manager.
 
 == Edit an Automation Project
 
