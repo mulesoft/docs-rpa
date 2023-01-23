@@ -137,7 +137,7 @@ If you use two-factor authentication, append the time-based one-time password to
 . Click *Reset Password*.
 
 [[enable2faforyourself]]
-== Enable Two-Factor Authentication for Your User
+== Enable Two-Factor Authentication for Yourself
 
 Enable two-factor authentication (2FA) for extra security.
 
@@ -157,7 +157,7 @@ Both the computer on which the RPA Manager is installed, and the mobile device o
 
 Log in using your password and 2FA.
 
-== Disable Two-Factor Authentication for Your User
+== Disable Two-Factor Authentication for Yourself
 
 Two-factor authentication can also be deactivated for you by an administrator.
 
