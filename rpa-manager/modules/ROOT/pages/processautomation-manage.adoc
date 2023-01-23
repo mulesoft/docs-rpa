@@ -221,7 +221,7 @@ Open the xref:processoperations-financeanalysis.adoc[*Finance Analysis* view] to
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Finance Analysis* icon image:financeanalysis-icon.png[ symbol,1.5%,1.5%] the panel of the project you want to analyze.
+. In the *<category name>* view, click the *Finance Analysis* icon image:financeanalysis-icon.png[ symbol,1.5%,1.5%] on the panel of the project you want to analyze.
 
 == Transition an Automation Project to Another Phase
 
