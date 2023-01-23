@@ -208,7 +208,7 @@ Move tasks within a column to sort them or across columns to reflect their progr
 . <<openprocessboard, Open a process board>>.
 . Drag a task item to its new place.
 
-If you have enabled the creation of automatically generated tasks for the phase transitions, move this task to the *Completed* column after all other tasks have been completed to enable the transition of the project to the next phase.
+If you enabled the creation of automatically generated tasks for the phase transitions, move this task to the *Completed* column after all other tasks have been completed to enable the transition of the project to the next phase.
 
 == Analyze the Financial Aspects of a Process
 
