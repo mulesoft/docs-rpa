@@ -136,7 +136,8 @@ If you use two-factor authentication, append the time-based one-time password to
 . Confirm and remember the password.
 . Click *Reset Password*.
 
-== Enable Two-Factor Authentication for Your User
+[[enable2faforyourself]]
+== Enable Two-Factor Authentication for Yourself
 
 Enable two-factor authentication (2FA) for extra security.
 
@@ -153,11 +154,36 @@ Both the computer on which the RPA Manager is installed, and the mobile device o
 . In the *Profile* view, click *Enable Two-Factor Authentication*.
 . Follow the instructions in the window *Enable Two-Factor Authentication*.
 . Click *Enable Two-Factor Authentication*.
-. Log in using your password and 2FA.
+
+Log in using your password and 2FA.
+
+== Disable Two-Factor Authentication for Yourself
+
+Two-factor authentication can also be deactivated for you by an administrator.
+
+To disable two-factor authentication for yourself:
+
+. Click on your user name in the navigation side bar.
+. Click *Profile* in the drop-down menu.
+. In the *Profile* view, click *Disable Two-Factor Authentication*.
+
+Log in using only your password.
+
+You can <<enable2faforyourself, enable 2FA>> again.
+
+== Deactivate Two-Factor Authentication for a User
+
+To disable two-factor authentication for a user:
+
+. Open the *Users* view of the *User Management* module.
+. Click the *Deactivate Two-Factor Authentication* icon image:userdeactivate2fa-icon.png[user with open lock symbol,1.5%,1.5%] in the panel of the user whose 2FA want to deactivate.
+. Confirm the deactivation.
+
+The user can <<enable2faforyourself, enable 2FA>> again.
 
 == Edit a User
 
-Edit users to change their data or permissions.
+Edit users to change their data or permissions:
 
 . Open the *Users* view of the *User Management* module.
 . Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the panel of the user you want to edit.
