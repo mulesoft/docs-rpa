@@ -9,18 +9,16 @@ The interrelationships of processes, RPA Bots and Configurations are mapped by a
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
-|View the process deployment map Open.
-|Process Deployment Map Open.
+|View the process deployment map
+|Process Deployment Map Open
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * You can only view processes for which you are part of the process team.
 * To execute, pause or stop configurations obtain the needed team member permissions for the production phase.

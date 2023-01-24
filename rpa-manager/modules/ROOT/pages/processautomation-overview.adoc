@@ -8,7 +8,7 @@ The processes go through several phases in sequence. In the design phase, a mode
 
 == Before you Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
@@ -21,8 +21,6 @@ The processes go through several phases in sequence. In the design phase, a mode
 |Process Create
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * There must be at least one process in the *My Backlog* view in the *My RPA* module.
 * RPA Builder, RPA Bot, and all applications required by the automated process must be installed and configured on one computer.

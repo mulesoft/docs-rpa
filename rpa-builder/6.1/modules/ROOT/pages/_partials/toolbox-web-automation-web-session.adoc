@@ -1,0 +1,154 @@
+//tag::intro[]
+Use a _Web Session_ to open and close the browser window in which
+all the _Web Automation_ elements contained therein interact.
+
+The _web session ID_ enables you to reuse a session that has already started in a different web
+session.
+//end::intro[]
+
+//tag::commonProperties[]
+
+* *Hide Command Prompt*
++
+Hides the web driver’s command prompt (default). Can be displayed again for diagnostic purposes.
+* *Initial URL*
++
+The URL that the web session launches when it starts. Default: `about: blank`.
+* *Keep out mouse*
++
+When selected, at the start of the _Web session_ the
+mouse moves to the corner defined in the _Move mouse to_
+property. This feature enables you to avoid triggering hover effects
+on a website accidentally.
+* *Move mouse to*
++
+Defines where the mouse pointer moves to if
+_Keep out mouse_ is enabled.
+* *Repeat keep out mouse*
++
+When selected, the mouse moves to the
+corner defined in the _Move mouse to_ property before each step within
+the _Web Session_. This feature enables you to avoid triggering hover
+effects on a website accidentally.
+* *Script Timeout [sec]*
++
+Maximum waiting time in seconds before the
+internal scripting of the web driver aborts. Do not change
+this value unless MuleSoft Support advises you to do so.
+* *Start maximized*
++
+Decide wether the browser window starts maximized.
+* *Webdriver Retries*
++
+Number of retries to establish a successful web
+driver connection.
+* *Webdriver Timeout [sec]*
++
+After the assigned time, the web session aborts a Webdriver command.
+//end::commonProperties[]
+
+//tag::activityWorkflowOverlappingWebSession[]
+== Activity Workflow Overlapping Web Session
+
+You can use web sessions across workflows within a business process. For example, you can open a web session in an initial workflow, perform a web login there, and then process this workflow in a different, independent workflow.
+
+The web session ID lets you use the session globally within the
+workflow. To pass the web session on to another workflow within a
+business process, the web session ID must be defined as an activity
+parameter (and not as a workflow-based variable).
+
+To do this, proceed as follows:
+
+. Create a web session ID in the activity parameter.
+. Link the web session ID with the workflow.
++
+You will find the web session ID in the _Activity Parameters_ Action Step, which you placed in the
+Workflow Initialization Block beforehand.
+. Link the web session ID in the corresponding web session.
+. Optionally, ff you want the web session to be closed at a later point in the
+workflow, use the _Close Web Session_ Action Step.
+//end::activityWorkflowOverlappingWebSession[]
+
+//tag::closingWebSession[]
+
+== Closing a Web Session
+
+There are three different variants for closing a web session:
+
+* The closing of the browser is already contained in the web session
++
+In this case, the session is closed automatically when session execution
+is complete. This only applies if the web session is *not* linked with a
+web session ID.
+* The browser is not closed until the end of the workflow
++
+If the web session block is linked with a web session ID, the browser
+remains open. This only applies if the web
+session was linked using a workflow-based variable. If it is linked with
+an activity parameter, in contrast, the web session remains active –
+that is, the browser remains open – and can be used further
+//(see the chapter _Cross-Activity Workflow Web Session_).
+* The browsers is closed by using the _Close Web Session_ action step
++
+The Action Step _Close Web Session_ gives you the additional option of
+closing the session at a specific point in the Workflow.
+
+//end::closingWebSession[]
+
+//tag::wizardCommon[]
+== Wizard
+
+image:toolbox-variable-web-automation-web-session-images/image1.png[An image of the web session wizard window]
+
+The *Reuse Web Session* section defines which web session is reused. To enable this, you need the *web session ID*, which you save in the Workflow-based variables ahead of time.
+
+image:toolbox-variable-web-automation-web-session-images/image2.png[An image showing the web session ID]
+
+You can define a name and a description and the value is assigned
+automatically. Once you have created the web session ID, you can link it
+with the session easily, using the drop-down in the Web Session Wizard.
+
+image:toolbox-variable-web-automation-web-session-images/image3.png[An image showing the reuse web session option]
+
+In the script Run Results, you see whether a new web session was created
+or a web session ID was used, and in the latter case, which one.
+
+If a web session ID is used that was created with the web session type
+Firefox, for example, but is to be continued with a different web
+session type, such as a Chrome session, a warning is issued in the
+standard case. You can change this response with the *Browser Mismatch*
+option. You have two options here:
+
+* *Warning* (default)
++
+The Workflow Run is assigned a warning, but continues
+running. In this case, the original web session browser is used
+automatically.
+* *Error*
++
+The Workflow Run ends in an error.
+
+The standard response of the browser and the execution are defined in
+the *General Settings* area.
+
+You use the *Initial URL* to specify the initial URL of the web page you
+want to call.
+
+If another web session that was created with the same web session ID is
+opened, the initial URL from that session is ignored.
+
+*Open Browser Wizard when done*: If this option is enabled, the Browser
+Wizard is opened when the Web Session Wizard is closed.
+
+*Keep out mouse, move it to*: In some cases, the mouse could hide
+certain buttons or texts. You use this option to define where you want
+the mouse to move to:
+
+image:toolbox-variable-web-automation-web-session-images/image4.png["An image showing the Keep out mouse, move it to: option"]
+
+You can also define whether or not you want to execute this action after
+every Action Step.
+
+*Page load strategy*: Defines the system behavior when loading a page.
+The following options are available: Default, Normal, Eager, and None.
+//end::wizardCommon[]

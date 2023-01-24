@@ -8,7 +8,7 @@ You can create new user groups, check their usage, edit them, and delete them.
 
 == Before you Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
@@ -21,8 +21,6 @@ You can create new user groups, check their usage, edit them, and delete them.
 |User Group Create, User Group Edit, User Group Delete
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 == Create a User Group
 
