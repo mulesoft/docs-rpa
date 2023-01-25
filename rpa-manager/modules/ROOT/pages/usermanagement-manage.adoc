@@ -9,6 +9,9 @@ Manage the users of RPA Manager, RPA Recorder, and RPA Builder:
 * Mark a user as project manager.
 * Assign a user to a process team.
 
+[IMPORTANT]
+If you are your organization's first admin user, you are responsible for creating all other users. You can do this yourself or create another user with admin privileges to whom you delegate this task.
+
 == Before You Begin
 
 * The tenant admin is created first and can create other users.
