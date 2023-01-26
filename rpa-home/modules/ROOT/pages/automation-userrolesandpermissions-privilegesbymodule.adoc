@@ -105,7 +105,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Create, change, and delete objects of the *Process Evaluation* module
 
 |*Global Process Evaluation View*
-|Authorization to view all processes in the view *Process Evaluation*, regardless of whether or not the current user belongs to the Process Team.
+|Authorization to view all processes in the *Process Evaluation* view, regardless of whether or not the current user belongs to the Process Team.
 
 |*Evaluation Criteria Open*
 |Open the *Evaluation Criteria* view
