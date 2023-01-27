@@ -23,7 +23,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="5a,1a"]
 |===
 | Issue Resolution | ID
-| RPA Builder no longer assigns _DEFAULT_NAME_ as the name for a task when you create User tasks or Bot tasks. | W-12427237
+| RPA Builder no longer assigns `DEFAULT_NAME` as the name for a task when you create User tasks or Bot tasks. | W-12427237
 |===
 
 // == See Also
