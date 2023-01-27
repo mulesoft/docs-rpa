@@ -8,8 +8,8 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* The password reset email shows information about appending the 2FA token for users who have 2FA enabled. (W-12121031)
-* The initial admin user's mail now contains more information about the role of an admin. (W-12121007)
+* The password reset email now shows information about appending the 2FA token for users that have 2FA enabled.
+* The initial mail sent to the first administrator user of an organization now contains more information about their role and responsibilities.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -17,7 +17,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="2a,1a"]
 |===
 |Issue Resolution |ID
-| Process Streaming now shows the process execution again. | W-12421442
+| Process Streaming now properly shows the process execution. | W-12421442
 |===
 
 [[january-18-2023]]
