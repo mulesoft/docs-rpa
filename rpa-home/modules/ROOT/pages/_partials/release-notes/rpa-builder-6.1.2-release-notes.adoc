@@ -1,4 +1,4 @@
-= RPA Builder 6.1.1 Release Notes
+= RPA Builder 6.1.2 Release Notes
 
 RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
 
@@ -23,7 +23,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="5a,1a"]
 |===
 | Issue Resolution | ID
-| RPA Builder no longer assigns an incorrect name when creating User tasks or Bot tasks. |
+| RPA Builder no longer assigns _DEFAULT_NAME_ as the name for a task when you create User tasks or Bot tasks. | W-12427237
 |===
 
 // == See Also
