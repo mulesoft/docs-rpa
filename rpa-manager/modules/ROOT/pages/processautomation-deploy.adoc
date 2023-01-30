@@ -71,6 +71,8 @@ Decide whether the test run is to be carried out in an existing desktop session 
 +
 For implementation in a secure session, you can link the user with a global credential variable. To do this,  click on the *Link a global activity parameter* icon.
 +
+Use the syntax `domain\username` instead of `username@domain.com` for domain users and `username` for local users, regardless of whether you enter the username manually or link a global credential.
++
 Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the test plan otherwise.
 +
 If the process uses elements of the Windows operating system like the start menu or the task bar, check *Requires Windows Shell*.
@@ -161,6 +163,8 @@ Select the checkbox *Send email notification to all related users* when the task
 Decide whether the test run is to be carried out in an existing desktop session or in a secure session, and specify an appropriate user.
 +
 For implementation in a secure session, you can link the user with a global credential variable. To do this,  click on the *Link a global activity parameter* icon.
++
+Use the syntax `domain\username` instead of `username@domain.com` for domain users and `username` for local users, regardless of whether you enter the username manually or link a global credential.
 +
 Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the test plan otherwise.
 +
