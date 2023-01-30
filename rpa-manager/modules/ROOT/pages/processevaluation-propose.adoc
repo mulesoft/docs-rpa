@@ -4,7 +4,7 @@ You evaluate a process candidate to propose it for automation.
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
@@ -26,8 +26,6 @@ You evaluate a process candidate to propose it for automation.
 |Evaluation Template Create, Evaluation Template Edit, Evaluation Template Delete
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * Create appropriate categories in the view *Process Management* in the module *Process Automation*.
 

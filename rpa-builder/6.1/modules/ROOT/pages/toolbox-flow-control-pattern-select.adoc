@@ -1,0 +1,500 @@
+
+
+= Pattern Select
+
+The _Pattern Select Action Step_ enables users to respond flexibly to
+non-predictable situations.
+
+It is deployed after executing _Action Steps_ which could result in
+various states. These states are characterized by the presence of a
+specific search pattern. How the program path will proceed depends on
+whether one of these search patterns is found.
+
+For this purpose, search patterns are recorded for every possible state.
+_Pattern Select_ creates a _Case_ for every search pattern. Each _Case_
+contains the steps to be executed in that situation. _Cases_ are
+processed sequentially until a search pattern is found. If none of the
+search patterns listed are found, error handling (_DoElse_ branch) can
+be performed.
+
+_Pattern Select_ is used, for example, when a new software user is
+created. As a result, either a message stating that the user has been
+successfully created can be displayed or a message stating that, for
+various reasons, the user could not be created. Each of these possible
+messages is captured in a screenshot and stored as a _Case_, so that the
+subsequent steps in the _Workflow_ can be executed according to this
+message.
+
+Another use for the _Pattern Select_ _Action Step_ is to close in
+succession multiple dialog boxes which are not shown on the screen in a
+predictable order or position. In this scenario, the _Pattern Select_
+_Action Step_ will be carried out until all specified windows are
+closed.
+
+The _Pattern Select_ image search is configurable and can contain up to
+50 search patterns.
+
+The configuration of the _Action Step Pattern Select_ cannot be changed
+in Debug Mode. However, you can change the configuration of the _Action
+Steps_ contained in the _Cases_ and the _DoElse_ block of the _Action
+Step Pattern Select_.
+
+If you set a _Breakpoint_ at the _Action Step Pattern Select_, you can
+run through the different _Case_ branches by repeating the Action Step
+in _Debug_ mode while changing the displayed search pattern after
+breaking.
+
+== Properties
+
+*Image Processing*
+
+*Allow multiple matches of a found pattern* If this option is selected,
+the pattern may appear more than once in the _Search Area_. When this
+option is not selected, the _Search Pattern Action Step_ returns an
+error if the pattern is found but occurs more than once.
+
+If the coordinates of the pattern found are to be reused subsequently in
+a different _Action Step_ (e.g. for mouse clicks relative to pattern),
+the coordinates used in the case of multiple identical patterns found
+will be the ones for the pattern furthest to the left within the
+_Search_ _Area_. If multiple identical search images are located on top
+of each other in the same position on the left, the topmost image will
+be selected.
+
+*Hide mouse* moves the cursor during the search to the upper left corner
+of the screen to the position with the coordinates x=0 and y=0. By this
+way unwanted mouse hover effects can be avoided. Independently of this
+setting the cursor is not included in the search. So also search
+patterns covered by the cursor symbol are found. After the search the
+cursor is set back to its original position.
+
+*Margin for automatic search area [pixel]* Number of pixels around a
+found pattern for defining the search area automatically. Valid values
+lie between 0 and 999; the default-value is 100.
+
+*Neighborhood Pixel* indicates the number of pixels by which the
+position of a pixel found may differ from the specified position. The
+default value for this setting is 1.
+
+Please note that it is easier to search for similar images if the value
+is greater than 1, i.e. the images are not 100% identical based on
+pixels. The percentage score may vary by some percentage values
+depending on position though.
+
+*Original Desktop Size* Screen resolution at the time the image search
+was last tested. This size is required in order to scale the _Search
+Area_ (but not the _Search Pattern_) if the _Workflow_ is used on a
+device with a different screen resolution.
+
+*Pattern Steady check* enables the option 'Wait For Pattern Steady
+Timeout' and checks whether the coordinates of the pattern found change
+again within this time period. If not, the search is successful and
+ends; otherwise the search is repeated.
+
+*Reduce Score By [%]* When testing the _Search Pattern_ settings,
+matches by this percentage below the _Score_ are also shown. These are
+marked yellow in the test result window.
+
+In the wizard, this setting is shown under _Search Settings_ and appears
+as a yellow zone on the _Required matching precision (%)_ slider.
+
+*Repeat search until nothing found* If the option to _Repeat search
+until nothing found_ is enabled, the image search will be carried out
+within the _Timeout_ interval until none of the images being searched
+for are found anymore.
+
+*Score [%]* indicates the accuracy in percent by which the pattern found
+must match the specified pattern in order to be considered found. In the
+wizard, this setting is labeled _Required matching precision (%)_ under
+_Search Settings_ and appears as a green zone on a slider.
+
+*Search Mode* There are three search modes:
+
+* *Match only one pattern* is successful if exactly one of the specified
+patterns being searched for is found
+* *Match one or more patterns* is successful if at least one of the
+specified patterns being searched for is found
+* *Match all patterns* is successful if all of the specified patterns
+being searched for are found
+
+*Wait for Pattern Steady Timeout [ms]* If the option _Pattern steady
+check_ is selected, a check for whether the pattern found is still in
+the same position, or whether it still does not appear in the _Search
+Area_, is performed according to the interval value entered here (or in
+the wizard under _Search Settings_ > _Check whether found match stays in
+same location every [time in ms] milliseconds_). If this is the case,
+the search is successful and ends. Otherwise, the search is repeated
+either until it is successful or the _Action Step_ times out.
+
+A value of 0 means that the position of the pattern found is not
+rechecked after having been found. The _Action Step_ does not then wait
+beyond its runtime.
+
+== Inbound Variables
+
+//*link:#AS_PatternSelect_OV_FindCoordinate[
+*Find Coordinate*
+
+If there is at least one other Action Step that uses patterns before the
+Action Step Search Pattern, the outbound variable _Find coordinate_
+becomes the inbound variable for the subsequent Action Steps.
+
+== Outbound Variables
+
+*Pattern Case Index* returns the case index, which is executed based on
+a pattern found.
+
+//[#AS_PatternSelect_OV_FindCoordinate .anchor]####*
+*Find Coordinate* Top left corner of the pattern that has been found successfully. If a search
+is made for multiple patterns and they are found, the coordinates
+returned are of the image on the far left of the series of patterns
+being searched for as specified in the wizard. If multiple identical
+patterns are found in the same position on the far left of the _Search
+Area_, the topmost one is used.
+
+*Found Pattern Name* The name of the matched pattern as entered in the
+_Pattern Gallery_.
+
+*Found Matched Pattern Count* Number of found search patterns from the
+_Regular_ category. The number of matches can consist of matches for
+different patterns. Matches of patterns of the category _Ignore_ and
+_Exclude_ are not counted.
+
+_Found Matched Pattern Count_ is 0, if _Search Pattern_ returns an
+error. Even, if matches for patterns of the _Regular_ category are
+found.
+
+== Wizard
+
+The _Pattern Select_ wizard is for selecting _Search Patterns_ and the
+key search settings.
+
+The basic functionality of the _Pattern Strip_ shown here, including all
+pattern operations, is described in the section *Pattern Strip*.
+
+Click _OK_ to confirm the configuration settings or _Cancel_ as
+applicable. The _Test_ button evaluates the search and displays the
+results in the Search Results window.
+
+== Filtering by Pattern Name and Resizing Pattern Images
+
+Entering text into the _Filter…_ field hides in stages all patterns in
+the lower sections of the wizard with names not containing that text.
+The filter text may appear in any position within the pattern name, but
+must be continuous.
+
+*Example:* If the _Search Pattern_ _Action Step_ contains patterns with
+the names House, House1, Mouse, and Mouse1, the search filter will find
+all images when use is entered, only House1 and Mouse1 when 1 is
+entered, and House and House1 in the case of H.
+
+////
+To make all the pattern images in the wizard larger or smaller, use the
+two buttons with a minus
+image:media\image1.png[image,width=15,height=15] or plus
+image:media\image2.png[image,width=15,height=15] symbol inside a
+magnifying glass.
+////
+== Regular Patterns
+
+This section lists patterns that are to be found. The number of patterns
+that can be found is limited to 50.
+
+There are three ways of searching for patterns.
+
+//image:media\image3.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=276,height=97]
+
+*Match only one pattern* is successful if *exactly one* of the selected
+patterns is found in the _Search Area_. An error is returned if none or
+a number of the selected patterns are found.
+
+*Match one or more patterns* is successful if *at least one* of the
+selected patterns is found in the _Search Area_. An error is returned if
+none of the selected patterns are found.
+
+*Match all patterns* is successful if *all* of the selected patterns are
+found in the _Search Area_. An error is returned if none or not all of
+the selected patterns are found.
+
+If the option _Match all patterns_ is enabled, only the _Case_ branch
+for the image with top priority is carried out. In the graphical
+information that is the first search pattern and/or the top _Case_ in
+the list.
+
+If a pattern appears multiple times, a successful search will occur as
+above if _Allow multiple matches of a found pattern_ is enabled in the
+_Search Settings_. The _Action Step_ will otherwise return an error if
+the same pattern appears multiple times.
+
+The order of the _Cases_ in the _Action Step_ corresponds to the order
+of the search patterns in the wizard. The _Workflow_ continues with the
+steps for the first _Case_ that arises.
+
+Be sure to fill out the _DoElse_ block too. An empty _DoElse_ block
+causes an error when executed, resulting in the entire _Workflow_ being
+terminated.
+
+Patterns may be chosen from the _Pattern Gallery_ or created by means of
+a screenshot (_Capture_).
+
+//image:media\image4.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=422,height=151]
+
+//image:media\image5.png[image,width=602,height=153]
+
+Click to select one or multiple patterns and delete or move them as a
+group. When a pattern is selected, a white tick will appear on a green
+background in the top right corner. To undo the selection, click the
+_Clear Selection_ button. A vertical black line indicates where the
+pattern can be moved to using drag and drop. If _Match one or more
+patterns_ is selected the first pattern in the list will have a blue
+border. This image can be used as a reference point for other Action
+Steps as the Workflow progresses (see <<Other Uses of Matched Patterns>>).
+
+== Capture Pattern
+
+One way of defining a pattern is to take a screenshot that shows it.
+
+The function of the _Capture Pattern_ button is described in the section
+*Capturing the Search Pattern*.
+
+All patterns captured using the _Pattern Select_ _Action Step_ are
+transferred to the _Workflow_'s _Pattern Gallery_.
+
+== Add Pattern from Gallery
+
+If the _Pattern Gallery_ for the _Workflow_ already contains patterns,
+they can be added to the list of patterns for the _Action Step_.
+//using the _Add Pattern from Gallery_ button
+//image:media\image6.png[image,width=25,height=23].
+
+The _Select Patterns to add_ window shows all the images that the
+_Workflow_'s _Pattern Gallery_ contains. A white tick on a green
+background in the top right corner indicates patterns which are already
+included in the _Search Pattern_ _Action Step_. Patterns already
+included in another category of the same _Action Step_ are not shown.
+
+//image:media\image7.png[image,width=538,height=364]
+
+To add patterns to the search, simply use the mouse to click and select.
+Use the same method to deselect patterns which should no longer be
+included in the search.
+
+Click OK to confirm the selection and add it to the pattern list for the
+_Action Step_.
+
+== Ignore All Matches within These Patterns
+
+If checking for the single occurrence of a pattern that may be part of
+other patterns, you must exclude patterns containing the searched-for
+pattern within them from the search. The number of patterns that can be
+excluded is limited to 50.
+////
+As described above, patterns to be excluded from the search can be
+inserted here using a
+//file:///C:/Users/seberhard.SERVICETRACE/Desktop/WorkInProgress/HandbuchWE3/Handbuch_WE3.0_inBearbeitung_NeueTexte_EN.docx#_Einen_Screenshot_eines[screenshot]
+or from the
+//file:///C:/Users/seberhard.SERVICETRACE/Desktop/WorkInProgress/HandbuchWE3/Handbuch_WE3.0_inBearbeitung_NeueTexte_EN.docx#_Ein_Muster_aus[Pattern
+Gallery].
+////
+
+Example: Search for the word staff as a noun but only if it doesn't form
+part of another term, e.g. 'staffing'. This pattern must be included in
+the green field among the patterns being searched for. Other patterns
+containing this term, e.g. staffing or staffed must be added here.
+
+Areas in a single color are not taken into account within the pattern.
+It is therefore not sufficient in the above example to capture staff
+with free space at the right edge, because this free space will not form
+part of the pattern being searched for due to a lack of _features_.
+
+== Changing the Search Pattern Category
+
+//image:media\image8.png[image,width=605,height=264]
+
+The patterns selected can be moved between the categories _Regular_ and
+_Ignored_. Use the _Move to…_ button in the menu bar to do this.
+
+//image:media\image9.png[image,width=605,height=369]
+
+== Search Settings
+
+//image:media\image10.png[image,width=604,height=246]
+
+The settings needed most frequently for all types of search can be set
+and modified using the _Search Pattern_ _Action Step_ wizard under
+_Search Settings_.
+
+The _Required matching precision_ in percent is shown as a green zone on
+a slider. A yellow zone to the left of the green indicates the range
+that was entered in the _Properties_ under _Reduce Score by [%]_ to
+monitor criteria during the test in an advanced search.
+
+You can use either the general _Timeout_ or your own.
+
+If the option _Check whether found match stays in same location every
+[time in ms] milliseconds (Wait for Image Steady Timeout [ms]_ in the
+property pane) is enabled, it may make sense to choose a different
+_Timeout_ depending on this value.
+
+Because the repeated image search has to be completed in an interval
+defined here within the timeout, the recommended maximum interval value
+is ½*_timeout_.
+
+_Move mouse to 0,0 while pattern search is active_ moves the cursor
+during the search to the upper left corner of the screen to the position
+with the coordinates x=0 and y=0. By this way unwanted mouse hover
+effects can be avoided. Independently of this setting the cursor is not
+included in the search. So also search patterns covered by the cursor
+symbol are found. After the search the cursor is set back to its
+original position.
+
+The search area is displayed on the right side of the settings section.
+Click the button _Define manually_ to define the search area by
+drag&drop. The button _Define automatically_ automatically defines a
+search area containing all _regular_ matches visible at the time of the
+definition of the search area. The _ResetTo Full Screen_ button turns
+the search area back to full screen.
+
+The Search Area can be set to either a _fixed_ or dynamic (_relative_)
+position. To define a dynamic position, use the _Relative To_ picklist,
+which lists all variables of type _Coordinates_ that are available at
+this point; these include, for example, Outbound Variables from a
+previous _Search Pattern_ Action Step in the same transaction. When a
+coordinate is selected in the wizard as “Relative To”, an offset vector
+is immediately calculated. While the _Workflow_ is being designed, this
+points from the selected coordinate to the top-left corner of the
+_Search Area_. At _Workflow_ runtime, the calculated offset vector is
+applied to the real-time value of the _Search Area_ that the coordinate
+relates to. This means that the _Search Area_ at _Workflow_ runtime is
+positioned at exactly the same distance from the “Relative To”
+coordinate as at the time of design.
+
+The option to _Repeat search until nothing found_ repeats the image
+search until no more search patterns can be found or until it times out.
+One possible use is to close multiple dialog boxes which may be
+encountered in an unknown order and position.
+
+If the option to _Repeat search until nothing is found_ is enabled, the
+maximum _Timeout_ is less than double the time entered here. If multiple
+patterns are included and the first one is found within the timeout, the
+timeout period will be extended by the specified _Timeout_ once only.
+All other patterns must then be found within this remaining _Timeout_
+period. Otherwise the program enters an error state and executes the
+_OnError Case_. The _Timeout_ is therefore adjusted to the duration of
+the steps that need to be completed within the _Cases_.
+
+If the Option to _Repeat search until nothing is found_ is enabled, the
+following is to be noted with regard to the various search options:
+
+* *Match only one patterns* Here only one of the images from the selection
+may be visible at any time. This option can be used if the patterns are
+layered on top of one another
+* *Match one or more patterns* Here any of the search images may appear
+* *Match all patterns* Here all images within the selection must be found
+
+For all modes, the following is applicable:
+
+* If multiple patterns are found the _Case_ branch is carried out for the
+image with top priority. In the graphical information that is the first
+search pattern and/ or the top _Case_ in the list.
+* If the option to _Allow multiple instances of a found pattern_ is
+enabled, the above priority is given and then the image that is located
+furthest to the left within the _Search Area_ is re-used. If multiple
+identical search images are located on top of each other in the same
+position on the left, the topmost image will be selected.
+
+== Test
+
+Pressing the _Test_ button will launch the search independently of
+_Workflow_ execution and open the _Search Results_ window where the
+search is evaluated. This can provide hints about possible improvements
+that could be made to the _Search Settings_.
+
+//image:media\image11.png[image,width=604,height=318]
+
+The screen content at the time the test was performed takes up the main
+part of the window _Search Result_.
+
+A blue border surrounds the _Search Area_. The area outside the _Search
+Area_ is shown grayed.
+
+_Matches_ are highlighted in color. The color legend at the right side
+of the window works simultaneously as a check box panel for switching
+the display of the different match types on and off. If there are no
+matches of a certain type, the according check box field is shown
+grayed.
+
+_Search Patterns_ of the list _Match all / only one / one or more
+pattern(s)_ found within the defined precision are highlighted green.
+Matches from the list _Ignore all matches within these patterns_ are
+highlighted light blue and matches from the list _Make sure none of
+these patterns appear_ are highlighted red.
+
+A yellow highlighting shows that the search pattern could have been
+found if the precision had been set lower. This reduced precision is
+calculated by deducting the _Reduced Score_ from the _Score._ In each
+case, the precision of the match is stated.
+
+Matches outside of the _Search Area_ are marked in gray color
+irrespective of their type. . Patterns with a _Color Spot_ that are
+found but do not match the _Color Spot_ color at a specific position are
+marked in blue. You can see the type of the match in the details pane on
+the right side of the window.
+
+On opening the window the size of the screenshot is adjusted so, that
+the whole screenshot is visible. You can zoom in to or out of the image
+by dragging the slider at the right side of the screenshot. It is also
+possible to do this by mouse wheel. Double click on the slider shows the
+image in its original size. If the image is enlarged, scroll bars for
+adjusting the position of the view appear on the right side and on the
+lower border of the image.
+
+Below the slider the current mouse position in relation to the screen
+shown in the screenshot is displayed dynamically.
+
+Mouse hover over a match shows the name, a thumbnail and the matching
+precision as a tooltip.
+
+Clicking a Match on the screenshot shows details to this Pattern on the
+right side of the window. Clicking a pattern in the tab _Pattern_ at the
+lower border of the window shows details to all matches to this pattern.
+Clicking a match in the screenshot only shows details for this single
+match. Details contain the name, type, size in pixels and a thumbnail of
+the pattern along with a color-marked listing of the found matches. For
+all matches, the coordinates of the upper left corner and the matching
+precision are displayed. The coloring is the same as described above.
+
+Clicking a match in the details pane toggles the highlighting of the
+according matches in the screenshot. Highlighting of a Match is
+indicated in the details pane by a colored border and the intensifying
+of its background color. Clicking a _Match_ in the details pane displays
+an animated arrow pointing to this match in the screenshot. In the
+process, the screenshot is resized so it can be seen in its entirety
+within the window.
+
+//image:media\image12.png[image,width=285,height=65]
+
+The tab _Search Results Summary_ shows a textual overview over the
+search settings and the search result.
+
+If the search failed because of one single pattern, this pattern is
+shown in tab _Failure Reason_.
+
+== Other Uses of Matched Patterns
+
+If mouse clicks are to be performed relative to a matched image and, at
+the same time, the search is for more than one image, the image that the
+mouse clicks relate to must be at the top of the list.
+
+If the first image on the list is not found, the mouse click will be
+inserted relative to the first image from the list that is found.
+
+If the first image on the list that is found occurs multiple times, the
+image located on the far left of the screen will be used. If there are
+multiple images in the identical lateral position on the left, the
+topmost one will be used.
+
+Directly before editing the _Mouse click_ _Action Step_ the reference
+pattern must be found by performing the _Test_ function for the _Pattern
+Select_ _Action Step_. Otherwise the previously found search pattern
+will always be used as the

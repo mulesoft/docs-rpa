@@ -1,0 +1,61 @@
+= Using Workflow Debugger
+
+RPA Builder provides an integrated debugger for Workflows.
+
+To use the debugger, click *Debug Workflow* (image:debug-icon.png[The Debug Workflow icon, 2%, 2%]) or press _F8_. This starts a test run and opens Workflow Debugger instead of stopping the execution of the Workflow if an error occurs.
+
+When you execute a *Debug Workflow* run, you can call Workflow Debugger by pressing _Pause/Break_ on your keyboard. You can change the configuration of Workflow objects within the Workflow Debugger and then re-run them or continue from the current position. When the Workflow enters an error state, Workflow Debugger appears.
+
+image:workflow-debugger-window.png[The Workflow Debugger window]
+
+<1> The first pane in Workflow Debugger shows a condensed view of your Workflow and an arrow indicating which step was the last to execute.
+<2> The second pane shows the debug information for the selected Action Step. The Debug Information panel contains a combination of configuration settings and runtime information relating to Action Steps already executed.
+
+In this example, the Workflow entered the error state at the Window Wait Action Step. In the Debug Information panel, the *Result* section confirms that the window could not be found. Also, in the *Configuration* section, the *WindowTitle* value is set to `testname`, which caused the error because no window with that title existed during the execution.
+
+== Workflow Debugger Toolbar
+
+The Workflow Debugger Toolbar contains the following buttons:
+
+* (image:reload-workflow-icon.png[The Repeat icon, 2%, 2%]): *Repeat*
++
+Executes the Action Step again.
+* (image:edit-and-repeat-icon.png[The Edit & Repeat icon, 2%, 2%]): *Edit & Repeat*
++
+Opens the wizard for the last Action Step executed and enables you to modify its configuration and settings to fix the error. The Action Step then executes again to ensure it works correctly after the changes. The Workflow Debugger shows again on completion and you can check whether the *Run State* is `OK` or `Error`.
+* (image:run-process.png[The Continue icon, 2%, 2%]): *Continue*
++
+Continues the Workflow execution.
++
+Note that the *Continue with Runstate:* drop-down menu reflects the current *Run State*. You can force the state to `Error` or `OK` at this point. For example, if you want to debug the _OnError_ part of a Managed Block, set the state to `Error` during the _DoAction_ section which subsequently leads to the execution of the _OnError_ section. You can also force the *Run State* to `OK` when you want the rest of the Workflow to be executed even though an error occurred.
+* (image:step-forward.png[The Single Step icon, 2%, 2%]): *Single Step*
++
+Use this button to execute the Workflow step-by-step.
+* (image:stop-icon.png[The Stop icon, 2%, 2%]): *Stop*
++
+Stops the current debugging run and returns to RPA Builder.
+
+Note that you can call the wizard for an Action Step at any time by double-clicking it.
+
+== Using Breakpoints
+
+Breakpoints enable you to set points in the Workflow where the Workflow Debugger always stops the execution. You can either set breakpoints before starting a debug run or you can set them within the Workflow Debugger itself. Any Workflow object can have a breakpoint.
+
+To add a breakpoint to a Workflow object in the Workbench, right-click the object and select *Set Breakpoint* from the context menu. The breakpoint icon (image:breakpoint-icon.png[The Breakpoint icon, 2%, 2%]) shows next to that element.
+
+image:breakpoint.png[The Workflow window showing a Breakpoint next the to the Window Wait Action Step, 50%, 50%]
+
+To remove the breakpoint, right-click the Workflow object again and select *Delete Breakpoint* from the context menu.
+
+Setting a breakpoint for an item that contains other Action Steps (Transaction, Managed Block, etc.) enables you to repeat that item (and all of its contents) as a complete unit. This is useful when you are not quite sure of the root cause of an error. You can repeat the surrounding Transaction until you find out where an error occurs.
+
+You can also set and delete breakpoints directly in the Workflow Debugger by clicking on the bar that shows before an object:
+
+image:set-breakpoint.png[The Workflow Debugger showing breakpoints, 30%, 30%]
+
+RPA Builder saves breakpoints that you have defined in a Workflow along with the Workflow and you can reuse them at any time. Note that breakpoints only affect debug runs. Actual Workflow executions ignore breakpoints.
+
+== See Also
+
+* xref:running-workflows-and-using-workflow-run-results.adoc[Running Workflows and Using Workflow Run Results]
+* xref:analyzing-problems-with-analysis-packages.adoc[Analyzing Problems with Analysis Packages]

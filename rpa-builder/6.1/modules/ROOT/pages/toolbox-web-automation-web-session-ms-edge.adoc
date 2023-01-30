@@ -1,0 +1,39 @@
+
+
+= Web Session (MS Edge)
+
+include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
+
+[[properties]]
+== Properties
+
+include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
+* *Pageload Strategy*
+** *Default*: Not specified.
+** *Normal*: Waits until the pages finish loading and _Ready State_ is _Complete_.
+** *Eager*: Waits until pages finish loading and _Ready State_ is either _Interactive_ or _Complete._
+** *None*: Doesn’t wait until pages finish loading, returns immediately.
+
+== Inbound Variables
+
+* Web Session ID
+* Initial URL
+
+== Outbound Variables
+
+This action step has no outbound variables.
+
+// Wizard
+include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
+
+*Browser specific settings*:
+
+image:toolbox-variable-web-automation-web-session-images/image8.png[An image showing the browser specific settings]
+
+See also <<properties, Properties>>.
+
+// activityWorkflowOverlappingWebSession
+include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
+
+//closingWebSession
+include::partial$toolbox-web-automation-web-session.adoc[tag=closingWebSession]

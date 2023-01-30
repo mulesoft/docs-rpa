@@ -6,7 +6,7 @@ The center of excellence is a user group that, for the approval of an evaluated 
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
@@ -16,8 +16,6 @@ The center of excellence is a user group that, for the approval of an evaluated 
 |Process Automation Open, Process Create
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
 
 * Your user must be marked as *Project Manager*.
 Learn how to xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[Designate a User as Project Manager].

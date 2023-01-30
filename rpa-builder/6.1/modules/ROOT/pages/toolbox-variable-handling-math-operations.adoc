@@ -1,0 +1,69 @@
+
+
+= Math Operations
+
+You can use this Action Step to perform mathematical calculations. You
+can enter a formula with fixed values or add values using mapped
+variables. The result can be reused in the course of the workflow.
+
+The following mathematical operations are available:
+
+* Addition
+* Subtraction
+* Multiplication
+* Division
+* Absolute value
+* Maximum value
+* Minimum value
+* Exponentiation
+* Round value
+
+== Properties
+
+*Calculate Expression Result as* Here, you can specify whether the
+result should be calculated and displayed as a whole number (integer) or
+as a number with decimals (floating point/double-precision floating
+point).
+
+*Math Expression* The formula entered is shown here.
+
+== Inbound Variables
+
+*Math Expression* Here, you can enter a formula with fixed values (for
+example (42+84)/3), or insert variables via _Insert Available Variables_
+for use in performing the mathematical operations (for example,
+(\{a}+\{b})/\{c}).
+
+== Outbound Variables
+
+*ResultAsFloat* The result is displayed as a floating-point value.
+
+*ResultAsInt* The result is displayed as a whole number (integer).
+
+== Wizard
+
+Enter the formula in the _Math Expression_ text field. Clicking _Insert
+Mathematical Operation_ opens a drop-down list with all available
+mathematical operations.
+
+Under _Insert Available Variables,_ you will find all variables
+previously added using the Pin button.
+
+Up to ten variables can be mapped. These are displayed in the Wizard and
+can be selected for the calculation.
+
+//image:media\image1.png[image,width=443,height=294]
+
+You can enter test values in the _Test Values_ field to test whether or
+not the formula is valid. Then click the _Test_ button. If the formula
+is valid, the result will be displayed. Otherwise, an error message will
+appear. The values of the mapped variables are not important until the
+production run of the workflow.
+
+If you want to output the result as a floating-point value, select
+_Calculate Expression Result as Floating-Point Value_; if you want to
+display the result as a whole number, select _Calculate Expression as
+Integer Value_.
+
+Please note that implied multiplication also applies when you enter the
+_Math Expression_ and you must put in the parentheses yourself.

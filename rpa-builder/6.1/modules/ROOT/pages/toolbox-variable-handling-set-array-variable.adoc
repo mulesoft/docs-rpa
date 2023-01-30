@@ -1,0 +1,97 @@
+
+
+= Set Array Variable
+
+The Set Array Variable Action Step enables you to assign new values to an array.
+
+One possible use is to copy a list to an array in order to iterate
+through all elements in the list more easily and to process individual
+list elements further.
+
+== Properties
+
+The _Set Array Variable_ Action Step contains no other properties other than the _general_ ones.
+// link:#CommonProperties[+++general+++] ones.
+
+== Inbound Variables
+
+*Array to change* (Array) Array in which values are to be changed.
+
+The array must have previously been created as a
+_Workflow Based Variable_ or using _Read from Excel File_.
+
+Please make sure that arrays are named according to their content. This
+makes a Workflow easier to understand.
+
+It is preferable to create an extra array in the _Workflow Based
+Variables_ rather than to overwrite an array created using the
+_Read from Excel File_ Action Step with different values.
+
+*New array value* (array or alphanumeric) Values to overwrite the entire
+array.
+
+The entire array is rewritten with the given values. The former values
+are deleted.
+
+By changing the values it is possible to also change the number of
+elements in the array (_Array Count_).
+
+== Outbound Variables
+
+The _Set Array Variable_ Action Step possesses no outbound variables.
+
+== Wizard
+
+The _Array to change_ is the array with values to be overwritten. You
+can select it from a drop-down list if such an array already exists.
+
+The _New array value_ is the new values for overwriting the array. You
+can include them via a Pin Variable or enter them directly as a list of
+comma separated values in the relevant field.
+
+The elements for array variables must be separated by commas.
+
+The values for array variables are initially saved as strings. That is
+why, when saving the Action Step, all array elements which are not yet
+presented in double quotes will automatically be placed in double
+quotes.
+
+//image:media\image1.png[image,width=604,height=105]
+
+If you want to include an element containing one or more commas in your
+list, you must place this element in double quotes before saving it.
+
+E.g. “4,2” or “many commas: ,,,, , , ”
+
+Text elements are permitted to contain single quotes:
+
+E.g. “This ‘text’ contains single quotation marks.”
+
+Text elements which need to contain double quotes must include another
+double quotation mark before each double quotation mark and the whole
+element also needs to be placed inside double quotes.
+
+E.g. “This “”text”” contains double quotation marks.”
+
+== Example
+
+Car servicing is to be automated at a workshop.
+
+//image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=604,height=342]
+
+For testing purposes, the array _Services_, which is generated via the
+_Workflow Based Variables_ and which contains the services actually
+performed, can be pre-populated with values. Further on in the Workflow,
+services are read from a scanned-in form, e.g. using _OCR_, and the
+array _Services_ in the _Set Array Variable_ Action Step is overwritten
+with the actual values.
+////
+== Related Elements
+
+The following sections may help you to better understand the
+relationships between the individual array Workflow elements:
+
+* link:#WorkflowBasedVariables[_Workflow Based Variables_]
+* link:#Array_GetArrayCount[_Get Array Count_]
+* link:#Array_ReadFromArray[_Read from Array_]
+////
