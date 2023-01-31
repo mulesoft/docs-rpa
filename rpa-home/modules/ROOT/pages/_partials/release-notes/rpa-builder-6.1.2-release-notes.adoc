@@ -2,10 +2,12 @@
 
 RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
 
-== January 27, 2023
+== January 31, 2023
 
 // == What's New
-//include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* Upgraded the Tomcat dependency to version 9.0.71
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
