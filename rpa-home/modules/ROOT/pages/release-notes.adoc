@@ -10,6 +10,7 @@ The latest versions of RPA Builder, RPA Recorder, and RPA Bot become available f
 
 == RPA Builder
 
+* xref:release-notes/rpa-builder-6.1.2-release-notes.adoc[RPA Builder 6.1.2 Release Notes]
 * xref:release-notes/rpa-builder-6.1.1-release-notes.adoc[RPA Builder 6.1.1 Release Notes]
 * xref:release-notes/rpa-builder-6.1.0-release-notes.adoc[RPA Builder 6.1.0 Release Notes]
 * xref:release-notes/rpa-builder-6.0.1-release-notes.adoc[RPA Builder 6.0.1 Release Notes]
