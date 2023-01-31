@@ -1,0 +1,213 @@
+= User Interface
+
+Following are the descriptions of every section and element in the RPA Recorder UI.
+
+== Home
+
+The Home section contains the main controls of RPA recorder. If RPA recorder is started from RPA Manager, the existing BPMN of the process also shows here.
+
+image:rpa-recorder-home.png[RPA Recorder Home screen]
+
+== Recording
+
+The following functions are available in RPA Recorder while recording a process:
+
+[%header,cols="10,20,30,10"]
+|===
+|Icon |Name | Description | Hotkey
+|image:start-recording-icon.png[Start Recording icon, 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
+|image:pause-recording-icon.png[Pause Recording icon, 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
+|image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session | Finishes the current recording session, and triggers the generation of xref:documents.adoc[Documents]. | --
+|image:take-screenshot-icon.png[Take Screenshot icon, 20%, 20%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
+|image:add-variable-icon.png[Add Variable icon, 20%, 20%]  | Add Variable | Opens the <<Add Variable>> dialog. | `F10`
+|image:add-comment-icon.png[Add Comment icon, 20%, 20%] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
+|image:add-activity-icon.png[Add Activity icon, 20%, 20%] | Add Activity | Opens the <<Add Activity>> dialog. | `F12`
+|===
+
+
+// New recording session is started via this button, or alternatively by the hotkey F8.
+// When the recording has been started the main view gets collapsed into a minified view.
+//
+// On the right there is a timer which indicates total recording time, but also is a visual indicator if recording is running or paused. To pause the recording click on the red circled pause icon or use the hotkey F8. To continue press the recording icon or F8 again.
+//
+// Recording session is finished via this button. There is no hotkey to directly stop a recording. Right after the recording has been stopped, the application triggers the [Documents](xref:) and BPMN generations.
+//
+// Manual screenshots can be taken via this button, or alternatively by the hotkey F9. This opens the [Define screenshot](xref:) dialog, in which the user has the option between full-screen or partial area screenshot.
+//
+// Variables can be entered via this button, or alternatively by the hotkey F10. This opens the [Add variable](xref:) dialog.
+//
+// Comments can be entered via this button, or alternatively by the hotkey F11. This opens the [Add Comment](xref:) dialog, where user can enter a comment.
+
+// You can add new activities directly to the recorded BPMN by clicking the *Add Activity* button image:add-activity-icon.png[Add new activities], or by pressing `F12`. This opens the <<Add Activity>> dialog.
+//
+// Activities can be RPA Bot Tasks, which represent Workflows done by RPA Bots, User Tasks or External Tasks.
+
+// During recording, each mouse click is automatically recorded with coordinates and type (left click, right click, etc.). If you want to record a mouse over hover action, hold the mouse pointer over the corresponding position and press the hotkey F2.
+// This records the coordinates and a mouse over hover action for this position.
+
+== Toast Notifications While Recording
+
+When a recording state changes, a toast notification appears indicating current state. The notification stays for 2 seconds and disappears automatically.
+
+== Define Screenshot
+
+Before you take a screenshot manually, the screen automatically freezes. You can select a method for taking manual screenshots:
+
+. Press `F9` while recording to open the Define Screenshot window. +
+image:define-screenshot-window.png[Define Screenshot window]
+
+. Select a freezing delay (in seconds), or no delay, from the dropdown menu. +
+image:select-freeze-delay.png[Select freezing delay]
+
+[NOTE]
+The timer delay mechanism takes effect regardless of the chosen screenshot method.
+
+== Add Variable
+
+You can add variable information as part of the recording documentation by pressing `F10` while recording. This is useful for the implementation of the process automation in RPA Builder.
+
+image:add-variable-window.png[Add Variable window]
+
+The possible variable types are:
+
+* Alphanumeric
+* Integer
+* Float
+* Boolean
+* Credential
+
+Click *Add* to save the variable information to the recording documentation.
+
+//Image necessary?
+
+[NOTE]
+Pause the recording before adding a variable. If you open the Add Variable window while the recording is running, it pauses automatically.
+
+== Add Comment
+
+You can add a comment as part of the recording to enrich the documentation with insight about a specific step.
+
+image:add-comment.png[Add Comment window]
+
+[NOTE]
+Pause the recording before adding a comment. If you open the Add Comment Window while the recording is running, it pauses automatically.
+
+
+== Add Activity
+
+You can manually add an activity as part of the BPMN recording. Enter a name for the Activity and select its type.
+
+image:add-activity.png[Add Activity window]
+
+Possible activity types are:
+
+* Web Task
+* Bot Task
+* User Task
+
+When you create a Web Task, you can choose to continue using the session of the last closed Web Task.
+
+For User Tasks, RPA Recorder does not save documentation. You need to enter a description instead.
+
+To continue recording, add a Bot Task.
+
+[NOTE]
+Pause the recording before adding an activity or changing the creation mode of the activities. If you open the pop-up using the respective hotkey, while the recording is running, the recording automatically pauses.
+
+== Web Recording Browser
+
+Use the Web Recording Browser to record website navigation actions. It behaves as a regular web browser and enables you to:
+
+* Automatically identify elements of a website with which you interact and determine their XPath and attributes.
+* Save your attribute selection of a web element to reuse it when recording the same web elements on a website.
+* Record mouse hover positioning during web navigation.
+
+Adding a Web Task opens the Web Recording Browser. When you add more than one Web Task, you can select *Continue with already existing web session* to display the last loaded page from the previous Web Task and continue from that point.
+Otherwise, you can enter a URL in the address bar of the browser, and it loads this URL when you press *Enter* or click the *Go* button (image:play-icon.png[Go button, 3%, 3%]).
+
+image:web-recording-browser-blank.png[Web Recording Browser]
+
+=== Select Web Elements
+
+When you hover the cursor over a web element, the browser highlights it with a blue background. After an interaction with an element (such as a mouse click or key press on the keyboard), the element's XPath and available attributes show on the Attribute Selection panel.
+
+To record the mouse hover event on a highlighted element, press `F2`.
+
+image:web-recording-select-element.png[Select Web Element]
+
+By default, the Attribute Selection panel is hidden. Click on the right border of the Web Recording Browser to extend or collapse it.
+
+=== Save Web Element Attributes
+
+The Attribute Selection panel shows the default extracted XPath and all the attributes of the selected web element.
+Select one or more attributes by checking the box next to them. After you select an attribute, RPA Recorder adds the attribute and its value to the extracted XPath.
+
+image:add-attribute.png[Add Attribute to XPath, 50%, 50%]
+
+You can save your attribute selection for a web element to use it for future recorded events by checking *Save selection*.
+If you select the saved element while recording the same website later on, the saved attribute displays as already selected in the attribute selection panel and appears as added to the extracted XPath.
+If you don't want to use the saved attributes for a given web element, click the *Default* button (image:default-icon.png[Default button, 3%, 3%]) to revert back to the default extracted XPath for that web element.
+
+=== Save Mouse Hover
+
+You can record your mouse hover positioning while using the Web Recording Browser. This is particularly useful for capturing navigation through drop down menus.
+
+To capture a mouse hover action during web recording, press `F2` on a web element. This capture is indicated by a blue flashing box around the selected web element.
+
+== RPA Recorder Configuration
+
+You can configure RPA Recorder and set preferences.
+
+The configuration section is divided into two parts:
+
+* <<Settings>>
+* <<Hotkeys>>
+
+=== Settings
+
+Use the following settings to configure RPA Recorder:
+
+* *Directory*: Specifies the local folder for storing the documents (BPMN, PDF and XES) and application logs.
+* *Create Process Documentation (PDF)*: If checked, a process documentation file is saved as PDF after the recording session stops.
+* *Create Process Mining files (XES)*: If checked, a XES process fileXES process file is generated after the recording session stops.
+* *Generate debug file with a list of raw recorded events*: If checked, a debug file is generated after the recording session stops.
+* *Take screenshot with every mouse click*: If checked, RPA Recorder automatically takes a screenshot on every mouse click.
+** *Area around the mouse click*: Screenshots are a cropped area around the mouse click, based on the Area size in % (expressed in screen resolution percentage). +
+    Crop percentage can be within 20-50% screen resolution.
+** *Full screen*: Screenshots include all screens connected to your machine.
+** *Mouse click screenshot quality*: Specifies the quality of the screenshots on every mouse click.
+*** Compressed JPEG format
+*** Loss-free PNG format
+* *Merge keystrokes*: Concatenates keyboard entries entered during the recording into meaningful words and sentences based upon the timestamps when they were entered. +
+  Number is expressed in seconds and can range from 2 to 10 seconds.
+* *Verbosity level*: Defines wether to show detailed Process Information in Documentation. If you select *Low*, the information is not shown in Documentation.
+
+=== Hotkeys
+
+This section displays information about the specific hotkeys that can be used, and their description. Hotkeys cannot be customized.
+
+You can activate or deactivate the hotkeys function by checking or unchecking the *Activate usage of hot keys* box. If activated, the hot keys invoke the corresponding action. If deactivated, the hot keys cannot control the recorder, and any hot key presses during a recording are recorded as normal key strokes.
+
+The hotkeys function is activated by default.
+
+image:hotkeys.png[The hotkeys configuration window, 60%, 60%]
+
+=== Log files
+
+This section provides access to RPA Recorder log files and log directory.
+
+Click *Open Log File* to open the latest log file. Click *Open Log Directory* to open the folder containing all RPA Recorder logs in your local computer.
+
+image:log-files.png[Log Files Menu, 60%, 60%]
+
+== About Screen
+
+The about screen contains general information about RPA Recorder:
+
+* Version number
+* Copyright information
+
+
+== See Also
+
+* xref:documents.adoc[Documents]

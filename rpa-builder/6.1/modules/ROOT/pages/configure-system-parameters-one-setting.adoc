@@ -1,0 +1,14 @@
+= Changing the Most Important System Parameters with One Setting
+
+_Windows_ has a general performance setting for visual
+effects that will turn off all settings relating to picture search at
+the same time. We *strongly recommend* adjusting this setting for all
+client systems and all systems used to create __Workflow__s. Simply go
+to System Properties on the tab Advanced.
+
+image::changing-the-most-important-system-parameters-with-one-setting-image1.png[System properties window]
+
+If not selected, switch to the _Visual Effects_ tab and set the radio
+button to _Adjust for best performance._
+
+image::changing-the-most-important-system-parameters-with-one-setting-image2.png[Performance options window]

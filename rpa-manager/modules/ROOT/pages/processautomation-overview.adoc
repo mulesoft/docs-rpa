@@ -7,7 +7,7 @@ The process team can revise the process continuously.
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
@@ -20,8 +20,6 @@ The process team can revise the process continuously.
 |Process Create
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * There must be at least one process in the *My Backlog* view in the *My RPA* module.
 * RPA Builder, RPA Bot, and all applications required for executing the processes must be installed and configured on a computer.

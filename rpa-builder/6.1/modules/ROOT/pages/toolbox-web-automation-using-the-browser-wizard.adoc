@@ -1,0 +1,41 @@
+= Using the Browser Wizard
+
+The _Browser Wizard_ is part of _Web Automation Action Step_ wizards. It behaves like a normal browser and enables you to select additional elements of a website and determine their _Xpath_. Using the _Browser Wizard_ is required by most _Web Automation_ objects embedded in a _Web Session_.
+
+image:open-browser-wizard-button.png[The Open Browser Wizard button, 50%, 50%]
+
+Clicking the *Open Browser Wizard* button in one of the wizards opens a new
+window that functions as a browser and loads the URL that is defined as the
+initial URL for the enclosing _Web Session_.
+
+image:browser-wizard.png[The Browser Wizard window]
+
+If you start the _Web Session_ with `about:blank`, you can enter a URL in the address bar of the _Browser Wizard_ and the wizard loads this URL when you press _Enter_.
+
+== Selecting Web Elements
+
+When you position the cursor over the element you want to check or use within a _Web Automation_ object, the wizard highlights the element with a blue background. If hovering over the elements does not highlight them, click on the website or web application within the _Browser Wizard_ to activate it first.
+
+image:browser-wizard-highlight.png[The Browser Wizard window showing a highlighted element]
+
+To select the highlighted element press _F2_. After selecting an element, its background turns blue and the _XPath_ and available attributes corresponding to this element show on the Properties panel.
+
+////
+Alternatively, first click the _Auto-Select after 5 Seconds_ button and
+then highlight the element by hovering the mouse over it. After five
+seconds, the highlighted object is automatically selected.
+
+image:media\image3.png[Ein Bild, das Text enthält. Automatisch
+generierte Beschreibung,width=144,height=368]
+////
+
+== Browser Wizard Toolbar
+
+The following list describes the buttons of the _Browser Wizard_ toolbar:
+
+* (image:back-icon.png[The Back button, 2%, 2%]): Navigates back.
+* (image:forward-icon.png[The Forward button, 2%, 2%]): Navigates forward.
+* (image:reload-icon.png[The Reload button, 2%, 2%]): Reloads the current page.
+* (image:clear-cache-cookies.png[The Clear Cache and delete Cookies button, 2%, 2%]): Clears the browser cache data and Cookies.
+* (image:double-check-icon.png[The Accept Selection and take over Input/Selection button, 2%, 2%]): Confirms the selection and extracts the _XPath_ of the selected element along with the current input as values. This option is available only in the *Keystrokes to Web Element* Wizard.
+* (image:check-icon.png[The back button, 2%, 2%]): Confirms the selection and extracts the _XPath_ of the selected element.

@@ -1,0 +1,132 @@
+
+
+= Iterate over Files
+
+The _Iterate over Files_ Action Step performs various Action Steps on a
+specified number of files. Drag the Action Steps to be processed into
+the gray area labeled _Drop Items here_ using drag and drop. The Action
+Steps placed there will be processed from top to bottom in the order
+specified. This means that the Action Steps for processing will be
+applied to all files located in a folder and, depending on the settings,
+its sub-folders. It is possible to set various parameters such as the
+maximum number of files to be processed.
+
+== Properties
+
+*File Operation Settings:*
+
+* *Directory path*
+Enter the path to the directory where the files to be processed are
+located. You can specify an absolute or relative path. If a relative
+path is used, then the path relates to the _Base Path_ variable.
+* *File name* Use placeholders here to specify the names of the files to
+be processed. Use the placeholders * and ? and all allowed characters to
+construct a search expression. The placeholder *.* is used by default.
+This will find all files in a directory.
+
+A list of invalid characters is provided in the section
+*Path/file name/invalid characters*.
+
+Examples of how to construct search expressions are provided at the end
+of this section.
+
+* *Force error if iteration limit is exceeded* Set whether the Workflow
+is to be interrupted and an error message generated. This is applicable
+in the following two cases:
+** If the number of files for processing set under *Max iterations* has
+been reached and *Use iteration limit* is enabled.
+** If the maximum number of 100,000 files has been processed.
+* *Max iterations* Set the maximum number of files that should be
+processed until _Iterate over files_ ends. You can specify up to 100,000
+iterations. Max iterations will only be taken into account if you enable
+the option *Use iteration limit*.
+* *Recursive loop* Specify whether the sub-folders located in the
+specified *Directory path* and any files they may contain are to be
+included in the processing.
+* *Use iteration limit* Enable this option if you want to process a
+limit of up to 100,000 files. Set the limit in the field *Max
+iterations*.
+
+Other Properties that are the same in all Action Steps are described in
+the section on *Common Properties*. For reasons of
+clarity they are not shown here.
+
+== Inbound Variables
+
+*Directory path*
+Enter the path to the directory where the files to be processed are
+located. You can specify an absolute or relative path. If a relative
+path is used, then the path relates to the _Base Path_ variable.
+
+* *File name* Use placeholders here to specify the names of the files to
+be processed. Use the placeholders * and ? and all allowed characters to
+construct a search expression. The placeholder *.* is used by default.
+This will find all files in a directory.
+
+== Outbound Variables
+
+*Count Of Processed Elements* The _Iterate over Files.Count of Processed
+Elements_ variable provides the number of files that have been
+processed.
+
+== Wizard
+
+* *Directory path* Specify the path to the files here. You can create an
+absolute path or a path relative to the _Base Path_.
+//using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=129,height=22] buttons.
+The initial
+value is %STWS_BASEPATH%. Select an existing path.
+//using the image:media\image3.png[image,width=20,height=20] button.
+You can also
+insert variables from the _Workflow_ in order to construct the path. To
+do so, click on the pin and select one of the available variables.
+////
+More information about the environment variables (Insert Environment
+Variable) and script variables (Insert Script Variable) can be found in
+the section *Settings*.
+////
+
+* *File name* Use placeholders here to specify the names of the files to
+be processed. Use the placeholders * and ? and all allowed characters to
+construct a search expression. The placeholder *.* is used by default.
+This will find all files in a directory. You can also insert a variable
+from the Workflow as the _File Name_. To do so, click on the pin and
+select one of the available variables.
+
+A list of invalid characters is provided in section
+*File Operations*.
+
+Examples of how to construct search expressions are provided at the end
+of this section.
+
+* *Iteration limit* Enable this option to to set a limit on how many
+files can be iteratively processed. Enter your desired limit in the
+adjacent field; the maximum is 100,000.
+* *Force error if iteration limit is exceeded* Set whether the Workflow
+is to be interrupted and an error message generated. This is applicable
+in the following two cases:
+** If the *Iteration limit* is enabled and the number of files entered
+in that field has been reached.
+** If the maximum number of 100,000 files has been processed.
+* *Recursive loop over all sub-folders* Set whether the sub-folders
+located in the specified *Directory path* and any files they may contain
+are to be included in the processing.
+
+== Example
+
+Use individual question marks (?) and allowed characters in the *File
+name* field to find a specific number of variable letters or numeric
+digits in the file name. The placeholder ???_log.* will, for example,
+find all files with three unknown characters at the start of the file
+name, followed by “_log”. If you do not know the number of unknown
+characters, but a constant piece of text appears in the file name, then
+you can use *_log*.* This search expression finds all files containing
+_log in the file name. You can also omit the placeholder .* (this is
+used to search for the file extension).
+
+A list of invalid characters is provided in the section
+*Path/file name/invalid characters*.
+
+Examples of how to construct search expressions are provided at the end
+of this section.

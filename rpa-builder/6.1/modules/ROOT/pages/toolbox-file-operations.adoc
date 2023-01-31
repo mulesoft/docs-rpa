@@ -1,0 +1,136 @@
+
+
+= File Operations
+
+File Operations enable you to interact with the file system where your automation is running.
+
+* xref:toolbox-file-operations-copy-file.adoc[Copy File]
++
+This Action Step copies a file from one directory to another.
+* xref:toolbox-file-operations-create-file.adoc[Create File]
++
+This Action Step creates an empty file at the specified path.
+* xref:toolbox-file-operations-delete-file.adoc[Delete File]
++
+This Action Step deletes a file located at the specified path.
+* xref:toolbox-file-operations-extract-images-from-pdf-file.adoc[Extract Images from PDF File]
++
+This Action Step enables you to extract images from a PDF file.
+* xref:toolbox-file-operations-file-check.adoc[File Check]
++
+This Action Step enables you to check whether a file exists or not.
+* xref:toolbox-file-operations-get-file-info.adoc[Get File Info]
++
+This Action Step fetches information about a file at the specified path.
+* xref:toolbox-file-operations-iterate-over-files.adoc[Iterate over Files]
++
+This Action Step performs various Action Steps on a specified number of files.
+* xref:toolbox-file-operations-move-file.adoc[Move File]
++
+This Action Step moves a file from one directory to another.
+* xref:toolbox-file-operations-read-from-text-file.adoc[Read from Text File]
++
+This Action Step enables you to read from a text file and use the Read Mode to specify which part of the file is to be read.
+* xref:toolbox-file-operations-read-pdf-file.adoc[Read PDF File]
++
+With the Read PDF File Action Step, you can read text from a PDF file.
+* xref:toolbox-file-operations-rename-file.adoc[Rename File]
++
+This Action Step renames a file.
+* xref:toolbox-file-operations-write-to-text-file.adoc[Write to Text File]
++
+Write to Text File writes text to a text file.
+
+== Common Settings and Properties
+
+The following settings and properties apply to all the File Operations Action Steps:
+
+* *Action Step Settings*
++
+Specify path information for all Action Steps of the type File Operations in Settings. To access the Settings configuration panel, click (image:settings-icon.png[The Settings icon, 2%, 2%] *Settings*) in the Workflow Initialization block.
+* *Path checking*
++
+The paths calculated at runtime for File Operations are checked against the list of allowed paths configured in the *Allow File Operation Action Steps only in following paths* option inside *Workflow Settings* -> *File Operation Settings*.
+
+* *Path / file name / invalid characters*
++
+The path and file name are managed separately and are made available to other operations as the Outbound Variables *File Name* and *Directory Path*. None of the Action Steps are able to interpret wildcards in the form of `?` or `*`. Use unique file names at all times. If the path or file name contains invalid characters, the Action Step goes into an error state (this does not apply to the *File name* in the *Iterate over Files Action Step*). The Iterate over Files Action Step iterates over the result of a wildcard operation in the form of an Action Block.
++
+The following characters are invalid:
++
+[%header%autowidth.spread,cols=".^a,.^a]
+|===
+| Symbol | Explanation
+| `<` | Less than sign
+| `>` | Greater than sign
+| `:` | Colon
+| `"` | Double quotes
+| `/` | Forward slash
+| `\` | Back slash
+| `\|` | Vertical bar
+| `?` | Question mark
+| `*` | Asterisk
+|===
+
+* *Timeout*
++
+If the desired File Operation is not completed successfully within this time, the Action Step goes into an error state.
+
+* *Insert environment variable*
++
+The *Insert Environment Variable* drop-down list of all File Operation Action Steps contains a predefined list of Windows environment variables. Use these in the Directory Path field to define a variable path to a file within the relevant Action Steps. The variable will be inserted at the current location of the cursor. The standard environment variables and variables defined by the user in RPA Builder are available.
++
+The environment variables contain paths to specific folders. The default installation location for Internet Explorer, for example, is `C:\Program Files\Internet Explorer\` or `C:\Program Files x86\Internet Explorer\`. The path may vary if the operating system was installed on a different drive or in a different language.
++
+The following list contains the key environment variables:
++
+** *%ALLUSERSPROFILE%*
++
+The All Users profile folder
+** *%APPDATA%*
++
+The folder for the Application Data of the user who is presently logged in
+** *%COMPUTERNAME%*
++
+System name
+** *%ProgramFiles%*
++
+The folder for Programs
+** *%SystemRoot%*
++
+The system root folder, for example `C:\Windows`
+** *%SystemDrive%*
++
+The system root drive, for example `C:\`
+** *%USERPROFILE%*
++
+The profile folder for the user who is presently logged in
+
+* *Insert Script Variable*
++
+The *Insert Script Variable* drop-down list of all File Operation Action Steps contains a predefined list of script variables. Use these in the Directory Path field to define a variable path to a file within the relevant Action Steps. The variable is inserted at the current location of the cursor.
++
+The following RPA Builder script variables are available:
++
+** *Computer Name*
++
+This script variable `{@ComputerName}` inserts the name of the computer on which the Action Script is presently running.
+** *Local Host Name*
++
+This script variable `{$HostName}` inserts the name of the host on which the Action Script is presently running. The host name may differ from the computer name if, for example, several virtual machines are running on one host.
+** *Login User Name*
++
+This script variable `{$UserName}` inserts the name of the user who is logged in.
+** *New Line*
++
+This script variable `{@CRLF}` creates a line break. This script variable works only in the Action Step Write to Text File.
+** *Script Run Directory*
++
+The script variable `{@ScriptDir}` returns the directory containing the Workflow without a trailing backslash.
+** *Tabulator*
++
+This script variable `{@TAB}` inserts a tab stop. This script variable works only in the Action Step Write to Text File.
+
+* *User privileges*
++
+For all Action Steps of the type File Operations, the file operations are successful only if the user who is presently logged in has privileges to access the directories and files used.

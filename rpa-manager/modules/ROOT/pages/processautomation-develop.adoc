@@ -16,27 +16,25 @@ As long as the project is in the build phase, it can be seen in the repository o
 
 == Before You Begin
 
-* Obtain the needed privileges:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
 +
 [cols="1,2"]
 |===
 |*Action* |*Required Privileges*
 
 |Open the *Process Automation* module
-|*Process Automation Open*
+|Process Automation Open
 
 |Create processes
-|*Process Create*
+|Process Create
 
 |Record processes with RPA Recorder
-|*Process Recording*
+|Process Recording
 
 |Open, use and edit the activity library in RPA Builder
-|*Activity Library Open*, *Activity Library Administration*
+|Activity Library Open, Activity Library Administration
 
 |===
-+
-Learn how to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign privileges to a user].
 
 * To record a process, RPA Recorder must be installed and connected to RPA Manager.
 * To build a process automation, RPA Builder must be installed and connected to RPA Manager.
