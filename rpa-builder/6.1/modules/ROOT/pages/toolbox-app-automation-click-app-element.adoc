@@ -1,5 +1,3 @@
-
-
 = Click App Element
 
 The _Click App Element_ Action Step lets you perform a number of click
@@ -9,96 +7,79 @@ no mouse action is needed.
 
 == Properties
 
-*Click App Element Settings*
+* *Click App Element Settings*
 
-*Initial Delay (ms)*: Defines how long to wait before initially
-executing the configured action.
+** *Initial Delay (ms)*
++
+Defines how long to wait before initially executing the configured action.
 
-*(Additional) Modifier*: An additional key or key combination that is
-active when the configured mouse action is executed.
+** *(Additional) Modifier*
++
+An additional key or key combination that is active when the configured mouse action executes.
++
+The following choices are available: `None`, `Ctrl`, `Alt`, `Ctrl + Alt`, `Shift`,
+`Ctrl + Shift`, `Alt + Shift`, `Ctrl + Alt + Shift`.
 
-The following choices are available: None, Ctrl, Alt, Ctrl + Alt, Shift,
-Ctrl + Shift, Alt + Shift, Ctrl + Alt + Shift.
-
-*Mouse Action:* Only available in _Mouse Action_ operation mode. Defines
-which mouse action should be executed.
-
+** *Mouse Action:*
++
+Only available in _Mouse Action_ operation mode. Defines which mouse action to execute.
++
 The following choices are available:
 
-* {blank}
+*** *None*
 +
+Moves the mouse to the selected element and executes no action. This is equivalent to a _hover_.
 
-*None*: No action is executed. This is equivalent to a “hover”, because
-the mouse is still moved to the selected element.
-
-* {blank}
+*** *Left Click*
 +
+Executes a single left-click.
 
-*Left Click*: Executes a single left-click.
-
-* {blank}
+*** *Middle Click*
 +
+Executes a single click of the middle mouse button (usually the mouse wheel).
 
-*Middle Click*: Executes a single click of the middle mouse button
-(usually the mouse wheel)
-
-* {blank}
+*** *Right Click*
 +
+Executes a single right-click.
 
-*Right Click*: Executes a single right-click.
-
-* {blank}
+*** *Double Left Click*
 +
+Executes a double left-click.
 
-*Double Left Click*: Executes a double left-click.
-
-* {blank}
+*** *Double Right Click*
 +
+Executes a double right-click.
 
-*Double Right Click*: Executes a double right-click.
-
-* {blank}
+*** *Wheel up*
 +
+Executes a _mouse wheel up_ action, corresponding to scrolling up one row.
 
-*Wheel up*: Executes a “mouse wheel up” action, corresponding to
-scrolling up one row.
-
-* {blank}
+*** *Wheel down*
 +
+Executes a _mouse wheel down_ action, corresponding to scrolling down one row.
 
-*Wheel down*: Executes a “mouse wheel down” action, corresponding to
-scrolling down one row.
-
-
-*Operation mode*: You can select here between _Invoke Element_ and
-_Mouse Action_.
-
-* {blank}
+* *Operation mode*
 +
+You can select here between _Invoke Element_ and _Mouse Action_.
 
-*Invoke element* communicates directly with the Microsoft API to execute
-the functions of the element; the mouse is not moved in this process.
-
-* {blank}
+** *Invoke element*
 +
+Communicates directly with the Microsoft API to execute the functions of the element; the mouse is not moved in this process.
 
-*Mouse Action* simulates the configured mouse action and, in the
-process, moves the mouse to the target element.
-
-* {blank}
+** *Mouse Action*
 +
-*Trigger count* defines how often the configured action should be
-executed.
+Simulates the configured mouse action and moves the mouse to the target element.
+
+* *Trigger count*
++
+Defines how often the configured action executes.
 
 == Inbound Variables
 
-*Trigger Count*
-
-*Initial Delay*
-
-*XPath to Element*
-
-*Window Title*
+* *Trigger Count*
+* *Initial Delay*
+* *XPath to Element*
+* *Window Title*
 
 == Outbound Variables
 
