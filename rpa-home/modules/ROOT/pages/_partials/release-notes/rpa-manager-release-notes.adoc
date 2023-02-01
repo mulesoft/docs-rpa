@@ -11,7 +11,7 @@ RPA Manager is the cloud-based control plane for your automation projects.
 [%header,cols="2a,2a,1a"]
 |===
 |Known Issue|Workaround |ID
-| The copying of a process may fail in the RPA Builder, if the original process will be modified before the copied process has been processed and uploaded by the MS RPA Builder. | Please do not edit the original process before the copy was uploaded by the MS RPA Builder. | W-12472442, W-11954705
+| The copying of a process may fail in the RPA Builder if the original process will be modified before the copied process has been processed and uploaded by the MS RPA Builder. | Please do not modify the original process before the copy was uploaded by the MS RPA Builder. | W-12472442, W-11954705
 |===
 
 [[january-26-2023]]
