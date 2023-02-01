@@ -2,6 +2,18 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[february-01-2023]]
+== February 01, 2023
+
+// == Known Issues
+//include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+1]
+
+[%header,cols="2a,2a,1a"]
+|===
+|Known Issue|Workaround |ID
+| The copying of a process may fail, if the original process will be modified before the copied process has been processed and uploaded by the MS RPA Builder. | Please do not edit the original process before the copy was uploaded by the MS RPA Builder. | W-12472442
+|===
+
 [[january-26-2023]]
 == January 26, 2023
 
