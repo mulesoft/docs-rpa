@@ -29,7 +29,7 @@ image::rpa_botmanagement_botexecutionplans_example_effectiveschedulecomposition.
 
 This example shows the planned process executions from the view of a user who lives in Rome (GMT+01:00). All shown times are converted to the user's time zone.
 
-The shown configuration uses a schedule that is repeated daily from 12:30 PM to 20:30 PM, regardless of time zones.
+The production configuration uses a schedule that is repeated daily from 12:30 PM to 20:30 PM regardless of time zones.
 
 The bot is installed on a computer using UTC timezone. It has an assigned service time defined in Japanese time (GMT+09:00).
 
