@@ -37,7 +37,7 @@ The process uses an application installed on a computer in Buenos Aires (GMT-03:
 
 When schedules and service times overlap and no used applications is down, the bot executes the process.
 
-In this example, a downtime takes place in the middle of the scheduled time. The execution is interrupted during that time. Because the service time ends before the scheduled run time, the effective runtime is shortened, too.
+In this example, a downtime takes place in the middle of the scheduled time. The execution is interrupted during that time. Because the service time ends before the scheduled run time, the effective runtime is shortened.
 
 As you can see in the *Schedule Chart*, the service times and the downtimes are converted to the bot's timezone. They are observed simultaneously across all time zones. The schedule is interpreted to be in the bot's time zone. It is observed at different times across all time zones.
 
