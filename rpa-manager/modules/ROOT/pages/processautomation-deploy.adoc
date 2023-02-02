@@ -150,7 +150,7 @@ To create a run configuration:
 Enter a number between 1 and 200 to specify the priority of the process run. Deployed processes are inserted in a session queue according to their priority. Process configurations with lower numbers are considered higher priority and will be executed before configurations of lower priority.
 * *Activity Parameter*:
 +
-The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clickin on the relevant field in the *Value* column.
+The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clicking on the relevant field in the *Value* column.
 +
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
