@@ -162,7 +162,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether the productive run is to be carried out in an existing desktop session or in a secure session, and specify an appropriate user.
+Decide whether to deploy the production configuration in an existing desktop session or in a secure session, and specify an appropriate user.
 +
 For implementation in a secure session, you can link the user with a global credential variable. To do this,  click on the *Link a global activity parameter* icon.
 +
