@@ -49,11 +49,11 @@ Assign process applications to bots that can access them.
 
 You can deploy a process on a bot that has assigned the required applications.
 
-Down times are repeatable time intervals that define when an application is unavailable. Processes whose applications are currently down are executed to completion and not restarted until the downtime period ends.
+Downtimes are repeatable time intervals that define when an application is unavailable. Processes whose applications are currently down are executed to completion and not restarted until the downtime period ends.
 
-You specify a down time in one time zone. If the bot that you assign the down time to is installed on a computer using a different time zone, the down time interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots will pause executing processes using that application simultaneously. The time intervals may change depending on daylight saving time.
+You specify a downtime in one time zone. If the bot that you assign the downtime to is installed on a computer using a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots will pause executing processes using that application simultaneously. The time intervals may change depending on daylight saving time.
 
-For example, if you specify a down time starting at 1:30 AM and ending at 5:30 AM in Tokyo time (JST (UTC +9)) and the bot is installed on a computer in San Francisco (PST (UTC -8)), the bot will not execute processes between 8:30 AM and 12:30 PM in San Francisco time.
+For example, if you specify a downtime starting at 1:30 AM and ending at 5:30 AM in Tokyo time (JST (UTC +9)) and the bot is installed on a computer in San Francisco (PST (UTC -8)), the bot will not execute processes between 8:30 AM and 12:30 PM in San Francisco time.
 
 Learn how to xref:processautomation-prepare.adoc#manage-applications[manage applications].
 
