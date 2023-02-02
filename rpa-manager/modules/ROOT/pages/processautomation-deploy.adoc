@@ -277,7 +277,7 @@ To create an invokable run configuration:
 +
 * *Activity Parameter*:
 +
-The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clicking on the relevant field in the *Value* column.
+The activity parameters for each process are created in RPA Builder and given initial values there. You can overwrite these values with new initial values by double-clicking on the relevant field in the *Value* column.
 +
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
