@@ -60,7 +60,7 @@ You can use a service time to simulate the regular weekly working hours at your 
 
 Bots execute processes deployed to them only if they are within one of their service times.
 
-You can assign multiple service times to a bot. If you do not assign any service times to a bot, it works 24/7.
+You can assign multiple service times to a bot. If you do not assign service times to a bot, it works 24/7.
 
 You specify the service time in one time zone. If the bot that you assign the service time to is installed on a computer using a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots will execute processes simultaneously. The time intervals may change depending on daylight saving time.
 
