@@ -193,8 +193,8 @@ For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that
 |10:30 AM - 2:30 AM (Buenos Aires time (ART (UTC -3)))
 
 |Tokyo bot
-|5:30 *AM* - 9:30 PM (Tokyo time, JST (UTC +9)) =
-|5:30 *PM* - 9:30 AM (Buenos Aires time (ART (UTC -3)))
+|5:30 AM - 9:30 PM (Tokyo time, JST (UTC +9)) =
+|5:30 PM - 9:30 AM (Buenos Aires time (ART (UTC -3)))
 
 |===
 +
