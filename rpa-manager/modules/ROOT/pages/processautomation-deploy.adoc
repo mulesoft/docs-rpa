@@ -182,7 +182,7 @@ For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that
 +
 [cols="1,2,2"]
 |===
-|*Bot* |*Execution time in the bot's local time zone* |*Execution time in the argentine user's local time zone*
+|*Bot* |*Execution Time in the Bot's Local Time Zone* |*Execution Time in the Buenos Aires User's Local Time Zone*
 
 |Berlin bot
 |5:30 AM - 9:30 PM (Berlin time,  (CET (UTC +1)) =
