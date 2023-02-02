@@ -39,7 +39,7 @@ When schedules and service times overlap and no used applications is down, the b
 
 In this example, a downtime takes place in the middle of the scheduled time. The execution is interrupted during that time. Because the service time ends before the scheduled run time, the effective runtime is shortened.
 
-As you can see in the *Schedule Chart*, the service times and the downtimes are converted to the bot's timezone. They are observed simultaneously across all time zones. The schedule is interpreted to be in the bot's time zone. It is observed at different times across all time zones.
+As you can see in the *Schedule Chart*, the service times and the downtimes are converted to the bot's timezone. They are observed simultaneously across all time zones. The bots interpret the schedule to be valid for their own time zone. It is observed at different times across all time zones.
 
 Learn how to xref:botmanagement-support.adoc#manage-service-times[manage service times].
 
