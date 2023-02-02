@@ -33,7 +33,7 @@ The production configuration uses a schedule that is repeated daily from 12:30 P
 
 The bot is installed on a computer using UTC timezone. It has an assigned service time defined in Japanese time (GMT+09:00).
 
-The process uses an application installed on a computer in Buenos Aires (GMT-03:00). There was a power outage during which the application was down from 10:00 AM till 10:30 AM.
+The process uses an application installed on a computer in Buenos Aires (GMT-03:00). There was a power outage during which the application was down from 10:00 AM until 10:30 AM.
 
 When schedules and service times overlap and no used applications is down, the bot executes the process.
 
