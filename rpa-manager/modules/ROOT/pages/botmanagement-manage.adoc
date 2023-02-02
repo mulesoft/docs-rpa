@@ -47,7 +47,7 @@ Learn how to xref:botmanagement-support.adoc#manage-service-times[manage service
 
 Assign process applications to bots that can access them.
 
-You can deploy a process on a bot which has assigned the required applications.
+You can deploy a process on a bot that has assigned the required applications.
 
 Down times are repeatable time intervals that define when an application is not available. Processes whose applications are currently down are executed to completion and are not restarted until the downtime period has ended.
 
