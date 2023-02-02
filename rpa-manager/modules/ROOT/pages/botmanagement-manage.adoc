@@ -66,7 +66,7 @@ Learn how to xref:processautomation-prepare.adoc#manage-applications[manage appl
 Edit a bot to change its properties. Hostname, IP address, version, and timezone are fixed values taken from the computer the bot is installed on.
 
 . In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the row of the bot you want to edit.
-. Edit the form *<bot name>*.
+. Edit the *<bot name>* form.
 . Click *Save*.
 
 == Remove a Bot
