@@ -31,7 +31,7 @@ This example shows the planned process executions from the view of a user who li
 
 The production configuration uses a schedule that is repeated daily from 12:30 PM to 20:30 PM regardless of time zones.
 
-The bot is installed on a computer using UTC timezone. It has an assigned service time defined in Japanese time (GMT+09:00).
+The bot is installed on a computer that uses the UTC timezone. It has an assigned service time defined in Japanese time (GMT+09:00).
 
 The process uses an application installed on a computer in Buenos Aires (GMT-03:00). There was a power outage during which the application was down from 10:00 AM until 10:30 AM.
 
