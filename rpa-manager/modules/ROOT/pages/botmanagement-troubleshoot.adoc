@@ -21,7 +21,7 @@ The execution time table shows you the effective runtime of all configurations a
 
 A configuration is executed when the bot's service time overlaps with the schedule of the configuration. If the process uses applications, it is not executed during the downtimes of an application.
 
-All times are displayed in your local time. Times from bots and applications living in other time zones are converted to your local time. Hover over the bars to see which service times, downtimes and schedules are contained in the execution times.
+All times are displayed in your local time. Times from bots and applications living in other time zones are converted to your local time. Hover over the bars to see which service times, downtimes, and schedules are contained in the execution times.
 
 === Example of the Effective Runtime Composition
 
