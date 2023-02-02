@@ -2,7 +2,7 @@
 
 If a bot has status *OK*, but seems not to work properly, download its log files or restart the bot.
 
-If the bot has status *SUSPENDED*, have a look at the execution plans.
+If the bot has status *SUSPENDED*, review the execution plans.
 
 If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on to the computer the bot is installed on and needs to troubleshoot it there.
 
