@@ -20,7 +20,7 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 |===
 
 * At least one RPA Bot must be installed to deploy a process.
-** Be aware that bots might live in different time zones.
+** Be aware that bots can reside in different time zones.
 * A project in test or production phase must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
