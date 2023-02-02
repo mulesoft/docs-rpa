@@ -83,7 +83,7 @@ For example, name your service time `Regular working hours - 9 AM - 5 PM - Mysti
 +
 * *Timezone*: Specify a downtime in the time zone in which it occurs. If the bot that you assign the downtime to is installed on a computer that uses a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots pause executing processes that use that application simultaneously. The time intervals might change, depending on daylight saving time.
 +
-For example, if you specify a service time starting at 9:30 AM and ending at 5:30 PM in Buenos Aires time (ART (UTC -3)) and the bot is installed on a computer in Berlin (CET (UTC +1)), the bot will execute processes between 1:30 PM and 9:30 PM in Berlin time.
+For example, if you specify a service time starting at 9:30 AM and ending at 5:30 PM in Buenos Aires time (ART (UTC -3)) and the bot is installed on a computer in Berlin (CET (UTC +1)), the bot executes processes between 1:30 PM and 9:30 PM in Berlin time.
 +
 * Interval:
 +
