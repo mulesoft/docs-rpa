@@ -30,7 +30,7 @@ The process team can revise the process continuously.
 * There must be at least one process in the *My Backlog* view in the *My RPA* module.
 * RPA Builder, RPA Bot, and all applications required for executing the processes must be installed and configured on a computer.
 * If you want to record processes, RPA Recorder must be installed on a computer.
-* If not all RPA applications are installed on the same computer, ensure that all computers have the same configuration.
+* If RPA applications are installed on different computers, ensure that all computers have the same configuration.
 
 == Getting Started
 
