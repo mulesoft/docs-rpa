@@ -87,7 +87,7 @@ Applications are not available during down-times or while deactivated. A member 
 
 Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign required applications to a bot].
 
-You can deploy a process on a bot which has assigned the required applications.
+You can deploy a process on a bot that has assigned the required applications.
 
 You specify a downtime for an application in one time zone. If the bot that you assign the application to is installed on a computer using a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots will pause executing processes that use the application simultaneously. The time intervals may change depending on daylight saving time.
 
