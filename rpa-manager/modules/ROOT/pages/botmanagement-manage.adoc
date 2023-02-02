@@ -39,7 +39,7 @@ Please refer to the system and hardware requirements topic to assess the maximum
 Assign service times to bots to determine when a bot may execute processes.
 
 Service times are repeatable time intervals that define when a service is available. Assign them to bots to determine when a bot can execute processes.
-Specify the service time in one time zone. If the bot that you assign the service time to is installed on a computer that uses a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots execute processes simultaneously. The time intervals might change,  depending on daylight saving time.
+Specify the service time in one time zone. If the bot that you assign the service time to is installed on a computer that uses a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots execute processes simultaneously. The time intervals might change, depending on daylight saving time.
 
 For example, if you specify a service time that starts at 9:30 AM and ends at 5:30 PM in Buenos Aires time (ART (UTC -3)) and the bot is installed on a computer in Berlin (CET (UTC +1)), the bot executes processes between 1:30 PM and 9:30 PM in Berlin time.
 
