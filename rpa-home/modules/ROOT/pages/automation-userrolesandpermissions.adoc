@@ -94,7 +94,7 @@ Learn how to xref:rpa-manager::usermanagement-assemble.adoc#designate-user-group
 
 Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-users-rpa-builder-access[Assign Users RPA Builder Access].
 
-Learn how to xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[Assign Permissions to a Process Team Member].
+Learn how to xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[assign permissions to a process team member].
 
 === Transferring Permissions
 
