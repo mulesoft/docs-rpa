@@ -178,7 +178,7 @@ The productive run is carried out continuously within a fixed schedule. For each
 +
 You create a schedule without specifying a time zone. The bot you assign the production configuration to executes the process at the specified times in its local time. The time intervals might change, depending on daylight saving time.
 +
-For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule starting at 5:30 AM and ending at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots will execute the processes not simultaneously:
+For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that starts at 5:30 AM and ends at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots do not execute the processes simultaneously:
 +
 [cols="1,2,2"]
 |===
