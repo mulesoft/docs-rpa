@@ -2,7 +2,13 @@
 
 The *Process Automation* module is the heart of the RPA Manager. After a citizen technologist has evaluated processes and approved them for automation in the *Process Evaluation* module, you - as a project manager - create a project here for each suitable process by starting the automation from the *My RPA* module. A project defines the framework conditions for the execution of a process and is managed by a team.
 
-Processes go through several phases in sequence. In the design phase, a citizen designer creates a model of the process using BPMN, and during the build phase in the RPA Builder, a RPA developer fills this model with concrete instructions for the bot. In the test phase, a quality assurance team checks if the automated process delivers the required results. Then you transfer the process to the production phase, where it is carried out fully automatically.
+Processes go through several phases in sequence.
+
+. In the design phase, a citizen designer creates a model of the process using BPMN.
+. During the build phase, in the RPA Builder, a RPA developer fills the model with concrete instructions for the bot.
+. In the test phase, a quality assurance team checks if the automated process delivers the required results.
+. Then you transfer the process to the production phase, where it is carried out fully automatically.
+
 The process team can revise the process continuously.
 
 == Before You Begin
