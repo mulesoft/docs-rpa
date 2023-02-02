@@ -11,7 +11,7 @@ If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator need
 If you are not sure why a bot is not processing, review the execution plans:
 
 . In the module *Bot Management*, open the view *Bot Execution Plans*.
-. In the table click the *Execution timetable* icon image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%] in the row of the bot you want to check.
+. In the table, click the *Execution timetable* icon image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%] in the row of the bot you want to check.
 
 The execution time table shows you the effective runtime of all configuration assigned to the bot.
 
