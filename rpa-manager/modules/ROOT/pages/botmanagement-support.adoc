@@ -54,7 +54,7 @@ Copy an API key to the clipboard to paste it into the according field during ins
 
 == Manage Service Times
 
-Service times are repeatable time intervals that define when a service is available. You assign them to bots to determine when a bot may execute processes.
+Service times are repeatable time intervals that define when a service is available. Assign them to bots to determine when a bot can execute processes.
 
 You can use a service time to simulate the regular weekly working hours at your company, for example. The bot can then work at the same time as its human colleagues if tasks are interdependent, or at different times if you want it to use resources that other employees are not currently using.
 
