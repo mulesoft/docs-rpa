@@ -49,7 +49,7 @@ Assign process applications to bots that can access them.
 
 You can deploy a process on a bot that has assigned the required applications.
 
-Down times are repeatable time intervals that define when an application is not available. Processes whose applications are currently down are executed to completion and are not restarted until the downtime period has ended.
+Down times are repeatable time intervals that define when an application is unavailable. Processes whose applications are currently down are executed to completion and not restarted until the downtime period ends.
 
 You specify a down time in one time zone. If the bot that you assign the down time to is installed on a computer using a different time zone, the down time interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots will pause executing processes using that application simultaneously. The time intervals may change depending on daylight saving time.
 
