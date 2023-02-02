@@ -174,7 +174,7 @@ If the process uses elements of the Windows operating system like the start menu
 //copy this item to invokable configs
 * *Process Trigger Execution*:
 +
-The productive run is carried out continuously within a fixed schedule. For each schedule, you can define time intervals within which the process is to be executed.
+The productive run is carried out continuously within a fixed schedule. For each schedule, you can define time intervals within which the process is executed.
 +
 You create a schedule without specifying a time zone. The bot you assign the production configuration to will execute the process at the specified times in its local time. The time intervals may change depending on daylight saving time.
 +
