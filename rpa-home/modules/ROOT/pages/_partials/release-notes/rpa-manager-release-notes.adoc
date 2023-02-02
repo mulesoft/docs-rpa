@@ -12,9 +12,9 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="2a,1a"]
 |===
 |Issue Resolution |ID
-| Deleting a test run configuration may no longer causes a database error. | W-12463062
-| Deleting a production run configuration may no longer causes a database error. | W-12463050
-| Uploading a workflow from the RPA Builder may no longer causes a database error. | W-12463075
+| Deleting a test run configuration no longer causes a database error. | W-12463062
+| Deleting a production run configuration no longer causes a database error. | W-12463050
+| Uploading a workflow from RPA Builder no longer causes a database error. | W-12463075
 |===
 
 // == Known Issues
