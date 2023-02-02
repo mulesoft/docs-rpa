@@ -74,7 +74,7 @@ Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications
 
 Create service times to coordinate bot working hours.
 
-The names of the service times do not have to be unique. To avoid misunderstandings of the interpretation of the effective schedule runtimes, include the time zone in the name of the service time.
+The names of the service times do not have to be unique. To avoid misinterpreting the effective schedule runtimes, include the time zone in the name of the service time.
 
 For example, name your service time `Regular working hours - 9 AM - 5 PM - Mystical University - Buenos Aires (ART (UTC -3))` or  `Low resource usage time - 5 PM - 9AM - Mystical University - Berlin (CET (UTC +1))`.
 
