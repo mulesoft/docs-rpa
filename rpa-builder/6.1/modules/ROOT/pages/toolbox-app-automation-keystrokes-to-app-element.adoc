@@ -1,5 +1,4 @@
 
-
 = Keystrokes to App Element
 
 The _Keystrokes to App Element_ emulates keyboard inputs that can be
@@ -14,34 +13,25 @@ element of the new focus.
 
 == Properties
 
-*Keystroke Settings*
+* *Keystroke Settings*
 
-*Keystrokes* that are sent to the element. The input text is interpreted
-as AutoIT language. The specific AutoIT buttons can be inserted using
-“Insert Special Character” and “Insert Macro”. Like in the _Set Text To
-App Element_ Action Step, you can use “Insert Script Variable” and
-“Insert Environment Variable” to insert placeholders that are replaced
-at runtime. The behavior here is identical to that in the _Keystrokes_
-Action Step.
+** *Keystrokes*
++
+The keystrokes to send to the element. The input text is interpreted as AutoIT language. The specific AutoIT buttons can be inserted using _Insert Special Character_ and _Insert Macro_. Like in the _Set Text To App Element_ Action Step, you can use _Insert Script Variable_ and _Insert Environment Variable_ to insert placeholders that are replaced
+at runtime. The behavior here is identical to that in the _Keystrokes_ Action Step.
 
 == Inbound Variables
 
-*Keystrokes*
-
-*XPath to Element*
-
-*Window Title*
+* *Keystrokes*
+* *XPath to Element*
+* *Window Title*
 
 == Outbound Variables
 
-The _Keystrokes to App Element_ Action Step does not have any outbound
-variables.
-
+The _Keystrokes to App Element_ Action Step does not have any outbound variables.
 
 == Wizard
 
-See xref:toolbox-app-automation.adoc#app-automation-common-properties[Common Properties (App Automation)].
+See xref:toolbox-app-automation.adoc#app-automation-common-properties[Common Properties (App Automation)] for a description of the common properties.
 
-////
-You can find further information on environment variables (Insert Environment Variable) and script variables (Insert Script Variable) in the Chapter entitled Insert Special Character / Macro / Script Variable / Environment Variable and Settings.
-////
+See xref:insert-text-modules.adoc[Inserting Text Modules] for additional information about environment variables and script variables.

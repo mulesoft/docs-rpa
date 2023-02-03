@@ -3,66 +3,82 @@
 = Screenshot
 
 This _Action Step_ takes a screenshot and saves it to the trace folder.
-You can use it to get feedback on what is happening at any point in a
-_Workflow_.
-
-This is especially helpful for debugging _Workflows_ running on
+You can use this screenshot to get feedback on what is happening at any point in a
+_Workflow_, which is specially helpful for debugging _Workflows_ running on
 distant machines.
 
 == Properties
 
-*Capture Area*
-
-* *Height* The height of the screenshot. Set _Height_ *and* _Width_ to 0
-to capture the whole screen.
-* *Image Type* Determines if the screenshots will be saved as compressed
-JPG files or uncompressed BMP files or loss-free compressed PNG files.
-* *Shrink to [%]* Size in % to which the image shall be reduced to. This
+* *Capture Area*
+** *Height*
++
+The height of the screenshot. Set _Height_ *and* _Width_ to 0 to capture the whole screen.
+** *Image Type*
++
+Determines if the screenshots will be saved as compressed JPG files or uncompressed BMP files or loss-free compressed PNG files.
+** *Shrink to [%]*
++
+Size in % to which the image shall be reduced to. This
 value refers to the length and the width of the image and not to its
 area or file size. You can enter any integer between 10 and 100. The
 default value is 50% for newly created Workflows and 100% for Workflows
 created with an older version of RPA Builder.
-* *Width* The width of the screenshot. Set _Height_ *and* _Width_ to 0
+** *Width*
++
+The width of the screenshot. Set _Height_ *and* _Width_ to 0
 to capture the whole screen.
-* *X Coordinate/Offset* Defines the x-coordinate (horizontal axis) of
+** *X Coordinate/Offset*
++
+Defines the x-coordinate (horizontal axis) of
 the screenshot. If _Capture relative to_ is set to anything other than
 _None_, this defines the horizontal offset from the relative
 coordinates.
-* *Y Coordinate/Offset* Defines the y-coordinate (vertical axis) of the
+** *Y Coordinate/Offset*
++
+Defines the y-coordinate (vertical axis) of the
 screenshot. If _Capture relative to_ is set to anything other than
 _None_, this defines the vertical offset from the relative coordinates.
 
-*Custom Folder Settings*
-
-* *Filename* Defines which name the saved screenshot file should have.
+* *Custom Folder Settings*
+** *Filename*
++
+Defines which name the saved screenshot file should have.
 Leave empty for automatic name generation.
-* *Path* Where the screenshot is saved to.
-* *Use Custom Settings* Specifies whether to save the screenshot in a
+** *Path*
++
+Where the screenshot is saved to.
+** *Use Custom Settings*
++
+Specifies whether to save the screenshot in a
 custom folder with a custom name. If not selected, screenshots will be
 saved within the usual trace folder (and will subsequently be part of
 analysis packages).
 
 == Wizard
 
-*Define Screenshot Area* It is possible to restrict the screenshot to a
+* *Define Screenshot Area*
++
+It is possible to restrict the screenshot to a
 certain part of the screen. This area is captured in the same way as
 described in the section Add pattern from screen capture (Capture Pattern).
 
-*Set to full screen* The entire screen will be captured.
+* *Set to full screen*
++
+Captures the entire screen.
 
-*Image Size [%]* Size in percent, to which the image shall be reduced
+* *Image Size [%]*
++
+Size in percent, to which the image shall be reduced
 to. In the Wizard you can set this value in steps of 10 with the help of
 the slider. In the Properties you can enter any integer between 10 and
 100.
-
-As is common practice in image processing applications, the percentage
-given refers to the length and the width of the image and not to its
++
+The percentage given refers to the length and the width of the image and not to the image's
 file size or its area. For example if you set the reduction to Shrink To
-50%, the area of the image will be reduced to 25%.
+50%, the area of the image is reduced to 25%.
++
+The default value for newly created Workflows is set to 50%.
 
-The default value for newly created Workflows is set to 50%. For
-Workflows created with older versions of WorkflowEditor, the value is
-set to 100%.
-
-*Capture relative to* Select a previous _Image Search_ that the
-screenshot is taken relative to
+* *Capture relative to*
++
+Takes a screenshot relative to a previous _Image Search_ result.

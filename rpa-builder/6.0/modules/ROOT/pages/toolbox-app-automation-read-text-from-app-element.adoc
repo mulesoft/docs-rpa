@@ -1,5 +1,4 @@
 
-
 = Read Text from App Element
 
 The _Read Text From App Element_ Action Step lets you read the text from
@@ -13,16 +12,19 @@ properties.
 
 == Inbound Variables
 
-*XPath to Element*
-
-*Window Title*
+* *XPath to Element*
+* *Window Title*
 
 == Outbound Variables
 
-*Read Text* Outputs the text that was read by the Action Step.
+* *Read Text*
++
+Outputs the text that was read by the Action Step.
 
-*Has Content* Indicates whether the extracted text has content (true) or
-is blank (false).
+* *Has Content*
++
+Indicates whether the extracted text has content (`true`) or
+is blank (`false`).
 
 
 == Wizard
