@@ -7,10 +7,13 @@ modes allow for checking if the window is appearing, disappearing or
 activated.
 
 You can deploy _Window Wait_ after the _Action Step Run Program_ or if
-you anticipate a dialog window as result of a preceding action.
+you anticipate a dialog window as result of a preceding action. This enables you to continue the _Workflow_ and stop or start a timer at exactly the right moment.
 
-This enables you to continue the _Workflow_ and stop or start a timer at
-exactly the right moment.
+Often the title of a window changes. In particular, the title of
+Internet Explorer windows is dependent on the webpage that is shown.
+This means that if you want to use Window wait for a certain URL, be
+sure to capture the correct title with the wizard, use regular
+expressions, or use only a part of the window title.
 
 == Properties
 
@@ -18,7 +21,7 @@ exactly the right moment.
 +
 If this option is activated you can use an
 individual time value while waiting for a stable state. If this option
-is not activated this value is 50 ms.
+is not activated this value is 50ms.
 
 * *Use Regex*
 +
@@ -67,7 +70,7 @@ format. If no matching window was found this value is 0.
 The process ID of the found window in text format. If no
 matching window was found this value is 0.
 
-=== Wizard
+== Wizard
 
 The _Window Wait wizard_ allows for the comfortable selection of _Window
 Title_ and other selection criteria.
@@ -79,6 +82,8 @@ click on the window’s frame. After the correct title is adopted in the
 field _Window Title_ click _Stop_.
 
 _Window Title_ and _Window Text_ can also be bound to preceding _Action Steps_ via Pin Variables.
+
+image:toolbox-checks-window-wait-wizard.png[50%, 50%, The Window wait wizard]
 
 * *Start*
 +
@@ -197,15 +202,9 @@ of the search is the value entered before the last saving.
 ** *Normal mode*
 +
 If this option is activated, you can enter a value of
-your choice in the field _Wait Delay_. The default value is 50 ms.
+your choice in the field _Wait Delay_. The default value is 50ms.
 +
 This value can also be filled via Pin-Variable.
-
-Often the title of a window changes. In particular, the title of
-Internet Explorer windows is dependent on the webpage that is shown.
-This means that if you want to use Window wait for a certain URL, be
-sure to capture the correct title with the wizard or use regular
-expressions. You could also simply use only a part of the window title.
 
 ////
 Please consider, that Wait Delay in Workflow Editor versions earlier
