@@ -145,7 +145,7 @@ _Regular_ category. The number of matches can consist of matches for
 different patterns. Matches of patterns of the category _Ignore_ and
 _Exclude_ are not counted.
 +
-*Found Matched Pattern Count* is 0 if _Search Pattern_ returns an
+The *Found Matched Pattern Count* is 0 if _Search Pattern_ returns an
 error, even if matches for patterns of the _Regular_ category are
 found.
 
@@ -205,9 +205,10 @@ Steps as the Workflow progresses (see Other Uses of Matched Patterns).
 
 One way of defining a pattern is to take a screenshot that shows it.
 
+////
 The functionality of the _Capture Pattern_ button is described in the
 section Capturing the Search Pattern.
-
+////
 All patterns captured using the _Search Pattern_ _Action Step_ are
 transferred to the _Workflow_'s _Pattern Gallery_.
 
@@ -342,7 +343,7 @@ coordinate as at the time of design.
 
 == Test
 
-Pressing the _Test_ button will launch the search independently of
+Pressing the *Test* button launches the search independently of
 _Workflow_ execution and open the _Search Results_ window where the
 search is evaluated. This can provide hints about possible improvements
 that could be made to the _Search Settings_.
@@ -373,7 +374,7 @@ calculated by deducting the _Reduced Score_ from the _Score._ In each
 case, the precision of the match is stated.
 
 Matches outside of the _Search Area_ are marked in gray color
-irrespective of their type. . Patterns with a _Color Spot_ that are
+irrespective of their type. Patterns with a _Color Spot_ that are
 found but do not match the _Color Spot_ color at a specific position are
 marked in blue. You can see the type of every match in the details pane
 on the right side of the window.

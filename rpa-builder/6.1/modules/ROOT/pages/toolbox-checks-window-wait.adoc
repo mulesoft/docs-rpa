@@ -1,5 +1,3 @@
-
-
 = Window Wait
 
 The _Action Step Window Wait_ pauses the Workflow until a certain window
@@ -11,42 +9,62 @@ activated.
 You can deploy _Window Wait_ after the _Action Step Run Program_ or if
 you anticipate a dialog window as result of a preceding action.
 
-This allows you to continue the _Workflow_ and stop or start a timer at
+This enables you to continue the _Workflow_ and stop or start a timer at
 exactly the right moment.
 
 == Properties
 
-*Enable Wait Delay* If this option is activated you can use an
-individual time value while waiting for a stable state. *If this option
-is not activated this value is 50 ms.*
+* *Enable Wait Delay*
++
+If this option is activated you can use an
+individual time value while waiting for a stable state. If this option
+is not activated this value is 50 ms.
 
-*Use Regex* Enables regular expressions for the _Window title_ field.
+* *Use Regex*
++
+Enables regular expressions for the _Window title_ field.
 You can further distinguish between window titles by selecting this
 checkbox. For a brief introduction to regular expressions, see section
 Using Regular Expressions.
 
-*Use window text* Also captures the _Window text_ of the window
+* *Use window text*
++
+Also captures the _Window text_ of the window
 
-*Wait for* Defines the mode of the window search
+* *Wait Delay*
++
+The time to wait until window system is in a stable state if *Enable Wait Delay* is enabled. The default value is 50ms and you can reduce it down to 1ms.
 
-**Window text** Contains the
+* *Wait for*
++
+Defines the mode of the window search
+
+* *Window text*
++
+Contains the
 captured _Window text_ to wait for in addition to the _Window title_
-(only works if _Use window text_ checkbox is activated)
+(only works if *Use window text* is selected).
 
-**Window title** Contains the captured _Window title_ to wait for
+* *Window title*
++
+Contains the captured _Window title_ to wait for.
 
 == Inbound Variables
 
-*Window title*
+* *Window title*
 
-*Window text*
+* *Window text*
 
 == Outbound Variables
 
-*Window Handle* hexadecimal reference value of the found window in text
+* *Window Handle*
++
+The hexadecimal reference value of the found window in text
 format. If no matching window was found this value is 0.
 
-*Process ID* The process ID of the found window in text format. If no
+* *Process ID*
++
+The process ID of the found window in text format. If no
 matching window was found this value is 0.
 
 === Wizard
@@ -60,83 +78,128 @@ button _Start_  and then
 click on the window’s frame. After the correct title is adopted in the
 field _Window Title_ click _Stop_.
 
-_Window Title_ and _Window Text_ can also be bound to preceding _Action
-Steps_ via Pin Variables.
+_Window Title_ and _Window Text_ can also be bound to preceding _Action Steps_ via Pin Variables.
 
-* *Start* Starts the recording of the _Window Title_. If you click a
+* *Start*
++
+Starts the recording of the _Window Title_. If you click a
 window after clicking this button the window’s title is entered
 automatically in the corresponding text field.
-* *Stop* Ends the recording of the _Window Title_.
-* *Collect Window Titles* Click this button to show all window titles
+* *Stop*
++
+Ends the recording of the _Window Title_.
+* *Collect Window Titles*
++
+Click this button to show all window titles
 available now in the drop-down menu of the text field _Window Title_
-* *Hide window* Hides the wizard while recording the window title
-* *Hide main window* Hides the RPA Builder while recording the
+* *Hide window*
++
+Hides the wizard while recording the window title
+* *Hide main window*
++
+Hides the RPA Builder while recording the
 window title
-* *Use window text* If checked _Window Text_ will be used for the
+* *Use window text*
++
+If checked _Window Text_ will be used for the
 identification of the window
-* *Use Regex* If this option is activated, the entered
+* *Use Regex*
++
+If this option is activated, the entered
 window title has to be formed according to the rules of a correct
 regular expression. If the regular expression is not correct validation
 returns an error. The use of regular expressions also facilitates a
 case-insensitive search. You can find further information on this topic
 in xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
-* *Window Title* Title of the window to be found.
-** The entered title needs to be considered as part of the window title
+* *Window Title*
++
+Title of the window to be found.
++
+The entered title needs to be considered as part of the window title
 to be searched for. For example the entered title _Pad_ will find all
-windows whose title contains the text _Pad_ (like NotePad - My
-Text.txt).
-** The search is *case-sensitive*!
-** If this field remains empty all windows are considered.
-* If the option *_Use Regex_* is activated, the entered window title has
+windows whose title contains the text _Pad_ (like `NotePad - MyText.txt`).
++
+The search is case-sensitive. If this field remains empty all windows are considered.
++
+If the option *Use Regex* is activated, the entered window title has
 to be formed according to the rules of a correct regular expression. If
 the regular expression is not correct the validation returns an error.
 The use of regular expressions also facilitates a case-insensitive
 search. You can find further information on this topic in chapter
 xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
-* *Timeout* Length of time before a not successful search is aborted
-* *Wait for* Defines the mode of the window search
-** *Window Appears (with Activation)* _Window Wait_ waits at most for
+
+* *Timeout*
++
+Length of time before a not successful search is aborted
+* *Wait for*
++
+Defines the mode of the window search
++
+** *Window Appears (with Activation)*
++
+_Window Wait_ waits at most for
 the given _Timeout_ time until a window matching the search criteria is
 found.
-*** If one or more windows are found, the first from this list will be
++
+If one or more windows are found, the first from this list will be
 activated.
-*** If the _Timeout_ is exceeded without the window having appeared, the
++
+If the _Timeout_ is exceeded without the window having appeared, the
 _Actions Step_ returns an error.
-** *Window Disappears* _Window Wait_ waits at most for the given
++
+** *Window Disappears*
++_Window Wait_ waits at most for the given
 _Timeout_ time until a window matching the search criteria cannot be
 found (anymore).
-*** If the _Timeout_ is exceeded without the window having appeared, the
++
+If the _Timeout_ is exceeded without the window having appeared, the
 _Actions Step_ returns an error.
-** *Window is active* _Window Wait_ checks, if a window matching the
+** *Window is active*
++
+_Window Wait_ checks, if a window matching the
 given criteria is active.
-*** If this is not the case, the _Action Step_ returns an error
-*immediately*.
-** *Window* *exists (with Activation)* _Window Wait_ checks, if a window
++
+If this is not the case, the _Action Step_ returns an error immediately.
+** *Window exists (with Activation)*
++
+_Window Wait_ checks, if a window
 matching the given criteria does exist. This window can be minimized or
 in the background. If such a window is found, it will be activated (and
 be brought to the foreground, even from a minimized state).
-*** If the window does not exist, the _Action Step_ returns an error
-*immediately*.
-** *Window doesn’t exist* _Window Wait_ checks, if a window matching the
++
+If the window does not exist, the _Action Step_ returns an error immediately.
+** *Window doesn’t exist*
++
+_Window Wait_ checks, if a window matching the
 given criteria does not exist.
-*** If such a window is found, the _Action Step_ returns an error
-*immediately*.
-** *Window Appears (without Activation)* _Window Wait_ waits at most for
++
+If such a window is found, the _Action Step_ returns an error immediately.
+** *Window Appears (without Activation)*
++
+_Window Wait_ waits at most for
 the given _Timeout_ time until a window matching the search criteria is
 found.
-*** If the _Timeout_ is exceeded without the window having appeared, the
++
+If the _Timeout_ is exceeded without the window having appeared, the
 _Actions Step_ returns an error.
-** *Window exists (without Activation)* _Window Wait_ checks, if a
+** *Window exists (without Activation)*
++
+_Window Wait_ checks, if a
 window matching the given criteria does exist. This window might be
 minimized or might be in the background.
-*** If the window does not exist, the _Action Step_ returns an error
-*immediately*.
++
+If the window does not exist, the _Action Step_ returns an error immediately.
 * *Wait Delay*
-** *Legacy mode* (Compatibility setting) The wait delay until the start
-of the search is the value entered *before the last saving*.
-** *Normal mode* If this option is activated, you can enter a value of
+** *Legacy mode* (Compatibility setting)
++
+The wait delay until the start
+of the search is the value entered before the last saving.
+** *Normal mode*
++
+If this option is activated, you can enter a value of
 your choice in the field _Wait Delay_. The default value is 50 ms.
-*** This value can also be filled via Pin-Variable.
++
+This value can also be filled via Pin-Variable.
 
 Often the title of a window changes. In particular, the title of
 Internet Explorer windows is dependent on the webpage that is shown.
@@ -144,9 +207,11 @@ This means that if you want to use Window wait for a certain URL, be
 sure to capture the correct title with the wizard or use regular
 expressions. You could also simply use only a part of the window title.
 
+////
 Please consider, that Wait Delay in Workflow Editor versions earlier
 than 4.2 was always 250 ms. For reasons of compatibility, Wait Delay is
 set to Legacy mode, and thereby set to 250 ms, in Workflows built with
 older versions. You can change this mode. However, this can lead to
 differences in the measurement results between the old and the new
 version of your Workflow.
+////
