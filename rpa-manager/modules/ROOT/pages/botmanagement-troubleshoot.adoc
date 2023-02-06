@@ -13,7 +13,7 @@ If you are not sure why a bot is not processing, review the execution plans:
 . In the module *Bot Management*, open the view *Bot Execution Plans*.
 . In the table, click the *Execution timetable* icon image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%] in the row of the bot you want to check.
 
-The execution time table shows you the effective runtime of all configurations assigned to the bot.
+The execution timetable shows you the effective runtime of all configurations assigned to the bot.
 
 . Click the *Configure Execution Timetable* icon image:configure-icon.png[wrench symbol,1.5%,1.5%] to change the time interval of the table and to select the shown configurations.
 . Click *OK*.
