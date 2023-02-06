@@ -28,6 +28,8 @@ You evaluate a process candidate to propose it for automation.
 |===
 
 * Create appropriate categories in the view *Process Management* in the module *Process Automation*.
++
+Learn how to xref:processautomation-prepare.adoc#manage-categories[manage categories].
 
 == Manage Process Evaluations
 
@@ -50,6 +52,9 @@ Costs for a one-time execution of the process. In the list of evaluated processe
 * *Frequency per month*:
 +
 Number of times the process is carried out within a one-month period. This field can only be completed if a value exists in the *Manual process execution time* field. In the list of evaluated processes, the value *Frequency per month* is multiplied by the value *Manual process execution time* to calculate the *Effort/month* value.
+* [[processevaluationdata-category]] *Category*:
++
+A category describes the environment of a process in a few keywords. Choose a category from the list. Project managers can create categories in the *Process Management* view of the *Process Automation* module.
 * *Qualifiers/Benefits*:
 +
 Drag the slider to the appropriate values. *Exclude* unnecessary criteria.

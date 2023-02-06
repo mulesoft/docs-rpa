@@ -38,6 +38,11 @@ You list available applications and assign them to bots that can access them. Ci
 
 You create global variables and credentials for values that are the same in multiple processes and that frequently change. This way, you can reduce the time involved and the error rate in the maintenance of the processes. A member of the process team can link global variables and credentials anywhere that a globe symbol is displayed.
 
+Learn how to manage <<manage-globalvariables, global variables>> and <<manage-credentials, credentials>>.
+
+Learn how to link global variables and credentials in a xref:processautomation-deploy.adoc#test-configuration-link-globals[test] and xref:processautomation-deploy.adoc#production-configuration-link-globals[production] configurations.
+
+[[manage-categories]]
 === Manage Categories
 
 Project managers organize projects into categories. A category describes the environment of a process in a few keywords, for example `Customer Support Mystical University` or `Finance`.
@@ -69,7 +74,8 @@ Remove categories that are no longer needed. You can only remove categories that
 . Open the *Process Management* view of the *Process Automation* module.
 . Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category you want to delete.
 
-=== Manage Applications
+[[manage-applications]]
+=== Manage Process Applications
 
 In the *Process Applications* view, you list all applications required for the execution of processes.
 
@@ -79,9 +85,20 @@ In the module *Bot Management*, the administrator xref:botmanagement-manage.adoc
 
 Applications are not available during down-times or while deactivated. A member of the process team can deploy a process on a bot that has assigned the required processes. If an application becomes non-available, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
 
-==== Create an Application
+Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign required applications to a bot].
 
-Create one entry for each application required for the execution of processes:
+You can deploy a process on a bot that has assigned the required applications.
+
+Specify a downtime in the time zone in which it occurs. If the bot that you assign the downtime to is installed on a computer that uses a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots pause executing processes that use that application simultaneously. The time intervals might change, depending on daylight saving time.
+
+For example, if you specify a downtime that starts at 1:30 AM and ends at 5:30 AM in Tokyo time (JST (UTC +9)) and the bot is installed on a computer in San Francisco (PST (UTC -8)), the bot does not execute processes that use the application between 8:30 AM and 12:30 PM in San Francisco time.
+
+==== Create a Process Application
+
+Create one entry for each application required for the execution of processes.
+
+To avoid confusion, append the name of the time zone to the name of the application or the downtime. For example, name your application `Words - Tokyo` and your downtime `Electrical Power Outage Tokyo`.
+
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click *Create*.
@@ -90,6 +107,13 @@ Create one entry for each application required for the execution of processes:
 * *Time Zone*:
 +
 Time zone for defining downtimes.
++
+Specify a downtime in the time zone in which it occurs. If the bot that you assign the downtime to is installed on a computer that uses a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots pause executing processes that use that application simultaneously. The time intervals might change, depending on daylight saving time.
++
+For example, if you specify a downtime that starts at 1:30 AM and ends at 5:30 AM in Tokyo time (JST (UTC +9)) and the bot is installed on a computer in San Francisco (PST (UTC -8)), the bot does not execute processes between 8:30 AM and 12:30 PM in San Francisco time.
++
+To avoid confusion, append the name of the time zone to the name of the downtime. For example, name your downtime `Electrical Power Outage Tokyo`.
++
 * *Downtimes*
 +
 Click *Create* to add a downtime to the application.
@@ -106,11 +130,11 @@ Edit an application to change its data or down-times:
 For an explanation of the properties, see  <<form-create-process-applictions, *Create an Application*>>.
 . Click *Save*.
 
-==== Deactivate or Activate an Application
+==== Deactivate or Activate a Process Application
 
 Deactivate an application if it is temporarily not available and you don't know when it will be available again.
 
-Use down-times to schedule maintenance and planned down times. Deactivation periods are not added to the list of down-times.
+Use down-times to schedule maintenance and planned downtimes. Deactivation periods are not added to the list of down-times.
 
 Applications are not available during down-times or while deactivated. A member of the process team can deploy a process on a bot that has assigned the required processes. If an application becomes non-available, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
 
@@ -128,7 +152,7 @@ If a deactivated application becomes available again, activate it:
 
 RPA Manager displays an *Active* label beneath the logo of the application.
 
-==== Remove an Application
+==== Remove a Process Application
 
 Remove an application if it is no longer available:
 
@@ -144,6 +168,7 @@ Use global variables or credentials for values and login data that are the same 
 
 A member of the process team can link global variables or credentials anywhere that a globe symbol is displayed. A link symbol indicates an existing link. You can change and delete links.
 
+[[manage-globalvariables]]
 === Manage Global Variables
 
 Create global variables for values that are the same in multiple processes and that frequently change. This way you can reduce the time involved and the error rate in the maintenance of the processes.
@@ -233,6 +258,7 @@ Delete global variables that are no longer needed. You cannot delete variables l
 . Click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the global variable you want to delete.
 . Confirm the deletion.
 
+[[manage-credentials]]
 === Manage Credentials
 
 Credentials store login data for applications or web services. You can use them with different processes. Passwords are encrypted.

@@ -21,7 +21,7 @@ If a bot only needs to work at specific times, you assign it service times.
 
 == Manage API Keys
 
-An API key is required during installation of a bot. The bot connects to the server with its API key.
+An API key is required during installation of a bot. The bot connects to the RPA Manager with its API key.
 
 === Create an API Key
 
@@ -54,26 +54,38 @@ Copy an API key to the clipboard to paste it into the according field during ins
 
 == Manage Service Times
 
-Service times are any repeatable time intervals that define when a service is available. You assign them to bots to determine when a bot may execute processes.
+Service times are repeatable time intervals that define when a service is available. Assign them to bots to determine when a bot can execute processes.
 
 You can use a service time to simulate the regular weekly working hours at your company, for example. The bot can then work at the same time as its human colleagues if tasks are interdependent, or at different times if you want it to use resources that other employees are not currently using.
 
-Processes that are deployed to the bot are only executed by the bot if it is within one of its service times.
+Bots execute processes deployed to them only if they are within one of their service times.
 
-You can assign multiple service times to a bot. If you do not assign any service times to a bot, it may work 24/7.
+You can assign multiple service times to a bot. If you do not assign service times to a bot, it works 24/7.
 
-A service time is specified in a specific time zone. If the bot is in a different time zone, the time interval is converted accordingly.
+Specify the service time in one time zone. If the bot that you assign the service time to is installed on a computer that uses a different time zone, the service time interval is converted to the bot’s time zone. If you assign the service time to multiple bots in different time zones, all bots execute processes simultaneously. The time intervals might change, depending on daylight saving time.
+
+For example, if you specify a service time that starts at 9:30 AM and ends at 5:30 PM in Buenos Aires time (ART (UTC -3)) and the bot is installed on a computer in Berlin (CET (UTC +1)), the bot executes processes between 1:30 PM and 9:30 PM in Berlin time.
 
 You can create, edit, and remove service times.
+
+Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign service times to a bot].
 
 == Create a Service Time
 
 Create service times to coordinate bot working hours.
 
-The names of the service times do not have to be unique. For example, you can assign the same name to a service time on working days for the business hours for different time zones. However, we recommend using different names, or at least different extensions to the same name, to rule out misunderstandings during interpretation of the effective schedule runtimes.
+The names of the service times do not have to be unique. To avoid misinterpreting the effective schedule runtimes, include the time zone in the name of the service time.
+
+For example, name your service time `Regular working hours - 9 AM - 5 PM - Mystical University - Buenos Aires (ART (UTC -3))` or  `Low resource usage time - 5 PM - 9AM - Mystical University - Berlin (CET (UTC +1))`.
 
 . In the *Service Times* view of the *Bot Management* module, click *Create*.
 . In the window *Create Service Time*, complete the form:
++
+* *Timezone*: Specify a downtime in the time zone in which it occurs. If the bot that you assign the downtime to is installed on a computer that uses a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots pause executing processes that use that application simultaneously. The time intervals might change, depending on daylight saving time.
++
+For example, if you specify a service time starting at 9:30 AM and ending at 5:30 PM in Buenos Aires time (ART (UTC -3)) and the bot is installed on a computer in Berlin (CET (UTC +1)), the bot executes processes between 1:30 PM and 9:30 PM in Berlin time.
++
+* Interval:
 +
 include::rpa-manager::partial$form-scheduling.adoc[]
 
@@ -102,3 +114,5 @@ The deleted service time is also removed from the service times of a bot. If the
 * xref::botmanagement-know.adoc[Getting to Know Bots]
 * xref::botmanagement-manage.adoc[Managing Bots]
 * xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
+
+* xref::processautomation-deploy.adoc[Deploying Automations]
