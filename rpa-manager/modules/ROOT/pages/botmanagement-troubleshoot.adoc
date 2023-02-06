@@ -17,7 +17,7 @@ The execution timetable shows you the effective runtime of all configurations as
 
 . Click the *Configure Execution Timetable* icon image:configure-icon.png[wrench symbol,1.5%,1.5%] to change the time interval of the table and to select the shown configurations.
 . Click *OK*.
-. In the *Execution Timetable*, click on a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
+. In the *Execution Timetable*, click a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
 
 A configuration is executed when the bot's service time overlaps with the schedule of the configuration. If the process uses applications, it is not executed during the downtimes of an application.
 
