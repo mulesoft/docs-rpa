@@ -102,7 +102,7 @@ To avoid confusion, append the name of the time zone to the name of the applicat
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click *Create*.
-. [[form-create-process-applictions]] Complete the form *Create a new application*:
+. [[form-create-process-applications]] Complete the form *Create a new application*:
 +
 * *Time Zone*:
 +
@@ -127,7 +127,7 @@ Edit an application to change its data or down-times:
 . Click *Create*.
 . Edit the form *Edit the application*.
 +
-For an explanation of the properties, see  <<form-create-process-applictions, *Create an Application*>>.
+For an explanation of the properties, see  <<form-create-process-applications, *Create an Application*>>.
 . Click *Save*.
 
 ==== Deactivate or Activate a Process Application
@@ -186,7 +186,7 @@ Check the usage of a variable before changing or deleting it.
 
 ==== Create a Global Variable
 
-A global variable consists of a name, description, type, and value. It can be used in the test or the production phase.
+A global variable consists of a name, description, type, and value. Team members can link them to activity paramters in the test or the production phase. 
 
 Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (for example, `number_employees` and `answer`).
 
@@ -261,7 +261,7 @@ Delete global variables that are no longer needed. You cannot delete variables l
 [[manage-credentials]]
 === Manage Credentials
 
-Credentials store login data for applications or web services. You can use them with different processes. Passwords are encrypted.
+Credentials store login data for applications or web services. Passwords are encrypted. Only affiliated users can view, edit, and use the credentials.
 
 You can create the following types of credentials:
 
@@ -275,7 +275,7 @@ For accessing the Microsoft Outlook email application via Microsoft Azure with x
 +
 For accessing all other kinds of applications
 
-Process team members can link global credentials to activity parameters in automations:
+Affiliated process team members can link global credentials to activity parameters in automations:
 
 * xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
 * xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
@@ -291,6 +291,12 @@ Create credentials with which a bot can login to an external application during 
 . Open the *Credential Pool* view of the *Process Automation* module.
 . Click *Create*.
 . [[form-create-credential]] Complete the form *Create a New Credential*:
+* [[form-create-credential-useraffiliation]] *User affiliation*:
++
+Click to choose users that may view, edit and use the credential. Add yourself to be able to view, edit, and use the credential, too.
+* *User group affiliation*:
++
+Click to choose user groups whose users may view, edit and use the credential.
 * *Phase affiliation*:
 +
 Phases in which the credential can be deployed. When you create or change the credential, your privileges determine which phases the user can select:
@@ -372,7 +378,9 @@ A window with a table shows you the configurations in which the credential is us
 
 ====  Edit a Credential
 
-Edit a credential to change its data. You cannot change the type of a credential. Check the usage of the credential first to avoid inadvertent side-effects:
+Edit a credential to change its data. You cannot change the type of a credential. You can only edit a credential if you belong to the <<form-create-credential-useraffiliation, affiliated users>>.
+
+Check the usage of the credential first to avoid inadvertent side-effects:
 
 . Open the *Credential Pool* view of the *Process Automation* module.
 . Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the credential you want to edit.
