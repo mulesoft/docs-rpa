@@ -60,7 +60,7 @@ Set the value by entering text or by clicking on a checkbox, and complete your e
 +
 
 [[test-configuration-link-globals]]
-Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%]. Only those variables assigned to the phase will be displayed for linking. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
+Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%]. RPA Manager only shows variables assigned to the test phase and only credentials for which you belong to the xref:processautomation-prepare.adoc#form-create-credential-useraffiliation[affiliated users] for linking. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
 * *User Task*:
 +
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
@@ -154,7 +154,7 @@ The activity parameters for each process are created in RPA Builder and are give
 +
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
-[[production-configuration-link-globals]] Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%]. Only those variables assigned to the phase will be displayed for linking. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
+[[production-configuration-link-globals]] Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%]. RPA Manager only shows variables assigned to the production phase and only credentials for which you belong to the xref:processautomation-prepare.adoc#form-create-credential-useraffiliation[affiliated users] for linking. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
 * *User Task*:
 +
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
@@ -217,7 +217,7 @@ Select the checkbox *Show bots not enabled in this phase* to also show bots that
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the configuration .
+If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Save*.
 
