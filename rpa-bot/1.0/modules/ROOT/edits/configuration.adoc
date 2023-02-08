@@ -70,7 +70,7 @@ Enable this option if you are installing the bot on a terminal server that only 
 There is a Group Policy called `fPromptForPassword`. If this policy is enabled, you must enter the password a second time, when the RDP session is established. If this is the case, enable this option. Also, choose the correct form of dialog. Some machines request the second password entry via a popup dialog. Other machines embedd the prompt into the same screen, like the regular Windows login.
 * *Handle a “Custom LogonMessage”*
 +
-It is possible to configure an additional screen which is displayed after the login into an RDP session. It is called Custom Logon Message and normally needs to be acknowledged by pressing a button. If such a message appears when you connect to your system via RDP, enable this option.
+It is possible to configure a Custom Logon Message screen that is displayed after the login into an RDP session. It generally needs to be acknowledged by pressing a button. If you are prompted with this message when connecting to your system via RDP, enable this option.
 * *Allow usage of SmartCards inside Secure Sessions*
 +
 Enables authentication via SmartCard within the Secure Session.
