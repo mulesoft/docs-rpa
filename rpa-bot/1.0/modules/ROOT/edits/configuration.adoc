@@ -85,7 +85,7 @@ In this context, ensure that you have selected the option *Allow connections onl
 
 === Test Settings
 
-You have the possibility to test your connection settings for the Secure Session with the *TEST SETTINGS* button. Clicking this button opens the pop-up window Test Settings, in which you can enter test parameters for the Secure Session.
+Optionally, click *TEST SETTINGS* to test your connection settings for the Secure Session. In the *TEST SETTINGS* dialog, enter test parameters for the Secure Session.
 
 image:bot-configurator-test-settings.png[The RPA Bot configurator application showing the Test Settings window, 50%, 50%]
 
