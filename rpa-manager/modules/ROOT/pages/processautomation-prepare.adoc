@@ -99,6 +99,7 @@ Create one entry for each application required for the execution of processes.
 
 To avoid confusion, append the name of the time zone to the name of the application or the downtime. For example, name your application `Words - Tokyo` and your downtime `Electrical Power Outage Tokyo`.
 
+To create a process application:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click *Create*.
@@ -190,6 +191,8 @@ A global variable consists of a name, description, type, and value. Team members
 
 Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (for example, `number_employees` and `answer`).
 
+To create a global variable:
+
 . Open the *Global Variables* view of the *Process Automation* module.
 . Click *Create*.
 . [[form-create-globalvariable]] Complete the form *Create a New Global Variable*:
@@ -241,6 +244,8 @@ A window with a table shows you the configurations in which the global variable 
 
 Edit a global variable to change its name or value. You cannot change the type of a global variable. Check the usage of the variable first to avoid inadvertent side-effects.
 
+To edit a global variable:
+
 . Open the *Global Variables* view of the *Process Automation* module.
 . Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the global variable you want to edit.
 . Change data in the form *Edit the Global Variable*.
@@ -253,6 +258,8 @@ The variable is changed everywhere it is used.
 ==== Delete a Global Variable
 
 Delete global variables that are no longer needed. You cannot delete variables linked in configurations.
+
+To delete a global variable:
 
 . Open the *Global Variables* view of the *Process Automation* module.
 . Click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the global variable you want to delete.
@@ -286,17 +293,21 @@ Check the usage of a credential before changing or deleting it.
 
 ==== Create Credentials
 
-Create credentials with which a bot can login to an external application during process runs:
+Create credentials with which a bot can login to an external application during process runs.
+
+Use descriptive names for credentials and only use them in an appropriate context. If, for example, the employee `Nina` has an account for two applications, `Letters` and `Numbers`, create either two credentials (`nina_account_letters` and `nina_account_numbers`) or a single one that includes both applications in its name (`nina_accounts_letters_numbers`).
+
+To create a credential:
 
 . Open the *Credential Pool* view of the *Process Automation* module.
 . Click *Create*.
 . [[form-create-credential]] Complete the form *Create a New Credential*:
 * [[form-create-credential-useraffiliation]] *User affiliation*:
 +
-Click to choose users that may view, edit and use the credential. Add yourself to be able to view, edit, and use the credential, too.
+Click to choose users that may view, edit, and use the credential. Add yourself to be able to view, edit, and use the credential, too.
 * *User group affiliation*:
 +
-Click to choose user groups whose users may view, edit and use the credential.
+Click to choose user groups whose users may view, edit, and use the credential.
 * *Phase affiliation*:
 +
 Phases in which the credential can be deployed. When you create or change the credential, your privileges determine which phases the user can select:
@@ -325,7 +336,7 @@ Use this credential for accessing the Microsoft Outlook email application via Mi
 The host address used to get the credentials. The default address for Outlook services is `https://login.microsoftonline.com/common/oauth2/v2.0/`. This address might change if the customer uses a self hosted service.
 *** *Client ID*:
 +
-To authenticate with the OAuth Host, an Azure application must be defined in the customer's space. This Azure application has an ID that is unique in the entire OAuth Host space and that allows users to explicitly grant or revoke access for this Azure application to their accounts.
+To authenticate with the OAuth Host, an Azure application must be defined in the customer's space. This Azure application has an ID, which is unique in the entire OAuth Host space, and that allows users to explicitly grant or revoke access for this Azure application to their accounts.
 +
 For more information about how to create this Azure application for Outlook, see https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app[Quickstart: Register an application with the Microsoft identity platform^].
 *** *Client Secret*
@@ -369,7 +380,9 @@ Use this credential for accessing all other kinds of applications. Fill in the t
 
 ==== Check the Usage of a Credential
 
-Before editing a credential, check its usage to avoid inadvertent side-effects.
+Before editing a credential, check its usage to avoid inadvertent side-effects. You can only check the usage a credential if you belong to the <<form-create-credential-useraffiliation, affiliated users>> of that credential.
+
+To check the usage of a credential:
 
 . Open the *Credential Pool* view of the *Process Automation* module.
 . Click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the credential you want to check.
@@ -378,7 +391,7 @@ A window with a table shows you the configurations in which the credential is us
 
 ====  Edit a Credential
 
-Edit a credential to change its data. You cannot change the type of a credential. You can only edit a credential if you belong to the <<form-create-credential-useraffiliation, affiliated users>>.
+Edit a credential to change its data. You cannot change the type of a credential. You can only edit a credential if you belong to the <<form-create-credential-useraffiliation, affiliated users>> of that credential.
 
 Check the usage of the credential first to avoid inadvertent side-effects:
 
@@ -393,7 +406,9 @@ The credential is changed everywhere it is used.
 
 ==== Delete a Credential
 
-Delete credentials that are no longer needed. You cannot delete credentials linked in configurations.
+Delete credentials that are no longer needed. You cannot delete credentials linked in configurations. You can only delete a credential if you belong to the <<form-create-credential-useraffiliation, affiliated users>> of that credential.
+
+To delete a credential:
 
 . Open the *Credential Pool* view of the *Process Automation* module.
 . Click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the credential you want to delete.
