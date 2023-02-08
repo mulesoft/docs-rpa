@@ -9,7 +9,7 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-*
+* Credentials in the Credential Pool are now assigned to users and/or user groups. RPA Manager will automatically affiliate credentials that were created prior to this release with all users. You can edit credentials to change affiliated users.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
