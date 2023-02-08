@@ -35,7 +35,7 @@ The API key entered during the installation of the robot. You can change this se
 Time interval in milliseconds after which the bot connects to the RPA Manager to show that it is still alive.
 * *Check interval*
 +
-Time interval in milliseconds after which the bot connects to RPA Manager and checks for provided packages to collect (such as Scheduling Tasks or Activities).
+Time interval in milliseconds after which the bot connects to RPA Manager and checks for provided packages to collect (such as scheduling tasks or activities).
 * *Cleanup workflows on start*
 +
 Select this option to delete the workflows that are no longer assigned to a configuration but are still stored locally in the bot.
