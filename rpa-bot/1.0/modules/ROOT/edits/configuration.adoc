@@ -29,7 +29,7 @@ The URL address of the RPA Manager instance the bot connects to. There is no def
 Specifies whether the bot connects with RPA Manager via HTTP or HTTPS.
 * *API Key*
 +
-The API Key entered during the installation of the robot. You can change this setting.
+The API key entered during the installation of the robot. You can change this setting.
 * *Alive interval*
 +
 Time interval in milliseconds after which the bot connects to the RPA Manager to show that it is still alive.
