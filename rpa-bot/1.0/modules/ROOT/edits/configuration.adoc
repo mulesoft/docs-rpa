@@ -67,7 +67,7 @@ If you want the bot to use Secure Sessions, enter the name of the user the bot u
 Enable this option if you are installing the bot on a terminal server that only allows SSL protected RDP connections.
 * *Handle “Always prompt client for password” option*
 +
-There is a Group Policy called `fPromptForPassword`. If this policy is enabled, the password has to be entered a second time, when the RDP session is established. If this is the case, enable this option. Also choose the correct form of dialog. On some machines the second password entry is requested by a separate window in form of
+There is a Group Policy called `fPromptForPassword`. If this policy is enabled, you must enter the password a second time, when the RDP session is established. If this is the case, enable this option. Also choose the correct form of dialog. On some machines the second password entry is requested by a separate window in form of
 a popup dialog. And on other machines it is an embedded screen like the normal windows login.
 //To determine if the option as to be used and which form of dialog needs to be configured, it is a good idea to execute the steps described in chapter Functional test.
 * *Handle a “Custom LogonMessage”*
