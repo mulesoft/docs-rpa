@@ -2,7 +2,7 @@
 
 Use the RPA Bot Configurator application to change the default settings of a bot. To find the application navigate to *MuleSoft* > *RPA Bot Configurator*.
 
-The RPA Bot Configuration tool has five different configuration panels:
+The RPA Bot Configuration tool has five configuration panels:
 
 * <<common-settings, Common>>
 * <<proxy-settings, Proxy>>
