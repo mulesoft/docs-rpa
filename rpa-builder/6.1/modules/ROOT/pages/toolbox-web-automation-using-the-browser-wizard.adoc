@@ -39,3 +39,10 @@ The following list describes the buttons of the _Browser Wizard_ toolbar:
 * (image:clear-cache-cookies.png[The Clear Cache and delete Cookies button, 2%, 2%]): Clears the browser cache data and Cookies.
 * (image:double-check-icon.png[The Accept Selection and take over Input/Selection button, 2%, 2%]): Confirms the selection and extracts the _XPath_ of the selected element along with the current input as values. This option is available only in the *Keystrokes to Web Element* Wizard.
 * (image:check-icon.png[The back button, 2%, 2%]): Confirms the selection and extracts the _XPath_ of the selected element.
+
+== See Also 
+
+* xref:toolbox-web-automation-common-properties-web-automation.adoc[Common Properties (Web Automation)]
+* xref:toolbox-web-automation-web-session-chrome.adoc[Web Session (Chrome)]
+* xref:toolbox-web-automation-web-session-firefox.adoc[Web Session (Firefox)]
+* xref:toolbox-web-automation-web-session-ms-edge.adoc[Web Session (MS Edge)]

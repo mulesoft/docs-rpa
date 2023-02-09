@@ -7,6 +7,7 @@ include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
 [[properties]]
 == Properties
 
+// commonProperties Web Automation
 include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
 * *Additional Chrome arguments*
 +
@@ -27,26 +28,31 @@ we use.
 
 == Inbound Variables
 
-* Additional Chrome arguments
-* Alternative User Agent String
-* Web Session ID
-* Initial URL
+* *Additional Chrome arguments*
+* *Alternative User Agent String*
+* *Web Session ID*
+* *Initial URL*
 
 == Outbound Variables
 
 This action step has no outbound variables.
 
 // Wizard
-include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
+include::partial$toolbox-web-automation-web-session.adoc[tags=wizardCommon;!pageLoadStrategy]
 
-*Browser specific settings*:
+=== Browser specific settings
 
-image:toolbox-variable-web-automation-web-session-images/image5.png[An image showing the browser specific settings]
+image:toolbox-variable-web-automation-web-session-images/image5.png[50%, 50%, An image showing the browser specific settings]
 
-See also <<properties, Properties>>.
+See <<properties, Properties>> for a definition of these fields.
 
 // activityWorkflowOverlappingWebSession
 include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
 
 //closingWebSession
 include::partial$toolbox-web-automation-web-session.adoc[tag=closingWebSession]
+
+== See Also 
+
+* xref:toolbox-web-automation-using-the-browser-wizard.adoc[Using the Web Browser Wizard]
+* xref:toolbox-web-automation-common-properties-web-automation.adoc[Common Properties (Web Automation)]

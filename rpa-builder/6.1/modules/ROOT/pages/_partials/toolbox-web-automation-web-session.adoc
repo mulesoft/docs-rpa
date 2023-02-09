@@ -98,26 +98,27 @@ closing the session at a specific point in the Workflow.
 //tag::wizardCommon[]
 == Wizard
 
-image:toolbox-variable-web-automation-web-session-images/image1.png[An image of the web session wizard window]
+The Web Session Wizard contains the *Reuse Web Session*, *General Settings*, and *Browser Specific Settings* sections.
 
-The *Reuse Web Session* section defines which web session is reused. To enable this, you need the *web session ID*, which you save in the Workflow-based variables ahead of time.
+=== Reuse Web Session 
+image:toolbox-variable-web-automation-web-session-images/image1.png[50%, 50%, An image of the Reuse web session section of the wizard]
 
-image:toolbox-variable-web-automation-web-session-images/image2.png[An image showing the web session ID]
+The *Reuse Web Session* section defines which web session to reuse. To reuse a web session, use the *web session ID* that you previously saved in the Workflow-based variables.
 
-You can define a name and a description and the value is assigned
-automatically. Once you have created the web session ID, you can link it
-with the session easily, using the drop-down in the Web Session Wizard.
+image:toolbox-variable-web-automation-web-session-images/image2.png[75%, 75%, An image showing the web session ID]
 
-image:toolbox-variable-web-automation-web-session-images/image3.png[An image showing the reuse web session option]
+You can define a name and a description and then RPA Builder assigns a value automatically. Once you have created the web session ID, you can link it
+with the session using the drop-down in the Web Session Wizard.
+
+image:toolbox-variable-web-automation-web-session-images/image3.png[50%, 50%, An image showing the reuse web session option]
 
 In the script Run Results, you see whether a new web session was created
 or a web session ID was used, and in the latter case, which one.
 
-If a web session ID is used that was created with the web session type
+If you use a web session ID that was created with the web session type
 Firefox, for example, but is to be continued with a different web
-session type, such as a Chrome session, a warning is issued in the
-standard case. You can change this response with the *Browser Mismatch*
-option. You have two options here:
+session type, such as a Chrome session, RPA Builder shows a warning. You can change this response with the *Browser Mismatch*
+option. There are two options for this scenario:
 
 * *Warning* (default)
 +
@@ -128,27 +129,39 @@ automatically.
 +
 The Workflow Run ends in an error.
 
-The standard response of the browser and the execution are defined in
-the *General Settings* area.
+Define the standard response of the browser and the execution in the *General Settings* section.
 
-You use the *Initial URL* to specify the initial URL of the web page you
+=== General Settings 
+
+image:toolbox-variable-web-automation-web-session-general-settings.png[50%, 50%, The General Settings section of the Wizard]
+
+* *Initial URL*
++
+Specifies the initial URL of the web page you
 want to call.
-
++
 If another web session that was created with the same web session ID is
 opened, the initial URL from that session is ignored.
 
-*Open Browser Wizard when done*: If this option is enabled, the Browser
-Wizard is opened when the Web Session Wizard is closed.
+* *Open Browser Wizard when done*
++
+If this option is enabled, the Browser
+Wizard opens when the Web Session Wizard is closed.
 
-*Keep out mouse, move it to*: In some cases, the mouse could hide
-certain buttons or texts. You use this option to define where you want
-the mouse to move to:
-
-image:toolbox-variable-web-automation-web-session-images/image4.png["An image showing the Keep out mouse, move it to: option"]
-
+* *Keep out mouse, move it to*
++ 
+Use this option to define where you want the mouse to move to. This prevents the mouse from covering certain buttons or texts.
++
+image:toolbox-variable-web-automation-web-session-images/image4.png[50%, 50%, "An image showing the Keep out mouse, move it to: option"]
++
 You can also define whether or not you want to execute this action after
 every Action Step.
 
-*Page load strategy*: Defines the system behavior when loading a page.
+//tag::pageLoadStrategy[]
+* *Page load strategy* 
++
+Defines the system behavior when loading a page.
 The following options are available: Default, Normal, Eager, and None.
+//end::pageLoadStrategy[]
+
 //end::wizardCommon[]
