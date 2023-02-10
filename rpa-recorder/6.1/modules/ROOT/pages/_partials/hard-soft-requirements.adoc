@@ -27,3 +27,16 @@ Any of the following:
 === Recommended System Settings
 
 * Display resolution: Full HD 1080p (1920 × 1080) or higher
+
+=== File System Permission Requirements
+
+RPA Recorder needs full write access to folders that are critical to its functioning. To avoid issues during the setup process and subsequent RPA Recorder executions, ensure that:  
+
+* You install RPA Recorder as an administrator
++
+If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Recorder by running the setup file as an administrator. 
+
+* RPA Recorder has full write access to the following folders and any subfolders inside them: 
++
+** `C:\Program Files\MuleSoft\RPARecorder`
+** `C:\RPARecorder`
