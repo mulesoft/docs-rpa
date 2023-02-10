@@ -40,10 +40,14 @@ RPA Builder needs full write access to folders that are critical to its function
 +
 If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Builder by running the setup file as an administrator. 
 
-* RPA Builder has full write access to the following folders and any subfolders inside them: 
+* RPA Builder has full write access to the following folders and any subfolders and files inside them: 
 +
 ** `C:\Users\<USERNAME>\Documents\Mulesoft`
 ** `C:\Users\Public\Documents\Mulesoft`
 ** `C:\Users\<USERNAME>\AppData\Local\MuleSoft_LLC`
 ** `C:\Users\<USERNAME>\AppData\Roaming\MuleSoft`
 ** `C:\ProgramData\Mulesoft\RPABuilder\Cache`
+
+* Your environment is not blocking the execution of any RPA process 
++
+Operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the `/RPABuilder` folder and subfolders are allowed to run. 
