@@ -14,9 +14,15 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
+// Already checked for RNs, beside the customer facing fixes (will be removed):
+// W-12405999, W-12420161, W-12405067, W-12405542, W-11830212
+
 [%header,cols="2a,1a"]
 |===
 |Issue Resolution |ID
+| Within the user management a process cannot be release from a user who is the project owner and/or the project manager. | W-12193883
+| The colors of a process board task are now Salesforce conform. | W-11983434
+| Multiple evaluation criteria with the same name are no longer allowed. | W-12024864
 |  | W-
 |  | W-
 |  | W-
