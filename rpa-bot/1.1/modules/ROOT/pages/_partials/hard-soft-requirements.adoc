@@ -36,6 +36,19 @@ Any of the following:
 * Dedicated Windows Server machine with enough resources to execute several Processes simultaneously (2 GB or more RAM per session)
 * The RPA Bot service runs under the _Local System account_ (by default, the setup configures RPA Bot to use this account).
 
+=== File System Permission Requirements
+
+RPA Bot needs full write access to some folders that are critical to its functioning. To avoid issues during the setup process and subsequent RPA Bot executions, ensure that:  
+
+* You install RPA Bot as an administrator
++
+If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Bot by running the setup file as an administrator. 
+
+* RPA Bot has full write access to the following folders and any subfolders inside them: 
++
+** `C:\Program Files\Mulesoft\RPABot`
+** `C:\ProgramData\Mulesoft\RPABot`
+
 == Compatibility
 
 [%header%autowidth.spread]

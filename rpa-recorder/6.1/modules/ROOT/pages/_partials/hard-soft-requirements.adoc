@@ -27,3 +27,16 @@ Any of the following:
 === Recommended System Settings
 
 * Display resolution: Full HD 1080p (1920 × 1080) or higher
+
+=== File System Permission Requirements
+
+RPA Builder needs full write access to folders that are critical to its functioning. To avoid issues during the setup process and subsequent RPA Builder executions, ensure that:  
+
+* You install RPA Builder as an administrator
++
+If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Builder by running the setup file as an administrator. 
+
+* RPA Builder has full write access to the following folders and any subfolders inside them: 
++
+** `C:\Program Files\MuleSoft\RPARecorder`
+** `C:\RPARecorder`
