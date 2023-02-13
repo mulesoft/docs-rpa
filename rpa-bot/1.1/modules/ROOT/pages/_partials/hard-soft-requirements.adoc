@@ -44,10 +44,14 @@ RPA Bot needs full write access to some folders that are critical to its functio
 +
 If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Bot by running the setup file as an administrator. 
 
-* RPA Bot has full write access to the following folders and any subfolders inside them: 
+* RPA Bot has full write access to the following folders and any subfolders and files inside them: 
 +
 ** `C:\Program Files\Mulesoft\RPABot`
 ** `C:\ProgramData\Mulesoft\RPABot`
+
+* Your environment is not blocking the execution of any RPA process 
++
+The operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Bot home directory and its subfolders are allowed to run. 
 
 == Compatibility
 

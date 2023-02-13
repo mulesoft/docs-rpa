@@ -2,6 +2,8 @@
 
 RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
 
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
 == January 20, 2023
 
 // == What's New

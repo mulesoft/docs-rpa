@@ -36,7 +36,11 @@ RPA Recorder needs full write access to folders that are critical to its functio
 +
 If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Recorder by running the setup file as an administrator. 
 
-* RPA Recorder has full write access to the following folders and any subfolders inside them: 
+* RPA Recorder has full write access to the following folders and any subfolders and files inside them: 
 +
 ** `C:\Program Files\MuleSoft\RPARecorder`
 ** `C:\RPARecorder`
+
+* Your environment is not blocking the execution of any RPA process 
++
+The operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Recorder home directory and its subfolders are allowed to run. 
