@@ -103,9 +103,9 @@ To create a process application:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click *Create*.
-. [[form-create-process-applications]] Complete the form *Create a new application*:
+. [[form-create-process-applications]] Complete the *Create a new application* form:
 +
-* *Time Zone*:
+* *Time Zone*
 +
 Time zone for defining downtimes.
 +
@@ -126,7 +126,7 @@ Edit an application to change its data or down-times:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click *Create*.
-. Edit the form *Edit the application*.
+. Edit the *Edit the application* form.
 +
 For an explanation of the properties, see  <<form-create-process-applications, *Create an Application*>>.
 . Click *Save*.
@@ -187,7 +187,7 @@ Check the usage of a variable before changing or deleting it.
 
 ==== Create a Global Variable
 
-A global variable consists of a name, description, type, and value. Team members can link them to activity paramters in the test or the production phase. 
+Global variables consist of a name, description, type, and value. Team members can link them to activity parameters in the test or the production phase. 
 
 Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (for example, `number_employees` and `answer`).
 
@@ -195,39 +195,39 @@ To create a global variable:
 
 . Open the *Global Variables* view of the *Process Automation* module.
 . Click *Create*.
-. [[form-create-globalvariable]] Complete the form *Create a New Global Variable*:
-* *Phase affiliation*:
+. [[form-create-globalvariable]] Complete the *Create a New Global Variable* form:
+* *Phase affiliation*
 +
 Phases in which the variable is permitted to be deployed. When you create or change the variable, your individual privileges determine which phases you can select:
 +
-** *Test*:
+** *Test*
 +
 The variable can be deployed in the test phase.
 +
-** *Production*:
+** *Production*
 +
 The variable can be deployed in the production phase.
 
-* *Type*:
+* *Type*
 +
 Type of the global variable. The type of variable determines where it can be used. The original value defined in RPA Builder is typed. Select one of the following types:
 +
-** *Integer*:
+** *Integer*
 +
 An integer number.
-** *Alphanumeric*:
+** *Alphanumeric*
 +
 A character string.
-** *Boolean*:
+** *Boolean*
 +
 A logical value. Set the checkmark in the *Value* checkbox for the value `true` or remove the checkmark for the value `false`.
-** *Float*:
+** *Float*
 +
 A floating-point number.
-** *Coordinate*:
+** *Coordinate*
 +
 Combination of two integer values for an X-Y coordinate. Use global coordinates, for example, as an offset to determine a screen coordinate.
-* *Value*:
+* *Value*
 +
 You can only enter values of the specified type.
 
@@ -248,7 +248,7 @@ To edit a global variable:
 
 . Open the *Global Variables* view of the *Process Automation* module.
 . Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the global variable you want to edit.
-. Change data in the form *Edit the Global Variable*.
+. Change data in the *Edit the Global Variable* form.
 +
 For an explanation of the properties, see  <<form-create-globalvariable, *Create a Global Variable*>>.
 . Click *Save*.
@@ -293,7 +293,7 @@ Check the usage of a credential before changing or deleting it.
 
 ==== Create Credentials
 
-Create credentials with which a bot can login to an external application during process runs.
+Create credentials with which a bot can log in to an external application during process runs.
 
 Use descriptive names for credentials and only use them in an appropriate context. If, for example, the employee `Nina` has an account for two applications, `Letters` and `Numbers`, create either two credentials (`nina_account_letters` and `nina_account_numbers`) or a single one that includes both applications in its name (`nina_accounts_letters_numbers`).
 
@@ -301,40 +301,40 @@ To create a credential:
 
 . Open the *Credential Pool* view of the *Process Automation* module.
 . Click *Create*.
-. [[form-create-credential]] Complete the form *Create a New Credential*:
-* [[form-create-credential-useraffiliation]] *User affiliation*:
+. [[form-create-credential]] Complete the *Create a New Credential* form:
+* [[form-create-credential-useraffiliation]] *User affiliation*
 +
-Click to choose users that may view, edit, and use the credential. Add yourself to be able to view, edit, and use the credential, too.
-* *User group affiliation*:
+Click to choose users that may view, edit, and use the credential. Add yourself so that you can also view, edit, and use the credential.
+* *User group affiliation*
 +
 Click to choose user groups whose users may view, edit, and use the credential.
-* *Phase affiliation*:
+* *Phase affiliation*
 +
 Phases in which the credential can be deployed. When you create or change the credential, your privileges determine which phases the user can select:
 +
-** *Test*:
+** *Test*
 +
 The credential can be deployed in the test phase.
 +
-** *Production*:
+** *Production*
 +
 The credential can be deployed in the production phase.
 
-* *Type*:
+* *Type*
 +
 Type of the global credential. The type of credential determines where you can use it. The original value defined in RPA Builder is typed. Select one of the following types:
 +
-** *AWS Credentials*:
+** *AWS Credentials*
 +
 Use this credential for accessing Amazon Web Services. Fill in the client ID, client secret, and region. Using a session token is optional.
 ** *OAuth Credentials*
 +
 Use this credential for accessing the Microsoft Outlook email application via Microsoft Azure.
 +
-*** *OAuth Host*:
+*** *OAuth Host*
 +
 The host address used to get the credentials. The default address for Outlook services is `https://login.microsoftonline.com/common/oauth2/v2.0/`. This address might change if the customer uses a self hosted service.
-*** *Client ID*:
+*** *Client ID*
 +
 To authenticate with the OAuth Host, an Azure application must be defined in the customer's space. This Azure application has an ID, which is unique in the entire OAuth Host space, and that allows users to explicitly grant or revoke access for this Azure application to their accounts.
 +
@@ -397,9 +397,9 @@ Check the usage of the credential first to avoid inadvertent side-effects:
 
 . Open the *Credential Pool* view of the *Process Automation* module.
 . Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the credential you want to edit.
-. Change data in the form *Edit the Credential*.
+. Change data in the *Edit the Credential* form.
 +
-The properties are explained in the form <<form-create-credential, *Create a New Credential*>>.
+The properties are explained in the <<form-create-credential, *Create a New Credential*>> form.
 . Click *Save*.
 
 The credential is changed everywhere it is used.

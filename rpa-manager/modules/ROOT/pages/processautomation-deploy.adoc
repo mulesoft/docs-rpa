@@ -21,6 +21,7 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 
 * At least one RPA Bot must be installed to deploy a process.
 ** Be aware that bots can reside in different time zones.
+* If you want to use the values of xref:processautomation-prepare.adoc#manage-globalvariables[global variables] or xref:processautomation-prepare.adoc#manage-credentials[credentials] as initial values for activity parameters, an RPA administrator must create them in the *Global Variables* or *Credential Pool* view first.
 * A project in test or production phase must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
@@ -50,23 +51,24 @@ To create a test configuration:
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
 . Click *Create new test plan*.
-. Complete the wizard *Create test plan*:
+. Complete the *Create test plan* wizard:
 +
-* *Activity Parameter*:
+* *Activity Parameter*
 +
 The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clicking on the relevant field in the *Value* column.
 +
-Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
+Set a value by entering text or by clicking on a checkbox, and complete your entry by pressing ENTER.
 +
-
 [[test-configuration-link-globals]]
-Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%]. RPA Manager only shows variables assigned to the test phase and only credentials for which you belong to the xref:processautomation-prepare.adoc#form-create-credential-useraffiliation[affiliated users] for linking. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
-* *User Task*:
+Alternatively, you can set the value of an activity parameters by linking it with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%] and select a variable for linking. RPA Manager displays variables that are of the same type and are assigned to the test phase, and only those credentials for which you belong to the xref:processautomation-prepare.adoc#form-create-credential-useraffiliation[affiliated users]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
++
+The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
+* *User Task*
 +
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
 +
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
-* *Execution*:
+* *Execution*
 +
 Decide whether the test run is to be carried out in an existing desktop session or in a secure session, and specify an appropriate user.
 +
@@ -77,7 +79,7 @@ Use the syntax `domain\username` instead of `username@domain.com` for domain use
 Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the test plan otherwise.
 +
 If the process uses elements of the Windows operating system like the start menu or the task bar, check *Requires Windows Shell*.
-* *Bots*:
+* *Bots*
 +
 Select all RPA Bots that are to carry out the test configuration.
 +
@@ -85,7 +87,7 @@ Select the checkbox *Show bots not enabled in this phase* to also show bots that
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the test plan configuration.
+If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you cannot proceed with the test plan configuration.
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Finish*.
 
@@ -141,20 +143,23 @@ To create a run configuration:
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
 . Click *Create run configuration*.
-. Complete the form *Create production configuration*:
+. Complete the *Create production configuration* form:
 +
-* *Settings*:
+* *Settings*
 +
-** *Priority*:
+** *Priority*
 +
 Enter a number between 1 and 200 to specify the priority of the process run. Deployed processes are inserted in a session queue according to their priority. Process configurations with lower numbers are considered higher priority and will be executed before configurations of lower priority.
-* *Activity Parameter*:
+* *Activity Parameter*
 +
 The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clicking on the relevant field in the *Value* column.
 +
-Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
+Set a value by entering text or by clicking on a checkbox, and complete your entry by pressing ENTER.
 +
-[[production-configuration-link-globals]] Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%]. RPA Manager only shows variables assigned to the production phase and only credentials for which you belong to the xref:processautomation-prepare.adoc#form-create-credential-useraffiliation[affiliated users] for linking. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
+[[production-configuration-link-globals]]
+Alternatively, you can set the value of an activity parameters by linking it with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%] and select a variable for linking. RPA Manager displays variables that are of the same type and are assigned to the production phase, and only those credentials for which you belong to the xref:processautomation-prepare.adoc#form-create-credential-useraffiliation[affiliated users]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
++
+The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
 * *User Task*:
 +
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
@@ -171,7 +176,6 @@ Use the syntax `domain\username` instead of `username@domain.com` for domain use
 Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the test plan otherwise.
 +
 If the process uses elements of the Windows operating system like the start menu or the task bar, check *Requires Windows Shell*.
-//copy this item to invokable configs
 * *Process Trigger Execution*:
 +
 The productive run is carried out continuously within a fixed schedule. For each schedule, you can define time intervals within which the process is executed.
@@ -206,7 +210,7 @@ Running processes are always executed completely.
 +
 When creating new schedules, you should pay attention to whether the new schedules overlap with schedules of other configurations and you should ensure that the executing bots have enough free sessions. Otherwise, trigger executions could be skipped.
 +
-Click on the button *Add Schedule* to assign a (further) schedule to this configuration and complete the form *Create a new schedule*:
+Click on the button *Add Schedule* to assign a (further) schedule to this configuration and complete the *Create a new schedule* form:
 +
 include::rpa-manager::partial$form-scheduling.adoc[]
 * *Bots*:
@@ -217,7 +221,7 @@ Select the checkbox *Show bots not enabled in this phase* to also show bots that
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the configuration.
+If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you cannot proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Save*.
 
@@ -273,7 +277,7 @@ To create an invokable run configuration:
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
 . Click *Create an invokable run configuration*.
-. Complete the form *Create production configuration*:
+. Complete the *Create production configuration* form:
 +
 * *Activity Parameter*:
 +
@@ -304,7 +308,7 @@ Select the checkbox *Show bots not enabled in this phase* to also show bots that
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, a notification appears and you cannot proceed with the configuration.
+If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you cannot proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information on the cause of the warning or error in the form of a tooltip.
 . Click *Save & Publish*.
 
