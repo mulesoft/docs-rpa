@@ -2,6 +2,8 @@
 
 RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
 
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
 == January 31, 2023
 
 // == What's New

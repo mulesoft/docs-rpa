@@ -43,4 +43,4 @@ If you don't run the setup file as an administrator, the installation process mi
 
 * Your environment is not blocking the execution of any RPA process 
 +
-Operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the `/RPARecorder` folder and subfolders are allowed to run. 
+Operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Recorder home directory and its subfolders are allowed to run. 
