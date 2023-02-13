@@ -48,14 +48,14 @@ using the Firefox profile manager.
 
 == Inbound Variables
 
-* Profile name
-* Prefer 64Bit Webdriver
-* Alternative user agent string
-* Accept untrusted certificates
-* Enable native events
-* Port
-* Web Session ID
-* Initial URL
+* *Profile name*
+* *Prefer 64Bit Webdriver*
+* *Alternative user agent string*
+* *Accept untrusted certificates*
+* *Enable native events*
+* *Port*
+* *Web Session ID*
+* *Initial URL*
 
 == Outbound Variables
 

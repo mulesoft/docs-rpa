@@ -44,7 +44,9 @@ include::partial$toolbox-web-automation-web-session.adoc[tags=wizardCommon;!page
 
 image:toolbox-variable-web-automation-web-session-images/image5.png[50%, 50%, An image showing the browser specific settings]
 
-See <<properties, Properties>> for a definition of these fields.
+The *Additional arguments* field enables you to pass arguments to the `Chrome.exe` application. Use `;` as a delimiter when specifying more than one parameter. You can specify a user data profile as an argument to start the web session using said profile, for example: `--user-data-dir=c:\YourFolder\UserData`. 
+
+Use the *Alternative user agent string* to define an alternative user agent string. 
 
 // activityWorkflowOverlappingWebSession
 include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
