@@ -6,11 +6,11 @@ Before installing RPA Bot, ensure that your environment meets the minimum hardwa
 
 Follow these steps to download and install RPA Bot.
 
-If it is not possible to install the setup as administrator, you need to set the User Account Control setting to *Never notify. Otherwise secure sessions cannot be established and automations will break.
+If it is not possible to install the setup as an administrator, set the User Account Control setting to *Never notify*. Otherwise secure sessions cannot be established and automations will fail.
 
-. Download the latest RPA Bot installer from the *Home* page of RPA Manager.
-. Right-click on the setup file and choose *Run as administrator* to start the installation.
-. Provide the following details during the installation:
+. From the *Home* page of RPA Manager, download the latest RPA Bot installer.
+. To start the installation, right-click the setup file and choose *Run as administrator* .
+. Provide the following details:
 ** *RPA Manager connection protocol*
 +
 The protocol RPA Bot uses to connect with RPA Manager.
@@ -25,11 +25,11 @@ image:bot-install-rpa-manager.png[The RPA Bot installer window asking for the RP
 
 ** *APIKey for the bot*
 +
-The APIKey to use for this bot. Use any of the APIKeys created in RPA Manager.
+The API key to use for this bot. Use any of the API keys created in RPA Manager.
 +
 image:bot-install-api-key.png[The RPA Bot installer window asking for the APIKey to use, 50%, 50%]
 +
-If you don't have any APIKey, see xref:rpa-manager::botmanagement-support.adoc#manage-api-keys[Manage API Keys] for creation instructions.
+If you don't have any API key, see xref:rpa-manager::botmanagement-support.adoc#manage-api-keys[Manage API Keys] for creation instructions.
 . Continue the installation process until finished and restart the system.
 
 == See Also
