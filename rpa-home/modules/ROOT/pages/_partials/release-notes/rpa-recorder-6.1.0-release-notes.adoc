@@ -1,0 +1,52 @@
+= RPA Recorder 6.1.0 Release Notes
+
+RPA Recorder is MuleSoft’s tool for recording a business process for automation.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== December 6, 2022
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* The new attributes selection panel enables you to fine-tune the XPath for web elements when you record Web Tasks.
+* You can now capture _Mouse Over_ events using the _F2_ key when you record Web Tasks.
+* You can now activate or deactivate hotkeys to control RPA Recorder.
+* The new *Log Files* tab in *Settings* contains buttons that enable easy access to log files and directories:
+** The new *Open log file* button enables you to open the latest log file.
+** The new *Open log files directory* enables you to open the folder containing all RPA Recorder logs in your local computer.
+* RPA Recorder changed the file name schema for all files written, introducing the following changes:
+** The value `process name` changed to `process id`.
+** Timestamps now appear at the beginning of file names instead of at the end.
+* Web Task recording now supports the following browser specific hotkeys to control browser navigation:
+** _F5_ : Performs a soft refresh of the page.
+** _Ctrl+F5_ : Performs a hard refresh of the page.
+** _Alt+Right arrow_ : Navigates forward.
+** _Alt+Left arrow_ : Navigates back.
+** _Ctrl+Enter_ : Adds `www.` and `.com` to the text in the URL bar and then navigates to this URL.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.0.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+| RPA Recorder no longer fails to login to RPA Manager when the user password contains specific special characters | W-12064751
+| Using special characters for process names no longer causes errors. | W-11954860
+|===
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]

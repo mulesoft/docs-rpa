@@ -1,0 +1,29 @@
+
+
+= Loop
+
+A _Loop_ allows you to repeat the same _Transaction_ and _Action Steps_ two or more times.
+
+== Properties
+
+* *At end of loop* Sets how the _Loop_ should be exited after all
+iterations have been executed. Available options are _Exit with error_
+or _Exit without error_.
+* *Increment Value* Value the _Loop_ counter increments by on each iteration.
+* *Iteration Count* Sets how often the _Loop_ will be executed. Default value is 2.
+* *Start Value* Value the _Loop_ counter starts with.
+
+== Inbound Variables
+
+//link:#AS_Loop_P_IterationCount[*Iteration Count*]
+*Iteration Count* Sets how often the _Loop_ will be executed. Default value is 2.
+
+//link:#AS_Loop_P_StartValue[*Start Value*]
+*Start Value* Value the _Loop_ counter starts with.
+
+//link:#AS_Loop_P_IncrementValue[*Increment Value*]
+*Increment Value* Value the _Loop_ counter increments by on each iteration.
+
+== Outbound Variables
+
+*Iteration* Returns the current value of the _Loop_ counter

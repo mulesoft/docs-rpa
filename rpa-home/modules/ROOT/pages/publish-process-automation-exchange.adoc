@@ -4,11 +4,11 @@ You can connect RPA Manager with your Anypoint Platform account, which enables y
 
 To publish automation assets to Exchange:
 
-. <<configure-connected-app-rpa, Configure a Connected App in Access Management>>
-. Connect RPA Manager with your Anypoint Platform Account
+. <<configure-connected-app-rpa, Configure a Connected App in Access Management>>.
+. Connect RPA Manager with your Anypoint Platform Account.
 +
 See xref:rpa-manager::organizationmanagement-settings.adoc#configure-anypoint-credentials[Configure Anypoint Platform Credentials] for instructions.
-. Publish a Process Automation to Anypoint Exchange
+. Publish a Process Automation to Anypoint Exchange.
 +
 See xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange] for instructions.
 
@@ -41,3 +41,7 @@ After you create a Connected App, it shows in the *Connected Apps* section of Ac
 image:share-assets-connected-app-credentials.png[The Connected Apps section in Access Management]
 
 Click either *Copy ID* or *Copy Secret* to copy the corresponding value to the clipboard for further use.
+
+== See Also
+
+* xref:access-management::managing-your-account.adoc#how-to-create-your-account[Create an Anypoint Platform Account]

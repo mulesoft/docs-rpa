@@ -1,0 +1,37 @@
+= RPA Builder 6.1.2 Release Notes
+
+RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== January 31, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* Upgraded the Tomcat dependency to version 9.0.71
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.0.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+| RPA Builder no longer assigns `DEFAULT_NAME` as the name for a task when you create User tasks or Bot tasks. | W-12427237
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]

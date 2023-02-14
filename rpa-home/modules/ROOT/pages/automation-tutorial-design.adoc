@@ -34,6 +34,8 @@ image:rpa-recorder-panel.png[The recorder panel of RPA Recorder]
 .. Write `Sign-up for newsletter` in the activity name field.
 .. In the drop down menu, select *Web task*.
 .. Select the *Continue with already existing web session* checkbox.
++
+This option creates the `generatedWebSession1` Action Parameter, which enables you to continue using the same web session in subsequent Web tasks. You can also reference this parameter when you create new Action Steps during the build phase in RPA Builder. 
 .. Click *Add*
 .. In the sign-up page, provide an email address of your choice and click the accept (>) button.
 . In the RPA Recorder panel, click the *Stop recording* (image:stop-recording.png[The stop recording icon,1.5%,1.5%]) button.

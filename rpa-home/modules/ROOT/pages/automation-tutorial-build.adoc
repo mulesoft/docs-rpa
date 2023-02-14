@@ -52,6 +52,10 @@ image:activity-parameters.png[The workflow Initialization section]
 . Double-click the *generatedWebSession1* parameter to move it to the *Used in this Workflow* session.
 +
 Alternatively, you can use the arrow buttons to move this parameter.
++
+[TIP]
+RPA Recorder generated this Action Parameter when you selected the *Continue with already existing web session* option while creating Web tasks during step 4.2 of this tutorial.
+
 . Click *OK*.
 . Click the *Toolbox* panel.
 +

@@ -2,7 +2,7 @@
 
 You can insert text modules in some text fields that elements of a Workflow use. Each of the Workflow elements that use text modules has drop-down insert lists in the Wizard that enable you to add the text modules.
 
-image:insert-text-module.png[The Enter String Action Step Wizard showing the differnt text module drop-down menus, 60%, 60%]
+image:insert-text-module.png[The Enter String Action Step Wizard showing the different text module drop-down menus, 60%, 60%]
 
 Click on the appropriate element to insert the text module into the input field where the cursor is located.
 

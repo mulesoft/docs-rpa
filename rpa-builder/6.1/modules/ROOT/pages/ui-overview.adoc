@@ -1,0 +1,294 @@
+
+= RPA Builder UI Overview
+
+The RPA Builder user interface has the following main areas:
+
+image:rpa-builder-ui-overview.png[Overview window panes]
+
+. Explorer pane
+. Menu bar
+. BPMN editor
+. Workflow Properties pane
+. Workbench
+. Workflow Run Results
++
+In addition to the Workflow Run Result, you can also find the Process Status in this area.
+
+//image::getting-started-installation-and-first-use-application-overview-image2.png[Process Status pane]
+
+Most visual elements in RPA Builder have tooltips. If you
+ever want to know what a button or setting does, hover your mouse
+pointer over it for a few seconds.
+
+== Menu Bar
+
+The menu bar contains icons for saving, uploading, and
+validating projects. The other icons are shortcuts to various views in
+RPA Builder.
+
+=== Tools
+
+* *Open MuleSoft RPA Builder Log*
++
+This menu item opens the RPA Builder
+log file in your default text editor. The log is a text file containing
+a chronological list of all relevant events since RPA Builder was
+last launched. It also contains information about the executing system.
+
+* *Open Regex Tester*
++
+Use this dialog to create and test regular
+expressions. You can also access the _Regex Tester_ directly from
+various _Action Steps_. The section on Using Regular Expressions includes a
+more detailed description of this dialog and of regular expressions in
+general.
+
+* *Generate OAuth Refresh Token*
++
+Use this menu item to generate an OAuth token that you can use with the Mail Session (Outlook with OAuth) Action Step. This option opens the OAuth Token Creator, in which you specify your OAuth credentials to log in to the authentication server and generate the token.
+
+* *Templates Manager*
++
+This menu item opens the _Templates Manager_. This
+provides an overview of all the templates which have been created in RPA Builder already. Clicking the template name on the left-hand
+side of the window opens a preview of that template’s content. Use the
+_Delete_ button to delete individual templates. You can find out how to
+create and edit templates in the section entitled Save selected Workflow Objects as
+template.
+
+image::getting-started-installation-and-first-use-application-overview-image3.png[Example Templates, 75%, 75%]
+
+=== Options
+
+The menu *Options* in the RPA Builder toolbar contains four sub-menus:
+
+* *General*
+* *Autosave*
+* *Repository*
+* *Visibility*
+
+Click any of these menu items to open the wizard with the selected tab.
+
+==== General
+
+The *General* options menu contains the following settings:
+
+image::rpa-builder-options-general.png[Option General, 50%, 50%]
+
+* *Default Settings*
+** *General timeout default for new projects*
++
+If you want to use the same timeout for every _Action Step_ containing
+this property, you can enter the value here.
++
+A timeout is the time span an _Action Step_ waits before reporting an
+error in case of failure.
++
+This value is only used for initialization when creating a new project
+and can be replaced within each _Action Step_ by a value that is valid
+only for that _Action Step_.
++
+If you want to change the default timeout value for a whole Workflow
+which has already been created, please use the _Default Timeout [sec]_
+setting in the _Workflow Properties_.
+
+** *Save Projects and Settings in All Users Folder*
++
+If this option is set, RPA Builder saves all projects, the most common
+options, _Page Setup…_, and _Print Template Settings_
+for the Printing of a Workflow into the folder
+`C:\Users\Public\Documents\MuleSoft\RPA`. Otherwise, it saves the settings to the folder
+`C:\Users\[UserName.Domain]\Documents\MuleSoft\RPA` of the respective
+user.
+
+** *Open last project on start*
++
+Selecting this option means that the last
+project that you opened is reloaded and displayed when you launch
+RPA Builder.
+
+==== Autosave
+
+The *Autosave* options menu contains the following settings:
+
+image::rpa-builder-options-autosave.png[Option Autosave, 50%, 50%]
+
+* *Autosave on script run*
++
+If this option is selected, RPA Builder saves the Workflow before each local run.
+
+* *Common Autosave*
+** *Activated*
++
+If this option is selected, RPA Builder saves projects automatically at the interval defined in *Time between savings, min*.
++
+RPA Builder always saves the entire Business Process, including all
+Workflows.
+** *Time between savings, min*
++
+The time interval in minutes at which RPA Builder saves the project automatically when the common autosave is activated.
+
+==== Repository
+
+The *Repository* options menu contains the following settings:
+
+image::repository-settings.png[Option Repository, 50%, 50%]
+
+* *Repository Settings*
+** *RPA Manager Address*
++
+The URL of the RPA Manager instance RPA Builder connects to. Do not specify the protocol (`https://`) as part of this value.
+** *User Name*
++
+The RPA Manager user name that RPA Builder uses to log in.
+** *Password*
++
+The RPA Manager password that RPA Builder uses to log in.
+** *Save Password*
++
+Select this option if you want RPA Builder to save the password used to connect to the Repository.
+** *Use HTTPS*
++
+Select this option to connect to the repository using HTTPS.
+** *Auto-Connect to Repository*
++
+Select this option if you want RPA Builder to connect to the repository during start-up.
+
+* *Proxy Settings*
+** *Use System Proxy Settings*
++
+Select this option to use the proxy settings configured in the system.
+** *Manual Proxy Configuration*
++
+Select this option to manually configure a proxy.
+** *Proxy Address*
++
+The proxy address to use when *Manual Proxy Configuration* is selected.
++
+Specify the protocol to use when connecting to the proxy as part of the address. For example: `+http://your.proxy.host:1234/+`
+** *Use Authentication*
++
+Select this option if the specified proxy requires authentication.
+** *User Name*
++
+The user name to authenticate with the proxy.
+** *Password*
++
+The password to authenticate with the proxy.
+
+* *Test Connection*
++
+Tests the connection with the repository using the configured settings.
+
+==== Visibility
+
+The *Visibility* options menu contains the following settings:
+
+image::rpa-builder-options-visibility.png[Option Visibility, 50%, 50%]
+
+* *General Visibility*
+** *Show Action Step descriptions*
++
+(default: off) This option enables you to
+show and hide the descriptions of individual Workflow elements on the
+Workbench in RPA Builder. This does not affect the visibility
+of the individual element descriptions for the Properties and tool tips,
+which are always visible. This option can also be modified via the _Show
+Action Step descriptions_ button or the CTRL+D shortcut. It is saved on
+an individual user basis.
+
+** *Show system parameters dialog*
++
+If this option is set, the system parameters are shown whenever a
+new Activity Workflow is created. These can also be shown via the menu
+_View_ -> _Show System Parameters_.
+
+== Explorer Pane
+
+In the window pane on the left-hand side, you will find five tabs
+containing the views _Toolbox_, _Project_, _Activity Library_,
+_Repository_ and _Outline_.
+
+If any of these views are not visible, you can always show them again by
+using the View menu from the menu bar.
+
+The *_Toolbox_* contains a list of all elements, such as _Action Steps_
+and _Control Blocks_, which can be inserted in a _Workflow_.
+
+Elements are organized in categories, so that you can find fitting ones
+easily. By clicking on the star symbol next to an element, you can add
+it to the category _Favorites_.
+
+Elements can be inserted into the Workflow using Drag&Drop.
+
+You can find a detailed description for each element in the xref:toolbox.adoc[Toolbox] section.
+
+If you input text in the field _Filter_ the content of the _Toolbox_
+is reduced successively to elements, the names of which contain
+this text.
+
+The filter is case-insensitive.
+
+
+The *_Project_* tab contains a list of all loaded Workflows of a project. If you click on one of the Workflows, it is also displayed in the Workbench. This way
+you can easily switch back and forth between Workflows
+
+Right-clicking a Workflow opens the context menu providing additional
+functions:
+
+* *Edit Workflow Properties* Opens the Properties pane of the selected
+Workflow
+* *Clear Run Results marking* Clears the markings of warnings and errors
+in the Workbench view of the selected project. These markings are shown
+after a failed local Workflow run or after the import of an analysis
+package.
+* *Open Workflow Location* Opens the folder containing the selected
+Workflow.
+
+If you are using the Repository for storing your Business Process, the tab *_Repository Explorer_* shows a list of all available Business Process. These can be
+downloaded for editing.
+
+//Chapter Repository Explorer gives a detailed description of all functions.
+
+If you use the *_Activity Library,_* you can view and delete all available
+Activity Templates here.
+
+//For a more detailed description of how to use the Activity Library, see the chapter Activity Library.
+
+The *_Workflow Outline_* is a shortened view of the open Workflow.
+
+You can double-click an element to mark it in the Workbench pane.
+
+Right-clicking an element opens a context menu:
+
+* *Run Wizard* Opens the Wizard of the selected element
+
+* *Delete* Deletes the selected element
+* *Expand all* Expands the view to show all elements, in the _Document
+Outline_ as well as on the Workbench
+* *Collapse all* Collapses the view to show only higher-level elements,
+in the _Document Outline_ as well as on the Workbench
+
+== Workflow Run Results
+
+The _Workflow Run Results_ section shows detailed information on the
+last Activity Workflow that was run.
+
+See xref:running-workflows-and-using-workflow-run-results.adoc#workflow-run-results[The Workflow Run Results Panel] for additional details.
+
+== Project Status
+
+The Project Status section provides detailed information about the
+validation and script generation of the project.
+
+== Workflow Properties Grid
+
+The _Workflow_ _Properties_ grid is located on the right-hand side of
+the screen. In the initial view it is set to _auto-hide_, but it will
+expand as soon as you have opened or created a _Workflow_. It displays
+all properties of the current selection within the _Workbench_.
+
+If you click on an element, a description shows in the bottom of the pane.
+
+If you enter text in the field _Filter_, the displayed properties are
+successively reduced to those containing the entered text.

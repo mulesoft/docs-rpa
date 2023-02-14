@@ -2,23 +2,7 @@
 
 Before using MuleSoft RPA, ensure that your environment meets the minimum hardware and software requirements to use the cloud-based control plane and the on-premise RPA applications.
 
-== Hardware Requirements
-
-The following table contains the minimum hardware requirements and the recommended setup to run the on-premise RPA applications:
-
-[%header%autowidth.spread,cols=".^a,.^a]
-|===
-| Minimum | Recommended
-| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
-| 8 GB of RAM | 16 GB of RAM
-| 30 GB of disk space | 30 GB (SSD) of disk space
-|===
-
-== Software Requirements
-
-Following are the software requirements to run each RPA application.
-
-=== RPA Manager
+== RPA Manager
 
 * Use any of the supported web browsers to access the platform:
 ** Microsoft Edge
@@ -27,69 +11,31 @@ Following are the software requirements to run each RPA application.
 ** Mozilla Firefox
 * Ensure you have access to your organization's RPA Manager instance
 +
-The URL to access RPA Manager is `https://<tenant>.rpa.mulesoft.com`, where `<tenant>` represents your organization's instance. If you are not sure about the name of your instance, contact your organization's administrator. 
+The URL to access RPA Manager is `+https://<tenant>.rpa.mulesoft.com+`, where `<tenant>` represents your organization's instance. If you are not sure about the name of your instance, contact your organization's administrator.
 
-=== RPA Builder
+== RPA Builder 6.1
 
-The following table contains the required software to run the application.
+include::rpa-builder::partial$hard-soft-requirements.adoc[leveloffset=+1]
 
-[%header%autowidth.spread,cols=".^a,.^a,]
-|===
-| Software | Required version
-| Microsoft .NET Framework
- a|
-* 4.7.1
-| Operating System
- a|
-Any of the following:
+For Hardware and Software requirements for earlier RPA Builder versions, refer to the corresponding product documentation:
 
-* Windows 10 / 11
-* Windows Server 2016 / 2019 / 2022
-| Java
- a|
-Any of the following:
+* xref:6.0@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.0 Hardware and Software Requirements]
 
-* Java Runtime Environment 11 (JRE, 64-bit version) or higher
-* Adoptium 11 (JRE, 64-bit version) or higher
-|===
+== RPA Recorder 6.1
 
-=== RPA Recorder
+include::rpa-recorder::partial$hard-soft-requirements.adoc[leveloffset=+1]
 
-The following table contains the required software to run the application.
+For Hardware and Software requirements for earlier RPA Recorder versions, refer to the corresponding product documentation:
 
-[%header%autowidth.spread,cols=".^a,.^a,]
-|===
-| Software | Required version
-| Microsoft .NET Framework
- a|
-* 4.7.2
-| Operating System
- a|
-Any of the following:
+* xref:6.0@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.0 Hardware and Software Requirements]
 
-* Windows 10 (64-bit version)
-* Windows 11 (64-bit version)
-|===
+== RPA Bot 1.1
 
-=== RPA Bot
+include::rpa-bot::partial$hard-soft-requirements.adoc[leveloffset=+1]
 
-The following table contains the required software to run the application.
+For Hardware and Software requirements for earlier RPA Bot versions, refer to the corresponding product documentation:
 
-[%header%autowidth.spread,cols=".^a,.^a,]
-|===
-| Software | Required version
-| Microsoft .NET Framework
- a|
-* 4.5
-* 4.7.2
-| Operating System
- a|
-Any of the following:
-
-* Windows 8.1
-* Windows 10
-* Windows Server 2016
-|===
+* xref:1.0@rpa-bot::hardware-software-requirements.adoc[RPA Bot 1.0 Hardware and Software Requirements]
 
 == See Also
 
