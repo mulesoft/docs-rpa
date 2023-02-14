@@ -27,9 +27,9 @@ This action step has no outbound variables.
 // Wizard
 include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
 
-=== Browser specific settings
+=== Browser Specific Settings
 
-image:toolbox-variable-web-automation-web-session-images/image8.png[An image showing the browser specific settings]
+image:toolbox-variable-web-automation-web-session-images/image8.png[An image showing the browser specific settings.]
 
 See <<properties, Properties>> for a definition of these fields.
 

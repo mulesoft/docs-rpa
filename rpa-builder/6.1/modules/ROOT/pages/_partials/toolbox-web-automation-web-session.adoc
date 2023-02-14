@@ -101,16 +101,16 @@ closing the session at a specific point in the Workflow.
 The Web Session Wizard contains the *Reuse Web Session*, *General Settings*, and *Browser Specific Settings* sections.
 
 === Reuse Web Session 
-image:toolbox-variable-web-automation-web-session-images/image1.png[50%, 50%, An image of the Reuse web session section of the wizard]
+image:toolbox-variable-web-automation-web-session-images/image1.png[50%, 50%, An image of the Reuse web session section of the wizard.]
 
-The *Reuse Web Session* section defines which web session to reuse. To reuse a web session, use the *web session ID* that you previously saved in the Workflow-based variables.
+The *Reuse Web Session* section defines which web session to reuse. To reuse a web session, use the *web session ID* that you previously saved in the workflow-based variables.
 
-image:toolbox-variable-web-automation-web-session-images/image2.png[75%, 75%, An image showing the web session ID]
+image:toolbox-variable-web-automation-web-session-images/image2.png[75%, 75%, An image showing the web session ID.]
 
 You can define a name and a description and then RPA Builder assigns a value automatically. Once you have created the web session ID, you can link it
 with the session using the drop-down in the Web Session Wizard.
 
-image:toolbox-variable-web-automation-web-session-images/image3.png[50%, 50%, An image showing the reuse web session option]
+image:toolbox-variable-web-automation-web-session-images/image3.png[50%, 50%, An image showing the reuse web session option.]
 
 In the script Run Results, you see whether a new web session was created
 or a web session ID was used, and in the latter case, which one.
@@ -133,7 +133,7 @@ Define the standard response of the browser and the execution in the *General Se
 
 === General Settings 
 
-image:toolbox-variable-web-automation-web-session-general-settings.png[50%, 50%, The General Settings section of the Wizard]
+image:toolbox-variable-web-automation-web-session-general-settings.png[50%, 50%, The General Settings section of the Wizard.]
 
 * *Initial URL*
 +
@@ -152,7 +152,7 @@ Wizard opens when the Web Session Wizard is closed.
 + 
 Use this option to define where you want the mouse to move to. This prevents the mouse from covering certain buttons or texts.
 +
-image:toolbox-variable-web-automation-web-session-images/image4.png[50%, 50%, "An image showing the Keep out mouse, move it to: option"]
+image:toolbox-variable-web-automation-web-session-images/image4.png[50%, 50%, "An image showing the Keep out mouse, move it to: option."]
 +
 You can also define whether or not you want to execute this action after
 every Action Step.

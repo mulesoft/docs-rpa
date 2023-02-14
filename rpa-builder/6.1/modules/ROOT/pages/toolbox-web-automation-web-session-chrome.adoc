@@ -40,9 +40,9 @@ This action step has no outbound variables.
 // Wizard
 include::partial$toolbox-web-automation-web-session.adoc[tags=wizardCommon;!pageLoadStrategy]
 
-=== Browser specific settings
+=== Browser Specific Settings
 
-image:toolbox-variable-web-automation-web-session-images/image5.png[50%, 50%, An image showing the browser specific settings]
+image:toolbox-variable-web-automation-web-session-images/image5.png[50%, 50%, An image showing the browser specific settings.]
 
 The *Additional arguments* field enables you to pass arguments to the `Chrome.exe` application. Use `;` as a delimiter when specifying more than one parameter. You can specify a user data profile as an argument to start the web session using said profile, for example: `--user-data-dir=c:\YourFolder\UserData`. 
 

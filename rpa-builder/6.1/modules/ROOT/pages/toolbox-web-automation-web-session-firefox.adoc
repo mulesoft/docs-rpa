@@ -64,9 +64,9 @@ This action step has no outbound variables.
 // Wizard
 include::partial$toolbox-web-automation-web-session.adoc[tags=wizardCommon;!pageLoadStrategy]
 
-=== Browser specific settings
+=== Browser Specific Settings
 
-image:toolbox-variable-web-automation-web-session-images/image6.png[An image showing the browser specific settings]
+image:toolbox-variable-web-automation-web-session-images/image6.png[An image showing the browser specific settings.]
 
 Firefox saves the users’ personal information in a profile. You can
 create additional profiles in the Firefox profile manager. Under
