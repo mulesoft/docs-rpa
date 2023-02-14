@@ -10,6 +10,22 @@ image:toolbox-activity-parameters.png[The Activity Parameters Action Step, 40%, 
 
 Only one _Activity Parameters_ Action Step can exist in a process and it is automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
 
+Activity Parameters consist of a name, a description, and a value. Activity parameter names have the following requirements:
+
+* The name consists of a combination of letters, numbers, and underscores.
+* The name contains no special characters or spaces.
+* The initial letter of the name is lower case.
+* The name is unique.
++
+You cannot use the same name multiple times for different variables.
+
+The predefined values are test values that RPA Builder uses only during a local run. The variables register automatically on RPA Manager when uploaded. RPA Manager enables you to modify the values of the variables and define them differently, depending on the station on which the Workflow is being executed. See xref:advanced-concepts-using-variables.adoc[Using Variables] for additional information.
+
+Please note that the test values may change in the course of the business process due
+to the possible assignment of new values. If the business process starts again,
+the values reset to their initial state.
+
+[[defining-activity-parameters]]
 == Defining Activity Parameters
 
 To define the Activity Parameters:
@@ -28,6 +44,8 @@ image:add-new-parameters.png[The list of available activity parameters to add, 3
 The following data types are available:
 +
 * Texts (*alphanumeric*)
++
+The value for text(alphanumeric) variables has a limit of 4000 characters. 
 * Integers (*integer*)
 * Floating point values (*floating-point*)
 * Boolean values (*boolean*)
@@ -37,25 +55,9 @@ The following data types are available:
 * Browser Session ID (*Web Session id*)
 * AWS log-in data (*AWS Credentials*)
 * OAuth credentials (*OAuth Credentials*)
-
-You can enter a name, description, and a value for the parameters in the corresponding fields. Activity parameter names have the following requirements:
-
-* The name consists of a combination of letters, numbers, and underscores.
-* The name contains no special characters or spaces.
-* The initial letter of the name is lower case.
-* The name is unique.
-+
-You cannot use the same name multiple times for different variables.
-
-The predefined values are test values that are only used for a local run
-within RPA Builder. The variables are registered automatically
-on RPA Manager when uploaded. There, you can modify the values of the
-variables and define them differently, depending on the station on which
-the Workflow is being executed. See xref:advanced-concepts-using-variables.adoc[Using Variables] for additional information.
-
-Please note that the test value may change in the course of the BP due
-to the possible assignment of new values. If the BP is started again,
-the value will be reset to its initial value.
+. Define the *Name*, *Description*, and *Variable Value* for the Activity Parameter.
+. Repeat the process for every Activity Parameter you want to add.
+. Click *OK*.
 
 == Deleting Activity Parameters
 
