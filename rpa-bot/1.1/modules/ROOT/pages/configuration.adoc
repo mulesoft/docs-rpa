@@ -2,7 +2,7 @@
 
 Use the RPA Bot Configurator application to change the default settings of a bot. To find the application navigate to *MuleSoft* > *RPA Bot Configurator*.
 
-The RPA Bot Configuration tool has five configuration panels:
+The RPA Bot Configuration tool has the following configuration panels:
 
 * <<common-settings, Common>>
 * <<proxy-settings, Proxy>>
@@ -67,10 +67,14 @@ If you want the bot to use Secure Sessions, enter the name of the user the bot u
 Enable this option if you are installing the bot on a terminal server that only allows SSL protected RDP connections.
 * *Handle “Always prompt client for password” option*
 +
-There is a Group Policy called `fPromptForPassword`. If this policy is enabled, you must enter the password a second time, when the RDP session is established. If this is the case, enable this option. Also, choose the correct form of dialog. Some machines request the second password entry via a popup dialog. Other machines embedd the prompt into the same screen, like the regular Windows login.
+Enable this option if the `fPromptForPassword` Group Policy is enabled. 
++
+The `fPromptForPassword` policy requests the password to be entered a second time when the RDP session is established. Some machines request the second password entry via a popup dialog. Other machines embed the prompt into the same screen, like the regular Windows login.
 * *Handle a “Custom LogonMessage”*
 +
-It is possible to configure a Custom Logon Message screen that is displayed after the login into an RDP session. It generally needs to be acknowledged by pressing a button. If you are prompted with this message when connecting to your system via RDP, enable this option.
+Enable this option if you are prompted with a custom logon message when connecting to your system via RDP.
++
+Some systems show a custom logon message screen after logging into an RDP session, and this message has to be acknowledged by pressing a button. 
 * *Allow usage of SmartCards inside Secure Sessions*
 +
 Enables authentication via SmartCard within the Secure Session.
@@ -79,7 +83,7 @@ Enables authentication via SmartCard within the Secure Session.
 Select this option to use the CredSSP for authentication.
 * *Use alternative RDP handling for secure session login (recommended for Windows 10 and Windows Server 2016)*
 +
-If the group policy _Always prompt for password upon connection_ is enabled, the password must be entered twice when logging into the RDP session. This might prevent the Secure Session from running smoothly, especially under Windows 2010 and Windows Server 2016. If this is the case, activate this option so that the credentials can be entered correctly in the second query.
+If the group policy _Always prompt for password upon connection_ is enabled, the password must be entered twice when logging into the RDP session. This might prevent the Secure Session from running smoothly, especially on Windows 2010 and Windows Server 2016. If this is the case, activate this option so that the credentials can be entered correctly in the second query.
 +
 In this context, ensure that you have selected the option *Allow connections only from computers running Remote Desktop with Network Level Authentication (recommended)* in the Windows system properties.
 
@@ -89,7 +93,7 @@ Optionally, click *TEST SETTINGS* to test your connection settings for the Secur
 
 image:bot-configurator-test-settings.png[The RPA Bot configurator application showing the Test Settings window, 50%, 50%]
 
-If you click *TEST*, the application starts a non-operational Secure Session in which you can see your parameters for the Secure Session listed. Click *Logout* to end this non-operational Secure Session.
+If you click *TEST*, the application starts a non-operational Secure Session in which you can see a list of parameters for the Secure Session. Click *Logout* to end this non-operational Secure Session.
 
 == Connection Settings
 
@@ -97,7 +101,7 @@ image:bot-configurator-connection-settings.png[The RPA Bot configurator applicat
 
 * *Connection settings*
 +
-Here you can define how RPA Bot components (Robot, StSec and StSem) communicate among themselves. These settings are only relevant for Secure Sessions. You can choose the Named Pipes protocol or TCP. Named Pipes is selected by default, as an uncomplicated method. In some cases, when using TCP, the firewall can block the connection even though it is an exclusive internal computer process.
+Here you can define how RPA Bot components (Robot, StSec and StSem) communicate among themselves. These settings are relevant only for Secure Sessions. You can choose the Named Pipes protocol or TCP. Named Pipes is selected by default because it is a simple communication method. In some cases, when using TCP, the firewall can block the connection even though it is an exclusive internal computer process.
 
 * *Session connection timeout*
 +

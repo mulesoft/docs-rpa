@@ -29,7 +29,7 @@ The API key to use for this bot. Use any of the API keys created in RPA Manager.
 +
 image:bot-install-api-key.png[The RPA Bot installer window asking for the APIKey to use, 50%, 50%]
 +
-If you don't have any API key, see xref:rpa-manager::botmanagement-support.adoc#manage-api-keys[Manage API Keys] for creation instructions.
+If you don't have any API keys, see xref:rpa-manager::botmanagement-support.adoc#manage-api-keys[Manage API Keys] for creation instructions.
 . Continue the installation process until finished and restart the system.
 
 == See Also
