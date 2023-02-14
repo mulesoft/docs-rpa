@@ -2,6 +2,8 @@
 
 RPA Recorder is MuleSoft’s tool for recording a business process for automation.
 
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
 == December 6, 2022
 
 // == What's New

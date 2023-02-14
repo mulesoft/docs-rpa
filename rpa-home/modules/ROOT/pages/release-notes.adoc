@@ -4,6 +4,8 @@ RPA Manager instances automatically update to the latest version available; you 
 
 The latest versions of RPA Builder, RPA Recorder, and RPA Bot become available for download in RPA Manager as soon as they are released and you must manually update them on your local environment.
 
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
 == RPA Manager
 
 * xref:release-notes/rpa-manager-release-notes.adoc[RPA Manager Release Notes]
