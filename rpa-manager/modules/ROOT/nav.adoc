@@ -22,6 +22,7 @@
 * xref:processautomation-overview.adoc[Process Automation]
 ** xref:processautomation-prepare.adoc[Preparing Automations]
 ** xref:processautomation-develop.adoc[Developing Automations]
+*** xref:processautomation-design.adoc[Designing Automations]
 ** xref:processautomation-deploy.adoc[Deploying Automations]
 ** xref:processautomation-manage.adoc[Managing Automations]
 * xref:processmonitoring-overview.adoc[Process Monitoring]
