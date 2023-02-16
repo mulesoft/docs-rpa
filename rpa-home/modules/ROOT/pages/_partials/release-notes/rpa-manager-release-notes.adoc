@@ -9,13 +9,11 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* Credentials in the Credential Pool are now assigned to users and/or user groups. RPA Manager will automatically affiliate credentials that were created prior to this release with all users. You can edit credentials to change affiliated users.
+* (W-12162582) Credentials in the Credential Pool are now assigned to users and/or user groups. RPA Manager will automatically affiliate credentials that were created prior to this release with all users. You can edit credentials to change affiliated users.
+* (W-12481536) Within user tasks a user can copy activity parameter values to the clipboard with the aid of a small button.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
-
-// Already checked for RNs, beside the customer facing fixes (will be removed):
-// W-12405999, W-12420161, W-12405067, W-12405542, W-11830212
 
 [%header,cols="2a,1a"]
 |===
@@ -23,9 +21,8 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | Within the user management a process cannot be release from a user who is the project owner and/or the project manager. | W-12193883
 | The colors of a process board task are now Salesforce conform. | W-11983434
 | Multiple evaluation criteria with the same name are no longer allowed. | W-12024864
-|  | W-
-|  | W-
-|  | W-
+| Long activity parameter names are now truncated to enhance their visibility. | W-12244827
+| Now, after logout and login with a different user the correct privileges are used. | W-12421163
 |===
 
 // == Known Issues
