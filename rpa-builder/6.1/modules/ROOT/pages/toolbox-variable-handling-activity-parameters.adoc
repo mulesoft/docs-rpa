@@ -20,7 +20,8 @@ Activity Parameters consist of a name, description, and value. Activity paramete
 +
 You cannot use the same name multiple times for different variables.
 
-The predefined values are test values that RPA Builder uses only during a local run. The variables register automatically on RPA Manager when uploaded. RPA Manager enables you to modify the values of the variables and define them differently, depending on the station on which the Workflow is being executed. See xref:advanced-concepts-using-variables.adoc[Using Variables] for additional information.
+The predefined values are test values that RPA Builder uses only during a local run. The variables register automatically on RPA Manager when uploaded. RPA Manager enables you to modify the values of the variables and define them differently, depending on the station on which the Workflow is executed. See xref:advanced-concepts-using-variables.adoc[Using Variables] for additional information.
+
 
 Please note that the test values may change in the course of the business process due
 to the possible assignment of new values. If the business process starts again,
