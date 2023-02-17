@@ -10,7 +10,8 @@ image:toolbox-activity-parameters.png[The Activity Parameters Action Step, 40%, 
 
 Only one _Activity Parameters_ Action Step can exist in a process and it is automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
 
-Activity Parameters consist of a name, a description, and a value. Activity parameter names have the following requirements:
+Activity Parameters consist of a name, description, and value. Activity parameter names have the following requirements:
+
 
 * The name consists of a combination of letters, numbers, and underscores.
 * The name contains no special characters or spaces.
