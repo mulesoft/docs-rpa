@@ -21,7 +21,7 @@ You cannot use the same name multiple times for different variables.
 
 The predefined values are test values that RPA Builder uses only during a local run. The variables register automatically on RPA Manager when uploaded. RPA Manager enables you to modify the values of the variables and define them differently, depending on the station on which the Workflow is being executed. See xref:advanced-concepts-using-variables.adoc[Using Variables] for additional information.
 
-Please note that the test values may change in the course of the business process due
+The test values might change in the course of the business process due
 to the possible assignment of new values. If the business process starts again,
 the values reset to their initial state.
 
@@ -45,7 +45,7 @@ The following data types are available:
 +
 * Texts (*alphanumeric*)
 +
-The value for text(alphanumeric) variables has a limit of 4000 characters. 
+The value for text (alphanumeric) variables has a limit of 4000 characters. 
 * Integers (*integer*)
 * Floating point values (*floating-point*)
 * Boolean values (*boolean*)
@@ -66,7 +66,6 @@ To delete an Activity Parameter, click the *Delete* (image:delete-icon.png[The D
 image:business-process-initialization-window.png[The business process initialization window, 75%, 75%]
 
 You can only delete an Activity Parameter if it is not being used in a Workflow. If the Activity Parameter is already connected to at least one Workflow, a pop-up message appears indicating that the parameter is still in use.
-// the following message appears:
 
 image:delete-activity-parameter-warning.png[A warning message showing that a parameter cannot be deleted because it is still in use, 60%, 60%]
 
@@ -161,8 +160,8 @@ Workflow. Clicking on _Cancel_ cancels the import of the Workflow.
 
 == See Also
 
-xref:rpa-manager::processautomation-prepare.adoc#prepare-deployment[RPA Manager - Create Global Variables and Credentials as Initial Values for Activity Parameters]
-
+* xref:rpa-manager::processautomation-prepare.adoc#prepare-deployment[RPA Manager - Create Global Variables and Credentials as Initial Values for Activity Parameters]
+* xref:advanced-concepts-using-variables.adoc[Using Variables]
 ////
 == Related Elements
 
@@ -171,7 +170,5 @@ understanding of the relations between the Activity Parameters:
 
 * link:#BusinessProcessInitialization[_Business Process Initialization_]
 * link:#GatewayConditionExpression[_Gateway condition expression_]
-* {blank}
-* link:\l[_Workflow Based Variables_] link:#UsingVariables[_Using
-Variables_]
+
 ////
