@@ -20,7 +20,6 @@
 *** xref:toolbox-checks-image-search.adoc[Image Search]
 *** xref:toolbox-checks-screenshot.adoc[Screenshot]
 *** xref:toolbox-checks-search-pattern.adoc[Search Pattern]
-//**** xref:pattern-strip.adoc[The Pattern Strip Module]
 *** xref:toolbox-checks-window-wait.adoc[Window Wait]
 ** xref:toolbox-control.adoc[Control]
 *** xref:toolbox-control-clear-screen.adoc[Clear Screen]
