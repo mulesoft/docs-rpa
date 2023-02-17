@@ -170,7 +170,7 @@ The _Pattern Select_ wizard is for selecting _Search Patterns_ and the
 key search settings.
 
 The basic functionality of the _Pattern Strip_ shown here, including all
-pattern operations, is described in the section *Pattern Strip*.
+pattern operations, is described in xref:pattern-strip.adoc[Pattern Strip].
 
 Click _OK_ to confirm the configuration settings or _Cancel_ as
 applicable. The _Test_ button evaluates the search and displays the
@@ -254,8 +254,7 @@ Steps as the Workflow progresses (see <<Other Uses of Matched Patterns>>).
 
 One way of defining a pattern is to take a screenshot that shows it.
 
-The function of the _Capture Pattern_ button is described in the section
-*Capturing the Search Pattern*.
+The function of the _Capture Pattern_ button is described in xref:adding-a-pattern-from-screen-capture.adoc#add-pattern-from-screen-capture[Adding a Pattern from Screen Capture] 
 
 All patterns captured using the _Pattern Select_ _Action Step_ are
 transferred to the _Workflow_'s _Pattern Gallery_.
@@ -498,3 +497,9 @@ Directly before editing the _Mouse click_ _Action Step_ the reference
 pattern must be found by performing the _Test_ function for the _Pattern
 Select_ _Action Step_. Otherwise the previously found search pattern
 will always be used as the
+
+== See Also 
+
+* xref:toolbox-general-pattern-gallery.adoc[Pattern Gallery]
+* xref:toolbox-checks-search-pattern.adoc[Search Pattern]
+* xref:adding-a-pattern-from-screen-capture.adoc[Using Search Patterns in a Workflow] 

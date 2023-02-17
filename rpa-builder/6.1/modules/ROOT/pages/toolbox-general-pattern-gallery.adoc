@@ -1,5 +1,4 @@
 
-
 = Pattern Gallery
 
 All search patterns belonging to a _Workflow_ are stored centrally in
@@ -36,26 +35,11 @@ The _Pattern Gallery Wizard_ enables search patterns to be created,
 processed, and searched for, which can be used throughout the entire
 _Workflow._
 
-== Search Pattern Management
+For additional information about the basic functionality of the _Pattern Strip_, which
+contains all the search patterns and menu bars, see xref:adding-a-pattern-from-screen-capture.adoc#pattern-strip[The Pattern Script Module].
 
-//image:media\image1.png[image,width=555,height=372]
+== See Also 
 
-//image:media\image2.png[image]
-
-The basic functionality of the _Pattern Strip_ shown here, which
-contains all the search patterns and menu bars, is described in the
-*Pattern Strip* section. The _Pattern Gallery_ also
-provides two extra buttons, in addition to the standard functions:
-
-*Delete unused* deletes all _Search Patterns_ that are not used again in
-the _Workflow_.
-
-*Show usage* opens a new _Pattern usage_ window that lists all the
-Action Steps that use the selected pattern, arranged by pattern.
-
-//image:media\image3.png[image,width=492,height=354]
-
-All of the information displayed in this window about how the patterns
-are used can be copied to the clipboard by clicking the *Copy to clipboard* button. The names of the __Action Step__s that make use of
-the individual __Search Pattern__s can be copied to the clipboard by
-clicking the button in the _Usage in Action Steps_ area of the window.
+* xref:toolbox-flow-control-pattern-select.adoc[Pattern Select]
+* xref:toolbox-checks-search-pattern.adoc[Search Pattern]
+* xref:adding-a-pattern-from-screen-capture.adoc[Using Search Patterns in a Workflow] 
