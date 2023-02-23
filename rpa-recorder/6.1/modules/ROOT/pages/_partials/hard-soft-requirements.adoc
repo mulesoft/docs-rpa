@@ -18,10 +18,9 @@
 * 4.7.2
 | Operating System
  a|
-Any of the following:
 
-* Windows 10 (64-bit version)
-* Windows 11 (64-bit version)
+include::rpa-home::partial$windows-versions-support.adoc[]
+
 |===
 
 === Recommended System Settings
