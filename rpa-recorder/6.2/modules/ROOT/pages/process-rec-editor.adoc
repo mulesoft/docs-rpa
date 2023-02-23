@@ -52,3 +52,7 @@ To open the *Save recording as* dialog box again, click *Save as* (image:save-ic
 After merging and editing the BPMN and documentation, click the *Upload to RPA Manager* icon (image:upload-to-server-icon.png[Upload to RPA Manager icon, 2%, 2%]) to upload the new process BMPN. A message opens confirming that the upload is completed.
 
 To close the Process Recording Editor and RPA Recorder, click *Close* (image:close-icon.png[Close icon, 2%, 2%]) in the top right corner.
+
+== See Also
+
+* xref:user-interface.adoc[User Interface]

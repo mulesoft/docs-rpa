@@ -41,6 +41,22 @@ image:rpa-logout-screen.png[RPA Logout Screen]
 
 To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
 
+== Considerations for Process Recording
+
+Consider the following scenarios when recording processes with RPA Recorder to ensure the captured events are as accurate and robust as possible. 
+
+* *Recording applications started as an administrator*
+** To capture a process where you need to run an application as an administrator, you must run RPA Recorder as an administrator. Otherwise, RPA Recorder cannot capture the events from the application.
+** Because you cannot start RPA Recorder as an administrator from RPA Manager, this process works only when you start RPA Recorder in standalone mode by right-clicking the executable file or the shortcut and selecting *Run as Administrator*. 
+
+* *Record processes in a single monitor*
+** If your setup uses multiple monitors, use only the screen where RPA Recorder shows the *Recording Toolbar* to capture the entire process. 
+** To prevent issues during the recording, avoid opening applications on a different screen or moving windows between screens. 
+
+* *Do not change system settings during a recording*
+
+** To prevent any inaccuracies in the captured events, do not change system settings while you are recording a process. 
+
 == See Also
 
 * xref:user-interface.adoc#settings[User Interface]

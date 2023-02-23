@@ -10,7 +10,7 @@ image:rpa-recorder-home.png[RPA Recorder Home screen]
 
 == Recording
 
-The following functions are available in RPA Recorder while recording a process:
+The *Recording Toolbar* appears on the screen when RPA Recorder starts recording a process and contains the following buttons: 
 
 [%header,cols="10,20,30,10"]
 |===
@@ -149,7 +149,7 @@ Use the following settings to configure RPA Recorder:
 * *Directory*: Specifies the local folder for storing documents (BPMN, PDF and XES) and application logs.
 * *Create Process Documentation (PDF)*: If checked, a process documentation file is saved as a PDF after the recording session stops.
 * *Create Process Mining files (XES)*: If checked, a XES process file is generated after the recording session stops.
-* *Generate debug file with a list of raw recorded events*: If checked, a debug file is generated after the recording session stops.
+* *Generate debug file (contains recorded events, window handles and system data)*: If checked, a debug file is generated after the recording session stops.
 * *Take screenshot with every mouse click*: If checked, RPA Recorder automatically takes a screenshot on every mouse click.
 ** *Area around the mouse click*: Screenshots are a cropped area around the mouse click, based on the area size (expressed in screen resolution percentage). Crop percentage can be within 20%-50% screen resolution.
 ** *Full screen*: Screenshots include all screens connected to your machine.
@@ -186,4 +186,5 @@ The about screen contains general information about RPA Recorder:
 
 == See Also
 
+* xref:process-rec-editor.adoc[Process Recording Editor]
 * xref:documents.adoc[Documents]

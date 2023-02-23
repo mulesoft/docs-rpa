@@ -6,4 +6,4 @@ include::partial$hard-soft-requirements.adoc[]
 
 == See Also
 
-xref:getting-started.adoc[Install and Start RPA Recorder]
+* xref:getting-started.adoc[Install and Start RPA Recorder]

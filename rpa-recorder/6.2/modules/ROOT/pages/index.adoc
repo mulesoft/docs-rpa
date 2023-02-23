@@ -15,3 +15,7 @@ You can start RPA Recorder either directly from RPA Manager in the design phase,
 * If used without server connection, RPA Recorder creates the BPMN and stores it locally.
 
 In either case, RPA Recorder also creates an XES file for further processing in process mining tools.
+
+== See Also 
+
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
