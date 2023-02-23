@@ -6,7 +6,7 @@
 
 image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_BaseModel.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_BaseModel] 
 
-The basic structure of a model is displayed in the workbench.
+The basic structure of a model is displayed in the workbench. 
 
 image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_BaseModel_Complete.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_BaseModel_Complete]
 
@@ -125,8 +125,11 @@ You configure the duration of the waiting time in the RPA Builder.
 
 === Business Rule Task
 
-// new
-...
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Activity_Task_BusinessRule.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Activity_Task_BusinessRule]
+
+With the *Business Rule Tasks* you can model the application of business rules to take decisions. Experts specify business rules in decision tables (DT). Decsion tables are part of decision requirement diagrams (DRD). You can find all DRDs in the *Decision Management* view of the *Process Automation* module.
+
+// link to Decision Management
 
 === Exclusive Gateway
 
