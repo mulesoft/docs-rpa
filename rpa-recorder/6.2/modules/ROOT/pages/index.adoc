@@ -1,0 +1,17 @@
+
+= RPA Recorder Overview
+
+Use RPA Recorder to record business processes.
+
+RPA Recorder enables you to:
+
+* Record actions like mouse clicks, keyboard inputs on your system or on a web browser, and used applications
+* Add comments and variable information during the recording
+* Take screenshots automatically per mouse click, or manually at any time
+
+You can start RPA Recorder either directly from RPA Manager in the design phase, or as a standalone tool without server connection.
+
+* If started from RPA Manager, RPA Recorder automatically uploads the recorded BPMN process model with the documentation into the server and creates a local PDF with the same information after the recording is finished.
+* If used without server connection, RPA Recorder creates the BPMN and stores it locally.
+
+In either case, RPA Recorder also creates an XES file for further processing in process mining tools.

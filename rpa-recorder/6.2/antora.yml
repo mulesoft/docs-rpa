@@ -1,0 +1,6 @@
+name: rpa-recorder
+title: RPA Recorder
+version: '6.2'
+display_version: '6.2'
+nav:
+- modules/ROOT/nav.adoc
