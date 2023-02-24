@@ -15,7 +15,7 @@ No support for Enterprise multi-session (Windows 10 Enterprise for Virtual Deskt
 ** Professional for Workstations
 ** Enterprise 
 +
-No support for Enterprise multi-session (Windows 10 Enterprise for Virtual Desktops).
+No support for Enterprise multi-session (Windows 11 Enterprise for Virtual Desktops).
 +
 * Windows Server 2019
 * Windows Server 2022
