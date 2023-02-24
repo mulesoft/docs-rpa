@@ -22,7 +22,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | You can no longer remove a process assigned to a user if that user is either the project owner or the project manager. | W-12193883
 | Users can no longer create multiple evaluation criteria with the same name. | W-12024864
 | Long activity parameter names are now truncated to enhance their visibility. | W-12244827
-| Users no longer see incorrect privileges assigned when logging to RPA Manager after a different user logs out. | W-12421163
+| Users no longer see incorrect privileges assigned when logging in to RPA Manager after a different user logs out. | W-12421163
 |===
 
 // == Known Issues
@@ -31,7 +31,7 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 [%header,cols="3a,3a,1a"]
 |===
 |Known Issue |Workaround | ID
-| Editing a process after you make a copy of it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, ensure that you import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+| Editing a process after you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, ensure that you import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
 |===
 
 
