@@ -15,7 +15,7 @@
 | Software | Required version
 | Microsoft .NET Framework
  a|
-* 4.7.2
+* 4.8
 | Operating System
  a|
 
