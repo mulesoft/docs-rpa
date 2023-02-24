@@ -1,0 +1,21 @@
+//Bulleted list of Supported Windows versions. This is used in the Hard&Soft requirements of RPA Builder, Bot, and Recorder. 
+
+Any of the following:
+
+* Windows 10 (64 bit)
+** Professional
+** Professional for Workstations
+** Enterprise 
++
+No support for Enterprise multi-session (Windows 10 Enterprise for Virtual Desktops).
++
+** Enterprise LTSC
+* Windows 11
+** Professional
+** Professional for Workstations
+** Enterprise 
++
+No support for Enterprise multi-session (Windows 11 Enterprise for Virtual Desktops).
++
+* Windows Server 2019
+* Windows Server 2022

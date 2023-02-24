@@ -1,8 +1,8 @@
 = RPA Bot Overview
 
-RPA Bots are software robots that carry out any RPA processes assigned to them. To execute the processes, RPA Bots require a computer where the applications required for the processes are installed, along with specific configurations for the execution and specific instructions, which are the activities created in RPA Builder for each process step.
+RPA Bots are software robots that carry out any RPA processes assigned to them. To execute the processes, RPA Bots require a computer where the applications required for the processes are installed, along with execution configurations and instructions, which are the activities created in RPA Builder for each process step.
 
-The Bot Management module in RPA Manager enables you to manage your bots. Every Bot is registered through an API key. After the installation, the bot connects with RPA Manager automatically at defined intervals. You can then assign licenses and service times to the bot, deploy processes for the bot to execute, and monitor the bot's status and the results of the process runs it carries out.
+The Bot Management module in RPA Manager enables you to manage your bots. Every bot is registered through an API key. After the installation, the bot connects with RPA Manager at defined intervals. You can then assign licenses and service times to the bot, deploy processes for the bot to execute, and monitor the bot's status and the results of the process runs it carries out.
 
 == See Also
 
