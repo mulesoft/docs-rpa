@@ -2,9 +2,8 @@
 
 = Write to Text File
 
-_Write to Text File_ writes text to a text file. There is an option to
-specify that new text should overwrite existing text. There is an option
-to specify that a new file should be created.
+_Write to Text File_ writes text to a plain text file, with `.txt` as the only supported file format. You can specify if you want _Write to Text File_ to overwrite existing text in a file or create a new file. 
+
 
 == Properties
 
