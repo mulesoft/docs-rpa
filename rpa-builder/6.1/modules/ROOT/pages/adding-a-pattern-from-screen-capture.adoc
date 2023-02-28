@@ -5,19 +5,19 @@ The *Capture* functionality provided in the Search Pattern, Pattern Select, and 
 [[add-pattern-from-screen-capture]]
 == Adding a Pattern from Screen Capture
 
-You can create search patterns in the _Search Pattern_, _Pattern Select_, and _Pattern Gallery_ Action Steps by capturing a screenshot. The menu bars for these Action Steps include a *Capture* button (image:capture-button-icon.png[2%, 2%, The Capture button.]) for this purpose. 
+You can create search patterns in the Search Pattern, Pattern Select, and Pattern Gallery Action Steps by capturing a screenshot. The menu bars for these Action Steps include a *Capture* button (image:capture-button-icon.png[2%, 2%, The Capture button.]) for this purpose. 
 
 Clicking *Capture* freezes the screen content like a screenshot and a small window with the title Capture Patterns appears. Then, you can select the search pattern by clicking and dragging to specify the area that contains the pattern. The selection surrounded with a blue rectangle is no longer transparent gray and you can move or resize it using the mouse or the keyboard. Press `Shift+Arrow key` to move the selection. Press `Ctrl+Arrow key` to resize the selection by moving the right and bottom edges.
 
 image:search-pattern-capture.png[30%, 30%, The capture area of a search pattern.]
 
-You can select more than one search pattern by clicking and dragging multiple times. If the selected image detail is too small, not adequately differentiated, or it contains too few of the features needed to recognize a search pattern, the search pattern definition window shows red and a red cross appears.
+Select more than one search pattern by clicking and dragging multiple times. If the selected image detail is too small, not adequately differentiated, or if it contains too few of the features needed to recognize a search pattern, the search pattern definition window shows a red cross with a red background.
 
-image::incorrect-search-pattern.png[20%, 20%, The search pattern area showing a red cross indicating that the selection is not suitable as a search pattern.]
+image::incorrect-search-pattern.png[20%, 20%, The search pattern area shows a red cross, which indicates that the selection is not suitable as a search pattern.]
 
-Clicking *Accept selection & continue* adds the applicable pattern to the wizard for the relevant Action Step. The wizard enables you to specify names and color spots for each of the captured patterns.
+Click *Accept selection & continue* to add the applicable pattern to the wizard for the relevant Action Step. The wizard enables you to specify names and color spots for each of the captured patterns.
 
-By clicking the close button (*X*) in the upper right corner of the Capture Patterns window you can cancel the recording of a search pattern at any time.
+To cancel the recording of a search pattern at any time, click the close button (*X*) in the upper right corner of the Capture Patterns window. 
 
 == The Capture Patterns Window 
 
@@ -28,13 +28,13 @@ image::capture-patterns-window.png[30%, 30%, The Capture Patterns window]
 Releases the frozen screen so that changes can be made on the screen again.
 * *Define Search Area* 
 +
-Enables you to reduce the Search Area from full screen to a smaller area by clicking and dragging the mouse. This area is then given a red border and goes transparent red. When defining the Search Area you also have the option of unfreezing and refreezing the screen.
+Enables you to reduce the search area from full screen to a smaller area by clicking and dragging the mouse. The selection is transparent red with a red border. When defining the search area, you can unfreeze and refreeze the screen.
 * *Reuse last defined Search Area* 
 +
 Enables you to reuse a search area defined in a previous capture. This option shows only if you already defined a search area when setting up the Workflow. 
 * *Accept selection & continue* 
 +
-Adds the selection made into the wizard for the corresponding Action Step and then returns to that Action Step.
+Adds the selection into the wizard for the corresponding Action Step and then returns to that Action Step.
 
 After you capture at least one search pattern, the *Delete selected pattern* option shows. This option removes the border around the previously selected pattern (or the last search area defined).
 
@@ -49,7 +49,7 @@ image::take-a-screenshot-window.png[30%, 30%, The Take a screenshot window that 
 Freezes the screen image again so that the pattern can be captured. 
 * *Capture screen with delay* 
 +
-Starts the timer and after a delay the screen image refreezes. The Capture Patterns window reappears after the screen content freezes.
+Starts the timer. After a delay, the screen image refreezes and the Capture Patterns window reappears.
 
 [[using-color-spot-with-search-patterns]]
 == Using Color Spot with Search Patterns
