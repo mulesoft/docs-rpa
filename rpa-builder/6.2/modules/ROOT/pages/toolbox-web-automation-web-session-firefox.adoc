@@ -1,0 +1,87 @@
+
+
+= Web Session (Firefox)
+
+include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
+
+[[properties]]
+== Properties
+// commonProperties Web Automation
+include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
+
+* *Accept untrusted certificates*
++
+When set, Firefox automatically accepts untrusted certificates.
+* *Additional profile extensions*
++
+Use this setting to add additional Firefox configuration settings. One or more
+settings have to be in the form of: `<config_1>;<type>;<value-1>;<config_n>;<type>;<value_n>`
++
+For example: `intl.accept_languages;string;no,en-us,en`
++
+Valid types are `int`, `bool`, and `string`. Values containing `;` must be enclosed in double
+quotation marks `"`.
+* *Alternative user agent string*
++
+Override the default User Agent string for Firefox.
+* *Enable native events*
++
+Enable this option if you are having trouble with mouse hover during execution.
+* *Port*
++
+Defines the TCP/IP listener port number used for Firefox for communication between Firefox and an RPA Bot. If set to `-1` an ephemeral port number is used
+(and may also be used for all concurrent _MultiTracer_ instances).
++
+To ensure optimal operation in a _MultiTracer_ environment, set it to `0`.
+In this case, the port used is calculated by the following function:
+_port = TSID * 4 + 45000_ (TSID is the current Terminal Session ID). To
+choose a base value other than `45000`, a value greater than `0` must be
+assigned.
+* *Prefer 64Bit Webdriver*
++
+Select your preferred bitness here. The program tries the other one in case the preferred one is not available
+and generates a warning.
+* *Profile name*
++
+Start Firefox with a specific profile. This profile must be created beforehand on the executing agent
+using the Firefox profile manager.
+
+== Inbound Variables
+
+* *Profile name*
+* *Prefer 64Bit Webdriver*
+* *Alternative user agent string*
+* *Accept untrusted certificates*
+* *Enable native events*
+* *Port*
+* *Web Session ID*
+* *Initial URL*
+
+== Outbound Variables
+
+This action step has no outbound variables.
+
+// Wizard
+include::partial$toolbox-web-automation-web-session.adoc[tags=wizardCommon;!pageLoadStrategy]
+
+=== Browser Specific Settings
+
+image:toolbox-variable-web-automation-web-session-images/image6.png[An image showing the browser specific settings.]
+
+Firefox saves the users’ personal information in a profile. You can
+create additional profiles in the Firefox profile manager. Under
+*Profile name*, specify which profile you want to use to execute the web
+session.
+
+See <<properties, Properties>> for a definition of these fields.
+
+// activityWorkflowOverlappingWebSession
+include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
+
+//closingWebSession
+include::partial$toolbox-web-automation-web-session.adoc[tag=closingWebSession]
+
+== See Also 
+
+* xref:toolbox-web-automation-using-the-browser-wizard.adoc[Using the Web Browser Wizard]
+* xref:toolbox-web-automation-common-properties-web-automation.adoc[Common Properties (Web Automation)]
