@@ -1,0 +1,103 @@
+= Manage Decision Models
+
+Decision models contain all the knowledge that is needed to make complex decisions. 
+
+Examples for complex decisions are:
+
+[cols="1,2,2"]
+|===
+|*Question* |*Input* |*Output*
+
+|Is a customer eligible for our service?
+a|
+* Type of contract
+* Health
+* Age
+* Laws
+* Company regulations
+|Yes/No/Manual
+
+|How do we calculate the price for our service?
+a|
+* Features chosen
+* Type of contract
+* Marketing campaign
+* Country of residence
+|Price in currency of country of residence
+
+|Is a customer's claim valid for processing?
+a|
+* Type of contract
+* Validation (could be another decision table)
+|Yes/No/Manual
+
+|Who should handle the processing of the claim?
+a|
+* Type of contract
+* Value
+|Role/Person
+
+|What exactly should we tell this customer?
+a|
+* Type of contract
+* Question
+* Eligibility
+|Speaking script combined from different options/Refer to manager
+
+|===
+
+In the *Decision Management* view, you model the interrelation of input parameters, knowledge sources, and decisions in decsion requirements diagrams (DRD). You model decisions by listing all possible combinations of input and output parameters in decision tables (DT).
+
+All DRDs are maintained in the *Decision Management* view of the *Process Automation* module. 
+
+The citizen technologist links an appropriate decision table to a business rule task (BRT) when he designs the business process model in the *Project* view of the *Process Automation* module.
+
+The RPA developer uses the decision, i.e. the output variables of a BRT, to implement different paths. 
+
+Suitable decisions are:
+
+* Complex: Multiple rules and regulations apply. The outcome is determined by more than one parameter. 
+* Reusable: They are required in several business processes. 
+* Business critical: A false decision will have a great negative impact.
+
+Modeling these decisions with decision requirements diagrams is:
+
+* Easy: Business experts can set up the tables easily. 
+* Confidential: The access to the knowledge and rules on which business critical decisions are based upon can be restricted  confidential.
+* Clear: A matrix of possible combinations of relevant information is easier to understand and to maintain than a process model with lots of gateways.
+* Independent: The decision tables can be maintained independently from the processes which use them. If rules change, only the tables have to be adapted. The processes automatically use the latest versions.
+
+== Create a Decision Requirements Diagram
+
+Create a Decision Requirements Diagram to model business rules:
+
+. Open the *Decision Management* view of the *Process Automation* module.
+. Click *Create*.
+. Complete the form *Create a decision diagram*.
++
+To find out how to create an DRD, see xref:processautomation-prepare-deployment-decision-drd.adoc[*Designing Decision Requirements Diagrams*].
+. Click *Save*.
+
+== Edit a Decsion Requirements Diagram 
+
+...
+
+== Delete a Decision Requirements Diagram
+
+...
+
+== Example of a Decision Requirements Diagram: Travel Insurance Premium
+
+`Wonderlust`, a fictitious travel agency, sells memorable travel experiences. Customers can include a travel insurance in their package. `Wonderlust` already implemented an automatic process to sell holiday packages via their web site, but did not include a fitting insurance yet, because so many parameters have to be taken into account to compute the premium. 
+Their insurance agent now creates a decision table for suggest a customized travel insurance for a customer.
+
+...
+
+
+== See also
+
+* xref:index.adoc[RPA Manager]
+* xref:processautomation-overview.adoc[Process Automation]
+
+* https://www.omg.org/news/whitepapers/An_Introduction_to_Decision_Modeling_with_DMN.pdf[Object Management Group: An Introduction to Decision
+Modeling with DMN^]
