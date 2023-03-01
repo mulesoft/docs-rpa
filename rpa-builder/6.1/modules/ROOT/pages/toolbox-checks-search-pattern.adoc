@@ -154,11 +154,13 @@ found.
 The _Search Pattern Wizard_ enables you to select _Search Patterns_ and the
 key search settings.
 
+Pattern Strip is a UI module that consists of a list of Search Patterns, their associated options, and a menu bar. See xref:pattern-strip.adoc[The Pattern Strip Module] for a description of the module's functionality and all available pattern operations.
+
 Click *OK* to confirm the configuration settings or *Cancel* as
 applicable. The *Test* button evaluates the search and displays the
 results in the _Search Results_ window.
 
-== Regular Patterns
+=== Regular Patterns
 
 This section lists patterns that are to be found. The number of patterns that you can exclude is limited to 25.
 
@@ -200,19 +202,16 @@ patterns_ is selected, the first pattern in the list will have a blue
 border. This image can be used as a reference point for other Action
 Steps as the Workflow progresses (see Other Uses of Matched Patterns).
 
-
-== Capture Pattern
+==== Capture Pattern
 
 One way of defining a pattern is to take a screenshot that shows it.
 
-////
-The functionality of the _Capture Pattern_ button is described in the
-section Capturing the Search Pattern.
-////
 All patterns captured using the _Search Pattern_ _Action Step_ are
 transferred to the _Workflow_'s _Pattern Gallery_.
 
-== Add Pattern from Gallery
+For a complete description of the Capture Pattern functionality, see xref:adding-a-pattern-from-screen-capture.adoc[Adding a Pattern from Screen Capture].
+
+==== Add Pattern from Gallery
 
 If the _Pattern Gallery_ for the _Workflow_ already contains patterns,
 they can be added to the list of patterns for the _Action Step_ using
@@ -233,7 +232,7 @@ included in the search.
 Click OK to confirm the selection and add it to the pattern list for the
 _Action Step_.
 
-== Ignore All Matches within These Patterns
+=== Ignore All Matches within These Patterns
 
 image::toolbox-checks-search-pattern-image3.png[60%, 60%, Example Ignored patterns]
 
@@ -253,7 +252,7 @@ It is therefore not sufficient in the previous example to capture staff
 with free space at the right edge, because this free space will not form
 part of the pattern being searched for due to a lack of _features_.
 
-== Make Sure None of These Patterns Appear
+=== Make Sure None of These Patterns Appear
 
 image::toolbox-checks-search-pattern-image4.png[60%, 60%, Example for excluded patterns]
 
@@ -265,13 +264,13 @@ When you are rechecking that a pattern does not appear, select *Check whether fo
 As described before, patterns to be excluded from the search can be
 inserted here using a screenshot or from the Pattern Gallery. The number of patterns that you can exclude is limited to 25.
 
-== Changing the Category for a Search Pattern
+=== Changing the Category for a Search Pattern
 
 Use the *Move to...* button in the menu bar to move the selected patterns between the categories _Regular_ and
 _Ignored_.
 
 
-== Search Settings
+=== Search Settings
 
 image::toolbox-checks-search-pattern-image5.png[50%, 50%, Search Settings wizard]
 
@@ -341,7 +340,7 @@ relates to. This means that the _Search Area_ at _Workflow_ runtime is
 positioned at exactly the same distance from the “Relative To”
 coordinate as at the time of design.
 
-== Test
+=== Test
 
 Pressing the *Test* button launches the search independently of
 _Workflow_ execution and open the _Search Results_ window where the
@@ -437,3 +436,9 @@ image located on the far left of the screen will be used. If there are
 multiple images in the identical lateral position on the left, the
 topmost one will be used. If multiple identical images are found, the
 image on the far left or top far left will be used.
+
+== See Also 
+
+* xref:toolbox-general-pattern-gallery.adoc[Pattern Gallery]
+* xref:toolbox-flow-control-pattern-select.adoc[Pattern Select]
+* xref:adding-a-pattern-from-screen-capture.adoc[Using Search Patterns in a Workflow]
