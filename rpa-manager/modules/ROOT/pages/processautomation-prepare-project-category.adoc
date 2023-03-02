@@ -1,10 +1,8 @@
 = Manage Categories
 
-...
-
 Project managers organize projects into categories. You create a set of categories for them to choose from.
 
-A category describes the environment of a process in a few keywords, for example `Customer Support Mystical University` or `Finance`.
+A category describes the environment of a process in a few keywords, for example `Customer Support Mythical University` or `Finance`.
 
 A project can only belong to a single category. First, create a standard category, so the process team can start with process automation quickly. They can change the category of a process later. After they have automated the first few projects, create an archive category to move the completed projects there.
 
@@ -19,26 +17,11 @@ A project can only belong to a single category. First, create a standard categor
 |Open the *Process Automation* module
 |Process Automation Open
 
-|Create and change global variables and credentials that can be used in the test phase
-|Global Variables Create for Test phase, Global Variables Edit for Test phase
-
-|Create and change global variables and credentials that can be used in the production phase
-|Global Variables Create for Production phase, Global Variables Edit for Production phase
-
-|Delete global variables and credentials
-|Global Variables Delete
-
-|Create, change, and delete process applications
-|Application Create, Application Edit, Application Delete
-
 |===
-* If you have access to an Amazon Web Services (AWS) account and want to create AWS credentials for xref:rpa-builder::toolbox-aws-document-processing.adoc[RPA Builder - Document Processing with AWS], follow the instructions in https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html[AWS configuration basics^].
-* If you have access to a Microsoft Azure account and want to create OAuth credentials for xref:rpa-builder::toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[RPA Builder - Mail Session (Outlook with OAuth)], create an application for Outlook, https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[authenticate an EWS application by using OAuth^], and https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[authenticate an IMAP, POP, or SMTP connection using OAuth^].
-* If you want to use RPA Builder to xref:rpa-builder::toolbox-variable-handling-credentials-for-oauth.adoc#generating-an-oauth-refresh-token[generate a refresh token for your OAuth credentials], ask an administrator to xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assign you RPA Builder access].
 
 == Create a Category
 
-Create categories for the organization of processes:
+Create a category for the organization of processes:
 
 . Open the *Process Management* view of the *Process Automation* module.
 . Click *Create*.
@@ -61,7 +44,7 @@ Remove categories that are no longer needed. You can only remove categories that
 . Open the *Process Management* view of the *Process Automation* module.
 . Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category you want to delete.
 
-
 == See Also
 
-* xref:test.adoc[Test]
+* xref:index.adoc[RPA Manager]
+* xref:processautomation-overview.adoc[Process Automation]

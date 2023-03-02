@@ -55,7 +55,7 @@ Specify a downtime in the time zone in which it occurs. If the bot that you assi
 
 For example, if you specify a downtime that starts at 1:30 AM and ends at 5:30 AM in Tokyo time (JST (UTC +9)) and the bot is installed on a computer in San Francisco (PST (UTC -8)), the bot does not execute processes between 8:30 AM and 12:30 PM in San Francisco time.
 
-Learn how to xref:processautomation-prepare.adoc#manage-applications[manage applications].
+Learn how to xref:processautomation-prepare-project-application.adoc[manage applications].
 
 . In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the row of the bot you want to edit.
 . In the form *<bot name>* click on all service times and applications you want to assign.

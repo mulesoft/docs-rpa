@@ -29,7 +29,7 @@ You evaluate a process candidate to propose it for automation.
 
 * Create appropriate categories in the view *Process Management* in the module *Process Automation*.
 +
-Learn how to xref:processautomation-prepare.adoc#manage-categories[manage categories].
+Learn how to xref:processautomation-prepare-project-category.adoc[manage categories].
 
 == Manage Process Evaluations
 
@@ -77,10 +77,4 @@ Delete process evaluations that you no longer need:
 
 == See Also
 
-* xref:processautomation-prepare.adoc#create-categories[Create Process Categories]
-
-* xref:processevaluation-overview.adoc[Process Evaluation]
-* xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
-* xref:processevaluation-configure.adoc[Configuring Process Evaluations]
-//* xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]
-* xref:processevaluation-approve.adoc[Approving a Process for Automation]
+* xref:processautomation-prepare-project-category.adoc[Manage Process Categories]

@@ -20,7 +20,6 @@
 ** xref:myrpa-start.adoc[Starting Automation of Approved Processes]
 ** xref:myrpa-handle.adoc[Handling User Tasks]
 * xref:processautomation-overview.adoc[Process Automation]
-//** xref:processautomation-prepare.adoc[Preparing Automations]
 ** xref:processautomation-prepare-project.adoc[Preparing Projects]
 *** xref:processautomation-prepare-project-category.adoc[Manage Categories]
 *** xref:processautomation-prepare-project-application.adoc[Manage Applications]

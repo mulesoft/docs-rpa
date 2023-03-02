@@ -1,3 +1,7 @@
 = Preparing Projects
 
-...
+A project defines the framework conditions for the automation of a process and is managed by a team.
+
+Project managers organize projects into categories. RPA administrators create a set of categories. Project managers choose one of the categories when they create an automation  project.
+
+RPA Administrators list available applications and assign them to bots that can access them. Citizen technologists assign required applications to processes. A member of the process team can deploy a process on a bot that has assigned the required processes.
