@@ -1,0 +1,52 @@
+= Stopwatch Collection
+
+The Stopwatch Collection Action Step enables you to collect all timer values from the Stopwatch Action Steps configure in an Activity Workflow. 
+
+Because all Stopwatch values are determined at the end of the workflow, you can only place this Action Step in the Workflow Finalization section. 
+
+== Properties
+
+* *Json Labels* 
+** *Reached Label* 
++
+Specifies the label for the Stopwatch Reached State in the output JSON. Maximum length: 50 characters. 
+** *Timer Label* 
++
+Specifies the label for the Stopwatch Name in the output JSON. Maximum length: 50 characters. 
+** *Value Label* 
++
+Specifies the label for the Stopwatch Value in the output JSON. Maximum length: 50 characters. 
+
+[WARNING]
+The properties panel does not validate the maximum label length. Ensure that you validate JSON labels and output by using the Wizard.
+
+== Inbound Variables 
+
+This Action Step contains no inbound variables. 
+
+== Outbound Variables 
+
+* *Stopwatch Timer Collection*
++
+The collection of captured stopwatch values in a JSON list, represented as a String. 
+
+== Wizard 
+
+image:stopwatch-collection-wizard.png[50%, 50%, The Stopwatch Collection Wizard]
+
+* *Settings for JSON labels* 
+** *Timer Label* 
++
+Specifies the label for the Stopwatch Name in the output JSON.
+** *Value Label* 
++
+Specifies the label for the Stopwatch Value in the output JSON.
+** *Reached Label* 
++
+Specifies the label for the Stopwatch Reached State in the output JSON.
+
+The *Preview JSON Output* shows a preview of the resulting JSON based on the configured Stopwatch Action Steps in the Workflow.  
+
+== See Also 
+
+* xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
