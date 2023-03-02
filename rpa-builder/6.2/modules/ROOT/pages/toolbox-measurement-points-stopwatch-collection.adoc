@@ -50,3 +50,4 @@ The *Preview JSON Output* shows a preview of the resulting JSON based on the con
 == See Also 
 
 * xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
+* xref:workflow-finalization.adoc[Workflow Finalization]
