@@ -72,20 +72,20 @@ These settings show when the selected file is a PDF.
 Specifies if the selected PDF file is password protected. When selected, specify the password to open the file in the *Password to open PDF file* filed.
 ** *Read entire file*
 +
-Instructs the OCR service to read the entire file.
+Instructs the service to read the entire file.
 ** *Read page range*
 +
-Instructs the OCR service to read the selected range of pages.
+Instructs the service to read the selected range of pages.
 +
 *** *From page*
 +
-Specify from which page the OCR service starts reading the file.
+Specify from which page the service starts reading the file.
 *** *To page*
 +
-Specifies until which page the OCR service reads the file.
+Specifies until which page the service reads the file.
 *** *Read to end of file*
 +
-Instructs the OCR service to continue reading until the end of the file.
+Instructs the service to continue reading until the end of the file.
 
 == See Also
 
