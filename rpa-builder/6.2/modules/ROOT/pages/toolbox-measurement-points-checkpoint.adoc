@@ -29,3 +29,7 @@ file that was imported in the _File Controlled Loop_.
 the _Checkpoint_ is reached
 
 * Syntax: [Time since Workflow start in seconds]
+
+== See Also 
+
+* xref:toolbox-measurement-points-checkpoint-collection.adoc[Checkpoint Collection]
