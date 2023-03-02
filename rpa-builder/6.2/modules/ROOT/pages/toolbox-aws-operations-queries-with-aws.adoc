@@ -1,0 +1,111 @@
+= Queries With AWS
+
+The Queries with AWS Action Step enables you to extract specific data from a document by specifying a query parameter so that the response contains the data you need, without having to apply further filtering on the JSON Output to get the relevant values. 
+
+== Inbound Variables
+
+* *Alias text* 
+* *Query text* 
+* *Directory Path* 
+* *File Name* 
+* *Password*
+* *Read text from page* 
+* *Read text to page*
+* *AWS Credentials*
++
+Or, if *Use custom settings* is activated in the wizard:
++
+** *Client Id*
+** *Client Secret*
+** *Session Token*
+** *Use Session Token*
+** *Region Endpoint*
+* *Json Path*
+
+== Outbound Variables
+
+* *Raw Json*
++
+The complete AWS response.
+* *Normalized Json*
++
+The parsed result based on the normalized result and defined Json path.
+* *First answer* 
++
+A string containing the first result that matched the query. 
+* *All answers* 
++ 
+An array containing all results received from the query. 
+* *Answers count* 
++
+The number of matching results from the specified query. 
+
+== Wizard 
+
+image:queries-with-aws-wizard.png[The Queries With AWS Wizard]
+
+* *Authentication Settings*
++
+The AWS credentials to use for authentication
++
+** *Pin credentials*
++
+Use this option to reference an existing *Credentials for AWS* configuration.
+** *Use custom settings*
++
+Use this option to specify an AWS *Cliend ID*, *Client Secret*, and *Region Endpoint* for this action step.
+** *Session Token*
++
+The session token to use for authentication when *Use session token to authenticate* is selected.
+* *Response settings*
+** *JsonPath Expression*
++
+The Json path to the property of the response object.
+* *File Settings*
+** *Directory path*
++
+The path to the directory where the file is located.
+** *File name*
++
+The name of the file to analyze. Supported file types: PDF, JPEG, and PNG.
++
+* *PDF Settings*
++
+These settings show when the selected file is a PDF.
++
+** *PDF file is password protected*
++
+Specifies if the selected PDF file is password protected. When selected, specify the password to open the file in the *Password to open PDF file* filed.
+** *Read entire file*
++
+Instructs the service to read the entire file.
+** *Read page range*
++
+Instructs the service to read the selected range of pages.
++
+*** *From page*
++
+Specify from which page the service starts reading the file.
+*** *To page*
++
+Specifies until which page the service reads the file.
+*** *Read to end of file*
++
+Instructs the service to continue reading until the end of the file.
+* *Query Settings* 
+** *Query text*
++
+Specifies the query to use to extract the data from the document. The maximum length allowed for this field is 200 characters. 
+** *Alias text* 
++
+An alias attached to the query, for ease of location. The maximum length allowed for this field is 200 characters. 
+** *The query results in... otherwise the action step results is...* 
++
+The first dropdown menu enables you to select which is the expected result of the query: *a single answer*, *one or more results*, or *multiple results*. If this selection matches the query result, the Action Step results either in *a warning* or *an error*, which you can select in the second dropdown menu. 
+* *Analyze Query* 
++
+Enables you to test the configured query and see the results in the Wizard. 
+
+== See Also
+
+* https://docs.aws.amazon.com/en_us/textract/latest/dg/bestqueries.html[Amazon Textract: Best Practices for Queries^]
