@@ -42,7 +42,7 @@ The number of matching results from the specified query.
 
 == Wizard 
 
-image:queries-with-aws-wizard.png[The Queries With AWS Wizard]
+image:queries-with-aws-wizard.png[50%, 50%, The Queries With AWS Wizard]
 
 * *Authentication Settings*
 +
