@@ -88,11 +88,14 @@ To find out how to create an DRD, see xref:processautomation-prepare-deployment-
 
 == Example of a Decision Requirements Diagram: Travel Insurance Premium
 
-`Wonderlust`, a fictitious travel agency, sells memorable travel experiences. Customers can include a travel insurance in their package. `Wonderlust` already implemented an automatic process to sell holiday packages via their web site, but did not include a fitting insurance yet, because so many parameters have to be taken into account to compute the premium. 
-Their insurance agent now creates a decision table for suggest a customized travel insurance for a customer.
+`Wonderlust Travel`, a fictitious travel agency, sells memorable travel experiences. Customers can include a travel insurance in their package. `Wonderlust` already implemented an automatic process to sell holiday packages via their web site, but did not include travel insurance suggestions yet, because so many parameters have to be taken into account to compute the premium. 
+Their insurance agent now creates a decision table for automatically choosing a customized travel insurance suggestion for a customer.
 
 ...
 
+Example DRD travel-insurance-premium.dmn
+
+...
 
 == See also
 
