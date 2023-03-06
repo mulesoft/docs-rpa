@@ -1,6 +1,6 @@
 = Queries with AWS
 
-The Queries with AWS Action Step enables you to extract specific data from a document by specifying queries in natural language so that the response contains the data you need, without having to apply further filtering on the JSON Output to get the relevant values. 
+The Queries with AWS Action Step enables you to extract specific data from a document by specifying queries in natural language so that the response contains the data you need, without having to apply further filtering on the JSON output to get the relevant values. 
 
 For example, if you are processing a credit card statement, you can specify queries such as: 
 
