@@ -1,23 +1,25 @@
 
 = REST Call
 
-You can use the _REST Call Action Step_ to fetch data directly from a
+Use the REST Call Action Step to fetch data directly from a
 server and to collect the required information in a simple way.
 
-You define the end point as you wish and you can assign parameters or
-process variables to the call. This enables you to flexibly address any
-REST interface. The response in JSON format (or XML) can be used as a
+You define the endpoint according to your needs and you can assign parameters or
+process variables to the call, which enables you to flexibly address any
+REST interface. You can use the response in JSON format (or XML) as a
 source variable during the remainder of the process run.
 
-== REST Call via a proxy
+== REST Call via a Proxy
 
-You can also make the REST call via a proxy server. To do this, the REST
-Call Action Step automatically retrieves the necessary information from
-the Network Settings, provided you have made the appropriate settings
-there.
+To make REST calls via a proxy server:
 
-The Network Settings can be found in the Settings Action Step, which is
-located in the Workflow Initialization block.
+image:configure-proxy-settings.png[75%, 75%, The Settings option inside the Workflow Initialization block and the Network Settings configuration window.]
+
+[calloutlist]
+. Inside the *Workflow Initialization* block, open *Settings*.
+. In the *Network Settings* tab, configure your proxy settings.  
+
+The REST Call Action Step automatically retrieves the necessary information from the network settings.
 
 For more information about the configurable settings, see xref:workflow-initialization.adoc#properties[Workflow Settings Properties]
 
@@ -26,16 +28,18 @@ For more information about the configurable settings, see xref:workflow-initiali
 * *Authentication Options* 
 ** *API Key Authentication Key* 
 +
-The name of the API Key to use for authentication. 
+The name of the API Key to use for authentication
 ** *API Key Authentication Value* 
 +
-The value to use when using API Key authentication. 
+The value to use when using API Key authentication 
 ** *Basic Auth Credentials*
 +
-The credentials to use when using Basic Authentication. 
+The credentials to use when using Basic Authentication 
 ** *REST Call Authentication Type* 
 +
-Determines the type of authentication header to add to the call. Available values are: 
+Determines the type of authentication header to add to the call
++
+Available values are: 
 +
 *** NoAuth
 *** ApiKey
@@ -46,15 +50,19 @@ Determines the type of authentication header to add to the call. Available value
 
 ** *Base Url* 
 +
-The base URL of the service. 
+The base URL of the service 
 
 ** *Json Path* 
 +
-The Json path to the property of the response object, such as `$.access_token`.
+The Json path to the property of the response object
++
+For example, `$.access_token`.
 
 ** *Method Type* 
 +
-The method type to use for the REST call. Available values are: 
+The method type to use for the REST call
++
+Available values are: 
 +
 *** GET 
 *** POST
@@ -66,9 +74,9 @@ The method type to use for the REST call. Available values are:
 
 ** *Parse Type* 
 +
-Specifies how to parse the REST call result. You can choose between _JsonPath_ and _XPath_.
+Specifies how to parse the REST call result 
 +
-Both types enable you to extract
+You can choose between _JsonPath_ and _XPath_. Both types enable you to extract
 exactly the information that you require without having to use special
 scripting, which simplifies further processing as you can access
 the desired result immediately.
@@ -77,44 +85,52 @@ The _Json Query_ Action Step enables you to read individual values from the Json
 
 ** *Request body* 
 +
-The request body of the REST call to send. 
+The request body of the REST call to send 
 
 ** *Request Body Type* 
 +
-The request body type of the REST call result. You can choose between _Json_ and _Form URL encoded_.
+The request body type of the REST call result
++
+You can choose between _Json_ and _Form URL encoded_.
 
 ** *Url Extension* 
 +
-A path parameter that uniquely identifies the resource.
+A path parameter that uniquely identifies the resource
 
 ** *XPath* 
 +
-The Xpath expression to the property of the response object, for example, `/root/access_token/text()`.
+The Xpath expression to the property of the response object
++
+For example, `/root/access_token/text()`.
 
 == Inbound Variables
 
 * *Base Url*
 +
-The base URL of the service. 
+The base URL of the service
 * *Url Extension*
 +
-A path parameter that uniquely identifies the resource.
+A path parameter that uniquely identifies the resource
 * *Json Path Expression*
 +
-The Json path to the property of the response object, such as `$.access_token`.
+The Json path to the property of the response object
++
+For Example, `$.access_token`.
 * *XPath Expression* 
 +
-The Xpath expression to the property of the response object, for example, `/root/access_token/text()`.
+The Xpath expression to the property of the response object
++
+For example, `/root/access_token/text()`.
 
 == Outbound Variables
 
 * *IsSuccessful* 
 +
-(boolean) Shows whether the REST Call was successful or not.
+(boolean) Shows whether the REST Call was successful or not
 
 * *ResponseBody* 
 +
-(string) Returns the requested information as a string.
+(string) Returns the requested information as a string
 
 * *FirstItem* 
 +
@@ -122,12 +138,14 @@ The Xpath expression to the property of the response object, for example, `/root
 
 * *Status* 
 +
-(integer) Displays the HTTP status code. For example, `200` is OK, which means the request was processed successfully and the result was
+(integer) Displays the HTTP status code
++
+For example, `200` is OK, which means the request was processed successfully and the result was
 transferred in the answer.
 
 * *ArrayCount* 
 +
-Indicates the number of elements of the returned array.
+Indicates the number of elements of the returned array
 
 == Wizard
 
