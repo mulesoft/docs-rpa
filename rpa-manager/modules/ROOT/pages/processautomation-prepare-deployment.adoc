@@ -20,10 +20,6 @@ a|Store values of the types:
 |Store login data for external applications and web services
 |Activity parameters in run configurations of process automations
 
-|Decision Requirements Diagrams
-|Model business rules
-|Business rule tasks of process models
-
 |===
 
 ...
