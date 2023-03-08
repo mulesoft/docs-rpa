@@ -2,7 +2,7 @@
 
 = String Operations
 
-The String Operations Action Step enables you to modify strings by providing a variety of operations.
+The String Operations Action Step enables you to modify strings by using a variety of operations, including find and replace and trimming.
 
 == Properties
 
