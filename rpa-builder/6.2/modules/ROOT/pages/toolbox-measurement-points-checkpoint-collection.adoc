@@ -8,13 +8,13 @@ Because all Checkpoint values are determined at the end of the workflow, you can
 
 * *Checkpoint Label* 
 +
-Defines the label for the name of the checkpoint in the output JSON. Maximum length: 50 characters. 
+The label for the name of the checkpoint in the output JSON. Maximum length: 50 characters. 
 * *Reached Label* 
 +
-Defines the label for the reached status of the checkpoint in the output JSON. Maximum length: 50 characters. 
+The label for the reached status of the checkpoint in the output JSON. Maximum length: 50 characters. 
 * *Value Label* 
 +
-Defines the label for the value of the checkpoint in the output JSON. Maximum length: 50 characters. 
+The label for the value of the checkpoint in the output JSON. Maximum length: 50 characters. 
 
 [WARNING]
 The properties panel does not validate the maximum label length. Ensure that you validate JSON labels and output by using the Wizard.
@@ -36,13 +36,13 @@ image:checkpoint-collection-wizard.png[50%, 50%, The Checkpoint Collection Wizar
 * *Settings for JSON labels* 
 ** *Checkpoint Label* 
 +
-Defines the label for the name of the checkpoint in the output JSON. Maximum length: 50 characters. 
+The label for the name of the checkpoint in the output JSON. Maximum length: 50 characters. 
 ** *Reached Label* 
 +
-Defines the label for the reached status of the checkpoint in the output JSON. Maximum length: 50 characters. 
+The label for the reached status of the checkpoint in the output JSON. Maximum length: 50 characters. 
 ** *Value Label* 
 +
-Defines the label for the value of the checkpoint in the output JSON. Maximum length: 50 characters. 
+The label for the value of the checkpoint in the output JSON. Maximum length: 50 characters. 
 
 The *Preview JSON Output* shows a preview of the resulting JSON based on the configured Checkpoint Action Steps in the Workflow.  
 
