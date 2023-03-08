@@ -1,0 +1,392 @@
+= Designing Automations
+
+== Creating and Editing a process Model
+
+=== Structure of a process Model
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_BaseModel.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_BaseModel] 
+
+The basic structure of a model is displayed in the workbench. 
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_BaseModel_Complete.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_BaseModel_Complete]
+
+Each model begins with a *Start Event*, contains at least one *Task* (*Bot Task*, *User Task* or *Business Rule Task*) and at least one *End Event*.
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_MoreComplexModel.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_MoreComplexModel]
+
+Multiple *Tasks* can be processed in sequence.
+
+Using *Exclusive Gateways*, you can have the process path form branches. You configure the conditions for selection of a path in the RPA Builder. Each possible path must terminate with an *End Event*.
+
+==== Example: Model of a Book Ordering process
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_Example_ProcessModel_BookOrder.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_Example_ProcessModel_BookOrder] 
+
+In this example, the processing of a book order from an online bookseller is described.
+
+The process `Book Order` is started with the receipt of an order for a book.
+
+We check whether the book is in stock.
+If it is, we send it to the customer, which concludes the process.
+
+If the book is not in stock, we attempt to obtain it via a book wholesale distributor.
+If the book is not available from the wholesaler either, we inform the customer and we remove the book from our catalog, which also concludes the process.
+
+If the book can be obtained via the wholesaler, we wait for delivery and then send it to the customer, which concludes the process.
+
+Almost all the steps of our sample process can be carried out by bots. Only the shipping of the package is done by a human.
+
+=== Adding Elements to the Model
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_ContextPad.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_ContextPad]
+
+You can easily add elements to a model by clicking on an element and selecting the next element from the context pad.
+
+==== Example: Context Pad Append Task
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_ContextPad_AppendTask.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_ContextPad_AppendTask] 
+
+Alternatively, you can add elements to the model using drag-and-drop from the palette on the left of the workbench.
+
+=== Deleting Elements from the Model
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_ContextPad_RemoveElement.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_ContextPad_RemoveElement] 
+
+Click on an element and then select *Remove* from the context menu to delete it from the model.
+
+=== Labeling Elements
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_ContextPad_AppendTextAnnotation.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_ContextPad_AppendTextAnnotation] 
+
+You can label the elements by double-clicking on an element and entering text in the text field or you can add a label by clicking on *Append Text Annotation* from the context pad.
+
+=== Navigation Through the process Model in the Workbench
+
+For easier navigation through the process model in the workbench, several tools are available at the bottom right of the workbench.
+
+// add icon
+Move the Minimap over the model to view a specific section.
+
+// add icon
+Use the search to find an element by its name or its description.
+
+// add icons
+Enlarge or reduce the view using the zoom buttons .
+
+// add icon
+If you click on the button *Fit to Viewport*, the model is scaled to fit fully in the workbench.
+
+[[supported-bpmn-elements]]
+== Supported BPMN Elements
+
+RPA Manager supports the following process model elements.
+
+===  Start Event
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_Normal_Start.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_Normal_Start] 
+
+Each process contains one *Start Event* that starts the process. A *Start Event* cannot follow any other event.
+
+=== Bot Task
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Activity_Task_Service.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Activity_Task_Service] 
+
+The *Bot Task* contains action instructions for the RPA Bot. A *Bot Task* follows any other element that is not an *End Event*.
+
+// link to RPA Builder
+
+=== User Task
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Activity_Task_User.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Activity_Task_User] 
+
+The *User Task* contains action instructions for a human. A *User Task* follows any other element that is not an *End Event*. If a *User Task* is reached during a process, the process stops here and waits for user input. Users see pending *User Tasks* in the xref:myrpa-handle.adoc[*Team Tasks* or *My User Tasks* view of the *My RPA* module].
+
+// link to RPA Builder
+
+===  Timer Boundary Event
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_TimerBoundary.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_TimerBoundary] 
+
+The *Timer Boundary Event* restricts the waiting time for processing of the *User Task* by a human and, on expiry of the waiting time, reroutes the process to a different process path. A *Timer Boundary Event* must be appended to a *User Task*.
+
+==== Example: Timer Boundary Event
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_TimerBoundary_Example_DropOnOrangeFrame.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_TimerBoundary_Example_DropOnOrangeFrame] 
+
+Drag the *Timer Boundary Event* from the palette on the left of the workbench to the edge of a *User Task* and release it when it reaches the desired location and the frame of the *User Task* is highlighted in orange.
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_TimerBoundary_Example.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_TimerBoundary_Example] 
+
+Add an outbound *Sequence Flow* to the part of the process that is to be executed if the waiting time is exceeded.
+
+You configure the duration of the waiting time in the RPA Builder.
+
+// link
+
+=== Business Rule Task
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Activity_Task_BusinessRule.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Activity_Task_BusinessRule]
+
+With the *Business Rule Tasks* you can model the application of business rules to take decisions. Experts specify business rules in decision tables (DT). Decsion tables are part of decision requirement diagrams (DRD). You can find all DRDs in the *Decision Management* view of the *Process Automation* module.
+
+// link to Decision Management
+
+=== Exclusive Gateway
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Gateway_Exclusive.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Gateway_Exclusive] 
+
+The *Exclusive Gateway* enables the implementation of alternative process sequences. The decision as to which path is taken is made by the process engine on the basis of conditions that must be fulfilled. You can specify these conditions for each path. A *Gateway* follows a *Start Event* or a *Task*, in which the conditions for path selection have been saved as variables. The *Gateway* is configured in the RPA Builder.
+
+// link
+
+==== Paths can be *merged* again following a *split*
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Gateway_Exclusive_PathsSplitAndMerge.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Gateway_Exclusive_PathsSplitAndMerge] 
+
+If alternative paths are to be merged in the further course of the process, an Exclusive Gateway is required for this. This gateway has at least two entrances and a single exit, which must be configured as the *Default Flow*.
+
+===  End Event
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_Normal_End.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Event_Normal_End] 
+
+The *End Event* concludes the process flow. For each path, the process model must contain an End Event. An *End Event* follows any other element that is not an *End Event*.
+
+===  Sequence Flow
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_SequenceFlow.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Symbol_SequenceFlow] 
+
+The *Sequence Flow* connects two elements of a process model and shows the direction of the process flow.
+
+===  Link Intermediate Throw / Catch Event
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event] 
+
+Using the elements *Link Intermediate Throw Event* and *Link Intermediate Catch Event*, you can optically split a process into smaller parts that are connected by links. Here, a *Throw Event* is caught by a suitable *Catch Event* in each case and the process continues in the direction of the throw.
+
+The elements *Link Intermediate Throw Event* and *Link Intermediate Catch Event* can be inserted at any point within a process.
+
+==== Example: Clearer process display through *Link Intermediate Throw / Catch Events*
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_LongProcess_Horizontal.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_LongProcess_Horizontal] 
+
+As a result of its length, this process has become unclear.
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_LongProcess_SplitAndArrangedVertical.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_LongProcess_SplitAndArrangedVertical] 
+
+We would like the interrelationships to be clear at first glance and, for this reason, we split it into logically related parts, which we arrange in vertical order.
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_LongProcess_SplitAndArrangedVerticalWithLinks.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_LongProcess_SplitAndArrangedVerticalWithLinks]
+
+We connect the elements that were previously linked through sequence flows with a *Throw* and *Catch Event* in each case.
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_ChangeType.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_ChangeType] 
+
+To convert a *Throw Event*, which has been inserted from the palette on the left of the workbench, into a *Catch Event*, first select the screwdriver symbol from the context pad and then click on *Link Intermediate Catch Event*. In the same way, you can convert a *Catch Event* into a *Throw Event*.
+
+==== Configuration of the links in RPA Builder
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_LongProcess_SplitAndArrangedVerticalWithLinks_DSConfiguration.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_LongProcess_SplitAndArrangedVerticalWithLinks_DSConfiguration] 
+
+You can configure the *Intermediate Link Events* in the Build phase in the RPA Builder.
+
+The connection of the link elements is defined by a joint *Link name*. The *Names* of each of the *Throw-/Catch elements* can be assigned independently of these.
+
+==== Comparison of a more complex process with and without links
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_CompareProcessView.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Link_Intermediate_Throw_Catch_Event_Example_CompareProcessView] 
+
+The more complex a process, the more effective the use of links.
+
+== BPMN tools
+
+===  Hand Tool 
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Tool_Select_Hand.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Tool_Select_Hand] 
+
+With the *Hand Tool*, you can move the entire model across the workbench.
+
+===  Lasso Tool 
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Tool_Select_Lasso.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Tool_Select_Lasso] 
+
+With the *Lasso Tool*, and using drag-and-drop, you can select multiple elements simultaneously to move them together.
+
+===  Space Tool
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Tool_Space.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Tool_Space] 
+
+With the *Space Tool*, you can create larger gaps between individual elements horizontally or vertically.
+
+== Validation of a process model
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Model_Validation_Overview.png[rpa_processAutomation_ProcessManagement_BPMN_Model_Validation_Overview] 
+
+During the creation stage and also subsequently, you can display information on the formal structure of your model.
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Model_Validation_HoverHint.png[rpa_processAutomation_ProcessManagement_BPMN_Model_Validation_HoverHint] 
+
+Hover the mouse pointer over an *Error* or *Warning* symbol to obtain information on the cause of the error.
+
+You can resolve some errors here in the workbench. There are others that you can only process in the RPA Builder.
+
+The workbench for processing a process model works in the RPA Builder exactly as in the RPA Manager.
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Model_Validation_OnSwitch.png[rpa_processAutomation_ProcessManagement_BPMN_Model_Validation_OnSwitch] 
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Model_Validation_OffSwitch.png[rpa_processAutomation_ProcessManagement_BPMN_Model_Validation_OffSwitch] 
+
+By clicking on the validation symbol at the bottom of the workbench, you can display or hide the validation information.
+
+=== Possible error messages and their solutions
+
+==== The element type <element type> is not supported.
+
+This information is only displayed when a process model is being imported.
+
+You can only use the elements included in the topic <<supported-bpmn-elements, Supported BPMN Elements>>. All other elements lead to this error message.
+
+You should replace unsupported elements of the model with supported elements.
+
+==== Only one start event in the process/subprocess is allowed.
+
+This information is only displayed when a process model is being imported.
+
+The model may only contain one *Start Event*.
+
+Please modify the model so that it contains only one *Start Event*.
+
+You can, for example, integrate a case distinction in the workflow that belongs to the first task. Or you can configure appropriate *Gateways*. 
+
+// link to RPA Builder docs
+
+==== Forking is not allowed for <element type>.
+
+*Start Events*, *Service Tasks* and *User Tasks* may only have a single outbound sequence flow. But they may have multiple inbound sequence flows.
+
+You should use only a single outbound sequence flow for *Start Events*, *Service Tasks* and *User Tasks*.
+
+For any forks in the process sequence, you should use *Exclusive Gateways*.
+
+==== More than one of the following sequence flows has no or an empty expression.
+
+If a gateway has two or more outbound sequence flows, only one of these may not contain a condition (*expression*).
+
+image:rpa_processAutomation_ProcessManagement_BPMN_Symbol_Gateway_DefaultSequenceFlow.png[rpa_processAutomation_ProcessManagement_BPMN_Symbol_Gateway_DefaultSequenceFlow] 
+
+An outbound sequence flow from a gateway without an expression is a default flow.
+
+An RPA developer configures gateways in the RPA Builder.
+// link to RPA Builder
+
+==== A gateway with one incoming sequence flow must follow a fork.
+
+A gateway that has only one inbound sequence flow must have at least two outbound sequence flows.
+
+You should add at least one further outbound sequence flow to the gateway.
+
+This rule does not apply to gateways that are used for merging paths. Such gateways have two or more inbound sequence flows but only one outbound sequence flow.
+
+==== A sequence flow with condition is not allowed following a <element type>.
+
+This information is displayed only during import of a process model or during processing in the RPA Builder.
+
+Only a gateway may have outbound sequence flows with conditions (*expressions*).
+
+You should remove conditions from elements other than gateways’ outbound sequence flows and you should use gateways to control the process flow.
+
+An RPA developer configures gateways in the RPA Builder.
+// link to RPA Builder
+
+==== A SequenceFlow with condition type script is not allowed.
+
+This information is only displayed when a process model is being imported.
+
+Only conditions of type `Expression` can be used for sequence flows. Conditions of type `Script` are not permitted.
+
+You should replace conditions for sequence flows of type `Script` with conditions of type `Expression`.
+
+When an RPA developer configures gateways in the RPA Builder, the type `Expression` is used automatically and therefore the type `Script` is overwritten. 
+// link to RPA Builder
+
+==== A sequence flow with an empty expression is not allowed.
+
+Summary of the rules
+
+*A sequence flow with condition is not allowed following a StartEvent (or other supported element).*
+
+and
+
+*More than one of the following sequence flows has no or an empty expression.*
+
+====  The <element type> must have an incoming and outgoing sequence flow.
+
+With the exception of *Start* and *End Event*, each element must have both an inbound and an outbound sequence flow.
+
+You should integrate additional sequence flows in the model so that each element can be reached and run through.
+
+==== The start event / service task is not bound to a workflow.
+// new version ?
+
+This information is only displayed in the build phase.
+
+In the build phase, in the RPA Builder, the RPA developer creates workflows for all tasks and uploads them to RPA Manager. Only then can the process be carried out in the test and production phases.
+
+// different roles!
+Ask an RPA developer to open the project in the RPA Builder and to create workflows for all tasks.
+// link to RPA Builder
+
+After upload to the repository and refreshing of the *Life-Cycle Wizard* view, this error is no longer displayed.
+
+==== The sequence flow cannot target the source element.
+
+A sequence flow may not lead directly to the same element from which it has originated.
+
+Link only two non-identical elements with a sequence flow and remove all sequence flows that lead directly to the same element from which they originated.
+
+==== A timer boundary event can only be bound to a user task
+
+A *Timer Boundary Event* may only be bound to an element of type *User Task*.
+
+Use *Timer Boundary Events* only in combination with a *User Task*.
+
+==== The timer boundary event must have an outgoing sequence flow.
+
+The *Timer Boundary Event* must have an outgoing sequence flow.
+
+Use the *Timer Boundary Event* via an outgoing sequence flow with a different element.
+
+==== A user task supports only one attached timer boundary event.
+
+A *User Task* can contain only one *Timer Boundary Event*.
+
+Reduce the number of *Timer Boundary Events* contained in a *User Task* to One.
+
+=== Possible warnings and their solutions
+
+==== A <element type> should have a name.
+
+*Service Tasks*, *User Tasks*, *Start Events* and *Sequence Flows* from *Gateways* should be given a meaningful description.
+
+To do this, double-click on the relevant element, enter the name directly, and complete the naming with ENTER.
+
+==== The end event of the process/subprocess is missing.
+
+Each process must contain at least one *End Event*.
+
+Continue to add *End Events* until each path of the process terminates with an *End Event*.
+
+You can also re-unite forked paths by using an exclusive gateway, so that they reach a joint End-Event.
+
+The advantage of multiple *End Events* is that you can label each of them with a state description of the corresponding process outcome.
+
+==== Example: Two different End Events of a process
+
+image:rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_Example_ProcessModel_BookOrder_TwoPossibleEndings.png[rpa_processAutomation_ProcessManagement_Category_Project_Details_Phase_Design_Example_ProcessModel_BookOrder_TwoPossibleEndings] 
+
+Depending on how the process went, there are different possibilities for the state in which the humans and materials involved in the process can be in.
+
+In our book ordering sample process, the book has either been delivered to the customer at the end of the process or it can no longer be delivered and has been removed from the catalog.
+
+==  Saving a process model
+
+Remember to save your process model by clicking on the the *Save* icon image:save-icon.png[floppy disk symbol,1.5%,1.5%].

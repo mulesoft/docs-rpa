@@ -51,8 +51,3 @@ _Business Process Model and Notation (BPMN)_ is a standard specification for dia
 == See also
 
 * xref:myrpa-start.adoc[Starting Automation of Approved Processes]
-
-//* xref:processautomation-overview.adoc[Process Automation]
-* xref:processautomation-prepare.adoc[Preparing Process Automations]
-* xref:processautomation-develop.adoc[Developing Process Automations]
-* xref:processautomation-deploy.adoc[Deploying Process Automations]
