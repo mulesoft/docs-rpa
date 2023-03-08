@@ -2,94 +2,124 @@
 
 = String Operations
 
-The String Operations Action Step allows you to modify strings. It
-provides a variety of operations for this purpose.
+The String Operations Action Step enables you to modify strings by providing a variety of operations.
 
 == Properties
 
-*Input Text* Here, enter the string that you want to modify. This can be
-entered using the keyboard or in the wizard, including with the help of
-the pin variables.
+* *Input Text* 
++
+The string that you want to modify. 
++
+Specify this value manually or use the wizard to define this value via the pin variable.
+* *Use a regular expresion for string to find*
++
+Select this option to evaluate the value specified in the *Input Text* field as a regular expression.  
 
 == Inbound Variables
 
 //link:\l[*Input text*]
-*Input Text* Here, enter the string that you want to modify. This can be
-entered using the keyboard or in the wizard, including with the help of
-the pin variables.
-
-If you have selected the _Find and replace text_ mode, the following
-variables are also displayed.
-
-*Find what* Here, enter what is to be found and replaced. You can enter
-any text you wish or define the text via the pin variable.
-
-*Replace with* Here, enter what is to replace the text found under _Find
-what_. Again, you can enter any text you wish or define the text via the
-pin variable.
+* *Input Text* 
++
+The string that you want to modify. 
++
+Specify this value manually or by using the wizard to select a pin variable for the value.
+* *StringToFind* 
++
+The string to search for inside the *Input Text* string. 
+* *StringToReplaceWith* 
++
+The string to replace the found instances of *StringToFind*.
+* *CharacterToTrimAt* 
++
+The character to use as delimiter when using trim operations. 
+* *NumberOfCharacters*
++
+The number of characters to count when using trim operations. 
 
 == Outbound Variables
 
-*Result* The modified string is output as the result. You can then use
-it in the subsequent Action Steps.
+* *Result* 
++
+The modified string is output as the result. You can then use this string in subsequent Action Steps.
 
 == Wizard
 
-_Undefined_ is the default value in the *String operation* field. You
-first have to select an operation.
+image:string-operations-wizard.png[75%, 75%, The available string operations in the String Operations wizard.] 
 
-You can use one of the following modes:
+* *String operation* 
++
+The string operation you want to perform. The following operations are available:
 
-//image:media\image1.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=333,height=163]
-
-With *Find and replace text*, you can search for specific parts of the
-text and replace them.
-
-//image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=290,height=71]
-
-*Example:*
-
-String = DE123456789
-
-Find what = DE
-
-Replace with = FR
-
-Output = FR123456789
-
-*Left (take first characters)* Enter the number of characters that are
-to be output as the result.
-//In the example below, the first 4 characters are displayed as the result.
-
-//image:media\image3.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=305,height=56]
-
-*Example:*
-
-String = DE123456789
-
-Number of characters = 4
-
-Output = DE12
-
-*Right (take last characters)* Here, you specify how many characters
-from the end of the string are to be output as the result.
-
-*Trim left (remove first characters)* With this option, you can specify
-the length that the string is to be shortened by. Selecting _Trim left_
-means that the string is shortened from the
-beginning.
-//image:media\image4.png[image,width=307,height=57]
-
-*Example:*
-
-String = DE123456789
-
-Number of characters = 4
-
-Output = 3456789
-
-*Trim right (remove last characters)* In the same way as with _Trim
-left_, you determine the length of the string. The only difference is
-that the string is shortened at the end.
-
-The various modes cannot be combined with each other.
+** *Analyse*
+** *Find and replace text* 
++
+Searches and replaces text found in the input text. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Find what* = `TEST`
+*** *Replace with* = `NEW`
+*** Output = `MyNEWString`
+** *Left (take first characters)*
++
+Outputs the specified number of characters from the string, starting from the first character. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Number of characters* = `4`
+*** Output = `MyTE` 
+** *Right (take last characters)*
++
+Outputs the specified number of characters from the string, starting from the last character. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Number of characters* = `4`
+*** Output = `ring` 
+** *Trim left (remove first characters)*
++
+Removes the specified number of characters from the string, starting from the first character. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Number of characters* = `3`
+*** Output = `ESTString` 
+** *Trim right (remove last characters)*
++
+Removes the specified number of characters from the string, starting from the last character. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Number of characters* = `3`
+*** Output = `MyTESTStr` 
+** *Takes first characters of the string until a specific character (specific character is not part of output)*
++
+Outputs all characters between the beginning of the string and the first occurrence of the *Character to trim at*. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Character to trim at* = `t`
+*** Output = `MyTESTS` 
++
+Note that the output string does not include the search character.
+** *Takes last characters of the string until a specific character (specific character is not part of output)*
++
+Outputs all characters between the end of the string and the first occurrence of the *Character to trim at*. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Character to trim at* = `T`
+*** Output = `String`
++
+Note that the output string does not include the search character.
+** *Removes first characters of the string until a specific character (specific character is not part of output)*
++
+Removes all characters between the beginning of the string and the first occurrence of the *Character to trim at*. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Character to trim at* = `T`
+*** Output = `ESTString` 
++
+Note that the search character is removed from the output string. 
+** *Removes last characters of the string until a specific character (specific character is not part of output)*
++
+Removes all characters between the end of the string and the first occurrence of the *Character to trim at*. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Character to trim at* = `T`
+*** Output = `MyTES` 
++
+Note that the search character is removed from the output string. 
