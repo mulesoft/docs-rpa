@@ -4,42 +4,40 @@
 Use the REST Call Action Step to fetch data directly from a
 server and to collect the required information in a simple way.
 
-You define the endpoint according to your needs and you can assign parameters or
+Define the endpoint according to your needs and assign parameters or
 process variables to the call, which enables you to flexibly address any
-REST interface. You can use the response in JSON format (or XML) as a
+REST interface. You can use the response in JSON or XML format as a
 source variable during the remainder of the process run.
 
-== REST Call via a Proxy
+== REST Call via a Proxy Server
 
 To make REST calls via a proxy server:
 
-image:configure-proxy-settings.png[75%, 75%, The Settings option inside the Workflow Initialization block and the Network Settings configuration window.]
+image:configure-proxy-settings.png[75%, 75%, "The Settings option inside the Workflow Initialization block and the Network Settings configuration window."]
 
 [calloutlist]
-. Inside the *Workflow Initialization* block, open *Settings*.
+. From the *Workflow Initialization* block, open *Settings*.
 . In the *Network Settings* tab, configure your proxy settings.  
 
 The REST Call Action Step automatically retrieves the necessary information from the network settings.
 
-For more information about the configurable settings, see xref:workflow-initialization.adoc#properties[Workflow Settings Properties]
+For more information about the configurable settings, see xref:workflow-initialization.adoc#properties[Workflow Settings Properties].
 
 == Properties
 
 * *Authentication Options* 
 ** *API Key Authentication Key* 
 +
-The name of the API Key to use for authentication
+The name of the API Key to use for authentication.
 ** *API Key Authentication Value* 
 +
-The value to use when using API Key authentication 
+The value to use when using API Key authentication. 
 ** *Basic Auth Credentials*
 +
-The credentials to use when using Basic Authentication 
+The credentials to use when using Basic Authentication. 
 ** *REST Call Authentication Type* 
 +
-Determines the type of authentication header to add to the call
-+
-Available values are: 
+The type of authentication header to add to the call. Available values are: 
 +
 *** NoAuth
 *** ApiKey
@@ -50,19 +48,15 @@ Available values are:
 
 ** *Base Url* 
 +
-The base URL of the service 
+The base URL of the service. 
 
 ** *Json Path* 
 +
-The Json path to the property of the response object
-+
-For example, `$.access_token`.
+The JSON path to the property of the response object. For example, `$.access_token`.
 
 ** *Method Type* 
 +
-The method type to use for the REST call
-+
-Available values are: 
+The method type to use for the REST call. Available values are: 
 +
 *** GET 
 *** POST
@@ -74,78 +68,69 @@ Available values are:
 
 ** *Parse Type* 
 +
-Specifies how to parse the REST call result 
+Specifies how to parse the REST call result.
 +
-You can choose between _JsonPath_ and _XPath_. Both types enable you to extract
-exactly the information that you require without having to use special
-scripting, which simplifies further processing as you can access
+You can choose between *JsonPath* and *XPath*. Both types enable you to extract the exact information that you require without having to use special
+scripting, which simplifies further processing because you can access
 the desired result immediately.
 +
-The _Json Query_ Action Step enables you to read individual values from the Json object and process the result further.
+The _Json Query_ Action Step enables you to read individual values from the JSON object and process the result further.
 
 ** *Request body* 
 +
-The request body of the REST call to send 
+The request body of the REST call to send. 
 
 ** *Request Body Type* 
 +
-The request body type of the REST call result
-+
-You can choose between _Json_ and _Form URL encoded_.
+The request body type of the REST call result. You can choose between *Json* and *Form URL encoded*.
 
 ** *Url Extension* 
 +
-A path parameter that uniquely identifies the resource
+A path parameter that uniquely identifies the resource.
 
 ** *XPath* 
 +
-The Xpath expression to the property of the response object
-+
-For example, `/root/access_token/text()`.
+The Xpath expression to the property of the response object. For example, `/root/access_token/text()`.
 
 == Inbound Variables
 
 * *Base Url*
 +
-The base URL of the service
+The base URL of the service.
 * *Url Extension*
 +
-A path parameter that uniquely identifies the resource
+A path parameter that uniquely identifies the resource.
 * *Json Path Expression*
 +
-The Json path to the property of the response object
-+
-For Example, `$.access_token`.
+The JSON path to the property of the response object. For Example, `$.access_token`.
 * *XPath Expression* 
 +
-The Xpath expression to the property of the response object
-+
-For example, `/root/access_token/text()`.
+The Xpath expression to the property of the response object. For example, `/root/access_token/text()`.
 
 == Outbound Variables
 
 * *IsSuccessful* 
 +
-(boolean) Shows whether the REST Call was successful or not
+(boolean) Shows whether the REST Call was successful.
 
 * *ResponseBody* 
 +
-(string) Returns the requested information as a string
+(string) Returns the requested information as a string.
 
 * *FirstItem* 
 +
-(array) The first element of the array is output as a string
+(array) The first element of the array is output as a string.
 
 * *Status* 
 +
-(integer) Displays the HTTP status code
+(integer) Displays the HTTP status code.
 +
 For example, `200` is OK, which means the request was processed successfully and the result was
 transferred in the answer.
 
 * *ArrayCount* 
 +
-Indicates the number of elements of the returned array
+The number of elements of the returned array.
 
 == Wizard
 
@@ -155,8 +140,13 @@ The wizard is split into the *Settings* and *Parameters* areas.
 
 image:rest-call-wizard-settings.png[75%, 75%, The Settings section of the REST Call Wizard]
 
-In *Settings*, you specify the *Method Type*, that is, the required HTTP method. In the *Base Url*, you
-specify the Host and Base Path. With the *Url Extension*, you uniquely identify the resource. You can either just type in the URL or define it via the pin variable. Use *Parse Type* to select between _JsonPath_ and _XPath_ which method to use for parsing the result. The *JsonPath Expression* specifies the path to the property of the response object.
+In *Settings*, you specify:
+
+* *Method Type*: The required HTTP method. 
+* *Base Url*: The Host and Base Path. 
+* *Url Extension*: A unique identifier for the resource. You can type in the URL or define it via the pin variable. 
+* *Parse Type*: The method for parsing the result. Available options are *JsonPath* and *XPath*.
+* *JsonPath Expression*: The path to the property of the response object.
 
 === Parameters 
 
@@ -164,8 +154,8 @@ image:rest-call-wizard-parameters.png[75%, 75%, The Parameters section of the RE
 
 In the *Parameters* area, you provide the required information to the
 end point. There are various options for this, you can enter the
-parameters directly in the URL or you can configure the parameters using the different tabs: _Request Body_,
-_Header Parameter_, _Query Parameter_, and _Authentication_.
+parameters directly in the URL or you can configure the parameters using the following tabs: *Request Body*,
+*Header Parameter*, *Query Parameter*, and *Authentication*.
 
 ==== Request Body 
 
@@ -174,38 +164,36 @@ example, the form of communication between the server and the client.
 According to convention, the methods GET, HEAD and DELETE do not require
 a body (see also the network protocol RFC 7231).
 
-In the Parameters area you can
+In the *Parameters* area you can
 find the mapped variables and their *Test Values*. The mapping is
 carried out via the Pin variable.
 
 With the test values,
-you can check if the REST call runs successfully. To do this, having
-entered all the data, click *Send* at the end of the
+you can check if the REST call runs successfully. To do this, enter all of the data and click *Send* at the end of the
 wizard.
 
 The actual values of the mapped variables are not effective until the
 production run of the Workflow.
 
-===== Inserting Variables Into the Request Body 
+//===== Inserting Variables Into the Request Body 
 //image:media\image5.png[image,width=315,height=87]
 
-To insert the variables with the test values into the request body:
-
-[calloutlist]
-. In the *Request body with variables* area, click the position where you want to insert the variable. 
-. In the *Test Values* section, click on the variable you want to insert. For Example `{A}: Activity Parameters.myVar`.
+To insert the variables with test values into the request body:
 
 image:rest-call-wizard-parameters-variables.png[75%, 75%, The Request Body section of the REST Call Wizard]
 
-The *Request body with variables* section shows the body with the contained variable. The *Request body with test values* section shows the body with the broken down variables of the
-Json object. If you selected Json, the body is also highlighted for an
+[calloutlist]
+. In the *Request body with variables* area, click the position where you want to insert the variable. 
+. In the *Test Values* section, click on the variable you want to insert. For Example, `{A}: Activity Parameters.myVar`.
+
+The *Request body with variables* section shows the body of the request and the contained variables. The *Request body with test values* section shows the body with the broken down variables of the
+JSON object. If you selected JSON, the body is also highlighted for an
 improved overview.
 
 Select between *Json* or *Form URL Encoded* to choose
 which type of request and answer is to be accepted by the server and
 client. At the same time, the system checks if your entries are
-compliant. You can also view the conversion of Json to form URL Encoded
-under the header Parameters in the content type.
+compliant. Depending on the request body type you select, the `Content-Type` parameter updates automatically in the *Header Parameters* tab.
 
 ==== Header Parameter 
 
@@ -231,7 +219,14 @@ further information such as login information.
 
 image:rest-call-wizard-authentication.png[75%, 75%, The Authentication tab of the REST Call Wizard]
 
-The *Authentication* tab enables you to select the authentication type to add as a header and the corresponding credentials to use. The available authentication types are _API Key_, _Bearer Token_, and _Basic Auth_. If you don't want to use any authentication method, select _None_.
+The *Authentication* tab enables you to select the authentication type to add as a header and the corresponding credentials to use. 
+
+The available authentication types are:
+
+* *API Key*
+* *Bearer Token* 
+* *Basic Auth* 
+* *None*
 
 ==== Result Viewer
 
