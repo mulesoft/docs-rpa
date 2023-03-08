@@ -39,7 +39,7 @@ To create a process application:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click *Create*.
-. [[form-create-process-applictions]] Complete the *Create a new application* form:
+. [[form-create-process-applications]] Complete the *Create a new application* form:
 +
 * *Time Zone*:
 +
@@ -64,7 +64,7 @@ Edit an application to change its data or down-times:
 . Click *Create*.
 . Edit the form *Edit the application*.
 +
-For an explanation of the properties, see  <<form-create-process-applictions, *Create an Application*>>.
+For an explanation of the properties, see  <<form-create-process-applications, *Create an Application*>>.
 . Click *Save*.
 
 == Deactivate or Activate a Process Application

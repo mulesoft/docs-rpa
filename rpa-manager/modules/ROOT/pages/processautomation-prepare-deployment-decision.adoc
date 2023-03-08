@@ -104,3 +104,5 @@ Example DRD travel-insurance-premium.dmn
 
 * https://www.omg.org/news/whitepapers/An_Introduction_to_Decision_Modeling_with_DMN.pdf[Object Management Group: An Introduction to Decision
 Modeling with DMN^]
+
+...
