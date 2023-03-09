@@ -37,7 +37,8 @@ image:stopwatch-collection-wizard.png[50%, 50%, The Stopwatch Collection Wizard]
 * *Settings for JSON labels* 
 ** *Timer Label* 
 +
-The label for the Stopwatch Name in the output JSON
+The label for the Stopwatch Name in the output JSON.
+
 ** *Reached Label* 
 +
 The label for the Stopwatch Reached State in the output JSON
