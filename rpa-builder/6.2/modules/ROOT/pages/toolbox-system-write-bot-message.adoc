@@ -1,0 +1,26 @@
+= Write Bot Message 
+
+The Write Bot Message Action Step enables you to enrich the run result message the RPA Bot generates after each run. This message shows in the run results page of RPA Manager. 
+
+== Properties 
+
+* *Bot message* 
++
+The text to write in the run result message. 
+* *Overwrite message* 
++
+Select this option to overwrite the previous run result messages. 
+
+== Inbound Variables 
+
+* *Bot message* 
++
+The text to write in the run result message. 
+
+== Outbound Variables 
+
+This Action Step has no outbound Variables. 
+
+== See Also 
+
+xref:rpa-manager::processautomation-deploy.adoc#view-run-results[RPA Manager: View Run Results] 

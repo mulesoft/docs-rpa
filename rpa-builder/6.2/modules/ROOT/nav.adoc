@@ -91,6 +91,7 @@
 *** xref:toolbox-system-map-network-drive.adoc[Map Network Drive]
 *** xref:toolbox-system-message-box.adoc[Message Box]
 *** xref:toolbox-system-system-validation.adoc[System Validation]
+*** xref:toolbox-system-write-bot-message.adoc[Write Bot Message]
 *** xref:toolbox-system-write-log.adoc[Write Log]
 ** xref:toolbox-text-recognition.adoc[Text Recognition]
 *** xref:toolbox-text-recognition-ai-ocr-file-based.adoc[AI OCR (File-based)]
