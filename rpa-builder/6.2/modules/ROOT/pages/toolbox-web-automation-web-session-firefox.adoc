@@ -9,6 +9,9 @@ include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
 // commonProperties Web Automation
 include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
 
+[[browser-specific-settings]]
+*Browser Specific Settings*
+
 * *Accept untrusted certificates*
 +
 When set, Firefox automatically accepts untrusted certificates.
@@ -62,18 +65,13 @@ using the Firefox profile manager.
 This action step has no outbound variables.
 
 // Wizard
-include::partial$toolbox-web-automation-web-session.adoc[tags=wizardCommon;!pageLoadStrategy]
+include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
 
 === Browser Specific Settings
 
 image:toolbox-variable-web-automation-web-session-images/image6.png[An image showing the browser specific settings.]
 
-Firefox saves the users’ personal information in a profile. You can
-create additional profiles in the Firefox profile manager. Under
-*Profile name*, specify which profile you want to use to execute the web
-session.
-
-See <<properties, Properties>> for a definition of these fields.
+See <<browser-specific-settings, Browser Specific Settings>> for a definition of these fields.
 
 // activityWorkflowOverlappingWebSession
 include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]

@@ -7,7 +7,11 @@ session.
 //end::intro[]
 
 //tag::commonProperties[]
+*Browser Settings*
 
+* *Browser mismatch* 
++
+Specifies if the execution aborts when there is a browser mismatch or if it shows a warning. 
 * *Hide Command Prompt*
 +
 Hides the web driver’s command prompt (default). Can be displayed again for diagnostic purposes.
@@ -46,6 +50,27 @@ driver connection.
 +
 After the assigned time, the web session aborts a Webdriver command.
 //end::commonProperties[]
+
+//tag::commonPropertiesChromeMSEDGE[]
+* *Alternative User Agent String*
++
+Override the default User Agent string for Google Chrome.
+* *Disable Unpacked Extensions support*
++
+If you want to prevent the use
+of unpacked extensions in the Chrome browser, select this checkbox.
+The communication between Webdriver and Chrome is restricted as a
+result. This usually does not have any effect on the Webdriver functions
+we use.
+* *Pageload Strategy*
+** *Default*: Not specified.
+** *Normal*: Waits until the pages finish loading and _Ready State_ is _Complete_.
+** *Eager*: Waits until pages finish loading and _Ready State_ is either _Interactive_ or _Complete._
+** *None*: Doesn’t wait until pages finish loading, returns immediately.
+* *Verbose Logging*
++
+Enables verbose logging for the WebDriver.
+//end::commonPropertiesChromeMSEDGE[]
 
 //tag::activityWorkflowOverlappingWebSession[]
 == Activity Workflow Overlapping Web Session
@@ -156,12 +181,5 @@ image:toolbox-variable-web-automation-web-session-images/image4.png[50%, 50%, "A
 +
 You can also define whether or not you want to execute this action after
 every Action Step.
-
-//tag::pageLoadStrategy[]
-* *Page load strategy* 
-+
-Defines the system behavior when loading a page.
-The following options are available: Default, Normal, Eager, and None.
-//end::pageLoadStrategy[]
 
 //end::wizardCommon[]
