@@ -41,7 +41,8 @@ The label for the Stopwatch Name in the output JSON.
 
 ** *Reached Label* 
 +
-The label for the Stopwatch Reached State in the output JSON
+The label for the Stopwatch Reached State in the output JSON.
+
 ** *Value Label* 
 +
 The label for the Stopwatch Value in the output JSON
