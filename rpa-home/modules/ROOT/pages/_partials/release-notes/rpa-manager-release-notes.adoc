@@ -9,12 +9,12 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
-[%header,cols="2a,1a"]
+[%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| An outage (crash, reboot, etc.) of the RPA Bot no longer stops the process execution after the RPA Bot is running again. | W-12361095
-| The run configuration now shows a correctly aligned table. | W-12234671
-| The evaluation criteria table now loads without errors. | W-12544373
+| RPA Manager now automatically restarts process executions carried out by an RPA Bot when the bot restarts due to a failure, such as a crash or a system reboot. | W-12361095
+| The content of the table in *Activity Parameter* from the *Create run configuration* menu is now properly aligned. | W-12234671
+| The content of the table in *Evaluation Criteria* now loads without errors. | W-12544373
 |===
 
 // == Known Issues
