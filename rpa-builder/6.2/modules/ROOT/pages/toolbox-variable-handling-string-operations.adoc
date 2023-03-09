@@ -13,7 +13,9 @@ The string that you want to modify.
 Specify this value manually or use the wizard to define this value via the pin variable.
 * *Use a regular expresion for string to find*
 +
-Select this option to evaluate the value specified in the *Input Text* field as a regular expression.  
+Select this option to evaluate the value specified in the *Find what* field in the wizard (`StringToFind` variable) as a regular expression and apply the regex to the *Input Text*.  
++
+This option is valid only when using the string operation *Find and replace text*.
 
 == Inbound Variables
 
@@ -41,6 +43,9 @@ The number of characters to count when using trim operations.
 * *Result* 
 +
 The modified string is output as the result. You can then use this string in subsequent Action Steps.
+* *Result Length*
++
+The length of the modified result string.
 
 == Wizard
 
@@ -51,6 +56,8 @@ image:string-operations-wizard.png[75%, 75%, The available string operations in 
 The string operation you want to perform. The following operations are available:
 
 ** *Analyse*
++
+Outputs the length of the specified input text string. 
 ** *Find and replace text* 
 +
 Searches and replaces text found in the input text. For example: 
@@ -98,7 +105,7 @@ Outputs all characters between the beginning of the string and the first occurre
 Note that the output string does not include the search character.
 ** *Takes last characters of the string until a specific character (specific character is not part of output)*
 +
-Outputs all characters between the end of the string and the first occurrence of the *Character to trim at*. For example: 
+Outputs all characters between the last occurrence of the *Character to trim at* and the end of the string. For example: 
 +
 *** *Input text (string)* = `MyTESTString`
 *** *Character to trim at* = `T`
@@ -116,7 +123,7 @@ Removes all characters between the beginning of the string and the first occurre
 Note that the search character is removed from the output string. 
 ** *Removes last characters of the string until a specific character (specific character is not part of output)*
 +
-Removes all characters between the end of the string and the first occurrence of the *Character to trim at*. For example: 
+Removes all characters between the last occurrence of the *Character to trim at* and the end of the string. For example: 
 +
 *** *Input text (string)* = `MyTESTString`
 *** *Character to trim at* = `T`
