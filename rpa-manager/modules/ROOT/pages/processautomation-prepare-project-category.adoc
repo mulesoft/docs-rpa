@@ -21,6 +21,8 @@ A project can only belong to a single category. First, create a standard categor
 
 == Create a Category
 
+A category describes the environment of a process in a few keywords, for example `Customer Support Mythical University` or `Finance`.
+
 Create a category for the organization of processes:
 
 . Open the *Process Management* view of the *Process Automation* module.
