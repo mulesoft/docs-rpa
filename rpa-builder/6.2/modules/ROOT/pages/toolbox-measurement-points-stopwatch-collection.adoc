@@ -45,7 +45,8 @@ The label for the Stopwatch Reached State in the output JSON.
 
 ** *Value Label* 
 +
-The label for the Stopwatch Value in the output JSON
+The label for the Stopwatch Value in the output JSON.
+
 
 The *Preview JSON Output* section shows a preview of the resulting JSON based on the configured Stopwatch Action Steps in the Workflow.  
 
