@@ -137,28 +137,49 @@ To capture a mouse hover action during web recording, press `F2` on a web elemen
 
 You can configure RPA Recorder and set preferences.
 
-The configuration section is divided into two parts:
+The configuration section is divided into the following sections:
 
-* <<Settings>>
-* <<Hotkeys>>
+* <<settings, Settings>>
+* <<hotkeys, Hotkeys>>
+* <<log-files, Log files>>
 
+[[settings]]
 === Settings
+
+image:settings.png[60%, 60%, The Settings window]
 
 Use the following settings to configure RPA Recorder:
 
-* *Directory*: Specifies the local folder for storing documents (BPMN, PDF and XES) and application logs.
-* *Create Process Documentation (PDF)*: If checked, a process documentation file is saved as a PDF after the recording session stops.
-* *Create Process Mining files (XES)*: If checked, a XES process file is generated after the recording session stops.
-* *Generate debug file (contains recorded events, window handles and system data)*: If checked, a debug file is generated after the recording session stops.
-* *Take screenshot with every mouse click*: If checked, RPA Recorder automatically takes a screenshot on every mouse click.
-** *Area around the mouse click*: Screenshots are a cropped area around the mouse click, based on the area size (expressed in screen resolution percentage). Crop percentage can be within 20%-50% screen resolution.
-** *Full screen*: Screenshots include all screens connected to your machine.
-** *Mouse click screenshot quality*: Specifies the quality of the screenshots on every mouse click.
-*** Compressed JPEG format
-*** Loss-free PNG format
-* *Merge keystrokes*: Concatenates keyboard entries entered during the recording into meaningful words and sentences based upon the timestamps when they were entered. The number is expressed in seconds and can range from 2 to 10 seconds.
-* *Verbosity level*: Defines wether to show detailed process information in the documentation. If you select *Low*, the information is not shown in the documentation.
+* *Directory* 
++
+The local folder for storing documents (BPMN, PDF and XES) and application logs.
+* *Create Process Documentation (PDF)*
++
+Select this option to save a process documentation file as a PDF after the recording session stops.
+* *Create Process Mining files (XES)*
++
+Select this option to generate a XES process file after the recording session stops.
+* *Generate debug file (contains recorded events, window handles and system data)* 
++
+Select this option to generate a debug file after the recording session stops.
+* *Screenshot Settings* 
+** *Image quality*: 
++
+Select the quality of the screenshots on every mouse click. Available options are: *JPEG (compressed)* and *PNG (lossless)*.
+** *Take screenshot automatically* 
++
+Select this option to automatically take a screenshot on every mouse click.
+** *When recording Bot Tasks auto-capture screenshots of*: 
++
+Select the area to capture when RPA Recorder takes screenshots. Available options are: *Active application only* and *Full screen*. 
+* *Merge keystrokes* 
++
+Concatenates keyboard entries entered during the recording into meaningful words and sentences based upon the timestamps when they were entered. The number is expressed in seconds and can range from 2 to 10 seconds.
+* *Verbosity level* 
++
+Defines wether to show detailed process information in the documentation. If you select *Low*, the information does not show in the documentation.
 
+[[hotkeys]]
 === Hotkeys
 
 This section displays information about the specific hotkeys that can be used, and their description. Hotkeys cannot be customized.
@@ -169,6 +190,7 @@ The hotkeys function is activated by default.
 
 image:hotkeys.png[The hotkeys configuration window, 60%, 60%]
 
+[[log-files]]
 === Log files
 
 This section provides access to RPA Recorder log files and log directory.
