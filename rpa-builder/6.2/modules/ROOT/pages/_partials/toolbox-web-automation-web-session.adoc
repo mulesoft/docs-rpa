@@ -54,14 +54,13 @@ After the assigned time, the web session aborts a Webdriver command.
 //tag::commonPropertiesChromeMSEDGE[]
 * *Alternative User Agent String*
 +
-Override the default User Agent string for Google Chrome.
+Override the default User Agent string for the browser.
 * *Disable Unpacked Extensions support*
 +
-If you want to prevent the use
-of unpacked extensions in the Chrome browser, select this checkbox.
-The communication between Webdriver and Chrome is restricted as a
+Select this option to prevent the use of unpacked extensions in the browser.
+The communication between Webdriver and the browser is restricted as a
 result. This usually does not have any effect on the Webdriver functions
-we use.
+RPA uses.
 * *Pageload Strategy*
 ** *Default*: Not specified.
 ** *Normal*: Waits until the pages finish loading and _Ready State_ is _Complete_.
