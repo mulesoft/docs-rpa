@@ -1,0 +1,32 @@
+= RPA Recorder 6.2.0 Release Notes
+
+RPA Recorder enables you to record a business process for automation.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== March 16, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* The minimum required version of .NET Framework is now 4.8.
+* Web Automation recording performance is improved. 
+* Screenshot taking performance is improved. 
+* Screenshot configuration settings are improved. 
+* The appearance of RPA Recorder and the Web Browser subprocess in the Task Manager is improved. 
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.2.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]

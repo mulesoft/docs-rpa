@@ -14,8 +14,7 @@
 |===
 | Software | Required version
 | Microsoft .NET Framework
- a|
-* 4.8
+| 4.8
 | Operating System
  a|
 
@@ -43,3 +42,12 @@ If you don't run the setup file as an administrator, the installation process mi
 * Your environment is not blocking the execution of any RPA process 
 +
 The operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Recorder home directory and its subfolders are allowed to run. 
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.2.0 and later
+|RPA Bot | 1.0.0 and later
+|===
