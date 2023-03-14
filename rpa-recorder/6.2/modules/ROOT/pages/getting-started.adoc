@@ -54,8 +54,7 @@ Consider the following scenarios when recording processes with RPA Recorder to e
 ** To prevent issues during the recording, avoid opening applications on a different screen or moving windows between screens. 
 
 * *Do not change system settings during a recording*
-
-** To prevent any inaccuracies in the captured events, do not change system settings while you are recording a process. 
+** To prevent inaccuracies in the captured events, do not change system settings such as screen resolution or scaling while recording a process. 
 
 == See Also
 
