@@ -12,8 +12,8 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * The logfile entries are now more compact and concise to improve readability.
 * The *Parameters* field in the *TEST SETTINGS* dialog from the RPA Configurator now has an increased size to improve readability. 
 * RPA Bot now converts user configuration details in the form `username@mydomain.com` to `mydomain\username` to avoid configuration errors.
-* RPA Bot now supports using Desktop sessions in a virtual machine (VM).
-* Error handling capabilities are now improved. 
+* You can now use the attended desktop mode for an RDP connection, which enables you to use the desktop mode in VM environments.
+* RPA Bot now shows any configuration issues while setting up sessions. These issues show in the run results section of RPA Manager.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
