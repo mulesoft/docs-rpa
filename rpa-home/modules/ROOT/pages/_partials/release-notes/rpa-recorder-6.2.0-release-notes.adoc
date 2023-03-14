@@ -14,6 +14,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * Screenshot taking performance is improved. 
 * Screenshot configuration settings are improved. 
 * The appearance of RPA Recorder and the Web Browser subprocess in the Task Manager is improved. 
+* Several third party and internal libraries are updated for RPA Recorder. 
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
@@ -23,6 +24,18 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1
 |Application |Version
 |RPA Builder | 6.2.0 and later
 |RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+| The Web recording browser now properly shows a "Page not available" message when a site is not accessible or does not exist. | W-12353515
+| The minified main window no longer disappears when using multiple screens. | W-11974398
+| The *Automation* and *Documentation* sections of the RPA Recording Editor now properly scale the content when resizing the window. | W-11335632
+| RPA Recorder now properly generates the XPath for elements recorded in a multiframe page. | W-12359410
 |===
 
 // == See Also
