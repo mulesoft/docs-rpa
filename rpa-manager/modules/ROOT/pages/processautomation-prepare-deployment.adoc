@@ -22,4 +22,9 @@ a|Store values of the types:
 
 |===
 
-...
+== See Also
+
+* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder: Activity Paramters]
+* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
+* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
+* xref:processautomation-deploy.adoc#invokable-configuration-link-globals[Linkable Activity Parameters in Production Configurations]

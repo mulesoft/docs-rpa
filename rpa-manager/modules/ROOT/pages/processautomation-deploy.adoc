@@ -285,6 +285,7 @@ The activity parameters for each process are created in RPA Builder and given in
 +
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
+[[invokable-configuration-link-globals]]
 Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click on the *Link a global activity parameter* icon. Only those variables assigned to the phase will be displayed for linking. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
 * *User Task*:
 +
