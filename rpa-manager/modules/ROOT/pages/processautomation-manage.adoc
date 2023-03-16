@@ -245,6 +245,5 @@ Once it's ready, transition the project to the next phase of its life-cycle. You
 
 == See Also
 
-* xref:index.adoc[RPA Manager]
 * xref:rpa-manager::myrpa-start.adoc[Starting Automation of Approved Processes]
-* xref:processautomation-overview.adoc[Process Automation]
+* xref:processautomation-prepare-project-category.adoc[Manage Process Categories]

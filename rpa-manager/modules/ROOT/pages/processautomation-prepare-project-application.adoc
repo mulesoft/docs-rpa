@@ -1,16 +1,20 @@
 = Manage Applications
 
-In the *Process Applications* view, you list all applications required for the execution of processes. Create a new entry for each instance of an application.
+Process applications are third-party application installations that are required for the execution of a process. 
 
-In the *Process Management* view, the project manager xref:myrpa-start.adoc#required-process-applications[assigns required applications to a process] at process creation or phase transition.
+Manage a list of all applications and their downtimes.
 
-In the module *Bot Management*, the administrator xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assigns required applications to bots] that can execute them. Bots can execute all applications installed on their computer.
+Create a new entry for each instance of an application, for example `FinWiz - Mythical University - Computer 1 - Tokyo` and `FinWiz - Mythical University - Computer 42 - San Francisco`.
 
-Applications are not available during down-times or while deactivated. A member of the process team can deploy a process on a bot that has assigned the required processes. If an application becomes non-available, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
+Applications are not available during down-times or while deactivated. 
 
-Learn how to xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assign required applications to a bot].
+To avoid confusion, append the name of the time zone to the name of the application or the downtime. For example, name an application `Words - Tokyo` and a downtime `Electrical Power Outage Tokyo`.
 
-The administrator can deploy a process on a bot that has assigned the required applications.
+In the *Process Management* view, a member of the project team xref:myrpa-start.adoc#required-process-applications[assigns required applications to a process] at process automation creation or phase transition.
+
+In the *Bot Management* module, an administrator xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assigns required applications to bots] that can access them. 
+
+A member of the process team can deploy a process on a bot that has assigned the required applications. If an application becomes non-available, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
 
 == Before You Begin
 
@@ -29,11 +33,13 @@ The administrator can deploy a process on a bot that has assigned the required a
 |===
 * For each application, note the timezone of the computer that it is installed on.
 
+== View All Applications
+
+To view all existing applications for automation projects, open the *Process Applications* view of the *Process Automation* module.
+
 == Create a Process Application
 
 Create one entry for each application required for the execution of processes.
-
-To avoid confusion, append the name of the time zone to the name of the application or the downtime. For example, name your application `Words - Tokyo` and your downtime `Electrical Power Outage Tokyo`.
 
 To create a process application:
 
@@ -62,7 +68,7 @@ Edit an application to change its data or down-times:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click *Create*.
-. Edit the form *Edit the application*.
+. Edit the *Edit the application* form.
 +
 For an explanation of the properties, see  <<form-create-process-applications, *Create an Application*>>.
 . Click *Save*.
@@ -101,5 +107,5 @@ RPA Manager removes the application from all processes and bots to which it was 
 
 == See also
 
-* xref:index.adoc[RPA Manager]
-* xref:processautomation-overview.adoc[Process Automation]
+* xref:processautomation-manage.adoc#projectdata-processapplications[Assign Process Applications to an Automation Project]
+* xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[Assign Process Applications to a Bot] 

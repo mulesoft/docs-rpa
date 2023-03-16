@@ -1,10 +1,14 @@
 = Manage Categories
 
-Project managers organize projects into categories. You create a set of categories for them to choose from.
+Process team members organize projects into categories. 
+
+Manage a set of categories from which process team members can choose one when they create a xref:processevaluation-propose.adoc#create-a-process-evaluation[process evaluation] or an xref:processautomation-manage.adoc#create-an-automation-project[automation project].
 
 A category describes the environment of a process in a few keywords, for example `Customer Support Mythical University` or `Finance`.
 
-A project can only belong to a single category. First, create a standard category, so the process team can start with process automation quickly. They can change the category of a process later. After they have automated the first few projects, create an archive category to move the completed projects there.
+A process can only belong to a single category. 
+
+First, create a standard category, so the process team can start with process automation quickly. They can change the category of a process later. After they have automated the first few projects, create an archive category to move the completed projects there.
 
 == Before You Begin
 
@@ -19,16 +23,24 @@ A project can only belong to a single category. First, create a standard categor
 
 |===
 
+== View All Categories
+
+To view all existing categories for automation projects, open the *Process Management* view of the *Process Automation* module.
+
 == Create a Category
 
-A category describes the environment of a process in a few keywords, for example `Customer Support Mythical University` or `Finance`.
+Create a category that process team members can choose when they create a process evaluation or an automation project.
 
-Create a category for the organization of processes:
+The name of a category should consist of a unique set of distinct keywords that describe the common environment of a set of processes.
+
+To create a category:
 
 . Open the *Process Management* view of the *Process Automation* module.
 . Click *Create*.
 . Enter a name in the *Create a category* window.
 . Click *OK*.
+
+The category panel shows the number of contained projects and how many of them are in development and in production.
 
 == Edit a Category
 
@@ -41,12 +53,25 @@ Edit a category to render its name more precisely:
 
 == Remove a Category
 
-Remove categories that are no longer needed. You can only remove categories that do not contain processes:
+Remove categories that are no longer needed. 
+
+You can only remove categories that do not contain processes.
+
+To remove a category:
 
 . Open the *Process Management* view of the *Process Automation* module.
 . Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category you want to delete.
 
+== Open a Category
+
+To view the contained projects, open the category:
+
+. Open the *Process Management* view of the *Process Automation* module.
+. Click the name of the category.
+
+The project panels show the data and actions of the project.
+
 == See Also
 
-* xref:index.adoc[RPA Manager]
-* xref:processautomation-overview.adoc[Process Automation]
+* xref:processevaluation-propose.adoc#processevaluationdata-category[Assign a Category to a Process Evaluation]
+* xref:processautomation-manage.adoc#projectdata-category[Assign a Category to an Automation Project]
