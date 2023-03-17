@@ -11,10 +11,10 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Alphanumeric global variables, whose value contains '#}', no longer result in an endless loading view (table). | W-12636515
-| Now the value of global variables used in a run configuration is shown correctly. | W-12664566
-| A process containing an empty BPMN no longer shows an internal server error when published to the test phase. | W-12607151
-| Starting an invokable process by calling the PUT endpoint no longer returns a 404 "not found" error. | W-12701176
+| Using alphanumeric global variables containing `#}` in their value no longer causes an endless loading screen for table views. | W-12636515
+| The values of global variables used in a run configuration now show correctly. | W-12664566
+| Publishing a process containing an empty BPMN to the test phase no longer causes an internal server error. | W-12607151
+| Starting an invokable process by calling the `PUT` endpoint no longer returns a `404 - Not found` error. | W-12701176
 |===
 
 // == Known Issues
