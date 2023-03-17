@@ -15,7 +15,7 @@ This Action Step is used to display a message box containing user-defined text a
 System Validation compares various parameters between the system the Workflow was created on and the system where it is executed. It does not have any additional properties on the Properties grid.
 * xref:toolbox-system-write-bot-message.adoc[Write Bot Message]
 +
-The Write Bot Message Action Step enables you to enrich the run result message the RPA Bot generates after each run. This message shows in the run results page of RPA Manager. 
+The Write Bot Message Action Step enables you to enrich the result message the RPA Bot generates after each run. This message shows in the *Run Results* section of the *Process Management* view in RPA Manager. 
 * xref:toolbox-system-write-log.adoc[Write Log]
 +
 This Action Step can be used to leave a comment or brief description at a certain point in the Workflow. 
