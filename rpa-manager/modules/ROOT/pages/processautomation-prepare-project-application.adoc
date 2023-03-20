@@ -39,7 +39,7 @@ To view all existing applications for automation projects, open the *Process App
 
 == Create a Process Application
 
-Create one entry for each application required for the execution of processes.
+Create one entry for each application instance required for the execution of processes.
 
 To create a process application:
 

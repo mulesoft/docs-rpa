@@ -2,16 +2,28 @@
 
 Global variables store values that are the same in multiple processes and that frequently change. By using them, you can reduce the time involved and the error rate in the maintenance of the processes.
 
+Examples use cases of global variables are:
+
+* Tax rates (floating point value)
+* File paths (alphanumeric value)
+* Email addresses (alphanumeric value)
+* Approval (boolean value)
+* Offset for determining a screen coordinate (coordinate value)
+
 The RPA developer defines xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[activity parameters for a process in RPA Builder]. 
 
-Process team members can link a global variable to an activity parameter in an automation to overwrite the initial value of the activity parameter:
+You create reusable global variables that process team members can link to an activity parameter in an automation to overwrite the initial value of the activity parameter:
 
 * xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
 * xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
 
+Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (for example, `number_employees` and `answer`).
+
 Editing or deleting a global variable affects all configurations that use the variable.
 
 Check the usage of a variable before changing or deleting it.
+
+If you want to store login data securely, use xref:processautomation-prepare-deployment-credential.adoc[credentials].
 
 == Before You Begin
 
@@ -37,9 +49,7 @@ Check the usage of a variable before changing or deleting it.
 
 == Create a Global Variable
 
-Global variables consist of a name, description, type, and value. Team members can link them to activity parameters in the test or the production phase. 
-
-Use descriptive names for global variables and only use the variables in an appropriate context. If, for example, the number 42 happens to be both the number of employees in your company and the answer to a different question, then create two global variables (for example, `number_employees` and `answer`).
+Create a global variable that process team members can link to an activity parameter in an automation to overwrite the initial value of the activity parameter.
 
 To create a global variable:
 
@@ -76,7 +86,7 @@ A logical value. Set the checkmark in the *Value* checkbox for the value `true` 
 A floating-point number.
 ** *Coordinate*
 +
-Combination of two integer values for an X-Y coordinate. Use global coordinates, for example, as an offset to determine a screen coordinate.
+Combination of two integer values for an X-Y coordinate.
 * *Value*
 +
 You can only enter values of the specified type.
@@ -115,7 +125,9 @@ To delete a global variable:
 . Click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the global variable you want to delete.
 . Confirm the deletion.
 
-== See also
+== See Also
 
-* xref:index.adoc[RPA Manager]
-* xref:processautomation-overview.adoc[Process Automation]
+* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder: Activity Paramters]
+* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
+* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
+* xref:processautomation-deploy.adoc#invokable-configuration-link-globals[Linkable Activity Parameters in Invokable Configurations]
