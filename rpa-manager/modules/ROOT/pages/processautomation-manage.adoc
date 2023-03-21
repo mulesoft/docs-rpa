@@ -61,7 +61,7 @@ A copy of an automation project contains all information from the original proje
 Copy a project to automate a similar process more quickly:
 
 . Open the *Project Management* view of the *Process Automation* module.
-. Click on the name of the category in which you want to create the new project.
+. Click on the name of the category of the project you want to copy.
 . In the *<category name>* view, click the *Copy* icon image:copy-icon.png[copy symbol,1.5%,1.5%] on the panel of the project you want to copy.
 . Check and edit the form *Copy process*:
 +
@@ -70,10 +70,16 @@ For an explanation of the properties, see <<form-createprocess, *Create process*
 
 To complete copying the project:
 
-. Transfer the project to the *Build* phase.
-. Open it in the xref:rpa-builder::index.adoc[RPA Builder].
+. Transfer the project copy to the *Build* phase.
+. Open the project copy in the xref:rpa-builder::index.adoc[RPA Builder].
+. xref:rpa-builder::ui-overview#menu-bar[Upload] the project copy to RPA Manager.
 
-The project then receives its own identification values. The copied project can only transition to the *Test* phase after it is uploaded from the RPA Builder to the RPA Manager.
+The project copy then receives its own identification values. 
+
+Only after the copy process is completed, the following actions are possible:
+
+* Another process team member can open the project copy in RPA Builder.
+* You or another process team member can transition the project copy to the test phase.
 
 == Edit an Automation Project
 
