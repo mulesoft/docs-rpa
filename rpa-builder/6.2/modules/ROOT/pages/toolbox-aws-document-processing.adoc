@@ -20,6 +20,9 @@ The ERP Docs with AWS enables you to use Amazon Textract to analyze invoices and
 The Key values with AWS action step enables you to extract form data by sending a local file to the AWS Textract service, which returns the extracted key-value pairs.
 * xref:toolbox-aws-operations-ocr-with-aws.adoc[OCR With AWS]
 +
+The Queries with AWS Action Step enables you to extract specific data from a document by specifying a query parameter so that the response contains the data you need, without having to apply further filtering on the JSON output to get the relevant values.
+* xref:toolbox-aws-operations-queries-with-aws.adoc[Queries With AWS] 
++
 The OCR with AWS action step enables you to recognize the text in a document by sending a local file to the AWS Textract service, which returns the extracted values.
 * xref:toolbox-aws-operations-tables-with-aws.adoc[Tables With AWS]
 +
