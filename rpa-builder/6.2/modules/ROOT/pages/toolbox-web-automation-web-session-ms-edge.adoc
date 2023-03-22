@@ -9,11 +9,19 @@ include::partial$toolbox-web-automation-web-session.adoc[tag=intro]
 
 // commonProperties Web Automation
 include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
-* *Pageload Strategy*
-** *Default*: Not specified.
-** *Normal*: Waits until the pages finish loading and _Ready State_ is _Complete_.
-** *Eager*: Waits until pages finish loading and _Ready State_ is either _Interactive_ or _Complete._
-** *None*: Doesn’t wait until pages finish loading, returns immediately.
+
+[[browser-specific-settings]]
+*Browser Specific Settings* 
+
+* *Additional Edge Arguments*
++
+Define command-line parameters for _MS Edge_. 
++
+Use `;` as a delimiter when specifying more than one parameter. By default,
+_disable-translate_ is set, which disables the automatic translation bar
+feature of _MS Edge_ because it may hinder _Workflow_ execution.
+
+include::partial$toolbox-web-automation-web-session.adoc[tag=commonPropertiesChromeMSEDGE]
 
 == Inbound Variables
 
@@ -29,9 +37,11 @@ include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
 
 === Browser Specific Settings
 
-image:toolbox-variable-web-automation-web-session-images/image8.png[An image showing the browser specific settings.]
+image:toolbox-variable-web-automation-web-session-images/image8.png[60%, 60%, An image showing the browser specific settings.]
 
-See <<properties, Properties>> for a definition of these fields.
+You can specify a user data profile as an argument in the *Additional arguments* field to start the web session using said profile, for example: `--user-data-dir=C:\Users\<userName>\AppData\Local\Microsoft\Edge\User Data`. 
+
+See <<browser-specific-settings, Browser Specific Settings>> for a definition of these fields.
 
 // activityWorkflowOverlappingWebSession
 include::partial$toolbox-web-automation-web-session.adoc[tag=activityWorkflowOverlappingWebSession]
