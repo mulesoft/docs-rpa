@@ -19,3 +19,6 @@ General timers are used to measure whole Transactions. Use the _General Timer St
 * xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
 +
 The Stopwatch is basically a combined Start/Stop Timer with a clear graphical representation.
+* xref:toolbox-measurement-points-stopwatch-collection.adoc[Stopwatch Collection]
++
+The Stopwatch Collection Action Step enables you to collect all timer values from the Stopwatch Action Steps configure in an Activity Workflow. 

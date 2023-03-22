@@ -84,6 +84,7 @@
 *** xref:toolbox-measurement-points-general-timer-start.adoc[General Timer Start]
 *** xref:toolbox-measurement-points-general-timer-stop.adoc[General Timer Stop]
 *** xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
+*** xref:toolbox-measurement-points-stopwatch-collection.adoc[Stopwatch Collection]
 ** xref:toolbox-network.adoc[Network]
 *** xref:toolbox-network-ping.adoc[Ping]
 *** xref:toolbox-network-rest-call.adoc[REST Call]

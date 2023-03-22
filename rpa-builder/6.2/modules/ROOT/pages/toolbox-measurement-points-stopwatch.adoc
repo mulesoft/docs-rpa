@@ -43,3 +43,7 @@ calculated:
 and saves it
 * *Min* The fastest measured time is saved
 * *Max* The slowest measured time is saved
+
+== See Also 
+
+* xref:toolbox-measurement-points-stopwatch-collection.adoc[Stopwatch Collection]
