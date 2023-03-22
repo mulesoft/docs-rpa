@@ -236,6 +236,7 @@ Deploy configuration to run them fully automatically in a productive environment
 . In the window *Select Configuration to deploy*, check all configurations you want to run.
 . Click *Execute*.
 
+[[view-run-results]]
 === View Run Results
 
 View the run results to check if everything runs as predicted. In case of errors, download an analysis package and open it in RPA Builder. You can always transition the project back to build phase.
