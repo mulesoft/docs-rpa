@@ -15,7 +15,7 @@ If you are your organization's first admin user, you are responsible for creatin
 == Before You Begin
 
 * The tenant admin is created first and can create other users.
-* If you are not a tenant admin, ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* If you are not a tenant admin, ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===

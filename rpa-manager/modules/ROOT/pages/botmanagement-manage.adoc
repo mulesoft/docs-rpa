@@ -8,7 +8,7 @@ Bots can be licensed to use secure sessions. Some properties, like name, service
 * If you want to assign secure sessions to a bot, make sure that a terminal server software is installed on the computer of the bot.
 * If you want to assign service times to a bot, you need to create them in the *Service Times* view of the *Bot Management* module first.
 * If you want to assign process applications to a bot, you need to create them in the *Process Applications* view of the *Process Automation* module first.
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
