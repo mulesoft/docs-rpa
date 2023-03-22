@@ -33,7 +33,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | Issue Resolution | ID
 | RPA Bot now properly triggers a runtime package update when a new chrome driver is available. | W-12472105
 | RPA Bot Configurator no longer shows the misleading error message "A task was canceled" when testing the connection with an invalid URL. | W-11346658
-| RPA Bot no longer attempts to create a `logfile.txt` file in the installation folder (`C:\Program Files\MuleSoft\RPABot`), which resulted in a file access error. | W-12573272
+| RPA Bot no longer attempts to create an empty `logfile.txt` file in the installation folder (`C:\Program Files\MuleSoft\RPABot`), which resulted in a file access error. | W-12573272
 |===
 
 // == See Also
