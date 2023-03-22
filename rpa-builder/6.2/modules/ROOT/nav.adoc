@@ -81,6 +81,7 @@
 *** xref:toolbox-mail-operations-set-mail.adoc[Set Mail]
 ** xref:toolbox-measurement-points.adoc[Measurement Points]
 *** xref:toolbox-measurement-points-checkpoint.adoc[Checkpoint]
+*** xref:toolbox-measurement-points-checkpoint-collection.adoc[Checkpoint Collection]
 *** xref:toolbox-measurement-points-general-timer-start.adoc[General Timer Start]
 *** xref:toolbox-measurement-points-general-timer-stop.adoc[General Timer Stop]
 *** xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
