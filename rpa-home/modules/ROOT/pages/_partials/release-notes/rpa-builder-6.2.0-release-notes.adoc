@@ -1,0 +1,66 @@
+= RPA Builder 6.2.0 Release Notes
+
+RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== March 29, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* RPA Builder now detects the browser version and automatically uses matching web drivers.
+* The Validation Result window is improved. 
+* The String Operations action step now has more string operations.
+* The REST Call action step now has the *Authorization* tab to provide authentication methods.
+* The Web Session (MS Edge) action step now includes the properties from the Web Session (Chrome) action step. 
+* Added new action step: Queries with AWS.
+* Added new action step: Write bot message.
+* Added new action step: Stopwatch Collection.
+* Added new action step: Checkpoint Collection.
+* The web recording process is improved and now captures the Select Web Element, Confirm Alert Box, Get Web Element Text, and Submit Form action steps from a recording.
+* Removed the outdated screen resolution check from the System parameters window.
+* RPA Builder no longer shows the "Camunda Engine is not reachable. Please start the 'Tomcat_Mulesoft_RPA_Builder' windows service." error message. 
+* Upgraded the Tomcat dependency to version 9.0.73.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.0.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+| The Activity library tags now show in the activity library explorer. | W-11554928
+| The AI OCR (file-based & screen-based) Wizard caption is now correct. | W-12537107
+| The Activity workflow `stc_trace.txt ` logfile no longer shows a wrong app name and version. | W-12555299
+| The Managed Block inside Error Handling now works as expected with mail session action steps. | W-12591658
+| The *Test* button in the OAuth Wizard from the Mail Session (Outlook with OAuth) action step no longer shows that a variable is pinned if *Use custom settings* is selected. | W-12724916
+| The OAuthToken Creator inside Tools no longer shows an error when trying to authenticate multiple times. | W-12744950
+| Taking screenshots in the browser wizard no longer causes a memory leak. | W-11879490
+| The description for *DoAction*, *OnError* and *DoAlways* now shows in the workbench. | W-12598769
+| The BPMN editor now shows an error when a BPMN diagram is empty. | W-12635247
+| The *Run Process* button now works properly after a failed test run. | W-12657543
+| RPA Builder no longer shows an incorrect error message when attempting to open a Workflow from the Workflow location in the explorer. | W-12442457
+| The Website Load Time action step execution no longer fails on an RPA Bot if the URL is too long. | W-11515294
+| Several Wizard captions, Wizard tooltips, and action step tooltips are now updated. | W-12542471
+| RPA Builder no longer crashes when an action step with a `.png` file is opened. | W-12730588
+| The auto-generated headers in the REST Call action step now update properly in the Wizard. | W-12734325
+| The Credentials action step no longer shows an incorrect AWS Credentials hint.  | W-12745009
+| The *Test* button in the Rest Call action step Wizard no longer work if there are mapped variables. | W-12738402
+| RPA Builder no longer shows an error message when capturing an empty App Session.| W-12745092
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
