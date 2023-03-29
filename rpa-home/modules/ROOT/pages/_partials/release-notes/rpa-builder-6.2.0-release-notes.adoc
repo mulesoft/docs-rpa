@@ -29,7 +29,7 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1
 [%header%autowidth.spread]
 |===
 |Application |Version
-|RPA Recorder | 6.0.0 and later
+|RPA Recorder | 6.2.0 and later
 |RPA Bot | 1.0.0 and later
 |===
 
@@ -41,7 +41,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | Issue Resolution | ID
 | The Activity library tags now show in the activity library explorer. | W-11554928
 | The AI OCR (file-based & screen-based) Wizard caption is now correct. | W-12537107
-| The Activity workflow `stc_trace.txt ` logfile no longer shows a wrong app name and version. | W-12555299
+| The Activity workflow `stc_trace.txt` logfile no longer shows a wrong app name and version. | W-12555299
 | The Managed Block inside Error Handling now works as expected with mail session action steps. | W-12591658
 | The *Test* button in the OAuth Wizard from the Mail Session (Outlook with OAuth) action step no longer shows that a variable is pinned if *Use custom settings* is selected. | W-12724916
 | The OAuthToken Creator inside Tools no longer shows an error when trying to authenticate multiple times. | W-12744950
@@ -55,7 +55,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | RPA Builder no longer crashes when an action step with a `.png` file is opened. | W-12730588
 | The auto-generated headers in the REST Call action step now update properly in the Wizard. | W-12734325
 | The Credentials action step no longer shows an incorrect AWS Credentials hint.  | W-12745009
-| The *Test* button in the Rest Call action step Wizard no longer work if there are mapped variables. | W-12738402
+| The *Test* button in the Rest Call action step Wizard no longer works if there are mapped variables. | W-12738402
 | RPA Builder no longer shows an error message when capturing an empty App Session.| W-12745092
 |===
 
