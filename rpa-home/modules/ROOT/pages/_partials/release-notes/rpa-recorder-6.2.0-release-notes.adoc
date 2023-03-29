@@ -4,7 +4,7 @@ RPA Recorder enables you to record a business process for automation.
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
-== March 16, 2023
+== March 29, 2023
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
