@@ -22,12 +22,13 @@ For Hardware and Software requirements for earlier RPA Builder versions, refer t
 * xref:6.1@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.1 Hardware and Software Requirements]
 * xref:6.0@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.0 Hardware and Software Requirements]
 
-== RPA Recorder 6.1
+== RPA Recorder 6.2
 
 include::rpa-recorder::partial$hard-soft-requirements.adoc[leveloffset=+1]
 
 For Hardware and Software requirements for earlier RPA Recorder versions, refer to the corresponding product documentation:
 
+* xref:6.1@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.1 Hardware and Software Requirements]
 * xref:6.0@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.0 Hardware and Software Requirements]
 
 == RPA Bot 1.1
