@@ -1,0 +1,21 @@
+
+
+== System
+
+System Action Steps enable you to perform some system interactions as mapping network drives, displaying a message box, compare system parameters, and write logs.
+
+* xref:toolbox-system-map-network-drive.adoc[Map Network Drive]
++
+This Action Step lets you map and unmap any network location and any drive letter.
+* xref:toolbox-system-message-box.adoc[Message Box]
++
+This Action Step is used to display a message box containing user-defined text and the buttons needed.
+* xref:toolbox-system-system-validation.adoc[System Validation]
++
+System Validation compares various parameters between the system the Workflow was created on and the system where it is executed. It does not have any additional properties on the Properties grid.
+* xref:toolbox-system-write-bot-message.adoc[Write Bot Message]
++
+The Write Bot Message Action Step enables you to enrich the result message the RPA Bot generates after each run. This message shows in the *Run Results* section of the *Process Management* view in RPA Manager. 
+* xref:toolbox-system-write-log.adoc[Write Log]
++
+This Action Step can be used to leave a comment or brief description at a certain point in the Workflow. 

@@ -1,0 +1,93 @@
+
+= Regex Examples
+
+The following are some examples of using Regular Expressions.
+
+== Example 1: Identifying an Exact Window Title
+
+Action Steps identify window titles without using regular expressions
+if the given string can be found in its entirety in an existing window
+title. It does not matter if there are any preceding or following
+characters.
+
+Sometimes an application opens two different windows where the title of
+one is contained in the other. A typical example is _SAP_, where you log
+on to a system with the _SAP Logon_ application. In this case you will
+have these two windows on your desktop:
+
+image::advanced-concepts-using-regular-expressions-examples-image1.png[Example SAP - two windows, 50%, 50%]
+
+The usual way of identifying a window by searching for a part of its
+title will not work, since a search for the text "SAP" in the window
+title would return two valid results.
+
+In this case, best practice is to enable the _Use Regex_ function and
+only allow exact matches for window titles. You can do this using the
+following pattern _^[exact_window_name]$_
+
+For this specific example the regular expression would look like this:
+
+image::advanced-concepts-using-regular-expressions-examples-image2.png[Example for regular expression, 50%, 50%]
+
+The _^_ indicates that the expression starts here, there must be no
+preceding characters. The _$_ indicates that the end of the expression
+is the last character before the _$_.
+
+== Example 2: Identifying Window Titles with Dynamic Beginning, Middle, and End Components
+
+Some applications first state their own name in the window title,
+followed by a dynamic component, such as a session or user ID, and then
+a module name or similar at the end. Sometimes a _Workflow_ opens more
+than one application and uses more than one module within an
+application. If it is necessary to check for the correct use of a module
+in an application, you might need to identify a window title that is not
+consistently the same, but rather is separated by dynamic parts.
+
+One such application is _Microsoft Dynamics AX_.
+
+image::advanced-concepts-using-regular-expressions-examples-image3.png[Example for Microsoft Dynamics AX, 50%, 50%]
+
+If you need to identify a "Dynamics AX" window that contains the text
+"cfu" near the end of the title, you can use the following regular
+expression:
+
+image::advanced-concepts-using-regular-expressions-examples-image4.png[Example for regular expression, 50%, 50%]
+
+Using _.*_ allows there to be any number of alphanumeric characters
+before the term "Dynamics AX", thereby accounting for the word
+"Microsoft". Using the same method, the example allows there to be a
+string of any length between "Dynamics AX" and "cfu".
+
+How does this work? The _._ stands for exactly one alphanumeric
+character, excluding newline. The _*_ is a quantifier that tells the
+software processing the regular expression that the previous character
+may repeat indefinitely.
+
+Thus the single _._ at the end before the closing _$_ indicates that
+there has to be exactly one alphanumeric character (excluding newline)
+present.
+
+== Example 3: Making a Window Title Search Case Insensitive/Use of Environment Variables
+
+Some window titles might include components such as the name of the
+logged-in user. It is a good idea to use the environment variable
+_%Username%_ to identify the window at runtime so the _Workflow_ does
+not have to be changed if the user changes (or if the user is random in
+the first place).
+
+It might happen that the username in the application uses upper case,
+but the environment variable returns lower case, for example "User" and
+"user".
+
+If you want to identify the window title by using the environment
+variable you have to make sure the case does not matter. You achieve
+this by using _(?i)_ at the start of your regular expression.
+
+image::advanced-concepts-using-regular-expressions-examples-image5.png[Example for regular expression, 50%, 50%]
+
+This regular expression would find a window title like "Document
+user.txt – Editor".
+
+== See Also
+
+* xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[Testing Regular Expressions]
