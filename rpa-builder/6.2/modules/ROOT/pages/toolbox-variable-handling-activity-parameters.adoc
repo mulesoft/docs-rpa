@@ -164,6 +164,8 @@ Workflow. Clicking on _Cancel_ cancels the import of the Workflow.
 
 * xref:rpa-manager::processautomation-prepare.adoc#prepare-deployment[RPA Manager - Create Global Variables and Credentials as Initial Values for Activity Parameters]
 * xref:advanced-concepts-using-variables.adoc[Using Variables]
+* xref:activity-library.adoc[Using the Activity Library]
+
 ////
 == Related Elements
 
