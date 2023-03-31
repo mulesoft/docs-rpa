@@ -1,0 +1,72 @@
+= Activity Library
+
+The Activity Library enables you to reuse certain activities that repeat during the automation of business processes, a login for example, and avoid creating the same workflow multiple times.
+
+A particular case is the Start event (Trigger). Although it is not an activity in the strict sense, a workflow is still assigned to this item, which initially starts the process. You can upload this event to the Activity Library. 
+
+The Activity Library Explorer enables you to edit, copy, or delete activities and search for activities in your organization's library based on Activity Tags, which you can create and assign to the activities to further categorization and filtering capabilities. 
+
+== Before you Begin 
+
+//Update this when IAM is implemented.
+* To open and to use the Activity Library, you need the *Activity Library Open* and *Activity Library Administration* privileges. 
++
+For more information about assigning user privileges, see xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
+
+== Upload an Activity to the Activity Library
+
+To upload an activity to the Activity Library:
+
+. In RPA Builder, open a process for editing. 
+. Click an activity to select it and open the context pad. 
+. In the context pad, click *Add to Activity Library* (image:add-to-activity-library-icon.png["The Add to Activity Library Icon.", 2%, 2%])
++
+image:context-pad.png["The context pad of an activity.", 50%, 50%]
+. In the *Upload Workflow to Activity Library* window that opens, provide a name and a description for the activity. 
++
+image:upload-workflow-to-activity-library.png["The Upload Workflow to Activity Library window.", 50%, 50%]
++
+[IMPORTANT]
+Each activity must have a unique name, which cannot be longer than 60 characters. Otherwise, RPA Builder cancels the upload and shows an error message. 
++
+. Click *Upload*. 
+
+== Import an Activity from the Activity Library 
+
+To import an activity from the Activity Library to your project: 
+
+. Select an activity in your project. 
+. In the context pad, click *Import Workflow from Activity Library* (image:import-workflow-from-activity-library-icon.png["The Import Workflow from Activity Library Icon.", 2%, 2%])
+. In the window that opens, select the activity to import and click either *Add as a library reference* or *Add as a local copy*, depending on which method you want to use. 
++
+The Activity Library Explorer shows only the appropriate types of activities you can import, depending on which element you selected in the workflow. 
+
+** *Add as a library reference*
++
+This method creates in each process a link to an activity from the Activity Library. Because the activity is already saved on the library, it is not uploaded again. The activity automatically receives the name of the reference, and you cannot change the name in the BPMN editor. An activity with a referenced workflow shows a gray background in the task element. 
++
+image::referenced-activity.png["An activity showing a gray background to specify that it has a referenced workflow.", 30%, 30%]
++
+If you import an activity from the Activity Library as a reference, the system checks whether the activity parameters contained in the activity fit the process. If the activity (or the workflow behind it) contains activity parameters that are missing in the process, you can either add these parameters to the process or cancel the import.
++
+You cannot import an activity that contains activity parameters that use the same name but a different data type as the activity parameters in the process.
+
+** *Add as a local copy*
++
+This method creates a local copy of the workflow behind the activity and inserts it into the project, which enables you to make changes. However, because there is no reference to the activity in the Activity Library, the local copy does not automatically update if the activity in the Activity Library changes. 
+
+== Convert Referenced Activities to a Local Copy
+
+Creating a copy of a referenced activity enables you to modify such activity. 
+
+To create a local copy of a referenced activity:
+
+. In the BMPN editor, double click the referenced activity you want to copy.
+. In the dialog that shows, click *Create Copy*.
+
+After you click *Create a Copy*, the workflow behind the activity opens in the Workbench for editing. Because the activity loses its reference, the next time you upload the activity it is treated as a new workflow. 
+
+== See Also 
+
+* xref:activity-library-explorer.adoc[Activity Library Explorer]
+* xref:activity-tags.adoc[Activity Tags]

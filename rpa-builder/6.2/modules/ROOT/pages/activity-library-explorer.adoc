@@ -1,0 +1,52 @@
+= Activity Library Explorer 
+
+In the Activity Library Explorer you can view all the activity templates assigned to your organization. All users in your organization with the privilege *Activity Library Administration* have access to the same Activity Library.
+
+If another user adds an Activity, you see the change after refreshing the Activity Library Explorer.
+
+image::activity-library-explorer.png["The Activity Librar Explorer window."]
+
+== Toolbar 
+
+The Activity Library Explorer toolbar contains the following elements: 
+
+* (image:activity-library-explorer-toolbar-refresh.png["The Refresh button.", 2%, 2%]) *Refresh*
++
+Updates the contents of the Activity Library Explorer.
+* (image:activity-library-explorer-toolbar-show-outline.png["The Show Outline button.", 2%, 2%]) *Show Outline*
++
+Shows an outline of the workflow.
+* (image:edit-icon.png["The Edit button.", 2%, 2%]) *Edit*
++
+Opens the individual editing mode of an activity to make changes.
++
+If you upload the activity after making changes, the Activity Library saves the updated activity as a new revision.
++
+You can edit the Activities in the Activity Library regardless of which phase the Process that contains these activities is in.
+* (image:activity-library-explorer-toolbar-show-log.png["The Show Log button.", 2%, 2%]) *Show Log*
++
+Opens a window containing all revisions of the activity. You can select a revision and edit it by choosing *Edit* in the individual editing mode.
+* (image:copy-icon.png["The Copy button.", 2%, 2%]) *Copy*
++
+Creates a copy of the selected element, which shows in the Activity Library.
++
+By default, this process copies all information such as name, description, and activity tags. During the upload, the Activity Library prefixes the activity name with _Copy of_. You can later edit this information as required. 
+* (image:delete-icon-alt.png["The Delete from Library button.", 2%, 2%]) *Delete from Library*
++
+Deletes the selected element from the Activity Library.
+* (image:activity-library-explorer-toolbar-manage-activity-tags.png["The Manage Activity Tags button.", 2%, 2%]) *Manage Activity Tags*
++
+Opens a window that enables you to create, edit, and delete tags. 
+* (image:activity-library-explorer-toolbar-import.png["The Import button.", 2%, 2%]) *Import*
++
+Opens a dialog that enables you to import an Activity Library Workflow package `(.calw)` file from your file system to the Activity Library.
+* (image:activity-library-explorer-toolbar-export.png["The Export button.", 2%, 2%]) *Export*
++
+Opens a dialog that enables you to export an Activity Library Workflow from the Activity Library to your file system as a `(.calw)` package file.
++
+When you export Activity Library workflows to a file, RPA Builder removes the passwords stored in wizards of Action Steps or User Account Variables to prevent passwords from being shared. 
+
+== See Also 
+
+* xref:activity-library.adoc[Using the Activity Library]
+* xref:activity-tags.adoc[Activity Tags]
