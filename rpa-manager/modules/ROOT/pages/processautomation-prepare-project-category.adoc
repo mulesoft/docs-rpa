@@ -1,0 +1,50 @@
+= Manage Categories
+
+Project managers organize projects into categories. You create a set of categories for them to choose from.
+
+A category describes the environment of a process in a few keywords, for example `Customer Support Mythical University` or `Finance`.
+
+A project can only belong to a single category. First, create a standard category, so the process team can start with process automation quickly. They can change the category of a process later. After they have automated the first few projects, create an archive category to move the completed projects there.
+
+== Before You Begin
+
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Automation* module
+|Process Automation Open
+
+|===
+
+== Create a Category
+
+Create a category for the organization of processes:
+
+. Open the *Process Management* view of the *Process Automation* module.
+. Click *Create*.
+. Enter a name in the *Create a category* window.
+. Click *OK*.
+
+== Edit a Category
+
+Edit a category to render its name more precisely:
+
+. Open the *Process Management* view of the *Process Automation* module.
+. Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the category you want to edit.
+. Change the name in the *Edit the category* window.
+. Click *OK*.
+
+== Remove a Category
+
+Remove categories that are no longer needed. You can only remove categories that do not contain processes:
+
+. Open the *Process Management* view of the *Process Automation* module.
+. Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category you want to delete.
+
+== See Also
+
+* xref:index.adoc[RPA Manager]
+* xref:processautomation-overview.adoc[Process Automation]
