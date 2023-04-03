@@ -70,18 +70,18 @@ Creating a local user for the bot to use prevents receiving errors such as _Insu
 
 To create a local user for the bot to use during a Secure Session: 
 
-. In the Windows environment where the bot executes, navigate to: *Control Panel* > *System and Security* > *Administrative Tools* > *Computer Management*.
+. In the Windows environment where the bot executes, navigate to *Control Panel* > *System and Security* > *Administrative Tools* > *Computer Management*.
 +
 You can also launch *Computer Management* from Windows Search.
 
-. In *Computer Management*, navigate to: *System Tools* > *Local Users and Groups* > *Users*.
+. In *Computer Management*, navigate to *System Tools* > *Local Users and Groups* > *Users*.
 
 . Create a local user for the bot to use. 
 +
 [IMPORTANT]
-Ensure that the local _Username_ does not conflict with the _Username_ of the remote user used to login to the machine.
+Ensure that the local _Username_ does not conflict with the _Username_ of the remote user used to log in to the machine.
 
-. After creating the local user, navigate to: *User Properties* > *Member Of* > *Add*.
+. After creating the local user, navigate to *User Properties* > *Member Of* > *Add*.
 . Add the user to the following groups:
 +
 ** Administrators
@@ -123,7 +123,7 @@ In this context, ensure that you have selected the option *Allow connections onl
 
 ==== Test Secure Session Settings
 
-To test your connection settings for the Secure Session, click *TEST SETTINGS*. In the *TEST SETTINGS* dialog, enter test parameters for the Secure Session.
+To test your connection settings for the Secure Session, click *TEST SETTINGS* and enter test parameters for the Secure Session.
 
 image:bot-configurator-test-settings.png[The RPA Bot configurator application showing the Test Settings window, 50%, 50%]
 
