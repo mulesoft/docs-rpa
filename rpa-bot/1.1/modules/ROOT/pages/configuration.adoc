@@ -55,7 +55,41 @@ Format: `+http://<Serveraddress>:<Port>+`, for example: `+http://myproxy.de:881+
 [[secure-session]]
 == Secure Session
 
-Enable the bot to use secure sessions by entering credentials the bot uses to login to the computer and to open a hidden session. If you don't add credentials here, the bot can only use a running desktop session.
+Enable the bot to use a Secure Session by entering credentials the bot uses to login to the computer and to open a hidden session. If you don't configure credentials, the bot can only use a running desktop session.
+
+=== Before You Begin 
+
+To prevent issues while executing the Secure Session, ensure that you: 
+
+* <<create-local-user, Created a local user for the Secure Session>>
++
+Creating a local user for the bot to use prevents receiving errors such as _Insufficient Privilege_, _Conflicting Username_, or _Wrong Credentials_.
+
+[[create-local-user]]
+=== Create a Local User for the Secure Session
+
+To create a local user for the bot to use during a Secure Session: 
+
+. In the Windows environment where the bot executes, navigate to: *Control Panel* > *System and Security* > *Administrative Tools* > *Computer Management*.
++
+You can also launch *Computer Management* from Windows Search.
+
+. In *Computer Management*, navigate to: *System Tools* > *Local Users and Groups* > *Users*.
+
+. Create a local user for the bot to use. 
++
+[IMPORTANT]
+Ensure that the local _Username_ does not conflict with the _Username_ of the remote user used to login to the machine.
+
+. After creating the local user, navigate to: *User Properties* > *Member Of* > *Add*.
+. Add the user to the following groups:
++
+** Administrators
+** Remote Desktop Users 
+
+=== Secure Session Settings 
+
+Use this panel to configure user credentials and other settings for the bot when running a Secure Session. 
 
 image:bot-configurator-secure-session.png[The RPA Bot configurator application showing the Secure Session settings panel, 50%, 50%]
 
@@ -87,9 +121,9 @@ If the group policy _Always prompt for password upon connection_ is enabled, the
 +
 In this context, ensure that you have selected the option *Allow connections only from computers running Remote Desktop with Network Level Authentication (recommended)* in the Windows system properties.
 
-=== Test Settings
+==== Test Secure Session Settings
 
-Optionally, click *TEST SETTINGS* to test your connection settings for the Secure Session. In the *TEST SETTINGS* dialog, enter test parameters for the Secure Session.
+To test your connection settings for the Secure Session, click *TEST SETTINGS*. In the *TEST SETTINGS* dialog, enter test parameters for the Secure Session.
 
 image:bot-configurator-test-settings.png[The RPA Bot configurator application showing the Test Settings window, 50%, 50%]
 
