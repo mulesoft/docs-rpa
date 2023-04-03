@@ -1,6 +1,6 @@
 = Activity Tags
 
-Use Activity Tags to categorize the activities in the Library, which enables you to manage the
+Use Activity Tags to categorize the activities in the Activity Library, which enables you to manage the
 activities, to arrange them more efficiently, and to subsequently find them more easily using the
 search function in the Activity Library Explorer. 
 
