@@ -48,6 +48,6 @@ The process team can revise the process continuously.
 
 _Business Process Model and Notation (BPMN)_ is a standard specification for diagrams to depict business processes. Such diagrams can be created directly by the process owner and easily translated into a machine-executable program.
 
-== See also
+== See Also
 
 * xref:myrpa-start.adoc[Starting Automation of Approved Processes]

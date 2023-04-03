@@ -41,7 +41,7 @@ Click on user names to assign them to or remove them from the user group.
 
 Edit a user group to change its function or members.
 
-. In the *User Groups* view of the *User Management* module, click *Edit* in the table row of the user group you want to edit.
+. In the *User Groups* view of the *User Management* module, click *Edit* in the table row of the user group to edit.
 . Edit the form *Edit User Group*:
 +
 * *Center of excellence*:
@@ -56,8 +56,8 @@ Click on user names to assign them to or remove them from the user group.
 
 Delete user groups no longer needed. Check their usage and reassign their tasks first.
 
-. In the *User Groups* view of the *User Management* module, click the icon *Usage* in the table row of the user group you want to delete. Proceed only, if the user group is not needed anymore.
-. In the *User Groups* view of the *User Management* module, click *Remove* in the table row of the user group you want to delete.
+. In the *User Groups* view of the *User Management* module, click the icon *Usage* in the table row of the user group to delete. Proceed only, if the user group is not needed anymore.
+. In the *User Groups* view of the *User Management* module, click *Remove* in the table row of the user group to delete.
 . Confirm the deletion.
 
 [[designate-user-groups-as-centers-of-excellence]]
@@ -65,7 +65,7 @@ Delete user groups no longer needed. Check their usage and reassign their tasks 
 
 User groups marked as center of excellence may approve processes for automation. You can designate user groups as centers of excellence on creation or edit this property afterwards.
 
-. In the *User Groups* view of the *User Management* module, click *Edit* in the table row of the user group you want to edit.
+. In the *User Groups* view of the *User Management* module, click *Edit* in the table row of the user group to edit.
 . Edit the form *Edit User Group*:
 +
 * *Center of excellence*:

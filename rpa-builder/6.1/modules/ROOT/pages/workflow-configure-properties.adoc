@@ -2,7 +2,7 @@
 
 To display and configure Workflow properties:
 
-. Open the Workflow you want to edit by double-clicking its corresponding task in the BPMN editor.
+. Open the Workflow to edit by double-clicking its corresponding task in the BPMN editor.
 +
 image:workflow-open-properties.png[The BPMN editor showing a project with three tasks, 50%, 50%]
 . Open the *Project Explorer*.

@@ -42,7 +42,7 @@ The created alert rule is active upon saving. You can deactivate alert rules by 
 . Complete the form *Create new <type> rule*.
 . Click *Save*.
 
-== See also
+== See Also
 
 * xref:alerting-overview.adoc[Alerting Overview]
 * xref:alerting-target.adoc[Creating alerting email templates]

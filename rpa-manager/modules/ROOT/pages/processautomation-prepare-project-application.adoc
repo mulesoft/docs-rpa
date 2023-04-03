@@ -1,12 +1,12 @@
 = Manage Applications
 
-Process applications are third-party application installations that are required for the execution of a process. 
+Process applications are third-party application installations that business experts use to execute a process.
 
 Manage a list of all applications and their downtimes.
 
 Create a new entry for each instance of an application, for example `FinWiz - Mythical University - Computer 1 - Tokyo` and `FinWiz - Mythical University - Computer 42 - San Francisco`.
 
-Applications are not available during down-times or while deactivated. 
+Applications are not available during downtimes or while deactivated. 
 
 To avoid confusion, append the name of the time zone to the name of the application or the downtime. For example, name an application `Words - Tokyo` and a downtime `Electrical Power Outage Tokyo`.
 
@@ -14,7 +14,7 @@ In the *Process Management* view, a member of the project team xref:myrpa-start.
 
 In the *Bot Management* module, an administrator xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assigns required applications to bots] that can access them. 
 
-A member of the process team can deploy a process on a bot that has assigned the required applications. If an application becomes non-available, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
+A member of the process team can deploy a process on a bot that has assigned the required applications. If an application becomes unavailable, the bot completes running processes using that application and restarts the processes when the downtime or deactivation period has ended.
 
 == Before You Begin
 
@@ -31,7 +31,7 @@ A member of the process team can deploy a process on a bot that has assigned the
 |Application Create, Application Edit, Application Delete
 
 |===
-* For each application, note the timezone of the computer that it is installed on.
+* Note the timezone of the computer that each application is installed on.
 
 == View All Applications
 
@@ -64,7 +64,7 @@ Click *Create* to add a downtime to the application.
 
 == Edit an Application
 
-Edit an application to change its data or down-times:
+Edit an application to change its data or downtimes:
 
 . Open the *Process Applications* view of the *Process Automation* module.
 . Click *Create*.
@@ -75,23 +75,23 @@ For an explanation of the properties, see  <<form-create-process-applications, *
 
 == Deactivate or Activate a Process Application
 
-Deactivate an application if it is temporarily not available and you don't know when it will be available again.
+Deactivate an application if it is temporarily unavailable and you don't know when it will be available again.
 
-Use down-times to schedule maintenance and planned downtimes. Deactivation periods are not added to the list of down-times.
+Use downtimes to schedule maintenance and planned downtimes. Deactivation periods are not added to the list of downtimes.
 
-Applications are not available during down-times or while deactivated. A member of the process team can deploy a process on a bot that has assigned the required processes. If an application becomes non-available, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
+Applications are not available during downtimes or while deactivated. A member of the process team can deploy a process on a bot that has assigned the required processes. If an application becomes unavailable, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
 
 If an application is not available, deactivate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application you want to deactivate.
+. Click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application to deactivate.
 
-RPA Manager displays an *Inactive* label beneath the logo of the application.
+RPA Manager displays an *Inactive* label on the panel of the application.
 
 If a deactivated application becomes available again, activate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application you want to activate.
+. Click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application to activate.
 
 RPA Manager displays an *Active* label beneath the logo of the application.
 
@@ -100,12 +100,12 @@ RPA Manager displays an *Active* label beneath the logo of the application.
 Remove an application if it is no longer available:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the application you want to remove.
+. Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the application to remove.
 . Confirm the removal.
 
-RPA Manager removes the application from all processes and bots to which it was assigned to.
+RPA Manager removes the application from all processes and bots to which it was assigned.
 
-== See also
+== See Also
 
 * xref:processautomation-manage.adoc#projectdata-processapplications[Assign Process Applications to an Automation Project]
 * xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[Assign Process Applications to a Bot] 
