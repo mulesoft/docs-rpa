@@ -40,7 +40,7 @@ To create a category:
 . Enter a name in the *Create a category* window.
 . Click *OK*.
 
-The category panel shows the number of contained projects and how many of them are in development and in production.
+The category panel shows the number of contained projects and how many are in development and in production.
 
 == Edit a Category
 
@@ -60,7 +60,7 @@ You can only remove categories that do not contain processes.
 To remove a category:
 
 . Open the *Process Management* view of the *Process Automation* module.
-. Click the the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category to delete.
+. Click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the category to delete.
 
 == Open a Category
 
