@@ -8,7 +8,7 @@ A category describes the environment of a process in a few keywords, for example
 
 A process can only belong to a single category. 
 
-First, create a standard category, so the process team can start with process automation quickly. They can change the category of a process later. After they have automated the first few projects, create an archive category to move the completed projects there.
+First, create a standard category, so the process team can start with process automation quickly. The team can change the category of a process later. After the team automates the first few projects, create an archive category to move the completed projects there.
 
 == Before You Begin
 
