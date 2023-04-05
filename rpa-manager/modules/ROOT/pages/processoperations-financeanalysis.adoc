@@ -22,5 +22,5 @@ You can see the overview of all processes in the *Processes for finance analysis
 
 == See Also
 
-* xref:processoperations-financeanalysis-basics.adoc[Finanace Analysis Basics]
+* xref:processoperations-financeanalysis-basics.adoc[Finance Analysis Basics]
 * xref:processoperations-financeanalysis-analyze.adoc[Analyze Costs and Savings]
