@@ -12,8 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Bot tasks no longer show internal identifiers instead of text. | W-12767736
-| The content of the Process Streaming view is now shown correctly if switching quick between views. | W-12723795
-// @Docu The description here is not obvious when reading the bug. The bug happened not on all pages. On a couple of pages the web UI does some background calls to the server. Because of this bug, these background calls timed out. This resulted in an error dialog showing a "Gateway Timeout" error.
+| The content of the Process Streaming view now shows correctly if you quickly switch between views. | W-12723795
 | A dialog showing a "Gateway Timeout" error no longer appears when staying on a page for several minutes. | W-12535589
 |===
 
