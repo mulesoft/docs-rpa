@@ -4,7 +4,7 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 
 == Before you begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===

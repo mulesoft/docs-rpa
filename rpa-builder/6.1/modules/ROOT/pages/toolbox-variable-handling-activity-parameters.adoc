@@ -63,7 +63,7 @@ The value for text (alphanumeric) variables has a limit of 4000 characters.
 
 == Deleting Activity Parameters
 
-To delete an Activity Parameter, click the *Delete* (image:delete-icon.png[The Delete icon, 2%, 2%]) button next to the Activity Parameter you want to delete.
+To delete an Activity Parameter, click the *Delete* (image:delete-icon.png[The Delete icon, 2%, 2%]) button next to the Activity Parameter to delete.
 
 image:business-process-initialization-window.png[The business process initialization window, 75%, 75%]
 
@@ -162,8 +162,10 @@ Workflow. Clicking on _Cancel_ cancels the import of the Workflow.
 
 == See Also
 
-* xref:rpa-manager::processautomation-prepare.adoc#prepare-deployment[RPA Manager - Create Global Variables and Credentials as Initial Values for Activity Parameters]
 * xref:advanced-concepts-using-variables.adoc[Using Variables]
+* xref:rpa-manager::processautomation-prepare-deployment-variable.adoc[RPA Manager - Global Variables for Initializing Activity Parameters]
+* xref:rpa-manager::processautomation-prepare-deployment-credential.adoc[RPA Manager - Credentials for Initializing Activity Parameters]
+
 ////
 == Related Elements
 
