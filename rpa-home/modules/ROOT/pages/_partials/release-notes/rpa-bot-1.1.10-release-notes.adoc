@@ -15,7 +15,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * RPA Bot now automatically retries downloading runtime packages for new web drivers when the download fails. 
 * RPA Bot now sends a warning when the screen resolution defined for a process differs from the resolution used in a remote desktop session. 
 * RPA Bot now checks periodically if the desktop session is available and logs a warning message in case the check fails. 
-* RPA Bot now uses TLSv2 by default instead of HTTP to make requests. 
+* RPA Bot now makes all requests using HTTPS with TLSv2 by default. You can no longer make HTTP requests.  
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
