@@ -1,0 +1,46 @@
+
+
+= Convert String
+
+This _Action Step_ converts a given string or variable to any other
+variable type and makes it available as a set of new variables.
+
+== Properties
+
+*Conversion Source* The string or variable that is converted.
+
+*Regular Expression* You may define a regular expression to use only a specific
+part of the given Conversion Source. For example, if your conversion
+source is "Price: €200" and you only want to use the number as an
+integer variable, you can set the Regular Expression [0-9]+ to extract
+the number from the conversion source. More information about regular
+expressions can be found in section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
+//link:#_Using_Regular_Expressions[Using Regular Expressions].
+
+== Inbound Variables
+
+//link:#AS_ConvertString_P_ConversionSource[*Conversion Source*]
+*Conversion Source* The string or variable that is converted.
+
+//link:#AS_ConvertString_P_RegularExpression[*Regular Expression*]
+*Regular Expression* You may define a regular expression to use only a specific
+part of the given Conversion Source. For example, if your conversion
+source is "Price: €200" and you only want to use the number as an
+integer variable, you can set the Regular Expression [0-9]+ to extract
+the number from the conversion source. More information about regular
+expressions can be found in section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
+
+== Outbound Variables
+
+*AsBool* The _Conversion Source_ as a logical value (_True_ or _False_).
+If the input variable is a number less than <=0 or not the string true
+or True, it returns _False_.
+
+*AsInt* The _Conversion Source_ as an integer number. If the _Conversion
+Source_ does not contain a number, 0 is returned; otherwise it will be
+the first uninterrupted sequential digits from the _Source_. Decimal
+places are truncated in the case of floating point numbers.
+
+*AsDouble* The _Conversion Source_ as a floating point number.
+
+*AsString* The _Conversion Source_ as string value.

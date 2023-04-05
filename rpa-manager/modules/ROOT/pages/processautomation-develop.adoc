@@ -16,7 +16,7 @@ As long as the project is in the build phase, it can be seen in the repository o
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -116,7 +116,3 @@ View the project in RPA Manager after the implemented process has been uploaded 
 * https://camunda.com/bpmn/[Camunda BPMN Tutorial^]
 * xref:rpa-recorder::index.adoc[RPA Recorder Overview]
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
-
-* xref:processautomation-overview.adoc[Process Automation]
-* xref:processautomation-prepare.adoc[Preparing Automations]
-* xref:processautomation-deploy.adoc[Deploying Automations]

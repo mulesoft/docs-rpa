@@ -1,0 +1,30 @@
+= Preparing Deployment
+
+To reduce the time involved and the error rate in the maintenance of automations, you can create reusable data containers:
+
+[cols="1,2,2"]
+|===
+|*Data Container Type* |*Usage* |*Linkable to*
+
+|Global Variables
+a|Store values of the types:
+
+* Alphanumeric
+* Integer
+* Float
+* Boolean
+* Coordinates
+|Activity parameters in run configurations of process automations
+
+|Credentials
+|Store login data for external applications and web services
+|Activity parameters in run configurations of process automations
+
+|===
+
+== See Also
+
+* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder: Activity Paramters]
+* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
+* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
+* xref:processautomation-deploy.adoc#invokable-configuration-link-globals[Linkable Activity Parameters in Invokable Configurations]

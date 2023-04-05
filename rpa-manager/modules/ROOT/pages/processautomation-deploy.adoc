@@ -8,7 +8,7 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -21,7 +21,7 @@ The final phase in the life-cycle of a process is the *Production* phase. This p
 
 * At least one RPA Bot must be installed to deploy a process.
 ** Be aware that bots can reside in different time zones.
-* If you want to use the values of xref:processautomation-prepare.adoc#manage-globalvariables[global variables] or xref:processautomation-prepare.adoc#manage-credentials[credentials] as initial values for activity parameters, an RPA administrator must create them in the *Global Variables* or *Credential Pool* view first.
+* If you want to use the values of xref:processautomation-prepare-deployment-variable.adoc[global variables] or xref:processautomation-prepare-deployment-credential.adoc[credentials] as initial values for activity parameters, an RPA administrator must create them in the *Global Variables* or *Credential Pool* view first.
 * A project in test or production phase must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
@@ -60,7 +60,8 @@ The activity parameters for each process are created in RPA Builder and are give
 Set a value by entering text or by clicking on a checkbox, and complete your entry by pressing ENTER.
 +
 [[test-configuration-link-globals]]
-Alternatively, you can set the value of an activity parameters by linking it with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%] and select a variable for linking. RPA Manager displays variables that are of the same type and are assigned to the test phase, and only those credentials for which you belong to the xref:processautomation-prepare.adoc#form-create-credential-useraffiliation[affiliated users]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
+
+Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[symbol,1.5%,1.5%] and select a variable. RPA Manager displays variables of the same type, assigned to the test phase, and only the credentials to which you are xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
 +
 The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
 * *User Task*
@@ -157,7 +158,7 @@ The activity parameters for each process are created in RPA Builder and are give
 Set a value by entering text or by clicking on a checkbox, and complete your entry by pressing ENTER.
 +
 [[production-configuration-link-globals]]
-Alternatively, you can set the value of an activity parameters by linking it with a global variable. To do this, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[ symbol,1.5%,1.5%] and select a variable for linking. RPA Manager displays variables that are of the same type and are assigned to the production phase, and only those credentials for which you belong to the xref:processautomation-prepare.adoc#form-create-credential-useraffiliation[affiliated users]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
+Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[symbol,1.5%,1.5%] and select a variable. RPA Manager displays variables of the same type, assigned to the production phase, and only the credentials to which you are xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
 +
 The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
 * *User Task*:
@@ -236,6 +237,7 @@ Deploy configuration to run them fully automatically in a productive environment
 . In the window *Select Configuration to deploy*, check all configurations you want to run.
 . Click *Execute*.
 
+[[view-run-results]]
 === View Run Results
 
 View the run results to check if everything runs as predicted. In case of errors, download an analysis package and open it in RPA Builder. You can always transition the project back to build phase.
@@ -285,6 +287,7 @@ The activity parameters for each process are created in RPA Builder and given in
 +
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
+[[invokable-configuration-link-globals]]
 Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click on the *Link a global activity parameter* icon. Only those variables assigned to the phase will be displayed for linking. The variables are typed. You can only enter or link values of the same type.  The values entered here are only start values and they can be overwritten by other values during the course of the process run.
 * *User Task*:
 +
