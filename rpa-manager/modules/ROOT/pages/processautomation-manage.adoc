@@ -35,7 +35,8 @@ Within a category, you can manage the process automation projects:
 
 |===
 
-* To create or copy a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager].
+* To create a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager].
+* To copy a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager] and xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assigned access to RPA Builder].
 * To transition a project to another phase, you must have the needed permissions as a member of the <<projectdata-processteam, process team>>.
 
 == Create an Automation project
