@@ -11,11 +11,10 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Bot task no longer show internal identifiers instead of text. | W-12767736
-// @Docu: The screenshot in the following bug shows the page "Process Streaming", but the content is from the page "Bot State and Operation". This happens if you click one page in the menu and switch quickly to the other page.
-| The content of a page is now shown correctly if switching quick between views (menus). | W-12723795
+| Bot tasks no longer show internal identifiers instead of text. | W-12767736
+| The content of the Process Streaming view is now shown correctly if switching quick between views. | W-12723795
 // @Docu The description here is not obvious when reading the bug. The bug happened not on all pages. On a couple of pages the web UI does some background calls to the server. Because of this bug, these background calls timed out. This resulted in an error dialog showing a "Gateway Timeout" error.
-| A dialog showing a "Gateway Timeout" error no longer appears if staying on a page for several minutes. | W-12535589
+| A dialog showing a "Gateway Timeout" error no longer appears when staying on a page for several minutes. | W-12535589
 |===
 
 // == Known Issues
