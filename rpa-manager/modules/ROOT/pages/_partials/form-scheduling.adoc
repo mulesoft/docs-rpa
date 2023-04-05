@@ -21,33 +21,33 @@ Then, under *Repeats*, you can choose whether the *From-To* time interval is to 
 +
 The duration of the contained time interval and the start time are taken into account. The duration of the time interval is defined as the difference between the *From* and *To* times. The *From* time is the start time of the first execution. The start time of repetitions depends on the other set values.
 +
-If you wish to execute the repeats only with reference to the time of day, you should ensure that the start and end date are identical. If the interval specified  covers multiple days, a new multi-day interval begins with every repetition. This can lead to a situation whereby the scheduled time interval lasts longer than expected because the full number of days contained in the *From-To* interval is executed once again during the last repetition.
+If you want to execute the repeats only with reference to the time of day, you should ensure that the start and end date are identical. If the interval specified  covers multiple days, a new multi-day interval begins with every repetition. This can lead to a situation whereby the scheduled time interval lasts longer than expected because the full number of days contained in the *From-To* interval is executed once again during the last repetition.
 +
 With schedules that are not all day, the actions in each repetition are executed for the duration of the interval specified in *From* and *To*.
 
 *** *Repeat minutely*:
 +
-If you select *Repeat minutely*, the planned action is executed every minute during the interval specified above.
+If you select *Repeat minutely*, the planned action is executed every minute during the interval specified via *To* and *From*.
 +
 You can select whether you want to repeat the action every minute or only every _n_-th minute. _n_ here stands for any integer number between 1 and 59.
 *** *Repeat hourly*:
 +
-If you select *Repeat hourly*, the planned action is executed hourly during the interval specified above.You can select whether you want to repeat the action every hour or only every _n_-th hour. _n_ here stands for any integer number between 1 and 23.
+If you select *Repeat hourly*, the planned action is executed hourly during the interval specified via *To* and *From*. You can select whether you want to repeat the action every hour or only every _n_-th hour. _n_ here stands for any integer number between 1 and 23.
 *** *Repeat daily*:
 +
-If you select *Repeat daily*, the planned action is executed daily during the interval specified above.
+If you select *Repeat daily*, the planned action is executed daily during the interval specified via *To* and *From*.
 +
 You can select whether you want to repeat the action every day or only every _n_-th day. _n_ here stands for any integer number between 1 and 31.
 *** *Repeat weekly*:
 +
-If you select Repeat weekly, the planned action is executed weekly during the interval specified above.
+If you select Repeat weekly, the planned action is executed weekly during the interval specified via *To* and *From*.
 +
 You can select whether you want to repeat the action every week or only every _n_-th week. _n_ here stands for any integer number between 1 and 52.
 +
 You can also select the weekday on which the scheduled action is to be executed.
 *** *Repeat monthly*:
 +
-If you select Repeat monthly, the planned action is executed monthly during the interval specified above.
+If you select Repeat monthly, the planned action is executed monthly during the interval specified via *To* and *From*.
 +
 You can select whether you want to repeat the action every month or only every _n_-th month. _n_ here stands for any integer number between 1 and 12.
 +
@@ -58,7 +58,7 @@ If the selected day is the last day of a month, you can also choose whether the 
 If the selected day is the fourth such weekday of a month, you can also choose whether the execution day is always the fourth or last such weekday of a month, as the number of weeks in each month is different.
 *** *Repeat yearly*:
 +
-If you select *Repeat yearly*, the planned action is executed annually during the interval specified above.
+If you select *Repeat yearly*, the planned action is executed annually during the interval specified via *To* and *From*.
 +
 You can select whether you want to repeat the action every year or only every _n_-th year. _n_ here stands for any integer number between 1 and 20.
 ** *Ends*:

@@ -1,6 +1,6 @@
 = Queuing Process Sessions
 
-When more process configurations are deployed than sessions are available, RPA Manager must decide in which order the processes will be executed.
+When more process configurations are deployed than sessions are available, RPA Manager must decide in which order the processes are executed.
 
 You set the priority of a process configuration by assigning it a number between 1 and 200. The smaller the number, the higher the priority.
 

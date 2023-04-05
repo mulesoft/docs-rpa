@@ -47,7 +47,7 @@ The category panel shows the number of contained projects and how many are in de
 Edit a category to render its name more precisely:
 
 . Open the *Process Management* view of the *Process Automation* module.
-. Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the category to edit.
+. Click the *Edit* icon image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] on the panel of the category to edit.
 . Change the name in the *Edit the category* window.
 . Click *OK*.
 

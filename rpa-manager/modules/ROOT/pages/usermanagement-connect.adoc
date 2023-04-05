@@ -21,7 +21,7 @@ User API keys are required for the integration of RPA processes in a MuleSoft Co
 
 |===
 
-* The user who will use an API key must exist in the *Users* view of the *User Management* module.
+* The user who use an API key must exist in the *Users* view of the *User Management* module.
 
 [[create-an-api-key-for-a-user]]
 == Create an API Key for a User

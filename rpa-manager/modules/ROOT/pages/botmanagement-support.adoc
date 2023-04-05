@@ -34,7 +34,7 @@ Create a new API key for each bot before installation.
 
 Edit an API key to change its name or description.
 
-. In the *API Key* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the API key to edit.
+. In the *API Key* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the table row of the API key to edit.
 . In the window *Edit Bot API Key*, change name or description and click *OK*.
 
 === Remove an API Key
@@ -94,7 +94,7 @@ include::rpa-manager::partial$form-scheduling.adoc[]
 Edit a service time if it has changed.
 If a changed service time is already used by a bot, it is updated automatically there.
 
-. In the *Service Times* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the service time to edit.
+. In the *Service Times* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the table row of the service time to edit.
 . In the window *Edit Service Time*, change the data and click *OK*.
 
 == Remove a Service Time

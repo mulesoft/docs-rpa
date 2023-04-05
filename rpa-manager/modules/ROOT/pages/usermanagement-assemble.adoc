@@ -6,7 +6,7 @@ In the *User Groups* view in the *User Management* module, you can see all exist
 
 You can create new user groups, check their usage, edit them, and delete them.
 
-== Before you Begin
+== Before You Begin
 
 * Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +

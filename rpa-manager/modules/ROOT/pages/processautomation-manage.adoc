@@ -24,7 +24,7 @@ Within a category, you can manage the process automation projects:
 |Open the *Process Automation* module
 |Process Automation Open
 
-|Create, edit and delete processes
+|Create, edit, and delete processes
 |Process Create
 
 |Change the process owner
@@ -39,7 +39,7 @@ Within a category, you can manage the process automation projects:
 * To copy a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager] and xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assigned access to RPA Builder].
 * To transition a project to another phase, you must have the needed permissions as a member of the <<projectdata-processteam, process team>>.
 
-== Create an Automation project
+== Create an Automation Project
 
 When a project manager clicks the icon *Start automation* for a process in the *My Backlog* view of the *My RPA* module, RPA Manager creates a project for the automation of the process.
 
@@ -55,7 +55,7 @@ include::rpa-manager::partial$form-automationproject.adoc[]
 
 RPA Manager returns to the *<category name>* view. Your new project is sorted into the view according to your workspace settings.
 
-== Copy an Automation project
+== Copy an Automation Project
 
 A copy of an automation project contains all information from the original project, including the most recent revision of all workflows, with the exception of the bot assignments to test and productive configurations.
 
@@ -88,7 +88,7 @@ Edit an automation project to update it:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the project to edit.
+. In the *<category name>* view, click the *Edit* icon image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] on the panel of the project to edit.
 . Check and edit the form *Copy process*:
 +
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
@@ -116,7 +116,7 @@ Change the manager of a project to represent changed responsibilities:
 . Click on the name of the category of the project.
 . In the *<category name>* view, click the *New Project Manager* icon image:newprojectmanager-icon.png[user-with-tie symbol,1.5%,1.5%] on the panel of the project for which you want to change the project manager.
 . In the window *New project manager*, select a user.
-. If you do not want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager will be added with no assigned phases and thus only able to see this project.*
+. If you do not want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager is added with no assigned phases and thus only able to see this project.*
 . Click *OK*
 
 You can assign additional permissions to the previous manager as a team member.
@@ -184,13 +184,13 @@ To create a task:
 The task owner is responsible for completing the task. Choose a user from the process team. The task item displays the user's profile picture. RPA Manager shows all tasks of the task owners on their personal *My Process Board* view in the *My RPA* module.
 * *Priority*:
 +
-You can set the priority of the task to low, medium, or high. The task item displays a grey, yellow or red label, respectively.
+You can set the priority of the task to low, medium, or high. The task item displays a gray, yellow or red label, respectively.
 * *Due date*:
 +
 Date on which the task should be completed.
 * *Effort*:
 +
-Time the task will approximately take.
+Time the task approximately takes.
 . Click Save.
 
 === Edit a Task

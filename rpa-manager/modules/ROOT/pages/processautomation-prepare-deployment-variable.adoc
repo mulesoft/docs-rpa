@@ -107,7 +107,7 @@ Edit a global variable to change its name or value. You cannot change the type o
 To edit a global variable:
 
 . Open the *Global Variables* view of the *Process Automation* module.
-. Click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the global variable to edit.
+. Click the *Edit* icon image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the table row of the global variable to edit.
 . Change data in the *Edit the Global Variable* form.
 +
 For an explanation of the properties, see  <<form-create-globalvariable, *Create a Global Variable*>>.

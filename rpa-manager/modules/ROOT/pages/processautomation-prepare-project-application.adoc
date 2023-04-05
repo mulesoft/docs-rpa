@@ -75,7 +75,7 @@ For an explanation of the properties, see  <<form-create-process-applications, *
 
 == Deactivate or Activate a Process Application
 
-Deactivate an application if it is temporarily unavailable and you don't know when it will be available again.
+Deactivate an application if it is temporarily unavailable and you don't know when it is available again.
 
 Use downtimes to schedule maintenance and planned downtimes. Deactivation periods are not added to the list of downtimes.
 
