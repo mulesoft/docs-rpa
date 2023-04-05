@@ -43,7 +43,7 @@ As you can see in the *Schedule Chart*, the service times and the downtimes are 
 
 Learn how to xref:botmanagement-support.adoc#manage-service-times[manage service times].
 
-Learn how to xref:processautomation-prepare.adoc#manage-applications[manage applications].
+Learn how to xref:processautomation-prepare-project-application.adoc[manage applications].
 
 Learn how to create xref:processautomation-deploy.adoc#production-configuration[production] and xref:processautomation-deploy.adoc#invokable-configuration[invokable] configurations.
 

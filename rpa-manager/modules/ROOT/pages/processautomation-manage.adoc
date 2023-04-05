@@ -15,7 +15,7 @@ Within a category, you can manage the process automation projects:
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -81,7 +81,7 @@ Edit an automation project to update it:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the project you want to edit.
+. In the *<category name>* view, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the project to edit.
 . Check and edit the form *Copy process*:
 +
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
@@ -124,7 +124,7 @@ To remove a project:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the project you want to remove.
+. In the *<category name>* view, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the project to remove.
 . Confirm the prompt.
 
 == Manage Process Project Tasks
@@ -245,6 +245,5 @@ Once it's ready, transition the project to the next phase of its life-cycle. You
 
 == See Also
 
-* xref:index.adoc[RPA Manager]
 * xref:rpa-manager::myrpa-start.adoc[Starting Automation of Approved Processes]
-* xref:processautomation-overview.adoc[Process Automation]
+* xref:processautomation-prepare-project-category.adoc[Manage Process Categories]
