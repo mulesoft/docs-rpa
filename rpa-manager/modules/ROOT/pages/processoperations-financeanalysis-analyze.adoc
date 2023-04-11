@@ -16,7 +16,7 @@ Enter all expenses for automation of a process. On the basis of the costs of man
 |Open the *Finance Analysis* view and see all processes of all teams.
 |Global Finance Analysis View
 
-|Edit finance analyses, add, and edit cost entries, and change deprecation periods.
+|Edit finance analyses, add and edit cost entries, and change deprecation periods.
 |Finance Analysis Edit
 
 |===
@@ -87,7 +87,7 @@ Enter the new monthly operating costs.
 
 Expected number of automatically executed process runs in the current month and in coming months. This number initially equals the number of manually executed process runs per month so far (Frequency per month for manual process execution), but can be adjusted at any time.
 
-Estimate the expected number of process runs again every month on the basis of the pattern to date to forecast the break-even time as accurately as possible.
+Based on past experience, re-estimate the expected number of process runs every month to forecast the break-even time as accurately as possible.
 
 === Set Displayed Number of Months
 

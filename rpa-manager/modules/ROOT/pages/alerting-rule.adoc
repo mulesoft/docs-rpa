@@ -38,7 +38,7 @@ Status of the bot.
 The created alert rule is active upon saving. You can deactivate alert rules by clicking the *Deactivate* icon.
 
 . In the *Alert Rules* view of the *Alerting* module, click *Create*.
-. Select the type of the incident, that trigger the alert.
+. Select the type of the incident to trigger the alert.
 . Complete the form *Create new <type> rule*.
 . Click *Save*.
 

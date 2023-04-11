@@ -67,7 +67,7 @@ The bot should not be used in the production phase.
 The bot can be used in the production phase.
 
 |*Timezone*
-|The timezone the bot's installation computer uses. The bot interprets all times where no time zone is assigned to be set in its own time zone.
+|The timezone that the bot's installation computer uses. The bot interprets all times for which no time zone is assigned to be set in its own time zone.
 
 |*Licensed sessions*
 |

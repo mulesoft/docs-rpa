@@ -34,7 +34,7 @@ Create a new API key for each bot before installation.
 
 Edit an API key to change its name or description.
 
-. In the *API Key* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the table row of the API key to edit.
+. In the *API Key* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the API key to edit.
 . In the window *Edit Bot API Key*, change name or description and click *OK*.
 
 === Remove an API Key
@@ -43,14 +43,14 @@ Remove API keys you no longer need.
 
 When you delete an API key, the system does not check whether the key is assigned to a bot. If you have deleted an API key that is in use, the bot can no longer connect to RPA Manager until a new API key is assigned.
 
-. In the *API Key* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the API key to remove.
+. In the *API Key* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the API key to remove.
 . Confirm the removal.
 
 === Copy an API Key to the Clipboard
 
 Copy an API key to the clipboard to paste it into the according field during installation or configuration of a bot.
 
-. In the *API Key* view of the *Bot Management* module, click the *Copy* icon image:copy-to-clipboard-icon.png[sheet-on-clipboard symbol,1.5%,1.5%] in the column *API Key* in the table row of the API key you want to copy to the clipboard.
+. In the *API Key* view of the *Bot Management* module, click the *Copy* icon image:copy-to-clipboard-icon.png["sheet-on-clipboard symbol",1.5%,1.5%] in the column *API Key* in the table row of the API key you want to copy to the clipboard.
 
 == Manage Service Times
 
@@ -94,7 +94,7 @@ include::rpa-manager::partial$form-scheduling.adoc[]
 Edit a service time if it has changed.
 If a changed service time is already used by a bot, it is updated automatically there.
 
-. In the *Service Times* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the table row of the service time to edit.
+. In the *Service Times* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the service time to edit.
 . In the window *Edit Service Time*, change the data and click *OK*.
 
 == Remove a Service Time
@@ -103,7 +103,7 @@ Remove service times no longer effective.
 
 The deleted service time is also removed from the service times of a bot. If the deleted service time is the only one that was used by a bot, the bot uses the default service time (24/7).
 
-. In the *Service Times* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the service time  to remove.
+. In the *Service Times* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the service time  to remove.
 . Confirm the removal.
 
 

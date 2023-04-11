@@ -62,8 +62,8 @@ A copy of an automation project contains all information from the original proje
 Copy a project to automate a similar process more quickly:
 
 . Open the *Project Management* view of the *Process Automation* module.
-. Click on the name of the category of the project you want to copy.
-. In the *<category name>* view, click the *Copy* icon image:copy-icon.png[copy symbol,1.5%,1.5%] on the panel of the project you want to copy.
+. Click on the name of the category of the project that you want to copy.
+. In the *<category name>* view, click the *Copy* icon image:copy-icon.png["copy symbol",1.5%,1.5%] on the panel of the project you want to copy.
 . Check and edit the form *Copy process*:
 +
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
@@ -77,7 +77,7 @@ To complete copying the project:
 
 The project copy then receives its own identification values. 
 
-Only after the copy process is completed, the following actions are possible:
+Only after the copy process completes, the following actions are possible:
 
 * Another process team member can open the project copy in RPA Builder.
 * You or another process team member can transition the project copy to the test phase.
@@ -88,7 +88,7 @@ Edit an automation project to update it:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Edit* icon image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] on the panel of the project to edit.
+. In the *<category name>* view, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] on the panel of the project to edit.
 . Check and edit the form *Copy process*:
 +
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
@@ -100,7 +100,7 @@ Change the owner of a process to represent changed responsibilities:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *New Process Owner* icon image:newprocessowner-icon.png[user-with-crown symbol,1.5%,1.5%] on the panel of the project for which you want to change the process owner.
+. In the *<category name>* view, click the *New Process Owner* icon image:newprocessowner-icon.png["user-with-crown symbol",1.5%,1.5%] on the panel of the project for which you want to change the process owner.
 . In the window *New process owner*, select a user.
 . Click *OK*
 
@@ -114,7 +114,7 @@ Change the manager of a project to represent changed responsibilities:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *New Project Manager* icon image:newprojectmanager-icon.png[user-with-tie symbol,1.5%,1.5%] on the panel of the project for which you want to change the project manager.
+. In the *<category name>* view, click the *New Project Manager* icon image:newprojectmanager-icon.png["user-with-tie symbol",1.5%,1.5%] on the panel of the project for which you want to change the project manager.
 . In the window *New project manager*, select a user.
 . If you do not want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager is added with no assigned phases and thus only able to see this project.*
 . Click *OK*
@@ -131,7 +131,7 @@ To remove a project:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the project to remove.
+. In the *<category name>* view, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] on the panel of the project to remove.
 . Confirm the prompt.
 
 == Manage Process Project Tasks
@@ -184,13 +184,13 @@ To create a task:
 The task owner is responsible for completing the task. Choose a user from the process team. The task item displays the user's profile picture. RPA Manager shows all tasks of the task owners on their personal *My Process Board* view in the *My RPA* module.
 * *Priority*:
 +
-You can set the priority of the task to low, medium, or high. The task item displays a gray, yellow or red label, respectively.
+You can set the priority of the task to low, medium, or high. The task item displays a gray, yellow, or red label, respectively.
 * *Due date*:
 +
 Date on which the task should be completed.
 * *Effort*:
 +
-Time the task approximately takes.
+Time the task approximat    ely takes.
 . Click Save.
 
 === Edit a Task

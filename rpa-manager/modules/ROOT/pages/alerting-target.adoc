@@ -1,6 +1,6 @@
 = Creating Alerting Email Templates
 
-Create a template for an email that is sent as an alert. Address the email to users within RPA Manager or to other persons that need to be aware of problems. Use keywords to extract the relevant information from the incident.
+Create a template for an email to send as an alert. Address the email to users within RPA Manager or to other people that must be aware of problems. Use keywords to extract the relevant information from the incident.
 
 Combine targets to target groups to save time when creating alert rules.
 
@@ -22,14 +22,14 @@ Combine targets to target groups to save time when creating alert rules.
 
 == Create Alert Targets
 
-Create a template for an email that is sent as an alert. Address the email to users within RPA Manager or to other persons that need to be aware of problems. Use keywords to extract the relevant information from the incident.
+Create a template for an email to send as an alert. Address the email to users within RPA Manager or to other people that must be aware of problems. Use keywords to extract the relevant information from the incident.
 
 . In the *Alert Targets* view of the *Alerting* module, click *Create*.
 . Complete the form *Create a new email target*:
 +
 * *Keywords*:
 +
-Click on the *Keywords* icon to add placeholders to the subject or the body of the email. They are filled with the actual values at sending time.
+Click on the *Keywords* icon to add placeholders to the subject or the body of the email. The placeholders are filled with the actual values when RPA Manager sends the emails.
 . Click *Save*.
 
 == See Also
