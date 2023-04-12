@@ -2,7 +2,7 @@
 
 Enter all expenses for automation of a process. On the basis of the costs of manual execution of the process and the number of process runs already carried out automatically, and the expected future number of monthly process runs, the *Net profit* per month and the expected *Break-Even Point* of the process are calculated.
 
-== Before you begin
+== Before You Begin
 
 * Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
@@ -32,7 +32,7 @@ Enter all expenses for automation of a process. On the basis of the costs of man
 ** Period in months for depreciation of the initial investment and all other investments
 ** Monthly operating costs of process automation
 
-== Add analysis data
+== Add Analysis Data
 
 Enter data to calculate the *Net profit* per month and the expected *Break-Even Point* of the process automation.
 
@@ -42,7 +42,7 @@ You can also use the entry options to analyze in which areas changes must be mad
 
 The changes are shown graphically but are only saved in the detailed view if you Save the data.
 
-=== Add investments
+=== Add Investments
 
 Add new investments as soon as they occur. The initial investment is copied from the process data sheet.
 
@@ -62,13 +62,13 @@ Specify the duration of the depreciation of the investment in months.
 . Click *OK*.
 . Click *Save*.
 
-=== Add operating costs
+=== Add Operating Costs
 
 The specified monthly operating costs are in each case the total monthly operating costs from the specified month. The previously entered operating costs are only valid in each case until the previous month of the next entry of operating costs. Therefore, the new operating costs replace the old.
 
 The initial operating costs are copied from the Process data sheet.
 
-Note that any changes to the operating costs will shift the date of the break-even point.
+Note that any changes to the operating costs shift the date of the break-even point.
 
 . In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the table row of the *Process* you want to add investments to.
 . In the panel *Finance Analysis: Cost entries*, click *Add change of operating costs*.
@@ -83,11 +83,11 @@ Enter the new monthly operating costs.
 . Click *OK*.
 . Click *Save*.
 
-=== Forcast monthly process runs
+=== Forcast Monthly Process Runs
 
 Expected number of automatically executed process runs in the current month and in coming months. This number initially equals the number of manually executed process runs per month so far (Frequency per month for manual process execution), but can be adjusted at any time.
 
-Estimate the expected number of process runs again every month on the basis of the pattern to date in order to forecast the break-even time as accurately as possible.
+Based on past experience, re-estimate the expected number of process runs every month to forecast the break-even time as accurately as possible.
 
 === Set Displayed Number of Months
 

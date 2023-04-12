@@ -100,7 +100,7 @@ RPA Manager displays an *Active* label beneath the logo of the application.
 Remove an application if it is no longer available:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the application to remove.
+. Click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] on the panel of the application to remove.
 . Confirm the removal.
 
 RPA Manager removes the application from all processes and bots to which it was assigned.
