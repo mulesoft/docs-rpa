@@ -26,8 +26,8 @@ You can run processes openly in existing console sessions or hidden in secure se
 * If you want to use the values of xref:processautomation-prepare-deployment-variable.adoc[global variables] or xref:processautomation-prepare-deployment-credential.adoc[credentials] as initial values for activity parameters, an RPA administrator must create them in the *Global Variables* or *Credential Pool* view first.
 * A project in test or production phase must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
-* To run a process in an existing console or RDP session, you must deploy it to a bot that is configured for console sessions and the specified user must be logged in in this session when you deploy the run configuration.
-* To run a process in a hidden session, you must deploy it to a bot configured for secure sessions.
+* To run a process in an existing console or RDP session, you must deploy it to a bot that is configured for console sessions and the specified user must be logged in in this session when you deploy the run configuration. If the user is logged in more than once, the bot starts the process in the first session it finds the user logged in to. The bot searches for the user in the order real console session, RDP session 1 to n. Do not close or minimize the session while the bot executes the process.
+* To run a process in a hidden session, you must deploy it to a bot configured for secure sessions. Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. Do not sign in to a computer where a bot with one licensed secure session is running a process.
 
 == Test a Process Automation
 
