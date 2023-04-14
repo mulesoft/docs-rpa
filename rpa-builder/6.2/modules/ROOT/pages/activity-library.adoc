@@ -2,9 +2,7 @@
 
 The Activity Library enables you to reuse certain activities that repeat during the automation of business processes, a login for example, and avoid creating the same workflow multiple times.
 
-A particular case is the Start event (Trigger). Although it is not an activity in the strict sense, a workflow is still assigned to this item, which initially starts the process. You can upload this event to the Activity Library. 
-
-The Activity Library Explorer enables you to edit, copy, or delete activities and search for activities in your organization's library based on Activity Tags, which you can create and assign to the activities to further categorization and filtering capabilities. 
+Use the Activity Library Explorer to edit, copy, or delete activities and search for activities in your organization's library based on Activity Tags, which you can create and assign to the activities to further categorization and filtering capabilities. 
 
 == Before you Begin 
 
@@ -38,8 +36,6 @@ To import an activity from the Activity Library to your project:
 . Select an activity in your project. 
 . In the context pad, click *Import Workflow from Activity Library* (image:import-workflow-from-activity-library-icon.png["The Import Workflow from Activity Library Icon.", 2%, 2%])
 . In the window that opens, select the activity to import and click either *Add as a library reference* or *Add as a local copy*, depending on which method you want to use. 
-+
-The Activity Library Explorer shows only the appropriate types of activities you can import, depending on which element you selected in the workflow. 
 
 ** *Add as a library reference*
 +

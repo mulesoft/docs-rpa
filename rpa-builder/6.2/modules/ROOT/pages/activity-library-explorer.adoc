@@ -44,7 +44,7 @@ Opens a dialog that enables you to import an Activity Library Workflow package `
 +
 Opens a dialog that enables you to export an Activity Library Workflow from the Activity Library to your file system as a `(.calw)` package file.
 +
-When you export Activity Library workflows to a file, RPA Builder removes the passwords stored in wizards of Action Steps or User Account Variables to prevent passwords from being shared. 
+When you export Activity Library workflows to a file, RPA Builder removes passwords and all sensitive information stored in wizards of Action Steps, User Account Variables, and Activity Parameters (for example secrets in OAuthCredentials or AWS Credentials) to prevent this information from being shared.
 
 == See Also 
 

@@ -205,7 +205,7 @@ _View_ -> _Show System Parameters_.
 
 == Explorer Pane
 
-In the window pane on the left-hand side there are find five tabs
+In the window pane on the left-hand side there are five tabs
 containing the views _Toolbox_, _Project_, _Activity Library_,
 _Repository_ and _Outline_.
 
