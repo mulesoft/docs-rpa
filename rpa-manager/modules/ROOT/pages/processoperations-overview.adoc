@@ -6,4 +6,4 @@ In the *Process Operations* module, you can get information about processes in t
 * View and manage the deployment of processes.
 * View which user tasks have not been processed yet and reassign them.
 * View pending process changes and implement them.
-* View, record, monitor and analyze the financial aspects of a process.
+* View, record, monitor, and analyze the financial aspects of a process.

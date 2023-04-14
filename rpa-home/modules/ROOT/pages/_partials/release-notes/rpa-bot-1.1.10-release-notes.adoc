@@ -1,0 +1,47 @@
+= RPA Bot 1.1.10 Release Notes
+
+RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== April 11, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* Trace logs now include the `x-request-id` for REST call errors. 
+* The Process Streaming view now shows and informative image when the streaming is disabled from the configuration. 
+* The logs now include timestamps in the RFC 3339 format. 
+* RPA Bot now automatically retries downloading runtime packages for new web drivers when the download fails. 
+* RPA Bot now sends a warning when the screen resolution defined for a process differs from the resolution used in a remote desktop session. 
+* RPA Bot now checks periodically if the desktop session is available and logs a warning message in case the check fails. 
+* RPA Bot now makes all requests using HTTPS with TLSv2 by default. You can no longer make HTTP requests.  
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.1.1 and later
+|RPA Recorder | 6.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+| RPA Bot no longer updates runtime packages that are not already installed. | W-12687510 
+| You can now enable and disable Process Streaming after a bot restart. | W-12701321 
+| RPA Bot no longer prevents an update if you executed an RDP connection test in the RPA Bot Configurator. | W-12687416 
+| RPA Bot no longer fails to resume a running process execution after an outage or failure. | W-12366285 
+| RPA Bot no longer requeue tasks when there are run results available in RPA Manager. | W-12636649 
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]

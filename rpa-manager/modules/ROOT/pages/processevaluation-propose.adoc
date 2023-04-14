@@ -4,7 +4,7 @@ You evaluate a process candidate to propose it for automation.
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -29,7 +29,7 @@ You evaluate a process candidate to propose it for automation.
 
 * Create appropriate categories in the view *Process Management* in the module *Process Automation*.
 +
-Learn how to xref:processautomation-prepare.adoc#manage-categories[manage categories].
+Learn how to xref:processautomation-prepare-project-category.adoc[manage categories].
 
 == Manage Process Evaluations
 
@@ -54,7 +54,7 @@ Costs for a one-time execution of the process. In the list of evaluated processe
 Number of times the process is carried out within a one-month period. This field can only be completed if a value exists in the *Manual process execution time* field. In the list of evaluated processes, the value *Frequency per month* is multiplied by the value *Manual process execution time* to calculate the *Effort/month* value.
 * [[processevaluationdata-category]] *Category*:
 +
-A category describes the environment of a process in a few keywords. Choose a category from the list. Project managers can create categories in the *Process Management* view of the *Process Automation* module.
+A category describes the environment of a process in a few keywords. Choose a category from the list.
 * *Qualifiers/Benefits*:
 +
 Drag the slider to the appropriate values. *Exclude* unnecessary criteria.
@@ -64,7 +64,7 @@ Drag the slider to the appropriate values. *Exclude* unnecessary criteria.
 
 Edit a process evaluation to correct errors:
 
-. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] in the table row of the evaluation you want to edit.
+. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the evaluation to edit.
 . Edit the form *Process Evaluation*.
 . Click *Save*.
 
@@ -72,15 +72,9 @@ Edit a process evaluation to correct errors:
 
 Delete process evaluations that you no longer need:
 
-. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Delete* icon image:delete-icon.png[trash symbol,1.5%,1.5%] in the table row of the evaluation you want to delete.
+. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Delete* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the evaluation to delete.
 . Confirm the deletion.
 
 == See Also
 
-* xref:processautomation-prepare.adoc#create-categories[Create Process Categories]
-
-* xref:processevaluation-overview.adoc[Process Evaluation]
-* xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
-* xref:processevaluation-configure.adoc[Configuring Process Evaluations]
-//* xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]
-* xref:processevaluation-approve.adoc[Approving a Process for Automation]
+* xref:processautomation-prepare-project-category.adoc[Manage Process Categories]

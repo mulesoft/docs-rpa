@@ -12,7 +12,7 @@ You can check for:
 
 The *Alerts* view shows you all triggered alerts.
 
-== See also
+== See Also
 
 * xref:processautomation-deploy.adoc#view-run-results[View Run Results]
 * xref:botmanagement-overview.adoc[Bot Management]

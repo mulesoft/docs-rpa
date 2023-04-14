@@ -1,0 +1,111 @@
+= Manage Applications
+
+Process applications are third-party application installations that business experts use to execute a process.
+
+Manage a list of all applications and their downtimes.
+
+Create a new entry for each instance of an application, for example `FinWiz - Mythical University - Computer 1 - Tokyo` and `FinWiz - Mythical University - Computer 42 - San Francisco`.
+
+Applications are not available during downtimes or while deactivated. 
+
+To avoid confusion, append the name of the time zone to the name of the application or the downtime. For example, name an application `Words - Tokyo` and a downtime `Electrical Power Outage Tokyo`.
+
+In the *Process Management* view, a member of the project team xref:myrpa-start.adoc#required-process-applications[assigns required applications to a process] at process automation creation or phase transition.
+
+In the *Bot Management* module, an administrator xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[assigns required applications to bots] that can access them. 
+
+A member of the process team can deploy a process on a bot that has assigned the required applications. If an application becomes unavailable, the bot completes running processes using that application and restarts the processes when the downtime or deactivation period has ended.
+
+== Before You Begin
+
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Automation* module
+|Process Automation Open
+
+|Create, change, and delete process applications
+|Application Create, Application Edit, Application Delete
+
+|===
+* Note the timezone of the computer that each application is installed on.
+
+== View All Applications
+
+To view all existing applications for automation projects, open the *Process Applications* view of the *Process Automation* module.
+
+== Create a Process Application
+
+Create one entry for each application instance required for the execution of processes.
+
+To create a process application:
+
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click *Create*.
+. [[form-create-process-applications]] Complete the *Create a new application* form:
++
+* *Time Zone*:
++
+Time zone for defining downtimes.
++
+Specify a downtime in the time zone in which it occurs. If the bot that you assign the downtime to is installed on a computer that uses a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots pause executing processes that use that application simultaneously. The time intervals might change, depending on daylight saving time.
++
+For example, if you specify a downtime that starts at 1:30 AM and ends at 5:30 AM in Tokyo time (JST (UTC +9)) and the bot is installed on a computer in San Francisco (PST (UTC -8)), the bot does not execute processes between 8:30 AM and 12:30 PM in San Francisco time.
++
+To avoid confusion, append the name of the time zone to the name of the downtime. For example, name your downtime `Electrical Power Outage Tokyo`.
++
+* *Downtimes*
++
+Click *Create* to add a downtime to the application.
+. Click *Save*.
+
+== Edit an Application
+
+Edit an application to change its data or downtimes:
+
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click *Create*.
+. Edit the *Edit the application* form.
++
+For an explanation of the properties, see  <<form-create-process-applications, *Create an Application*>>.
+. Click *Save*.
+
+== Deactivate or Activate a Process Application
+
+Deactivate an application if it is temporarily unavailable and you don't know when it will be available again.
+
+Use downtimes to schedule maintenance and planned downtimes. Deactivation periods are not added to the list of downtimes.
+
+Applications are not available during downtimes or while deactivated. A member of the process team can deploy a process on a bot that has assigned the required processes. If an application becomes unavailable, the bot completes running processes using that application and restarts them when the downtime or deactivation period has ended.
+
+If an application is not available, deactivate it:
+
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application to deactivate.
+
+RPA Manager displays an *Inactive* label on the panel of the application.
+
+If a deactivated application becomes available again, activate it:
+
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application to activate.
+
+RPA Manager displays an *Active* label beneath the logo of the application.
+
+== Remove a Process Application
+
+Remove an application if it is no longer available:
+
+. Open the *Process Applications* view of the *Process Automation* module.
+. Click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] on the panel of the application to remove.
+. Confirm the removal.
+
+RPA Manager removes the application from all processes and bots to which it was assigned.
+
+== See Also
+
+* xref:processautomation-manage.adoc#projectdata-processapplications[Assign Process Applications to an Automation Project]
+* xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[Assign Process Applications to a Bot] 

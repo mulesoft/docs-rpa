@@ -4,7 +4,7 @@ User API keys are required for the integration of RPA processes in a MuleSoft Co
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -21,7 +21,7 @@ User API keys are required for the integration of RPA processes in a MuleSoft Co
 
 |===
 
-* The user who will use an API key must exist in the *Users* view of the *User Management* module.
+* The user who uses an API key must exist in the *Users* view of the *User Management* module.
 
 [[create-an-api-key-for-a-user]]
 == Create an API Key for a User
@@ -39,7 +39,7 @@ Select an expiration date for the user API key from the calendar.
 
 Copy an API key to the clipboard to paste it into the configuration of an API connector in MuleSoft Composer.
 
-. In the *User API Keys* view of the *User Management* module, click the *Copy to clipboard* icon image:copy-to-clipboard-icon.png[sheet-on-clipboard symbol,1.5%,1.5%] in the table row of the user API key you want to use.
+. In the *User API Keys* view of the *User Management* module, click the *Copy to clipboard* icon image:copy-to-clipboard-icon.png["sheet-on-clipboard symbol",1.5%,1.5%] in the table row of the user API key you want to use.
 
 == See Also
 

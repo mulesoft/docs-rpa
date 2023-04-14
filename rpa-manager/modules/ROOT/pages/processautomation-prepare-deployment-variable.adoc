@@ -1,0 +1,133 @@
+= Manage Global Variables
+
+Global variables store values that are the same in multiple processes and that frequently change. By using them, you can reduce the time involved and the error rate in the maintenance of the processes.
+
+Examples use cases of global variables are:
+
+* Tax rates (floating point value)
+* File paths (alphanumeric value)
+* Email addresses (alphanumeric value)
+* Approval (boolean value)
+* Offset for determining a screen coordinate (coordinate value)
+
+The RPA developer defines xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[activity parameters] for a process in RPA Builder. 
+
+You create reusable global variables that process team members can link to an activity parameter in an automation to overwrite the initial value of the activity parameter:
+
+* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
+* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
+
+Use descriptive names for global variables and only use the variables in an appropriate context. For example, if the number 42 refers to both the number of employees in your company and the answer to a different question, then create two global variables (for example, `number_employees` and `answer`).
+
+Editing or deleting a global variable affects all configurations that use the variable.
+
+Check the usage of a variable before changing or deleting it.
+
+To store login data securely, use xref:processautomation-prepare-deployment-credential.adoc[credentials].
+
+== Before You Begin
+
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Process Automation* module
+|Process Automation Open
+
+|Create and change global variables that can be used in the test phase
+|Global Variables Create for Test phase, Global Variables Edit for Test phase
+
+|Create and change global variables that can be used in the production phase
+|Global Variables Create for Production phase, Global Variables Edit for Production phase
+
+|Delete global variables
+|Global Variables Delete
+
+|===
+
+== Create a Global Variable
+
+Create a global variable that process team members can link to an activity parameter in an automation to overwrite the initial value of the activity parameter.
+
+To create a global variable:
+
+. Open the *Global Variables* view of the *Process Automation* module.
+. Click *Create*.
+. [[form-create-globalvariable]] Complete the *Create a New Global Variable* form:
+* *Phase affiliation*
++
+Phases in which the variable is permitted to be deployed. When you create or change the variable, your individual privileges determine which phases you can select:
++
+** *Test*
++
+The variable can be deployed in the test phase.
++
+** *Production*
++
+The variable can be deployed in the production phase.
+
+* *Type*
++
+Type of the global variable. The type of variable determines where it can be used. The original value defined in RPA Builder is typed. Select one of the following types:
++
+** *Integer*
++
+An integer number.
+** *Alphanumeric*
++
+A character string.
+** *Boolean*
++
+A logical value. Select the *Value* checkbox for the value `true` or deselect for the value `false`.
+** *Float*
++
+A floating-point number.
+** *Coordinate*
++
+Combination of two integer values for an X-Y coordinate.
+* *Value*
++
+You can only enter values of the specified type.
+
+== Check the Usage of a Global Variable
+
+Before editing a global variable, check its usage to avoid inadvertent side effects:
+
+. Open the *Global Variables* view of the *Process Automation* module.
+. Click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the table row of the global variable to check.
+
+A window with a table shows you the configurations that use the global variable.
+
+==  Edit a Global Variable
+
+Edit a global variable to change its name or value. You cannot change the type of a global variable. Check the usage of the variable first to avoid inadvertent side effects.
+
+To edit a global variable:
+
+. Open the *Global Variables* view of the *Process Automation* module.
+. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the global variable to edit.
+. Change data in the *Edit the Global Variable* form.
++
+For an explanation of the properties, see  <<form-create-globalvariable, *Create a Global Variable*>>.
+. Click *Save*.
+
+The variable is changed everywhere it is used.
+
+== Delete a Global Variable
+
+Delete global variables that are no longer needed. You cannot delete variables linked in configurations.
+
+To delete a global variable:
+
+. Open the *Global Variables* view of the *Process Automation* module.
+. Click the *Delete* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the global variable to delete.
+. Confirm the deletion.
+
+== See Also
+
+* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder: Activity Paramters]
+* xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
+* xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
+* xref:processautomation-deploy.adoc#invokable-configuration-link-globals[Linkable Activity Parameters in Invokable Configurations]
