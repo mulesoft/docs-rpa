@@ -1,7 +1,7 @@
 = Activity Tags
 
 Use Activity Tags to categorize the activities in the Activity Library, which enables you to manage the
-activities, to arrange them more efficiently, and to subsequently find them more easily using the
+activities, arrange them more efficiently, and subsequently find them more easily using the
 search function in the Activity Library Explorer. 
 
 == Create Activity Tags 
@@ -10,7 +10,7 @@ To create new Activity Tags:
 
 . In the Activity Library toolbar, click (image:activity-library-explorer-toolbar-manage-activity-tags.png["The Manage Activity Tags button.", 2%, 2%]) *Manage Activity Tags*.
 . Click *Create New Activity Tag*. 
-. Provide a descriptive name to the tag and click *OK*.
+. Provide a descriptive name for the tag and click *OK*.
 +
 The name of the tag must be unique. 
 
@@ -19,16 +19,16 @@ If you delete tags, they are removed automatically from all assignments.
 
 == Assign an Activity Tag
 
-After you have created tags, you can assign them to a workflow when you upload the workflow to
+After you create tags, you can assign them to a workflow when you upload the workflow to
 the Activity Library by using the *Activity Tags* tab.
 
-image::upload-workflow-to-activity-library-activity-tags.png["The Upload Workflow to Activity Library window showing the Activity Tags tab." 50%, 50%]
+image::upload-workflow-to-activity-library-activity-tags.png[The Upload Workflow to Activity Library window showing the Activity Tags tab, 50%, 50%]
 
-Select an Activity tag and click (image:add-tag.png[The add tag button, 1%, 1%]) to add it to the workflow, or click (image:remove-tag.png[The remove tag button, 1%, 1%]) to remove the tag from the workflow. 
+Select an Activity tag and click (image:add-tag.png[The Add Tag button, 1%, 1%]) to add it to the workflow, or click (image:remove-tag.png[The Remove Tag button, 1%, 1%]) to remove the tag from the workflow. 
 
-Use (image:add-all-tags.png[The add all tags button, 2%, 2%]) to add all tags to the workflow or (image:remove-all-tags.png[The remove all tags button, 2%, 2%]) to remove all tags from the workflow.
+Use (image:add-all-tags.png[The Add All Tags button, 2%, 2%]) to add all tags to the workflow or (image:remove-all-tags.png[The Remove All Tags button, 2%, 2%]) to remove all tags from the workflow.
 
 == See Also 
 
-* xref:activity-library.adoc[Using the Activity Library]
-* xref:activity-library-explorer.adoc[Activity Library Explorer]
+* xref:activity-library.adoc[]
+* xref:activity-library-explorer.adoc[]

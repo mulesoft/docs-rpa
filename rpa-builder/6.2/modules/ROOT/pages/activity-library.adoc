@@ -1,10 +1,10 @@
-= Activity Library
+= Using the Activity Library
 
-The Activity Library enables you to reuse certain activities that repeat during the automation of business processes, a login for example, and avoid creating the same workflow multiple times.
+The Activity Library enables you to reuse certain activities that repeat during the automation of business processes, such as a login, to avoid creating the same workflow multiple times.
 
-Use the Activity Library Explorer to edit, copy, or delete activities and search for activities in your organization's library based on Activity Tags, which you can create and assign to the activities to further categorization and filtering capabilities. 
+Use the Activity Library Explorer to edit, copy, or delete activities and search for activities in your organization's library based on Activity Tags. You can create Activity Tags and assign them to the activities for further categorization and filtering capabilities. 
 
-== Before you Begin 
+== Before You Begin 
 
 //Update this when IAM is implemented.
 * To open and to use the Activity Library, you need the *Activity Library Open* and *Activity Library Administration* privileges. 
@@ -17,12 +17,12 @@ To upload an activity to the Activity Library:
 
 . In RPA Builder, open a process for editing. 
 . Click an activity to select it and open the context pad. 
-. In the context pad, click *Add to Activity Library* (image:add-to-activity-library-icon.png["The Add to Activity Library Icon.", 2%, 2%])
+. In the context pad, click *Add to Activity Library* (image:add-to-activity-library-icon.png["Add to Activity Library Icon", 2%, 2%])
 +
-image:context-pad.png["The context pad of an activity.", 50%, 50%]
-. In the *Upload Workflow to Activity Library* window that opens, provide a name and a description for the activity. 
+image:context-pad.png["The context pad of an activity", 50%, 50%]
+. In the *Upload Workflow to Activity Library* window, provide a name and description for the activity. 
 +
-image:upload-workflow-to-activity-library.png["The Upload Workflow to Activity Library window.", 50%, 50%]
+image:upload-workflow-to-activity-library.png["Upload Workflow to Activity Library window", 50%, 50%]
 +
 [IMPORTANT]
 Each activity must have a unique name, which cannot be longer than 60 characters. Otherwise, RPA Builder cancels the upload and shows an error message. 
@@ -34,14 +34,14 @@ Each activity must have a unique name, which cannot be longer than 60 characters
 To import an activity from the Activity Library to your project: 
 
 . Select an activity in your project. 
-. In the context pad, click *Import Workflow from Activity Library* (image:import-workflow-from-activity-library-icon.png["The Import Workflow from Activity Library Icon.", 2%, 2%])
-. In the window that opens, select the activity to import and click either *Add as a library reference* or *Add as a local copy*, depending on which method you want to use. 
+. In the context pad, click *Import Workflow from Activity Library* (image:import-workflow-from-activity-library-icon.png["Import Workflow from Activity Library Icon", 2%, 2%])
+. Select the activity to import and click either *Add as a library reference* or *Add as a local copy*, depending on which method you want to use. 
 
 ** *Add as a library reference*
 +
-This method creates in each process a link to an activity from the Activity Library. Because the activity is already saved on the library, it is not uploaded again. The activity automatically receives the name of the reference, and you cannot change the name in the BPMN editor. An activity with a referenced workflow shows a gray background in the task element. 
+This method creates a link in each process to an activity from the Activity Library. Because the activity is already saved in the library, it is not uploaded again. The activity automatically receives the name of the reference, and you cannot change the name in the BPMN editor. An activity with a referenced workflow shows a gray background in the task element. 
 +
-image::referenced-activity.png["An activity showing a gray background to specify that it has a referenced workflow.", 30%, 30%]
+image::referenced-activity.png["An activity showing a gray background to specify that it has a referenced workflow", 30%, 30%]
 +
 If you import an activity from the Activity Library as a reference, the system checks whether the activity parameters contained in the activity fit the process. If the activity (or the workflow behind it) contains activity parameters that are missing in the process, you can either add these parameters to the process or cancel the import.
 +
@@ -53,16 +53,16 @@ This method creates a local copy of the workflow behind the activity and inserts
 
 == Convert Referenced Activities to a Local Copy
 
-Creating a copy of a referenced activity enables you to modify such activity. 
+Creating a copy of a referenced activity enables you to modify the activity. 
 
 To create a local copy of a referenced activity:
 
-. In the BMPN editor, double click the referenced activity you want to copy.
-. In the dialog that shows, click *Create Copy*.
+. In the BMPN editor, double-click the referenced activity to copy.
+. Click *Create Copy*.
 
-After you click *Create a Copy*, the workflow behind the activity opens in the Workbench for editing. Because the activity loses its reference, the next time you upload the activity it is treated as a new workflow. 
+After you click *Create a Copy*, the workflow behind the activity opens in the Workbench for editing. Because the activity loses its reference, the next time you upload the activity, it is treated as a new workflow. 
 
 == See Also 
 
-* xref:activity-library-explorer.adoc[Activity Library Explorer]
-* xref:activity-tags.adoc[Activity Tags]
+* xref:activity-library-explorer.adoc[]
+* xref:activity-tags.adoc[]
