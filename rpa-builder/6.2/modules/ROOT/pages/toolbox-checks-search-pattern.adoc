@@ -154,7 +154,7 @@ found.
 The _Search Pattern Wizard_ enables you to select _Search Patterns_ and the
 key search settings.
 
-Pattern Strip is a UI module that consists of a list of Search Patterns, their associated options, and a menu bar. See xref:pattern-strip.adoc[The Pattern Strip Module] for a description of the module's functionality and all available pattern operations.
+Pattern Strip is a UI module that consists of a list of Search Patterns, their associated options, and a menu bar. See xref:adding-a-pattern-from-screen-capture.adoc#pattern-strip[The Pattern Strip Module] for a description of the module's functionality and all available pattern operations.
 
 Click *OK* to confirm the configuration settings or *Cancel* as
 applicable. The *Test* button evaluates the search and displays the
