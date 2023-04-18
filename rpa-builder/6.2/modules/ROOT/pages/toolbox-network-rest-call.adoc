@@ -248,4 +248,4 @@ generierte Beschreibung,width=577,height=467]
 
 == See Also 
 
-* xref:toolbox-variable-handling-jsonquery.adoc[Json Query]
+* xref:toolbox-variable-handling-json-query.adoc[Json Query]
