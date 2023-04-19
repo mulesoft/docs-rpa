@@ -2,6 +2,35 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[april-19-2023]]
+== April 19, 2023
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+// Prior to the fix: if an error happened during the creation of a session (e.g. because of wrong user credentials in the run config), the RPA bot reported an error back to server. The server provided the same task for the RPA Bot right again. The RPA Bot tries to create the session again and resulted again in an error. This happened all the time without ending, which leads to a blocking RPA Bot.
+| A failed creation of a secure session no longer leads to a blocking RPA Bot. A run configuration will be paused after 5 consecutive errors. | W-12718095
+
+// 04/19 (Jochen): please check with Michael Buchholzer, if the following bug fixes will be deployed tomorrow (04/20). Currently, they are not yet merged to stateless main branch. Thanks.
+| The assigment of users to unprocessed user tasks now shows a list of users. | W-13027522
+| Now, the run results showed with the run configuration and in the RPA Bot's process run statistics show the same value. | W-12974321
+| Already paused run configurations are no longer shown in the list of run configuration, which should be paused. | W-12774698
+| The process streaming is no longer blocked. | W-13011702
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, ensure that you import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+|===
+
+
 [[april-5-2023]]
 == April 5, 2023
 
