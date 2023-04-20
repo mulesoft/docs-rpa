@@ -15,9 +15,9 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | A failed creation of a secure session no longer leads to a blocking RPA Bot. A run configuration will be paused after 5 consecutive errors. | W-12718095
 
 // 04/19 (Jochen): please check with Michael Buchholzer, if the following bug fixes will be deployed tomorrow (04/20). Currently, they are not yet merged to stateless main branch. Thanks.
-| The assigment of users to unprocessed user tasks now shows a list of users. | W-13027522
-| Now, the run results showed with the run configuration and in the RPA Bot's process run statistics show the same value. | W-12974321
-| Already paused run configurations are no longer shown in the list of run configuration, which should be paused. | W-12774698
+| Users can again be added to unprocessed user tasks. The list of users to be assigned is no longer be empty. | W-13027522
+| Now, the run results in the production run configuration and in the RPA Bot's process run statistics show same results. | W-12974321
+| Already paused run configurations are no longer shown in the list of run configurations, which should be paused. | W-12774698
 | The process streaming is no longer blocked. | W-13011702
 |===
 
