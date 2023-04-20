@@ -2,8 +2,8 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
-[[april-19-2023]]
-== April 19, 2023
+[[april-20-2023]]
+== April 20, 2023
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -11,12 +11,11 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-// Prior to the fix: if an error happened during the creation of a session (e.g. because of wrong user credentials in the run config), the RPA bot reported an error back to server. The server provided the same task for the RPA Bot right again. The RPA Bot tries to create the session again and resulted again in an error. This happened all the time without ending, which leads to a blocking RPA Bot.
-| A failed creation of a secure session no longer leads to a blocking RPA Bot. A run configuration will be paused after 5 consecutive errors. | W-12718095
-| Users can again be added to unprocessed user tasks. The list of users to be assigned is no longer be empty. | W-13027522
-| Now, the run results in the production run configuration and in the RPA Bot's process run statistics show same results. | W-12974321
-| Already paused run configurations are no longer shown in the list of run configurations, which should be paused. | W-12774698
-| The process streaming is no longer blocked. | W-13011702
+| RPA Bots no longer remain blocked after failing to create a secure session because RPA Manager now pauses a failing run configuration after 5 consecutive errors. | W-12718095
+| The list of users to assign to unprocessed user tasks no longer shows empty. | W-13027522
+| The run results for a process in Production and the process run statistics for an RPA Bot no longer show different results. | W-12974321
+| Paused run configurations are no longer shown in the list of run configurations that you can pause. | W-12774698
+| Process streaming is no longer unresponsive. | W-13011702
 |===
 
 // == Known Issues
