@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| RPA Bots no longer remain blocked after failing to create a secure session because RPA Manager now pauses a failing run configuration after 5 consecutive errors. | W-12718095
+| RPA Bots no longer remain blocked after failing to create a secure session because RPA Manager now pauses a failing run configuration after five consecutive errors. | W-12718095
 | The list of users to assign to unprocessed user tasks no longer shows empty. | W-13027522
 | The run results for a process in Production and the process run statistics for an RPA Bot no longer show different results. | W-12974321
 | Paused run configurations are no longer shown in the list of run configurations that you can pause. | W-12774698
