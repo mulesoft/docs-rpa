@@ -13,8 +13,6 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |Issue Resolution |ID
 // Prior to the fix: if an error happened during the creation of a session (e.g. because of wrong user credentials in the run config), the RPA bot reported an error back to server. The server provided the same task for the RPA Bot right again. The RPA Bot tries to create the session again and resulted again in an error. This happened all the time without ending, which leads to a blocking RPA Bot.
 | A failed creation of a secure session no longer leads to a blocking RPA Bot. A run configuration will be paused after 5 consecutive errors. | W-12718095
-
-// 04/19 (Jochen): please check with Michael Buchholzer, if the following bug fixes will be deployed tomorrow (04/20). Currently, they are not yet merged to stateless main branch. Thanks.
 | Users can again be added to unprocessed user tasks. The list of users to be assigned is no longer be empty. | W-13027522
 | Now, the run results in the production run configuration and in the RPA Bot's process run statistics show same results. | W-12974321
 | Already paused run configurations are no longer shown in the list of run configurations, which should be paused. | W-12774698
