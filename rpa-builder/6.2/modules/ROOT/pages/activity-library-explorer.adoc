@@ -6,9 +6,9 @@ image::activity-library-explorer.png["The Activity Library Explorer window"]
 
 If another user adds an activity, click *Refresh* (image:activity-library-explorer-toolbar-refresh.png["The Refresh button", 2%, 2%]) to update the Activity Library Explorer and see the changes.
 
-To view an Outline of a workflow, select an activity and click *Show Outline* (image:activity-library-explorer-toolbar-show-outline.png["The Show Outline button", 2%, 2%]).
+To view an outline of a workflow, select an activity and click *Show Outline* (image:activity-library-explorer-toolbar-show-outline.png["The Show Outline button", 2%, 2%]).
 
-To see all revisions of an activity, select the activity and click *Show Log* (image:activity-library-explorer-toolbar-show-log.png["The Show Log button", 2%, 2%]). You can select a revision and modify it by clicking *Edit* (image:edit-icon.png["The Edit button", 2%, 2%]).
+To see all revisions of an activity, select the activity and click *Show Log* (image:activity-library-explorer-toolbar-show-log.png["The Show Log button", 2%, 2%]).
 
 You can create and assign Activity Tags to your activities by clicking *Manage Activity Tags* (image:activity-library-explorer-toolbar-manage-activity-tags.png["The Manage Activity Tags button", 2%, 2%]).
 
