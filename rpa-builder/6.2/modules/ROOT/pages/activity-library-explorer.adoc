@@ -12,7 +12,7 @@ To see all revisions of an activity, select the activity and click *Show Log* (i
 
 You can create and assign Activity Tags to your activities by clicking *Manage Activity Tags* (image:activity-library-explorer-toolbar-manage-activity-tags.png["The Manage Activity Tags button", 2%, 2%]).
 
-== Edit, Copy, and Delete Activities from the Library 
+== Edit, Copy, and Delete Activities
 
 To open the individual editing mode of an activity and make changes to it, select an activity and click *Edit* (image:edit-icon.png["The Edit button", 2%, 2%]).
 
