@@ -205,8 +205,7 @@ _View_ -> _Show System Parameters_.
 
 == Explorer Pane
 
-In the window pane on the left-hand side, you will find five tabs
-containing the views _Toolbox_, _Project_, _Activity Library_,
+The Explorer pane includes five tabs: _Toolbox_, _Project_, _Activity Library_,
 _Repository_ and _Outline_.
 
 If any of these views are not visible, you can always show them again by
@@ -253,7 +252,7 @@ downloaded for editing.
 If you use the *_Activity Library,_* you can view and delete all available
 Activity Templates here.
 
-//For a more detailed description of how to use the Activity Library, see the chapter Activity Library.
+For a more detailed description of how to use the Activity Library, see xref:activity-library.adoc[Using the Activity Library].
 
 The *_Workflow Outline_* is a shortened view of the open Workflow.
 

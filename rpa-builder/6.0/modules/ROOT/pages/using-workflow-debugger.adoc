@@ -8,8 +8,9 @@ When you execute a *Debug Workflow* run, you can call Workflow Debugger by press
 
 image:workflow-debugger-window.png[The Workflow Debugger window]
 
-<1> The first pane in Workflow Debugger shows a condensed view of your Workflow and an arrow indicating which step was the last to execute.
-<2> The second pane shows the debug information for the selected Action Step. The Debug Information panel contains a combination of configuration settings and runtime information relating to Action Steps already executed.
+[calloutlist]
+. The first pane in Workflow Debugger shows a condensed view of your Workflow and an arrow indicating which step was the last to execute.
+. The second pane shows the debug information for the selected Action Step. The Debug Information panel contains a combination of configuration settings and runtime information relating to Action Steps already executed.
 
 In this example, the Workflow entered the error state at the Window Wait Action Step. In the Debug Information panel, the *Result* section confirms that the window could not be found. Also, in the *Configuration* section, the *WindowTitle* value is set to `testname`, which caused the error because no window with that title existed during the execution.
 
