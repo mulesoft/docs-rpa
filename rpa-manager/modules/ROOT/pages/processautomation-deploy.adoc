@@ -6,7 +6,7 @@ When the tests are successful, transition to *Production* phase.
 
 The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. The difference is that you do not have to start the individual process runs manually. Instead you schedule a process run configuration which is then executed automatically at defined times. Or you create an invokable run configuration and publish it to Anypoint Exchange.
 
-You can run processes openly in existing console sessions or hidden in secure sessions. In console sessions only one process can run at a time. In secure sessions different processes or several instances of the same process can run in parallel.
+You can run processes openly in existing console sessions or run them hidden in secure sessions. In console sessions, only one process can run at a time. In secure sessions, different processes or several instances of the same process can run in parallel.
 
 == Before You Begin
 
@@ -26,7 +26,14 @@ You can run processes openly in existing console sessions or hidden in secure se
 * If you want to use the values of xref:processautomation-prepare-deployment-variable.adoc[global variables] or xref:processautomation-prepare-deployment-credential.adoc[credentials] as initial values for activity parameters, an RPA administrator must create them in the *Global Variables* or *Credential Pool* view first.
 * A project in test or production phase must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
-* To run a process in an existing console or RDP session, you must deploy it to a bot that is configured for console sessions and the specified user must be logged in in this session when you deploy the run configuration. If the user is logged in more than once, the bot starts the process in the first session it finds the user logged in to. The bot searches for the user in the order real console session, RDP session 1 to n. Do not close or minimize the session while the bot executes the process.
+* To run a process in an existing console or RDP session, you must deploy it to a bot that is configured for console sessions, and the specified user must be logged in to this session when you deploy the run configuration. If the user is logged in more than once, the bot starts the process in the first session in which the user is logged in. The bot searches for the user in this order:
+. Physical console session
+. RDP session 1
+. RDP session ...
+. RDP session stem:[n].
+
++
+Do not close or minimize the console session while the bot executes the process.
 * To run a process in a hidden session, you must deploy it to a bot configured for secure sessions. Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. Do not sign in to a computer where a bot with one licensed secure session is running a process.
 
 == Test a Process Automation
@@ -67,7 +74,7 @@ Set a value by entering text or by clicking on a checkbox, and complete your ent
 
 Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[symbol,1.5%,1.5%] and select a variable. RPA Manager displays variables of the same type, assigned to the test phase, and only the credentials to which you are xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
 +
-The variables are typed. You can only enter or link values of the same type. The values entered here are only start values and they can be overwritten by other values during the course of the process run.
+The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*
 +
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
@@ -75,15 +82,15 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*
 +
-Decide whether the test run is to be carried out in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the test run in an existing console or RDP session or in a secure session, and specify an appropriate user.
 +
-You can link the user with a global credential variable. To do this,  click on the *Link a credential from credential pool* icon.
+You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
 Use the syntax `domain\username` instead of `username@domain.com` for domain users and `username` for local users, regardless of whether you enter the username manually or link a global credential.
 +
-Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the test configuration otherwise.
+Ensure that the bot that you want to execute the process is configured for the execution type, because you cannot save the test configuration otherwise.
 +
-The console or RDP session can only be overtaken by the bot if the specified user is logged in at run time. If no user or another user is logged in at run time, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
+The bot can overtake th console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
 +
 If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Bots*
@@ -166,7 +173,7 @@ Set a value by entering text or by clicking on a checkbox, and complete your ent
 [[production-configuration-link-globals]]
 Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[symbol,1.5%,1.5%] and select a variable. RPA Manager displays variables of the same type, assigned to the production phase, and only the credentials to which you are xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
 +
-The variables are typed. You can only enter or link values of the same type. The values entered here are only start values and they can be overwritten by other values during the course of the process run.
+The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*:
 +
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
@@ -174,15 +181,15 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether the productive run is to be carried out in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the productive run in an existing console or RDP session or in a secure session, and specify an appropriate user.
 +
-You can link the user with a global credential variable. To do this,  click on the *Link a credential from credential pool* icon.
+You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
 Use the syntax `domain\username` instead of `username@domain.com` for domain users and `username` for local users, regardless of whether you enter the username manually or link a global credential.
 +
-Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the run configuration otherwise.
+Ensure that the bot that you want to execute the process is configured for the execution type, because you cannot save the run configuration otherwise.
 +
-The console or RDP session can only be overtaken by the bot if the specified user is logged in at run time. If no user or another user is logged in at run time, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
+The bot can overtake the console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
 +
 [[runconfig-execution-enabletaskbar]] If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Process Trigger Execution*:
@@ -296,7 +303,7 @@ The activity parameters for each process are created in RPA Builder and given in
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
 [[invokable-configuration-link-globals]]
-Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click on the *Link a global activity parameter* icon. Only those variables assigned to the phase are displayed for linking. The variables are typed. You can only enter or link values of the same type. The values entered here are only start values and they can be overwritten by other values during the course of the process run.
+Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click on the *Link a global activity parameter* icon. Only those variables assigned to the phase are displayed for linking. The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*:
 +
 User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
@@ -304,15 +311,15 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether the invokable run is to be carried out in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the invokable run in an existing console or RDP session or in a secure session, and specify an appropriate user.
 +
-You can link the user with a global credential variable. To do this,  click on the *Link a credential from credential pool* icon.
+You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
 Use the syntax `domain\username` instead of `username@domain.com` for domain users and `username` for local users, regardless of whether you enter the username manually or link a global credential.
 +
-Make sure the bot you want to execute the process is configured for the execution type, because you cannot save the run configuration otherwise.
+Ensure that the bot that you want to execute the process is configured for the execution type because you cannot save the run configuration otherwise.
 +
-The console or RDP session can only be overtaken by the bot if the specified user is logged in at run time. If no user or another user is logged in at run time, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
+The bot can overtake the console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
 +
 If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Bots*:
