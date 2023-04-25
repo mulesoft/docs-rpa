@@ -12,6 +12,8 @@ Manage the users of RPA Manager, RPA Recorder, and RPA Builder:
 [IMPORTANT]
 If you are your organization's first admin user, you are responsible for creating all other users. You can do this yourself or create another user with admin privileges to whom you delegate this task.
 
+All users can edit their personal data in their profile view.
+
 == Before You Begin
 
 * The tenant admin is created first and can create other users.
@@ -28,6 +30,7 @@ If you are your organization's first admin user, you are responsible for creatin
 |User Management Administration
 
 |===
+* To edit your personal data in your profile view, you don't need any privileges.
 
 == Create a User
 
@@ -46,6 +49,9 @@ Time zone the user works in. All times not marked otherwise are shown in the tim
 * *Project Manager*:
 +
 Check *Project Manager* if the user is responsible for the automation of processes. Only users assigned as project managers can approve of a process candidate or start automation.
+* *Language*:
++
+Select the language for the RPA Manager user interface. You can choose between English (default) and Japanese.
 * *Available/Assigned Roles/Privileges*:
 +
 Click on a role or privilege to assign it to or remove it from the user.
@@ -194,6 +200,17 @@ Edit users to change their data or permissions:
 +
 For an explanation of the properties, see <<form-create-user, *Create a new User*>>.
 . Click *Save*.
+
+== Edit Your Personal Data
+
+Edit your profile to change your personal data:
+
+. In the navigation panel, click on your user name.
+. Select *Profile* from the drop-down.
+. Edit your data.
+. Click *Save*.
+
+Ask an administrator to assign you additional privileges you need.
 
 == Remove a User
 
