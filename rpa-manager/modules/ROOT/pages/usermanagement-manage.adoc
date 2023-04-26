@@ -210,7 +210,7 @@ Edit your profile to change your personal data:
 . Edit your data.
 . Click *Save*.
 
-Ask an administrator to assign you additional privileges you need.
+Ask an administrator to assign you any additional privileges you need.
 
 == Remove a User
 
