@@ -56,9 +56,9 @@ The operating system can block the execution of certain files. Ensure that all e
 
 To communicate with RPA Manager, RPA Bot requires you to enter the following Internet route in the *RPA Manager to connect* field on the RPA Bot Configurator pop-up:
 
-* +https://[your subdomain].rpa.mulesoft.com+
+* `+https://[your subdomain].rpa.mulesoft.com+`
 
-In addition, it is also necessary to open the internally used URL +https://*.cloudfront.net+, which is done typically by your network or security team.
+In addition, it is also necessary to open the internally used URL `+https://*.cloudfront.net+`, which is done typically by your network or security team.
 
 See xref:configuration.adoc#common-settings[Configuring RPA Bot] for more information on the RPA Bot Configurator pop-up.
 
