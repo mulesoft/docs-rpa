@@ -206,7 +206,7 @@ For an explanation of the properties, see <<form-create-user, *Create a new User
 Edit your profile to change your personal data:
 
 . In the navigation panel, click your user name.
-. Select *Profile* from the drop-down.
+. Select *Profile* from the drop-down menu.
 . Edit your data.
 . Click *Save*.
 
