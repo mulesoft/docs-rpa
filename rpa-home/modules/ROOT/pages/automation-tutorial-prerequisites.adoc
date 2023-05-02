@@ -2,30 +2,38 @@
 
 Before you begin your automation journey, verify that you have the required tools and access:
 
-* A user account to access RPA Manager
+* *User Accounts and Permissions* 
+** A user account to access RPA Manager
 +
 If you don't have a RPA Manager user, ask an administrator from your organization to set up your credentials with:
 +
-** Enough privileges to access the automation modules
-** Enough permissions to manage the different project phases
-** The *Project Manager* flag enabled for your user
-** Access to RPA Builder configured for your user
+*** Enough privileges to access the automation modules
+*** Enough permissions to manage the different project phases
+*** The *Project Manager* flag enabled for your user
+*** Access to RPA Builder configured for your user
 +
 The xref:rpa-manager::usermanagement-overview.adoc[User Management] module enables configuration of user privileges,  permissions, project managers, and RPA Builder assignments.
-* A user account to access MuleSoft Composer
+** A user account to access MuleSoft Composer
 +
 If you don't have a Composer user, ask an administrator from your organization to set up your credentials.
-* RPA Builder installed and configured in your environment
+** An RPA API Key to connect MuleSoft Composer and MuleSoft RPA
++
+See xref:rpa-manager::usermanagement-connect.adoc#create-an-api-key-for-a-user[Create an API Key for a User] for instructions. 
+** A Connected App configured in Access Management to use with MuleSoft RPA
++
+See xref:publish-process-automation-exchange.adoc#configure-connected-app-rpa[Configure a Connected App in Access Management] for instructions on creating and configuring the Connected App. 
+* *RPA Applications installed in your system*
+** RPA Builder installed and configured in your environment
 +
 See xref:rpa-builder::install-and-configure.adoc[Installing and Configuring RPA Builder] for installation and configuration instructions.
-* RPA Recorder installed and configured in your environment
+** RPA Recorder installed and configured in your environment
 +
 See xref:rpa-recorder::getting-started.adoc[Installing and Starting RPA Recorder] for installation and configuration instructions.
-* RPA Bot installed and configured in your environment
+** RPA Bot installed and configured in your environment
 +
 See xref:rpa-bot::installation.adoc[Installing RPA Bot] and xref:rpa-bot::configuration.adoc[Configuring RPA Bot] for installation and configuration instructions.
 +
-** Ensure you configure the xref:rpa-bot::configuration.adoc#secure-session[Secure Session] in the RPA Bot Configurator tool.
+*** Ensure you configure the xref:rpa-bot::configuration.adoc#secure-session[Secure Session] in the RPA Bot Configurator tool.
 
 [TIP]
 Use two browser windows: One to read instructions and one to perform the tasks.

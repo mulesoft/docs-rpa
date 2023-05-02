@@ -6,8 +6,8 @@ After evaluating and approving a process for automation, create an automation pr
 
 To create a category, follow these steps:
 
-. In RPA Manager, click the *Process Automation* module.
-. Click *Process Management*.
+. In the navigation panel of RPA Manager, click the *Process Automation* module.
+. Open the *Process Management* view.
 . Click *Create*.
 . In the *Name* field, write `Web Automations`.
 . Click *OK*.
@@ -16,11 +16,12 @@ To create a category, follow these steps:
 
 After you create a category, follow these steps to create your automation project:
 
-. In RPA Manager, click the *My RPA* module.
-. Click *My Backlog*.
+. In the navigation panel, click the *My RPA* module.
+. Open *My Backlog*.
 . Search for the *MuleSoft newsletter sign-up* project in the process list and click the *Start automation* (image:start-automation-icon.png[The approve icon,1.5%,1.5%]) button.
 . Provide the necessary information for the project:
 ** In *Process name*, write `MuleSoft newsletter sign-up`.
+** In *User*, select *Design*, *Build*, *Test*, and *Production* to ensure your user has access to all phases of this automation project.  
 ** In *Category*, select the *Web Automations* category, created in the previous step.
 ** Deselect *Use Process Board*.
 . Click *Save*
