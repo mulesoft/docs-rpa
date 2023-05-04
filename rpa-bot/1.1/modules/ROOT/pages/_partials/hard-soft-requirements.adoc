@@ -53,6 +53,16 @@ If you don't run the setup file as an administrator, the installation process mi
 +
 The operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Bot home directory and its subfolders are allowed to run. 
 
+=== Internet Route Requirements
+
+To communicate with RPA Manager, RPA Bot requires you to enter the following Internet route in the *RPA Manager to connect* field on the RPA Bot Configurator pop-up:
+
+* `+https://[your subdomain].rpa.mulesoft.com+`
+
+In addition, it is also necessary to open the internally used URL `+https://*.cloudfront.net+`, which is done typically by your network or security team.
+
+See xref:configuration.adoc#common-settings[Configuring RPA Bot] for more information on the RPA Bot Configurator pop-up.
+
 == Compatibility
 
 [%header%autowidth.spread]
