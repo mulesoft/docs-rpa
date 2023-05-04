@@ -1,12 +1,12 @@
 = Step 8: Integrate the Automation with Composer Flows
 
-After successfully publishing the process automation, you can connect your MuleSoft RPA account with MuleSoft Composer and trigger the automated process from a Composer Flow. During this step you'll create a new MuleSoft Composer flow, configure a trigger to start the execution, connect your Composer account with your MuleSoft RPA account, and trigger the execution of an RPA Process. 
+After successfully publishing the process automation, you can connect your MuleSoft RPA account with MuleSoft Composer and trigger the automated process from a Composer flow. During this step you create a new MuleSoft Composer flow, configure a trigger to start the execution, connect your Composer account with your MuleSoft RPA account, and trigger the execution of an RPA Process. 
 
-You can configure different types of triggers to start a Composer flow, including interactions with Salesforce and other systems. However, this tutorial uses the Scheduler event because it is a simple way to illustrate the process and start the execution of the Flow without having to configure connections with additional systems. 
+You can configure different triggers to start a Composer flow, including interactions with Salesforce and other systems. However, this tutorial uses the Scheduler event because it is a simple way to illustrate the process and start the execution of the flow without having to configure connections with other systems. 
 
 == Step 8.1: Create a New Composer Flow
 
-To create a new Composer Flow:
+To create a new Composer flow:
 
 . Open MuleSoft Composer.
 +
@@ -17,7 +17,7 @@ If you don't know what's your organization's MuleSoft Composer instance URL, con
 
 == Step 8.2: Add a Start Event for the Flow
 
-Every Composer Flow needs a start event to trigger the execution. To add a starting action: 
+Every Composer flow needs a start event to trigger the execution. To add a starting action: 
 
 . In the *What Should Start This Flow?* window, click *Scheduler*. 
 +
@@ -53,11 +53,11 @@ After successfully configuring the connection to MuleSoft RPA, follow these step
 . Click *Save*.
 . Click *Test* to test the Composer flow, including the call to the RPA Process. 
 +
-After the test finishes successfully, you see additional details in the RPA process card such as *RPA Execution ID* and *RPA Execution Status*, which shows `SUCCEED` to confirm the proper execution of the RPA process.
+After the test finishes successfully, you see additional details in the RPA process card, such as *RPA Execution ID* and *RPA Execution Status*, which shows `SUCCEED` to confirm the proper execution of the RPA process.
 
 == Next Steps
 
-Now that you’ve created a Composer flow that triggers the execution of an RPA process, it’s time to monitor the deployment.
+Now that you created a Composer flow that triggers the execution of an RPA process, it's time to monitor the deployment.
 
 Continue with: xref:automation-tutorial-monitor.adoc[]
 
