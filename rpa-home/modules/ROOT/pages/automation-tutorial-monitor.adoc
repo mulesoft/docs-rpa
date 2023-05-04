@@ -11,7 +11,7 @@ To see a live stream of the deployed process:
 . Click on *Process Streaming*.
 . Refresh the page and click *Show process streams*. 
 +
-If the button is disabled and shows *No sessions running* it means the process has not started yet. In that case, refresh the page and try again. 
+If the button is disabled and shows *No sessions running*, it means the process has not started yet. In that case, refresh the page and try again. 
 . Click *On* to enable showing screen captures of this process. 
 
 image:process-streaming.png[The process streaming window showing a process running, 50%, 50%]
