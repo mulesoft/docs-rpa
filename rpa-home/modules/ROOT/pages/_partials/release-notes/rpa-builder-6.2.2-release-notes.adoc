@@ -10,7 +10,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * Updated the EPPlus .NET library to version 6.2.0.
-* Added property in Excel Controlled Loop and Read from Excel file action steps to avoid recalculation of formulas in date cells.
+* Added property in *Excel Controlled Loop* and *Read from Excel file* action steps to avoid recalculation of formulas in date cells.
 * Updated the Chrome Driver to version 113.
 
 // == Compatibility
