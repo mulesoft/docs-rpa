@@ -29,7 +29,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="5a,1a"]
 |===
 | Issue Resolution | ID
-| The WorkflowValidator no longer freezes when preparing to validate properties with big input. | W-12613901
+| The WorkflowValidator no longer freezes when preparing to validate properties with a large amount of input. | W-12613901
 | Mapping multiple activity parameters to action steps no longer impacts performance. | W-12679827
 | Workbench operations (Move, Insert, Delete etc.) complete faster now. | W-12679809
 | REST Call no longer fails when the response body of a PATCH request is empty. | W-12965033
