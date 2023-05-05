@@ -51,7 +51,7 @@ Shows the regular expression at which the iteration stops.
 Shows the regular expression at which to read the Excel sheet.
 * *Row* 
 +
-Specifies the row that the Excel sheet is to be read from.
+Specifies the row at which to read the Excel sheet.
 * *Sheet name* 
 +
 Name of the spreadsheet. In the properties, you can only
