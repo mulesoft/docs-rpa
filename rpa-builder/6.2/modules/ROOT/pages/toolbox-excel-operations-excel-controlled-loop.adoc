@@ -16,30 +16,56 @@ session. You enter the source file in the Excel Session.
 
 *Excel Operation Settings*
 
-* *Column* The Excel sheet is read from this column.
-* *Empty rows count for break* Specifies the number of consecutive empty
+* *Column* 
++
+The Excel sheet is read from this column.
+* *Empty rows count for break* 
++
+Specifies the number of consecutive empty
 rows that the loop is to be terminated after.
-* *End column* The sheet is read up to this column.
-* *End row* Here, you can specify exactly the row that the sheet is to
+* *End column* 
++
+The sheet is read up to this column.
+* *End row* 
++
+Specifies exactly the row that the sheet is to
 be read to.
-* *Has a header* Indicates whether you have selected the option. If you
+* *Has a header* 
++
+Indicates whether you have selected the option. If you
 select this, the first row of the source file is used as the column
 header.
-* *Maximum number of rows* Specifies the maximum number of rows that are
-to be read.
-* *Only read a maximum number of rows* If you select this, you can
+* *Maximum number of rows* 
++
+Specifies the maximum number of rows to read.
+* *Only read a maximum number of rows* 
++
+If you select this, you can
 restrict the number of rows to be read.
-* *Read mode* Here, you can see the selected read mode.
-* *Regex condition for break* Shows the regular expression that the
+* *Read mode* 
++
+The selected read mode.
+* *Regex condition for break* 
++
+Shows the regular expression that the
 iteration is to be stopped from.
-* *Regex condition for first cell* Shows the regular expression that the
+* *Regex condition for first cell* 
++
+Shows the regular expression that the
 Excel sheet is to be read from.
-* *Row* Specifies the row that the Excel sheet is to be read from.
-* *Sheet name* Name of the spreadsheet. In the properties, you can only
+* *Row* 
++
+Specifies the row that the Excel sheet is to be read from.
+* *Sheet name* 
++
+Name of the spreadsheet. In the properties, you can only
 enter the name directly. In the wizard, however, you can select the
 spreadsheet directly or via the pin variable.
-* *Stop (loop break) criterion* Here, you can see the selected
-termination criterion (Terminate Loop)
+* *Stop (loop break) criterion* 
++
+The selected termination criterion (Terminate Loop).
+
+include::partial$toolbox-excel-controlled-loop.adoc[tag=troubleshootingSettings]
 
 == Inbound Variables
 
