@@ -3,5 +3,5 @@
 
 * *Disable recalculation of date formulas* 
 +
-Disables the recalculation of cell values formatted as DateTime to prevent RPA Builder from becoming unresponsive until it finishes calculating formulas that contain many dependencies. 
+Disables the recalculation of cell values formatted as DateTime to prevent RPA Builder from becoming unresponsive while it finishes calculating formulas that contain many dependencies. 
 //end::troubleshootingSettings[]

@@ -21,15 +21,13 @@ session. You enter the source file in the Excel Session.
 The Excel sheet is read from this column.
 * *Empty rows count for break* 
 +
-Specifies the number of consecutive empty
-rows that the loop is to be terminated after.
+Terminates the loop after the specified number of consecutive rows is reached.
 * *End column* 
 +
 The sheet is read up to this column.
 * *End row* 
 +
-Specifies exactly the row that the sheet is to
-be read to.
+The sheet is read only up to the specified row.
 * *Has a header* 
 +
 Indicates whether you have selected the option. If you
@@ -47,12 +45,10 @@ restrict the number of rows to be read.
 The selected read mode.
 * *Regex condition for break* 
 +
-Shows the regular expression that the
-iteration is to be stopped from.
+Shows the regular expression at which the iteration stops.
 * *Regex condition for first cell* 
 +
-Shows the regular expression that the
-Excel sheet is to be read from.
+Shows the regular expression at which to read the Excel sheet.
 * *Row* 
 +
 Specifies the row that the Excel sheet is to be read from.
