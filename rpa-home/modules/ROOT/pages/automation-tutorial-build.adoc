@@ -114,7 +114,7 @@ To upload the updated automation project to RPA Manager:
 
 You’ve modified the automation project, added a new task to the process, and verified that the automated process works as expected. Now, it is time to create a test plan in RPA Manager and execute the tests for this project.
 
-Continue with: xref:automation-tutorial-test.adoc[Step 6: Test the automation]
+Continue with xref:automation-tutorial-test.adoc[Step 6: Test the automation]
 
 == See Also
 

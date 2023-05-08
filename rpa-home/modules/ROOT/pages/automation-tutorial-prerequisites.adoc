@@ -42,10 +42,9 @@ Use two browser windows: One to read instructions and one to perform the tasks.
 
 After you set up your environment with the necessary applications and credentials, you are ready to start evaluating processes for automation.
 
-Continue with: xref:automation-tutorial-evaluate.adoc[Step 2: Evaluate a process for automation]
+Continue with xref:automation-tutorial-evaluate.adoc[Step 2: Evaluate a process for automation]
 
 == See Also
 
 * xref:rpa-manager::usermanagement-overview.adoc[User Management]
 * xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
-// link to installation guides?

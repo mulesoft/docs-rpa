@@ -1,12 +1,12 @@
 = Step 9: Monitor the Automation
 
-After publishing the process and executing it from Composer, use the Process Monitoring module to see a summary of the deployed bots and the process executions.
+After publishing the process to Exchange and executing it from Composer, use the Process Monitoring module to see a summary of the deployed bots and the process executions.
 
 == Step 9.1: See a Live Stream of the Deployed Process
 
 To see a live stream of the deployed process:
 
-. In Composer, open the flow you created in step 8 for editing and click *Test*. 
+. In Composer, open the flow you created in xref:automation-tutorial-composer.adoc#step-8-1[] for editing and click *Test*. 
 . Switch to RPA Manager and open the *Process Monitoring* module.
 . Click on *Process Streaming*.
 . Refresh the page and click *Show process streams*. 
@@ -36,7 +36,7 @@ Note that the *Work done* column shows *1*, which confirms that the execution of
 
 == Next Steps 
 
-At this point you finished creating a Composer Flow that calls an automated process that you previously created and published using MuleSoft RPA. 
+At this point you finished creating a Composer Flow that calls an automated process that you previously created and published to Exchange using MuleSoft RPA. 
 
 You can use this project as a template or starting point to develop further automation projects and integrations between MuleSoft Composer and RPA. 
 

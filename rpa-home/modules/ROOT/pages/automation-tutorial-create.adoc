@@ -30,7 +30,7 @@ After you create a category, follow these steps to create your automation projec
 
 Now that you've created an automation project, it's time to move to the design phase, in which you create the BPMN diagram for the process.
 
-Continue with: xref:automation-tutorial-design.adoc[Step 4: Design the BPMN diagram for the automation]
+Continue with xref:automation-tutorial-design.adoc[Step 4: Design the BPMN diagram for the automation]
 
 == See Also
 

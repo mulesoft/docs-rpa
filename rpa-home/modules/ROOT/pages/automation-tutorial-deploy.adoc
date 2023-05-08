@@ -1,9 +1,10 @@
-= Step 7: Publish the Automation
+= Step 7: Publish the Automation to Exchange
 
-After finishing the testing phase, the process is now in the production phase. It is time to create deployment configurations to specify the execution settings for the process. By creating an invokable run configuration, you publish the process to Anypoint Exchange and enable MuleSoft Composer to trigger its execution. 
+After finishing the testing phase, the process moves to the production phase. It is time to create an invokable run configuration, which publishes the process to Anypoint Exchange and enables MuleSoft Composer to trigger the execution of this process. 
 
 Before you can create an invokable run configuration, ensure that you configured your Anypoint Platform settings in RPA Manager. See xref:rpa-manager::organizationmanagement-settings.adoc#configure-anypoint-credentials[Configure Anypoint Platform Credentials] for instructions.
 
+[[Step-7-1]]
 == Step 7.1: Create an Invokable Run Configuration
 
 To create an invokable run configuration for a process:
@@ -19,9 +20,9 @@ To create an invokable run configuration for a process:
 
 == Next Steps
 
-Now that you’ve published the invokable run configuration, it is time to create a Composer flow that triggers the execution of this RPA process.
+Now that you’ve published the process to Exchange, it is time to create a Composer flow that triggers the execution of this RPA asset.
 
-Continue with: xref:automation-tutorial-composer.adoc[]
+Continue with xref:automation-tutorial-composer.adoc[]
 
 == See Also
 
