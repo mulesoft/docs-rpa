@@ -20,7 +20,7 @@ To create an invokable run configuration for a process:
 
 == Next Steps
 
-Now that you’ve published the process to Exchange, it is time to create a Composer flow that triggers the execution of this RPA asset.
+Now that you’ve published the process to Exchange, it is time to create a Composer flow that triggers the execution of this RPA process.
 
 Continue with xref:automation-tutorial-composer.adoc[]
 
