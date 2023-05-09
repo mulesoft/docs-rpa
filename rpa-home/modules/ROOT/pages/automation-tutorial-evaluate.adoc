@@ -74,7 +74,7 @@ If your username does not show in the dropdown menu, ensure your user has the *P
 
 == Next Steps
 
-After the process evaluation finishes and the process is approved by the assigned Project Manager or Center of Excellence, you can start creating the automation project.
+After the process evaluation finishes and the process is approved, the assigned Project Manager or Center of Excellence can start the automation project.
 
 Continue with xref:automation-tutorial-create.adoc[Step 3: Create the automation project]
 
