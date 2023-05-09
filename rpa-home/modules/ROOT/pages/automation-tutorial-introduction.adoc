@@ -2,8 +2,7 @@
 
 MuleSoft Robotic Process Automation (RPA) enables you to automate workflows that contain time-consuming manual tasks and integrate them with your MuleSoft Composer flows.
 
-//During this tutorial, you create a simple automation project that accesses the MuleSoft website and subscribes to the newsletter, and then you configure a Composer flow to trigger the automated process.
-During this tutorial, you create a simple automation project that accesses the MuleSoft website, subscribes to the newsletter, and then uses optical character recognition (OCR) to confirm that the process finishes successfully.
+During this tutorial, you create a simple automation project that accesses the MuleSoft website, subscribes to the newsletter, uses optical character recognition (OCR) to confirm that the process finishes successfully, and then you configure a Composer flow to execute the automated process.
 
 Follow these steps to complete the end-to-end automation journey:
 
