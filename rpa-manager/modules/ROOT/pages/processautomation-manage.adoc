@@ -24,8 +24,11 @@ Within a category, you can manage the process automation projects:
 |Open the *Process Automation* module
 |Process Automation Open
 
-|Create, edit, and delete processes
-|Process Create
+|Create, edit, and delete process projects
+|Process Create, Project Management
+
+|Copy projects
+|Process create, Project Management, Builder Usage
 
 |Change the process owner
 |Change Process Owner
@@ -35,8 +38,6 @@ Within a category, you can manage the process automation projects:
 
 |===
 
-* To create a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager].
-* To copy a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager] and xref:usermanagement-manage.adoc#assign-users-rpa-builder-access[assigned access to RPA Builder].
 * To transition a project to another phase, you must have the needed permissions as a member of the <<projectdata-processteam, process team>>.
 
 == Create an Automation Project
@@ -116,6 +117,8 @@ Change the manager of a project to represent changed responsibilities:
 . Click on the name of the category of the project.
 . In the *<category name>* view, click the *New Project Manager* icon image:newprojectmanager-icon.png["user-with-tie symbol",1.5%,1.5%] on the panel of the project for which you want to change the project manager.
 . In the window *New project manager*, select a user.
++ 
+You can only select a user who has the privilege *Project Management*.
 . If you do not want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager is added with no assigned phases and thus only able to see this project.*
 . Click *OK*
 

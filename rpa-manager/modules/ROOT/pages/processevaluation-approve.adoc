@@ -19,7 +19,7 @@ You approve an evaluated process candidate to refer it to a project manager or a
 |===
 
 * You can only approve evaluated process candidates.
-* You can only refer processes to users assigned as project manager or user groups assigned as center of excellence.
+* You can only refer processes to users assigned the `Project Management` privilege project manager or user groups assigned as `Center of Excellence`.
 
 == Select a Process for Approval
 
