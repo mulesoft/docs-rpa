@@ -2,6 +2,44 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[may-11-2023]]
+== May 11, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* The RPA Manager shows a new top navigation bar.
+* Within the execution tab of a run configuration (W-12592262)
+** The selection "Run in existing desktop session as logged in user" was renamed to "Run in existing Console or RDP session if specified user is signed in".
+** With selecting "Run in existing Console or RDP session if specified user is signed in" now a user (default or specific) must be specified.
+** These settings are used from RPA Bots as of version 1.2.0. Previous RPA Bots still work but do not use these settings.
+* In the User Management the **MuleSoft RPA Builder assignment** has been replaced by the new privilege **Builder Usage**. (W-12442691)
+* The flag **Project Manager** of a user has been replaced by the new privilege **Project Management**. (W-12442691)
+
+// !!! The following work items are prepared for deployment, but needs to be confirmed by engineering that these are really deployed.
+// * The RPA Manager is prepared for localization. In the user profile contains a language setting. Currently, only English is selectable. (W-12471559)
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| Removing a user group from an unprocessed user Task no longer lead to an error. | W-13062881
+// The following bug is related to the old "MuleSoft RPA Builder assignment". Now this was replaced with the new privilege **Builder Usage**. I (Jochen) didn't know how to formulate this, so I decided to "combine" both as permission.
+| Now a user is not able to still download a process in the MS RPA Builder after the permission has been revoked. | W-13071216
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, ensure that you import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+|===
+
+
 [[april-20-2023]]
 == April 20, 2023
 
