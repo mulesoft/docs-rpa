@@ -59,11 +59,13 @@ Enable the bot to use a Secure Session by entering credentials the bot uses to l
 
 === Before You Begin 
 
-To prevent issues while executing the Secure Session, ensure that you: 
+To prevent issues while executing the Secure Session: 
 
-* <<create-local-user, Created a local user for the Secure Session>>
+* <<create-local-user, Create a local user for the Secure Session>>
 +
-Creating a local user for the bot to use prevents receiving errors such as _Insufficient Privilege_, _Conflicting Username_, or _Wrong Credentials_.
+Creating a local user for the bot to use prevents receiving errors such as _Insufficient Privilege_, _Conflicting Username_, or _Wrong Credentials_. Using a local user speeds up the authentication process and terminal session setup. 
+
+If your security policies do not allow local users or the applications to use during the automation require SSO authentication via a domain user, use a domain user. 
 
 [[create-local-user]]
 === Create a Local User for the Secure Session
@@ -84,7 +86,7 @@ Ensure that the local _Username_ does not conflict with the _Username_ of the re
 . After creating the local user, navigate to *User Properties* > *Member Of* > *Add*.
 . Add the user to the following groups:
 +
-** Administrators
+** Administrators (required only when the applications to use require Administrator rights)
 ** Remote Desktop Users 
 
 === Secure Session Settings 
