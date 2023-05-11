@@ -8,13 +8,14 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* The RPA Manager shows a new top navigation bar.
-* Within the execution tab of a run configuration (W-12592262)
-** The selection "Run in existing desktop session as logged in user" was renamed to "Run in existing Console or RDP session if specified user is signed in".
-** With selecting "Run in existing Console or RDP session if specified user is signed in" now a user (default or specific) must be specified.
-** These settings are used from RPA Bots as of version 1.2.0. Previous RPA Bots still work but do not use these settings.
-* In the User Management the **MuleSoft RPA Builder assignment** has been replaced by the new privilege **Builder Usage**. (W-12442691)
-* The flag **Project Manager** of a user has been replaced by the new privilege **Project Management**. (W-12442691)
+* RPA Manager now shows a top navigation bar.
+* The *Execution* tab of from the Run Configuration is improved: 
+** Option *Run in existing desktop session as logged in user* is renamed to *Run in existing Console or RDP session if specified user is signed in*.
+** Selecting *Run in existing Console or RDP session if specified user is signed in* now requires you to specify a user.
+** These settings work in RPA Bots running version 1.2.0 or later. Earlier versions of RPA Bot ignore these settings.
+* The *MuleSoft RPA Builder assignment* option from User Management* is now replaced by the new privilege *Builder Usage*.
+* The *Project Manager* flag of a user is now replaced by the new privilege *Project Management*. 
+* RPA Manager now sends monthly emails containing a usage summary report.
 
 // !!! The following work items are prepared for deployment, but needs to be confirmed by engineering that these are really deployed.
 // * The RPA Manager is prepared for localization. In the user profile contains a language setting. Currently, only English is selectable. (W-12471559)
@@ -26,8 +27,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Removing a user group from an unprocessed user Task no longer lead to an error. | W-13062881
-// The following bug is related to the old "MuleSoft RPA Builder assignment". Now this was replaced with the new privilege **Builder Usage**. I (Jochen) didn't know how to formulate this, so I decided to "combine" both as permission.
-| Now a user is not able to still download a process in the MS RPA Builder after the permission has been revoked. | W-13071216
+| Users can no longer download a process in RPA Builder after the *Builder Usage* permission is revoked. | W-13071216
 |===
 
 // == Known Issues
