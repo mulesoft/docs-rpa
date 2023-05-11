@@ -1,0 +1,9 @@
+= Hardware and Software Requirements
+
+Before installing RPA Bot, ensure that your environment meets the minimum hardware and software requirements.
+
+include::partial$hard-soft-requirements.adoc[]
+
+== See Also
+
+* xref:installation.adoc[Installing RPA Bot]
