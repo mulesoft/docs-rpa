@@ -31,6 +31,6 @@ image:usage-report.png[A Usage report showing process names and bot minutes cons
 
 == Monthly Account Summary Emails
 
-Salesforce sends usage-based billing reports to every account on the 10th of each month. For MuleSoft RPA customers, Salesforce starts sending these reports on June 10th 2023. By default, Salesforce sends these emails to the account's billing contact. 
+Starting on June 2023, Salesforce sends usage-based billing reports to every MuleSoft RPA customer on the 10th of each month. By default, Salesforce sends these emails to the account's billing contact. 
 
 For additional information about the reports, the list of recipients, and other details, see the https://help.salesforce.com/s/articleView?id=000390885&type=1[Monthly Account Summary Email FAQ^].
