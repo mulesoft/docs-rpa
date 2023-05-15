@@ -6,7 +6,7 @@ After creating a new automation project, you can start designing the BPMN diagra
 
 Follow these steps to edit your process BPMN diagram using RPA Recorder:
 
-. In RPA Manager, click the *My RPA* module.
+. In the navigation panel of RPA Manager, click the *My RPA* module.
 . Click *My Backlog*.
 . Search for the *MuleSoft newsletter sign-up* project in the process list and click the *Open process* (image:open-process.png[The open process icon,1.5%,1.5%]) button.
 . In the *Automation* panel, click the *Record BPMN* (image:record-process.png[The record process icon,1.5%,1.5%]) button.
@@ -68,7 +68,7 @@ image:publish-button.png[The Publish button, 40%, 40%]
 
 Now that you've created a BPMN diagram for your automation project and published it, it's time to move to the build phase, in which you can edit the diagram and specify the actions to execute for each action step.
 
-Continue with: xref:automation-tutorial-build.adoc[Step 5: Build the automation from the BPMN diagram]
+Continue with xref:automation-tutorial-build.adoc[Step 5: Build the automation from the BPMN diagram]
 
 == See Also
 
