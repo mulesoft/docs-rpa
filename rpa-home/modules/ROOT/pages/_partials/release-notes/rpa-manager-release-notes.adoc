@@ -9,11 +9,11 @@ RPA Manager is the cloud-based control plane for your automation projects.
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * RPA Manager now shows a top navigation bar.
-* The *Execution* tab of from the Run Configuration is improved: 
-** Option *Run in existing desktop session as logged in user* is renamed to *Run in existing Console or RDP session if specified user is signed in*.
+* Improved the *Execution* tab for Run Configuration: 
+** The *Run in existing desktop session as logged in user* option is now *Run in existing Console or RDP session if specified user is signed in*.
 ** Selecting *Run in existing Console or RDP session if specified user is signed in* now requires you to specify a user.
 ** These settings work in RPA Bots running version 1.2.0 or later. Earlier versions of RPA Bot ignore these settings.
-* The *MuleSoft RPA Builder assignment* option from User Management* is now replaced by the new privilege *Builder Usage*.
+* The *MuleSoft RPA Builder assignment* option from *User Management* is now the new privilege *Builder Usage*.
 * The *Project Manager* flag of a user is now replaced by the new privilege *Project Management*. 
 
 // Commenting this feature until we have at least one additional language. 
