@@ -28,3 +28,9 @@ Follow these steps to create a usage report in RPA Manager:
 +
 image:usage-report.png[A Usage report showing process names and bot minutes consumed]
 . Optionally, you can print or download the report by clicking the *Print* (image:print-icon.png[The Print icon, 5%, 5%])button.
+
+== Monthly Account Summary Emails
+
+Salesforce sends usage-based billing reports to every account on the 10th of each month. For MuleSoft RPA customers, Salesforce starts sending these reports on June 10th 2023. By default, Salesforce sends these emails to the account's billing contact. 
+
+For additional information about the reports, the list of recipients, and other details, see the https://help.salesforce.com/s/articleView?id=000390885&type=1[Monthly Account Summary Email FAQ^]
