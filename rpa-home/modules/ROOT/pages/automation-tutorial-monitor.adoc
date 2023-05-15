@@ -1,24 +1,27 @@
-= Step 8: Manage and Monitor the Automation
+= Step 9: Monitor the Automation
 
-After deploying the process, use the Process Monitoring module to see a summary of the deployed bots and the process executions.
+After publishing the process to Exchange and executing it from Composer, use the Process Monitoring module to see a summary of the deployed bots and the process executions.
 
-== Step 8.1: See a Live Stream of the Deployed Process
+== Step 9.1: See a Live Stream of the Deployed Process
 
 To see a live stream of the deployed process:
 
-. In RPA Manager, open the *Process Monitoring* module.
+. In Composer, open the flow you created in xref:automation-tutorial-composer.adoc#step-8-1[] for editing and click *Test*. 
+. Switch to RPA Manager and open the *Process Monitoring* module.
 . Click on *Process Streaming*.
-
-The *Process Streaming* section shows a window for each run configuration that is currently executing. The stream consists of a sequence of images that the RPA bot records during process execution.
+. Refresh the page and click *Show process streams*. 
++
+If the button is disabled and shows *No sessions running*, it means the process has not started yet. In that case, refresh the page and try again. 
+. Click *On* to enable showing screen captures of this process. 
 
 image:process-streaming.png[The process streaming window showing a process running, 50%, 50%]
 
-The *On* button enables screen captures of the process the bot is carrying out.
+The *Process Streaming* section shows a window for each run configuration that is currently executing. The stream consists of a sequence of images that the RPA bot records during process execution.
 
 [TIP]
 If this section shows empty, it is possible that the execution of the process has already finished, meaning that it is not running now and it cannot provide a stream of the process.
 
-== Step 8.2: Monitor the Deployed Process
+== Step 9.2: Monitor the Deployed Process
 
 To see the active bots and the deployed processes:
 
@@ -31,16 +34,11 @@ image:process-monitor.png[The Bot state and operation window showing process exe
 
 Note that the *Work done* column shows *1*, which confirms that the execution of the process finished one time.
 
-== Step 8.3: Revoke the Deployed Process
+== Next Steps 
 
-After monitoring the process, follow these steps to revoke the deployment:
+At this point you finished creating a Composer Flow that calls an automated process that you previously created and published to Exchange using MuleSoft RPA. 
 
-. In RPA Manager, open the *My RPA* module.
-. Click *My Processes*.
-. Click *MuleSoft newsletter sign-up*.
-. In the *Production configurations* panel, click the *Select action* drop-down menu.
-. Click *Revoke process*.
-. Select your run configuration and click *Execute*.
+You can use this project as a template or starting point to develop further automation projects and integrations between MuleSoft Composer and RPA. 
 
 == See Also
 
