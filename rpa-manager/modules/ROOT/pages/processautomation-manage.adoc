@@ -193,7 +193,7 @@ You can set the priority of the task to low, medium, or high. The task item disp
 Date on which the task should be completed.
 * *Effort*:
 +
-Time the task approximat    ely takes.
+Approximate amount of time that the task takes.
 . Click Save.
 
 === Edit a Task
