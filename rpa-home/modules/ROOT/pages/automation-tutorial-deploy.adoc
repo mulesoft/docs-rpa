@@ -13,8 +13,8 @@ To create an invokable run configuration for a process:
 . Click the *MuleSoft newsletter sign-up* project.
 . In the *Production configurations* panel, click *Create invokable run configuration*.
 . Specify a *Configuration name*, for example, *Invokable RPA Process*, and click *Next*.
-. Click *Next*(this process has no activity parameters).
-. Click *Next*(this test has no user tasks).
+. Click *Next* (this process has no activity parameters).
+. Click *Next* (this test has no user tasks).
 . Select *Run in secure session* and click *Next*.
 . Select the bot to carry out the execution and click *Save & Publish*. 
 

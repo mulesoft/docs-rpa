@@ -69,7 +69,7 @@ After you finish evaluating a process for automation and confirm that it is suit
 . Select the *Project Manager* option.
 . In the *Project Manager* dropdown menu, select your username.
 +
-If your username does not show in the dropdown menu, ensure your user has the *Project Manager* flag enabled.
+If your username does not show in the dropdown menu, ensure your user has the *Project Management* privilege.
 . Click *OK*.
 
 == Next Steps
