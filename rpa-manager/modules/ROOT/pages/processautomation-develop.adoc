@@ -31,6 +31,9 @@ As long as the project is in the build phase, it can be seen in the repository o
 |Record processes with RPA Recorder
 |Process Recording
 
+|Implement process projects in RPA Builder
+|Builder Usage
+
 |Open, use and edit the activity library in RPA Builder
 |Activity Library Open, Activity Library Administration
 
@@ -38,7 +41,6 @@ As long as the project is in the build phase, it can be seen in the repository o
 
 * To record a process, RPA Recorder must be installed and connected to RPA Manager.
 * To build a process automation, RPA Builder must be installed and connected to RPA Manager.
-* To use RPA Builder, obtain an RPA Builder assignment in the *Users* view of the *User Management* module.
 * A project must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 

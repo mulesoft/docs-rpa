@@ -24,5 +24,4 @@ You must prepare some project properties before starting the automation of a pro
 * xref:myrpa-start.adoc[Starting Automation of Approved Processes]
 * xref:processautomation-manage.adoc#create-an-automation-project[Create an Automation Project]
 * xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[Assign Process Applications to Bots]
-* xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[Designate a User as Project Manager]
 * xref:usermanagement-manage#change-process-assignments-of-a-user[Change Process Assignments of a User]

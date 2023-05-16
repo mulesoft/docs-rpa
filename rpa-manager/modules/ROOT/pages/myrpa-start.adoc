@@ -1,8 +1,12 @@
 = Starting Automation of Approved Processes
 
-The *Team Backlog* view contains a list of all previously evaluated processes for which you can claim or reject responsibility as project manager.
+The *Team Backlog* view contains a list of all evaluated processes for which you can claim or reject responsibility as member of a center of excellence.
 
-The center of excellence is a user group that, for the approval of an evaluated process, has been selected as project manager in place of an individual user.
+If you claim a process, it is moved to your *My Backlog* view of the *My RPA* module.
+
+Your *My Backlog* view also contains processes approved directly to you as a project manager.
+
+You can start the automation of a process as a project manager from your backlog.
 
 == Before You Begin
 
@@ -17,15 +21,14 @@ The center of excellence is a user group that, for the approval of an evaluated 
 
 |===
 
-* Your user must be marked as *Project Manager*.
-Learn how to xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[Designate a User as Project Manager].
 * If there is no fitting category for the process in the *Process Management* view of the *Process Automation* module, create a new one.
 
 == Claim a Process
 
 Claim a process to assume the project manager role for the automation of this process. The process is moved to the *My Backlog* view of the *My RPA* module.
 
-. In the *Team Backlog* view of the *My RPA* module, click the icon *Claim*.
+. Open the *Team Backlog* view of the *My RPA* module
+. Click the icon *Claim*.
 
 == Create a Process Project
 
@@ -33,10 +36,11 @@ Create a project for the process that contains administrative data.
 
 On the *Settings* tab, you enter general data that is required for running the Process. This includes team members and applications for execution of the Process.
 
-On the Process Costs tab, you enter data with which you can calculate the costs and the break-even point of the process automation. This data is required in the Finance Analysis view in the Process Operations module.
+On the *Process Costs* tab, you enter data with which you can calculate the costs and the break-even point of the process automation. This data is required in the Finance Analysis view in the Process Operations module.
 
 
-. In the *My Backlog* view of the *My RPA* module, click the icon *Start automation*.
+. Open the *My Backlog* view of the *My RPA* module.
+. Click the icon *Start automation*.
 . Complete the form *Create process*:
 +
 include::rpa-manager::partial$form-automationproject.adoc[]
@@ -44,6 +48,7 @@ include::rpa-manager::partial$form-automationproject.adoc[]
 
 == Reject a Process Project
 
-Reject processes that were approved to the wrong center of excellence. The process is removed from the *Team Backlog* view in the *My RPA* module and appears with status *Rejected* in the *Process Evaluation* view in *Process Evaluation* module.
+Reject processes that were approved to the wrong center of excellence. The process is removed from the *My Backlog* or the *Team Backlog* view in the *My RPA* module and appears with status *Rejected* in the *Process Evaluation* view in *Process Evaluation* module.
 
-. In the *Team Backlog* view of the *My RPA* module, click the icon *Reject*.
+. Open the *My Backlog* or the *Team Backlog* view of the *My RPA* module.
+. Click the icon *Reject*.

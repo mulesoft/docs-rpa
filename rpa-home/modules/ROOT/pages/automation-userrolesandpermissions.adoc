@@ -1,8 +1,8 @@
 = User Roles and Permissions
 
-Automating a process takes an interdisciplinary team. Knowledge, skills and responsibilities are distributed over several different persons. Not everyone can do anything or should know anything for security reasons. These restrictions are implemented as user roles and permissions in RPA Manager.
+Automating a process takes an interdisciplinary team. Knowledge, skills, and responsibilities are distributed over several different persons. Not everyone can do anything or should know anything for security reasons. These restrictions are implemented as user roles and permissions in RPA Manager.
 
-== What Do Users Need Permission For?
+== User Permission Scopes
 
 Permissions determine what users of the RPA products can see and do:
 
@@ -22,87 +22,61 @@ Permissions determine what users of the RPA products can see and do:
 ** performance
 * Report results
 
-== What Types of Permissions Are There?
+== User Permissions Types
 
-Permissions have different scopes and purposes. They can be combined.
+Permissions have different scopes and purposes. They can be combined. 
 
-=== Privileges
 
-Privileges are predefined fine-granular permissions to view and process data. They can be compiled to individual roles.
-For some tasks users need assignments or permissions additional to privileges.
+[cols="1,2,2"]
+|===
+|*Permission Type* |*Scope* |*Example*
 
-==== Examples of Privileges
-
-You can guess the purpose of these example privileges from their name:
+|*Privileges*
+a|* Predefined fine-granular permissions to view and process data.
+* Can be compiled to individual roles.
+* For some tasks users need permissions additional to privileges.
+a|You can guess the purpose of these example privileges from their name:
 
 * ``Process Automation Open``
+* ``Project Management``
 * ``Process Evaluation Approval to a Project Manager``
 * ``Open Evaluation Templates``
+* ``Builder Usage``
 * ``Create Global Variables``
 * ``Edit Evaluation Templates``
 * ``Change Project Manager``
 * ``Upcoming Process Changes Administration``
 
-==== Examples of Roles
+|*Roles*
+a|* Combination of privileges.
+* Users can have more than one role.
+|The role ``Business User`` could include the privileges ``Activity Library Administration``, ``Activity Library Open``, ``Dashboard Open``, ``Process Automation Open``, and ``Process Recording``.
 
-The role ``Business User`` could include the privileges ``Activity Library Administration``, ``Activity Library Open``, ``Dashboard Open``, ``Process Automation Open``, and ``Process Recording``.
+|*Assignments*
+a|* Permissions valid for a phase in the lifecycle of a project.
+* Enable a user to assume responsibility for a project. 
+* Assignments are combined with privileges. 
+a|* A user who is part of a user group marked as ``Center of Excellence`` also needs the privilege ``Process Create`` to start the automation of a process.
+* RPA developers need the privilege ``Process Automation Open`` to see which newly designed processes they can build. They need the privilege `Builder Usage` and the permission for the build phase as a team member to work on the implementation of the process in RPA Builder. If senior RPA developers need to check the build first before running tests in RPA Manager, the project manager can assign them the advanced permission ``Release to Test``.
 
-==== Resources
+|*Individual Permission*
+a|* Permissions for security relevant process elements.
+* Granted only to selected users on element creation.
+a| Credentials can only be used by users selected on creation.
 
-View a xref:automation-userrolesandpermissions-privilegesbymodule.adoc[List of Privileges by Module].
+|*Transferred Permission*
+a|* API Keys are assigned to users whose identity and permission set is used to complete tasks via REST API.
+* API Keys have an expiration date.
+|API Keys are needed when an RPA Manager Invokable Configuration is included into a Composer Flow.
 
-Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
-
-=== Assignments
-
-Assignments enable a user to either assume responsibility for a project or to use another RPA product. Assignments can be combined with privileges.
-
-==== Examples of Assignments
-
-A user marked as ``Project Manager`` also needs the privilege ``Process Create`` to start the automation of a process.
-
-==== Resources
-
-Learn how to xref:rpa-manager::usermanagement-manage.adoc#designate-a-user-as-project-manager[Designate a User as Project Manager].
-
-Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-users-rpa-builder-access[Assign Users RPA Builder Access].
-
-=== (Advanced) Permissions
-
-Advanced permissions limit the granted permissions to one or more phases in the life-cycle of an automation project.
-
-==== Examples of (Advanced) Permissions
-
-An RPA developer needs the privileges ``Process Automation Open`` to see which newly designed processes she can build. She needs to have RPA Builder access assigned to her and the permission for the build phase to work on the implementation in RPA Builder. If a senior RPA developer needs to check the build first before running tests in RPA Manager, only she may be assigned the advanced permissions ``Release to Test``.
-
-==== Resources
-
-Learn how to xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[Assign Permissions to a Process Team Member].
-
-== How Are Permissions Processed?
-
-=== Granting Permissions
-
-All permissions are assigned to users who have access to RPA Manager.
-Some tasks can be offered to a designated group of users, but only a single user can complete the task.
-
-Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User].
-
-Learn how to xref:rpa-manager::usermanagement-manage.adoc#designate-a-user-as-project-manager[Designate a User as Project Manager].
-
-Learn how to xref:rpa-manager::usermanagement-assemble.adoc#designate-user-groups-as-centers-of-excellence[Designate User Groups As Centers of Excellence].
-
-Learn how to xref:rpa-manager::usermanagement-manage.adoc#assign-users-rpa-builder-access[Assign Users RPA Builder Access].
-
-Learn how to xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[assign permissions to a process team member].
-
-=== Transferring Permissions
-
-API Keys are assigned to users whose identity and permission set is used to complete tasks via REST API.
-API Keys are needed for example when an RPA Manager Invokable Configuration is included into a Composer Flow.
-
-Learn how to xref:rpa-manager::usermanagement-connect.adoc#create-an-api-key-for-a-user[Create an API key for a User].
+|===
 
 == See Also
 
 * xref:rpa-manager::index.adoc[RPA Manager Overview]
+* xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a User]
+* xref:automation-userrolesandpermissions-privilegesbymodule.adoc[List of Privileges by Module]
+* xref:rpa-manager::usermanagement-assemble.adoc#designate-user-groups-as-centers-of-excellence[Designate User Groups As Centers of Excellence]
+* xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[Assign Permissions to a Process Team Member]
+* xref:rpa-manager::processautomation-prepare-deployment-credential.adoc[Manage Credentials]
+* xref:rpa-manager::usermanagement-connect.adoc#create-an-api-key-for-a-user[Create an API key for a User].

@@ -7,9 +7,9 @@ After downloading and installing RPA Builder, configure the connection with RPA 
 . Download the latest RPA Builder installer from the *Home* page of RPA Manager.
 . Right-click the installer file and select *Run as Administrator*.
 . Continue the installation process until it finishes.
-. Ensure you have access set up in RPA Manager.
+. Ensure you have the xref:rpa-home::automation-userrolesandpermissions-privilegesbymodule.adoc#privileges-of-the-rpa-builder-category[required privileges] assigned in RPA Manager.
 +
-See xref:rpa-manager::usermanagement-manage.adoc#assign-users-rpa-builder-access[Assign Users RPA Builder Access] for instructions. If you are in doubt, contact your organization's RPA administrator.
+See xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a Users] for instructions. If you are in doubt, contact your organization's RPA administrator.
 
 [[connect-with-rpa-manager]]
 == Connect RPA Builder with RPA Manager

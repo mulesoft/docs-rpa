@@ -16,6 +16,7 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 |===
 
 * Only productive processes for which at least one configuration has been created and for which you are a member of the process team are displayed.
+* Check xref:processautomation-deploy.adoc#runconfig-execution-enabletaskbar[*Enable Taskbar (Start menu, taskbar buttons)*] in the run configuration to view the desktop of the computer that runs the process. Otherwise, a black screen is shown.
 
 == Watch a Bot at Work
 
