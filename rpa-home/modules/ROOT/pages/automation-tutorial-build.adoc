@@ -93,6 +93,10 @@ This action starts the execution of the process and shows the *Test run informat
 image:builder-test-run-information.png[The test run information in RPA Builder, 50%, 50%]
 +
 As the tasks start executing, notice that new entries appear in this window and show a *Task execution succeeded* (image:task-execution-icon.png[Task execution succeeded icon, 2%, 2%]) icon in the *Run state* column when they finish.
++
+[IMPORTANT]
+Because the RPA Bot conducts the test using your current Desktop session, do not interact with any elements in the screen until the test finishes. Otherwise, the test could fail. 
++
 . Click *Close* to close the *Test run information* window and return to RPA Builder.
 
 After confirming that the test is successful, upload the project to RPA Manager.
@@ -110,7 +114,7 @@ To upload the updated automation project to RPA Manager:
 
 You’ve modified the automation project, added a new task to the process, and verified that the automated process works as expected. Now, it is time to create a test plan in RPA Manager and execute the tests for this project.
 
-Continue with: xref:automation-tutorial-test.adoc[Step 6: Test the automation]
+Continue with xref:automation-tutorial-test.adoc[Step 6: Test the automation]
 
 == See Also
 

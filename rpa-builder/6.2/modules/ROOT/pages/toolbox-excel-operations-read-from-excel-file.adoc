@@ -14,23 +14,34 @@ Session].
 
 *Excel Operation Settings*
 
-* *Column* This is where
-you enter the column that is to be read. You can enter letters or
+* *Column* 
++
+Specifies the column to read. You can enter letters or
 numbers in this field. If you enter a number, this will correspond to
-the number of the column in the Excel file.
-** Example: Instead of A for column A, you can enter a 1 for column A, a
+the number of the column in the Excel file. For example, instead of A for column A, you can enter a 1 for column A, a
 2 for column B (instead of the letter B), and so on.
 
-* *Range* (drop-down selection, default: Cell) There are three different
-modes available:
-** *Cell* Text will be read from a specific cell. The result will be
-output as a string.
-** *Row* Text will be read from a complete row. The result will be
-output as an array.
-** *Column* Text will be read from a complete column. The result will be
-output as an array.
-* *Row* This is where you enter the cell or row number that should be read.
-* *Sheet name* Name of the spreadsheet. Under Properties you can only enter the name directly, unlike in the <<Wizard>>.
+* *Range* 
++
+Specifies the read mode to use: 
++
+** *Cell* 
++
+Reads text from a specific cell and outputs the result as a string.
+** *Row* 
++
+Reads text from a complete row and outputs the result as an array.
+** *Column* 
++
+Reads text from a complete column and outputs the result as an array.
+* *Row* 
++
+Specifies the cell or row number to read.
+* *Sheet name* 
++
+Name of the spreadsheet. Under Properties you can only enter the name directly, unlike in the <<Wizard>>.
+
+include::partial$toolbox-excel-controlled-loop.adoc[tag=troubleshootingSettings]
 
 == Inbound Variables
 

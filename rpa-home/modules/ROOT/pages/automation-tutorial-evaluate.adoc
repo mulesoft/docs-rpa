@@ -16,8 +16,8 @@ After gathering this information, you can use the default evaluation template or
 Create a new evaluation criterion to use during the process evaluation:
 
 . Open RPA Manager.
-. Click the *Process Evaluation* module.
-. Click *Evaluation Criteria*.
+. In the navigation panel, click the *Process Evaluation* module.
+. Open the *Evaluation Criteria* view.
 . Click *Create Benefit*.
 ** In the *Name* field, write: `Concurrency`
 ** Click the *Exclude* checkbox
@@ -29,8 +29,8 @@ Create a new evaluation criterion to use during the process evaluation:
 
 After you create new criteria for evaluation, create a new evaluation template that includes that criteria:
 
-. In RPA Manager, Click the *Process Evaluation* module.
-. Click *Evaluation Templates*.
+. In the navigation panel, click the *Process Evaluation* module.
+. Open the *Evaluation Templates* view.
 . Click *Create*.
 ** In the *Name* field, write: `My custom template`
 ** Scroll down and verify that the *Exclude MuleSoft default evaluation criteria* checkbox is unselected
@@ -46,8 +46,9 @@ When creating a process evaluation, you can select the default evaluation templa
 
 To create a new process evaluation using the custom template created in the previous step:
 
-. In RPA Manager, Click the *Process Evaluation* module.
-. Click *Process Evaluation*.
+. In the navigation panel, click the *Process Evaluation* module.
+. Open the *Process Evaluation* view.
+. Click *Create*.
 ** In the *Name* field, write: `MuleSoft newsletter sign-up`
 ** Click the *Template* dropdown and select *My custom template*
 . Click *OK*.
@@ -62,18 +63,20 @@ After confirming these details, you are redirected to the evaluation view where 
 
 After you finish evaluating a process for automation and confirm that it is suitable, submit the process to the next step to start an automation project:
 
-. In RPA Manager, click the *Process Evaluation* module.
-. Click *Process Evaluation*.
+. In the navigation panel, click the *Process Evaluation* module.
+. Open the *Process Evaluation* view.
 . Search for the *MuleSoft newsletter sign-up* project in the process list and click the *Approve* (image:approve-icon.png[The approve icon,1.5%,1.5%]) button.
-. In the window that opens, enable the *Project Manager* option.
+. Select the *Project Manager* option.
 . In the *Project Manager* dropdown menu, select your username.
++
+If your username does not show in the dropdown menu, ensure your user has the *Project Management* privilege.
 . Click *OK*.
 
 == Next Steps
 
 After the process evaluation finishes and the process is approved, the assigned Project Manager or Center of Excellence can start the automation project.
 
-Continue with: xref:automation-tutorial-create.adoc[Step 3: Create the automation project]
+Continue with xref:automation-tutorial-create.adoc[Step 3: Create the automation project]
 
 == See Also
 
