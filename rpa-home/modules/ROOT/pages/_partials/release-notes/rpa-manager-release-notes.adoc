@@ -2,6 +2,36 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[may-18-2023]]
+== May 18, 2023
+
+// == What's New
+//include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+// Commenting this feature until we have at least one additional language.
+//* RPA Manager now inclues a language selector in the user profile.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| Add support for missing time zone 'Sao Tome Standard Time'. | W-12658271
+// I (Michael) have changed the text of the bug here to make it more general since it has been changed in all places where time zones are displayed.
+| The time zone 'Samoa' is not displayed correctly. | W-12173355
+| The link in the top navigation bar for 'Anypoint Platform' points to the wrong location. | W-13220858
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, ensure that you import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+|===
+
 [[may-15-2023]]
 == May 15, 2023
 
