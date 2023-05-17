@@ -49,16 +49,18 @@ Learn how to create xref:processautomation-deploy.adoc#production-configuration[
 
 == View the Bot Log Messages
 
-The bot log messages contain detailed information about a process run. Each bot activity is listed along with information about the run result. Bot messages contained in activities are displayed under *Additional Customer Info*.
+The bot log messages contain detailed information about a process run. RPA Manager lists each bot activity with information about the run result and displays bot messages contained in activities under *Additional Customer Info*.
 
 To view the bot log messages:
 
-. Open the *Process Run Statistics* view in the *Bot Management* or, from within a project in test or production phase in the *Process Automation* module, click on a run result number in the *Run Results* panel.
-. Click the *Bot Message Log* icon image:botmessagelog-icon.png[list symbol,1.5%,1.5%] in the table row of the bot whose messages you want to read.
+. Open the *Process Run Statistics* view in the *Bot Management*.
++
+Alternatively, in the *Process Automation* module:
++
+** From within a project in the test or production phase, click on a run result number in the *Run Results* panel.
+. Click the *Bot Message Log* icon image:botmessagelog-icon.png[list symbol,1.5%,1.5%] in the table row of the bot you want to read messages from.
 
-The window *Bot Log Messages* opens. 
-
-Bot messages can be concatenated and truncated. To view the complete bot log, download the log files.
+Bot messages might be concatenated and truncated. To view the complete bot log, download the log files.
 
 == Download the Log Files of a Bot
 
@@ -71,7 +73,7 @@ This option is only available when the bot has the status OK.
 An IT administrator can configure the content of the package in the RPA Bot Configurator on the computer where the bot is installed.
 
 . Open the *Bots* view of the *Bot Management* module.
-. Click the *Download Logfiles* icon image:download-icon.png[disk-with-downwards-arrow symbol,1.5%,1.5%]  in the table row of the bot whose log files you want to read.
+. Click the *Download Logfiles* icon image:download-icon.png[disk-with-downwards-arrow symbol,1.5%,1.5%]  in the table row of the bot you want to read the log files from.
 . Extract the contents and view the relevant files.
 
 == Restart a Bot
@@ -88,7 +90,7 @@ The latter might be the case when the bot has the status OK and a deployed proce
 
 When you restart the bot, the bot and all of its threads are initially stopped after the pending tasks have been completed. The subsequent restart is then performed in a clean environment, which means the problem should no longer occur.
 
-Restarting a bot only works if that bot has the status OK. Otherwise it is placed in the task list and is executed as soon as the bot is OK again.
+Restarting a bot only works if that bot has the status OK. Otherwise RPA Manager places the restart in the task list and executes it soon as the bot is OK again.
 
 . In the *Bots* view of the *Bot Management* module, click the *Restart* icon in the table row of the bot you want to restart.
 . Wait a few seconds and refresh the browser to see the effect.
