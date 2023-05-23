@@ -1,0 +1,53 @@
+= Upcoming Process Changes
+
+RPA developers save activities that can be reused in different processes, such as login procedures or creation of data sets, in the activity library of the RPA Builder. To reuse a saved activity, an RPA developer can import a reference to this activity into a bot task. 
+
+If an RPA developer edits a referenced activity, RPA Manager shows a label with the number of changed activities next to the navigation items *Process Operations* and *Upcoming Process Changes*. 
+
+In the view *Upcoming Process Changes* you can see which processes contain the changed activities and deploy the newest version. 
+
+== Before You Begin 
+
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|Open the *Upcoming Process Changes* view of the *Process Operations* module.
+|Upcoming Process Changes Open
+
+|Deploy upcoming process changes.
+|Upcoming Process Changes Administration
+
+|===
+
+* To deploy a process change, transfer the project to the test phase.
+
+== View Upcoming Process Changes 
+
+If you see a label with a number next to the *Process Operations* or *Upcoming Process Changes* navigation entry, an RPA developer has edited an activity in the activity library in RPA Builder.
+
+To view the changes:
+
+. Open the *Upcoming Process Changes* view in the *Process Operations* module.
+. View the table.
+. To compare the deployed version with the latest version of an activity, click the *Show Changes* icon image:show-icon.png[eye symbol,1.5%,1.5%] in the table row of the activity.
+
+== Map BPMN Element Names to Process Activities
+
+If a process contains the same activity more than once, use your browser's developer tools to find out which activity contaims the reference:
+
+. Open the *Upcoming Process Changes* view in the *Process Operations* module.
+. Right-click on a process name, open the project in another tab and open the *Automation* panel there.
+. In the *Automation* panel, right-click on one of the possible activities and choose *Inspect*. 
+
+The *Elements* panel of the browser shows the highlighted source code of the element. 
+
+To map this element to an element shown in the *Upcoming Process Changes* table:
+
+. In the *Elements* panel, look up the text next to *data-element-id=* contained in the source code belonging to the highlighted text.
+. Switch back to the *Upcoming Process Changes* tab.
+. Compare the *data-element-id* with the *Activity Reference Name* in the list of all process changes.
+ 
+ // insert immage from https://doc.servicetrace.com/X1/2021.1.7/en/server/ProcessOperations/UpcomingProcessChanges/rpa_processOperations_UpcomingProcessChanges_UpcomingProcessChanges_EN/
