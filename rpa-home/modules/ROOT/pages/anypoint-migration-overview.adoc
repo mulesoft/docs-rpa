@@ -1,0 +1,40 @@
+= Anypoint Platform Migration Overview
+
+Starting July 1st 2023, RPA Manager integrates with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP).
+
+If your organization acquired the MuleSoft Automation Bundle after the integration, your account is not affected by the migration because your organization is already in Anypoint Platform. 
+
+The migration process for existing RPA customers starts on July 1st and occurs in phases. To prepare for the migration, ensure you follow the <<pre-migration, pre-migration steps>>.
+
+For additional questions, contact us at rpa_migration_support@salesforce.com.
+
+== Summary of Changes
+
+After your organization is migrated to Anypoint Platform:  
+
+* Users log in to RPA Manager, RPA Builder, and RPA Recorder using their Anypoint Platform account. 
+* Administrators configure RPA users, teams, and permissions using Access Management instead of the *User Management* module in RPA Manager.
+* RPA Manager deprecates roles and user groups and starts using teams from Anypoint Platform instead. 
+* RPA Manager deprecates API keys and starts using Connected Apps instead. 
+
+[[pre-migration]]
+== Pre-migration Steps
+
+To prepare your organization for the migration, ensure that all your RPA Manager users have an account in Anypoint Platform or the external IdP your organization uses to log in.
+
+* Federated orgs
++
+If your Anypoint organization is using an IdP, the administrator must ensure the RPA users have a matching account and the proper access.
+
+* Non-federated orgs
++
+The migration is automatic. MuleSoft matches RPA accounts and Anypoint accounts based on the email address. 
++
+** If the RPA user already has an Anypoint account with the same email, the account linking is automatic. After the migration, the user accesses RPA resources using the Anypoint account, retaining the same level of permissions. 
+** If the RPA user has multiple Anypoint accounts with the same email address, the user is prompted to select the account to link when logging in.
+** If the RPA user does not already have an Anypoint user with the same email, MuleSoft sends an invite automatically before the migration so the user can join Anypoint Platform. The user must configure 2FA for their new Anypoint Platform account. 
+
+
+//== See Also 
+
+//Video tutorial? 
