@@ -56,13 +56,11 @@ This method creates a local copy of the workflow behind the activity and inserts
 [[change-the-revision-of-a-referenced-activity]]
 == Change the Revision of a Referenced Activity
 
-If the latest revision of a referenced activity does not work properly in a process or if you accidentally xref:rpa-manager::processoperations-upcomingprocesschanges.adoc#deploy-the-latest-version-of-an-activity[deployed the latest revision using RPA Manager], you can revert the activity to another revision. The link symbol shows the currently referenced revision.
-
-To change the referenced revision:
+If the latest revision of a referenced activity does not work properly in a process or if you accidentally xref:rpa-manager::processoperations-upcomingprocesschanges.adoc#deploy-the-latest-version-of-an-activity[deployed the latest revision using RPA Manager], you can revert the activity to another revision:
 
 . In the BPMN editor, click the referencing activity.
-. On the context pad, click *Show Activity Log* (image:activity-library-explorer-toolbar-show-log.png["The Show Log button", 2%, 2%]).
-. In the window *Activity Log*, select the revision to use.
+. On the context pad, click *Show Activity Log* (image:activity-library-explorer-toolbar-show-log.png["The Show Log button", 2%, 2%]). 
+. In the window *Activity Log*, select the revision to use. The link symbol shows the currently referenced revision.
 . Click *Download*.
 . In the window *A workflow is already mapped to this activity*, click *Yes* to replace the workflow with the selected revision.
 
