@@ -4,10 +4,10 @@ RPA Manager has the following privileges, which can be assigned to individual us
 
 To open any module, you always require the privilege for which the name ends in *Open*.
 
-Privileges that end with *Administration* authorize a user to create, change, and delete all types of objects in the corresponding module.
+Privileges that end with *Administration* allow a user to create, change, and delete all types of objects in the corresponding module.
 If the authorization only applies to a single type of object in a module, the corresponding privileges end with  *Create*, *Edit*, and *Delete*.
 
-Privileges named *Global <...> View* authorize a user to see all the processes in the relevant view. A user who does not have this privilege can only see processes for which they belong to the project team.
+Privileges named *Global <...> View* allow a user to see all the processes in the relevant view. A user who does not have this privilege can only see processes for which they belong to the project team.
 
 If you assign a role to a user, the user receives all the privileges contained in the role. These privileges are not displayed in the *Privileges* field in the user's profile.
 
@@ -79,13 +79,13 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Create, change, and delete objects of the *Bot Management* module.
 
 |*Service Time Create*
-|Create bot service times
+|Create bot service times.
 
 |*Service Time Edit*
-|Change bot service times
+|Change bot service times.
 
 |*Service Time Delete*
-|Delete bot service times
+|Delete bot service times.
 
 |===
 
@@ -99,43 +99,43 @@ If you assign a role to a user, the user receives all the privileges contained i
 |*Privilege* |*Permitted Action*
 
 |*Process Evaluation Open*
-|Open the *Process Evaluation* view
+|Open the *Process Evaluation* view.
 
 |*Process Evaluation Administration*
-|Create, change, and delete objects of the *Process Evaluation* module
+|Create, change, and delete objects of the *Process Evaluation* module.
 
 |*Global Process Evaluation View*
-|Authorization to view all processes in the *Process Evaluation* view, regardless of whether or not the current user belongs to the Process Team.
+|Authorization to view all processes in the *Process Evaluation* view, regardless of whether the current user belongs to the process team.
 
 |*Evaluation Criteria Open*
-|Open the *Evaluation Criteria* view
+|Open the *Evaluation Criteria* view.
 
 |*Create Evaluation Criteria*
-|Create evaluation criteria
+|Create evaluation criteria.
 
 |*Edit Evaluation Criteria*
-|Change evaluation criteria
+|Change evaluation criteria.
 
 |*Delete Evaluation Criteria*
-|Delete evaluation criteria
+|Delete evaluation criteria.
 
 |*Process Evaluation Approval to a CoE*
 |Assign a process automation to a center of excellence. A center of excellence is a user group that is assigned `Center of Excellence` in the *User Management* module.
 
 |*Process Evaluation Approval to a Project Manager*
-|Assign a process automation to a project manager. A project manager is a user assigned `Project Manager` in the *User Management* module.
+|Assign a process automation to a project manager. A project manager is a user with the `Project Management` privilege.
 
 |*Open Evaluation Templates*
-|Open the *Evaluation Templates* view
+|Open the *Evaluation Templates* view.
 
 |*Create Evaluation Templates*
-|Create and copy evaluation templates
+|Create and copy evaluation templates.
 
 |*Edit Evaluation Templates*
-|Change evaluation templates
+|Change evaluation templates.
 
 |*Delete Evaluation Templates*
-|Delete evaluation templates
+|Delete evaluation templates.
 
 |===
 
@@ -149,25 +149,28 @@ If you assign a role to a user, the user receives all the privileges contained i
 |*Privilege* |*Permitted Action*
 
 |*Process Automation Open*
-|Open all views of the *Process Automation* module
+|Open all views of the *Process Automation* module.
 
 |*Process Create*
-|Create and copy a process project
+|Create and copy a process project. To copy a project, you also need the privilege `Builder Usage`.
+
+|*Project Management*
+|Function as a project manager of a process project.
 
 |*Change Process Owner*
-|Change the process owner
+|Change the process owner of a process project.
 
 |*Change Project Manager*
-|Change the project manager
+|Change the project manager of a process project.
 
 |*Application Create*
-|Create an application in the *Process Applications* view
+|Create an application in the *Process Applications* view.
 
 |*Application Edit*
-|Change an application in the *Process Applications* view
+|Change an application in the *Process Applications* view.
 
 |*Application Delete*
-|Delete an application in the *Process Applications* view
+|Delete an application in the *Process Applications* view.
 
 |*Global Variables Create for Production phase*
 |Create global variables in the *Global Variables* view for use project configurations in the production phase.
@@ -176,7 +179,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Create global variables in the *Global Variables* view for use project configurations in the test phase.
 
 |*Global Variables Delete*
-|Delete global variables in the *Global Variables* view
+|Delete global variables in the *Global Variables* view.
 
 |*Global Variables Edit for Production phase*
 |Edit global variables in the *Global Variables* view for use project configurations in the production phase.
@@ -185,7 +188,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Edit global variables in the *Global Variables* view for use project configurations in the test phase.
 
 |*Process Recording*
-|Using the RPA Process Recorder
+|Use the RPA Process Recorder.
 
 |===
 
@@ -202,28 +205,28 @@ If you assign a role to a user, the user receives all the privileges contained i
 |Open the *Process Execution Plans* view.
 
 |*Global Process Execution Plans View*
-|Authorization to view all processes in the *Process Execution Plans* view, independently of whether or not the current user is a member of the process team
+|Authorization to view all processes in the *Process Execution Plans* view, independently of whether the current user is a member of the process team.
 
 |*Process Deployment Map Open*
-|Open the view *Deployment Map*
+|Open the *Deployment Map* view.
 
 |*Upcoming Process Changes Open*
 |Open the *Upcoming Process Changes* view.
 
 |*Upcoming Process Changes Administration*
-|Administer objects in the *Upcoming Process Changes* view
+|Administer objects in the *Upcoming Process Changes* view.
 
 |*Finance Analysis Open*
-|Open the *Finance Analysis* view with processes for which the current user is a member of the process team
+|Open the *Finance Analysis* view with processes for which the current user is a member of the process team.
 
 |*Global Finance Analysis View*
-|Open the *Finance Analysis* view with all processes, independently of whether the current user is a member of the process team
+|Open the *Finance Analysis* view with all processes, independently of whether the current user is a member of the process team.
 
 |*Finance Analysis Edit*
-|Changing finance analyses
+|Change finance analyses.
 
 |*Billing Report Open*
-| Open the *Usage Summary* view
+| Open the *Usage Summary* view.
 
 |===
 
@@ -237,13 +240,13 @@ If you assign a role to a user, the user receives all the privileges contained i
 |*Privilege* |*Permitted Action*
 
 |*Process Monitoring Open*
-|Open all views of the *Process Monitoring* module
+|Open all views of the *Process Monitoring* module.
 
 |*Robot State and Operation Open*
-|Open the *Robot State and Operation* view
+|Open the *Robot State and Operation* view.
 
 |*Process Streaming Open*
-|Open the *Process Streaming* view
+|Open the *Process Streaming* view.
 
 |===
 
@@ -257,7 +260,7 @@ If you assign a role to a user, the user receives all the privileges contained i
 |*Privilege* |*Permitted Action*
 
 |*Global Process Evaluation View*
-|Authorization to view all processes in the views *Process Evaluation* and *My RPA* &gt; *Team Backlog*, regardless of whether or not the current user belongs to the Process Team.
+|View all processes in the views *Process Evaluation* and *My RPA* &gt; *Team Backlog*, regardless of whether the user belongs to the process team.
 
 |*Unprocessed Task List Open*
 |Open the *Unprocessed Tasks* view.
@@ -277,10 +280,10 @@ If you assign a role to a user, the user receives all the privileges contained i
 |*Privilege* |*Permitted Action*
 
 |*Dashboard Open*
-|Open all views of the *Dashboard* module
+|Open all views of the *Dashboard* module.
 
 |*Dashboard Administration*
-|Create, change, and delete objects of the *Dashboard* module
+|Create, change, and delete objects of the *Dashboard* module.
 
 |===
 
@@ -294,10 +297,10 @@ If you assign a role to a user, the user receives all the privileges contained i
 |*Privilege* |*Permitted Action*
 
 |*Alerting Open*
-|Open all views of the *Alerting* module
+|Open all views of the *Alerting* module.
 
 |*Alerting Administration*
-|Create, change, and delete objects of the *Alerting* module
+|Create, change, and delete objects of the *Alerting* module.
 
 |===
 
@@ -306,18 +309,21 @@ If you assign a role to a user, the user receives all the privileges contained i
 
 == Privileges of the RPA Builder Category
 
-The *Activity Library* is managed exclusively in the RPA Builder.
+The *Activity Library* is managed only in the RPA Builder.
 
-Learn how to xref:rpa-builder::ui-overview.adoc#explorer-pane[find the Activity Library in RPA Builder].
+Learn how to xref:rpa-builder::activity-library.adoc[use the Activity Library in RPA Builder].
 
 [cols="1,2"]
 |===
 |*Privilege* |*Permitted Action*
 
+|*Builder Usage*
+|Use the RPA Builder. 
+
 |*Activity Library Administration*
-|Authorization to manage the *Activity Library* in the RPA Builder.
+|Manage the *Activity Library* in the RPA Builder.
 
 |*Activity Library Open*
-|Authorization to open the *Activity Library* in the RPA Builder.
+|Open the *Activity Library* in the RPA Builder.
 
 |===

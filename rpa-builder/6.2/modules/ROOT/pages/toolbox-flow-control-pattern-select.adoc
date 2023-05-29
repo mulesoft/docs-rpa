@@ -170,7 +170,7 @@ The _Pattern Select_ wizard is for selecting _Search Patterns_ and the
 key search settings.
 
 The basic functionality of the _Pattern Strip_ shown here, including all
-pattern operations, is described in xref:pattern-strip.adoc[Pattern Strip].
+pattern operations, is described in xref:adding-a-pattern-from-screen-capture.adoc#pattern-strip[The Pattern Strip Module].
 
 Click _OK_ to confirm the configuration settings or _Cancel_ as
 applicable. The _Test_ button evaluates the search and displays the

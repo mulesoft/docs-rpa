@@ -1,10 +1,10 @@
 = Defining Rules for Alerts
 
-Specify the incidents that will trigger an alert. Each activated rule will be checked while configurations are deployed.
+Specify the incidents that trigger an alert. Each activated rule be checked while configurations are deployed.
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -13,7 +13,7 @@ Specify the incidents that will trigger an alert. Each activated rule will be ch
 |Open the *Alerting* module
 |Alerting Open
 
-|Create, edit and delete alerting targets and rules.
+|Create, edit, and delete alerting targets and rules.
 |Alerting Administration
 
 |===
@@ -38,11 +38,11 @@ Status of the bot.
 The created alert rule is active upon saving. You can deactivate alert rules by clicking the *Deactivate* icon.
 
 . In the *Alert Rules* view of the *Alerting* module, click *Create*.
-. Select the type of the incident, that will trigger the alert.
+. Select the type of the incident to trigger the alert.
 . Complete the form *Create new <type> rule*.
 . Click *Save*.
 
-== See also
+== See Also
 
 * xref:alerting-overview.adoc[Alerting Overview]
 * xref:alerting-target.adoc[Creating alerting email templates]

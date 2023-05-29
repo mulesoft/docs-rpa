@@ -11,11 +11,11 @@ If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator need
 If you are not sure why a bot is not processing, review the execution plans:
 
 . In the module *Bot Management*, open the view *Bot Execution Plans*.
-. In the table, click the *Execution timetable* icon image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%] in the row of the bot you want to check.
+. In the table, click the *Execution timetable* icon image:executiontimetable-icon.png["calendar symbol",1.5%,1.5%] in the row of the bot you want to check.
 
 The execution timetable shows you the effective runtime of all configurations assigned to the bot.
 
-. Click the *Configure Execution Timetable* icon image:configure-icon.png[wrench symbol,1.5%,1.5%] to change the time interval of the table and to select the shown configurations.
+. Click the *Configure Execution Timetable* icon image:configure-icon.png["wrench symbol",1.5%,1.5%] to change the time interval of the table and to select the shown configurations.
 . Click *OK*.
 . In the *Execution Timetable*, click a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
 
@@ -25,7 +25,7 @@ All times are displayed in your local time. Times from bots and applications liv
 
 === Example of the Effective Runtime Composition
 
-image::rpa_botmanagement_botexecutionplans_example_effectiveschedulecomposition.png[Overview of how the effective runtime is composed from schedules, service times and downtimes]
+image::rpa_botmanagement_botexecutionplans_example_effectiveschedulecomposition.png["Overview of how the effective runtime is composed from schedules, service times and downtimes"]
 
 This example shows the planned process executions from the view of a user who lives in Rome (GMT+01:00). All shown times are converted to the user's time zone.
 
@@ -43,7 +43,7 @@ As you can see in the *Schedule Chart*, the service times and the downtimes are 
 
 Learn how to xref:botmanagement-support.adoc#manage-service-times[manage service times].
 
-Learn how to xref:processautomation-prepare.adoc#manage-applications[manage applications].
+Learn how to xref:processautomation-prepare-project-application.adoc[manage applications].
 
 Learn how to create xref:processautomation-deploy.adoc#production-configuration[production] and xref:processautomation-deploy.adoc#invokable-configuration[invokable] configurations.
 

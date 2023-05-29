@@ -71,7 +71,7 @@ These costs can increase if new investments are made.
 
 image:rpa_processOperations_FinanceAnalysis_Details_MonthlyFixedCosts_Example_Investments.png[rpa_processOperations_FinanceAnalysis_Details_MonthlyFixedCosts_Example_Investments]
 
-In our example, in May 2020, an initial investment of 120,000&nbsp;&euro; was made to acquire the MuleSoft RPA solution and its environment. The depreciation period defined was 12&nbsp;months. This resulted in a monthly depreciation amount of 10,000&nbsp;&euro; for the next 12 months.
+In this example, an initial investment of 120,000&nbsp;&euro; was made on May 20 to buy the MuleSoft RPA solution and its environment. The specified depreciation period was 12&nbsp;months. This resulted in a monthly depreciation amount of 10,000&nbsp;&euro; for the next 12 months.
 
 image:rpa_processOperations_FinanceAnalysis_Details_MonthlyFixedCosts_Example_Initial_MonthlyFixedCosts.png[rpa_processOperations_FinanceAnalysis_Details_MonthlyFixedCosts_Example_Initial_MonthlyFixedCosts]
 
@@ -219,7 +219,7 @@ S_{m_{c}} = S_{{(m-1)}_c} + S_m
 image:rpa_processOperations_FinanceAnalysis_Details_BreakEvenAnalysis_Example_Savings_ProcessRuns_ActualAndForecast.png[rpa_processOperations_FinanceAnalysis_Details_BreakEvenAnalysis_Example_Savings_ProcessRuns_ActualAndForecast]
 
 In this example, which was also used in the section *Savings*, the process was already executed automatically in the months of November through April. Since the execution of the process is dependent on conditions that cannot be influenced - in this case, for example, fluctuations in the number of book orders - the process was executed a different number of times each month. Since the overall trend was increasing, the forecast of future execution frequency was set to a value that reflects this trend.
-If the forecast proves accurate, the savings will grow with each month.
+If the forecast is accurate, the savings grow with each month.
 
 To illustrate the situation, the savings achieved each month are added to the cumulative savings of the previous month.
 

@@ -1,12 +1,12 @@
 = Creating Alerting Email Templates
 
-Create a template for an email that will be sent as an alert. Address the email to users within RPA Manager or to other persons that need to be aware of problems. Use keywords to extract the relevant information from the incident.
+Create a template for an email to send as an alert. Address the email to users within RPA Manager or to other people that must be aware of problems. Use keywords to extract the relevant information from the incident.
 
 Combine targets to target groups to save time when creating alert rules.
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -15,21 +15,21 @@ Combine targets to target groups to save time when creating alert rules.
 |Open the *Alerting* module
 |Alerting Open
 
-|Create, edit and delete alerting targets and rules.
+|Create, edit, and delete alerting targets and rules.
 |Alerting Administration
 
 |===
 
 == Create Alert Targets
 
-Create a template for an email that will be sent as an alert. Address the email to users within RPA Manager or to other persons that need to be aware of problems. Use keywords to extract the relevant information from the incident.
+Create a template for an email to send as an alert. Address the email to users within RPA Manager or to other people that must be aware of problems. Use keywords to extract the relevant information from the incident.
 
 . In the *Alert Targets* view of the *Alerting* module, click *Create*.
 . Complete the form *Create a new email target*:
 +
 * *Keywords*:
 +
-Click on the *Keywords* icon to add placeholders to the subject or the body of the email. They will be filled with the actual values at sending time.
+Click on the *Keywords* icon to add placeholders to the subject or the body of the email. The placeholders are filled with the actual values when RPA Manager sends the emails.
 . Click *Save*.
 
 == See Also

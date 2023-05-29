@@ -1,0 +1,27 @@
+= Preparing Projects
+
+A project defines the framework conditions for the automation of a process and is managed by a team. 
+
+You must prepare some project properties before starting the automation of a process:
+
+[cols="1,2"]
+|===
+|*Project Property* |*Usage*
+
+|Category
+|A category describes the common environment of a set of processes in a few keywords, for example `Customer Support Mythical University` or `Finance`.
+
+|Process Applications
+|Process applications are third-party application installations that are required for the execution of a process, for example `FinWiz - Mythical University - Computer 1 - Tokyo`.
+
+|===
+
+// Example 
+
+== See Also
+
+* xref:processevaluation-propose.adoc#create-a-process-evaluation[Create a Process Evaluation]
+* xref:myrpa-start.adoc[Starting Automation of Approved Processes]
+* xref:processautomation-manage.adoc#create-an-automation-project[Create an Automation Project]
+* xref:botmanagement-manage.adoc#bot-assign-servicetimes-applications[Assign Process Applications to Bots]
+* xref:usermanagement-manage#change-process-assignments-of-a-user[Change Process Assignments of a User]

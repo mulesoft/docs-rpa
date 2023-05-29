@@ -15,7 +15,7 @@ Within a category, you can manage the process automation projects:
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -24,8 +24,11 @@ Within a category, you can manage the process automation projects:
 |Open the *Process Automation* module
 |Process Automation Open
 
-|Create, edit and delete processes
-|Process Create
+|Create, edit, and delete process projects
+|Process Create, Project Management
+
+|Copy projects
+|Process create, Project Management, Builder Usage
 
 |Change the process owner
 |Change Process Owner
@@ -35,10 +38,9 @@ Within a category, you can manage the process automation projects:
 
 |===
 
-* To create or copy a project, you must be xref:usermanagement-manage.adoc#designate-a-user-as-project-manager[designated as project manager].
 * To transition a project to another phase, you must have the needed permissions as a member of the <<projectdata-processteam, process team>>.
 
-== Create an Automation project
+== Create an Automation Project
 
 When a project manager clicks the icon *Start automation* for a process in the *My Backlog* view of the *My RPA* module, RPA Manager creates a project for the automation of the process.
 
@@ -54,15 +56,15 @@ include::rpa-manager::partial$form-automationproject.adoc[]
 
 RPA Manager returns to the *<category name>* view. Your new project is sorted into the view according to your workspace settings.
 
-== Copy an Automation project
+== Copy an Automation Project
 
 A copy of an automation project contains all information from the original project, including the most recent revision of all workflows, with the exception of the bot assignments to test and productive configurations.
 
 Copy a project to automate a similar process more quickly:
 
 . Open the *Project Management* view of the *Process Automation* module.
-. Click on the name of the category in which you want to create the new project.
-. In the *<category name>* view, click the *Copy* icon image:copy-icon.png[copy symbol,1.5%,1.5%] on the panel of the project you want to copy.
+. Click on the name of the category of the project that you want to copy.
+. In the *<category name>* view, click the *Copy* icon image:copy-icon.png["copy symbol",1.5%,1.5%] on the panel of the project you want to copy.
 . Check and edit the form *Copy process*:
 +
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
@@ -70,10 +72,16 @@ For an explanation of the properties, see <<form-createprocess, *Create process*
 
 To complete copying the project:
 
-. Transfer the project to the *Build* phase.
-. Open it in the xref:rpa-builder::index.adoc[RPA Builder].
+. Transfer the project copy to the *Build* phase.
+. Open the project copy in the xref:rpa-builder::index.adoc[RPA Builder].
+. xref:rpa-builder::ui-overview#menu-bar[Upload] the project copy to RPA Manager.
 
-The project then receives its own identification values. The copied project can only transition to the *Test* phase after it is uploaded from the RPA Builder to the RPA Manager.
+The project copy then receives its own identification values. 
+
+Only after the copy process completes, the following actions are possible:
+
+* Another process team member can open the project copy in RPA Builder.
+* You or another process team member can transition the project copy to the test phase.
 
 == Edit an Automation Project
 
@@ -81,7 +89,7 @@ Edit an automation project to update it:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Edit* icon image:edit-icon.png[pen-to-square symbol,1.5%,1.5%] on the panel of the project you want to edit.
+. In the *<category name>* view, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] on the panel of the project to edit.
 . Check and edit the form *Copy process*:
 +
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
@@ -93,7 +101,7 @@ Change the owner of a process to represent changed responsibilities:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *New Process Owner* icon image:newprocessowner-icon.png[user-with-crown symbol,1.5%,1.5%] on the panel of the project for which you want to change the process owner.
+. In the *<category name>* view, click the *New Process Owner* icon image:newprocessowner-icon.png["user-with-crown symbol",1.5%,1.5%] on the panel of the project for which you want to change the process owner.
 . In the window *New process owner*, select a user.
 . Click *OK*
 
@@ -107,9 +115,11 @@ Change the manager of a project to represent changed responsibilities:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *New Project Manager* icon image:newprojectmanager-icon.png[user-with-tie symbol,1.5%,1.5%] on the panel of the project for which you want to change the project manager.
+. In the *<category name>* view, click the *New Project Manager* icon image:newprojectmanager-icon.png["user-with-tie symbol",1.5%,1.5%] on the panel of the project for which you want to change the project manager.
 . In the window *New project manager*, select a user.
-. If you do not want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager will be added with no assigned phases and thus only able to see this project.*
++ 
+You can only select a user who has the privilege *Project Management*.
+. If you do not want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager is added with no assigned phases and thus only able to see this project.*
 . Click *OK*
 
 You can assign additional permissions to the previous manager as a team member.
@@ -124,7 +134,7 @@ To remove a project:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Remove* icon image:delete-icon.png[trash symbol,1.5%,1.5%] on the panel of the project you want to remove.
+. In the *<category name>* view, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] on the panel of the project to remove.
 . Confirm the prompt.
 
 == Manage Process Project Tasks
@@ -177,13 +187,13 @@ To create a task:
 The task owner is responsible for completing the task. Choose a user from the process team. The task item displays the user's profile picture. RPA Manager shows all tasks of the task owners on their personal *My Process Board* view in the *My RPA* module.
 * *Priority*:
 +
-You can set the priority of the task to low, medium, or high. The task item displays a grey, yellow or red label, respectively.
+You can set the priority of the task to low, medium, or high. The task item displays a gray, yellow, or red label, respectively.
 * *Due date*:
 +
 Date on which the task should be completed.
 * *Effort*:
 +
-Time the task will approximately take.
+Approximate amount of time that the task takes.
 . Click Save.
 
 === Edit a Task
@@ -245,6 +255,5 @@ Once it's ready, transition the project to the next phase of its life-cycle. You
 
 == See Also
 
-* xref:index.adoc[RPA Manager]
 * xref:rpa-manager::myrpa-start.adoc[Starting Automation of Approved Processes]
-* xref:processautomation-overview.adoc[Process Automation]
+* xref:processautomation-prepare-project-category.adoc[Manage Process Categories]

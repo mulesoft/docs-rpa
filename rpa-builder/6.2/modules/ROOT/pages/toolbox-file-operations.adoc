@@ -54,7 +54,9 @@ The paths calculated at runtime for File Operations are checked against the list
 
 * *Path / file name / invalid characters*
 +
-The path and file name are managed separately and are made available to other operations as the Outbound Variables *File Name* and *Directory Path*. None of the Action Steps are able to interpret wildcards in the form of `?` or `*`. Use unique file names at all times. If the path or file name contains invalid characters, the Action Step goes into an error state (this does not apply to the *File name* in the *Iterate over Files Action Step*). The Iterate over Files Action Step iterates over the result of a wildcard operation in the form of an Action Block.
+RPA Builder manages the path and file name separately and makes them available to other operations as the Outbound Variables *File Name* and *Directory Path*. Action Steps cannot interpret wildcards in the form of `?` or `*`. 
++
+Use unique file names at all times. If the path or file name contains invalid characters, the Action Step goes into an error state (this does not apply to the *File name* in the *Iterate over Files Action Step*). The Iterate over Files Action Step iterates over the result of a wildcard operation in the form of an Action Block.
 +
 The following characters are invalid:
 +

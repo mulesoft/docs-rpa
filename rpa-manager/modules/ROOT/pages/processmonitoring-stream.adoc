@@ -2,9 +2,9 @@
 
 In the *Process Streaming* view, you see the number of configurations, RPA Bots, and sessions for each productive process. You can open a live view of the sessions of a process and watch the bot as it works.
 
-== Before you begin
+== Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the needed privileges]:
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
 [cols="1,2"]
 |===
@@ -16,8 +16,9 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 |===
 
 * Only productive processes for which at least one configuration has been created and for which you are a member of the process team are displayed.
+* Check xref:processautomation-deploy.adoc#runconfig-execution-enabletaskbar[*Enable Taskbar (Start menu, taskbar buttons)*] in the run configuration to view the desktop of the computer that runs the process. Otherwise, a black screen is shown.
 
-== Watch a bot at work
+== Watch a Bot at Work
 
 Watch the process stream to see what is happening right now.
 
