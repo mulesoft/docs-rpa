@@ -21,7 +21,7 @@ If a bot only needs to work at specific times, you assign it service times.
 
 == Manage API Keys
 
-An API key is required during installation of a bot. The bot connects to the RPA Manager with its API key.
+An API key is required during installation of a bot. The bot connects to RPA Manager with its API key.
 
 === Create an API Key
 

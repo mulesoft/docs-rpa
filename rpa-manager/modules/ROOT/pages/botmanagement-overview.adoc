@@ -2,14 +2,14 @@
 
 Bots are software. They look out for work and automatically carry upcoming processes step by step. They need a computer with the applications required for the processes installed and specific instructions.
 
-You manage the bots in the *Bot Management* module. Every bot is assigned to RPA Manager through an API key. After installation, the bot connects to the RPA Manager automatically at defined intervals. You can then assign licenses, applications, and service times to the bot.
+You manage the bots in the *Bot Management* module. Every bot is assigned to RPA Manager through an API key. After installation, the bot connects to RPA Manager automatically at defined intervals. You can then assign licenses, applications, and service times to the bot.
 
 == Getting Started
 
 === Install
 . Create an API key for each bot before installation.
 . Install each bot on a separate computer, where the applications needed to run the processes are installed.
-. After successful installation, the bots connects to the RPA Manager automatically.
+. After successful installation, the bots connects to RPA Manager automatically.
 
 === License
 * After you have installed all bots, open the *Bots* view module and assign _secure session_ licenses to each bot that should run processes invisibly.

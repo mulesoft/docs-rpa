@@ -8,7 +8,7 @@ If, during execution of a process, the bot comes across a user task, it shows th
 
 == Before You Begin
 
-* User tasks are configured in the RPA Builder and will show up during execution of the process.
+* User tasks are configured in RPA Builder and show up during execution of the process.
 * The user assignment is done while the user creates the process run configuration.
 
 == Claim a User Tasks

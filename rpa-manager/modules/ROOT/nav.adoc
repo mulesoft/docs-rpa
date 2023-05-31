@@ -35,6 +35,7 @@
 * xref:processoperations-overview.adoc[Process Operations]
 ** xref:processoperations-deploymentmap.adoc[Deployment Map]
 ** xref:processoperations-processexecutionplans.adoc[Process Execution Plans]
+** xref:processoperations-upcomingprocesschanges.adoc[Upcoming Process Changes]
 ** xref:processoperations-financeanalysis.adoc[Finance Analysis]
 *** xref:processoperations-financeanalysis-basics.adoc[Finance Analysis Basics]
 *** xref:processoperations-financeanalysis-analyze.adoc[Analyze Costs and Savings]
