@@ -33,7 +33,12 @@ You can run processes openly in existing console sessions or run them hidden in 
 . RDP session stem:[n].
 
 +
+[WARNING]
+Bots running an earlier version than 1.2.0 overtake an open console session without checking if the logged-in user matches the specified user.
+
++
 Do not close or minimize the console session while the bot executes the process.
+
 * To run a process in a hidden session, you must deploy it to a bot configured for secure sessions. Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. Do not sign in to a computer where a bot with one licensed secure session is running a process.
 
 == Test a Process Automation
@@ -91,6 +96,9 @@ Use the syntax `domain\username` instead of `username@domain.com` for domain use
 Ensure that the bot that you want to execute the process is configured for the execution type, because you cannot save the test configuration otherwise.
 +
 The bot can overtake the console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
++
+[WARNING]
+Bots running an earlier version than 1.2.0 overtake an open console session without checking if the logged-in user matches the specified user.
 +
 If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Bots*
@@ -190,6 +198,9 @@ Use the syntax `domain\username` instead of `username@domain.com` for domain use
 Ensure that the bot that you want to execute the process is configured for the execution type, because you cannot save the run configuration otherwise.
 +
 The bot can overtake the console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
++
+[WARNING]
+Bots running an earlier version than 1.2.0 overtake an open console session without checking if the logged-in user matches the specified user.
 +
 [[runconfig-execution-enabletaskbar]] If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Process Trigger Execution*:
@@ -320,6 +331,9 @@ Use the syntax `domain\username` instead of `username@domain.com` for domain use
 Ensure that the bot that you want to execute the process is configured for the execution type because you cannot save the run configuration otherwise.
 +
 The bot can overtake the console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
++
+[WARNING]
+Bots running an earlier version than 1.2.0 overtake an open console session without checking if the logged-in user matches the specified user.
 +
 If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Bots*:
