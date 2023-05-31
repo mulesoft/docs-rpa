@@ -1,10 +1,10 @@
 = Upcoming Process Changes
 
-In the activity library of the RPA Builder, RPA developers save activities that can be reused in different processes, such as login procedures or creations of data sets. To reuse a saved activity, an RPA developer can import a reference to this activity into a bot task. 
+The activity library of RPA Builder enables RPA developers to save activities that can be reused in different processes, such as login procedures or the creation of data sets. To reuse a saved activity, an RPA developer can import a reference to this activity into a bot task. To reuse a saved activity, an RPA developer can import a reference to this activity into a bot task. 
 
 If an RPA developer edits a referenced activity, RPA Manager shows a label with the number of changed activities next to the navigation items *Process Operations* and *Upcoming Process Changes*. 
 
-In the view *Upcoming Process Changes* you can see which processes contain the changed activities and deploy the latest version. 
+The *Upcoming Process Changes* shows which processes contain the changed activities and enables you to deploy the latest version.
 
 == Before You Begin 
 
@@ -27,13 +27,13 @@ In the view *Upcoming Process Changes* you can see which processes contain the c
 [[view-upcoming-process-changes]]
 == View Upcoming Process Changes 
 
-If you see a label with a number next to the *Process Operations* or *Upcoming Process Changes* navigation entry, an RPA developer has edited a deployed activity in the activity library in RPA Builder.
+When an RPA developer edits a deployed activity in the activity library in RPA Builder, a label with the number of affected instances shows next to the *Process Operations* or *Upcoming Process Changes* navigation entry.
 
 To view the changes:
 
 . Open the *Upcoming Process Changes* view in the *Process Operations* module.
 . View the descriptions in the table.
-. To compare the deployed version with the latest version of an activity, click the *Show Changes* icon image:show-icon.png[eye symbol,1.5%,1.5%] in the table row of the edited activity.
+. Click the *Show Changes* icon image:show-icon.png[eye symbol,1.5%,1.5%] in the table row of the edited activity to compare the deployed version with the latest version of that activity.
 
 [[map-bpmn-elements-to-process-activities]]
 == Map BPMN Elements to Process Activities
@@ -41,8 +41,9 @@ To view the changes:
 If a process contains the same activity more than once, use your browser's developer tools to find out which BPMN element contains the referenced activity revision:
 
 . Open the *Upcoming Process Changes* view in the *Process Operations* module.
-. Right-click on a process name, open the project in another tab and open the *Automation* panel there.
-. In the *Automation* panel, right-click on one of the possible activities and choose *Inspect* from the browser's context menu. 
+. Right-click on a process name and open the project in another tab.
+. In the new tab, open the *Automation* panel.
+. Right-click on one of the possible activities and choose *Inspect* from the browser's context menu. 
 
 The *Elements* panel of the browser shows the highlighted source code of the element. 
 
@@ -59,7 +60,7 @@ image::rpa_processOperations_UpcomingProcessChanges_WhichBPMNElement.png[Screens
 [[deploy-the-latest-version-of-an-activity]]
 == Deploy the Latest Version of an Activity
 
-To ensure that the processes use an appropriate version of a referenced activity, you can deploy the latest version to processes in the design, build, or test phase.
+To ensure that the processes use an appropriate version of a referenced activity, deploy the latest version to processes in the design, build, or test phase.
 
 Before you deploy the latest version of an activity:
 
@@ -75,17 +76,17 @@ To deploy the latest version of an activity:
 
 Test the updated processes before transfering them to production phase.
 
-== Deploy A Prior Version of an Activity
+== Deploy An Earlier Version of an Activity
 
-To ensure that a process uses an appropriate version of a referenced activity or to undo a prior deployment, you can change the version of a referenced activity in the RPA Builder:
+To ensure that a process uses an appropriate version of a referenced activity or to undo a prior deployment, change the version of a referenced activity in RPA Builder:
 
 . Transfer the process to the build phase.
-. Open the process in the RPA Builder.
-. xref:rpa-builder::activity-library.adoc#change-the-revision-of-a-referenced-activity[Change the revision of the referenced activity using RPA Builder.]
-. Upload the process to the RPA Manager.
+. Open the process in RPA Builder.
+. xref:rpa-builder::activity-library.adoc#change-the-revision-of-a-referenced-activity[Change the revision of the referenced activity using RPA Builder].
+. Upload the process to RPA Manager.
 . Transfer the process to the next phase. 
 
-Test the updated process before transfering it to production phase.
+Test the updated process before transferring it to the production phase.
 
 == See Also
 
