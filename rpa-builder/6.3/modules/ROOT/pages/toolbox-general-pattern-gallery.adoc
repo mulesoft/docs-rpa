@@ -1,0 +1,45 @@
+
+= Pattern Gallery
+
+All search patterns belonging to a _Workflow_ are stored centrally in
+the _Pattern Gallery._ Search patterns are image files which are used in
+the _Search Pattern_ and _Pattern Select Action Steps_ to determine a
+state.
+
+Search patterns can be created directly in the _Pattern Gallery Wizard_.
+They are also automatically transferred from the _Search Pattern_ and
+_Pattern Select Action Steps_.
+
+Search patterns that are not used can be deleted from the _Workflow._
+
+There is no limit to the number of search patterns in a _Workflow_.
+
+== Properties
+
+The _Pattern Gallery Action Step_ does not contain any additional
+properties, other than the *Common Properties*.
+
+== Inbound Variables
+
+The _Pattern Gallery Action Step_ does not produce any inbound
+variables.
+
+== Outbound Variables
+
+The _Pattern Gallery Action Step_ does not produce any outbound
+variables.
+
+== Wizard
+
+The _Pattern Gallery Wizard_ enables search patterns to be created,
+processed, and searched for, which can be used throughout the entire
+_Workflow._
+
+For additional information about the basic functionality of the _Pattern Strip_, which
+contains all the search patterns and menu bars, see xref:adding-a-pattern-from-screen-capture.adoc#pattern-strip[The Pattern Script Module].
+
+== See Also 
+
+* xref:toolbox-flow-control-pattern-select.adoc[Pattern Select]
+* xref:toolbox-checks-search-pattern.adoc[Search Pattern]
+* xref:adding-a-pattern-from-screen-capture.adoc[Using Search Patterns in a Workflow] 
