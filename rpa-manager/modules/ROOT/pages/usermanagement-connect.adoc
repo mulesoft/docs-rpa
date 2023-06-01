@@ -1,4 +1,4 @@
-= Connecting to RPA Manager from Other Salesforce Products
+= Connecting to RPA Manager from Salesforce Products
 
 RPA Manager requires user API keys for the integration of RPA processes into other Salesforce products. For example, use your API key to configure an RPA connector in a MuleSoft Composer flow.
 
