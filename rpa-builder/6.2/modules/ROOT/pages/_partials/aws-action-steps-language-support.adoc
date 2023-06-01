@@ -1,0 +1,19 @@
+//General introduction and warning about AWS services language support
+// tag::languageSupportAdvice[]
+Before using this action step, ensure that the associated AWS service supports the language you plan to use. 
+// end::languageSupportAdvice[]
+
+//Link to list of languages supported by Amazon Comprehend
+// tag::supportedLanguagesAmazonComprehend[]
+For a list of supported languages, see https://docs.aws.amazon.com/comprehend/latest/dg/supported-languages.html[Languages supported in Amazon Comprehend^]
+// end::supportedLanguagesAmazonComprehend[]
+
+//Link to list of languages supported by Amazon Textract
+// tag::supportedLanguagesAmazonTextract[]
+For a list of supported languages, see https://docs.aws.amazon.com/textract/latest/dg/textract-best-practices.html[Best Practices for Amazon Textract^]
+// end::supportedLanguagesAmazonTextract[]
+
+//Link to info about languages supported by Amazon Textract: Queries
+// tag::supportedLanguagesAmazonTextractQueries[]
+For more information about supported languages, see https://docs.aws.amazon.com/textract/latest/dg/bestqueries.html[Best Practices for Queries^]
+// end::supportedLanguagesAmazonTextractQueries[]
