@@ -12,13 +12,17 @@ After downloading and installing RPA Builder, configure the connection with RPA 
 See xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a Users] for instructions. If you are in doubt, contact your organization's RPA administrator.
 
 [[connect-with-anypoint]]
-== Connect RPA Builder with Anypoint
+== Connect RPA Builder with RPA Manager (Anypoint Platform)
 
-After opening RPA Builder for the first time, configure the connection with Anypoint Platform:
+After opening RPA Builder for the first time, configure the connection with RPA Manager by using your Anypoint Platform credentials:
 
 . Provide your RPA Manager instance address.
 +
 image:anypoint-rpa-org-log-in.png[The Anypoint Platform login screen asking to configure the RPA Manager address, 35%, 35%]
++
+*Proxy Settings* enable you to configure a specific proxy to use when stablishing the connection with Anypoint Platform.
++
+By default, *Use System Proxy Settings* is enabled so that RPA Builder uses the same proxy configuration your system uses to access internet.
 . Log in using your Anypoint Platform account. 
 +
 image:anypoint-rpa-user-log-in.png[The Anypoint Platform login screen asking to configure the login credentials, 35%, 35%]
@@ -52,9 +56,9 @@ The RPA Manager user name that RPA Builder uses to log in.
 The RPA Manager password that RPA Builder uses to log in.
 ** *Proxy Settings*
 +
-Configure your proxy settings if you access the internet through a proxy.
+Enables you to configure a specific proxy to use when connecting with RPA Manager.
 +
-By default, *Use System Proxy Settings* is enabled so that RPA Builder uses the same proxy configuration as your system.
+By default, *Use System Proxy Settings* is enabled so that RPA Builder uses the same proxy configuration your system uses to access internet.
 . Click *Test Connection* and confirm that the login succeeds.
 +
 If the login attempt fails, verify the provided details and try again.
