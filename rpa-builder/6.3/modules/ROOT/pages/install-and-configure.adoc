@@ -11,12 +11,32 @@ After downloading and installing RPA Builder, configure the connection with RPA 
 +
 See xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a Users] for instructions. If you are in doubt, contact your organization's RPA administrator.
 
+[[connect-with-anypoint]]
+== Connect RPA Builder with Anypoint
+
+After opening RPA Builder for the first time, configure the connection with Anypoint Platform:
+
+. Provide your RPA Manager instance address.
++
+image:anypoint-rpa-org-log-in.png[The Anypoint Platform login screen asking to configure the RPA Manager address, 35%, 35%]
+. Log in using your Anypoint Platform account. 
++
+image:anypoint-rpa-user-log-in.png[The Anypoint Platform login screen asking to configure the login credentials, 35%, 35%]
+
+After you log in, RPA Builder remains connected using the specified Anypoint Platform credentials. 
+
+To connect to a different RPA Manager instance or use different log in credentials:
+
+. In the top menu bar, navigate to *Options > Account*.
+. Click *Sign out*.
+. Provide the new RPA Manager address and log in credentials. 
+
 [[connect-with-rpa-manager]]
-== Connect RPA Builder with RPA Manager
+== Connect RPA Builder with RPA Manager (Legacy)
 
-After opening RPA Builder for the first time, configure the connection with RPA Manager:
+If your organization was not migrated to Anypoint Platform yet, follow these steps to configure the connection with RPA Manager after opening RPA Builder for the first time:
 
-. In the top menu bar, select *Options* > *Repository*.
+. In the top menu bar, select *Options* > *Repository*. (This menu opens automatically the first time you open RPA Builder)
 . Configure the required values:
 +
 image:repository-settings.png[The RPA Builder Repository settings, 50%, 50%]
