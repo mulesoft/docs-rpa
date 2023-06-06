@@ -1,11 +1,12 @@
 = Deployment Map
 
-The deployment map shows you the current status of each productive configuration of all processes for which you are a team member.
+The deployment map shows the current status of each run configuration of all processes for which you are a team member.
 
-The interrelationships of processes, RPA Bots and Configurations are mapped by a network.
+The interrelationships of processes, RPA Bots and configurations are mapped by a network.
 
+View and manage run configurations:
 * Switch directly to the detailed view of a process or a configuration.
-* Execute, pause, and stop configurations directly from here.
+* Execute, pause, and stop test and production configurations directly from here.
 
 == Before You Begin
 
@@ -22,6 +23,7 @@ The interrelationships of processes, RPA Bots and Configurations are mapped by a
 
 * You can only view processes for which you are part of the process team.
 * To execute, pause or stop configurations obtain the needed team member permissions for the production phase.
+* You cannot invokable configurations
 
 == Manage Configuration Executions
 
