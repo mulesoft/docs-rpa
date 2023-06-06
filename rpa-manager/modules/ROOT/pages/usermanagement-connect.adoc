@@ -1,4 +1,4 @@
-= Connecting to RPA Manager from Salesforce Products
+= Connecting RPA Processes from Salesforce Products
 
 RPA Manager requires user API keys for the integration of RPA processes into other Salesforce products. For example, use your API key to configure an RPA connector in a MuleSoft Composer flow.
 
@@ -71,5 +71,6 @@ To delete a user API key:
 
 == See Also
 
+* xref:processautomation-deploy.adoc#invokable-configuration[Create an Invokable Run Configuration]
 * xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer]
 * https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Salesforce: Use Flows with MuleSoft RPA^]
