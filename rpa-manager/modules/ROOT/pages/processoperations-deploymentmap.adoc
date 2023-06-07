@@ -32,6 +32,8 @@ The deployment map does not show invokable run configurations that were deleted 
 * You cannot interact with invokable configurations.
 * The deployment map shows only bots that have configurations deployed.
 
+//== Understand the Map
+
 //== View Configurations States
 
 == Manage Production Configuration Executions
