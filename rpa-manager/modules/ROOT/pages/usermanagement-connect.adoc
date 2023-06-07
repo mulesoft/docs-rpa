@@ -1,6 +1,6 @@
 = Connecting RPA Processes from Salesforce Products
 
-RPA Manager requires user API keys for the integration of RPA processes into other Salesforce products. For example, use your API key to configure an RPA connector in a MuleSoft Composer flow.
+RPA Manager requires user API keys to integrate RPA processes into other Salesforce products. For example, you can use your API key to configure an RPA connector in a MuleSoft Composer flow.
 
 For security reasons, you can only see and copy your API key on creation.
 
@@ -26,7 +26,7 @@ For security reasons, you can only see and copy your API key on creation.
 [[create-an-api-key-for-a-user]]
 == Create a User API Key
 
-Create an API key for yourself to integrate an RPA process into another Salesforce product. After expiration the integrated process instance can no longer connect to RPA Manager from other Salesforce products. Edit the API key to move the expiration date. For security reasons, RPA Manager shows the API Key only during creation. Copy your API Key and save it to a secure place. If you lose an API Key, create a new one.
+Create an API key for yourself to integrate an RPA process into another Salesforce product. After expiration, the integrated process instance can no longer connect to RPA Manager from other Salesforce products. Edit the API key to move the expiration date. For security reasons, RPA Manager shows the API Key only during creation. Copy your API Key and save it to a secure place. If you lose an API Key, create a new one.
 
 To create a user API key: 
 
@@ -35,7 +35,7 @@ To create a user API key:
 . [[form-createuserapikey]] Complete the form *Create User API Key*:
 * *User*:
 +
-Select yourself. Your identity and permissions are used for the connection from another Salesforce product to RPA Manager.
+Select yourself. Your identity and permissions are used to connect from another Salesforce products to RPA Manager.
 * *Expiration Date*:
 +
 Select an expiration date for the user API key from the calendar.
@@ -44,7 +44,7 @@ Select an expiration date for the user API key from the calendar.
 . Copy the API key to a secure place.
 . Click *Close*.
 
-Copy your saved API key into the configuration settings of the Salesforce products you want to integrate the RPA processes.
+Copy your saved API key into the configuration settings of the Salesforce products into which you want to integrate the RPA processes.
 
 == Edit a User API Key
 
@@ -61,7 +61,7 @@ For an explanation of the properties, see <<form-createuserapikey, *Create a Use
 
 == Delete a User API Key
 
-Delete a user API key to revoke REST API access to RPA Manager from the user. Integrated processes using the deleted API key stop working.
+Delete a user API key to revoke the user's REST API access to RPA Manager. Integrated processes that use the deleted API key stop working.
 
 To delete a user API key:
 

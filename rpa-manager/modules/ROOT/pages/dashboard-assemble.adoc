@@ -19,4 +19,4 @@ Create a dashboard that shows you the progress of your automation management wit
 
 Publish a Dashboard to share it with your colleagues. Published dashboards are copied and not synched with the private dashboards they are derived from.
 
- . In the *Private Dashboard* view of the *Dashboard* module, click the *Publish* icon in the table row of the dashboard you want to publish.
+ . In the *Private Dashboard* view of the *Dashboard* module, click the *Publish* icon in the row of the dashboard you want to publish.

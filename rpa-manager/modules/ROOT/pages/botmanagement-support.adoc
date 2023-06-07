@@ -31,8 +31,8 @@ To create an API key:
 
 . Open the *API Key* view of the *Bot Management* module.
 . Click *New API Key*.
-. In the window *Create Bot API Key*, enter a name and description and click *OK*.
-. In the window *Key Created!*, click *Copy to clipboard*.
+. In the *Create Bot API Key* window, enter a name and description and click *OK*.
+. In the *Key Created!* window, click *Copy to clipboard*.
 . Copy the API key to a secure place.
 . Click *Close*.
 
@@ -40,24 +40,24 @@ Copy your saved API key into the configuration settings of the bot during instal
 
 === Edit an API Key
 
-Edit an API key to change its name or description. If you lose an API key, create a new one.
+Edit an API key to change its name or description.
 
 To edit an API key:
 
 . Open the *API Key* view of the *Bot Management* module.
-. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the API key to edit.
-. In the window *Edit Bot API Key*, change name or description and click *OK*.
+. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the API key to edit.
+. In the *Edit Bot API Key* window, change the name or description and click *OK*.
 
 === Remove an API Key
 
 Remove API keys you no longer need.
 
-When you delete an API key, the system does not check whether the key is assigned to a bot. If you have deleted an API key that is in use, the bot can no longer connect to RPA Manager until a new API key is assigned.
+When you delete an API key, the system does not check whether the key is assigned to a bot. If you deleted an API key that is in use, the bot can no longer connect to RPA Manager until a new API key is assigned.
 
 To delete an API key:
 
 . Open the *API Key* view of the *Bot Management* module.
-. Click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the API key to remove.
+. Click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the API key to remove.
 . Confirm the removal.
 
 == Manage Service Times
@@ -87,7 +87,7 @@ The names of the service times do not have to be unique. To avoid misinterpretin
 For example, name your service time `Regular working hours - 9 AM - 5 PM - Mystical University - Buenos Aires (ART (UTC -3))` or  `Low resource usage time - 5 PM - 9AM - Mystical University - Berlin (CET (UTC +1))`.
 
 . In the *Service Times* view of the *Bot Management* module, click *Create*.
-. In the window *Create Service Time*, complete the form:
+. In the *Create Service Time* window, complete the form:
 +
 * *Timezone*: Specify a downtime in the time zone in which it occurs. If the bot that you assign the downtime to is installed on a computer that uses a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots pause executing processes that use that application simultaneously. The time intervals might change, depending on daylight saving time.
 +
@@ -102,8 +102,8 @@ include::rpa-manager::partial$form-scheduling.adoc[]
 Edit a service time if it has changed.
 If a changed service time is already used by a bot, it is updated automatically there.
 
-. In the *Service Times* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the service time to edit.
-. In the window *Edit Service Time*, change the data and click *OK*.
+. In the *Service Times* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the service time to edit.
+. In the *Edit Service Time* window, change the data and click *OK*.
 
 == Remove a Service Time
 
@@ -111,7 +111,7 @@ Remove service times no longer effective.
 
 The deleted service time is also removed from the service times of a bot. If the deleted service time is the only one that was used by a bot, the bot uses the default service time (24/7).
 
-. In the *Service Times* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the service time  to remove.
+. In the *Service Times* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the service time to remove.
 . Confirm the removal.
 
 
