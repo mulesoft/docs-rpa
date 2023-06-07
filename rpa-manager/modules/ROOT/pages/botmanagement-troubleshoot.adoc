@@ -84,8 +84,7 @@ Before a process is started, the bot has to check a variety of conditions. For e
 
 The bot divides these tasks, which are independent from one another, into threads, which can run simultaneously (asynchronously). The bot then waits until all the tasks are complete and then either continues with starting the process or checks the conditions again.
 
-In rare cases, an
- individual thread could have an error due to unforeseen circumstances, but cannot report it back to the bot. In this case, the Bot remains in wait status and cannot execute any more processes.
+In rare cases, an individual thread could have an error due to unforeseen circumstances, but cannot report it back to the bot. In this case, the Bot remains in wait status and cannot execute any more processes.
 
 The latter might be the case when the bot has the status OK and a deployed process is within an effective runtime interval, but no process has been started for several minutes.
 
