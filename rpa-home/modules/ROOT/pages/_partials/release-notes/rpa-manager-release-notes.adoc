@@ -2,6 +2,35 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[june-09-2023]]
+== June 09, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* Process run results show the messages of all activities including the *Write bot message* action steps. (W-12723756)
+* Due to security reasons user and bot API keys are no longer visible and copyable after their creation. The API key is visible and can be copied during its creation only. (W-13045891)
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| The descriptions of privileges are now shown correctly. | W-13477475
+| A credential in the Credential Pool can now be deleted by an user, which is only referenced via a user group. | W-13505515
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+|===
+
+
 [[may-23-2023]]
 == May 23, 2023
 
@@ -24,6 +53,7 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 |Known Issue |Workaround | ID
 | Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
 |===
+
 
 [[may-15-2023]]
 == May 15, 2023
