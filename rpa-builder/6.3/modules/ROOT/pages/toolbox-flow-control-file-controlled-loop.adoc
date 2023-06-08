@@ -61,15 +61,15 @@ The names of the variables follow the pattern `<Action Step name>.<column name>`
 
 == Wizard
 
-The wizard enables you to select whether to import the file at the moment or during execution. Depending on your selection, the wizard changes. 
+The wizard enables you to select whether to import the file at the moment or during execution, the separation character, and the document's encoding, including Shift-JIS and EUC-JP for Japanese support. 
 
-The main difference between the two modes is that, when you import the
+Depending on the read mode you select, the wizard changes. The main difference between the two modes is that when you import the
 file at design time, you can use its variables in timers, and the data is
 fixed. If you import the file during execution, you can read the file
 from anywhere, including network locations, which enables you to alter the data without modifying the _Workflow_ at all (however, you cannot use
 the variables within timer names).
 
-If you switch between the two modes you lose all previously defined variable mappings. 
+If you switch between the two modes you lose all defined variable mappings. 
 
 Importing the file during execution enables you to use variables within the column
 filters. However, the wizard deletes any filters that contain variables if you switch modes.
