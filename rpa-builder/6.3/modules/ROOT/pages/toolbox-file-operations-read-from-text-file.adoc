@@ -120,3 +120,4 @@ The first line in a text file is line number 1!
 
 * *Remove line(s) after read* Specify here whether the text should be
 deleted after it is read.
+* *Encoding* The encoding of the file to read. Includes Shift-JIS and EUC-JP for Japanese support. Specify a valid encoding type if the one you need is not in the list. 
