@@ -36,7 +36,7 @@ Approve the selected process to refer it to a project manager or a center of exc
 
 After approval, the process is also displayed either in the personal backlog of the project manager (*My RPA* - *My Backlog*) or in the team backlog of the center of excellence (*My RPA* - *Team Backlog*).
 
-. In the *Process Evaluation* view of the *Process Evaluation* module, click *Approve* in the table row of the evaluation you want to approve.
+. In the *Process Evaluation* view of the *Process Evaluation* module, click *Approve* in the row of the evaluation you want to approve.
 . Choose a user or a center of excellence as *Project Manager*.
 . Click *OK*.
 
