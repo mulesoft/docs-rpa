@@ -1,6 +1,6 @@
 = Write Bot Message 
 
-The Write Bot Message Action Step enables you to enrich the result message the RPA Bot generates after each failed run. In case of execution failure, this message shows in the *Run Results* section of the *Process Management* view in RPA Manager. 
+The *Write Bot Message* Action Step enables you to enrich the result message the RPA Bot generates after each run. This message shows in the *Run Results* section of the *Process Management* view in the *Process Automation* module and in the *Process Run Statistics* view of the *Bot Management* module in RPA Manager. 
 
 == Properties 
 
@@ -23,4 +23,5 @@ This Action Step has no outbound Variables.
 
 == See Also 
 
-xref:rpa-manager::processautomation-deploy.adoc#view-run-results[RPA Manager: View Run Results] 
+* xref:rpa-manager::processautomation-deploy.adoc#view-run-results[RPA Manager: View Run Results] 
+* xref:rpa-manager::botmanagement-troubleshoot.adoc#view-the-bot-log-messages[RPA Manager: Troubleshooting Bots]
