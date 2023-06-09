@@ -21,44 +21,36 @@ If a bot only needs to work at specific times, you assign it service times.
 
 == Manage API Keys
 
-An API key is required during installation of a bot. The bot connects to RPA Manager with its API key. For security reasons, RPA Manager shows the API Key only during creation. Copy your API Key and save it to a secure place. If you lose an API Key, create a new one.
+An API key is required during installation of a bot. The bot connects to RPA Manager with its API key.
 
 === Create an API Key
 
-Create a new API key for each bot before installation or when you lose access to one.
+Create a new API key for each bot before installation.
 
-To create an API key:
-
-. Open the *API Key* view of the *Bot Management* module.
-. Click *New API Key*.
-. In the *Create Bot API Key* window, enter a name and description and click *OK*.
-. In the *Key Created!* window, click *Copy to clipboard*.
-. Copy the API key to a secure place.
-. Click *Close*.
-
-Copy your saved API key into the configuration settings of the bot during installation. You can change the bot API Key with RPA Bot Configurator. 
+. In the *API Key* view of the *Bot Management* module, click *Create*.
+. In the window *Create Bot API Key*, enter a name and description and click *OK*.
 
 === Edit an API Key
 
 Edit an API key to change its name or description.
 
-To edit an API key:
-
-. Open the *API Key* view of the *Bot Management* module.
-. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the API key to edit.
-. In the *Edit Bot API Key* window, change the name or description and click *OK*.
+. In the *API Key* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the API key to edit.
+. In the window *Edit Bot API Key*, change name or description and click *OK*.
 
 === Remove an API Key
 
 Remove API keys you no longer need.
 
-When you delete an API key, the system does not check whether the key is assigned to a bot. If you deleted an API key that is in use, the bot can no longer connect to RPA Manager until a new API key is assigned.
+When you delete an API key, the system does not check whether the key is assigned to a bot. If you have deleted an API key that is in use, the bot can no longer connect to RPA Manager until a new API key is assigned.
 
-To delete an API key:
-
-. Open the *API Key* view of the *Bot Management* module.
-. Click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the API key to remove.
+. In the *API Key* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the API key to remove.
 . Confirm the removal.
+
+=== Copy an API Key to the Clipboard
+
+Copy an API key to the clipboard to paste it into the according field during installation or configuration of a bot.
+
+. In the *API Key* view of the *Bot Management* module, click the *Copy* icon image:copy-to-clipboard-icon.png["sheet-on-clipboard symbol",1.5%,1.5%] in the column *API Key* in the table row of the API key you want to copy to the clipboard.
 
 == Manage Service Times
 
@@ -117,6 +109,15 @@ The deleted service time is also removed from the service times of a bot. If the
 
 == See Also
 
+* xref:botmanagement-overview.adoc[Bot Management]
+//* xref::botmanagement-support.adoc[Supporting Bots]
+* xref::botmanagement-know.adoc[Getting to Know Bots]
+* xref::botmanagement-manage.adoc[Managing Bots]
+* xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
+
+////
+* xref::processautomation-deploy.adoc[Deploying Automations]
 * xref:rpa-bot::installation.adoc[RPA Bot Installation]
 * xref:rpa-bot::configuration.adoc[RPA Bot Configuration]
 * xref:processautomation-deploy.adoc[Deploying Automations]
+////
