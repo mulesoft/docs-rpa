@@ -17,7 +17,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| The descriptions of privileges now shows correctly. | W-13477475
+| The descriptions of privileges now show correctly. | W-13477475
 | Users no longer receive an error when they try to delete a credential in the Credential Pool if they are referenced to that credential via a user group only. | W-13505515
 |===
 
