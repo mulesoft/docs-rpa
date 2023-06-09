@@ -88,11 +88,11 @@ In rare cases, an individual thread could have an error due to unforeseen circum
 
 The latter might be the case when the bot has the status OK and a deployed process is within an effective runtime interval, but no process has been started for several minutes.
 
-When you restart the bot, the bot and all of its threads are initially stopped after the pending tasks have been completed. The subsequent restart is then performed in a clean environment, which means the problem should no longer occur.
+When you restart the bot, the bot and all of its threads are initially stopped after the pending tasks have been completed. The restart is then performed in a clean environment, which means the problem should no longer occur.
 
 Restarting a bot only works if that bot has the status OK. Otherwise RPA Manager places the restart in the task list and executes it as soon as the bot is OK again.
 
-. In the *Bots* view of the *Bot Management* module, click the *Restart* icon in the table row of the bot you want to restart.
+. In the *Bots* view of the *Bot Management* module, click the *Restart* icon in the row of the bot you want to restart.
 . Wait a few seconds and refresh the browser to see the effect.
 
 

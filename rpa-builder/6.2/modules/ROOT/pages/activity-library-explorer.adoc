@@ -33,3 +33,4 @@ To import an Activity Library Workflow package `(.calw)` file from your file sys
 
 * xref:activity-library.adoc[]
 * xref:activity-tags.adoc[]
+* xref:rpa-manager::processoperations-upcomingprocesschanges.adoc[RPA Manager: Upcoming Process Changes]

@@ -1,6 +1,8 @@
-= Connecting to MuleSoft Composer
+= Connecting to RPA Processes from Salesforce Products
 
-User API keys are required for the integration of RPA processes in a MuleSoft Composer flow. Use your API key to configure an API connector in MuleSoft Composer.
+RPA Manager requires user API keys to integrate RPA processes into other Salesforce products. For example, you can use your API key to configure an RPA connector in a MuleSoft Composer flow.
+
+For security reasons, you can only see and copy your API key on creation.
 
 == Before You Begin
 
@@ -13,35 +15,62 @@ User API keys are required for the integration of RPA processes in a MuleSoft Co
 |Open the *User Management* module
 |User Management Open
 
-|Create, edit, license, and delete users
-|User Management Administration
-
 |Create, edit, and delete API keys
 |User API Key Create, User API Key Edit, User API Key Delete
 
 |===
 
-* The user who uses an API key must exist in the *Users* view of the *User Management* module.
+* You must have an account in RPA Manager to associate your API key with.
+* You must have a secure place accessible to store your API key.
 
 [[create-an-api-key-for-a-user]]
-== Create an API Key for a User
+== Create a User API Key
 
-Create an API key for a user to configure an API connector in MuleSoft Composer. After the expiration date the user can no longer connect to RPA Manager via Composer. The expiration date can be moved.
+Create an API key for yourself to integrate an RPA process into another Salesforce product. After expiration, the integrated process instance can no longer connect to RPA Manager from other Salesforce products. Edit the API key to move the expiration date. For security reasons, RPA Manager shows the API Key only during creation. Copy your API Key and save it to a secure place. If you lose an API Key, create a new one.
 
-. In the *User API Keys* view of the *User Management* module, click *Create*.
-. . Complete the form *Create User API Key*:
+To create a user API key: 
+
+. Open the *User API Keys* view of the *User Management* module.
+. Click *Create*.
+. [[form-createuserapikey]] Complete the form *Create User API Key*:
+* *User*:
++
+Select yourself. Your identity and permissions are used to connect from another Salesforce products to RPA Manager.
 * *Expiration Date*:
 +
 Select an expiration date for the user API key from the calendar.
 . Click *OK*.
+. In the window *Key Created!*, click *Copy to clipboard*.
+. Copy the API key to a secure place.
+. Click *Close*.
 
-== Copy an API Key to the Clipboard
+Copy your saved API key into the configuration settings of the Salesforce products into which you want to integrate the RPA processes.
 
-Copy an API key to the clipboard to paste it into the configuration of an API connector in MuleSoft Composer.
+== Edit a User API Key
 
-. In the *User API Keys* view of the *User Management* module, click the *Copy to clipboard* icon image:copy-to-clipboard-icon.png["sheet-on-clipboard symbol",1.5%,1.5%] in the table row of the user API key you want to use.
+Edit a user API key to change its name, description, or expiration date. If you lost access to your API key, create a new one.
+
+To edit a user API key:
+
+. Open the *User API Keys* view of the *User Management* module.
+. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] on the panel of the user API key to edit.
+. Edit the form *Create User API Key*:
++
+For an explanation of the properties, see <<form-createuserapikey, *Create a User API Key*>>.
+. Click *Save*.
+
+== Delete a User API Key
+
+Delete a user API key to revoke the user's REST API access to RPA Manager. Integrated processes that use the deleted API key stop working.
+
+To delete a user API key:
+
+. Open the *User API Keys* view of the *User Management* module.
+. Click the *Remove* icon image:delete-icon.png["trash can symbol",1.5%,1.5%] on the panel of the user API key to remove.
+. Confirm the removal.
 
 == See Also
 
+* xref:processautomation-deploy.adoc#invokable-configuration[Create an Invokable Run Configuration]
 * xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer]
-//* https://help.salesforce.com/s/articleView?id=sf.ms_composer_rpa_reference.htm&type=5[MuleSoft Composer for Salesforce RPA Connector^]
+* https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Salesforce: Use Flows with MuleSoft RPA^]

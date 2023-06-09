@@ -8,20 +8,20 @@ If, during execution of a process, the bot comes across a user task, it shows th
 
 == Before You Begin
 
-* User tasks are configured in the RPA Builder and will show up during execution of the process.
+* User tasks are configured in RPA Builder and show up during execution of the process.
 * The user assignment is done while the user creates the process run configuration.
 
 == Claim a User Tasks
 
 Claim a user task to reserve processing of the user task for yourself. The user task is then moved to your personal task list in the *My User Tasks* view.
 
-. In the *Team Tasks* view of the *My RPA* module, click *Claim Task* in the table row of the task you want to process.
+. In the *Team Tasks* view of the *My RPA* module, click *Claim Task* in the row of the task you want to process.
 
 == Process a User Task
 
 Open a user task and review or change its data to continue the process. After you complete the task, the bot carries on.
 
-. In the *My User Tasks* view of the *My RPA* module, click *Open Task* in the table row of the task you want to process.
+. In the *My User Tasks* view of the *My RPA* module, click *Open Task* in the row of the task you want to process.
 . Review the data.
 . Input or change data if necessary.
 . Click *Finish*.
