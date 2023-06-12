@@ -18,7 +18,7 @@ After opening RPA Builder for the first time, configure the connection with RPA 
 
 . Provide your RPA Manager instance address.
 +
-image:anypoint-rpa-org-log-in.png[The Anypoint Platform login screen asking to configure the RPA Manager address, 35%, 35%]
+image:anypoint-rpa-org-log-in.png[The Anypoint Platform login screen prompt to configure the RPA Manager address, 35%, 35%]
 +
 *Proxy Settings* enable you to configure a specific proxy to use when stablishing the connection with Anypoint Platform.
 +
