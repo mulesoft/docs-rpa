@@ -105,6 +105,7 @@ Remove an application if it is no longer available:
 
 RPA Manager removes the application from all processes and bots to which it was assigned.
 
+
 == See Also
 
 * xref:processautomation-manage.adoc#projectdata-processapplications[Assign Process Applications to an Automation Project]
