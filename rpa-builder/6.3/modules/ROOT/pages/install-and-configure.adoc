@@ -14,7 +14,7 @@ See xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Ass
 [[connect-with-anypoint]]
 == Connect RPA Builder with RPA Manager (Anypoint Platform)
 
-After opening RPA Builder for the first time, configure the connection with RPA Manager by using your Anypoint Platform credentials:
+After opening RPA Builder for the first time, configure the connection with RPA Manager using your Anypoint Platform credentials:
 
 . Provide your RPA Manager instance address.
 +
