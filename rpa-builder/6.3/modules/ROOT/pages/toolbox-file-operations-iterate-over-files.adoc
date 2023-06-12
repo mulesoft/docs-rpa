@@ -31,14 +31,14 @@ been reached and *Use iteration limit* is enabled.
 +
 * *Force error if no file found*
 +
-Generate an error if the specified files cannot be found.
+Generates an error if the action step cannot find any files that match the given *File name* value in the specified *Directory path*.
 * *Max iterations* 
 +
 Sets the maximum number of files to process until _Iterate over files_ ends. You can specify up to 100,000
 iterations. This value works only when *Use iteration limit* is enabled.
 * *Recursive loop* 
 +
-Specifies whether process the sub-folders located in *Directory path* and any files they may contain.
+Specifies whether to process the sub-folders located in *Directory path* and any files they may contain.
 * *Use a regular expression for file name*
 +
 Enable this option to evaluate the *File name* field as a regular expression.
