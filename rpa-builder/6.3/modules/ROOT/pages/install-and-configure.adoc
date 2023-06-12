@@ -33,7 +33,7 @@ To connect to a different RPA Manager instance or use other login credentials:
 
 . In the top menu bar, navigate to *Options > Account*.
 . Click *Sign out*.
-. Provide the new RPA Manager address and log in credentials. 
+. Provide the new RPA Manager address and login credentials. 
 
 [[connect-with-rpa-manager]]
 == Connect RPA Builder with RPA Manager (Legacy)
