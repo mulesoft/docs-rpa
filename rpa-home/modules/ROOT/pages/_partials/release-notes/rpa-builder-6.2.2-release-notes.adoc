@@ -33,7 +33,10 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | Mapping multiple activity parameters to action steps no longer impacts performance. | W-12679827
 | Workbench operations (Move, Insert, Delete etc.) complete faster now. | W-12679809
 | REST Call no longer fails when the response body of a PATCH request is empty. | W-12965033
-| The JSON Query action step no longer changes the Date format. | W-13027264
+| The JSON Query action step now outputs dates in the same format as in the original JSON input.
+[WARNING]
+Because this fix changes the behavior of the JSON Query action step, you might need to adapt existing processes that use this action step to read the Date values in the expected format. 
+| W-13027264
 | RPA Builder no longer fails to validate projects. | W-13027595
 | Importing a Project that contains the Set Variable action step with Activity Parameters no longer causes an error. | W-13027842
 | RPA Builder now shows the error window for broken mappings when an affected action step is deactivated. | W-13054470

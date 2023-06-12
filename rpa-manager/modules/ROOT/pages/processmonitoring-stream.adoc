@@ -22,7 +22,7 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 
 Watch the process stream to see what is happening right now.
 
-. In the *Process Streaming* view of the *Process Monitoring* module, click the icon *Show process streams* in the table row of the *Process* you want to watch.
+. In the *Process Streaming* view of the *Process Monitoring* module, click the icon *Show process streams* in the row of the *Process* you want to watch.
 . Toggle *Off / On* to activate and deactivate a stream.
 . Click the *Full Screen* icon in the stream panel to display it in full-screen mode.
 . Press `ESC` to exit full-screen mode and return to the overview page.

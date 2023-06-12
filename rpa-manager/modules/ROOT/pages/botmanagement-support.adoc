@@ -21,7 +21,7 @@ If a bot only needs to work at specific times, you assign it service times.
 
 == Manage API Keys
 
-An API key is required during installation of a bot. The bot connects to the RPA Manager with its API key.
+An API key is required during installation of a bot. The bot connects to RPA Manager with its API key.
 
 === Create an API Key
 
@@ -79,7 +79,7 @@ The names of the service times do not have to be unique. To avoid misinterpretin
 For example, name your service time `Regular working hours - 9 AM - 5 PM - Mystical University - Buenos Aires (ART (UTC -3))` or  `Low resource usage time - 5 PM - 9AM - Mystical University - Berlin (CET (UTC +1))`.
 
 . In the *Service Times* view of the *Bot Management* module, click *Create*.
-. In the window *Create Service Time*, complete the form:
+. In the *Create Service Time* window, complete the form:
 +
 * *Timezone*: Specify a downtime in the time zone in which it occurs. If the bot that you assign the downtime to is installed on a computer that uses a different time zone, the downtime interval is converted to the bot’s time zone. If you assign the application to multiple bots in different time zones, all bots pause executing processes that use that application simultaneously. The time intervals might change, depending on daylight saving time.
 +
@@ -94,8 +94,8 @@ include::rpa-manager::partial$form-scheduling.adoc[]
 Edit a service time if it has changed.
 If a changed service time is already used by a bot, it is updated automatically there.
 
-. In the *Service Times* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the service time to edit.
-. In the window *Edit Service Time*, change the data and click *OK*.
+. In the *Service Times* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the service time to edit.
+. In the *Edit Service Time* window, change the data and click *OK*.
 
 == Remove a Service Time
 
@@ -103,7 +103,7 @@ Remove service times no longer effective.
 
 The deleted service time is also removed from the service times of a bot. If the deleted service time is the only one that was used by a bot, the bot uses the default service time (24/7).
 
-. In the *Service Times* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the service time  to remove.
+. In the *Service Times* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the service time to remove.
 . Confirm the removal.
 
 
@@ -115,4 +115,9 @@ The deleted service time is also removed from the service times of a bot. If the
 * xref::botmanagement-manage.adoc[Managing Bots]
 * xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
 
+////
 * xref::processautomation-deploy.adoc[Deploying Automations]
+* xref:rpa-bot::installation.adoc[RPA Bot Installation]
+* xref:rpa-bot::configuration.adoc[RPA Bot Configuration]
+* xref:processautomation-deploy.adoc[Deploying Automations]
+////
