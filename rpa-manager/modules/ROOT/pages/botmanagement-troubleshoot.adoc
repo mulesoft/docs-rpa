@@ -95,7 +95,6 @@ Restarting a bot only works if that bot has the status OK. Otherwise RPA Manager
 . In the *Bots* view of the *Bot Management* module, click the *Restart* icon in the table row of the bot you want to restart.
 . Wait a few seconds and refresh the browser to see the effect.
 
-
 == See Also
 
 * xref:rpa-builder::toolbox-system-write-bot-message.adoc[RPA Builder: Toolbox - Write Bot Message]
