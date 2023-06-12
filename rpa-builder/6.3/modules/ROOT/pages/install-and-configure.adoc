@@ -29,7 +29,7 @@ image:anypoint-rpa-user-log-in.png[The Anypoint Platform login screen asking to 
 
 After you log in, RPA Builder remains connected using the specified Anypoint Platform credentials. 
 
-To connect to a different RPA Manager instance or use different log in credentials:
+To connect to a different RPA Manager instance or use other login credentials:
 
 . In the top menu bar, navigate to *Options > Account*.
 . Click *Sign out*.
