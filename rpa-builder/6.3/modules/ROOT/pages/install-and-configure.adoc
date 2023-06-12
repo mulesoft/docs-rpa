@@ -56,7 +56,7 @@ The RPA Manager user name that RPA Builder uses to log in.
 The RPA Manager password that RPA Builder uses to log in.
 ** *Proxy Settings*
 +
-Enables you to configure a specific proxy to use when connecting with RPA Manager.
+Use to configure a proxy to connect to RPA Manager.
 +
 By default, *Use System Proxy Settings* is enabled so that RPA Builder uses the same proxy configuration your system uses to access internet.
 . Click *Test Connection* and confirm that the login succeeds.
