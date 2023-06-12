@@ -38,7 +38,7 @@ To connect to a different RPA Manager instance or use other login credentials:
 [[connect-with-rpa-manager]]
 == Connect RPA Builder with RPA Manager (Legacy)
 
-If your organization was not migrated to Anypoint Platform yet, provide your RPA Manager user credentials to stablish the connection after opening RPA Builder for the first time:
+If your organization is not migrated to Anypoint Platform, provide your RPA Manager user credentials to establish the connection after opening RPA Builder for the first time:
 
 . In the top menu bar, select *Options* > *Repository*. (This menu opens automatically the first time you open RPA Builder)
 . Configure the required values:
