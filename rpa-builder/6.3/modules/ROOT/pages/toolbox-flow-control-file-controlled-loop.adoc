@@ -32,7 +32,8 @@ maximum iterations the loop does. Only applicable when the file
 is imported at runtime.
 ** *Limit iterations* 
 +
-Decides whether the iteration count is limited or not.
+Decides if the iteration count is limited.
+
 Only applicable when the file is imported at runtime.
 ** *Separate File Path for Execution* 
 +
