@@ -94,7 +94,8 @@ Use the drop-down menu next to each column name to change the type of the column
 
 === Importing a File During Execution
 
-When you select *Read file dinamically during Workflow execution*, the wizard shows the following configuration options: 
+When you select *Read file dynamically during Workflow execution*, the wizard shows the following configuration options: 
+
 
 image::file-controlled-loop-read-file-during-execution.png[The File Controlled Loop wizard showing the file preview when Read file dinamically during Workflow execution is selected, 75%, 75%]
 
