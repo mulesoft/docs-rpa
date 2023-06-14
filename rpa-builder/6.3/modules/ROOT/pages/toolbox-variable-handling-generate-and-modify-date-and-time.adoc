@@ -1,9 +1,9 @@
 = Generate and Modify Date and Time
 
-Use _Generate date and time_ to create a configurable time stamp. Select
-a country-specific style for the time stamp from the selection of format
+Use _Generate date and time_ to create a configurable timestamp. Select
+a country-specific style for the timestamp from the selection of format
 templates or arrange the available time components as required, e.g.
-day, month, and hour. You can specify the time stamp as a specific time
+day, month, and hour. You can specify the timestamp as a specific time
 in the future or past, or use the current system time. It is also
 possible to incorporate a time offset in days, hours, minutes, and
 seconds. _Generate date and time_ creates a timestamp that is available in several variables, which you can further process in
@@ -42,7 +42,7 @@ Specify the output language to use for the days of the week.
 Enables overriding workday settings. 
 * *Override to day* 
 +
-Specify the day to override. 
+Specify the day to override with. 
 
 * *Override to first or last* 
 +
@@ -60,25 +60,21 @@ Specify the starting workday of the week.
 Number of weeks to add.
 * *Workdays setting* 
 +
-Select the length of the workweek between *5 days workweek* and *6 days workweek*.
+Select between a five-day or six-day workweek.
 * *Years to add* 
 +
 Number of years to add.
 
 == Variables
 
-The following variables relate to the configurable timestamp generated after applying any
-```suggestion
-The following variables relate to the configurable timestamp generated after applying any
-
-time offset. _Generate date and time_ outputs the _Formatted_ variable in the specified _DateTime format_ and the other variables in
+The following variables relate to the configurable timestamp generated after applying any time offset. _Generate date and time_ outputs the _Formatted_ variable in the specified _DateTime format_ and the other variables in
 accordance with the date format settings specified in the operating
 system.
 
 * *Formatted*
 +
 The _Generate date and time.Formatted_ variable provides
-the time stamp using the date and time format selected.
+the timestamp using the date and time format selected.
 * *Date*
 +
 The _Generate date and time.Date_ variable provides the date.
