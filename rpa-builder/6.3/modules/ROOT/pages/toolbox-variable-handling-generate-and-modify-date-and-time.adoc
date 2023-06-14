@@ -67,7 +67,10 @@ Number of years to add.
 
 == Variables
 
-The following variables relate to the configurable time stamp generated after applying any
+The following variables relate to the configurable timestamp generated after applying any
+```suggestion
+The following variables relate to the configurable timestamp generated after applying any
+
 time offset. _Generate date and time_ outputs the _Formatted_ variable in the specified _DateTime format_ and the other variables in
 accordance with the date format settings specified in the operating
 system.
