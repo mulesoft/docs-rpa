@@ -46,7 +46,8 @@ Specify the day to override.
 
 * *Override to first or last* 
 +
-Specify to use either the first or last day of the given period (for example, last day of the month).
+Specify either the first or last day of the given period (for example, last day of the month).
+
 * *Seconds to add* 
 +
 Number of seconds to add.
