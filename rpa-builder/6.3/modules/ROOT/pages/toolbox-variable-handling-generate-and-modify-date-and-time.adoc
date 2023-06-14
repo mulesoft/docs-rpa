@@ -127,7 +127,8 @@ Select a *Generation mode* and specify the time variables to generate the desire
 +
 Enables you to specify a given day of the month by following some rules. 
 +
-Select *Override date to* and use the dropdown options specify a day in the month to use.
+Select *Override date to* and use the dropdown options to specify a day in the month to use.
+
 * *Calendar settings* 
 +
 Enables you to select the starting day of the week between Monday and Sunday.
