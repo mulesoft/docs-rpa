@@ -53,7 +53,8 @@ Specify either the first or last day of the given period (for example, last day 
 Number of seconds to add.
 * *Start workday of week*
 +
-Specify the starting working day of the week.
+Specify the starting workday of the week.
+
 * *Weeks to add* 
 +
 Number of weeks to add.
