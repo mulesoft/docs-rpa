@@ -1,0 +1,53 @@
+
+
+== Web Automation
+
+_Web Automation_ Action Steps are designed specifically to automate browsers and web-based applications. In contrast to the regular _Action Steps_, these do not just simulate user operations, but are also
+able to handle and control objects within a web-based application. This features can be used in any website or application that runs in a browser.
+
+* xref:toolbox-web-automation-check-web-element.adoc[Check Web Element]
++
+Use this Web Automation object to verify if a website or web application element was loaded properly and how long this took.
+* xref:toolbox-web-automation-clear-web-element.adoc[Clear Web Element]
++
+This Web Automation object is used to clear the content of fields on a website or in a web application.
+* xref:toolbox-web-automation-click-web-element.adoc[Click Web Element]
++
+Use this element to simulate mouse input on a website element.
+* xref:toolbox-web-automation-close-web-session.adoc[Close Web Session]
++
+The Action Step Close Web Session enables you to close a web session.
+* xref:toolbox-web-automation-common-properties-web-automation.adoc[Common Properties (Web Automation)]
++
+The Web Automation Action Steps share the Common Properties.
+* xref:toolbox-web-automation-confirm-alert-box.adoc[Confirm Alert Box]
++
+This Web Automation object allows you to confirm or dismiss JavaScript Alert Boxes, and enter text in JavaScript input boxes.
+* xref:toolbox-web-automation-get-web-element-text.adoc[Get Web Element Text]
++
+The Get Element Text Action Step reads the innerText of an element.
+* xref:toolbox-web-automation-keystrokes-to-web-element.adoc[Keystrokes to Web Element]
++
+Use this Web Automation object to enter alphanumeric characters into fields on a website or within a web application.
+* xref:toolbox-web-automation-navigate.adoc[Navigate]
++
+This Web Automation object allows you to perform navigation operations, such as going backwards or forward in the navigation history or refreshing the current webpage.
+* xref:toolbox-web-automation-select-web-element.adoc[Select Web Element]
++
+Use this Web Automation object to select an option from a list box or a drop-down box.
+* xref:toolbox-web-automation-submit-form.adoc[Submit Form]
++
+This Web Automation object allows you to submit a form on a webpage.
+* xref:toolbox-web-automation-using-the-browser-wizard.adoc[Using the Browser Wizard]
++
+The Browser Wizard can be used inside Web Automation Action Step wizards.
+* xref:toolbox-web-automation-web-session-chrome.adoc[Web Session (Chrome)]
++
+Use a Web Session to open a Chrome browser window in which all the Web Automation elements contained therein interact.
+* xref:toolbox-web-automation-web-session-firefox.adoc[Web Session (Firefox)]
+Use a Web Session to open a Firefox browser window in which all the Web Automation elements contained therein interact.
+* xref:toolbox-web-automation-web-session-ms-edge.adoc[Web Session (MS Edge)]
+Use a Web Session to open an Edge browser window in which all the Web Automation elements contained therein interact.
+* xref:toolbox-web-automation-website-load-time.adoc[Website Load Time]
++
+The Website Load Time Action Step measures the time taken to load a website and the websites that it references.

@@ -4,9 +4,7 @@ Manage the users of RPA Manager, RPA Recorder, and RPA Builder:
 
 * Create and delete users.
 * Edit the users' personal data.
-* Assign privileges or roles to users that enable them to work in specific modules.
-* License users for RPA Builder access.
-* Mark a user as project manager.
+* Assign privileges or roles to users that enable them to work in specific modules and, access RPA Builder and RPA Recorder, and assume responsibility for process projects.
 * Assign a user to a process team.
 
 [IMPORTANT]
@@ -39,13 +37,10 @@ Create a user to give an employee access to RPA Manager, RPA Recorder, and RPA B
 +
 * *Login Name*:
 +
-Name for the user to log on to the RPA Manager. After creation, the login name can no longer be changed.
+Name for the user to log on to RPA Manager. After creation, the login name can no longer be changed.
 * *Time Zone*:
 +
 Time zone the user works in. All times not marked otherwise are shown in the time zone of the user.
-* *Project Manager*:
-+
-Check *Project Manager* if the user is responsible for the automation of processes. Only users assigned as project managers can approve of a process candidate or start automation.
 * *Available/Assigned Roles/Privileges*:
 +
 Click on a role or privilege to assign it to or remove it from the user.
@@ -115,7 +110,7 @@ Change your own password regularly. You are logged out in the process and have t
 [[iforgotmypassword]]
 == Reset Your Password
 
-If you forget your password or if your one-time password expires, click the link on the RPA Manager login page to reset it. You need to know your user name to reset your password.
+If you forget your password or if your one-time password expires, click the link on RPA Manager login page to reset it. You need to know your user name to reset your password.
 
 . Navigate to the RPA Manager login screen.
 . Click *Forgot your credentials?*.
@@ -128,12 +123,18 @@ A confirmation request for creating a new password is emailed to you.
 . Click *Request New Credentials*.
 
 A link to create a new password is emailed to you. The one-time password expires after 24 hours.
-If you use two-factor authentication, append the time-based one-time password to your one-time password.
 
 . Open the email in your email application.
 . Copy or remember the one-time password.
 . Click *Sign In*.
 . In the RPA Manager login screen, enter your user name and the one-time password.
++
+[IMPORTANT]
+====
+If you use two-factor authentication, append the time-based one-time password (TOTP) to your one-time password (OTP) on login.
+
+For example, if your OTP is `Nz2tuQbtxpse?` and your TOTP password is `123456`, enter `Nz2tuQbtxpse?123456` in the password field.
+====
 . Click *Sign In*.
 . In the *Welcome to RPA Manager* form, enter a new password.
 . Confirm and remember the password.
@@ -144,13 +145,11 @@ If you use two-factor authentication, append the time-based one-time password to
 
 Enable two-factor authentication (2FA) for extra security.
 
-When using two-factor authentication, the user logs into the system with two mutually independent secret factors.
-
-If 2FA is activated for a user of the RPA Manager, the user enters their personal password directly followed by a time-based one-time password (TOTP) on login to verify themselves.
+When using two-factor authentication, you log in to the system with two mutually independent secret factors.
 
 The TOTP (Time-Based One-Time Password Algorithm) is set up in a special app on a mobile device. Every thirty seconds, a new password is generated and this can be used for authentication within this time period.
 
-Both the computer on which the RPA Manager is installed, and the mobile device on which the app for generation of the one-time password is installed, must be able to determine the precise Unix time for verification of the user. For this reason, the time on the devices used should be synchronized with UTC (Universal Time Coordinated).
+Both the computer on which RPA Manager is installed, and the mobile device on which the app for generation of the one-time password is installed, must be able to determine the precise Unix time for verification of the user. For this reason, the time on the devices used should be synchronized with UTC (Universal Time Coordinated).
 
 . Click on your user name in the navigation side bar.
 . Click *Profile* in the drop-down menu.
@@ -159,6 +158,13 @@ Both the computer on which the RPA Manager is installed, and the mobile device o
 . Click *Enable Two-Factor Authentication*.
 
 Log in using your password and 2FA.
+
+[IMPORTANT]
+====
+Append the time-based one-time password (TOTP) directly to your password on login.
+
+For example, if your password is `My1stPassword!` and your TOTP is `123456`, enter `My1stPassword!123456` in the password field.
+====
 
 == Disable Two-Factor Authentication for Yourself
 
@@ -203,22 +209,6 @@ Remove obsolete users. A user cannot be deleted if it is the owner or manager of
 . Click the *Delete* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the panel of the user to edit.
 . Confirm the removal.
 
-[[designate-a-user-as-project-manager]]
-== Designate a User as Project Manager
+== See Also
 
-Designate users responsible for the automation of processes as project managers to enable them to approve of a process candidate or to start an automation.
-
-. Open the *Users* view of the *User Management* module.
-. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the panel of the user that you want to designate as project manager.
-. In the form *Edit a User*, check *Project Manager*.
-. Click *Save*.
-
-[[assign-users-rpa-builder-access]]
-== Assign Users RPA Builder Access
-
-Users who build the process automation need RPA Builder access. Users currently working in RPA Builder might not be able to save their work if their license gets revoked.
-
-. Open the *Users* view of the *User Management* module.
-. Click *MuleSoft RPA Builder assignment*.
-. Enable or disable access by clicking the appropriate cell in the column *MuleSoft RPA Builder access*.
-. Click *Save*.
+* xref:rpa-home::automation-userrolesandpermissions.adoc[User Roles and Permissions]

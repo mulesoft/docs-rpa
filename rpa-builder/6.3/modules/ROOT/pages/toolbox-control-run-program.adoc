@@ -1,0 +1,173 @@
+
+
+= Run Program
+
+This _Action Step_ is used to run a program by directly calling its
+executable file.
+
+== Properties
+
+*Domain* If a process is started with a specific user, this defines the
+domain of the user
+
+*Inherit Environment* If process is started with a specific user, this
+determines if the environment will be inherited from that user
+
+*Interactive logon with profile* If this option is checked additionally
+to the option _UseCredentials,_ the user’s profile from the registry is
+passed on to the process.
+
+*Password* If a process is started with a specific user, this is the
+user's password. Only applicable if "Use Credentials" is set.
+
+*Use Credentials* Determines whether to start the process with a
+different user or not
+
+**Username** If a process is
+started with a specific user this is the user's name. Only applicable if
+_Use Credentials_ is set.
+
+*File name* Contains the full path to the executable file that should be
+run
+
+**Parameters** Defines
+additional command line parameters to use when running the program
+
+*Path is relative to 3rd Party Folder* The related process will be
+started relative to the _3rd Party Folder_. This folder must be below
+the scripts directory and can contain user-defined applications.
+
+*Start mode* Sets the status of the application window (_Normal_,
+_Maximized_, _Minimized_)
+
+**Working Directory**
+Defines the working directory of the process started
+
+*Timeout* If _Wait for window_ _to appear_ is set, this defines how long
+the _Action Step_ will wait for the window to appear
+
+*Use regular expression* If _Wait for window to appear_ is set, this
+setting defines whether the _Window Title_ field contains a regular
+expression or not
+
+*Wait for window to appear* Defines whether the _Action Step_ should
+wait until the window appears
+
+*Window Title* If _Wait for window_ _to appear_ is set, this defines the
+_Window Title_ to wait for
+
+== Inbound Variables
+
+*File name*
+
+*Working Dir*
+
+*Parameters*
+
+*Window TitleUsername*
+
+*Password*
+
+*Domain* Process Window Handle The window handle associated with
+the newly opened window. (Only available if _Wait for window_ _to
+appear_ is set.)
+
+== Outbound Variables
+
+*Process ID* The ID of the process that has been started
+
+*Executable* The name of the executed file
+
+*Working Dir* The working directory of the process
+
+== Wizard
+
+*Insert* Environment *Variable* Select and use any defined environment
+variable as a path to the desired program file via the drop-down menu
+
+*Auto-Replace Variables* If you have entered the path to the executable
+manually or used the browse button to specify it, you can click this
+button to check if there are any environment variables that can replace
+parts of the path
+
+You can place an executable file in the *_3rd Party Folder_* within the
+folder where the project is saved. To do so, use the _Select & Copy File
+to 3rd Party Folder…_ function in the drop-down menu accessed by
+clicking the triangle symbol next to the browse button (...).
+
+This is very useful if, for example, you want to use a user-defined
+batch file in the _Workflow_. Using this function ensures that the
+executable file can still be found correctly, even when the project
+folder has been moved or deployed.
+
+Select _Open 3rd Party Folder_ to copy files into the folder yourself.
+If you use this option, remember to manually select the _Path is
+relative to 3rd Party Folder_ checkbox and enter the filename to call
+too. Using _Select & Copy…_ fills out the _File name_ field and selects
+the checkbox automatically.
+
+To select the program to run, enter the full path manually into the
+_File name_ field or just browse to the executable file you want to run.
+//by clicking *_…_*.
+
+[TIP]
+If you intend to use an _Image search_ within the application when it is running, it is recommended that you use _Maximized_ _Start mode_ so the application window will always be in the same position! This makes defining a reliable _Search area_ for the _Image search_ much easier.
+
+As mentioned above, you can use _Windows_ environment
+variables in the _File name_ and _Parameters_ field. This can be done
+with both default environment variables defined by _Windows_
+and with user-defined environment variables.
+
+These environment variables contain paths to certain folders. For
+example, _Internet Explorer_ is often installed in
+_C:\Program Files\Internet Explorer\_ or
+_C:\Program Files x86\Internet Explorer\_. However, the folder might
+have a completely different name, depending on the language used with
+your operating system, or it might even be installed on a different hard
+drive. To help avoid problems, the environment variable _%ProgramFiles%_
+is set automatically to the correct folder when _Windows_ is
+installed.
+////
+So, if you put the following entry in the _File Name_ field
+of the _Run Program_ wizard, the executable file will be found on every
+_Windows_ system:
+
+image::toolbox-control-run-program-image1.png[Entry file name field]
+////
+
+Here is a list of the most important environment variables:
+
+* *%ALLUSERSPROFILE%* The _All Users_ profile folder
+* *%APPDATA%* The current user's application data folder (_Windows
+Vista_ and later only)
+* *%COMPUTERNAME%* The system name
+* *%ProgramFiles%* is replaced by the current program path.
+
+This variable depends on whether you are running a
+32-bit or a 64-bit program. If you are running a 32-bit program,
+_C:\Program Files (x86)_ is the resulting variable. If you are running a
+64-bit program, _C:\Program Files_ is the resulting variable.
+
+RPA Builder is usually run as a 64-bit program but the generated
+workflow code, on the other hand, is usually run as a 32-bit program.
+That is why the _Test Button_ in the wizard can provide you with a
+different result than the actual run does later on.
+
+To avoid possible differences when the programs are being run, it is
+therefore recommended to use:
+
+- the variable *%ProgramFiles(86)%* for 32-bit programs
+
+- the variable *%ProgramW6432* for 64-bit programs. (This does not apply
+to 32-bit-only Windows installations.)
+
+* *%SystemRoot%* The system root folder
+* *%SystemDrive%* The system drive letter
+* *%USERPROFILE%* The current user's profile folder
+
+You will find a complete list of predefined environment variables by
+opening the drop-down menu _Insert Environment Variable_ in the _Run
+program_ wizard.
+
+If you want to test the new _Run program_ configuration, click the Test
+button and the executable will be run according to the configuration.

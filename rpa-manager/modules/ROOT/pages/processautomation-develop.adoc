@@ -31,14 +31,16 @@ As long as the project is in the build phase, it can be seen in the repository o
 |Record processes with RPA Recorder
 |Process Recording
 
-|Open, use and edit the activity library in RPA Builder
+|Implement process projects in RPA Builder
+|Builder Usage
+
+|Open, use, and edit the activity library in RPA Builder
 |Activity Library Open, Activity Library Administration
 
 |===
 
 * To record a process, RPA Recorder must be installed and connected to RPA Manager.
 * To build a process automation, RPA Builder must be installed and connected to RPA Manager.
-* To use RPA Builder, obtain an RPA Builder assignment in the *Users* view of the *User Management* module.
 * A project must exist in the *Project Management* view of the *Process Automation* module.
 * Obtain the needed permissions as a member of the process team in the project data sheet in the *Project Management* view of the *Process Automation* module.
 
@@ -58,7 +60,7 @@ After saving the process model, move the project to the *Build* phase and open i
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of the project to open it.
-. In the panel *Automation*, on the workbench, click on an element to select the next step from the context pad or drag and drop an element from the palette onto the workbench and connect it to the previous step with a *Flow* element.
+. In the panel *Automation*, on the workbench, click on an element to select the next step from the context pad or drag an element from the palette onto the workbench and connect it to the previous step with a *Flow* element.
 . Add documentation
 . Add, edit, and remove elements until the model is finished.
 . On the workbench, click the icon *Save*.
@@ -71,7 +73,7 @@ After saving the recorded process model, move the project to the *Build* phase a
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of the project to open it.
-. In the panel *Automation*, on the workbench, click on the icon *Record BPMN* to start the RPA Recorder.
+. In the panel *Automation*, on the workbench, click on the icon *Record BPMN* to start RPA Recorder.
 . After recording, click the icon *Save* on the workbench.
 
 === Import a Process
