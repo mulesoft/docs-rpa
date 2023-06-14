@@ -42,7 +42,8 @@ Specify the output language to use for the days of the week.
 Enables overriding workday settings. 
 * *Override to day* 
 +
-Specify the day to override with. 
+Specify the day to override. 
+
 * *Override to first or last* 
 +
 Specify to use either the first or last day of the given period (for example, last day of the month).
