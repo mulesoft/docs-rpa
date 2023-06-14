@@ -96,3 +96,4 @@ added after the new text.
 new file should be created if the specified file does not exist. This
 option prevents the _Workflow_ from ending with an error message if the
 file does not exist.
+* *Encoding* The encoding to use when writing the file. Includes Shift-JIS and EUC-JP for Japanese support. Specify a valid encoding type if the one you need is not in the list. 
