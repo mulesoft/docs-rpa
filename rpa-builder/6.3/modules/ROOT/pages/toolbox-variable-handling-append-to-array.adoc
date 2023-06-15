@@ -1,0 +1,32 @@
+= Append to Array 
+
+Use this Action Step to append a value to an existing Array variable. 
+
+== Properties
+
+The _Append to Array_ Action Step contains the xref:common-properties.adoc[common properties] *Description*, *Error Handling*, and *Name*. 
+
+== Inbound Variables
+
+* *Array to be extended* 
++
+The base array to extend.
+* *Array to append* 
++
+The array to append to the base array. 
++
+Use the wizard to specify a single value, or an array of values, or to map a variable. When manually defining the array elements, use the comma (`,`) to separate the values. If you define strings that contain commas, enclose the strings with quotes (`"`). For example, `"Hello, this is a single value", This is another value, testValue`.
+ 
+== Outbound Variables
+
+* *New Array Count* 
++
+Outputs the total number of elements in the base array after appending the data.
+* *Appended Element Count* 
++
+Outputs the number of elements appended to the base array.
+
+== See Also 
+
+* xref:toolbox-variable-handling-set-array-variable.adoc[Set Array Variable]
+* xref:toolbox-variable-handling-string-to-array.adoc[String to Array]
