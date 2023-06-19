@@ -30,9 +30,20 @@ To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[
 ** RPA Recorder requires RPA Manager credentials to log in and start recordings.
 ** You can upload recordings to RPA Manager.
 
-=== Log in to RPA Recorder
+=== Log in to RPA Recorder with Anypoint
 
-After starting RPA recorder via Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager:
+If your organization supports Anypoint Identity Access Management (IAM), then follow these steps to log in after starting RPA recorder via Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager:
+
+. Open RPA recorder.
+. Provide your MuleSoft Anypoint login credentials for user authentication.
+
+image:.png[RPA Logout Screen]
+
+To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
+
+=== Log in to RPA Recorder (Legacy)
+
+If your organization does not support Anypoint IAM, then follow these steps to log in after starting RPA recorder via Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager:
 
 . Open RPA recorder.
 . Provide your login credentials for user authentication.
