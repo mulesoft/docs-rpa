@@ -37,7 +37,7 @@ If your organization supports Anypoint Identity Access Management (IAM), then fo
 . Open RPA recorder.
 . Provide your MuleSoft Anypoint login credentials for user authentication.
 
-image:.png[RPA Logout Screen]
+image:.png[RPA Recorder Login Screen]
 
 To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
 
