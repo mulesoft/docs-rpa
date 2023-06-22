@@ -11,8 +11,8 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| A user can now be selected in the **Execution** section of an invokable run configuration. | W-13490993
-| The category of a process evaluation is shown after renaming it. | W-13517620
+| You can now select users in the *Execution* section of an invokable run configuration. | W-13490993
+| The category of a process evaluation now shows properly after renaming it. | W-13517620
 |===
 
 // == Known Issues
