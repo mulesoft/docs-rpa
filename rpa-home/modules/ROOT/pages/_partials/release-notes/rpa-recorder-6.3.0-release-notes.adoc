@@ -9,7 +9,9 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* As part of the MuleSoft Anypoint platform migration, if your organization supports Anypoint Identity Access Management (IAM), you will need to enter your Anypoint credentials to log in to RPA Recorder when accessing the Recorder from RPA Manager.
+* Added support for Anypoint Identity Access Management (IAM).
++
+If your organization is migrated to Anypoint Platform, use your Anypoint credentials to log in to RPA Recorder when starting it from RPA Manager.
 * When selecting web elements, the clickable area is now identified with a blue border instead of blue highlighting.
 * UI automation performance is improved by reducing process blocking, app stuttering, and exceptions.
 * The *Add Variable* feature is removed.
@@ -32,11 +34,11 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="2a,1a"]
 |===
 | Issue Resolution | ID
-|Performance issues no longer occur when using Alt + F4 to close the *Add Activity* dialog and when screenshots are enabled in full screen and saved in .png format.| W-12725367
+|Performance issues no longer occur when pressing Alt + F4 to close the *Add Activity* dialog and when RPA Recorder saves full screen screenshots in PNG format.| W-12725367
 |Concatenated CData tags no longer result in errors in the XML of the BPMN. | W-12975415
-|The window title is now defined correctly in bot tasks. | W-13098224
-|The Recorder now responds properly when pressing the Windows key after starting a bot task. | W-12701793
-|The size of screenshots saved as JPG files is compressed to 70% by default.| W-13203517
+|The window title now shows correctly in bot tasks. | W-13098224
+|RPA Recorder now responds properly when pressing the Windows key after starting a bot task. | W-12701793
+|RPA Recorder now saves JPG screenshot files compressed to 70% by default.| W-13203517
 |The BPMN viewer in the RPA Recorder window no longer overlaps the navigation pane. | W-13538670
 |===
 
