@@ -11,7 +11,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * You can now login using Anypoint Platform credentials. RPA Builder automatically detects if your organization is migrated to Anypoint Platform and prompts the corresponding credentials for login.
-* Read from Text File, Write to Text File, and File Controlled Loop action steps now support Japanese characters (Shift-JIS and EUC-JP enconding). 
+* Read from Text File, Write to Text File, and File Controlled Loop action steps now support Japanese characters (Shift-JIS and EUC-JP encoding). 
 +
 You can select the expected encoding or enable automatic encoding detection in Read from Text File and File Controlled Loop. You can select the target encoding in Write to Text File. By default, UTF-8 is selected.
 * Generate and Modify Date and Time action step can now output days of the week in Japanese.
