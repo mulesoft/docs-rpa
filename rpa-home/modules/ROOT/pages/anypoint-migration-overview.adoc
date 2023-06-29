@@ -2,10 +2,7 @@
 
 MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP).
 
-//If your organization acquired the MuleSoft Automation Bundle after the integration, your account is not affected by the migration because your organization is already in Anypoint Platform. 
-
 To take advantage of all new features and improvements from the integration, the organization admin must send an email to rpa_migration_support@salesforce.com requesting to start the migration process for your organization. 
-//The migration process starts in July 2023 and occurs in phases. Non-federated orgs that are prepared for the migration receive a notification in the RPA Manager UI confirming the estimated date for the integration with Anypoint Platform. 
 
 Before we can start migrating your organization, ensure you follow the <<pre-migration, pre-migration steps>>.
 
