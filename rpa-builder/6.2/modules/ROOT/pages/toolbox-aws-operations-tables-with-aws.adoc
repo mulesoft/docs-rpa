@@ -3,6 +3,14 @@
 
 The Tables with AWS action step enables you to recognize the text values inside a table by sending a local file to the AWS Textract service, which returns the extracted values.
 
+== Before You Begin 
+
+//General introduction and warning about AWS services language support
+include::partial$aws-action-steps-language-support.adoc[tag=languageSupportAdvice]
+
+//Link to list of languages supported by Amazon Textract
+include::partial$aws-action-steps-language-support.adoc[tag=supportedLanguagesAmazonTextract]
+
 == Inbound Variables
 
 * *Directory Path*
