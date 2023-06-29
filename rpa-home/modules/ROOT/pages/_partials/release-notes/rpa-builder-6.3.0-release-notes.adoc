@@ -1,0 +1,47 @@
+= RPA Builder 6.2.2 Release Notes
+
+RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+//TODO: Date
+== Jun ##, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* You can now login using Anypoint Platform credentials. RPA Builder automatically detects if your organization is migrated to Anypoint Platform and prompts the corresponding credentials for login.
+* Read from Text File, Write to Text File, and File Controlled Loop action steps now support Japanese characters (Shift-JIS and EUC-JP enconding). 
++
+You can select the expected encoding or enable automatic encoding detection in Read from Text File and File Controlled Loop. You can select the target encoding in Write to Text File. By default, UTF-8 is selected.
+* Generate and Modify Date and Time action step can now output days of the week in Japanese.
+* The New action step Append to Array enables you ro add elements to an existing array.
+* File Controlled Loop now enables you to define the separation character of the CSV file.
+* Iterate over Files now supports Regular Expressions.
+* The Proxy settings configuration now uses the system proxy settings by default.
+* The new workflow property MaxRuntime enables you to define the maximum execution time of a workflow.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.2.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+| The WorkflowValidator no longer freezes when preparing to validate properties with a large amount of input. | W-12613901
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
