@@ -46,7 +46,7 @@ The changes are shown graphically but are only saved in the detailed view if you
 
 Add new investments as soon as they occur. The initial investment is copied from the process data sheet.
 
-. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the table row of the *Process* you want to add investments to.
+. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the row of the *Process* you want to add investments to.
 . In the panel *Finance Analysis: Cost entries*, click *Add investment*.
 . Complete the form *Finance Analysis: Cost entries*:
 +
@@ -70,7 +70,7 @@ The initial operating costs are copied from the Process data sheet.
 
 Note that any changes to the operating costs shift the date of the break-even point.
 
-. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the table row of the *Process* you want to add investments to.
+. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the row of the *Process* you want to add investments to.
 . In the panel *Finance Analysis: Cost entries*, click *Add change of operating costs*.
 . Complete the form *Finance Analysis: Cost entries*:
 +
@@ -97,7 +97,7 @@ Move the slide control *Months* with the mouse to set the required number of mon
 
 View the graphics *Break-Even Analysis* and *Cost Evaluation*.
 
-. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the table row of the *Process* you want to view.
+. In the *Finance Analysis* view of the *Process Operations* module, click the icon *Finance Analysis* in the row of the *Process* you want to view.
 
 == See Also
 

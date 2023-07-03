@@ -64,7 +64,7 @@ Drag the slider to the appropriate values. *Exclude* unnecessary criteria.
 
 Edit a process evaluation to correct errors:
 
-. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the table row of the evaluation to edit.
+. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the evaluation to edit.
 . Edit the form *Process Evaluation*.
 . Click *Save*.
 
@@ -72,7 +72,7 @@ Edit a process evaluation to correct errors:
 
 Delete process evaluations that you no longer need:
 
-. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Delete* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the table row of the evaluation to delete.
+. In the *Process Evaluation* view of the *Process Evaluation* module, click the *Delete* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the evaluation to delete.
 . Confirm the deletion.
 
 == See Also

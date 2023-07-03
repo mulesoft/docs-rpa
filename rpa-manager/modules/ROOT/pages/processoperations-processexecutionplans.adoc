@@ -32,7 +32,7 @@ View the execution timetable to see the effective run time of a process.
 
 If there are more sessions assigned than free sessions available, the number of runs of a process within this timeframe depends on its priority.
 
-. In the *Process Execution Plans* view of the *Process Operations* module, click the icon *Execution timetable* in the table row of the process you want to view.
+. In the *Process Execution Plans* view of the *Process Operations* module, click the icon *Execution timetable* in the row of the process you want to view.
 . Click on the Gantt chart of a configuration to view the composition of the effective runtime.
 
 == See Also
