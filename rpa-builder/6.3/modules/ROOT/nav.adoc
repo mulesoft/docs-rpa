@@ -102,6 +102,7 @@
 *** xref:toolbox-text-recognition-intelligent-ocr-2020.adoc[Intelligent OCR (2020)]
 ** xref:toolbox-variable-handling.adoc[Variable Handling]
 *** xref:toolbox-variable-handling-activity-parameters.adoc[Activity Parameters]
+*** xref:toolbox-variable-handling-append-to-array.adoc[]
 *** xref:toolbox-variable-handling-check-regex.adoc[Check Regex]
 *** xref:toolbox-variable-handling-check-value.adoc[Check Value]
 *** xref:toolbox-variable-handling-combine-strings.adoc[Combine Strings]

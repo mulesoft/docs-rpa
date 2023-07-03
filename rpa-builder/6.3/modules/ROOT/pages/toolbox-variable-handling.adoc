@@ -7,15 +7,18 @@ Variable Handling enables you to perform multiple actions like mathematical oper
 * xref:toolbox-variable-handling-activity-parameters.adoc[Activity Parameters]
 +
 The Action Step Activity Parameters (AP) enables you to map variables that you can use not only in the Workflow, but also in the activities of the business process and gateways.
+* xref:toolbox-variable-handling-append-to-array.adoc[]
++
+The Append to Array Action Step enables you to append a single value or an array to an existing array.
 * xref:toolbox-variable-handling-check-regex.adoc[Check Regex]
 +
 Use the Check Regex Action Step to search for a text fragment using a regular expression.
 * xref:toolbox-variable-handling-check-value.adoc[Check Value]
 +
-This Action Step allows you to compare two numerical or alphanumerical (case-sensitive and case-insensitive) values to each other, using different comparison methods.
+This Action Step enables you to compare two numerical or alphanumerical (case-sensitive and case-insensitive) values to each other, using different comparison methods.
 * xref:toolbox-variable-handling-combine-strings.adoc[Combine Strings]
 +
-The Combine Strings Action Step allows multiple variables to be combined into a single new variable.
+The Combine Strings Action Step enables you to combine multiple variables into a single new variable.
 * xref:toolbox-variable-handling-convert-string.adoc[Convert String]
 +
 This Action Step converts a given string or variable to any other variable type and makes it available as a set of new variables.
@@ -42,7 +45,7 @@ This Action Step simply copies the current clipboard content into a variable (se
 The Read from Array Action Step is used to access the content of an array.
 * xref:toolbox-variable-handling-runtime-variables.adoc[Run Time Variables]
 +
-The RunTime Variables Action Step allows variables to be used that are completed at a Workflow's runtime.
+The RunTime Variables Action Step enables you to use variables defined during runtime in a Workflow.
 * xref:toolbox-variable-handling-set-array-variable.adoc[Set Array Variable]
 +
 The Set Array Variable Action Step enables you to assign new values to an array.
@@ -51,13 +54,13 @@ The Set Array Variable Action Step enables you to assign new values to an array.
 The Set Variable Action Step assigns a new value to a variable.
 * xref:toolbox-variable-handling-string-operations.adoc[String Operations]
 +
-The String Operations Action Step allows you to modify strings.
+The String Operations Action Step enables you to modify strings.
 * xref:toolbox-variable-handling-string-to-array.adoc[String to Array]
 +
-The String to Array Action Step allows you to split a string into arrays and to process them further in the subsequent Action Steps, such as with the Read from Array Action Step.
+The String to Array Action Step enables you to split a string into arrays and to process them further in next Action Steps, such as with the Read from Array Action Step.
 * xref:toolbox-variable-handling-user-account-decrypter.adoc[User Account Decrypter]
 +
-The Action Step User Account Decrypter allows you to accept the activity parameter User Account as an inbound variable and further process it as log-in data in the subsequent Action Steps.
+The Action Step User Account Decrypter enables you to accept the activity parameter User Account as an inbound variable and further process it as log-in data in next Action Steps.
 * xref:toolbox-variable-handling-variable.adoc[Variable]
 +
 This Action Step makes it possible to set up a simple string variable.
