@@ -1,0 +1,104 @@
+
+
+= Managed
+
+The _Managed_ block allows you to handle errors within your _Workflow_
+as they happen. It also can be used to make sure that certain _Action
+Steps_ or _Transactions_ are executed, even if an error occurred.
+
+== Properties
+
+* *_OnError_ section behavior* If an error happens within the _OnError_
+section, it can either be handled like any other error (_Normal error
+handling_) or the Workflow can be immediately aborted (_Abort script on
+error_).
+* In the first case the DoAlways part will be executed before program
+termination, in the latter case not.
+
+== *_DoAction_*
+
+This is the default path of the _Managed Block_. The RPA Bot will first
+try to execute all _Action Steps_ within the _DoAction_ section. If an
+error occurs (e.g. an _Image search_ fails), the execution of the
+_DoAction_ section will be aborted and the _OnError_ section will be
+executed. If the _OnError_ section is empty, an error within the
+_DoAction_ section will cause the _Managed Block_ to enter an error
+state.
+
+== *_OnError_*
+
+This section will be executed if an _Action Step_ within the _DoAction_
+section has failed. You can try to handle the error here and restore a
+state in which the rest of the Workflow can still be executed normally,
+even though the _DoAction_ section failed. If all items within the
+_OnError_ section are executed successfully, the _Managed Block_ is
+considered successful ($run = 1). Note that an empty _OnError_ section
+will *not* change the run state. Use _Force OK State_ (see Section
+3.8.4) for that.
+
+However, if an error occurs within the _OnError_ section, its execution
+will be aborted and the _Managed Block_ will remain in the error state
+($run = -1). What happens next depends on the setting for behavior of
+the _OnError_ section. If it is set to _Normal error handling_, the
+Workflow will handle an error in the _OnError_ section like all other
+steps, meaning the error can be handled by an enclosing _Managed Block_.
+If it is set to _Abort script on error_ the Workflow will be instantly
+aborted if any further error happens within the _OnError_ section.
+
+== *_DoAlways_*
+
+The _DoAlways_ section will be executed at the end of the _Managed
+Block_, regardless of whether an error has occurred within the _Managed
+Block_ or not. The only exception is when the _OnError section behavior_
+is set to _Abort script on error_ and error occurred within the
+_OnError_ section. If an error occurs within the _DoAlways_ section, its
+execution will be aborted but the error state of the _Managed Block_
+will remain unchanged. Execution of the _DoAlways_ section has no
+influence on the error state, which will always be the same as at the
+time the section was entered.
+
+== Example
+
+The following example will show you how to react to common problems
+directly in your _Workflow_ using the _Managed Block_.
+
+Imagine you want to open up an _Internet Explorer_ window and enter a
+web address. First you start _Internet Explorer_ using run program,
+search for the address bar to verify that _Internet Explorer_ is loaded,
+and then enter the web address.
+
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=319,height=79]
+
+Usually, when _Internet Explorer_ starts, the focus will be on the
+address bar.
+// which looks like this:
+
+//image:media\image2.png[10.2 Managed Example - 2.png,width=616,height=36]
+
+This is what we are searching for with the _Image search_. When we find
+it, we simply enter the web address and are done.
+
+However, it is a common problem that sometimes _Internet Explorer_ loses
+the focus immediately. This means that the address bar text will not be
+highlighted and have the focus.
+//The address bar will look like this:
+
+//image:media\image3.png[10.2 Managed Example - 3.png,width=614,height=37]
+
+The _Image search_ will not find this. Plus, the address bar does not
+have focus, so you cannot simply start typing with the keystroke item.
+The desired website will not be opened.
+
+The _Managed Block_ gives you the perfect solution for this problem.
+
+You put _Run Program_ and _Image search_ within the _DoAction_ section
+and _Keystrokes_ containing the web address in the _DoAlways_ section. +
+If you do not find the _Pattern image_, the _Managed Block_ will execute
+the _OnError_ section. There, you simply put another keystroke to press
+*_F6_* – this is the _Internet Explorer_ shortcut for focusing the
+address bar. This ensures that the address bar is focused when you enter
+the _DoAlways_ section. +
+Then you can type in the web address and be sure it is entered correctly
+– problem solved!
+
+//image:media\image4.png[Ein Bild, das Text enthält. Automatisch generierte Beschreibung,width=391,height=264]

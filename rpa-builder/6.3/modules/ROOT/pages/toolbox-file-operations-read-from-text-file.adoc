@@ -1,0 +1,123 @@
+
+
+= Read from Text File
+
+The _Read from Text File_ Action Step allows you to read from a text
+file and you use the _Read_ _Mode_ to specify which part of the file is
+to be read. The button in the Workflow shows the _Read Mode_ that is
+presently active in brackets after the name of the Action Step (in the
+example above: WholeFile). There is an option to determine whether the
+text should be deleted after reading.
+
+To achieve a correct result, the text file to be read has to be UTF-8
+encoded.
+
+== Properties
+
+*File Operation Settings:*
+
+* *Delete line(s) after read* Specify whether the text should be deleted
+after it is read.
+* *Directory path*
+Enter the path to the directory where the file to be read is stored. You
+can specify an absolute or relative path. If a relative path is used,
+then the path relates to the _Base Path_ variable.
+* *File name* Enter the
+name here of the file that is to be read.
+* *Line count* Enter the number of lines to be read. This option can be
+used if you have specified that more than one line (_Range of lines_)
+should be read in _Read file check mode_.
+* *Number of first or Single Line* Specify the number of lines that are
+to be read here. If you have selected more than one line to be read in
+_Read file check mode_, i.e. a _Range of lines_, this is where you
+select the line number at which to start reading.
+
+The first line in a text file is line number 1!
+
+* *Read file check mode* Use _Read file_ _check mode_ to specify which
+part of the file is to be read:
+** *Read whole file* The whole file will be read.
+** *Last line* Only the last, most recent line of the file will be read.
+** *Single line* Only a single line will be read (please also note the
+setting *Number of first or single line*).
+** *Range of lines* A set of lines will be read (please also note the
+setting *Number of first or single line*).
+* *Read to end* Specify whether to read to the end of the file. This
+option can be used if you have specified that more than one line (_Range
+of lines_) should be read in _Read file check mode_. The advantage of
+this option compared to the _Line count_ option is that you do not have
+to define how many lines are to be read when in _Range of lines_ mode.
+
+Other Properties that are the same in all Action Steps are described in
+the section on *Common Properties*. For reasons of
+clarity they are not shown here.
+
+== Inbound Variables
+
+*Directory path*
+Enter the path to the directory where the file to be read is stored. You
+can specify an absolute or relative path. If a relative path is used,
+then the path relates to the _Base Path_ variable.
+
+*Directory path*
+Enter the path to the directory where the file to be read is stored. You
+can specify an absolute or relative path. If a relative path is used,
+then the path relates to the _Base Path_ variable.
+
+== Outbound Variables
+
+*Read text* The _Read from Text File.Read text_ variable provides the
+selected read mode (_Read file check mode_).
+
+*IsRead* The _Read from Text File.IsRead_ variable indicates whether the
+file could be read or not (True/False).
+
+*Line Count*  The _Read from Text File.Line Count_ variable provides the
+number of lines that are to be read.
+
+*File name* The _Read from Text File.File Name_ variable provides the
+name of the file that is to be read.
+
+*Directory path* The _Read from Text File.Directory Path_ variable
+provides the path that is used.
+
+== Wizard
+
+* *Directory path* Specify the path to the file that is to be read. You
+can create an absolute path or a path relative to the _Base Path_.
+// using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=129,height=22] buttons.
+The initial
+value is %STWS_BASEPATH%. Select an existing path.
+// using the image:media\image3.png[image,width=20,height=20] button.
+You can also
+insert variables from the _Workflow_ in order to construct the path. To
+do so, click on the pin and select one of the available variables.
+////
+More information about the environment variables (Insert Environment
+Variable) and script variables (Insert Script Variable) can be found in
+the section *Settings*.
+////
+
+* *File name* Enter the name here of the file that is to be read. You
+can also insert a variable from the Workflow as the _File Name_. To do
+so, click on the pin and select one of the available variables.
+* *Read mode* Use _Read_ _mode_ to specify which part of the file is to
+be read. Other fields will be shown depending on the chosen setting:
+** *Entire file* The whole file will be read.
+** *Last line* Only the last, most recent line of the file will be read.
+** *Single line* Only a single line will be read. Enter the line number
+of the line that is to be read in the *Line Number* field.
+** *Range of lines* A range of lines will be read. Enter the line number
+of the first line that is to be read in the *First line to read* field.
+Enter the number of lines that is to be read in the *Line count* field.
+Use the option *Read to end of file* to specify that reading is to occur
+until the end of the file. The advantage of this option compared to the
+_Line count_ detail is that you do not have to define the number of
+lines that is to be read.
+
+The first line in a text file is line number 1!
+
+* *Remove line(s) after read* Specify here whether the text should be
+deleted after it is read.
+* *Encoding* The encoding of the file to read. Includes Shift-JIS and EUC-JP for Japanese support. Specify a valid encoding type if the one you need is not in the list. 

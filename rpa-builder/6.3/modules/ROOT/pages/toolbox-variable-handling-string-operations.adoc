@@ -1,0 +1,132 @@
+
+
+= String Operations
+
+The String Operations Action Step enables you to modify strings by using a variety of operations, including find and replace and trimming.
+
+== Properties
+
+* *Input Text* 
++
+The string that you want to modify. 
++
+Specify this value manually or use the wizard to define this value via the pin variable.
+* *Use a regular expresion for string to find*
++
+Select this option to evaluate the value specified in the *Find what* field in the wizard (`StringToFind` variable) as a regular expression and apply the regex to the *Input Text*.  
++
+This option is valid only when using the string operation *Find and replace text*.
+
+== Inbound Variables
+
+//link:\l[*Input text*]
+* *Input Text* 
++
+The string that you want to modify. 
++
+Specify this value manually or by using the wizard to select a pin variable for the value.
+* *StringToFind* 
++
+The string to search for inside the *Input Text* string. 
+* *StringToReplaceWith* 
++
+The string to replace the found instances of *StringToFind*.
+* *CharacterToTrimAt* 
++
+The character to use as delimiter when using trim operations. 
+* *NumberOfCharacters*
++
+The number of characters to count when using trim operations. 
+
+== Outbound Variables
+
+* *Result* 
++
+The modified string is output as the result. You can then use this string in subsequent Action Steps.
+* *Result Length*
++
+The length of the modified result string.
+
+== Wizard
+
+image:string-operations-wizard.png[75%, 75%, The available string operations in the String Operations wizard.] 
+
+* *String operation* 
++
+The string operation you want to perform. The following operations are available:
+
+** *Analyse*
++
+Outputs the length of the specified input text string. 
+** *Find and replace text* 
++
+Searches and replaces text found in the input text. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Find what* = `TEST`
+*** *Replace with* = `NEW`
+*** Output = `MyNEWString`
+** *Left (take first characters)*
++
+Outputs the specified number of characters from the string, starting from the first character. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Number of characters* = `4`
+*** Output = `MyTE` 
+** *Right (take last characters)*
++
+Outputs the specified number of characters from the string, starting from the last character. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Number of characters* = `4`
+*** Output = `ring` 
+** *Trim left (remove first characters)*
++
+Removes the specified number of characters from the string, starting from the first character. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Number of characters* = `3`
+*** Output = `ESTString` 
+** *Trim right (remove last characters)*
++
+Removes the specified number of characters from the string, starting from the last character. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Number of characters* = `3`
+*** Output = `MyTESTStr` 
+** *Takes first characters of the string until a specific character (specific character is not part of output)*
++
+Outputs all characters between the beginning of the string and the first occurrence of the *Character to trim at* value. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Character to trim at* = `t`
+*** Output = `MyTESTS` 
++
+Note that the output string does not include the search character.
+** *Takes last characters of the string until a specific character (specific character is not part of output)*
++
+Outputs all characters between the last occurrence of the *Character to trim at* value and the end of the string. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Character to trim at* = `T`
+*** Output = `String`
++
+Note that the output string does not include the search character.
+** *Removes first characters of the string until a specific character (specific character is not part of output)*
++
+Removes all characters between the beginning of the string and the first occurrence of the *Character to trim at* value. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Character to trim at* = `T`
+*** Output = `ESTString` 
++
+Note that the search character is removed from the output string. 
+** *Removes last characters of the string until a specific character (specific character is not part of output)*
++
+Removes all characters between the last occurrence of the *Character to trim at* value and the end of the string. For example: 
++
+*** *Input text (string)* = `MyTESTString`
+*** *Character to trim at* = `T`
+*** Output = `MyTES` 
++
+Note that the search character is removed from the output string. 
