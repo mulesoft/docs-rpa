@@ -4,7 +4,7 @@ Use this Action Step to append a value to an existing array variable.
 
 == Properties
 
-The _Append to Array_ Action Step contains the xref:common-properties.adoc[common properties] *Description*, *Error Handling*, and *Name*. 
+The Append to Array Action Step contains the xref:common-properties.adoc[common properties] *Description*, *Error Handling*, and *Name*. 
 
 == Inbound Variables
 
@@ -28,5 +28,5 @@ Outputs the number of elements appended to the base array.
 
 == See Also 
 
-* xref:toolbox-variable-handling-set-array-variable.adoc[Set Array Variable]
-* xref:toolbox-variable-handling-string-to-array.adoc[String to Array]
+* xref:toolbox-variable-handling-set-array-variable.adoc[]
+* xref:toolbox-variable-handling-string-to-array.adoc[]
