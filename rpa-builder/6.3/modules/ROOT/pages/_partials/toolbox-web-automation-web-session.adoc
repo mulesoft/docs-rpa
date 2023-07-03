@@ -12,9 +12,6 @@ session.
 * *Browser mismatch* 
 +
 Specifies if the execution aborts when there is a browser mismatch or if it shows a warning. 
-* *Browser path*
-+
-Specifies the path to the executable file of the browser instance to open. 
 * *Hide Command Prompt*
 +
 Hides the web driver’s command prompt (default). Can be displayed again for diagnostic purposes.

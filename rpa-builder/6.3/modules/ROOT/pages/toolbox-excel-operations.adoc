@@ -1,0 +1,19 @@
+
+
+= Excel Operations
+
+Excel Operations enable you to interact with Microsoft Excel files by extracting and manipulating their data.
+
+* xref:toolbox-excel-operations-excel-controlled-loop.adoc[Excel Controlled Loop]
++
+This Action Step enables you to iterate over data from an Excel file.
+* xref:toolbox-excel-operations-excel-session.adoc[Excel Session]
++
+The Excel Session is an element that encompasses all Excel operations. Excel operations include the reading, modification, and creation of entire files and file elements in the Excel format.
+* xref:toolbox-excel-operations-read-from-excel-file.adoc[Read from Excel File]
++
+This Action Step enables you to read the contents of an Excel file.
+* xref:toolbox-excel-operations-recalculate-excel-file.adoc[Recalculate Excel File]
++
+This Action Step enables you to recalculate an Excel sheet
+* xref:toolbox-excel-operations-write-to-excel-file.adoc[Write to Excel File]
