@@ -97,6 +97,9 @@ Windows Login ID of the last person to change the project (automatically set by 
 ** *Workflow Type*
 +
 The Workflow type (`End-to-End` or `Test automation`). The Workflow type is set at the creation of the project and cannot be changed.
+** *Max Runtime*
++
+The maximum allowed time for a workflow to run before it stops its execution. By default, this value is set to 2 hours. The minimum allowed value for this field is 10 minutes and the maximum is 1440 minutes (24 hours).
 
 == See Also
 
