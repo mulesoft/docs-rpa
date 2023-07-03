@@ -1,0 +1,156 @@
+
+
+= Excel Controlled Loop
+
+You can read data from an Excel table with the _Excel Controlled Loop_
+element. It works in a similar way to the
+xref:toolbox-flow-control-file-controlled-loop.adoc[File Controlled Loop] and also forms the
+framework for other Action Steps. The wizard provides you with numerous
+setting options for determining the start (Read mode) and the end
+(Terminate loop) of the iteration.
+
+You can only use the _Excel Controlled Loop_ Action Step within an Excel
+session. You enter the source file in the Excel Session.
+
+== Properties
+
+*Excel Operation Settings*
+
+* *Column* 
++
+The Excel sheet is read from this column.
+* *Empty rows count for break* 
++
+Terminates the loop after the specified number of consecutive rows is reached.
+* *End column* 
++
+The sheet is read up to this column.
+* *End row* 
++
+The sheet is read only up to the specified row.
+* *Has a header* 
++
+Indicates whether you have selected the option. If you
+select this, the first row of the source file is used as the column
+header.
+* *Maximum number of rows* 
++
+Specifies the maximum number of rows to read.
+* *Only read a maximum number of rows* 
++
+If you select this, you can
+restrict the number of rows to be read.
+* *Read mode* 
++
+The selected read mode.
+* *Regex condition for break* 
++
+Shows the regular expression at which the iteration stops.
+* *Regex condition for first cell* 
++
+Shows the regular expression at which to read the Excel sheet.
+* *Row* 
++
+Specifies the row at which to read the Excel sheet.
+* *Sheet name* 
++
+Name of the spreadsheet. In the properties, you can only
+enter the name directly. In the wizard, however, you can select the
+spreadsheet directly or via the pin variable.
+* *Stop (loop break) criterion* 
++
+The selected termination criterion (Terminate Loop).
+
+include::partial$toolbox-excel-controlled-loop.adoc[tag=troubleshootingSettings]
+
+== Inbound Variables
+
+* *Sheet name* Name of the spreadsheet. In the properties, you can only
+enter the name directly. In the wizard, however, you can select the
+spreadsheet directly or via the pin variable.
+* *Column* The Excel sheet is read from this column.
+* *Row* Specifies the row that the Excel sheet is to be read from.
+* *Regex to match*
+
+//link:\l[*Regex condition*]
+
+== Outbound Variables
+
+The contents of each column are returned as variables within the _Excel
+Controlled Loop Action Step_.
+
+*Iteration Count* Number of loop cycles.
+
+*RowNumber* Shows you the number of lines that will be read.
+
+== Wizard
+
+Two settings are particularly important, *Read mode* and *Terminate loop*.
+
+In *Read mode*, the read area is defined, i.e. the area which the data
+from a spreadsheet is to be read in. Everything outside of this area is
+not read and not analyzed.
+
+The following options are provided:
+
+* *Read entire sheet* (default) The entire spreadsheet is read
+* *Start reading from row and column* Here, you specify the exact column
+and row that reading is to begin from.
+
+//image:media\image1.png[image,width=322,height=53]
+* *Read part of sheet* In contrast, here you can not only specify where
+reading is to begin from but also the point that reading should terminate at.
+
+//image:media\image2.png[image,width=311,height=69]
+* *Read to row* Here, you can specify the row that the spreadsheet is to be read to.
+
+//image:media\image3.png[image,width=320,height=62]
+* *Read to column* Here, you can specify the column that the spreadsheet is to be read to.
+
+//image:media\image4.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=369,height=60]
+* *Start reading when condition matches* You also have the option of
+determining the read area dynamically by using regular expressions here.
+If, for example, you enter ^PLZ (= Regex), the Action Step reads the
+spreadsheet from the cell in which the content starts with PLZ.
+
+//image:media\image5.png[image,width=604,height=44]
+
+In *Terminate loop*, the terminate conditions are defined, i.e. here you
+have additional options for terminating the read operation.
+
+* *On reaching the end of sheet area* (default) The read operation is
+automatically terminated at the end of the Excel sheet.
+* *On reaching empty rows* The operation is terminated as soon as a
+particular number of consecutive empty rows has been reached.
+
+//image:media\image6.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=440,height=48]
+* *On Regex match in the cell value* Here, the end is determined
+dynamically by defining a regular expression. In this example, the read
+area ends as soon as the content of a cell begins with PLZ.
+//image:media\image7.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=445,height=52]
+* *Only read a maximum number of rows* Here, you can specify the maximum number of rows to be read.
+//image:media\image8.png[image,width=265,height=54]
+
+If you have already specified a read area in *Read mode*, or used the
+*Only read a maximum number of rows* option to stipulate a maximum
+number of rows, and have simultaneously defined a termination condition
+under *Terminate loop*, the event that occurs first is executed.
+////
+If you click on the image:media\image9.png[image,width=52,height=24]
+button on the bottom right of the wizard, the selected read area is
+displayed as a preview. The first 20 rows are displayed as the maximum.
+////
+If nothing else has been selected, the column headers are generated
+automatically (Column_1, 2, 3 etc.).
+
+//image:media\image10.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=528,height=236]
+
+If you have selected the *Has a header* option in the wizard,
+the first row is used as the column header.
+
+//image:media\image11.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=528,height=227]
+
+The data type of each column is recognized automatically.
+//However, it is easy to change.
+
+//image:media\image12.png[image,width=96,height=77]

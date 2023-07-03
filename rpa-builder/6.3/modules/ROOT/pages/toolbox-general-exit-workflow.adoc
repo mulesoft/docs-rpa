@@ -1,0 +1,45 @@
+
+
+
+= Exit Workflow
+
+The _Exit Workflow_ Action Step allows you to end a Workflow in a
+controlled manner. Use it to end the Workflow with precision at a
+certain point. This means that even if you have entered possible retries
+in _Workflow Properties_ or in the _Workflow Wizard_ under _Workflow
+Exec Tries_ these will be disregarded. As a result you can define exit
+points anywhere. This function is mainly required in the RPA
+environment.
+
+== Properties
+
+The _Exit Workflow_ Action Step has precisely one property. This can be
+set either under Properties or directly within the wizard:
+
+*Exit severity*
+
+This is where you define the status for the Workflow that you are
+ending. You can choose between OK and Error. The default is Error.
+
+* _Error:_ In this case the exit code 120 will be shown. In RPA Manager, for example in the Schedule Run Results__,__ this Workflow is
+shown as failed (red). In the Workflow Run Results in RPA Builder it will be noted that this involves a user exit.
+* OK: In this case the exit code 500 will be shown. Unlike with the
+error status, here the Workflow is deemed to have ended successfully. In
+RPA Manager there will be a warning (yellow) shown for it. As in a
+normal case, there will be a check whether timers/checkpoints could not
+be measured. The Workflow Run Results in RPA Builder will be
+annotated accordingly.
+
+For a description of exit codes, please see *Section Exit Codes*.
+
+== Inbound Variables
+
+The _Exit Workflow_ Action Step possesses no inbound variables.
+
+== Outbound Variables
+
+The _Exit Workflow_ Action Step possesses no outbound variables.
+
+== Wizard
+
+See <<Properties>>.
