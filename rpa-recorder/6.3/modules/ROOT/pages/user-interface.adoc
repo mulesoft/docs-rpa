@@ -19,7 +19,6 @@ The *Recording Toolbar* appears on the screen when RPA Recorder starts recording
 |image:pause-recording-icon.png[Pause Recording icon, 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
 |image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session | Finishes the current recording session and triggers the generation of xref:documents.adoc[Documents]. | --
 |image:take-screenshot-icon.png[Take Screenshot icon, 20%, 20%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
-|image:add-variable-icon.png[Add Variable icon, 20%, 20%]  | Add Variable | Opens the <<Add Variable>> dialog. | `F10`
 |image:add-comment-icon.png[Add Comment icon, 20%, 20%] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
 |image:add-activity-icon.png[Add Activity icon, 20%, 20%] | Add Activity | Opens the <<Add Activity>> dialog. | `F12`
 |===
@@ -40,27 +39,6 @@ image:select-freeze-delay.png[Select freezing delay]
 
 [NOTE]
 The timer delay mechanism takes effect regardless of the chosen screenshot method.
-
-== Add Variable
-
-You can add variable information as part of the recording documentation by pressing `F10` while recording. This is useful for the implementation of the process automation in RPA Builder.
-
-image:add-variable-window.png[Add Variable window]
-
-The possible variable types are:
-
-* Alphanumeric
-* Integer
-* Float
-* Boolean
-* Credential
-
-Click *Add* to save the variable information to the recording documentation.
-
-//Image necessary?
-
-[NOTE]
-Pause the recording before adding a variable. If you open the Add Variable window while the recording is running, it pauses automatically.
 
 == Add Comment
 
@@ -108,9 +86,9 @@ image:web-recording-browser-blank.png[Web Recording Browser]
 
 === Select Web Elements
 
-When you hover the cursor over a web element, the browser highlights it with a blue background. After an interaction with an element (such as a mouse click or key press on the keyboard), the element's XPath and available attributes show on the Attribute Selection panel.
+When you hover the cursor over a web element, a blue border frames the element so that you know the area is clickable. The border also indicates you can record a mouse click on the element. After an interaction with an element (such as a mouse click or key press on the keyboard), the element's XPath and available attributes show on the Attribute Selection panel.
 
-To record the mouse hover event on a highlighted element, press `F2`.
+To record the mouse hover event on a framed element, press `F2`.
 
 image:web-recording-select-element.png[Select Web Element]
 
