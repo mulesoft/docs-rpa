@@ -1,0 +1,50 @@
+
+
+= Read Clipboard
+
+This _Action Step_ simply copies the current clipboard content into a
+variable (see Section xref:advanced-concepts-using-variables.adoc[Using Variables]) for further
+usage within the _Workflow_.
+
+== Properties
+
+*Clear Clipboard after reading* If activated, the clipboard will be
+cleared after it was read and saved into a variable
+
+*Copy to clipboard before reading* (Default: Disabled) If this property
+is enabled, the text currently selected will be copied to the clipboard
+before reading the contents of the buffer. The _CTRL+C_ command is used
+to copy the text.
+
+Please note that some text must be selected when this is executed.
+
+The content of the buffer is deleted before copying the selected text.
+If no text is selected, then the buffer will be empty, i.e. it will not
+contain any data that might otherwise have been stored there from a
+previous action.
+
+The _CTRL+C_ command takes a variable amount of time to perform the
+copy, depending on system load, so this _Action Step_ includes a
+_Timeout_. The buffer is checked every 250 ms to see if it contains any
+data.
+
+If it does, then the contents of the buffer are returned.
+
+If the buffer is empty, then the system will check for content after a
+further 250 ms. This process is repeated until the _Timeout_ has
+expired.
+
+Therefore, do not enter a value of 0 for the _Timeout_. This would
+result in the buffer being empty.
+
+== Inbound Variables
+
+*Clear Clipboard after reading* Contains the information if the
+clipboard should be cleared after reading or not.
+
+== Outbound Variables
+
+*ClipboardContent* The content of the clipboard.
+
+Note that this _Action Step_ will throw an error if the clipboard
+contains anything other than text (such as images, files, etc.).

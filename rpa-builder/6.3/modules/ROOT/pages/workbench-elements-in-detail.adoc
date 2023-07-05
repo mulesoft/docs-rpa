@@ -1,0 +1,59 @@
+= Workbench Elements in Detail
+
+The Workbench contains a graphical representation of a Workflow. The Workflow type shows as a watermark in the upper right corner.
+The Workbench is capable of holding several windows as tabs, which enables you to work on more than one project at a time. Hold the mouse pointer over a tab for a short time and the path to the folder where the project is stored shows as a tooltip.
+
+image::workbench-tooltip.png[The Workbench showing the location path tooltip, 80%, 80%]
+[calloutlist]
+. Multiple Workflows organized in tabs
+. Project location tooltip
+. Workflow type icon
+
+== Selecting Objects
+
+To select an object, click on its icon. Selected objects show a blue border and their properties show in the Properties panel. Right-click to access a context menu for any Workbench element:
+
+image::workbench-context-menu2.png[The context menu of a Workbench element, 50%, 50%]
+[calloutlist]
+. The context menu
+. The selected object
+
+To select more than one object, press and hold _Ctrl_ or _Shift_ while clicking to select the objects. If you drag an object into the Workbench, it is automatically selected.
+
+== Context Menu Options
+
+The context menu consists of the following elements:
+
+* *Disable/Enable*
++
+Use this option to disable an Action Step and prevent its execution or to enable an Action Step that was previously disabled. Disabled Action Steps are greyed out on the workbench.
+* *Enable All Selected/Disable All Selected*
++
+Use this option to disable or enable multiple Action Steps simultaneously.
+* *Save As Template*
++
+Saves the selected Action Step and its settings as a template that you can use again later. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting Templates.
+* *Select all steps of same type*
++
+Selects all Action Steps of the same type as the one you have clicked on. This option enables you to change the properties of these Action Steps uniformly.
+* *Mapped to Action Steps*
++
+Shows all incoming Pin variables associated with this Action Step. Click on the name of a variable to select the Action Step that populates that variable.
+* *Set Breakpoint*
++
+Sets a breakpoint for an Action Step, which causes the Workflow to stop at this point during its execution in Debug mode.
+* *Rename*
++
+Enables you to rename the selected element.
+* *Collapse All*
++
+Collapses all levels of the Workflow to the highest level shown in the current view. Use the *Collapse All* (image:minus-icon.png[The Collapse All button, 2%, 2%]) button to collapse individual elements.
+* *Expand All*
++
+Fully expands all levels of the Workflow on view. Use the *Expand All* (image:add-icon.png[The Expand All button, 2%, 2%]) button to expand individual elements.
+
+== See Also
+
+* xref:workbench-toolbar-overview.adoc[Workbench Toolbar Overview]
+* xref:managing-user-templates.adoc[Managing User Templates]
+* xref:workflow-elements-in-detail.adoc[Workflow Elements in Detail]

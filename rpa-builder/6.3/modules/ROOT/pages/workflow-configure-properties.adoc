@@ -1,0 +1,106 @@
+= Configure Workflow Properties
+
+To display and configure Workflow properties:
+
+. Open the Workflow you want to edit by double-clicking its corresponding task in the BPMN editor.
++
+image:workflow-open-properties.png[The BPMN editor showing a project with three tasks, 50%, 50%]
+. Open the *Project Explorer*.
+. Right-click the Workflow and, from the context menu, select *Edit Workflow Properties*.
++
+image:workflow-properties-window.png[The Project Explorer showing the Workflow to edit, 50%, 50%]
++
+The properties panel of RPA Builder displays the corresponding properties.
+
+[[properties]]
+== Properties
+
+* *Common*
+** *Description*
++
+A custom description of the item.
+** *Name*
++
+The name of this Workflow element.
+** *Workflow Folder*
++
+Path to actual location of the loaded Workflow.
++
+* *Compatibility Settings*
+** *Disable keyboard state reset*
++
+Information entered via the keyboard is only applicable for the duration of a Transaction. The keyboard state is reset at the start of every subsequent Transaction. If information entered via the keyboard is intended to apply to more than one Transaction, enable *Disable keyboard state reset*.
++
+Example: Transaction 1 includes the keystroke `{CTRLDOWN}` and mouse clicks to select several objects. In Transaction 2, additional objects need to be selected as well. The `CTRL` key must therefore remain held down. This becomes possible by enabling the option to Disable keyboard state reset. Enter the keystroke `{CTRLUP}` as and when the key is to be released.
++
+** *Don't warn about trailing or leading Blanks*
++
+Disable warnings for leading and trailing blanks.
+** *Static analysis image*
++
+The analysis package contains additional information, so that you can view the cause of a failed image search directly in the window Search Results of the Action Step Search Pattern. If you want to analyze the errors without using RPA Builder, you can activate the option Static analysis image. The analysis image is packed into the analysis folder.
+* *Image Processing*
+** *Color Depth*
++
+Compensate for color depth variations of different measurement robots by using Automatic mode.
+* *Measurement Scheduling*
++
+The Measurement Scheduling menu item is a legacy element and can still be found in the Workflow Properties for compatibility reasons. Do not make any changes.
+* *STC Guard Settings*
+** *Force kill by STC Guard*
++
+A list of additional processes to end if an error occurs while executing a Workflow. Enable the *STC Guard active* setting to activate this feature. STC Guard always closes all visible and associated Windows processes. It is also possible to include windowless processes in the list.
++
+Process names entered into this field must contain no spaces and must be separated in the list by semicolons, for example: `proc_1.exe;proc_2.exe;proc_N.exe`.
+** *Keep Alive*
++
+A list of all processes that STC Guard does not end if an error occurs while executing a Workflow.
++
+Process names entered into this field must contain no spaces and must be separated in the list by semicolons, for example: `proc_1.exe;proc_2.exe;proc_N.exe`.
++
+[NOTE]
+Processes listed under *Kill on Exit* are ended in all circumstances.
+
+** *Kill on Exit*
++
+A list of all processes that STC Guard ends after a Workflow has been executed, irrespective of its success.
++
+Process names entered into this field must contain no spaces and must be separated in the list by semicolons, for example: `proc_1.exe;proc_2.exe;proc_N.exe.`
++
+[NOTE]
+The processes listed here are also ended if *STC Guard active* is not selected and even if the same process is listed under *Keep Alive*.
+
+** *STC Guard active*
++
+Defines the Activation of STC Guard.
++
+[NOTE]
+Processes listed under *Kill on Exit* are ended, irrespective of what is specified in this setting.
+
+* *Workflow Repository Info*
+** *Version*
++
+The Repository Version of this Workflow. Ignore this value if you don't work with a Workflow Repository.
+* *Workflow Values*
+** *Creation Author*
++
+Name of the project creator (automatically set by the program).
+** *Creation Date*
++
+Date and time of the project's creation (automatically set by the program).
+** *Last Change Date*
++
+Date and time the project was last modified (automatically set by the program).
+** *Last Editor*
++
+Windows Login ID of the last person to change the project (automatically set by the program).
+** *Workflow Type*
++
+The Workflow type (`End-to-End` or `Test automation`). The Workflow type is set at the creation of the project and cannot be changed.
+** *Max Runtime*
++
+The maximum allowed time for a workflow to run before it stops its execution. By default, this value is set to 2 hours. The minimum allowed value for this field is 10 minutes and the maximum is 1440 minutes (24 hours).
+
+== See Also
+
+* xref:workflow-elements-in-detail.adoc[Workflow Elements in Detail]
