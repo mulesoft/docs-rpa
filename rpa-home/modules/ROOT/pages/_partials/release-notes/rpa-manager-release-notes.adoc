@@ -2,8 +2,8 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
-[[july-05-2023]]
-== July 05, 2023
+[[july-5-2023]]
+== July 5, 2023
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| A user is now able to create and modify credentials in the Credential Pool. | W-13704977
+| Creating and modifying credentials in the Credential Pool now works correctly. | W-13704977
 |===
 
 // == Known Issues
