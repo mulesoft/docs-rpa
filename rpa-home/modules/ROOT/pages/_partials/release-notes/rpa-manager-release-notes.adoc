@@ -2,6 +2,28 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[july-05-2023]]
+== July 05, 2023
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| A user is now able to create and modify credentials in the Credential Pool. | W-13704977
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+|===
+
+
 [[june-22-2023]]
 == June 22, 2023
 
@@ -85,12 +107,12 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * RPA Manager now shows a top navigation bar.
-* Improved the *Execution* tab for Run Configuration: 
+* Improved the *Execution* tab for Run Configuration:
 ** The *Run in existing desktop session as logged in user* option is now *Run in existing Console or RDP session if specified user is signed in*.
 ** Selecting *Run in existing Console or RDP session if specified user is signed in* now requires you to specify a user.
 ** These settings work in RPA Bots running version 1.2.0 or later. Earlier versions of RPA Bot ignore these settings.
 * The *MuleSoft RPA Builder assignment* option from *User Management* is now the new privilege *Builder Usage*.
-* The *Project Manager* flag of a user is now replaced by the new privilege *Project Management*. 
+* The *Project Manager* flag of a user is now replaced by the new privilege *Project Management*.
 
 // Commenting this feature until we have at least one additional language. 
 //* RPA Manager now inclues a language selector in the user profile.
@@ -220,7 +242,7 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* You can now assign credentials in the Credential Pool to users and user groups. 
+* You can now assign credentials in the Credential Pool to users and user groups.
 +
 RPA Manager automatically affiliates credentials that were created prior to this release with all users. You can edit credentials to change affiliated users.
 * The new *Copy to Clipboard* button in user tasks enables you to copy activity parameter values to the clipboard.
