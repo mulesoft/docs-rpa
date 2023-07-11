@@ -7,16 +7,32 @@ The following glossary helps you understand MuleSoft terminology.
 == A
 
 ''''''
+
+=== Action Step
+
+The smallest components in a Workflow. Use action steps to build logical blocks and transactions in RPA Builder. 
+
 === Activity
 
-A basic unit of work in the Mule application flow. This can in turn be a connector that connects to an external system or a transform step that is used to transform data inside the application.
+A single unit of work in the automation project. An activity can be a bot task and its linked workflow, or a user task.
 
+=== Activity Library 
+
+Enables you to reuse certain activities that repeat during the automation of business processes, such as a login, to avoid creating the same workflow multiple times.
+
+=== Activity Parameter 
+
+Enables you to map variables that you can use not only in the Workflow, but also in the activities of the business process and gateways.
+
+=== Analysis Package 
+
+An error report that contains full information on the run in the same format as when you execute the Workflow locally.
 
 == B
 
 ''''''
 
-=== Bot tasks
+=== Bot Tasks
 
 Bot tasks contain the activities for the RPA bot to execute.
 
@@ -24,7 +40,7 @@ Bot tasks contain the activities for the RPA bot to execute.
 
 Business Process Model and Notation (BPMN) is a standard specification for diagrams to depict business processes. Such diagrams can be created directly by the process owner and easily translated into a machine-executable program.
 
-=== BPMN editor
+=== BPMN Editor
 
 An editor that is available both inside RPA Manager and RPA Builder to modify existing BPMs.
 
@@ -65,6 +81,14 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 ''''''
 
+=== IDP 
+
+Intelligent Document Processing is a technology solution that implements AI to read documents, extract data, and organize information from different document sources.
+
+=== Invokable Run Configuration 
+
+An automated process that you can upload to exchange and then invoke from other services as Composer. 
+
 == J
 
 ''''''
@@ -104,9 +128,13 @@ The container for everything in your RPA Platform account.
 
 == P
 
+=== Properties 
+
+A group of values that define the settings of a specific element. 
+
 ''''''
 
-=== Process candidate
+=== Process Candidate
 
 A real-life business process about to be proposed for automation via process evaluation.
 
@@ -120,6 +148,14 @@ A project manager is responsible for the automation of a process across all auto
 
 == R
 
+=== Regular Expression 
+
+A sequence of characters and symbols that specify a match pattern to be searched in text.  
+
+=== Run Configuration 
+
+A schedule that specifies the times and intervals for a process to run.
+
 ''''''
 === RPA
 
@@ -127,7 +163,7 @@ MuleSoft Robotic Process Automation (RPA) enables you to automate business proce
 
 === RPA Bots
 
-RPA Bots are software robots that run in an on-premise environment and execute the assigned automations. You can manage bots from RPA Manager.
+RPA Bots are software robots that run in an on-premises environment and execute the assigned automations. You can manage bots from RPA Manager.
 
 === RPA API Call
 
@@ -139,7 +175,7 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 === RPA Builder
 
-RPA Builder is an on-premise application that enables you to build the automations by specifying the steps of the process.
+RPA Builder is an on-premises application that enables you to build the automations by specifying the steps of the process.
 
 === RPA Manager
 
@@ -147,34 +183,54 @@ RPA Manager is the cloud-based control plane for the automations that is integra
 
 === RPA Recorder
 
-RPA Recorder is an on-premise tool that assists during the process design phase by recording all user actions, creating a click path documentation and generating additional data to automatically create action steps in the build phase.
+RPA Recorder is an on-premises tool that assists during the process design phase by recording all user actions, creating a click path documentation and generating additional data to automatically create action steps in the build phase.
 
 
 == S
 
 ''''''
-=== Secure session
+=== Secure Session
 
 Secure Session is a hidden Windows session that runs invisibly and closed in a separate user account. The screen does not show what is happening or what information is being processed.
 
 
 == T
 
+=== Text Modules 
+
+A set of encoded values that can map to a certain special character, a macro, a script variable, or an environment variable.
+
+=== Toolbox 
+
+The container for the action steps that you implement in RPA Builder to automate a process. 
+
 ''''''
 
 == U
 
 ''''''
-=== User tasks
+=== User Tasks
 
 User tasks are elements of a process model, which cannot be processed fully automatically by a Robot, instead requiring the support of a human.
 
 
 == V
 
+=== Variable 
+
+A value of a defined type that you can store and change during a process.
+
 ''''''
 
 == W
+
+=== Workflow 
+
+A set of action steps that is linked to an activity. 
+
+=== Workbench 
+
+The area of RPA Builder where you can visualize and modify a workflow.
 
 ''''''
 
