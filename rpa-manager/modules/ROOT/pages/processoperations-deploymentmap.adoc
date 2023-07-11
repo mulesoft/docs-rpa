@@ -2,17 +2,17 @@
 
 The deployment map shows the current status of each run configuration of all processes for which you are a team member.
 
-The interrelationships of processes, RPA Bots and configurations are mapped as a network.
+The interrelationships of processes, RPA Bots, and configurations are mapped as a network.
 
-View and manage run configurations:
+You can view and manage all your run configurations in one place:
+
 * Switch between test and production configurations.
-* Switch between bot and process centered views.
+* Switch between hierarchical and star network views.
 * Filter the bots and configurations by status.
 * Switch directly to the detailed view of a process or a configuration.
 * Execute, pause, and stop test and production configurations directly from here.
 
-The deployment map does not show invokable run configurations that were deleted in RPA Manager. 
-// Does it show invokable configurations that were deleted / deprecated in Anypoint Exchange?
+The deployment map does not show invokable run configurations that were deleted in RPA Manager. Invokable run configurations deleted in RPA Manager still exist in Anypoint Exchange, but cannot be run by the bot. The deployment map might still show invokable configuration assets deprecated in Anypoint Exchange. Make sure to sync configuration changes manually between RPA Manager and Anypoint Exchange.
 
 == Before You Begin
 
@@ -28,7 +28,7 @@ The deployment map does not show invokable run configurations that were deleted 
 |===
 
 * You can only view processes for which you are part of the process team.
-* To execute, pause or stop configurations obtain the needed team member permissions for the production phase.
+* To execute, pause or stop configurations obtain the needed team member permissions for the respective phase.
 * You cannot interact with invokable configurations.
 * The deployment map shows only bots that have configurations deployed.
 
@@ -36,12 +36,14 @@ The deployment map does not show invokable run configurations that were deleted 
 
 //== View Configurations States
 
-== Manage Production Configuration Executions
+== Manage Configuration Executions
 
-The actions *Deploy*, *Pause*, *Continue*, and *Revoke process* each refer to a single configuration-bot combination. The action does not change identical configurations that are deployed to a different bot or different configurations that are deployed to the same bot.
+The actions *Start*, *Deploy*, *Pause*, *Continue*, and *Revoke process* each refer to a single configuration-bot combination. The action does not change identical configurations that are deployed to a different bot or different configurations that are deployed to the same bot.
 
 . Open the *Deployment Map* view in the *Process Operations* module.
 . Click on a process configuration element in the network and select the appropriate action from the context menu.
+
+// What to do in case of problems
 
 == See Also
 
