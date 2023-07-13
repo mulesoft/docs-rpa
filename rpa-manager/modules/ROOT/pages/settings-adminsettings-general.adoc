@@ -1,0 +1,36 @@
+= Configure General Settings
+:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP). After your organization is migrated to Anypoint Platform, the *Organization Management* module is replaced by the *Settings* module.
+
+The *General* tab in the *Admin Settings* view enables you to configure the currency and decimal sign to show in RPA Manager modules.
+
+== Before You Begin
+
+* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
++
+[cols="1,2"]
+|===
+|*Action* |*Required Privileges*
+
+|View configured settings for your organization
+|Organization Management Open
+
+|Add or modify settings for your organization
+|Organization Management Administration
+|===
+
+== Configure Currency and Decimal Sign
+
+To configure the currency and decimal sign to show in RPA Manager modules:
+
+. In the *Settings* module, click *Admin Settings*.
+. Ensure you are in the *General* tab.
+. Configure the following values:
+** *Currency*
++
+The currency symbol RPA Manager shows in modules and dashboards.
+** *Decimal Sign*
++
+The decimal sign RPA Manager uses to show fractional numbers in modules and dashboards.
+. Click *Save*
+
+//== See Also
