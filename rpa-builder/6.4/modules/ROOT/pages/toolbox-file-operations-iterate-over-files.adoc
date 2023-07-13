@@ -1,0 +1,102 @@
+
+
+= Iterate over Files
+
+The _Iterate over Files_ Action Step performs various Action Steps on a
+specified number of files. Drag the Action Steps to be processed into
+the gray area labeled _Drop Items here_ using drag and drop. The Action
+Steps placed there will be processed from top to bottom in the order
+specified. This means that the Action Steps for processing will be
+applied to all files located in a folder and, depending on the settings,
+its sub-folders. It is possible to set various parameters such as the
+maximum number of files to be processed.
+
+== Properties
+
+* *File Operation Settings*
+
+** *Directory path*
++
+The path to the directory that contains the files to process. This field supports absolute and relative paths. Relative paths relate to the _Base Path_ variable.
+** *File name* 
++
+Specifies the names of the files to process. Use wildcard characters to build a search expression. By default, this field is set to `\*.*`, which finds all files in a directory.
++
+* *Force error if iteration limit is exceeded* 
++
+Set whether the Workflow interrupts its execution and generates an error message. This behavior applies in the following two cases:
+** If the number of files for processing set under *Max iterations* has
+been reached and *Use iteration limit* is enabled.
+** If the maximum number of 100,000 files has been processed.
++
+* *Force error if no file found*
++
+Generates an error if the action step cannot find any files that match the given *File name* value in the specified *Directory path*.
+* *Max iterations* 
++
+Sets the maximum number of files to process until _Iterate over files_ ends. You can specify up to 100,000
+iterations. This value works only when *Use iteration limit* is enabled.
+* *Recursive loop* 
++
+Specifies whether to process the sub-folders located in *Directory path* and any files they may contain.
+* *Use a regular expression for file name*
++
+Enable this option to evaluate the *File name* field as a regular expression.
+* *Use iteration limit* 
++
+Enable this option to process a limit of up to 100,000 files. Set a custom limit in the field *Max iterations*.
+
+== Inbound Variables
+
+* *Directory path*
++
+The path to the directory that contains the files to process. This field supports absolute and relative paths. Relative paths relate to the _Base Path_ variable.
+
+* *File name* 
++
+Specifies the names of the files to process. Use wildcard characters to build a search expression. By default, this field is set to `\*.*`, which finds all files in a directory.
+
+== Outbound Variables
+
+* *Count Of Processed Elements* 
++
+The _Iterate over Files.Count of Processed Elements_ variable provides the number of processed files.
+
+== Wizard
+
+image::iterate-over-files-wizard.png[The Iterate over files wizard, 50%, 50%]
+
+Use the *Directory path* field to specify an absolute or relative path to the files to process. The initial value is the environment variable `%STWS_BASEPATH%`. Use the *[...]* button to browse an existing path. Click the *Pin* (image:pin-icon.png[The Pin Variable icon, 2%, 2%]) button to include variables from the _Workflow_. 
+
+The *File name* field specifies the names of the files to process. Use wildcard characters to build a search expression. By default, this field is set to `\*.*`, which finds all files in a directory. Click the *Pin* (image:pin-icon.png[The Pin Variable icon, 2%, 2%]) button to include variables from the _Workflow_.
+
+Select *Use a regular expression for file name* to evaluate the *File name* field as a regular expression.
+
+See xref:toolbox-file-operations.adoc#invalid-characters[*Path / file name / invalid characters*] for a list of invalid characters.
+
+
+To specify a maximum numbers of files to iterate over, select *Use limitation otherwise 100.000* and specify the limit in the numeric field next to this option.
+
+Select *Force error if iteration limit is exceeded* to cause the Workflow to interrupt its execution and generate an error message when the iteration limit is exceeded. This behavior applies in the following two cases:
+** If the number of files for processing set under *Max iterations* has
+been reached and *Use iteration limit* is enabled.
+** If the maximum number of 100,000 files has been processed.
+
+To generate an error if the specified files cannot be found, select *Force error if no file found*. 
+
+Select *Recursive loop over all sub-folders* to process sub-folders and any files inside them while processing the files in the specified *Directory path*.
+
+== Example Search Expressions
+
+Use individual question marks (`?`) and supported characters in the *File name* field to find a specific number of variable letters or numeric
+digits in the file name. 
+
+For example, The placeholder `???_log.\*` finds all files with three unknown characters at the start of the file
+name, followed by `_log`. If you do not know the number of unknown
+characters, but a constant piece of text appears in the file name, then
+you can use `*_log*.\*` This search expression finds all files containing `_log` in the file name. The placeholder `.*` searches for any file extension.
+
+== See Also 
+
+* xref:toolbox-file-operations.adoc#invalid-characters[Path / file name / invalid characters]
+* xref:advanced-concepts-using-regular-expressions.adoc[]
