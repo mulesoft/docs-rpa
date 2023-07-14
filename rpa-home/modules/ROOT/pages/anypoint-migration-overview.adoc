@@ -16,7 +16,7 @@ After your organization is migrated to Anypoint Platform:
 * Administrators configure RPA users, teams, and permissions using Access Management instead of the *User Management* module in RPA Manager.
 * RPA Manager deprecates roles and user groups and starts using teams from Anypoint Platform instead. 
 * RPA Manager supports using Connected Apps to connect with Anypoint Platform, which provides a more secure and improved authentication mechanism than API keys. 
-* RPA Manager supports deleting users that have assigned processes and reassigning those processes to other users or teams. 
+* RPA Manager supports deleting users who have assigned processes and reassigning those processes to other users or teams. 
 
 [[pre-migration]]
 == Pre-migration Steps
@@ -27,7 +27,7 @@ To prepare your organization for the migration, ensure that all your RPA Manager
 +
 If your Anypoint organization is using an IdP, the administrator must ensure the RPA users have a matching account and the proper access.
 +
-See xref:access-management::external-identity.adoc[] for instructions and requisites to configure identity management for your Anypoint Platform organization. 
+See xref:access-management::external-identity.adoc[] for instructions and prerequisites to configure identity management for your Anypoint Platform organization. 
 
 * Non-federated orgs
 +
