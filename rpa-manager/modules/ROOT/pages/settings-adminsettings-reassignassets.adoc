@@ -2,7 +2,7 @@
 
 If an RPA user is deleted in Anypoint Access Management, RPA assets that were assigned to this user are shown in the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module.
 
-All users with the *Reassign Users* permission get an email when an RPA asset is orphaned because its last assigned user is deleted.
+All users with the *Reassign Users* or *RPA Administrator* permission get an email when an RPA asset is orphaned because its last assigned user is deleted.
 
 You can reassign the following RPA assets to another user:
 
@@ -28,6 +28,9 @@ You can reassign the following RPA assets to another user:
 
 |Reassign RPA Assets
 |Reassign Users
+
+|Administer RPA assets
+|RPA Administrator
 
 |===
 
