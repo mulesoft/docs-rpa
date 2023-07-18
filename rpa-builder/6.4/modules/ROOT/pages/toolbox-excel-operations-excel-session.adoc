@@ -2,27 +2,20 @@
 
 = Excel Session
 
-The _Excel Session_ is an element that encompasses all Excel operations.
+Excel Session is an element that encompasses all Excel operations.
 Excel operations include the reading, modification, and creation of
-entire files and file elements in the Excel format.
+entire files and file elements in the Excel format. Excel Session supports reading and writing password protected Excel files.
 
-To use Excel operations it is not necessary to have Microsoft Excel
-installed on the computer.
+In Excel Session you define which Excel files to open,
+their location, and how to use them. Use other Action Steps within the Excel Session to process the information from the Excel files.
 
-In the Excel Session you define which Excel files should be opened,
-where these are located at what time, and how they should be used.
+Excel Session opens the Excel files at the beginning of the execution and closes them at the end of the session. An Excel Session may contain a maximum of one further Excel Session.
 
-By placing other Action Steps within the _Excel Session_ it is possible
-to process the information from the Excel files further.
+To execute a loop across all the elements in a row or column in the Excel file, use the xref:toolbox-excel-operations-excel-controlled-loop.adoc[] Actions Step. 
+[WARNING]
+Never set an Excel Session inside a loop to achieve this result because it negatively impacts performance. 
 
-The Excel files are opened when the _Excel Session_ starts to be
-executed and are duly closed again at the end of the session.
-
-An _Excel Session_ may contain a maximum of one further Excel Session.
-To optimize computer performance, please never place an Excel Session
-inside a loop. If you wish to execute a loop across all the elements in
-a row or column in the Excel file, please place the relevant loop within
-the Excel Session.
+Using Excel operations does not require having Microsoft Excel installed on the computer.
 
 == Properties
 
@@ -42,7 +35,7 @@ at runtime.
 * *Different destination file name for workflow run* If the option _Use
 different destination file name for workflow run_ is activated, the
 alternative file name is used at runtime.
-* *Directory Path* (string, default: %STWS_BASEPATH%)Path to the directory where the destination file is located
+* *Directory Path* (string, default: `%STWS_BASEPATH%`)Path to the directory where the destination file is located
 
 Only a single file name is used for the destination file, regardless of whether a different
 directory path is used at the time of execution compared to the time of design.
@@ -76,19 +69,16 @@ directory in which the source file is located.
 different source file name for workflow run_ is activated, the
 alternative file name is used at runtime.
 * *Directory Path*
-(string, default: %STWS_BASEPATH%)Path to the directory where the source
+(string, default: `%STWS_BASEPATH%`)Path to the directory where the source
 file is located
 
 * *Source file name*
-(string, no default) Name of the source file. This is the file that is
-read – and written to in the mode _Read and write to the same file_
+(string, no default) Name of the source file. The file to read and write to when using the _Read and write to the same file_ mode.
 
 * *Use different source directory path for workflow run* (Bool, default: False)
-Determines whether a different source directory should be used when
-executing the Workflow compared to that at the time of creation.
+Determines whether to use a different source directory when executing the Workflow instead of the directory used during design.
 * *Use different source file name for workflow run* (Bool., default:
-False) Determines whether an alternative file name should be used when
-running the workflow instead of the draft name.
+False) Determines whether to use an alternative file name when running the workflow instead of the draft name.
 
 == Inbound Variables
 
@@ -108,39 +98,23 @@ This Action Step has no outbound variables.
 
 == Wizard
 
-In the *Operation Mode* section, first choose whether you want to only read the Excel file, read and
-modify it or read it and write to a different Excel file. If the _Read
-Only_ mode is selected, the source file is read only and cannot be modified.
+Use the *Operation Mode* section to choose whether to only read the Excel file, read and modify, or read and then write to a different Excel file. 
 
-The *source file* is the file that should be read. You can write the path to the directory where the source file
-is located directly in the input field, insert Environment and Script Variables, make a selection using a file explorer
-//image:media\image1.png[image,width=20,height=20]
-or connect with a Pin Variable. You also have the option of using a different file at the time
-of execution to at the time of creation.
-//Simply select the checkbox image:media\image2.png[image,width=303,height=15].
+The *Source file* is the file to read. Specify the path to the directory where the source file
+is located directly in the input field, inserting Environment and Script Variables, selecting it using a file explorer, or by using a Pin Variable. 
 
-Please note that in this case the file name must be identical. You must always specify the file extension as well as the file name.
+You can specify a different file to use at execution time than the one used during creation. In this case, the file names and extensions must be identical and you must specify both.
 
 You can use a second file as the *destination file*. In this
-case the source file is read only and cannot be modified. The
+case, the source file is read-only and you cannot modify it. The
 destination file is for storing information. If the destination file
-does not exist yet, it will be created if you have selected the checkbox *Create destination file if it doesn’t exist*.
+does not exist, Excel Session creates it if you select *Create destination file if it doesn't exist*.
 
-//The options image:media\image3.png[image,width=247,height=20] and image:media\image4.png[image,width=264,height=17] enable you to
-You can use a dynamic Excel file at runtime for the Excel operations. The *Different file name* field can be used to specify a separate file for the
-execution time directly or map it using a pin variable.
+To specify a separate dynamic Excel file to use during the execution, select *Use different source file name for workflow run* and specify the file in the *Different file name* field, either manually, using the file explorer, or with a Pin Variable.
 
-////
-== Related Elements
+== See Also 
 
-The following sections may help you to better understand the
-relationships between the individual Excel Workflow elements:
-
-* link:#AS_ReadFromExcelFile[_Read from Excel File_]
-* link:#AS_WriteToExcel[_Write to Excel_]
-* {blank}
-* _link:\l[Workflow Based Variables]link:#Array_GetArrayCount[Get Array
-Count]_
-* link:#Array_ReadFromArray[_Read from Array_]
-* link:#_Set_Variable[_Set Array Variable_]/
-////
+* xref:toolbox-excel-operations-excel-controlled-loop.adoc[]
+* xref:toolbox-excel-operations-read-from-excel-file.adoc[]
+* xref:toolbox-excel-operations-recalculate-excel-file.adoc[]
+* xref:toolbox-excel-operations-write-to-excel-file.adoc[]
