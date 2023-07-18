@@ -11,12 +11,12 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| The correct user is now shown in the email, which will be sent for a phase change. | W-13111442
-| Changing the session count within a scheduled run configuration will now be reflected on the RPA Bot. | W-13673157
-| The _Process Execution Plans_ page can be loaded without showing an error. | W-13697922
-| A process evaluation can be created without specifying a category. | W-13717288
-| Activity parameters can now be specified or modified in run configurations in the test and production phase. | W-13721840
-| RPA Manager does not show a _Malformed URI_ error if the URL is valid. | W-13753194
+| Notification emails no longer show an incorrect username when a process changes phase. | W-13111442
+| Changing the session count within a scheduled run configuration now reflects properly on the RPA Bot. | W-13673157
+| The *Process Execution Plans* page no longer shows an error when loading. | W-13697922
+| Creating a process evaluation without specifying a category no longer throws an error.| W-13717288
+| You can now specify or modify Activity Parameter in run configurations that are in test or production phase. | W-13721840
+| RPA Manager no longer shows a _Malformed URI_ error if the URL is valid. | W-13753194
 |===
 
 // == Known Issues
