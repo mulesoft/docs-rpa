@@ -3,7 +3,7 @@
 * xref:release-notes.adoc[Release Notes] 
 * xref:anypoint-migration-overview.adoc[Anypoint Platform Migration Overview]
 * xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
-* xref:ms-automation-credits.adoc[Mulesoft Automation Credits]
+* xref:ms-automation-credits.adoc[MuleSoft Automation Credits]
 * xref:automation-userrolesandpermissions.adoc[User Roles and Permissions]
 ** xref:automation-userrolesandpermissions-privilegesbymodule.adoc[Privileges by Module]
 ** xref:automation-userrolesandpermissions-anypointrpapermissions.adoc[Anypoint Access Management RPA Permissions]

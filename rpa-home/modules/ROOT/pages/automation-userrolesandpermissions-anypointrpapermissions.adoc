@@ -1,2 +1,65 @@
 = Anypoint Access Management RPA Permissions
 :page-notice-banner-message: After the migration of the RPA Manager User Management to Anypoint Access Management, the RPA Manager privileges are replaced by the Anypoint Access Management RPA permissions. For information about the scopes of the then deprecated permissions included in the Anypoint Access Management RPA permissions, refer to the topic Privileges by Module.
+
+...
+
+== ...
+
+...
+
+== RPA Automations Designer
+
+As a knowledge source, for example, as a business analyst or as a process owner, record or design models of business processes that a process manager or center of excellence has approved for automation. Document the process, including the required applications. An RPA developer builds the automation based on this model.
+
+The RPA Automations Designer permission contains the following deprecated RPA permissions:
+
+* Application Create
+* Application Edit
+* Process Automation Open
+* Process Create
+* Process Recording
+
+== RPA Automations Contributor
+
+As an RPA developer, a citizen technologist or a knowledge source, for example, as a business analyst or as a process owner, record or design models of business processes that a process manager or center of excellence has approved for automation. In RPA Builder, build the automation based on the model. Reuse activities from the RPA Builder Activity Library. Document and edit applications required for the process run. Create global variables to link to activity parameters you created for your process in RPA Builder.
+
+The RPA Automations Contributor permission contains the following deprecated RPA permissions:
+
+* Activity Library Open
+* Application Create
+* Application Edit
+* Builder Usage
+* Global Variables Create for Productionphase
+* Global Variables Create for Testphase
+* Global Variables Edit for Productionphase
+* Global Variables Edit for Testphase
+* Process Automation Open
+* Process Create
+* Process Recording
+
+== RPA Automations Manager
+
+As an RPA developer, a citizen technologist or a knowledge source, for example, as a business analyst or as a process owner, record or design models of business processes that a process manager or center of excellence has approved for automation. In RPA Builder, build the automation based on the model. Reuse and manage activities from the RPA Builder Activity Library. Document and manage applications required for the process run. Create and manage global variables to link to activity parameters created with RPA Builder. Change the owners and managers of processes.
+
+The RPA Automations Manager permission contains the following deprecated RPA permissions:
+
+* Activity Library Administration
+* Activity Library Open
+* Application Create
+* Application Delete
+* Application Edit
+* Builder Usage
+* Change Process Owner
+* Change Project Manager
+* Global Variables Create for Productionphase
+* Global Variables Create for Testphase
+* Global Variables Edit for Productionphase
+* Global Variables Edit for Testphase
+* Global Variables Delete
+* Process Automation Open
+* Process Create
+* Process Recording
+
+== ...
+
+...
