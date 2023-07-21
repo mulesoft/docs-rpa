@@ -71,7 +71,7 @@ The row to start reading from in the Excel sheet.
 
 == Outbound Variables
 
-Excel Controlled Loop returns the contents of each column are returned as variables. 
+Excel Controlled Loop returns the contents of each column as variables. 
 
 * *Iteration Count* 
 +
