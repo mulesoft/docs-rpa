@@ -12,7 +12,8 @@ their location, and how to use them. Use other Action Steps within Excel Session
 
 Excel Session opens the Excel files at the beginning of the execution and closes them at the end of the session. An Excel Session may contain a maximum of one further Excel Session.
 
-To execute a loop across all the elements in a row or column in the Excel file, use the xref:toolbox-excel-operations-excel-controlled-loop.adoc[] Actions Step. 
+To execute a loop across all the elements in a row or column in an Excel file, use the xref:toolbox-excel-operations-excel-controlled-loop.adoc[] Actions Step. 
+
 [WARNING]
 Never set an Excel Session inside a loop to achieve this result because it negatively impacts performance. 
 
