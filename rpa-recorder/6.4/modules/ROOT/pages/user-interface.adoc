@@ -30,7 +30,7 @@ When a recording state changes, a toast notification appears indicating current 
 
 == Image-Based Mouse Clicks
 
-Use image-based mouse clicks to record mouse clicks on a UI element that otherwise cannot be recorded properly or was not available for recording previously. The feature guides you through the mouse click process. An image on the screen and mouse clicks must be captured, and the mouse clicks are recorded relative to the captured image.
+Use image-based mouse clicks to record mouse clicks on a UI element that otherwise cannot be recorded properly. The feature guides you through the mouse click process. An image on the screen and mouse clicks must be captured, and the mouse clicks are recorded relative to the captured image.
 
 Use this feature at any point during a normal recording session. The feature also checks your display settings automatically while recording to ensure the feature records correctly.
 
