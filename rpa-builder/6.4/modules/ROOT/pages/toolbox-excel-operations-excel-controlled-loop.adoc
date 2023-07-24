@@ -9,7 +9,8 @@ The _Excel Controlled Loop_ Action Step works only within an Excel
 Session, in which you specify the file to read.
 
 
-Excel Control Loop automatically recognizes the data type of each column. For Date types, the Action Step uses the system's locale settings to read and display the dates, ensuring that the format remains unchanged. 
+Excel Control Loop automatically recognizes the data type of each column. For Date types, the Action Step uses the system's locale settings to read and display the dates to ensure that the format remains unchanged. 
+
 
 == Properties
 
