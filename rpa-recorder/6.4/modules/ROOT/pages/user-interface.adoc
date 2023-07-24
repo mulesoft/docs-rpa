@@ -79,6 +79,9 @@ Use the Web Recording Browser to record website navigation actions. It behaves a
 * Save your attribute selection of a web element to reuse it when recording the same web elements on a website.
 * Record mouse hover positioning during web navigation.
 
+[NOTE]
+Japanese localization is fully supported during Web recording.
+
 Adding a Web Task opens the Web Recording Browser. When you add more than one Web Task, you can select *Continue with already existing web session* to display the last loaded page from the previous Web Task and continue from that point.
 Otherwise, you can enter a URL in the address bar of the browser, and it loads this URL when you press *Enter* or click the *Go* button (image:play-icon.png[Go button, 3%, 3%]).
 
