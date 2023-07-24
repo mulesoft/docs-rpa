@@ -7,7 +7,8 @@ Excel operations include the reading, modification, and creation of
 entire files and file elements in the Excel format. Excel Session supports reading and writing password protected Excel files.
 
 In Excel Session you define which Excel files to open,
-their location, and how to use them. Use other Action Steps within the Excel Session to process the information from the Excel files.
+their location, and how to use them. Use other Action Steps within Excel Session to process the information from the Excel files.
+
 
 Excel Session opens the Excel files at the beginning of the execution and closes them at the end of the session. An Excel Session may contain a maximum of one further Excel Session.
 
