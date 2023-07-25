@@ -8,7 +8,8 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* The Deployment Map was revised. (W-13103108)
+* The Deployment Map now includes two different tabs to filter processes that are in the Production or Testing phases.
+* The Deployment Map now includes improved tooltip texts and color schema for better readability.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -16,8 +17,8 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| If a process does not specify user tasks, the related checkbox in the tab _User task_ of a run configuration is now disabled. | W-13664033
-| The validation of the start or deployment of a run configuration in the test phase or production phase has been enhanced. | W-13656062
+| The *Send email notification to all related users when the task is ready for processing* checkbox no longer shows enabled when a process does not have user tasks. | W-13664033
+| The validation process before starting a test or deploying a run configuration now shows Error or Warning messages. RPA Manager now blocks a test or deployment when an error occurs during validation. | W-13656062
 |===
 
 // == Known Issues
