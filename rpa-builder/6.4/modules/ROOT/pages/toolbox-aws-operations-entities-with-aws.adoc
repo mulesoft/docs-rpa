@@ -48,7 +48,7 @@ The session token to use for authentication when *Use session token to authentic
 * *Response settings*
 ** *JsonPath Expression*
 +
-The Json path to the property of the response object.
+The Json path to the property of the response object. 
 * *Text*
 +
 The text to analyze.
@@ -59,3 +59,4 @@ The language of the source text to analyze.
 == See Also
 
 * https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html[Amazon Comprehend^]
+* xref:building-jsonpath-expressions.adoc[]

@@ -153,6 +153,7 @@
 * xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]
 ** xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[Testing Regular Expressions]
 ** xref:advanced-concepts-using-regular-expressions-examples.adoc[Regex Examples]
+* xref:building-jsonpath-expressions.adoc[]
 * xref:adding-a-pattern-from-screen-capture.adoc[Using Search Patterns in a Workflow]
 * xref:advanced-concepts-using-variables.adoc[Using Variables]
 * xref:workbench-elements-in-detail.adoc[Workbench Elements in Detail]

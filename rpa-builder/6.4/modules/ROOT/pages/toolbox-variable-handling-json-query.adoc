@@ -39,28 +39,11 @@ Indicates the number of elements of the returned array.
 
 Use the Wizard to select the source JSON Object, usually an Inbound Variable containing the result of a REST Call, and to specify the JsonPath expression to extract values from the object. An empty result is a valid result and the process continues without considering it as an error.
 
-Use the JsonPath expression Builder to simplify the process of creating the JsonPath expression. 
-
-=== Build a JsonPath Expression
-
-. Click the *Build JsonPath Expression* (image:jsonpath-expression-builder-button.png[3%, 3%, Build JsonPath Expression button]) button in the wizard to open the JsonPath Expression Builder tool.
-. Click *Import from file* to explore and select a JSON file to open or paste the JSON directly in the textbox.
-+
-image::jsonpath-expression-builder-import.png[The import file window of the JSONPath Expression Builder tool.]
-. Click *Next*.
-. Click an object in the *JSON* panel to extract the object's JsonPath Expression. 
-+
-image::jsonpath-expression-builder.png[The JSONPath Expression Builder tool.]
-+
-After clicking a JSON element, the *Result* panel updates to show what values the expression extracts and the *JsonPatch expression* field updates to show the expression built to extract the specified value. 
-. Click *Apply* to confirm and use the built JsonPath expression. 
-
-
+Use the xref:xref:building-jsonpath-expressions.adoc#jsonpath-builder[JsonPath expression Builder] to simplify the process of creating the JsonPath expression. 
 
 For more information about JSONPath, see https://goessner.net/articles/JsonPath/[XPath for JSON^].
 
 == See Also 
 
 * xref:toolbox-network-rest-call.adoc[]
-* https://jsoneditoronline.org/[JSON Online Editor^]
-* https://jsonpath.com/[JSONPath Evaluator^]
+* xref:building-jsonpath-expressions.adoc[]

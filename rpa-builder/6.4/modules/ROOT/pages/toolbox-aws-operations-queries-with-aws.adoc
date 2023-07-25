@@ -122,3 +122,4 @@ Enables you to test the configured query and see the results in the Wizard
 == See Also
 
 * https://docs.aws.amazon.com/en_us/textract/latest/dg/bestqueries.html[Amazon Textract: Best Practices for Queries^]
+* xref:building-jsonpath-expressions.adoc[]
