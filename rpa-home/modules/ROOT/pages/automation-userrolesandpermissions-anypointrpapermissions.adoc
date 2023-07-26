@@ -1,19 +1,19 @@
 = Anypoint Access Management RPA Permissions
 :page-notice-banner-message: After the migration of the RPA Manager User Management to Anypoint Access Management, the RPA Manager privileges are replaced by the Anypoint Access Management RPA permissions. For information about the scopes of the then deprecated permissions included in the Anypoint Access Management RPA permissions, refer to the topic Privileges by Module.
 
-...
+== RPA Administrator
 
-== ...
-
-...
+The RPA Administrator permission includes all other permissions, with the exception of the Project Manager permission. A user with this permission can only view or administer automation projects if the user is part of the process team.
 
 == RPA Automations Designer
 
 The RPA Automations Designer permission enables an RPA developer, citizen technologist, or knowledge source (such as a business analyst or process owner) to do the following: 
+
 * In RPA Manager: 
 ** Create automation projects.
 ** Record or design models of business processes that a process manager or center of excellence has approved for automation. 
 ** Document and edit applications required for performing the process.
+
 The RPA Automations Designer permission contains the following deprecated RPA permissions:
 
 * Application Create
@@ -25,6 +25,7 @@ The RPA Automations Designer permission contains the following deprecated RPA pe
 == RPA Automations Contributor
 
 The RPA Automations Contributor permission enables an RPA developer, citizen technologist, or knowledge source (such as a business analyst or process owner) to do the following: 
+
 * In RPA Manager: 
 ** Create automation projects.
 ** Record or design models of business processes that a process manager or center of excellence has approved for automation. 
@@ -84,9 +85,27 @@ The RPA Automations Manager permission contains the following deprecated RPA per
 * Unprocessed Task List Edit
 * Unprocessed Task List Open
 
-== ...
+== RPA Bots Manager
 
-...
+The RPA Bots Manager permission enables the user to do the following:
+
+* Monitor and manage all RPA Bots, including the following:
+** Manage service times
+** View session queues
+* Manage applications required for performing processes, including downtimes
+
+The RPA Bots Manager permission contains the following deprecated RPA permissions:
+
+* Application Create
+* Application Edit
+* Process Monitoring Open
+* Robot Management Open
+* Robot State and Operation Open
+* Application Delete
+* Robot Management Administration
+* Service Time Create
+* Service Time Delete
+* Service Time Edit
 
 == RPA Evaluations Viewer
 
@@ -96,7 +115,7 @@ The RPA Evaluations Viewer permission enables a user to do the following:
 * View evaluation criteria.
 * View evaluation templates.
 
-The RPA Evaluations Viewer contains the following deprecated RPA permissions:
+The RPA Evaluations Viewer permission contains the following deprecated RPA permissions:
 
 * Evaluation Criteria Open
 * Evaluation Templates Open
@@ -177,6 +196,60 @@ The RPA Operations Viewer contains the following deprecated RPA permissions:
 * Robot Management Open
 * Robot State and Operation Open
 
+== RPA Operations Manager
+
+The RPA Operations Manager enables a user to do the following:
+
+* View and manage the following RPA assets: 
+** Alerts
+** Bots
+** Dashboards
+** Unprocessed user tasks
+** Upcoming process changes
+* Analyze finance aspects and billing reports
+* View the following information for processes for which the user belongs to the process team:
+** Deployment maps
+** Execution plans
+** Session queues
+* Watch the bot at work via process streaming
+
+The RPA Operations Viewer contains the following deprecated RPA permissions:
+
+* Alerting Administration
+* Alerting Open
+* Dashboard Open
+* Process Deployment Map Open
+* Process Execution Plans Open
+* Process Monitoring Open
+* Process Streaming Open
+* Robot Management Open
+* Robot State and Operation Open
+* Billing Report Open
+* Dashboard Administration
+* Finance Analysis Edit
+* Finance Analysis Open
+* Global Finance Analysis View
+* Global Process Execution Plans View
+* Unprocessed Task List Edit
+* Unprocessed Task List Open
+* Upcoming Process Changes Administration
+* Upcoming Process Changes Open
+
+== RPA Performance Analyzer
+
+The RPA Performance Analyzer permission enables the user to do the following: 
+
+* Analyze financial aspects (such as the break-even point) of all processes
+* View the billing reports
+
+The RPA Performance Analyzer permission contains the following deprecated RPA permissions:
+
+* Billing Report Open
+* Finance Analysis Edit
+* Finance Analysis Open
+* Global Finance Analysis View
+
+
 == RPA Project Manager
 
 The Project Manager permission enables a user to be assigned as a project manager of automation projects. For a user to function as a project manager, the user must also have one of the following permissions: 
@@ -186,6 +259,6 @@ The Project Manager permission enables a user to be assigned as a project manage
 * RPA Automations Manager
 * RPA Administrator
 
-The RPA Project Manager contains the following deprecated RPA permissions:
+The RPA Project Manager permission contains the following deprecated RPA permissions:
 
 * Project Management
