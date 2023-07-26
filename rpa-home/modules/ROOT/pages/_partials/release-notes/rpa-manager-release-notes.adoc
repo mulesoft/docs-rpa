@@ -20,7 +20,7 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 |Known Issue |Workaround | ID
 | Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
 | A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least one time to RPA Manager to appear in the lists of available users. | W-13833054
-| A user with recently added Project Manager permissions is not available in the dropdown menu for Project Manager assignments. | The user with the Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
 
 |===
 
