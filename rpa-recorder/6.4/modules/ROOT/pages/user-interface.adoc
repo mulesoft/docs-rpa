@@ -32,7 +32,7 @@ When a recording state changes, a toast notification appears indicating current 
 
 Use image-based mouse clicks at any point during a normal recording session to record mouse clicks on a UI element that otherwise cannot be recorded properly. This feature guides you through the mouse click process. An image on the screen and mouse clicks must be captured, and the mouse clicks are recorded relative to the captured image.
 
-Use this feature at any point during a normal recording session. The feature also checks your display settings automatically while recording to ensure the feature records correctly.
+The feature also checks your display settings automatically while recording to ensure the feature records correctly.
 
 This feature will result in _Search Pattern_ and _Mouse Action_ Action Steps when the workflow is generated in RPA Builder from the recording.
 
