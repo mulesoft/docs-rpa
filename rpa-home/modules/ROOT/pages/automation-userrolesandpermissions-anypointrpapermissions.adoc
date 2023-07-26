@@ -9,8 +9,11 @@
 
 == RPA Automations Designer
 
-As a knowledge source, for example, as a business analyst or as a process owner, record or design models of business processes that a process manager or center of excellence has approved for automation. Document the process, including the required applications. An RPA developer builds the automation based on this model.
-
+The RPA Automations Designer permission enables an RPA developer, citizen technologist, or knowledge source (such as a business analyst or process owner) to do the following: 
+* In RPA Manager: 
+** Create automation projects.
+** Record or design models of business processes that a process manager or center of excellence has approved for automation. 
+** Document and edit applications required for performing the process.
 The RPA Automations Designer permission contains the following deprecated RPA permissions:
 
 * Application Create
@@ -21,7 +24,15 @@ The RPA Automations Designer permission contains the following deprecated RPA pe
 
 == RPA Automations Contributor
 
-As an RPA developer, a citizen technologist or a knowledge source, for example, as a business analyst or as a process owner, record or design models of business processes that a process manager or center of excellence has approved for automation. In RPA Builder, build the automation based on the model. Reuse activities from the RPA Builder Activity Library. Document and edit applications required for the process run. Create global variables to link to activity parameters you created for your process in RPA Builder.
+The RPA Automations Contributor permission enables an RPA developer, citizen technologist, or knowledge source (such as a business analyst or process owner) to do the following: 
+* In RPA Manager: 
+** Create automation projects.
+** Record or design models of business processes that a process manager or center of excellence has approved for automation. 
+** Document and edit applications required for the process run. 
+** Create and edit global variables to link to activity parameters created with RPA Builder. 
+* In RPA Builder:
+** Build the automation based on the model. 
+** Reuse activities from the Activity Library. 
 
 The RPA Automations Contributor permission contains the following deprecated RPA permissions:
 
@@ -39,7 +50,18 @@ The RPA Automations Contributor permission contains the following deprecated RPA
 
 == RPA Automations Manager
 
-As an RPA developer, a citizen technologist or a knowledge source, for example, as a business analyst or as a process owner, record or design models of business processes that a process manager or center of excellence has approved for automation. In RPA Builder, build the automation based on the model. Reuse and manage activities from the RPA Builder Activity Library. Document and manage applications required for the process run. Create and manage global variables to link to activity parameters created with RPA Builder. Change the owners and managers of processes.
+The RPA Automations Manager permission enables an RPA developer, citizen technologist, or knowledge source (such as a business analyst or process owner) to do the following: 
+
+* In RPA Manager: 
+** Create automation projects.
+** Record or design models of business processes that a process manager or center of excellence has approved for automation. 
+** Document and manage applications required for performing a process. 
+** Create and manage global variables to link to activity parameters created with RPA Builder. 
+** Change the owners and managers of processes.
+** Reassign unprocessed user tasks
+* In RPA Builder:
+** Build the automation based on the model. 
+** Reuse and manage activities from the Activity Library. 
 
 The RPA Automations Manager permission contains the following deprecated RPA permissions:
 
@@ -59,7 +81,111 @@ The RPA Automations Manager permission contains the following deprecated RPA per
 * Process Automation Open
 * Process Create
 * Process Recording
+* Unprocessed Task List Edit
+* Unprocessed Task List Open
 
 == ...
 
 ...
+
+== RPA Evaluations Viewer
+
+The RPA Evaluations Viewer permission enables a user to do the following: 
+
+* View all process evaluations, regardless of whether the user belongs to the process team.
+* View evaluation criteria.
+* View evaluation templates.
+
+The RPA Evaluations Viewer contains the following deprecated RPA permissions:
+
+* Evaluation Criteria Open
+* Evaluation Templates Open
+* Global Process Evaluation View
+* Process Evaluation Open
+
+== RPA Evaluations Contributor
+
+The RPA Evaluations Contributor permission enables a user to do the following:
+
+* View all process evaluations, regardless of whether the user belongs to the process team.
+* View, create, and edit:
+** Evaluation criteria.
+** Evaluation templates.
+* View, create, edit, and delete process evaluations.
+
+The RPA Evaluations Contributor contains the following deprecated RPA permissions:
+
+* Evaluation Criteria Create
+* Evaluation Criteria Edit
+* Evaluation Criteria Open
+* Evaluation Templates Create
+* Evaluation Templates Edit
+* Evaluation Templates Open
+* Global Process Evaluation View
+* Process Evaluation Administration
+* Process Evaluation Open
+
+== RPA Evaluations Manager
+
+The RPA Evaluations Manager permission enables a user to do the following:
+
+* View all process evaluations, regardless of whether the user belongs to the process team.
+* View, create, edit, and delete:
+** Evaluation criteria.
+** Evaluation templates.
+** Process evaluations.
+* Approve evaluated processes to a center of excellence or a project manager for automation.
+
+The RPA Evaluations Manager contains the following deprecated RPA permissions:
+
+* Evaluation Criteria Create
+* Evaluation Criteria Delete
+* Evaluation Criteria Edit
+* Evaluation Criteria Open
+* Evaluation Templates Create
+* Evaluation Templates Delete
+* Evaluation Templates Edit
+* Evaluation Templates Open
+* Global Process Evaluation View
+* Process Evaluation Administration
+* Process Evaluation Approval to a CoE
+* Process Evaluation Approval to a Project manager
+* Process Evaluation Open
+
+== RPA Operations Viewer
+
+The RPA Operations Viewer permission enables a user to do the following: 
+
+* View all aspects of the following RPA assets: 
+** Alerts
+** Bots
+** Dashboards
+* View the following information for processes for which the user belongs to the process team:
+** Deployment maps
+** Execution plans
+** Session queues
+* Watch the bot at work via process streaming
+
+The RPA Operations Viewer contains the following deprecated RPA permissions:
+
+* Alerting Open
+* Dashboard Open
+* Process Deployment Map Open
+* Process Execution Plans Open
+* Process Monitoring Open
+* Process Streaming Open
+* Robot Management Open
+* Robot State and Operation Open
+
+== RPA Project Manager
+
+The Project Manager permission enables a user to be assigned as a project manager of automation projects. For a user to function as a project manager, the user must also have one of the following permissions: 
+
+* RPA Automations Designer
+* RPA Automations Contributor
+* RPA Automations Manager
+* RPA Administrator
+
+The RPA Project Manager contains the following deprecated RPA permissions:
+
+* Project Management
