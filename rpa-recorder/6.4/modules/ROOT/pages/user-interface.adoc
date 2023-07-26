@@ -59,7 +59,7 @@ To check your display settings before recording, go to *Windows Settings > Displ
 To capture image-based mouse clicks:
 
 . Start a normal recording process.
-. While recording, press *F3* to start recording image-based mouse clicks, or press the *Image-Based Mouse Clicks* button on the Recording Toolbar. This opens the wizard for capturing image-based mouse clicks.
+. While recording, press *F3* to start recording image-based mouse clicks, or press the *Image-Based Mouse Clicks* button on the Recording Toolbar.
 . Capture an image by selecting it on the screen, accept or retake it, and then set a mouse click. The mouse click is marked with a red dot.
 . Record additional mouse clicks, such as double-mouse clicks, if desired. All additional mouse clicks are recorded relative to the captured pattern and are marked with a red dot.
 . Click *Finish*. This generates all relevant data for RPA Builder to create the _Search Pattern_ and _Mouse Action_ Action Steps for the recording.
