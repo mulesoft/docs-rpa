@@ -45,7 +45,7 @@ When using this feature:
 
 === Recommended Display Settings
 
-Apply the following displays settings to capture image-based mouse clicks:
+Apply the following recommended display settings to capture image-based mouse clicks:
 
 * Single monitor. Multiple monitors are supported, but the capturing will be limited to the primary display only for Bot tasks and to the web page for Web tasks.
 * Display scaling of 100%. If the scaling is different, then there is a risk that the captured image will not be found by the workflow generated in RPA Builder from the recording.
