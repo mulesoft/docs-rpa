@@ -80,7 +80,7 @@ If you close the Action Step wizard by clicking the *X*, the image-based mouse c
 
 When recording image-based mouse clicks in a Web Task:
 
-* Scrolling or zooming in the displayed web page, or moving or resizing the browser window, results in inaccurate relative clicks in the recording.
+* Scrolling or zooming in the displayed web page or moving or resizing the browser window results in inaccurate relative clicks in the recording.
 * Any subsequent click after navigating to another web page, such as by clicking a link, may cause inaccuracies in the recording.
 
 == Define Screenshot
