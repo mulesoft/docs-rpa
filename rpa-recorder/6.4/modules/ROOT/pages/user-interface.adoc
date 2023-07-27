@@ -150,12 +150,6 @@ Select this option to automatically take a screenshot on every mouse click.
 ** *When recording Bot Tasks auto-capture screenshots of*: 
 +
 Select the area to capture when RPA Recorder takes screenshots. Available options are: *Active application only* and *Full screen*. 
-* *Merge keystrokes* 
-+
-Concatenates keyboard entries entered during the recording into meaningful words and sentences based upon the timestamps when they were entered. The number is expressed in seconds and can range from 2 to 10 seconds.
-* *Verbosity level* 
-+
-Defines wether to show detailed process information in the documentation. If you select *Low*, the information does not show in the documentation.
 
 [[hotkeys]]
 === Hotkeys
