@@ -20,4 +20,4 @@ Use Recalculate Excel File to recalculate the values of an Excel sheet.
 Use Save Excel File to save the contents of an Excel file.
 * xref:toolbox-excel-operations-write-to-excel-file.adoc[Write to Excel File]
 +
-Use Write to Excel File to write the contents from the read Excel file. You can write the content to the same file or to a new destination file.
+Use Write to Excel File to write content to the selected excel file. You can write the content to the same file or to a new destination file.
