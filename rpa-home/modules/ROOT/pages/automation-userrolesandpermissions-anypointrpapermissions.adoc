@@ -3,7 +3,7 @@
 
 == RPA Administrator
 
-The RPA Administrator permission includes all other permissions, with the exception of the Project Manager permission. A user with this permission can only view or administer automation projects if the user is part of the process team.
+The RPA Administrator permission includes all other permissions, except for the RPA Project Manager permission. A user with this permission can only view or administer automation projects if the user is part of the process team.
 
 == RPA Automations Designer
 
@@ -11,8 +11,8 @@ The RPA Automations Designer permission enables an RPA developer, citizen techno
 
 * In RPA Manager: 
 ** Create automation projects.
-** Record or design models of business processes that a process manager or center of excellence has approved for automation. 
-** Document and edit applications required for performing the process.
+** Record or design models of business processes that a process manager or center of excellence approved for automation. 
+** Document and edit the applications required for performing the processes.
 
 The RPA Automations Designer permission contains the following deprecated RPA permissions:
 
@@ -28,8 +28,8 @@ The RPA Automations Contributor permission enables an RPA developer, citizen tec
 
 * In RPA Manager: 
 ** Create automation projects.
-** Record or design models of business processes that a process manager or center of excellence has approved for automation. 
-** Document and edit applications required for the process run. 
+** Record or design models of business processes that a process manager or center of excellence approved for automation. 
+** Document and edit the applications required for performing the processes. 
 ** Create and edit global variables to link to activity parameters created with RPA Builder. 
 * In RPA Builder:
 ** Build the automation based on the model. 
@@ -55,8 +55,8 @@ The RPA Automations Manager permission enables an RPA developer, citizen technol
 
 * In RPA Manager: 
 ** Create automation projects.
-** Record or design models of business processes that a process manager or center of excellence has approved for automation. 
-** Document and manage applications required for performing a process. 
+** Record or design models of business processes that a process manager or center of excellence approved for automation. 
+** Document and manage the applications required for performing the processes. 
 ** Create and manage global variables to link to activity parameters created with RPA Builder. 
 ** Change the owners and managers of processes.
 ** Reassign unprocessed user tasks
@@ -90,19 +90,19 @@ The RPA Automations Manager permission contains the following deprecated RPA per
 The RPA Bots Manager permission enables the user to do the following:
 
 * Monitor and manage all RPA Bots, including the following:
-** Manage service times
-** View session queues
-* Manage applications required for performing processes, including downtimes
+** Manage service times.
+** View session queues.
+* Manage the applications required for performing the processes, including downtimes.
 
 The RPA Bots Manager permission contains the following deprecated RPA permissions:
 
 * Application Create
+* Application Delete
 * Application Edit
 * Process Monitoring Open
+* Robot Management Administration
 * Robot Management Open
 * Robot State and Operation Open
-* Application Delete
-* Robot Management Administration
 * Service Time Create
 * Service Time Delete
 * Service Time Edit
@@ -112,8 +112,9 @@ The RPA Bots Manager permission contains the following deprecated RPA permission
 The RPA Evaluations Viewer permission enables a user to do the following: 
 
 * View all process evaluations, regardless of whether the user belongs to the process team.
-* View evaluation criteria.
-* View evaluation templates.
+* View:
+** Evaluation criteria
+** Evaluation templates.
 
 The RPA Evaluations Viewer permission contains the following deprecated RPA permissions:
 
@@ -128,8 +129,8 @@ The RPA Evaluations Contributor permission enables a user to do the following:
 
 * View all process evaluations, regardless of whether the user belongs to the process team.
 * View, create, and edit:
-** Evaluation criteria.
-** Evaluation templates.
+** Evaluation criteria
+** Evaluation templates
 * View, create, edit, and delete process evaluations.
 
 The RPA Evaluations Contributor contains the following deprecated RPA permissions:
@@ -150,9 +151,9 @@ The RPA Evaluations Manager permission enables a user to do the following:
 
 * View all process evaluations, regardless of whether the user belongs to the process team.
 * View, create, edit, and delete:
-** Evaluation criteria.
-** Evaluation templates.
-** Process evaluations.
+** Evaluation criteria
+** Evaluation templates
+** Process evaluations
 * Approve evaluated processes to a center of excellence or a project manager for automation.
 
 The RPA Evaluations Manager contains the following deprecated RPA permissions:
@@ -183,7 +184,7 @@ The RPA Operations Viewer permission enables a user to do the following:
 ** Deployment maps
 ** Execution plans
 ** Session queues
-* Watch the bot at work via process streaming
+* Watch the bot at work via process streaming.
 
 The RPA Operations Viewer contains the following deprecated RPA permissions:
 
@@ -211,7 +212,7 @@ The RPA Operations Manager enables a user to do the following:
 ** Deployment maps
 ** Execution plans
 ** Session queues
-* Watch the bot at work via process streaming
+* Watch the bot at work via process streaming.
 
 The RPA Operations Viewer contains the following deprecated RPA permissions:
 
@@ -239,8 +240,8 @@ The RPA Operations Viewer contains the following deprecated RPA permissions:
 
 The RPA Performance Analyzer permission enables the user to do the following: 
 
-* Analyze financial aspects (such as the break-even point) of all processes
-* View the billing reports
+* Analyze the financial aspects (such as the break-even point) of all processes.
+* View the billing reports.
 
 The RPA Performance Analyzer permission contains the following deprecated RPA permissions:
 
