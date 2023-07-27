@@ -25,6 +25,9 @@ The deployment map does not show invokable run configurations that were deleted 
 |View the process deployment map
 |Process Deployment Map Open
 
+|Execute, pause or stop configurations
+|Process Automation Open
+
 |===
 
 * You can only view processes for which you are part of the process team.
@@ -32,9 +35,37 @@ The deployment map does not show invokable run configurations that were deleted 
 * You cannot interact with invokable configurations.
 * The deployment map shows only bots that have configurations deployed.
 
-//== Understand the Map
+== Filter Configurations by Status
 
-//== View Configurations States
+To show a relevant subset of the map, filter the configurations by status.
+
+You can use the following filters:
+
+* Deployed:
++
+Show all process-configuration-bot combinations in which the configuration is deployed.
+* Undeployed
++
+Show all process-configuration-bot combinations in which the configuration is not deployed.
+* Paused 
++
+Show all process-configuration-bot combinations in which the configuration is deployed.
+* Errors and warnings
++ 
+Show all process-configuration-bot combinations in which errors or warnings occur.
+
+You can refine the filter results using the same filters again.
+
+To filter configurations by status:
+
+. Open the *Deployment Map* view in the *Process Operations* module.
+. Click the *Filter by state* icon.
+. Click the filter you want to use.
+. To refine the result further, deselect all filters, you do not want to use on the shown subset.
+
+The deployment map view is updated.
+
+To show the complete map again, click *Reset Filters*.
 
 == Manage Configuration Executions
 
