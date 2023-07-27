@@ -19,7 +19,8 @@ Save Excel File has no inbound variables.
 
 * *Success* (bool)
 +
-Confirms if the save file operation was successfull. If the operation fails (`false`), the workflow run state is set to Error. 
+Confirms if the save file operation was successful. If the operation fails (`false`), the workflow run state is set to Error. 
+
 
 == See Also
 
