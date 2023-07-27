@@ -10,7 +10,8 @@ You can view and manage all your run configurations in one place:
 * Switch between hierarchical and star network views.
 * Filter the bots and configurations by status.
 * Switch directly to the detailed view of a process or a configuration.
-* Execute, pause, and stop test and production configurations directly from here.
+* Execute test configurations directly from here.
+* Execute, pause, and stop production configurations directly from here.
 
 The deployment map does not show invokable run configurations that were deleted in RPA Manager. Invokable run configurations deleted in RPA Manager still exist in Anypoint Exchange, but cannot be run by the bot. The deployment map might still show invokable configuration assets deprecated in Anypoint Exchange. Make sure to sync configuration changes manually between RPA Manager and Anypoint Exchange.
 
