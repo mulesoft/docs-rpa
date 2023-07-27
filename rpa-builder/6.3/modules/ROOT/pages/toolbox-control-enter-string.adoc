@@ -1,0 +1,87 @@
+
+
+= Enter String
+
+Like the _Keystrokes_ Action Step, the _Enter String_ Action Step
+emulates keyboard inputs. You can use this to enter search criteria or a
+URL in the browser address bar, for example. You can also use it to
+execute hotkeys or macros.
+
+The text to be entered can be transferred to the _Enter String_ Action
+Step from a previously executed Action Step.
+
+== Properties
+
+*Input String Settings*
+
+**Input string**
+(string, default blank, cannot be left blank, mapping possible) String
+to be entered via the emulated keyboard.
+
+
+*Keyboard Settings*
+
+* *Initial pause* (integer, ms, default 500 ms, minimum value 0 ms)
+Pause before emulation of the string input begins.
+* *Key down delay* (default 5 ms, maximum 1000 ms) Duration in ms for
+which a key or combination of keys is held down. The input will be
+executed at the start of this delay.
+* *Key up delay* (default 5 ms, maximum 1000 ms) Duration in ms for
+which a key or combination of keys is released.
+
+*Window Settings*
+
+* *Use a regular expression for window title* If this option is active,
+the string entered in the _Window Title_ field will be interpreted as a
+regular expression (see also the section on
+xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]).
+* **Window title** Title of the window where the keyboard inputs are to be executed.
+
+== Inbound Variables
+
+*Input string*
+
+*Window title*
+
+== Outbound Variables
+
+The _Enter String_ Action Step possesses no Outbound Variables.
+
+== Wizard
+
+*Input String Settings*
+
+The Input String can be supplemented by Insert Variables.
+
+*Window Handling Timing*
+
+You have the option to specify the title of the window where the string
+is to be entered under Window Title.
+
+If you click on the Collect Window Titles button you can then select a title from the drop-down list of all the
+windows which are presently open. To open them click the mouse on the
+arrow symbol at the right-hand side of the input window.
+
+The _Window title_ can also be described using a regular expression. For this, please
+select the check box to _Use a regular expression for window title_.
+
+Please make sure for extended input sequences that the _Key up delay_ is
+set for long enough to send the keyboard inputs to the correct window.
+
+There is a visual explaining Keyboard Settings in the section on Keystrokes.
+
+
+// == Example
+
+// image::toolbox-control-enter-string-image1.png[Example Enter String]
+
+
+== Enter String or Keystrokes?
+
+If you need the _window text_ to specify the input window or want to
+record the text that is to be entered directly via the keyboard, please
+use the _Keystrokes_ Action Step.
+
+In all other cases, and in particular if the text for inputting is to be
+transferred by means of a Pin Variable, please use the _Enter String_
+Action Step.
