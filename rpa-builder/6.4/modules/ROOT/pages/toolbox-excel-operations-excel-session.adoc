@@ -98,7 +98,8 @@ This Action Step has no outbound variables.
 Use the *Operation Mode* section to choose whether to only read the Excel file, read and modify, or read and then write to a different Excel file. 
 
 The *Source file* is the file to read. Specify the path to the directory where the source file
-is located  in the *Directory path* field, either manually or using Environment and Script Variables, the file explorer, or a Pin Variable. 
+is located in the *Directory path* field, either manually or using Environment and Script Variables, the file explorer, or a Pin Variable. 
+
 
 Specify the file to open in the *File name* field, either manually, using the file explorer, or a Pin Variable.  
 
