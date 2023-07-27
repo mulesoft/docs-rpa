@@ -43,6 +43,7 @@
 *** xref:toolbox-excel-operations-excel-session.adoc[Excel Session]
 *** xref:toolbox-excel-operations-read-from-excel-file.adoc[Read from Excel File]
 *** xref:toolbox-excel-operations-recalculate-excel-file.adoc[Recalculate Excel File]
+*** xref:toolbox-excel-operations-save-excel-file.adoc[]
 *** xref:toolbox-excel-operations-write-to-excel-file.adoc[Write to Excel File]
 ** xref:toolbox-file-operations.adoc[File Operations]
 *** xref:toolbox-file-operations-copy-file.adoc[Copy File]
