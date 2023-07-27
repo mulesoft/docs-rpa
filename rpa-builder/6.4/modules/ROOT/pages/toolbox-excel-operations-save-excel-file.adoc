@@ -1,0 +1,26 @@
+= Save Excel File
+
+Use the Save Excel File Action Step to save the changes to the Excel file being modified inside the Excel Session at any point of the execution. For example, saving the Excel file after loop operations serves as a way to prevent data loss in case the workflow execution stops because of an unknown error. The Excel Session automatically saves the file at the end of its execution. 
+
+The Save Excel File Action Step works only inside an Excel Session. Specify the file to modify in the xref:toolbox-excel-operations-excel-session.adoc[Excel Session].
+
+[WARNING]
+Save Excel File cannot save the file if the Excel Session opens the file in read-only mode.
+
+== Properties
+
+This Action Step does not have any specific properties. See xref:common-properties.adoc[] for a list of properties common to all Action Steps. 
+
+== Inbound Variables
+
+Save Excel File has no inbound variables.
+
+== Outbound Variables
+
+* *Success* (bool)
++
+Confirms if the save file operation was successfull. If the operation fails (`false`), the workflow run state is set to Error. 
+
+== See Also
+
+* xref:toolbox-excel-operations.adoc[]
