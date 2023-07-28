@@ -16,7 +16,7 @@ JSONPath Expression Builder is available in the wizards for Action Steps that su
 * RPA Builder now creates Mouse Action and Search Pattern Action Steps based on a recording from RPA Recorder. 
 * Excel Session performance is improved and now supports: 
 ** Additional file formats (`XLSM`, `XLSB`, and `XLS`).
-** Processing files with more than 20.000 rows. 
+** Processing files with more than 20,000 rows. 
 ** Processing files with more than 78 columns.
 ** Opening and creating password-protected Excel files. 
 ** Creating a new file in the *Read and Write to the same file* operation mode. 
