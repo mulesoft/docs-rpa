@@ -1,4 +1,5 @@
 = List of Privileges by Module
+:page-notice-banner-message: After the migration of the RPA Manager User Management to Anypoint Access Management, the RPA Manager privileges are replaced by the Anypoint Access Management RPA permissions.
 
 RPA Manager has the following privileges, which can be assigned to individual users.
 
