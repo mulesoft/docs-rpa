@@ -17,9 +17,9 @@ JSONPath Expression Builder is available in the wizards for Action Steps that su
 * Excel Session performance is improved and now supports: 
 ** Additional file formats (`XLSM`, `XLSB`, and `XLS`).
 ** Processing files with more than 20.000 rows. 
-** Processing files with more thn 78 columns.
+** Processing files with more than 78 columns.
 ** Opening and creating password-protected Excel files. 
-** Creating a new file the *Read and Write to the same file* operation mode. 
+** Creating a new file in the *Read and Write to the same file* operation mode. 
 ** Excel Controlled Loop now uses the system's locale settings to read and display the dates to ensure the format remains unchanged.  
 
 
