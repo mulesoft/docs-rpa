@@ -53,7 +53,7 @@ connect to the internet through a proxy server, enter the proxy address in this 
 Format: `+http://<Serveraddress>:<Port>+`, for example: `+http://myproxy.de:881+`.
 
 [[secure-session]]
-== Secure Session
+== Session Settings
 
 Enable the bot to use secure sessions by entering credentials the bot uses to login to the computer and to open a hidden session. If you don't add credentials here, the bot can only use a running desktop session.
 
