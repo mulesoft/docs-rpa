@@ -69,3 +69,4 @@ The target language for the translation of the source text.
 == See Also
 
 * https://docs.aws.amazon.com/translate/latest/dg/what-is.html[Amazon Translate^]
+* xref:building-jsonpath-expressions.adoc[]

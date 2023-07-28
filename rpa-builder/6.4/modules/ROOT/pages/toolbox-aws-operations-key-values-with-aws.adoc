@@ -90,3 +90,4 @@ Instructs the service to continue reading until the end of the file.
 == See Also
 
 * https://docs.aws.amazon.com/textract/latest/dg/how-it-works-kvp.html[Amazon Textract: Form Data (Key-Value Pairs)^]
+* xref:building-jsonpath-expressions.adoc[]

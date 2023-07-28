@@ -89,4 +89,5 @@ Instructs the service to continue reading until the end of the file.
 
 == See Also
 
-https://docs.aws.amazon.com/textract/latest/dg/invoices-receipts.html[Amazon Textract: Analyzing Invoices and Receipts^]
+* https://docs.aws.amazon.com/textract/latest/dg/invoices-receipts.html[Amazon Textract: Analyzing Invoices and Receipts^]
+* xref:building-jsonpath-expressions.adoc[]
