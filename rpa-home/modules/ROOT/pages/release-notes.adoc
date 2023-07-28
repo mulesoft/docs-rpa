@@ -24,6 +24,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == RPA Recorder
 
+* xref:release-notes/rpa-recorder-6.4.0-release-notes.adoc[RPA Recorder 6.4.0 Release Notes]
 * xref:release-notes/rpa-recorder-6.3.0-release-notes.adoc[RPA Recorder 6.3.0 Release Notes]
 * xref:release-notes/rpa-recorder-6.2.0-release-notes.adoc[RPA Recorder 6.2.0 Release Notes]
 * xref:release-notes/rpa-recorder-6.1.0-release-notes.adoc[RPA Recorder 6.1.0 Release Notes]
