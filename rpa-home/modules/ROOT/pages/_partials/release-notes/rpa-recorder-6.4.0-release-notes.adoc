@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * You can now use image-based mouse clicks to record mouse clicks on a UI element that otherwise could not be recorded properly.
 * Japanese keyboard input during Web recording is now fully supported.
 
-// == Deprecated
+== Deprecated
 
 The following settings are removed from the Settings section of RPA Recorder:
 
