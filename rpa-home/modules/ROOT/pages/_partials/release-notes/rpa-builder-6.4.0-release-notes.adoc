@@ -1,0 +1,53 @@
+= RPA Builder 6.4.0 Release Notes
+
+RPA Builder is the on-premises application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== July 31, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* The new JSONPath Expression Builder enables users to build JSONPath expressions by importing a JSON file and selecting an element in the UI.
++
+JSONPath Expression Builder is available in the wizards for Action Steps that support JSONPath expressions and in the menu bar of RPA Builder. 
+* The new Save Excel File Action Step enables users to save the changes to the Excel file being modified inside the Excel Session at any point of the execution.
+* RPA Builder now creates Mouse Action and Search Pattern Action Steps based on a recording from RPA Recorder. 
+* Excel Session performance is improved and now supports: 
+** Additional file formats (`XLSM`, `XLSB`, and `XLS`).
+** Processing files with more than 20,000 rows. 
+** Processing files with more than 78 columns.
+** Opening and creating password-protected Excel files. 
+** Creating a new file in the *Read and Write to the same file* operation mode. 
+** Excel Controlled Loop now uses the system's locale settings to read and display the dates to ensure the format remains unchanged.  
+
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.4.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+
+| Excel Controlled Loop now executes properly when specifying a RegEx condition and limiting the number of rows to read to 1. | W-13629972
+| The REST Call wizard no longer causes an error when configuring a Pin Variable for the Base URL field and trying to save. | W-13679169
+| The RPA Builder installer no longer contains unused DLL files. | W-13759870 / W-13079569
+
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center^]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]
