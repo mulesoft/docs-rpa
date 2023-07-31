@@ -14,27 +14,27 @@ You can reassign the following RPA assets to another user:
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an Anypoint Access Management administrator to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,2,2"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission (deprecated)* | *RPA Permission*
 
 |View configured settings for your organization
 |Organization Management Open
+|RPA Administrator
 
 |Add or modify settings for your organization
 |Organization Management Administration
+|RPA Administrator
 
 |Reassign RPA Assets
 |Reassign Users
-
-|Administer RPA assets
 |RPA Administrator
 
 |===
 
-* The user whom you reassign an asset must have the required permissions and knowledge to handle that asset.
+* Ensure that the user whom you reassign an asset has the required permissions and knowledge to handle that asset.
 * The following assets are deleted on the deletion of the user:
 ** Private dashboards
 ** User API Keys
@@ -77,6 +77,6 @@ RPA Manager removes the reassigned assets from the list.
 
 A toast message informs you about the success of the reassignments.
 
-//== See Also
+== See Also
 
-//link to Access Management?
+* https://docs.mulesoft.com/access-management/[Anypoint Access Management^]
