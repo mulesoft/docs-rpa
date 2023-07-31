@@ -10,10 +10,13 @@ You can view and manage all your run configurations in one place:
 * Switch between hierarchical and star network views.
 * Filter the bots and configurations by status.
 * Switch directly to the detailed view of a process or a configuration.
-* Execute test configurations directly from here.
-* Execute, pause, and stop production configurations directly from here.
+* Execute test configurations.
+* Execute, pause, and stop production configurations.
 
-The deployment map does not show invokable run configurations that were deleted in RPA Manager. Invokable run configurations deleted in RPA Manager still exist in Anypoint Exchange, but cannot be run by the bot. The deployment map might still show invokable configuration assets deprecated in Anypoint Exchange. Make sure to sync configuration changes manually between RPA Manager and Anypoint Exchange.
+You must manually keep configuration changes in RPA Manager and Anypoint Exchange in sync. Configurations might become out of sync in the following situations:
+
+* Invokable run configurations deleted in RPA Manager might still exist in Anypoint Exchange, but they cannot cannot be run by the bot and do not appear in RPA Manager.
+* Invokable configuration assets deprecated in Anypoint Exchange might still appear in RPA Manager.
 
 == Before You Begin
 
@@ -32,13 +35,13 @@ The deployment map does not show invokable run configurations that were deleted 
 |===
 
 * You can only view processes for which you are part of the process team.
-* To execute, pause or stop configurations obtain the needed team member permissions for the respective phase.
+* To execute, pause, or stop configurations, obtain the needed team member permissions for the respective phase.
 * You cannot interact with invokable configurations.
 * The deployment map shows only bots that have configurations deployed.
 
 == Filter Configurations by Status
 
-To show a relevant subset of the map, filter the configurations by status.
+To show a subset of the map, filter the configurations by status.
 
 You can use the following filters:
 
@@ -61,8 +64,8 @@ To filter configurations by status:
 
 . Open the *Deployment Map* view in the *Process Operations* module.
 . Click the *Filter by state* icon.
-. Click the filter you want to use.
-. To refine the result further, deselect all filters, you do not want to use on the shown subset.
+. Select a filter.
+. To refine the result, deselect the filters that you do not want to use on the shown subset.
 
 The deployment map view is updated.
 
