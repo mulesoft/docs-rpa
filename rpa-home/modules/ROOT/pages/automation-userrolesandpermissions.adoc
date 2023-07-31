@@ -31,10 +31,11 @@ Permissions have different scopes and purposes. They can be combined.
 |===
 |*Permission Type* |*Scope* |*Example*
 
-|*Privileges*
+|*Privileges* / *RPA (Deprecated) Permissions*
 a|* Predefined fine-granular permissions to view and process data.
 * Can be compiled to individual roles.
-* For some tasks users need permissions additional to privileges.
+* For some tasks users need individual permissions or assignments additional to privileges.
+* Are deprecated after the migration of RPA Manager to Anypoint Access Management
 a|You can guess the purpose of these example privileges from their name:
 
 * ``Process Automation Open``
@@ -47,9 +48,18 @@ a|You can guess the purpose of these example privileges from their name:
 * ``Change Project Manager``
 * ``Upcoming Process Changes Administration``
 
+|*RPA Permissions*
+a|* Role-like permissions
+* For some tasks users need individual permissions or assignments additional to permissions.
+a|You can guess the purpose of these example privileges from their name:
+
+* ``RPA Automations Designer``
+* ``RPA Performance Analyzer``
+
 |*Roles*
 a|* Combination of privileges.
 * Users can have more than one role.
+* Are deprecated after the migration of RPA Manager to Anypoint Access Management
 |The role ``Business User`` could include the privileges ``Activity Library Administration``, ``Activity Library Open``, ``Dashboard Open``, ``Process Automation Open``, and ``Process Recording``.
 
 |*Assignments*
@@ -80,3 +90,4 @@ a|* API Keys are assigned to users whose identity and permission set is used to 
 * xref:rpa-manager::processautomation-manage.adoc#projectdata-processteam[Assign Permissions to a Process Team Member]
 * xref:rpa-manager::processautomation-prepare-deployment-credential.adoc[Manage Credentials]
 * xref:rpa-manager::usermanagement-connect.adoc#create-an-api-key-for-a-user[Create an API key for a User].
+* https://docs.mulesoft.com/access-management/[Anypoint Access Management^]
