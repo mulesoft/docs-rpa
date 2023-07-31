@@ -29,9 +29,6 @@ You must manually keep configuration changes in RPA Manager and Anypoint Exchang
 |View the process deployment map
 |Process Deployment Map Open
 
-|Execute, pause or stop configurations
-|Process Automation Open
-
 |===
 
 * You can only view processes for which you are part of the process team.
