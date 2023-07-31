@@ -1,6 +1,6 @@
 = Deployment Map
 
-The deployment map shows the current status of each run configuration of all processes for which you are a team member.
+The deployment map shows the current status of the run configurations. The deployment map only shows run configurations of processes for which you are a team member.
 
 The interrelationships of processes, RPA Bots, and configurations are mapped as a network.
 
