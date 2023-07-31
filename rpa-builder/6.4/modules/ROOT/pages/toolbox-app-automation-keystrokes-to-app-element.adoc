@@ -1,0 +1,37 @@
+
+= Keystrokes to App Element
+
+The _Keystrokes to App Element_ emulates keyboard inputs that can be
+sent to an App Element. In contrast to “Set Text To App Element”,
+control keys such as “Alt”, “Ctrl”, and “Shift” can also be sent to the
+element.
+
+All the keyboard inputs are played back in sequence, which
+means if the sequence contains control keys that change the element in
+an app (such as “Tab”), the subsequent keystrokes might be sent to the
+element of the new focus.
+
+== Properties
+
+* *Keystroke Settings*
+
+** *Keystrokes*
++
+The keystrokes to send to the element. The input text is interpreted as AutoIT language. The specific AutoIT buttons can be inserted using _Insert Special Character_ and _Insert Macro_. Like in the _Set Text To App Element_ Action Step, you can use _Insert Script Variable_ and _Insert Environment Variable_ to insert placeholders that are replaced
+at runtime. The behavior here is identical to that in the _Keystrokes_ Action Step.
+
+== Inbound Variables
+
+* *Keystrokes*
+* *XPath to Element*
+* *Window Title*
+
+== Outbound Variables
+
+The _Keystrokes to App Element_ Action Step does not have any outbound variables.
+
+== Wizard
+
+See xref:toolbox-app-automation.adoc#app-automation-common-properties[Common Properties (App Automation)] for a description of the common properties.
+
+See xref:insert-text-modules.adoc[Inserting Text Modules] for additional information about environment variables and script variables.
