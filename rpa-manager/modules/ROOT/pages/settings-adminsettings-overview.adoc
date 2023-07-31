@@ -1,4 +1,7 @@
 = Admin Settings Overview
 :page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP). After your organization is migrated to Anypoint Platform, the *Organization Management* module is replaced by the *Settings* module.
 
-As an RPA Administrator, you can configure general settings, create user API keys for connecting to other products, and reassign orphaned RPA assets in the *Settings* module. 
+The *Admin Settings View* of the *Settings* module enables you to do the following:
+
+* Configure the currency and decimal sign to show in RPA Manager modules.
+* Reassign RPA assets of deleted users.
