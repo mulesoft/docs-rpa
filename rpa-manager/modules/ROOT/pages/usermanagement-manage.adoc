@@ -1,4 +1,5 @@
 = Managing Users
+:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP). After your organization is migrated to Anypoint Platform, the User Management module is removed and the RPA Administrator manages the users in Anypoint Access Management.
 
 Manage the users of RPA Manager, RPA Recorder, and RPA Builder:
 
