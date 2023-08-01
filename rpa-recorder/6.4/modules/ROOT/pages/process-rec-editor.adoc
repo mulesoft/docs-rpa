@@ -36,16 +36,11 @@ After the import, you can edit and rearrange the new BPMN via drag and drop.
 
 == Save Edited BPMNs
 
-To save the edited and merged BPMN locally, click *Save*.
+To save the edited and merged BPMN locally:
 
-* When saving for the first time, a dialog box asks you to indicate the BPMN file name and a process variant tag for better identifying the newly created BMPN. +
-  image:save-recording-as-dialog.png[Save Recording As dialog box]
-  . Click the folder icon to choose a different saving location.
-  . Click *Save* to save the BPMN.
-
-* After saving for the first time, you can click *Save* (image:save-icon.png[Save changes button, 2%, 2%]) to save further changes to the selected filename and destination.
-
-To open the *Save recording as* dialog box again, click *Save as* (image:save-icon-dark.png[Save As button, 2%, 2%]), and then, choose a new name, variant tag, and save destination.
+. Click *Save* (image:save-icon.png[Save changes button, 2%, 2%]).
+. Select a directory in the *Save As* dialog and specify a file name if different from the auto-generated file name.
+. Click *Save*.
 
 == Upload BPMN to RPA Manager
 
