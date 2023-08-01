@@ -1,5 +1,5 @@
 = Connecting to RPA Processes from Salesforce Products
-:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP). After your organization is migrated to Anypoint Platform, the User Management module is removed and RPA Administrator can create new user API keys in the Settings module.
+:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). After your organization migrates to Anypoint Platform, the User Management module is removed and the RPA Administrator creates new user API keys in the Settings module.
 
 RPA Manager requires user API keys to integrate RPA processes into other Salesforce products. For example, you can use your API key to configure an RPA connector in a MuleSoft Composer flow.
 

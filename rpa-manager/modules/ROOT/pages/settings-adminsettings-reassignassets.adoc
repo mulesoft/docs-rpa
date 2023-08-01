@@ -1,6 +1,6 @@
 = Reassigning RPA Assets
 
-If an RPA user or team is deleted or disabled in Anypoint Access Management, RPA assets that were assigned to this user or team are shown in the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module.
+If an RPA user or team is deleted or disabled in Anypoint Access Management, the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module shows RPA assets that were assigned to this user or team.
 
 All users with the *Reassign Users* or *RPA Administrator* permission get an email when an RPA asset is orphaned because its last assigned user is deleted.
 
@@ -17,46 +17,42 @@ The following assets are deleted on the deletion of the user:
 * Private dashboards
 * User API Keys
 
-The following assets are not shown in the *Reassign Assets* view and can be reassigned via other views:
-
-* User Tasks via the *Unprocessed User Tasks* view
+User Tasks are not shown in the *Reassign Assets* view and can be reassigned via the *Unprocessed User Tasks* view.
 
 == Before You Begin
 
 * Ask an Anypoint Access Management administrator to assign you the required permissions:
 +
-[cols="1,2,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*RPA Permission (deprecated)* | *RPA Permission*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |View configured settings for your organization
-|Organization Management Open
 |RPA Administrator
+|Organization Management Open
 
 |Add or modify settings for your organization
-|Organization Management Administration
 |RPA Administrator
+|Organization Management Administration
 
 |Reassign RPA Assets
-|Reassign Users
 |RPA Administrator
+|Reassign Users
 
 |===
 
-* Ensure that the user whom you reassign an asset has the required permissions and knowledge to handle that asset.
+* Ensure that the user to whom you reassign an asset has the required permissions and knowledge to handle that asset.
 
 == Reassign One RPA Asset 
 
-Reassign an asset that is assigned to a deleted or disabled user or team.
-
-To reassign a single RPA asset:
+Reassign an asset that is assigned to a deleted or disabled user or team:
 
 . Open the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module.
 . Click the *Reassign* on the panel of the asset to reassign.
-. Check and edit the form *Reassign Owner*:
+. Check and edit the *Reassign Owner* form:
 +
-* *Assign To*: Select a user.
-* Select *Send email to the new owner* if you want to inform the selected user about the reassignment.
+* In *Assign To*, select a user.
+* Select *Send email to the new owner* to inform the selected user about the reassignment.
 . Click *Save*.
 
 RPA Manager removes the reassigned asset from the list.
@@ -65,16 +61,14 @@ A toast message informs you about the success of the reassignment.
 
 == Reassign Several RPA Assets to One User
 
-Reassign several assets that are assigned to a deleted or disabled user at once. 
-
-To reassign a single RPA asset:
+Reassign several assets that are assigned to a deleted or disabled user at once:
 
 . Open the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module.
 . Check the panel of every asset to reassign.
-. Check and edit the form *Reassign Owner*:
+. Check and edit the *Reassign Owner* form:
 +
-* *Assign To*: Select a user.
-* Select *Send email to the new owner* if you want to inform the selected user about the reassignment.
+* In *Assign To*, select a user.
+* Select *Send email to the new owner* to inform the selected user about the reassignment.
 . Click *Save*.
 
 RPA Manager removes the reassigned assets from the list.

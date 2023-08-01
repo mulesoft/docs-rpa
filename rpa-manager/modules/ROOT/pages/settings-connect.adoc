@@ -7,20 +7,19 @@ For security reasons, you can only see and copy an API key on creation.
 
 == Before You Begin
 
-
 * Ask an Anypoint Access Management administrator to assign you the required permissions:
 +
-[cols="1,2,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*RPA Permission (deprecated)* | *RPA Permission*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |View configured settings for your organization
-|Organization Management Open
 |RPA Administrator
+|Organization Management Open
 
 |Create, edit, and delete API keys
-|User API Key Create, User API Key Edit, User API Key Delete
 |RPA Administrator
+|User API Key Create, User API Key Edit, User API Key Delete
 
 |===
 
