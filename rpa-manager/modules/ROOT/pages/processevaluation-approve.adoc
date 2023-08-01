@@ -1,4 +1,5 @@
 = Approving a Process for Automation
+:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). After your organization migrates to Anypoint Platform, user groups are replaced by teams and the Center of Excellence flag is deprecated. Ensure that the team you refer a process to has the required RPA permissions for automating the process. 
 
 You approve an evaluated process candidate to refer it to a project manager or a center of excellence for automation.
 
@@ -19,7 +20,7 @@ You approve an evaluated process candidate to refer it to a project manager or a
 |===
 
 * You can only approve evaluated process candidates.
-* You can only refer processes to users assigned the `Project Management` privilege project manager or user groups assigned as `Center of Excellence`.
+* You can only refer processes to users assigned the `Project Management` privilege or user groups assigned as `Center of Excellence`. 
 
 == Select a Process for Approval
 
@@ -42,10 +43,9 @@ After approval, the process is also displayed either in the personal backlog of 
 
 == See Also
 
-* xref:processevaluation-overview.adoc[Process Evaluation]
 * xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
-* xref:processevaluation-configure.adoc[Configuring Process Evaluations]
-* xref:processevaluation-propose.adoc[Proposing a Process Candidate for Automation]
-//* xref:processevaluation-approve.adoc[Approving a Process for Automation]
-
+* xref:rpa-home::anypoint-migration-overview.adoc[Anypoint Platform Migration Overview]
+* https://docs.mulesoft.com/access-management/[Anypoint Access Management]
+* https://docs.mulesoft.com/access-management/teams[Anypoint Access Management - Manage User Access Using Teams]
+* xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc#rpa-evaluations-manager[RPA Permissions - RPA Evaluations Manager]
 * xref:myrpa-start.adoc[Starting Automation of Approved Processes]
