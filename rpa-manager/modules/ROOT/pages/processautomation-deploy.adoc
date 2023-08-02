@@ -42,7 +42,7 @@ Do not close or minimize the console session while the bot executes the process.
 * To run a process in a hidden session, you must deploy it to a bot configured for secure sessions. Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. Do not sign in to a computer where a bot with one licensed secure session is running a process.
 * RPA Manager requires authentication to integrate RPA processes into other Salesforce products:
 ** Use user API keys to use Salesforce Flows with RPA. 
-** Use Connected Apps to configure an RPA connector in a MuleSoft Composer flow . 
+** Use Connected Apps to configure an RPA connector in a MuleSoft Composer flow. 
 
 == Test a Process Automation
 
