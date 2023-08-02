@@ -4,7 +4,7 @@ RPA Bot is a software robot that runs in an on-premise environment and executes 
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
-== July 31, 2023
+== August TBD, 2023
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
@@ -37,12 +37,14 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |===
 | Issue Resolution | ID
 |RPA Bot no longer ignores the *UploadTimeout* and *DownloadTimeout* settings. | W-13214227
-|RPA Bot no longer sends unnecessary processExecutionInformation to the server when there is no run config to execute. |W-13484834 
+|RPA Bot no longer sends unnecessary processExecutionInformation to the server when there is no run config to execute. | W-13484834 
 |Renamed and reorganized the Secure Session page in the RPA Bot Configurator. | W-13510931
 |The *Password* field is now filled following a new RPA Bot installation. | W-13704551
 |When establishing a secure session, the session error message now indicates that the session user is not a member of the "Remote Desktop Users" windows group. | W-13708982
 |FreeRDP no longer generates the wrong error messages in StSem logging files and in the RPA Bot Configurator. | W-13704840
 |The API Key is now hidden when installing RPA Bot. | W-13703817
+|The test connection function no longer ignores the proxy configuration in the RPA Bot Configurator. | W-13854428
+|Removed Visual Studio Redistributable version 10.0 packages from the RPA Bot Setup. | W-13079533
 |===
 
 // == See Also
