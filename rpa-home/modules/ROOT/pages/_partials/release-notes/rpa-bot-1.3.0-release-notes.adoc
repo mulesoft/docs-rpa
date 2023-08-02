@@ -10,7 +10,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * RPA Bot now detects if TSplus is installed and reports it in the logfile entry.
-* A message now shows on single session systems, such as Windows 10 and 11, that the test may fail if no further sessions are available.
+* A message now shows on single session systems, such as Windows 10 and 11, indicating that the test may fail if no further sessions are available.
 * Improved run result messages to show that a user is already signed in or that the current secure session is blocked by a disconnected state.
 * RPA Bot now logs the following system information at startup:
 ** OS information
