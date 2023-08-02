@@ -15,7 +15,7 @@ The *Recording Toolbar* appears on the screen when RPA Recorder starts recording
 [%header,cols="10,20,30,10"]
 |===
 |Icon |Name | Description | Hotkey
-|image:image-based-mouse-clicks-icon.png[Image-Based Mouse Clicks icon, 20%, 20%]|Image-based mouse clicks | Adds the <<Image-Based Mouse Clicks>> to the current recording. | `F3`
+|image:image-based-mouse-clicks-icon-light.png[Image-Based Mouse Clicks icon, 20%, 20%]|Image-based mouse clicks | Adds the <<Image-Based Mouse Clicks>> to the current recording. | `F3`
 |image:start-recording-icon.png[Start Recording icon, 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
 |image:pause-recording-icon.png[Pause Recording icon, 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
 |image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session | Finishes the current recording session and triggers the generation of xref:documents.adoc[Documents]. | --
