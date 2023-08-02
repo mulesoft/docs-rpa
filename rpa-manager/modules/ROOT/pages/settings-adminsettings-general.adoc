@@ -5,7 +5,7 @@ The *General* tab in the *Admin Settings* view enables you to configure the curr
 
 == Before You Begin
 
-* Ask an Anypoint Access Management administrator to assign you the required permissions:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
 [cols="1,2,2"]
 |===

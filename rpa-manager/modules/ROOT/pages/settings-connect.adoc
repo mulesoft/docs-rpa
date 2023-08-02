@@ -7,7 +7,7 @@ For security reasons, you can only see and copy an API key on creation.
 
 == Before You Begin
 
-* Ask an Anypoint Access Management administrator to assign you the required permissions:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
 [cols="1,1,1"]
 |===
@@ -25,7 +25,7 @@ For security reasons, you can only see and copy an API key on creation.
 
 * Users must have an Anypoint account to associate the API key with.
 * You must have a secure way to transfer the API Key to the user.
-* Users must have a secure place accessible to store their API key.
+* Users must have a secure place to store their API key.
 
 [[create-an-api-key-for-a-user]]
 == Create a User API Key
@@ -44,7 +44,7 @@ Select a user whose identity and permissions are used to connect from another Sa
 +
 Select an expiration date for the user API key from the calendar.
 . Click *OK*.
-. In the window *Key Created!*, click *Copy to clipboard*.
+. In the window *Key Created*, click *Copy to clipboard*.
 . Copy the API key to a secure place.
 . Click *Close*.
 
@@ -77,7 +77,8 @@ To delete a user API key:
 
 == See Also
 
-* https://docs.mulesoft.com/access-management/[Anypoint Access Management^]
+* https://docs.mulesoft.com/access-management/[Access Management]
+* https://docs.mulesoft.com/access-management/connected-apps-overview[Connected Apps]
 * xref:processautomation-deploy.adoc#invokable-configuration[Create an Invokable Run Configuration]
 * xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer]
 * https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Salesforce: Use Flows with MuleSoft RPA^]

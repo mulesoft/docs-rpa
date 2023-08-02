@@ -45,7 +45,7 @@ After approval, the process is also displayed either in the personal backlog of 
 
 * xref:processevaluation-consider.adoc[Considering Which Processes to Automate]
 * xref:rpa-home::anypoint-migration-overview.adoc[Anypoint Platform Migration Overview]
-* https://docs.mulesoft.com/access-management/[Anypoint Access Management]
-* https://docs.mulesoft.com/access-management/teams[Anypoint Access Management - Manage User Access Using Teams]
+* https://docs.mulesoft.com/access-management/[Access Management]
+* https://docs.mulesoft.com/access-management/teams[Access Management - Manage User Access Using Teams]
 * xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc#rpa-evaluations-manager[RPA Permissions - RPA Evaluations Manager]
 * xref:myrpa-start.adoc[Starting Automation of Approved Processes]

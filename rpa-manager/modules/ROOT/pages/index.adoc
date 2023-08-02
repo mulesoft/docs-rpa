@@ -23,17 +23,17 @@ MuleSoft RPA is integrating with Anypoint Platform to unify the login experience
 
 Refer to xref:rpa-home::anypoint-migration-overview.adoc[Anypoint Platform Migration Overview] for an overview of the changes and requirements.
 
-If you are unsure, whether your org is migrated, open the *Home* module in RPA Manager:
+If you are unsure whether your org is migrated, open the *Home* module in RPA Manager:
 
 * Pre-migration, there is a quick link to Composer:
 + 
 image:rpa-manager-home-premigration.png[Screenshot of the Composer quick link panel in the Home module of RPA Manager,25%,25%]
-* Post-migration, there is a quick link to Anypoint Access Management:
+* Post-migration, there is a quick link to Access Management:
 +
 image:rpa-manager-home-postmigration.png[Screenshot of the Composer quick link panel in the Home module of RPA Manager,25%,25%]
 
 == See Also
 
 * xref:rpa-home::anypoint-migration-overview.adoc[Anypoint Platform Migration Overview]
-* xref:https://docs.mulesoft.com/access-management/[Anypoint Access Management]
+* https://docs.mulesoft.com/access-management/[Access Management]
 * xref:usermanagement-manage.adoc#iforgotmypassword[What to Do if You Forgot Your Password]

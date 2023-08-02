@@ -21,7 +21,7 @@ User Tasks are not shown in the *Reassign Assets* view and can be reassigned via
 
 == Before You Begin
 
-* Ask an Anypoint Access Management administrator to assign you the required permissions:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
 [cols="1,1,1"]
 |===
@@ -77,4 +77,4 @@ A toast message informs you about the success of the reassignments.
 
 == See Also
 
-* https://docs.mulesoft.com/access-management/[Anypoint Access Management^]
+* https://docs.mulesoft.com/access-management/[Access Management^]
