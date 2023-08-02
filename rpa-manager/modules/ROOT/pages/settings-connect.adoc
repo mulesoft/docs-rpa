@@ -23,7 +23,7 @@ For security reasons, you can only see and copy an API key on creation.
 
 |===
 
-* Users must have an Anypoint account to associate the API key with.
+* Users must have an Anypoint Platform account to associate the API key with.
 * You must have a secure way to transfer the API Key to the user.
 * Users must have a secure place to store their API key.
 

@@ -1,6 +1,6 @@
 = Reassigning RPA Assets
 
-If an RPA user or team is deleted or disabled in Anypoint Access Management, the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module shows RPA assets that were assigned to this user or team.
+If an RPA user or team is deleted or disabled in Access Management, the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module shows RPA assets that were assigned to this user or team.
 
 All users with the *Reassign Users* or *RPA Administrator* permission get an email when an RPA asset is orphaned because its last assigned user is deleted.
 
@@ -77,4 +77,4 @@ A toast message informs you about the success of the reassignments.
 
 == See Also
 
-* https://docs.mulesoft.com/access-management/[Access Management^]
+* https://docs.mulesoft.com/access-management/[Access Management]
