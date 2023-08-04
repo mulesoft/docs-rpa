@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Invokable processes no longer fail when the option *_Run in secure session > as this user_* in the *_Execution_* tab links to a credential in the credential pool. | W-13871254
+| Invokable processes no longer fail when the option *Run in secure session > as this user* in the *Execution* tab links to a credential in the credential pool. | W-13871254
 | Long process names no longer span outside the window when you click on *more* in a process card to see the complete description of the process. | W-13843102
 |===
 
