@@ -59,9 +59,14 @@ Enable the bot to use secure sessions by entering credentials the bot uses to lo
 
 image:bot-configurator-secure-session.png[The RPA Bot configurator application showing the Secure Session settings panel, 50%, 50%]
 
+=== General Session Settings
+
 * *Default Secure Session User*
 +
 If you want the bot to use Secure Sessions, enter the name of the user the bot uses to log in to the computer and to run a hidden session. If the environment of the computer the bot is installed on is embedded in a domain and you want to use a local user, write the user name as follows: `.\username`. For domain users, use the following form: `mydomain\username`.
+
+=== Special Settings for Secure Sessions
+
 * *Activate certificate based login on SSL enabled terminal servers*
 +
 Enable this option if you are installing the bot on a terminal server that only allows SSL protected RDP connections.
