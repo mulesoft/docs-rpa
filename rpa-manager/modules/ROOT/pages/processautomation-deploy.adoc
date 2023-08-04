@@ -40,6 +40,9 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 Do not close or minimize the console session while the bot executes the process.
 
 * To run a process in a hidden session, you must deploy it to a bot configured for secure sessions. Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. Do not sign in to a computer where a bot with one licensed secure session is running a process.
+* RPA Manager requires authentication to integrate RPA processes into other Salesforce products:
+** Use user API keys to use Salesforce Flows with RPA. 
+** Use Connected Apps to configure an RPA connector in a MuleSoft Composer flow. 
 
 == Test a Process Automation
 
@@ -353,4 +356,7 @@ Hover the mouse pointer over the info label to display more detailed information
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
 * xref:rpa-bot::index.adoc[RPA Bot Overview]
 * xref:botmanagement-overview.adoc[Bot Management]
-* xref:processautomation-overview.adoc[Process Automation]
+* xref:settings-connect.adoc[Connecting to RPA Processes from Salesforce Products]
+* xref:access-management::connected-apps-overview.adoc[]
+* xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer]
+* https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Salesforce: Use Flows with MuleSoft RPA^]

@@ -1,4 +1,5 @@
 = Assembling User Groups
+:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP). After your organization is migrated to Anypoint Platform, the User Management module is removed and Anypoint teams replace the RPA Manager user groups. To function as a center of excellence for approving processes for automation or to complete user tasks, the teams must have the required RPA permissions.
 
 In automation projects, several employees often work together on one task. These users can be assigned to user groups. User groups can be deployed for processing of user tasks during execution of a process. User groups marked as center of excellence may approve processes for automation.
 
