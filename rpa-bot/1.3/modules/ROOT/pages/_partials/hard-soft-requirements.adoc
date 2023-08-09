@@ -67,6 +67,6 @@ See xref:configuration.adoc#common-settings[Configuring RPA Bot] for more inform
 [%header%autowidth.spread]
 |===
 |Application |Version
-|RPA Builder | 6.1.1 and later
-|RPA Recorder | 6.0.0 and later
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
 |===
