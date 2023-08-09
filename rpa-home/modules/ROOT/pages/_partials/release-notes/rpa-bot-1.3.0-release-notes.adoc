@@ -17,7 +17,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 ** TSplus version
 ** Security provider protocols
 * Updated the FreeRDP library to version 2.10.
-* AAdded an RPA Bot config file to the Bot Logfile package.
+* Added an RPA Bot config file to the Bot Logfile package.
 * Optimized the runtime package download. 
 
 // == Compatibility
