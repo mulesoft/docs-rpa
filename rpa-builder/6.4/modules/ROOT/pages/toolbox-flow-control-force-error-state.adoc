@@ -1,0 +1,8 @@
+
+
+= Force Error State
+
+This _Action Step_ simply forces the _Workflow_ into an error state.
+This also means that if you do not handle this error within a _Managed Block_, the _Workflow_ will always abort at this point and return with
+an error. It does not have any additional properties and thus the wizard
+will also be empty except for the _Name_ field.

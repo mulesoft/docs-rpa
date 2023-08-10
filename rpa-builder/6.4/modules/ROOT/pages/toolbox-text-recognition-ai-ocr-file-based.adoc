@@ -1,0 +1,130 @@
+
+
+= Text Recognition (OCR)
+
+== AI OCR (file-based)
+
+The _AI OCR (file-based)_ Action Step is a further development of the
+existing OCR Action Steps. In contrast to the other OCR Action Steps, it
+is based on concepts of neural networks. The available languages,
+therefore, are based on trained patterns that take account of the
+characteristics of the relevant language. In many cases, therefore, the
+correct recognition of texts that are, for example, barely legible or
+have little contrast or an unusual font, is improved with this Action
+Step.
+
+Using the _AI OCR (file-based)_ Action Step, existing images such as
+document scans can be recognized.
+
+The basis for this Action Step is an image file. This can be available
+in the regular graphic formats such as BMP, JPEG, PNG and TIFF.
+
+You should consider the Intelligent OCR 2020 Action Step if more than
+one language is to be recognized at once or if you wish to use your own
+dictionary.
+
+////
+In the following Chapter, we will look at the key differences compared
+to the Action Step Legacy OCR. You can find a detailed description of
+properties, variables, etc. in the Chapter entitled _Text Recognition – Legacy OCR_.
+////
+
+== Properties
+
+*OCR Image Preprocessing*
+
+[arabic]
+. *Force Black Background* Reverses the color of the screenshots. This
+is especially recommended for white text on a black background.
+. *Scaling factor* Displays the selected enlargement in the wizard.
+. *Remove Shadows* If there are uneven shadows on the image, you can
+remove them with this option.
+. *Noise Filter* If there are disruptive pixels (image noise) in the
+image, you can suppress them with this option.
+. *Enhance Contrast* If an image has low contrast and is very pale as a
+result, you can use this option to increase the contrast.
+. *Color Depth* The digitalization of an image consists of two steps,
+rasterization and quantization. Rasterization refers to breaking down
+the image into small pieces. An original dot becomes a pixel. In the
+case of scanned templates, due to the low resolution of the scanner, not
+all original dots are converted. A reduction in resolution takes place.
+In quantization, it is determined which value is assigned to a pixel. If
+we only distinguish between black and white, we get a binary image. Each
+pixel is stored as one bit, we refer to 1-bit color depth. Typically, an
+image has a resolution (or color depth) of 8 bits. If there are several
+levels of brightness, we refer to grayscale values. Every other value
+that differs from 1 bit reduces the image to a lower grayscale value.
+This way, it is often possible to remove disruptive image artifacts,
+which simplifies processing with OCR. We recommend a value of 3 or 4.
+
+*Bypass processing pipeline* With this option, you can completely
+deactivate image processing. The settings made in the wizard are not
+taken into consideration.
+
+*OCR Settings*
+
+*Area mode* Appears as soon as you define the search area under Scan
+Area. You can choose between:
+
+* *Actual Pixels* The image is used in its original resolution
+* *Fit to DIN A4* The original image is enlarged in height or width until
+it corresponds to the aspect ratio of a DIN A4 sheet. Depending on
+whether height or width is adjusted, there are areas that are augmented.
+The original resolution of the image remains intact.
+* *Fit to DIN A3* Behaves as with DIN A4. Since DIN A4 and A5 have an
+identical aspect ratio, there is currently no difference. However, in
+the future, new algorithms are likely to have to take account of the
+size. Therefore, this selection is now available.
+
+*Image file name** Name of the image file.
+
+*Image folder path** The path to the folder in which the image file is located.
+
+*Orientation* If you selected _Fit to A4_ or _A3_ in Area mode, you can select the format.
+
+* *Automatic*
+* *Landscape*
+* *Portrait*
+
+== Inbound Variables
+
+//link:#AS_AIOCRfilebased_P_ImageFileName[*Image file name*]
+*Image file name** Name of the image file.
+
+//link:#AS_AIOCRfilebased_P_ImageFolderPath[*Image folder path*]
+*Image folder path** The path to the folder in which the image file is located.
+
+== Outbound Variables
+
+*IsSucceeded* (Boolean) Indicates whether text recognition has been
+carried out successfully or not.
+
+== Wizard
+
+You can use *OCR Image Preprocessing* to improve the quality of the
+image so that the OCR operation can run optimally. This is always
+carried out in the specified sequence. Here, you can also switch the
+individual steps on or off.
+
+If you click on *Load design-time file*, the Windows Explorer opens and
+you can select a sample file. You can start a test run with the *Test
+button*. For a local Workflow run or the subsequent productive process
+run, the Directory Path and file name must be entered correctly. The
+sample image selected for the test run is no longer considered in this
+case.
+
+Under Directory path, you define the path to the new file to be created.
+You can create an absolute path or a path relative to the _Base Path_.
+//using the buttons image:media\image1.png[image,width=141,height=17] and image:media\image2.png[image,width=108,height=18].
+You select an existing path
+//using the button image:media\image3.png[image,width=18,height=18].
+To construct the path, you can also insert variables from the Workflow.
+//To do this, click on the pin image:media\image4.png[image,width=17,height=24]and select one of the variables available.
+////
+If an image file has been selected and you click on *Scan Area*, the following wizard opens
+
+image:media\image5.png[image,width=355,height=340]
+
+Here, you can also define the settings for image processing.
+////
+You can find further explanations under <<Properties>>.
