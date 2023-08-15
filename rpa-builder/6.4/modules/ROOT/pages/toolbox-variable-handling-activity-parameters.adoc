@@ -46,8 +46,6 @@ image:add-new-parameters.png[The list of available activity parameters to add, 3
 The following data types are available:
 +
 * Texts (*alphanumeric*)
-+
-The value for text (alphanumeric) variables has a limit of 4000 characters. 
 * Integers (*integer*)
 * Floating point values (*floating-point*)
 * Boolean values (*boolean*)
