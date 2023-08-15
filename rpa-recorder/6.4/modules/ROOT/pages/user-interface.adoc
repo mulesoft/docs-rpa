@@ -14,7 +14,7 @@ The *Recording Toolbar* appears on the screen when RPA Recorder starts recording
 
 [%header,cols="10,20,30,10"]
 |===
-|Icon |Name | Description | Hotkey
+|Icon |Name | Description | Hot Key
 |image:image-based-mouse-clicks-icon-light.png[Image-Based Mouse Clicks icon, 20%, 20%]|Image-based mouse clicks | Adds the <<Image-Based Mouse Clicks>> to the current recording. | `F3`
 |image:start-recording-icon.png[Start Recording icon, 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
 |image:pause-recording-icon.png[Pause Recording icon, 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
@@ -109,7 +109,7 @@ For User Tasks, RPA Recorder does not save documentation. You must enter a descr
 To continue recording, add a Bot Task.
 
 [NOTE]
-Pause the recording before adding an activity or changing the creation mode of the activities. If you open the pop-up using the respective hotkey while the recording is running, the recording automatically pauses.
+Pause the recording before adding an activity or changing the creation mode of the activities. If you open the pop-up using the respective hot key while the recording is running, the recording automatically pauses.
 
 == Web Recording Browser
 
@@ -161,7 +161,7 @@ You can configure RPA Recorder and set preferences.
 The configuration section is divided into the following sections:
 
 * <<settings, Settings>>
-* <<hotkeys, Hotkeys>>
+* <<hot-keys, Hot Keys>>
 * <<log-files, Log files>>
 
 [[settings]]
@@ -194,16 +194,16 @@ Select this option to automatically take a screenshot on every mouse click.
 +
 Select the area to capture when RPA Recorder takes screenshots. Available options are: *Active application only* and *Full screen*. 
 
-[[hotkeys]]
-=== Hotkeys
+[[hot-keys]]
+=== Hot Keys
 
-This section displays information about the specific hotkeys that can be used, and their description. Hotkeys cannot be customized.
+This section displays information about the specific hot keys that can be used, and their description. Hot keys cannot be customized.
 
-You can activate or deactivate the hotkeys function by checking or unchecking the *Activate usage of hot keys* box. If activated, the hot keys invoke the corresponding action. If deactivated, the hot keys cannot control the recorder, and any hot key presses during a recording are recorded as normal key strokes.
+You can activate or deactivate the hot keys function by checking or unchecking the *Activate usage of hot keys* box. If activated, the hot keys invoke the corresponding action. If deactivated, the hot keys cannot control the recorder, and any hot key presses during a recording are recorded as normal key strokes.
 
-The hotkeys function is activated by default.
+The hot keys function is activated by default.
 
-image:hotkeys.png[The hotkeys configuration window, 60%, 60%]
+image:hotkeys.png[The Hot Keys configuration window, 60%, 60%]
 
 [[log-files]]
 === Log files
