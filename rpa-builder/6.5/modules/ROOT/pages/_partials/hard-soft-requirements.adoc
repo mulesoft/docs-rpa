@@ -1,0 +1,62 @@
+== Hardware Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a]
+|===
+| Minimum | Recommended
+| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 2 GHz CPU (MMX/SSE compatible)
+| 4 GB of RAM | 8 GB of RAM
+| 30 GB of disk space | 30 GB (SSD) of disk space
+| |
+Graphics Accelerator Card
+|===
+
+== Software Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+ a|
+4.7.1
+| Operating System
+ a|
+
+include::rpa-home::partial$windows-versions-support.adoc[]
+
+| Java
+ a|
+Any of the following:
+
+* Java Runtime Environment 11 (JRE, 64-bit version) or higher
+* Adoptium 11 (JRE, 64-bit version) or higher
+
+|===
+
+=== File System Permission Requirements
+
+RPA Builder needs full write access to folders that are critical to its functioning. To avoid issues during the setup process and subsequent RPA Builder executions, ensure that:  
+
+* You install RPA Builder as an administrator
++
+If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Builder by running the setup file as an administrator. 
+
+* RPA Builder has full write access to the following folders and any subfolders and files inside them: 
++
+** `C:\Users\<USERNAME>\Documents\Mulesoft`
+** `C:\Users\Public\Documents\Mulesoft`
+** `C:\Users\<USERNAME>\AppData\Local\MuleSoft_LLC`
+** `C:\Users\<USERNAME>\AppData\Roaming\MuleSoft`
+** `C:\ProgramData\Mulesoft\RPABuilder\Cache`
+
+* Your environment is not blocking the execution of any RPA process 
++
+The operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Builder home directory and its subfolders are allowed to run. 
+
+== Compatibility 
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.4.0 and later
+|RPA Bot | 1.0.0 and later
+|===
