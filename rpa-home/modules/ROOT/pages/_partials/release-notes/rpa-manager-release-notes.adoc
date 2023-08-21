@@ -2,8 +2,8 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
-[[august-18-2023]]
-== August 18, 2023
+[[august-21-2023]]
+== August 21, 2023
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -14,6 +14,9 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | Editing a run configuration in the test phase during the respective process is executing leads to a detailed warning. | W-13644464
 | Saving the configuration of an RPA Bot is only possible after all data has been loaded. | W-13896999
 | The _Benefits_ column in *My Backlog* shows a correct column header. | W-13932862
+| The *Session Queues* of an RPA Bot now shows all priority queues. | W-12488822
+| Starting an automation from _My Backlog_ no longer leads to an error.  | W-13933409
+| More than 100 teams are shown in team list views. | W-13916936
 |===
 
 // == Known Issues
