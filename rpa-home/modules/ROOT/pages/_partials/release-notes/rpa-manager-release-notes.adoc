@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Editing a run configuration for a process in the test phase when the process is executing now shows to a detailed warning. | W-13644464
+| Editing a run configuration for a process in the test phase when the process is executing now shows a detailed warning. | W-13644464
 | Saving the configuration of an RPA Bot is now possible only after all data finishes loading. | W-13896999
 | The *Benefits* column in *My Backlog* now shows a correct column header. | W-13932862
 | The *Session Queues* of an RPA Bot now shows all priority queues. | W-12488822
