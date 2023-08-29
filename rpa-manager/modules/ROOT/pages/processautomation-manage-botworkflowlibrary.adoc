@@ -1,0 +1,84 @@
+= Managing the Bot Workflow Library
+
+The *Bot Workflow Library* view shows all bot workflows from the RPA Builder Activity Library.
+
+You can manage view and manage the workflows:
+
+* Create, edit, and delete tags for the library
+* View an outline of a workflow
+* Edit the description and the tags of a workflow
+
+== Before You Begin
+
+* Ask an organization administrator in Access Management to assign you the required permissions:
++
+[cols="1,1,1"]
+|===
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+
+|Open the *Process Automation* module
+|RPA Administrator
+|Process Automation Open
+
+|Open the Bot Workflow Library
+|RPA Automations Contributor, RPA Automations Manager
+|Activity Library Open
+
+|Create tags for the library. Add, edit, and remove tags and descriptions from library workflows
+|RPA Automations Manager
+|Activity Library Administration
+
+|===
+
+== Managing Library Workflow Tags
+
+Create new library workflow tags and edit and delete existing ones to categorize workflows in RPA Manager and RPA Builder.
+
+=== Create a New Library Workflow Tag
+
+You can add tags to library workflows in RPA Manager and RPA Builder.
+
+To create new library workflow tags:
+
+. Open the *Bot Workflow Library* view in the *Process Automation* module.
+. Click *Manage Bot Workflow Tags*.
+. In the *Bot Workflow Library Tags* view, click *Create*.
+. In the *Create Bot Workflow Library Tag* window, enter a name.
+. Click *Create*.
+ 
+=== Edit a Library Workflow Tag
+
+You can edit tags for library workflows in RPA Manager and RPA Builder.
+
+To edit a library workflow tag:
+
+. Open the *Bot Workflow Library* view in the *Process Automation* module.
+. Click *Manage Bot Workflow Tags*.
+. In the *Bot Workflow Library Tags* view, click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the tag to edit.
+. In the *Edit Bot Workflow Library Tag* window, change the name.
+. Click *Update*.
+
+Edited tags assigned to workflows are changed without further notice.
+
+=== Delete a Library Workflow Tag
+
+...
+
+Deleted tags already are removed from assigned workflows without further notice.
+
+== Managing Library Workflows
+
+Edit the descriptions and tags of library workflows.
+
+=== Change the Description of a Library Workflow
+
+...
+
+=== Add Tags to a Library Workflow
+
+...
+
+
+== See Also
+
+* xref:rpa-builder::activity-library-explorer.adoc[RPA Builder: Activity Library Explorer]
