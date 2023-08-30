@@ -2,11 +2,11 @@
 
 The *Bot Workflow Library* view shows all bot workflows from the RPA Builder Activity Library.
 
-You can manage view and manage the workflows:
+You can view and manage the workflows:
 
-* Create, edit, and delete tags for the library
-* View an outline of a workflow
-* Edit the description and the tags of a workflow
+* Create, edit, and delete tags for the library.
+* View an outline of a workflow.
+* Edit the description and the tags of a workflow.
 
 == Before You Begin
 
@@ -30,27 +30,61 @@ You can manage view and manage the workflows:
 
 |===
 
+== Viewing Library Workflows
+
+Get an overview of all library workflows.
+
+=== View the List of All Library Workflows
+
+Open the *Bot Workflow Library* view in the *Process Automation* module to view the list of all library workflows and to see their purpose.
+
+=== View an Outline of a Library Workflow
+
+View the outline of a library workflow to better understand how it works:
+
+. Open the *Bot Workflow Library* view in the *Process Automation* module.
+. Click *Details* image:show-icon.png[eye symbol,1.5%,1.5%] in the panel of the workflow to view.
+. Click *Back* to view the list of all library workflows.
+
+== Managing Library Workflows
+
+Change the descriptions and tags of library workflows.
+
+=== Change the Description of a Library Workflow
+
+Edit the description of a library workflow tag to render it more precisely:
+
+. Open the *Bot Workflow Library* view in the *Process Automation* module.
+. Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
+. In the *Edit Bot Workflow Library* window, change the description.
+. Click *Update*.
+
+=== Change Tags of a Library Workflow
+
+Add or remove tags of a library workflow to define it more precisely:
+
+. Open the *Bot Workflow Library* view in the *Process Automation* module.
+. Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
+. In the *Edit Bot Workflow Library* window, add or remove tags.
+. Click *Update*.
+
 == Managing Library Workflow Tags
 
-Create new library workflow tags and edit and delete existing ones to categorize workflows in RPA Manager and RPA Builder.
+Create, edit and delete tags for library workflows to use in RPA Manager and RPA Builder. Changes affect all tags, regardless of their assignment.
 
 === Create a New Library Workflow Tag
 
-You can add tags to library workflows in RPA Manager and RPA Builder.
-
-To create new library workflow tags:
+Create a new library workflow tag for categorizing workflows:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
 . In the *Bot Workflow Library Tags* view, click *Create*.
 . In the *Create Bot Workflow Library Tag* window, enter a name.
 . Click *Create*.
- 
+
 === Edit a Library Workflow Tag
 
-You can edit tags for library workflows in RPA Manager and RPA Builder.
-
-To edit a library workflow tag:
+Edit a library workflow tag to define it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
@@ -58,27 +92,18 @@ To edit a library workflow tag:
 . In the *Edit Bot Workflow Library Tag* window, change the name.
 . Click *Update*.
 
-Edited tags assigned to workflows are changed without further notice.
-
 === Delete a Library Workflow Tag
 
-...
+Delete a library workflow tag if it's no longer relevant:
 
-Deleted tags already are removed from assigned workflows without further notice.
+. Open the *Bot Workflow Library* view in the *Process Automation* module.
+. Click *Manage Bot Workflow Tags*.
+. In the *Bot Workflow Library Tags* view, click *Remove* image:delete-icon.png[trash symbol,1.5%,1.5%] in the panel of the tag to delete.
+. Confirm the deletion.
 
-== Managing Library Workflows
-
-Edit the descriptions and tags of library workflows.
-
-=== Change the Description of a Library Workflow
-
-...
-
-=== Add Tags to a Library Workflow
-
-...
-
+Assigned tags are removed from workflows upon deletion.
 
 == See Also
 
 * xref:rpa-builder::activity-library-explorer.adoc[RPA Builder: Activity Library Explorer]
+* xref:processoperations-upcomingprocesschanges.adoc[Upcoming Process Changes]
