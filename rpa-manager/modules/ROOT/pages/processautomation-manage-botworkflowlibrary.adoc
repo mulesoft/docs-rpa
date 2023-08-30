@@ -24,57 +24,57 @@ You can view and manage the workflows:
 |RPA Automations Contributor, RPA Automations Manager
 |Activity Library Open
 
-|Create tags for the library. Add, edit, and remove tags and descriptions from library workflows
+|Create tags for the library. Add, edit, and remove tags and descriptions from bot workflows
 |RPA Automations Manager
 |Activity Library Administration
 
 |===
 
-== Viewing Library Workflows
+== Viewing Bot Workflows
 
-Get an overview of all library workflows.
+Get an overview of all bot workflows.
 
-=== View the List of All Library Workflows
+=== View the List of All Bot Workflows
 
-Open the *Bot Workflow Library* view in the *Process Automation* module to view the list of all library workflows and to see their purpose.
+Open the *Bot Workflow Library* view in the *Process Automation* module to view the list of all bot workflows and to see their purpose.
 
-=== View an Outline of a Library Workflow
+=== View an Outline of a Bot Workflow
 
-View the outline of a library workflow to better understand how it works:
+View the outline of a bot workflow to better understand how it works:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Details* image:show-icon.png[eye symbol,1.5%,1.5%] in the panel of the workflow to view.
-. Click *Back* to view the list of all library workflows.
+. Click *Back* to view the list of all bot workflows.
 
-== Managing Library Workflows
+== Managing Bot Workflows
 
-Change the descriptions and tags of library workflows.
+Change the descriptions and tags of bot workflows.
 
-=== Change the Description of a Library Workflow
+=== Change the Description of a Bot Workflow
 
-Edit the description of a library workflow tag to render it more precisely:
+Edit the description of a bot workflow tag to render it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
 . In the *Edit Bot Workflow Library* window, change the description.
 . Click *Update*.
 
-=== Change Tags of a Library Workflow
+=== Change Tags of a Bot Workflow
 
-Add or remove tags of a library workflow to define it more precisely:
+Add or remove tags of a bot workflow to define it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
 . In the *Edit Bot Workflow Library* window, add or remove tags.
 . Click *Update*.
 
-== Managing Library Workflow Tags
+== Managing Bot Workflow Tags
 
-Create, edit and delete tags for library workflows to use in RPA Manager and RPA Builder. Changes affect all tags, regardless of their assignment.
+Create, edit and delete tags for bot workflows to use in RPA Manager and RPA Builder. Changes affect all tags, regardless of their assignment.
 
-=== Create a New Library Workflow Tag
+=== Create a New Bot Workflow Tag
 
-Create a new library workflow tag for categorizing workflows:
+Create a new bot workflow tag for categorizing workflows:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
@@ -82,9 +82,9 @@ Create a new library workflow tag for categorizing workflows:
 . In the *Create Bot Workflow Library Tag* window, enter a name.
 . Click *Create*.
 
-=== Edit a Library Workflow Tag
+=== Edit a Bot Workflow Tag
 
-Edit a library workflow tag to define it more precisely:
+Edit a bot workflow tag to define it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
@@ -92,9 +92,9 @@ Edit a library workflow tag to define it more precisely:
 . In the *Edit Bot Workflow Library Tag* window, change the name.
 . Click *Update*.
 
-=== Delete a Library Workflow Tag
+=== Delete a Bot Workflow Tag
 
-Delete a library workflow tag if it's no longer relevant:
+Delete a bot workflow tag if it's no longer relevant:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
