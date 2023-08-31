@@ -4,6 +4,7 @@
 
 The OCR with AWS action step enables you to recognize the text in a document by sending a local file to the AWS Textract service, which returns the extracted values.
 
+include::partial$aws-doc-processing.adoc[tag=specific]
 
 == Inbound Variables
 

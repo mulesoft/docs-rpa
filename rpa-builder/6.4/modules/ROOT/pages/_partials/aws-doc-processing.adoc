@@ -1,0 +1,7 @@
+// tag::general[]
+Action steps that use Amazon Textract services process the document in a synchronous fashion, therefore the document is not stored by Amazon. These action steps automatically convert PDF files to PNG images. You can adjust the fidelity of the conversion in the properties grid of the action step. 
+// end::general[]
+
+// tag::specific[]
+This action step processes the document in a synchronous fashion, therefore the document is not stored by Amazon, and automatically convert PDF files to PNG images. You can adjust the fidelity of the conversion in the properties grid. 
+// end::specific[]
