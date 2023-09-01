@@ -9,6 +9,8 @@ For example, if you are processing a credit card statement, you can specify quer
 * "What is the account number?"
 * "What is the payment due date?"
 
+include::partial$aws-doc-processing.adoc[tag=specific]
+
 == Inbound Variables
 
 * *Alias text* 
