@@ -4,13 +4,14 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Process Streaming* view
+|RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Process Streaming Open
 
 |===
