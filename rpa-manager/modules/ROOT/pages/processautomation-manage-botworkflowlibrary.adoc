@@ -56,7 +56,7 @@ Edit the description of a bot workflow tag to render it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
-. In the *Edit Bot Workflow* window, change the description.
+. In the *Edit <Bot Workflow Name>* window, change the description.
 . Click *Update*.
 
 === Change Tags of a Bot Workflow
@@ -65,7 +65,7 @@ Add or remove tags of a bot workflow to define it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
-. In the *Edit Bot Workflow* window, add or remove tags.
+. In the *Edit <Bot Workflow Name>* window, add or remove tags.
 . Click *Update*.
 
 == Managing Bot Workflow Tags
