@@ -4,6 +4,8 @@
 
 The ERP Docs with AWS enables you to use Amazon Textract to analyze invoices and receipts to extract relevant data.
 
+include::partial$aws-doc-processing.adoc[tag=specific]
+
 == Inbound Variables
 
 * *Directory Path*
