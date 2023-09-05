@@ -56,7 +56,7 @@ Edit the description of a bot workflow tag to render it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
-. In the *Edit Bot Workflow Library* window, change the description.
+. In the *Edit Bot Workflow* window, change the description.
 . Click *Update*.
 
 === Change Tags of a Bot Workflow
@@ -65,12 +65,12 @@ Add or remove tags of a bot workflow to define it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
-. In the *Edit Bot Workflow Library* window, add or remove tags.
+. In the *Edit Bot Workflow* window, add or remove tags.
 . Click *Update*.
 
 == Managing Bot Workflow Tags
 
-Create, edit and delete tags for bot workflows to use in RPA Manager and RPA Builder. Changes affect all tags, regardless of their assignment.
+Create, edit, and delete tags for bot workflows to use in RPA Manager and RPA Builder. Changes affect all tags, regardless of their assignment.
 
 === Create a New Bot Workflow Tag
 
@@ -98,7 +98,7 @@ Delete a bot workflow tag if it's no longer relevant:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
-. In the *Bot Workflow Library Tags* view, click *Remove* image:delete-icon.png[trash symbol,1.5%,1.5%] in the panel of the tag to delete.
+. In the *Bot Workflow Library Tags* view, click *Delete* image:delete-icon.png[trash symbol,1.5%,1.5%] in the panel of the tag to delete.
 . Confirm the deletion.
 
 Assigned tags are removed from workflows upon deletion.
