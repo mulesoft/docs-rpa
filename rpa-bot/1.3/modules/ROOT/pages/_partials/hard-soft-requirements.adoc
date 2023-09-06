@@ -60,7 +60,7 @@ To communicate with RPA Manager, RPA Bot requires you to enter the following Int
 
 In addition, it is also necessary to open the internally used URL `+https://*.cloudfront.net+`, which is done typically by your network or security team.
 
-See xref:rpa-bot::configuration.adoc#common-settings[Configuring RPA Bot] for more information on the RPA Bot Configurator pop-up.
+See xref:rpa-bot::configuration#common-settings[Configuring RPA Bot] for more information about the RPA Bot Configurator pop-up.
 
 == Compatibility
 
