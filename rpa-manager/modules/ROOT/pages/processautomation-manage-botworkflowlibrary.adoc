@@ -1,8 +1,8 @@
 = Managing the Bot Workflow Library
 
-The *Bot Workflow Library* view shows all bot workflows from the RPA Builder Activity Library.
+The *Bot Workflow Library* view shows all bot workflows in the RPA Builder Activity Library.
 
-You can view and manage the workflows:
+You can do the following to view and manage the workflows:
 
 * Create, edit, and delete tags for the library.
 * View an outline of a workflow.
@@ -16,15 +16,18 @@ You can view and manage the workflows:
 |===
 |*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
-|Open the *Process Automation* module
+|Open the *Process Automation* module.
 |RPA Administrator
 |Process Automation Open
 
-|Open the Bot Workflow Library
+|Open the Bot Workflow Library.
 |RPA Automations Contributor, RPA Automations Manager
 |Activity Library Open
 
-|Create tags for the library. Add, edit, and remove tags and descriptions from bot workflows
+a|
+* Create tags for the library. 
+* Add, edit, and remove tags from bot workflows.
+* Add and edit bot workflow descriptions.
 |RPA Automations Manager
 |Activity Library Administration
 
@@ -36,7 +39,7 @@ Get an overview of all bot workflows.
 
 === View the List of All Bot Workflows
 
-Open the *Bot Workflow Library* view in the *Process Automation* module to view the list of all bot workflows and to see their purpose.
+Open the *Bot Workflow Library* view in the *Process Automation* module to view the list of all bot workflows and see their purpose.
 
 === View an Outline of a Bot Workflow
 
@@ -59,7 +62,7 @@ Edit the description of a bot workflow tag to render it more precisely:
 . In the *Edit <Bot Workflow Name>* window, change the description.
 . Click *Update*.
 
-=== Change Tags of a Bot Workflow
+=== Change the Tags of a Bot Workflow
 
 Add or remove tags of a bot workflow to define it more precisely:
 
@@ -74,7 +77,7 @@ Create, edit, and delete tags for bot workflows to use in RPA Manager and RPA Bu
 
 === Create a New Bot Workflow Tag
 
-Create a new bot workflow tag for categorizing workflows:
+Create a new bot workflow tag to categorize workflows:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
