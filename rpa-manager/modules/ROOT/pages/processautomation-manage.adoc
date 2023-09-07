@@ -64,7 +64,7 @@ Copy a project to automate a similar process more quickly:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project that you want to copy.
-. In the *<category name>* view, click the *Copy* icon image:copy-icon.png["copy symbol",1.5%,1.5%] on the panel of the project you want to copy.
+. In the *<category name>* view, click *Copy* (image:copy-icon.png[copy symbol,1.5%,1.5%])on the panel of the project you want to copy.
 . Check and edit the form *Copy process*:
 +
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
@@ -89,7 +89,7 @@ Edit an automation project to update it:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] on the panel of the project to edit.
+. In the *<category name>* view, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) on the panel of the project to edit.
 . Check and edit the form *Copy process*:
 +
 For an explanation of the properties, see <<form-createprocess, *Create process*>>.
@@ -101,7 +101,7 @@ Change the owner of a process to represent changed responsibilities:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *New Process Owner* icon image:newprocessowner-icon.png["user-with-crown symbol",1.5%,1.5%] on the panel of the project for which you want to change the process owner.
+. In the *<category name>* view, click *New Process Owner* (image:newprocessowner-icon.png[user-with-crown symbol,1.5%,1.5%]) on the panel of the project for which you want to change the process owner.
 . In the window *New process owner*, select a user.
 . Click *OK*
 
@@ -115,7 +115,7 @@ Change the manager of a project to represent changed responsibilities:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *New Project Manager* icon image:newprojectmanager-icon.png["user-with-tie symbol",1.5%,1.5%] on the panel of the project for which you want to change the project manager.
+. In the *<category name>* view, click *New Project Manager* (image:newprojectmanager-icon.png[user-with-tie symbol,1.5%,1.5%]) on the panel of the project for which you want to change the project manager.
 . In the window *New project manager*, select a user.
 + 
 You can only select a user who has the privilege *Project Management*.
@@ -134,7 +134,7 @@ To remove a project:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] on the panel of the project to remove.
+. In the *<category name>* view, click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) on the panel of the project to remove.
 . Confirm the prompt.
 
 == Manage Process Project Tasks
@@ -166,7 +166,7 @@ To open a process board:
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Open process board* icon image:processboard-icon.png[column symbol,1.5%,1.5%] on the project panel or in an already opened project.
+. In the *<category name>* view, click *Open process board* (image:processboard-icon.png[column symbol,1.5%,1.5%]) on the project panel or in an already opened project.
 
 Click *Back to Process* to return to or open the project.
 
@@ -231,7 +231,7 @@ Open the xref:processoperations-financeanalysis.adoc[*Finance Analysis* view] to
 
 . Open the *Project Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
-. In the *<category name>* view, click the *Finance Analysis* icon image:financeanalysis-icon.png[ symbol,1.5%,1.5%] on the panel of the project you want to analyze.
+. In the *<category name>* view, click *Finance Analysis* (image:financeanalysis-icon.png[analytics graph symbol,1.5%,1.5%]) on the panel of the project you want to analyze.
 
 == Transition an Automation Project to Another Phase
 

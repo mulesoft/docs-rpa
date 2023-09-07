@@ -96,7 +96,7 @@ You can only enter values of the specified type.
 Before editing a global variable, check its usage to avoid inadvertent side effects:
 
 . Open the *Global Variables* view of the *Process Automation* module.
-. Click the *Usage* icon image:usage-icon.png[binoculars symbol,1.5%,1.5%] in the row of the global variable to check.
+. Click *Usage* (image:usage-icon.png[binoculars symbol,1.5%,1.5%]) in the row of the global variable to check.
 
 A window with a table shows you the configurations that use the global variable.
 
@@ -107,7 +107,7 @@ Edit a global variable to change its name or value. You cannot change the type o
 To edit a global variable:
 
 . Open the *Global Variables* view of the *Process Automation* module.
-. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the global variable to edit.
+. Click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the row of the global variable to edit.
 . Change data in the *Edit the Global Variable* form.
 +
 For an explanation of the properties, see  <<form-create-globalvariable, *Create a Global Variable*>>.
@@ -122,7 +122,7 @@ Delete global variables that are no longer needed. You cannot delete variables l
 To delete a global variable:
 
 . Open the *Global Variables* view of the *Process Automation* module.
-. Click the *Delete* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the global variable to delete.
+. Click *Delete* (image:delete-icon.png[trash symbol,1.5%,1.5%]) in the row of the global variable to delete.
 . Confirm the deletion.
 
 == See Also

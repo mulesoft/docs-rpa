@@ -57,7 +57,7 @@ Edit criteria to make it more useful.
 RPA Manager does not change process evaluations that are based on a template with edited criterion. The evaluations continue to contain the criterion in its original form.
 The changed form of the criterion is used in the templates as soon as the changes are saved.
 
-. In the *Evaluation Criteria* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the criterion to edit.
+. In the *Evaluation Criteria* view of the *Process Evaluation* module, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the row of the criterion to edit.
 . Edit the form *Edit <criterion type>*.
 . Click *Save*.
 
@@ -67,7 +67,7 @@ Remove criteria you no longer use.
 
 Process evaluations that have been created before are not changed and continue to contain the criterion even after it is removed.
 
-. In the *Evaluation Criteria* view of the *Process Evaluation* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the criterion to delete.
+. In the *Evaluation Criteria* view of the *Process Evaluation* module, click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) in the row of the criterion to delete.
 . Confirm the removal of the criterion from the templates it is used in.
 
 == Manage Process Evaluation Templates
@@ -96,7 +96,7 @@ Select the checkbox to exclude the MuleSoft default criteria from the selection 
 
 Copy and edit templates instead to save time.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module, click the *Copy* icon image:copy-icon.png["copy symbol",1.5%,1.5%] in the row of the template you want to copy.
+. In the *Evaluation Templates* view of the *Process Evaluation* module, click *Copy* (image:copy-icon.png[copy symbol,1.5%,1.5%])in the row of the template you want to copy.
 . Edit the form *Copy an Evaluation Template*.
 . Click *Save*.
 
@@ -104,7 +104,7 @@ Copy and edit templates instead to save time.
 
 Edit templates to make them more useful.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the template to edit.
+. In the *Evaluation Templates* view of the *Process Evaluation* module, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the row of the template to edit.
 . Edit the form *Edit an Evaluation Template*.
 . Click *Save*.
 
@@ -114,7 +114,7 @@ Remove templates you no longer use.
 
 Evaluations of a process that use a removed template are not changed.
 
-. In the *Evaluation Templates* view of the *Process Evaluation* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the template to delete.
+. In the *Evaluation Templates* view of the *Process Evaluation* module, click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) in the row of the template to delete.
 . Confirm the removal of the template.
 
 == See Also

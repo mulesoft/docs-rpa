@@ -46,7 +46,7 @@ Open the *Bot Workflow Library* view in the *Process Automation* module to view 
 View the outline of a bot workflow to better understand how it works:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
-. Click *Details* image:show-icon.png[eye symbol,1.5%,1.5%] in the panel of the workflow to view.
+. Click *Details* (image:show-icon.png[eye symbol,1.5%,1.5%]) in the panel of the workflow to view.
 . Click *Back* to view the list of all bot workflows.
 
 == Managing Bot Workflows
@@ -58,7 +58,7 @@ Change the descriptions and tags of bot workflows.
 Edit the description of a bot workflow tag to render it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
-. Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
+. Click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the panel of the workflow to edit.
 . In the *Edit <Bot Workflow Name>* window, change the description.
 . Click *Update*.
 
@@ -67,7 +67,7 @@ Edit the description of a bot workflow tag to render it more precisely:
 Add or remove tags of a bot workflow to define it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
-. Click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the workflow to edit.
+. Click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the panel of the workflow to edit.
 . In the *Edit <Bot Workflow Name>* window, add or remove tags.
 . Click *Update*.
 
@@ -91,7 +91,7 @@ Edit a bot workflow tag to define it more precisely:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
-. In the *Bot Workflow Library Tags* view, click *Edit* image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%] in the panel of the tag to edit.
+. In the *Bot Workflow Library Tags* view, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the panel of the tag to edit.
 . In the *Edit Bot Workflow Library Tag* window, change the name.
 . Click *Update*.
 
@@ -101,7 +101,7 @@ Delete a bot workflow tag if it's no longer relevant:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
 . Click *Manage Bot Workflow Tags*.
-. In the *Bot Workflow Library Tags* view, click *Delete* image:delete-icon.png[trash symbol,1.5%,1.5%] in the panel of the tag to delete.
+. In the *Bot Workflow Library Tags* view, click *Delete* (image:delete-icon.png[trash symbol,1.5%,1.5%])in the panel of the tag to delete.
 . Confirm the deletion.
 
 Assigned tags are removed from workflows upon deletion.

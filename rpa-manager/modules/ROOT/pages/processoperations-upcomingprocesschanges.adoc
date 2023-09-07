@@ -33,7 +33,7 @@ To view the changes:
 
 . Open the *Upcoming Process Changes* view in the *Process Operations* module.
 . View the descriptions in the table.
-. Click the *Show Changes* icon image:show-icon.png[eye symbol,1.5%,1.5%] in the row of the edited activity to compare the deployed version with the latest version of that activity.
+. Click *Show Changes* (image:show-icon.png[eye symbol,1.5%,1.5%]) in the row of the edited activity to compare the deployed version with the latest version of that activity.
 
 [[map-bpmn-elements-to-process-activities]]
 == Map BPMN Elements to Process Activities
