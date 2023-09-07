@@ -73,7 +73,7 @@ Add or remove tags of a bot workflow to define it more precisely:
 
 == Managing Bot Workflow Tags
 
-Create, edit, and delete tags for bot workflows to use in RPA Manager and RPA Builder. Changes affect all tags, regardless of their assignment.
+Create, edit, and delete bot workflow tags. Users assign the tags to bot workflows in RPA Manager and RPA Builder. Changes affect all tags, regardless of their assignment.
 
 === Create a New Bot Workflow Tag
 
