@@ -148,7 +148,7 @@ In *Settings*, you specify:
 * *Parse Type*: The method for parsing the result. Available options are *JsonPath* and *XPath*.
 * *JsonPath Expression*: The path to the property of the response object.
 +
-Use the xref:xref:building-jsonpath-expressions.adoc#jsonpath-builder[JsonPath expression Builder] to simplify the process of creating the JsonPath expression. 
+Use the xref:building-jsonpath-expressions#jsonpath-builder[JsonPath expression Builder] to simplify the process of creating the JsonPath expression. 
 
 === Parameters 
 
