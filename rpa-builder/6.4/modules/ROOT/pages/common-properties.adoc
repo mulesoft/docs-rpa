@@ -34,7 +34,7 @@ The time in seconds RPA Builder waits for an Action Step to finish its execution
 +
 If this option is enabled, RPA Builder uses the time specified in seconds under _Default Timeout_ in the properties of the Workflow as the Timeout for the Action Step.
 
-The following properties are also required for Action Steps that can be shown as Measurement Points in Data Sources:
+The following properties are also required for Action Steps that show as Measurement Points:
 
 * *Common*
 ** *Timer Name*
@@ -45,12 +45,12 @@ A name for the timer. RPA Builder automatically adds this property in the Ping a
 ** *Script Feedback / Reporting Function*
 *** *Record Timer*
 +
-When this option is enabled, the runtime measured for the Ping and Service Check Action Steps is passed to RPA Manager via a linked Data Source.
+When this option is enabled, the execution time measured for the Ping and Service Check Action Steps is passed to RPA Manager.
 +
 ** *Timing*
 *** *Timer Mode*
 +
-If you use Ping and Service Check Action Steps in the Control Blocks Loop, this option defines which of the Timer values measured is to be passed to RPA Manager via a linked Data Source.
+If you use Ping and Service Check Action Steps in the Control Blocks Loop, this option defines which of the Timer values measured is passed to RPA Manager.
 +
 **** *Last*
 +
