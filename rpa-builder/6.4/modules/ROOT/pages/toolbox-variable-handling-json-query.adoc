@@ -39,7 +39,7 @@ Indicates the number of elements of the returned array.
 
 Use the Wizard to select the source JSON Object, usually an Inbound Variable containing the result of a REST Call, and to specify the JsonPath expression to extract values from the object. An empty result is a valid result and the process continues without considering it as an error.
 
-Use the xref:xref:building-jsonpath-expressions.adoc#jsonpath-builder[JsonPath expression Builder] to simplify the process of creating the JsonPath expression. 
+Use the xref:building-jsonpath-expressions#jsonpath-builder[JsonPath expression Builder] to simplify the process of creating the JsonPath expression. 
 
 For more information about JSONPath, see https://goessner.net/articles/JsonPath/[XPath for JSON^].
 
