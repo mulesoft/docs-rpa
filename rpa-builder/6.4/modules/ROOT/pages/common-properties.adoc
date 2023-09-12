@@ -45,12 +45,12 @@ A name for the timer. RPA Builder automatically adds this property in the Ping a
 ** *Script Feedback / Reporting Function*
 *** *Record Timer*
 +
-When this option is enabled, the execution time measured for the Ping and Service Check Action Steps is passed to RPA Manager.
+When this option is enabled, the execution time measured for the Ping and Service Check Action Steps is recorded and output in the Time outbound variable of the Action Step.
 +
 ** *Timing*
 *** *Timer Mode*
 +
-If you use Ping and Service Check Action Steps in the Control Blocks Loop, this option defines which of the Timer values measured is passed to RPA Manager.
+If you use Ping and Service Check Action Steps in the Control Blocks Loop, this option specifies the Timer mode to use for calculating the timer value.
 +
 **** *Last*
 +
