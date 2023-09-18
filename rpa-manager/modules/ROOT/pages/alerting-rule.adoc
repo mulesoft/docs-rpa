@@ -4,16 +4,18 @@ Specify the incidents that trigger an alert. Each activated rule be checked whil
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Alerting* module
+|RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Alerting Open
 
 |Create, edit, and delete alerting targets and rules.
+|RPA Operations Manager, RPA Administrator
 |Alerting Administration
 
 |===

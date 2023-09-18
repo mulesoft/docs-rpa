@@ -8,16 +8,18 @@ Bots can be licensed to use secure sessions. Some properties, like name, service
 * If you want to assign more than one secure session to a bot, make sure that a terminal server software is installed on the computer of the bot.
 * If you want to assign service times to a bot, you need to create them in the *Service Times* view of the *Bot Management* module first.
 * If you want to assign process applications to a bot, you need to create them in the *Process Applications* view of the *Process Automation* module first.
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Bot Management* module and view the bots
+|RPA Bots Manager, RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Bot Management Open
 
 |License, edit, and remove bots
+|RPA Bots Manager, RPA Operations Manager, RPA Administrator
 |Bot Management Administration
 
 |===

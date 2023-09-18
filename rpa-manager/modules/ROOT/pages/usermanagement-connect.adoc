@@ -7,16 +7,18 @@ For security reasons, you can only see and copy your API key on creation.
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *User Management* module
+|
 |User Management Open
 
 |Create, edit, and delete API keys
+|RPA Administrator
 |User API Key Create, User API Key Edit, User API Key Delete
 
 |===
