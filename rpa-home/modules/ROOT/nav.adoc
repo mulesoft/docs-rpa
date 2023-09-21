@@ -7,6 +7,8 @@
 * xref:automation-userrolesandpermissions.adoc[User Roles and Permissions]
 ** xref:automation-userrolesandpermissions-privilegesbymodule.adoc[Privileges by Module]
 ** xref:automation-userrolesandpermissions-anypointrpapermissions.adoc[Anypoint Access Management RPA Permissions]
+* xref:automation-security.adoc[Security]
+** xref:automation-security-securesessions.adoc[Secure Sessions]
 * xref:automation-tutorial-introduction.adoc[Tutorial: Create an Automation From Start to Finish]
 ** xref:automation-tutorial-prerequisites.adoc[]
 ** xref:automation-tutorial-evaluate.adoc[]

@@ -1,0 +1,46 @@
+= Secure Sessions
+
+In RPA automations, a bot simulates a human user. The bot logs in to a system, sees the screen, and can interact with the UI via key strokes and mouse actions. That way, the bot can even interact with legacy systems, that do not provide an API.
+
+The bot logs in to the computer, where it is installed. But, of course, it does not sit on a chair in front of the desktop. Nevertheless, if you would enter the room where the computer is, you could see what the bot is doing: The screen shows the open applications, the mouse moves around and words are typed. In MuleSoft RPA, we call this a Desktop Session. To prevent unauthorized data access, you would need to guard the physical room.
+
+Or you could use what we call Secure Sessions.
+
+Secure Sessions are hidden Desktop Sessions. They run in the background and only the bot can access them. An additional advantage of the Secure Sessions is, that the bot can multiply itsself to run several process instances in parallel.
+
+To use Secure Sessions you must ensure that all prerequisites are met and all responsible persons are informed.
+
+== General Considerations
+
+* At the same time, a bot can only run in Desktop or in Secure Session mode.
+* You can not switch the session mode while configurations are deployed on the bot.
+* You can only deploy configurations to a bot that is in the same session mode.
+* Desktop Sessions:
+** The specified user must be logged in to this session to deploy a run configuration. 
+** Do not close or minimize the console session while the bot executes a process.
+* Secure Sessions:
+** The higher the number of secure sessions the lower the performance of the bot. To much load can cause process disruptions or data loss. Check the system data to determine the maximum number of sessions that the bot can safely execute in parallel.
+** Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. 
+** Do not sign in as the specified user to a computer where a bot with one licensed secure session is running a process.
+
+== Next Steps
+
+. In the documentation, check the System Requirements.
+. On the computer, where you want to run automations, install a bot or check the system data:
++
+* Operating system
+* RAM
+* Terminal Server software
+* Login data for the bot
+. In RPA Manager, enter the relevant data or a contact person in the description of the bot in the Bots view of the Bot Management module.
+.. If the bot should use Secure Sessions, enter the maximum number of Secure Sessions that the bot may use in parallel
+. When creating a run configuration in the Process Automation module of RPA Manager, keep the general considerations in mind. 
+
+== See Also
+
+* System requirements
+* Bot installation
+* Edit Bot
+* Assign Secure Sessions
+* Run Config - Execution
+* Run Config - Bots
