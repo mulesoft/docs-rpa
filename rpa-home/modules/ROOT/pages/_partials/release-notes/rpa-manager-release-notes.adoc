@@ -2,15 +2,15 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
-[[september-26-2023]]
-== September 26, 2023
+[[september-25-2023]]
+== September 25, 2023
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* The Bot Workflow Library is contained in RPA Manager. (W-11915639)
-* The execution ID of invokable and scheduled processes is shown in the process run results. (W-13851093)
-* To improve support a request ID is shown on the error dialog. (W-13973436)
+* You can now open the Activity library in RPA Manager.
+* Process run results now show the execution ID of invokable and scheduled processes.
+* Error dialogs now include a request ID to improve troubleshooting.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -18,13 +18,13 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Global variables can now be linked in test plans in the test phase. | W-13980494
-| Activity parameters are now shown in claimed user tasks, if this user task is the first activity of a process.  | W-13999038
-| The value of an activity parameter in a test plan in the test phase will be shown correctly. | W-14008168
-| A user is able to start an automation from a process evaluation in the menu _My Backlog_. | W-14013519
-| Deleted users and teams in Anypoint Access Management are no longer shown in RPA Manager. | W-13989445
-| Process run statistics in the Bot Management show only processes assigned to the logged in user. | W-14026825
-| A process evaluation now shows the correct state after it is rejected. | W-14048993
+| You can now link Global variables in test plans in the test phase. | W-13980494
+| Activity parameters now show properly in claimed User tasks when the User task is the first activity of a process. | W-13999038
+| Activity parameters in a test plan in the test phase no longer show an incorrect value. | W-14008168
+| Starting an automation from a process evaluation in the menu _My Backlog_ no longer shows an error. | W-14013519
+| Deleted users and teams in Anypoint Access Management no longer show in RPA Manager. | W-13989445
+| Process run statistics in Bot Management now show data only for the logged in user. | W-14026825
+| Rejected process evaluations now show the correct state. | W-14048993
 |===
 
 // == Known Issues
