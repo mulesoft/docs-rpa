@@ -355,6 +355,7 @@ Hover the mouse pointer over the info label to display more detailed information
 
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
 * xref:rpa-bot::index.adoc[RPA Bot Overview]
+* xref:rpa-home::automation-security-securesessions.adoc[]
 * xref:botmanagement-overview.adoc[Bot Management]
 * xref:settings-connect.adoc[Connecting to RPA Processes from Salesforce Products]
 * xref:access-management::connected-apps-overview.adoc[]
