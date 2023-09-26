@@ -5,16 +5,18 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Approve an automation process for a center of excellence
+|RPA Evaluations Manager
 |Process Evaluation Approval to a CoE
 
 |Approve directly for a project manager
+|RPA Evaluations Manager
 |Process Evaluation Approval to a Project Manager
 
 |===

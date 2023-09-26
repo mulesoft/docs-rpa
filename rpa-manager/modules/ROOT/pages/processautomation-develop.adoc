@@ -16,26 +16,35 @@ As long as the project is in the build phase, it can be seen in the repository o
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Process Automation* module
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
 |Create processes
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Create
 
 |Record processes with RPA Recorder
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Recording
 
 |Implement process projects in RPA Builder
+|RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Builder Usage
 
-|Open, use, and edit the activity library in RPA Builder
-|Activity Library Open, Activity Library Administration
+|Open and use the activity library in RPA Builder and the bot workflow library in RPA Manager
+|RPA Automations Contributor, RPA Automations Manager, RPA Administrator
+|Activity Library Open
+
+|Use and manage the activity library in RPA Builder and the bot workflow library in RPA Manager
+|RPA Automations Manager, RPA Administrator
+|Activity Library Administration
 
 |===
 

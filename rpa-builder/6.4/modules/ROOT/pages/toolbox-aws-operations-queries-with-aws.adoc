@@ -78,29 +78,8 @@ The path to the directory where the file is located
 +
 The name of the file to analyze. Supported file types: PDF, JPEG, and PNG
 +
-* *PDF Settings*
+include::partial$pdf-settings.adoc[]
 +
-Appears only when the selected file is a PDF
-+
-** *PDF file is password protected*
-+
-When selected, uses the password specified in *Password to open PDF file* to open the file
-** *Read entire file*
-+
-Instructs the service to read the entire file
-** *Read page range*
-+
-Instructs the service to read the selected range of pages
-+
-*** *From page*
-+
-Specifies from which page the service starts reading the file
-*** *To page*
-+
-Specifies until which page the service reads the file
-*** *Read to end of file*
-+
-Instructs the service to continue reading until the end of the file
 * *Query Settings* 
 ** *Query text*
 +

@@ -5,16 +5,18 @@ If a bot only needs to work at specific times, you assign it service times.
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Bot Management* module
+|RPA Bots Manager, RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Bot Management Open
 
 |Manage service times
+|RPA Bots Manager, RPA Administrator
 |Servicetime Create, Servicetime Edit, Servicetime Delete
 
 |===
