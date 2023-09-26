@@ -11,11 +11,11 @@ If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator need
 If you are not sure why a bot is not processing, review the execution plans:
 
 . In the module *Bot Management*, open the view *Bot Execution Plans*.
-. In the table, click the *Execution timetable* icon image:executiontimetable-icon.png["calendar symbol",1.5%,1.5%] in the row of the bot you want to check.
+. In the table, click *Execution timetable* (image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%]) in the row of the bot you want to check.
 
 The execution timetable shows you the effective runtime of all configurations assigned to the bot.
 
-. Click the *Configure Execution Timetable* icon image:configure-icon.png["wrench symbol",1.5%,1.5%] to change the time interval of the table and to select the shown configurations.
+. Click *Configure Execution Timetable* (image:configure-icon.png[wrench symbol,1.5%,1.5%]) to change the time interval of the table and to select the shown configurations.
 . Click *OK*.
 . In the *Execution Timetable*, click a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
 
@@ -58,7 +58,7 @@ To view the bot log messages:
 Alternatively, in the *Process Automation* module:
 +
 ** From within a project in the test or production phase, click on a run result number in the *Run Results* panel.
-. Click the *Bot Message Log* icon image:botmessagelog-icon.png[list symbol,1.5%,1.5%] in the table row of the bot you want to read messages from.
+. Click *Bot Message Log* (image:botmessagelog-icon.png[list symbol,1.5%,1.5%]) in the table row of the bot you want to read messages from.
 
 Bot messages might be concatenated and truncated. To view the complete bot log, download the log files.
 
@@ -73,7 +73,7 @@ This option is only available when the bot has the status OK.
 An IT administrator can configure the content of the package in the RPA Bot Configurator on the computer where the bot is installed.
 
 . Open the *Bots* view of the *Bot Management* module.
-. Click the *Download Logfiles* icon image:download-icon.png[disk-with-downwards-arrow symbol,1.5%,1.5%] in the row of the bot you want to read the log files from.
+. Click *Download Logfiles* (image:download-icon.png[disk-with-downwards-arrow symbol,1.5%,1.5%]) in the row of the bot you want to read the log files from.
 . Extract the contents and view the relevant files.
 
 == Restart a Bot
