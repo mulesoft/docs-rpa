@@ -1,0 +1,44 @@
+= RPA Builder 6.4.8 Release Notes
+
+RPA Builder is the on-premises application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== September 29, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* Enhanced logging for Outlook with OAuth.
+* You can now configure a custom timeout for REST Call. 
+* Upgraded the Tomcat dependency to version 9.0.80.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.4.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+
+| Search Pattern no longer causes an unexpected error when testing a captured pattern. | W-14051086
+| Excel Controlled Loop now completely processes an Excel file when the file contains empty rows at the beginning. | W-14102115
+| Ream from Text File no longer incorrectly deletes empty lines when *Last line* and *Remove lin(s) after read* are enabled. | W-14128229
+| Outlook with OAuth no longer defines incorrect default values for POP3 and SMTP configurations. | W-14152937
+
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center^]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]
