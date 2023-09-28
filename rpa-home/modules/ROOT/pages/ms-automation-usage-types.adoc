@@ -1,0 +1,40 @@
+= Automation Credits
+
+Your MuleSoft Automation subscription plan includes a quota of Automation Credits that depletes as you create and execute automations.
+
+Credit usage rates differ for different subscription plans. Refer to the article that corresponds to your subscription plan as shown in the following table: 
+
+[%header%autowidth.spread,cols="a,a]
+|===
+| Subscription Plan | Conversion Rate Sheet
+a| 
+* Automation Starter
+* Automation Advanced 
+* Additional Automation Credits
+.^| xref:ms-automation-credits-2.adoc[]
+a|
+* MuleSoft - Automation
+* MuleSoft - Automation - (Gold, Platinum, Titanium Edition)
+* MuleSoft - Automation for Salesforce
+* MuleSoft - Automation for Salesforce - (Gold, Platinum, Titanium Edition)
+* MuleSoft - Automation - Additional Credits (100)
+* MuleSoft - Automation - Additional Credits (100) - (Gold, Platinum, Titanium)
+.^| xref:ms-automation-credits.adoc[]
+|===
+
+[[usage-report]]
+== Create a Usage Report
+
+Follow these steps to create a usage report in RPA Manager:
+
+. Open the *Process Operations* module.
+. Click *Usage Summary*.
+. Specify the desired date range and click *Create Usage Summary*.
+. Optionally, you can print or download the report by clicking the *Print* (image:print-icon.png[The Print icon, 5%, 5%])button.
+
+[[monthly-summary-mails]]
+== Monthly Account Summary Emails
+
+Salesforce sends usage-based billing reports to every MuleSoft RPA customer on the 10th of each month. By default, Salesforce sends these emails to the account's billing contact. 
+
+For additional information about the reports, the list of recipients, and other details, see the https://help.salesforce.com/s/articleView?id=000390885&type=1[Monthly Account Summary Email FAQ^].
