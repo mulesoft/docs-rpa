@@ -103,7 +103,8 @@ Note that you must disable *Use general timeout* for the custom timeout to work.
 
 ** *Use general timeout*
 +
-Select this option to use the default timeout: `30` seconds.  
+Select this option to use the timeout value configured in the project settings. By default, it is `45` seconds.  
+
 
 == Inbound Variables
 
