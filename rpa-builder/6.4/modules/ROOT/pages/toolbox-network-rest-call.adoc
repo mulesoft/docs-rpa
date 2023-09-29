@@ -96,7 +96,8 @@ The Xpath expression to the property of the response object. For example, `/root
 
 ** *Timeout*
 +
-The time in seconds the activity waits. Settings this value to `0` forces the activity to wait indeterminately. 
+The time in seconds the activity waits.
+
 +
 Note that you must disable *Use general timeout* for the custom timeout to work. 
 
