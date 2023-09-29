@@ -1,4 +1,4 @@
-= Automation Credits for Automation Starter, Automation Advanced, and Automation Additional Credits
+= MuleSoft Automation Credits 2.0
 
 Your MuleSoft Automation subscription plan includes a quota of Automation Credits that depletes as you create and execute automations. You can use Automation Credits with MuleSoft RPA, MuleSoft Composer, Salesforce Flow Orchestration, or a combination of the three products. 
 
@@ -10,11 +10,12 @@ The following table shows the conversion rate between Automation Credits and dif
 | 1 = 80 Automation Credits | 1 = 2 Automation Credits | 1 = 2 Automation Credits | 1 = 100 Automation Credits
 |===
 
-MuleSoft adds all the RPA execution times in seconds for the period and then multiplies this raw usage by a constant multiplier to calculate the credit usage subtotal.
+MuleSoft adds all the RPA execution times in seconds for the period and then multiplies this raw usage by a constant multiplier to calculate the credit usage subtotal. See https://help.salesforce.com/s/articleView?id=000390885&type=1[Monthly Account Summary Email FAQ^] for more information about multipliers and usage reports. 
 
 For detailed definitions and more information, see https://www.mulesoft.com/misc/assets/Limited-Release-Features-Entitlements-New-Packaging.pdf[MuleSoft Subscription Plan].
 
 == See Also 
 
+* xref:ms-automation-credits-usage-types.adoc[]
 * xref:ms-automation-usage-types#usage-report[Create a Usage Report]
 * xref:ms-automation-usage-types#monthly-summary-mails[Monthly Account Summary Emails]
