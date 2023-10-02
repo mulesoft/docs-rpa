@@ -18,19 +18,8 @@ You can use any combination of these activities, which aggregate over the term o
 
 For detailed definitions and more information, see the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscription Plans^].
 
-== Create a Usage Report
+== See Also 
 
-Follow these steps to create a usage report in RPA Manager:
-
-. Open the *Process Operations* module.
-. Click *Usage Summary*.
-. Specify the desired date range and click *Create Usage Summary*.
-+
-image:usage-report.png[A Usage report showing process names and bot minutes consumed]
-. Optionally, you can print or download the report by clicking the *Print* (image:print-icon.png[The Print icon, 5%, 5%])button.
-
-== Monthly Account Summary Emails
-
-Starting on June 2023, Salesforce sends usage-based billing reports to every MuleSoft RPA customer on the 10th of each month. By default, Salesforce sends these emails to the account's billing contact. 
-
-For additional information about the reports, the list of recipients, and other details, see the https://help.salesforce.com/s/articleView?id=000390885&type=1[Monthly Account Summary Email FAQ^].
+* xref:ms-automation-credits-usage-types.adoc[]
+* xref:ms-automation-usage-types#usage-report[Create a Usage Report]
+* xref:ms-automation-usage-types#monthly-summary-mails[Monthly Account Summary Emails]
