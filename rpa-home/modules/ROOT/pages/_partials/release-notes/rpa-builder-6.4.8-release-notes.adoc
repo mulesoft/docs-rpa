@@ -32,7 +32,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 
 | Search Pattern no longer causes an unexpected error when testing a captured pattern. | W-14051086
 | Excel Controlled Loop now completely processes an Excel file when the file contains empty rows at the beginning. | W-14102115
-| Ream from Text File no longer incorrectly deletes empty lines when *Last line* and *Remove lin(s) after read* are enabled. | W-14128229
+| Read from Text File no longer incorrectly deletes empty lines when *Last line* and *Remove line(s) after read* are enabled. | W-14128229
 | Outlook with OAuth no longer defines incorrect default values for POP3 and SMTP configurations. | W-14152937
 
 |===
