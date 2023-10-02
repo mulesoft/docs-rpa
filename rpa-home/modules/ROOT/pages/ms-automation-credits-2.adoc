@@ -12,7 +12,7 @@ The following table shows the conversion rate between Automation Credits and dif
 
 MuleSoft adds all the RPA execution times in seconds for the period and then multiplies this raw usage by a constant multiplier to calculate the credit usage subtotal. See https://help.salesforce.com/s/articleView?id=000390885&type=1[Monthly Account Summary Email FAQ^] for more information about multipliers and usage reports. 
 
-For detailed definitions and more information, see https://www.mulesoft.com/misc/assets/Limited-Release-Features-Entitlements-New-Packaging.pdf[MuleSoft Subscription Plan].
+For detailed definitions and more information, see https://www.mulesoft.com/misc/assets/Limited-Release-Features-Entitlements-New-Packaging.pdf[MuleSoft Subscription Plan^].
 
 == See Also 
 
