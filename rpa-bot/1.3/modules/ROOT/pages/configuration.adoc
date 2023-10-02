@@ -88,7 +88,7 @@ Enables authentication via SmartCard within the Secure Session.
 Select this option to use the CredSSP for authentication.
 * *Use alternative RDP handling for secure session login (recommended for Windows 10 and Windows Server 2016)*
 +
-If the group policy _Always prompt for password upon connection_ is enabled, the password must be entered twice when logging into the RDP session. This might prevent the Secure Session from running smoothly, especially on Windows 2010 and Windows Server 2016. If this is the case, activate this option so that the credentials can be entered correctly in the second query.
+If the group policy _Always prompt for password upon connection_ is enabled, the password must be entered twice when logging into the RDP session. This can prevent the Secure Session from running smoothly, especially on Windows 10 and Windows Server 2016. If this is the case, activate this option so that the credentials can be entered correctly in the second query.
 +
 In this context, ensure that you have selected the option *Allow connections only from computers running Remote Desktop with Network Level Authentication (recommended)* in the Windows system properties.
 
