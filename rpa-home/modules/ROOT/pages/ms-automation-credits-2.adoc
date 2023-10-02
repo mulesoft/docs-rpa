@@ -17,5 +17,5 @@ For detailed definitions and more information, see https://www.mulesoft.com/misc
 == See Also 
 
 * xref:ms-automation-credits-usage-types.adoc[]
-* xref:ms-automation-usage-types#usage-report[Create a Usage Report]
-* xref:ms-automation-usage-types#monthly-summary-mails[Monthly Account Summary Emails]
+* xref:ms-automation-credits-usage-types#usage-report[Create a Usage Report]
+* xref:ms-automation-credits-usage-types#monthly-summary-mails[Monthly Account Summary Emails]
