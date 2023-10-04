@@ -6,6 +6,8 @@ If the bot has status *SUSPENDED*, review the execution plans.
 
 If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on to the computer the bot is installed on and needs to troubleshoot it there.
 
+If a bot is running properly, but the process execution fail, and you need help to detect the cause, turn on debug logging. 
+
 == View the Planned Process Executions
 
 If you are not sure why a bot is not processing, review the execution plans:
@@ -75,6 +77,25 @@ An IT administrator can configure the content of the package in the RPA Bot Conf
 . Open the *Bots* view of the *Bot Management* module.
 . Click *Download Logfiles* (image:download-icon.png[disk-with-downwards-arrow symbol,1.5%,1.5%]) in the row of the bot you want to read the log files from.
 . Extract the contents and view the relevant files.
+
+== Turn On Debug Logging
+
+[IMPORTANT]
+Debug Logging is supported by RPA Bots with version 1.3.3 and above.
+
+If a bot is running properly, but the process execution fail, and you need help to detect the cause, turn on debug logging for at least the time span of the next process run.
+
+Then download the log files of the bot and send them to the support team if you need help analyzing the cause of the failure.
+
+To turn on debug logging, complete the following steps:
+
+. Open the *Bots* view of the *Bot Management* module.
+. On the panel of the bot to debug, click *Turn on debug logging* (image:debug-icon.png[bug symbol,1.5%,1.5%]).
+. In the modal *Enable time limited debug logging*, enter a time interval in minutes and click *Start debug logging*.
+
+After the time interval has lapsed, the log level returns to the default.
+
+If a users sets a new debug interval while the bot is still in debug mode, the interval starts anew with the new value. You cannot see if and for which interval the bot is in debug mode.
 
 == Restart a Bot
 
