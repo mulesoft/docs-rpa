@@ -26,7 +26,7 @@ Team names are restricted to alphanumeric characters, hyphens, underscores, and 
 +
 These new teams have the same Anypoint permissions for RPA privileges that the role had in RPA Manager. 
 ** User Groups migrate to teams using the following naming convention: `RPA User Group - <Existing_User_Group_Name>`.
-** Users inside Roles and User Groups in RPA Manager migrate to the corresponding Team in Anypoint Platform.
+** Users assigned to roles and user groups in RPA Manager migrate to the corresponding team in Anypoint Platform.
 
 [[pre-migration]]
 == Pre-migration Steps
