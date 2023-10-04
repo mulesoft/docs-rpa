@@ -18,7 +18,7 @@ After your organization is migrated to Anypoint Platform:
 * RPA Manager deprecates roles and user groups and starts using teams from Anypoint Platform instead. 
 * RPA Manager supports using Connected Apps to connect with Anypoint Platform, which provides a more secure and improved authentication mechanism than API keys. 
 * RPA Manager supports deleting users who have assigned processes and reassigning those processes to other users or teams. 
-* For Non-federated orgs, MuleSoft automatically creates Teams in Anypoint Platform to match the existing Roles and User Groups in RPA Manager: 
+* For non-federated orgs, MuleSoft automatically creates teams in Anypoint Platform to match the existing roles and user groups in RPA Manager: 
 +
 Team names are restricted to alphanumeric characters, hyphens, underscores, and spaces. If your Role or User Group contained unsupported characters, these are omitted when creating the new Team name.
 +
