@@ -94,7 +94,7 @@ To turn on debug logging, complete the following steps:
 
 After the time interval lapses, the log level returns to the default.
 
-If a user sets a new debug interval while the bot is still in debug mode, the interval restarts with the new value. You cannot see if and for which interval the bot is in debug mode.
+If a user sets a new debug interval while the bot is still in debug mode, the interval restarts with the new value. You cannot see the interval for which the bot is in debug mode or if it is in this mode.
 
 == Restart a Bot
 
