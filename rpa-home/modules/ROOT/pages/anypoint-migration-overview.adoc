@@ -20,6 +20,8 @@ After your organization is migrated to Anypoint Platform:
 * RPA Manager supports deleting users who have assigned processes and reassigning those processes to other users or teams. 
 * For Non-federated orgs, MuleSoft automatically creates Teams in Anypoint Platform to match the existing Roles and User Groups in RPA Manager: 
 +
+Team names are restricted to alphanumeric characters, hyphens, underscores, and spaces. If your Role or User Group contained unsupported characters, these are omitted when creating the new Team name.
++
 ** Roles migrate to Teams using the following naming convention: `RPA Role - <Existing_Role_Name>`.
 +
 These new Teams contain the Anypoint permissions that match the RPA privileges the Role had in RPA Manager. 
