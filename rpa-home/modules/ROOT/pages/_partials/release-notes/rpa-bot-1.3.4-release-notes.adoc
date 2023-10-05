@@ -4,7 +4,7 @@ RPA Bot is a software robot that runs in an on-premise environment and executes 
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
-== October 3, 2023
+== October , 2023
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
@@ -13,7 +13,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * Bot UUID is added to Bot logging System infos.
 * RPA Bot now logs scheduler information when it goes into suspended status from the scheduler.
 * StSec RunID creation is moved from StSec to RPA Bot so that RPA Bot now creates and logs StSec RunID and passes it to the StSec.
-* When the logging level warning is enabled, FreeRDP is logged by default.
+* FreeRDP logging level WARN is now enabled by default.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
