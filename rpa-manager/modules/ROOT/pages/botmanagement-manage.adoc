@@ -59,7 +59,7 @@ For example, if you specify a downtime that starts at 1:30 AM and ends at 5:30 A
 
 Learn how to xref:processautomation-prepare-project-application.adoc[manage applications].
 
-. In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the bot to edit.
+. In the *Bots* view of the *Bot Management* module, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the row of the bot to edit.
 . In the form *<bot name>* click on all service times and applications you want to assign.
 . Click *Save*.
 
@@ -67,7 +67,7 @@ Learn how to xref:processautomation-prepare-project-application.adoc[manage appl
 
 Edit a bot to change its properties. Hostname, IP address, version, and timezone are fixed values taken from the computer the bot is installed on.
 
-. In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the bot to edit.
+. In the *Bots* view of the *Bot Management* module, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the row of the bot to edit.
 . Edit the *<bot name>* form.
 . Click *Save*.
 
@@ -75,7 +75,7 @@ Edit a bot to change its properties. Hostname, IP address, version, and timezone
 
 After deinstallation or reconfiguration, a bot is still shown in the *Bots* view. You need to manually remove the bot from the view. Deleted bots are removed from process configurations. Any active processes are terminated.
 
-. In the *Bots* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the bot to remove.
+. In the *Bots* view of the *Bot Management* module, click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) in the row of the bot to remove.
 . Confirm the removal.
 
 If you accidentally remove a bot that is still being executed, the bot will shut down and the API Key is deleted on the bot's computer. You must uninstall and reinstall the bot with a new API Key. In this case, the licenses, name, description, assigned process applications and service times, and tasks will be lost and have to be assigned again.
