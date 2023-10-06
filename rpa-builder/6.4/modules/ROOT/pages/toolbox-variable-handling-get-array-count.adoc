@@ -6,10 +6,6 @@ The _Get Array Count_ Action Step returns the number of elements in an array.
 
 You can then use this number as the number of iterations in a loop (_Loop_), for example, across the array elements.
 
-An array is either created via the element _Workflow Based Variables_
-//link:#WorkflowBasedVariables[_+++Workflow Based Variables+++_]
-or returned as the result of the _Read from Excel File_ Action Step.
-
 == Properties
 
 This Action Step contains no special properties other than the _general_ ones.
@@ -21,7 +17,7 @@ This Action Step contains no special properties other than the _general_ ones.
 number of elements is to be determined.
 
 This array must be created beforehand using the _Workflow Based Variables_ element or
-the Read from Excel File Action Step.
+any action step that creates or returns an array.
 
 Please note that the return array from the _Read from Excel File_ Action
 Step is only shown within the same transaction as a Pin Variable. If you
