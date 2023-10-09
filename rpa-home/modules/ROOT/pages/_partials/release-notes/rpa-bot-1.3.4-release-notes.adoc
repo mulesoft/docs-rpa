@@ -38,6 +38,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |Updated the Session Settings panel UI on the Bot Configuator. | W-13864395
 |All settings on the RPA Bot Configurator can now be configured as parameters to enable silent installation. | W-13789291
 |RPA Bot now detects Windows 19 and 22 when testing the settings in the Session Settings panel of the RPA Bot Configurator. | W-13873385
+|RPA Bot can now successfully handle changes on the host certificate, allowing RPA Bot to create secure sessions. |W-14248642
 |===
 
 // == See Also
