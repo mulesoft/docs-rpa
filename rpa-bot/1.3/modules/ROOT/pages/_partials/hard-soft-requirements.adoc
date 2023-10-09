@@ -33,8 +33,9 @@ include::rpa-home::partial$windows-versions-support.adoc[]
 * Dedicated Windows machine:
 ** Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. 
 ** Do not sign in to a computer where a bot with one licensed secure session is running a process.
-* Windows logins used for secure sessions have privileges to open a local RDP session on `127.0.0.2`.
-* The RPA Bot service runs under the _Local System account_ (by default, the setup configures RPA Bot to use this account).
+* Windows logins used for secure sessions must have privileges to open a local RDP session on `127.0.0.2`.
+*+ The RPA Bot service runs under the _Local System account_ (by default, the setup configures RPA Bot to use this account).
+** We recommend to create a dedicated account for the bot to log in to the session. 
 * If you want to run more than one (Windows 10, Windows 11) or two (Windows Server) Secure Sessions in parallel on a bot, make sure that a terminal server software with enough licensed users is installed on the computer where the bot is installed. The computer must have enough resources to execute several processes simultaneously (2 GB or more RAM per session). 
 
 === File System Permission Requirements

@@ -26,21 +26,21 @@ To use Secure Sessions you must ensure that all prerequisites are met and all re
 == Next Steps
 
 . In the documentation, check the System Requirements.
-. On the computer, where you want to run automations, install a bot or check the system data:
+. On the computer where you want to run automations and where the bot is installed, check the system data:
 +
 * Operating system
 * RAM
 * Terminal Server software
 * Login data for the bot
+* RPA Bot Configurator settings
 . In RPA Manager, enter the relevant data or a contact person in the description of the bot in the Bots view of the Bot Management module.
-.. If the bot should use Secure Sessions, enter the maximum number of Secure Sessions that the bot may use in parallel
+.. If the bot should use Secure Sessions and the RPA Bot Configurator does not contain this setting, set the maximum number of parallel Secure Sessions that the bot may use now.
 . When creating a run configuration in the Process Automation module of RPA Manager, keep the general considerations in mind. 
 
 == See Also
 
-* System requirements
-* Bot installation
-* Edit Bot
-* Assign Secure Sessions
-* Run Config - Execution
-* Run Config - Bots
+* xref:rpa-bot::hardware-software-requirements.adoc[RPA Bot - Hardware and Software Requirements]
+* xref:rpa-bot::configuration.adoc[RPA Bot - Configurator]
+* xref:rpa-manager::botmanagement-manage.adoc#edit-a-bot[RPA Manager - Edit a Bot]
+* xref:rpa-manager::botmanagement-manage.adoc#assign-sessions-to-bots[RPA Manager - Assign Sessions to Bots]
+* xref:rpa-manager::processautomation-deploy.adoc#production-configuration[RPA Manager - Create a Process Run Configuration]

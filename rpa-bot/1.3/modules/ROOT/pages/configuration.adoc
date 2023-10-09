@@ -16,7 +16,7 @@ After saving your changes, restart the RPA Bot Service for the changes to take e
 [[common-settings]]
 == Common Settings
 
-image:bot-configurator-common.png[The RPA Bot configurator application showing the Common settings panel, 50%, 50%]
+image:bot-configurator-common.png[The RPA Bot Configurator application showing the Common settings panel, 50%, 50%]
 
 * *RPA Bot ID*
 +
@@ -36,9 +36,15 @@ Time interval in milliseconds after which the bot connects to the RPA Manager to
 * *Check interval*
 +
 Time interval in milliseconds after which the bot connects to RPA Manager and checks for provided packages to collect (such as scheduling tasks or activities).
-* *Cleanup workflows on start*
+* *Cleanup activities on start*
 +
-Select this option to delete the workflows that are no longer assigned to a configuration but are still stored locally in the bot.
+Select this option to delete the activities that are no longer assigned to a configuration but are still stored locally in the bot.
+* *Cleanup runtime packages on next start*
++
+Select this option to delete the runtime packages that are no longer assigned to a configuration but are still stored locally in the bot.
+* *Maximum number of sessions*
++
+Set the maximum number of Secure Sessions that the bot can use. Select 0 to run the bot in Desktop Session mode.
 
 [[proxy-settings]]
 == Proxy Settings

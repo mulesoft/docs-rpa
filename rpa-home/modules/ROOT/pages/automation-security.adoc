@@ -1,3 +1,9 @@
 = Security
 
-...
+When you automate a process, bots handle sensitive data.
+
+To ensure data security, RPA supports the following features:
+
+* Encryption of all data
+* xref:automation-userrolesandpermissions.adoc[Tailored RPA permissions]
+* xref:automation-security-securesessions.adoc[Secure Sessions]
