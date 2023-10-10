@@ -55,17 +55,19 @@ Format: `+http://<Serveraddress>:<Port>+`, for example: `+http://myproxy.de:881+
 [[secure-session]]
 == Session Settings
 
-Enable the bot to use secure sessions by entering credentials the bot uses to login to the computer and to open a hidden session. If you don't add credentials here, the bot can only use a running desktop session.
+Enable the bot to use secure sessions by entering credentials the bot uses to log in to the computer and to open a hidden session. If you don't add credentials here, the bot can only use a running desktop session.
 
-image:bot-configurator-secure-session.png[The RPA Bot configurator application showing the Secure Session settings panel, 50%, 50%]
-
-=== General Session Settings
+image:bot-configurator-session-settings.png[The RPA Bot configurator application showing the Secure Session settings panel, 50%, 50%]
 
 * *Default Secure Session User*
 +
 If you want the bot to use Secure Sessions, enter the name of the user the bot uses to log in to the computer and to run a hidden session. If the environment of the computer the bot is installed on is embedded in a domain and you want to use a local user, write the user name as follows: `.\username`. For domain users, use the following form: `mydomain\username`.
 
-=== Special Settings for Secure Sessions
+== Secure Session Settings
+
+Here you can define how RPA Bot components (Robot, StSec and StSem) communicate among themselves. These settings are relevant only for Secure Sessions. You can choose the Named Pipes protocol or TCP. Named Pipes is selected by default because it is a simple communication method. In some cases, when using TCP, the firewall can block the connection even though it is an exclusive internal computer process.
+
+image:bot-configurator-secure-session.png[The RPA Bot configurator application showing the Secure Session Settings panel, 50%, 50%]
 
 * *Activate certificate based login on SSL enabled terminal servers*
 +
@@ -91,6 +93,15 @@ Select this option to use the CredSSP for authentication.
 If the group policy _Always prompt for password upon connection_ is enabled, the password must be entered twice when logging into the RDP session. This might prevent the Secure Session from running smoothly, especially on Windows 2010 and Windows Server 2016. If this is the case, activate this option so that the credentials can be entered correctly in the second query.
 +
 In this context, ensure that you have selected the option *Allow connections only from computers running Remote Desktop with Network Level Authentication (recommended)* in the Windows system properties.
+* *Session connection timeout*
++
+With an established connection, the session connection timeout defines the time that a call can remain unanswered before the bot cancels the call.
+* *Retries in timeout*
++
+Defines how often the bot tries to reach a started StSec via session connection.
+* *Seconds to wait between each try*
++
+The wait time specifies how long the bot waits between every individual attempt.
 
 === Test Settings
 
@@ -102,24 +113,6 @@ If you click *TEST*, the application starts a non-operational Secure Session in 
 
 [NOTE]
 On single session systems, such as Windows 10 and 11, a message will show that the test may fail if no further sessions are available.
-
-== Connection Settings
-
-image:bot-configurator-connection-settings.png[The RPA Bot configurator application showing the Connection settings panel, 50%, 50%]
-
-* *Connection settings*
-+
-Here you can define how RPA Bot components (Robot, StSec and StSem) communicate among themselves. These settings are relevant only for Secure Sessions. You can choose the Named Pipes protocol or TCP. Named Pipes is selected by default because it is a simple communication method. In some cases, when using TCP, the firewall can block the connection even though it is an exclusive internal computer process.
-
-* *Session connection timeout*
-+
-With an established connection, the session connection timeout defines the time that a call can remain unanswered before the bot cancels the call.
-* *Retries in timeout*
-+
-Defines how often the bot tries to reach a started StSec via session connection.
-* *Seconds to wait between each try*
-+
-The wait time specifies how long the bot waits between every individual attempt.
 
 == Session Monitoring
 
