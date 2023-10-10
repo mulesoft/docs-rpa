@@ -7,7 +7,7 @@ The RPA Bot Configuration tool has the following configuration panels:
 * <<common-settings, Common>>
 * <<proxy-settings, Proxy>>
 * <<session-settings, Session Settings>>
-* <<secure-sessions, Secure Session Settings>>
+* <<secure-session, Secure Session Settings>>
 * <<session-monitoring, Session Monitoring>>
 
 [TIP]
