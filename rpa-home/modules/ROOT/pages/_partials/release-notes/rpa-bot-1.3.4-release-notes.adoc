@@ -35,7 +35,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |The RPA Bot Configurator *Test Connection* button no longer ignores proxy settings. | W-13854428
 |The TraceData Bridge Activity Parameter now has a data size limitation of 64,000 characters. | W-13863956
 |The Process Streaming page now shows all RPA Bot sessions that have been deployed instead of showing only the first session. | W-13485686
-|Updated the Session Settings panel UI on the Bot Configuator. | W-13864395
+|Updated the Session Settings panel UI on the RPA Bot Configuator. | W-13864395
 |All settings on the RPA Bot Configurator can now be configured as parameters to enable silent installation. | W-13789291
 |RPA Bot now detects Windows 19 and 22 when testing the settings in the Session Settings panel of the RPA Bot Configurator. | W-13873385
 |RPA Bot can now successfully handle changes on the host certificate, allowing RPA Bot to create secure sessions. |W-14248642
