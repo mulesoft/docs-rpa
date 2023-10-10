@@ -92,6 +92,20 @@ A path parameter that uniquely identifies the resource.
 +
 The Xpath expression to the property of the response object. For example, `/root/access_token/text()`.
 
+* *Timing* 
+
+** *Timeout*
++
+The time in seconds the activity waits.
+
++
+Note that you must disable *Use general timeout* for the custom timeout to work. 
+
+** *Use general timeout*
++
+Select this option to use the timeout value configured in the project settings. By default, it is `45` seconds.  
+
+
 == Inbound Variables
 
 * *Base Url*
@@ -149,6 +163,7 @@ In *Settings*, you specify:
 * *JsonPath Expression*: The path to the property of the response object.
 +
 Use the xref:building-jsonpath-expressions#jsonpath-builder[JsonPath expression Builder] to simplify the process of creating the JsonPath expression. 
+* *Timeout (s)*: The time the activity waits. By default, it is `30` seconds. Disable *Use general timeout* and specify a number to set a custom timeout in seconds.  
 
 === Parameters 
 
