@@ -2,6 +2,78 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[october-05-2023]]
+== October 5, 2023
+
+Changes made in this release were reverted. 
+////
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* The *Cumulative credits used* column is now removed from the usage summary.
+* Global variable of type Alphanumeric is no longer limited to 200 characters.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| The *Description* column of the evaluation criterion no longer disappears randomly. | W-14037661
+| Getting the status of an execution through the RPA API no longer throws an error when the `executionId` contains special characters. | W-14059317
+| The Japanese translation is now available for the deployment map. | W-14168737
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+////
+
+[[september-25-2023]]
+== September 25, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* You can now open the Activity library in RPA Manager.
+* Process run results now show the execution ID of invokable and scheduled processes.
+* Error dialogs now include a request ID to improve troubleshooting.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| You can now link Global variables in test plans in the test phase. | W-13980494
+| Activity parameters now show properly in claimed User tasks when the User task is the first activity of a process. | W-13999038
+| Activity parameters in a test plan in the test phase no longer show an incorrect value. | W-14008168
+| Starting an automation from a process evaluation in the menu _My Backlog_ no longer shows an error. | W-14013519
+| Deleted users and teams in Anypoint Access Management no longer show in RPA Manager. | W-13989445
+| Process run statistics in Bot Management now show data only for the logged in user. | W-14026825
+| Rejected process evaluations now show the correct state. | W-14048993
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
 [[august-23-2023]]
 == August 23, 2023
 

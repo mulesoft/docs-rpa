@@ -18,6 +18,15 @@ After your organization is migrated to Anypoint Platform:
 * RPA Manager deprecates roles and user groups and starts using teams from Anypoint Platform instead. 
 * RPA Manager supports using Connected Apps to connect with Anypoint Platform, which provides a more secure and improved authentication mechanism than API keys. 
 * RPA Manager supports deleting users who have assigned processes and reassigning those processes to other users or teams. 
+* For non-federated orgs, MuleSoft automatically creates teams in Anypoint Platform to match the existing roles and user groups in RPA Manager: 
++
+Team names are restricted to alphanumeric characters, hyphens, underscores, and spaces. If your role or user group contains unsupported characters, these characters are omitted when creating the new team name.
++
+** Roles migrate to teams using the following naming convention: `RPA Role - <Existing_Role_Name>`.
++
+These new teams have the same Anypoint permissions for RPA privileges that the role had in RPA Manager. 
+** User Groups migrate to teams using the following naming convention: `RPA User Group - <Existing_User_Group_Name>`.
+** Users assigned to roles and user groups in RPA Manager migrate to the corresponding team in Anypoint Platform.
 
 [[pre-migration]]
 == Pre-migration Steps
@@ -38,5 +47,6 @@ If your Anypoint organization does not use an external IdP, MuleSoft matches RPA
 ** If the RPA user has multiple Anypoint accounts with the same email address, Anypoint Platform prompts the user to select the account to link when logging in.
 ** If the RPA user does not already have an Anypoint user with the same email, MuleSoft sends an invite automatically before the migration so the user can join Anypoint Platform. The user must configure 2FA for their new Anypoint Platform account. 
 
+== See Also 
 
-//== See Also 
+* xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[]

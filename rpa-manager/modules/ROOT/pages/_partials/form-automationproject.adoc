@@ -11,7 +11,7 @@ The process team is a group of employees who work together on execution of the p
 ** [[projectdata-category]] *Category*:
 +
 A category describes the environment of a process in a few keywords. Choose a category from the list.
-** *Use Process Board*:
+** [[projectdata-useprocessboard]] *Use Process Board*:
 +
 Select this checkbox to use a process board. Process boards contain administrative process tasks. The tasks transition from *To-do* via *In progress* to *Completed*.
 +

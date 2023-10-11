@@ -88,14 +88,15 @@ The bot has been configured for a desktop session. It cannot use secure sessions
 == Before You Begin
 
 * At least one bot must be installed on a separate computer.
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Bot Management* module and view the bots
-|Bot Management Open
+|RPA Bots Manager, RPA Operations Viewer, RPA Operations Manager, RPA Administrator
+|Robot Management Open
 
 |===
 

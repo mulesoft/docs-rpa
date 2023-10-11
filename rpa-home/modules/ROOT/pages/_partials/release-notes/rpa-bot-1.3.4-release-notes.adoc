@@ -1,0 +1,48 @@
+= RPA Bot 1.3.4 Release Notes
+
+RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== October 10, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* RPA Bot now enables DEBUG level logging for StSec, StSem, and FreeRDP when it gets an EnableDebugLogLevelTask.
+* Bot UUID is added to Bot logging System infos.
+* RPA Bot now logs scheduler information when it goes into suspended status from the scheduler.
+* StSec RunID creation is moved from StSec to RPA Bot so that RPA Bot now creates and logs StSec RunID and passes it to the StSec.
+* FreeRDP logging level WARN is now enabled by default.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.8 and later
+|RPA Recorder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+|The obsolete Microsoft Visual C++ 2010 Redistributable Package has been removed from setup. | W-13079533
+|The RPA Bot Configurator *Test Connection* button no longer ignores proxy settings. | W-13854428
+|The TraceData Bridge Activity Parameter now has a data size limitation of 64,000 characters. | W-13863956
+|The Process Streaming page now shows all RPA Bot sessions that have been deployed instead of showing only the first session. | W-13485686
+|The Session Settings panel UI on the RPA Bot Configuator is updated. | W-13864395
+|All settings on the RPA Bot Configurator can now be configured as parameters to enable silent installation. | W-13789291
+|RPA Bot now detects Windows 19 and 22 when testing the settings in the Session Settings panel of the RPA Bot Configurator. | W-13873385
+|RPA Bot can now successfully handle changes on the host certificate, allowing RPA Bot to create secure sessions. |W-14248642
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
