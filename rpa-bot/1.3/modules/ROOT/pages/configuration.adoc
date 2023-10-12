@@ -24,9 +24,6 @@ ID generated during the installation process of RPA Bot, which identifies the bo
 * *RPA Manager to connect*
 +
 The URL address of the RPA Manager instance the bot connects to. There is no default setting.
-* *Use HTTPS as protocol layer*
-+
-Specifies whether the bot connects with RPA Manager via HTTP or HTTPS.
 * *API Key*
 +
 The API key entered during the installation of the robot. You can change this setting.
@@ -44,7 +41,7 @@ Select this option to delete the activities that are no longer assigned to a con
 Select this option to delete the runtime packages that are no longer assigned to a configuration but are still stored locally in the bot.
 * *Maximum number of sessions*
 +
-Set the maximum number of Secure Sessions that the bot can use. Select 0 to run the bot in Desktop Session mode.
+Set the maximum number of Secure Sessions that the bot can use. Select 0 to run the bot in Desktop Session mode. Enabling this setting overwrites the same setting in RPA Manager Bot Management.
 
 [[proxy-settings]]
 == Proxy Settings

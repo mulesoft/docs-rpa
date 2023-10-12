@@ -16,7 +16,7 @@ After saving your changes, restart the RPA Bot Service for the changes to take e
 [[common-settings]]
 == Common Settings
 
-image:bot-configurator-common.png[The RPA Bot configurator application showing the Common settings panel, 50%, 50%]
+image:bot-configurator-common.png[The RPA Bot Configurator application showing the Common settings panel, 50%, 50%]
 
 * *RPA Bot ID*
 +
@@ -24,21 +24,27 @@ ID generated during the installation process of RPA Bot, which identifies the bo
 * *RPA Manager to connect*
 +
 The URL address of the RPA Manager instance the bot connects to. There is no default setting.
-* *Use HTTPS as protocol layer*
-+
-Specifies whether the bot connects with RPA Manager via HTTP or HTTPS.
 * *API Key*
 +
 The API key entered during the installation of the robot. You can change this setting.
+* *TEST CONNECTION*
++
+Click *TEST CONNECTION* to verify that the bot can establish a connection to RPA Manager.
 * *Alive interval*
 +
 Time interval in milliseconds after which the bot connects to the RPA Manager to show that it is still alive.
 * *Check interval*
 +
 Time interval in milliseconds after which the bot connects to RPA Manager and checks for provided packages to collect (such as scheduling tasks or activities).
-* *Cleanup workflows on start*
+* *Cleanup activities on start*
 +
-Select this option to delete the workflows that are no longer assigned to a configuration but are still stored locally in the bot.
+Select this option to delete the activities that are no longer assigned to a configuration but are still stored locally in the bot.
+* *Cleanup runtime packages on next start*
++
+Select this option to delete the runtime packages that are no longer assigned to a configuration but are still stored locally in the bot.
+* *Maximum number of sessions*
++
+Set the maximum number of Secure Sessions that the bot can use. Select 0 to run the bot in Desktop Session mode. Enabling this setting overwrites the same setting in RPA Manager Bot Management.
 
 [[proxy-settings]]
 == Proxy Settings
@@ -55,13 +61,16 @@ Format: `+http://<Serveraddress>:<Port>+`, for example: `+http://myproxy.de:881+
 [[session-settings]]
 == Session Settings
 
-Enable the bot to use secure sessions by entering credentials the bot uses to log in to the computer and to open a hidden session. If you don't add credentials here, the bot can only use a running desktop session.
+If you want to have a default user account, that the RPA Bot uses to log in to the session on the computer, where the bot runs processes, enter the credentials here. When users create a process run configuration in RPA Manager, they can choose this user or specify another there.
 
 image:bot-configurator-session-settings.png[The RPA Bot configurator application showing the Secure Session settings panel, 50%, 50%]
 
-* *Default Secure Session User*
+* *Default Session User*
 +
-If you want the bot to use Secure Sessions, enter the name of the user the bot uses to log in to the computer and to run a hidden session. If the environment of the computer the bot is installed on is embedded in a domain and you want to use a local user, write the user name as follows: `.\username`. For domain users, use the following form: `mydomain\username`.
+If you want the bot to have a default user to log in to the session for the execution of a process, enter the credentials here. If the environment of the computer the bot is installed on is embedded in a domain and you want to use a local user, write the user name as follows: `.\username`. For domain users, use the following form: `mydomain\username`.
+* *Send images for process streaming*
++
+Enable this checkbox to transfer screenshots used for process streaming to RPA Manager. Disable the checkbox if not everyone on the process team is allowed to view the processed data. For the Process Streaming to work, the usage of the Windows Taskbar must be enabled in the process run configuration, too.
 
 [[secure-session]]
 == Secure Session Settings
