@@ -8,12 +8,9 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* The *Cumulative credits used* column is now removed from the usage summary.
+* The *Cumulated Used Credits* column is now removed from the usage summary.
 * Global variable of type Alphanumeric is no longer limited to 200 characters.
-* Time limited debug logging for RPA Bots. (W-12494462) (new)
-* The column _Cumulated Used Credits_ has been removed from the _Usage Summary_ report. (W-14084295) (new)
-* Global variables of type _Alphanumeric_ has no longer a length limit. (W-14121937) (new)
-// Hi Doc team, we created a story for the removal of the length limit of global variables of type 'alphanumeric'. We can think about moving this to the fixed issues section.
+* You can now set time-limited debug logging for RPA Bots.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -24,8 +21,6 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | The *Description* column of the evaluation criterion no longer disappears randomly. | W-14037661
 | Getting the status of an execution through the RPA API no longer throws an error when the `executionId` contains special characters. | W-14059317
 | The Japanese translation is now available for the deployment map. | W-14168737
-| The description column of benefits and qualifiers is now visible on the _Evaluation Criteria_ page. | W-14037661 (new)
-| The _Deployment Map_ now fully supports the Japanese language. | W-14168737 (new)
 |===
 
 // == Known Issues
