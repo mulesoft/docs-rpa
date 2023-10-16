@@ -10,6 +10,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * The CefSharp.Common library is upgraded to address reported security vulnerabilities.
+* The Tomcat dependency is upgraded to version 9.0.82 to address reported security vulnerabilities.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
@@ -30,6 +31,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 
 | Read Mail no longer throws error `Read mail failed: Id value cannot be empty` when emails contain an empty attachment `ContentId`. | W-14283193 
 | The CefSharp.Common library is upgraded to address reported security vulnerabilities. | W-14184190
+| The Tomcat dependency is upgraded to version 9.0.82 to address reported security vulnerabilities. | W-14293155
 
 |===
 
