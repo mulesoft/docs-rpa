@@ -9,7 +9,7 @@ Combine this Action Step with REST Call to further refine the resulting JSON out
 
 * *JsonPath Expression*
 +
-The JsonPath expression. For example, `$.access_token`.
+The JsonPath expression. For example, `$.access_token`. JsonPath expressions have a limit of 500 characters. 
 
 == Inbound Variables
 

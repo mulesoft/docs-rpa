@@ -146,7 +146,7 @@ In *Settings*, you specify:
 * *Base Url*: The Host and Base Path. 
 * *Url Extension*: A unique identifier for the resource. You can type in the URL or define it via the pin variable. 
 * *Parse Type*: The method for parsing the result. Available options are *JsonPath* and *XPath*.
-* *JsonPath Expression*: The path to the property of the response object.
+* *JsonPath Expression*: The path to the property of the response object. JsonPath expressions have a limit of 500 characters. 
 +
 Use the xref:xref:building-jsonpath-expressions.adoc#jsonpath-builder[JsonPath expression Builder] to simplify the process of creating the JsonPath expression. 
 
