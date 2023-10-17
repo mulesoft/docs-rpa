@@ -20,7 +20,8 @@ This array must be created beforehand using the _Workflow Based Variables_ eleme
 any action step that creates or returns an array.
 
 The return array from the _Read from Excel File_ Action
-Step is only shown within the same transaction as a Pin Variable. To use the _Array Count_ in a later transaction, copy the return array into an array created beforehand in the Workflow Based Variables (see _Set_Array_Variable_).
+Step is shown only within the same transaction as a Pin Variable. To use the _Array Count_ in a later transaction, copy the return array into an array created beforehand in the Workflow Based Variables (see _Set_Array_Variable_).
+
 
 == Outbound Variables
 
