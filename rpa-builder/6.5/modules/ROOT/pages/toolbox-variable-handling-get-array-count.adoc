@@ -1,3 +1,5 @@
+
+
 = Get Array Count
 
 The _Get Array Count_ Action Step returns the number of elements in an array.
@@ -18,7 +20,8 @@ This array must be created beforehand using the _Workflow Based Variables_ eleme
 any action step that creates or returns an array.
 
 The return array from the _Read from Excel File_ Action
-Step is only shown within the same transaction as a Pin Variable. To use the _Array Count_ in a later transaction, copy the return array into an array created beforehand in the Workflow Based Variables (see _Set_Array_Variable_).
+Step is shown only within the same transaction as a Pin Variable. To use the _Array Count_ in a later transaction, copy the return array into an array created beforehand in the Workflow Based Variables (see _Set_Array_Variable_).
+
 
 == Outbound Variables
 
@@ -28,7 +31,8 @@ Step is only shown within the same transaction as a Pin Variable. To use the _Ar
 
 //image:media\image1.png[Ein Bild, das Text enthält. Automatiscgenerierte Beschreibung,width=381,height=226]
 
-All arrays which are available within the Workflow show in the drop-down list next to _Array to get count of_.
+All arrays that are available within the Workflow are shown in the drop-down list next to _Array to get count of_.
+
 
 Ensure the array is correctly populated. An empty array returns an _Array Count_ of 0.
 
@@ -39,7 +43,8 @@ which _Services_ have been performed on a certain vehicle.
 
 These services are read from an array and checked off on a checklist.
 
-To test the Workflow, the _Workflow Based Variables_ were
+To test the Workflow, the _Workflow Based Variables_ are
+
 populated with sample values. In productive operation these values are
 then overwritten with values from the _Car Service App_.
 
