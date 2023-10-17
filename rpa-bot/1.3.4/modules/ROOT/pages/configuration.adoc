@@ -143,4 +143,6 @@ Sends analysis packages if the Activity Workflow terminates with OK.
 
 == See Also
 
-* xref:rpa-manager::botmanagement-overview.adoc#getting-started[Bot Management]
+* xref:rpa-manager::botmanagement-overview.adoc#getting-started[RPA Manager - Bot Management]
+* xref:rpa-manager::processautomation-deploy.adoc[RPA Manager - Deploying Automations]
+* xref:rpa-manager::processmonitoring-stream.adoc[RPA Manager - Streaming Processes]

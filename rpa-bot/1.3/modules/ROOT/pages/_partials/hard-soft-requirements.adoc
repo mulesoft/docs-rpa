@@ -30,6 +30,14 @@ include::rpa-home::partial$windows-versions-support.adoc[]
 
 |===
 
+=== Recommended System Settings
+
+* Display resolution: 
+** Minimum: 1280 x 1080
+** Recommended: Full HD 1080p (1920 × 1080) or higher
+* Scaling of text and other items on the screen: 100 %
+* _Clear Type_: turned off
+
 === Requirements for the Secure Session Technology
 
 Secure Sessions are hidden Desktop sessions. They run in the background and only the bot can access them. An additional advantage of using Secure Sessions is, that the bot can multiply itsself to run several process instances in parallel.
