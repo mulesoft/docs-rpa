@@ -1,5 +1,3 @@
-
-
 = Copy File
 
 This _Action Step_ copies a file from one directory to another. If the
@@ -11,6 +9,9 @@ _Workflow_.
 
 *File Operation Settings:*
 
+* *Create directory if it does not exist* If this option is enabled,
+Copy File creates either the specified relative directory or the
+whole specified path, if this does not already exist.
 * *Destination directory* Enter the path to the target directory where the copied file
 is to be saved here. You can specify an absolute or relative path. If a
 relative path is used, then the path relates to the _Base Path_
@@ -19,8 +20,9 @@ variable.
 where you enter the path to the directory where the file to be copied
 from. You can specify an absolute or relative path. If a relative path
 is used, then the path relates to the _Base Path_ variable.
-* *File Name* Enter the name of
-the file that is to be copied here.
+* *File Name* The name of the file to copy.
++
+This field does not support placeholders. For further information, see xref:toolbox-file-operations.adoc#invalid-characters[Path / file name / invalid characters].
 * *New File Name* Enter a new name for the file that is to be inserted.
 This option will only be reported if the option *Use different file
 name* has been selected.
