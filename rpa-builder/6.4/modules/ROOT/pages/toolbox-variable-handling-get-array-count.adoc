@@ -43,7 +43,8 @@ which _Services_ have been performed on a certain vehicle.
 
 These services are read from an array and checked off on a checklist.
 
-To test the Workflow, the _Workflow Based Variables_ were
+To test the Workflow, the _Workflow Based Variables_ are
+
 populated with sample values. In productive operation these values are
 then overwritten with values from the _Car Service App_.
 
