@@ -1,5 +1,6 @@
 = RPA Manager Overview
-:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). After your organization migrates to Anypoint Platform, the Settings module replaces the Organization Management module and the User Management module is removed.
+
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
 
 RPA Manager is the cloud-based control plane for the automations that is integrated into Anypoint Platform.
 
@@ -17,7 +18,7 @@ Ensure that access to this URL is possible from your organization.
 
 RPA Builder, RPA Bot, and RPA Recorder use this URL to connect to your RPA Manager instance.
 
-== IAM Migration
+== Anypoint Platform Migration
 
 MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). 
 
