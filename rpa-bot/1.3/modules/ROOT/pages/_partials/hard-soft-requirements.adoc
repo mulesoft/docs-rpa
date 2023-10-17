@@ -30,7 +30,7 @@ include::rpa-home::partial$windows-versions-support.adoc[]
 
 |===
 
-=== Recommended System Settings
+=== System Settings
 
 * Display resolution: 
 ** Minimum: 1280 x 1080
