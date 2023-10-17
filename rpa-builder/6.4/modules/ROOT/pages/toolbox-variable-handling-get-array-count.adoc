@@ -31,7 +31,8 @@ Step is shown only within the same transaction as a Pin Variable. To use the _Ar
 
 //image:media\image1.png[Ein Bild, das Text enthält. Automatiscgenerierte Beschreibung,width=381,height=226]
 
-All arrays which are available within the Workflow show in the drop-down list next to _Array to get count of_.
+All arrays that are available within the Workflow are shown in the drop-down list next to _Array to get count of_.
+
 
 Ensure the array is correctly populated. An empty array returns an _Array Count_ of 0.
 
