@@ -1,4 +1,4 @@
-= Anypoint Platform Migration Overview
+= Anypoint Platform Integration Overview
 
 On July 26th, 2023 MuleSoft RPA integrated with Anypoint Platform to unify the login experience and support external identity providers (IdP). All new customers that bought the MuleSoft Automation bundle after this date are ready to take advantage of all the new features and improvements from the integration. The migration process does not affect new customers.
 
@@ -11,7 +11,7 @@ For additional questions, contact us at rpa_migration_support@salesforce.com.
 
 == Summary of Changes
 
-After your organization is migrated to Anypoint Platform:  
+After your organization is integrated into Anypoint Platform:  
 
 * Users log in to RPA Manager, RPA Builder, and RPA Recorder using their Anypoint Platform account. 
 * Administrators configure RPA users, teams, and permissions using Access Management instead of the *User Management* module in RPA Manager.
