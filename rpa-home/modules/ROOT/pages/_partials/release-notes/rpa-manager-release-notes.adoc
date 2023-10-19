@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Now you can copy an already copied process. | W-14194459
+| Making a copy of a copied process no longer causes an error.  | W-14194459
 | The submenu _Bot Workflow Library_ below the menu _Process Automation_ will now be show consistently. | W-14313721
 |===
 
