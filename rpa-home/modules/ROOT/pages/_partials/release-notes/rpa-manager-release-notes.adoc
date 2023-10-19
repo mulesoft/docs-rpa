@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Making a copy of a copied process no longer causes an error.  | W-14194459
-| The submenu _Bot Workflow Library_ below the menu _Process Automation_ will now be show consistently. | W-14313721
+| The *Bot Workflow Library* menu inside the *Process Automation* module no longer stops showing in the UI. | W-14313721
 |===
 
 // == Known Issues
