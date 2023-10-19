@@ -29,7 +29,7 @@ If you are unsure whether your org is integrated, open the *Home* module in RPA 
 * If you are using an RPA account for login, there is a quick link to Composer:
 + 
 image:rpa-manager-home-premigration.png[Screenshot of the Composer quick link panel in the Home module of RPA Manager,25%,25%]
-* If you are using an Anypoint account for login,, there is a quick link to Access Management:
+* If you are using an Anypoint account for login, there is a quick link to Access Management:
 +
 image:rpa-manager-home-postmigration.png[Screenshot of the Composer quick link panel in the Home module of RPA Manager,25%,25%]
 
