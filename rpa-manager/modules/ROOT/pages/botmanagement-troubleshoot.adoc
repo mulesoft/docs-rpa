@@ -80,7 +80,7 @@ An IT administrator can configure the content of the package in the RPA Bot Conf
 
 == Turn On Debug Logging
 
-Debug Logging is supported by RPA Bots with version 1.3.3 and later.
+Debug Logging is supported by RPA Bots with version 1.3.4 and later.
 
 If a process execution fails when a bot runs correctly, turn on debug logging for at least the time span of the next process run to get help detecting the cause.
 

@@ -1,5 +1,7 @@
 = Reassigning RPA Assets
 
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
 If an RPA user or team is deleted or disabled in Access Management, the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module shows RPA assets that were assigned to this user or team.
 
 All users with the *Reassign Users* or *RPA Administrator* permission get an email when an RPA asset is orphaned because its last assigned user is deleted.

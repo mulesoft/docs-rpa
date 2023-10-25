@@ -1,5 +1,6 @@
 = Approving a Process for Automation
-:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). After your organization migrates to Anypoint Platform, user groups are replaced by teams and the Center of Excellence flag is deprecated. Ensure that the team you refer a process to has the required RPA permissions for automating the process. 
+
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
 
 You approve an evaluated process candidate to refer it to a project manager or a center of excellence for automation.
 
@@ -23,6 +24,8 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 * You can only approve evaluated process candidates.
 * You can only refer processes to users assigned the `Project Management` privilege or user groups assigned as `Center of Excellence`. 
++
+If you use an Anypoint account to login to RPA Manager, user groups are replaced by teams and the Center of Excellence flag is deprecated. Ensure that the team you refer a process to has the required RPA permissions for automating the process. 
 
 == Select a Process for Approval
 
