@@ -25,15 +25,12 @@ Use *Proxy Settings* to configure a specific proxy to connect with Anypoint Plat
 By default, *Use System Proxy Settings* is enabled so that RPA Builder uses the same proxy configuration your system uses to access internet.
 . Log in using your Anypoint Platform account. 
 +
-image:anypoint-rpa-user-log-in.png[The Anypoint Platform login screen prompt to configure the login credentials, 35%, 35%]
+image:anypoint-login.png[The Anypoint Platform login screen prompt to configure the login credentials]
 
 After you log in, RPA Builder remains connected using the specified Anypoint Platform credentials. 
 
-To connect to a different RPA Manager instance or use other login credentials:
+include::rpa-home::partial$anypoint-sso.adoc[leveloffset=+2]
 
-. In the top menu bar, navigate to *Options > Account*.
-. Click *Sign out*.
-. Provide the new RPA Manager address and login credentials. 
 
 [[connect-with-rpa-manager]]
 == Connect RPA Builder with RPA Manager (Legacy)
@@ -63,6 +60,14 @@ By default, *Use System Proxy Settings* is enabled so that RPA Builder uses the 
 +
 If the login attempt fails, verify the provided details and try again.
 . Click *OK*.
+
+== Changing the Log-in Credentials
+
+To connect to a different RPA Manager instance or change the configured login credentials:
+
+. In the RPA Builder menu bar, navigate to *Options > Account*.
+. Click *Sign out*.
+. Provide the new RPA Manager address and login credentials. 
 
 == See Also
 
