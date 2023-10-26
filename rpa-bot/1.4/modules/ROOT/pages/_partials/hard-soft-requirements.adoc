@@ -1,0 +1,72 @@
+== Hardware Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a]
+|===
+| Minimum | Recommended
+| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
+| 8 GB of RAM | 16 GB of RAM
+| 30 GB of disk space | 30 GB (SSD) of disk space
+|===
+
+=== Unsupported Hardware Configurations
+
+* Notebooks with Intel Graphics 520 and 530
+
+== Software Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+ a|
+* 4.5
+* 4.7.2
+| Operating System
+ a|
+
+include::rpa-home::partial$windows-versions-support.adoc[]
+
+|===
+
+=== Requirements for Secure Session Technology
+
+* Windows logins used for secure sessions have privileges to open a local RDP session on `127.0.0.2`.
+* 64-bit Operating System.
+* Dedicated Windows Server machine with enough resources to execute several processes simultaneously (2 GB or more RAM per session)
+* The RPA Bot service runs under the _Local System account_ (by default, the setup configures RPA Bot to use this account).
+
+=== File System Permission Requirements
+
+RPA Bot needs full write access to some folders that are critical to its functioning. To avoid issues during the setup process and subsequent RPA Bot executions, ensure that:  
+
+* You install RPA Bot as an administrator
++
+If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Bot by running the setup file as an administrator. 
+
+* RPA Bot has full write access to the following folders and any subfolders and files inside them: 
++
+** `C:\Program Files\Mulesoft\RPABot`
+** `C:\ProgramData\Mulesoft\RPABot`
+
+* Your environment is not blocking the execution of any RPA process 
++
+The operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Bot home directory and its subfolders are allowed to run. 
+
+=== Internet Route Requirements
+
+To communicate with RPA Manager, RPA Bot requires you to enter the following Internet route in the *RPA Manager to connect* field on the RPA Bot Configurator pop-up:
+
+* `+https://[your subdomain].rpa.mulesoft.com+`
+
+In addition, it is also necessary to open the internally used URL `+https://*.cloudfront.net+`, which is done typically by your network or security team.
+
+See xref:rpa-bot::configuration#common-settings[Configuring RPA Bot] for more information about the RPA Bot Configurator pop-up.
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
+|===
