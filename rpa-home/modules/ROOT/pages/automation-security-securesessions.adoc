@@ -22,7 +22,7 @@ To use Secure Sessions you must ensure that all prerequisites are met and all re
 ** The specified user must be logged in to this session to deploy a run configuration. 
 ** Do not close or minimize the console session while the bot executes a process.
 * Secure Sessions:
-** The higher the number of secure sessions the lower the performance of the bot. Too much load can cause process disruptions or data loss. Check the system data and the system requirements documentation to determine the maximum number of sessions that the bot can safely execute in parallel.
+** The higher the number of secure sessions the lower the performance of the bot. Too much load can cause process slowdown or disruptions. Check the system data and the system requirements documentation to determine the maximum number of sessions that the bot can safely execute in parallel.
 ** Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. 
 ** Do not sign in as the specified user to a computer where a bot with one licensed secure session is running a process.
 

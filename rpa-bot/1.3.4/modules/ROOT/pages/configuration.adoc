@@ -41,10 +41,10 @@ Time interval in milliseconds after which the bot connects to RPA Manager and ch
 Select this option to delete the activities that are no longer assigned to a configuration but are still stored locally in the bot.
 * *Cleanup runtime packages on next start*
 +
-Select this option to delete the runtime packages that are no longer assigned to a configuration but are still stored locally in the bot.
+Select this option to delete all runtime packages that are stored locally in the bot. The process activities retrieve the required runtime packages from the RPA Manager on the next run. After the runtime packages are deleted, the Bot Configurator deselects this setting.
 * *Maximum number of sessions*
 +
-Set the maximum number of Secure Sessions that the bot can use. Select 0 to run the bot in Desktop Session mode. Enabling this setting overwrites the same setting in RPA Manager Bot Management.
+Set the maximum number of Secure Sessions that the bot can use. Enabling this setting, limits but not overwrites the same setting in RPA Manager Bot Management.
 
 [[proxy-settings]]
 == Proxy Settings
