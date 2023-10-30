@@ -75,8 +75,6 @@ Enable this checkbox to transfer screenshots used for process streaming to RPA M
 [[secure-session]]
 == Secure Session Settings
 
-Here you can define how RPA Bot components (Robot, StSec and StSem) communicate among themselves. These settings are relevant only for Secure Sessions. You can choose the Named Pipes protocol or TCP. Named Pipes is selected by default because it is a simple communication method. In some cases, when using TCP, the firewall can block the connection even though it is an exclusive internal computer process.
-
 image:bot-configurator-secure-session.png[The RPA Bot configurator application showing the Secure Session Settings panel, 50%, 50%]
 
 * *Activate certificate based login on SSL enabled terminal servers*
@@ -123,6 +121,7 @@ If you click *TEST*, the application starts a non-operational Secure Session in 
 
 [NOTE]
 On single session systems, such as Windows 10 and 11, a message will show that the test may fail if no further sessions are available.
+
 == Session Monitoring
 
 image:bot-configurator-session-monitoring.png[The RPA Bot configurator application showing the Session Monitoring settings panel, 50%, 50%]
