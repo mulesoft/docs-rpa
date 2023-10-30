@@ -2,10 +2,67 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[october-19-2023]]
+== October 19, 2023
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| Making a copy of a copied process no longer causes an error.  | W-14194459
+| The *Bot Workflow Library* menu inside the *Process Automation* module no longer stops showing in the UI. | W-14313721
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+[[october-12-2023]]
+== October 12, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* The *Cumulated Used Credits* column is now removed from the usage summary.
+* Global variable of type Alphanumeric is no longer limited to 200 characters.
+* You can now set time-limited debug logging for RPA Bots.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| The *Description* column of the evaluation criterion no longer disappears randomly. | W-14037661
+| Getting the status of an execution through the RPA API no longer throws an error when the `executionId` contains special characters. | W-14059317
+| The Japanese translation is now available for the deployment map. | W-14168737
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| Editing a process while you copy it causes RPA Builder to fail to import the copied process. | Before making any changes to the original process, import the copy in RPA Builder and then upload the copy to RPA Manager. After uploading the copy to RPA Manager, you can modify the original process and the copy without experiencing any issues. | W-12472442 / W-11954705
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
 [[october-05-2023]]
 == October 5, 2023
 
-Changes made in this release were reverted. 
+Changes made in this release were reverted.
 ////
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
