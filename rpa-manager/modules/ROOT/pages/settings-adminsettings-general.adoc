@@ -1,5 +1,8 @@
 = Configure General Settings
-:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). After your organization migrates to Anypoint Platform, the Settings module replaces the Organization Management module.
+
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
+If you use an RPA account to login to RPA Manager, refer to the xref:organizationmanagement-settings.adoc#configure-currency-and-decimal-sign[*Organization Management* documentation].
 
 The *General* tab in the *Admin Settings* view enables you to configure the currency and decimal sign to show in RPA Manager modules.
 

@@ -12,6 +12,9 @@ The label for the name of the checkpoint in the output JSON. Maximum length: 50 
 * *Reached Label* 
 +
 The label for the reached status of the checkpoint in the output JSON. Maximum length: 50 characters. 
+* *Touch Time Label*
++
+The label for the touch time in the output JSON. The touch time is a timestamp from the last time the checkpoint was touched. Maximum length: 50 characters. 
 * *Value Label* 
 +
 The label for the value of the checkpoint in the output JSON. Maximum length: 50 characters. 
@@ -43,6 +46,9 @@ The label for the reached status of the checkpoint in the output JSON. Maximum l
 ** *Value Label* 
 +
 The label for the value of the checkpoint in the output JSON. Maximum length: 50 characters. 
+** *Touch Time Label*
++
+The label for the touch time in the output JSON. The touch time is a timestamp from the last time the checkpoint was touched. Maximum length: 50 characters. 
 
 The *Preview JSON Output* shows a preview of the resulting JSON based on the configured Checkpoint Action Steps in the Workflow.  
 
