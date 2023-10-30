@@ -1,23 +1,22 @@
 = Configure Organization Settings
+:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). After your organization migrates to Anypoint Platform, the Settings module replaces the Organization Management module.
 
-include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
-
-If you use an Anypoint account to login to RPA Manager, refer to the xref:settings-overview.adoc[*Settings* documentation].
-
-If you use an RPA account to login to RPA Manager, the *Settings* view enables you to configure the currency and decimal sign to show in RPA Manager modules and configure your Anypoint Platform credentials, which enables you to publish a process automation to Anypoint Exchange.
+The *Settings* view enables you to configure the currency and decimal sign to show in RPA Manager modules and configure your Anypoint Platform credentials, which enables you to publish a process automation to Anypoint Exchange.
 
 == Before You Begin
 
-* Ask an administrator to assign you the required privileges:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="2,1"]
+[cols="1,1,1"]
 |===
-|*Action* |*Privilege*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |View configured settings for your organization
+|RPA Administrator
 |Organization Management Open
 
 |Add or modify settings for your organization
+|RPA Administrator
 |Organization Management Administration
 |===
 

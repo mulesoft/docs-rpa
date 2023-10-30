@@ -14,7 +14,7 @@ The processes are executed in the following order:
 . Test configurations
 . Production configurations in ascending order of their assigned priority numbers
 
-If two or more configurations have the same priority, the ones deployed first are executed first.
+If two or more configurations have the same priority, the ones deployed first are execute first.
 
 == View the Queue
 

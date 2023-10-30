@@ -17,7 +17,7 @@ Graphics Accelerator Card
 | Software | Required version
 | Microsoft .NET Framework
  a|
-4.8
+4.7.1
 | Operating System
  a|
 

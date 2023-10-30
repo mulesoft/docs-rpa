@@ -1,10 +1,7 @@
 = Assembling User Groups
-
-include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP). After your organization is migrated to Anypoint Platform, the User Management module is removed and Anypoint teams replace the RPA Manager user groups. To function as a center of excellence for approving processes for automation or to complete user tasks, the teams must have the required RPA permissions.
 
 In automation projects, several employees often work together on one task. These users can be assigned to user groups. User groups can be deployed for processing of user tasks during execution of a process. User groups marked as center of excellence may approve processes for automation.
-
-If you use an Anypoint account to login to RPA Manager, Anypoint teams replace the RPA Manager user groups. To function as a center of excellence for approving processes for automation or to complete user tasks, the teams must have the required RPA permissions. To manage teams, refer to the https://docs.mulesoft.com/access-management/[Anypoint Access Management documentation^].
 
 In the *User Groups* view in the *User Management* module, you can see all existing user groups.
 
@@ -12,16 +9,18 @@ You can create new user groups, check their usage, edit them, and delete them.
 
 == Before You Begin
 
-* Ask an administrator to assign you the required privileges:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="2,1"]
+[cols="1,1,1"]
 |===
-|*Action* |*Privilege*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the User Management module
+|
 |User Management Open
 
 |Create, edit, and delete user groups.
+|
 |User Group Create, User Group Edit, User Group Delete
 
 |===

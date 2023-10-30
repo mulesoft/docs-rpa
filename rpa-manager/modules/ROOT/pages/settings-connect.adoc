@@ -1,15 +1,9 @@
 = Connecting to RPA Processes from Salesforce Products
+:page-notice-banner-message: You can now use Connected Apps for a more secure and scalable authentication method than User API Keys.
 
-include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
-
-RPA Manager requires user authentication to integrate RPA processes into other Salesforce products. For example, you can use your API key to configure an RPA connector in a MuleSoft Composer flow.
-
-If you use an RPA account to login to RPA Manager, refer to the xref:usermanagement-connect.adoc[*User Management* documentation].
+RPA Manager requires authentication to integrate RPA processes into other Salesforce products. For example, you can use your API key to configure an RPA connector in a MuleSoft Composer flow.
 
 For security reasons, you can only see and copy an API key on creation.
-
-[TIP]
-You can now use https://docs.mulesoft.com/access-management/connected-apps-overview[Connected Apps] for a more secure and scalable authentication method than User API Keys.
 
 == Before You Begin
 
