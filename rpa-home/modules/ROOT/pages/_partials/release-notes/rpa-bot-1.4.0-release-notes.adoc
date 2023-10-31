@@ -13,7 +13,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * The *Check interval* option is now constrained to a range between 1 and 15 seconds. If you currently have the option set to a value higher than 15 seconds, then the value will be reset to 15 seconds upon release of this enhancement.
 * Added a new *System settings* panel to the RPA Bot Configurator. This panel provides options to configure basic settings on the host computer.
 * Extended the logging system information by adding `key`, `type`, and `name` registry values.
-* Moved the *Test Settings* button from the Secure Session panel.
+* Removed the *Test Settings* button from the Session Settings panel.
 * Created a command line test tool that is similar to FreeRdp but uses the MuleSoft `rpa-freerdp-2.10.dll`.
 * Added an `x-correlation-id` header to all traffic passing ingress to incoming user/customer/tenant API requests.
 
