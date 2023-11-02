@@ -6,7 +6,7 @@ When the tests are successful, transition to *Production* phase.
 
 The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. The difference is that you do not have to start the individual process runs manually. Instead you schedule a process run configuration which is then executed automatically at defined times. Or you create an invokable run configuration and publish it to Anypoint Exchange.
 
-You can run processes openly in existing console sessions or run them hidden in secure sessions. In console sessions, only one process can run at a time. In secure sessions, different processes or several instances of the same process can run in parallel.
+You can run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
 == Before You Begin
 
@@ -40,7 +40,7 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 +
 Do not close or minimize the console session while the bot executes the process.
 
-* To run a process in a hidden session, you must deploy it to a bot configured for secure sessions. Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. Do not sign in to a computer where a bot with one licensed secure session is running a process.
+* To run a process in a hidden session, you must deploy it to a bot configured for Secure Sessions. Before deploying a run configuration on a bot that has only one Secure Session licensed, do not disconnect the session, but sign out the specified user. Do not sign in to a computer where a bot with one licensed Secure Session is running a process.
 * RPA Manager requires authentication to integrate RPA processes into other Salesforce products:
 ** Use user API keys to use Salesforce Flows with RPA. 
 ** Use Connected Apps to configure an RPA connector in a MuleSoft Composer flow. 
@@ -91,7 +91,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*
 +
-Decide whether to carry out the test run in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the test run in an existing console or RDP session or in a Secure Session, and specify an appropriate user.
 +
 You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
@@ -193,7 +193,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether to carry out the productive run in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the productive run in an existing console or RDP session or in a Secure Session, and specify an appropriate user.
 +
 You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
@@ -326,7 +326,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether to carry out the invokable run in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the invokable run in an existing console or RDP session or in a Secure Session, and specify an appropriate user.
 +
 You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +

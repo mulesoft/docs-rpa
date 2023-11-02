@@ -40,18 +40,18 @@ include::rpa-home::partial$windows-versions-support.adoc[]
 
 === Requirements for the Secure Session Technology
 
-Secure Sessions are hidden Desktop sessions. They run in the background and only the bot can access them. An additional advantage of using Secure Sessions is, that the bot can multiply itsself to run several process instances in parallel.
+Secure Sessions are hidden Desktop Sessions that run in the background and are accessible only to the bot. An additional advantage of using Secure Sessions is, that the bot can multiply itself to run several process instances in parallel.
 
 To use Secure Sessions you must ensure that all prerequisites are met and all responsible persons are informed.
 
-* The RPA Bot service runs under the _Local System_ account per default.
-** If you want to use another account, ensure that it has permission to run Windows services.
-* The RPA Bot service runs processes under user accounts existing on the same computer or within the same domain.
-** We recommend using dedicated accounts and a user naming scheme to differentiate between local users and domain users and between human users and bot users.
-** User accounts used by the bot to run processes must belong to the _Remote Desktop Users_ group and must be allowed to establish a local RDP session via the local loopback address 127.0.0.2.
-* If you want a bot to run more than one (Windows 10, Windows 11) or two (Windows Server) Secure Sessions simultaneously, make sure that a terminal server software with enough licensed users is installed on the computer where the bot is installed. The computer must have enough resources to execute several processes simultaneously: 2 GB or more RAM per session. 
-* Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. 
-** Do not sign in to a computer where a bot with one licensed secure session is running a process.
+* The RPA Bot service runs under the `Local System` account per default.
+** To use another account, ensure that it has permission to run Windows services.
+* The RPA Bot service runs processes under user accounts on the same computer or within the same domain.
+** Use dedicated accounts and a user-naming scheme to differentiate between local users and domain users and between human users and bot users.
+** User accounts used by the bot to run processes must belong to the `Remote Desktop Users` group and must have permission to establish a local RDP session via the local loopback address 127.0.0.2.
+* To enable a bot to run more than one (Windows 10, Windows 11) or two (Windows Server) Secure Sessions simultaneously, ensure that a terminal server software with enough licensed users is installed on the computer where the bot is installed. The computer must have enough resources to execute several processes simultaneously: 2 GB or more RAM per session. 
+* Before deploying a run configuration on a bot that has only one licensed Secure Session, do not disconnect the session, instead sign out the specified user. 
+** Do not sign in to a computer where a bot with one licensed Secure Session is running a process.
 
 === File System Permission Requirements
 

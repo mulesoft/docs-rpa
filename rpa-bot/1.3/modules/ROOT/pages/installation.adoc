@@ -6,7 +6,7 @@ Before installing RPA Bot, ensure that your environment meets the minimum hardwa
 
 Follow these steps to download and install RPA Bot.
 
-If it is not possible to install the setup as an administrator, set the User Account Control setting to *Never notify*. Otherwise secure sessions cannot be established and automations will fail.
+If it is not possible to install the setup as an administrator, set the User Account Control setting to *Never notify*. Otherwise Secure Sessions cannot be established and automations will fail.
 
 . From the *Home* page of RPA Manager, download the latest RPA Bot installer.
 . To start the installation, right-click the setup file and choose *Run as administrator*.

@@ -25,10 +25,10 @@ If a bot is troubling you, you can do the following:
 ** Login data for the bot
 ** RPA Bot Configurator settings 
 * If you want to use Secure Sessions, read and pass on the following information:
-** Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. 
-** If you want to assign more than one secure session to a bot, make sure that a terminal server software is installed on the computer of the bot and refer to the xref:rpa-bot::hardware-software-requirements#requirements-for-secure-session-technology.adoc[system and hardware requirements documentation] to determine the maximum number of secure sessions for the bot.
-** Do not sign in to a computer where a bot with one licensed secure session is running a process.
-* If you want to use desktop sessions, read and pass on the following information:
+** Before deploying a run configuration on a bot that has only one Secure Session licensed, do not disconnect the session, but sign out the specified user. 
+** If you want to assign more than one Secure Session to a bot, make sure that a terminal server software is installed on the computer of the bot and refer to the xref:rpa-bot::hardware-software-requirements.adoc#requirements-for-secure-session-technology[system and hardware requirements documentation] to determine the maximum number of Secure Sessions for the bot.
+** Do not sign in to a computer where a bot with one licensed Secure Session is running a process.
+* If you want to use Desktop sessions, read and pass on the following information:
 ** The specified user must be logged in to this session to deploy a run configuration. 
 ** Do not close or minimize the console session while the bot executes a process.
 * If you want to assign service times to a bot, you need to create them in the *Service Times* view of the *Bot Management* module first.
@@ -53,10 +53,10 @@ If a bot is troubling you, you can do the following:
 
 The bot runs a process configuration in a session on the computer where the bot is installed. 
 
-If bots should run processes in a hidden session, assign them at least one secure session.
+If bots should run processes in a hidden session, assign the bot at least one Secure Session.
 
-The number of secure sessions that can be assigned and served by the bot depends on the hardware of the computer on which the bot is installed
-Please refer to the system and hardware requirements topic to assess the maximum number of secure sessions for the bot.
+The number of Secure Sessions that can be assigned and served by the bot depends on the hardware of the computer on which the bot is installed
+Please refer to the system and hardware requirements topic to assess the maximum number of Secure Sessions for the bot.
 
 Enabling the same setting via the RPA Bot Configurator, limits but not not overwrites this setting.
 
