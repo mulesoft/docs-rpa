@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Now global variables and credentials in the credentials pool do not have a limitation. | W-14321062
+| Global variables and credentials in the credentials pool no longer have a limitation. | W-14321062
 | Processes now execute without interruption on RPA Bots. Under certain circumstances processes stopped executing. | W-14329929
 |===
 
