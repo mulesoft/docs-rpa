@@ -22,7 +22,7 @@ To use Secure Sessions you must ensure that all prerequisites are met and all re
 Enabling the same setting via the RPA Bot Configurator, limits but not not overwrites this setting.
 * Desktop Sessions:
 ** The specified user must be logged in to this session to deploy a run configuration. 
-** Do not close or minimize the console session while the bot executes a process.
+** The console session must remain open and unminimized while the bot executes a process.
 * Secure Sessions:
 ** The higher the number of Secure Sessions the lower the performance of the bot. Too much load can cause process slowdown or disruptions. Check the system data and the system requirements documentation to determine the maximum number of sessions that the bot can safely execute in parallel.
 ** Before deploying a run configuration on a bot that has only one Secure Session licensed, do not disconnect the session, but sign out the specified user. 
@@ -31,7 +31,7 @@ Enabling the same setting via the RPA Bot Configurator, limits but not not overw
 == Next Steps
 
 . In the documentation, check the System Requirements.
-. On the computer where you want to run automations and where the bot therefore is installed, check the system data:
+. On the computer where you want to run automations, where the bot is installed, check the system data:
 +
 * Operating system
 * RAM
@@ -40,8 +40,9 @@ Enabling the same setting via the RPA Bot Configurator, limits but not not overw
 * RPA Bot Configurator settings
 . If you want to use default session settings for the run configuration, set the bot login data and the maximum number of parallel Secure Sessions in the Bot Configurator. 
 . In RPA Manager, enter the relevant data or a contact person in the description of the bot in the Bots view of the Bot Management module.
-.. If the bot should use Secure Sessions and the RPA Bot Configurator does not contain this setting, set the maximum number of parallel Secure Sessions that the bot may use via the Secure Session Assignment view.
-. When creating a run configuration in the Process Automation module of RPA Manager, keep the general considerations in mind. 
++
+If the bot should use Secure Sessions and the RPA Bot Configurator does not contain this setting, set the maximum number of parallel Secure Sessions that the bot may use via the Secure Session Assignment view.
+. When creating a run configuration in the Process Automation module of RPA Manager, keep the <<general-considerations, general considerations>>in mind. 
 
 == See Also
 
