@@ -25,7 +25,7 @@ If a bot isn't working properly, you can do the following:
 ** Login data for the bot
 ** RPA Bot Configurator settings
 * If you want to use Secure Sessions, read and pass on the following information:
-** Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user.
+** Before deploying a run configuration on a bot that has only one licensed secure session, do not disconnect the session, instead sign out the specified user.
 ** If you want to assign more than one secure session to a bot, make sure that a terminal server software is installed on the computer of the bot and refer to the xref:rpa-bot::hardware-software-requirements.adoc#requirements-for-secure-session-technology[system and hardware requirements documentation] to determine the maximum number of secure sessions for the bot.
 ** Do not sign in to a computer where a bot with one licensed secure session is running a process.
 * If you want to use Desktop sessions, read and pass on the following information:
@@ -119,5 +119,5 @@ If you accidentally remove a bot that is running, the bot shuts down and the API
 * xref:rpa-home::automation-security-securesessions.adoc[RPA - Secure Sessions]
 * xref:rpa-bot::hardware-software-requirements.adoc[RPA Bot - Hardware and Software Requirements]
 * xref:rpa-bot::configuration.adoc[RPA Bot Configurator]
-* xref:botmanagement-troubleshoot.adoc[Trouble-shooting Bots]
+* xref:botmanagement-troubleshoot.adoc[Troubleshooting Bots]
 * xref:processautomation-deploy.adoc[Deploying Configurations]

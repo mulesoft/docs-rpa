@@ -120,7 +120,7 @@ image:bot-configurator-test-settings.png[The RPA Bot Configurator application sh
 If you click *TEST*, the application starts a non-operational Secure Session in which you can see a list of parameters for the Secure Session. Click *Logout* to end this non-operational Secure Session.
 
 [NOTE]
-On single session systems, such as Windows 10 and 11, a message will show that the test may fail if no further sessions are available.
+On single session systems, such as Windows 10 and 11, a message shows that the test may fail if no further sessions are available.
 
 == Session Monitoring
 
