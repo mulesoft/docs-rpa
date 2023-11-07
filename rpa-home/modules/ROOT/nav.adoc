@@ -21,6 +21,7 @@
 ** xref:automation-tutorial-deploy.adoc[]
 ** xref:automation-tutorial-composer.adoc[]
 ** xref:automation-tutorial-monitor.adoc[]
+* xref:automation-usecase-legacysystemdataextraction.adoc[]
 * xref:invoke-rpa-services.adoc[Invoke RPA Services from Composer]
 * xref:publish-process-automation-exchange.adoc[Publishing Automation Assets to Anypoint Exchange]
 * xref:glossary.adoc[Glossary]
