@@ -35,8 +35,9 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | Issue Resolution | ID
 |The `RegisterProcessInstance` now functions properly as a result of increasing the number of attempts when starting a RunActivity to 20x2 seconds.| W-14283854
 |RPA Bot no longer stops executing processes. | W-14202513
-|Scheduler information is no longer added too often in the log file.| W-14257208
 |The runtime for processes that are executed more than once by RPA Bot is no longer different. | W-14159982
+|RPA Bot now creates RDP sessions on Windows 2019 and 2022 Terminal Server. |W-14304342
+|Using the silent installation of RPA Bot setup no longer creates an invalid Bot GUID with only zeros. This enables a successful connection to RPA Manager. |W-14378025
 |===
 
 // == See Also
