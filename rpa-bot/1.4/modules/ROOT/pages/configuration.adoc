@@ -145,9 +145,16 @@ Sends analysis packages if the Activity Workflow terminates with OK.
 
 image:bot-configurator-system-settings.png[The RPA Bot configurator application showing the System Settings panel, 50%, 50%]
 
-This panel displays a list of important registry settings for secure sessions, which can be fixed directly from the panel.
+This panel displays a list of important settings for RPA Bot, including all known registry keys with their current value and whether a terminal server software is installed. If a setting prevents RPA Bot from operating correctly, it is marked with a warning icon.
 
-To fix a setting, click the Fix it icon. A confirmation pop-up displays to indicate the setting was fixed successfully.
+You can fix the registry key settings directly from the panel by doing the following:
+
+. Right-click the warning icon.
+. Click *Fix it*.
+
+A confirmation pop-up displays to indicate the setting was fixed successfully.
+
+To fix the terminal server setting, which is needed for Secure Sessions, ensure the software is installed. Visit xref:hardware-software-requirements.adoc[Hardware and Software Requirements] for more information about requirements for Secure Sessions.
 
 == See Also
 
