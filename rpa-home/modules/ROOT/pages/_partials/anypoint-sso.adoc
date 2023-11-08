@@ -1,0 +1,7 @@
+= Connect to Anypoint Platform Using an External Identity Provider 
+
+To connect to Anypoint using Single Sign On (SSO) credentials from an external identity provider: 
+
+. In the Anypoint login screen, click *Use custom domain*.
+. Specify your organization domain and click *Continue*.
+. Specify *Username* and *Password* and click *Sign In*. 

@@ -74,11 +74,11 @@ The bot can be used in the production phase.
 
 * Shield with a check mark symbol and a number:
 +
-Maximum number of secure sessions the bot may use at the same time. This number depends on the hardware the bot is installed on.
+Maximum number of Secure Sessions the bot may use at the same time. This number depends on the hardware the bot is installed on.
 
 * Shield symbol:
 +
-The bot has been configured for a desktop session. It cannot use secure sessions.
+The bot has been configured for a Desktop Session. It cannot use Secure Sessions.
 
 |*Deployed sessions*
 |Number of sessions that have been deployed to the bot for executing processes. The number of deployed sessions can exceed the number of licensed sessions. This may cause individual process executions to be skipped.

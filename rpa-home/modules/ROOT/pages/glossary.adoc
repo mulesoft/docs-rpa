@@ -153,7 +153,7 @@ RPA Recorder is an on-premise tool that assists during the process design phase 
 == S
 
 ''''''
-=== Secure session
+=== Secure Session
 
 Secure Session is a hidden Windows session that runs invisibly and closed in a separate user account. The screen does not show what is happening or what information is being processed.
 

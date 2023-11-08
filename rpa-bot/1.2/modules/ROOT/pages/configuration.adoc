@@ -55,7 +55,7 @@ Format: `+http://<Serveraddress>:<Port>+`, for example: `+http://myproxy.de:881+
 [[secure-session]]
 == Secure Session
 
-Enable the bot to use secure sessions by entering credentials the bot uses to login to the computer and to open a hidden session. If you don't add credentials here, the bot can only use a running desktop session.
+Enable the bot to use Secure Sessions by entering credentials the bot uses to login to the computer and to open a hidden session. If you don't add credentials here, the bot can only use a running desktop session.
 
 image:bot-configurator-secure-session.png[The RPA Bot configurator application showing the Secure Session settings panel, 50%, 50%]
 
@@ -81,7 +81,7 @@ Enables authentication via SmartCard within the Secure Session.
 * *Use the Credential Security Support Provider (CredSSP) for authentication*
 +
 Select this option to use the CredSSP for authentication.
-* *Use alternative RDP handling for secure session login (recommended for Windows 10 and Windows Server 2016)*
+* *Use alternative RDP handling for Secure Session login (recommended for Windows 10 and Windows Server 2016)*
 +
 If the group policy _Always prompt for password upon connection_ is enabled, the password must be entered twice when logging into the RDP session. This might prevent the Secure Session from running smoothly, especially on Windows 2010 and Windows Server 2016. If this is the case, activate this option so that the credentials can be entered correctly in the second query.
 +

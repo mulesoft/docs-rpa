@@ -37,9 +37,11 @@ If your organization supports Anypoint Identity Access Management (IAM), then fo
 . Click Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manage to open RPA Recorder.
 . Provide your MuleSoft Anypoint login credentials for user authentication.
 
-image:anypoint-login-general.png[RPA Recorder Anypoint Login Screen, 50%, 50%]
+image:anypoint-login.png[RPA Recorder Anypoint Login Screen]
 
 To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
+
+include::rpa-home::partial$anypoint-sso.adoc[leveloffset=+2]
 
 === Log in to RPA Recorder (Legacy)
 
