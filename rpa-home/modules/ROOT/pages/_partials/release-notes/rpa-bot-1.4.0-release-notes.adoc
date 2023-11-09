@@ -9,7 +9,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* The script now provides the Bot GUID when executing a workflow so that the Bot GUID can be provided via runtime variable in RPA Builder.
+* The script now provides the Bot GUID when executing a workflow so that the Bot GUID can be provided via the runtime variable in RPA Builder.
 * The *Check interval* option is now constrained to a range between 1 and 15 seconds. If you currently have the option set to a value higher than 15 seconds, then the value will be reset to 15 seconds upon release of this enhancement.
 * Added a new *System Settings* panel to the RPA Bot Configurator. This panel provides options to configure basic settings on the host computer.
 * Extended the logging system information by adding `key`, `type`, and `name` registry values.
@@ -23,8 +23,8 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1
 [%header%autowidth.spread]
 |===
 |Application |Version
-|RPA Builder | 6.5.0 and later
-|RPA Recorder | 6.5.0 and later
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
 |===
 
 // == Fixed Issues
@@ -35,7 +35,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | Issue Resolution | ID
 |The `RegisterProcessInstance` now functions properly as a result of increasing the number of attempts when starting a RunActivity to 20x2 seconds.| W-14283854
 |RPA Bot no longer stops executing processes. | W-14202513
-|The runtime for processes that are executed more than once by RPA Bot is no longer different. | W-14159982
+|The runtime is no longer different for processes that are executed more than once by RPA Bot. | W-14159982
 |RPA Bot now creates RDP sessions on Windows 2019 and 2022 Terminal Server. |W-14304342
 |Using the silent installation of RPA Bot setup no longer creates an invalid Bot GUID with only zeros. This enables a successful connection to RPA Manager. |W-14378025
 |===
