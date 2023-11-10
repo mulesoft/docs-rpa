@@ -16,7 +16,7 @@ To create a test plan, open RPA Manager and follow these steps:
 . In the *Test plan name* field, write *My Test* and click *Next*.
 . Click *Next* (this process has no activity parameters).
 . Click *Next* (this process has no user tasks).
-. Select *Run test in secure session*, check *Enable Taskbar (Start menu, taskbar buttons)*, and click *Next*.
+. Select *Run test in Secure Session*, check *Enable Taskbar (Start menu, taskbar buttons)*, and click *Next*.
 +
 Ensure you followed the steps to configure the xref:rpa-bot::configuration.adoc#secure-session[Secure Session]. Otherwise, the bot fails to run.
 . Select any of your configured bots and click *Finish*

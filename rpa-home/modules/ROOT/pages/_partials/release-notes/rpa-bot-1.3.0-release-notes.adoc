@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * RPA Bot now detects if TSplus is installed and reports it in the logfile entry.
 * A message now shows on single session systems, such as Windows 10 and 11, indicating that the test may fail if no further sessions are available.
-* Improved run result messages to show that a user is already signed in or that the current secure session is blocked by a disconnected state.
+* Improved run result messages to show that a user is already signed in or that the current Secure Session is blocked by a disconnected state.
 * RPA Bot now logs the following system information at startup:
 ** OS information
 ** TSplus version
@@ -39,7 +39,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |RPA Bot no longer ignores the *UploadTimeout* and *DownloadTimeout* settings. | W-13214227
 |RPA Bot no longer sends unnecessary processExecutionInformation to the server when there is no run config to execute. | W-13484834 
 |Renamed and reorganized the Secure Session page in the RPA Bot Configurator. | W-13510931
-|When establishing a secure session, the session error message now indicates that the session user is not a member of the "Remote Desktop Users" windows group. | W-13708982
+|When establishing a Secure Session, the session error message now indicates that the session user is not a member of the "Remote Desktop Users" windows group. | W-13708982
 |FreeRDP no longer generates the wrong error messages in StSem logging files and in the RPA Bot Configurator. | W-13704840
 |The API Key is now hidden when installing RPA Bot. | W-13703817
 |The test connection function no longer ignores the proxy configuration in the RPA Bot Configurator. | W-13854428

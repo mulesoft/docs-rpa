@@ -31,6 +31,6 @@ Any of the following:
 
 === Requirements for Secure Session Technology
 
-* Windows logins used for secure sessions have privileges to open a local RDP session on `127.0.0.2`.
+* Windows logins used for Secure Sessions have privileges to open a local RDP session on `127.0.0.2`.
 * 64-bit Operating System.
 * Dedicated Windows Server machine with enough resources to execute several Processes simultaneously (2 GB or more RAM per session)

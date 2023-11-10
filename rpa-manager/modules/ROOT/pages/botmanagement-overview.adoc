@@ -12,7 +12,7 @@ You manage the bots in the *Bot Management* module. Every bot is assigned to RPA
 . After successful installation, the bots connects to RPA Manager automatically.
 
 === License
-* After you have installed all bots, open the *Bots* view module and assign _secure session_ licenses to each bot that should run processes invisibly.
+* After you have installed all bots, open the *Bots* view module and assign _Secure Session_ licenses to each bot that should run processes invisibly.
 
 === Assign Service Times
 . If a bot should only be available to execute processes at certain times, create the corresponding service times in the *Service Times* view module.
@@ -41,7 +41,7 @@ You manage the bots in the *Bot Management* module. Every bot is assigned to RPA
 
 === Secure Session
 
-A _secure session_ is a hidden Windows session that runs invisibly and closed in a separate user account. The screen does not show what is happening or what information is being processed.
+A _Secure Session_ is a hidden Windows session that runs invisibly and closed in a separate user account. The screen does not show what is happening or what information is being processed.
 
 == See Also
 

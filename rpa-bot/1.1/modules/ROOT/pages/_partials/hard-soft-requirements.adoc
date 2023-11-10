@@ -30,11 +30,11 @@ include::rpa-home::partial$windows-versions-support.adoc[]
 
 === Requirements for Secure Session Technology
 
-* Windows logins used for secure sessions have privileges to open a local RDP session on `127.0.0.2`.
+* Windows logins used for Secure Sessions have privileges to open a local RDP session on `127.0.0.2`.
 * 64-bit Operating System.
 * Dedicated Windows Server machine with enough resources to execute several processes simultaneously (2 GB or more RAM per session)
 * The RPA Bot service runs under the _Local System account_ (by default, the setup configures RPA Bot to use this account).
-* If you want to run more than one secure session in parallel on a bot, make sure that a terminal server software is installed on the computer of the bot.
+* If you want to run more than one Secure Session in parallel on a bot, make sure that a terminal server software is installed on the computer of the bot.
 
 === File System Permission Requirements
 
