@@ -1,3 +1,33 @@
 # Usecase: Extract Data from a Legacy System
 
-...
+Imagine you work as an accountant at Mythical Universityfootnote:[The story, all names, characters, and incidents used in this example are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.]. Mythical University has ordered a travel package for one of their field excursions. You have received an email and saved the attached order confirmation to your computerfootnote:[You could automate this, too.] 
+
+This is what an order confirmation of your travel agency Wonderlust Travel typically looks like:
+
+image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png[Order confirmation letter in PDF format, 50%]
+
+The order ID is listed in a table next to the entry 'Oder ID'.
+
+You need to copy this ID and search it in your order tracking system to get the corresponding tracking number, which you need to reference in your payment.
+
+Unfortunately your order tracking system is very old and can only be accessed by typing in and reading from a terminal screen:
+
+image::as400ordertrackingscreen.png[Legacy order tracking system shown as text in a terminal, 50%]
+
+You click the search field, enter the order ID, and click 'Search'.
+
+image::as400ordertrackingscreen-searchresult-ordernotfound.png[Legacy order tracking system doesn't show search results, 50%]
+
+The list of orders is empty now. This could either mean that the order is not there or you mistyped the number. Let's assume that the latter is the case. You try again and the list shows the corresponding entry:
+
+image::as400ordertrackingscreen-searchresult-orderfound.png[Legacy order tracking system shows a search result, 50%]
+
+Now you can copy the tracking number and reference it in your payment.
+
+Since all the scientists at Mythical University travel a lot, you have to repeat this tedious, error-prone and risky process several times per day. 
+
+So, you decide to get a bot to do it.
+
+The following example shows, how you would automate the retrieving of the order ID from a PDF and the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards, are part of another example.
+
+Let's start with finding the order ID in the PDF first.
