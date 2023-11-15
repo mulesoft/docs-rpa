@@ -9,13 +9,13 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* The *Retake* option is now a button in a dropdown that includes options to delay the screen freeze for capturing image-based mouse clicks. This assists with preparing collapsible menus and hidden elements before the screen capture freeze. User and mouse actions are not recorded during the delay.
+* The *Retake* option now displays as a button in a dropdown that includes options to delay the screen freeze for capturing image-based mouse clicks. This assists with preparing collapsible menus and hidden elements before the screen capture freeze. User and mouse actions are not recorded during the delay.
 * You can now set the initial screen freeze delay directly from the image-based mouse clicks toolbar.
 * When recording a Web Task, the selected area now shows a red border.
 * RPA Recorder now always generates an `RPARecorder` subfolder during installation. 
 * RPA Recorder now uses TLSv1.3 by default, and HTTP is now disabled for all API requests. 
 * When recording in Notepad++, long window titles and name attributes are now truncated in the Documentation section of the RPA Recording Editor. 
-* Updated the UI of the Settings and Log files panels, as well as the Manual Activity and Comment dialogs. W-14321940
+* Updated the UI of the Settings and Log files panels, as well as the Manual Activity and Comment dialogs.
 
 == Other Important Changes
 
@@ -48,7 +48,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |When capturing image-based mouse clicks, the elapsed time now matches the specified delay time. |W-14007202
 |Changing the scaling when capturing image-based mouse clicks is now recognized. |W-13778082
 |RPA Recorder no longer fails to load the BPMN from RPA Manager when the width or height values are not a whole number. |W-13957382
-|RPA Recorder no longer crashes when attempting to open a web page that has an invalid URL containing two periods. Instead, a `page is not available` error message displays. |W-13990958
+|RPA Recorder no longer crashes when attempting to open a web page that has an invalid URL containing two periods. Instead, a `Page is not available` error message displays. |W-13990958
 |When recording a hover event for a Bot Task, the active window is now recorded. |W-12752823
 |When opening a recorded BPMN in Notepad++ in a Bot Task, HTML is now being escaped in documentation properly and only the events from the recording are documented. |W-14292760
 |An error message now displays when a BPMN fails to download. |W-14128004
@@ -56,7 +56,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |The BPMN is now positioned correctly when searching for an activity name in the main RPA Recorder window. |W-14160638
 |The BPMN now loads successfully after conducting a search of the BPMN in the main RPA Recorder window. |W-14283085
 |Clearing the cache while recording a Web Task now works properly. |W-14258875
-|The `Page not available` error now displays when navigating back and forward in a browser while recording a Web Task. |W-12481508
+|The `Page is not available` error now displays when navigating back and forward in a browser while recording a Web Task. |W-12481508
 |===
 
 // == See Also
