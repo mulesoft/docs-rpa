@@ -22,7 +22,6 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * The attribute selection panel can no longer be opened when recording image-based mouse clicks in a Web Task. Once image-based mouse clicks recording is finished, the panel can be opened.
 * Upon completion of recording image-based mouse clicks for a Web or Bot Task, a message now appears to indicate recording has been resumed.
 * When recording image-based mouse clicks in a Web Task, the browser window cannot be minimized, and the address bar and buttons are no longer enabled in the browser window.
-* Starting RPA Recorder with Remote Debugging port no longer returns an error.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
