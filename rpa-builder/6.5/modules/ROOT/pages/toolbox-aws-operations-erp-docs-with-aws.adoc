@@ -1,6 +1,6 @@
 
 
-= ERP Docs With AWS
+= ERP Docs with AWS
 
 The ERP Docs with AWS enables you to use Amazon Textract to analyze invoices and receipts to extract relevant data.
 
