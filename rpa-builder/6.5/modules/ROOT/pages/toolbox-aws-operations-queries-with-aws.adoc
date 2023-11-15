@@ -9,6 +9,8 @@ For example, if you are processing a credit card statement, you can specify quer
 * "What is the account number?"
 * "What is the payment due date?"
 
+include::partial$aws-doc-processing.adoc[tag=specific]
+
 == Inbound Variables
 
 * *Alias text* 
@@ -75,30 +77,9 @@ The path to the directory where the file is located
 ** *File name*
 +
 The name of the file to analyze. Supported file types: PDF, JPEG, and PNG
-+
-* *PDF Settings*
-+
-Appears only when the selected file is a PDF
-+
-** *PDF file is password protected*
-+
-When selected, uses the password specified in *Password to open PDF file* to open the file
-** *Read entire file*
-+
-Instructs the service to read the entire file
-** *Read page range*
-+
-Instructs the service to read the selected range of pages
-+
-*** *From page*
-+
-Specifies from which page the service starts reading the file
-*** *To page*
-+
-Specifies until which page the service reads the file
-*** *Read to end of file*
-+
-Instructs the service to continue reading until the end of the file
+
+include::partial$pdf-settings.adoc[]
+
 * *Query Settings* 
 ** *Query text*
 +
