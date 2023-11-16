@@ -1,14 +1,25 @@
 # Usecase: Extract Data from a Legacy System
 
-Imagine you work as an accountant at Mythical Universityfootnote:[The story, all names, characters, and incidents used in this example are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.]. Mythical University has ordered a travel package for one of their field excursions. You have received an email and saved the attached order confirmation to your computerfootnote:[You could automate this, too.] 
+Extracting data from legacy systems is a common use case for RPA. 
+
+This example illustrates the following tasks:
+
+* Copy the contents from a PDF file to a text file.
+* Compare strings.
+* Copy a substring from a text file.
+* Find text on a screen using optical character recognition (OCR).
+* Interacting with a screen using mouse actions and key strokes.
+* Use activity parameters to transfer data.
+
+## Example Story
+
+Imagine you work as an accountant at Mythical Universityfootnote:[The story, all names, characters, and incidents used in this example are fictitious. No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred.]. Mythical University has ordered a travel package for one of their field excursions. You have received an email and saved the attached order confirmation to your computerfootnote:[You could automate this, too.].
 
 This is what an order confirmation of your travel agency Wonderlust Travel typically looks like:
 
 image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png[Order confirmation letter in PDF format, 50%]
 
-The order ID is listed in a table next to the entry 'Oder ID'.
-
-You need to copy this ID and search it in your order tracking system to get the corresponding tracking number, which you need to reference in your payment.
+You need to search the order ID in your order tracking system to get the corresponding tracking number, which you need to reference in your payment.
 
 Unfortunately your order tracking system is very old and can only be accessed by typing in and reading from a terminal screen:
 
@@ -26,8 +37,62 @@ Now you can copy the tracking number and reference it in your payment.
 
 Since all the scientists at Mythical University travel a lot, you have to repeat this tedious, error-prone and risky process several times per day. 
 
-So, you decide to get a bot to do it.
+You decide to get a bot to do this.   
 
-The following example shows, how you would automate the retrieving of the order ID from a PDF and the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards, are part of another example.
+The following example shows, how you could automate the retrieving of the order ID from a PDF and the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards, are part of other examples.
+
+## Create a Model of the Process
+
+In RPA Manager, you open a new project and design a model of the process.
+
+The model contains the following steps:
+
+. Extract the order ID from the order confirmation 
+. Extract the corresponding tracking number from the legacy sytem
+. Return either the tracking number or an information that it could not be found.
+
+image::extractrackingnumber-bpmn.png[Model of the tracking number extraction process]
+
+The user tasks are for illustrational purposes and can be replaced by steps to prepare the returned data for processing in another automation step.
+
+After you finish the first draft of the model, you move the project to the build phase.
+
+## Implement the Activities
+
+In RPA Builder, you open the project and implement the workflows for the bot activities.
+
+### Find the Order ID in the Order Confirmation
 
 Let's start with finding the order ID in the PDF first.
+
+As you can see in the image of the order confirmation, the order ID is always listed in a table next to the entry 'Oder ID'. We can use this information to implement the workflow containing the following steps:
+
+. Copy the content of the order confirmation to a text file.
+. Read the text file line by line to find the order ID.
+. If the order ID is found, store it in an activity parameter.
+
+image::extractorderid-workflow.png[Activity Workflow for the extraction of the order ID from a PDF]
+
+#### Copying Text From a PDF to a Text File
+
+To copy the text content from a PDF to a text file, you open the PDF and use the outgoing Pin Variable `ReadText` as input for the 'Write to Text File' Action Step.
+
+image::extractorderid-workflow-pdftotxt.png['']
+
+The following image shows the result of storing the text content.
+
+image::extractorderid-workflow-resultpdftotxt.png['', 50%]
+
+#### Looping Over All Lines of a Text File
+
+...
+
+#### Check a Case and Catch Errors
+
+...
+
+#### Retrieve a Substring
+
+...
+
+...
