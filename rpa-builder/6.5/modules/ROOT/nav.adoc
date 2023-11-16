@@ -70,6 +70,8 @@
 *** xref:toolbox-flow-control-pattern-select.adoc[Pattern Select]
 *** xref:toolbox-flow-control-select-case.adoc[Select Case]
 *** xref:toolbox-flow-control-transaction.adoc[Transaction]
+** xref:toolbox-folder-operations.adoc[]
+*** xref:toolbox-folder-operations-check-folder.adoc[]
 ** xref:toolbox-general.adoc[General]
 *** xref:toolbox-general-exit-workflow.adoc[Exit Workflow]
 *** xref:toolbox-general-pattern-gallery.adoc[Pattern Gallery]
