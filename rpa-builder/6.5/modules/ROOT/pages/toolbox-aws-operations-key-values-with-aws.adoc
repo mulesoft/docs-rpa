@@ -39,19 +39,8 @@ The complete AWS response.
 image:key-values-with-aws-wizard.png[50%,50%]
 
 
-* *Authentication Settings*
-+
-The AWS credentials to use for authentication
-+
-** *Pin credentials*
-+
-Use this option to reference an existing *Credentials for AWS* configuration.
-** *Use custom settings*
-+
-Use this option to specify an AWS *Cliend ID*, *Client Secret*, and *Region Endpoint* for this action step.
-** *Session Token*
-+
-The session token to use for authentication when *Use session token to authenticate* is selected.
+include::partial$aws-authentication.adoc[tag=wizard] 
+
 * *Response settings*
 ** *JsonPath Expression*
 +
@@ -89,5 +78,6 @@ Instructs the service to continue reading until the end of the file.
 
 == See Also
 
+* xref:toolbox-aws-operations-credentials-for-aws.adoc[]
 * https://docs.aws.amazon.com/textract/latest/dg/how-it-works-kvp.html[Amazon Textract: Form Data (Key-Value Pairs)^]
 * xref:building-jsonpath-expressions.adoc[]

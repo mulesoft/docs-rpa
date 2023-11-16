@@ -36,13 +36,7 @@ The number of signatures found.
 
 == Properties 
 
-* *Authentication Settings*
-** *Region Endpoint* 
-+
-The region endpoint to use for the AWS Service.
-** *Use Session Token* 
-+
-Enables using a session token for authentication. 
+include::partial$aws-authentication.adoc[tag=properties] 
 
 * *Common* 
 +
@@ -76,11 +70,12 @@ Defines the amount of expected signatures.
 
 The Wizard enables you to configure:
 
-* *Authentication Settings*: The credentials to use when connecting to the AWS services.
+* *Authentication Settings*: The credentials to use when connecting to the AWS services. You can either configure the credentials manually or reference an existing configuration of Credentials with AWS. 
 * *Response settings*: The JsonPath Expression to filter the JSON response. 
 * *File Settings*: The path and file name of the file to read. 
 * *Signature Detection Settings*: The number of expected signatures (one, one or more, multiple), the minimum confidence level, and the expected behavior (warning or error) when the detection is below the configured confidence level.  
 
 == See Also 
 
+* xref:toolbox-aws-operations-credentials-for-aws.adoc[]
 * https://docs.aws.amazon.com/textract/latest/dg/how-it-works-analyzing.html[Amazon Textract: Analyzing Documents]
