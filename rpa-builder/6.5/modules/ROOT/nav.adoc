@@ -72,7 +72,7 @@
 *** xref:toolbox-flow-control-transaction.adoc[Transaction]
 ** xref:toolbox-folder-operations.adoc[]
 *** xref:toolbox-folder-operations-check-folder.adoc[]
-*** xref:toolbox-folder-operations-copy-folder.adoc[Copy Folder]
+*** xref:toolbox-folder-operations-copy-folder.adoc[]
 *** xref:toolbox-folder-operations-create-folder.adoc[]
 *** xref:toolbox-folder-operations-delete-folder.adoc[]
 *** xref:toolbox-folder-operations-rename-folder.adoc[]
