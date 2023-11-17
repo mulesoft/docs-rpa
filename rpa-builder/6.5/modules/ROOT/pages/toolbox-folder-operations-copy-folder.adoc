@@ -1,0 +1,47 @@
+= Copy Folder 
+
+Copies a source folder to the target directory. 
+
+== Properties 
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties] for a description.  
+
+* *Folder Operations Settings* 
+** *Copy empty subfolders* 
++
+Determines wether to copy empty subfolders or not. 
+** *Copy subfolders* 
++
+Determines wether to copy all subfolders and files inside them or not. 
+** *Destination Directory Path* 
++
+Path to the destination directory where to copy the source folder. 
+** *Directory Path* 
++
+Path to the directory that contains the folder to copy. 
+** *Duplicates file handling* 
++
+Determines the behavior of the workflow when it finds duplicate files during the copy. Available options are: *Overwrite files*, *Skip files*, and *Force error*.
+** *Filter files*
++
+Defines a filter using wildcards to specify which files to copy. By default, it is set to (`*.*`), meaning all files. 
+
+== Inbound Variables 
+
+* *Destination Directory Path*
+* *Filter files*
+* *Copy subfolders* 
+* *Copy empty subfolders*
+* *Directory Path* 
+
+== Outbound Variables 
+
+* *Is Copied* 
+* *Source Directory Path*
+* *Destination Directory Path*
+ 
+== See Also 
+
+* xref:toolbox-folder-operations.adoc[]
