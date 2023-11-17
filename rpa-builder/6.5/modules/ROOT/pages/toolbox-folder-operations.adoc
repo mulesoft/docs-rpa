@@ -8,3 +8,6 @@ This action step checks if a folder exists in the configured directory path.
 * xref:toolbox-folder-operations-create-folder.adoc[Create Folder]
 +
 This action step creates an empty folder in the configured directory path. 
+* xref:toolbox-folder-operations-delete-folder.adoc[Delete Folder]
++
+This action step deletes a folder and all its content. 
