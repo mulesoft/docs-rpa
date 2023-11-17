@@ -1,0 +1,31 @@
+= Rename Folder 
+
+Renames an existing folder. 
+
+== Properties 
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties] for a description.  
+
+* *Folder Operations Settings* 
+** *Directory Path* 
++
+Path to the directory where to check the existence of the folder. 
+** *New folder name* 
++
+The new name for the folder.
+
+== Inbound Variables 
+
+* *New folder name*
+* *Directory Path* 
+
+== Outbound Variables 
+
+* *Is renamed* 
+* *Directory Path*
+
+== See Also 
+
+* xref:toolbox-folder-operations.adoc[]

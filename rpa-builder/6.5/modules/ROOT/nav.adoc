@@ -74,6 +74,7 @@
 *** xref:toolbox-folder-operations-check-folder.adoc[]
 *** xref:toolbox-folder-operations-create-folder.adoc[]
 *** xref:toolbox-folder-operations-delete-folder.adoc[]
+*** xref:toolbox-folder-operations-rename-folder.adoc[]
 ** xref:toolbox-general.adoc[General]
 *** xref:toolbox-general-exit-workflow.adoc[Exit Workflow]
 *** xref:toolbox-general-pattern-gallery.adoc[Pattern Gallery]
