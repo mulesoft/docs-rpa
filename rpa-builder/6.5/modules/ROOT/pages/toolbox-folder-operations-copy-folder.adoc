@@ -26,7 +26,7 @@ Path to the directory that contains the folder to copy.
 Determines the behavior of the workflow when it finds duplicate files during the copy. Available options are: *Overwrite files*, *Skip files*, and *Force error*.
 ** *Filter files*
 +
-Defines a filter using wildcards to specify which files to copy. By default, it is set to (`*.*`), meaning all files. 
+Defines a filter using wildcards to specify which files to copy. By default, it is set to (`\*.*`), meaning all files. 
 
 == Inbound Variables 
 
