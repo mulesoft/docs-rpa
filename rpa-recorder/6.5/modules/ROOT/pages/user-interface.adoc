@@ -67,7 +67,7 @@ When recording image-based mouse clicks in a Web Task:
 
 * Scrolling or zooming in the displayed web page or moving or resizing the browser window results in inaccurate relative clicks in the recording.
 * Navigating to a different web page when capturing image-based mouse clicks, such as by clicking a link, can cause inaccuracies in the recording of the subsequent relative mouse clicks.
-* The attribute selection panel cannot be opened. Once image-based mouse clicks recording is finished, the panel can be opened.
+* The attribute selection panel is not enabled and cannot be expanded or collapsed. Once image-based mouse clicks recording is finished, the panel can be opened.
 * The browser window cannot be minimized, and the address bar and buttons are not enabled in the browser window.
 
 == Define Screenshot
