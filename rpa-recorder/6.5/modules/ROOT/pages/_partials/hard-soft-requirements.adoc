@@ -48,6 +48,6 @@ The operating system can block the execution of certain files. Ensure that all e
 [%header%autowidth.spread]
 |===
 |Application |Version
-|RPA Builder | 6.4.0 and later
-|RPA Bot | 1.0.0 and later
+|RPA Builder | 6.5.0 and later
+|RPA Bot | 1.4.0 and later
 |===
