@@ -43,7 +43,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |The `Screen capture is null` error no longer occurs when closing the Display Settings Warning dialog. |W-13980627
 |When capturing image-based mouse clicks during Web Task recording, clicks on menu items in dropdowns are now recorded. |W-14043830
 |When capturing image-based mouse clicks during Web Task recording, the browser window now freezes properly when selecting a dropdown menu. |W-14036847
-|When capturing image-based mouse clicks, pressing Alt+F4 in the capture image step no longer leads to an error. |W-14025390
+|When capturing image-based mouse clicks, pressing _Alt+F4_ in the capture image step no longer leads to an error. |W-14025390
 |When capturing image-based mouse clicks, the elapsed time now matches the specified delay time. |W-14007202
 |Changing the scaling when capturing image-based mouse clicks is now recognized. |W-13778082
 |RPA Recorder no longer fails to load the BPMN from RPA Manager when the width or height values are not a whole number. |W-13957382
