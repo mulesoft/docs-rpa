@@ -9,7 +9,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* The *Retake* option now displays as a button in a dropdown that includes options to delay the screen freeze for capturing image-based mouse clicks. This assists with preparing collapsible menus and hidden elements before the screen capture freeze. User and mouse actions are not recorded during the delay.
+* The *Retake* option now displays as a button in a dropdown. Using the *Retake* option, you can delay the screen freeze for capturing image-based mouse clicks. This assists with preparing collapsible menus and hidden elements before the screen capture freeze. User and mouse actions are not recorded during the delay.
 * You can now set the initial screen freeze delay directly from the image-based mouse clicks toolbar.
 * When recording a Web Task, the selected area now shows a red border.
 * RPA Recorder now always generates an `RPARecorder` subfolder during installation. 
