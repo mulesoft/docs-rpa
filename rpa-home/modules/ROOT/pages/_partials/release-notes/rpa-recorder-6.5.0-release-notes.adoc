@@ -50,7 +50,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |RPA Recorder no longer crashes when attempting to open a web page that has an invalid URL containing two periods. Instead, a `Page is not available` error message displays. |W-13990958
 |When recording a hover event for a Bot Task, the active window is now recorded. |W-12752823
 |When opening a recorded BPMN in Notepad++ in a Bot Task, HTML is now being escaped in documentation properly and only the events from the recording are documented. |W-14292760
-|An error message now displays when a BPMN fails to download. |W-14128004
+|An error message now appears when a BPMN fails to download. |W-14128004
 |Improved the content of the error message that displays when a BPMN fails to upload. |W-12708752
 |The BPMN is now positioned correctly when searching for an activity name in the main RPA Recorder window. |W-14160638
 |The BPMN now loads successfully after conducting a search of the BPMN in the main RPA Recorder window. |W-14283085
