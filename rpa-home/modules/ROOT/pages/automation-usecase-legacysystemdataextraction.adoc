@@ -17,17 +17,17 @@ Imagine you work as an accountant at Mythical Universityfootnote:[The story, all
 
 This is what an order confirmation of your travel agency Wonderlust Travel typically looks like:
 
-image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png[Order confirmation letter in PDF format, 50%]
+image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png[Order confirmation letter in PDF format, 75%]
 
 You need to search the order ID in your order tracking system to get the corresponding tracking number, which you need to reference in your payment.
 
 Unfortunately your order tracking system is very old and can only be accessed by typing in and reading from a terminal screen:
 
-image::as400ordertrackingscreen.png[Legacy order tracking system shown as text in a terminal, 50%]
+image::as400ordertrackingscreen.png[Legacy order tracking system shown as text in a terminal, 75%]
 
 You click the search field, enter the order ID, and click 'Search'.
 
-image::as400ordertrackingscreen-searchresult-ordernotfound.png[Legacy order tracking system doesn't show search results, 50%]
+image::as400ordertrackingscreen-searchresult-ordernotfound.png[Legacy order tracking system doesn't show search results, 75%]
 
 The list of orders is empty now. This could either mean that the order is not there or you mistyped the number. Let's assume that the latter is the case. You try again and the list shows the corresponding entry:
 
@@ -81,7 +81,7 @@ image::extractorderid-workflow-pdftotxt.png['']
 
 The following image shows the result of storing the text content.
 
-image::extractorderid-workflow-resultpdftotxt.png['', 50%]
+image::extractorderid-workflow-resultpdftotxt.png['', 75%]
 
 #### Looping Over All Lines of a Text File
 
