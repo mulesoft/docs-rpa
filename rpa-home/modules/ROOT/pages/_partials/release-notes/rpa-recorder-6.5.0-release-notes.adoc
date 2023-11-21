@@ -1,0 +1,65 @@
+= RPA Recorder 6.5.0 Release Notes
+
+RPA Recorder enables you to record a business process for automation.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== November 28, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* The *Retake* option now displays as a button in a dropdown. Using the *Retake* option, you can delay the screen freeze for capturing image-based mouse clicks. This assists with preparing collapsible menus and hidden elements before the screen capture freeze. User and mouse actions are not recorded during the delay.
+* You can now set the initial screen freeze delay directly from the image-based mouse clicks toolbar.
+* When recording a Web Task, the selected area now has a red border.
+* RPA Recorder now always generates an `RPARecorder` subfolder during installation. 
+* RPA Recorder now uses TLSv1.3 by default, and HTTP is now disabled for all API requests. 
+* When recording in Notepad++, long window titles and name attributes are now truncated in the Documentation section of the RPA Recording Editor. 
+* Updated the UI of the Settings and Log files panels, as well as the Manual Activity and Comment dialogs.
+
+== Other Important Changes
+
+* The attribute selection panel is no longer enabled and cannot be expanded or collapsed when recording image-based mouse clicks in a Web Task. Once image-based mouse clicks recording is finished, the panel can be opened.
+* Upon completion of recording image-based mouse clicks for a Web or Bot Task, a message now appears to indicate recording has been resumed.
+* When recording image-based mouse clicks in a Web Task, the browser window cannot be minimized, and the address bar and buttons are no longer enabled in the browser window.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+|Restarting image-based mouse clicks after cancelling the Scaling Warning dialog no longer leads to multiple toolbars. |W-13941631
+|When selecting the capture area on a Web Task while capturing image-based mouse clicks, the `Selected area cannot be null` error no longer occurs. |W-13966122
+|The `Screen capture is null` error no longer occurs when closing the Display Settings Warning dialog. |W-13980627
+|When capturing image-based mouse clicks during Web Task recording, clicks on menu items in dropdowns are now recorded. |W-14043830
+|When capturing image-based mouse clicks during Web Task recording, the browser window now freezes properly when selecting a dropdown menu. |W-14036847
+|When capturing image-based mouse clicks, pressing _Alt+F4_ in the capture image step no longer leads to an error. |W-14025390
+|When capturing image-based mouse clicks, the elapsed time now matches the specified delay time. |W-14007202
+|Changing the scaling when capturing image-based mouse clicks is now recognized. |W-13778082
+|RPA Recorder no longer fails to load the BPMN from RPA Manager when the width or height values are not a whole number. |W-13957382
+|RPA Recorder no longer crashes when attempting to open a web page that has an invalid URL containing two periods. Instead, a `Page is not available` error message displays. |W-13990958
+|When recording a hover event for a Bot Task, the active window is now recorded. |W-12752823
+|When opening a recorded BPMN in Notepad++ in a Bot Task, HTML is now being escaped in documentation properly and only the events from the recording are documented. |W-14292760
+|An error message now displays when a BPMN fails to download. |W-14128004
+|Improved the content of the error message that displays when a BPMN fails to upload. |W-12708752
+|The BPMN is now positioned correctly when searching for an activity name in the main RPA Recorder window. |W-14160638
+|The BPMN now loads successfully after conducting a search of the BPMN in the main RPA Recorder window. |W-14283085
+|Clearing the cache while recording a Web Task now works properly. |W-14258875
+|The `Page is not available` error now displays when navigating back and forward in a browser while recording a Web Task. |W-12481508
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
