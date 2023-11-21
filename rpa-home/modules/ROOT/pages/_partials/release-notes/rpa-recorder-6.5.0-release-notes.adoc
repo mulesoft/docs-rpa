@@ -15,7 +15,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * RPA Recorder now always generates an `RPARecorder` subfolder during installation. 
 * RPA Recorder now uses TLSv1.3 by default, and HTTP is now disabled for all API requests. 
 * When recording in Notepad++, long window titles and name attributes are now truncated in the Documentation section of the RPA Recording Editor. 
-* Updated the UI of the Settings and Log files panels, as well as the Manual Activity and Comment dialogs.
+* The Settings UI and Log files panels are updated, as well as the Manual Activity and Comment dialogs.
 
 == Other Important Changes
 
