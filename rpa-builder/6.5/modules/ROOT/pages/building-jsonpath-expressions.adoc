@@ -21,9 +21,26 @@ image::jsonpath-expression-builder-import.png[The import file window of the JSON
 image::jsonpath-expression-builder.png[The JSONPath Expression Builder tool.]
 +
 After clicking a JSON element, the *Result* panel updates to show what values the expression extracts and the *JSONPath expression* field updates to show the expression built to extract the specified value. 
-. Click *Apply* to confirm and use the built JSONPath expression. 
+. Click *Next*.
+. You can set filters for the expression at this point. See <<set-filters>> for details. 
+. Click *Apply* to confirm and use the built JSONPath expression in the current action step.
++
+Optionally, you can click the *Copy JsonPath expression to clipboard* (image:copy-filter-icon.png[2%, 2%, JsonPath expression to clipboard button.]) button to copy the expression. 
 
 For more information about JSONPath, see https://goessner.net/articles/JsonPath/[XPath for JSON^].
+
+[[set-filters]]
+== Set Filters for a JSONPath Expression
+
+During the last step of creating a JSONPath expression, you can set filters by specifying the conditions before applying the expression created using the builder: 
+
+image::jsonpath-expression-builder-filter.png[The JSONPath Expression Builder tool showing the filter screen.]
+
+[calloutlist]
+. Click on any array element (`[*]`) of the resulting expression. 
+. Select the conditions for the filter. 
+. Click the *Add new filter* (image:check-circle.png[2.5%, 2.5%, Accept button.]) button.
+
 
 == See Also 
 
