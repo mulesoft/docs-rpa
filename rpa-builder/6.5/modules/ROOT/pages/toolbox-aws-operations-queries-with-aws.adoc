@@ -53,19 +53,8 @@ The number of matching answers to the specified query
 
 image:queries-with-aws-wizard.png[50%, 50%, The Queries With AWS Wizard]
 
-* *Authentication Settings*
-+
-The AWS credentials to use for authentication
-+
-** *Pin credentials*
-+
-Enables you to reference an existing *Credentials for AWS* configuration
-** *Use custom settings*
-+
-Enables you to specify an AWS *Client ID*, *Client Secret*, and *Region Endpoint* for this action step
-** *Session Token*
-+
-The session token to use for authentication when *Use session token to authenticate* is selected
+include::partial$aws-authentication.adoc[tag=wizard] 
+
 * *Response settings*
 ** *JsonPath Expression*
 +
@@ -102,5 +91,6 @@ Enables you to test the configured query and see the results in the Wizard
 
 == See Also
 
+* xref:toolbox-aws-operations-credentials-for-aws.adoc[]
 * https://docs.aws.amazon.com/en_us/textract/latest/dg/bestqueries.html[Amazon Textract: Best Practices for Queries^]
 * xref:building-jsonpath-expressions.adoc[]
