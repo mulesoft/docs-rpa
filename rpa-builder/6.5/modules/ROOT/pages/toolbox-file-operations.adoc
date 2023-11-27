@@ -52,6 +52,7 @@ Specify path information for all Action Steps of the type File Operations in Set
 +
 The paths calculated at runtime for File Operations are checked against the list of allowed paths configured in the *Allow File Operation Action Steps only in following paths* option inside *Workflow Settings* -> *File Operation Settings*.
 
+[[invalid-characters]]
 * *Path / file name / invalid characters*
 +
 RPA Builder manages the path and file name separately and makes them available to other operations as the Outbound Variables *File Name* and *Directory Path*. Action Steps cannot interpret wildcards in the form of `?` or `*`. 

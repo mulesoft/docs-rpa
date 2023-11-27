@@ -17,10 +17,9 @@ the event of a non-existent file.
 is to be deleted. You can specify an absolute or relative path. If a
 relative path is used, then the path relates to the _Base Path_
 variable.
-* *File Name* Enter the name of the file that is to be deleted.
-
-Placeholders are not permitted. For further information please refer to
-the section on *Invalid characters*.
+* *File Name* The name of the file to delete.
++
+This field does not support placeholders. For further information, see xref:toolbox-file-operations.adoc#invalid-characters[Path / file name / invalid characters].
 
 * *Force error if file does not exist* If this option has been enabled,
 an error message will interrupt the _Workflow_ if the file for deletion
