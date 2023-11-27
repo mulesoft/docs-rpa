@@ -4,6 +4,7 @@
 
 The OCR with AWS action step enables you to recognize the text in a document by sending a local file to the AWS Textract service, which returns the extracted values.
 
+include::partial$aws-doc-processing.adoc[tag=specific]
 
 == Inbound Variables
 
@@ -39,19 +40,8 @@ The complete AWS response.
 
 image:ocr-with-aws-wizard.png[50%,50%]
 
-* *Authentication Settings*
-+
-The AWS credentials to use for authentication
-+
-** *Pin credentials*
-+
-Use this option to reference an existing *Credentials for AWS* configuration.
-** *Use custom settings*
-+
-Use this option to specify an AWS *Cliend ID*, *Client Secret*, and *Region Endpoint* for this action step.
-** *Session Token*
-+
-The session token to use for authentication when *Use session token to authenticate* is selected.
+include::partial$aws-authentication.adoc[tag=wizard] 
+
 * *Response settings*
 ** *JsonPath Expression*
 +
@@ -64,31 +54,11 @@ The path to the directory where the file is located.
 +
 The name of the file to analyze. Supported file types: PDF, JPEG, and PNG.
 +
-* *PDF Settings*
-+
-These settings show when the selected file is a PDF.
-+
-** *PDF file is password protected*
-+
-Specifies if the selected PDF file is password protected. When selected, specify the password to open the file in the *Password to open PDF file* filed.
-** *Read entire file*
-+
-Instructs the OCR service to read the entire file.
-** *Read page range*
-+
-Instructs the OCR service to read the selected range of pages.
-+
-*** *From page*
-+
-Specify from which page the OCR service starts reading the file.
-*** *To page*
-+
-Specifies until which page the OCR service reads the file.
-*** *Read to end of file*
-+
-Instructs the OCR service to continue reading until the end of the file.
+
+include::partial$pdf-settings.adoc[]
 
 == See Also
 
+* xref:toolbox-aws-operations-credentials-for-aws.adoc[]
 * https://docs.aws.amazon.com/textract/latest/dg/how-it-works-detecting.html[Amazon Textract: Detecting Text^]
 * xref:building-jsonpath-expressions.adoc[]
