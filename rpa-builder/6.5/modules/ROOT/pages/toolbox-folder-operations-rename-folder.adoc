@@ -11,7 +11,7 @@ See xref:common-properties.adoc[Common Properties] for a description.
 * *Folder Operations Settings* 
 ** *Directory Path* 
 +
-Path to the directory where to check the existence of the folder. 
+Path to the directory that contains the folder to rename. 
 ** *New folder name* 
 +
 The new name for the folder.
