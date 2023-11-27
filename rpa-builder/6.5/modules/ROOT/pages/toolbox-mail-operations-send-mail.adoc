@@ -2,9 +2,9 @@
 
 = Send Mail
 
-With the _Send Mail_ Action Step, you can send an e-mail with the SMTP
+With the _Send Mail_ Action Step, you can send a mail with the SMTP
 protocol. You can enter the recipient, the subject, or send attachments
-just as with other e-mail programs.
+just as with other mail programs.
 
 You can only use the Send Mail Action Step within a Mail Session. You
 enter the information required for the connection to the mail server in
@@ -14,7 +14,7 @@ the Mail Session.
 
 *Send Mail Settings*
 
-*Body* Here, the content of the e-mail is displayed. A total of 3900
+*Body* Here, the content of the mail is displayed. A total of 3900
 characters are available.
 
 *Enter error state when a file does not exist* If this checkbox is selected and if
@@ -33,7 +33,7 @@ path refers to the variable _Base Path_.
 
 *Second file name* Contains the path to the second file that is to be attached.
 
-*Subject* Subject of the e-mail.
+*Subject* Subject of the mail.
 
 *Third directory path* Path to the directory, in which the third file to be attached, is
 located. Enter the absolute or relative path. If relative, then the path
@@ -50,7 +50,7 @@ refers to the variable _Base Path_.
 *Bcc* Blind carbon copy.
 
 //link:#AS_SendMail_P_Subject[*Subject*]
-*Subject* Subject of the e-mail.
+*Subject* Subject of the mail.
 
 //link:#AS_SendMail_P_FirstDirectoryPath[*First directory path*]
 *First directory path* Path to the directory, in which the first file to be attached, is
@@ -83,7 +83,7 @@ Step is ended with an error.
 
 == Outbound Variables
 
-*IsSucceeded* Indicates whether an e-mail was sent successfully.
+*IsSucceeded* Indicates whether an mail was sent successfully.
 
 == Wizard
 
@@ -91,10 +91,7 @@ Step is ended with an error.
 
 The wizard is split into two tabs, *Message* and *Attachment*.
 
-In the Message area, you can enter free text under *Body*. You can also
-link the content with *Insert Available Variables*. You have defined the
-variables in advance either using the Activity Parameters or the
-Workflow Based Variables.
+In the Message area, you can enter text under *Body*. You can link the content with *Insert Available Variables*, assuming you defined variables in advance either using the Activity Parameters or the Workflow Based Variables. Select the encoding to use between UTF-8, UTF-16, Shift-JIS, and EUC-JP. 
 
 The pin variable
 //with image:media\image2.png[image,width=217,height=19]in the attachments area
@@ -102,7 +99,7 @@ is only displayed if you have defined a variable
 of type Bool using the Activity Parameters or the Workflow Based Variables.
 
 In the Attachment area, you can add up to three attachments to the
-e-mail. Under Directory path, you define the path to the new file to be
+mail. Under Directory path, you define the path to the new file to be
 created. You can create an absolute path or a path relative to the _Base Path_.
 //using the buttons image:media\image3.png[image,width=141,height=17] and image:media\image4.png[image,width=108,height=18].
 The default value is %STWS_BASEPATH%. Select an existing path.

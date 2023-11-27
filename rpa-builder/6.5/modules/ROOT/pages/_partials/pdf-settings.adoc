@@ -1,0 +1,31 @@
+* *PDF Settings*
++
+These settings show when the selected file is a PDF.
++
+** *Automatically detect the best quality for conversion* 
++
+Disable this option to manually adjust the image quality.
+** *Image Quality*
++
+Specifies the quality of the image created from the PDF. The value ranges from `10` (lowest quality) to `100` (highest quality). 
++
+This property is not available in the Wizard. 
+** *PDF file is password protected*
++
+Specifies if the selected PDF file is password protected. When selected, specify the password to open the file in the *Password to open PDF file* filed.
+** *Read entire file*
++
+Instructs the service to read the entire file.
+** *Read page range*
++
+Instructs the service to read the selected range of pages.
++
+*** *From page*
++
+Specify from which page the service starts reading the file.
+*** *To page*
++
+Specifies until which page the service reads the file.
+*** *Read to end of file*
++
+Instructs the service to continue reading until the end of the file.

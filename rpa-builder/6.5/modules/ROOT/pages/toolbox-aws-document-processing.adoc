@@ -4,6 +4,8 @@
 
 The document processing action steps enable you to extract data from documents and translate text by using the Amazon Translate and Amazon Textract services.
 
+include::partial$aws-doc-processing.adoc[tag=general]
+
 To use these action steps, you need an active subscription to AWS.
 
 * xref:toolbox-aws-operations-credentials-for-aws.adoc[Credentials For AWS]
