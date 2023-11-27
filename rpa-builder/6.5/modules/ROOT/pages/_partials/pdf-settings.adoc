@@ -2,7 +2,10 @@
 +
 These settings show when the selected file is a PDF.
 +
-** *Image Quality* (Only available in Properties) 
+** *Automatically detect the best quality for conversion* 
++
+Disable this option to manually adjust the image quality.
+** *Image Quality*
 +
 Specifies the quality of the image created from the PDF. The value ranges from `10` (lowest quality) to `100` (highest quality). 
 +
