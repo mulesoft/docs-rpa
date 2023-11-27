@@ -153,7 +153,9 @@ Follow these steps to authenticate with your credentials:
 Refer to <<properties, OAuth Authentication Settings>> for a description of each property.
 . Click *Authenticate*.
 +
-This step starts the authentication process with the OAuth Host, which opens the login page in your default browser.
+This step starts the authentication process with the OAuth Host, which opens the login page in your default browser. 
++
+To enable using different accounts to log in, Mail Session (Outlook with OAuth) clears credentials stored in browser cookies when you click *Authenticate*. 
 . In the OAuth Host’s login page, complete the login process.
 . Close the browser.
 

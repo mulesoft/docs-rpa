@@ -1,0 +1,34 @@
+= Delete Folder 
+
+Use this action step to delete a folder and all its content. 
+
+== Properties 
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties] for a description.  
+
+* *Folder Operations Settings* 
+** *Directory Path* 
++
+Path to the directory that contains the folder to delete. 
+** *Force error if folder does not exist* 
++
+Causes the workflow to enter an error state and stop its execution if the folder does not exist. 
+** *Only delete if folder is empty* 
++
+Causes the workflow to enter an error state and stop its execution if the folder exists but it's not empty.  
+
+== Inbound Variables 
+
+* *Force error if folder does not exist* 
+* *Only delete if folder is empty* 
+* *Directory Path* 
+
+== Outbound Variables 
+
+* *Directory Path*
+
+== See Also 
+
+* xref:toolbox-folder-operations.adoc[]
