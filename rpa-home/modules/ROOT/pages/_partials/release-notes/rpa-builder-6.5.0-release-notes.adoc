@@ -9,13 +9,14 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* The new Signature Detection with AWS action step enables you to extract one or more signatures from a document. 
-* The new Check Folder action step enables you to check the existence of a folder in the specified path. 
-* The new Create Folder action step enables you to create a new folder in the specified path. 
-* The new Copy Folder action step enables you to copy a folder, including all subfolders and files, to the specified path. 
-* The new Delete Folder action step enables you to delete a folder, and all its contents, in the specified path. 
-* The new Rename Folder action step enables you to rename a folder in the specified path. 
-* The new Session Based Variables action step enables you to share variables accross all workflows that run inside the same session. 
+* Several new action steps are available:
+** Signature Detection with AWS enables you to extract one or more signatures from a document. 
+** Check Folder enables you to check the existence of a folder in the specified path. 
+** Create Folder enables you to create a new folder in the specified path. 
+** Copy Folder enables you to copy a folder, including all subfolders and files, to the specified path. 
+** Delete Folder enables you to delete a folder, and all its contents, in the specified path. 
+** Rename Folder enables you to rename a folder in the specified path. 
+** Session Based Variables enables you to share variables accross all workflows that run inside the same session. 
 * Runtime Variables now includes Process ID, Bot ID, Session ID, and Session Name. 
 * RPA Builder now shows notifications when you download a locked process and when you try to upload changes to a locked process.
 * Read Mail and Send Mail now support the following encodings: UTF-8, UTF-16, Shift-JIS, and EUC-JP.
