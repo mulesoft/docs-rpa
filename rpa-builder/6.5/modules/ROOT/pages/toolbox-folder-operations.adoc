@@ -5,3 +5,15 @@ Folder Operations enable you to interact with the folders of the file system whe
 * xref:toolbox-folder-operations-check-folder.adoc[Check Folder]
 +
 This action step checks if a folder exists in the configured directory path. 
+* xref:toolbox-folder-operations-copy-folder.adoc[Copy Folder]
++
+Copies a source folder to the target directory. 
+* xref:toolbox-folder-operations-create-folder.adoc[Create Folder]
++
+This action step creates an empty folder in the configured directory path. 
+* xref:toolbox-folder-operations-delete-folder.adoc[Delete Folder]
++
+This action step deletes a folder and all its content. 
+* xref:toolbox-folder-operations-rename-folder.adoc[Rename Folder]
++
+Renames an existing folder. 
