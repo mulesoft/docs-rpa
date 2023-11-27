@@ -48,6 +48,9 @@ An array containing all results received as a response to the specified query
 * *Answers count* 
 +
 The number of matching answers to the specified query 
+* *Confidence first answer* 
++
+The confidence value of the first result as a floating point number.
 
 == Wizard 
 
