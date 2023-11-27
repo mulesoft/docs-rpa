@@ -143,3 +143,7 @@ Workflow.
 The _Variable_ Action Step is intended to be used if information is
 being stored that is only required within a single Transaction and is
 then not subsequently needed.
+
+== See Also 
+
+* xref:toolbox-variable-handling-session-based-variables.adoc[]

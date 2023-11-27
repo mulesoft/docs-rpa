@@ -46,6 +46,9 @@ The Read from Array Action Step is used to access the content of an array.
 * xref:toolbox-variable-handling-runtime-variables.adoc[Run Time Variables]
 +
 The RunTime Variables Action Step enables you to use variables defined during runtime in a Workflow.
+* xref:toolbox-variable-handling-session-based-variables.adoc[Session Based Variables]
++
+The Session Based Variables Action Step enables you to share variables between workflows that execute on the same session. 
 * xref:toolbox-variable-handling-set-array-variable.adoc[Set Array Variable]
 +
 The Set Array Variable Action Step enables you to assign new values to an array.
