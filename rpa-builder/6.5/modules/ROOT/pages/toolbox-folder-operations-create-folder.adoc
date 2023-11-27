@@ -11,7 +11,7 @@ See xref:common-properties.adoc[Common Properties] for a description.
 * *Folder Operations Settings* 
 ** *Directory Path* 
 +
-Path to the directory to check the existence of the folder. 
+Path to the directory where to create the folder.
 ** *Force error if folder exists* 
 +
 Causes the workflow to enter an error state and stop its execution if the folder exists. 
