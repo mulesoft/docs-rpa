@@ -1,57 +1,71 @@
 
+= Runtime Variables
 
-= Run Time Variables
+The Runtime Variables action step provides a set of variables that the workflow populates at runtime. Use these variables to get information from the runtime context.
 
-The _RunTime Variables_ Action Step allows variables to be used that are
-completed at a _Workflow_'s runtime.
+The following variables are available:
 
-The following variables can be used:
+* *Project Name* 
++
+Name of the _Workflow_ project
+* *Project GUID* 
++
+GUID of the _Workflow_ project
+* *Run GUID* 
++
+GUID related to the execution of the _Workflow_ (regenerated for each run)
+* *Time* 
++
+Actual time as local time or UTC in configurable format
+* *Date* 
++
+Actual date as local time or UTC in configurable format
+* *HostName* 
++
+Name of _Host_ system
+* *UserName* 
++
+Name of the user
+* *RandomVariable* 
++
+Positive random number with a configurable range of values. The workflow generates a different number on each run.
+* *Business Process ID* 
++
+ID of the business process
+* *Session Id* 
++
+Terminal session ID of the environment where the bot is running
+* *Session Name* 
++
+Terminal session name of the environment where the bot is running
+* *Bot ID* 
++
+GUID of the bot that is executing the workflow 
 
-* *Project Name* Name of the _Workflow_ project
-* *Project GUID* GUID belonging to the _Workflow_ project
-* *Run GUID* GUID relating to executing the _Workflow_ (regenerated for
-each run)
-* *Time* Actual time as local time or UTC in configurable format
-* *Time* Actual date as local time or UTC in configurable format
-* *HostName* Name of _Host_ system
-* *UserName* Name of the user
-* *Random* Positive random number (whole number) with configurable range
-of values. A different number is generated each time the workflow runs.
+_RandomVariable_ is an integer value. All other variables are strings.
 
-The _Random_ variable is an integer value; all other variables are
-string variables.
-
-It is not possible to debug the _RunTime Variables_ Action Step. Debug
-functionality for this is therefore switched off in RPA Builder.
-This means that it is no longer possible to set a breakpoint for a
-_RunTime Variables_ Action Step.
+Debugging the _Runtime Variables_ action step is not possible. Therefore, the debug functionality is disabled and you cannot set breakpoints for this action step.
 
 == Properties
 
-*Write RunTime Variables to Logfile* If this option is enabled, the
-RunTime variables are written to the Stc log file.
+* *Write Runtime Variables to Logfile* 
++
+When enabled, the workflow writes runtime variables to the Stc log file.
 
 == Outbound Variables
 
-*RunTime Variables.[ name of the _RunTime_ variables]* Content of
-_RunTime_ variables.
+* *Runtime Variables.[name of the runtime variables]* 
++
+Content of _Runtime variables_.
 
 == Wizard
 
-The _RunTime Variables Action Step_ wizard is used to specify whether
-variables are to be made available in all subsequent transactions (_Make
-Variables available in all further Transactions_ checkbox). First select
-the type of variable you wish to add (_Add new RunTime Variable_ combo
-box).
+Use the wizard to add new runtime variables and specify their *Name* and *Description*. 
 
-Use the _Delete_ button to remove any variables that are no longer
-required.
+To make variables available in later transactions, select *Make Variables available in all further Transactions*. 
 
-The values listed under _Sample Data_ in the wizard are used in a local
-test. If the _Workflow_ is completed by a _Bot_, the values will
-re-determined at each runtime.
+Use the *Delete* button to remove variables.
 
-//image:media\image1.png[image,width=218,height=221]
+The values listed in *Sample Data* are for local testing. If a bot completes the workflow, the workflow re-determines the values at each run.
 
-Then give a name to the variable to be produced and perform any settings
-required using the drop-down _Settings_ menu.
+Some variables such as *Random Variable* show a *Settings* menu that you can expand for further configuring the variable.
