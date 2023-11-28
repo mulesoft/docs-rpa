@@ -8,6 +8,7 @@ The RPA Bot Configuration tool has the following configuration panels:
 * <<proxy-settings, Proxy>>
 * <<session-settings, Session Settings>>
 * <<secure-session, Secure Session Settings>>
+* <<system-settings, System Settings>>
 * <<session-monitoring, Session Monitoring>>
 
 [TIP]
@@ -138,6 +139,22 @@ Defines the interval at which the bot takes screenshots.
 * *Analysis package on OK*
 +
 Sends analysis packages if the Activity Workflow terminates with OK.
+
+[[system-settings]]
+== System Settings
+
+image:bot-configurator-system-settings.png[The RPA Bot configurator application showing the System Settings panel, 50%, 50%]
+
+This panel indicates whether a terminal server software is installed and displays a list of all known registry keys with their current value. If a setting prevents RPA Bot from operating correctly, it is marked with a warning icon.
+
+You can fix the registry key settings directly from the panel by doing the following:
+
+. Right-click the warning icon.
+. Click *Fix it*.
+
+A confirmation pop-up displays to indicate the setting was fixed successfully. If the fix fails, access documentation from the panel for information about why the fix failed and how to resolve it.
+
+To fix the terminal server setting, which is needed for Secure Sessions, ensure the software is installed. Visit xref:hardware-software-requirements.adoc[Hardware and Software Requirements] for more information about requirements for Secure Sessions.
 
 == See Also
 

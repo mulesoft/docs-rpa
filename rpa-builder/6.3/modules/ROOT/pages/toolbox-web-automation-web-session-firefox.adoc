@@ -33,9 +33,9 @@ Enable this option if you are having trouble with mouse hover during execution.
 * *Port*
 +
 Defines the TCP/IP listener port number used for Firefox for communication between Firefox and an RPA Bot. If set to `-1` an ephemeral port number is used
-(and may also be used for all concurrent secure sessions).
+(and may also be used for all concurrent Secure Sessions).
 +
-To ensure optimal operation when using secure sessions, set it to `0`.
+To ensure optimal operation when using Secure Sessions, set it to `0`.
 In this case, the port used is calculated by the following function:
 `port = TSID * 4 + 45000` (TSID is the current Terminal Session ID). To
 choose a base value other than `45000`, a value greater than `0` must be
