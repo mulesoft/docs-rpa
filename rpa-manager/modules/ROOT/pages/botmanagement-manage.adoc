@@ -8,6 +8,7 @@ As a bot administrator, you can manage the following properties of a bot:
 * Assign service times to a bot to determine their office hours.
 * Restrict bots to project phases.
 * Set the maximum number of sessions a bot can use.
+* Update the bot to a newer version.
 
 If a bot isn't working properly, you can do the following:
 
@@ -43,7 +44,7 @@ The console session must remain open and unminimized while the bot executes a pr
 |RPA Bots Manager, RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Bot Management Open
 
-|License, edit, and remove bots
+|License, edit, update, and remove bots
 |RPA Bots Manager, RPA Operations Manager, RPA Administrator
 |Bot Management Administration
 
@@ -55,7 +56,7 @@ The bot runs a process configuration in a session on the computer where the bot 
 
 If bots should run processes in a hidden session, assign the bot at least one Secure Session.
 
-The number of Secure Sessions that can be assigned and served by the bot depends on the hardware of the computer on which the bot is installed
+The number of Secure Sessions that can be assigned and served by the bot depends on the hardware of the computer on which the bot is installed.
 Please refer to the system and hardware requirements topic to assess the maximum number of Secure Sessions for the bot.
 
 Enabling the same setting via the RPA Bot Configurator, limits but not not overwrites this setting.
@@ -96,6 +97,27 @@ Learn how to xref:processautomation-prepare-project-application.adoc[manage appl
 . In the *Bots* view of the *Bot Management* module, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the row of the bot to edit.
 . In the form *<bot name>* click on all service times and applications you want to assign.
 . Click *Save*.
+
+== Update a Bot
+
+Update your bots to the latest version to get the newest features, bugfixes, and security enhancements. The bot completes all processes before updating, and resumes them afterwards to avoid data loss.
+
+Alternatively, you can update single bots manually by downloading and installing the newer version from the *Download Applications* pane in the *Home* module of RPA Manager.
+
+You can automatically update bots that fullfill the following requirements:
+
+* The bot is in OK status.
+* The bot is of version 1.5 or later.
+
+To update one or more bots automatically:
+
+. In the *Bots* view of the *Bot Management* module, click *Update*.
+. In the *Select Bots* pane, select the bots to update.
+. Click *Update*. 
+
+RPA Manager creates an update task for each bot to be updated as soon as possible.
+
+You can view the status of the update task in the details view of each bot in the *Bots* view of the *Bot Management* module.
 
 == Edit a Bot
 
