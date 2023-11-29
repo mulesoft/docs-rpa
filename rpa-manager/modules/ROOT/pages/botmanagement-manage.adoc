@@ -1,36 +1,72 @@
 = Managing Bots
 
-Bots can be licensed to use secure sessions. Some properties, like name, service times, and phase permissions can be edited. Deinstalled bots can be removed from RPA Manager.
+Newly installed bots connect to RPA Manager automatically.
+
+As a bot administrator, you can manage the following properties of a bot:
+
+* Name and describe a bot.
+* Assign service times to a bot to determine their office hours.
+* Restrict bots to project phases.
+* Set the maximum number of sessions a bot can use.
+
+If a bot isn't working properly, you can do the following:
+
+* Download the log files.
+* Restart the bot.
+* Delete the bot.
 
 == Before You Begin
 
 * At least one bot must be installed on a separate computer.
-* If you want to assign more than one secure session to a bot, make sure that a terminal server software is installed on the computer of the bot.
+* On the computer where you want to run automations and where a bot therefore is installed, check the system data:
+** Operating system
+** RAM
+** Terminal Server software
+** Login data for the bot
+** RPA Bot Configurator settings
+* If you want to use Secure Sessions, read and pass on the following information:
+** Before deploying a run configuration on a bot that has only one licensed secure session, do not disconnect the session, instead sign out the specified user.
+** If you want to assign more than one secure session to a bot, make sure that a terminal server software is installed on the computer of the bot and refer to the xref:rpa-bot::hardware-software-requirements.adoc#requirements-for-secure-session-technology[system and hardware requirements documentation] to determine the maximum number of secure sessions for the bot.
+** Do not sign in to a computer where a bot with one licensed secure session is running a process.
+* If you want to use Desktop sessions, read and pass on the following information:
+** The specified user must be logged in to this session to deploy a run configuration.
+The console session must remain open and unminimized while the bot executes a process.
 * If you want to assign service times to a bot, you need to create them in the *Service Times* view of the *Bot Management* module first.
 * If you want to assign process applications to a bot, you need to create them in the *Process Applications* view of the *Process Automation* module first.
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Bot Management* module and view the bots
+|RPA Bots Manager, RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Bot Management Open
 
 |License, edit, and remove bots
+|RPA Bots Manager, RPA Operations Manager, RPA Administrator
 |Bot Management Administration
 
 |===
 
-== License Bots for Secure Sessions
+== Assign Sessions to Bots
 
-If bots should run processes in a hidden session, assign them secure session licenses.
+The bot runs a process configuration in a session on the computer where the bot is installed.
 
-The number of secure sessions that can be assigned and served by the bot depends on the hardware of the computer on which the bot is installed
-Please refer to the system and hardware requirements topic to assess the maximum number of secure sessions for the bot.
+If bots should run processes in a hidden session, assign the bot at least one Secure Session.
+
+The number of Secure Sessions that can be assigned and served by the bot depends on the hardware of the computer on which the bot is installed
+Please refer to the system and hardware requirements topic to assess the maximum number of Secure Sessions for the bot.
+
+Enabling the same setting via the RPA Bot Configurator, limits but not not overwrites this setting.
 
 . In the *Bots* view of the *Bot Management* module, click *Secure Session Assignment*.
-. Set the number of sessions the bot may use.
+. Set the number of sessions the bot can use:
++
+* Session Assignment >= 1:
+** The bot consumes up to the the specified number of Secure Sessions.
+* Session Assignment = 0
+The bot consumes the Desktop session.
 . Click *Save*.
 
 [[bot-assign-servicetimes-applications]]
@@ -57,7 +93,7 @@ For example, if you specify a downtime that starts at 1:30 AM and ends at 5:30 A
 
 Learn how to xref:processautomation-prepare-project-application.adoc[manage applications].
 
-. In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the bot to edit.
+. In the *Bots* view of the *Bot Management* module, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the row of the bot to edit.
 . In the form *<bot name>* click on all service times and applications you want to assign.
 . Click *Save*.
 
@@ -65,7 +101,7 @@ Learn how to xref:processautomation-prepare-project-application.adoc[manage appl
 
 Edit a bot to change its properties. Hostname, IP address, version, and timezone are fixed values taken from the computer the bot is installed on.
 
-. In the *Bots* view of the *Bot Management* module, click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the row of the bot to edit.
+. In the *Bots* view of the *Bot Management* module, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the row of the bot to edit.
 . Edit the *<bot name>* form.
 . Click *Save*.
 
@@ -73,16 +109,15 @@ Edit a bot to change its properties. Hostname, IP address, version, and timezone
 
 After deinstallation or reconfiguration, a bot is still shown in the *Bots* view. You need to manually remove the bot from the view. Deleted bots are removed from process configurations. Any active processes are terminated.
 
-. In the *Bots* view of the *Bot Management* module, click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the row of the bot to remove.
+. In the *Bots* view of the *Bot Management* module, click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) in the row of the bot to remove.
 . Confirm the removal.
 
-If you accidentally remove a bot that is still being executed, the bot will shut down and the API Key is deleted on the bot's computer. You must uninstall and reinstall the bot with a new API Key. In this case, the licenses, name, description, assigned process applications and service times, and tasks will be lost and have to be assigned again.
+If you accidentally remove a bot that is running, the bot shuts down and the API Key is deleted on the bot's computer. You must uninstall and reinstall the bot with a new API Key. In this case, reassign the licenses, name, description, assigned process applications and service times, and tasks.
 
 == See Also
 
-* xref:rpa-bot::hardware-software-requirements.adoc[Hardware and Software Requirements]
-* xref:botmanagement-overview.adoc[Bot Management]
-* xref::botmanagement-support.adoc[Supporting Bots]
-* xref::botmanagement-know.adoc[Getting to Know Bots]
-//* xref::botmanagement-manage.adoc[Managing Bots]
-* xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
+* xref:rpa-home::automation-security-securesessions.adoc[RPA - Secure Sessions]
+* xref:rpa-bot::hardware-software-requirements.adoc[RPA Bot - Hardware and Software Requirements]
+* xref:rpa-bot::configuration.adoc[RPA Bot Configurator]
+* xref:botmanagement-troubleshoot.adoc[Troubleshooting Bots]
+* xref:processautomation-deploy.adoc[Deploying Configurations]

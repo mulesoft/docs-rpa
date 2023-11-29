@@ -4,19 +4,21 @@ In the *Process Streaming* view, you see the number of configurations, RPA Bots,
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Process Streaming* view
+|RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Process Streaming Open
 
 |===
 
 * Only productive processes for which at least one configuration has been created and for which you are a member of the process team are displayed.
 * Check xref:processautomation-deploy.adoc#runconfig-execution-enabletaskbar[*Enable Taskbar (Start menu, taskbar buttons)*] in the run configuration to view the desktop of the computer that runs the process. Otherwise, a black screen is shown.
+* xref:rpa-bot::configuration.adoc#session-settings[*Send images for process streaming*] must be enabled in the RPA Bot Configurator on the computer, where the process runs.
 
 == Watch a Bot at Work
 
@@ -30,6 +32,4 @@ Watch the process stream to see what is happening right now.
 == See Also
 
 * xref:processautomation-deploy.adoc[Deploying Automations]
-* xref:processmonitoring-overview.adoc[Process Monitoring]
-//* xref:processmonitoring-stream.adoc[Streaming Processes]
-* xref:processmonitoring-queue.adoc[Queueing Process Sessions]
+* xref:rpa-bot::configuration.adoc#session-settings[RPA Bot Configurator - Session Settings]

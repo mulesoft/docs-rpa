@@ -1,5 +1,11 @@
 = Managing Users
-:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdP). After your organization is migrated to Anypoint Platform, the User Management module is removed and the RPA Administrator manages the users in Access Management.
+
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
+If you use an Anypoint account to login to RPA Manager, refer to the https://docs.mulesoft.com/access-management/[Anypoint Access Management documentation^].
+
+[IMPORTANT]
+If you are your organization's first admin user, you are responsible for creating all other users. You can do this yourself or create another user with admin privileges to whom you delegate this task.
 
 Manage the users of RPA Manager, RPA Recorder, and RPA Builder:
 
@@ -7,9 +13,6 @@ Manage the users of RPA Manager, RPA Recorder, and RPA Builder:
 * Edit the users' personal data.
 * Assign privileges or roles to users that enable them to work in specific modules and, access RPA Builder and RPA Recorder, and assume responsibility for process projects.
 * Assign a user to a process team.
-
-[IMPORTANT]
-If you are your organization's first admin user, you are responsible for creating all other users. You can do this yourself or create another user with admin privileges to whom you delegate this task.
 
 == Before You Begin
 
@@ -53,7 +56,7 @@ Click on a role or privilege to assign it to or remove it from the user.
 A user needs privileges to view and use the RPA Manager modules. This ensures that only authorized users can access the modules. Assign privileges to a user when you create a new user or edit an existing user.
 
 . Open the *Users* view of the *User Management* module.
-. Click either *Create* in the header bar to create a new user or the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the panel of the user to edit.
+. Click either *Create* in the header bar to create a new user or *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the panel of the user to edit.
 . In the form *<[Create,Edit]> a [New] User*, scroll down to the selection list *Available Privileges*.
 . Click a privilege to assign it to the user.
 . Repeat the previous step until the user has all needed privileges.
@@ -64,7 +67,7 @@ A user needs privileges to view and use the RPA Manager modules. This ensures th
 Instead of editing a project and adding a user to its project team, you can change several project assignments of a user at once:
 
 . Open the *Users* view of the *User Management* module.
-. Click the *Assign Project* icon image:assignproject-icon.png[process-diagram symbol,1.5%,1.5%] in the panel of the user whose project assignments you want to change.
+. Click *Assign Project* (image:assignproject-icon.png[process-diagram symbol,1.5%,1.5%]) in the panel of the user whose project assignments you want to change.
 
 The view *Assign Process* shows you a list of all processes where the user is part of the process team.
 
@@ -85,7 +88,7 @@ To assign additional processes to a user to support the process team:
 
 To remove a user from a process team:
 
-. In the view *Assign process*, click the *Delete* icon image:delete-icon.png["trash symbol",1.5%,1.5%] for each process to remove from the user.
+. In the view *Assign process*, click *Delete* (image:delete-icon.png[trash symbol,1.5%,1.5%]) for each process to remove from the user.
 . Click *Save*.
 
 The project manager and the project owner cannot be deleted. To change them, use the function xref:processautomation-manage.adoc#change-the-process-owner-of-an-automation-project[*New Process Owner*] or xref:processautomation-manage.adoc#change-the-project-manager-of-an-automation-project[*New Project Manager*] in the *Process Management* view of the *Process Automation* module.
@@ -95,7 +98,7 @@ The project manager and the project owner cannot be deleted. To change them, use
 Reset a password if the user forgot it. RPA Manager sends an email that contains a new temporary password to the user. The user can then create a new password.
 
 . Open the *Users* view of the *User Management* module.
-. Click the *Reset Password* icon image:resetpassword-icon.png[key symbol,1.5%,1.5%] in the panel of the user to edit.
+. Click *Reset Password* (image:resetpassword-icon.png[key symbol,1.5%,1.5%]) in the panel of the user to edit.
 
 == Change Your Password
 
@@ -186,7 +189,7 @@ You can <<enable2faforyourself, enable 2FA>> again.
 To disable two-factor authentication for a user:
 
 . Open the *Users* view of the *User Management* module.
-. Click the *Deactivate Two-Factor Authentication* icon image:userdeactivate2fa-icon.png[user with open lock symbol,1.5%,1.5%] in the panel of the user whose 2FA want to deactivate.
+. Click *Deactivate Two-Factor Authentication* (image:userdeactivate2fa-icon.png[user with open lock symbol,1.5%,1.5%]) in the panel of the user whose 2FA want to deactivate.
 . Confirm the deactivation.
 
 The user can <<enable2faforyourself, enable 2FA>> again.
@@ -196,7 +199,7 @@ The user can <<enable2faforyourself, enable 2FA>> again.
 Edit users to change their data or permissions:
 
 . Open the *Users* view of the *User Management* module.
-. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] in the panel of the user to edit.
+. Click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) in the panel of the user to edit.
 . Edit the form *Edit a User*.
 +
 For an explanation of the properties, see <<form-create-user, *Create a new User*>>.
@@ -207,7 +210,7 @@ For an explanation of the properties, see <<form-create-user, *Create a new User
 Remove obsolete users. A user cannot be deleted if it is the owner or manager of a process. Deleted users cannot be restored. Use the *Deactivate* function to remove a user only temporarily.
 
 . Open the *Users* view of the *User Management* module.
-. Click the *Delete* icon image:delete-icon.png["trash symbol",1.5%,1.5%] in the panel of the user to edit.
+. Click *Delete* (image:delete-icon.png[trash symbol,1.5%,1.5%]) in the panel of the user to edit.
 . Confirm the removal.
 
 == See Also

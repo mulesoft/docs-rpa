@@ -1,17 +1,20 @@
 = Connecting to RPA Processes from Salesforce Products
-:page-notice-banner-message: MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). After your organization migrates to Anypoint Platform, the User Management module is removed and the RPA Administrator creates new user API keys in the Settings module.
 
-RPA Manager requires user API keys to integrate RPA processes into other Salesforce products. For example, you can use your API key to configure an RPA connector in a MuleSoft Composer flow.
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
+If you use an Anypoint account to login to RPA Manager, refer to the xref:settings-connect.adoc[*Settings* documentation].
+
+RPA Manager requires user authentication to integrate RPA processes into other Salesforce products. For example, you can use your API key to configure an RPA connector in a MuleSoft Composer flow.
 
 For security reasons, you can only see and copy your API key on creation.
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an administrator to assign you the required privileges:
 +
-[cols="1,2"]
+[cols="2,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*Privilege*
 
 |Open the *User Management* module
 |User Management Open
@@ -54,7 +57,7 @@ Edit a user API key to change its name, description, or expiration date. If you 
 To edit a user API key:
 
 . Open the *User API Keys* view of the *User Management* module.
-. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] on the panel of the user API key to edit.
+. Click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) on the panel of the user API key to edit.
 . Edit the form *Create User API Key*:
 +
 For an explanation of the properties, see <<form-createuserapikey, *Create a User API Key*>>.
@@ -67,7 +70,7 @@ Delete a user API key to revoke the user's REST API access to RPA Manager. Integ
 To delete a user API key:
 
 . Open the *User API Keys* view of the *User Management* module.
-. Click the *Remove* icon image:delete-icon.png["trash can symbol",1.5%,1.5%] on the panel of the user API key to remove.
+. Click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) on the panel of the user API key to remove.
 . Confirm the removal.
 
 == See Also

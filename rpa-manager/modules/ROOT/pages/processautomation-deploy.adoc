@@ -6,17 +6,18 @@ When the tests are successful, transition to *Production* phase.
 
 The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. The difference is that you do not have to start the individual process runs manually. Instead you schedule a process run configuration which is then executed automatically at defined times. Or you create an invokable run configuration and publish it to Anypoint Exchange.
 
-You can run processes openly in existing console sessions or run them hidden in secure sessions. In console sessions, only one process can run at a time. In secure sessions, different processes or several instances of the same process can run in parallel.
+You can run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Process Automation Module*
+||RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
 |===
@@ -39,7 +40,7 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 +
 Do not close or minimize the console session while the bot executes the process.
 
-* To run a process in a hidden session, you must deploy it to a bot configured for secure sessions. Before deploying a run configuration on a bot that has only one secure session licensed, do not disconnect the session, but sign out the specified user. Do not sign in to a computer where a bot with one licensed secure session is running a process.
+* To run a process in a hidden session, you must deploy it to a bot configured for Secure Sessions. Before deploying a run configuration on a bot that has only one licensed secure session, do not disconnect the session, instead sign out the specified user. Do not sign in to a computer where a bot with one licensed Secure Session is running a process.
 * RPA Manager requires authentication to integrate RPA processes into other Salesforce products:
 ** Use user API keys to use Salesforce Flows with RPA. 
 ** Use Connected Apps to configure an RPA connector in a MuleSoft Composer flow. 
@@ -80,7 +81,7 @@ Set a value by entering text or by clicking on a checkbox, and complete your ent
 +
 [[test-configuration-link-globals]]
 
-Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[symbol,1.5%,1.5%] and select a variable. RPA Manager displays variables of the same type, assigned to the test phase, and only the credentials to which you are xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
+Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click *Link a global activity parameter* (image:linkglobalvariable-icon.png[symbol,1.5%,1.5%]) and select a variable. RPA Manager displays variables of the same type, assigned to the test phase, and only the credentials to which you are xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
 +
 The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*
@@ -90,7 +91,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*
 +
-Decide whether to carry out the test run in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the test run in an existing console or RDP session or in a Secure Session, and specify an appropriate user.
 +
 You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
@@ -182,7 +183,7 @@ The activity parameters for each process are created in RPA Builder and are give
 Set a value by entering text or by clicking on a checkbox, and complete your entry by pressing ENTER.
 +
 [[production-configuration-link-globals]]
-Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click the *Link a global activity parameter* icon image:linkglobalvariable-icon.png[symbol,1.5%,1.5%] and select a variable. RPA Manager displays variables of the same type, assigned to the production phase, and only the credentials to which you are xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
+Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click *Link a global activity parameter* (image:linkglobalvariable-icon.png[link symbol,1.5%,1.5%]) and select a variable. RPA Manager displays variables of the same type, assigned to the production phase, and only the credentials to which you are xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
 +
 The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*:
@@ -192,7 +193,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether to carry out the productive run in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the productive run in an existing console or RDP session or in a Secure Session, and specify an appropriate user.
 +
 You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
@@ -325,7 +326,7 @@ User tasks are elements of a process model, which cannot be processed fully auto
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether to carry out the invokable run in an existing console or RDP session or in a secure session, and specify an appropriate user.
+Decide whether to carry out the invokable run in an existing console or RDP session or in a Secure Session, and specify an appropriate user.
 +
 You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
@@ -355,6 +356,7 @@ Hover the mouse pointer over the info label to display more detailed information
 
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
 * xref:rpa-bot::index.adoc[RPA Bot Overview]
+* xref:rpa-home::automation-security-securesessions.adoc[]
 * xref:botmanagement-overview.adoc[Bot Management]
 * xref:settings-connect.adoc[Connecting to RPA Processes from Salesforce Products]
 * xref:access-management::connected-apps-overview.adoc[]

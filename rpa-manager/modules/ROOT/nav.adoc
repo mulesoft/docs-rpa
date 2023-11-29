@@ -34,6 +34,7 @@
 ** xref:processautomation-develop.adoc[Developing Automations]
 ** xref:processautomation-deploy.adoc[Deploying Automations]
 ** xref:processautomation-manage.adoc[Managing Automations]
+** xref:processautomation-manage-botworkflowlibrary.adoc[Managing the Bot Workflow Library]
 * xref:processmonitoring-overview.adoc[Process Monitoring]
 ** xref:processmonitoring-stream.adoc[Streaming Processes]
 ** xref:processmonitoring-queue.adoc[Queueing Process Sessions]

@@ -12,13 +12,14 @@ First, create a standard category, so the process team can start with process au
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Process Automation* module
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
 |===
@@ -47,7 +48,7 @@ The category panel shows the number of contained projects and how many are in de
 Edit a category to render its name more precisely:
 
 . Open the *Process Management* view of the *Process Automation* module.
-. Click the *Edit* icon image:edit-icon.png["pen-to-paper symbol",1.5%,1.5%] on the panel of the category to edit.
+. Click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) on the panel of the category to edit.
 . Change the name in the *Edit the category* window.
 . Click *OK*.
 
@@ -60,7 +61,7 @@ You can only remove categories that do not contain processes.
 To remove a category:
 
 . Open the *Process Management* view of the *Process Automation* module.
-. Click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] on the panel of the category to delete.
+. Click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) on the panel of the category to delete.
 
 == Open a Category
 

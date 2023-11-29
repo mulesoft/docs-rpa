@@ -6,16 +6,18 @@ If the bot has status *SUSPENDED*, review the execution plans.
 
 If a bot has status *STOPPED*, *OVERDUE*, or *UNKNOWN*, an IT administrator needs to log on to the computer the bot is installed on and needs to troubleshoot it there.
 
+If a process execution fails when a bot runs correctly, turn on debug logging to get help detecting the cause.
+
 == View the Planned Process Executions
 
 If you are not sure why a bot is not processing, review the execution plans:
 
 . In the module *Bot Management*, open the view *Bot Execution Plans*.
-. In the table, click the *Execution timetable* icon image:executiontimetable-icon.png["calendar symbol",1.5%,1.5%] in the row of the bot you want to check.
+. In the table, click *Execution timetable* (image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%]) in the row of the bot you want to check.
 
 The execution timetable shows you the effective runtime of all configurations assigned to the bot.
 
-. Click the *Configure Execution Timetable* icon image:configure-icon.png["wrench symbol",1.5%,1.5%] to change the time interval of the table and to select the shown configurations.
+. Click *Configure Execution Timetable* (image:configure-icon.png[wrench symbol,1.5%,1.5%]) to change the time interval of the table and to select the shown configurations.
 . Click *OK*.
 . In the *Execution Timetable*, click a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
 
@@ -58,7 +60,7 @@ To view the bot log messages:
 Alternatively, in the *Process Automation* module:
 +
 ** From within a project in the test or production phase, click on a run result number in the *Run Results* panel.
-. Click the *Bot Message Log* icon image:botmessagelog-icon.png[list symbol,1.5%,1.5%] in the table row of the bot you want to read messages from.
+. Click *Bot Message Log* (image:botmessagelog-icon.png[list symbol,1.5%,1.5%]) in the table row of the bot you want to read messages from.
 
 Bot messages might be concatenated and truncated. To view the complete bot log, download the log files.
 
@@ -66,15 +68,33 @@ Bot messages might be concatenated and truncated. To view the complete bot log, 
 
 Download the zipped bot log files to check for error or warning messages or to view screenshots.
 
-The package contains the folders `BotTrace` and `RpaBotLogfiles`. The trace folder contains the log files of the secure sessions, while the log files folder contains the installation and configuration data, as well as the execution log of the bot.
+The package contains the folders `BotTrace` and `RpaBotLogfiles`. The trace folder contains the log files of the Secure Sessions, while the log files folder contains the installation and configuration data, as well as the execution log of the bot.
 
 This option is only available when the bot has the status OK.
 
 An IT administrator can configure the content of the package in the RPA Bot Configurator on the computer where the bot is installed.
 
 . Open the *Bots* view of the *Bot Management* module.
-. Click the *Download Logfiles* icon image:download-icon.png[disk-with-downwards-arrow symbol,1.5%,1.5%] in the row of the bot you want to read the log files from.
+. Click *Download Logfiles* (image:download-icon.png[disk-with-downwards-arrow symbol,1.5%,1.5%]) in the row of the bot you want to read the log files from.
 . Extract the contents and view the relevant files.
+
+== Turn On Debug Logging
+
+Debug Logging is supported by RPA Bots with version 1.3.4 and later.
+
+If a process execution fails when a bot runs correctly, turn on debug logging for at least the time span of the next process run to get help detecting the cause.
+
+Then download the log files of the bot and send them to the support team if you need help analyzing the cause of the failure.
+
+To turn on debug logging, complete the following steps:
+
+. Open the *Bots* view of the *Bot Management* module.
+. On the panel of the bot to debug, click *Turn on debug logging* (image:debug-icon.png[bug symbol,1.5%,1.5%]).
+. In the *Enable time limited debug logging* window, enter a time interval in minutes and click *Start debug logging*.
+
+After the time interval lapses, the log level returns to the default.
+
+If a user sets a new debug interval while the bot is still in debug mode, the interval restarts with the new value. You cannot see the interval for which the bot is in debug mode or if it is in this mode.
 
 == Restart a Bot
 
