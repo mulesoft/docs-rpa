@@ -11,6 +11,9 @@ _Workflow_.
 
 *File Operation Settings:*
 
+* *Create directory if it does not exist* If this option is enabled,
+Move File creates either the specified relative directory or the
+whole specified path, if this does not already exist.
 * *Destination directory* Enter the path to the destination directory
 where the file that is to be moved will be saved. You can specify an
 absolute or relative path. If a relative path is used, then the path
@@ -19,8 +22,9 @@ relates to the _Base Path_ variable.
 path to the directory where the file to be moved is located. You can
 specify an absolute or relative path. If a relative path is used, then
 the path relates to the _Base Path_ variable.
-* *File Name* Enter the name here
-of the file that is to be moved.
+* *File Name* The name of the file to move. 
++
+This field does not support placeholders. For further information, see xref:toolbox-file-operations.adoc#invalid-characters[Path / file name / invalid characters].
 * *Overwrite existing file* This option enables you to overwrite an
 existing file with the same name in the destination folder.
 
