@@ -1,0 +1,163 @@
+= Configuring RPA Bot
+
+Use the RPA Bot Configurator application to change the default settings of a bot. To find the application navigate to *MuleSoft* > *RPA Bot Configurator*.
+
+The RPA Bot Configuration tool has the following configuration panels:
+
+* <<common-settings, Common>>
+* <<proxy-settings, Proxy>>
+* <<session-settings, Session Settings>>
+* <<secure-session, Secure Session Settings>>
+* <<system-settings, System Settings>>
+* <<session-monitoring, Session Monitoring>>
+
+[TIP]
+After saving your changes, restart the RPA Bot Service for the changes to take effect.
+
+[[common-settings]]
+== Common Settings
+
+image:bot-configurator-common.png[The RPA Bot Configurator application showing the Common settings panel, 50%, 50%]
+
+* *RPA Bot ID*
++
+ID generated during the installation process of RPA Bot, which identifies the bot in RPA Manager (even if the IP or MAC-Address changes). If you need a new ID, uninstall and then reinstall RPA Bot.
+* *RPA Manager to connect*
++
+The URL address of the RPA Manager instance the bot connects to. There is no default setting.
+* *API Key*
++
+The API key entered during the installation of the robot. You can change this setting.
+* *TEST CONNECTION*
++
+Click *TEST CONNECTION* to verify that the bot can establish a connection to RPA Manager.
+* *Alive interval*
++
+Time interval in milliseconds after which the bot connects to the RPA Manager to show that it is still alive.
+* *Check interval*
++
+Time interval in milliseconds after which the bot connects to RPA Manager and checks for provided packages to collect (such as scheduling tasks or activities).
+* *Cleanup activities on start*
++
+Select this option to delete the activities that are no longer assigned to a configuration but are still stored locally in the bot.
+* *Cleanup runtime packages on next start*
++
+Select this option to delete all runtime packages that are stored locally in the bot. The process activities retrieve the required runtime packages from the RPA Manager on the next run. After the runtime packages are deleted, the Bot Configurator deselects this setting.
+* *Maximum number of sessions*
++
+Set the maximum number of Secure Sessions that the bot can use. Enabling this setting limits the number of Secure Sessions, but doesn't overwrite the same setting in RPA Manager Bot Management.
+
+[[proxy-settings]]
+== Proxy Settings
+
+image:bot-configurator-proxy.png[The RPA Bot Configurator application showing the Proxy settings panel, 50%, 50%]
+
+* *Proxy*
++
+The bot and RPA Manager communicate through the HTTP protocol at Port 80. If you
+connect to the internet through a proxy server, enter the proxy address in this field
++
+Format: `+http://<Serveraddress>:<Port>+`, for example: `+http://myproxy.de:881+`.
+
+[[session-settings]]
+== Session Settings
+
+To specify a default user account that the RPA Bot uses to log in to the session and run processes on the computer, enter the credentials here. When users create a process run configuration in RPA Manager, they can choose this user or specify another there.
+
+image:bot-configurator-session-settings.png[The RPA Bot Configurator application showing the Secure Session settings panel, 50%, 50%]
+
+* *Default Session User*
++
+To specify a default user account that the RPA Bot uses to log in to the session and run processes on the computer, enter the credentials here. If the environment of the computer the bot is installed on is embedded in a domain and you want to use a local user, write the user name as follows: `.\username`. For domain users, use the following form: `mydomain\username`.
+* *Send images for process streaming*
++
+Select this checkbox to transfer screenshots used for process streaming to RPA Manager. Deselect the checkbox if not everyone on the process team is allowed to view the processed data. For the Process Streaming to work, the usage of the Windows Taskbar must be enabled in the process-run configuration, too.
+
+[[secure-session]]
+== Secure Session Settings
+
+image:bot-configurator-secure-session.png[The RPA Bot Configurator application showing the Secure Session Settings panel, 50%, 50%]
+
+* *Activate certificate based login on SSL enabled terminal servers*
++
+Enable this option if you are installing the bot on a terminal server that only allows SSL protected RDP connections.
+* *Handle “Always prompt client for password” option*
++
+Enable this option if the `fPromptForPassword` Group Policy is enabled. 
++
+The `fPromptForPassword` policy requests the password to be entered a second time when the RDP session is established. Some machines request the second password entry via a popup dialog. Other machines embed the prompt into the same screen, like the regular Windows login.
+* *Handle a “Custom LogonMessage”*
++
+Enable this option if you are prompted with a custom logon message when connecting to your system via RDP.
++
+Some systems show a custom logon message screen after logging into an RDP session, and this message has to be acknowledged by pressing a button. 
+* *Allow usage of SmartCards inside Secure Sessions*
++
+Enables authentication via SmartCard within the Secure Session.
+* *Use the Credential Security Support Provider (CredSSP) for authentication*
++
+Select this option to use the CredSSP for authentication.
+* *Use alternative RDP handling for Secure Session login (recommended for Windows 10 and Windows Server 2016)*
++
+If the group policy _Always prompt for password upon connection_ is enabled, the password must be entered twice when logging into the RDP session. This might prevent the Secure Session from running smoothly, especially on Windows 2010 and Windows Server 2016. If this is the case, activate this option so that the credentials can be entered correctly in the second query.
++
+In this context, ensure that you have selected the option *Allow connections only from computers running Remote Desktop with Network Level Authentication (recommended)* in the Windows system properties.
+* *Session connection timeout*
++
+With an established connection, the session connection timeout defines the time that a call can remain unanswered before the bot cancels the call.
+* *Retries in timeout*
++
+Defines how often the bot tries to reach a started StSec via session connection.
+* *Seconds to wait between each try*
++
+The wait time specifies how long the bot waits between every individual attempt.
+
+=== Test Settings
+
+Optionally, click *TEST SETTINGS* to test your connection settings for the Secure Session. In the *TEST SETTINGS* dialog, enter test parameters for the Secure Session.
+
+image:bot-configurator-test-settings.png[The RPA Bot Configurator application showing the Test Settings window, 50%, 50%]
+
+If you click *TEST*, the application starts a non-operational Secure Session in which you can see a list of parameters for the Secure Session. Click *Logout* to end this non-operational Secure Session.
+
+[NOTE]
+On single session systems, such as Windows 10 and 11, a message shows that the test may fail if no further sessions are available.
+
+== Session Monitoring
+
+image:bot-configurator-session-monitoring.png[The RPA Bot Configurator application showing the Session Monitoring settings panel, 50%, 50%]
+
+* *Take Analysis Pictures*
++
+Specifies whether the bot takes screenshots while executing a process.
+* *Analyze Pictures Count*
++
+Specifies the number of screenshots to take.
+* *Analyze Picture Seconds*
++
+Defines the interval at which the bot takes screenshots.
+* *Analysis package on OK*
++
+Sends analysis packages if the Activity Workflow terminates with OK.
+
+[[system-settings]]
+== System Settings
+
+image:bot-configurator-system-settings.png[The RPA Bot configurator application showing the System Settings panel, 50%, 50%]
+
+This panel indicates whether a terminal server software is installed and displays a list of all known registry keys with their current value. If a setting prevents RPA Bot from operating correctly, it is marked with a warning icon.
+
+You can fix the registry key settings directly from the panel by doing the following:
+
+. Right-click the warning icon.
+. Click *Fix it*.
+
+A confirmation pop-up displays to indicate the setting was fixed successfully. If the fix fails, access documentation from the panel for information about why the fix failed and how to resolve it.
+
+To fix the terminal server setting, which is needed for Secure Sessions, ensure the software is installed. Visit xref:hardware-software-requirements.adoc[Hardware and Software Requirements] for more information about requirements for Secure Sessions.
+
+== See Also
+
+* xref:rpa-manager::botmanagement-overview.adoc#getting-started[RPA Manager - Bot Management]
+* xref:rpa-manager::processautomation-deploy.adoc[RPA Manager - Deploying Automations]
+* xref:rpa-manager::processmonitoring-stream.adoc[RPA Manager - Streaming Processes]
