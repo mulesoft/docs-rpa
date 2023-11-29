@@ -1,0 +1,49 @@
+
+= Json Query
+
+Use the Json Query Action Step to parse Json objects and read individual values or elements from the object. The result remains available for the rest of the process run as a source variable.
+
+Combine this Action Step with REST Call to further refine the resulting JSON output.
+
+== Properties
+
+* *JsonPath Expression*
++
+The JsonPath expression. For example, `$.access_token`.
+
+== Inbound Variables
+
+* *Json Object* 
++
+The Json object from which to extract the value using the JsonPath expression. You can select the result of a REST Call Action Step to serve as an object.
+
+* *JsonPath Expression* 
++
+The JsonPath expression to specify the value to extract from the object. For example, `$.ID`, to extract the value of element `ID` as a result.
+
+== Outbound Variables
+
+* *IsSucceeded* (boolean) 
++
+Shows if the Action Step executed successfully or not.
+
+* *FirstItem* (array) 
++
+Outputs the first element of the array as a string.
+
+* *ArrayCount* 
++
+Indicates the number of elements of the returned array.
+
+== Wizard
+
+Use the Wizard to select the source JSON Object, usually an Inbound Variable containing the result of a REST Call, and to specify the JsonPath expression to extract values from the object. An empty result is a valid result and the process continues without considering it as an error.
+
+Use the xref:xref:building-jsonpath-expressions.adoc#jsonpath-builder[JsonPath expression Builder] to simplify the process of creating the JsonPath expression. 
+
+For more information about JSONPath, see https://goessner.net/articles/JsonPath/[XPath for JSON^].
+
+== See Also 
+
+* xref:toolbox-network-rest-call.adoc[]
+* xref:building-jsonpath-expressions.adoc[]

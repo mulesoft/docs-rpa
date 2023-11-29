@@ -1,0 +1,81 @@
+= Signature Detection with AWS
+
+Detect signatures in a PNG, JPEG, or PDF file using the AWS Signature Detection services. You can configure the action step to expect one or more signatures and adjust the confidence level for the detection. 
+
+include::partial$aws-doc-processing.adoc[tag=specific]
+
+== Inbound Variables
+
+* *Directory Path* 
+* *File Name*
+* *Password* 
+* *Read text from page* 
+* *Read text to page* 
+* *AWS Credentials* 
+* *Client Id* 
+* *Client Secret* 
+* *Session Token*
+* *Use Session Token* 
+* *Region Endpoint* 
+* *Json Path*
+
+== Outbound Variables 
+
+* *Raw Json* 
++
+The complete AWS response.
+* *Normalized Json* 
++
+The parsed JSON response including page number, signature name, and confidence score.
+* *Signature Found* 
++
+A boolean value to confirm if a signature was found. 
+* *Signature Count* 
++
+The number of signatures found. 
+
+== Properties 
+
+include::partial$aws-authentication.adoc[tag=properties] 
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties] for a description. 
+
+* *File Settings*
+** *Directory path*
++
+The path to the directory where the file is located.
+** *File name*
++
+The name of the file to analyze. Supported file types: PDF, JPEG, and PNG.
+** *Json Path*
++
+The Json path to the property of the response object. 
+
+include::partial$pdf-settings.adoc[]
+
+* *Signature Detection Settings* 
+** *Minimum Confidence Score* 
++
+The minimum confidence score for the detected signatures. 
+** *Signature Detection mismatch handling* 
++
+Defines if a mismatch between the expected and the actual detection causes a warning or an error.
+** *Signature Detection Mode* 
++
+Defines the amount of expected signatures. 
+
+== Wizard 
+
+The Wizard enables you to configure:
+
+* *Authentication Settings*: The credentials to use when connecting to the AWS services. You can either configure the credentials manually or reference an existing configuration of Credentials with AWS. 
+* *Response settings*: The JsonPath Expression to filter the JSON response. 
+* *File Settings*: The path and file name of the file to read. 
+* *Signature Detection Settings*: The number of expected signatures (one, one or more, multiple), the minimum confidence level, and the expected behavior (warning or error) when the detection is below the configured confidence level.  
+
+== See Also 
+
+* xref:toolbox-aws-operations-credentials-for-aws.adoc[]
+* https://docs.aws.amazon.com/textract/latest/dg/how-it-works-analyzing.html[Amazon Textract: Analyzing Documents]

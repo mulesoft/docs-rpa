@@ -1,0 +1,30 @@
+= Check Folder 
+
+Use this action step to check if a folder exists in the specified directory path. 
+
+== Properties 
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties] for a description.  
+
+* *Folder Operations Settings* 
+** *Check if the folder* 
++
+Select between *Exists* or *Not Exists* to determine the type of check to perform.
+** *Directory Path* 
++
+Path to the directory to check the existence of the folder. 
+
+== Inbound Variables 
+
+* *Directory Path* 
+
+== Outbound Variables 
+
+* *Directory Path* 
+* *Check Succeeded* 
+
+== See Also 
+
+* xref:toolbox-folder-operations.adoc[]
