@@ -2,6 +2,42 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[december-6-2023]]
+== December 6, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* RPA Manager implements Anypoint Audit Log.
+* The *Usage Summary* is now grouped by the process' category.
+* The *Usage Summary* shows the _Cumulated Bot Run Time_ and _Average Bot Run Time_ additionally in _hh:mm:ss_ format.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| The view *Upcoming Process Changes* no longer shows an error when selecting the table header _Last edited_. | W-14293208
+| *Process Run Results* do not show an _Endtime_ and _Duration_ if the respective process is in the status _running_. | W-14311008
+| RPA Bot logs can be downloaded in the *Bot Management* even if the RPA Bot is in status _out of service time_. | W-14378109
+| The name of global variables and credentials are only unique within the same organization. The same name can be used in different organizations. | W-14378876
+| The close button of videos played in the home page is shown even after resizing the browser's window. | W-14387182
+| A global variable of type integer can specify negative numbers. | W-13460628
+| The dashboard widget *Business Process Performance* aggregates successful and failed process executions. | W-14438065
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
 [[november-3-2023]]
 == November 3, 2023
 
