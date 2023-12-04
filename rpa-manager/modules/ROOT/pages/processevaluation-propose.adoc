@@ -6,27 +6,27 @@ You evaluate a process candidate to propose it for automation.
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission | Deprecated RPA Permission
 
-|Open the *Process Evaluation* module and view only processes that you have created yourself, that is, for which you are the process owner
+|Open the *Process Evaluation* module and view only processes that you have created yourself, that is, for which you are the process owner.
 |RPA Evaluations Viewer, RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Process Evaluation Open
 
-|Display all processes in the *Process Evaluation* view
+|Display all processes in the *Process Evaluation* view.
 |RPA Evaluations Viewer, RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Global Process Evaluation View
 
-|Create, edit, and delete evaluations
+|Create, edit, and delete evaluations.
 |RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Process Evaluation Administration
 
-|Open the *Evaluation Templates* view
+|Open the *Evaluation Templates* view.
 |RPA Evaluations Viewer, RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Evaluation Templates Open
 
-|Create, change, and delete evaluation criteria
+|Create, change, and delete evaluation criteria.
 |RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Evaluation Template Create, Evaluation Template Edit, Evaluation Template Delete
 

@@ -17,27 +17,27 @@ Within a category, you can manage the process automation projects:
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Process Automation* module
+|Open the *Process Automation* module.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
-|Create, edit, and delete process projects
+|Create, edit, and delete process projects.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Project Manager, RPA Administrator
 |Process Create, Project Management
 
-|Copy projects
+|Copy projects.
 |RPA Automations Contributor, RPA Automations Manager, RPA Project Manager, RPA Administrator
 |Process create, Project Management, Builder Usage
 
-|Change the process owner
+|Change the process owner.
 |RPA Automations Manager, RPA Administrator
 |Change Process Owner
 
-|Change the project manager
+|Change the project manager.
 |RPA Automations Manager, RPA Administrator
 |Change Project Manager
 

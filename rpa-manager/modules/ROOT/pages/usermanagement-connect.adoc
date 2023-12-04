@@ -12,14 +12,14 @@ For security reasons, you can only see and copy your API key on creation.
 
 * Ask an administrator to assign you the required privileges:
 +
-[cols="2,1"]
+[%header, cols="2,1"]
 |===
-|*Action* |*Privilege*
+|Action |Privilege
 
-|Open the *User Management* module
+|Open the *User Management* module.
 |User Management Open
 
-|Create, edit, and delete API keys
+|Create, edit, and delete API keys.
 |User API Key Create, User API Key Edit, User API Key Delete
 
 |===

@@ -6,9 +6,9 @@ Enter all expenses for automation of a process. On the basis of the costs of man
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
 |Open the *Finance Analysis* view and see all processes for which you are part of the process team.
 |RPA Performance Analyzer, RPA Operations Manager, RPA Administrator

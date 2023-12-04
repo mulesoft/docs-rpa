@@ -90,11 +90,11 @@ The bot has been configured for a Desktop Session. It cannot use Secure Sessions
 * At least one bot must be installed on a separate computer.
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Bot Management* module and view the bots
+|Open the *Bot Management* module and view the bots.
 |RPA Bots Manager, RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Robot Management Open
 

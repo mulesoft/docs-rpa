@@ -29,9 +29,9 @@ Qualifiers are process properties that help determine whether a process can be a
 
 The more of the following requirements your process meets, the easier it is to automate:
 
-[cols="1,2"]
+[%header, cols="1,2"]
 |===
-|*Qualifier* |*Description*
+|Qualifier |Description
 
 |Data-driven
 |Processes based on texts or numbers are easier to automate than processes that require an understanding of images or spoken language.
@@ -52,9 +52,9 @@ The more of the following requirements your process meets, the easier it is to a
 
 Benefits are process properties that help you determine how useful the automation of a process is for the company.
 
-[cols="1,2"]
+[%header, cols="1,2"]
 |===
-|*Benefit* |*Description*
+|Benefit |Description
 
 |High costs of manual execution
 |A process is costly if either one manual execution takes a lot of time or if it is carried out very often. Automating an expensive process frees employee time for work that cannot be automated.

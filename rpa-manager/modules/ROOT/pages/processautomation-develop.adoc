@@ -18,19 +18,19 @@ As long as the project is in the build phase, it can be seen in the repository o
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Process Automation* module
+|Open the *Process Automation* module.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
-|Create processes
+|Create processes.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Create
 
-|Record processes with RPA Recorder
+|Record processes with RPA Recorder.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Recording
 
@@ -38,11 +38,11 @@ As long as the project is in the build phase, it can be seen in the repository o
 |RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Builder Usage
 
-|Open and use the activity library in RPA Builder and the bot workflow library in RPA Manager
+|Open and use the activity library in RPA Builder and the bot workflow library in RPA Manager.
 |RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Activity Library Open
 
-|Use and manage the activity library in RPA Builder and the bot workflow library in RPA Manager
+|Use and manage the activity library in RPA Builder and the bot workflow library in RPA Manager.
 |RPA Automations Manager, RPA Administrator
 |Activity Library Administration
 

@@ -12,11 +12,11 @@ You can start the automation of a process as a project manager from your backlog
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Start automation of a process.
+|Start the automation of a process.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open, Process Create
 

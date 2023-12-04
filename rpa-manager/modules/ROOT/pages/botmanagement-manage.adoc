@@ -36,15 +36,15 @@ The console session must remain open and unminimized while the bot executes a pr
 * If you want to assign process applications to a bot, you need to create them in the *Process Applications* view of the *Process Automation* module first.
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Bot Management* module and view the bots
+|Open the *Bot Management* module and view the bots.
 |RPA Bots Manager, RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Bot Management Open
 
-|License, edit, update, and remove bots
+|License, edit, update, and remove bots.
 |RPA Bots Manager, RPA Operations Manager, RPA Administrator
 |Bot Management Administration
 

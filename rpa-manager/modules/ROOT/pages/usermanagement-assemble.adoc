@@ -14,11 +14,11 @@ You can create new user groups, check their usage, edit them, and delete them.
 
 * Ask an administrator to assign you the required privileges:
 +
-[cols="2,1"]
+[%header, cols="2,1"]
 |===
-|*Action* |*Privilege*
+|Action |Privilege
 
-|Open the User Management module
+|Open the *User Management* module.
 |User Management Open
 
 |Create, edit, and delete user groups.

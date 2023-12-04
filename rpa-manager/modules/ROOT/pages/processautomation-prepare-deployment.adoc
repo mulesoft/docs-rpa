@@ -2,9 +2,9 @@
 
 To reduce the time involved and the error rate in the maintenance of automations, you can create reusable data containers:
 
-[cols="1,2,2"]
+[%header, cols="1,2,2"]
 |===
-|*Data Container Type* |*Usage* |*Linkable to*
+|Data Container Type |Usage |Linkable to
 
 |Global Variables
 a|Store values of the types:

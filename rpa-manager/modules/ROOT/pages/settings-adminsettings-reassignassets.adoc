@@ -25,19 +25,19 @@ User Tasks are not shown in the *Reassign Assets* view and can be reassigned via
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|View configured settings for your organization
+|View configured settings for your organization.
 |RPA Administrator
 |Organization Management Open
 
-|Add or modify settings for your organization
+|Add or modify settings for your organization.
 |RPA Administrator
 |Organization Management Administration
 
-|Reassign RPA Assets
+|Reassign RPA Assets.
 |RPA Administrator
 |Reassign Users
 
