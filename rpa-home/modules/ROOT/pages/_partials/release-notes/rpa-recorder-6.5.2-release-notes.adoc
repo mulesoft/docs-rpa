@@ -7,7 +7,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 == December 5, 2023
 
 // == Compatibility
-include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+2]
 
 [%header%autowidth.spread]
 |===
