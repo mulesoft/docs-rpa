@@ -100,14 +100,14 @@ Learn how to xref:processautomation-prepare-project-application.adoc[manage appl
 
 == Update a Bot
 
-Update your bots to the latest version to get the newest features, bugfixes, and security enhancements. The bot finishes all processes before updating, and resumes them afterwards to avoid data loss.
+Update your bots to the latest version to get the newest features, bug fixes, and security enhancements. The bot finishes all processes before updating and resumes them afterwards to avoid data loss.
 
 Alternatively, you can update single bots manually by downloading and installing the newer version from the *Download Applications* pane in the *Home* module of RPA Manager.
 
 You can automatically update bots that fullfil the following requirements:
 
 * The bot is in OK status.
-* The bot is version 1.5 or later.
+* The bot version is 1.5 or later.
 
 To update one or more bots automatically:
 
