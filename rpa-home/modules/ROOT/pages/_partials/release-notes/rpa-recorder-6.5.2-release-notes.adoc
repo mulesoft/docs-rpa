@@ -29,4 +29,4 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+2]
 
 * https://help.mulesoft.com/s/[MuleSoft Help Center^]
-* https://www.mulesoft.com/support-and-services[MuleSoft Services]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]
