@@ -22,6 +22,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |===
 | Issue Resolution | ID
 |The Recording Toolbar no longer displays while adding manual screenshots. Once screenshots are confirmed, the toolbar displays again. |W-14573347, W-14572817
+|RPA Recorder no longer creates subfolder `RPARecorder` in the `RPARecorder` folder when upgrading from version 6.4.4 to 6.5.2. |W-14600072
 |===
 
 // == See Also
