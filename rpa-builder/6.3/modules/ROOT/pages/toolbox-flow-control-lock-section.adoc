@@ -9,8 +9,8 @@ preventing other _Workflows_ from accessing the file when it is in use.
 
 A typical scenario where a _Lock Section_ might be used when a
 _Workflow_ is run in parallel in different sessions. In this case, a
-_Robot Secure_ is used that enables parallel secure sessions to be
-launched. If parallel secure sessions, such as in the example above, are
+_Robot Secure_ is used that enables parallel Secure Sessions to be
+launched. If parallel Secure Sessions, such as in the example above, are
 running on virtual machines on a server, then a file can be locked in
 synchronization on this server in order to allow certain content to be
 read out alternately.

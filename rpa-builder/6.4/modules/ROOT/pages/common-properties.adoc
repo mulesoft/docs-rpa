@@ -1,0 +1,88 @@
+= Common Properties
+
+All Action Steps have properties that you can configure via the relevant Action Step wizard or its Properties window, or by editing Variable Mappings.
+
+The following properties are common to all Action Steps:
+
+* *Common*
+** *Description*
++
+A custom description of the Action Step as defined by the user.
+** *Error Handling*
++
+The error handling strategy to use. The default value is *Normal*.
++
+When set to *None*, the error handling strategy disregards an error that occurs during this Action Step. In this case, the _DoAction_ block of a Managed Control Block ignores the error, it doesn't execute the content of the _OnError_ block, and adds a corresponding note the log file.
++
+The *Force Error State* Action Step does not include Error Handling because it is used to produce an error.
++
+** *Name*
++
+The name of the Action Step.
++
+To improve the clarity of a Workflow, ensure you give Action Steps meaningful names. Action Step names accept a maximum of 60 characters in length and are case sensitive.
+
+* *Timing*
+** *Timeout*
++
+The time in seconds RPA Builder waits for an Action Step to finish its execution before canceling the Workflow and returning an error.
++
+*** If _Timeout_ is set to `0`, the duration for executing the Action Step is not limited.
+*** The Timeout defined here applies only if the option *Use general timeout* is disabled.
++
+** *Use general timeout*
++
+If this option is enabled, RPA Builder uses the time specified in seconds under _Default Timeout_ in the properties of the Workflow as the Timeout for the Action Step.
+
+The following properties are also required for Action Steps that show as Measurement Points:
+
+* *Common*
+** *Timer Name*
++
+A name for the timer. RPA Builder automatically adds this property in the Ping and Service Check Action Steps.
++
+* *Misc*
+** *Script Feedback / Reporting Function*
+*** *Record Timer*
++
+When this option is enabled, the execution time measured for the Ping and Service Check Action Steps is recorded and output in the Time outbound variable of the Action Step.
++
+** *Timing*
+*** *Timer Mode*
++
+If you use Ping and Service Check Action Steps in the Control Blocks Loop, this option specifies the Timer mode to use for calculating the timer value.
++
+**** *Last*
++
+The only value saved is the one measured in the last loop.
+**** *Average*
++
+The mean of all times measured is calculated and saved.
+**** *Min Only*
++
+The lowest value measured is saved.
+**** *Max Only*
++
+The highest value measured is saved.
+
+== Variables
+
+Depending on the way it is configured, every Action Step provides some of its values as Pin variables for subsequent Action Steps. Some properties of Action Steps can be filled by these Pin variables. You can choose from any displayed, completed variables.
+
+Variables are named as follows: `[Name of the Action Step in the Workflow].[Name of Variable]`.
+
+If a Property of an Action Step is filled by a variable, this Property no longer shows in the Properties window and can only be changed using the wizard.
+
+== Suffixes
+
+You can use suffixes for the names of the Checkpoint, Stop Watch, Ping, Service Check and Variable Action Steps, provided that the Action Steps occur within a Control Block's File Controlled Loop. A suffix is then added to the name of the Action Step during every loop. Each suffix is a column entry in the file that was imported in the File Controlled Loop.
+
+The _Suffix_ property shows in the Edit Variable Mappings window only if the Action Step occurs within a Control Block's File Controlled Loop. To open the Edit Variable Mappings window, click the Pin (image:pin-icon.png[The Pin Icon, 2%, 2%])button next to the Action Step you want to modify.
+
+image:edit-variable-mappings.png[A Screenshot showing the Edit Variable Mappings button, 50%, 50%]
+
+== See Also
+
+* xref:workflow-elements-in-detail.adoc[Workflow Elements in Detail]
+* xref:workflow-configure-properties.adoc[Configure Workflow Properties]
+* xref:advanced-concepts-using-variables.adoc[Using Variables]

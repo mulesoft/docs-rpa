@@ -1,0 +1,53 @@
+== Hardware Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a]
+|===
+| Minimum | Recommended
+| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
+| 8 GB of RAM | 16 GB of RAM
+| 5 GB of disk space | 10 GB (SSD) of disk space
+|===
+
+== Software Requirements
+
+[%header%autowidth.spread,cols=".^a,.^a,]
+|===
+| Software | Required version
+| Microsoft .NET Framework
+| 4.8
+| Operating System
+ a|
+
+include::rpa-home::partial$windows-versions-support.adoc[]
+
+|===
+
+=== Recommended System Settings
+
+* Display resolution: Full HD 1080p (1920 × 1080) or higher
+
+=== File System Permission Requirements
+
+RPA Recorder needs full write access to folders that are critical to its functioning. To avoid issues during the setup process and subsequent RPA Recorder executions, ensure that:  
+
+* You install RPA Recorder as an administrator
++
+If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Recorder by running the setup file as an administrator. 
+
+* RPA Recorder has full write access to the following folders and any subfolders and files inside them: 
++
+** `C:\Program Files\MuleSoft\RPARecorder`
+** `C:\RPARecorder`
+
+* Your environment is not blocking the execution of any RPA process 
++
+The operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Recorder home directory and its subfolders are allowed to run. 
+
+== Compatibility
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|RPA Bot | 1.0.0 and later
+|===

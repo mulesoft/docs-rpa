@@ -8,16 +8,18 @@ The *Upcoming Process Changes* shows which processes contain the changed activit
 
 == Before You Begin 
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Upcoming Process Changes* view of the *Process Operations* module and view the changes.
+|RPA Operations Manager, RPA Administrator
 |Upcoming Process Changes Open
 
 |Deploy upcoming process changes.
+|RPA Operations Manager, RPA Administrator
 |Upcoming Process Changes Administration
 
 |===
@@ -33,7 +35,7 @@ To view the changes:
 
 . Open the *Upcoming Process Changes* view in the *Process Operations* module.
 . View the descriptions in the table.
-. Click the *Show Changes* icon image:show-icon.png[eye symbol,1.5%,1.5%] in the row of the edited activity to compare the deployed version with the latest version of that activity.
+. Click *Show Changes* (image:show-icon.png[eye symbol,1.5%,1.5%]) in the row of the edited activity to compare the deployed version with the latest version of that activity.
 
 [[map-bpmn-elements-to-process-activities]]
 == Map BPMN Elements to Process Activities

@@ -1,0 +1,11 @@
+= Settings Overview
+
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
+If you use an RPA account to login to RPA Manager, refer to the xref:organizationmanagement-overview.adoc[*Organization Management* documentation].
+
+The *Settings* module enables you to do the following:
+
+* Create user API keys for connecting to RPA processes from Salesforce products.
+* Configure general settings.
+* Reassign the RPA assets of deleted or disabled users.

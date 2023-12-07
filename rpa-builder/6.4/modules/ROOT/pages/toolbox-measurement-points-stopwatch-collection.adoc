@@ -1,0 +1,63 @@
+= Stopwatch Collection
+
+The Stopwatch Collection Action Step enables you to collect all timer values from the _Stopwatch_ and the _General Timer_ Actions Steps configured in an Activity Workflow. 
+
+Because all Stopwatch values are determined at the end of the workflow, you can only place this Action Step in the Workflow Finalization section. 
+
+== Properties
+
+* *Json Labels* 
+** *Reached Label* 
++
+The label for the Stopwatch Reached State in the output JSON. Maximum length: 50 characters. 
+** *Timer Label* 
++
+The label for the Stopwatch Name in the output JSON. Maximum length: 50 characters. 
+** *Touch Time Label*
++
+The label for the touch time in the output JSON. The touch time is a timestamp from the last time the checkpoint was touched. Maximum length: 50 characters. 
+** *Value Label* 
++
+The label for the Stopwatch Value in the output JSON. Maximum length: 50 characters. 
+
+[WARNING]
+The properties panel does not validate the maximum label length. Ensure that you validate JSON labels and output by using the Wizard.
+
+== Inbound Variables 
+
+This Action Step contains no inbound variables. 
+
+== Outbound Variables 
+
+* *Stopwatch Timer Collection*
++
+The collection of captured stopwatch values in a JSON list, represented as a String. 
+
+== Wizard 
+
+image:stopwatch-collection-wizard.png[50%, 50%, The Stopwatch Collection Wizard]
+
+* *Settings for JSON labels* 
+** *Timer Label* 
++
+The label for the Stopwatch Name in the output JSON.
+
+** *Reached Label* 
++
+The label for the Stopwatch Reached State in the output JSON.
+
+** *Value Label* 
++
+The label for the Stopwatch Value in the output JSON.
+
+** *Touch Time Label*
++
+The label for the touch time in the output JSON. The touch time is a timestamp from the last time the checkpoint was touched. Maximum length: 50 characters. 
+
+The *Preview JSON Output* section shows a preview of the resulting JSON based on the configured Stopwatch Action Steps in the Workflow.  
+
+== See Also 
+
+* xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
+* xref:toolbox-measurement-points-general-timer-start.adoc[General Timer Start]
+* xref:workflow-finalization.adoc[Workflow Finalization]

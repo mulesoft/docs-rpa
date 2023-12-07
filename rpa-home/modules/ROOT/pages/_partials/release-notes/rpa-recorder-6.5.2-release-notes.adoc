@@ -1,0 +1,32 @@
+= RPA Recorder 6.5.2 Release Notes
+
+RPA Recorder enables you to record a business process for automation.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== December 5, 2023
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+2]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+|The Recording Toolbar no longer displays while adding manual screenshots. Once screenshots are confirmed, the toolbar displays again. |W-14573347, W-14572817
+|RPA Recorder no longer creates the `RPARecorder` subfolder in the `RPARecorder` folder when upgrading from version 6.4.4 to 6.5.2. |W-14600072
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+2]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center^]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]

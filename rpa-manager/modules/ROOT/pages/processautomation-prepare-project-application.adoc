@@ -18,17 +18,23 @@ A member of the process team can deploy a process on a bot that has assigned the
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2"]
+[cols="1,1,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
 
 |Open the *Process Automation* module
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
-|Create, change, and delete process applications
-|Application Create, Application Edit, Application Delete
+|Create and change process applications
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Bots Manager, RPA Administrator
+|Application Create, Application Edit
+
+|Delete process applications
+|RPA Automations Manager, RPA Bots Manager, RPA Administrator
+|Application Delete
 
 |===
 * Note the timezone of the computer that each application is installed on.
@@ -84,14 +90,14 @@ Applications are not available during downtimes or while deactivated. A member o
 If an application is not available, deactivate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click the *Deactivate* icon image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%] on the panel of the application to deactivate.
+. Click *Deactivate* (image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%]) on the panel of the application to deactivate.
 
 RPA Manager displays an *Inactive* label on the panel of the application.
 
 If a deactivated application becomes available again, activate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click the *Activate* icon image:activate-icon.png[toggle-off symbol,1.5%,1.5%] on the panel of the application to activate.
+. Click *Activate* (image:activate-icon.png[toggle-off symbol,1.5%,1.5%]) on the panel of the application to activate.
 
 RPA Manager displays an *Active* label beneath the logo of the application.
 
@@ -100,7 +106,7 @@ RPA Manager displays an *Active* label beneath the logo of the application.
 Remove an application if it is no longer available:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click the *Remove* icon image:delete-icon.png["trash symbol",1.5%,1.5%] on the panel of the application to remove.
+. Click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) on the panel of the application to remove.
 . Confirm the removal.
 
 RPA Manager removes the application from all processes and bots to which it was assigned.

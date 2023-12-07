@@ -1,3 +1,7 @@
 = Organization Management Overview
 
-The *Organization Management* module enables you to configure the currency and decimal sign to show in RPA Manager modules and configure your Anypoint Platform credentials, which enables you to publish a process automation to Anypoint Exchange.
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
+If you use an Anypoint account to login to RPA Manager, refer to the xref:settings-overview.adoc[*Settings* documentation].
+
+If you use an RPA account to login to RPA Manager, the *Organization Management* module enables you to configure the currency and decimal sign to show in RPA Manager modules and configure your Anypoint Platform credentials, which enables you to publish a process automation to Anypoint Exchange.

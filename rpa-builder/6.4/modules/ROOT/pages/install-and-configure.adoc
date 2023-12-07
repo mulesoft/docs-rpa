@@ -1,0 +1,76 @@
+= Installing and Configuring RPA Builder
+
+After downloading and installing RPA Builder, configure the connection with RPA Manager and configure the necessary system parameters in your Windows installation to improve the overall performance of your system and improve text recognition features. You can also customize the RPA Builder UI to match your preferences.
+
+== Download and Install RPA Builder
+
+. Download the latest RPA Builder installer from the *Home* page of RPA Manager.
+. Right-click the installer file and select *Run as Administrator*.
+. Continue the installation process until it finishes.
+. Ensure you have the xref:rpa-home::automation-userrolesandpermissions-privilegesbymodule.adoc#privileges-of-the-rpa-builder-category[required privileges] assigned in RPA Manager.
++
+See xref:rpa-manager::usermanagement-manage.adoc#assign-privileges-to-a-user[Assign Privileges to a Users] for instructions. If you are in doubt, contact your organization's RPA administrator.
+
+[[connect-with-anypoint]]
+== Connect RPA Builder with RPA Manager (Anypoint Platform)
+
+After opening RPA Builder for the first time, configure the connection with RPA Manager using your Anypoint Platform credentials:
+
+. Provide your RPA Manager instance address.
++
+image:anypoint-rpa-org-log-in.png[The Anypoint Platform login screen prompt to configure the RPA Manager address, 35%, 35%]
++
+Use *Proxy Settings* to configure a specific proxy to connect with Anypoint Platform.
++
+By default, *Use System Proxy Settings* is enabled so that RPA Builder uses the same proxy configuration your system uses to access internet.
+. Log in using your Anypoint Platform account. 
++
+image:anypoint-login.png[The Anypoint Platform login screen prompt to configure the login credentials]
+
+After you log in, RPA Builder remains connected using the specified Anypoint Platform credentials. 
+
+include::rpa-home::partial$anypoint-sso.adoc[leveloffset=+2]
+
+
+[[connect-with-rpa-manager]]
+== Connect RPA Builder with RPA Manager (Legacy)
+
+If your organization is not migrated to Anypoint Platform, provide your RPA Manager user credentials to establish the connection after opening RPA Builder for the first time:
+
+. In the top menu bar, select *Options* > *Repository*. (This menu opens automatically the first time you open RPA Builder)
+. Configure the required values:
++
+image:repository-settings.png[The RPA Builder Repository settings, 50%, 50%]
++
+** *RPA Manager Address*
++
+The URL of the RPA Manager instance RPA Builder connects to. Do not specify the protocol (`https://`) as part of this value.
+** *User Name*
++
+The RPA Manager user name that RPA Builder uses to log in.
+** *Password*
++
+The RPA Manager password that RPA Builder uses to log in.
+** *Proxy Settings*
++
+Use to configure a proxy to connect to RPA Manager.
++
+By default, *Use System Proxy Settings* is enabled so that RPA Builder uses the same proxy configuration your system uses to access internet.
+. Click *Test Connection* and confirm that the login succeeds.
++
+If the login attempt fails, verify the provided details and try again.
+. Click *OK*.
+
+== Changing the Log-in Credentials
+
+To connect to a different RPA Manager instance or change the configured login credentials:
+
+. In the RPA Builder menu bar, navigate to *Options > Account*.
+. Click *Sign out*.
+. Provide the new RPA Manager address and login credentials. 
+
+== See Also
+
+* xref:checking-system-parameters.adoc[Checking System Parameters]
+* xref:ui-overview.adoc[UI Overview]
+* xref:modify-user-interface.adoc[Modifying the User Interface]

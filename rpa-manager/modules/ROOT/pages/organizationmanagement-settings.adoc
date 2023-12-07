@@ -1,14 +1,18 @@
 = Configure Organization Settings
 
-The *Settings* view enables you to configure the currency and decimal sign to show in RPA Manager modules and configure your Anypoint Platform credentials, which enables you to publish a process automation to Anypoint Exchange.
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
+If you use an Anypoint account to login to RPA Manager, refer to the xref:settings-overview.adoc[*Settings* documentation].
+
+If you use an RPA account to login to RPA Manager, the *Settings* view enables you to configure the currency and decimal sign to show in RPA Manager modules and configure your Anypoint Platform credentials, which enables you to publish a process automation to Anypoint Exchange.
 
 == Before You Begin
 
-* Ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
+* Ask an administrator to assign you the required privileges:
 +
-[cols="1,2"]
+[cols="2,1"]
 |===
-|*Action* |*Required Privileges*
+|*Action* |*Privilege*
 
 |View configured settings for your organization
 |Organization Management Open

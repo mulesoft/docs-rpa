@@ -1,0 +1,10 @@
+= Admin Settings Overview
+
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
+If you use an RPA account to login to RPA Manager, refer to the xref:organizationmanagement-overview.adoc[*Organization Management* documentation].
+
+The *Admin Settings View* of the *Settings* module enables you to do the following:
+
+* Configure the currency and decimal sign to show in RPA Manager modules.
+* Reassign the RPA assets of deleted or disabled users.

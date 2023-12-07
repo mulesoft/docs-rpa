@@ -1,5 +1,9 @@
 = User Management Overview
 
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
+If you use an Anypoint account to login to RPA Manager, refer to the https://docs.mulesoft.com/access-management/[Anypoint Access Management documentation^].
+
 In the *User Management* module, you manage the users of RPA Manager and RPA Builder:
 
 * Create and delete users.

@@ -1,5 +1,7 @@
 = RPA Manager Overview
 
+include::reuse::partial$rpa/iam-migration-affectedtopic-banner.adoc[]
+
 RPA Manager is the cloud-based control plane for the automations that is integrated into Anypoint Platform.
 
 RPA Manager enables you to do the following:
@@ -16,13 +18,23 @@ Ensure that access to this URL is possible from your organization.
 
 RPA Builder, RPA Bot, and RPA Recorder use this URL to connect to your RPA Manager instance.
 
-//== Get started
+== Anypoint Platform Integration
 
-// A table with roles and starting modules for these roles?
+MuleSoft RPA is integrating with Anypoint Platform to unify the login experience and provide support for external identity providers (IdPs). 
+
+Refer to xref:rpa-home::anypoint-migration-overview.adoc[Anypoint Platform Integration Overview] for an overview of the changes and requirements.
+
+If you are unsure whether your org is integrated, open the *Home* module in RPA Manager:
+
+* If you are using an RPA account for login, there is a quick link to Composer:
++ 
+image:rpa-manager-home-premigration.png[Screenshot of the Composer quick link panel in the Home module of RPA Manager,25%,25%]
+* If you are using an Anypoint account for login, there is a quick link to Access Management:
++
+image:rpa-manager-home-postmigration.png[Screenshot of the Composer quick link panel in the Home module of RPA Manager,25%,25%]
 
 == See Also
 
+* xref:rpa-home::anypoint-migration-overview.adoc[Anypoint Platform Integration Overview]
+* https://docs.mulesoft.com/access-management/[Access Management]
 * xref:usermanagement-manage.adoc#iforgotmypassword[What to Do if You Forgot Your Password]
-
-// Links to all RPA Manager modules
-// Links to all RPA Products

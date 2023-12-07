@@ -1,0 +1,52 @@
+= Secure Sessions
+
+In RPA automations, a bot simulates a human user. The bot logs in to a system, sees the screen, and can interact with the UI via keystrokes and mouse actions. The bot can even interact with legacy systems that do not provide an API.
+
+The bot logs in to the computer, where it is installed. But, of course, it does not sit on a chair in front of the desktop. Nevertheless, if you enter the room where the computer is, you can see what the bot is doing: The screen shows the open applications, the mouse moves around and typing appears in forms. In MuleSoft RPA, we call this a _Desktop Session_. To prevent unauthorized data access or manipulation, you must secure the physical room.
+
+Or you can use what MuleSoft RPA calls _Secure Sessions_.
+
+Secure Sessions are hidden Desktop sessions that run in the background and are accessible only to the bot. An additional advantage of using Secure Sessions is that the bot can multiply itself to run several process instances in parallel.
+
+To use Secure Sessions you must ensure that all prerequisites are met and all responsible persons are informed.
+
+== General Considerations
+
+* A bot either can run in Desktop Session or Secure Session mode. You can change the mode while no configurations are deployed to the bot.
+* You can't switch the session mode while configurations are deployed on the bot.
+* Run configurations specify a session mode, too.
+* You can only deploy configurations to a bot that is in the same session mode.
+* You can specify the login data for the bot and the maximum number of Secure Sessions that the bot can run in parallel in the RPA Bot Configurator or in the RPA Manager.
++
+Enabling this setting in the RPA Bot Configurator limits the number of Secure Sessions, but doesn't overwrite the same setting in RPA Manager Bot Management. 
+* Desktop Sessions:
+** The specified user must be logged in to this session to deploy a run configuration. 
+** The console session must remain open and unminimized while the bot executes a process.
+* Secure Sessions:
+** The higher the number of Secure Sessions the lower the performance of the bot. Too much load can cause process slowdown or disruptions. Check the system data and the system requirements documentation to determine the maximum number of sessions that the bot can safely execute in parallel.
+** Before deploying a run configuration on a bot that has only one licensed secure session, do not disconnect the session, instead sign out the specified user. 
+** Do not sign in as the specified user to a computer where a bot with one licensed Secure Session is running a process.
+
+== Next Steps
+
+. In the documentation, check the System Requirements.
+. On the computer where you want to run automations, where the bot is installed, check the system data:
++
+* Operating system
+* RAM
+* Terminal Server software
+* Login data for the bot
+* RPA Bot Configurator settings
+. If you want to use default session settings for the run configuration, set the bot login data and the maximum number of parallel Secure Sessions in the Bot Configurator. 
+. In RPA Manager, enter the relevant data or a contact person in the description of the bot in the Bots view of the Bot Management module.
++
+If the bot should use Secure Sessions and the RPA Bot Configurator does not contain this setting, set the maximum number of parallel Secure Sessions that the bot may use via the Secure Session Assignment view.
+. When creating a run configuration in the Process Automation module of RPA Manager, keep the <<general-considerations, general considerations>>in mind. 
+
+== See Also
+
+* xref:rpa-bot::hardware-software-requirements.adoc[RPA Bot - Hardware and Software Requirements]
+* xref:rpa-bot::configuration.adoc[RPA Bot - Configurator]
+* xref:rpa-manager::botmanagement-manage.adoc#edit-a-bot[RPA Manager - Edit a Bot]
+* xref:rpa-manager::botmanagement-manage.adoc#assign-sessions-to-bots[RPA Manager - Assign Sessions to Bots]
+* xref:rpa-manager::processautomation-deploy.adoc#production-configuration[RPA Manager - Create a Process Run Configuration]

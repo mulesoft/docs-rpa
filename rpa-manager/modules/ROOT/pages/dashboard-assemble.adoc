@@ -2,6 +2,24 @@
 
 Arrange important widgets on a dashboard.
 
+== Before You Begin
+
+* Ask an organization administrator in Access Management to assign you the required permissions:
++
+[cols="1,1,1"]
+|===
+|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+
+|Open the *Dashboard* module
+|RPA Operations Viewer, RPA Operations Manager, RPA Administrator
+|Dashboard Open
+
+|Manage dashboards
+|RPA Operations Manager, RPA Administrator
+|Dashboard Administration
+
+|===
+
 == Create a Dashboard
 
 Create a dashboard that shows you the progress of your automation management within a defined time period on one page.

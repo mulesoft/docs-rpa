@@ -1,0 +1,53 @@
+= Process Recording Editor
+
+If you start the recorder from RPA Manager, you can view the current process BPMN and all new recorded BPMNs by selecting them from the drop-down menu.
+
+To open the Process Recording Editor, select a process and click *Edit, Merge and Upload Recordings* (image:edit-process-button.png["Edit, Merge and Upload Recordings button", 2%, 2%]).
+
+image:rpa-recorder-home.png[RPA Recorder Home screen]
+
+== Process Recording Editor Panels
+
+The Process Recording Editor consists of two main panels:
+
+* *Automation*
++
+This panel provides a fully integrated BPMN modeler to edit the BPMN of the recording. The previously selected Recording session is automatically loaded into the modeler to start editing.
+* *Documentation*
++
+This panel shows the recorded documentation of each activity. Select an element in the *Automation* panel to view its recorded documentation.
++
+The Documentation panel provides a fully integrated text editor. To edit the documentation of any activity, click *Edit*. After editing the documentation, click *Save* to apply the changes.
+
+image:recorder-editor-panels.png[Process Recording Editor Panels]
+
+== Load BPMNs for Edit and Merge
+
+To load additional BPMNs into the BPMN modeler:
+
+. Click *Load File* (image:load-file-button.png[Load File button, 2%, 2%]).
+. Select the BPMN or BPMNs you want to add and click *Open*.
++
+All recordings are stored in a separate folder per process and recording date.
+. A dialog asks if you want to merge the selected BPMN into the present BPMN in the modeler, or if you want to create a new BPMN with the selected one. +
+image:merge-or-create-bpmn.png[ Merge or create new BPMN dialog box]
+. To merge the selected BPMN into the existing BPMN, click *Yes* . +
+After the import, you can edit and rearrange the new BPMN via drag and drop.
+
+== Save Edited BPMNs
+
+To save the edited and merged BPMN locally:
+
+. Click *Save* (image:save-icon.png[Save changes button, 2%, 2%]).
+. Select a directory in the *Save As* dialog and specify a file name if different from the auto-generated file name.
+. Click *Save*.
+
+== Upload BPMN to RPA Manager
+
+After merging and editing the BPMN and documentation, click the *Upload to RPA Manager* icon (image:upload-to-server-icon.png[Upload to RPA Manager icon, 2%, 2%]) to upload the new process BMPN. A message opens confirming that the upload is completed.
+
+To close the Process Recording Editor and RPA Recorder, click *Close* (image:close-icon.png[Close icon, 2%, 2%]) in the top right corner.
+
+== See Also
+
+* xref:user-interface.adoc[User Interface]
