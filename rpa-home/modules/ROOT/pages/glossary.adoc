@@ -87,7 +87,7 @@ Intelligent Document Processing is a technology solution that implements AI to r
 
 === Invokable Run Configuration 
 
-An automated process that you can upload to exchange and then invoke from other services as Composer. 
+A run configuration that RPA Manager uploads to Anypoint Exchange as an invokable API to be called by other services such as Composer.
 
 == J
 
