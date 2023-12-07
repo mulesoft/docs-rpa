@@ -154,7 +154,7 @@ A sequence of characters and symbols that specify a match pattern to be searched
 
 === Run Configuration 
 
-A schedule that specifies the times and intervals for a process to run.
+A set of execution parameters and run conditions for an automated process that includes a name, run schedule, activity parameters' starting values, and assigned user tasks and bots.
 
 ''''''
 === RPA
