@@ -26,7 +26,7 @@ Enables you to map variables that you can use not only in the Workflow, but also
 
 === Analysis Package 
 
-An error report that contains full information on the run in the same format as when you execute the Workflow locally.
+A ZIP file containing workflow run logs and error screenshots. Importing the package in RPA Builder shows information in the same format as when the workflow executes locally.
 
 == B
 
