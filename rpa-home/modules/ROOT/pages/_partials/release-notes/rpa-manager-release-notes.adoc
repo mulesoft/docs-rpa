@@ -25,6 +25,9 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | The close button of videos played in the home page is shown even after resizing the browser's window. | W-14387182
 | A global variable of type integer can specify negative numbers. | W-13460628
 | The dashboard widget *Business Process Performance* aggregates successful and failed process executions. | W-14438065
+| The *Upcoming Process Changes* view shows only copied processes, which have been uploaded by RPA Builder at least once. | W-14292949
+| Users assigned to user tasks can be modified in a run configuration. | W-14588383
+| The name of an RPA Bot API keys can be modified. | W-14614289
 |===
 
 // == Known Issues
