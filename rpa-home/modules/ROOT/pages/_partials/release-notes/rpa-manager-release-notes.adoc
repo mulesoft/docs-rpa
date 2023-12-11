@@ -2,15 +2,15 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
-[[december-6-2023]]
-== December 6, 2023
+[[december-11-2023]]
+== December 11, 2023
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* RPA Manager implements Anypoint Audit Log.
+* RPA Manager now implements Anypoint Audit Logging, which enables you to see a queryable history of actions performed within Anypoint Platform.
 * The *Usage Summary* is now grouped by the process' category.
-* The *Usage Summary* shows the _Cumulated Bot Run Time_ and _Average Bot Run Time_ additionally in _hh:mm:ss_ format.
+* The *Usage Summary* now shows the Cumulated Bot Run Time and Average Bot Run Time additionally in _hh:mm:ss_ format.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -18,16 +18,16 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| The view *Upcoming Process Changes* no longer shows an error when selecting the table header _Last edited_. | W-14293208
-| *Process Run Results* do not show an _Endtime_ and _Duration_ if the respective process is in the status _running_. | W-14311008
-| RPA Bot logs can be downloaded in the *Bot Management* even if the RPA Bot is in status _out of service time_. | W-14378109
-| The name of global variables and credentials are only unique within the same organization. The same name can be used in different organizations. | W-14378876
-| The close button of videos played in the home page is shown even after resizing the browser's window. | W-14387182
-| A global variable of type integer can specify negative numbers. | W-13460628
-| The dashboard widget *Business Process Performance* aggregates successful and failed process executions. | W-14438065
-| The *Upcoming Process Changes* view shows only copied processes, which have been uploaded by RPA Builder at least once. | W-14292949
-| Users assigned to user tasks can be modified in a run configuration. | W-14588383
-| The name of an RPA Bot API keys can be modified. | W-14614289
+| The *Upcoming Process Changes* view no longer shows an error when selecting the table header *Last edited*. | W-14293208
+| *Process Run Results* no longer show *Endtime* and *Duration* if the respective process is in status _running_. | W-14311008
+| You can now download RPA Bot logs in the *Bot Management* when the RPA Bot is in status _out of service time_. | W-14378109
+| You can now use the same name for global variables and credentials in different organizations. Names are unique within the same organization. | W-14378876
+| The close button of the videos player in the home page no longer dissappears after resizing the browser's window. | W-14387182
+| You can now create a global variable of type integer with a negative number value. | W-13460628
+| The dashboard widget *Business Process Performance* now aggregates successful and failed process executions. | W-14438065
+| The *Upcoming Process Changes* view no longer shows copied processes that have not been uploaded from RPA Builder at least once. | W-14292949
+| You can now modify users assigned to user tasks in a run configuration. | W-14588383
+| You can now modify the name of RPA Bot API keys. | W-14614289
 |===
 
 // == Known Issues
