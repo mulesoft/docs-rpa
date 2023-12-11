@@ -1,0 +1,58 @@
+
+
+= Select Web Element
+
+Use this _Web Automation_ object to select an option from a list box or
+a drop-down box.
+
+== Properties
+
+* *Select Index* 
++
+The index of the option to be selected. Only applicable
+if _Selection Method_ is _Index_.
+
+* *Select Text* 
++
+The text of the option to be selected. Only applicable if
+_Selection Method_ is _Text_.
+
+* *Select Value* 
++
+The value of the option to be selected. Only applicable
+if _Selection Method_ is _Value_.
+
+* *Selection Method* 
++
+Decide which method should be used to identify the
+option which should be selected from the list or drop-down box. This can
+either be _Index_, _Text_, or _Value_.
+
+== Inbound Variables
+
+* *Element XPath*
+* *Window Title*
+* *Value* 
+* *Index*
+* *Text* 
+
+== Outbound Variables
+
+The Action Step _Select Web Element_ possesses no outbound variables.
+
+== Wizard
+
+Use _Select Web Element_ to select an element inside a list or drop-down menu in a website or web application.  
+
+If the element you want to select has an underlying hyperlink, use _Click Element_ instead.
+
+When you use the _Browser Wizard_ to select the drop-down menu that contains the element to use, all current options display in
+the *Available Options* field. After selecting an option, you can choose the method to identify it: 
+
+* *Value*: The standard selection. On an average website, this is usually the value that changes the least. 
+* *Text*: The text that shows in the picklist. Product names or similar values are easy to select in text form. 
+* *Index*: The index might be imprecise, particularly on dynamic websites. Use *Index* only if the selected element is of secondary importance.
++
+When using Internet Explorer, selecting an option by index takes longer than with other browsers. 
+
+You can use Pin variables to specify the value for the selection method. 

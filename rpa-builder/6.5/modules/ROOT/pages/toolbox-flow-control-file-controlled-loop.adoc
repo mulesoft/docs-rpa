@@ -1,0 +1,110 @@
+
+
+= File Controlled Loop
+
+This _Flow Control Element_ reads data from a CSV file and makes the data available as variables, whereby each column represents one variable. During
+execution, _File Controlled Loop_ iterates over each row of data and runs through all the content of each row individually.
+
+Ensure you use a valid and well-formatted CSV file where all rows have the same number of columns separated by the selected separation character. RPA Builder selects the semicolon (`;`) as the separation character when it converts existing workflows created with earlier versions. If the file has an incorrect format, _File Controlled Loop_ cannot read the file. 
+
+The first line of the file is considered the header line. _File Controlled Loop_ uses these headers as variable names and not as actual variable values.
+
+== Properties
+
+* *External File*
+** *Import Filename* 
++
+Full path of the file to import.
+** *Relative to 3rd Party Folder* 
++
+Specifies if the path of the file to load is relative to the _3rd party_ folder.
+** *Separation character*
++
+Specifies the character to use as a column separator when reading the CSV file.
+** *Shuffle* 
++
+Shuffles the data rows during execution.
+* *Miscellaneous*
+** *Iteration Count* 
++
+If *Limit iterations* is selected, this property specifies the
+maximum iterations the loop does. Only applicable when the file
+is imported at runtime.
+** *Limit iterations* 
++
+Decides if the iteration count is limited.
+
+Only applicable when the file is imported at runtime.
+** *Separate File Path for Execution* 
++
+When *Use separate File Path for Execution* is selected, _File Controlled Loop_ reads the file from this path instead of
+the path given in *Import Filename*. Only applicable when the file is
+imported at runtime.
+** *Use separate File Path for Execution* 
++
+Select this setting to load the file from a different path during execution. Useful if you want to
+read the file from a network location. Only applicable when the file is
+imported at runtime.
+** *Use type string only* 
++
+Converts all data to type String during runtime. In the wizard, you can convert the data per column.
+
+== Inbound Variables
+
+The Action Step File Controlled Loop has no Inbound variables.
+
+== Outbound Variables
+
+The Action Steps inside _File Controlled Loop_ return the respective column
+contents as variables.
+
+The names of the variables follow the pattern `<Action Step name>.<column name>`.
+
+== Wizard
+
+The wizard enables you to select whether to import the file at the moment or during execution, the separation character, and the document's encoding, including Shift-JIS and EUC-JP for Japanese support. 
+
+Depending on the read mode you select, the wizard changes. The main difference between the two modes is that when you import the
+file at design time, you can use its variables in timers, and the data is
+fixed. If you import the file during execution, you can read the file
+from anywhere, including network locations, which enables you to alter the data without modifying the _Workflow_ at all (however, you cannot use
+the variables within timer names).
+
+If you switch between the two modes you lose all defined variable mappings. 
+
+Importing the file during execution enables you to use variables within the column
+filters. However, the wizard deletes any filters that contain variables if you switch modes.
+
+=== Importing a File at Design Time
+
+When you select *Read file now*, the wizard shows the following configuration options:
+
+image::file-controlled-loop-wizard-read-file-now.png[The File Controlled Loop wizard showing the file preview when Read file now is selected, 75%, 75%]
+
+Click *Import File* to select the file to import. RPA Builder then reads and analyzes the file and displays a content preview in
+the *File Content Preview* section of the wizard. 
+
+The *File Content Preview* section enables you to apply filters to each column by clicking the *Filter* button (image:filter-icon.png[The filter icon, 2%, 2%]). When you enter text in the *Filter* field, the preview filters out all rows that do not contain the specified text.
+
+image::file-controlled-loop-filter-dialog.png[The filter dialog of the File Controlled Loop Action Step, 30%, 30%]
+
+Select *Use Regex* to use a regular expression instead of plain text when applying filters. 
+
+Use the drop-down menu next to each column name to change the type of the column content.
+
+=== Importing a File During Execution
+
+When you select *Read file dynamically during Workflow execution*, the wizard shows the following configuration options: 
+
+
+image::file-controlled-loop-read-file-during-execution.png[The File Controlled Loop wizard showing the file preview when Read file dinamically during Workflow execution is selected, 75%, 75%]
+
+Click *[...]* next to the *File Name* field to specify the file path, select and copy the file to the _3rd Party_ folder, or open the _3rd Party_ folder. 
+
+Select *Use separate File Path during Script Execution* to specify an absolute path to read the file from. Use this option when the file's location differs in the system that executes the automation and the system where you build the Workflow. 
+
+Select *Only read a maximum of <n> Records* and specify a number to limit the maximum number of rows to read from the file. 
+
+== See Also 
+
+* xref:advanced-concepts-using-variables.adoc[]
