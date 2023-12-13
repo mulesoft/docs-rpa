@@ -81,7 +81,7 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 ''''''
 
-=== IDP 
+=== IDP (Intelligent Document Processing)
 
 Intelligent Document Processing is a technology solution that implements AI to read documents, extract data, and organize information from different document sources.
 
