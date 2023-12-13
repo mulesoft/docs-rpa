@@ -22,7 +22,7 @@ Enables you to reuse certain activities that repeat during the automation of bus
 
 === Activity Parameter 
 
-Enables you to map variables that you can use not only in the Workflow, but also in the activities of the business process and gateways.
+Enables you to map variables that you can use both in the Workflow and in the activities of the business process and gateways.
 
 === Analysis Package 
 
