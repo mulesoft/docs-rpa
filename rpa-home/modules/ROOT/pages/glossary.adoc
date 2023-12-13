@@ -175,7 +175,7 @@ See the https://www.mulesoft.com/prod-subscription-plans[MuleSoft Product Subscr
 
 === RPA Builder
 
-RPA Builder is an on-premises application that enables you to build the automations by specifying the steps of the process.
+An on-premises application that enables you to build automations by specifying the steps of the process.
 
 === RPA Manager
 
