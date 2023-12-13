@@ -163,7 +163,7 @@ MuleSoft Robotic Process Automation (RPA) enables you to automate business proce
 
 === RPA Bots
 
-RPA Bots are software robots that run in an on-premises environment and execute the assigned automations. You can manage bots from RPA Manager.
+A software robot that runs in an on-premises environment and executes the assigned automation. You can manage bots from RPA Manager.
 
 === RPA API Call
 
