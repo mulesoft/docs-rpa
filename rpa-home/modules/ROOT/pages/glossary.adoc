@@ -161,7 +161,7 @@ A set of execution parameters and run conditions for an automated process that i
 
 MuleSoft Robotic Process Automation (RPA) enables you to automate business processes and tasks by using bots, which helps save time and prevent introducing human errors.
 
-=== RPA Bots
+=== RPA Bot
 
 A software robot that runs in an on-premises environment and executes the assigned automation. You can manage bots from RPA Manager.
 
