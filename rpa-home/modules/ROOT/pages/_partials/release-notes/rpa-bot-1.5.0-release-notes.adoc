@@ -9,8 +9,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* W-14313268 As a user I want to start a RPA Bot's update from RPA Manager so that I can easily roll out the latest RPA Bot software versions without to crawl onto each RPT Bot system to manually click through the setup.
-* Added REST endpoints `Bot Update` and `Enable Debug Logging` to test the RPA Bot functionality.
+* RPA Bot updates can now be started from RPA Manager so that you can easily update to the latest version without to click through the setup process manually.
 * Updated all outdated Nuget packages.
 
 // == Compatibility
@@ -29,10 +28,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="2a,1a"]
 |===
 | Issue Resolution | ID
-|Terminal Server detection and remote app registration now works as expected. |W-14243297
-|Running multiple secure sessions no longer stops after a runtime of twenty-four hours. |W-14249064
 |Minor updates have been made to the text on the Common panel of the RPA Bot Configurator. |W-14282905
-|Processes that are currently running are no longer cancelled when RPA Bot is restarted after making configuration changes. |W-14547668
 |===
 
 // == See Also
