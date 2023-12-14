@@ -60,7 +60,7 @@ Reassign one asset to another user:
 * Select *Send email to the new owner* to inform the selected user about the reassignment.
 . Click *Save*.
 
-RPA Manager removes the reassigned asset from the list and sends an email to the newly assigned user.
+RPA Manager removes the reassigned asset from the list.
 
 A toast message informs you about the success of the reassignment.
 
@@ -77,7 +77,7 @@ Reassign several assets to another user at once:
 * Select *Send email to the new owner* to inform the selected user about the reassignment.
 . Click *Save*.
 
-RPA Manager removes the reassigned asset from the list and sends an email to the newly assigned user.
+RPA Manager removes the reassigned asset from the list.
 
 A toast message informs you about the success of the reassignments.
 
