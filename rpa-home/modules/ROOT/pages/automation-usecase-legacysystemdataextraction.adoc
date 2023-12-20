@@ -41,7 +41,7 @@ You decide to get a bot to do this.
 
 The following example shows, how you could automate the retrieving of the order ID from a PDF and the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards, are part of other examples.
 
-## Create a Model of the Process
+## Design a Model of the Process
 
 In RPA Manager, you open a new project and design a model of the process.
 
@@ -83,39 +83,3 @@ For our process we need three Activity Parameters:
 To use an Activity Parameter in a Workflow, you must include it in the Workflow Initialization section of each Workflow:
 
 image::activityparameters-useinworkflow.png[Activity Parameters Wizard with Available and Used Parameters, 75%]
-
-## 2. Implement the order ID extraction activity
-
-Let's start with finding the order ID in the PDF first.
-
-As you can see in the image of the order confirmation letter, the order ID is always listed in a table next to the entry 'Order ID'. We can use this information to implement the workflow containing the following steps:
-
-. Copy the content of the order confirmation to a text file.
-. Read the text file line by line to find the order ID.
-. If the order ID is found, store it in an activity parameter.
-
-image::extractorderid-workflow.png[Activity Workflow for the extraction of the order ID from a PDF]
-
-### 2.1 Copying Text From a PDF to a Text File
-
-To copy the text content from a PDF to a text file, you open the PDF and use the outgoing Pin Variable `ReadText` as input for the 'Write to Text File' Action Step.
-
-image::extractorderid-workflow-pdftotxt.png['']
-
-The following image shows the result of storing the text content.
-
-image::extractorderid-workflow-resultpdftotxt.png['', 75%]
-
-### 2.2 Looping Over All Lines of a Text File
-
-...
-
-### 2.2.1 Check a Case and Catch Errors
-
-...
-
-### 2.2.1.1 Retrieve a Substring
-
-...
-
-We save the order ID to the AP.

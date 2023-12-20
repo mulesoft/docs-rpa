@@ -1,0 +1,79 @@
+## 2. Implement the order ID extraction activity
+
+Let's start with finding the order ID in the PDF first.
+
+As you can see in the image of the order confirmation letter, the order ID is always listed in a table next to the entry 'Order ID'. We can use this information to implement the workflow containing the following steps:
+
+. Copy the content of the order confirmation to a text file.
+. Read the text file line by line to find the order ID.
+. If the order ID is found, store it in an activity parameter.
+
+image::extractorderid-workflow.png[Activity Workflow for the extraction of the order ID from a PDF, 75%]
+
+### 2.1 Copying Text From a PDF to a Text File
+
+To copy the text content from a PDF to a text file, you open the PDF and use the outgoing Pin Variable `ReadText` as input for the 'Write to Text File' Action Step.
+
+image::extractorderid-workflow-pdftotxt.png['', 75%]
+
+The following image shows the result of storing the text content.
+
+image::extractorderid-workflow-resultpdftotxt.png['', 50%]
+
+### 2.2 Looping Over All Lines of a Text File
+
+To loop over all lines of a file, we use and configure the following Action Steps:
+
+. Count the lines of the file by reading it once:
++
+*Read from Text File*
++
+Read whole file
+. Read the lines of the text file one after the other:
++
+*Loop*
++
+Use `1` as starting value and the pinned line count from the previous step as maximum value for the iteration counter.
++
+image::/Users/seberhard/Projects/ExamplesForDocs/ExtractIDFromPDFAndAS400/workflow-loopoveralllinesoftextfile.png['', 75%]
++
+*Read from Text File*
++
+The iteration counter doubles as the number of the current line to read.
++
+image::workflow-readsinglelineoftextfileinloop.png['', 50%]
+
+
+### 2.2.1 Check a Case and Catch Errors
+
+To check for the order id we use the following Action Steps in each iteration of the loop:
+
+. Check if the term 'Order ID' is contained in the current line of the text file:
++
+*Select case*
++
+One case comparing to strings: any part the line and 'Order ID'. If they match, we have found the line containing the order ID.
++
+image::workflow-checkcase-comparesubstring.png['']
++ 
+If not, we need to catch the error so that the loop continues:
++
+*Force OK State*
+
+### 2.2.1.1 Retrieve a Substring
+
+Since we know, that the order ID is found after the text `Order ID `, we can simply remove these first nine characters from the current line (which contains the substring `Order ID`). The remaining string is the order ID, which we store in the Activity Parameter of the same name.same name.
+
+For this purpose we use and configure the follwing Action Steps:
+
+. *String Operations*:
++
+* Current line as Pin variable
+* `Trim left (remove first characters)`
+* `9``
+. *Set Variable*:
++ 
+* Pin Activity Parameter
+* Pin Result of String Operation
+
+image::workflow-cutsubstringoutoftext.png['']
