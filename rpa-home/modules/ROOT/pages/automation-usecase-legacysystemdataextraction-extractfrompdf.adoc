@@ -1,28 +1,28 @@
-## 2. Implement the order ID extraction activity
+# Implement the order ID extraction activity
 
 Let's start with finding the order ID in the PDF first.
 
-As you can see in the image of the order confirmation letter, the order ID is always listed in a table next to the entry 'Order ID'. We can use this information to implement the workflow containing the following steps:
+As you can see in xref:automation-usecase-legacysystemdataextraction.adoc#confirmationletter-image[the image of the order confirmation letter], the order ID is always listed in a table next to the entry 'Order ID'. You can use this information to implement the workflow containing the following steps:
 
 . Copy the content of the order confirmation to a text file.
-. Read the text file line by line to find the order ID.
-. If the order ID is found, store it in an activity parameter.
+. Read the text file line by line to find the one containing the order ID.
+. If the order ID is found, cut it out from the text and store it in an activity parameter.
 
 image::extractorderid-workflow.png[Activity Workflow for the extraction of the order ID from a PDF, 75%]
 
-### 2.1 Copying Text From a PDF to a Text File
+## 1. Copying Text From a PDF to a Text File
 
 To copy the text content from a PDF to a text file, you open the PDF and use the outgoing Pin Variable `ReadText` as input for the 'Write to Text File' Action Step.
 
 image::extractorderid-workflow-pdftotxt.png['', 75%]
 
-The following image shows the result of storing the text content.
+The following image shows the result of storing the text content:
 
 image::extractorderid-workflow-resultpdftotxt.png['', 50%]
 
-### 2.2 Looping Over All Lines of a Text File
+## 2. Looping Over All Lines of a Text File
 
-To loop over all lines of a file, we use and configure the following Action Steps:
+To loop over all lines of a file, you use and configure the following Action Steps:
 
 . Count the lines of the file by reading it once:
 +
@@ -44,27 +44,27 @@ The iteration counter doubles as the number of the current line to read.
 image::workflow-readsinglelineoftextfileinloop.png['', 50%]
 
 
-### 2.2.1 Check a Case and Catch Errors
+### 2.1 Check a Case and Catch Errors
 
-To check for the order id we use the following Action Steps in each iteration of the loop:
+To check for the order id, you use the following Action Steps in each iteration of the loop:
 
 . Check if the term 'Order ID' is contained in the current line of the text file:
 +
 *Select case*
 +
-One case comparing to strings: any part the line and 'Order ID'. If they match, we have found the line containing the order ID.
+One case comparing two strings: any part of the line and 'Order ID'. If they match, you have found the line containing the order ID.
 +
 image::workflow-checkcase-comparesubstring.png['']
 + 
-If not, we need to catch the error so that the loop continues:
+If not, you need to catch this error so that the loop continues:
 +
 *Force OK State*
 
-### 2.2.1.1 Retrieve a Substring
+### 3. Retrieve a Substring
 
-Since we know, that the order ID is found after the text `Order ID `, we can simply remove these first nine characters from the current line (which contains the substring `Order ID`). The remaining string is the order ID, which we store in the Activity Parameter of the same name.same name.
+Since you know that the order ID is found after the text `Order ID `, you can simply remove these first nine characters from the current line (which contains the substring `Order ID`). The remaining string is the order ID, which you store in the Activity Parameter of the same name.
 
-For this purpose we use and configure the follwing Action Steps:
+For this purpose you use and configure the follwing Action Steps:
 
 . *String Operations*:
 +

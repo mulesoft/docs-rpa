@@ -17,6 +17,7 @@ Imagine you work as an accountant at Mythical University. Mythical University ha
 
 This is what an order confirmation of your travel agency Wonderlust Travel typically looks like:
 
+[[confirmationletter-image]]
 image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png[Order confirmation letter in PDF format, 75%]
 
 You need to search the order ID in your order tracking system to get the corresponding tracking number, which you need to reference in your payment.
@@ -57,15 +58,13 @@ The user tasks are for illustrational purposes and can be replaced by steps to p
 
 After you finish the first draft of the model, you move the project to the build phase.
 
-Then, open the project in RPA Builder and implement the workflows for the bot activities.
+Then, open the project in RPA Builder to implement the workflows for the bot activities.
 
-## 1. Create Activity Parameters to Transfer and Route Data
+## Create Activity Parameters
 
-The process uses Activity Parameters to store and transfer data.
+The process uses variables to store and route data. These _Activity Parameters_ are defined in RPA Builder.
 
-image::activityparameters.png[Screenshot of the Activity Parameter window, 75%]
-
-For our process we need three Activity Parameters:
+For your process you need three Activity Parameters:
 
 * order_id
 ** an alphanumeric variable
@@ -80,6 +79,20 @@ For our process we need three Activity Parameters:
 ** is set to true if the order id is found in the order tracking system
 ** routes the process flow through the gateway accordingly
 
+image::activityparameters.png[Screenshot of the Activity Parameter window]
+
 To use an Activity Parameter in a Workflow, you must include it in the Workflow Initialization section of each Workflow:
 
 image::activityparameters-useinworkflow.png[Activity Parameters Wizard with Available and Used Parameters, 75%]
+
+## Implement the Activities
+
+You find some details of implementation of the activities as _Workflows_ on the next pages:
+
+* xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[Implement the order ID extraction activity]
+* xref:automation-usecase-legacysystemdataextraction-extractfromsceen[Implement the tracking number extraction activity]
+* ...
+
+## Upload Your Process to RPA Manager
+
+...
