@@ -70,7 +70,7 @@ For this purpose you use and configure the follwing Action Steps:
 +
 * Current line as Pin variable
 * `Trim left (remove first characters)`
-* `9``
+* `9`
 . *Set Variable*:
 + 
 * Pin Activity Parameter

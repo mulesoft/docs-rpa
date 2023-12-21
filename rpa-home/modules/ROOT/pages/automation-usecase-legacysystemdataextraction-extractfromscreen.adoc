@@ -1,1 +1,18 @@
 # Implement the tracking number extraction activity
+
+
+With the order ID you can now get the corresponding tracking umber from the legacy system:
+
+. Import all three Activity Paramters. The order ID is already filled with the value extracted in the last Activity.
+. Run your legacy application.
+. Search for the word `Order-ID` on te screen.
+. Click in the edit field next to it and enter the order ID.
+. ...
+
+image::workflow-extractdatafromscreen.png[]
+
+## Run the legacy application
+
+## Search for the Pattern Order-ID on the Screen
+
+## ...

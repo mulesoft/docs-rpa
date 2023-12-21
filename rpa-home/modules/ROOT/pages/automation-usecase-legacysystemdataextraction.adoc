@@ -91,7 +91,8 @@ You find some details of implementation of the activities as _Workflows_ on the 
 
 * xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[Implement the order ID extraction activity]
 * xref:automation-usecase-legacysystemdataextraction-extractfromsceen[Implement the tracking number extraction activity]
-* ...
+* ...Gateway
+* ...UserTask
 
 ## Upload Your Process to RPA Manager
 
