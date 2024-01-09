@@ -13,34 +13,38 @@ Before using MuleSoft RPA, ensure that your environment meets the minimum hardwa
 +
 The URL to access RPA Manager is `+https://<tenant>.rpa.mulesoft.com+`, where `<tenant>` represents your organization's instance. If you are not sure about the name of your instance, contact your organization's administrator.
 
-== RPA Builder 6.4
+== RPA Builder 6.5
 
 include::rpa-builder::partial$hard-soft-requirements.adoc[leveloffset=+1]
 
 For Hardware and Software requirements for earlier RPA Builder versions, refer to the corresponding product documentation:
 
+* xref:6.4@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.4 Hardware and Software Requirements]
 * xref:6.3@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.3 Hardware and Software Requirements]
 * xref:6.2@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.2 Hardware and Software Requirements]
 * xref:6.1@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.1 Hardware and Software Requirements]
 * xref:6.0@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.0 Hardware and Software Requirements]
 
-== RPA Recorder 6.4
+== RPA Recorder 6.5
 
 include::rpa-recorder::partial$hard-soft-requirements.adoc[leveloffset=+1]
 
 For Hardware and Software requirements for earlier RPA Recorder versions, refer to the corresponding product documentation:
 
+* xref:6.4@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.4 Hardware and Software Requirements]
 * xref:6.3@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.3 Hardware and Software Requirements]
 * xref:6.2@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.2 Hardware and Software Requirements]
 * xref:6.1@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.1 Hardware and Software Requirements]
 * xref:6.0@rpa-recorder::hardware-software-requirements.adoc[RPA Recorder 6.0 Hardware and Software Requirements]
 
-== RPA Bot 1.3
+== RPA Bot 1.4
 
 include::rpa-bot::partial$hard-soft-requirements.adoc[leveloffset=+1]
 
 For Hardware and Software requirements for earlier RPA Bot versions, refer to the corresponding product documentation:
 
+* xref:1.3@rpa-bot::hardware-software-requirements.adoc[RPA Bot 1.3 Hardware and Software Requirements]
+* xref:1.2@rpa-bot::hardware-software-requirements.adoc[RPA Bot 1.2 Hardware and Software Requirements]
 * xref:1.1@rpa-bot::hardware-software-requirements.adoc[RPA Bot 1.1 Hardware and Software Requirements]
 * xref:1.0@rpa-bot::hardware-software-requirements.adoc[RPA Bot 1.0 Hardware and Software Requirements]
 

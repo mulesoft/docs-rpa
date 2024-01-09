@@ -1,0 +1,60 @@
+= RPA Builder 6.5.0 Release Notes
+
+RPA Builder is the on-premises application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== November 29, 2023
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* Several new action steps are available:
+** Signature Detection with AWS enables you to extract one or more signatures from a document. 
+** Check Folder enables you to check the existence of a folder in the specified path. 
+** Create Folder enables you to create a new folder in the specified path. 
+** Copy Folder enables you to copy a folder, including all subfolders and files, to the specified path. 
+** Delete Folder enables you to delete a folder, and all its contents, in the specified path. 
+** Rename Folder enables you to rename a folder in the specified path. 
+** Session Based Variables enables you to share variables accross all workflows that run inside the same session. 
+* Runtime Variables now includes Process ID, Bot ID, Session ID, and Session Name. 
+* RPA Builder now shows notifications when you download a locked process and when you try to upload changes to a locked process.
+* Read Mail and Send Mail now support the following encodings: UTF-8, UTF-16, Shift-JIS, and EUC-JP.
+* Select Web Element now includes the Value, Index, and Text inbound variables. 
+* Queries with AWS now includes the Confidence first answer outbound variable. 
+* Copy File and Move file can now create a new folder if the destination folder does not exist. 
+* String Operations now includes the following operations: Reverse string, Uppercase conversion, Lowercase conversion, Find and return index of string found.
+* The JSONPath Expression builder now enables you to set filters for the resulting expression. 
+* All incoming RPA API requests now include the `x-correlation-id` header.
+* You can now switch between multiple accounts when testing a workflow with Mail Session. 
+* You can now configure conversion quality in AWS actions steps that support PDF to PNG conversion. 
+* The `CefSharp.Common` library is upgraded to version 117.2.20 to address reported security vulnerabilities.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.4.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+| Excel Controlled Loop no longer shows numbers in an invalid format or truncated during the preview and when executing an operation. | W-14485859
+| Excel Controlled Loop no longer truncates dates in MM/DD/YYYY format during the preview and when executing an operation.| W-14485373
+| Iterate Over Files no longer throws an error when the result set is empty. | W-14454748
+| Excel Controlled Loop no longer throws an error when you activate headers and write content to the first cell. | W-14194093
+| The Run Results panel no longer shows truncated error messages when the message is longer than the Workbench view. | W-13902897
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center^]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]
