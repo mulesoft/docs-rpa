@@ -19,7 +19,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | Republishing a process to Anypoint Exchange now updates the asset's description. | W-11865540
 | Deleting a test plan in a process' test phase no longer revokes all other test plans. | W-14665127
 | You can now remove a user from a process' test plan in the test phase. | W-14666270
-| The *Bots* tab in a scheduled or invokable run configuration now shows tooltips while hovering over the indicator preceding the RPA Bot's name. | W-14686687
+| The *Bots* tab in a scheduled or invokable run configuration now shows tooltips while hovering the indicator preceding the RPA Bot's name. | W-14686687
 |===
 
 // == Known Issues
