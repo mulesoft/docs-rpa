@@ -10,4 +10,4 @@ This version is internal only. All of the features and fixed issues for this ver
 include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
 
 * https://help.mulesoft.com/s/[MuleSoft Help Center^]
-* https://www.mulesoft.com/support-and-services[MuleSoft Services]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]
