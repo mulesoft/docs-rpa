@@ -6,6 +6,8 @@ If an RPA user or team is deleted or disabled in Access Management, the *Reassig
 
 All users with the *Reassign Users* or *RPA Administrator* permission get an email when an RPA asset is orphaned because its last assigned user is deleted.
 
+The *Reassign Assets* tab can also show all RPA assets of an existing user.
+
 You can reassign the following RPA assets to another user:
 
 * Credentials
@@ -19,7 +21,7 @@ The following assets are deleted on the deletion of the user:
 * Private dashboards
 * User API Keys
 
-User Tasks are not shown in the *Reassign Assets* view and can be reassigned via the *Unprocessed User Tasks* view.
+User Tasks are not shown in the *Reassign Assets* view and can be reassigned via the *Unprocessed User Tasks* view or via the run configurations of a process.
 
 == Before You Begin
 
@@ -47,9 +49,10 @@ User Tasks are not shown in the *Reassign Assets* view and can be reassigned via
 
 == Reassign One RPA Asset 
 
-Reassign an asset that is assigned to a deleted or disabled user or team:
+Reassign one asset to another user:
 
 . Open the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module.
+. To reassign an asset of an existing user, click the *Unassigned assets* drop-down and select the user. You can also search for the user's name to filter the list.
 . Click the *Reassign* on the panel of the asset to reassign.
 . Check and edit the *Reassign Owner* form:
 +
@@ -63,9 +66,10 @@ A toast message informs you about the success of the reassignment.
 
 == Reassign Several RPA Assets to One User
 
-Reassign several assets that are assigned to a deleted or disabled user at once:
+Reassign several assets to another user at once:
 
 . Open the *Reassign Assets* tab in the *Admin Settings* view of the *Settings* module.
+. To reassign assets of an existing user, click the *Unassigned assets* drop-down and select the user. You can also search for the user's name to filter the list.
 . Check the panel of every asset to reassign.
 . Check and edit the *Reassign Owner* form:
 +
@@ -73,7 +77,7 @@ Reassign several assets that are assigned to a deleted or disabled user at once:
 * Select *Send email to the new owner* to inform the selected user about the reassignment.
 . Click *Save*.
 
-RPA Manager removes the reassigned assets from the list.
+RPA Manager removes the reassigned asset from the list.
 
 A toast message informs you about the success of the reassignments.
 
