@@ -24,14 +24,17 @@ You need to search the order ID in your order tracking system to get the corresp
 
 Unfortunately your order tracking system is very old and can only be accessed by typing in and reading from a terminal screen:
 
+[[trackingsystem-allentries-image]]
 image::as400ordertrackingscreen.png[Legacy order tracking system shown as text in a terminal, 75%]
 
 You click the search field, enter the order ID, and click 'Search'.
 
+[[trackingsystem-noentries-image]]
 image::as400ordertrackingscreen-searchresult-ordernotfound.png[Legacy order tracking system doesn't show search results, 75%]
 
 The list of orders is empty now. This could either mean that the order is not there or you mistyped the number. Let's assume that the latter is the case. You try again and the list shows the corresponding entry:
 
+[[trackingsystem-resultentry-image]]
 image::as400ordertrackingscreen-searchresult-orderfound.png[Legacy order tracking system shows a search result, 75%]
 
 Now you can copy the tracking number and reference it in your payment.

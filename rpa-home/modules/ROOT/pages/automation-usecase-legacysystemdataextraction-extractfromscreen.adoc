@@ -37,17 +37,41 @@ Use *Mouse Action* to click into the search field:
 
 image::workflow-clickinsearchfield.png[]
 
-The search field now has the focus, so you can just enter the order ID with a simulated keyboard. Instead of recording key strokes, you use the Activity Paramter `order_id` with the *Enter String* Action Step to copy the Order ID into the field:
+The search field now has the focus, so you can just enter the order ID with a simulated keyboard. Instead of recording key strokes, you use the Activity Parameter `order_id` with the *Enter String* Action Step to copy the Order ID into the field:
 
-image::
+image::workflow-enteractivityparameteraskeystrokes.png[]
 
 Then Mouse Action again to start the search:
 
-image::
+* You reuse the location of the order id pattern to record the click position.
 
-
+image::workflow-clicksearchbutton.png[]
 
 ## Check the Results
 
-You know, that the search is succesful, when there is a result listed.
+You know, that the search is successful, when there is a result listed. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-allentries-image[the screen], the tracking number should be listed in the column of the same name, so you search for that column first, using `Tracking No.` as the search pattern:
+
+image::workflow-searchtrackingnumberpattern.png[]
+
+Because it might be that the order has no corresponding tracking number in the system and you don't want to falsely return the initial value of the variable as tracking number, you check this case first.
+
+In the *DoAction*, which works like a try element, you check, if the result list is empty. 
+As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-noentries-image[the screen], in case of no results, an up arrow is shown directly below the empty space where the results should have been.
+
+You use the *Search Pattern* Action Step:
+
+* The search pattern is the arrow up symbol.
+* The search area must be limited to the space directly below the column name.
+
+If the pattern is not found - which in your case means that the system found a corresponding tracking number - *Search Pattern* returns an error.
+
+To continue with the workflow you need to force an OK state, which you do in the *OnError* section.
+
+image::workflow-managed-searchforemptylist.png[]
+
+image::workflow-searchforemptylist-searcharea.png[]
+
+As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-resultentry-image[the screen],
+
+
 ....
