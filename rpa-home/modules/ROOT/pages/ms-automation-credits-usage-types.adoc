@@ -10,6 +10,7 @@ Credit usage rates differ for different subscription plans. Refer to the article
 a| 
 * Automation Starter
 * Automation Advanced 
+* Automation for vCore/Core
 * Additional Automation Credits
 .^| xref:ms-automation-credits-2.adoc[]
 a|
