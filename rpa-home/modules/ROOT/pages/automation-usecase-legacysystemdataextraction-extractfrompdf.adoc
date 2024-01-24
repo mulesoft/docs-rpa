@@ -1,26 +1,30 @@
 # Implement the order ID extraction activity
+:sectnums:
 
-Let's start with finding the order ID in the PDF first.
+First, you need to find the order ID in the PDF.
 
-As you can see in xref:automation-usecase-legacysystemdataextraction.adoc#confirmationletter-image[the image of the order confirmation letter], the order ID is always listed in a table next to the entry 'Order ID'. You can use this information to implement the workflow containing the following steps:
+As you can see in xref:automation-usecase-legacysystemdataextraction.adoc#confirmationletter-image[the image of the order confirmation letter], the order ID is always listed in a table next to the entry 'Order ID'. 
+// Do we need an image of that part of the letter here?
+You can use this information to implement the workflow containing the following steps:
 
 . Copy the content of the order confirmation to a text file.
 . Read the text file line by line to find the one containing the order ID.
-. If the order ID is found, cut it out from the text and store it in an activity parameter.
+. Check if the order ID is found
+. Cut the order ID out from the text and store it in an activity parameter.
 
-image::extractorderid-workflow.png[Activity Workflow for the extraction of the order ID from a PDF, 75%]
+image::usecase-legacysystem-extractformpdf-workflow-overview.png[Overview of the workflow of the activity for the extraction of the order ID from a PDF. The number of the steps are contained in frames.]
 
-## 1. Copying Text From a PDF to a Text File
+## Copying Text From a PDF to a Text File
 
 To copy the text content from a PDF to a text file, you open the PDF and use the outgoing Pin Variable `ReadText` as input for the 'Write to Text File' Action Step.
 
-image::extractorderid-workflow-pdftotxt.png['', 75%]
+image::usecase-legacysystem-extractformpdf-workflow-pdftotxt.png['The part of the workflow that copies the text from a PDF to a text file is framed. The wizard for the Write To Text File action step is open with a frame around the Pin Variable containing the text extracted from the PDF by the previous action step.']
 
 The following image shows the result of storing the text content:
 
-image::extractorderid-workflow-resultpdftotxt.png['', 50%]
+image::extractorderid-workflow-resultpdftotxt.png['', 75%]
 
-## 2. Looping Over All Lines of a Text File
+## Looping Over All Lines of a Text File
 
 To loop over all lines of a file, you use and configure the following Action Steps:
 
@@ -44,7 +48,7 @@ The iteration counter doubles as the number of the current line to read.
 image::workflow-readsinglelineoftextfileinloop.png['', 50%]
 
 
-### 2.1 Check a Case and Catch Errors
+## Check a Case and Catch Errors
 
 To check for the order id, you use the following Action Steps in each iteration of the loop:
 

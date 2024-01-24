@@ -8,7 +8,7 @@ This example illustrates the following tasks:
 * Compare strings.
 * Copy a substring from a text file.
 * Find text on a screen using optical character recognition (OCR).
-* Interacting with a screen using mouse actions and key strokes.
+* Interact with a screen using mouse actions and key strokes.
 * Use activity parameters to transfer data.
 
 ## Example Scenario
@@ -45,7 +45,7 @@ You decide to get a bot to do this.
 
 The following example shows, how you could automate the retrieving of the order ID from a PDF and the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards, are part of other examples.
 
-## Design a Model of the Process
+## Design a Model of the Process in RPA Manager
 
 In RPA Manager, you open a new project and design a model of the process.
 
@@ -63,7 +63,7 @@ After you finish the first draft of the model, you move the project to the build
 
 Then, open the project in RPA Builder to implement the workflows for the bot activities.
 
-## Create Activity Parameters
+## Create Activity Parameters in RPA Builder
 
 The process uses variables to store and route data. These _Activity Parameters_ are defined in RPA Builder.
 
@@ -83,10 +83,6 @@ For your process you need three Activity Parameters:
 ** routes the process flow through the gateway accordingly
 
 image::activityparameters.png[Screenshot of the Activity Parameter window]
-
-To use an Activity Parameter in a Workflow, you must include it in the Workflow Initialization section of each Workflow:
-
-image::activityparameters-useinworkflow.png[Activity Parameters Wizard with Available and Used Parameters, 75%]
 
 ## Implement the Activities
 
