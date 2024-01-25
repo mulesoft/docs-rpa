@@ -1,4 +1,5 @@
 # Implement the order ID extraction activity
+// number the headings to correspond to the numbered list of steps
 :sectnums:
 
 First, you need to find the order ID in the PDF.
@@ -15,56 +16,32 @@ You can use this information to implement the workflow containing the following 
 image::usecase-legacysystem-extractformpdf-workflow-overview.png[Overview of the workflow of the activity for the extraction of the order ID from a PDF. The number of the steps are contained in frames.]
 
 ## Copying Text From a PDF to a Text File
-
-To copy the text content from a PDF to a text file, you open the PDF and use the outgoing Pin Variable `ReadText` as input for the 'Write to Text File' Action Step.
+// Do we need to write Action Step or AS (and variable etc) each time we mention one?
+To open the PDF, you use *Read PDF file*. Then you use the returned `ReadText` as input for *Write to Text File* to save the content as text file on your computer.
 
 image::usecase-legacysystem-extractformpdf-workflow-pdftotxt.png['The part of the workflow that copies the text from a PDF to a text file is framed. The wizard for the Write To Text File action step is open with a frame around the Pin Variable containing the text extracted from the PDF by the previous action step.']
 
-The following image shows the result of storing the text content:
+The following image shows the result of storing the text content. Each line of the PDF has a corresponding line in the text file. Images are omitted.
 
+// no alt text because description of image is contained in paragraph
 image::extractorderid-workflow-resultpdftotxt.png['', 75%]
 
 ## Looping Over All Lines of a Text File
 
-To loop over all lines of a file, you use and configure the following Action Steps:
+To loop over all lines of the text file, you first need to count the number of lines by reading the entire file using the Action Step *Read from Text File*. You use the returned `line count` as the maximum value for the iteration counter. The counter doubles as the number of the line to read with *Read from Text File* in each iteration. 
 
-. Count the lines of the file by reading it once:
-+
-*Read from Text File*
-+
-Read whole file
-. Read the lines of the text file one after the other:
-+
-*Loop*
-+
-Use `1` as starting value and the pinned line count from the previous step as maximum value for the iteration counter.
-+
-image::/Users/seberhard/Projects/ExamplesForDocs/ExtractIDFromPDFAndAS400/workflow-loopoveralllinesoftextfile.png['', 75%]
-+
-*Read from Text File*
-+
-The iteration counter doubles as the number of the current line to read.
-+
-image::workflow-readsinglelineoftextfileinloop.png['', 50%]
+image::usecase-legacysystem-extractformpdf-workflow-loopovertextfilelines.png['The part of the workflow that shows the loop in which the text is read line by line is framed. The wizards for the Action Steps Loop and Read From Text File are open showing the used Pin Variables Line Count and Iteration']
+
+## Checking a Case and Catching Errors
+
+Since you don't know which line contains the order id, you use *Select Case* to differ between the two possibilities: In case you found the order id, you cut it out of the text and store it in the activity parameter `order_id`. If you didn't, which happens in each other line, you still want to complete the loop and the workflow and use *Force OK State* to avoid returning an error.
+
+Your criteria for deciding whether you found the order id is that the string `Oder ID` is part of the current line.
 
 
-## Check a Case and Catch Errors
+image::usecase-legacysystem-extractformpdf-workflow-checkcaseandproceed.png['']
 
-To check for the order id, you use the following Action Steps in each iteration of the loop:
-
-. Check if the term 'Order ID' is contained in the current line of the text file:
-+
-*Select case*
-+
-One case comparing two strings: any part of the line and 'Order ID'. If they match, you have found the line containing the order ID.
-+
-image::workflow-checkcase-comparesubstring.png['']
-+ 
-If not, you need to catch this error so that the loop continues:
-+
-*Force OK State*
-
-### 3. Retrieve a Substring
+## Retrieving a Substring and Saving it to a Variable
 
 Since you know that the order ID is found after the text `Order ID `, you can simply remove these first nine characters from the current line (which contains the substring `Order ID`). The remaining string is the order ID, which you store in the Activity Parameter of the same name.
 
@@ -82,6 +59,13 @@ For this purpose you use and configure the follwing Action Steps:
 
 image::workflow-cutsubstringoutoftext.png['']
 
-## Next Activitiy
+// Turn off section numbering
+:sectnums!:
 
-...
+## Next Activity
+
+* xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[Implement the tracking number extraction activity]
+
+## See Also
+
+// Links to RPA Builder docs used elements
