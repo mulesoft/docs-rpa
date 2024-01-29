@@ -16,7 +16,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Run configurations can now be edited or deleted on the second and all following pages. | W-14820123
+| You can now edit and delete run configurations that show on the second and all following pages. | W-14820123
 | The *Deployment Map's* _Test_ tab can now be opened even if the project manager of one of the processes has been deleted. | W-14808512
 | *Finance Analysis* no longer shows an error if the process owner of one of the processes has been deleted. | W-14820620
 | *Bot Workflow Library* is now available in Japanese. | W-14836772
