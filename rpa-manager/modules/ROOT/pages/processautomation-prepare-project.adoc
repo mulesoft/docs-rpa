@@ -4,9 +4,9 @@ A project defines the framework conditions for the automation of a process and i
 
 You must prepare some project properties before starting the automation of a process:
 
-[cols="1,2"]
+[%header, cols="1,2"]
 |===
-|*Project Property* |*Usage*
+|Project Property |Usage
 
 |Category
 |A category describes the common environment of a set of processes in a few keywords, for example `Customer Support Mythical University` or `Finance`.

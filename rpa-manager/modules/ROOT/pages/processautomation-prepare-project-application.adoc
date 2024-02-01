@@ -20,19 +20,19 @@ A member of the process team can deploy a process on a bot that has assigned the
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Process Automation* module
+|Open the *Process Automation* module.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
-|Create and change process applications
+|Create and change process applications.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Bots Manager, RPA Administrator
 |Application Create, Application Edit
 
-|Delete process applications
+|Delete process applications.
 |RPA Automations Manager, RPA Bots Manager, RPA Administrator
 |Application Delete
 

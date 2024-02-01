@@ -15,15 +15,15 @@ You can now use https://docs.mulesoft.com/access-management/connected-apps-overv
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|View configured settings for your organization
+|View configured settings for your organization.
 |RPA Administrator
 |Organization Management Open
 
-|Create, edit, and delete API keys
+|Create, edit, and delete API keys.
 |RPA Administrator
 |User API Key Create, User API Key Edit, User API Key Delete
 
