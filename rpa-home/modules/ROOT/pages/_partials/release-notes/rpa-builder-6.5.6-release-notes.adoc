@@ -6,10 +6,6 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == February 6, 2024
 
-// == What's New
-include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
-
-* The Tomcat dependency is upgraded to version 9.0.85 to address reported security vulnerabilities.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
