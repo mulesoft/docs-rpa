@@ -4,7 +4,7 @@ RPA Builder is the on-premises application that enables you to build automations
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
-== February 6, 2024
+== February 7, 2024
 
 
 // == Compatibility
