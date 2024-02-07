@@ -25,7 +25,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |===
 | Issue Resolution | ID
 | The Math Operations action step no longer takes more time than expected to perform operations. | W-14970079
-| RPA Builder no longer crashes when you configure the Select Case action step to compare an alphanumeric value that contains an underscore character ('_') and this character is selected as the comparison value. | W-14865141
+| RPA Builder no longer crashes when you configure the Select Case action step to compare an alphanumeric value that contains an underscore character (`_`) and this character is selected as the comparison value. | W-14865141
 |===
 
 
