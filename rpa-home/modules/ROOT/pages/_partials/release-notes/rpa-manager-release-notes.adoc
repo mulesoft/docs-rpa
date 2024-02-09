@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| The columns _Qualifiers_ and _Benefits_ within the *Process Evaluation* now show correct values. | W-14657848
+| The *Qualifiers* and *Benefits* columns within the *Process Evaluation* module no longer show incorrect values. | W-14657848
 | The *Process Streaming* no longer shows a _Gateway Timeout_ error. | W-14826933
 | A process can now be edited even if the process owner is not specified. | W-14899326
 |===
