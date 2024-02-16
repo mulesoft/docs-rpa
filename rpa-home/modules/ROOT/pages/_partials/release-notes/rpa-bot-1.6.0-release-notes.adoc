@@ -10,7 +10,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * Added a `Bot Service State` entry to the System Settings panel.
-* Changed the name of the *Password* and *Current User* fields to *Default Session User Password* and *RPA Bot Configurator User* respectively.
+* Changed the name of the *Password* and *Current User* fields on the Session Settings panel to *Default Session User Password* and *RPA Bot Configurator User* respectively.
 * Added a warning message to indicate that if a deployed process is running on the bot instance, the process may be canceled if RPA Bot is restarted as a result of a change made on the RPA Bot Configurator.
 * When a change is made to the RPA Bot Configurator while a process is running, you can now select from multiple restart, exit, and cancel options to decide how you want to proceed with the process that is running and the changes to the RPA Bot Configurator.
 * Added a Diagnostics panel to the RPA Bot Configurator.
