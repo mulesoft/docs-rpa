@@ -1,0 +1,47 @@
+= RPA Bot 1.6.0 Release Notes
+
+RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== February 21, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* Added a `Bot Service State` entry to the System Settings panel.
+* Changed the name of the *Password* and *Current User* fields to *Default Session User Password* and *RPA Bot Configurator User* respectively.
+* Added a warning message to indicate that if a deployed process is running on the bot instance, the process may be canceled if RPA Bot is restarted as a result of a change made on the RPA Bot Configurator.
+* When a change is made to the RPA Bot Configurator while a process is running, you can select from multiple restart, exit, and cancel options to decide how you want to proceed with the process that is running and the changes to the RPA Bot Configurator.
+* Added a Diagnostics panel to the RPA Bot Configurator.
+* Removed redundant third party assemblies.
+* Added dynamic process execution throttling to reduce the number of times RPA Bot attempts to restart a failing process.
+* If the setting to write an analysis packages is enabled on RPA Bot, the path is added to the default run result message in RPA Manager.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+|The RPA Bot daily midnight job now executes once daily at 0:00 UT. |W-14807645
+|Updated all copyrights to 2024. |W-14820545
+|The RPA Bot connection test is now performed with the correct RPA Manager URL. |W-14835335
+|Credential recognition is now working correctly with domain users. |W-15019592
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
