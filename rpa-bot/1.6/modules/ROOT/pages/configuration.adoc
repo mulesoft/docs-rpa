@@ -160,7 +160,7 @@ To fix the terminal server setting, which is needed for Secure Sessions, ensure 
 [[diagnostic-infos]]
 == Diagnostic Infos
 
-The diagnostic panel shows important runtime information to identify current and potential problems with RPA Bot. The panel also shows which Windows session is currently being used by which secure session. Some values cannot be determined when RPA Bot is not running.
+The diagnostics panel shows important runtime information to help you identify current and potential problems with RPA Bot. The panel also shows which Windows session is currently being used by which secure session. Some values cannot be determined when RPA Bot is not running.
 
 image:bot-configurator-diagnostic-infos.png[The RPA Bot Configurator application showing the Diagnostic Infos panel, 50%, 50%]
 
@@ -179,10 +179,10 @@ Shows the number of workflows executed successfully since the last bot start tim
 * *Average Secure session count*
 +
 Shows the average number of secure sessions at the same time, the bot needs to run the processes since it was last started.
-* *Max. Secure Session count*
+* *Max. Secure session count*
 +
 Shows the maximum number of secure sessions at the same time the bot needs to run the processes since it was last started.
-* *Last time used to established a new Secure session*
+* *Last Time used to established a new secure session*
 +
 Shows the time a secure session was last created. If a secure session has not been created since the last bot start time, then a value is not shown.
 * *Session creation errors occurred in the last hour*
@@ -191,10 +191,10 @@ Shows the number of errors that occurred in the last hour when creating a secure
 * *Session creation errors occurred in the last day*
 +
 Shows the number of errors that occurred in the last twenty-four when creating a secure session.
-* *Connection error occurred in the last hour*
+* *Connection errors occurred in the last hour*
 +
 Shows the number of errors that occurred in the last hour when establishing a connection to RPA Manager.
-* *Connection error occurred in the last day*
+* *Connection errors occurred in the last day*
 +
 Shows the number of errors that occurred in the last twenty-four hours when establishing a connection to RPA Manager.
 * *Last average of download speed*
