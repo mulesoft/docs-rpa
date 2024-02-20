@@ -218,7 +218,12 @@ Shows the number of all fatal errors that have occurred in the bot since the las
 
 == Editing RPA Bot Configurator While Recording
 
-When changes are made to the RPA Bot Configuring while a recording is in progress, 
+When a change is made to the RPA Bot Configurator while a recording is in progress, the configurator must be restarted for the changes to take effect. Clicking *OK* in the RPA Bot Configurator to save your changes opens the *Restart RPA Bot Service* dialog, which lets you decide if you want to defer or force the restart, restart manually, or continue configuring your changes.
+
+[NOTE]
+If a deployed process is running on the bot instance, the process may be canceled if RPA Bot is restarted as a result of a change made to the RPA Bot Configurator.
+
+image:bot-configurator-restart-service.png[The RPA Bot Configurator application showing the Restart RPA Bot Service dialog, 50%, 50%]
 
 == See Also
 
