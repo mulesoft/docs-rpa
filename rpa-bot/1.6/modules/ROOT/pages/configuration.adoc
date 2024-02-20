@@ -223,7 +223,7 @@ When a change is made to the RPA Bot Configurator while a recording is in progre
 [NOTE]
 If a deployed process is running on the bot instance, the process may be canceled if RPA Bot is restarted as a result of a change made to the RPA Bot Configurator.
 
-image:bot-configurator-restart-service.png[The RPA Bot Configurator application showing the Restart RPA Bot Service dialog, 50%, 50%]
+image:bot-configurator-restart-service.png[The RPA Bot Configurator application showing the Restart RPA Bot Service dialog, 100%, 100%]
 
 == See Also
 
