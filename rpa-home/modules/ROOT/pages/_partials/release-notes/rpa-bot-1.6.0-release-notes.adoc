@@ -9,14 +9,14 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* Added a `Bot Service State` entry to the System Settings panel.
-* Changed the name of the *Password* and *Current User* fields on the Session Settings panel to *Default Session User Password* and *RPA Bot Configurator User* respectively.
-* Added a warning message to indicate that if a deployed process is running on the bot instance, the process may be canceled if RPA Bot is restarted as a result of a change made to the RPA Bot Configurator.
+* The System Settings panel now has a `Bot Service State` entry, which shows the current Windows Service state and configuration.
+* The *Password* and *Current User* fields on the Session Settings panel are renamed *Default Session User Password* and *RPA Bot Configurator User* respectively.
+* A warning message has been added to indicate that if a deployed process is running on the bot instance, the process may be canceled if RPA Bot is restarted as a result of a change made to the RPA Bot Configurator.
 * When a change is made to the RPA Bot Configurator while a process is running, you can now select from multiple restart, exit, and cancel options to decide how you want to proceed with the process that is running and the changes to the RPA Bot Configurator.
-* Added a Diagnostics panel to the RPA Bot Configurator.
-* Removed redundant third party assemblies.
-* Added dynamic process execution throttling to reduce the number of times RPA Bot attempts to restart a failing process.
-* If the setting to write an analysis packages is enabled on RPA Bot, the path to the analysis packages is added to the default run result message in RPA Manager.
+* The RPA Bot Configurator now includes a Diagnostic Infos panel to help you identify current and potential problems with RPA Bot.
+* Redundant third party assemblies have been removed.
+* Dynamic process execution throttling has been added to reduce the number of times RPA Bot attempts to restart a failing process.
+* You can now view the path to the analysis packages on the default run result message in RPA Manager if the setting to write an analysis packages is enabled on RPA Bot.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
