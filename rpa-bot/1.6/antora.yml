@@ -1,0 +1,6 @@
+name: rpa-bot
+title: RPA Bot
+version: '1.6'
+display_version: '1.6'
+nav:
+- modules/ROOT/nav.adoc
