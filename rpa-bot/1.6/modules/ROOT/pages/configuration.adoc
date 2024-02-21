@@ -190,31 +190,31 @@ Shows the time a secure session was last created. If a secure session has not be
 Shows the number of errors that occurred in the last hour when creating a secure session.
 * *Session creation errors occurred in the last day*
 +
-Shows the number of errors that occurred in the last twenty-four when creating a secure session.
+Shows the number of errors that occurred in the last 24 hours when creating a secure session.
 * *Connection errors occurred in the last hour*
 +
 Shows the number of errors that occurred in the last hour when establishing a connection to RPA Manager.
 * *Connection errors occurred in the last day*
 +
-Shows the number of errors that occurred in the last twenty-four hours when establishing a connection to RPA Manager.
+Shows the number of errors that occurred in the last 24 hours when establishing a connection to RPA Manager.
 * *Last average of download speed*
 +
 Shows the average download speed when RPA Bot is downloading the last runtime package. This is an indicator of the connection quality between RPA Bot and RPA Manager. If no runtime packages have been downloaded since the last bot start time, then a value is not shown. 
 * *Time used for RPA Manager connection test*
 +
-When your referesh the Diagnostic Infos panel, RPA Bot runs a connection test to RPA Manager. This field shows the amount of time RPA Bot used to test the connection to RPA Manager. This is an indicator of the connection quality between RPA Bot and RPA Manager.
+When you refresh the Diagnostic Infos panel, RPA Bot runs a connection test to RPA Manager. This field shows the amount of time RPA Bot used to test the connection to RPA Manager. This is an indicator of the connection quality between RPA Bot and RPA Manager.
 * *Temp folder size*
 +
-Shows the current size of the files in the Bot Temp folder (C:\ProgramData\Mulesoft\RPABot\temp) on disk.
+Shows the current size of the files in the Bot Temp folder (`C:\ProgramData\Mulesoft\RPABot\temp`) on disk.
 * *Warnings count*
 +
-Shows the number of all warnings that have occurred in the bot since the last bot start, the last hour, and the last 24 hours.
+Shows the number of warnings that have occurred in the bot since the last bot start, the last hour, and the last 24 hours.
 * *Errors count*
 +
-Shows the number of all errors that have occurred in the bot since the last bot start, the last hour, and the last 24 hours.
+Shows the number of errors that have occurred in the bot since the last bot start, the last hour, and the last 24 hours.
 * *Fatal count*
 +
-Shows the number of all fatal errors that have occurred in the bot since the last bot start, the last hour, and the last 24 hours.
+Shows the number of fatal errors that have occurred in the bot since the last bot start, the last hour, and the last 24 hours.
 
 == Editing RPA Bot Configurator While Recording
 
