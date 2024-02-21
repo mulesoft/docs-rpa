@@ -4,7 +4,7 @@ RPA Builder is the on-premise application that enables you to build automations 
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
-This version is internal only. All of the features and fixed issues for this version are in version xref:rpa-home::release-notes/rpa-builder-6.5.8-release-notes.adoc[6.5.8].
+This version is internal only. All of the features and fixed issues for this version are implemented in version xref:rpa-home::release-notes/rpa-builder-6.5.8-release-notes.adoc[6.5.8].
 
 // == See Also
 include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
