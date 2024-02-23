@@ -11,7 +11,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| A user can now select a process in a *Process Evaluation's* _Process Matrix_ to filter for the selected process. | W-14657931
+| You can now select a process in the process matrix inside the *Process Evaluation* module to filter for the selected process. | W-14657931
 | The last assigned team within a credential of the *Credential Pool* can now be deleted. | W-14693509
 |===
 
