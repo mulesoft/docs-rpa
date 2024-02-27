@@ -1,0 +1,36 @@
+= RPA Builder 6.5.8 Release Notes
+
+RPA Builder is the on-premises application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== February 21, 2024
+
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.4.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+| The REST Call action step now returns the _Status_ variable even when the result is unsuccessful. | W-15038359
+| Workflows no longer abort execution with error `ServicetraceWriteFileTest.txt is being used by another process`. | W-15004317
+|===
+
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center^]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]
