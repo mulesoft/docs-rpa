@@ -9,7 +9,6 @@ RPA Manager is the cloud-based control plane for your automation projects.
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * RPA Manager now supports automatic RPA Bot updates for bots running version 1.5.0 or later.
-// Cris: on January 31 we additionally wrote "When a new version of RPA Bot is available, RPA Manager shows the *Update* button in the *Bots* view of the *Bot Management* module, which enables you to update installed RPA Bots to the latest version." With this release RPA Manager shows this page.
 
 // == Known Issues
 include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
