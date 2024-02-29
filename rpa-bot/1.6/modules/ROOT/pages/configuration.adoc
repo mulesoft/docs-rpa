@@ -140,6 +140,12 @@ Defines the interval at which the bot takes screenshots.
 * *Analysis package on OK*
 +
 Sends analysis packages if the Activity Workflow terminates with OK.
+* *Custom Analysis package folder of failed workflows*
++
+Define a folder location for the analysis packages of failed workflow runs.
+* *Custom Analysis package folder of succeeded workflows*
++
+Define a folder location for the analysis packages of successful workflow runs.
 
 [[system-settings]]
 == System Settings

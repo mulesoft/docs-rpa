@@ -17,6 +17,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * Redundant third party assemblies have been removed.
 * Dynamic process execution throttling has been added to reduce the number of times RPA Bot attempts to restart a failing process.
 * You can now view the path to the analysis packages on the default run result message in RPA Manager if the setting to write an analysis packages is enabled on RPA Bot.
+* You can now define the folder location for analysis packages of failed and successful workflow runs, using the *Custom Analysis package folder of failed workflows* and *Custom Analysis package folder of succeeded workflows* fields on the Session Monitoring panel of the RPA Bot Configurator. The folder that is selected in either field is maintained by the user.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
