@@ -2,6 +2,34 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[march-11-2024]]
+== March 11, 2024
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| Selecting a process on the *Process Matrix* now filters the selected process. | W-14657931
+| Now all team assignments of a *Credential* can be removed. | W-14693509
+| Email notifications now contain a correct formatted URL. | W-14693359
+| Copying a process does no longer duplicate activity parameters. | W-14999548
+| The user workspace now saves changes properly. | W-15147413
+| The list of tag in the *Bot Workflow Library Tags* view will now be loaded and shown. | W-15156528
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
 [[february-28-2024]]
 == February 28, 2024
 
