@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Selecting a process on the *Process Matrix* now filters the selected process. | W-14657931
-| Now all team assignments of a *Credential* can be removed. | W-14693509
+| You can now remove all team assignments of a *Credential*. | W-14693509
 | Email notifications now contain a correct formatted URL. | W-14693359
 | Copying a process does no longer duplicate activity parameters. | W-14999548
 | The user workspace now saves changes properly. | W-15147413
