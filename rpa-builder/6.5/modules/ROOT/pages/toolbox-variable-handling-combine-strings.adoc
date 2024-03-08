@@ -28,7 +28,8 @@ To use a string that contains `{1}` or other reserved value as part of the text,
 
 For example, consider the following Pin variables: 
 
-* `{1}: Workflow Based Variables.constantString`, with value: `Value {1} is:`
+* `{1}: Workflow Based Variables.constantString`, with value `Value {1} is:`
+
 * `{2}: Workflow Based Variables.variableNumber`, with a numeric value defined at runtime. For this example, assume the value is `123456`.
 
 By setting the pattern text to: `{1} {2}`, the combined string result is: `Value {1} is: 123456`.
