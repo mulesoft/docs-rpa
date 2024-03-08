@@ -32,7 +32,8 @@ For example, consider the following Pin variables:
 
 * `{2}: Workflow Based Variables.variableNumber`, with a numeric value defined at runtime. For this example, assume the value is `123456`.
 
-By setting the pattern text to: `{1} {2}`, the combined string result is: `Value {1} is: 123456`.
+By setting the pattern text to: `{1} {2}`, the combined string result is `Value {1} is: 123456`.
+
 
 == Wizard
 
