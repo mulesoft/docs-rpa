@@ -17,8 +17,8 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | Copying a process does no longer duplicate activity parameters. | W-14999548
 | The user workspace now saves changes properly. | W-15147413
 | The list of tags in the *Bot Workflow Library Tags* view now shows properly. | W-15156528
-| User can not save public dashboards as private ones. | W-15212411
-| Sometimes click on claim and reject button on second page of team backlog list do not work. | W-15130497
+| Saving public dashboards as private ones no longer fails. | W-15212411
+| Claiming or rejecting processes on the second page of the team backlog no longer fails. | W-15130497
 |===
 
 // == Known Issues
