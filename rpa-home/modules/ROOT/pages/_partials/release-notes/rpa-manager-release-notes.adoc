@@ -17,6 +17,8 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | Copying a process does no longer duplicate activity parameters. | W-14999548
 | The user workspace now saves changes properly. | W-15147413
 | The list of tags in the *Bot Workflow Library Tags* view now shows properly. | W-15156528
+| User can not save public dashboards as private ones. | W-15212411
+| Sometimes click on claim and reject button on second page of team backlog list do not work. | W-15130497
 |===
 
 // == Known Issues
@@ -575,7 +577,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 * The *MuleSoft RPA Builder assignment* option from *User Management* is now the new privilege *Builder Usage*.
 * The *Project Manager* flag of a user is now replaced by the new privilege *Project Management*.
 
-// Commenting this feature until we have at least one additional language. 
+// Commenting this feature until we have at least one additional language.
 //* RPA Manager now inclues a language selector in the user profile.
 
 // == Fixed Issues
