@@ -1,6 +1,14 @@
 == Hardware Requirements
 
 * For optimal performance, use a dedicated computer for running the RPA Bot.
+* The following table shows the minimum and the recommended hardware requirements for running one process. To run more than one process in parallel, when using Secure Sesions, you need to add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
++
+For example, if you want to run 10 processes in parallel, that require 1 GB RAM each, you need a computer with a minimum total RAM of 38 GB:
++
+[stem]
+++++
+RAM_{"Total"} = RAM_{"Minimum"} + (RAM_{"Bot"} * Number_{"Parallel Sessions"}) + (RAM_{"Process"} * Number_{"Parallel Sessions"}) = 8 + (10 * 2) + (10 * 1) = 38
+++++
 
 [%header%autowidth.spread,cols=".^a,.^a]
 |===
@@ -50,6 +58,12 @@ To use Secure Sessions you must ensure that all prerequisites are met and all re
 ** Use dedicated accounts and a user-naming scheme to differentiate between local users and domain users and between human users and bot users.
 ** User accounts used by the bot to run processes must belong to the `Remote Desktop Users` group and must have permission to establish a local RDP session via the local loopback address 127.0.0.2.
 * To enable a bot to run more than one (Windows 10, Windows 11) or two (Windows Server) Secure Sessions simultaneously, ensure that a terminal server software with enough licensed users is installed on the computer where the bot is installed. The computer must have enough resources to execute several processes simultaneously: 2 GB or more RAM per session.
++
+
+Among others, you can use one of the following terminal server software:
+
+** https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds[Microsoft Remote Desktop Services]
+** https://www.tsplus-rpa.com/[TSplus MuleSoft RPA Connector]
 * Before deploying a run configuration on a bot that has only one licensed Secure Session, do not disconnect the session, instead sign out the specified user.
 ** Do not sign in to a computer where a bot with one licensed Secure Session is running a process.
 
