@@ -3,13 +3,16 @@
 * For optimal performance, use a dedicated computer for running the RPA Bot.
 * The following table shows the minimum and the recommended hardware requirements for running one process. To run more than one process in parallel, when using Secure Sesions, you need to add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
 +
-For example, if you want to run 10 processes in parallel, that require 1 GB RAM each, you need a computer with a minimum total RAM of 38 GB:
+For example, let's say you want to run two different processes in parallel. The first process requires 1 GB RAM and should run in ten times in parallel. The second process requires 3 GB RAM and should run in five times in parallel. Then you need a computer with a minimum RAM of 63 GB:
 +
 [stem]
 ++++
-RAM_{"Total"} = RAM_{"Minimum"} + (RAM_{"Bot"} * Number_{"Parallel Sessions"}) + (RAM_{"Process"} * Number_{"Parallel Sessions"}) = 8 + (10 * 2) + (10 * 1) = 38
+RAM_{"Total"} 
+= RAM_{"Min"} + (RAM_B * N_{S_1}) + (RAM_{P_1} * N_{S_1}) + (RAM_B * N_{S_2}) + (RAM_{P_2} * N_{S_2}) 
+= 8 + (2 * 10) + (1 * 10) + (2 * 5) + (3 * 5) 
+=   63,
+"where " B = "Bot", " " N = "Number", " " S_n = "Parallel Secure Session for process " n, " "  P_n = "Process " n
 ++++
-
 [%header%autowidth.spread,cols=".^a,.^a]
 |===
 | Minimum | Recommended
