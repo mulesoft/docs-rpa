@@ -1,7 +1,7 @@
 == Hardware Requirements
 
 * For optimal performance, use a dedicated computer for running the RPA Bot.
-* The following table shows the minimum and the recommended hardware requirements for running one process. To run more than one process in parallel, when using Secure Sesions, you need to add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
+* The following table shows the minimum and the recommended hardware requirements for running one process. To run more than one process in parallel, when using Secure Sessions, you need to add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
 +
 For example, let's say you want to run two different processes in parallel. The first process requires 1 GB RAM and should run in ten times in parallel. The second process requires 3 GB RAM and should run in five times in parallel. Then you need a computer with a minimum RAM of 63 GB:
 +
@@ -72,7 +72,7 @@ Among others, you can use one of the following terminal server software:
 
 === File System Permission Requirements
 
-RPA Bot needs full write access to some folders that are critical to its functioning. To avoid issues during the setup process and subsequent RPA Bot executions, ensure that:
+RPA Bot needs full write access to some folders that are critical to its functioning. To avoid issues during the setup process and later RPA Bot executions, ensure that:
 
 * You install RPA Bot as an administrator
 +
