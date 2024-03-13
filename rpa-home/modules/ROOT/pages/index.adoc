@@ -4,7 +4,7 @@ MuleSoft Robotic Process Automation (RPA) enables you to automate business proce
 
 MuleSoft RPA can automate processes that require human input and can also interact with systems that do not have an API available for consumption. RPA bots can interact with applications, extract data, read images, and manipulate computer input faster and more accurately than humans.
 
-MuleSoft RPA integrates with Anypoint Platform, which enables sharing and reusing automation assets through Exchange, and with MuleSoft Composer to connect applications and data with you automation projects.
+MuleSoft RPA integrates with Anypoint Platform, which enables sharing and reusing automation assets through Exchange, and with MuleSoft Composer to connect applications and data with your automation projects.
 
 * See xref:access-management::managing-your-account.adoc#how-to-create-your-account[Create an Anypoint Platform Account] for instructions on creating your Anypoint Platform account.
 * See xref:composer::ms_composer_prerequisites.adoc[MuleSoft Composer: Getting Started] for instructions to setup and configure your Composer account.
