@@ -4,7 +4,7 @@ The third phase of process automation is the *Test* phase. In this phase, you ca
 
 When the tests are successful, transition to *Production* phase.
 
-The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. The difference is that you do not have to start the individual process runs manually. Instead you schedule a process run configuration which is then executed automatically at defined times. Or you create an invokable run configuration and publish it to Anypoint Exchange.
+The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. You create a process run configuration which is then executed at the click of a button or automatically at scheduled times. Or you create an invokable run configuration and publish it to Anypoint Exchange.
 
 You can run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
@@ -17,7 +17,7 @@ You can run processes openly in existing console sessions or run them hidden in 
 |Action |RPA Permission |Deprecated RPA Permission
 
 |Open the *Process Automation* module.
-||RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
 |===
@@ -146,6 +146,8 @@ To view the test results and to download an analysis package:
 
 Transition the project to the production phase to deploy a scheduled run configuration to a bot. The process runs fully automated from now on.
 
+Sometimes it's necessary to start a process manually when something happens that can only be evaluated by a human. For example, the goods inwards inspection process can only be started once the banana delivery ship reaches the pier wall. For this purpose, use the *Manual Execution* option.
+
 Pause or revoke configurations to stop the execution temporarily. Transition the project back to the build phase to change the implementation.
 
 Projects that have already been used productively can no longer be deleted.
@@ -209,7 +211,13 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 [[runconfig-execution-enabletaskbar]] If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Process Trigger Execution*:
 +
-The productive run is carried out continuously within a fixed schedule. For each schedule, you can define time intervals within which the process is executed.
+The productive run is carried out continuously within a fixed schedule or just once on the click of a trigger button. 
++
+[[run-once-tag]]If you want to run the process only once on each <<trigger-run-once, click of the trigger button>>, select *Manual Execution*.
++
+If you want to schedule the process run, consider and do the following:
++
+For each schedule, you can define time intervals within which the process is executed.
 +
 You create a schedule without specifying a time zone. The bot you assign the production configuration to executes the process at the specified times in its local time. The time intervals might change, depending on daylight saving time.
 +
@@ -266,6 +274,22 @@ Deploy configuration to run them fully automatically in a productive environment
 . From the dropdown, select *Deploy process*.
 . In the window *Select Configuration to deploy*, check all configurations you want to run.
 . Click *Execute*.
+
+[[trigger-run-once]]
+=== Run a Configuration Once
+
+The configuration to run once must either be invocable or marked as <<run-once-tag, *Manual Execution*>>.
+
+To start the single process run:
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of a project to open it.
+. Click *Select action*.
+. From the dropdown, select *Manual execution*.
+. In the window *Select Configuration to Manual execution*, check all configurations you want to run.
+. Click *Execute*.
+
+The run starts directly. If an invokable configuration is triggered at the same time using the same session, the run waits for the invokable run to be completed before starting.
 
 [[view-run-results]]
 === View Run Results
