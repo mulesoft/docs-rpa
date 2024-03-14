@@ -1,10 +1,28 @@
 == Hardware Requirements
 
 * For optimal performance, use a dedicated computer for running the RPA Bot.
-* The following table shows the minimum and the recommended hardware requirements for running one process. To run more than one process in parallel, when using Secure Sessions, you need to add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
+* Use a computer with the required amount of RAM. The amount of RAM required depends on the number of processes to run in parallel.
+* The following table shows the minimum and the recommended hardware requirements for running one process:
 +
-For example, let's say you want to run two different processes in parallel. The first process requires 1 GB RAM and should run in ten times in parallel. The second process requires 3 GB RAM and should run in five times in parallel. Then you need a computer with a minimum RAM of 63 GB:
+[%header%autowidth.spread,cols=".^a,.^a]
+|===
+| Minimum | Recommended
+| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
+| 8 GB of RAM | 16 GB of RAM
+| 30 GB of disk space | 30 GB (SSD) of disk space
+|===
+
+* To run more than one process in parallel, when using Secure Sessions, you need to add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
 +
+For example, to run two different processes in parallel:
++
+Process 1 requires one GB of RAM and runs 10 times in parallel.
++
+Process 2 requires three GB of RAM and runs 5 times in parallel.
++
+In this case, use the following formula to calculate that you need a computer with a minimum of 63 GB of RAM:
+
++ 
 [stem]
 ++++
 RAM_{"Total"} 
@@ -13,13 +31,6 @@ RAM_{"Total"}
 =   63,
 "where " B = "Bot", " " N = "Number", " " S_n = "Parallel Secure Session for process " n, " "  P_n = "Process " n
 ++++
-[%header%autowidth.spread,cols=".^a,.^a]
-|===
-| Minimum | Recommended
-| Dual-core 2 GHz CPU (MMX/SSE compatible) | Dual-core 3 GHz CPU (MMX/SSE compatible)
-| 8 GB of RAM | 16 GB of RAM
-| 30 GB of disk space | 30 GB (SSD) of disk space
-|===
 
 === Unsupported Hardware Configurations
 
@@ -63,7 +74,7 @@ To use Secure Sessions you must ensure that all prerequisites are met and all re
 * To enable a bot to run more than one (Windows 10, Windows 11) or two (Windows Server) Secure Sessions simultaneously, ensure that a terminal server software with enough licensed users is installed on the computer where the bot is installed. The computer must have enough resources to execute several processes simultaneously: 2 GB or more RAM per session.
 +
 
-Among others, you can use one of the following terminal server software:
+Although other terminal server software might work, RPA has been validated with the following terminal server software:
 
 ** https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds[Microsoft Remote Desktop Services]
 ** https://www.tsplus-rpa.com/[TSplus MuleSoft RPA Connector]
