@@ -13,7 +13,7 @@ The following table shows the minimum and the recommended hardware requirements 
 | 30 GB of disk space | 30 GB (SSD) of disk space
 |===
 
-To run more than one process in parallel, when using Secure Sessions, you need to add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
+To run more than one process in parallel, when using Secure Sessions, you must add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
 
 For example, to run two different processes in parallel:
 
