@@ -2,6 +2,8 @@
 
 * For optimal performance, use a dedicated computer for running the RPA Bot.
 
+* The following table shows the minimum and the recommended hardware requirements for running one process:
++
 [%header%autowidth.spread,cols=".^a,.^a]
 |===
 | Minimum | Recommended
@@ -9,6 +11,26 @@
 | 8 GB of RAM | 16 GB of RAM
 | 30 GB of disk space | 30 GB (SSD) of disk space
 |===
++
+--
+To run more than one process in parallel, when using Secure Sessions, you must add 2 GB of RAM plus the RAM needed to run the process for each parallel run to these recommended values.
+
+For example, to run two different processes in parallel:
+
+* Process 1 requires one GB of RAM and runs 10 times in parallel.
+* Process 2 requires three GB of RAM and runs five times in parallel.
+
+In this case, use the following formula to calculate that you need a computer with a minimum of 63 GB of RAM:
+
+[stem]
+++++
+RAM_{"Total"} 
+= RAM_{"Min"} + (RAM_B * N_{S_1}) + (RAM_{P_1} * N_{S_1}) + (RAM_B * N_{S_2}) + (RAM_{P_2} * N_{S_2}) 
+= 8 + (2 * 10) + (1 * 10) + (2 * 5) + (3 * 5) 
+=   63,
+"where " B = "Bot", " " N = "Number", " " S_n = "Parallel Secure Session for process " n, " "  P_n = "Process " n
+++++
+--
 
 === Unsupported Hardware Configurations
 
@@ -50,12 +72,18 @@ To use Secure Sessions you must ensure that all prerequisites are met and all re
 ** Use dedicated accounts and a user-naming scheme to differentiate between local users and domain users and between human users and bot users.
 ** User accounts used by the bot to run processes must belong to the `Remote Desktop Users` group and must have permission to establish a local RDP session via the local loopback address 127.0.0.2.
 * To enable a bot to run more than one (Windows 10, Windows 11) or two (Windows Server) Secure Sessions simultaneously, ensure that a terminal server software with enough licensed users is installed on the computer where the bot is installed. The computer must have enough resources to execute several processes simultaneously: 2 GB or more RAM per session.
++
+
+Although other terminal server software can work, RPA has been validated with the following terminal server software:
+
+** https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds[Microsoft Remote Desktop Services]
+** https://www.tsplus-rpa.com/[TSplus MuleSoft RPA Connector]
 * Before deploying a run configuration on a bot that has only one licensed Secure Session, do not disconnect the session, instead sign out the specified user.
 ** Do not sign in to a computer where a bot with one licensed Secure Session is running a process.
 
 === File System Permission Requirements
 
-RPA Bot needs full write access to some folders that are critical to its functioning. To avoid issues during the setup process and subsequent RPA Bot executions, ensure that:
+RPA Bot needs full write access to some folders that are critical to its functioning. To avoid issues during the setup process and later RPA Bot executions, ensure that:
 
 * You install RPA Bot as an administrator
 +
