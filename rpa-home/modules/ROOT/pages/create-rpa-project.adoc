@@ -47,7 +47,7 @@ Learn how to start the automation of approved processes from there in topic xref
 
 == Create a Project From Other Views
 
-To create a new project from the views listed in the first paragraph:
+To create a new project from any of the views listed at the beginning of this article:
 
 . Open the view.
 . Click *New Process*.
