@@ -1,6 +1,6 @@
 = Create an RPA Project
 
-An RPA project consists of a business process to be automated and a team that is is responsible for the automation.
+An RPA project consists of a business process to be automated and a team that is responsible for the automation.
 
 You can create projects in the following *RPA Manager* views:
 
