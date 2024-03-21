@@ -28,7 +28,7 @@ You can create projects in the following *RPA Manager* views:
 
 == Create a Project From RPA Home
 
-Create a project directly when you enter the RPA application:
+Create a project from the RPA Manager home page:
 
 . Open the *Home* module of RPA Manager.
 . Click the quick link *New Process or Evaluation*.
