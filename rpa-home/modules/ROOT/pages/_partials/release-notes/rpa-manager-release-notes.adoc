@@ -8,8 +8,15 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* A failed process execution because RPA Bot is not able to establish a secure session does no longer lead to a paused run configuration. (W-15072399)
-* For a user's convenience creating a process is now be possible at RPA Manager's homepage and some other views. (W-15107860)
+* RPA Manager now doesn't pause a run configuration when a process execution fails because an RPA Bot is not able to establish a secure session.
+* You can now create new projects from the following views:
++
+** *RPA Home*
+** *My RPA* > *My Backlog*
+** *My RPA* > *My Processes*
+** *Process Evaluation* > *Process Evaluation*
+** *Process Automation* > *Process Management*
+** *Process Automation* > *Process Management* > *<Category>*
 
 // == Known Issues
 include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
