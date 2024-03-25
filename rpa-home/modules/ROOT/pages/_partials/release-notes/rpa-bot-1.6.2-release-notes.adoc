@@ -26,7 +26,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * A warning message has been added to indicate that if a deployed process is running on the bot instance, the process might cancel if RPA Bot is restarted as a result of a change made to the RPA Bot Configurator.
 * When a change is made to the RPA Bot Configurator while a process is running, you can now select from multiple restart, exit, and cancel options to decide how to continue with the process that is running and the changes to the RPA Bot Configurator.
 * The RPA Bot Configurator now includes a Diagnostic Infos panel to help you identify current and potential problems with RPA Bot.
-* Redundant third party assemblies have been removed.
+* Redundant third-party assemblies are removed.
 * Dynamic process execution throttling has been added to reduce the number of times RPA Bot attempts to restart a failing process.
 * You can now view the path to the analysis packages on the default run result message in RPA Manager if the setting to write an analysis packages is enabled on RPA Bot.
 * You can now define the folder location for analysis packages of failed and successful workflow runs, using the *Custom Analysis package folder of failed workflows* and *Custom Analysis package folder of succeeded workflows* fields on the Session Monitoring panel of the RPA Bot Configurator. The folder that is selected in either field is maintained by the user.
