@@ -4,12 +4,15 @@ RPA Recorder enables you to record a business process for automation.
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
-==  , 2024
+== April 29, 2024
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* The RPA Recorder recording editor can now be opened and used from RPA Builder.
+* You can now start RPA Recorder from RPA Builder.
+* The documentation in the Process Recording Editor has been redesigned to improve the appearance and readability.
+* Layout and styling changes have been made to the user interface of the Process Recording Editor.
+* When in Manager mode, you can now download and install newer RPA Recorder releases.
 * You can now use the ESC key on your keyboard to cancel or close dialogs and pop-up messages in RPA Recorder.
 
 // == Compatibility
@@ -22,14 +25,15 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+2
 |===
 
 // == Fixed Issues
+////
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 
 [%header,cols="2a,1a"]
 |===
 | Issue Resolution | ID
-|All functionality on the RPA Recorder recording editor can now be accessed from a keyboard. |W-13579215, W-13578518, W-13579222, W-13579216
-|
+| |
 |===
+////
 
 // == See Also
 include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+2]
