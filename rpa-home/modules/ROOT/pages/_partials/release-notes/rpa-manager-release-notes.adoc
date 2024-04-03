@@ -2,6 +2,47 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[april-08-2024]]
+== April 08, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* The taskbar of a run configuration's *Execution* is now enabled per default. (W-14551148)
+* The "Contact Help" link now relates to the Salesforce help page. (W-14927082)
+* An RPA Bot's display name can be specified during its installation. (W-15099802)
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| The *Cost entries* dialog of the _Finance Analysis_ now shows the correct *Investment* string. | W-13863725
+| Now the start and end date of a _Dashboard's_ *Analysis Interval* will be set correctly. | W-14673236
+| The drill-down of the *Analysis Packages* widget now shows the same number of analysis packages as the widget itself. | W-14809568
+| A deleted alert rule remains deleted after deactivating and activating another alert rule. | W-14845072
+| The *description* field while editing a workflow in the _Bot Workflow Library_ does no longer resize. | W-14866579
+| Now the *Execution Timetable* shows tooltips while hovering the schedules. | W-14911375
+| In a non-Anypoint organization a user is no longer able to reset a password of another inactive user. | W-15091753
+| Now the process monitor icon will be shown in the *Bot State and Operation* view. | W-15106942
+| The tooltip of *Process Board* tasks now disappears if the mouse leaves the focus. | W-15233192
+| Within the production phase already deployed run configurations will no longer be shown in the list of the *Deploy process* action. | W-15243974
+| Within editing a scheduled run configuration the option to send an email for user tasks can now be modified. | W-15292890
+| Updating a reference to a *Credential* in a run configuration now shows the correct error if the user does not have ownership of this credential. | W-15303044
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
 [[march-25-2024]]
 == March 25, 2024
 
