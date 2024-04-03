@@ -1,0 +1,60 @@
+= RPA Bot 1.6.2 Release Notes
+
+RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== March 25, 2024
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+|The custom message created from the *Write Bot Message* action step now displays the full 2,000 characters and no longer truncates the message after 1,000 characters.| W-15252227 
+|RPA Bot now removes sessions that are in a state of "Disconnected" to prevent RPA Bot from attempting to connect to and create Secure Sessions from "Disconnected" sessions.| W-15241413
+|===
+
+== February 21, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* The System Settings panel now has a `Bot Service State` entry, which shows the current Windows Service state and configuration.
+* The *Password* and *Current User* fields on the Session Settings panel are renamed to *Default Session User Password* and *RPA Bot Configurator User* respectively.
+* A warning message is added to indicate that if a deployed process is running on the bot instance, the process might cancel if RPA Bot is restarted as a result of a change made to the RPA Bot Configurator.
+* When a change is made to the RPA Bot Configurator while a process is running, you can now select from multiple restart, exit, and cancel options to decide how to continue with the process that is running and the changes to the RPA Bot Configurator.
+* The RPA Bot Configurator now includes a Diagnostic Infos panel to help you identify current and potential problems with RPA Bot.
+* Redundant third-party assemblies are removed.
+* Dynamic process execution throttling is added to reduce the number of times RPA Bot attempts to restart a failing process.
+* You can now view the path to the analysis packages on the default run result message in RPA Manager if the setting to write an analysis package is enabled on RPA Bot.
+* You can now define the folder location for analysis packages of failed and successful workflow runs, using the *Custom Analysis package folder of failed workflows* and *Custom Analysis package folder of succeeded workflows* fields on the Session Monitoring panel of the RPA Bot Configurator. The folder that is selected in either field is maintained by the user.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+|The RPA Bot daily midnight job now executes once daily at 0:00 UT. |W-14807645
+|Updated all copyrights to 2024. |W-14820545
+|The RPA Bot connection test is now performed with the correct RPA Manager URL. |W-14835335
+|Credential recognition is now working correctly with domain users. |W-15019592
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
