@@ -19,17 +19,17 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | The *Cost entries* dialog of the _Finance Analysis_ now shows the correct *Investment* string. | W-13863725
-| Now the start and end date of a _Dashboard's_ *Analysis Interval* will be set correctly. | W-14673236
-| The drill-down of the *Analysis Packages* widget now shows the same number of analysis packages as the widget itself. | W-14809568
-| A deleted alert rule remains deleted after deactivating and activating another alert rule. | W-14845072
-| The *description* field while editing a workflow in the _Bot Workflow Library_ does no longer resize. | W-14866579
-| Now the *Execution Timetable* shows tooltips while hovering the schedules. | W-14911375
-| In a non-Anypoint organization a user is no longer able to reset a password of another inactive user. | W-15091753
-| Now the process monitor icon will be shown in the *Bot State and Operation* view. | W-15106942
-| The tooltip of *Process Board* tasks now disappears if the mouse leaves the focus. | W-15233192
-| Within the production phase already deployed run configurations will no longer be shown in the list of the *Deploy process* action. | W-15243974
-| Within editing a scheduled run configuration the option to send an email for user tasks can now be modified. | W-15292890
-| Updating a reference to a *Credential* in a run configuration now shows the correct error if the user does not have ownership of this credential. | W-15303044
+| The start and end date of a _Dashboard's_ *Analysis Interval* is now set correctly. | W-14673236
+| The number of total entries shown at the end of the *Analysis Packages* widget now reflects the correct number. | W-14809568
+| A deleted alert rule no longer shows after deactivating it and activating another alert rule. | W-14845072
+| The *Description* field in the _Bot Workflow Library_ no longer resizes incorrectly while editing it. | W-14866579
+| The *Execution Timetable* now shows tooltips while hovering the schedules. | W-14911375
+| A user is no longer able to reset the password of another inactive user in a non-migrated (legacy) organization. | W-15091753
+| The process monitor icon now shows in the *Bot State and Operation* view. | W-15106942
+| The tooltip of *Process Board* tasks now disappears when the mouse leaves the focus. | W-15233192
+| Deployed run configurations no longer show as available in the list of the *Deploy process* action. | W-15243974
+| You can now configure the option to send an email for user tasks when editing a scheduled run configuration. | W-15292890
+| Updating a reference to a *Credential* in a run configuration now shows the correct error if the user does not have ownership of the credential. | W-15303044
 |===
 
 // == Known Issues
