@@ -1,0 +1,62 @@
+= Extract Pages from PDF File
+
+Extract pages from a PDF file, customize the output, and create a new PDF file with the configured settings.
+
+== Properties
+
+* *File Settings*
+* *Create Target PDF if it doesn't exist*
++ 
+Select this option to create the PDF file if the specified output file name doesn't exist. Otherwise, the action step fails if the file doesn't exist. 
+* *Extraction Page Range* 
++
+The pages to extract from the input PDF. Use commas (`,`) to separate multiple ranges and `EOF` to specific the end of file. For example: `3-4, 8, 11-EOF`.
+* *Input File Directory Path* 
++
+The path to the directory where the input file is. 
+* *Input File is Password Protected* 
++
+Select this option if the input file is password protected and specify the password in the Wizard. 
+* *Input File Name* 
++
+The name of the input file. 
+* *Insert Mode* 
++
+Select where to insert the extracted content in the output file. Available options: `StartOfDocument`, `SpecificPage`, or `EndOfDocument`. 
+* *Insert Position* 
++
+Select the page after which to insert the extracted content. If the PDF file doesn't exist, and *Create Target PDF if it doesn't exist* is selected, the action step inserts the pages at the beginning of the document. 
+* *Output File Directory Path* 
++
+The path to the directory where the output file is. 
+* *Output File is Password Protected* 
++
+Select this option if the output file is password protected and specify the password in the Wizard. 
+* *Output File Name* 
++
+The name of the output file. 
+
+== Inbound Variables
+
+* *Input File Directory Path* 
+* *Input File Name* 
+* *InputFilePassword* 
+* *Extraction Page Range* 
+* *Output File Directory Path* 
+* *Output File Name* 
+* *OutputFilePassword* 
+* *Insert Position*
+
+== Outbound Variables
+
+The _Extract Pages from PDF File_ action step has no outbound variables.
+
+== Wizard
+
+* *Input File Settings* 
++
+Configure the settings for the input file to read: *Directory path*, *File name*, *Page Range*, and *Password* (if the file is password protected).
+
+* *Output File Settings*
++
+Configure the settings for the output file to write: *Directory path*, *File name*, *Page Range*, and *Password* (if the file is password protected). Also specify if the action step creates the output file if it doesn't exist and select where to insert the pages in the output file. 

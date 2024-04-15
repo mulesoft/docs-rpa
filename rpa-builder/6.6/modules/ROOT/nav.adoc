@@ -51,6 +51,7 @@
 *** xref:toolbox-file-operations-create-file.adoc[Create File]
 *** xref:toolbox-file-operations-delete-file.adoc[Delete File]
 *** xref:toolbox-file-operations-extract-images-from-pdf-file.adoc[Extract Images from PDF File]
+*** xref:toolbox-file-operations-extract-pages-from-pdf-file.adoc[Extract Pages from PDF File]
 *** xref:toolbox-file-operations-file-check.adoc[File Check]
 *** xref:toolbox-file-operations-get-file-info.adoc[Get File Info]
 *** xref:toolbox-file-operations-iterate-over-files.adoc[Iterate over Files]
