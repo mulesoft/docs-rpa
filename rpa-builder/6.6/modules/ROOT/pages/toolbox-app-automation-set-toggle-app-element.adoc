@@ -1,0 +1,24 @@
+
+= Set Toggle App Element
+
+Use the _Set Toggle App Element_ Action Step to set a toggle App Element to `enabled` or `disabled`. Examples of these elements include checkboxes and toggle buttons.
+
+== Properties
+
+*Set Element to*
++
+Enables you to define the status you want to set the element to: `enabled` or `disabled`.
+
+== Inbound Variables
+
+* *XPath to Element*
+* *Window Title*
+* *Set Element to*
+
+== Outbound Variables
+
+The _Set Toggle App Element_ Action Step does not have any outbound variables.
+
+== Wizard
+
+See xref:toolbox-app-automation.adoc#app-automation-common-properties[Common Properties (App Automation)].
