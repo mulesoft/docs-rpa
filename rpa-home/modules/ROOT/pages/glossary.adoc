@@ -45,8 +45,8 @@ An action executed on a MuleSoft Composer Connector, including but not limited t
 IDP (Intelligent Document Processing)::
 A technology solution that implements AI to read documents, extract data, and organize information from different document sources.
 
-Invokable Run Configuration::
-A run configuration that RPA Manager uploads to Anypoint Exchange as an invokable API to be called by other services such as Composer.
+Invocable Run Configuration::
+A run configuration that RPA Manager uploads to Anypoint Exchange as an invocable API to be called by other services such as Composer.
 
 == M
 

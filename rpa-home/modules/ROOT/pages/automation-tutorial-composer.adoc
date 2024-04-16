@@ -51,7 +51,7 @@ If you see an error message while creating the connection, verify the configurat
 After successfully configuring the connection to MuleSoft RPA, follow these steps to invoke the RPA process:
 
 . In the MuleSoft RPA action card, select *Action* > *Invoke RPA Process*. 
-. In *RPA Process*, select the invokable run configuration you created in xref:automation-tutorial-deploy.adoc#Step-7-1[]. 
+. In *RPA Process*, select the invocable run configuration you created in xref:automation-tutorial-deploy.adoc#Step-7-1[]. 
 . In *Output*, select *Use response in this flow*. 
 . Click *Save*.
 . Click *Test* to test the Composer flow, including the call to the RPA process. 

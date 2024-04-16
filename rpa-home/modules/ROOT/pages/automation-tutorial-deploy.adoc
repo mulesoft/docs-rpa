@@ -1,18 +1,18 @@
 = Step 7: Publish the Automation to Exchange
 
-After finishing the testing phase, the process moves to the production phase. It is time to create an invokable run configuration, which publishes the process to Anypoint Exchange and enables MuleSoft Composer to trigger the execution of this process. 
+After finishing the testing phase, the process moves to the production phase. It is time to create an invocable run configuration, which publishes the process to Anypoint Exchange and enables MuleSoft Composer to trigger the execution of this process. 
 
-Before you can create an invokable run configuration, ensure that you configured your Anypoint Platform settings in RPA Manager. See xref:rpa-manager::organizationmanagement-settings.adoc#configure-anypoint-credentials[Configure Anypoint Platform Credentials] for instructions.
+Before you can create an invocable run configuration, ensure that you configured your Anypoint Platform settings in RPA Manager. See xref:rpa-manager::organizationmanagement-settings.adoc#configure-anypoint-credentials[Configure Anypoint Platform Credentials] for instructions.
 
 [[Step-7-1]]
-== Step 7.1: Create an Invokable Run Configuration
+== Step 7.1: Create an Invocable Run Configuration
 
-To create an invokable run configuration for a process:
+To create an invocable run configuration for a process:
 
 . In RPA Manager, go to *My RPA* > *My Processes*.
 . Click the *MuleSoft newsletter sign-up* project.
-. In the *Production configurations* panel, click *Create invokable run configuration*.
-. Specify a *Configuration name*, for example, *Invokable RPA Process*, and click *Next*.
+. In the *Production configurations* panel, click *Create invocable run configuration*.
+. Specify a *Configuration name*, for example, *Invocable RPA Process*, and click *Next*.
 . Click *Next* (this process has no activity parameters).
 . Click *Next* (this test has no user tasks).
 . Select *Run in Secure Session* and click *Next*.
