@@ -281,16 +281,27 @@ To view the run results and to download an analysis package:
 . If you want details on a result, click a number.
 . In case of errors, click the *Download* icon.
 
-[[publish-automation-exchange]]
-== Publish a Process Automation to Anypoint Exchange
+[[publish-automation]]
+== Publish a Process Automation
 
-Transition the project to the production phase to publish an invocable run configuration to Anypoint Exchange.
+Transition the project to the production phase and publish an invocable run configuration to use the process out of MuleSoft RPA, for example with one of the following products:
+* Anypoint Exchange
+* MuleSoft Composer
+* Salesforce Flow
 
-Projects that have already been used productively can no longer be deleted. Deleted invocable run configurations are not deleted in Anypoint Exchange. Edited and updated invocable run configurations are published as new versions in  Anypoint Exchange.
+Projects that have already been used productively can no longer be deleted. 
+
+Deleted invocable run configurations are not deleted in Anypoint Exchange. Edited and updated invocable run configurations are published as new versions in Anypoint Exchange.
+
+Salesforce Flow always uses the newest version of a process. Invocable run configurations deleted in RPA are also deleted in Salesforce. 
+
+Invocable configurations can only run, if the following requirements are met:
+* The project is in the production phase.
+* At least one of the assigned bots is in OK state.
 
 === Transition Process to Production Phase
 
-Transition the tested process to production phase for running it fully automatically or for publishing it to Anypoint Exchange:
+Transition the tested process to production phase for running it fully automatically or for publishing it:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -302,7 +313,7 @@ Transition the tested process to production phase for running it fully automatic
 [[invocable-configuration]]
 === Create an Invocable Run Configuration
 
-The invocable run configuration is published to Anypoint Exchange upon saving.
+The invocable run configuration can be published after saving.
 
 To create an invocable run configuration:
 
@@ -350,7 +361,23 @@ When you select a bot, ensure that it is configured for the required session typ
 +
 If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you cannot proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information about the cause of the warning or error in the form of a tooltip.
-. Click *Save & Publish*.
+. Click *Save*.
+
+[[publish-configuration]]
+=== Publish an Invocable Run Configuration
+
+You can publish an invocable run configuration to Anypoint Exchange or Salesforce.
+
+To publish an invocable run configuration:
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of a project to open it.
+. Click *Publish* (image:cloud-upload-icon.png[cloud with arrow up symbol,1.5%,1.5%]).
+. Select the target of the publication.
+
+If you edit your process or project, republish to Anypoint to create a new version there.
+
+If you edit your project name, republish to Salesforce to update the existing version there. 
 
 == See Also
 
@@ -358,6 +385,7 @@ Hover the mouse pointer over the info label to display more detailed information
 * xref:rpa-bot::index.adoc[RPA Bot Overview]
 * xref:rpa-home::automation-security-securesessions.adoc[]
 * xref:botmanagement-overview.adoc[Bot Management]
+* xref:rpa-home::invoke-rpa-from-flow.adoc[]
 * xref:settings-connect.adoc[Connecting to RPA Processes from Salesforce Products]
 * xref:access-management::connected-apps-overview.adoc[]
 * xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer]

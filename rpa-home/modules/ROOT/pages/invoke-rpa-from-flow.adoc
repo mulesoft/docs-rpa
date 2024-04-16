@@ -11,7 +11,7 @@ You can run RPA processes as part of a Salesforce Flow by following these steps:
 
 * If you use the <Old Automation Bundle>, refer to the following documentation:
 ** https://help.salesforce.com/s/articleView?language=en_US&id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5 for establishing the trust relationship between your MuleSoft and your Salesforce organizations.
-** https://docs.mulesoft.com/rpa-manager/processautomation-deploy#publish-automation-exchange for creating and publishing an invocable run configuration.
+** https://docs.mulesoft.com/rpa-manager/processautomation-deploy#publish-automation for creating and publishing an invocable run configuration.
 * If you use the <New Automation Bundle>, refer to this documentation.
 
 ## Create an Automation Project
