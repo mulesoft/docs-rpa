@@ -24,4 +24,5 @@
 * xref:create-rpa-project.adoc[Create an RPA Project]
 * xref:invoke-rpa-services.adoc[Invoke RPA Services from Composer]
 * xref:publish-process-automation-exchange.adoc[Publishing Automation Assets to Anypoint Exchange]
+* xref:invoke-rpa-from-flow.adoc[Invoke RPA Processes from Salesforce Flow]
 * xref:glossary.adoc[Glossary]
