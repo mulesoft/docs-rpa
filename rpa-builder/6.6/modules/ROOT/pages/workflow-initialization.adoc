@@ -103,6 +103,12 @@ image:workflow-settings-network-wizard.png[The Workflow Settings Wizard showing 
 To run the Action Step _REST Call_ via a proxy, configure the appropriate settings here. If an additional authentication is necessary, activate the checkbox *Use Authentication* and enter *Username* and *Password*.
 See <<properties>> for a detailed description of the Network Settings properties that are available in the Wizard.
 
+* *Error Handling Settings* 
++
+image:workflow-settings-error-handling-wizard.png[The Workflow Settings Wizard showing the Error Handling Settings tab, 60%, 60%]
++
+Specify the behavior of the Error Out variable when receiving more than one error message. Choose between appending or overwriting values. 
+
 == See Also
 
 * xref:workflow-elements-in-detail.adoc[Workflow Elements in Detail]
