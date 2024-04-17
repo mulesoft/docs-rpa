@@ -1,0 +1,7 @@
+= MuleSoft IDP 
+
+Execute your MuleSoft IDP document actions from RPA to process documents and consume the results. 
+
+* xref:toolbox-mulesoft-idp-submit-document-to-mulesoft-idp.adoc[]
++
+Submit a document to MuleSoft IDP and execute a published document action to process the document. 
