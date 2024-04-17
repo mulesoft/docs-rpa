@@ -41,7 +41,7 @@ image:toolbox-activity-parameters-config.png[The Activity Parameters config wind
 image:business-process-initialization-window.png[The Business Process Initialization window, 75%, 75%]
 . Select the Activity Parameter to add from the list.
 +
-image:add-new-parameters.png[The list of available activity parameters to add, 30%, 30%]
+image:add-new-parameters.png[The list of available activity parameters to add]
 +
 The following data types are available:
 +
@@ -52,9 +52,11 @@ The following data types are available:
 * Lists (*array*)
 * Log-in data (*user account*)
 * Screen coordinates (*coordinates*)
-* Browser Session ID (*Web Session id*)
+* Browser Session ID (*Web Session ID*)
 * AWS log-in data (*AWS Credentials*)
 * OAuth credentials (*OAuth Credentials*)
+* Execution ID (*IDP Execution ID*)
+* Connected App Credentials (*Connected App Credentials*)
 . Define the *Name*, *Description*, and *Variable Value* for the Activity Parameter.
 . Repeat the process for every Activity Parameter you want to add.
 . Click *OK*.
