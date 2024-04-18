@@ -1,0 +1,39 @@
+
+# Use a published RPA Process in Salesforce Flow
+
+Publishing an invocable run configuration in RPA Manager, creates an External MuleSoft Service in Salesforce. The service's name consists of the name of the RPA Manager automation project without the blanks, followed by a '10'. 
+
+. Create a new flow. In this example we use a screen flow for illustrational purposes.
+. Create a resource for the process execution input:
++ 
+[cols="1,2"]
+|===
+|*Field*
+|*Value*
+
+|Resource Type
+|Variable
+
+|API Name
+|for exampleProcessExecutionActionBody
+
+|Data Type
+|Apex-Defined
+
+|Apex Class
+|ExternalService__<RPA Project Name>10_ProcessExecution, for exampleExternalService__MyProcess10_ProcessExecution, 
+|===
+
+
+
+. Add an Action. You can filter for your process by name.
+. Choose how to start the process:
+.. Idempotent
+.. Non-Idempotent
+...
+
+
+** See Also
+
+* xref:invoke-rpa-from-flow.adoc[]
+ 

@@ -1,52 +1,17 @@
-# Invoke RPA Processes from Salesforce Flow
+# Invoke RPA Services from Salesforce Flow
 
 You can run RPA processes as part of a Salesforce Flow by following these steps:
 
-. Create an automation project.
-. Build your process in RPA Builder.
-. Publish an invocable run configuration to Salesforce in RPA Manager.
-. Call the Invocable Actions from Salesforce Flow.
+. xref:invoke-rpa-from-flow-project.adoc[Create an automation project.]
+. xref:invoke-rpa-from-flow-build.adoc[Build your process in RPA Builder.]
+. xref:invoke-rpa-from-flow-publish.adoc[Publish an invocable run configuration to Salesforce in RPA Manager.]
+. xref:invoke-rpa-from-flow-run.adoc[Call the Invocable Actions from Salesforce Flow.]
 
 ## Before You Begin
 
-* If you use the <Old Automation Bundle>, refer to the following documentation:
+* If you use the one of the following subscription plans, refer to this documentation:
+** Automation Starter
+** Automation Advanced
+* If you use another subscription plan, refer to the following documentation:
 ** https://help.salesforce.com/s/articleView?language=en_US&id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5 for establishing the trust relationship between your MuleSoft and your Salesforce organizations.
 ** https://docs.mulesoft.com/rpa-manager/processautomation-deploy#publish-automation for creating and publishing an invocable run configuration.
-* If you use the <New Automation Bundle>, refer to this documentation.
-
-## Create an Automation Project
-
-An automation project consists of the process, its requirements and the team that is responsible for the automation.
-
-### Before You Begin
-
-* Use a meaningful name for your automation project to quickly find your invocable action in Salesforce Flow.
-* Use Secure Sessions to enable your process to run in parallel.
-
-Refer to https://docs.mulesoft.com/rpa-home/create-rpa-project to learn more about creating automation projects.
-
-## Build an Automation
-
-Implement your automation in RPA Builder.
-
-### Before you Begin
-
-* Name your Activity Parameters wisely:
-** Use meaningful names to quickly find your input and output resources in Salesforce Flow.
-** Use CamelCase and restrict the length of the names to 255 characters to implement Salesforce standard.
-
-Refer to https://docs.mulesoft.com/rpa-manager/processautomation-develop#build-a-process to learn about building processes.
-
-## Publish an RPA process to Salesforce
-
-An RPA process is published to Salesforce as an invocable run configuration. Each project can contain one invocable run configuration, which can be used in other products.
-
-The name of the project, with spaces removed, is contained in the names of the following Salesforce objects:
-* External Services
-* Mulesoft Services
-* Invocable Actions
-* Resources
-
-The initial values for the Activity Parameters are set in RPA Manager and can be overwritten in Salesforce Flow.
-
-To publish an invocable run configuration to Salesforce, follow these steps in ...

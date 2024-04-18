@@ -1,0 +1,47 @@
+
+# Build an Automation
+
+Implement your automation in RPA Builder.
+
+## Before You Begin
+
+* The following variable types of RPA Builder Activity Parameters are supported as input or output variables of an Invocable Action by Salesforce:
++
+[cols="1,1,2"]
+|===
+|*Activity Parameter Type*
+|*Input/Output Variable Type*
+|*Additional Information*
+
+|Alphanumeric
+|ID, Long, String
+|You can use comma-seperated strings within strings to replace an array. In this case, name the variable in plural and add the suffix CommaSeperatedList to the variable names; for examplespecialAccountsCommaSeperatedList.
+
+|Integer
+|Integer
+| 
+
+|Floating-point
+|Decimal, Double
+| 
+
+|Boolean
+|Boolean
+| 
+|===
+
+* Name your Activity Parameters wisely:
+** Use meaningful names to quickly find your input and output resources in Salesforce Flow.
+** To implement Salesforce naming standards, adhere to the following rules:
+*** Use camelCase.
+*** Use only the characters `a-z`, `A-Z` and `0-9`.
+*** Restrict the length of the names to 255 characters.
+
+## Build an Automation
+
+Refer to https://docs.mulesoft.com/rpa-manager/processautomation-develop#build-a-process to learn how to build processes.
+
+## See Also
+
+* xref:invoke-rpa-from-flow.adoc[Invoke RPA Services from Salesforce Flow]
+* xref:rpa-builder::index.adoc[]
