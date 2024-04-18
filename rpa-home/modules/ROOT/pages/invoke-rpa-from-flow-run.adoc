@@ -35,11 +35,25 @@ image:invocableflow-screen-inputvariables.png[]
 . Assign all required values to the process parameters:
 + 
 image:invocableflow-assignment-processExecution.png[]
++
+The variable names are the same as the Activity Parameter names defined in RPA Builder:
++
+image:invocableflow-activityparameters.png[]
 
-. Add the *Start Process* Action. You can filter for your process by name.
-.. Choose how to start the process:
-.. *Start Process V2* to ensure that only one instance of the process is running at the same time.
-.. *Start Process Non Idempotent V2* to enable parallel execution of the same process.
+. Choose the *Start Process* Action. You can filter for your process by name.
++
+[cols="1,2"]
+|===
+|*Process Start Type*
+|*Application*
+
+|*Start Process V2*
+|Ensures that only one instance of the process is running at the same time.
+
+|*Start Process Non Idempotent V2*
+|Enables parallel execution of the same process.
+
+|===
 +
 image:invocableflow-action-choosestarttype.png[]
 
@@ -54,6 +68,19 @@ image:invocableflow-action-getfirstexecutionstatus.png[]
 . Create a resource for the status of the process execution:
 +
 image:invocableflow-resource-processExecutionStatus.png[]
+
+. Create a resource for collecting all states the started process returns while running:
++
+image:invocableflow-resource-processExecutionStatusCollection.png[]
+
+. Add the first returned status to the status collection:
++
+image:invocableflow-assignment-processExecutionStatus1.png[]
+
+. Since the run time of a process is not known, add a loop over all returned status:
++
+image:invocableflow-loop.png[]
+
 
 
 ** See Also
