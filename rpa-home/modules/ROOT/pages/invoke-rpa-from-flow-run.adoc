@@ -3,34 +3,57 @@
 
 Publishing an invocable run configuration in RPA Manager, creates an External MuleSoft Service in Salesforce. The service's name consists of the name of the RPA Manager automation project without the blanks, followed by a '10'. 
 
+Follow these steps to use your process in a Salesforce Flow:
+
 . Create a new flow. In this example we use a screen flow for illustrational purposes.
 . Create a resource for the process execution input:
 + 
+image:invocableflow-resource-processExecution.png[Resource for the Process Execution]
++
 [cols="1,2"]
 |===
 |*Field*
 |*Value*
 
 |Resource Type
-|Variable
+|Select *Variable*.
 
 |API Name
-|for exampleProcessExecutionActionBody
+|Choose a name for this resource; for example `ProcessParameters`.
 
 |Data Type
-|Apex-Defined
+|Select *Apex-Defined*.
 
 |Apex Class
-|ExternalService__<RPA Project Name>10_ProcessExecution, for exampleExternalService__MyProcess10_ProcessExecution, 
+|Select the Apex class *ExternalService__<RPA Project Name>10_ProcessExecution*, for example `ExternalService__ExampleProcess10_ProcessExecution``, 
 |===
 
+. Use a screen to set the input parameters for debugging purposes:
++
+image:invocableflow-screen-inputvariables.png[]
 
+. Assign all required values to the process parameters:
++ 
+image:invocableflow-assignment-processExecution.png[]
 
-. Add an Action. You can filter for your process by name.
-. Choose how to start the process:
-.. Idempotent
-.. Non-Idempotent
-...
+. Add the *Start Process* Action. You can filter for your process by name.
+.. Choose how to start the process:
+.. *Start Process V2* to ensure that only one instance of the process is running at the same time.
+.. *Start Process Non Idempotent V2* to enable parallel execution of the same process.
++
+image:invocableflow-action-choosestarttype.png[]
+
+. Configure the action filling the body with the resource you defined:
++
+image:invocableflow-action-startconfiguration.png[]
+
+. Get the execution Status for the first time:
++
+image:invocableflow-action-getfirstexecutionstatus.png[]
+
+. Create a resource for the status of the process execution:
++
+image:invocableflow-resource-processExecutionStatus.png[]
 
 
 ** See Also
