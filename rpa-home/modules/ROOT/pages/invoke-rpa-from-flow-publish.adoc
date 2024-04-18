@@ -5,6 +5,8 @@ An RPA process is published to Salesforce as an invocable run configuration. Eac
 
 The name of the project, with spaces removed, is contained in the names of the following Salesforce objects:
 
+* Named Credentials 
+* External Credentials
 * External Services
 * MuleSoft Services
 * Invocable Actions
