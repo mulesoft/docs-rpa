@@ -10,7 +10,8 @@ Extract pages from a PDF file, customize the output, and create a new PDF file w
 Select this option to create the PDF file if the specified output file name doesn't exist. Otherwise, the action step fails if the file doesn't exist. 
 * *Extraction Page Range* 
 +
-The pages to extract from the input PDF. Use commas (`,`) to separate multiple ranges and `EOF` to specific the end of file. For example: `3-4, 8, 11-EOF`.
+The pages to extract from the input PDF. Use commas (`,`) to separate multiple ranges and `EOF` to specify the end of the file. This action step reads the pages in the specified order. For example, the value`1-5, EOF-6` outputs a file that contains pages from 1 to 5 in the original order and the remaining pages in reverse order, from last to 6.
+
 * *Input File Directory Path* 
 +
 The path to the directory where the input file is. 
