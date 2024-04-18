@@ -1,6 +1,6 @@
-= Submit Document to MuleSoft IDP 
+= Retrieve Results from MuleSoft IDP 
 
-Send documents to MuleSoft IDP to process them with your published document actions. Each execution generates an Execution ID that you must use when you run the Retrieve Results from MuleSoft IDP action step to query the results of said execution. 
+Retrieve the results of a document processed with MuleSoft IDP. To run this action step you must provide an Execution ID, which generates during the execution of the Submit Document to MuleSoft IDP action step. The Execution ID links this action step with a document action execution to define which results to retrieve. 
 
 include::partial$mulesoft-idp.adoc[tag=creditsWarning]
 
@@ -9,6 +9,7 @@ include::partial$mulesoft-idp.adoc[tag=creditsWarning]
 Before you begin using this action step, ensure that: 
 
 * Your Anypoint user account has the *Build Actions* permission
+* You have the Execution ID generated from a Submit Document to MuleSoft IDP action step. 
 * You have IDP document actions published in your organization
 +
 See xref:idp::publishing-document-actions.adoc[] for additional information. 
@@ -22,12 +23,6 @@ This action step has no properties other than *Common* and *Timing*. See xref:co
 
 == Inbound Variables
 
-* *Directory Path*
-+
-Path to the directory where the file to submit is located.
-* *File Name*
-+
-Name of the file to submit.
 * *Client ID*
 +
 Client ID of the Connected App configured to call IDP.
@@ -43,19 +38,17 @@ Execution ID of the document processing operation.
 
 == Outbound Variables
 
-* *Success*
-* *ExecutionID*
+* *Status*
+* *JSON Result*
 
 [[wizard]]
 == Wizard
 
-Start by selecting the *Action* and the *Action Version* to call from IDP. These lists populate with the available document actions that your organization has published in IDP. 
+Specify the *Execution ID* to query and the corresponding IDP *Action* and *Action Version*. These lists populate with the available document actions that your organization has published in IDP. 
 
-Then, specify the *Directory path* and *File name* of the file to submit to IDP for processing with the selected document action. 
-
-Finally, specify the connected app credentials to use when connecting to IDP. You can use Pin credentials that you have previously configured or you can specify the *Client ID* and *Client Secret* manually in the wizard. 
+Then, select the connected app credentials to use when connecting to IDP. You can use Pin credentials that you have configured or you can specify the *Client ID* and *Client Secret* manually in the wizard. 
 
 == See Also 
 
-* xref:toolbox-mulesoft-idp-retrieve-results-from-mulesoft-idp.adoc[]
+* xref:toolbox-mulesoft-idp-submit-document-to-mulesoft-idp.adoc[]
 * xref:access-management::managing-permissions.adoc[]
