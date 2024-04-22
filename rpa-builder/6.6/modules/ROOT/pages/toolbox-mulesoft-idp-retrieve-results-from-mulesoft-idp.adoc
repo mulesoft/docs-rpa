@@ -8,12 +8,12 @@ include::partial$mulesoft-idp.adoc[tag=creditsWarning]
 
 Before you begin using this action step, ensure that: 
 
-* Your Anypoint user account has the *Build Actions* permission
+* Your Anypoint user account has the Build Actions permission.
 * You have the Execution ID generated from a Submit Document to MuleSoft IDP action step. 
-* You have IDP document actions published in your organization
+* You have IDP document actions published in your organization.
 +
 See xref:idp::publishing-document-actions.adoc[] for additional information. 
-* You have a Connected App configured to access IDP
+* You have a connected app configured to access IDP.
 +
 See xref:idp::automate-document-processing-with-rpa.adoc[] for configuration instructions. 
 
@@ -25,16 +25,16 @@ This action step has no properties other than *Common* and *Timing*. See xref:co
 
 * *Client ID*
 +
-Client ID of the Connected App configured to call IDP.
+Client ID of the connected app configured to call IDP
 * *Client Secret*
 +
-Client Secret of the Connected App configured to call IDP.
+Client Secret of the connected app configured to call IDP
 * *Connected App Credentials*
 +
-Pin credentials containing the Client ID and Client Secret of the Connected App configured to call IDP.
+Pin credentials containing the Client ID and Client Secret of the connected app configured to call IDP
 * *Execution ID*
 +
-Execution ID of the document processing operation. 
+Execution ID of the document processing operation
 
 == Outbound Variables
 
