@@ -44,7 +44,7 @@ Execution ID of the document processing operation.
 [[wizard]]
 == Wizard
 
-Specify the *Execution ID* to query and the corresponding IDP *Action* and *Action Version*. These lists populate with the available document actions that your organization has published in IDP. 
+Specify a combination of *Execution ID*, *Action*, and *Action Version* to query the results of that execution. These lists populate with the available document actions that your organization has published in IDP. Ensure you specify the same *Action* and *Action Version* used in the Submit Document to MuleSoft IDP configuration that generated the *Execution ID* you are checking.
 
 Then, select the connected app credentials to use when connecting to IDP. You can use Pin credentials that you have configured or you can specify the *Client ID* and *Client Secret* manually in the wizard. 
 
