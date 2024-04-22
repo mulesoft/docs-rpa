@@ -297,7 +297,7 @@ Salesforce Flow always uses the newest version of a process. Invocable run confi
 
 Invocable configurations can run only if the following requirements are met:
 * The project is in the production phase.
-* At least one of the assigned bots is in OK state.
+* At least one of the assigned bots is in the `OK` state.
 
 === Transition Process to Production Phase
 
