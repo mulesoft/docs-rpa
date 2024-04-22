@@ -285,6 +285,7 @@ To view the run results and to download an analysis package:
 == Publish a Process Automation
 
 Transition the project to the production phase and publish an invocable run configuration to use the process out of MuleSoft RPA, for example with one of the following products:
+
 * Anypoint Exchange
 * MuleSoft Composer
 * Salesforce Flow
