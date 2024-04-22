@@ -203,6 +203,20 @@ If this option is set, the system parameters are shown whenever a
 new Activity Workflow is created. These can also be shown via the menu
 _View_ -> _Show System Parameters_.
 
+=== Help 
+
+The Help menu contains the following logging options: 
+
+* *Export log files* 
++
+Collects all logs from RPA Builder and creates a ZIP file in the specified location. The filename uses the following convention: `RPABuilder_logs_<timestamp>.ZIP`.
+* *Enable Debug logging until RPA Builder is closed* 
++
+Sets the RPA Builder log level to `DEBUG` until you close the application. 
+* *Append trace log files instead of overwriting them*
++
+Instructs RPA Builder to append trace logs instead of overwriting them. 
+
 == Explorer Pane
 
 The Explorer pane includes five tabs: _Toolbox_, _Project_, _Activity Library_,
