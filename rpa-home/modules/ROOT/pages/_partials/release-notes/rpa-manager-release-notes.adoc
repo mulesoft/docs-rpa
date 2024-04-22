@@ -13,7 +13,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |Issue Resolution |ID
 | Process names with Japanese characters no longer get split on a process tile. | W-14835485
 | The content of table cells no longer gets truncated when there's more space available. | W-15242583
-| The text of downloadable applications on the RPA Manager's homepage no longer extends outside the buttons. | W-15312305
+| The text of downloadable applications on the RPA Manager homepage no longer extends outside the buttons. | W-15312305
 | The field *To (email)* in an Alert Target is now enforced as a mandatory field. | W-11716347
 | The email address in an Alert Target is now verified. | W-11720892
 | Modifying an inactive Alert Rule no longer activates it. | W-15424278
