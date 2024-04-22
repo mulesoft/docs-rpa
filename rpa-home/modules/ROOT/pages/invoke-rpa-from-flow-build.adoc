@@ -5,12 +5,14 @@ Implement your automation in RPA Builder.
 
 ## Before You Begin
 
-* The following variable types of RPA Builder Activity Parameters are supported as input or output variables of an Invocable Action by Salesforce:
+* For input and output parameters of a process, only use variable types that are supported in Salesforce Invocable Actions as RPA Builder Activity Parameters:
++
+The following table shows possible mappings:
 +
 [cols="1,1,2"]
 |===
-|*Activity Parameter Type*
-|*Input/Output Variable Type*
+|*RPA Activity Parameter Type*
+|*Salesforce Input/Output Variable Type*
 |*Additional Information*
 
 |Alphanumeric

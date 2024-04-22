@@ -3,7 +3,7 @@
 
 Publishing an invocable run configuration in RPA Manager, creates an External MuleSoft Service in Salesforce. The service's name consists of the name of the RPA Manager automation project without the blanks, followed by a '10'. 
 
-Follow these steps to use your process in a Salesforce Flow:
+To use your process in a Salesforce Flow, follow these steps:
 
 . Create a new flow. In this example we use a screen flow for illustrational purposes.
 . Create a resource for the process execution input:
@@ -22,10 +22,10 @@ image:invocableflow-resource-processExecution.png[Resource for the process execu
 |Name of this resource; for example `ProcessParameters`.
 
 |Data Type
-|Select *Apex-Defined*.
+|*Apex-Defined*.
 
 |Apex Class
-|Select the Apex class *ExternalService__<RPA Project Name>10_ProcessExecution*, for example `ExternalService__ExampleProcess10_ProcessExecution``, 
+|Apex class *ExternalService__<RPA Project Name>10_ProcessExecution*, for example `ExternalService__ExampleProcess10_ProcessExecution``, 
 |===
 
 . Use a screen to set the input parameters for debugging purposes:

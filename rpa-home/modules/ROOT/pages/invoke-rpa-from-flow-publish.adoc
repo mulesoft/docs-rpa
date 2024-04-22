@@ -12,14 +12,14 @@ The name of the project, with spaces removed, is contained in the names of the f
 * Invocable Actions
 * Resources
 
-For example, if your project is named `My Super Process`, the corresponding Salesforce object is called `MySuperProcess10'.
+For example, if your project is named `My Super Process`, the corresponding Salesforce object is named `MySuperProcess10'.
 
 The initial values for the Activity Parameters are set in RPA Manager and can be overwritten in Salesforce Flow.
 
 To publish an invocable run configuration to Salesforce, follow these steps:
 
-. xref:rpa-manager::processautomation-deploy.adoc#invocable-configuration[Create an Invocable Run Configuration]
-. xref:rpa-manager::processautomation-deploy.adoc#publish-configuration[Publish an Invocable Run Configuration]
+. xref:rpa-manager::processautomation-deploy.adoc#invocable-configuration[Create an invocable run configuration.]
+. xref:rpa-manager::processautomation-deploy.adoc#publish-configuration[Publish an invocable run configuration.]
 
 ## See Also
 

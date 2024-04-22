@@ -1,6 +1,6 @@
 # Invoke RPA Services from Salesforce Flow
 
-You can run RPA processes as part of a Salesforce Flow by following these steps:
+To run RPA processes as part of a Salesforce Flow, follow these steps:
 
 . xref:invoke-rpa-from-flow-project.adoc[Create an automation project.]
 . xref:invoke-rpa-from-flow-build.adoc[Build your process in RPA Builder.]
