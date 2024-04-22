@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Process names with Japanese characters no longer get split on a process tile. | W-14835485
-| The content of table cells will now be displayed properly with respect to the respective column width. | W-15242583
+| Content of table cells no longer gets truncated when there's more space available. | W-15242583
 | The text of downloadable applications on the RPA Manager's homepage will be shown correctly formatted. | W-15312305
 | Now the field *To (email)* in an _Alert Target_ will be enforced as a mandatory field. | W-11716347
 | The email address in an _Alert Target_ will be verified. | W-11720892
