@@ -24,6 +24,13 @@ To select more than one object, press and hold _Ctrl_ or _Shift_ while clicking 
 
 The context menu consists of the following elements:
 
+* (image:record-icon.png[The Record icon, 2%, 2%]) *Record*
++
+Starts RPA Recorder to record an activity and append it to the workflow depending of the context:
++
+** If you click a Transaction element, the option changes to *Record Into* and adds the recorded activities at the end of the transaction. 
+** If you click an action step, you can choose between *Record Before* and *Record After* to decide where to append the recorded actions. 
++ 
 * *Disable/Enable*
 +
 Use this option to disable an Action Step and prevent its execution or to enable an Action Step that was previously disabled. Disabled Action Steps are greyed out on the workbench.
