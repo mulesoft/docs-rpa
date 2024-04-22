@@ -16,7 +16,7 @@ image:invocableflow-resource-processExecution.png[Resource for the process execu
 |*Value*
 
 |Resource Type
-|Select *Variable*.
+|*Variable*.
 
 |API Name
 |Name of this resource; for example `ProcessParameters`.
