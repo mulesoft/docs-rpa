@@ -49,7 +49,7 @@ Execution ID of the document processing operation.
 [[wizard]]
 == Wizard
 
-Start by selecting the *Action* and the *Action Version* to call from IDP. These lists populate with the available document actions that your organization has published in IDP. 
+Start by selecting the *Action* and the *Action Version* to call from IDP. These lists populate with the available document actions published by your organization in IDP. 
 
 Then, specify the *Directory path* and *File name* of the file to submit to IDP for processing with the selected document action. 
 
