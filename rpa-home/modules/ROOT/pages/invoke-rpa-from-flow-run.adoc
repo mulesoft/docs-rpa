@@ -69,7 +69,7 @@ image:invocableflow-action-getfirstexecutionstatus.png[]
 +
 image:invocableflow-resource-processExecutionStatus.png[]
 
-. Create a resource for collecting all states the started process returns while running:
+. Create a resource for collecting all states that the started process returns while it runs:
 +
 image:invocableflow-resource-processExecutionStatusCollection.png[]
 
