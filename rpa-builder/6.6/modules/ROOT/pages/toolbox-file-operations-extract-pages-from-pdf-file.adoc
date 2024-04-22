@@ -6,36 +6,34 @@ Extract pages from a PDF file, customize the output, and create a new PDF file w
 == Properties
 
 * *File Settings*
-* *Create Target PDF if it doesn't exist*
+** *Create Target PDF if it doesn't exist*
 + 
 Select this option to create the PDF file if the specified output file name doesn't exist. Otherwise, the action step fails if the file doesn't exist. 
-* *Extraction Page Range* 
+** *Extraction Page Range* 
 +
 The pages to extract from the input PDF. Use commas (`,`) to separate multiple ranges and `EOF` to specify the end of the file. This action step reads the pages in the specified order. For example, the value `1-5, EOF-6` outputs a file that contains pages from one to five in the original order and the remaining pages in reverse order, from last to six.
-
-
-* *Input File Directory Path* 
+** *Input File Directory Path* 
 +
 Path to the input file directory. 
-* *Input File is Password Protected* 
+** *Input File is Password Protected* 
 +
 If the input file is password protected, select this option and specify the password in the wizard. 
-* *Input File Name* 
+** *Input File Name* 
 +
 Name of the input file. 
-* *Insert Mode* 
+** *Insert Mode* 
 +
 Select where to insert the extracted content in the output file. Available options: `StartOfDocument`, `SpecificPage`, or `EndOfDocument`. 
-* *Insert Position* 
+** *Insert Position* 
 +
 Select the page after which to insert the extracted content. If the PDF file doesn't exist, and *Create Target PDF if it doesn't exist* is selected, the action step inserts the pages at the beginning of the document. 
-* *Output File Directory Path* 
+** *Output File Directory Path* 
 +
 Path to the output file directory.
-* *Output File is Password Protected* 
+** *Output File is Password Protected* 
 +
 Select this option if the output file is password protected and specify the password in the Wizard. 
-* *Output File Name* 
+** *Output File Name* 
 +
 Name of the output file. 
 
