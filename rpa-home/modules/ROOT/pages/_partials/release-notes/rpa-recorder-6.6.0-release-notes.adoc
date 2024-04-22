@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * You can now start RPA Recorder from RPA Builder.
 * The documentation in the Process Recording Editor has been redesigned to improve the appearance and readability.
 * Layout and styling changes have been made to the user interface of the Process Recording Editor.
-* When in Manager mode, you can now download and install newer RPA Recorder versions.
+* When starting RPA Recorder from RPA Manager, you can now download and install the latest RPA Recorder version.
 * You can now use the ESC key on your keyboard to cancel or close dialogs and pop-up messages in RPA Recorder.
 
 // == Compatibility
