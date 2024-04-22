@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * You can now start RPA Recorder from RPA Builder via the Activity Workflow or by clicking the new *Record* option in the xref:rpa-builder::workbench-toolbar-overview.adoc[Workbench Toolbar]. RPA Builder automatically generates the workflow or single App or Web session, and you no longer need to generate the workflow by uploading the recording to RPA Manager and then downloading it in RPA Builder.
 * The documentation in the Process Recording Editor has been redesigned to improve the appearance and readability.
 * Layout and styling changes have been made to the user interface of the Process Recording Editor.
-* When starting RPA Recorder from RPA Manager, you can now download and install the latest RPA Recorder version by clicking *Update Available* on the RPA Recorder home page.
+* When starting RPA Recorder from RPA Manager, you can now install the latest RPA Recorder version from the RPA Recorder home page. An *Update Available* button shows on the home page whenever a new version is available.
 * You can now use the ESC key on your keyboard to cancel or close dialogs and pop-up messages in RPA Recorder.
 
 // == Compatibility
