@@ -31,7 +31,8 @@ Implement your automation in RPA Builder.
 |===
 
 * Use meaningful names to quickly find your input and output resources in Salesforce Flow.
-** To implement Salesforce naming standards, adhere to the following rules:
++
+To implement Salesforce naming standards, adhere to the following rules:
 *** Use camelCase.
 *** Use only the characters `a-z`, `A-Z` and `0-9`.
 *** Restrict the length of the names to 255 characters.
