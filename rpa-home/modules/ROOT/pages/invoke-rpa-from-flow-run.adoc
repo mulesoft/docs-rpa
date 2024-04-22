@@ -8,7 +8,7 @@ Follow these steps to use your process in a Salesforce Flow:
 . Create a new flow. In this example we use a screen flow for illustrational purposes.
 . Create a resource for the process execution input:
 + 
-image:invocableflow-resource-processExecution.png[Resource for the Process Execution]
+image:invocableflow-resource-processExecution.png[Resource for the process execution]
 +
 [cols="1,2"]
 |===
