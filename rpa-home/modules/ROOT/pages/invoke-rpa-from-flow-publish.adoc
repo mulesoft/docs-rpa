@@ -16,7 +16,7 @@ For example, if your project is named `My Super Process`, the corresponding Sale
 
 The initial values for the Activity Parameters are set in RPA Manager and can be overwritten in Salesforce Flow.
 
-To publish an invocable run configuration to Salesforce, follow these steps in these documentations:
+To publish an invocable run configuration to Salesforce, follow these steps:
 
 . xref:rpa-manager::processautomation-deploy.adoc#invocable-configuration[Create an Invocable Run Configuration]
 . xref:rpa-manager::processautomation-deploy.adoc#publish-configuration[Publish an Invocable Run Configuration]
