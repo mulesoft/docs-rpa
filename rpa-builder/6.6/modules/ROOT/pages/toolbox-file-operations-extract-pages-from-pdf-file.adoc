@@ -10,17 +10,18 @@ Extract pages from a PDF file, customize the output, and create a new PDF file w
 Select this option to create the PDF file if the specified output file name doesn't exist. Otherwise, the action step fails if the file doesn't exist. 
 * *Extraction Page Range* 
 +
-The pages to extract from the input PDF. Use commas (`,`) to separate multiple ranges and `EOF` to specify the end of the file. This action step reads the pages in the specified order. For example, the value`1-5, EOF-6` outputs a file that contains pages from 1 to 5 in the original order and the remaining pages in reverse order, from last to 6.
+The pages to extract from the input PDF. Use commas (`,`) to separate multiple ranges and `EOF` to specify the end of the file. This action step reads the pages in the specified order. For example, the value `1-5, EOF-6` outputs a file that contains pages from one to five in the original order and the remaining pages in reverse order, from last to six.
+
 
 * *Input File Directory Path* 
 +
-The path to the directory where the input file is. 
+Path to the input file directory. 
 * *Input File is Password Protected* 
 +
-Select this option if the input file is password protected and specify the password in the Wizard. 
+If the input file is password protected, select this option and specify the password in the wizard. 
 * *Input File Name* 
 +
-The name of the input file. 
+Name of the input file. 
 * *Insert Mode* 
 +
 Select where to insert the extracted content in the output file. Available options: `StartOfDocument`, `SpecificPage`, or `EndOfDocument`. 
@@ -29,13 +30,13 @@ Select where to insert the extracted content in the output file. Available optio
 Select the page after which to insert the extracted content. If the PDF file doesn't exist, and *Create Target PDF if it doesn't exist* is selected, the action step inserts the pages at the beginning of the document. 
 * *Output File Directory Path* 
 +
-The path to the directory where the output file is. 
+Path to the output file directory.
 * *Output File is Password Protected* 
 +
 Select this option if the output file is password protected and specify the password in the Wizard. 
 * *Output File Name* 
 +
-The name of the output file. 
+Name of the output file. 
 
 == Inbound Variables
 
