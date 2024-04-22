@@ -77,7 +77,7 @@ image:invocableflow-resource-processExecutionStatusCollection.png[]
 +
 image:invocableflow-assignment-processExecutionStatus1.png[]
 
-. Since the run time of a process is not known, add a loop over all returned status:
+. Since the run time of a process is not known, add a loop over all returned statuses:
 +
 image:invocableflow-loop.png[]
 
