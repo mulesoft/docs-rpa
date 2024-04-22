@@ -22,8 +22,9 @@ The Workbench Toolbar contains the following buttons:
 * (image:debug-icon.png[The Debug Workflow icon, 2%, 2%]) <<debug-workflow, Debug Workflow>>
 * (image:print-icon.png[The Print icon, 2%, 2%]) <<print-workflow, Print>>
 * (image:wrench-icon.png[The Tools icon, 2%, 2%]) <<tools, Tools>>
+* (image:record-icon.png[The Record icon, 2%, 2%]) <<record, Record>>
 
-In addition to the Workbench Toolbar, you can find the <<search, Search>> bar at the end of the Workbench:
+In addition to the Workbench Toolbar, you can find the <<search-bar, Search>> bar at the end of the Workbench:
 
 image:search-bar.png[The Search bar, 40%, 40%]
 
@@ -199,7 +200,12 @@ If the process to open is not in the local cache, RPA Builder downloads it autom
 (image:clear-run-results-icon.png[The Clear Run Results Markings icon, 2%, 2%]): Use this menu item to clear the markings of warnings and errors in the Workbench view of the selected project. These markings are shown after a failed local Workflow run or after the import of an analysis package.
 Errors and warnings are still displayed in the pane Workflow Run Results.
 
-[[search]]
+[[record]]
+== Record 
+
+Starts RPA Recorder to record an activity. After you finish the recording, RPA Builder appends a new transaction containing the recorded actions at the end of the workflow.
+
+[[search-bar]]
 == Search
 
 At the end of the Workbench is the *Search...* (image:search-icon.png[The Search icon, 2%, 2%]) function. If you gave your Workflow elements descriptive names and want to detect them in a Workflow, type the name (or part of it) into the search field and press Enter. The first element with a matching name shows on the Workbench. If there are additional matching occurrences, you can access them by pressing _F3_.
