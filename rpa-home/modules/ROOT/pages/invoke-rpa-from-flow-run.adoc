@@ -19,7 +19,7 @@ image:invocableflow-resource-processExecution.png[Resource for the process execu
 |Select *Variable*.
 
 |API Name
-|Choose a name for this resource; for example `ProcessParameters`.
+|Name of this resource; for example `ProcessParameters`.
 
 |Data Type
 |Select *Apex-Defined*.
