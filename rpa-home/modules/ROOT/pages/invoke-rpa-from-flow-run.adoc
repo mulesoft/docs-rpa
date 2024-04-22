@@ -61,7 +61,7 @@ image:invocableflow-action-choosestarttype.png[]
 +
 image:invocableflow-action-startconfiguration.png[]
 
-. Get the execution Status for the first time:
+. Get the execution status for the first time:
 +
 image:invocableflow-action-getfirstexecutionstatus.png[]
 
