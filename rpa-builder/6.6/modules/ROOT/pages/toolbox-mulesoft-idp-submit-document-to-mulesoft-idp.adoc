@@ -6,7 +6,7 @@ Calls to IDP from RPA Builder consume automation credits per page processed in a
 
 == Before You Begin
 
-Before you begin using this action step, ensure that: 
+Before using this action step, ensure that: 
 
 * Your Anypoint user account has the *Build Actions* permission
 * You have IDP document actions published in your organization
