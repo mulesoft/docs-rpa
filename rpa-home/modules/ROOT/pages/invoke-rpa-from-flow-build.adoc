@@ -15,7 +15,7 @@ Implement your automation in RPA Builder.
 
 |Alphanumeric
 |ID, Long, String
-|You can use comma-seperated strings within strings to replace an array. In this case, name the variable in plural and add the suffix CommaSeperatedList to the variable names; for examplespecialAccountsCommaSeperatedList.
+|You can use comma-seperated strings within strings to replace an array. In this case, pluralize the variable names and add the suffix `CommaSeparatedList` to the names; for example, `specialAccountsCommaSeparatedList`.
 
 |Integer
 |Integer
