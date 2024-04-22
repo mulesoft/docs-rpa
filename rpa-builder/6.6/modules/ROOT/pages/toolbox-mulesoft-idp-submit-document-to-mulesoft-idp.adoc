@@ -12,7 +12,7 @@ Before using this action step, ensure that:
 * You have IDP document actions published in your organization.
 +
 See xref:idp::publishing-document-actions.adoc[] for additional information. 
-* You have a Connected App configured to access IDP
+* You have a connected app configured to access IDP.
 +
 See xref:idp::automate-document-processing-with-rpa.adoc[] for configuration instructions. 
 
