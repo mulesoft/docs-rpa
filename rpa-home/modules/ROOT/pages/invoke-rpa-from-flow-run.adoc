@@ -90,7 +90,8 @@ image:invocableflow-decision-checksucces.png[]
 +
 image:invocableflow-assignment-processExecutionStatusN.png[]
 +
-This is repeated until the proces has finished and the status is success.
+This repeats until the process finishes 
+and the status is `Success`.
 
 . Get the final result and store the output values manually:
 +
