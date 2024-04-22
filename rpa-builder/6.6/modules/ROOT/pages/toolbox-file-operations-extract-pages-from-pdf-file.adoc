@@ -1,6 +1,7 @@
 = Extract Pages from PDF File
 
-Extract pages from a PDF file, customize the output, and create a new PDF file with the configured settings.
+Extract pages from a PDF file, customize the output, and create a new PDF file with the configured settings. Use this action step to split PDF files, combine multiple PDF files into one, or extract specific pages to create a new PDF file.
+
 
 == Properties
 
