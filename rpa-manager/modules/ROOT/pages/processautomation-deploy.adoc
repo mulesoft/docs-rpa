@@ -370,7 +370,7 @@ You can publish an invocable run configuration to Anypoint Exchange or Salesforc
 
 To publish an invocable run configuration:
 
-. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Open the *Process Management* view of the *Process Automation* module and click on the category name of your project.
 . Click on the name of a project to open it.
 . Click *Publish* (image:cloud-upload-icon.png[cloud with arrow up symbol,1.5%,1.5%]).
 . Select the target of the publication.
