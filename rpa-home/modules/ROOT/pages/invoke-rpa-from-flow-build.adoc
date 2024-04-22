@@ -30,7 +30,6 @@ Implement your automation in RPA Builder.
 | 
 |===
 
-* Name your Activity Parameters wisely:
 ** Use meaningful names to quickly find your input and output resources in Salesforce Flow.
 ** To implement Salesforce naming standards, adhere to the following rules:
 *** Use camelCase.
