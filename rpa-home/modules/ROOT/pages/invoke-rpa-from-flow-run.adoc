@@ -86,7 +86,7 @@ image:invocableflow-loop.png[]
 +
 image:invocableflow-decision-checksucces.png[]
 
-. If the returned status is not success, add the current status to the loop collection:
+. If the returned status is not `Success`, add the current status to the loop collection:
 +
 image:invocableflow-assignment-processExecutionStatusN.png[]
 +
