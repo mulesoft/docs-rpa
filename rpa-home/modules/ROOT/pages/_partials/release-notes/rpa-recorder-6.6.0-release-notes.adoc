@@ -31,14 +31,14 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="2a,1a"]
 |===
 | Issue Resolution | ID
-|Audio and video no longer continues to play after closing the browser when recording a Web Task. |W-14965350
+|Audio and video no longer continues to play after closing your browser when recording a Web Task. |W-14965350
 |RPA Recorder no longer crashes after navigating to youtube.com when recording a Web Task. |W-14996105
 |The correct error message now shows when loading a debug file into the Process Recording Editor, informing you that the `jsonForBuilder` file format is not supported in the current mode. |W-15211454
-|HTML escape characters are now encoded in the documentation and displayed in plain text format. |W-15099313
+|HTML escape characters are now encoded in your recording's documentation and displayed in plain text format. |W-15099313
 |Text that you copy during a Bot or Web Task recording is now truncated in your recording's documentation. |W-15038064
 |The text in the *Name* field in the *Add Activity* dialog for a User Task now shows in your recording's documentation. |W-15038454
 |Pressing Alt+Tab to focus the Notepad app when recording a Bot Task now selects Notepad as expected when you release the Alt key. |W-14607692
-|Highlighting and recording events now works as expected when recording a Web Task on salesforce.com and on any website you open after  opening salesforce.com. |W-14666842
+|Highlighting and recording events now works as expected when recording a Web Task on salesforce.com as well as on subsequent websites you go to after going to salesforce.com. |W-14666842
 |===
 
 // == See Also
