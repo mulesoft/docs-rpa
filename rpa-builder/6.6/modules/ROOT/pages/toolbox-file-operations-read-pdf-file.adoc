@@ -11,7 +11,8 @@ With the _Read PDF File_ Action Step, you can read text from a PDF file.
 ** *Password protected* (Boolean): Select this option if the PDF file is password protected. 
 
 * *Read Mode*
-** *Read form field data and annotations*:  Select this option to read data from form fields and annotations in the PDF file. 
+** *Read form field data and annotations*: Select this option to read data from form fields and annotations in the PDF file. 
+
 ** *Read Mode*: Read mode for the PDF document.
 ** *Read text from page* (Integer): Reads the file from this page.
 ** *Read text to page* (Integer): Reads the file up to this page.
