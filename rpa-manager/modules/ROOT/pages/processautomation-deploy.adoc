@@ -4,7 +4,9 @@ The third phase of process automation is the *Test* phase. In this phase, you ca
 
 When the tests are successful, transition to *Production* phase.
 
-The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. The difference is that you don't have to start the individual process runs manually. Instead you schedule a process run configuration which is then executed automatically at defined times. Or you create an invocable run configuration and publish it to Anypoint Exchange.
+The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase, except that in the production phase, you don't have to start the individual process runs manually. Instead, you can do either of the following:
+* Schedule a process run configuration that is executed automatically at defined times. 
+* Create an invocable run configuration and publish it to Anypoint Exchange.
 
 You can run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
@@ -109,7 +111,7 @@ If you want to watch the execution of the process in the *Process Streaming* vie
 +
 Select all RPA Bots that are to carry out the test configuration.
 +
-Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
+Select the checkbox *Show bots not enabled in this phase* to also show bots that aren't intended for use in this phase.
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
@@ -248,7 +250,7 @@ include::rpa-manager::partial$form-scheduling.adoc[]
 +
 Select all RPA Bots that are to carry out the production configuration.
 +
-Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
+Select the checkbox *Show bots not enabled in this phase* to also show bots that aren't intended for use in this phase.
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
@@ -292,7 +294,7 @@ Transition the project to the production phase and publish an invocable run conf
 
 You can't delete projects once they are used in production.
 
-Deleted invocable run configurations are not deleted in Anypoint Exchange. Edited and updated invocable run configurations are published as new versions in Anypoint Exchange.
+Deleted invocable run configurations aren't deleted in Anypoint Exchange. Edited and updated invocable run configurations are published as new versions in Anypoint Exchange.
 
 Salesforce Flow always uses the newest version of a process. Invocable run configurations deleted in RPA are also deleted in Salesforce. 
 
@@ -314,7 +316,7 @@ Transition the tested process to production phase for running it fully automatic
 [[invocable-configuration]]
 === Create an Invocable Run Configuration
 
-The invocable run configuration can be published after saving.
+You can publish an invocable run configuration after you save it.
 
 To create an invocable run configuration:
 
@@ -354,9 +356,9 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Bots*:
 +
-Select all RPA Bots that are to carry out the invocable configuration.
+Select the RPA Bots to carry out the invocable configuration.
 +
-Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
+Select the checkbox *Show bots not enabled in this phase* to also show bots that aren't intended for use in this phase.
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
