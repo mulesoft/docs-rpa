@@ -19,7 +19,9 @@ The process team can revise the process continuously.
 . In the design phase, record a process with RPA Recorder or model the process using BPMN.
 . In the build phase, use RPA Builder to edit or create a machine-readable program from the model.
 . In the test phase, run an automated process in a test environment.
-. In the production phase, deploy the automated process to a bot and execute it either scheduled in RPA Manager, or create and publish an invocable configuration to Anypoint Exchange and use it with MuleSoft Composer or Salesforce Flow.
+. In the production phase, deploy the automated process to a bot. Choose one or both of the following options:
+* Create a run configuration to execute the automated process by scheduling it in RPA Manager.
+* Create and publish an invocable configuration to Anypoint Exchange or Salesforce and use it with MuleSoft Composer or Salesforce Flow.
 
 == Definitions
 
