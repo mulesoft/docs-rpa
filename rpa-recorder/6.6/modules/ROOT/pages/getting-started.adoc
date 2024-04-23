@@ -15,20 +15,28 @@ Enable pop-ups from RPA Manager before downloading RPA Recorder.
 
 == Start RPA Recorder
 
-You can start RPA Recorder as a _standalone_ application or from _RPA Manager_.
+You can start RPA Recorder as a _standalone_ application or from _RPA Manager_ or _RPA Builder_.
 
-* *Standalone*
-+
+=== Standalone
+
 Start RPA Recorder by opening the application from the *Start* menu or by opening the application's executable file. When you start RPA Recorder as a standalone application:
-+
-** RPA Recorder does not request RPA Manager credentials to start recordings.
-** You cannot upload recordings to RPA Manager, you can only save them locally.
-* *RPA Manager*
-+
+
+* RPA Recorder does not request RPA Manager credentials to start recordings.
+* You cannot upload recordings to RPA Manager, you can only save them locally.
+
+=== RPA Manager
+
 To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager. When you start RPA Recorder from RPA Manager:
-+
-** RPA Recorder requires RPA Manager credentials to log in and start recordings.
-** You can upload recordings to RPA Manager.
+
+* RPA Recorder requires RPA Manager credentials to log in and start recordings.
+* You can upload recordings to RPA Manager.
+
+=== RPA Builder
+
+To start RPA Recorder, click *Record* from the xref:rpa-builder::workbench-toolbar-overview.adoc[Workbench Toolbar] or double-click the name of an App Session in the Activity Workflow. When you start RPA Recorder from RPA Builder:
+
+* RPA Recorder does not request RPA Manager credentials to start recordings.
+* RPA Builder automatically generates the workflow or single App or Web session, and you do not need to generate the workflow by uploading the recording to RPA Manager and then downloading it in RPA Builder.
 
 === Log in to RPA Recorder with Anypoint
 
