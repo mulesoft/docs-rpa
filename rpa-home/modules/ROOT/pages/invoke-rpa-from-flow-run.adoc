@@ -26,7 +26,7 @@ image:invocableflow-resource-processExecution.png[New Apex-Defined variable reso
 
 |Apex Class
 |Apex class *ExternalService__<RPA Project Name>10_ProcessExecution*; for example `ExternalService__ExampleProcess10_ProcessExecution``
-|==
+|===
 
 . Use a screen to set the input parameters for debugging purposes:
 +
@@ -52,9 +52,8 @@ image:invocableflow-activityparameters.png[Activity Parameter definition for the
 
 |*Start Process Non Idempotent V2*
 |If you use this endpoint, RPA Manager provides a new process ID for each call. 
-
 |===
-+
+
 image:invocableflow-action-choosestarttype.png[Start and status action list for the example process in Flow Builder]
 
 . Configure the action by filling the body with the resource that you defined earlier:
