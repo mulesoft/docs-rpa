@@ -48,10 +48,10 @@ image:invocableflow-activityparameters.png[Activity Parameter definition for the
 |*Application*
 
 |*Start Process V2*
-|If you use this endpoint, you must provide a process execution ID. This ensures that the process starts only once, even if it is called multiple times; for example in case of network issues that prevent the return of the server's answer...........the successfully executed process.
+|If you use this endpoint, you must provide a process execution ID. This ensures that the process starts only once, even if it is called multiple times. For example, in case of network issues that prevent the return of the server's answer, the client resends the request. That might generate duplicates or interfere with the original process. 
 
 |*Start Process Non Idempotent V2*
-|If you use this endpoint, RPA Manager provides a process ID for each call. The process starts on each call.
+|If you use this endpoint, RPA Manager provides a new process ID for each call. 
 
 |===
 +
