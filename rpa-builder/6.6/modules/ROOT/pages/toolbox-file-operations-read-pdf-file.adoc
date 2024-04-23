@@ -1,58 +1,39 @@
-
-
 = Read PDF File
 
 With the _Read PDF File_ Action Step, you can read text from a PDF file.
 
 == Properties
 
-*File Settings*
+* *File Settings*
++
+** *Directory Path* (String): Path to the folder in which the PDF file is located.
+** *File Name* (String): Name of the PDF file.
+** *Password protected* (Boolean): Select this option if the PDF file is password protected. 
 
-*Directory Path* (String)
-The path to the folder in which the PDF file is located.
-
-*File Name* (String) The name of the PDF file.
-
-*Password protected* (Boolean) This indicates whether the PDF document is to be opened with a
-password.
-
-*Read Mode*
-
-*Read Mode* Read mode for the PDF document.
-
-The following options all belong to the Read Mode _Read page range_:
-
-* *Read text from page*
-(Integer) The text is read from this page onward.
-* *Read text to page*
-(Integer) The text is read up to this page.
-* *Read to end of file* (Boolean) If this option is selected, the text is
-read up to the end of the document.
+* *Read Mode*
+** *Read form field data and annotations*:  Select this option to read data from form fields and annotations in the PDF file. 
+** *Read Mode*: Read mode for the PDF document.
+** *Read text from page* (Integer): Reads the file from this page.
+** *Read text to page* (Integer): Reads the file up to this page.
+** *Read to end of file* (Boolean): Select this option to read until the end of the file.
 
 == Inbound Variables
 
-//link:#AS_ReadPDFFile_P_DirectoryPath[*Directory path*]
-*Directory Path* (String)
-The path to the folder in which the PDF file is located.
+* *Directory Path*
 
-//link:#AS_ReadPDFFile_P_FileName[*File name*]
-*File Name* (String) The name of the PDF file.
+* *File Name*
 
-//link:#AS_ReadPDFFile_P_PasswordProtected[*Password*]
-*Password* (Boolean) This indicates whether the PDF document is to be opened with a
-password.
+* *Password*
 
-//link:#AS_ReadPDFFile_P_ReadTextFromPage[*Read text from page*]
-*Read text from page*
-(Integer) The text is read from this page onward.
+* *Read text from page*
 
-//link:#AS_ReadPDFFile_P_ReadTextToPage[*Read text to page*]
-*Read text to page*
-(Integer) The text is read up to this page.
+* *Read text to page*
 
 == Outbound Variables
 
-*ReadText* (String) Specifies the content of the text that is read.
+* *ReadText* (String): The content of the text that is read.
+* *Form field data* (JSON): The form field data extracted from the file as key-value pairs.
+* *Annotations* (String): The annotations extracted from the file. 
 
 == Wizard
 
