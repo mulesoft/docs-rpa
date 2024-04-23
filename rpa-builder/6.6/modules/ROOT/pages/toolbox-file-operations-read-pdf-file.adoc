@@ -13,10 +13,10 @@ With the _Read PDF File_ Action Step, you can read text from a PDF file.
 * *Read Mode*
 ** *Read form field data and annotations*: Select this option to read data from form fields and annotations in the PDF file. 
 
-** *Read Mode*: Read mode for the PDF document.
-** *Read text from page* (Integer): Reads the file from this page.
-** *Read text to page* (Integer): Reads the file up to this page.
-** *Read to end of file* (Boolean): Select this option to read until the end of the file.
+** *Read Mode*: Read mode for the PDF document. Available modes: *Read entire file*, *Read page range*, and *Read text in selected area*. 
+** *Read text from page* (Integer): Read the file starting from this page.
+** *Read text to page* (Integer): Read the file up to this page.
+** *Read to end of file* (Boolean): Read until the end of the file.
 
 == Inbound Variables
 
