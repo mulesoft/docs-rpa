@@ -33,7 +33,7 @@ To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[
 
 === RPA Builder
 
-To start RPA Recorder, click *Record* from the xref:rpa-builder::workbench-toolbar-overview.adoc[Workbench Toolbar] or double-click the name of an App Session in the Activity Workflow. When you start RPA Recorder from RPA Builder:
+To start RPA Recorder, click *Record* from the xref:rpa-builder::workbench-toolbar-overview.adoc[Workbench Toolbar] or double-click the name of an App or Web Session in the Activity Workflow. When you start RPA Recorder from RPA Builder:
 
 * RPA Recorder does not request RPA Manager credentials to start recordings.
 * RPA Builder automatically generates the workflow or single App or Web session, and you do not need to generate the workflow by uploading the recording to RPA Manager and then downloading it in RPA Builder.
