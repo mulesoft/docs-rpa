@@ -80,7 +80,7 @@ Consider the following scenarios when recording processes with RPA Recorder to e
 == See Also
 
 * xref:user-interface.adoc#settings[User Interface]
-* xref:rpa-builder::workbench-toolbar-overview.adoc[Use the *Record* option in RPA Builder to record a workflow]
-* xref:rpa-builder::toolbox-app-automation-app-session.adoc[Record an App Session in RPA Builder]
-* xref:rpa-builder::toolbox-web-automation.adoc[Record a Web Session in RPA Builder]
+* xref:rpa-builder::workbench-toolbar-overview.adoc[*Record* option in RPA Builder]
+* xref:rpa-builder::toolbox-app-automation-app-session.adoc[App Session in RPA Builder]
+* xref:rpa-builder::toolbox-web-automation.adoc[Web Session in RPA Builder]
 
