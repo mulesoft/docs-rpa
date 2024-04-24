@@ -1,27 +1,8 @@
-= Automation Credits Usage and Rates
+include::partial$automation-credits.adoc[tag=title]
 
-Your MuleSoft Automation subscription plan includes a quota of Automation Credits that depletes as you create and execute automations.
+include::partial$automation-credits.adoc[tag=intro]
 
-Credit usage rates differ for different subscription plans. Refer to the article that corresponds to your subscription plan as shown in the following table: 
-
-[%header%autowidth.spread,cols="a,a]
-|===
-| Subscription Plan | Conversion Rate Sheet
-a| 
-* Automation Starter
-* Automation Advanced 
-* Automation for vCore/Core
-* Additional Automation Credits
-.^| xref:ms-automation-credits-2.adoc[]
-a|
-* MuleSoft - Automation
-* MuleSoft - Automation - (Gold, Platinum, Titanium Edition)
-* MuleSoft - Automation for Salesforce
-* MuleSoft - Automation for Salesforce - (Gold, Platinum, Titanium Edition)
-* MuleSoft - Automation - Additional Credits (100)
-* MuleSoft - Automation - Additional Credits (100) - (Gold, Platinum, Titanium)
-.^| xref:ms-automation-credits.adoc[]
-|===
+include::partial$automation-credits.adoc[tag=conversionRates]
 
 [[usage-report]]
 == Create a Usage Report
