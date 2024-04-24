@@ -15,9 +15,9 @@ The Process Recording Editor consists of two main panels:
 This panel provides a fully integrated BPMN modeler to edit the BPMN of the recording. The previously selected Recording session is automatically loaded into the modeler to start editing.
 * *Documentation*
 +
-This panel shows the recorded documentation of each activity. Select an element in the *Automation* panel to view its recorded documentation.
+This panel shows the recorded documentation of each activity. Select an element in the *Automation* panel to view its recorded documentation and show the *Edit* option.
 +
-The Documentation panel provides a fully integrated text editor. To edit the documentation of any activity, click *Edit*. After editing the documentation, click *Save* to apply the changes.
+The Documentation panel provides a fully integrated text editor. To edit the documentation of any activity, click *Edit*. After editing the documentation, click *Done* to apply the changes.
 
 image:recorder-editor-panels.png[Process Recording Editor Panels]
 
@@ -46,7 +46,7 @@ To save the edited and merged BPMN locally:
 
 After merging and editing the BPMN and documentation, click the *Upload to RPA Manager* icon (image:upload-to-server-icon.png[Upload to RPA Manager icon, 2%, 2%]) to upload the new process BMPN. A message opens confirming that the upload is completed.
 
-To close the Process Recording Editor and RPA Recorder, click *Close* (image:close-icon.png[Close icon, 2%, 2%]) in the top right corner.
+To close the Process Recording Editor and RPA Recorder, click *Close* (image:close-icon.png[Close icon, 2%, 2%]).
 
 == See Also
 
