@@ -2,11 +2,20 @@
 
 = Click Web Element
 
-Use this element to simulate mouse input on a website element. This can
-be left-click, right-click, or no click (which represents a hover
-action).
+Simulate mouse input on a website element. 
+
+The available click types are: 
+
+* *Single Left Click*
+* *Single Left Click (Wait for page load)*
++
+Waits for the page to finish loading and then simulates the click. If the page does not load, the action step fails. 
+* *Double Left Click*
+* *Single Right Click*
+* *No Click (Hover)*
++
+Simulates a mouse hover. 
 
 == Properties
 
-*Click Type* Defines the type of click, which can be _Single Left
-Click_, _Double Left Click_, _Single Right Click_ or _No Click (hover)_.
+* *Click Type*
