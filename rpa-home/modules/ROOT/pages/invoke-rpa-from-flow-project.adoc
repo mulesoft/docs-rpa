@@ -1,0 +1,18 @@
+
+# Create an Automation Project
+
+Create an automation project first. An automation project consists of the process, its requirements, the team that is responsible for the automation, and the implementation. 
+
+## Before You Begin
+
+* Use a meaningful name for your automation project to quickly find your invocable action in Salesforce Flow.
+* Use Secure Sessions to enable your process to run in parallel.
+
+## Create an Automation Project
+
+Refer to https://docs.mulesoft.com/rpa-home/create-rpa-project to learn more about creating automation projects.
+
+## See Also
+
+* xref:invoke-rpa-from-flow.adoc[]
+* xref:rpa-home::automation-security-securesessions.adoc[]

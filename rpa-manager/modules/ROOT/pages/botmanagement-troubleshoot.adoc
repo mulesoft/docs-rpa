@@ -47,7 +47,7 @@ Learn how to xref:botmanagement-support.adoc#manage-service-times[manage service
 
 Learn how to xref:processautomation-prepare-project-application.adoc[manage applications].
 
-Learn how to create xref:processautomation-deploy.adoc#production-configuration[production] and xref:processautomation-deploy.adoc#invokable-configuration[invokable] configurations.
+Learn how to create xref:processautomation-deploy.adoc#production-configuration[production] and xref:processautomation-deploy.adoc#invocable-configuration[invocable] configurations.
 
 == View the Bot Log Messages
 

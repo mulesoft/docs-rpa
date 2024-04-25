@@ -10,7 +10,7 @@ To publish automation assets to Exchange:
 See xref:rpa-manager::organizationmanagement-settings.adoc#configure-anypoint-credentials[Configure Anypoint Platform Credentials] for instructions.
 . Publish a Process Automation to Anypoint Exchange.
 +
-See xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange] for instructions.
+See xref:rpa-manager::processautomation-deploy.adoc#publish-automation[Publish a Process Automation to Anypoint Exchange] for instructions.
 
 [[configure-connected-app-rpa]]
 == Configure a Connected App in Access Management
