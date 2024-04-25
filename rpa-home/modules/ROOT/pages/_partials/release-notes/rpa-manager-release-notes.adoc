@@ -8,7 +8,7 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* Invocable run configurations can now be published to Salesforce to be used as invocable actions in Flow.
+* You can now publish invocable run configurations to Salesforce and use them as invocable actions in Flow.
 
 // == Known Issues
 include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
