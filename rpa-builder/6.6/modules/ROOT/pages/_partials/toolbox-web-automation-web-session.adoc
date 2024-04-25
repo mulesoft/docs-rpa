@@ -122,7 +122,7 @@ closing the session at a specific point in the Workflow.
 //tag::wizardCommon[]
 == Wizard
 
-The Web Session Wizard contains the *Reuse Web Session*, *General Settings*, and *Browser Specific Settings* sections.
+The Web Session Wizard contains the *Start Recording*, *Reuse Web Session*, *General Settings*, and *Browser Specific Settings* sections.
 
 === Start Recording
 
