@@ -9,12 +9,13 @@ RPA Recorder enables you to:
 * Add comments and variable information during the recording
 * Take screenshots automatically per mouse click, or manually at any time
 
-You can start RPA Recorder either directly from RPA Manager in the design phase, or as a standalone tool without server connection.
+You can start RPA Recorder directly from RPA Manager in the design phase, as a standalone tool without server connection, or from RPA Builder.
 
 * If started from RPA Manager, RPA Recorder automatically uploads the recorded BPMN process model with the documentation into the server and creates a local PDF with the same information after the recording is finished.
 * If used without server connection, RPA Recorder creates the BPMN and stores it locally.
+* If started from RPA Builder, RPA Builder automatically generates the workflow or single App or Web Session and creates a local PDF with the same information after the recording is finished.
 
-In either case, RPA Recorder also creates an XES file for further processing in process mining tools.
+With all start methods, RPA Recorder also creates an XES file for further processing in process mining tools.
 
 == See Also 
 
