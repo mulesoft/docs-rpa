@@ -15,20 +15,31 @@ Enable pop-ups from RPA Manager before downloading RPA Recorder.
 
 == Start RPA Recorder
 
-You can start RPA Recorder as a _standalone_ application or from _RPA Manager_.
+You can start RPA Recorder as a _standalone_ application or from _RPA Manager_ or _RPA Builder_.
 
-* *Standalone*
-+
+=== Standalone
+
 Start RPA Recorder by opening the application from the *Start* menu or by opening the application's executable file. When you start RPA Recorder as a standalone application:
-+
-** RPA Recorder does not request RPA Manager credentials to start recordings.
-** You cannot upload recordings to RPA Manager, you can only save them locally.
-* *RPA Manager*
-+
+
+* RPA Recorder does not request RPA Manager credentials to start recordings.
+* You cannot upload recordings to RPA Manager, you can only save them locally.
+
+=== RPA Manager
+
 To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager. When you start RPA Recorder from RPA Manager:
-+
-** RPA Recorder requires RPA Manager credentials to log in and start recordings.
-** You can upload recordings to RPA Manager.
+
+* RPA Recorder requires RPA Manager credentials to log in and start recordings.
+* You can upload recordings to RPA Manager.
+* You can update to the latest RPA Recorder version by clicking *Update Available* on the RPA Recorder home page. The option shows automatically when you log in if RPA Recorder detects that a later version is available.
+
+image:update-available.png[Update to latest RPA Recorder version]
+
+=== RPA Builder
+
+To start RPA Recorder, click *Record* from the xref:rpa-builder::workbench-toolbar-overview.adoc[Workbench Toolbar] or double-click the name of an xref:rpa-builder::toolbox-app-automation-app-session.adoc[App Session] or xref:rpa-builder::toolbox-web-automation.adoc[Web Session] in the Activity Workflow. When you start RPA Recorder from RPA Builder:
+
+* RPA Recorder does not request RPA Manager credentials to start recordings.
+* RPA Builder automatically generates the workflow or single App or Web Session.
 
 === Log in to RPA Recorder with Anypoint
 
@@ -72,3 +83,7 @@ Consider the following scenarios when recording processes with RPA Recorder to e
 == See Also
 
 * xref:user-interface.adoc#settings[User Interface]
+* xref:rpa-builder::workbench-toolbar-overview.adoc[*Record* option in RPA Builder]
+* xref:rpa-builder::toolbox-app-automation-app-session.adoc[App Session in RPA Builder]
+* xref:rpa-builder::toolbox-web-automation.adoc[Web Session in RPA Builder]
+
