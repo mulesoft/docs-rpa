@@ -27,8 +27,7 @@ automatically is now available.
 
 * *RPA Builder*
 +
-If the _App Session_ does not contain any elements yet, you can use the wizard to start a local recording, which you can
-then use to generate App Automation Action Steps automatically. After you select _Start Capturing_ in the wizard of the App Session and completed the recording, you can then click _OK & generate_. RPA Builder then generates the Action Steps automatically.
+If the _App Session_ does not contain any elements yet, use the wizard to start a local recording, which you can then use to generate App Automation Action Steps automatically. After you click *Start Recording* in the wizard of the App Session and complete the recording, click *Finish*. Click *OK & generate* in RPA Builder to generate the Action Steps, which are added to the App Session automatically.
 
 == Example
 
