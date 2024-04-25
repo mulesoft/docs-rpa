@@ -30,7 +30,7 @@ To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[
 
 * RPA Recorder requires RPA Manager credentials to log in and start recordings.
 * You can upload recordings to RPA Manager.
-* You can update to the latest RPA Recorder version by clicking *Update Available* on the RPA Recorder home page. The option shows automatically when you log in if a later version is available to download.
+* You can update to the latest RPA Recorder version by clicking *Update Available* on the RPA Recorder home page. The option shows automatically when you log in if RPA Recorder detects that a later version is available.
 
 image:update-available.png[Update to latest RPA Recorder version]
 
