@@ -124,7 +124,28 @@ closing the session at a specific point in the Workflow.
 
 The Web Session Wizard contains the *Reuse Web Session*, *General Settings*, and *Browser Specific Settings* sections.
 
+=== Start Recording
+
+Enables you to record a single web session by using the full functionality of RPA Recorder within RPA Builder. The button is only active if the web session doesn’t contain any elements yet.
+
+To record a web session:
+
+. Click *Start Recording* to open RPA Recorder. If you have another RPA Recorder instance in progress, you must end the other instance if you want to proceed.
++
+image:web-session-chrome-wizard.png[Web Session (Chrome) Wizard]
++
+. Click *Start Recording* to capture all actions.
++
+. Use the xref:rpa-recorder::user-interface.adoc[Recording Toolbar] to pause or stop the recording, take a screenshot, or add Image--based mouse clicks or comments. Additional web sessions cannot be added.
++
+. After you stop the recording, the documentation shows in the *Review Recording* dialogue. Click *Finish* to keep the recording and return to RPA Builder. Click *Re-record* to replace the current recording with a new one. Click *Discard Recording* to cancel the recording and return to RPA Builder.
++
+image:rpa-recorder-review-web-recording.png[Review web session recording]
++
+. Click *OK & generate* in RPA Builder to generate the appropriate Action Steps, which are added to the App Session automatically.
+
 === Reuse Web Session 
+
 image:toolbox-variable-web-automation-web-session-images/image1.png[50%, 50%, An image of the Reuse web session section of the wizard.]
 
 The *Reuse Web Session* section defines which web session to reuse. To reuse a web session, use the *web session ID* that you previously saved in the workflow-based variables.
