@@ -185,10 +185,13 @@ Select this option to generate a XES process file after the recording session st
 * *Generate debug file (contains recorded events, window handles and system data)* 
 +
 Select this option to generate a debug file after the recording session stops.
-* *Screenshot Settings* 
-** *Image quality*: 
+* *Enable element highlighting during Bot Task recordings.*
++
+Select this option to add a blue border around elements that are clicked while recording a Bot Task.
+* *Image quality*: 
 +
 Select the quality of the screenshots on every mouse click. Available options are: *JPEG (compressed)* and *PNG (lossless)*.
+* *Screenshot Settings* 
 ** *Take screenshot automatically* 
 +
 Select this option to automatically take a screenshot on every mouse click.
