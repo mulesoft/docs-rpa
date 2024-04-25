@@ -6,11 +6,11 @@ You set the priority of a process configuration by assigning it a number between
 
 RPA Manager inserts the deployed configurations in the session queue, as soon they are started.
 
-Test configurations and invokable run configurations automatically have the highest priority.
+Test configurations and invocable run configurations automatically have the highest priority.
 
 The processes are executed in the following order:
 
-. Invokable process configurations
+. Invocable process configurations
 . Test configurations
 . Production configurations in ascending order of their assigned priority numbers
 

@@ -223,7 +223,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | Republishing a process to Anypoint Exchange now updates the asset's description. | W-11865540
 | Deleting a test plan in a process' test phase no longer revokes all other test plans. | W-14665127
 | You can now remove a user from a process' test plan in the test phase. | W-14666270
-| The *Bots* tab in a scheduled or invokable run configuration now shows tooltips while hovering the indicator preceding the RPA Bot's name. | W-14686687
+| The *Bots* tab in a scheduled or invocable run configuration now shows tooltips while you hover over the indicator that precedes the RPA Bot's name. | W-14686687
 |===
 
 // == Known Issues
@@ -400,7 +400,7 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now open the Activity library in RPA Manager.
-* Process run results now show the execution ID of invokable and scheduled processes.
+* Process run results now show the execution ID of invocable and scheduled processes.
 * Error dialogs now include a request ID to improve troubleshooting.
 
 // == Fixed Issues
@@ -467,7 +467,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Invokable processes no longer fail to execute when the *Run in Secure Session > as this user* configuration in the *Execution* tab links to a credential in the credential pool. | W-13871254
+| Invocable processes no longer fail to execute when the *Run in Secure Session > as this user* configuration in the *Execution* tab links to a credential in the credential pool. | W-13871254
 | Long process names no longer span outside the window when you click on *more* in a process card to see the complete description of the process. | W-13843102
 |===
 
@@ -591,7 +591,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| You can now select users in the *Execution* section of an invokable run configuration. | W-13490993
+| You can now select users in the *Execution* section of an invocable run configuration. | W-13490993
 | The category of a process evaluation now shows properly after renaming it. | W-13517620
 |===
 
@@ -757,7 +757,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | Using alphanumeric global variables containing `#}` in their value no longer causes an endless loading screen for table views. | W-12636515
 | The values of global variables used in a run configuration now show correctly. | W-12664566
 | Publishing a process containing an empty BPMN to the test phase no longer causes an internal server error. | W-12607151
-| Starting an invokable process by calling the `PUT` endpoint no longer returns a `404 - Not found` error. | W-12701176
+| Starting an invocable process by calling the `PUT` endpoint no longer returns a `404 - Not found` error. | W-12701176
 |===
 
 // == Known Issues
@@ -909,7 +909,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Published OpenAPI specifications to Anypoint Exchange no longer contain a wrong *required* specification. | W-12141693
-| Invokable run configurations are no longer configurable from the Deployment Map. | W-12148933
+| Invocable run configurations are no longer configurable from the Deployment Map. | W-12148933
 | The team members of a process are now shown in the process' tile. | W-12186972
 | The user's configurations are now properly saved in their workspace. | W-12194534
 |===
@@ -923,7 +923,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="2a,1a"]
 |===
 |Issue Resolution |ID
-| RPA Manager no longer includes the _userName_ and _password_ fields for the _AWS Credentials_ type in the OpenAPI Specification (OAS) when you publish an invokable run configuration to Anypoint Exchange. | W-12141693
+| RPA Manager no longer includes the _userName_ and _password_ fields for the _AWS Credentials_ type in the OpenAPI Specification (OAS) when you publish an invocable run configuration to Anypoint Exchange. | W-12141693
 | The RPA Manager UI now shows a note when a date and time are not in the same time zone as the logged-in user. | W-12028146
 |===
 

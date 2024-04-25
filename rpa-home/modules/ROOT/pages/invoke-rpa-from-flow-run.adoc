@@ -1,0 +1,105 @@
+
+# Use a published RPA Process in Salesforce Flow
+
+Publishing an invocable run configuration in RPA Manager, creates an External MuleSoft Service in Salesforce. The service's name consists of the name of the RPA Manager automation project without the blanks, followed by a '10'. 
+
+To use your process in a Salesforce Flow, follow these steps:
+
+. Create a new flow. In this example we use a screen flow for illustrational purposes.
+. Create a resource for the process execution input:
++ 
+image:invocableflow-resource-processExecution.png[New Apex-Defined variable resource for the process execution in Flow Builder]
++
+[cols="1,2"]
+|===
+|*Field*
+|*Value*
+
+|Resource Type
+|*Variable*.
+
+|API Name
+|Name of this resource; for example `ProcessParameters`.
+
+|Data Type
+|*Apex-Defined*.
+
+|Apex Class
+|Apex class *ExternalService__<RPA Project Name>10_ProcessExecution*; for example `ExternalService__ExampleProcess10_ProcessExecution``
+|===
+
+. Use a screen to set the input parameters for debugging purposes:
++
+image:invocableflow-screen-inputvariables.png[Screen configuration for input parameters in Flow Builder]
+
+. Assign all required values to the process parameters:
++ 
+image:invocableflow-assignment-processExecution.png[Assignment of the input paramters from the screen to the process execution resource variables in Flow Builder]
++
+The variable names are the same as the Activity Parameter names defined in RPA Builder:
++
+image:invocableflow-activityparameters.png[Activity Parameter definition for the example process in RPA Builder]
+
+. Choose the *Start Process* Action. You can filter for your process by name.
++
+[cols="1,2"]
+|===
+|*Process Start Type*
+|*Application*
+
+|*Start Process V2*
+|If you use this endpoint, you must provide a process execution ID. This ensures that the process starts only once, even if it is called multiple times. For example, in case of network issues that prevent the return of the server's answer, the client resends the request. That might generate duplicates or interfere with the original process. 
+
+|*Start Process Non Idempotent V2*
+|If you use this endpoint, RPA Manager provides a new process ID for each call. 
+|===
+
+image:invocableflow-action-choosestarttype.png[Start and status action list for the example process in Flow Builder]
+
+. Configure the action by filling the body with the resource that you defined earlier:
++
+image:invocableflow-action-startconfiguration.png[Configuration of the Start Process Non Idempotent V2 action using the process execution resource variable as body in Flow Builder]
+
+. Get the execution status for the first time:
++
+image:invocableflow-action-getfirstexecutionstatus.png[Configuration of the Get Process Execution Status V2 action using part of the 201 output of the Start Process action as execution ID in Flow Builder]
+
+. Create a resource for the execution status:
++
+image:invocableflow-resource-processExecutionStatus.png[New Apex-Defined variable resource for the process execution status in Flow Builder]
+
+. Create a resource for collecting all states that the started process returns while it runs:
++
+image:invocableflow-resource-processExecutionStatusCollection.png[New Apex-Defined variable collection resource for all process execution statuses in Flow Builder]
+
+. Add the first returned status to the status collection:
++
+image:invocableflow-assignment-processExecutionStatus1.png[Addition of a process execution status to resource collection in Flow Builder]
+
+. Since the run time of a process is not known, add a loop over all returned statuses:
++
+image:invocableflow-loop.png[Configration of a loop using the collection as iteration counter]
+
+. To check for the current status, define three text constants: `ìsStarted`, `running`, `error`.
+. Add a decision element:
++
+image:invocableflow-decision-checksucces.png[Configuration of a decision using text constants to check for the current execution status in Flow Builder]
+
+. If the returned status is not `Success`, add the current status to the loop collection:
++
+image:invocableflow-assignment-processExecutionStatusN.png[Addition of the process execution status to resource collection in Flow Builder]
++
+This repeats until the process finishes and the status is `Success`. In this example, the error handling is omitted for the sake of simplicity.
+
+. Get the final result and store the output values manually:
++
+image:invocableflow-action-getfinalexecutionstatus.png[Configuration of the Get Process Execution Status V2 action using part of the 201 output of the Start Process action as execution ID in Flow Builder]
+
+. Add a screen to view the results for debugging purposes:
++
+image:invocableflow-screen-output.png[Screen configuration for displaying the process output in Flow Builder]
+
+** See Also
+
+* xref:invoke-rpa-from-flow.adoc[]
+ 
