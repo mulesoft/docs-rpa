@@ -142,7 +142,7 @@ image:web-session-chrome-wizard.png[Web Session (Chrome) Wizard]
 +
 image:rpa-recorder-review-web-recording.png[Review web session recording]
 +
-. Click *OK & generate* in RPA Builder to generate the appropriate Action Steps, which are added to the App Session automatically.
+. Click *OK & generate* in RPA Builder to generate the appropriate Action Steps, which are added to the web session automatically.
 
 === Reuse Web Session 
 
