@@ -10,7 +10,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 * The new Submit Document to MuleSoft IDP action step enables you to send documents to IDP and process them with your published document actions. 
 * The new Retrieve Results from MuleSoft IDP action step enables you to retrieve the results of a document processed by IDP after using the Submit Document to MuleSoft IDP action step.
 * The new Extract Pages From a PDF File action step enables you to extract, split, and merge PDF files. 
-* The new ErrorOut global variable enables you to capture error messages from action steps. 
+* The new `ErrorOut` global variable enables you to capture error messages from action steps. 
 +
 You can select between overriding or appending error messages in the new *Error Handling* tab in the workflow initialization settings. 
 //enhancements to action steps
