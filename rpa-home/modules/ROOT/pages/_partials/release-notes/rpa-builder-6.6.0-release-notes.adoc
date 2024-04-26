@@ -6,6 +6,28 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == April 29, 2024
 
+//new action steps 
+* The new Submit Document to MuleSoft IDP action step enables you to send documents to IDP and process them with your published document actions. 
+* The new Retrieve Results from MuleSoft IDP action step enables you to retrieve the results of a document processed by IDP after using the Submit Document to MuleSoft IDP action step.
+* The new Extract Pages From a PDF File action step enables you to extract, split, and merge PDF files. 
+* The new `ErrorOut` global variable enables you to capture error messages from action steps. 
++
+You can select between overriding or appending error messages in the new *Error Handling* tab in the workflow initialization settings. 
+//enhancements to action steps
+* The Read PDF File action step can now read forms and annotations. 
+* The Set Variable action step wizard now supports Pin variables.
+* You can now specify a custom error message in the Force Error State action step.
+//RPA builder updates 
+* RPA Recorder is now integrated with RPA Builder, enabling you to start a recording from different sections: 
+** From Web Session action steps by using the wizard's *Start Recording* button.
+** From the App Session action step by using the wizard's *Start Recording* button.
+** From the Workbench by using the *Record* button. 
+** From the Workflow by using the *Record Into*, *Record Before*, and *Record After* context menu items. 
+* RPA Builder now includes new variable types as Activity Parameters: *Execution ID* and *Connected App Credentials*. 
+* RPA Builder now notifies you when a new version is available to download. You can download and install new versions from the *Help* option in the menu bar. 
+* The *Help* option in the menu bar now enables you to export log files, enable DEBUG level logs for RPA Builder and RPA Recorder, and select between appending or overwriting trace log files.
+//other updates
+* The workflow script logfile in analysis packages now includes the current base path. 
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
@@ -13,7 +35,7 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1
 [%header%autowidth.spread]
 |===
 |Application |Version
-|RPA Recorder | 6.4.0 and later
+|RPA Recorder | 6.6.0 and later
 |RPA Bot | 1.0.0 and later
 |===
 
@@ -24,6 +46,14 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="5a,1a"]
 |===
 | Issue Resolution | ID
+| The BPMN Panel no longer shows empty when editing a Workflow in the Activity Library. | W-15606460
+| The JSONPath Expression Builder no longer shows empty values when editing and adding new filters. | W-15294418
+| Web Automation action steps no longer require manually scrolling to find and click buttons in forms. | W-15261043
+| RPA Builder no longer shows an incorrect error message when the login session expires. | W-15259497
+| Downloading a process with a missing Process Owner or Project Manager no longer causes an error.| W-14899347
+| The JSONPath Expression Builder no longer keeps filters from a file imported before when you import a new file. | W-14547303
+| The Check RegEx action step no longer logs the whole content of the output variable. | W-14454589
+| Run Results markings in the Workbench are no longer truncated | W-13902897
 |===
 
 
