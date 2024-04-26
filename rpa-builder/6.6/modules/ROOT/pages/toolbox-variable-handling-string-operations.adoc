@@ -1,0 +1,175 @@
+
+
+= String Operations
+
+The String Operations action step enables you to modify strings by using several operations, including find and replace and trimming.
+
+
+== Properties
+
+* *Input Text* 
++
+The string that you want to modify. 
++
+Specify this value manually or use the wizard to define this value via the pin variable.
+* *Use a regular expresion for string to find*
++
+Select this option to evaluate the value specified in the *Find what* field in the wizard (`StringToFind` variable) as a regular expression and apply the regex to the *Input Text*.  
++
+This option is valid only when using the string operation *Find and replace text*.
+
+== Inbound Variables
+
+//link:\l[*Input text*]
+* *Input Text* 
++
+The string that you want to modify. 
++
+Specify this value manually or by using the wizard to select a pin variable for the value.
+* *StringToFind* 
++
+The string to search for inside the *Input Text* string. 
+* *StringToReplaceWith* 
++
+The string to replace the found instances of *StringToFind*.
+* *CharacterToTrimAt* 
++
+The character to use as delimiter when using trim operations. 
+* *NumberOfCharacters*
++
+The number of characters to count when using trim operations. 
+
+== Outbound Variables
+
+* *Result* 
++
+The modified string is output as the result. You can then use this string in later action steps.
+* *Result Length*
++
+The length of the modified result string.
+* *Start Index* 
++ 
+The index of the first character of a substring that is found during the operation. 
+* *End Index* 
++
+The index of the last character of a substring that is found during the operation.
+* *Match Count* 
++
+The numbers of substrings found during the operation. 
+
+== Wizard
+
+Use the Wizard to select the string operation to perform, the input text to analyze, and any other necessary parameters depending on the operation you select. Available operations are: 
+
+
+*Analyse*:: Outputs the length of the specified input text string. 
+
+*Find and replace text*::
+Searches and replaces text found in the input text. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Find what* = `TEST`
+* *Replace with* = `NEW`
+* Output = `MyNEWString`
+
+*Left (take first characters)*::
++
+Outputs the specified number of characters from the string, starting from the first character. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Number of characters* = `4`
+* Output = `MyTE` 
+
+*Right (take last characters)*::
++
+Outputs the specified number of characters from the string, starting from the last character. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Number of characters* = `4`
+* Output = `ring` 
+
+*Trim left (remove first characters)*::
++
+Removes the specified number of characters from the string, starting from the first character. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Number of characters* = `3`
+* Output = `ESTString` 
+
+*Trim right (remove last characters)*::
++
+Removes the specified number of characters from the string, starting from the last character. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Number of characters* = `3`
+* Output = `MyTESTStr` 
+
+*Takes first characters of the string until a specific character (specific character is not part of output)*::
++
+Outputs all characters between the beginning of the string and the first occurrence of the *Character to trim at* value. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Character to trim at* = `t`
+* Output = `MyTESTS` 
++
+The output string does not include the search character.
+
+*Takes last characters of the string until a specific character (specific character is not part of output)*::
++
+Outputs all characters between the last occurrence of the *Character to trim at* value and the end of the string. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Character to trim at* = `T`
+* Output = `String`
++
+The output string does not include the search character.
+
+*Removes first characters of the string until a specific character (specific character is not part of output)*::
++
+Removes all characters between the beginning of the string and the first occurrence of the *Character to trim at* value. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Character to trim at* = `T`
+* Output = `ESTString` 
++
+The search character is removed from the output string. 
+
+*Removes last characters of the string until a specific character (specific character is not part of output)*::
++
+Removes all characters between the last occurrence of the *Character to trim at* value and the end of the string. For example: 
++
+* *Input text (string)* = `MyTESTString`
+* *Character to trim at* = `T`
+* Output = `MyTES` 
++
+The search character is removed from the output string. 
+
+*Reverse string*::
++
+Reverses and outputs the input string in the existing _Result_ outbound variable. For example:
++
+* *Input text (string*) = `This is a test string`
+* Output = `gnirts tset a si sihT`
+
+*Uppercase conversion*::
++
+Converts all characters to uppercase. For example: 
++
+* *Input text (string)* = `my test string`
+* Output = `MY TEST STRING`
+
+*Lowercase conversion*::
+Converts all characters to uppercase. For example: 
++
+* *Input text (string)* = `MY TEST STRING`
+* Output = `my test string`
+
+*Find and return index of string found*::
++
+Searches for a substring within the input string and outputs the index where the substring is found. You can use a regular expression to define the substring to search. For example: 
++
+* *Input text (string)* = `My test string`
+* *Find what* = `test`
+* Output = `4`
++
+If the substring is not found, the output result is `0`. If the regular expression is invalid, the action step is set to error state.

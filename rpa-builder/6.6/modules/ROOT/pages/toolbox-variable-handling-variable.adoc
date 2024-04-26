@@ -1,0 +1,32 @@
+
+
+= Variable
+
+This _Action Step_ makes it possible to set up a simple string variable.
+This variable can also be made available globally for the entire
+_Workflow_ under Properties and "Make Variable available in all
+Transactions". Other variables can be used as Inbound Variables and
+therefore made global.
+
+== Properties
+
+*Variable Value* Defines the variable value which can be mapped onto another variable.
+
+*Make Variable available in all Transactions* Makes the variable
+available for the entire _Workflow_ in all transactions. Variables are
+normally only available within their transaction.
+
+== Inbound Variables
+
+*Suffix* can be used if the _Variable_ is located within the _Control
+Block’s_ __File Controlled Loop__**.** A suffix is then added to the
+name of the _Variable_ +++during every loop+++__.__ Each suffix is a
+column entry in the file that was imported in the _File Controlled
+Loop_.
+
+//link:#AS_Variable_P_VariableValue[*Variable Value*]
+*Variable Value* Defines the variable value which can be mapped onto another variable.
+
+== Outbound Variables
+
+*Value* Returns the current value of the _Variable._
