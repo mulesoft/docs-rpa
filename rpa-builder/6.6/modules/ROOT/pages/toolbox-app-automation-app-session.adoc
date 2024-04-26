@@ -34,11 +34,24 @@ The _App Session_ does not have any outbound variables.
 
 == Wizard
 
-* *Start Capturing*
+*Start Recording*
+
+Enables you to record a single App Session by using the full functionality of RPA Recorder within RPA Builder. The button is only active if the App Session doesn’t contain any elements yet.
+
+To record an App Session:
+
+. Click *Start Recording* to open RPA Recorder. If you have another RPA Recorder instance in progress, you must end the other instance if you want to proceed.
 +
-Enables you to record a variety of interactions within RPA Builder. The recording corresponds to the output of RPA Recorder.
-This button is only active if the App Session does not contain any elements yet. A recording captures all actions, such as mouse movements and keystrokes.
-Press `F10` to stop the recording. If the recording is successful, the *OK* button in the lower right of the wizard changes to *OK & generate*.
+image:app-session-wizard.png[App Session Wizard]
 +
-When you click this button, the appropriate Action Steps are generated from the recording. Click *Cancel* to discard the recording and close the wizard.
-The previous recording is also discarded if you click *Start Capturing* again to start a new recording.
+. Click *Start Recording* to capture all actions, such as mouse movements and keystrokes.
++
+image:rpa-recorder-start-recording.png[Start recording]
++
+. Use the xref:rpa-recorder::user-interface.adoc[Recording Toolbar] to pause or stop the recording, take a screenshot, or add Image--based mouse clicks or comments. Additional App Sessions cannot be added.
++
+. After you stop the recording, the documentation shows in the *Review Recording* dialogue. Click *Finish* to keep the recording and return to RPA Builder. Click *Re-record* to replace the current recording with a new one. Click *Discard Recording* to cancel the recording and return to RPA Builder.
++
+image:rpa-recorder-review-app-recording.png[Review app session recording]
++
+. Click *OK & generate* in RPA Builder to generate the appropriate Action Steps, which are added to the App Session automatically.
