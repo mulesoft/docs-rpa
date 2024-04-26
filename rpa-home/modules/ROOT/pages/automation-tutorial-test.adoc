@@ -40,7 +40,7 @@ image:bot-test-success.png[The Test Results window showing a successful executio
 
 == Next Steps
 
-You created a test plan that executes the automation to ensure that the process runs successfully. Then, you finished testing the process and released it to the production phase. Now, it is time to publish the process to Anypoint Exchange by creating an invokable run configuration for this process.
+You created a test plan that executes the automation to ensure that the process runs successfully. Then, you finished testing the process and released it to the production phase. Now, it is time to publish the process to Anypoint Exchange by creating an invocable run configuration for this process.
 
 Continue with xref:automation-tutorial-deploy.adoc[]
 

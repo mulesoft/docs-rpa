@@ -61,4 +61,4 @@ The URL of your Anypoint Platform instance you connect to.
 
 == See Also
 
-* xref:processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange]
+* xref:processautomation-deploy.adoc#publish-automation[Publish a Process Automation to Anypoint Exchange]
