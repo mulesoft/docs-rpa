@@ -2,7 +2,7 @@
 
 Send documents to MuleSoft IDP and process them with your published document actions. Each execution generates an execution ID that you must use when you run the Retrieve Results from MuleSoft IDP action step to query the results of said execution. 
 
-Calls to IDP from RPA Builder consume automation credits per page processed in addition to the bot minutes consumed by the RPA process. See xref:rpa-home::ms-automation-credits-usage-types.adoc[] for conversion rates and usage details. 
+include::partial$mulesoft-idp.adoc[tag=creditsWarning]
 
 == Before You Begin
 
@@ -57,4 +57,5 @@ Finally, specify the connected app credentials to use when connecting to IDP.  E
 
 == See Also 
 
-xref:access-management::managing-permissions.adoc[]
+* xref:toolbox-mulesoft-idp-retrieve-results-from-mulesoft-idp.adoc[]
+* xref:access-management::managing-permissions.adoc[]

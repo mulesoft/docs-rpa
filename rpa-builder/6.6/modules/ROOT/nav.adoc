@@ -95,6 +95,7 @@
 *** xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
 *** xref:toolbox-measurement-points-stopwatch-collection.adoc[Stopwatch Collection]
 ** xref:toolbox-mulesoft-idp.adoc[]
+*** xref:toolbox-mulesoft-idp-retrieve-results-from-mulesoft-idp.adoc[]
 *** xref:toolbox-mulesoft-idp-submit-document-to-mulesoft-idp.adoc[]
 ** xref:toolbox-network.adoc[Network]
 *** xref:toolbox-network-ping.adoc[Ping]

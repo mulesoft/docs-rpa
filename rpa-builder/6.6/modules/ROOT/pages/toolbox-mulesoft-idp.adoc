@@ -2,6 +2,22 @@
 
 Execute your MuleSoft IDP document actions from RPA to process documents and consume the results. 
 
+Before you use these action steps, ensure you have created and published _document actions_ in MuleSoft IDP. Then, you can use the MuleSoft IDP action steps to submit documents for processing and retrieve the results of the execution by providing the generated Execution ID.
+
+include::partial$mulesoft-idp.adoc[tag=creditsWarning]
+
+* xref:toolbox-mulesoft-idp-retrieve-results-from-mulesoft-idp.adoc[]
++
+Retrieve the results of an IDP document action execution. 
++
+Before you can query the results, you must run the Submit Document to MuleSoft IDP action step to trigger the execution of said document action. 
 * xref:toolbox-mulesoft-idp-submit-document-to-mulesoft-idp.adoc[]
 +
 Submit a document to MuleSoft IDP and execute a published document action to process the document. 
++
+Use the returned Execution ID to query the results later using the Retrieve Results from MuleSoft IDP action step. 
+
+== See Also 
+
+* xref:idp::index.adoc[]
+* xref:idp::document-processing.adoc[]
