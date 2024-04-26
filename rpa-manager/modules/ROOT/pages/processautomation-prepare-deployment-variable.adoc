@@ -29,23 +29,23 @@ To store login data securely, use xref:processautomation-prepare-deployment-cred
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Process Automation* module
+|Open the *Process Automation* module.
 |RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
-|Create and change global variables that can be used in the test phase
+|Create and change global variables that can be used in the test phase.
 |RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Global Variables Create for Test phase, Global Variables Edit for Test phase
 
-|Create and change global variables that can be used in the production phase
+|Create and change global variables that can be used in the production phase.
 |RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Global Variables Create for Production phase, Global Variables Edit for Production phase
 
-|Delete global variables
+|Delete global variables.
 |RPA Automations Manager, RPA Administrator
 |Global Variables Delete
 
@@ -134,4 +134,4 @@ To delete a global variable:
 * xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder: Activity Paramters]
 * xref:processautomation-deploy.adoc#test-configuration-link-globals[Linkable Activity Parameters in Test Configurations]
 * xref:processautomation-deploy.adoc#production-configuration-link-globals[Linkable Activity Parameters in Production Configurations]
-* xref:processautomation-deploy.adoc#invokable-configuration-link-globals[Linkable Activity Parameters in Invokable Configurations]
+* xref:processautomation-deploy.adoc#invocable-configuration-link-globals[Linkable Activity Parameters in Invocable Configurations]

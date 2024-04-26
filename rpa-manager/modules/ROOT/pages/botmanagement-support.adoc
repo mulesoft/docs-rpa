@@ -7,15 +7,15 @@ If a bot only needs to work at specific times, you assign it service times.
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Bot Management* module
+|Open the *Bot Management* module.
 |RPA Bots Manager, RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Bot Management Open
 
-|Manage service times
+|Manage service times.
 |RPA Bots Manager, RPA Administrator
 |Servicetime Create, Servicetime Edit, Servicetime Delete
 

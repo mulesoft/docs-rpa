@@ -18,7 +18,7 @@ Refer to the xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connecto
 
 == Before You Begin
 
-* Before you can invoke an RPA process, you need to publish it to Exchange. See xref:rpa-manager::processautomation-deploy.adoc#create-an-invokable-run-configuration[Create an invokable run configuration] for instructions to create and publish an invokable RPA process.
+* Before you can invoke an RPA process, you must publish it to Exchange. See xref:rpa-manager::processautomation-deploy.adoc#create-an-invocable-run-configuration[Create an invocable run configuration] for instructions to create and publish an invocable RPA process.
 
 * Using the RPA connector features in Composer requires you to connect with your MuleSoft RPA account by configuring the corresponding API key and RPA API URL:
 

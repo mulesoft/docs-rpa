@@ -10,15 +10,15 @@ The *General* tab in the *Admin Settings* view enables you to configure the curr
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,2,2"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|View configured settings for your organization
+|View configured settings for your organization.
 |RPA Administrator
 |Organization Management Open
 
-|Add or modify settings for your organization
+|Add or modify settings for your organization.
 |RPA Administrator
 |Organization Management Administration
 

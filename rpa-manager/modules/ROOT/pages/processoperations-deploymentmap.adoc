@@ -15,18 +15,18 @@ You can view and manage all your run configurations in one place:
 
 You must manually keep configuration changes in RPA Manager and Anypoint Exchange in sync. Configurations might become out of sync in the following situations:
 
-* Invokable run configurations deleted in RPA Manager might still exist in Anypoint Exchange, but the bot cannot run them and they do not appear in RPA Manager.
-* Invokable configuration assets deprecated in Anypoint Exchange might still appear in RPA Manager.
+* Invocable run configurations deleted in RPA Manager might still exist in Anypoint Exchange, but the bot cannot run them and they do not appear in RPA Manager.
+* Invocable configuration assets deprecated in Anypoint Exchange might still appear in RPA Manager.
 
 == Before You Begin
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|View the process deployment map
+|View the process deployment map.
 |RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Process Deployment Map Open
 
@@ -34,7 +34,7 @@ You must manually keep configuration changes in RPA Manager and Anypoint Exchang
 
 * You can only view processes for which you are part of the process team.
 * To execute, pause, or stop configurations, obtain the needed team member permissions for the respective phase.
-* You cannot interact with invokable configurations.
+* You cannot interact with invocable configurations.
 * The deployment map shows only bots that have configurations deployed.
 
 == Filter Configurations by Status
@@ -81,4 +81,4 @@ The actions *Start*, *Deploy*, *Pause*, *Continue*, and *Revoke process* refer t
 == See Also
 
 * xref:processautomation-deploy.adoc[Deploying Automations]
-// a link how to interact with Invokable Configurations
+// a link how to interact with Invocable Configurations

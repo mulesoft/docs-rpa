@@ -8,11 +8,11 @@ Combine targets to target groups to save time when creating alert rules.
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Alerting* module
+|Open the *Alerting* module.
 |RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Alerting Open
 

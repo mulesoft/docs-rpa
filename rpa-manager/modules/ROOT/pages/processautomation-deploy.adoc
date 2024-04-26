@@ -4,7 +4,9 @@ The third phase of process automation is the *Test* phase. In this phase, you ca
 
 When the tests are successful, transition to *Production* phase.
 
-The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase. The difference is that you do not have to start the individual process runs manually. Instead you schedule a process run configuration which is then executed automatically at defined times. Or you create an invokable run configuration and publish it to Anypoint Exchange.
+The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase, except that in the production phase, you don't have to start the individual process runs manually. Instead, you can do either of the following:
+* Schedule a process run configuration that is executed automatically at defined times. 
+* Create an invocable run configuration and publish it to Anypoint Exchange.
 
 You can run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
@@ -12,11 +14,11 @@ You can run processes openly in existing console sessions or run them hidden in 
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Process Automation Module*
+|Open the *Process Automation* module.
 ||RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
@@ -38,9 +40,9 @@ You can run processes openly in existing console sessions or run them hidden in 
 Bots running an earlier version than 1.2.0 overtake an open console session without checking if the logged-in user matches the specified user.
 
 +
-Do not close or minimize the console session while the bot executes the process.
+Don't close or minimize the console session while the bot executes the process.
 
-* To run a process in a hidden session, you must deploy it to a bot configured for Secure Sessions. Before deploying a run configuration on a bot that has only one licensed secure session, do not disconnect the session, instead sign out the specified user. Do not sign in to a computer where a bot with one licensed Secure Session is running a process.
+* To run a process in a hidden session, you must deploy it to a bot configured for Secure Sessions. Before deploying a run configuration on a bot that has only one licensed secure session, don't disconnect the session, instead sign out the specified user. Don't sign in to a computer where a bot with one licensed Secure Session is running a process.
 * RPA Manager requires authentication to integrate RPA processes into other Salesforce products:
 ** Use user API keys to use Salesforce Flows with RPA. 
 ** Use Connected Apps to configure an RPA connector in a MuleSoft Composer flow. 
@@ -86,7 +88,7 @@ Alternatively, you can set the value of an activity parameter by linking it with
 The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*
 +
-User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
+User tasks are elements of a process model, which can't be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
 +
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*
@@ -97,7 +99,7 @@ You can link the user with a global credential variable by clicking on the *Link
 +
 Use the syntax `domain\username` instead of `username@domain.com` for domain users and `username` for local users, regardless of whether you enter the username manually or link a global credential.
 +
-Ensure that the bot that you want to execute the process is configured for the execution type, because you cannot save the test configuration otherwise.
+Ensure that the bot that you want to execute the process is configured for the execution type, because you can't save the test configuration otherwise.
 +
 The bot can overtake the console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
 +
@@ -109,11 +111,11 @@ If you want to watch the execution of the process in the *Process Streaming* vie
 +
 Select all RPA Bots that are to carry out the test configuration.
 +
-Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
+Select the checkbox *Show bots not enabled in this phase* to also show bots that aren't intended for use in this phase.
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you cannot proceed with the test configuration.
+If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you can't proceed with the test configuration.
 Hover the mouse pointer over the info label to display more detailed information about the cause of the warning or error in the form of a tooltip.
 . Click *Finish*.
 
@@ -188,7 +190,7 @@ Alternatively, you can set the value of an activity parameter by linking it with
 The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*:
 +
-User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
+User tasks are elements of a process model, which can't be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
 +
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
@@ -199,7 +201,7 @@ You can link the user with a global credential variable by clicking on the *Link
 +
 Use the syntax `domain\username` instead of `username@domain.com` for domain users and `username` for local users, regardless of whether you enter the username manually or link a global credential.
 +
-Ensure that the bot that you want to execute the process is configured for the execution type, because you cannot save the run configuration otherwise.
+Ensure that the bot that you want to execute the process is configured for the execution type, because you can't save the run configuration otherwise.
 +
 The bot can overtake the console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
 +
@@ -213,7 +215,7 @@ The productive run is carried out continuously within a fixed schedule. For each
 +
 You create a schedule without specifying a time zone. The bot you assign the production configuration to executes the process at the specified times in its local time. The time intervals might change, depending on daylight saving time.
 +
-For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that starts at 5:30 AM and ends at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots do not execute the processes simultaneously:
+For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that starts at 5:30 AM and ends at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots don't execute the processes simultaneously:
 +
 [cols="1,2,2"]
 |===
@@ -248,11 +250,11 @@ include::rpa-manager::partial$form-scheduling.adoc[]
 +
 Select all RPA Bots that are to carry out the production configuration.
 +
-Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
+Select the checkbox *Show bots not enabled in this phase* to also show bots that aren't intended for use in this phase.
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you cannot proceed with the configuration.
+If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you can't proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information about the cause of the warning or error in the form of a tooltip.
 . Click *Save*.
 
@@ -281,16 +283,28 @@ To view the run results and to download an analysis package:
 . If you want details on a result, click a number.
 . In case of errors, click the *Download* icon.
 
-[[publish-automation-exchange]]
-== Publish a Process Automation to Anypoint Exchange
+[[publish-automation]]
+== Publish a Process Automation
 
-Transition the project to the production phase to publish an invokable run configuration to Anypoint Exchange.
+Transition the project to the production phase and publish an invocable run configuration to use the process out of MuleSoft RPA, for example with one of the following products:
 
-Projects that have already been used productively can no longer be deleted. Deleted invokable run configurations are not deleted in Anypoint Exchange. Edited and updated invokable run configurations are published as new versions in  Anypoint Exchange.
+* Anypoint Exchange
+* MuleSoft Composer
+* Salesforce Flow
+
+You can't delete projects once they are used in production.
+
+Deleted invocable run configurations aren't deleted in Anypoint Exchange. Edited and updated invocable run configurations are published as new versions in Anypoint Exchange.
+
+Salesforce Flow always uses the newest version of a process. Invocable run configurations deleted in RPA are also deleted in Salesforce. 
+
+Invocable configurations can run only if the following requirements are met:
+* The project is in the production phase.
+* At least one of the assigned bots is in the `OK` state.
 
 === Transition Process to Production Phase
 
-Transition the tested process to production phase for running it fully automatically or for publishing it to Anypoint Exchange:
+Transition the tested process to production phase for running it fully automatically or for publishing it:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
@@ -299,16 +313,16 @@ Transition the tested process to production phase for running it fully automatic
 . Check *I confirm that the process should be released into the production phase and all responsible persons have agreed.*
 . Click *Release to Production* to confirm the transition.
 
-[[invokable-configuration]]
-=== Create an Invokable Run Configuration
+[[invocable-configuration]]
+=== Create an Invocable Run Configuration
 
-The invokable run configuration is published to Anypoint Exchange upon saving.
+You can publish an invocable run configuration after you save it.
 
-To create an invokable run configuration:
+To create an invocable run configuration:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
-. Click *Create an invokable run configuration*.
+. Click *Create an invocable run configuration*.
 . Complete the *Create production configuration* form:
 +
 * *Activity Parameter*:
@@ -317,22 +331,22 @@ The activity parameters for each process are created in RPA Builder and given in
 +
 Set the value by entering text or by clicking on a checkbox, and complete your entries by pressing ENTER.
 +
-[[invokable-configuration-link-globals]]
+[[invocable-configuration-link-globals]]
 Alternatively, you can set the values of the activity parameters by linking them with a global variable. To do this, click on the *Link a global activity parameter* icon. Only those variables assigned to the phase are displayed for linking. The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*:
 +
-User tasks are elements of a process model, which cannot be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
+User tasks are elements of a process model, which can't be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
 +
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they are supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
 +
-Decide whether to carry out the invokable run in an existing console or RDP session or in a Secure Session, and specify an appropriate user.
+Decide whether to carry out the invocable run in an existing console or RDP session or in a Secure Session, and specify an appropriate user.
 +
 You can link the user with a global credential variable by clicking on the *Link a credential from credential pool* icon.
 +
 Use the syntax `domain\username` instead of `username@domain.com` for domain users and `username` for local users, regardless of whether you enter the username manually or link a global credential.
 +
-Ensure that the bot that you want to execute the process is configured for the execution type because you cannot save the run configuration otherwise.
+Ensure that the bot that you want to execute the process is configured for the execution type because you can't save the run configuration otherwise.
 +
 The bot can overtake the console or RDP session only if the specified user is logged in at runtime. If no user or another user is logged in at runtime, the process run results show the failure *No active session with the user '<user name>' could be found on the system*. 
 +
@@ -342,15 +356,31 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Bots*:
 +
-Select all RPA Bots that are to carry out the invokable configuration.
+Select the RPA Bots to carry out the invocable configuration.
 +
-Select the checkbox *Show bots not enabled in this phase* to also show bots that are not intended for use in this phase.
+Select the checkbox *Show bots not enabled in this phase* to also show bots that aren't intended for use in this phase.
 +
 When you select a bot, ensure that it is configured for the required session type, that it is allowed to be deployed in the relevant phase, and that it can operate the required applications.
 +
-If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you cannot proceed with the configuration.
+If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you can't proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information about the cause of the warning or error in the form of a tooltip.
-. Click *Save & Publish*.
+. Click *Save*.
+
+[[publish-configuration]]
+=== Publish an Invocable Run Configuration
+
+You can publish an invocable run configuration to Anypoint Exchange or Salesforce.
+
+To publish an invocable run configuration:
+
+. Open the *Process Management* view of the *Process Automation* module and click on the category name of your project.
+. Click on the name of a project to open it.
+. Click *Publish* (image:cloud-upload-icon.png[cloud with arrow up symbol,1.5%,1.5%]).
+. Select the publication target.
+
+If you edit your process or project, republish it to Anypoint to create a new version there.
+
+If you edit your project name, republish to Salesforce to update the existing version there. 
 
 == See Also
 
@@ -358,6 +388,7 @@ Hover the mouse pointer over the info label to display more detailed information
 * xref:rpa-bot::index.adoc[RPA Bot Overview]
 * xref:rpa-home::automation-security-securesessions.adoc[]
 * xref:botmanagement-overview.adoc[Bot Management]
+* xref:rpa-home::invoke-rpa-from-flow.adoc[]
 * xref:settings-connect.adoc[Connecting to RPA Processes from Salesforce Products]
 * xref:access-management::connected-apps-overview.adoc[]
 * xref:composer::ms_composer_rpa_reference.adoc[MuleSoft RPA Connector for Composer]

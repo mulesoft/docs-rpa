@@ -8,15 +8,15 @@ You approve an evaluated process candidate to refer it to a project manager or a
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Approve an automation process for a center of excellence
+|Refer a process for automation to a center of excellence.
 |RPA Evaluations Manager
 |Process Evaluation Approval to a CoE
 
-|Approve directly for a project manager
+|Refer a process for automation directly to a project manager.
 |RPA Evaluations Manager
 |Process Evaluation Approval to a Project Manager
 

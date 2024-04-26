@@ -19,14 +19,14 @@ Manage the users of RPA Manager, RPA Recorder, and RPA Builder:
 * The tenant admin is created first and can create other users.
 * If you are not a tenant admin, ask an administrator to xref:usermanagement-manage.adoc#assign-privileges-to-a-user[assign you the required privileges]:
 +
-[cols="1,2"]
+[%header, cols="1,2"]
 |===
-|*Action* |*Required Privileges*
+|Action |Required Privileges
 
-|Open the *User Management* module
+|Open the *User Management* module.
 |User Management Open
 
-|Create, edit, license, and delete users
+|Create, edit, license, and delete users.
 |User Management Administration
 
 |===

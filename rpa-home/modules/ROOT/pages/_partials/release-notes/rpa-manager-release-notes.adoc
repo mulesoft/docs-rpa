@@ -2,6 +2,260 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[april-24-2024]]
+== April 24, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* You can now publish invocable run configurations to Salesforce and use them as invocable actions in Flow.
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
+[[april-22-2024]]
+== April 22, 2024
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| Process names with Japanese characters no longer get split on a process tile. | W-14835485
+| The content of table cells no longer gets truncated when there's more space available. | W-15242583
+| The text of downloadable applications on the RPA Manager homepage no longer extends outside the buttons. | W-15312305
+| The field *To (email)* in an Alert Target is now enforced as a mandatory field. | W-11716347
+| The email address in an Alert Target is now verified. | W-11720892
+| Modifying an inactive Alert Rule no longer activates it. | W-15424278
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
+[[april-09-2024]]
+== April 09, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* The taskbar elements of a run configuration's *Execution* are now enabled by default.
+* The *Contact Support* link now redirects to the Salesforce help page.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| The *Cost entries* dialog of the _Finance Analysis_ now shows the correct *Investment* string. | W-13863725
+| The start and end date of a _Dashboard's_ *Analysis Interval* is now set correctly. | W-14673236
+| The number of total entries shown at the end of the *Analysis Packages* widget now reflects the correct number. | W-14809568
+| A deleted alert rule no longer shows after deactivating it and activating another alert rule. | W-14845072
+| The *Description* field in the _Bot Workflow Library_ no longer resizes incorrectly while editing it. | W-14866579
+| The *Execution Timetable* now shows tooltips while hovering the schedules. | W-14911375
+| A user is no longer able to reset the password of another inactive user in a non-migrated (legacy) organization. | W-15091753
+| The process monitor icon now shows in the *Bot State and Operation* view. | W-15106942
+| The tooltip of *Process Board* tasks now disappears when the mouse leaves the focus. | W-15233192
+| Deployed run configurations no longer show as available in the list of the *Deploy process* action. | W-15243974
+| You can now configure the option to send an email for user tasks when editing a scheduled run configuration. | W-15292890
+| Updating a reference to a *Credential* in a run configuration now shows the correct error if the user does not have ownership of the credential. | W-15303044
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
+[[march-25-2024]]
+== March 25, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* RPA Manager now doesn't pause a run configuration when a process execution fails because an RPA Bot can't establish a secure session.
+* You can now create new projects from the following views:
++
+** *RPA Home*
+** *My RPA* > *My Backlog*
+** *My RPA* > *My Processes*
+** *Process Evaluation* > *Process Evaluation*
+** *Process Automation* > *Process Management*
+** *Process Automation* > *Process Management* > *<Category>*
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
+[[march-12-2024]]
+== March 12, 2024
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| Selecting a process in *Process Matrix* now filters the selected process. | W-14657931
+| You can now remove all team assignments of a *Credential*. | W-14693509
+| Email notifications no longer contain a malformed URL. | W-14693359
+| Copying a process does no longer duplicate activity parameters. | W-14999548
+| The user workspace now saves changes properly. | W-15147413
+| The list of tags in the *Bot Workflow Library Tags* view now shows properly. | W-15156528
+| Saving public dashboards as private ones no longer fails. | W-15212411
+| Claiming or rejecting processes on the second page of the team backlog no longer fails. | W-15130497
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
+[[february-28-2024]]
+== February 28, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* RPA Manager now supports automatic RPA Bot updates for bots running version 1.5.0 or later.
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+| An RPA Bot shows an error in *Tasks* when a user tries to update the bot while the bot is already executing an update task. | Ignore the error message, the first task updates the bot successfully regardless of the message. | W-15129879
+|===
+
+
+[[february-15-2024]]
+== February 15, 2024
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| The *Qualifiers* and *Benefits* columns within the *Process Evaluation* module no longer show incorrect values. | W-14657848
+| The *Process Streaming* module no longer shows a _Gateway Timeout_ error. | W-14826933
+| You can now edit a process when the process owner is not specified. | W-14899326
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
+[[january-31-2024]]
+== January 31, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* RPA Manager now supports automatic RPA Bot updates for bots running version 1.5.0 or later.
++
+When a new version of RPA Bot is available, RPA Manager shows the *Update* button in the *Bots* view of the *Bot Management* module, which enables you to update installed RPA Bots to the latest version.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| You can now edit and delete run configurations that show on the second and all following pages. | W-14820123
+| You can now open the _Test_ tab in *Deployment Map* even if the project manager of one of the processes has been deleted. | W-14808512
+| *Finance Analysis* no longer shows an error if the process owner of one of the processes has been deleted. | W-14820620
+| *Bot Workflow Library* is now available in Japanese. | W-14836772
+| The tooltips and descriptions on the details panel of the *Bot Workflow Library* now show properly. | W-14852032
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
+[[january-15-2024]]
+== January 15, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* You can now reassign assets from one user to another.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| Republishing a process to Anypoint Exchange now updates the asset's description. | W-11865540
+| Deleting a test plan in a process' test phase no longer revokes all other test plans. | W-14665127
+| You can now remove a user from a process' test plan in the test phase. | W-14666270
+| The *Bots* tab in a scheduled or invocable run configuration now shows tooltips while you hover over the indicator that precedes the RPA Bot's name. | W-14686687
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
 [[december-12-2023]]
 == December 12, 2023
 
@@ -165,7 +419,7 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can now open the Activity library in RPA Manager.
-* Process run results now show the execution ID of invokable and scheduled processes.
+* Process run results now show the execution ID of invocable and scheduled processes.
 * Error dialogs now include a request ID to improve troubleshooting.
 
 // == Fixed Issues
@@ -232,7 +486,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Invokable processes no longer fail to execute when the *Run in Secure Session > as this user* configuration in the *Execution* tab links to a credential in the credential pool. | W-13871254
+| Invocable processes no longer fail to execute when the *Run in Secure Session > as this user* configuration in the *Execution* tab links to a credential in the credential pool. | W-13871254
 | Long process names no longer span outside the window when you click on *more* in a process card to see the complete description of the process. | W-13843102
 |===
 
@@ -356,7 +610,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| You can now select users in the *Execution* section of an invokable run configuration. | W-13490993
+| You can now select users in the *Execution* section of an invocable run configuration. | W-13490993
 | The category of a process evaluation now shows properly after renaming it. | W-13517620
 |===
 
@@ -437,7 +691,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 * The *MuleSoft RPA Builder assignment* option from *User Management* is now the new privilege *Builder Usage*.
 * The *Project Manager* flag of a user is now replaced by the new privilege *Project Management*.
 
-// Commenting this feature until we have at least one additional language. 
+// Commenting this feature until we have at least one additional language.
 //* RPA Manager now inclues a language selector in the user profile.
 
 // == Fixed Issues
@@ -522,7 +776,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | Using alphanumeric global variables containing `#}` in their value no longer causes an endless loading screen for table views. | W-12636515
 | The values of global variables used in a run configuration now show correctly. | W-12664566
 | Publishing a process containing an empty BPMN to the test phase no longer causes an internal server error. | W-12607151
-| Starting an invokable process by calling the `PUT` endpoint no longer returns a `404 - Not found` error. | W-12701176
+| Starting an invocable process by calling the `PUT` endpoint no longer returns a `404 - Not found` error. | W-12701176
 |===
 
 // == Known Issues
@@ -674,7 +928,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Published OpenAPI specifications to Anypoint Exchange no longer contain a wrong *required* specification. | W-12141693
-| Invokable run configurations are no longer configurable from the Deployment Map. | W-12148933
+| Invocable run configurations are no longer configurable from the Deployment Map. | W-12148933
 | The team members of a process are now shown in the process' tile. | W-12186972
 | The user's configurations are now properly saved in their workspace. | W-12194534
 |===
@@ -688,7 +942,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="2a,1a"]
 |===
 |Issue Resolution |ID
-| RPA Manager no longer includes the _userName_ and _password_ fields for the _AWS Credentials_ type in the OpenAPI Specification (OAS) when you publish an invokable run configuration to Anypoint Exchange. | W-12141693
+| RPA Manager no longer includes the _userName_ and _password_ fields for the _AWS Credentials_ type in the OpenAPI Specification (OAS) when you publish an invocable run configuration to Anypoint Exchange. | W-12141693
 | The RPA Manager UI now shows a note when a date and time are not in the same time zone as the logged-in user. | W-12028146
 |===
 

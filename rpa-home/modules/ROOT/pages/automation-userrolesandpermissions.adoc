@@ -77,7 +77,7 @@ a| Credentials can only be used by users selected on creation.
 |*Transferred Permission*
 a|* API Keys are assigned to users whose identity and permission set is used to complete tasks via REST API.
 * API Keys have an expiration date.
-|API Keys are needed when an RPA Manager Invokable Configuration is included into a Composer Flow.
+|API Keys are needed when an RPA Manager Invocable Configuration is included into a Composer Flow.
 
 |===
 
