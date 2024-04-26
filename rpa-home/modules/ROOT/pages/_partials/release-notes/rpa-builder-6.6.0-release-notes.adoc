@@ -49,7 +49,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | The BPMN Panel no longer shows empty when editing a Workflow in the Activity Library. | W-15606460
 | The JSONPath Expression Builder no longer shows empty values when editing and adding new filters. | W-15294418
 | Web Automation action steps no longer require manually scrolling to find and click buttons in forms. | W-15261043
-| RPA Builder no longer shows an incorrect error message when the login session has expired. | W-15259497
+| RPA Builder no longer shows an incorrect error message when the login session expires. | W-15259497
 | Downloading a process with a missing Process Owner or Project Manager no longer causes an error.| W-14899347
 | The JSONPath Expression Builder no longer keeps filters from a file imported before when you import a new file. | W-14547303
 | The Check RegEx action step no longer logs the whole content of the output variable. | W-14454589
