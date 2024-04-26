@@ -1,6 +1,6 @@
 = Retrieve Results from MuleSoft IDP 
 
-Retrieve the results of a document processed with MuleSoft IDP. To run this action step you must provide an Execution ID, which generates during the execution of the Submit Document to MuleSoft IDP action step. The Execution ID links this action step with a document action execution to define which results to retrieve. 
+Retrieve the results of a document processed with MuleSoft IDP. To run this action step, provide an Execution ID, generated during the execution of the Submit Document to MuleSoft IDP action step. The Execution ID links this action step with a document action execution to define which results to retrieve. 
 
 include::partial$mulesoft-idp.adoc[tag=creditsWarning]
 
@@ -46,7 +46,7 @@ Execution ID of the document processing operation
 
 Specify a combination of *Execution ID*, *Action*, and *Action Version* to query the results of that execution. These lists populate with the available document actions that your organization has published in IDP. Ensure you specify the same *Action* and *Action Version* used in the Submit Document to MuleSoft IDP configuration that generated the *Execution ID* you are checking.
 
-Then, select the connected app credentials to use when connecting to IDP. You can use Pin credentials that you have configured or you can specify the *Client ID* and *Client Secret* manually in the wizard. 
+Then, select the connected app credentials to use when connecting to IDP. You can use Pin credentials that you configured or specify the *Client ID* and *Client Secret* manually in the wizard. 
 
 == See Also 
 

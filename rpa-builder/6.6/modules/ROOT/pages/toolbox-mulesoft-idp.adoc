@@ -10,12 +10,12 @@ include::partial$mulesoft-idp.adoc[tag=creditsWarning]
 +
 Retrieve the results of an IDP document action execution. 
 +
-Before you can query the results, you must run the _Submit Document to MuleSoft IDP_ action step to trigger the execution of said document action. 
+Before you can query the results, you must run the Submit Document to MuleSoft IDP action step to trigger the execution of said document action. 
 * xref:toolbox-mulesoft-idp-submit-document-to-mulesoft-idp.adoc[]
 +
 Submit a document to MuleSoft IDP and execute a published document action to process the document. 
 +
-Use the returned Execution ID to query the results later using the _Retrieve Results from MuleSoft IDP_ action step. 
+Use the returned Execution ID to query the results later using the Retrieve Results from MuleSoft IDP action step. 
 
 == See Also 
 
