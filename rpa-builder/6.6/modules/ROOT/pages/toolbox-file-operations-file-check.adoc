@@ -1,0 +1,87 @@
+
+
+= File Check
+
+The _File Check_ Action Step allows you to check whether a file exists
+or not. You can evaluate the result using the _File Check.Check
+Succeeded_ variable and use it in the later stages of the workflow.
+
+Please note: Before the process starts, the specified _Directory Path_
+is checked against the _Allowed Paths_. If the _Directory Path_
+specified in the Action Step is not allowed, the workflow is cancelled
+and an error message displayed.
+//For further information, see the *Settings* chapter.
+
+== Properties
+
+*File Operation Settings*
+
+* *Directory path* Path to
+the directory in which you want to search for the file. You can enter
+the path either as an absolute or relative path. If you enter it as a
+relative path, the path refers to the _Base Path_ variable.
+* *File Check mode* Here,
+you can specify what is to be searched for. In other words, whether the
+file exists or not.
+** *File exists* (default) If you have selected this mode, the Action
+Step checks whether the file exists. If it does not exist, the workflow
+is interrupted and an error message is displayed.
+** *File not exists* Here, a check is carried out to establish whether
+the file does *not* exist. If it does exist, the workflow is also
+interrupted and an error message is displayed.
+* *File Name* Here, you can
+enter the name of the file you are searching for.
+
+Placeholders are not allowed. For further instructions, please observe
+the section *Invalid Characters*.
+////
+You will find further properties, which are the same for all Action
+Steps, in the chapter *Common Properties*. These
+are not detailed here for the sake of clarity.
+////
+
+== Inbound Variables
+
+*Directory path* Path to
+the directory in which you want to search for the file. You can enter
+the path either as an absolute or relative path. If you enter it as a
+relative path, the path refers to the _Base Path_ variable.
+
+*File Name* Here, you can
+enter the name of the file you are searching for.
+
+== Outbound Variables
+
+*Check Succeeded* This variable specifies whether the check was
+successful or not (True/False).
+
+*File Name* Gives the name of the file to be found.
+
+*Directory Path* Gives the path used.
+
+== Wizard
+
+//You can use the link:#AS_FileCheck_P_DirectoryPath[Directory path] to
+Define the path to the file to be found. You can create an absolute path
+or a path relative to the _Base Path_.
+//using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=130,height=22] buttons.
+The initial
+value is %STWS_BASEPATH%. Select an existing path
+//using the
+//image:media\image3.png[image,width=20,height=20] button.
+You can also
+insert variables from the workflow to create the path. To do this, click
+the pin and select one of the available variables.
+
+////
+You will find further information on environment variables (Insert
+Environment Variable) and script variables (Insert Script Variable) in
+the *Settings* chapter.
+////
+
+In the *File name* field, enter the name of
+the file to be found. You can also insert the _File Name_ using a
+variable from the workflow. To do this, click the pin and select one of
+the available variables. You then use the *Check mode* to define the result that
+is to be searched for.

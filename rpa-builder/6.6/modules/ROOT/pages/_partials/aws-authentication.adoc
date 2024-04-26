@@ -1,0 +1,22 @@
+//tag::wizard[]
+* *Authentication Settings*
++
+The AWS credentials to use for authentication
++
+** *Pin credentials* 
++
+Use this option to reference an existing *Credentials for AWS* configuration.
+** *Use custom settings* 
++
+Use this option to manually specify an AWS *Cliend ID*, *Client Secret*, *Region Endpoint*, and *Session Token* for this action step.
+//end::wizard[]
+
+//tag::properties[]
+* *Authentication Settings*
+** *Region Endpoint* 
++
+The region endpoint to use for the AWS Service.
+** *Use Session Token* 
++
+Enables using a session token for authentication. 
+//end::properties[]
