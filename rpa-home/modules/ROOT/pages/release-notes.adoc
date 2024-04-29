@@ -12,6 +12,8 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == RPA Builder
 
+//Uncomment on April 29th.
+//* xref:release-notes/rpa-builder-6.6.0-release-notes.adoc[RPA Builder 6.6.0 Release Notes]
 * xref:release-notes/rpa-builder-6.5.10-release-notes.adoc[RPA Builder 6.5.10 Release Notes]
 * xref:release-notes/rpa-builder-6.5.9-release-notes.adoc[RPA Builder 6.5.9 Release Notes (Internal)]
 * xref:release-notes/rpa-builder-6.5.8-release-notes.adoc[RPA Builder 6.5.8 Release Notes]
@@ -46,6 +48,8 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == RPA Recorder
 
+//Uncomment on April 29th.
+//* xref:release-notes/rpa-recorder-6.6.0-release-notes.adoc[RPA Recorder 6.6.0 Release Notes]
 * xref:release-notes/rpa-recorder-6.5.2-release-notes.adoc[RPA Recorder 6.5.2 Release Notes]
 * xref:release-notes/rpa-recorder-6.5.0-release-notes.adoc[RPA Recorder 6.5.0 Release Notes]
 * xref:release-notes/rpa-recorder-6.4.4-release-notes.adoc[RPA Recorder 6.4.4 Release Notes]

@@ -1,0 +1,220 @@
+= Workbench Toolbar Overview
+
+Next to the Workbench tab bar is the Workbench toolbar, which enables you to perform different actions related to the Workflow and its elements.
+
+image::workbench-toolbar.png[The Workbench Toolbar, 75%, 75%]
+
+Some of these actions apply to the selected objects in the Workflow. The unavailable functions are grayed out depending on which Workflow object is selected.
+
+The Workbench Toolbar contains the following buttons:
+
+* (image:copy-icon.png[The copy icon, 2%, 2%]) <<copy-paste, Copy selected object(s)>>
+* (image:paste-icon.png[The paste icon, 2%, 2%]) <<copy-paste, Paste copied object(s)>>
+* (image:arrow-rotate-left-icon.png[The Undo icon, 2%, 2%]) <<undo-redo, Undo previous action>>
+* (image:arrow-rotate-right-icon.png[The Redo icon, 2%, 2%]) <<undo-redo, Redo action>>
+* (image:arrow-up.png[The Move selected object up icon, 2%, 2%]) <<move-up-down, Move selected object up>>
+* (image:arrow-down.png[The Move selected object down icon, 2%, 2%]) <<move-up-down, Move selected object down>>
+* (image:delete-icon-alt.png[The Delete selected object icon, 2%, 2%]) <<delete, Delete selected object(s)>>
+* (image:run-wizard-icon.png[The Run wizard for selected object icon, 2%, 2%]) <<start-wizard, Run wizard for selected object>>
+* (image:quick-creation-icon.png[The Start Quick Creation Mode icon, 2%, 2%]) <<start-quick-creation, Start Quick Creation Mode>>
+* (image:validate-icon.png[The Validate Workflow icon, 2%, 2%]) <<validate, Validate Workflow>>
+* (image:play-icon.png[The Run Workflow icon, 2%, 2%]) <<run-workflow, Run Workflow>>
+* (image:debug-icon.png[The Debug Workflow icon, 2%, 2%]) <<debug-workflow, Debug Workflow>>
+* (image:print-icon.png[The Print icon, 2%, 2%]) <<print-workflow, Print>>
+* (image:wrench-icon.png[The Tools icon, 2%, 2%]) <<tools, Tools>>
+* (image:record-icon.png[The Record icon, 2%, 2%]) <<record, Record>>
+
+In addition to the Workbench Toolbar, you can find the <<search-bar, Search>> bar at the end of the Workbench:
+
+image:search-bar.png[The Search bar, 40%, 40%]
+
+[[copy-paste]]
+== Copy and Paste Workflow Objects
+Clicking *Copy* (image:copy-icon.png[The copy icon, 2%, 2%]) copies the selected Workflow objects and their underlying elements to the clipboard. Select the target object and click *Paste* (image:paste-icon.png[The paste icon, 2%, 2%]) to paste it. You can also use _Ctrl + C_ for copying and _Ctrl + V_ for pasting.
+
+[[undo-redo]]
+== Undo and Redo Previous Action
+The *Undo* button (image:arrow-rotate-left-icon.png[The copy icon, 2%, 2%]) enables you to undo any previous action you carried out in RPA Builder. If you accidentally went back too far, use the *Redo* button (image:arrow-rotate-right-icon.png[The copy icon, 2%, 2%]) to get back to the desired action.
+Using _Ctrl + Z_ for undo and _Ctrl + Y_ for redo also works.
+
+[[move-up-down]]
+== Change the Order of Workflow Objects
+To change the order of objects, select the object and move it up or down in the Workflow by clicking *Move up* (image:arrow-up.png[The Move selected object up icon, 2%, 2%]) or *Move down* (image:arrow-down.png[The Move selected object down icon, 2%, 2%]) until the object reaches the desired position. You can also drag and drop elements to rearrange them.
+Action Steps cannot be moved outside of their Transaction. If you want to move an Action Step to another Transaction, use copy and paste instead, and then delete the old one. You can also use _Ctrl + X_ or the *Cut* option from the context menu to remove the Action Step from the Workflow and put it into the clipboard in one step.
+
+[[delete]]
+== Delete Workflow Objects
+To delete an object, select it and click *Delete* (image:delete-icon-alt.png[The Delete selected object icon, 2%, 2%]). Pressing the _Del_ key has the same effect.
+
+[[start-wizard]]
+== Starting the Configuration Wizard of a Workflow Object
+
+To configure a Workflow object with the wizard, select it and then click *Wizard* (image:run-wizard-icon.png[The Run wizard for selected object icon, 2%, 2%]). This process works for single Action Steps as well as for complete Transactions. You can also double-click a Workflow object to start its wizard.
+
+[[start-quick-creation]]
+== Start Quick Creation Mode
+
+Use this function to speed up the initial Workflow creation. When you start a new Workflow project from scratch, click *Start Quick Creation Mode* (image:quick-creation-icon.png[The Start Quick Creation Mode icon, 2%, 2%]) to open the Quick Creation Mode interface.
+
+image:quick-creation-mode.png[The quick creation mode window, 30%, 30%]
+
+Depending on the state and position your Workflow project is in, Quick Creation Mode provides the Workflow objects that you can use. For every object you insert, the wizard automatically starts so you can configure the different steps without ever losing focus on the actual application you want to automate. You can also insert any possible object at any position later on.
+
+If, for example, you want to add a Window wait Action Step in front of an Image search in a Transaction you have already created, place the blue position indicator where you want to add the Action Step and then click Window wait. You can position the objects with the blue arrow buttons or by clicking on the desired position directly.
+
+The blue arrow buttons also enable you to collapse or expand the selected Workflows, Transactions, or Control Blocks to optimize the graphical representation of your Workflow.
+
+If the Quick Creation Mode interface is blocking parts of the application you need to use in the Workflow, click *Switch Monitor Side* (image:switch-monitor-side-icon.png[The Switch Monitor Side icon, 2%, 2%]) and the interface switches from the right to the left side of the screen and vice versa. After you finish creating the Workflow, close Quick Creation Mode by clicking *Exit Quick Creation Mode* (image:exit-quick-creation-mode.png[The Exit Quick Creation Mode icon, 2%, 2%]). After you exit Quick Creation Mode, the standard RPA Builder GUI shows again, including the Workflow you just created.
+
+[[validate]]
+== Validate Workflow
+
+To check if a Workflow is ready for script generation, press *Validation* (image:validate-icon.png[The Validate Workflow icon, 2%, 2%]). If the project contains Workflow objects that are not configured, are wrongly configured, or have errors, RPA Builder shows warnings or general messages as a list in the Validation result window. Double-click an entry in this list to navigate to the corresponding Workflow object.
+
+[[run-workflow]]
+== Run Workflow
+
+To test the created Workflow, click *Run Workflow* (image:play-icon.png[The Run Workflow icon, 2%, 2%]) to generate or update the script file from the currently active project. The script executes automatically after its creation.
+
+When you start a Workflow from within RPA Builder, the workflow runs in design mode so you can already test whether the Workflow behaves as expected or still needs modifications before the production phase.
+
+Note that the STC Guard module does not execute and does not close any windows if an error occurs, and the Clear screen Action Step does not execute in design mode.
+
+[[debug-workflow]]
+== Debug Workflow
+With the *Debug Workflow* (image:debug-icon.png[The Debug Workflow icon, 2%, 2%]) button, you can start a debug run of the active Workflow project. The Workflow Debugger automatically starts if you have set break points in your Workflow or if any error occurs during the debug run. Here you can make changes to Workflow elements and retry certain Action Steps or complete Transactions until they work properly. Then, you can continue to execute the Workflow from the current position without having to start the debug run at the beginning.
+
+// For more information about the Workflow Debugger see Using Workflow Debuger(5.3).
+
+[[print-workflow]]
+== Print
+You can document a Workflow project by clicking *Print Workflow* (image:print-icon.png[The Print icon, 2%, 2%]), which opens the printing function and displays a Print Preview:
+
+image:print-preview.png[The print Workflow preview]
+
+The resulting document shows the steps the Workflow executes during a run, together with the most important settings.
+At the beginning of the window Print Preview, there is a menu for further processing the Workflow Print.
+
+image:print-menu.png[The Print Workflow menu]
+
+* *Print...*
++
+Opens a window for starting the print of the Workflow.
+* *Page Setup...*
++
+Opens a window for setting the page format and margins for the print or export of the Workflow.
++
+RPA Builder saves the changes in the *Page Setup...* settings according to your configuration for all users in common or for every user separately. It then uses these settings for the Print of a Workflow.
+* *First Page*
++
+Shows the first page.
+* *Previous Page*
++
+Shows the previous page.
+* *Next Page*
++
+Shows the next page.
+* *Last Page*
++
+Shows the last page.
+* *Zoom Out*
++
+Reduces the size of the view by 25%, so that more of the page is visible on screen.
+* *Zoom*
++
+Sets the size of the view to a certain percentage of the original size, to the whole width of the screen, or so that a whole page fits on the screen.
+* *Zoom In*
++
+Increases the size of the view by 25% at a time.
+* *Export...*
++
+Opens a window for choosing the file format, choosing the folder to save to, and configuring additional settings for the print export. Allowed formats are PDF, HTML, and RTF.
+* *Send...*
++
+Opens a window for choosing whether to export the print in PDF or RTF format. The file is attached to an Email automatically after saving.
++
+For the option *Send...*, an Outlook Email profile configured on the computer is required.
+//* *Thumbnails*
+//* *Search* opens a search panel at the lower border of the menu into which you can enter a search expression. The search can be case-sensitive or restricted to whole words. After pressing the _Enter_ key, the first found search result is colored blue. With the buttons *Previous* and *Next*, you can jump to the previous or next result. *Close* closes the search panel.
+* *Watermark*
++
+Opens a window in which you can specify a text or an image to use as a watermark on the print.
++
+//Image
+* *Print Template Settings*
++
+Opens a window for choosing a logo for the print, the format of the page numbering, and the scaling of text and images.
++
+RPA Builder saves the changes in *Print Template Settings* according to your configuration for all users in common or for every user separately. It then uses these settings for the Print of a Workflow.
++
+The current page number is referenced by `{0}` and the total number of pages is referenced by `{1}`. If the formatting has errors, RPA Builder sets the footer back to the default configuration `{0}/{1}`.
+
+[[tools]]
+== Tools
+
+The *Tools* (image:wrench-icon.png[The Tools icon, 2%, 2%]) button enables you to access additional functions:
+
+image:tools-menu.png[The Tools menu, 30%, 30%]
+
+=== Reload Workflow
+
+(image:reload-workflow-icon.png[The Reload Workflow icon, 2%, 2%]): Reverts back to the last saved state of your project.
+
+[WARNING]
+After reloading a Workflow, you cannot use the undo function. Therefore, all unsaved changes in the Workflow are lost.
+
+=== Save Selected Items as Template
+
+(image:save-as-template-icon.png[The Save Selected Items as Template icon, 2%, 2%]): To create a template, select the Workflow object you want to save as a template and click Save as template in the context menu. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting User Templates.
+
+=== Open Trace Log
+
+(image:open-trace-log.png[The Open trace log icon, 2%, 2%]): Shows the content of the log file created during the last test run of this Workflow. Use this option to obtain additional information for failure analysis.
+
+=== Load Analysis Package
+
+(image:load-analysis-package.png[The Load Analysis Package icon, 2%, 2%]): RPA Manager provides analysis packages for Workflow runs that don't execute successfully. RPA Builder can display errors that occur within a Workflow run, whether from a run started by RPA Builder or by reading the analysis package of a run executed in RPA Manager.
+
+To load an analysis package:
+
+. Get the analysis package you want to use from RPA Manager and save it to the local disk.
+. Open the File Explorer by clicking *File* > *Load Analysis Package*.
+. Browse to the analysis package you downloaded and then press *Open*.
++
+Alternatively, you can drag the package from Windows Explorer and drop it into RPA Builder.
++
+You can also select an Analysis Package directly in the Activity Workflow. Click the *Tools* button on the Workbench toolbar and select the *Load Analysis Package* entry.
+
+The analysis information includes the trace file and Workflow Run Results. After loading and analysis package, RPA Builder displays the error screenshots and replaces the current log file with the log file in the analysis package.
+
+==== Opening an analysis package
+
+When you import an analysis package into RPA Builder, the corresponding process and the relevant Activity Workflow open automatically. To make searching for the error easier, *Run Result Marking* immediately displays the Action Step in which the error occurred.
+
+image:run-result-marking.png[The Run Result Marking icon, 40%, 40%]
+
+If the process to open is not in the local cache, RPA Builder downloads it automatically from RPA Manager. In this case, the process must be in the Build phase.
+
+=== Clear Run Results Markings
+
+(image:clear-run-results-icon.png[The Clear Run Results Markings icon, 2%, 2%]): Use this menu item to clear the markings of warnings and errors in the Workbench view of the selected project. These markings are shown after a failed local Workflow run or after the import of an analysis package.
+Errors and warnings are still displayed in the pane Workflow Run Results.
+
+[[record]]
+== Record 
+
+Starts RPA Recorder to record an activity. After you finish the recording, RPA Builder appends a new transaction containing the recorded actions at the end of the workflow.
+
+[[search-bar]]
+== Search
+
+At the end of the Workbench is the *Search...* (image:search-icon.png[The Search icon, 2%, 2%]) function. If you gave your Workflow elements descriptive names and want to detect them in a Workflow, type the name (or part of it) into the search field and press Enter. The first element with a matching name shows on the Workbench. If there are additional matching occurrences, you can access them by pressing _F3_.
+
+image:search-bar.png[The Search bar, 40%, 40%]
+
+If there are multiple results, you can switch between the results with the arrow buttons.
+
+== See Also
+
+* xref:workbench-elements-in-detail.adoc[Workbench Elements in Detail]
+* xref:managing-user-templates.adoc[Managing User Templates]

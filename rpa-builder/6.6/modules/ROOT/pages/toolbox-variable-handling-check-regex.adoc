@@ -1,0 +1,92 @@
+
+
+= Check Regex
+
+Use the Check Regex Action Step to search for a text fragment using a
+regular expression. The text fragment can be searched for in a variable.
+
+The results of Check Regex provide various Outbound Variables that can
+processed further in the Workflow.
+
+An introduction to regular expressions is provided in the section on xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
+
+== Properties
+
+*Check Regex Settings*
+
+* *Input text* Enter the text that the regular expression is to be applied to. This property is only
+displayed if no variable has been specified in the Check Regex wizard as the target of the regular expression search.
+* *Regex Pattern* Enter the regular expression that you want to use as the basis of the search.
+
+Other Properties that are the same in all Action Steps are described in the section on *Common Properties*. For reasons of clarity they are not shown here.
+
+== Inbound Variables
+
+//link:#AS_CheckRegex_P_RegexPattern[*Regex Pattern*]
+* *Regex Pattern* 
++
+The regular expression that you want to use as the basis of the search.
+
+//link:#AS_CheckRegex_P_InputText[*Input text*]
+* *Input text* 
++
+The text to which apply the regular expression. This property is only
+displayed if no variable is specified in the Check Regex wizard as the target of the regular expression search.
+
+== Outbound Variables
+
+* *First Match* 
++
+Stores the first match found for the search expression. The text to search is read
+from beginning to end and the first match is given as the output. The
+output text is truncated to a maximum length of 1024 characters. If no matches are found, this variable is empty. 
+
+* *IsMatched* (boolean)
++
+Specifies whether the expression searched for was found.
+
+* *Match Count* 
++
+The number of matches found in the text searched.
+
+* *Number of first line matched* 
++
+The line number of the first line that contains the text searched for.
+
+* *All Matches* 
++
+An array variable that stores all matches of the regular expression. If no matches are found, this variable is empty. If only one match is found, the array contains only this element.
+
+
+== Wizard
+
+*Regex* Enter the regular expression that you want to use as the basis
+of the search. Instead of entering the regular expression directly here,
+you can store it in a variable. Use the pin next to the *Regex* field to
+assign a variable.
+////
+Click the image:media\image1.png[image,width=21,height=20] button to open a dialog
+for testing the regular expression. The regular expression already
+specified in the *Regex* field will appear automatically in the _Regex Tester_ dialog.
+////
+
+The regular expression can be modified in the Regex Tester dialog.
+Enter the text that you want to use to test the regular expression into
+the *Test Pattern* field. Click the *Execute Test* button to run the
+test. Matches will be highlighted in the *Test Pattern* field. Click the
+*Apply* button to transfer the tested regular expression to the Check
+Regex Action Step. Click the *Cancel* button to close the Regex
+Tester and discard any changes.
+
+*Text Pattern* Enter the text that the regular expression should be
+applied to. Use the Outbound Variables from Check Regex to determine
+if matches were found and what form the matches take. The Text Pattern
+can either be entered directly or read from the content of a variable.
+To read from a variable, click on the pin and select one of the
+available variables.
+
+*Please note the following with regard to error handling:* An error
+message will be displayed if, for example, the Regex syntax is incorrect
+or an internal error has occurred (e.g. API error). Conversely, if the
+regular expression is correct but no matching content is found
+(match=0), a warning message is displayed.

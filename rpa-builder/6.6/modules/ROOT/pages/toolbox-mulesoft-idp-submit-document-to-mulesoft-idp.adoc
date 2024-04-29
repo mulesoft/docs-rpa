@@ -1,0 +1,61 @@
+= Submit Document to MuleSoft IDP 
+
+Send documents to MuleSoft IDP and process them with your published document actions. Each execution generates an execution ID that you must use when you run the Retrieve Results from MuleSoft IDP action step to query the results of said execution. 
+
+include::partial$mulesoft-idp.adoc[tag=creditsWarning]
+
+== Before You Begin
+
+Before using this action step, ensure that: 
+
+* Your Anypoint user account has the Build Actions permission.
+* You have IDP document actions published in your organization.
++
+See xref:idp::publishing-document-actions.adoc[] for additional information. 
+* You have a connected app configured to access IDP.
++
+See xref:idp::automate-document-processing-with-rpa.adoc[] for configuration instructions. 
+
+== Properties
+
+This action step has no properties other than *Common* and *Timing*. See xref:common-properties.adoc[] for further details. 
+
+== Inbound Variables
+
+* *Directory Path*
++
+Path to the directory where the file to submit is located
+* *File Name*
++
+Name of the file to submit
+* *Client ID*
++
+Client ID of the connected app configured to call IDP
+* *Client Secret*
++
+Client Secret of the connected app configured to call IDP
+* *Connected App Credentials*
++
+Pin credentials containing the Client ID and Client Secret of the connected app configured to call IDP
+* *Execution ID*
++
+Execution ID of the document processing operation
+
+== Outbound Variables
+
+* *Success*
+* *ExecutionID*
+
+[[wizard]]
+== Wizard
+
+Start by selecting the *Action* and the *Action Version* to call from IDP. These lists populate with the available document actions published by your organization in IDP. 
+
+Then, specify the *Directory path* and *File name* of the file to submit to IDP for processing with the selected document action. 
+
+Finally, specify the connected app credentials to use when connecting to IDP.  Either use the previously configured Pin credentials or specify the *Client ID* and *Client Secret* manually in the wizard. 
+
+== See Also 
+
+* xref:toolbox-mulesoft-idp-retrieve-results-from-mulesoft-idp.adoc[]
+* xref:access-management::managing-permissions.adoc[]

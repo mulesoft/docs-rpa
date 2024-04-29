@@ -1,0 +1,32 @@
+
+
+= Clear Web Element
+
+This _Web Automation_ object is used to clear the content of fields on a
+website or in a web application. _Clear Element_ can be used on text
+entry fields. It does not have any additional properties or wizard
+functions.
+
+== Properties
+
+*Webelement Find Options*
+
+* *Screenshot The recorded screenshot is displayed here.*
+* *Use Regex to find Window (Enable Regex) Use this function if you want
+to use Regex when searching the window.*
+
+Other Properties that are the same in all Action Steps in the _Web
+Automation_ are described in the section on
+*Common Properties*. For reasons of clarity they are not shown here.
+
+== Inbound Variables
+
+//link:\l[*Element XPath*]
+*Element XPath*
+
+//link:\l[*Window Title*]
+*Window Title*
+
+== Outbound Variables
+
+The Action Step _Clear Element_ possesses no outbound variables.
