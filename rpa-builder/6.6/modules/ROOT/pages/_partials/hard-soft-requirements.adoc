@@ -57,6 +57,6 @@ The operating system can block the execution of certain files. Ensure that all e
 [%header%autowidth.spread]
 |===
 |Application |Version
-|RPA Recorder | 6.4.0 and later
+|RPA Recorder | 6.6.0 and later
 |RPA Bot | 1.0.0 and later
 |===
