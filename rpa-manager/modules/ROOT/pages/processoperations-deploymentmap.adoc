@@ -71,7 +71,7 @@ To show the complete map again, click *Reset Filters*.
 
 == Manage Configuration Executions
 
-The actions *Start*, *Deploy*, *Pause*, *Continue*, and *Revoke process* refer to a single configuration-bot combination. The action does not change identical configurations that are deployed to a different bot or different configurations that are deployed to the same bot.
+The actions *Start*, *Deploy*, *Run Process Now*, *Pause*, *Continue*, and *Revoke process* refer to a single configuration. The action does not change identical configurations that are deployed to a different bot or different configurations that are deployed to the same bot.
 
 . Open the *Deployment Map* view in the *Process Operations* module.
 . Click on a process configuration element in the network and select the appropriate action from the context menu.

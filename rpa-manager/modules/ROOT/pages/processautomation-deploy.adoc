@@ -4,9 +4,13 @@ The third phase of process automation is the *Test* phase. In this phase, you ca
 
 When the tests are successful, transition to *Production* phase.
 
-The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase, except that in the production phase, you don't have to start the individual process runs manually. Instead, you can do either of the following:
-* Schedule a process run configuration that is executed automatically at defined times. 
-* Create an invocable run configuration and publish it to Anypoint Exchange.
+The  *Production* phase is the final phase in the life cycle of a process. 
+
+You have three options how to run processes:
+
+* Create and deploy a **Scheduled Run Configuration** to run the process automatically at defined times. 
+* Create and publish an **Invocable Run Configuration** to use it within other Salesforce products.
+* Create an **On-Demand Run Configuration** to start the process run manually.
 
 You can run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
@@ -19,12 +23,12 @@ You can run processes openly in existing console sessions or run them hidden in 
 |Action |RPA Permission |Deprecated RPA Permission
 
 |Open the *Process Automation* module.
-||RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
 |===
 
-* At least one RPA Bot must be installed to deploy a process.
+* At least one RPA Bot must be installed to deploy or publish a process.
 ** Be aware that bots can reside in different time zones.
 * If you want to use the values of xref:processautomation-prepare-deployment-variable.adoc[global variables] or xref:processautomation-prepare-deployment-credential.adoc[credentials] as initial values for activity parameters, an RPA administrator must create them in the *Global Variables* or *Credential Pool* view first.
 * A project in test or production phase must exist in the *Project Management* view of the *Process Automation* module.
@@ -146,7 +150,17 @@ To view the test results and to download an analysis package:
 
 == Deploy a Process Automation
 
-Transition the project to the production phase to deploy a scheduled run configuration to a bot. The process runs fully automated from now on.
+Transition the project to the production phase to deploy a run configuration to a bot. The process runs fully automated from now on.
+
+Sometimes it's necessary to start a process manually when something happens that can only be evaluated by a human. For example, the goods inwards inspection process can only be started once the banana delivery ship reaches the pier wall. For this purpose, use the *Run Now* option.
+
+You have three options how to run processes:
+
+* Create and deploy a **Scheduled Run Configuration** to run the process automatically at defined times. 
+* Create and publish an **Invocable Run Configuration** to use it within other Salesforce products.
+* Create an **On-Demand Run Configuration** to start the process run manually.
+
+You can run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
 Pause or revoke configurations to stop the execution temporarily. Transition the project back to the build phase to change the implementation.
 
@@ -166,18 +180,31 @@ Transition the tested process to production phase for running it fully automatic
 [[production-configuration]]
 === Create a Run Configuration
 
-To create a run configuration:
+A run configuration consists of a name, a description, initial values for the Activity Parameters, one or more Bots and conditions for deployment of the automation with this configuration. 
+
+There are three types of run configurations: 
+
+* **Scheduled run configurations** define intervals for the runs.
+* **Invocable run configurations** are called from other products. Automations can have one invocable run configuration.
+* **On-demand run configurations** are started manually.
+
+You can publish an invocable run configuration after you save it.
+
+You can create a new configuration or <<copy-run-config, copy>> an existing one.
+
+To create a new run configuration:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
-. Click *Create run configuration*.
-. Complete the *Create production configuration* form:
+. Click *New* > *<Type> Run Configuration*.
+. Complete the *Create production configuration* form. The shown parameters depend on the configuration type:
 +
 * *Settings*
 +
 ** *Priority*
 +
 Enter a number between 1 and 200 to specify the priority of the process run. Deployed processes are inserted in a session queue according to their priority. Process configurations with lower numbers are considered higher priority and are executed before configurations of lower priority.
+Invocable and on-demand run configurations always have highest priority.
 * *Activity Parameter*
 +
 The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clicking on the relevant field in the *Value* column.
@@ -209,9 +236,24 @@ The bot can overtake the console or RDP session only if the specified user is lo
 Bots running an earlier version than 1.2.0 overtake an open console session without checking if the logged-in user matches the specified user.
 +
 [[runconfig-execution-enabletaskbar]] If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
-* *Process Trigger Execution*:
+* *Schedule*:
 +
-The productive run is carried out continuously within a fixed schedule. For each schedule, you can define time intervals within which the process is executed.
+Invocable and on-demand run configurations don't have schedules.
++
+For a scheduled run configuration, choose the schedule type:
++
+** *Intervals*
++
+Enter the interval to repeat the process.
++
+** *Cron expression*
++ 
+//To do: add link to Cron partial
+Enter a Cron expression to repeat the process.
++
+** *Calendar Scheduling*
++
+Add one or more fixed schedules within which the productive run is carried out continuously. For each schedule, define time intervals within which the process is executed. RPA Manager combines all schedules to compute the execution times.
 +
 You create a schedule without specifying a time zone. The bot you assign the production configuration to executes the process at the specified times in its local time. The time intervals might change, depending on daylight saving time.
 +
@@ -256,7 +298,27 @@ When you select a bot, ensure that it is configured for the required session typ
 +
 If one of the selected bots is not configured appropriately, RPA Manager displays a notification, and you can't proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information about the cause of the warning or error in the form of a tooltip.
++ 
+Set the number of Secure Sessions for each bot. On-demand run configurations have only one session.
 . Click *Save*.
+
+[[copy-run-config]]
+=== Copy a Run Configuration
+
+Copy a run configuration if you need to change only a few parameters.
+
+You can also copy a scheduled or an invocable run configuration as an on-demand run configuration.
+
+To copy a run configuration:
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of a project to open it.
+. Click the *Copy* icon (image:copy-icon.png[copy symbol,1.5%,1.5%]) in the table row of the run configuration you want to copy.
+. Select the type of the copy.
+. Enter a new name for the copy of the run configuration. The copy contains all assets of the original. For on-demand run configurations, the number of sessions of all bots is set to 1.
+. Click *OK*.
+
+You can edit the copy after saving. 
 
 === Deploy Configurations
 
@@ -266,8 +328,24 @@ Deploy configuration to run them fully automatically in a productive environment
 . Click on the name of a project to open it.
 . Click *Select action*.
 . From the dropdown, select *Deploy process*.
-. In the window *Select Configuration to deploy*, check all configurations you want to run.
+. In the window *Select Configuration to deploy*, check all configurations to run.
 . Click *Execute*.
+
+[[trigger-run-once]]
+=== Run a Configuration Once
+
+The configuration to run once must either be invokable or marked as <<run-once-tag, *Start Manually*>>.
+
+To start the single process run:
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of a project to open it.
+. Click *Select action*.
+. From the dropdown, select *Run once*.
+. In the window *Select Configuration to Run once*, check all configurations to run.
+. Click *Execute*.
+
+The run starts directly. If an invokable configuration is triggered at the same time using the same session, the run waits for the invokable run to be completed before starting.
 
 [[view-run-results]]
 === View Run Results
@@ -322,7 +400,7 @@ To create an invocable run configuration:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
-. Click *Create an invocable run configuration*.
+. Click *New* > *Invocable Run Configuration*.
 . Complete the *Create production configuration* form:
 +
 * *Activity Parameter*:
