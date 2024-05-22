@@ -51,7 +51,7 @@ When a project manager clicks the icon *Start automation* for a process in the *
 
 To automate a process already evaluated with a third-party tool, you can create an automation project inside a category directly in the *Process Automation* module:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category in which you want to create the new project.
 . In the *<category name>* view, click *Create*.
 . [[form-createprocess]] Complete the form *Create process*:
@@ -67,7 +67,7 @@ A copy of an automation project contains all information from the original proje
 
 Copy a project to automate a similar process more quickly:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project that you want to copy.
 . In the *<category name>* view, click *Copy* (image:copy-icon.png[copy symbol,1.5%,1.5%])on the panel of the project you want to copy.
 . Check and edit the form *Copy process*:
@@ -92,7 +92,7 @@ Only after the copy process completes, the following actions are possible:
 
 Edit an automation project to update it:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) on the panel of the project to edit.
 . Check and edit the form *Copy process*:
@@ -104,7 +104,7 @@ For an explanation of the properties, see <<form-createprocess, *Create process*
 
 Change the owner of a process to represent changed responsibilities:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *New Process Owner* (image:newprocessowner-icon.png[user-with-crown symbol,1.5%,1.5%]) on the panel of the project for which you want to change the process owner.
 . In the window *New process owner*, select a user.
@@ -118,7 +118,7 @@ The previous process owner is removed from the process team independent of their
 
 Change the manager of a project to represent changed responsibilities:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *New Project Manager* (image:newprojectmanager-icon.png[user-with-tie symbol,1.5%,1.5%]) on the panel of the project for which you want to change the project manager.
 . In the window *New project manager*, select a user.
@@ -137,7 +137,7 @@ The *Delete* icon is only displayed if the logged-in user is the project's manag
 
 To remove a project:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) on the panel of the project to remove.
 . Confirm the prompt.
@@ -169,7 +169,7 @@ Whether a process board should be created for a process is usually decided by th
 
 To open a process board:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *Open process board* (image:processboard-icon.png[column symbol,1.5%,1.5%]) on the project panel or in an already opened project.
 
@@ -234,7 +234,7 @@ If you enabled the creation of automatically generated tasks for the phase trans
 
 Open the xref:processoperations-financeanalysis.adoc[*Finance Analysis* view] to record, monitor, and analyze the financial aspects of a process:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *Finance Analysis* (image:financeanalysis-icon.png[analytics graph symbol,1.5%,1.5%]) on the panel of the project you want to analyze.
 
@@ -244,7 +244,7 @@ Once it's ready, transition the project to the next phase of its life-cycle. You
 
 === Transition to the Next Phase
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click the name of a project.
 . If the project uses a process board with automatic phase release tasks, complete that task to enable the transition.
@@ -252,7 +252,7 @@ Once it's ready, transition the project to the next phase of its life-cycle. You
 
 === Transition to a Previous Phase
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click the name of a project.
 . In the header, click *Back <phase name>*.
