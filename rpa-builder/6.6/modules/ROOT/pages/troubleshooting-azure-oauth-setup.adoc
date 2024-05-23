@@ -1,0 +1,77 @@
+= Troubleshooting Microsoft Azure Setup
+
+If you have issues configuring your Azure account with Mail Session (Outlook with OAuth), follow these troubleshooting steps to ensure your app is properly registered and configured:
+
+. <<register-app>>
+. <<create-secret>>
+. <<verify-settings>>
+. <<add-permissions>>
+
+[[register-app]]
+== Register an App in Azure
+
+. Navigate to https://portal.azure.com/ and log in with your Azure account. 
+. Open the *App Registrations* page and create a new registration. 
+** Select the supported account types. 
+** Provide a Redirect URI.
+
+For additional instructions about registering apps in Azure, see https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications#register-a-web-application[Azure: Register a web application].
+
+[[create-secret]]
+== Create a Client Secret for the App
+
+After registering an app in Azure, the app's setting page opens.
+
+. Open the *Certificates & Secrets* page.
+. Create a new client secret.
++
+[WARNING]
+After creating the secret, ensure you copy its *Value* as this is the only time you can see it. After you leave this page, the secret is not accessible anymore. 
+
+For additional instructions about creating client secrets, see https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications#create-a-client-secret[Azure: Create a client secret].
+
+In some cases, authentication might not work if you have more than one secret defined or use the 24 month expiration cycle. When your authentication in RPA Builder doesn't work, try deleting all client secrets in your Azure app and adding a new client secret with an expiration cycle of 6 months. 
+
+[[verify-settings]]
+== Verify the Settings
+
+After registering the app and creating a client secret, open the app's *Overview* page and ensure you have: 
+
+* One secret under *Client Credentials*
+* One *Redirect URI*
+
+If you created a Single-tenant app, locate the tenant ID for further use in the Mail Session (Outlook with OAuth) configuration. 
+
+Depending on the account type you selected when registering your app (Single or Multi tenant), the *OAuth Host* you configure in Mail Session (Outlook with OAuth) changes:
+
+* Multitenant: Specify `+https://login.microsoftonline.com/common/oauth2/v2.0/+` as the *OAuth Host* URL.
+* Single tenant: Specify `+https://login.microsoftonline.com/{{YOUR_TENANT_ID}}/oauth2/v2.0/+` as the *OAuth Host* URL.
+
+[[add-permissions]]
+== Add Permissions to the App 
+
+After registering your app and creating its client secret, configure permission settings:
+
+. Open *API Permissions* in the side bar. 
+. Click *Add a Permission* and select *Microsoft Graph*. 
+. Select *Delegated Permissions* and add the following permissions from the *OpenId permissions* category: 
+** `email`
+** `offline_access`
+** `openid`
+** `profile`
+. Select the appropriate permissions and protocols depending on your Workflow needs: 
++
+--
+** Category `Mail`
+** Category `IMAP`
+** Category `EWS`
+** Category `POP`
+** Category `SMTP`
+--
++
+If you are not sure which of these apply to your case, select all of them. 
+
+== See Also 
+
+* xref:toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[]
+* https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications[Azure Tutorial: Register a web application in Azure Active Directory B2C]
