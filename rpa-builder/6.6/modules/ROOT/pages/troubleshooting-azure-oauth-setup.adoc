@@ -14,6 +14,9 @@ If you have issues configuring your Azure account with Mail Session (Outlook wit
 . Open the *App Registrations* page and create a new registration. 
 ** Select the supported account types. 
 ** Provide a Redirect URI.
++
+For the configuration to work, you must specify a valid redirect URL, for example: `+http://localhost:49453/+`.
+
 
 For additional instructions about registering apps in Azure, see https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications#register-a-web-application[Azure: Register a web application].
 
