@@ -72,7 +72,7 @@ After registering your app and creating its client secret, configure permission 
 ** Category `SMTP`
 --
 +
-If you are not sure which of these apply to your case, select all of them. 
+If you don't know the permissions and protocols that apply to your case, select all of them. 
 
 == See Also 
 
