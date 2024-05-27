@@ -62,7 +62,7 @@ After registering your app and creating its client secret, configure permission 
 ** `offline_access`
 ** `openid`
 ** `profile`
-. Select the appropriate permissions and protocols depending on your Workflow needs: 
+. Select the appropriate permissions and protocols depending on your workflow needs: 
 +
 --
 ** Category `Mail`
