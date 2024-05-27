@@ -29,7 +29,7 @@ After registering an app in Azure, the app's setting page opens.
 . Create a new client secret.
 +
 [WARNING]
-After creating the secret, ensure you copy its *Value* as this is the only time you can see it. After you leave this page, the secret is not accessible anymore. 
+After creating the secret, ensure you copy its *Value* as this is the only time you can see it. After you leave this page, the secret is no longer accessible. 
 
 For additional instructions about creating client secrets, see https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications#create-a-client-secret[Azure: Create a client secret].
 
