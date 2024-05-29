@@ -1,16 +1,16 @@
 = Managing Automations
 
-An RPA project consists of a business process to be automated and a team that is responsible for the automation.
+An RPA project consists of a business process to automate and the team responsible for the automation.
 
-When a project manager clicks the icon *Start automation* for a process in the *My Backlog* view of the *My RPA* module, RPA Manager creates a project for the automation of the process.
+When a project manager clicks *Start automation* for a process in the *My Backlog* view of the *My RPA* module, RPA Manager creates a project for the process automation.
 
-To automate a process already evaluated with a third-party tool, a project manager can alternativelely create an automation project directly in the following RPA Manager views:
+To automate a process already evaluated with a third-party tool, a project manager can alternatively create an automation project directly in the following RPA Manager views:
 
-* RPA Home
-* My RPA > My Processes
-* Process Evaluation > Process Evaluation
-* Process Automation > Process Management
-* Process Automation > Process Management > <Category>
+* *RPA Home*
+* *My RPA* > +My Processes*
+* *Process Evaluation* > *Process Evaluation*
+* *Process Automation* > *Process Management*
+* *Process Automation* > *Process Management* > *<Category>*
 
 The *Process Management* view shows the projects organized by category.
 
@@ -248,16 +248,16 @@ Open the xref:processoperations-financeanalysis.adoc[*Finance Analysis* view] to
 
 == Transition an Automation Project to Another Phase
 
-Once it's ready, transition the project to the next phase of its life-cycle. You can always transition back to change the project's design or implementation.
+Once it's ready, transition the project to its next lifecycle phase. You can always transition back to change the automation design or implementation.
 
-In the **Design** phase, you can do the following:
+In the *Design* phase, you can do the following:
 
 * Create or change a process model in RPA Manager.
 +
-Already implemented activities don’t lose their implementation if you don’t delete them. 
+Already implemented activities retain their implementation unless you delete them. 
 * Transfer the automation containing the new or changed models to the Build Phase.
 
-In the **Build** phase, in RPA Builder, you can do the following:
+In the *Build* phase, in RPA Builder, you can do the following:
 
 * Download the model from RPA Manager.
 * Change the model.
@@ -268,13 +268,13 @@ In the **Build** phase, in RPA Builder, you can do the following:
 There is always only one version of a process in the repository in RPA Manager. There might be another local version in RPA Builder. If you accidentally deleted an already implemented Activity, you might still be able to find it in RPA Builder - as long as you do not overwrite the model by downloading.
 * Transfer the automation back to the Design phase.
 +
-Already implemented activities don’t lose their implementation if you don’t delete them. 
+Already implemented activities retain their implementation unless you delete them.
 * Transfer the automation on to the Test phase.
 
-In the **Test** phase, you can do the following:
+In the *Test* phase, you can do the following:
 
 * Test the implemented process model in different configurations. 
-* Transfer the automation back to Build phase to change the implementation.
+* Transfer the automation back to the build phase to change the implementation.
 +
 You can reuse or edit the test run configurations when you transfer the automation to the Test phase again. 
 * When the tests are successful, transfer the automation to the Production phase.
@@ -283,9 +283,9 @@ If the project has been transferred at least once to the production phase and de
 
 In the *Production* phase, you can do the following. 
 
-* Create and deploy a **Scheduled Run Configuration** to run the process automatically at defined times. 
-* Create and publish an **Invocable Run Configuration** to use it within other Salesforce products.
-* Create an **On-Demand Run Configuration** to start the process run manually.
+* Create and deploy a *Scheduled Run Configuration* to run the process automatically at defined times. 
+* Create and publish an *Invocable Run Configuration* to use it within other Salesforce products.
+* Create an *On-Demand Run Configuration* to start the process run manually.
 * If you use activities from the Activity Library, you can xref:processoperations-upcomingprocesschanges.adoc[change the deployed version] in the *Upcoming Process Changes* view of the *Process Operations Module*.
 * Transfer the automation back to the Test phase.
 +
