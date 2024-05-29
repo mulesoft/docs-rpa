@@ -7,7 +7,7 @@ When a project manager clicks *Start automation* for a process in the *My Backlo
 To automate a process already evaluated with a third-party tool, a project manager can alternatively create an automation project directly in the following RPA Manager views:
 
 * *RPA Home*
-* *My RPA* > +My Processes*
+* *My RPA* > *My Processes*
 * *Process Evaluation* > *Process Evaluation*
 * *Process Automation* > *Process Management*
 * *Process Automation* > *Process Management* > *<Category>*
@@ -250,19 +250,21 @@ Open the xref:processoperations-financeanalysis.adoc[*Finance Analysis* view] to
 
 Once it's ready, transition the project to its next lifecycle phase. You can always transition back to change the automation design or implementation.
 
-In the *Design* phase, you can do the following:
-
+Design phase::
++
+--
 * Create or change a process model in RPA Manager.
 +
 Already implemented activities retain their implementation unless you delete them. 
 * Transfer the automation containing the new or changed models to the Build Phase.
 
-In the *Build* phase, in RPA Builder, you can do the following:
+Build phase::
 
 * Download the model from RPA Manager.
 * Change the model.
 * Implement the activities.
-* If you want to version workflows, create and reuse activities in the Activity Library.
++
+If you want to version workflows, create and reuse activities in the Activity Library.
 * Upload the changed and implemented model to the repository in RPA Manager. 
 +
 There is always only one version of a process in the repository in RPA Manager. There might be another local version in RPA Builder. If you accidentally deleted an already implemented Activity, you might still be able to find it in RPA Builder - as long as you do not overwrite the model by downloading.
