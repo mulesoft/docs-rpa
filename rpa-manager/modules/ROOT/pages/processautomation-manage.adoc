@@ -267,8 +267,8 @@ Build phase::
 +
 If you want to version workflows, create and reuse activities in the Activity Library.
 * Upload the changed and implemented model to the repository in RPA Manager. 
-+
-There is always only one version of a process in the repository in RPA Manager. There might be another local version in RPA Builder. If you accidentally deleted an already implemented Activity, you might still be able to find it in RPA Builder - as long as you don't overwrite the model by downloading the newer one from RPA Manager.
+Only one version of a process exists in the repository in RPA Manager. If you accidentally delete an already implemented activity, a local version might be available in RPA Builder — as long as you don't overwrite the model by downloading.
+Only one version of a process exists in the repository in RPA Manager. There might be another local version in RPA Builder. If you accidentally deleted an already implemented Activity, you might still be able to find it in RPA Builder - as long as you don't overwrite the model by downloading the newer one from RPA Manager.
 * Transition the automation back to the design phase.
 +
 Already implemented activities retain their implementation unless you delete them.
@@ -280,9 +280,9 @@ Test phase::
 * Transition the automation back to the build phase to change the implementation.
 +
 You can reuse or edit the test run configurations when you transition the automation back to the test phase. 
-* When the tests are successful, transition the automation to the Production phase.
+* When the tests succeed, transfer the automation to the production phase.
 +
-After the project is deployed to an RPA Bot for processing in the production phase, you can no longer delete it.
+After the project has been deployed to an RPA Bot for processing in the production phase, you can no longer delete it.
 
 Production phase:: 
 
