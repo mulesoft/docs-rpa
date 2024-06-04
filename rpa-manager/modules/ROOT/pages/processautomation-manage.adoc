@@ -256,7 +256,7 @@ Design phase::
 * Create or change a process model in RPA Manager.
 +
 Already implemented activities retain their implementation unless you delete them. 
-* Transition the automation containing the new or changed models to the build Phase.
+* Transition the automation containing the new or changed models to the build phase.
 --
 
 Build phase::
@@ -267,8 +267,7 @@ Build phase::
 +
 If you want to version workflows, create and reuse activities in the Activity Library.
 * Upload the changed and implemented model to the repository in RPA Manager. 
-Only one version of a process exists in the repository in RPA Manager. If you accidentally delete an already implemented activity, a local version might be available in RPA Builder — as long as you don't overwrite the model by downloading.
-Only one version of a process exists in the repository in RPA Manager. There might be another local version in RPA Builder. If you accidentally deleted an already implemented Activity, you might still be able to find it in RPA Builder - as long as you don't overwrite the model by downloading the newer one from RPA Manager.
+Only one version of a process exists in the repository in RPA Manager. If you accidentally delete an already implemented activity, a local version might be available in RPA Builder — as long as you don't overwrite the model by downloading the newer one from RPA Manager.
 * Transition the automation back to the design phase.
 +
 Already implemented activities retain their implementation unless you delete them.
@@ -307,6 +306,7 @@ After an automation project is ready, transition it to the next phase. RPA Manag
 === Transition to a Previous Phase
 
 To rework an automation project, transition it to a previous phase. RPA Manager retains your previously configured elements from each phase.
+
 . Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click the name of a project.
