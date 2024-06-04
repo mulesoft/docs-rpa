@@ -285,9 +285,9 @@ After the project has been deployed to an RPA Bot for processing in the producti
 
 Production phase:: 
 
-* Create and deploy a *Scheduled Run Configuration* to run the process automatically at defined times. 
-* Create and publish an *Invocable Run Configuration* to use it within other Salesforce products.
-* Create an *On-Demand Run Configuration* to start the process run manually.
+* Create and deploy a scheduled run configuration to run the process automatically at defined times. 
+* Create and publish an invocable run configuration* to use it within other Salesforce products.
+* Create an on-demand run configuration to start the process run manually.
 * If you use activities from the Activity Library, you can xref:processoperations-upcomingprocesschanges.adoc[change the deployed version] in the *Upcoming Process Changes* view of the *Process Operations Module*.
 * Transition the automation back to the test phase.
 +
