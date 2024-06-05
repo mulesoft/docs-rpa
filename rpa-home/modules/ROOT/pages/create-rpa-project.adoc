@@ -33,9 +33,7 @@ Create a project from the RPA Manager home page:
 . Open the *Home* module of RPA Manager.
 . Click the quick link *New Process or Evaluation*.
 . Click *Process*.
-. Complete the form *New Process*:
-+
-include::rpa-manager::partial$form-automationproject.adoc[]
+. Complete the <<process-project-data, *New Process* form>>.
 . Click *Start Automation*.
 
 == Create a Project by Starting Automation from an Approved Evaluation
@@ -51,10 +49,13 @@ To create a new project from any of the views listed at the beginning of this ar
 
 . Open the view.
 . Click *New Process*.
-. Complete the form *New Process*:
-+
-include::rpa-manager::partial$form-automationproject.adoc[]
+. Complete the <<process-project-data, *New Process* form>>.
 . Click *Start Automation*.
+
+[[process-project-data]]
+== Process Project Data
+
+include::rpa-manager::partial$form-automationproject.adoc[]
 
 == See Also
 
