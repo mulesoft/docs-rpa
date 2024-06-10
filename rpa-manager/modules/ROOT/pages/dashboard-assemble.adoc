@@ -6,15 +6,15 @@ Arrange important widgets on a dashboard.
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Dashboard* module
+|Open the *Dashboard* module.
 |RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Dashboard Open
 
-|Manage dashboards
+|Manage dashboards.
 |RPA Operations Manager, RPA Administrator
 |Dashboard Administration
 

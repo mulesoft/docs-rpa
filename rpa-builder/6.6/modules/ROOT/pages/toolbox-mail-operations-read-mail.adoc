@@ -1,0 +1,151 @@
+= Read Mail
+
+Use the _Read Mail_ action step, to read the mails from a mailbox. You can restrict the results using the filter function to simplify the search. All the contents of the read mail become available as outbound variables.  
+
+This action step works similarly to the Excel Controlled Loop
+and bundles other action steps, which enable you to further process the mails.
+
+Read Mail works only within a Mail Session, where you specify the information required for the connection to the mail server.
+
+The following filter functions are available:
+
+* Body
+* Mail info
+* Read/ Unread
+* Recipient (To:)
+* Recipient (Cc:)
+* Sender
+* Subject
+* Text Search
+
+Read Mail supports the following encodings: UTF-8, UTF-16, Shift-JIS, and EUC-JP. 
+
+== Properties
+
+*Read Mail Settings*
+
+*Attachment folder path* Path to the folder in which the attachments of the mails are saved.
+
+*Body* Text to be contained in the body of the mail.
+
+*Create attachment folder* If a checkmark is set here, a folder is
+created if it did not already exist. In this folder, the attachments
+from the mails are saved.
+
+*Folder name* Name for the folder that is specified in the Read Mail action step under _Inbox Folder Name_.
+
+You should ensure that the folder really exists in the mailbox you
+specified in the Mail Session.
+
+If you have selected the IMAP protocol in the Mail Session and you wish
+to call up a subfolder of the inbox, you must always specify the
+complete path under Folder Name, e.g. Inbox/MuleSoft/Alerts.
+
+If the folder MuleSoft is on the same level as the _Inbox_, then
+MuleSoft/Alerts would be sufficient as the path name.
+
+Regardless of the language configured in your Outlook version, with IMAP, the path must always begin with `Inbox`.
+
+POP3, however, does not support the folder structure in the inbox so you
+cannot specify a folder there.
+
+*Mail info* The ID of a specific mail that originates from a different Read Mail action step and can be
+incorporated here as an inbound variable.
+
+*Maximum emails to read* Displays the number of mails to be read. You can read up to 99 mails.
+
+*Read* Only those mails that have already been read are displayed.
+
+*Recipient (Cc:)* The recipient address is sought in the Cc.
+
+*Recipient (To:)* The recipient address is sought.
+
+*Save attachments* If the checkbox is selected, the attachments of the
+mails that were found are saved in the specified folder. A separate
+folder is generated for each mail. The path to this subfolder is
+available as an outbound variable.
+
+*Sender* The entered text is to be contained in the sender address.
+
+*Sort mode* (Default: Newest first) Specifies the order in which the
+found mails are sorted. You can choose between Newest first and Oldest
+first.
+
+*Subject* Here, the text is sought only in the subject of the mail.
+
+*Text search* This text is sought in the entire mail.
+
+*Unread* Only unread mails are displayed.
+
+== Inbound Variables
+
+//link:#AS_ReadMail_P_FolderName[*Folder Name*]
+*Folder name* Name for the folder that is specified in the Read Mail action step under _Inbox Folder Name_.
+
+//link:#AS_ReadMail_P_Body[*Body*]
+*Body* Text to be contained in the body of the mail.
+
+//link:#AS_ReadMail_P_MailInfo[*Mail Info*]
+*Mail info* The ID of a specific mail that originates from a different Read Mail action step and can be
+incorporated here as an inbound variable.
+
+//link:#AS_ReadMail_P_RecipientTo[*Recipient (To:)*]
+*Recipient (To:)* The recipient address is sought.
+
+//link:#AS_ReadMail_P_RecipientCc[*Recipient (Cc:)*]
+*Recipient (Cc:)* The recipient address is sought in the Cc.
+
+//link:#AS_ReadMail_P_Sender[*Sender*]
+*Sender* The entered text is to be contained in the sender address.
+
+//link:#AS_ReadMail_P_Subject[*Subject*]
+*Subject* Here, the text is sought only in the subject of the mail.
+
+//link:#AS_ReadMail_P_TextSearch[*Text Search*]
+*Text search* This text is sought in the entire mail.
+
+//link:#AS_ReadMail_P_MaxEmailsToRead[*Maximum emails to read*]
+*Maximum emails to read* Displays the number of mails to be read. You can read up to 99 mails.
+
+//link:#AS_ReadMail_P_AttachmentFolderPath[*Attachment folder path*]
+*Attachment folder path* Path to the folder in which the attachments of the mails are saved.
+
+
+== Outbound Variables
+
+*IsSucceeded* Indicates whether filtering of the mails was successful.
+
+*Sender* Specifies the sender of the current iterated mail.
+
+*Recipients* Specifies the recipient of the current iterated mail.
+
+*Cc* Specifies the Carbon Copy recipient of the current iterated mail.
+
+*Subject* Specifies the subject of the current iterated mail.
+
+*BodyText* Specifies the HTML text body of the current iterated mail.
+If this is not available, only the text of the mail is specified.
+
+*AttachmentsLocalFolder* Specifies the current subfolder for the
+attachments of the current iterated mail.
+
+*Date* Specifies the receipt date of the current iterated mail.
+
+*MailCount* Indicates how many mails were found in total.
+
+== Wizard
+
+////
+image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=273,height=328]
+
+Use the button image:media\image2.png[image,width=118,height=19] to
+select the filters.
+
+image:media\image3.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=270,height=393]
+
+If the checkbox image:media\image4.png[image,width=186,height=18] is
+selected, and no folder exists, then a folder is created automatically.
+
+You can find further explanations under link:#properties
+////
+See <<Properties>>.

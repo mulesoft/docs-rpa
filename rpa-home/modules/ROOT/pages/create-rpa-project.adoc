@@ -1,0 +1,61 @@
+= Create an RPA Project
+
+An RPA project consists of a business process to be automated and a team that is responsible for the automation.
+
+You can create projects in the following *RPA Manager* views:
+
+* *RPA Home*
+* *My RPA* > *My Backlog*
+* *My RPA* > *My Processes*
+* *Process Evaluation* > *Process Evaluation*
+* *Process Automation* > *Process Management*
+* *Process Automation* > *Process Management* > *<Category>*
+
+
+== Before You Begin
+
+* Ask an organization administrator in Access Management to assign you the required permissions:
++
+[%header, cols="1,1,1"]
+|===
+|Action |RPA Permission |Deprecated RPA Permission
+
+|Start the automation of a process.
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
+|Process Automation Open, Process Create
+
+|===
+
+== Create a Project From RPA Home
+
+Create a project from the RPA Manager home page:
+
+. Open the *Home* module of RPA Manager.
+. Click the quick link *New Process or Evaluation*.
+. Click *Process*.
+. Complete the form *New Process*:
++
+include::rpa-manager::partial$form-automationproject.adoc[]
+. Click *Start Automation*.
+
+== Create a Project by Starting Automation from an Approved Evaluation
+
+The standard way of automating a process begins with evaluating the feasibility and benefits of the process automation in the *Process Evaluation* module. 
+RPA Manager shows approved processes in the backlog views of the *My RPA* module.
+
+Learn how to start the automation of approved processes from there in topic xref:rpa-manager::myrpa-start.adoc[Starting Automation of Approved Processes].
+
+== Create a Project From Other Views
+
+To create a new project from any of the views listed at the beginning of this article:
+
+. Open the view.
+. Click *New Process*.
+. Complete the form *New Process*:
++
+include::rpa-manager::partial$form-automationproject.adoc[]
+. Click *Start Automation*.
+
+== See Also
+
+xref:rpa-manager::processautomation-prepare-project.adoc[]

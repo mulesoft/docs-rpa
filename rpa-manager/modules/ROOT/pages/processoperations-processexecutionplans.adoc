@@ -12,15 +12,15 @@ Processes are executed if following prerequisites are fulfilled:
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Process Execution Plans* view and see all processes for which you are part of the process team
+|Open the *Process Execution Plans* view and see all processes for which you are part of the process team.
 |RPA Operations Viewer, RPA Operations Manager, RPA Administrator
 |Process Execution Plans Open
 
-|Open the *Process Execution Plans* view and see all processes of all teams
+|Open the *Process Execution Plans* view and see all processes of all teams.
 |RPA Operations Manager, RPA Administrator
 |Global Process Execution Plans View
 

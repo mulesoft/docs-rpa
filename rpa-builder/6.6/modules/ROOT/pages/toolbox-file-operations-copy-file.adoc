@@ -1,0 +1,107 @@
+= Copy File
+
+This _Action Step_ copies a file from one directory to another. If the
+file to be copied if not available or the copied file is already located
+in the destination folder, an error message will interrupt the
+_Workflow_.
+
+== Properties
+
+*File Operation Settings:*
+
+* *Create directory if it does not exist* If this option is enabled,
+Copy File creates either the specified relative directory or the
+whole specified path, if this does not already exist.
+* *Destination directory* Enter the path to the target directory where the copied file
+is to be saved here. You can specify an absolute or relative path. If a
+relative path is used, then the path relates to the _Base Path_
+variable.
+* *Directory path* This is
+where you enter the path to the directory where the file to be copied
+from. You can specify an absolute or relative path. If a relative path
+is used, then the path relates to the _Base Path_ variable.
+* *File Name* The name of the file to copy.
++
+This field does not support placeholders. For further information, see xref:toolbox-file-operations.adoc#invalid-characters[Path / file name / invalid characters].
+* *New File Name* Enter a new name for the file that is to be inserted.
+This option will only be reported if the option *Use different file
+name* has been selected.
+* *Overwrite existing file* This option enables you to overwrite an
+existing file with the same name in the destination folder.
+* *Use different file name* Selecting this option means that the copied
+file will be saved under a new name in the destination directory. Enter
+the new name in the *New File Name* field.
+
+// Other Properties that are the same in all Action Steps are described in
+// the section on *Common Properties*. For reasons of
+// clarity they are not shown here.
+
+== Inbound Variables
+
+* *Directory path* This is
+where you enter the path to the directory where the file to be copied
+from. You can specify an absolute or relative path. If a relative path
+is used, then the path relates to the _Base Path_ variable.
+
+* *File Name* Enter the name of the file that is to be copied here.
+
+* *Destination directory* Enter the path to the target directory where the copied file
+is to be saved here. You can specify an absolute or relative path. If a
+relative path is used, then the path relates to the _Base Path_
+variable.
+
+== Outbound Variables
+
+*IsCopied* The _Copy File.IsCopied_ variable indicates whether the file
+could be copied or not (True/False).
+
+*Destination directory* The _Copy File.Destination directory_ variable
+provides the path to the destination directory.
+
+*New File Name* The _Copy File.New file Name_ variable provides the
+copied file’s new name.
+
+*File name* The__Copy File.File Name__ variable provides the name of the
+copied file.
+
+*Directory path* The _Copy File.Directory Path_ variable provides the
+path to the source directory.
+
+== Wizard
+
+////
+More information about the environment variables (Insert Environment
+Variable) and script variables (Insert Script Variable) used below can
+be found under *Settings*.
+////
+* *Directory path* Specify the path to the file that is to be copied
+here.
+You can create an absolute path or a path relative to the _Base
+Path_.
+//using the image:media\image1.png[image,width=175,height=22] and image:media\image2.png[image,width=129,height=22] buttons.
+The initial value is %STWS_BASEPATH%.
+//Select an existing path using the image:media\image3.png[image,width=20,height=20] button.
+You can also insert variables from the _Workflow_ in order to construct the path. To
+do so, click on the pin and select one of the available variables.
+* *File name* Enter the name of the file that is to be copied here. You
+can also insert a variable from the Workflow as the _File Name_. To do
+so, click on the pin and select one of the available variables.
+* *Destination directory* Specify the destination path for the file that
+is to be copied. You can create an absolute path or a path relative to
+the _Base Path_.
+//using the image:media\image1.png[image,width=175,height=22] and image:media\image2.png[image,width=129,height=22] buttons.
+The initial value is %STWS_BASEPATH%.
+//Select an existing path using the image:media\image3.png[image,width=20,height=20] button.
+You can also insert variables from the _Workflow_ in order to construct the path. To
+do so, click on the pin and select one of the available variables.
+* *New file name* This field will only be shown if you have enabled the
+option *Use different file name for copy*. The wizard uses the file name
+of the source file and adds _copy at the end. You can also specify the
+new name for the copied file yourself. You can also insert a variable
+from the Workflow as the _New file name_. To do so, click on the pin and
+select one of the available variables.
+* *Overwrite existing file* If this option has not been enabled, an
+error message will interrupt the _Workflow_ if there is already a file
+with the same name in the destination directory. If this option has been
+enabled and the file already exists, the copied file will replace it and
+no acknowledgment will be given.

@@ -1,0 +1,13 @@
+= RPA Builder 6.5.5 Release Notes
+
+RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+This version is internal only. All of the features and fixed issues for this version are in version xref:rpa-home::release-notes/rpa-builder-6.5.6-release-notes.adoc[6.5.6].
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center^]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]

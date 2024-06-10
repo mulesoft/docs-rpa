@@ -10,14 +10,14 @@ If you use an RPA account to login to RPA Manager, the *Settings* view enables y
 
 * Ask an administrator to assign you the required privileges:
 +
-[cols="2,1"]
+[%header, cols="2,1"]
 |===
-|*Action* |*Privilege*
+|Action |Privilege
 
-|View configured settings for your organization
+|View configured settings for your organization.
 |Organization Management Open
 
-|Add or modify settings for your organization
+|Add or modify settings for your organization.
 |Organization Management Administration
 |===
 
@@ -61,4 +61,4 @@ The URL of your Anypoint Platform instance you connect to.
 
 == See Also
 
-* xref:processautomation-deploy.adoc#publish-automation-exchange[Publish a Process Automation to Anypoint Exchange]
+* xref:processautomation-deploy.adoc#publish-automation[Publish a Process Automation to Anypoint Exchange]

@@ -10,31 +10,31 @@ You create criteria and templates adapted to your needs.
 
 * Ask an organization administrator in Access Management to assign you the required permissions:
 +
-[cols="1,1,1"]
+[%header, cols="1,1,1"]
 |===
-|*Action* |*RPA Permission* | *Deprecated RPA Permission*
+|Action |RPA Permission |Deprecated RPA Permission
 
-|Open the *Process Evaluation* module
+|Open the *Process Evaluation* module.
 |RPA Evaluations Viewer, RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Process Evaluation Open
 
-|Manage the *Process Evaluation* module
+|Manage the *Process Evaluation* module.
 |RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Process Evaluation Administration
 
-|Open the *Evaluation Criteria* view
+|Open the *Evaluation Criteria* view.
 |RPA Evaluations Viewer, RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Evaluation Criteria Open
 
-|Create, change, and delete evaluation criteria
+|Create, change, and delete evaluation criteria.
 |RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Evaluation Criteria Create, Evaluation Criteria Edit, Evaluation Criteria Delete
 
-|Open the *Evaluation Templates* view
+|Open the *Evaluation Templates* view.
 |RPA Evaluations Viewer, RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Evaluation Templates Open
 
-|Create, change, and delete evaluation criteria
+|Create, change, and delete evaluation criteria.
 |RPA Evaluations Contributor, RPA Evaluations Manager, RPA Administrator 
 |Evaluation Template Create, Evaluation Template Edit, Evaluation Template Delete
 

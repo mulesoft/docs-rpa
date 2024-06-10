@@ -1,0 +1,89 @@
+= Installing and Starting RPA Recorder
+
+You can install RPA Recorder by manually downloading and running the installer or by starting the recorder from RPA Manager, which provides a link to download and install RPA Recorder.
+
+== Install RPA Recorder
+
+Download the latest RPA Recorder installer from the *Home* page of RPA Manager.
+
+Optionally, you can install RPA Recorder from the message prompt that shows in RPA Manager when you start the recording function.
+
+image:download-rpa-recorder-message.png[Download RPA Recorder message]
+
+[NOTE]
+Enable pop-ups from RPA Manager before downloading RPA Recorder.
+
+== Start RPA Recorder
+
+You can start RPA Recorder as a _standalone_ application or from _RPA Manager_ or _RPA Builder_.
+
+=== Standalone
+
+Start RPA Recorder by opening the application from the *Start* menu or by opening the application's executable file. When you start RPA Recorder as a standalone application:
+
+* RPA Recorder does not request RPA Manager credentials to start recordings.
+* You cannot upload recordings to RPA Manager, you can only save them locally.
+
+=== RPA Manager
+
+To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager. When you start RPA Recorder from RPA Manager:
+
+* RPA Recorder requires RPA Manager credentials to log in and start recordings.
+* You can upload recordings to RPA Manager.
+* You can update to the latest RPA Recorder version by clicking *Update Available* on the RPA Recorder home page. The option shows automatically when you log in if RPA Recorder detects that a later version is available.
+
+image:update-available.png[Update to latest RPA Recorder version]
+
+=== RPA Builder
+
+To start RPA Recorder, click *Record* from the xref:rpa-builder::workbench-toolbar-overview.adoc[Workbench Toolbar] or double-click the name of an xref:rpa-builder::toolbox-app-automation-app-session.adoc[App Session] or xref:rpa-builder::toolbox-web-automation.adoc[Web Session] in the Activity Workflow. When you start RPA Recorder from RPA Builder:
+
+* RPA Recorder does not request RPA Manager credentials to start recordings.
+* RPA Builder automatically generates the workflow or single App or Web Session.
+
+=== Log in to RPA Recorder with Anypoint
+
+If your organization supports Anypoint Identity Access Management (IAM), then follow these steps to log in:
+
+. Click Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manage to open RPA Recorder.
+. Provide your MuleSoft Anypoint login credentials for user authentication.
+
+image:anypoint-login.png[RPA Recorder Anypoint Login Screen]
+
+To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
+
+include::rpa-home::partial$anypoint-sso.adoc[leveloffset=+2]
+
+=== Log in to RPA Recorder (Legacy)
+
+If your organization does not support Anypoint IAM, then follow these steps to log in:
+
+. Click Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manage to open RPA Recorder.
+. Provide your login credentials for user authentication.
+
+image:rpa-recorder-login.png[RPA Recorder Legacy Login Screen, 50%, 50%]
+
+To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
+
+== Considerations for Process Recording
+
+Consider the following scenarios when recording processes with RPA Recorder to ensure the captured events are as accurate and robust as possible. 
+
+* *Recording applications started as an administrator*
+** To capture a process where you need to run an application as an administrator, you must run RPA Recorder as an administrator. Otherwise, RPA Recorder cannot capture the events from the application.
+** Because you cannot start RPA Recorder as an administrator from RPA Manager, this process works only when you start RPA Recorder in standalone mode by right-clicking the executable file or the shortcut and selecting *Run as Administrator*. 
+
+* *Record processes using a single screen*
+** If your setup uses multiple monitors, use only the screen where RPA Recorder shows the *Recording Toolbar* to capture the entire process. 
+** To prevent issues during the recording, avoid opening applications on a different screen or moving windows between screens. 
+
+* *Do not change system settings during a recording*
+** To prevent inaccuracies in the captured events, do not change any system settings (specially display settings such as screen resolution or scaling) while recording a process.  
+
+== See Also
+
+* xref:user-interface.adoc#settings[User Interface]
+* xref:rpa-builder::workbench-toolbar-overview.adoc[*Record* option in RPA Builder]
+* xref:rpa-builder::toolbox-app-automation-app-session.adoc[App Session in RPA Builder]
+* xref:rpa-builder::toolbox-web-automation.adoc[Web Session in RPA Builder]
+
