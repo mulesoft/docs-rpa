@@ -43,7 +43,7 @@ Since all the scientists at Mythical University travel a lot, you have to repeat
 
 You decide to get a bot to do this.   
 
-The following example shows, how you could automate the retrieving of the order ID from a PDF and the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards, are part of other examples.
+The following example shows how you could automate the retrieving of the order ID from a PDF and the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards, are part of other examples.
 
 ## Design a Model of the Process in RPA Manager
 
@@ -95,4 +95,9 @@ You find some details of implementation of the activities as _Workflows_ on the 
 
 ## See Also
 
-// Links to RPA Manager and Builder docs used elements
+// Another introduction to automation
+* xref:automation-tutorial-introduction.adoc[]
+// Features of RPA Manager and RPA Builder used in this topic
+* xref:create-rpa-project.adoc[]
+* xref:rpa-manager::processautomation-develop.adoc[RPA Manager: Developing Automations]
+* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder: Activity Parameters]

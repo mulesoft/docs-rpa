@@ -11,6 +11,10 @@ With the order ID you can now get the corresponding tracking number from the leg
 
 image::workflow-extractdatafromscreen.png[]
 
+
+// number the headings to correspond to the numbered list of steps
+:sectnums:
+
 ## Run the Legacy Application
 
 To run a Desktop application, you can use the *Run program* Action Step:
@@ -75,3 +79,16 @@ As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#tracki
 
 
 ...
+// Turn off section numbering
+:sectnums!:
+
+## Next Activity
+
+* xref:automation-usecase-legacysystemdataextraction.adoc[]
+
+## See Also
+
+// Features of RPA Manager and RPA Builder used in this topic
+* xref:rpa-builder::.adoc[RPA Builder Action Step: ]
+* xref:rpa-builder::.adoc[RPA Builder Action Step: ]
+* xref:rpa-builder::.adoc[RPA Builder Action Step: ]

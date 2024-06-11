@@ -43,29 +43,24 @@ image::usecase-legacysystem-extractformpdf-workflow-checkcaseandproceed.png['']
 
 ## Retrieving a Substring and Saving it to a Variable
 
-Since you know that the order ID is found after the text `Order ID `, you can simply remove these first nine characters from the current line (which contains the substring `Order ID`). The remaining string is the order ID, which you store in the Activity Parameter of the same name.
+Since you know that the order ID is written after the text `Order ID `, you can simply remove these first nine characters from the current line (which contains the substring `Order ID`) by using the *Trim left (remove first characters)* operations of the *String Operations* Action Step. The remaining string is the order ID, which you store in the Activity Parameter of the same name by using the result if the string operation as a Pin Variable in the *Set Variable* AS.
 
-For this purpose you use and configure the follwing Action Steps:
-
-. *String Operations*:
-+
-* Current line as Pin variable
-* `Trim left (remove first characters)`
-* `9`
-. *Set Variable*:
-+ 
-* Pin Activity Parameter
-* Pin Result of String Operation
-
-image::workflow-cutsubstringoutoftext.png['']
+image::usecase-legacysystem-extractformpdf-workflow-cutsubtringoutoftext.png['']
 
 // Turn off section numbering
 :sectnums!:
 
 ## Next Activity
 
-* xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[Implement the tracking number extraction activity]
+* xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
 
 ## See Also
 
-// Links to RPA Builder docs used elements
+// Features of RPA Manager and RPA Builder used in this topic
+* xref:rpa-builder::toolbox-file-operations-read-pdf-file.adoc[RPA Builder Action Step: Read PDF File]
+* xref:rpa-builder::toolbox-file-operations-write-to-text-file.adoc[RPA Builder Action Step: Write to Text File]
+* xref:rpa-builder::toolbox-file-operations-read-from-text-file.adoc[RPA Builder Action Step: Read from Text File]
+* xref:rpa-builder::toolbox-flow-control-select-case.adoc[RPA Builder Action Step: Select Case]
+* xref:rpa-builder::toolbox-flow-control-force-ok-state.adoc[RPA Builder Action Step: Force OK State]
+* xref:rpa-builder::toolbox-variable-handling-string-operations.adoc[RPA Builder Action Step: String Operations]
+* xref:rpa-builder::toolbox-variable-handling-set-variable.adoc[RPA Builder Action Step: Set Variable]
