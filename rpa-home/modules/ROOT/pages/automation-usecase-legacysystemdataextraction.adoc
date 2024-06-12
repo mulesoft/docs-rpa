@@ -88,8 +88,8 @@ image::activityparameters.png[Screenshot of the Activity Parameter window]
 
 You find some details of implementation of the activities as _Workflows_ on the next pages:
 
-* xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[Implement the order ID extraction activity]
-* xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[Implement the tracking number extraction activity]
+* xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[]
+* xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
 * ...Gateway
 * ...UserTask
 

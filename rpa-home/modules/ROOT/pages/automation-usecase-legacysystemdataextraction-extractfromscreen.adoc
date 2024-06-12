@@ -1,5 +1,7 @@
-# Implement the tracking number extraction activity
+# Interacting with a Screen of a Legacy Application
 
+// number the headings to correspond to the numbered list of steps
+:sectnums:
 
 With the order ID you can now get the corresponding tracking number from the legacy system:
 
@@ -9,11 +11,12 @@ With the order ID you can now get the corresponding tracking number from the leg
 . If there is no result, set the gateway variable `is_orderid_found` to false.
 . If there is a result, copy the tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. 
 
+## Import the Activity Parameters
+
+Import all three Activity Paramters. The order ID is already filled with the value extracted in the last Activity.
+
+
 image::workflow-extractdatafromscreen.png[]
-
-
-// number the headings to correspond to the numbered list of steps
-:sectnums:
 
 ## Run the Legacy Application
 

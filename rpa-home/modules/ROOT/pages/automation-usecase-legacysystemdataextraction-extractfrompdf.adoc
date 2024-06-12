@@ -1,4 +1,4 @@
-# Implement the order ID extraction activity
+# Finding Information in a PDF
 // number the headings to correspond to the numbered list of steps
 :sectnums:
 
