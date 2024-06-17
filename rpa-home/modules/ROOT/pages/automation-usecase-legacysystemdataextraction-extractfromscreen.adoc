@@ -11,14 +11,13 @@ With the order ID you can now get the corresponding tracking number from the leg
 . If there is no result, set the gateway variable `is_orderid_found` to false.
 . If there is a result, copy the tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. 
 
-## Import the Activity Parameters
+## Reuse Activity Parameter values in a subsequent workflow
 
-Import all three Activity Paramters. The order ID is already filled with the value extracted in the last Activity.
-
+In the *Activity Parameter* element of the *Workflow Initialization* element select all three Activity Paramters to use. The order ID is already filled with the value extracted in the last Activity.
 
 image::workflow-extractdatafromscreen.png[]
 
-## Run the Legacy Application
+## Run a Legacy Application
 
 To run a Desktop application, you can use the *Run program* Action Step:
 
