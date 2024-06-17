@@ -201,6 +201,7 @@ Use the *Send test mail* button to check the connection to the SMTP server and s
 * xref:toolbox-mail-operations-read-mail.adoc[Read Mail]
 * xref:toolbox-mail-operations-send-mail.adoc[Send Mail]
 * xref:toolbox-mail-operations-set-mail.adoc[Set Mail]
+* xref:troubleshooting-azure-oauth-setup.adoc[]
 * https://azure.microsoft.com/en-us/[Azure^]
 * https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[Authenticate an EWS application by using OAuth^]
 * https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[Authenticate an IMAP, POP or SMTP connection using OAuth^]

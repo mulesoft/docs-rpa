@@ -1,8 +1,16 @@
 = Managing Automations
 
-When a project manager clicks the icon *Start automation* for a process in the *My Backlog* view of the *My RPA* module, RPA Manager creates a project for the automation of the process.
+An RPA project consists of a business process to automate and the team responsible for the automation.
 
-To automate a process already evaluated with a third-party tool, a project manager can create an automation project inside a category directly in the *Process Automation* module.
+When a project manager clicks *Start automation* for a process in the *My Backlog* view of the *My RPA* module, RPA Manager creates a project for the process automation.
+
+To automate a process already evaluated with a third-party tool, a project manager can alternatively create an automation project directly in the following RPA Manager views:
+
+* *RPA Home*
+* *My RPA* > *My Processes*
+* *Process Evaluation* > *Process Evaluation*
+* *Process Automation* > *Process Management*
+* *Process Automation* > *Process Management* > *<Category>*
 
 The *Process Management* view shows the projects organized by category.
 
@@ -51,7 +59,7 @@ When a project manager clicks the icon *Start automation* for a process in the *
 
 To automate a process already evaluated with a third-party tool, you can create an automation project inside a category directly in the *Process Automation* module:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category in which you want to create the new project.
 . In the *<category name>* view, click *Create*.
 . [[form-createprocess]] Complete the form *Create process*:
@@ -59,7 +67,7 @@ To automate a process already evaluated with a third-party tool, you can create 
 include::rpa-manager::partial$form-automationproject.adoc[]
 . Click *Save*.
 
-RPA Manager returns to the *<category name>* view. Your new project is sorted into the view according to your workspace settings.
+RPA Manager returns to the *<category name>* view and sorts your new project according to your workspace settings.
 
 == Copy an Automation Project
 
@@ -67,7 +75,7 @@ A copy of an automation project contains all information from the original proje
 
 Copy a project to automate a similar process more quickly:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project that you want to copy.
 . In the *<category name>* view, click *Copy* (image:copy-icon.png[copy symbol,1.5%,1.5%])on the panel of the project you want to copy.
 . Check and edit the form *Copy process*:
@@ -77,7 +85,7 @@ For an explanation of the properties, see <<form-createprocess, *Create process*
 
 To complete copying the project:
 
-. Transfer the project copy to the *Build* phase.
+. Transition the project copy to the build phase.
 . Open the project copy in the xref:rpa-builder::index.adoc[RPA Builder].
 . xref:rpa-builder::ui-overview#menu-bar[Upload] the project copy to RPA Manager.
 
@@ -92,7 +100,7 @@ Only after the copy process completes, the following actions are possible:
 
 Edit an automation project to update it:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *Edit* (image:edit-icon.png[pen-to-paper symbol,1.5%,1.5%]) on the panel of the project to edit.
 . Check and edit the form *Copy process*:
@@ -104,40 +112,40 @@ For an explanation of the properties, see <<form-createprocess, *Create process*
 
 Change the owner of a process to represent changed responsibilities:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *New Process Owner* (image:newprocessowner-icon.png[user-with-crown symbol,1.5%,1.5%]) on the panel of the project for which you want to change the process owner.
 . In the window *New process owner*, select a user.
 . Click *OK*
 
-The new process owner is added to the process team with read access.
+RPA Manager adds the new process owner to the process team with read access.
 
-The previous process owner is removed from the process team independent of their previous authorizations. You can add them again as a team member.
+RPA Manager removes the previous process owner from the process team independent of their previous authorizations. You can add them again as a team member.
 
 == Change the Project Manager of an Automation Project
 
 Change the manager of a project to represent changed responsibilities:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *New Project Manager* (image:newprojectmanager-icon.png[user-with-tie symbol,1.5%,1.5%]) on the panel of the project for which you want to change the project manager.
 . In the window *New project manager*, select a user.
 + 
 You can only select a user who has the privilege *Project Management*.
-. If you do not want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager is added with no assigned phases and thus only able to see this project.*
+. If you don't want to include the previous manager into the project team, unselect the checkbox *Add the current Project Manager to the project team. The current Project Manager is added with no assigned phases and thus only able to see this project.*
 . Click *OK*
 
 You can assign additional permissions to the previous manager as a team member.
 
 == Remove an Automation Project
 
-Remove automation projects you no longer need. This cannot be undone and is neither logged nor reported.
+Remove automation projects you no longer need. This can't be undone and is neither logged nor reported.
 
-The *Delete* icon is only displayed if the logged-in user is the project's manager and the process has never been used productively. If the project has been transferred at least once to the production phase and deployed to an RPA Bot for processing, it can no longer be deleted.
+The *Delete* icon is only displayed if the logged-in user is the project's manager and the project has never been deployed productively. After an RPA bot has run the process in the production phase, you can no longer delete it.
 
 To remove a project:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *Remove* (image:delete-icon.png[trash symbol,1.5%,1.5%]) on the panel of the project to remove.
 . Confirm the prompt.
@@ -152,24 +160,24 @@ A process board is a table with three columns, across which you can arrange task
 
 * *To-do*
 +
-The *To-do* column contains all the tasks that have not been processed yet. You create new tasks here. If you have <<projectdata-phasereleasetasks, enabled the creation of automatically generated tasks for phase transitions>>, RPA Manager creates a new corresponding task during each phase transition. Remember to move tasks that are being processed into the *In Progress* area.
+The *To-do* column contains all incomplete tasks. You create new tasks here. If you have <<projectdata-phasereleasetasks, enabled the creation of automatically generated tasks for phase transitions>>, RPA Manager creates a new corresponding task during each phase transition. Remember to move tasks in progress into the *In Progress* area.
 * *In Progress*
 +
-The *In Progress* column contains all the tasks that someone is currently working on. Remember to move tasks that have been completed into the *Completed* area.
+The *In Progress* column contains all the tasks that someone is currently working on. Remember to move completed tasks into the *Completed* area.
 * *Completed*
 +
-The *Completed* column contains all tasks that have already been completed. You can edit and move completed tasks. If you enabled the creation of automatically generated tasks for the phase transitions, the button for the transition to the next phase is disabled until this task has been moved to the *Completed* column.
+The *Completed* column contains all completed tasks. You can edit and move completed tasks. If you enabled the creation of automatically generated tasks for the phase transitions, RPA Manager enables the button for the transition to the next phase when all tasks are in the *Completed* column.
 
 Each user’s process tasks are also displayed in the *My Process Board* view of the *My RPA* module.
 
-Whether a process board should be created for a process is usually decided by the project manager directly during project creation. You can also decide to introduce a process board for any process later.
+Usually, the project manager decides during project creation if the project needs a process board. You can also decide to introduce a process board for any process later.
 
 [[openprocessboard]]
 === Open a Process Board
 
 To open a process board:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *Open process board* (image:processboard-icon.png[column symbol,1.5%,1.5%]) on the project panel or in an already opened project.
 
@@ -180,7 +188,7 @@ Click *Back to Process* to return to or open the project.
 
 Create a process project task to enhance the automation.
 
-Examples of such tasks could be `Design: Leaning (Remove superfluous elements from the graph, check for dead ends and double doors)`, `Add missing process documentation (Prepare decision table)` or `Kick-off Meeting`.
+Examples of such tasks are `Design: Leaning (Remove superfluous elements from the graph, check for dead ends and double doors)`, `Add missing process documentation (Prepare decision table)` or `Kick-off Meeting`.
 
 To create a task:
 
@@ -195,7 +203,7 @@ The task owner is responsible for completing the task. Choose a user from the pr
 You can set the priority of the task to low, medium, or high. The task item displays a gray, yellow, or red label, respectively.
 * *Due date*:
 +
-Date on which the task should be completed.
+Date on which the task must be complete.
 * *Effort*:
 +
 Approximate amount of time that the task takes.
@@ -228,31 +236,78 @@ Move tasks within a column to sort them or across columns to reflect their progr
 . <<openprocessboard, Open a process board>>.
 . Drag a task item to its new place.
 
-If you enabled the creation of automatically generated tasks for the phase transitions, move this task to the *Completed* column after all other tasks have been completed to enable the transition of the project to the next phase.
+If you enabled the creation of automatically generated tasks for the phase transitions, move this task to the *Completed* column after all other tasks are complete to enable the transition of the project to the next phase.
 
 == Analyze the Financial Aspects of a Process
 
 Open the xref:processoperations-financeanalysis.adoc[*Finance Analysis* view] to record, monitor, and analyze the financial aspects of a process:
 
-. Open the *Project Management* view of the *Process Automation* module.
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click *Finance Analysis* (image:financeanalysis-icon.png[analytics graph symbol,1.5%,1.5%]) on the panel of the project you want to analyze.
 
 == Transition an Automation Project to Another Phase
 
-Once it's ready, transition the project to the next phase of its life-cycle. You can always transition back to change the project's design or implementation.
+When it's ready, transition the project to its next lifecycle phase. You can always transition back to change the automation design or implementation.
+
+Design phase::
++
+--
+* Create or change a process model in RPA Manager.
++
+Already implemented activities retain their implementation unless you delete them. 
+* Transition the automation containing the new or changed models to the build phase.
+--
+
+Build phase::
+
+* Download the model from RPA Manager.
+* Change the model.
+* Implement the activities.
++
+If you want to version workflows, create and reuse activities in the Activity Library.
+* Upload the changed and implemented model to the repository in RPA Manager. 
+Only one version of a process exists in the repository in RPA Manager. If you accidentally delete an already implemented activity, a local version might be available in RPA Builder — as long as you don't overwrite the model by downloading the newer one from RPA Manager.
+* Transition the automation back to the design phase.
++
+Already implemented activities retain their implementation unless you delete them.
+* Transition the automation on to the test phase.
+
+Test phase::
+
+* Test the implemented process model in different configurations. 
+* Transition the automation back to the build phase to change the implementation.
++
+You can reuse or edit the test run configurations when you transition the automation back to the test phase. 
+* When the tests succeed, transfer the automation to the production phase.
++
+After the project has been deployed to an RPA Bot for processing in the production phase, you can no longer delete it.
+
+Production phase:: 
+
+* Create and deploy a scheduled run configuration to run the process automatically at defined times. 
+* Create and publish an invocable run configuration* to use it within other Salesforce products.
+* Create an on-demand run configuration to start the process run manually.
+* If you use activities from the Activity Library, you can xref:processoperations-upcomingprocesschanges.adoc[change the deployed version] in the *Upcoming Process Changes* view of the *Process Operations Module*.
+* Transition the automation back to the test phase.
++
+You can reuse or edit the production run configurations when you transition the automation to the production phase again. 
 
 === Transition to the Next Phase
 
-. Open the *Project Management* view of the *Process Automation* module.
-. Click on the name of the category of the project.
+After an automation project is ready, transition it to the next phase. RPA Manager retains your previously configured elements from each phase.
+
+. Open the *Process Management* view of the *Process Automation* module.
+. Click the category name for the project.
 . In the *<category name>* view, click the name of a project.
 . If the project uses a process board with automatic phase release tasks, complete that task to enable the transition.
 . In the header, click *Publish <phase name>*.
 
 === Transition to a Previous Phase
 
-. Open the *Project Management* view of the *Process Automation* module.
+To rework an automation project, transition it to a previous phase. RPA Manager retains your previously configured elements from each phase.
+
+. Open the *Process Management* view of the *Process Automation* module.
 . Click on the name of the category of the project.
 . In the *<category name>* view, click the name of a project.
 . In the header, click *Back <phase name>*.
@@ -260,5 +315,7 @@ Once it's ready, transition the project to the next phase of its life-cycle. You
 
 == See Also
 
-* xref:rpa-manager::myrpa-start.adoc[Starting Automation of Approved Processes]
+* xref:rpa-manager::myrpa-start.adoc[]
 * xref:processautomation-prepare-project-category.adoc[Manage Process Categories]
+* xref:rpa-builder::activity-library-explorer.adoc[RPA Builder: Activity Library Explorer]
+* xref:processoperations-upcomingprocesschanges.adoc[]
