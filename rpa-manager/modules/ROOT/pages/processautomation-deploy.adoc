@@ -1,6 +1,6 @@
 = Deploying Automations
 
-The third phase of process automation is the *Test* phase. In this phase, you can test the implemented process model in different configurations. You can transition back to *Build* phase to change the implementation.
+The third phase of process automation is the *Test* phase. In this phase, you can test the implemented process model in different configurations. You can xref:processautomation-manage.adoc#transition-an-automation-project-to-another-phase[transition] back to *Build* phase to change the implementation.
 
 When the tests are successful, transition to *Production* phase.
 
@@ -152,7 +152,7 @@ To view the test results and to download an analysis package:
 
 Transition the project to the production phase to deploy a run configuration to a bot. The process runs fully automated from now on.
 
-Sometimes it's necessary to start a process manually when something happens that can only be evaluated by a human. For example, the goods inwards inspection process can only be started once the banana delivery ship reaches the pier wall. For this purpose, use the *Run Now* option.
+Sometimes it's necessary to start a process manually when something happens that can only a human can evaluate. For example, the goods inwards inspection process can only start after the banana delivery ship reaches the pier wall. For this purpose, use the *Run Now* option.
 
 You have three options how to run processes:
 
@@ -164,7 +164,7 @@ You can run processes openly in existing console sessions or run them hidden in 
 
 Pause or revoke configurations to stop the execution temporarily. Transition the project back to the build phase to change the implementation.
 
-Projects that have already been used productively can no longer be deleted.
+You can't delete projects of processes that a bot has already run productively.
 
 === Transition Process to Production Phase
 
@@ -180,7 +180,7 @@ Transition the tested process to production phase for running it fully automatic
 [[production-configuration]]
 === Create a Run Configuration
 
-A run configuration consists of a name, a description, initial values for the Activity Parameters, one or more Bots and conditions for deployment of the automation with this configuration. 
+A run configuration consists of a name, a description, initial values for the Activity Parameters, one or more bots and conditions for deployment of the automation with this configuration. 
 
 There are three types of run configurations: 
 
@@ -217,7 +217,7 @@ Alternatively, you can set the value of an activity parameter by linking it with
 The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*:
 +
-User tasks are elements of a process model, which can't be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
+User tasks are elements of a process model, which a bot can't process fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The table displays number of assigned users and user groups. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
 +
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they're supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
@@ -238,27 +238,13 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 [[runconfig-execution-enabletaskbar]] If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
 * *Schedule*:
 +
-Invocable and on-demand run configurations don't have schedules.
-+
-For a scheduled run configuration, choose the schedule type:
-+
-** *Intervals*
-+
-Enter the interval to repeat the process.
-+
-** *Cron expression*
-+ 
-//To do: add link to Cron partial
-Enter a Cron expression to repeat the process.
-+
-** *Calendar Scheduling*
-+
-Add one or more fixed schedules within which the productive run is carried out continuously. For each schedule, define time intervals within which the process is executed. RPA Manager combines all schedules to compute the execution times.
-+
+[%collapsible]
+.*Keep in mind that Bots might live in different time zones.*
+==== 
 You create a schedule without specifying a time zone. The bot you assign the production configuration to executes the process at the specified times in its local time. The time intervals might change, depending on daylight saving time.
-+
+
 For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that starts at 5:30 AM and ends at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots don't execute the processes simultaneously:
-+
+
 [cols="1,2,2"]
 |===
 |*Bot* |*Execution Time in the Bot's Local Time Zone* |*Execution Time in the Buenos Aires User's Local Time Zone*
@@ -276,18 +262,98 @@ For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that
 |5:30 PM - 9:30 AM (Buenos Aires time (ART (UTC -3)))
 
 |===
+
+The bot checks every minute whether it's within a scheduled time frame and within its service time and whether the required process applications are outside all downtimes. The process isn't executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
+====
 +
+Invocable and on-demand run configurations don't have schedules.
++
+For a scheduled run configuration, choose the schedule type:
++
+** *Intervals*
++
+Enter the interval to repeat the process. The process starts once at the beginning of each interval.
++
+The intervals are equidistant in the defined time frame. For example, `Repeat my process every 10 minutes`. If you need a more complex interval, use a Cron expression.
++
+** *Cron expression*
++
+Enter a Cron expression to repeat the process. The process starts once at the beginning of each interval.
++
+The intervals don't need to be equidistant. For example, `Repeat my process every minute, between 12:00 PM and 12:59 PM, only on Monday and Friday, only in February, April, and June`.
++
+You can use the Cron expression helper to compile the expresssion and check the natural language schedule summary.
++
+.What is a Cron expression?
+[%collapsible]
+=====
+Cron is a widely used standard for describing time and date information. You use a cron expression to define complex intervals, for example, 'Run my process on 2:34 AM every third Friday of every second month.'.
+
+The scheduler keeps track of every second and starts the process run when the Quartz Cron expression matches the bot's time-date setting. You can trigger the event
+just once or at regular intervals.
+
+A date-time expression consists of six required settings and can include the optional year setting. Specify the settings in the following order:
+
+. Seconds (`0`-`59`)
+. Minutes (`0`-`59`)
+. Hours (`0`-`23`)
+. Day of month (`1`-`31`)
+. Month (`1`-`12` or `JAN`-`DEC`)
+. Day of the week (`1`-`7` or `SUN`-`SAT`)
+. Year (empty or a 4-digit year between `1970`-`2099`, for example, `2019`)
+
+The Scheduler supports Quartz Cron expressions. Here are a few examples:
+
+[%header,cols="2*"]
+|===
+|Expression |Behavior
+|`1/2 * * * * ?` |Run every 2 seconds of the day, every day.
+|`0 15 10 ? * *` |Run at 10:15 a.m., every day. `0 15 10 * * ? *` and
+`0 15 10 * * ?` produce the same effect.
+|`0 15 10 * * ? 2019` |Run at 10:15 a.m., every day during the year 2019.
+|`0 * 14 * * ?` |Run every minute starting at 2pm and ending at 2:59pm, every day.
+|`0 0/5 14 * * ?` |Run every 5 minutes starting at 2pm and ending at 2:55pm, every day
+|`1 1 1 1,7 * ?` |Run the first second of the first minute of the first hour, on the first and seventh day, every month.
+|===
+
+The Scheduler component also supports Quartz Scheduler special characters:
+
+* `*`: All values.
+* `?`: No specific value.
+* `-`: Range of values, for example, `1-3`.
+* `,`: Additional values, for example, `1,7`.
+* `/`: Incremental values, for example, `1/7`.
+* `L`: Last day of the week or month, or last specific day of the month
+  (such as `6L` for the last Saturday of the month).
+* `W`: Weekday, which is valid in the month and day-of-the-week fields.
+* `#`: "nth" day of the month. For example, `#3` is the third day of the month.
+//source info: +http://www.quartz-scheduler.org/documentation/quartz-2.x/tutorials/crontrigger.html+
+Note that there are many free online tools that can help you build Cron expressions.
+=====
++
+** *Calendar Scheduling*
++
+Use this option to edit run configurations that already use calendar scheduling.
++ 
+Add one or more fixed schedules within which the productive run is carried out continuously. For each schedule, define time intervals within which the process is executed. RPA Manager combines all schedules to compute the execution times.
++
+.How does calendar scheduling work?
+[%collapsible]
+=====
+
 You can create multiple schedules. These may also overlap. All schedules together make up a time frame within which the process may be executed. The executing bot checks every minute whether it's within this time frame or not. A new process run isn't started until all conditions have been fulfilled.
-+
+
 For this reason, the executing bot checks every minute whether it's within a service time and whether the required process applications are outside all downtimes. The process isn't executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
-+
+
 Running processes are always executed completely.
-+
+
 When creating new schedules, pay attention to whether the new schedules overlap with schedules of other configurations and ensure that the executing bots have enough free sessions. Otherwise, trigger executions might be skipped.
-+
+
 Click on the button *Add Schedule* to assign a (further) schedule to this configuration and complete the *Create a new schedule* form:
-+
+
 include::rpa-manager::partial$form-scheduling.adoc[]
+=====
++
 * *Bots*:
 +
 Select all RPA Bots that are to carry out the production configuration.
