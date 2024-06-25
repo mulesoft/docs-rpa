@@ -241,6 +241,9 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 [%collapsible]
 .*Keep in mind that Bots might live in different time zones.*
 ==== 
+
+'''
+
 You create a schedule without specifying a time zone. The bot you assign the production configuration to executes the process at the specified times in its local time. The time intervals might change, depending on daylight saving time.
 
 For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that starts at 5:30 AM and ends at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots don't execute the processes simultaneously:
@@ -264,6 +267,9 @@ For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that
 |===
 
 The bot checks every minute whether it's within a scheduled time frame and within its service time and whether the required process applications are outside all downtimes. The process isn't executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
+
+'''
+
 ====
 +
 Invocable and on-demand run configurations don't have schedules.
@@ -282,7 +288,7 @@ If you need a more complex interval, use *Cron expression*.
 +
 Enter a Cron expression to repeat the process. The process starts once at the beginning of each interval.
 +
-The intervals are not equidistant. For example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on the first day of the month and on Monday and Friday, only in February until April, and in November`.
+The intervals aren't equidistant. For example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on the first day of the month and on Monday and Friday, only in February until April, and in November`.
 +
 If you need a simpler interval, use *Interval*.
 +
@@ -291,6 +297,9 @@ You can use the Cron expression helper to compile the expresssion and check the 
 .What is a Cron expression?
 [%collapsible]
 =====
+
+'''
+
 Cron is a widely used standard for describing time and date information. You use a cron expression to define complex intervals, for example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on the first day of the month and on Monday and Friday, only in February until April, and in November.
 
 The scheduler keeps track of every minute and starts the process run when the Cron expression matches the bot's time-date setting. You can trigger the event just once or at regular intervals.
@@ -305,16 +314,16 @@ A date-time expression in crontab format consists of five required settings in t
 
 The Scheduler supports standard Cron expressions. Here are a few examples:
 
-[%header,cols="2*"]
+[%header,cols="3*"]
 |===
-|Expression |Behavior
-|`*/7 * * * *` |Run at minute 00, 07, 14, 21, 28, 35, 42, 49, 56 of every hour of every day.
-|`` |
-|`` |
-|`` |
-|`` |
-|`` |
-|`` |
+|Expression |Behavior |Explanation 
+|`5 4 3 2 1` | At 04:05 AM on every Monday in every February and on the 3rd of every February| If you want to run a process exactly once on a specific time, you must specify the day of the month but not the day of the week. See next example. 
+|`5 4 3 2 *` | At 04:05 AM on every Monday in every February and on the 3rd of every February| You can't specify the year. 
+|`*/7 * * * *` |Run at minute 00, 07, 14, 21, 28, 35, 42, 49, 56 of every hour (of every day of every month on every weekday). |Starts at minute 0 because it's the first of all values in the valid range (*).
+|`45/05 * * * *` |Run at minutes 45, 50, and 55 of every hour |
+|`* * * * *` |Run every minute forever |
+|`* 9-16 * * 1-5` |Every minute, between 09:00 AM and 04:59 PM, Monday through Friday |
+|`00,10,42 9-16 1-10,20-30 2-7,12 5`` |At 0, 10, and 42 minutes past the hour, between 09:00 AM and 04:59 PM, on day 1 through 10 and 20 through 30 of the month, and on Friday, only in February through July and December |You can combine lists and ranges.
 |===
 
 The Scheduler component also supports the following special characters:
@@ -324,7 +333,9 @@ The Scheduler component also supports the following special characters:
 * `,`: Additional values within the range of valid values, for example, `1,7`.
 * `/`: Incremental values within the range of valid values starting with the first specified value, for example, `1/7`.
 
-Non-existant times, such as 'missing hours' during daylight savings conversion, never match the bot's time-date setting, causing processes scheduled during the 'missing times' not to be run. Similarly, times that occur more than once (again, during daylight savings conversion) cause matching processes to be run twice.
+Non-existant times, such as 'missing hours' during daylight savings conversion, never match the bot's time-date setting, causing processes scheduled during the 'missing times' not to run. Similarly, times that occur more than once (again, during daylight savings conversion) cause matching processes to run twice.
+
+'''
 
 =====
 +
@@ -338,6 +349,8 @@ Add one or more fixed schedules within which the productive run is carried out c
 [%collapsible]
 =====
 
+'''
+
 You can create multiple schedules. These may also overlap. All schedules together make up a time frame within which the process may be executed. The executing bot checks every minute whether it's within this time frame or not. A new process run isn't started until all conditions have been fulfilled.
 
 For this reason, the executing bot checks every minute whether it's within a service time and whether the required process applications are outside all downtimes. The process isn't executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
@@ -349,6 +362,9 @@ When creating new schedules, pay attention to whether the new schedules overlap 
 Click on the button *Add Schedule* to assign a (further) schedule to this configuration and complete the *Create a new schedule* form:
 
 include::rpa-manager::partial$form-scheduling.adoc[]
+
+'''
+
 =====
 +
 * *Bots*:
@@ -397,7 +413,7 @@ Deploy configuration to run them fully automatically in a productive environment
 [[trigger-run-once]]
 === Run a Configuration Once
 
-The configuration to run once must either be invokable or marked as <<run-once-tag, *Start Manually*>>.
+The configuration to run once must either be invocable or marked as <<run-once-tag, *Start Manually*>>.
 
 To start the single process run:
 
