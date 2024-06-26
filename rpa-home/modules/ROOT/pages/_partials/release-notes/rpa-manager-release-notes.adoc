@@ -14,8 +14,8 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| RPA Builder is now able to download runtime packages from RPA Manager. | W-16080683
-| Serialized JSON in an activity parameter of type string will not been modified during the execution of a process. | W-15881024
+| Updating the WebDriver while testing the Chrome Web Session or Edge Web Session action steps in RPA Builder no longer fails. | W-16080683
+| Activity Parameter values in JSON format no longer change when passed from one Activity to another. | W-15881024
 |===
 
 // == Known Issues
