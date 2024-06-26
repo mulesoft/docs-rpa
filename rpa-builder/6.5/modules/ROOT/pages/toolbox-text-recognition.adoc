@@ -1,6 +1,5 @@
 
-
-== Text Recognition
+= Text Recognition
 
 Text Recognition enables you to use different methods of Optical Character Recognition(OCR) to analyze images and extract text from them.
 

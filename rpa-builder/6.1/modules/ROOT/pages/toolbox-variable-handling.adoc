@@ -1,6 +1,5 @@
 
-
-== Variable Handling
+= Variable Handling
 
 Variable Handling enables you to perform multiple actions like mathematical operations, parse objects, read system variables, and also read and write variables for the automation workflow.
 
