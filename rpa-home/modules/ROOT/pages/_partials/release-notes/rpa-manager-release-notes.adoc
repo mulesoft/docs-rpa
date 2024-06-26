@@ -2,8 +2,8 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
-[[june-20-2024]]
-== June 20, 2024
+[[june-26-2024]]
+== June 26, 2024
 
 // == What's New
 //include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
@@ -14,7 +14,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Opening modals no longer fails. | W-16043771 
+| RPA Builder is now able to download runtime packages from RPA Manager. | W-16080683
 |===
 
 // == Known Issues
@@ -27,6 +27,30 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 | A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
 |===
 
+[[june-20-2024]]
+== June 20, 2024
+
+// == What's New
+//include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| Opening modals no longer fails. | W-16043771
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user is not available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
 
 [[june-13-2024]]
 == June 13, 2024
