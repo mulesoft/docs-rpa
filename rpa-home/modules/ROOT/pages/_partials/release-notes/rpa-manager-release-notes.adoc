@@ -15,6 +15,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | RPA Builder is now able to download runtime packages from RPA Manager. | W-16080683
+| Serialized JSON in an activity parameter of type string will not been modified during the execution of a process. | W-15881024
 |===
 
 // == Known Issues
