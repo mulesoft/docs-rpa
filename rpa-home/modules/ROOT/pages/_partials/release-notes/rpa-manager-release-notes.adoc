@@ -14,7 +14,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Now the user can configure the execution timetable. | W-16110013
+| You can now configure and save the execution timetable settings. | W-16110013
 |===
 
 // == Known Issues
