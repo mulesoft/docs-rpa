@@ -1,6 +1,6 @@
 .xref:index.adoc[RPA]
 * xref:index.adoc[RPA Overview]
-* xref:release-notes.adoc[Release Notes] 
+* xref:release-notes/index.adoc[Release Notes] 
 * xref:anypoint-migration-overview.adoc[Anypoint Platform Integration Overview]
 * xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
 * xref:ms-automation-credits-usage-types.adoc[]
