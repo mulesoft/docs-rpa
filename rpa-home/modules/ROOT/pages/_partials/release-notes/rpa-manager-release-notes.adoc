@@ -24,7 +24,7 @@ include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
 |===
 |Known Issue |Workaround | ID
 | A new Anypoint Platform user isn't available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
-| A user with recently added RPA Project Manager permissions is not available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+| A user with recently added RPA Project Manager permissions isn't available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
 |===
 
 [[june-26-2024]]
