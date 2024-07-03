@@ -8,7 +8,7 @@ to decide which activity should be executed next.
 
 image:toolbox-activity-parameters.png[The Activity Parameters Action Step, 40%, 40%]
 
-Only one _Activity Parameters_ Action Step can exist in a process and it is automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
+Only one _Activity Parameters_ Action Step can exist in a process and it's automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
 
 Activity Parameters consist of a name, description, and value. Activity parameter names have the following requirements:
 
@@ -18,7 +18,7 @@ Activity Parameters consist of a name, description, and value. Activity paramete
 * The initial letter of the name is lower case.
 * The name is unique.
 +
-You cannot use the same name multiple times for different variables.
+You can't use the same name multiple times for different variables.
 
 The predefined values are test values that RPA Builder uses only during a local run. The variables register automatically on RPA Manager when uploaded. RPA Manager enables you to modify the values of the variables and define them differently, depending on the station on which the Workflow is executed. See xref:advanced-concepts-using-variables.adoc[Using Variables] for additional information.
 
@@ -67,7 +67,7 @@ To delete an Activity Parameter, click the *Delete* (image:delete-icon.png[The D
 
 image:business-process-initialization-window.png[The business process initialization window, 75%, 75%]
 
-You can only delete an Activity Parameter if it is not being used in a Workflow. If the Activity Parameter is already connected to at least one Workflow, a pop-up message appears indicating that the parameter is still in use.
+You can only delete an Activity Parameter if it's not being used in a Workflow. If the Activity Parameter is already connected to at least one Workflow, a pop-up message appears indicating that the parameter is still in use.
 
 image:delete-activity-parameter-warning.png[A warning message showing that a parameter cannot be deleted because it is still in use, 60%, 60%]
 
@@ -79,7 +79,7 @@ Activity Parameter names cannot be changed after creation. After you close the W
 _Description_ and _Value_ at any time.
 
 If you want to subsequently change the name, delete the Activity Parameter and
-create it again with a new name. This only applies if the Activity Parameter is not
+create it again with a new name. This only applies if the Activity Parameter isn't
 already being used in a process.
 
 == Connecting Activity Parameters to a Workflow
@@ -107,6 +107,8 @@ image:set-expression-condition.png[The BPMN editor showing the Gateway settings,
 +
 image:set-expression-condition-for-gateway.png[The Set Condition Expression for Gateway window, 60%, 60%]
 . Click *Add Expression* and build an expression by using the available Activity Parameters.
+
+After you have added all necessary condition expressions, ensure that the last Sequence Flow has an empty condition expression. This is the default flow when all other conditions aren't fullfilled. If there is no default sequence flow, add one to the model.
 
 == Properties
 
