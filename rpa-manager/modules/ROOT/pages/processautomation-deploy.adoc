@@ -276,8 +276,10 @@ Invocable and on-demand run configurations don't have schedules.
 +
 For a scheduled run configuration, choose the schedule type:
 +
-** *Interval*
+[IMPORTANT]
+Interval and Cron expression scheduling are supported by bots running version 1.7.0 or later.
 +
+** *Interval*
 Enter the interval to repeat the process. The process starts once at the beginning of each interval.
 +
 The intervals are equidistant in the defined time frame. For example, `Repeat my process every 10 minutes`. 
