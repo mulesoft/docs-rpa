@@ -217,7 +217,7 @@ Alternatively, you can set the value of an activity parameter by linking it with
 The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*:
 +
-User tasks are elements of a process model, which a bot can't process fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The table displays number of assigned users and user groups. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
+User tasks are elements of a process model that a bot can't process fully automatically and require human intervention. Specify which users are to process the user tasks by clicking on the *User Assignment* or *User Group Assignment* icon. The table displays the number of assigned users and user groups. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
 +
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they're supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
