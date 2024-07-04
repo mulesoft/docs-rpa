@@ -108,7 +108,7 @@ image:set-expression-condition.png[The BPMN editor showing the Gateway settings,
 image:set-expression-condition-for-gateway.png[The Set Condition Expression for Gateway window, 60%, 60%]
 . Click *Add Expression* and build an expression by using the available Activity Parameters.
 
-After you have added all necessary condition expressions, ensure that the last Sequence Flow has an empty condition expression. This is the default flow when all other conditions aren't fullfilled. If there is no default sequence flow, add one to the model.
+After you add all necessary condition expressions, ensure that the last sequence flow has an empty condition expression. This is the default flow when all other conditions aren't fulfilled. If there is no default sequence flow, add one to the model.
 
 == Properties
 
