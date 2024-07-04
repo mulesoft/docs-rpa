@@ -396,7 +396,7 @@ To copy a run configuration:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
-. Click the *Copy* icon (image:copy-icon.png[copy symbol,1.5%,1.5%]) in the table row of the run configuration you want to copy.
+. Click the *Copy* icon (image:copy-icon.png[copy symbol,1.5%,1.5%]) in the table row of the run configuration to copy.
 . Select the type of the copy.
 . Enter a new name for the copy of the run configuration. The copy contains all assets of the original. For on-demand run configurations, the number of sessions of all bots is set to 1.
 . Click *OK*.
