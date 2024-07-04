@@ -290,7 +290,7 @@ If you need a more complex interval, use *Cron expression*.
 +
 Enter a Cron expression to repeat the process. The process starts once at the beginning of each interval.
 +
-The intervals aren't equidistant. For example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on Monday and Friday, only in February until April, and in November`.
+The intervals aren't equidistant. For example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on Monday and Friday, from February to April, and in November`.
 +
 If you need a simpler interval, use *Interval*.
 +
