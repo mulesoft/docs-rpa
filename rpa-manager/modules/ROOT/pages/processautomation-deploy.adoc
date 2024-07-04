@@ -4,7 +4,7 @@ The third phase of process automation is the *Test* phase. In this phase, you ca
 
 When the tests are successful, transition to *Production* phase.
 
-The  *Production* phase is the final phase in the life cycle of a process. 
+The *Production* phase is the final phase in the life cycle of a process. 
 
 You have three options how to run processes:
 
