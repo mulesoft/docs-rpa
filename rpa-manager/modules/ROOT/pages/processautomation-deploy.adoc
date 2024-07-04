@@ -154,7 +154,7 @@ Transition the project to the production phase to deploy a run configuration to 
 
 Sometimes it's necessary to start a process manually when something happens that only a human can evaluate. For example, the goods inwards inspection process can only start after the banana delivery ship reaches the pier wall. For this purpose, use the *Run Now* option.
 
-You have three options how to run processes:
+You have three ways to run a process:
 
 * Create and deploy a **Scheduled Run Configuration** to run the process automatically at defined times. 
 * Create and publish an **Invocable Run Configuration** to use it within other Salesforce products.
