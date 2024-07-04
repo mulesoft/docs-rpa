@@ -338,7 +338,7 @@ The Scheduler supports most standard Cron expressions. Here are a few good and b
 |`00,10,42 9-16 1-10,20-30 2-7,12 *`` |At 0, 10, and 42 minutes past the hour, between 09:00 AM and 04:59 PM, on day 1 through 10 and 20 through 30 of the month, and on Friday, only in February through July and December |You can combine lists and ranges.
 |===
 
-Non-existant times, such as 'missing hours' during daylight savings conversion, never match the bot's time-date setting, causing processes scheduled during the 'missing times' not to run. Similarly, times that occur more than once (again, during daylight savings conversion) cause matching processes to run twice.
+Non-existent times, such as 'missing hours' during daylight savings conversion, never match the bot's time-date setting, causing processes scheduled during the 'missing times' not to run. Times that occur more than once (again, during daylight savings conversion) cause matching processes to run twice.
 
 '''
 =====
