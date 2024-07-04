@@ -330,7 +330,7 @@ The Scheduler supports most standard Cron expressions. Here are a few good and b
 |Expression |Behavior |Explanation 
 |`5 4 3 2 1` | At 04:05 AM on every Monday in every February and (?) on the 3rd of every February| This Cron expression is invalid. You can set either the day of the week or day of the month, but not both. Replace either the day of the week or day of the month with an asterisk. If you want to run a process exactly once on a specific time, you must specify the day of the month but not the day of the week. See next two examples. 
 |`5 4 3 2 *` | At 04:05 AM on the 3rd of every February| If you want to run a process exactly once on a specific time, you must specify the day of the month but not the day of the week. You can't specify the year. 
-|`5 4 * 2 3` | At 04:05 AM on every Wednesday of every February| If you want to run a process exactly once on a specific time, you must specify the day of the month but not the day of the week.You can't specify the year. 
+|`5 4 * 2 3` | At 04:05 AM on every Wednesday of every February| If you want to run a process exactly once at a specific time, you must specify the day of the month but not the day of the week. You can't specify the year. 
 |`*/7 * * * *` |Run at minute 00, 07, 14, 21, 28, 35, 42, 49, 56 of every hour (of every day of every month on every weekday). |Starts at minute 0 because it's the first of all values in the valid range (*).
 |`45/05 * * * *` |Run at minutes 45, 50, and 55 of every hour |
 |`* * * * *` |Run every minute forever |
