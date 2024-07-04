@@ -347,7 +347,7 @@ Non-existent times, such as 'missing hours' during daylight savings conversion, 
 +
 Use this option to edit run configurations that already use calendar scheduling.
 + 
-Add one or more fixed schedules within which the productive run is carried out continuously. For each schedule, define time intervals within which the process is executed. RPA Manager combines all schedules to compute the execution times.
+Add one or more fixed schedules within which RPA continuously executes the productive run. For each schedule, define time intervals within which RPA executes the process. RPA Manager combines all schedules to compute the execution times.
 +
 .How does calendar scheduling work?
 [%collapsible]
