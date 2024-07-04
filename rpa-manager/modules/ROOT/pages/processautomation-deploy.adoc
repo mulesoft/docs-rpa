@@ -160,7 +160,7 @@ You have three ways to run a process:
 * Create and publish an **Invocable Run Configuration** to use it within other Salesforce products.
 * Create an **On-Demand Run Configuration** to start the process run manually.
 
-You can run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
+You can run processes openly in existing console sessions or hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
 Pause or revoke configurations to stop the execution temporarily. Transition the project back to the build phase to change the implementation.
 
