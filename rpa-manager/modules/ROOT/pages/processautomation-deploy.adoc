@@ -152,7 +152,7 @@ To view the test results and to download an analysis package:
 
 Transition the project to the production phase to deploy a run configuration to a bot. The process runs fully automated from now on.
 
-Sometimes it's necessary to start a process manually when something happens that can only a human can evaluate. For example, the goods inwards inspection process can only start after the banana delivery ship reaches the pier wall. For this purpose, use the *Run Now* option.
+Sometimes it's necessary to start a process manually when something happens that only a human can evaluate. For example, the goods inwards inspection process can only start after the banana delivery ship reaches the pier wall. For this purpose, use the *Run Now* option.
 
 You have three options how to run processes:
 
