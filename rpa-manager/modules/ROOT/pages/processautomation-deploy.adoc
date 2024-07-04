@@ -180,7 +180,7 @@ Transition the tested process to production phase for running it fully automatic
 [[production-configuration]]
 === Create a Run Configuration
 
-A run configuration consists of a name, a description, initial values for the Activity Parameters, one or more bots and conditions for deployment of the automation with this configuration. 
+A run configuration consists of a name, a description, initial values for the Activity Parameters, one or more bots, and conditions for deployment of the automation with this configuration. 
 
 There are three types of run configurations: 
 
