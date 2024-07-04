@@ -302,7 +302,7 @@ You can use the Cron expression helper to compile the expresssion and check the 
 
 '''
 
-Cron is a widely used standard for describing time and date information. You use a cron expression to define complex intervals, for example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on Monday and Friday, only in February until April, and in November.
+Cron is a widely used standard for describing time and date information. You use a cron expression to define complex intervals, for example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on Monday and Friday, from February to April, and in November.
 
 The scheduler keeps track of every minute and starts the process run when the Cron expression matches the bot's time-date setting. You can trigger the event just once or at regular intervals.
 
