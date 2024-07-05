@@ -14,7 +14,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 [%header,cols="6a,1a"]
 |===
 |Issue Resolution |ID
-| Invocable run configuration: the assigned multi sessions are not correctly saved and not able to be updated | W-16169918
+| RPA Manager now properly saves the changes when you assign multiple sessions to an invocable run configuration. | W-16169918
 |===
 
 // == Known Issues
