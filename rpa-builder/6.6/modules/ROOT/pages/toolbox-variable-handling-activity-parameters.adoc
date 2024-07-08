@@ -8,7 +8,7 @@ to decide which activity should be executed next.
 
 image:toolbox-activity-parameters.png[The Activity Parameters Action Step, 40%, 40%]
 
-Only one _Activity Parameters_ Action Step can exist in a process and it's automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
+A Workflow can have one _Activity Parameters_ Action Step and it's automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
 
 Activity Parameters consist of a name, description, and value. Activity parameter names have the following requirements:
 
