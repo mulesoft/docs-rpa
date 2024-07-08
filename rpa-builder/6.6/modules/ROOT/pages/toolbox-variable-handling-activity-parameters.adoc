@@ -67,7 +67,8 @@ To delete an Activity Parameter, click the *Delete* (image:delete-icon.png[The D
 
 image:business-process-initialization-window.png[The business process initialization window, 75%, 75%]
 
-You can only delete an Activity Parameter if it's not being used in a Workflow. If the Activity Parameter is already connected to at least one Workflow, a pop-up message appears indicating that the parameter is still in use.
+You can delete an Activity Parameter if it's not being used in a Workflow. If the Activity Parameter is connected to at least one Workflow, a pop-up message indicates that the parameter is still in use.
+
 
 image:delete-activity-parameter-warning.png[A warning message showing that a parameter cannot be deleted because it is still in use, 60%, 60%]
 
