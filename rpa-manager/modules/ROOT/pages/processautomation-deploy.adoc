@@ -239,7 +239,7 @@ Bots running an earlier version than 1.2.0 overtake an open console session with
 * *Schedule*:
 +
 [%collapsible]
-.*Keep in mind that Bots might live in different time zones.*
+.*Note that bots might execute in different time zones.*
 ==== 
 
 '''
