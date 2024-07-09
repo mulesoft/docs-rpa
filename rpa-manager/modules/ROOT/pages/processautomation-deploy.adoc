@@ -460,6 +460,7 @@ Deleted invocable run configurations aren't deleted in Anypoint Exchange. Edited
 Salesforce Flow always uses the newest version of a process. Invocable run configurations deleted in RPA are also deleted in Salesforce. 
 
 Invocable configurations can run only if the following requirements are met:
+
 * The project is in the production phase.
 * At least one of the assigned bots is in the `OK` state.
 
