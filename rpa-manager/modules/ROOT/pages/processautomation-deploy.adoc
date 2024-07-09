@@ -428,7 +428,7 @@ To start the single process run:
 . In the window *Select Configuration to Run once*, check all configurations to run.
 . Click *Execute*.
 
-The run starts directly. If an invokable configuration is triggered at the same time using the same session, the run waits for the invokable run to be completed before starting.
+The run starts directly. If an invocable configuration is triggered at the same time using the same session, the run waits for the invocable run to complete before starting.
 
 [[view-run-results]]
 === View Run Results
