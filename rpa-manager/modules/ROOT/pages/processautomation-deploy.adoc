@@ -355,13 +355,13 @@ Add one or more fixed schedules within which RPA continuously executes the produ
 
 '''
 
-You can create multiple overlapping schedules. All schedules together make up a time frame within which the process executes. The executing bot checks every minute whether it's within the time frame. A new process run doesn't start until all conditions are fulfilled.
+You can create multiple overlapping schedules. All schedules together make up a time frame within which the bots may start the process runs continuously. A new process run doesn't start until all conditions are fulfilled.
 
 For this reason, the executing bot checks every minute whether it's within a service time and whether the required process applications are outside all downtimes. The process isn't executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
 
-Running processes are always executed completely.
+Unless the computer on which the bot is installed crashes or an required application is down, running processes are always completed.
 
-When creating new schedules, pay attention to whether the new schedules overlap with schedules of other configurations and ensure that the executing bots have enough free sessions. Otherwise, trigger executions might be skipped.
+When creating new schedules, pay attention to whether the new schedules overlap with schedules of other configurations and ensure that the executing bots have enough free sessions. Otherwise, the bot might skip  process runs.
 
 Click on the button *Add Schedule* to assign a (further) schedule to this configuration and complete the *Create a new schedule* form:
 
