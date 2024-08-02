@@ -28,7 +28,8 @@ The _innerText_ of the selected element. If the element has no _innerText_, this
 
 To extract the text from a web element: 
 
-. Click on *Open Browser Wizard*.
+. Click *Open Browser Wizard*.
+
 . Navigate to the site that contains the text element to extract. 
 . Position the mouse over the text element.
 . When a blue border shows to frame the element, press `F2`.
