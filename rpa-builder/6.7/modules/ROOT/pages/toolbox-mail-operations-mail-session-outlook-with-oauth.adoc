@@ -1,0 +1,207 @@
+= Mail Session (Outlook with OAuth)
+
+The _Mail Session (Outlook with OAuth)_ Action Step is an inclusive element for email operations that enables you to establish a connection to an email server using MS Outlook and then perform email operations such as *Read Mail*, *Send Mail*, and *Set Mail* (to change email) by using the corresponding Action Steps.
+
+== Before you Begin
+
+You must have an Azure account to create an application for Outlook.
+
+[[properties]]
+== Properties
+
+* *OAuth Authentication* Settings
+** *Pin OAuth Settings*
++
+Select this option to specify OAuth credentials created with the xref:toolbox-variable-handling-credentials-for-oauth.adoc[Credentials for OAuth] Action Step.
+** *Use custom settings*
++
+Select this option to specify custom OAuth credentials for this Action Step.
++
+*** *OAuth Host*
++
+The host address used to get the credentials. The default address for Outlook services is `+https://login.microsoftonline.com/common/oauth2/v2.0/+`. This address might change if you use a self-hosted service.
+*** *Client ID*
++
+To authenticate with the OAuth Host, an Azure application must be defined in your space. This Azure application has an ID, that is unique in the entire OAuth Host space and it allows users to explicitly grant or revoke access for this Azure application to their accounts. For more information on how to create this Azure application for Outlook, visit https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app[Quickstart: Register an application with the Microsoft identity platform^].
+*** *Client Secret*
++
+Allows RPA Builder to prove to the OAuth Host that it received permission to access user accounts on behalf of the registered Azure application. Without this permission, authentication is not possible.
+*** *Redirect URI*
++
+The URI to which the OAuth Host redirects after the user completes the authentication attempt. This redirect URI must be registered with the Azure application. If the entered redirect URI matches one of the registered URIs, the OAuth Host allows the authentication.
+*** *Scopes*
++
+Defines which permissions the user grants to the Azure application. By default, RPA Builder requests the following permissions:
+
+**** *offline_access*
++
+(*Required*) Enables access via a refresh token, which you can use to repeatedly log in to the email services without requiring user interaction each time.
+**** *+https://outlook.office.com/IMAP.AccessAsUser.All+*
++
+(*Required* when using IMAP) Enables reading and moving emails from the Outlook IMAP server.
+**** *+https://outlook.office.com/POP.AccessAsUser.All+*
++
+(*Required* when using POP3) Enables reading emails from the Outlook POP3 server.
+**** *+https://outlook.office.com/SMTP.Send+*
++
+(*Required* when using SMTP) Enables sending emails from the Outlook SMTP server.
+**** *openid email*
++
+Enables RPA Builder to automatically detect the email account used to log in to the Azure application. If this scope is omitted, you must provide an email in the wizard.
++
+** *Save data to generate Tokens via the Tools menu*
++
+Saves the current data for further use when <<generate-oauth-token, Generating an OAuth Refresh Token>>.
++
+** *Email address*
++
+The email address populates automatically if RPA Builder detects it from the authentication attempt. If the *openid email* scope is omitted, you must provide an email address manually.
+
+* *Incoming Mail Operation* Settings
+** *Protocol used*
++
+(Mail Protocol) The communication protocol to use: IMAP, Exchange, or POP3.
+**  *Encryption used*
++
+(Encryption) The encryption protocol to use: None, SSL/TLS, or STARTTLS.
+** *Server address*
++
+(String) The server address entered in the wizard.
+** *Server Port*
++
+(Integer, Default: `143`) The selected port.
+
+* *Outgoing Mail Operation* Setting
+**  *Encryption used*
++
+(Encryption) The encryption protocol to use: None, SSL/TLS, or STARTTLS.
+** *SMTP Server address*
++
+(String) The URL of the selected SMTP email server.
+** *SMTP Server Port*
++
+(Integer) The selected port.
+** *Send test mail to*
++
+(String) The Email address to which the test email is to
+be sent.
+
+== Inbound Variables
+
+* *Incoming Mail*
+* *Server address*
++
+(String) The server address entered in the wizard.
+* *Server port*
++
+(Integer) The selected port.
+* *User account*
++
+The login data that you require to log in to the server.
+* *Outgoing Mail*
+* *SMTP Server address*
++
+(String) The URL of the selected SMTP email server.
+* *SMTP User account*
++
+The login data that you require to log in to the SMTP
+server.
+
+== Outbound Variables
+
+The _Mail Session_ Action Step has no outbound variables.
+
+== Wizard
+
+image:mail-session-outlook-oauth-wizard.png[The Mail Session (Outlook with OAuth) Action Step Wizard, 60%, 60%]
+
+The wizard contains the following sections:
+
+* *Operation Mode*
+* *OAuth Authentication*
+* *Incoming Mail*
+* *Outgoing Mail*
+
+=== Operation Mode
+
+In *Operation Mode* you determine what happens and which area activates in the Mail Session. The
+following modes are available:
+
+* *Read and send mails*
++
+Enables you to configure the Incoming and Outgoing
+Mail areas so that you can read and send emails.
+* *Read mails from inbox*
++
+Enables editing for the Incoming Mail section so that you can only read emails.
++
+If you select the _Read mails from inbox_ mode, you can't use the Send Mail Action Step.
+* *Send mails via SMTP*
++
+Enables editing for the Outgoing Mail section so that you can only send emails.
++
+If you select the _Send mails via SMTP_ mode, you can't use the Read Mail Action Step in the Mail Session.
+
+=== OAuth Authentication
+
+The *OAuth Authentication* section enables you to create a set of tokens that don't rely on a user password to authenticate with the email server. After you create the refresh token, you can use it to repeatedly log in to the services without asking for the user's password again.
+
+Follow these steps to authenticate with your credentials:
+
+. Complete the *OAuth Authentication* configuration by specifying the required properties.
++
+Refer to <<properties, OAuth Authentication Settings>> for a description of each property.
+. Click *Authenticate*.
++
+This step starts the authentication process with the OAuth Host, which opens the login page in your default browser. 
++
+To enable using different accounts to log in, Mail Session (Outlook with OAuth) clears credentials stored in browser cookies when you click *Authenticate*. 
+. In the OAuth Host’s login page, complete the login process.
+. Close the browser.
+
+After completing the last step, the wizard shows that you are authenticated:
+image:email-outlook-authentication.png[The Logged in confirmation message in the authentication settings window, 50%, 50%]
+
+[[generate-oauth-token]]
+==== Generating an OAuth Refresh Token
+
+Instead of authenticating via the *Mail Session (Outlook with OAuth) wizard*, you can pin the refresh token if you obtain it externally. In this case, you still need to populate or pin the remaining fields.
+
+To generate and configure a refresh token:
+
+. In the *Tools* menu, select *Generate OAuth Refresh Token*.
++
+image:generate-oauth-token.png[The Generate OAuth Refresh Token options in the Tools menu, 40%, 40%]
+. Complete the *OAuth Token Creator* form that appears.
++
+image:generate-token-form.png[The OAuth Token Creator Form, 60%, 60%]
++
+If you already configured a Mail Session (Outlook with OAuth) and clicked the *Save data to generate Tokens via the Tools menu* button, the data automatically populates with the last data you entered in the wizard.
+. Click *Authenticate*.
+. Click *Copy Token to Clipboard*.
+. Paste the token in an alphanumeric Server Based Variable.
+. Pin the variable to the field *Refresh Token* in the *Mail Session (Outlook with OAuth)* wizard.
++
+You can also pin the other values from the *OAuth Token Creator*.
++
+By using a Server Based Variable you don’t need to upload a new version of your Workflow to RPA Manager if your token expires or your user gets logged out of Microsoft. In this case, regenerate the refresh token for the same user with the *OAuth Token Creator* and update the assigned Server Based Variable on RPA Manager.
+
+=== Incoming Mail
+
+In the *Incoming Mail* area, you can configure all the settings necessary to import emails from an email server. You can use the *Test Connection Button* to test whether the connection to the email server can be established.
+
+=== Outgoing Mail
+
+The *Outgoing Mail* area opens if you select the *Send mails* checkbox. To send emails, enter the SMTP email server settings here.
+
+Use the *Send test mail* button to check the connection to the SMTP server and send a test email to the email address specified in the *Sendtest mail to* field.
+
+== See Also
+
+* xref:toolbox-mail-operations-read-mail.adoc[Read Mail]
+* xref:toolbox-mail-operations-send-mail.adoc[Send Mail]
+* xref:toolbox-mail-operations-set-mail.adoc[Set Mail]
+* xref:troubleshooting-azure-oauth-setup.adoc[]
+* https://azure.microsoft.com/en-us/[Azure^]
+* https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[Authenticate an EWS application by using OAuth^]
+* https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[Authenticate an IMAP, POP or SMTP connection using OAuth^]

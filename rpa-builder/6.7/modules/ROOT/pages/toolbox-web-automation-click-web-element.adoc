@@ -1,0 +1,21 @@
+
+
+= Click Web Element
+
+Simulate mouse input on a website element. 
+
+The available click types are: 
+
+* *Single Left Click*
+* *Single Left Click (Wait for page load)*
++
+Waits for the page to finish loading and then simulates the click. If the page does not load, the action step fails. 
+* *Double Left Click*
+* *Single Right Click*
+* *No Click (Hover)*
++
+Simulates a mouse hover. 
+
+== Properties
+
+* *Click Type*

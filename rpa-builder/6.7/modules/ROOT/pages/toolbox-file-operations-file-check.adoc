@@ -1,0 +1,74 @@
+= File Check
+
+Use the _File Check_ Action Step to check whether a file exists
+or not. You can evaluate the result using the _File Check.Check Succeeded_ variable and use it in the later stages of the workflow.
+
+Before the process starts, the specified _Directory Path_
+is checked against the _Allowed Paths_. If the _Directory Path_
+specified in the Action Step is not allowed, the workflow is cancelled
+and an error message displayed.
+
+== Properties
+
+* *File Operation Settings*
+
+** *Directory path* Path to
+the directory in which you want to search for the file. You can enter
+the path either as an absolute or relative path. If you enter it as a
+relative path, the path refers to the _Base Path_ variable.
+** *File Check mode* Specify wether to check if the exists or if it doesn't exist. 
+*** *File exists* (default) Checks whether the file exists. If it doesn't exist, the workflow stops and displays an error message.
+*** *File not exists* Checks if the file _doesn't_ exist. If it does, the workflow stops and displays an error message.
+** *File Name* Name of the file you are searching for.
+
+This action step does not support using Placeholders. For additional details about path and file name settings and a list of unsupported characters, see xref:toolbox-file-operations.adoc#invalid-characters[Path / file name / invalid characters].
+
+
+== Inbound Variables
+
+* *Directory path* Path to
+the directory in which you want to search for the file. You can enter
+the path either as an absolute or relative path. If you enter it as a
+relative path, the path refers to the _Base Path_ variable.
+
+* *File Name* Name of the file you are searching for.
+
+== Outbound Variables
+
+* *Check Succeeded* Specifies whether the check was
+successful or not (True/False).
+
+* *File Name* The name of the file to be found.
+
+* *Directory Path* The path used in the search.
+
+== Wizard
+
+//You can use the link:#AS_FileCheck_P_DirectoryPath[Directory path] to
+Define the path to the file to be found. You can create an absolute path
+or a path relative to the _Base Path_.
+//using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=130,height=22] buttons.
+The initial
+value is `%STWS_BASEPATH%``. Select an existing path
+//using the
+//image:media\image3.png[image,width=20,height=20] button.
+You can also
+insert variables from the workflow to create the path. To do this, click
+the pin and select one of the available variables.
+
+////
+You will find further information on environment variables (Insert
+Environment Variable) and script variables (Insert Script Variable) in
+the *Settings* chapter.
+////
+
+In the *File name* field, enter the name of
+the file to be found. You can also insert the _File Name_ using a
+variable from the workflow. To do this, click the pin and select one of
+the available variables. You then use the *Check mode* to define the result that
+is to be searched for.
+
+== See Also 
+
+xref:toolbox-file-operations.adoc#common-settings[Common File Settings and Properties]
