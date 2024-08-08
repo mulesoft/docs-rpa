@@ -1,6 +1,6 @@
-= Mail Session (Outlook with OAuth)
+= Mail Session (OAuth)
 
-The _Mail Session (Outlook with OAuth)_ Action Step is an inclusive element for email operations that enables you to establish a connection to an email server using MS Outlook and then perform email operations such as *Read Mail*, *Send Mail*, and *Set Mail* (to change email) by using the corresponding Action Steps.
+The _Mail Session (OAuth)_ Action Step is an inclusive element for email operations that enables you to establish a connection to an email server using MS Outlook or Gmail and then perform email operations such as *Read Mail*, *Send Mail*, and *Set Mail* (to change email) by using the corresponding Action Steps.
 
 == Before you Begin
 
@@ -17,6 +17,9 @@ Select this option to specify OAuth credentials created with the xref:toolbox-va
 +
 Select this option to specify custom OAuth credentials for this Action Step.
 +
+** ** *E-Mail Provider*
++
+Select either *Outlook* or *Google*.
 *** *OAuth Host*
 +
 The host address used to get the credentials. The default address for Outlook services is `+https://login.microsoftonline.com/common/oauth2/v2.0/+`. This address might change if you use a self-hosted service.
