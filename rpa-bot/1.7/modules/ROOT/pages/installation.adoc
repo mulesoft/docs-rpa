@@ -23,6 +23,9 @@ The RPA Manager servername or address to connect to. This is the same URL you us
 +
 image:bot-install-rpa-manager.png[The RPA Bot installer window asking for the RPA Manager address to use, 50%, 50%]
 
+** *Bot Name*
++
+The display name to show in RPA Manager for this bot. 
 ** *APIKey for the bot*
 +
 The API key to use for this bot. Use any of the API keys created in RPA Manager.
