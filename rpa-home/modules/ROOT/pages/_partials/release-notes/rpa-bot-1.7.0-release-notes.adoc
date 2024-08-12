@@ -33,7 +33,6 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |===
 | Issue Resolution | ID
 | Secure Session creation no longer fails when the user name includes a blank space. | W-15456958 
-| RPA Bot names no longer displays incorrectly in RPA manager | W-15478436 
 | Executions no longer fail with `NullReferenceException` errors when multiple sessions run in parallel. | W-15212084 
 | Starting the execution of a process on demand no longer causes a `NullReferenceException`. | W-16185405 
 | Invocable runs no longer fail when using new scheduling types. | W-16186586 
