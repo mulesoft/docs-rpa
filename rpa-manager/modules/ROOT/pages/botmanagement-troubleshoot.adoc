@@ -15,12 +15,12 @@ If you're not sure why a bot isn't processing, review the execution plans:
 . In the module *Bot Management*, open the view *Bot Execution Plans*.
 . In the table, click *Execution timetable* (image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%]) in the row of the bot you want to check.
 
-The execution timetable shows you the effective runtime of all calendar scheduled run configurations assigned to the bot. The execution timetable does not show run configurations using other types of scheduling, such as on-demand, interval or cron-expression.
+The execution timetable shows the effective runtime of all calendar scheduled run configurations assigned to the bot. The execution timetable does not show run configurations using other types of scheduling, such as on-demand, interval or cron-expression.
 
 . Click *Configure Execution Timetable* (image:configure-icon.png[wrench symbol,1.5%,1.5%]) to change the time interval of the table and to select the shown configurations.
 . Click *OK*.
 . In the *Execution Timetable*, click a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
-The bot runs a process when the bot's service time overlaps with the schedule of the configuration. If the process uses applications, the bot doesn't run the process during the downtimes of any of those applications.
+The bot runs a process when the bot's service time overlaps with the configuration schedule. If the process uses applications, the bot doesn't run the process during the downtimes of any of those applications.
 
 RPA Manager displays all times in your local time. Times from bots and applications living in other time zones are converted to your local time. Hover over the bars to see which service times, downtimes, and schedules are contained in the execution times.
 
