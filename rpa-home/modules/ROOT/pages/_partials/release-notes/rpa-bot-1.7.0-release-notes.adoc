@@ -35,11 +35,6 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | Secure Session creation no longer fails when the user name includes a blank space. | W-15456958 
 | Executions no longer fail with `NullReferenceException` errors when multiple sessions run in parallel. | W-15212084 
 | Starting the execution of a process on demand no longer causes a `NullReferenceException`. | W-16185405 
-| Invocable runs no longer fail when using new scheduling types. | W-16186586 
-| RPA Bot no longer ignores start and end times when running on an interval schedule. | W-16203712 
-| Process executions no longer fail to start when configured to run on a specific day by using a cron expression. | W-16221882 
-| Updating a run configuration after deployment now takes effect on the running process. | W-16222623 
-| Configuring a start time without an end time no longer causes RPA Bot to start a process execution instantly. | W-16239336 
 | Invocable runs no longer show state Suspended when running. | W-16282214 
 | Uninstalling RPA Bot is no longer possible if the RPA Bot Configurator is open.| W-15304241 
 |===
