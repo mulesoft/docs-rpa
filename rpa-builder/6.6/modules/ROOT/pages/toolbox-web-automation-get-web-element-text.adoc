@@ -1,13 +1,8 @@
-
-
 = Get Web Element Text
 
-The _Get Element Text_ Action Step reads the _innerText_ of an element.
-It can then be transferred to other Action Steps by means of Pin
-Variables.
+The _Get Element Text_ action step reads the _innerText_ of an element and returns it as the *Element Text* outbound variable, which makes it available for use in subsequent Action Steps through Pin Variables. 
 
-This is how you can copy an e-mail address or other text from a web
-page, for example, to another application.
+As an example, you can use this action step to copy an email address or other text from a web page and use it in another application.
 
 == Properties
 
@@ -16,53 +11,39 @@ See xref:toolbox-web-automation-common-properties-web-automation.adoc[Common Pro
 == Inbound Variables
 
 //link:#WA_CommonProperties_ElementXPath[*Element XPath*]
-*Element XPath*
+* *Element XPath*
 
 //link:#WA_CommonProperties_WindowTitle[*Window Title*]
-*Window Title*
+* *Window Title*
 
 == Outbound Variables
 
-*Element Text* (string, default: blank) The _innerText_ of the selected
-element. If the element has no _innerText_ a blank string will be
-returned.
+* *Element Text* (string, default: blank)
++
+The _innerText_ of the selected element. If the element has no _innerText_, this action step returns a blank string.
 
 == Wizard
 
 //image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=429,height=263]
 
-First click on *Open Browser Wizard*.
+To extract the text from a web element: 
 
-//image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=193,height=220]
+. Click *Open Browser Wizard*.
 
-Select the desired element by holding the mouse cursor over it. When a
-blue border appears to frame the desired element, press `F2`.
+. Navigate to the site that contains the text element to extract. 
+. Position the mouse over the text element.
+. When a blue border shows to frame the element, press `F2`.
++
+The properties of the selected element show in the side bar. In addition to the mandatory XPath, you can select other attributes that help define the correct element.
++
+. Click *Accept Selection* (image:check-icon.png["The Accept Selection icon.", 2%,2%]) at the beginning of the sidebar on the browser wizard.
 
-//image:media\image3.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=327,height=396]
-
-The properties of the selected element will be shown in the right-hand
-side of the pane. In addition to the mandatory XPath you can also select
-other attributes here which should be used to define the correct
-element.
-
-Confirm your selection by clicking on the check mark in the top
-right-hand corner of the browser wizard.
-////
 == Example
 
-image:media\image4.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=604,height=141]
+In this example, the Get Web Element Text action step captures an email address from a MuleSoft Accelerators documentation article:
 
-In the example, _Get Element Text_ extracts the i__nnerText__ from the
-selected element on the _Servicetrace^®^_ website and transfers it to a
-text editor.
+image:get-web-element-text-example.png["The Browser Wizard showing a blue frame around the selected email address."]
 
-image:media\image5.png[Ein Bild, das Text enthält. Automatisch
-generierte Beschreibung,width=604,height=185]
+Then, in a subsequent Send Mail action step, the email address is entered as the *To* address through a Pin variable:
 
-As you can see, the HTML tags are removed and only the text as legible
-on the website is returned in ASCII format.
-
-Line breaks, paragraphs, tabs and blank lines are retained, but other
-text formatting such as the font, font size, and font color are not.
-////
+image:get-web-element-text-use-variable.png["The Send Mail Wizard using a Pin variable to configure the email address.", 75%, 75%]
