@@ -1,6 +1,4 @@
-
-
-== Web Automation
+= Web Automation
 
 _Web Automation_ Action Steps are designed specifically to automate browsers and web-based applications. In contrast to the regular _Action Steps_, these do not just simulate user operations, but are also
 able to handle and control objects within a web-based application. This features can be used in any website or application that runs in a browser.

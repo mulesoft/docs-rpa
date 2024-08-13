@@ -1,6 +1,5 @@
 
-
-== System
+= System
 
 System Action Steps enable you to perform some system interactions as mapping network drives, displaying a message box, compare system parameters, and write logs.
 
