@@ -82,7 +82,11 @@ For your process you need three Activity Parameters:
 ** is set to true if the order id is found in the order tracking system
 ** routes the process flow through the gateway accordingly
 
-image::activityparameters.png[Screenshot of the Activity Parameter window]
+image::activityparameters.png[The Activity Parameter window showing the three parameters of the process.]
+
+To use Activity Parameters in a Workflow, move them from *Available Paramters* to *Used in this Workflow* in the *Workflow Initialization* section. The parameters retain the values set in previous workflows throughout the process.
+
+image::usecase-legacysystem-useactivityparameters.png[The Activity Parameter Wizard showing the parameter used in a workflow.]
 
 ## Implement the Activities
 

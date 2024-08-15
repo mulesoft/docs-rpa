@@ -6,7 +6,7 @@ First, you need to find the order ID in the PDF.
 
 As you can see in xref:automation-usecase-legacysystemdataextraction.adoc#confirmationletter-image[the image of the order confirmation letter], the order ID is always listed in a table next to the entry 'Order ID'. 
 // Do we need an image of that part of the letter here?
-You can use this information to implement the workflow containing the following steps:
+You can use this information to implement the workflow that contains the following steps:
 
 . Copy the content of the order confirmation to a text file.
 . Read the text file line by line to find the one containing the order ID.
@@ -43,7 +43,7 @@ image::usecase-legacysystem-extractformpdf-workflow-checkcaseandproceed.png['']
 
 ## Retrieving a Substring and Saving it to a Variable
 
-Since you know that the order ID is written after the text `Order ID `, you can simply remove these first nine characters from the current line (which contains the substring `Order ID`) by using the *Trim left (remove first characters)* operations of the *String Operations* Action Step. The remaining string is the order ID, which you store in the Activity Parameter of the same name by using the result if the string operation as a Pin Variable in the *Set Variable* AS.
+Since you know that the order ID is written after the text `Order ID`, you can simply remove these first nine characters from the current line (which contains the substring `Order ID`) by using the *Trim left (remove first characters)* operations of the *String Operations* Action Step. The remaining string is the order ID, which you store in the Activity Parameter of the same name by using the result if the string operation as a Pin Variable in the *Set Variable* AS.
 
 image::usecase-legacysystem-extractformpdf-workflow-cutsubtringoutoftext.png['']
 

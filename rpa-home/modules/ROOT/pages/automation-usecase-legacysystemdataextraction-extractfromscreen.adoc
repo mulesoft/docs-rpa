@@ -5,75 +5,56 @@
 
 With the order ID you can now get the corresponding tracking number from the legacy system:
 
-. Import all three Activity Paramters. The order ID is already filled with the value extracted in the last Activity.
 . Run your legacy application.
 . Search for the word `Order-ID` on the screen, click in the edit field next to it, enter the order ID and click *Search*.
-. If there is no result, set the gateway variable `is_orderid_found` to false.
 . If there is a result, copy the tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. 
+. If there is no result, set the gateway variable `is_orderid_found` to false.
 
-## Reuse Activity Parameter values in a subsequent workflow
+image::usecase-legacysystem-screeninteraction.png[Overview of the workflow of the activity for the searching of the order ID with screen interactions. The number of the steps are contained in frames.]
 
-In the *Activity Parameter* element of the *Workflow Initialization* element select all three Activity Paramters to use. The order ID is already filled with the value extracted in the last Activity.
+## Run a Legacy Desktop Application
 
-image::workflow-extractdatafromscreen.png[]
+To run the legacy desktop order tracking application, you select the path to the executable file in the *Run program* Action Step. You set the start mode of the application to `Maximized` to open the application in a maximized window. This ensures that the elements of the UI are always in the same position on the screen, which is important because you later use Action Steps that work with screen coordinates. You select `Wait for Window to appear` and specify the window title to ensure that the following Action Steps won't return an error because the window isn't there yet.
 
-## Run a Legacy Application
+image::usecase-legacysystem-screeninteraction-run.png[]
 
-To run a Desktop application, you can use the *Run program* Action Step:
+## Enter Text Into a Screen Element and Click a Button
 
-* You enter the path to the executable file or select it in a file browser
-* You set the start mode of the application to `Maximized`. This opens the application in a maximized window and which means you can be sure that the elements of the UI are always on the same position on the screen, which is important for later Action Steps that work with screen coordinates.
-* You select `Wait for Window to appear` and specify the window title to ensure that the following Action Steps won't return an error because the window is not yet there.
+To search for the tracking number, you have to enter the order ID in the search field and click the search button.
 
-image::workflow-runprogram.png[]
-
-## Search the Tracking Number ID
-
-To search for the tracking number, you have to enter the order ID in the search field and click search.
-
-To find the search field, you need to find the the word `Order ID` on the application screen first. For this, you use the *Search Pattern* Action Step to capture and compare the pattern:
+To find the search field, you need to find the word `Order ID` next to it on the application screen first. You use the *Search Pattern* Action Step to capture and compare the pattern:
 
 image::workflow-capturepattern.png[]
 
-image::workflow-searchpattern.png[]
+image::usecase-legacysystem-screeninteraction-searchpattern.png[]
 
-This returns a coordinate which you can use in the next step to determine where to input the order ID.
+Finding the pattern returns a coordinate that you use in the next step to determine where to input the order ID. Use *Mouse Action* to click into the search field next to the label `Order ID`:
 
-Use *Mouse Action* to click into the search field:
-
-image::workflow-clickinsearchfield.png[]
+image:usecase-legacysystem-screeninteraction-mouseaction.png[]
 
 The search field now has the focus, so you can just enter the order ID with a simulated keyboard. Instead of recording key strokes, you use the Activity Parameter `order_id` with the *Enter String* Action Step to copy the Order ID into the field:
 
-image::workflow-enteractivityparameteraskeystrokes.png[]
+image::usecase-legacysystem-screeninteraction-enterstring.png[]
 
-Then Mouse Action again to start the search:
+You use *Mouse Action* again to start the search. To determine the position of the search button to click, you reuse the location of the `Order id` pattern to record the click position.
 
-* You reuse the location of the order id pattern to record the click position.
-
-image::workflow-clicksearchbutton.png[]
+image::usecase-legacysystem-screeninteraction-mouseaction-clickbutton.png[]
 
 ## Check the Results
 
 You know, that the search is successful, when there is a result listed. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-allentries-image[the screen], the tracking number should be listed in the column of the same name, so you search for that column first, using `Tracking No.` as the search pattern:
 
-image::workflow-searchtrackingnumberpattern.png[]
+image::usecase-legacysystem-screeninteraction-searchpattern-text.png[]
 
 Because it might be that the order has no corresponding tracking number in the system and you don't want to falsely return the initial value of the variable as tracking number, you check this case first.
 
-In the *DoAction*, which works like a try element, you check, if the result list is empty. 
-As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-noentries-image[the screen], in case of no results, an up arrow is shown directly below the empty space where the results should have been.
+In the *DoAction*, which works like a try element, you check if the result list is empty. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-noentries-image[the screen], in case of no results, an up arrow is shown directly below the empty space where the results should have been.
 
-You use the *Search Pattern* Action Step:
+You use the *Search Pattern* Action Step to search for the arrow up symbol and limit the search area to the space directly below the column name.
 
-* The search pattern is the arrow up symbol.
-* The search area must be limited to the space directly below the column name.
+If the pattern is not found - which in your case means that the system found a corresponding tracking number - *Search Pattern* returns an error. To continue with the workflow you need to force an OK state then, which you do in the *OnError* section.
 
-If the pattern is not found - which in your case means that the system found a corresponding tracking number - *Search Pattern* returns an error.
-
-To continue with the workflow you need to force an OK state, which you do in the *OnError* section.
-
-image::workflow-managed-searchforemptylist.png[]
+image::usecase-legacysystem-screeninteraction-searchpattern-relatedcoordinates.png[]
 
 image::workflow-searchforemptylist-searcharea.png[]
 
