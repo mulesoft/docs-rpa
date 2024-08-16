@@ -84,7 +84,7 @@
 *** xref:toolbox-general-stc-protector.adoc[STC Protector]
 ** xref:toolbox-mail-operations.adoc[Mail Operations]
 *** xref:toolbox-mail-operations-mail-session.adoc[Mail Session]
-*** xref:toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[Mail Session (Outlook with OAuth)]
+*** xref:toolbox-mail-operations-mail-session-oauth.adoc[Mail Session (OAuth)]
 **** xref:troubleshooting-azure-oauth-setup.adoc[]
 *** xref:toolbox-mail-operations-read-mail.adoc[Read Mail]
 *** xref:toolbox-mail-operations-send-mail.adoc[Send Mail]
