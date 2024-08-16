@@ -2,8 +2,8 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
-[[august-15-2024]]
-== August 15, 2024
+[[august-19-2024]]
+== August 19, 2024
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
