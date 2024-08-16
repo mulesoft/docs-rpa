@@ -42,6 +42,7 @@
 ** xref:toolbox-excel-operations.adoc[Excel Operations]
 *** xref:toolbox-excel-operations-excel-controlled-loop.adoc[Excel Controlled Loop]
 *** xref:toolbox-excel-operations-excel-session.adoc[Excel Session]
+*** xref:toolbox-excel-operations-execute-excel-macro.adoc[]
 *** xref:toolbox-excel-operations-read-from-excel-file.adoc[Read from Excel File]
 *** xref:toolbox-excel-operations-recalculate-excel-file.adoc[Recalculate Excel File]
 *** xref:toolbox-excel-operations-save-excel-file.adoc[]
