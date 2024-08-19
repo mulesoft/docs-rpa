@@ -5,3 +5,9 @@ In the model of the process you used an exclusive gateway to determine how to pr
 In RPA Builder you configure the gateway using the `is_ordeid_found` Activity Parameter.
 
 image::usecase-legacysystem-gateway.png[]
+
+## Next Activity
+
+*xref:automation-usecase-legacysystemdataextraction-returnvalues.adoc[]
+
+## See Also

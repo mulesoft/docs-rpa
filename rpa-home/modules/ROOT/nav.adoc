@@ -26,6 +26,7 @@
 ** xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[]
 ** xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
 ** xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
+** xref:automation-usecase-legacysystemdataextraction-returnvalues.adoc[]
 * xref:invoke-rpa-services.adoc[Invoke RPA Services from Composer]
 * xref:publish-process-automation-exchange.adoc[Publishing Automation Assets to Anypoint Exchange]
 * xref:invoke-rpa-from-flow.adoc[Invoke RPA Services from Salesforce Flow]

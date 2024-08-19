@@ -63,7 +63,7 @@ If there is a result, you set the gateway variable `is_orderid_found` to `true`.
 
 image::usecase-legacysystem-screeninteraction-selectcase-orderfoundtrue.png[]
 
-Then you use artificial intelligence enhanced optical character recognition to extract the tracking number with the *AI OCR* Action Step using the search mode `Recognition Only`.
+Then you use artificial intelligence enhanced optical character recognition to extract the tracking number with the *AI OCR (screen-based)* Action Step using the search mode `Recognition Only`.
 
 image::usecase-legacysystem-screeninteraction-aiocr.png[]
 
@@ -87,6 +87,11 @@ If the tracking number is not returned by the search, you set the gateway variab
 ## See Also
 
 // Features of RPA Manager and RPA Builder used in this topic
-* xref:rpa-builder::.adoc[RPA Builder Action Step: ]
-* xref:rpa-builder::.adoc[RPA Builder Action Step: ]
-* xref:rpa-builder::.adoc[RPA Builder Action Step: ]
+* xref:rpa-builder::toolbox-control-run-program.adoc[RPA Builder Action Step: Run Program]
+* xref:rpa-builder::toolbox-checks-search-pattern.adoc[RPA Builder Action Step: Search Pattern]
+* xref:rpa-builder::toolbox-control-mouse-actions.adoc[RPA Builder Action Step: Mouse Actions]
+* xref:rpa-builder::toolbox-control-enter-string.adoc[RPA Builder Action Step: Enter String]
+* xref:rpa-builder::toolbox-flow-control-managed.adoc[RPA Builder Action Step: Managed]
+* xref:rpa-builder::toolbox-flow-control-select-case.adoc[RPA Builder Action Step: Select Case]
+* xref:rpa-builder::toolbox-text-recognition-ai-ocr-screen-based.adoc[RPA Builder Action Step: AI OCR (Screen-Based)]
+* xref:rpa-builder::toolbox-variable-handling-set-variable.adoc[RPA Builder Action Step: Set Variable]
