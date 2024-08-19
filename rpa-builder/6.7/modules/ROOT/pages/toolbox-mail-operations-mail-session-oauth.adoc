@@ -42,24 +42,19 @@ be sent.
 
 == Inbound Variables
 
-* *Incoming Mail*
-* *Server address*
-+
-(String) The server address entered in the wizard.
-* *Server port*
-+
-(Integer) The selected port.
-* *User account*
-+
-The login data that you require to log in to the server.
-* *Outgoing Mail*
 * *SMTP Server address*
-+
-(String) The URL of the selected SMTP email server.
-* *SMTP User account*
-+
-The login data that you require to log in to the SMTP
-server.
+* *Server address*
+* *SMTP Server Port*
+* *Server Port*
+* *OAuth Credentials*
+* *OAuth Host Address* 
+* *OAuth Host Address* 
+* *OAuth Client ID*
+* *Client Secret* 
+* *Redirect URI*
+* *Scopes* 
+* *E-Mail Address*
+* *Refresh Token*
 
 == Outbound Variables
 
