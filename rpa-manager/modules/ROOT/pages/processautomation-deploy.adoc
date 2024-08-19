@@ -1,12 +1,16 @@
 = Deploying Automations
 
-The third phase of process automation is the *Test* phase. In this phase, you can test the implemented process model in different configurations. You can transition back to *Build* phase to change the implementation.
+The third phase of process automation is the *Test* phase. In this phase, you can test the implemented process model in different configurations. You can xref:processautomation-manage.adoc#transition-an-automation-project-to-another-phase[transition] back to *Build* phase to change the implementation.
 
 When the tests are successful, transition to *Production* phase.
 
-The final phase in the life-cycle of a process is the *Production* phase. This phase is structured similarly to the *Test* phase, except that in the production phase, you don't have to start the individual process runs manually. Instead, you can do either of the following:
-* Schedule a process run configuration to run it automatically at defined times. 
-* Create an invocable run configuration and publish it to Anypoint Exchange.
+The *Production* phase is the final phase in the life cycle of a process. 
+
+You have three ways to run a process:
+
+* Create and deploy a **Scheduled Run Configuration** to run the process automatically at defined times. 
+* Create and publish an **Invocable Run Configuration** to use it within other Salesforce products.
+* Create an **On-Demand Run Configuration** to start the process run manually.
 
 You can't run processes openly in existing console sessions or run them hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
@@ -19,12 +23,12 @@ You can't run processes openly in existing console sessions or run them hidden i
 |Action |RPA Permission |Deprecated RPA Permission
 
 |Open the *Process Automation* module.
-||RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
+|RPA Automations Designer, RPA Automations Contributor, RPA Automations Manager, RPA Administrator
 |Process Automation Open
 
 |===
 
-* At least one RPA Bot must be installed to deploy a process.
+* At least one RPA Bot must be installed to deploy or publish a process.
 ** Be aware that bots can reside in different time zones.
 * If you want to use the values of xref:processautomation-prepare-deployment-variable.adoc[global variables] or xref:processautomation-prepare-deployment-credential.adoc[credentials] as initial values for activity parameters, an RPA administrator must create them in the *Global Variables* or *Credential Pool* view first.
 * A project in test or production phase must exist in the *Project Management* view of the *Process Automation* module.
@@ -146,11 +150,21 @@ To view the test results and to download an analysis package:
 
 == Deploy a Process Automation
 
-Transition the project to the production phase to deploy a scheduled run configuration to a bot. The process runs fully automated from now on.
+Transition the project to the production phase to deploy a run configuration to a bot. The process runs fully automated from now on.
+
+Sometimes it's necessary to start a process manually when something happens that only a human can evaluate. For example, the goods inwards inspection process can only start after the banana delivery ship reaches the pier wall. For this purpose, use the *Run Now* option.
+
+You have three ways to run a process:
+
+* Create and deploy a **Scheduled Run Configuration** to run the process automatically at defined times. 
+* Create and publish an **Invocable Run Configuration** to use it within other Salesforce products.
+* Create an **On-Demand Run Configuration** to start the process run manually.
+
+You can run processes openly in existing console sessions or hidden in Secure Sessions. In console sessions, only one process can run at a time. In Secure Sessions, different processes or several instances of the same process can run in parallel.
 
 Pause or revoke configurations to stop the execution temporarily. Transition the project back to the build phase to change the implementation.
 
-Projects that have already been used productively can no longer be deleted.
+You can't delete projects of processes that a bot has already run productively.
 
 === Transition Process to Production Phase
 
@@ -166,18 +180,31 @@ Transition the tested process to production phase for running it fully automatic
 [[production-configuration]]
 === Create a Run Configuration
 
-To create a run configuration:
+A run configuration consists of a name, a description, initial values for the Activity Parameters, one or more bots, and conditions for deployment of the automation with this configuration. 
+
+There are three types of run configurations: 
+
+* **Scheduled run configurations** define intervals for the runs.
+* **Invocable run configurations** are called from other products. Automations can have one invocable run configuration.
+* **On-demand run configurations** are started manually.
+
+You can publish an invocable run configuration after you save it.
+
+You can create a new configuration or <<copy-run-config, copy>> an existing one.
+
+To create a new run configuration:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
-. Click *Create run configuration*.
-. Complete the *Create production configuration* form:
+. Click *New* > *<Type> Run Configuration*.
+. Complete the *Create production configuration* form. The shown parameters depend on the configuration type:
 +
 * *Settings*
 +
 ** *Priority*
 +
 Enter a number between 1 and 200 to specify the priority of the process run. Deployed processes are inserted in a session queue according to their priority. Process configurations with lower numbers are considered higher priority and are executed before configurations of lower priority.
+Invocable and on-demand run configurations always have highest priority.
 * *Activity Parameter*
 +
 The activity parameters for each process are created in RPA Builder and are given initial values there. You can overwrite these values with new initial values by double-clicking on the relevant field in the *Value* column.
@@ -190,7 +217,7 @@ Alternatively, you can set the value of an activity parameter by linking it with
 The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*:
 +
-User tasks are elements of a process model, which can't be processed fully automatically by a bot, but which require the support of a human. Specify which users are to process the user tasks by clicking on the *User Assignment or  User Group Assignment* icon. The number of assigned users and user groups is displayed in the table. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
+User tasks are elements of a process model that a bot can't process fully automatically and require human intervention. Specify which users are to process the user tasks by clicking on the *User Assignment* or *User Group Assignment* icon. The table displays the number of assigned users and user groups. You can specify both users and user groups at the same time. The user task is then displayed to each specified user until a user reserves it for processing.
 +
 Select the checkbox *Send email notification to all related users* when the task is ready for processing if you want all specified users to receive an email as soon as they're supposed to process a user task. This email contains the name of the user task, the process, and the project manager, as well as a prompt to review the pending tasks in the *My RPA* module.
 * *Execution*:
@@ -209,14 +236,18 @@ The bot can overtake the console or RDP session only if the specified user is lo
 Bots running an earlier version than 1.2.0 overtake an open console session without checking if the logged-in user matches the specified user.
 +
 [[runconfig-execution-enabletaskbar]] If you want to watch the execution of the process in the *Process Streaming* view of the *Process Monitoring* module or if the process uses elements of the Windows operating system like the start menu or the task bar, check *Enable Taskbar (Start menu, taskbar buttons)*.
-* *Process Trigger Execution*:
+* *Schedule*:
 +
-The productive run is carried out continuously within a fixed schedule. For each schedule, you can define time intervals within which the process is executed.
-+
+[%collapsible]
+.*Note that bots might run in different time zones.*
+==== 
+
+'''
+
 You create a schedule without specifying a time zone. The bot you assign the production configuration to executes the process at the specified times in its local time. The time intervals might change, depending on daylight saving time.
-+
+
 For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that starts at 5:30 AM and ends at 9:30 PM and assign the configuration to three bots installed on computers in Berlin, San Francisco, and Tokyo, the bots don't execute the processes simultaneously:
-+
+
 [cols="1,2,2"]
 |===
 |*Bot* |*Execution Time in the Bot's Local Time Zone* |*Execution Time in the Buenos Aires User's Local Time Zone*
@@ -234,18 +265,112 @@ For example, if you work in Buenos Aires (ART (UTC -3)), specify a schedule that
 |5:30 PM - 9:30 AM (Buenos Aires time (ART (UTC -3)))
 
 |===
+
+The bot checks every minute whether it's within a scheduled time frame and within its service time and whether the required process applications are outside all downtimes. The process isn't executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
+
+'''
+
+====
 +
-You can create multiple schedules. These may also overlap. All schedules together make up a time frame within which the process may be executed. The executing bot checks every minute whether it's within this time frame or not. A new process run isn't started until all conditions have been fulfilled.
+Invocable and on-demand run configurations don't have schedules.
 +
+For a scheduled run configuration, choose the schedule type:
++
+[IMPORTANT]
+Interval and Cron expression scheduling are supported by bots running version 1.7.0 or later.
++
+** *Interval*
+Enter the interval to repeat the process. The process starts once at the beginning of each interval.
++
+The intervals are equidistant in the defined time frame. For example, `Repeat my process every 10 minutes`. 
++
+If you need a more complex interval, use *Cron expression*.
++
+** *Cron expression*
++
+Enter a Cron expression to repeat the process. The process starts once at the beginning of each interval.
++
+The intervals aren't equidistant. For example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on Monday and Friday, from February to April, and in November`.
++
+If you need a simpler interval, use *Interval*.
++
+You can use the Cron expression helper to compile the expresssion and check the natural language schedule summary.
++
+.What is a Cron expression?
+[%collapsible]
+=====
+
+'''
+
+Cron is a widely used standard for describing time and date information. You use a cron expression to define complex intervals, for example, `Run my process on minutes 3, 11, and 48 of every hour between 08:00 AM and 10:42 PM, only on Monday and Friday, from February to April, and in November.
+
+The scheduler keeps track of every minute and starts the process run when the Cron expression matches the bot's time-date setting. You can trigger the event just once or at regular intervals.
+
+A date-time expression in the Cron format used by RPA Manager consists of five required settings in the following order:
+
+. Minutes (`0`-`59`)
+. Hours (`0`-`23`)
+. Day of month (`1`-`31`)
+. Month (`1`-`12`)
+. Day of the week (`0`-`7`), where Sunday is either `0` or `7`
+
+The Scheduler component also supports the following special characters:
+
+* `*`: All values within the range of valid values.
+* `-`: Range of values within the range of valid values, for example, `1-3`.
+* `,`: Additional values within the range of valid values, for example, `1,7`.
+* `/`: Incremental values within the range of valid values starting with the first specified value, for example, `1/7`.
+
+You can set either the day of the week or day of the month, but not both. Replace either the day of the week or day of the month with an asterisk.
+
+The Scheduler supports most standard Cron expressions. Here are a few good and bad examples:
+
+[%header,cols="3*"]
+|===
+|Expression |Behavior |Explanation 
+|`5 4 3 2 1` | At 04:05 AM on every Monday in every February and (?) on the 3rd of every February| This Cron expression is invalid. You can set either the day of the week or the day of the month, but not both. Replace either the day of the week or the day of the month with an asterisk. If you want to run a process exactly once at a specific time, you must specify the day of the month but not the day of the week. See the next two examples. 
+|`5 4 3 2 *` | At 04:05 AM on the 3rd of every February| If you want to run a process exactly once at a specific time, you must specify the day of the month but not the day of the week. You can't specify the year. 
+|`5 4 * 2 3` | At 04:05 AM on every Wednesday of every February| If you want to run a process exactly once at a specific time, you must specify the day of the month but not the day of the week. You can't specify the year. 
+|`*/7 * * * *` |At minute 00, 07, 14, 21, 28, 35, 42, 49, 56 of every hour (of every day of every month on every weekday). |Starts at minute 0 because it's the first of all values in the valid range (*).
+|`45/05 * * * *` |At minutes 45, 50, and 55 of every hour |
+|`* * * * *` | Every minute forever |
+|`* 9-16 * * 1-5` |Every minute, between 09:00 AM and 04:59 PM, Monday through Friday |
+|`00,10,42 9-16 1-10,20-30 2-7,12 *`` |At 0, 10, and 42 minutes past the hour, between 09:00 AM and 04:59 PM, on day 1 through 10 and 20 through 30 of the month, and on Friday, only in February through July and December |You can combine lists and ranges.
+|===
+
+Non-existent times, such as 'missing hours' during daylight savings conversion, never match the bot's time-date setting, causing processes scheduled during the 'missing times' not to run. Times that occur more than once (again, during daylight savings conversion) cause matching processes to run twice.
+
+'''
+=====
++
+** *Calendar Scheduling*
++
+Use this option to edit run configurations that already use calendar scheduling.
++ 
+Add one or more fixed schedules within which RPA continuously executes the productive run. For each schedule, define time intervals within which RPA executes the process. RPA Manager combines all schedules to compute the execution times.
++
+.How does calendar scheduling work?
+[%collapsible]
+=====
+
+'''
+
+You can create multiple overlapping schedules. All schedules together make up a time frame within which the bots may start the process runs continuously. A new process run doesn't start until all conditions are fulfilled.
+
 For this reason, the executing bot checks every minute whether it's within a service time and whether the required process applications are outside all downtimes. The process isn't executed if the executing bot is outside its service time or if one or more of the process applications used by the bot are within a downtime.
-+
-Running processes are always executed completely.
-+
-When creating new schedules, pay attention to whether the new schedules overlap with schedules of other configurations and ensure that the executing bots have enough free sessions. Otherwise, trigger executions might be skipped.
-+
+
+Unless the computer on which the bot is installed crashes or an required application is down, running processes are always completed.
+
+When creating new schedules, pay attention to whether the new schedules overlap with schedules of other configurations and ensure that the executing bots have enough free sessions. Otherwise, the bot might skip  process runs.
+
 Click on the button *Add Schedule* to assign a (further) schedule to this configuration and complete the *Create a new schedule* form:
-+
+
 include::rpa-manager::partial$form-scheduling.adoc[]
+
+'''
+
+=====
++
 * *Bots*:
 +
 Select all RPA Bots that are to carry out the production configuration.
@@ -256,7 +381,27 @@ When you select a bot, ensure that it's configured for the required session type
 +
 If one of the selected bots isn't configured appropriately, RPA Manager displays a notification, and you can't proceed with the configuration.
 Hover the mouse pointer over the info label to display more detailed information about the cause of the warning or error in the form of a tooltip.
++ 
+Set the number of Secure Sessions for each bot. On-demand run configurations have only one session.
 . Click *Save*.
+
+[[copy-run-config]]
+=== Copy a Run Configuration
+
+Copy a run configuration if you need to change only a few parameters.
+
+You can also copy a scheduled or an invocable run configuration as an on-demand run configuration.
+
+To copy a run configuration:
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of a project to open it.
+. Click the *Copy* icon (image:copy-icon.png[copy symbol,1.5%,1.5%]) in the table row of the run configuration to copy.
+. Select the type of the copy.
+. Enter a new name for the copy of the run configuration. The copy contains all assets of the original. For on-demand run configurations, the number of sessions of all bots is set to 1.
+. Click *OK*.
+
+You can edit the copy after saving. 
 
 === Deploy Configurations
 
@@ -266,8 +411,24 @@ Deploy configuration to run them fully automatically in a productive environment
 . Click on the name of a project to open it.
 . Click *Select action*.
 . From the dropdown, select *Deploy process*.
-. In the window *Select Configuration to deploy*, check all configurations you want to run.
+. In the window *Select Configuration to deploy*, check all configurations to run.
 . Click *Execute*.
+
+[[trigger-run-once]]
+=== Run a Configuration Once
+
+The configuration to run once must either be invocable or marked as <<run-once-tag, *Start Manually*>>.
+
+To start the single process run:
+
+. Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
+. Click on the name of a project to open it.
+. Click *Select action*.
+. From the dropdown, select *Run once*.
+. In the window *Select Configuration to Run once*, check all configurations to run.
+. Click *Execute*.
+
+The run starts directly. If an invocable configuration is triggered at the same time using the same session, the run waits for the invocable run to complete before starting.
 
 [[view-run-results]]
 === View Run Results
@@ -299,6 +460,7 @@ Deleted invocable run configurations aren't deleted in Anypoint Exchange. Edited
 Salesforce Flow always uses the newest version of a process. Invocable run configurations deleted in RPA are also deleted in Salesforce. 
 
 Invocable configurations can run only if the following requirements are met:
+
 * The project is in the production phase.
 * At least one of the assigned bots is in the `OK` state.
 
@@ -322,7 +484,7 @@ To create an invocable run configuration:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the name of the category of your project.
 . Click on the name of a project to open it.
-. Click *Create an invocable run configuration*.
+. Click *New* > *Invocable Run Configuration*.
 . Complete the *Create production configuration* form:
 +
 * *Activity Parameter*:
