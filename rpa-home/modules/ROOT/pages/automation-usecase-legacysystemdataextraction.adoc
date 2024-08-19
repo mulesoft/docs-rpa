@@ -94,7 +94,7 @@ You find some details of implementation of the activities as _Workflows_ on the 
 
 * xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[]
 * xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
-* ...Gateway
+* xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
 * ...UserTask
 
 ## See Also

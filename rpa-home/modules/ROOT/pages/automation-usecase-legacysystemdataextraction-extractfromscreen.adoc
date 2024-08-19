@@ -7,8 +7,7 @@ With the order ID you can now get the corresponding tracking number from the leg
 
 . Run your legacy application.
 . Search for the word `Order-ID` on the screen, click in the edit field next to it, enter the order ID and click *Search*.
-. If there is a result, copy the tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. 
-. If there is no result, set the gateway variable `is_orderid_found` to false.
+. If there is a result, copy the tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. If there is no result, set the gateway variable `is_orderid_found` to false.
 
 image::usecase-legacysystem-screeninteraction.png[Overview of the workflow of the activity for the searching of the order ID with screen interactions. The number of the steps are contained in frames.]
 
@@ -56,18 +55,34 @@ If the pattern is not found - which in your case means that the system found a c
 
 image::usecase-legacysystem-screeninteraction-searchpattern-relatedcoordinates.png[]
 
-image::workflow-searchforemptylist-searcharea.png[]
+If the tracking number is returned by the search, the number of found patterns matching the arrow up symbol is zero. You use this information as a case differentiator in the *Select Case* Action Step.
 
-As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-resultentry-image[the screen],
+image::usecase-legacysystem-screeninteraction-selectcase.png[]
 
+If there is a result, you set the gateway variable `is_orderid_found` to `true`.
 
-...
+image::usecase-legacysystem-screeninteraction-selectcase-orderfoundtrue.png[]
+
+Then you use artificial intelligence enhanced optical character recognition to extract the tracking number with the *AI OCR* Action Step using the search mode `Recognition Only`.
+
+image::usecase-legacysystem-screeninteraction-aiocr.png[]
+
+As before, you use the pattern `Tracking No.` as the anchor for the search area.
+
+image::usecase-legacysystem-screeninteraction-trackingno-searcharea.png[]
+
+You save the extracted tracking number to the Activity Parameter so you can return it at the end of the process.
+
+image::usecase-legacysystem-screeninteraction-getregocnizedtext.png[]
+
+If the tracking number is not returned by the search, you set the gateway variable `is_orderid_found` to `false` and force an OK state to continue the process.
+
 // Turn off section numbering
 :sectnums!:
 
 ## Next Activity
 
-* xref:automation-usecase-legacysystemdataextraction.adoc[]
+*xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
 
 ## See Also
 
