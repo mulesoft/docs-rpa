@@ -4,7 +4,7 @@ RPA Bot is a software robot that runs in an on-premise environment and executes 
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
-== August 12, 2024 //TODO confirm date
+== August 19, 2024
 
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
