@@ -7,3 +7,6 @@ These action steps require you to provide your Google API Service Account Creden
 * xref:toolbox-google-workspace-download-from-google-drive.adoc[]
 +
 Download files from your Google Drive. You can also export files to a different format. 
+* xref:toolbox-google-workspace-upload-to-google-drive.adoc[]
++
+Upload files to your Google Drive.

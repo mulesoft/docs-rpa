@@ -84,6 +84,7 @@
 *** xref:toolbox-general-stc-protector.adoc[STC Protector]
 ** xref:toolbox-google-drive-operations.adoc[]
 *** xref:toolbox-google-workspace-download-from-google-drive.adoc[]
+*** xref:toolbox-google-workspace-upload-to-google-drive.adoc[]
 ** xref:toolbox-mail-operations.adoc[Mail Operations]
 *** xref:toolbox-mail-operations-mail-session.adoc[Mail Session]
 *** xref:toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[Mail Session (Outlook with OAuth)]

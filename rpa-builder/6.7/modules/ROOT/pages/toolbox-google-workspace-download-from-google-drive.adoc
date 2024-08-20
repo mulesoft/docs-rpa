@@ -15,37 +15,7 @@ You can configure your credentials as an xref:toolbox-variable-handling-activity
 
 == Properties 
 
-* *Authentication Settings* 
-** *Auth Provider x509 Cert URL*
-+
-Authentication provider certificate URL for the Google API credentials. 
-** *Auth URI* 
-+
-OAuth2 authentication URI for the Google API credentials.
-** *Client Email* 
-+
-Client email of the Google API credentials. 
-** *Client ID* 
-+
-Client ID of the Google API credentials. 
-** *Client x509 Cert URL* 
-+
-Client certificate URL for the Google API credentials. 
-** *Credential Type*
-+
-Type of Google API credentials. For example, `service_account`.
-** *Google API Service Account Credentials* 
-+
-Activity parameter containing all Google API credentials. 
-** *Project ID* 
-+
-Project ID of the Google API credentials.
-** *Token URI* 
-+
-OAuth2 token URI for the Google API credentials.
-** *Universe Domain* 
-+
-Universe domain of the Google API credentials.
+include::partial$oauth-authentication-settings.adoc[]
 
 * *Common* 
 +
@@ -125,18 +95,7 @@ When selected, renames the downloaded or exported file using the specified *New 
 * *Overwrite existing file* 
 * *Set new file name* 
 * *New file name* 
-* *Credential Type*
-* *Project ID* 
-* *Private Key ID* 
-* *Private Key* 
-* *Token URI* 
-* *Auth Provider x509 Cert URL* 
-* *Auth URI* 
-* *Client Email* 
-* *Client ID* 
-* *Client x509 Cert URL* 
-* *Universe Domain* 
-* *Google API Service Account Credentials* 
+include::partial$oauth-inbound-variables.adoc[]
 
 == Outbound Variables 
 
@@ -152,13 +111,13 @@ String containing the file name, including the extension.
 
 == Wizard 
 
-Specify your authentication settings for the Google API service account in the *Authentication Settings* panel. Select *Pin credentials* to specify the activity parameter containing the credentials, or select *Use custom settings* to provide the information inline. You can either import a JSON file with your Google API credentials information or specify the authentication information manually. 
+include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
 
 In *Download Settings*, select between *Download file* or *Export Google Workspace document*, depending on the operation to perform. When exporting a file, you must select the type of Google file to export (Docs, Sheets, or Slides) and the format for the target file. Available export formats depend on the file being exported. 
 
 Provide the *File ID* of the file to download or export. To obtain this ID, use the Search in Google Drive action step. 
 
-Specify the *Directory path* where you want to download or export the file from your Google Drive. You can specify this action step to create the target directory if it doesn't exist and to overwrite any existing file in the directory path that contains the same name as the file to download or export. 
+Specify the *Directory path* where you want to download or export the file from your Google Drive. You can instruct this action step to create the target directory if it doesn't exist and to overwrite any existing file in the directory path that contains the same name as the file to download or export. 
 
 To rename the downloaded or exported file, select *Set new file name* and provide the file name to use including its extension. 
 
