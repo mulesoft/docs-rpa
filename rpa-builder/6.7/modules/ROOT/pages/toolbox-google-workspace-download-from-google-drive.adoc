@@ -149,7 +149,6 @@ String containing the directory path to the downloaded or exported file.
 * *File name* 
 +
 String containing the file name, including the extension. 
-* *Success* 
 
 == Wizard 
 
