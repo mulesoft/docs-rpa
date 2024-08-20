@@ -8,7 +8,7 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* New permission has been added to control the transition from test in production phase. (W-16247708)
+* A new permission has been added to control the transition from test in production phase. (W-16247708)
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
@@ -23,7 +23,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | RPA Bots can now be updated in parallel. | W-16382151
 | During the creation of an *Evaluation* a new *Category* can now be created. | W-16393605
 | It is no longer possible for multiple RPA Bots to receive the same task for executing the same run configuration. | W-16436289
-| An *Alert Rule* now keeps its activation status even after a modification. |
+| An *Alert Rule* now keeps its activation status even after a modification. | W-16528085
 |===
 
 // == Known Issues
