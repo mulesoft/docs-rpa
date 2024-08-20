@@ -1,0 +1,64 @@
+= Upload to Google Drive 
+
+Upload files to your Google Drive. 
+
+You can export Google Docs, Sheets, and Slides into a selection of supported formats including PDF.
+
+== Before You Begin 
+
+Before uploading a file, ensure you: 
+
+* Configured your Google API Service Account Credentials.
++
+You can configure your credentials as an xref:toolbox-variable-handling-activity-parameters.adoc#defining-activity-parameters[Activity Parameter] or inline in the action step wizard. 
+
+== Properties 
+//OAuth common properties
+include::partial$oauth-authentication-settings.adoc[]
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties]
+
+* *File Operation Settings*
+** *Directory path* 
++
+Path to the directory where the file to upload is. 
++
+You can specify either an absolute path or a relative to the Base Path. 
+** *File name*
++
+Name of the file to upload. 
+** *Google Drive Folder ID*
++
+ID of the destination Google Drive folder where to upload the file. 
++
+You can obtain the folder ID by navigating to said Google Drive folder and extracting the ID from the URL (the ID is the value `folder/`). If you don't specify a folder ID, this action step upload the file to the root folder. 
+
+== Inbound Variables 
+
+* *Directory path*
+* *File name*
+* *Google Drive Folder ID*
+//OAuth common inbound variables
+include::partial$oauth-inbound-variables.adoc[]
+
+== Outbound Variables
+
+* *Upload successful* (Boolean)
++
+Confirms if the upload was successful.
+* *File ID in Google Drive*
++
+Returns the Google Drive File ID of the uploaded file.
+
+== Wizard 
+
+include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
+
+Specify the *Directory path* and the *File name* of the file to upload. You can provide a *Google Drive Folder ID* to upload the file into this folder. If you don't provide this value, this action step uploads the file to the root folder of your Google Drive. 
+
+== See Also 
+
+* xref:xref:toolbox-variable-handling-activity-parameters.adoc[]
+* xref:toolbox-google-drive-operations.adoc[]
