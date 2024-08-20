@@ -47,8 +47,8 @@ be sent.
 * *SMTP Server Port*
 * *Server Port*
 * *OAuth Credentials*
-* *OAuth Host Address* 
-* *OAuth Host Address* 
+* *Auth Endpoint* 
+* *Token Endpoint* 
 * *OAuth Client ID*
 * *Client Secret* 
 * *Redirect URI*
