@@ -1,3 +1,5 @@
 # Return Values
 
 ...
+
+image::usecase-legacysystem-usertask.png[]

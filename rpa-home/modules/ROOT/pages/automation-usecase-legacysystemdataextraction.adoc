@@ -9,7 +9,7 @@ This example illustrates the following tasks:
 * Copy a substring from a text file.
 * Find text on a screen using optical character recognition (OCR).
 * Interact with a screen using mouse actions and key strokes.
-* Use activity parameters to transfer data.
+* Use activity parameters to transfer data and to determine which path to follow in the model.
 
 ## Example Scenario
 
@@ -18,24 +18,24 @@ Imagine you work as an accountant at Mythical University. Mythical University ha
 This is what an order confirmation of your travel agency Wonderlust Travel typically looks like:
 
 [[confirmationletter-image]]
-image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png[Order confirmation letter in PDF format, 75%]
+image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png["Letter containing a logo, headers, text and tables. The order ID is contained in a table in a header in the middle of the page. The label says 'Order ID'.", 75%]
 
 You need to search the order ID in your order tracking system to get the corresponding tracking number, which you need to reference in your payment.
 
-Unfortunately your order tracking system is very old and can only be accessed by typing in and reading from a terminal screen:
+Unfortunately your order tracking system is very old and accountants can only access it by typing in and reading from a terminal screen:
 
 [[trackingsystem-allentries-image]]
-image::as400ordertrackingscreen.png[Legacy order tracking system shown as text in a terminal, 75%]
+image::as400ordertrackingscreen.png["Legacy order tracking system showing green glowing text in a terminal. Above a list of orders, there is an entry field for the order id labeled 'Order-ID' and a button labeled 'Search' next to it.", 75%]
 
 You click the search field, enter the order ID, and click 'Search'.
 
 [[trackingsystem-noentries-image]]
-image::as400ordertrackingscreen-searchresult-ordernotfound.png[Legacy order tracking system doesn't show search results, 75%]
+image::as400ordertrackingscreen-searchresult-ordernotfound.png["Legacy order tracking system shows no search results.", 75%]
 
-The list of orders is empty now. This could either mean that the order is not there or you mistyped the number. Let's assume that the latter is the case. You try again and the list shows the corresponding entry:
+The list of orders is empty now. This could either mean that the order is'nt there or that you mistyped the number. Let's assume that the latter is the case. You try again and the list shows the corresponding entry:
 
 [[trackingsystem-resultentry-image]]
-image::as400ordertrackingscreen-searchresult-orderfound.png[Legacy order tracking system shows a search result, 75%]
+image::as400ordertrackingscreen-searchresult-orderfound.png["Legacy order tracking system shows one search result.", 75%]
 
 Now you can copy the tracking number and reference it in your payment.
 
@@ -43,29 +43,29 @@ Since all the scientists at Mythical University travel a lot, you have to repeat
 
 You decide to get a bot to do this.   
 
-The following example shows how you could automate the retrieving of the order ID from a PDF and the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards, are part of other examples.
+The following example shows how you automate the retrieving of the order ID from a PDF and of the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards isn't part of this example.
 
 ## Design a Model of the Process in RPA Manager
 
 In RPA Manager, you open a new project and design a model of the process.
 
-The model contains the following steps:
+The model contains the following activities:
 
-. Extract the order ID from the order confirmation 
-. Extract the corresponding tracking number from the legacy system
-. Return either the tracking number or an information that it could not be found.
+. Extract the order ID from the order confirmation.
+. Extract the corresponding tracking number from the legacy system.
+. Return either the tracking number or an information that it couldn't be found.
 
-image::extractrackingnumber-bpmn.png[Model of the tracking number extraction process]
+image::extractrackingnumber-bpmn.png["In the flow, activities one and two are sequential. Depending on whether the order id is found, an exclusive gateway branches the flow to the third activity."]
 
-The user tasks are for illustrational purposes and can be replaced by steps to prepare the returned data for processing in another automation step.
+The user tasks in the third activity are for illustrational purposes and can be replaced by steps to prepare the returned data for processing in another automation step.
 
 After you finish the first draft of the model, you move the project to the build phase.
 
-Then, open the project in RPA Builder to implement the workflows for the bot activities.
+Then, you open the project in RPA Builder to implement the workflows for the bot activities.
 
 ## Create Activity Parameters in RPA Builder
 
-The process uses variables to store and route data. These _Activity Parameters_ are defined in RPA Builder.
+The process uses variables to store and route data. You define these _Activity Parameters_ in RPA Builder.
 
 For your process you need three Activity Parameters:
 
@@ -82,20 +82,20 @@ For your process you need three Activity Parameters:
 ** is set to true if the order id is found in the order tracking system
 ** routes the process flow through the gateway accordingly
 
-image::activityparameters.png[The Activity Parameter window showing the three parameters of the process.]
+image::activityparameters.png["The Activity Parameter tab in the Business Process Initialization window on the modelling workbench in RPA Builder shows the three parameters of the process."]
 
-To use Activity Parameters in a Workflow, move them from *Available Paramters* to *Used in this Workflow* in the *Workflow Initialization* section. The parameters retain the values set in previous workflows throughout the process.
+To use Activity Parameters in a Workflow, move them from *Available Parameters* to *Used in this Workflow* in the *Activity Parameters* Action Step of the *Workflow Initialization* section. The parameters retain the values set in previous workflows throughout the process.
 
-image::usecase-legacysystem-useactivityparameters.png[The Activity Parameter Wizard showing the parameter used in a workflow.]
+image::usecase-legacysystem-useactivityparameters.png[]
 
 ## Implement the Activities
 
-You find some details of implementation of the activities as _Workflows_ on the next pages:
+You find some details of the implementation of the activities as _Workflows_ on the next pages:
 
-* xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[]
-* xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
-* xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
-* ...UserTask
+. xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[]
+. xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
+. xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
+. xref:automation-usecase-legacysystemdataextraction-returnvalues.adoc[]
 
 ## See Also
 
