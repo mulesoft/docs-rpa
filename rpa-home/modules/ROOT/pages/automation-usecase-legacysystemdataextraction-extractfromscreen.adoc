@@ -9,7 +9,7 @@ With the order ID you can now get the corresponding tracking number from the leg
 . Search for the word `Order-ID` on the screen, click in the edit field next to it, enter the order ID and click *Search*.
 . If there is a result, copy the tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. If there is no result, set the gateway variable `is_orderid_found` to false.
 
-image::usecase-legacysystem-screeninteraction.png[Overview of the workflow of the activity for the searching of the order ID with screen interactions. The number of the steps are contained in frames.]
+image::usecase-legacysystem-screeninteraction.png["The Workflow contains the steps in form of Action Steps. Some of the Action Steps are nested."]
 
 ## Run a Legacy Desktop Application
 
@@ -23,13 +23,17 @@ To search for the tracking number, you have to enter the order ID in the search 
 
 To find the search field, you need to find the word `Order ID` next to it on the application screen first. You use the *Search Pattern* Action Step to capture and compare the pattern:
 
-image::workflow-capturepattern.png[]
+image::usecase-legacysystem-screeninteraction-capturepattern.png["When you capture a pattern, the screen freezes. You draw a box around the pattern and the search area on the frozen screen."]
 
 image::usecase-legacysystem-screeninteraction-searchpattern.png[]
 
-Finding the pattern returns a coordinate that you use in the next step to determine where to input the order ID. Use *Mouse Action* to click into the search field next to the label `Order ID`:
+Finding the pattern returns a coordinate that you use in the next step to determine where to input the order ID. You use the *Mouse Action* Action Step to click into the search field next to the label `Order ID`:
 
-image:usecase-legacysystem-screeninteraction-mouseaction.png[]
+image:usecase-legacysystem-screeninteraction-mouseaction.png["The coordinates from the found pattern are used in the Realtive To field of the Mouse Action Action Step."]
+
+
+// To do -->>
+
 
 The search field now has the focus, so you can just enter the order ID with a simulated keyboard. Instead of recording key strokes, you use the Activity Parameter `order_id` with the *Enter String* Action Step to copy the Order ID into the field:
 
@@ -82,7 +86,7 @@ If the tracking number is not returned by the search, you set the gateway variab
 
 ## Next Activity
 
-*xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
+* xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
 
 ## See Also
 

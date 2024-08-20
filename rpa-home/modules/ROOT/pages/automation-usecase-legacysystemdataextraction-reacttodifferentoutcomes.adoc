@@ -8,6 +8,6 @@ image::usecase-legacysystem-gateway.png[]
 
 ## Next Activity
 
-*xref:automation-usecase-legacysystemdataextraction-returnvalues.adoc[]
+* xref:automation-usecase-legacysystemdataextraction-returnvalues.adoc[]
 
 ## See Also
