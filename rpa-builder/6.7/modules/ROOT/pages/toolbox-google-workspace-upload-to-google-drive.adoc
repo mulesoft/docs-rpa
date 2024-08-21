@@ -2,7 +2,7 @@
 
 Upload files to your Google Drive. 
 
-You can export Google Docs, Sheets, and Slides into a selection of supported formats including PDF.
+You can specify a target folder for the upload.
 
 == Before You Begin 
 

@@ -1,0 +1,57 @@
+= Search in Google Drive
+
+Search for files or folders in your Google Drive, including your shared drives.
+
+You can add variables, filters, and operations to your search query. This action step returns the number of matches found, the file or folder IDs, and the names of the files or folders found. 
+
+== Properties 
+
+include::partial$oauth-authentication-settings.adoc[]
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties]
++
+** *Include all files from shared drives* 
++
+Select this option to search files and folders in your shared drives in addition to My Drive. 
+** *Search Query*
++
+String containing the search query. Use the Wizard for assistance while building your query. 
+
+== Inbound Variables 
+
+* *{A} replaced by* ... *{Z} replaced by*
+include::partial$oauth-inbound-variables.adoc[]
+
+== Outbound Variables 
+
+* *Amount found matches*
++
+Number of files or folders found. 
+* *IDs of files or folders found*
++
+Array of strings containing the IDs of the files or folders found.
+* *Names of files or folders found*
++
+Array of strings containing the names of the files or folders found.
+* *Success* (Boolean)
++
+Returns `true` if at least one result was found. 
+
+== Wizard 
+
+include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
+
+Select either *Files* or *Folders*, depending on the type of search to perform. 
+
+Specify your search terms in the *Search Query* textbox. You can insert filters and operators into your search query by selecting them from the *Insert filters* and *Insert operators* drop-down lists. 
+
+To search in all shared drives, in addition to *My Drive*, select *Include all files from share drives*.
+
+Select the criteria to sort your results in the *Order by* drop-down list. 
+
+== See Also
+
+* xref:xref:toolbox-variable-handling-activity-parameters.adoc[]
+* xref:toolbox-google-drive-operations.adoc[]
