@@ -8,7 +8,7 @@ RPA Manager is the cloud-based control plane for your automation projects.
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
-* A new permission has been added to control the transition from test in production phase. (W-16247708)
+* The new *Process publish restriction for Productionphase* permission prevents a user from moving a process from Testing to Production. 
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
