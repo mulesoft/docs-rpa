@@ -29,11 +29,7 @@ image::usecase-legacysystem-screeninteraction-searchpattern.png[]
 
 Finding the pattern returns a coordinate that you use in the next step to determine where to input the order ID. You use the *Mouse Action* Action Step to click into the search field next to the label `Order ID`:
 
-image:usecase-legacysystem-screeninteraction-mouseaction.png["The coordinates from the found pattern are used in the Realtive To field of the Mouse Action Action Step."]
-
-
-// To do -->>
-
+image:usecase-legacysystem-screeninteraction-mouseaction.png["The coordinates from the found pattern are used in the Relative To field of the Mouse Action Action Step."]
 
 The search field now has the focus, so you can just enter the order ID with a simulated keyboard. Instead of recording key strokes, you use the Activity Parameter `order_id` with the *Enter String* Action Step to copy the Order ID into the field:
 
@@ -45,23 +41,23 @@ image::usecase-legacysystem-screeninteraction-mouseaction-clickbutton.png[]
 
 ## Check the Results
 
-You know, that the search is successful, when there is a result listed. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-allentries-image[the screen], the tracking number should be listed in the column of the same name, so you search for that column first, using `Tracking No.` as the search pattern:
+You know that the search is successful when there is a result listed. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-allentries-image[the screen], the tracking number should be listed in the column of the same name, so you search for that column first, using `Tracking No.` as the search pattern:
 
 image::usecase-legacysystem-screeninteraction-searchpattern-text.png[]
 
-Because it might be that the order has no corresponding tracking number in the system and you don't want to falsely return the initial value of the variable as tracking number, you check this case first.
+Because it might be that the order has no corresponding tracking number in the system and you don't want to falsely return the initial value of the variable as tracking number, you check this case first using the *Managed* Action Step.
 
 In the *DoAction*, which works like a try element, you check if the result list is empty. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-noentries-image[the screen], in case of no results, an up arrow is shown directly below the empty space where the results should have been.
 
-You use the *Search Pattern* Action Step to search for the arrow up symbol and limit the search area to the space directly below the column name.
+You use the *Search Pattern* Action Step to search for this arrow up symbol and limit the search area to the space directly below the column name.
 
-If the pattern is not found - which in your case means that the system found a corresponding tracking number - *Search Pattern* returns an error. To continue with the workflow you need to force an OK state then, which you do in the *OnError* section.
+If the bot doesn't find the pattern- which in your case means that the system found a corresponding tracking number - *Search Pattern* returns an error. To continue with the workflow you need to force an OK state then, which you do in the *OnError* section.
 
 image::usecase-legacysystem-screeninteraction-searchpattern-relatedcoordinates.png[]
 
-If the tracking number is returned by the search, the number of found patterns matching the arrow up symbol is zero. You use this information as a case differentiator in the *Select Case* Action Step.
+If the legacy application returns the tracking number, the number of found patterns matching the arrow up symbol is zero. You use this information as a case differentiator in the *Select Case* Action Step.
 
-image::usecase-legacysystem-screeninteraction-selectcase.png[]
+image::usecase-legacysystem-screeninteraction-selectcase.png["The Select Case Action Step uses Found Matched Pattern Count as Pin Variable Found Matched Pattern Count. The case compares the value to zero."]
 
 If there is a result, you set the gateway variable `is_orderid_found` to `true`.
 
@@ -77,7 +73,7 @@ image::usecase-legacysystem-screeninteraction-trackingno-searcharea.png[]
 
 You save the extracted tracking number to the Activity Parameter so you can return it at the end of the process.
 
-image::usecase-legacysystem-screeninteraction-getregocnizedtext.png[]
+image::usecase-legacysystem-screeninteraction-getregocnizedtext.png["The text returned by the OCR Action Step is stored in the Pin Variable named Recognized Text."]
 
 If the tracking number is not returned by the search, you set the gateway variable `is_orderid_found` to `false` and force an OK state to continue the process.
 
