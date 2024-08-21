@@ -18,7 +18,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |Issue Resolution |ID
 | The *Categories* page in Process Management no longer shows a duplicate alert. | W-14436611
 | The *Finance Analysis* view no longer shows an incorrect *Process Manager* assignment. | W-14851495
-| During the creation of a new *Evaluation* now an input character counter is shown. | W-15301328
+| *Create Evaluation* now shows an input character counter for the *Name* field. | W-15301328
 | The assigned applications are no longer deleted during a phase change from *Build* to *Test* or from *Test* to *Production*. | W-16380363
 | RPA Bots can now be updated in parallel. | W-16382151
 | During the creation of an *Evaluation* a new *Category* can now be created. | W-16393605
