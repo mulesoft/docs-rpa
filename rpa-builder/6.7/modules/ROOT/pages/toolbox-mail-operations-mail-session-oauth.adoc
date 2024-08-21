@@ -15,7 +15,7 @@ include::partial$oauth-credentials-properties.adoc[tags=common-oauth-properties]
 ** *Protocol used*
 +
 (Mail Protocol) The communication protocol to use: IMAP, Exchange, or POP3.
-**  *Encryption used*
+** *Encryption used*
 +
 (Encryption) The encryption protocol to use: None, SSL/TLS, or STARTTLS.
 ** *Server address*
