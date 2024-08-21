@@ -23,7 +23,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 | You can now update multiple RPA Bots in parallel. | W-16382151
 | During the creation of an *Evaluation* a new *Category* can now be created. | W-16393605
 | RPA Bots can no longer receive the same task for executing the same run configuration. | W-16436289
-| An *Alert Rule* now keeps its activation status even after a modification. | W-16528085
+| Editing a deactivated *Alert Rule* no longer reactivates it. | W-16528085
 |===
 
 // == Known Issues
