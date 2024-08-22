@@ -2,7 +2,7 @@
 
 Upload files to your Google Drive. 
 
-You can export Google Docs, Sheets, and Slides into a selection of supported formats including PDF.
+You can specify a target folder for the upload.
 
 == Before You Begin 
 
@@ -33,7 +33,7 @@ Name of the file to upload.
 +
 ID of the destination Google Drive folder where to upload the file. 
 +
-You can obtain the folder ID by navigating to said Google Drive folder and extracting the ID from the URL (the ID is the value `folder/`). If you don't specify a folder ID, this action step upload the file to the root folder. 
+You can obtain the folder ID by using the Search in Google Drive action step and searching for the folder, or by navigating to said Google Drive folder and extracting the ID from the URL (the ID is the value `folder/`). If you don't specify a folder ID, this action step uploads the file to the root folder. 
 
 == Inbound Variables 
 
@@ -50,7 +50,7 @@ include::partial$oauth-inbound-variables.adoc[]
 Confirms if the upload was successful.
 * *File ID in Google Drive*
 +
-Returns the Google Drive File ID of the uploaded file.
+Returns the Google Drive file ID of the uploaded file.
 
 == Wizard 
 
