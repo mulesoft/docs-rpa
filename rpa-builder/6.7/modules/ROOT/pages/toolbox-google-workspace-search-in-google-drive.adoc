@@ -2,7 +2,7 @@
 
 Search for files or folders in your Google Drive, including your shared drives.
 
-You can add variables, filters, and operations to your search query. This action step returns the number of matches found, the file or folder IDs, and the names of the files or folders found. 
+You can add variables, filters, and operators to your search query. This action step returns the number of matches found, the file or folder IDs, and the names of the files or folders found. 
 
 == Properties 
 
@@ -17,7 +17,9 @@ See xref:common-properties.adoc[Common Properties]
 Select this option to search files and folders in your shared drives in addition to My Drive. 
 ** *Search Query*
 +
-String containing the search query. Use the Wizard for assistance while building your query. 
+String containing the search query. 
++
+Use the Wizard for assistance while building your query. You can use any of Google's supported https://developers.google.com/drive/api/guides/ref-search-terms[search query terms and operators].
 
 == Inbound Variables 
 
@@ -45,7 +47,7 @@ include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
 
 Select either *Files* or *Folders*, depending on the type of search to perform. 
 
-Specify your search terms in the *Search Query* textbox. You can insert filters and operators into your search query by selecting them from the *Insert filters* and *Insert operators* drop-down lists. 
+Specify your search terms in the *Search Query* textbox. The *Insert filters* and *Insert operators* drop-down lists contain the most common filters and operators. However, you can use any of Google's supported https://developers.google.com/drive/api/guides/ref-search-terms[search query terms and operators].
 
 To search in all shared drives, in addition to *My Drive*, select *Include all files from share drives*.
 
