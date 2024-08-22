@@ -4,7 +4,10 @@ The _Mail Session (OAuth)_ Action Step is an inclusive element for email operati
 
 == Before you Begin
 
-You must have an Azure account to create an application for Outlook.
+Before you configure this action step, ensure you have: 
+
+* An Azure account, if you are creating an application for Outlook.
+* A Google account, if you are creating an application for Gmail.
 
 [[properties]]
 == Properties
@@ -62,7 +65,7 @@ The _Mail Session_ Action Step has no outbound variables.
 
 == Wizard
 
-image:mail-session-outlook-oauth-wizard.png[The Mail Session (Outlook with OAuth) Action Step Wizard, 60%, 60%]
+image:mail-session-outlook-oauth-wizard.png[The Mail Session (OAuth) Action Step Wizard, 60%, 60%]
 
 The wizard contains the following sections:
 
@@ -104,8 +107,8 @@ Refer to <<properties, OAuth Authentication Settings>> for a description of each
 +
 This step starts the authentication process with the OAuth Host, which opens the login page in your default browser. 
 +
-To enable using different accounts to log in, Mail Session (Outlook with OAuth) clears credentials stored in browser cookies when you click *Authenticate*. 
-. In the OAuth Host’s login page, complete the login process.
+To enable using different accounts to log in, Mail Session (OAuth) clears credentials stored in browser cookies when you click *Authenticate*. 
+. In the OAuth Host's login page, complete the login process.
 . Close the browser.
 
 After completing the last step, the wizard shows that you are authenticated:
@@ -114,7 +117,7 @@ image:email-outlook-authentication.png[The Logged in confirmation message in the
 [[generate-oauth-token]]
 == Generating an OAuth Refresh Token
 
-Instead of authenticating via the *Mail Session (Outlook with OAuth) wizard*, you can pin the refresh token if you obtain it externally. In this case, you still need to populate or pin the remaining fields.
+Instead of authenticating via the *Mail Session (OAuth) wizard*, you can pin the refresh token if you obtain it externally. In this case, you still need to populate or pin the remaining fields.
 
 include::partial$generate-oauth-token-steps.adoc[]
 
