@@ -51,18 +51,6 @@ Universe domain of the Google API credentials.
 +
 See xref:common-properties.adoc[Common Properties]
 +
-** *Docs type* 
-+
-File format for exporting Google Docs. Available types: 
-+
-*** *Microsoft Word (.docx)*
-*** *OpenDocument (.odt)*
-*** *Rich Text (.rtf)*
-*** *PDF (.pdf)*
-*** *Plain Text (.txt)*
-*** *Web Page (HTML) (.zip)*
-*** *EPUB (.epub)*
-+
 ** *File ID*
 +
 ID of the file to download or export.
@@ -77,6 +65,18 @@ Type of Google file to export. Available types are:
 ** *Operation mode*
 +
 Operation to perform, either *DownloadFile* or *ExportDocument*.
+** *Docs type* 
++
+File format for exporting Google Docs. Available types: 
++
+*** *Microsoft Word (.docx)*
+*** *OpenDocument (.odt)*
+*** *Rich Text (.rtf)*
+*** *PDF (.pdf)*
+*** *Plain Text (.txt)*
+*** *Web Page (HTML) (.zip)*
+*** *EPUB (.epub)*
++
 ** *Sheets Type*
 +
 File format for exporting Google Sheets. Available types:
