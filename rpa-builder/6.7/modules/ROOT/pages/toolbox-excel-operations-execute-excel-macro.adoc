@@ -2,16 +2,21 @@
 
 Run a macro in an Excel file or sheet. You can specify and pass up to 30 variables to the macro.
 
+Do not include this action step inside an Excel Session, Execute Excel Macro runs independently. 
+
+Execute Excel Macro requires Microsoft Excel installed on the computer that runs the automation. Otherwise, the action step fails to execute. 
+
+== Before You Begin
+
+Before using this action step, ensure that: 
+
+* Microsoft Excel is installed on the computer that runs the automation
+
 == Properties
 
 * *Common* 
 +
 See xref:common-properties.adoc[Common Properties] for a description.  
-
-* *Excel Operation Settings*
-** *Sheet name* 
-+
-Name of the sheet from which to read the value. 
 
 * *Source Excel Operation Settings*
 ** *Directory path* 
@@ -37,7 +42,6 @@ Name of the source file.
 * *Password for the excel file* 
 * *{Arg1} replaced by* ... *{Arg30} replaced by*
 * *Is Arg1 used* ... *Is Arg30 used*
-* *Sheet name*
 
 == Outbound Variables 
 
