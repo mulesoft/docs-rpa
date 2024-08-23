@@ -11,16 +11,15 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 //new action steps 
 * Execute macros on an Excel file with the new Execute Excel Macro action step.
-* Download or export files from your Google Workspace  with the new Download from Google Drive action step.
+* Download or export files from your Google Workspace with the new Download from Google Drive action step.
 * Upload files to your Google Workspace with the new Upload to Google Drive action step.
 * Search files or folders in your Google Workspace and retrieve their name and ID with the new Search for Files and Folders in Google Drive action step.
 //enhancements to action steps
-* GMAIL NOW SUPPORTS OAUTH //TODO confirm if this is a new AS or updates the existing one
+* OAuth Credentials activity parameter now support configuring Google as a mail provider.
++
+See <<migrating-oauth-credentials>> for instructions to migrate your existing OAuth Credentials activity parameters.
+* Mail Session (Outlook with OAuth) is renamed to Mail Session (OAuth) and now supports configuring a Gmail account. 
 * You can now configure the new Google API Service Account Credentials activity parameter to use for authentication with the Google Drive action steps.
-//RPA builder updates 
-// * 
-//other updates
-// * 
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
@@ -42,6 +41,17 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | --description-- | W-
 |===
 
+[[migrating-oauth-credentials]]
+== Migrating OAuth Credentials
+
+As part of the enhancement to Mail Session (OAuth) and the OAuth Credentials activity parameter, RPA Builder 6.7.0 automatically detects and updates any existing OAuth Credentials and removes all existing mappings of this activity parameter. RPA Builder appends `_updated` to migrated activity parameters. 
+
+If your automation projects used OAuth Credentials, follow these steps after upgrading to RPA Builder 6.7.0 to complete the migration process: 
+
+. In RPA Builder, locate the updated OAuth Credentials activity parameters.
+. Add the updated activity parameters to the corresponding workflows and map them to the corresponding Mail Session (OAuth) action steps.
+. In RPA Manager, create a new OAuth Credential global variable in the credential pool. 
+. Map the new global variable with the updated OAuth Credentials activity parameters in the corresponding run configurations.
 
 // == See Also
 include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
