@@ -31,7 +31,7 @@ Finding the pattern returns a coordinate that you use in the next step to determ
 
 image:usecase-legacysystem-screeninteraction-mouseaction.png["The coordinates from the found pattern are used in the Relative To field of the Mouse Action Action Step."]
 
-The search field now has the focus, so you can just enter the order ID with a simulated keyboard. Instead of recording key strokes, you use the Activity Parameter `order_id` with the *Enter String* Action Step to copy the Order ID into the field:
+The search field now has the focus, so you can enter the order ID with a simulated keyboard. Instead of recording keystrokes, you use the Activity Parameter `order_id` with the *Enter String* Action Step to copy the order ID into the field:
 
 image::usecase-legacysystem-screeninteraction-enterstring.png[]
 
