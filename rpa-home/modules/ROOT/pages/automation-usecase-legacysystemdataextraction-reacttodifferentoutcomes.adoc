@@ -1,6 +1,6 @@
 # React to Different Outcomes
 
-In the model of the process you used an exclusive gateway to determine how to proceed with different outcomes of the tracking number extraction.
+In the model of the process, you use an exclusive gateway to determine how to proceed with different outcomes of the tracking number extraction.
 
 In RPA Builder, you configure the gateway using the `is_ordeid_found` Activity Parameter.
 
