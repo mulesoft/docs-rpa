@@ -66,7 +66,7 @@ The *Mail Session (OAuth)* action step has no outbound variables.
 
 image:mail-session-outlook-oauth-wizard.png["The Mail Session (OAuth) action step wizard.", 60%, 60%]
 
-The wizard contains the following sections:
+You can configure the following settings using the wizard:
 
 * *Operation Mode*
 * *OAuth Authentication*
@@ -113,7 +113,7 @@ After completing the last step, the wizard shows that you are authenticated:
 image:email-outlook-authentication.png[The Logged in confirmation message in the authentication settings window, 50%, 50%]
 
 [[generate-oauth-token]]
-== Generating an OAuth Refresh Token
+==== Generating an OAuth Refresh Token
 
 Instead of authenticating via the *Mail Session (OAuth)* wizard, you can pin the refresh token if you obtain it externally. In this case, you still need to populate or pin the remaining fields.
 
