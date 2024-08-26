@@ -67,7 +67,7 @@ Then, you open the project in RPA Builder to implement the workflows for the bot
 
 The process uses variables to store and route data. You define these _Activity Parameters_ in RPA Builder.
 
-For your process you need three Activity Parameters:
+For your process, you need three Activity Parameters:
 
 * order_id
 ** an alphanumeric variable
