@@ -11,7 +11,7 @@ Use Excel Controlled Loop to iterate over data from an Excel file.
 The Excel Session is an element that encompasses Excel operations, except for Execute Excel Macro. Excel operations include reading, modifying, and creating entire files and file elements in Excel format.
 * xref:toolbox-excel-operations-execute-excel-macro.adoc[]
 +
-Run a macro in an Excel file or sheet. This action step does not run inside of an Excel Session.
+Run a macro in an Excel file or sheet. This action step doesn’t run inside an Excel Session.
 * xref:toolbox-excel-operations-read-from-excel-file.adoc[Read from Excel File]
 +
 Use Read from Excel File to read the contents of an Excel file.
