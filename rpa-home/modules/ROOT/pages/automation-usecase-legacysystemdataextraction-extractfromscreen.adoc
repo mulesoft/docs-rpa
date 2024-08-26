@@ -63,7 +63,7 @@ If there is a result, you set the gateway variable `is_orderid_found` to `true`.
 
 image::usecase-legacysystem-screeninteraction-selectcase-orderfoundtrue.png[""]
 
-Then you use artificial intelligence enhanced optical character recognition to extract the tracking number with the *AI OCR (screen-based)* Action Step using the search mode `Recognition Only`.
+Then, you use AI-enhanced optical character recognition to extract the tracking number with the *AI OCR (screen-based)* Action Step using the `Recognition Only` search mode.
 
 image::usecase-legacysystem-screeninteraction-aiocr.png[]
 
