@@ -39,7 +39,7 @@ image::as400ordertrackingscreen-searchresult-orderfound.png["Legacy order tracki
 
 Now you can copy the tracking number and reference it in your payment.
 
-Since all the scientists at Mythical University travel a lot, you have to repeat this tedious, error-prone and risky process several times per day. 
+Because the scientists at Mythical University travel frequently, you repeat this tedious, error-prone, and risky process many times a day. 
 
 You decide to get a bot to do this.   
 
