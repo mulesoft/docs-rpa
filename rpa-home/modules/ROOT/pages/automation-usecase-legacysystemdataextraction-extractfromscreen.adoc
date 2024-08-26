@@ -17,7 +17,7 @@ To run the legacy desktop order-tracking application, select the path to the exe
 
 image::usecase-legacysystem-screeninteraction-run.png[]
 
-## Enter Text Into a Screen Element and Click a Button
+## Enter Text into a Screen Element and Click a Button
 
 To search for the tracking number, you have to enter the order ID in the search field and click the search button.
 
