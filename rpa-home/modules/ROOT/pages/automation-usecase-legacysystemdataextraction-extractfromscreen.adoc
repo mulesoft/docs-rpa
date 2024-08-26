@@ -13,7 +13,7 @@ image::usecase-legacysystem-screeninteraction.png["The Workflow contains the ste
 
 ## Run a Legacy Desktop Application
 
-To run the legacy desktop order tracking application, you select the path to the executable file in the *Run program* Action Step. You set the start mode of the application to `Maximized` to open the application in a maximized window. This ensures that the elements of the UI are always in the same position on the screen, which is important because you later use Action Steps that work with screen coordinates. You select `Wait for Window to appear` and specify the window title to ensure that the following Action Steps won't return an error because the window isn't there yet.
+To run the legacy desktop order-tracking application, select the path to the executable file in the *Run program* Action Step. You set the start mode of the application to `Maximized` to open the application in a maximized window. This process ensures that the UI elements are always in the same position on the screen, which is important because you later use Action Steps that work with screen coordinates. You select `Wait for Window to appear` and specify the window title to ensure that the following Action Steps won't return an error because the window isn't there yet.
 
 image::usecase-legacysystem-screeninteraction-run.png[]
 
