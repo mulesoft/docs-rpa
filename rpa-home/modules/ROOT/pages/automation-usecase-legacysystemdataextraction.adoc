@@ -41,7 +41,7 @@ Now you can copy the tracking number and reference it in your payment.
 
 Because the scientists at Mythical University travel frequently, you repeat this tedious, error-prone, and risky process many times a day. 
 
-You decide to get a bot to do this.   
+You decide to get a bot to do this work.
 
 The following example shows how you automate the retrieving of the order ID from a PDF and of the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards isn't part of this example.
 
