@@ -1,0 +1,61 @@
+= Search in Google Drive
+
+Search for files or folders in your Google Drive, including your shared drives. This action step returns the number of matches found, the file or folder IDs, and the names of the files or folders found. 
+
+You can add variables, filters, and operators to your search query. 
+
+== Configure Authentication Settings 
+
+include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
+
+== Configure Search Settings 
+
+. Enter your search terms in the *Search Query* textbox. 
++
+The *Insert filters* and *Insert operators* dropdown lists contain the most common filters and operators. However, you can use any supported Google https://developers.google.com/drive/api/guides/ref-search-terms[search query terms and operators].
+
+. To search in all shared drives, in addition to *My Drive*, select *Include all files from share drives*.
+
+. Select the criteria to sort your results in the *Order by* dropdown list. 
+
+== Properties 
+
+include::partial$oauth-authentication-settings.adoc[]
+
+* *Common* 
++
+See xref:common-properties.adoc[]
++
+** *Include all files from shared drives* 
++
+Option to search files and folders in your shared drives in addition to My Drive
+** *Search Query*
++
+String containing the search query
++
+Use the wizard for assistance while building your query. You can use any of the supported Google https://developers.google.com/drive/api/guides/ref-search-terms[search query terms and operators].
+
+== Inbound Variables 
+
+* *{A} replaced by* ... *{Z} replaced by*
+include::partial$oauth-inbound-variables.adoc[]
+
+== Outbound Variables 
+
+* *Amount found matches*
++
+Number of files or folders found
+* *IDs of files or folders found*
++
+Array of strings containing the IDs of the files or folders found
+* *Names of files or folders found*
++
+Array of strings containing the names of the files or folders found
+* *Success* 
++
+Boolean indicating if at least one result was found `true`
+
+== See Also
+
+* xref:xref:toolbox-variable-handling-activity-parameters.adoc[]
+* xref:toolbox-google-drive-operations.adoc[]
