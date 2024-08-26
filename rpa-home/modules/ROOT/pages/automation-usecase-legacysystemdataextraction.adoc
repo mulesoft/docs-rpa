@@ -43,7 +43,7 @@ Because the scientists at Mythical University travel frequently, you repeat this
 
 You decide to get a bot to do this work.
 
-The following example shows how you automate the retrieving of the order ID from a PDF and of the tracking number from the legacy system using MuleSoft RPA as an invocable automation step. How to download the right attachment before and how to proceed afterwards isn't part of this example.
+This example shows how to get the order ID and tracking number from the legacy system automatically. You can use a PDF and MuleSoft RPA as an invocable automation step to do this. The example doesn’t include downloading the attachment and any steps afterward.
 
 ## Design a Model of the Process in RPA Manager
 
