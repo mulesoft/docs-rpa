@@ -10,7 +10,7 @@ You can use this information to implement the workflow that contains the followi
 
 . Copy the content of the order confirmation to a text file.
 . Read the text file line by line to find the one containing the order ID.
-. Check if the order ID is found
+. Check if the order ID is found.
 . Cut the order ID out from the text and store it in an activity parameter.
 
 image::usecase-legacysystem-extractformpdf-workflow-overview.png["The Workflow contains the steps in form of Action Steps. Some of the Action Steps are nested."]
