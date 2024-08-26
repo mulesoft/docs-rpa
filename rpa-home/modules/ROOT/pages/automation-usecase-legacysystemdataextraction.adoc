@@ -70,7 +70,7 @@ The process uses variables to store and route data. You define these _Activity P
 For your process, you need three Activity Parameters:
 
 * order_id
-** an alphanumeric variable
+** is an alphanumeric variable
 ** stores the order ID found in the order confirmation
 ** is returned at the end of the process
 * tracking_no
