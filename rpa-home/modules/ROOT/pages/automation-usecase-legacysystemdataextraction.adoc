@@ -78,7 +78,7 @@ For your process, you need three Activity Parameters:
 ** stores the corresponding tracking number found in the order tracker application
 ** is returned at the end of the process if it is found
 * is_order_id_found
-** a boolean variable
+** is a boolean variable
 ** is set to true if the order id is found in the order tracking system
 ** routes the process flow through the gateway accordingly
 
