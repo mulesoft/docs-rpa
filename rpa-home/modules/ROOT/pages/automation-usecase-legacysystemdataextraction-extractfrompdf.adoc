@@ -41,7 +41,7 @@ image::usecase-legacysystem-extractformpdf-workflow-checkcaseandproceed.png["To 
 
 ## Retrieving a Substring and Saving it to a Variable
 
-Since you know that the order ID is written after the text `Order ID`, you can simply remove these first nine characters from the current line (which contains the substring `Order ID`) by using the *Trim left (remove first characters)* operations of the *String Operations* Action Step. The remaining string is the order ID, which you store in the Activity Parameter of the same name by using the result if the string operation as a Pin Variable in the *Set Variable* Action Step.
+Because you know that the order ID is written after the text `Order ID`, you can remove these first nine characters from the current line (which contains the substring `Order ID`) by using the *Trim left (remove first characters)* operations of the *String Operations* Action Step. The rest of the string is the order ID. You store it in the Activity Parameter with the same name by using the result of the string operation as a Pin Variable in the *Set Variable* Action Step.
 
 image::usecase-legacysystem-extractformpdf-workflow-cutsubtringoutoftext.png[]
 
