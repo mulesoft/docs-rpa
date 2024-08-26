@@ -33,7 +33,7 @@ image::usecase-legacysystem-extractformpdf-workflow-loopovertextfilelines.png[]
 
 ## Checking a Case and Catching Errors
 
-Since you don't know which line contains the order id, you use *Select Case* to differ between the two possibilities: In case you found the order id, you cut it out of the text and store it in the activity parameter `order_id`. If you didn't, which happens in each other line, you still want to complete the loop and the workflow and use *Force OK State* to avoid returning an error.
+Because you don't know which line contains the order ID, you use *Select Case* to differentiate between the two possibilities.  If you find the order ID, you copy it from the text and store it in the activity parameter `order_id`. If you didn’t, which happens in each other line, you still want to complete the loop and the workflow and use *Force OK State* to avoid returning an error.
 
 Your criteria for deciding whether you found the order id is that the string `Oder ID` is part of the current line.
 
