@@ -15,7 +15,7 @@ This example illustrates the following tasks:
 
 Imagine you work as an accountant at Mythical University. Mythical University has ordered a travel package for one of their field excursions. You have received an email and saved the attached order confirmation to your computer.
 
-This is what an order confirmation of your travel agency Wonderlust Travel typically looks like:
+An order confirmation from your travel agency Wonderlust Travel typically looks like this:
 
 [[confirmationletter-image]]
 image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png["Letter containing a logo, headers, text and tables. The order ID is contained in a table in a header in the middle of the page. The label says 'Order ID'.", 75%]
