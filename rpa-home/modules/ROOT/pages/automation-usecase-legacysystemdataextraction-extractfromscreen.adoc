@@ -41,7 +41,7 @@ image::usecase-legacysystem-screeninteraction-mouseaction-clickbutton.png[]
 
 ## Check the Results
 
-You know that the search is successful when there is a result listed. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-allentries-image[the screen], the tracking number should be listed in the column of the same name, so you search for that column first, using `Tracking No.` as the search pattern:
+The search is successful when a result is listed. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-allentries-image[the screen], the tracking number is listed in the column of the same name, so you search for that column first, using `Tracking No.` as the search pattern:
 
 image::usecase-legacysystem-screeninteraction-searchpattern-text.png[]
 
