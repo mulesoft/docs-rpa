@@ -1,8 +1,8 @@
 = Execute Excel Macro 
 
-Run a macro in an Excel file or sheet. You can specify and pass up to 30 variables to the macro.
+Run a macro in an Excel file or sheet and obtain the execution's result in a variable. You can pass up to 30 variables as arguments to the macro.
 
-Do not include this action step inside an Excel Session, Execute Excel Macro runs independently. 
+Don't include this action step inside an Excel Session; the Execute Excel Macro runs independently. 
 
 Execute Excel Macro requires Microsoft Excel installed on the computer that runs the automation. Otherwise, the action step fails to execute. 
 
@@ -10,29 +10,29 @@ Execute Excel Macro requires Microsoft Excel installed on the computer that runs
 
 Before using this action step, ensure that: 
 
-* Microsoft Excel is installed on the computer that runs the automation
+* Microsoft Excel is installed on the computer that runs the automation.
 
 == Properties
 
 * *Common* 
 +
-See xref:common-properties.adoc[Common Properties] for a description.  
+See xref:common-properties.adoc[] for a description.  
 
 * *Source Excel Operation Settings*
 ** *Directory path* 
 +
-Directory path to the source file. 
+Directory path to the source file
 ** *Macro* 
 +
-The macro to run. 
+Macro to run
 ** *Password protected* 
 +
-Indicates whether the Excel file is password protected. 
+Whether the Excel file is password protected
 +
 If you select this option, specify the password in the wizard. 
 ** *Source file name* 
 +
-Name of the source file.
+Name of the source file
 
 == Inbound Variables 
 
@@ -58,7 +58,7 @@ Specify the *Directory path* and *File name* of the Excel file that contains the
 
 After specifying the file, select the macro to run from the *Macro* dropdown menu. This list autopopulates with the macros existing in the specified Excel file. 
 
-You can specify up to 30 variables to pass to the macro as arguments by selecting the corresponding checkbox and setting their value. 
+You can pass up to 30 variables as arguments to the macro by selecting the corresponding checkbox and setting the value. 
 
 == See Also
 
