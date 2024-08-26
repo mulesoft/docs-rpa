@@ -1,6 +1,6 @@
 = Google Drive Operations
 
-Google Drive operations enable you to access your Google Drive and perform operations such as downloading or exporting, uploading, or searching for files.
+Access your Google Drive and perform operations such as downloading or exporting, uploading, or searching for files.
 
 These action steps require you to provide your Google API Service Account Credentials. You can specify these credential in the corresponding activity parameter and then link them through a pin variable or specify the values inline in each action step. 
 
