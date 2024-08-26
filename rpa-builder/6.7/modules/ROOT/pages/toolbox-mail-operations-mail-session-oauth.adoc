@@ -79,8 +79,7 @@ In *Operation Mode*, you determine what happens and which area activates in the 
 
 * *Read and send mails*
 +
-Enables you to configure the incoming and outgoing
-mail areas so that you can read and send emails.
+Enables you to configure the incoming and outgoing mail areas so that you can read and send emails.
 * *Read mails from inbox*
 +
 Enables editing for the Incoming Mail section so that you can only read emails.
@@ -94,7 +93,7 @@ If you select the *Send mails via SMTP* mode, you can't use the Read Mail action
 
 === OAuth Authentication
 
-The *OAuth Authentication* section enables you to create a set of tokens that don't rely on a user password to authenticate with the email server. After you create the refresh token, you can use it to repeatedly log in to the services without asking for the user's password again.
+Create a set of tokens that don't rely on a user password to authenticate with the email server. After you create the refresh token, you can use it to repeatedly log in to the services without asking for the user's password again.
 
 Follow these steps to authenticate with your credentials:
 
