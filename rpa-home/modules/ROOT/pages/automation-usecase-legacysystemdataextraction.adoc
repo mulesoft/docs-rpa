@@ -74,7 +74,7 @@ For your process, you need three Activity Parameters:
 ** stores the order ID found in the order confirmation
 ** is returned at the end of the process
 * tracking_no
-** an alphanumeric variable
+** is an alphanumeric variable
 ** stores the corresponding tracking number found in the order tracker application
 ** is returned at the end of the process if it is found
 * is_order_id_found
