@@ -15,4 +15,4 @@ If you already configured the Credentials for OAuth Action Step details and clic
 +
 You can also pin the other values from the *OAuth Token Creator*.
 +
-By using an activity parameter you don't need to upload a new version of your Workflow to RPA Manager if your token expires or your user gets logged out of your email provider. In this case, regenerate the refresh token for the same user with the *OAuth Token Creator* and update the assigned activity parameter on RPA Manager.
+By using an activity parameter, you don't need to upload a new version of your Workflow to RPA Manager if your token expires or your user gets logged out of your email provider. In this case, regenerate the refresh token for the same user with the *OAuth Token Creator* and update the assigned activity parameter on RPA Manager.
