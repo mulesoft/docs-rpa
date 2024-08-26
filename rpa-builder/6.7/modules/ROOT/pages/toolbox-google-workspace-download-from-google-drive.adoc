@@ -1,17 +1,15 @@
 = Download from Google Drive 
 
-Download or Export files from your Google Drive. 
-
-You can export Google Docs, Sheets, and Slides into a selection of supported formats including PDF.
+Download or Export files from your Google Drive. You can export Google Docs, Sheets, and Slides to several supported formats, including PDF.
 
 == Before You Begin 
 
-Before downloading a file, ensure you: 
+Before downloading a file: 
 
-* Configured your Google API Service Account Credentials.
+* Configure your Google API Service Account Credentials.
 +
-You can configure your credentials as an xref:toolbox-variable-handling-activity-parameters.adoc#defining-activity-parameters[Activity Parameter] or inline in the action step wizard. 
-* Obtained the corresponding File ID by using the Search in Google Drive action step. 
+You can configure your credentials as an xref:toolbox-variable-handling-activity-parameters.adoc#defining-activity-parameters[Activity Parameter] or inline in the wizard. 
+* Obtain the corresponding File ID by using the Search in Google Drive action step. 
 
 == Properties 
 
@@ -20,18 +18,6 @@ include::partial$oauth-authentication-settings.adoc[]
 * *Common* 
 +
 See xref:common-properties.adoc[Common Properties]
-+
-** *Docs type* 
-+
-File format for exporting Google Docs. Available types: 
-+
-*** *Microsoft Word (.docx)*
-*** *OpenDocument (.odt)*
-*** *Rich Text (.rtf)*
-*** *PDF (.pdf)*
-*** *Plain Text (.txt)*
-*** *Web Page (HTML) (.zip)*
-*** *EPUB (.epub)*
 +
 ** *File ID*
 +
@@ -47,6 +33,18 @@ Type of Google file to export. Available types are:
 ** *Operation mode*
 +
 Operation to perform, either *DownloadFile* or *ExportDocument*.
+** *Docs type* 
++
+File format for exporting Google Docs. Available types: 
++
+*** *Microsoft Word (.docx)*
+*** *OpenDocument (.odt)*
+*** *Rich Text (.rtf)*
+*** *PDF (.pdf)*
+*** *Plain Text (.txt)*
+*** *Web Page (HTML) (.zip)*
+*** *EPUB (.epub)*
++
 ** *Sheets Type*
 +
 File format for exporting Google Sheets. Available types:
@@ -73,13 +71,13 @@ File format for exporting Google Slides. Available types:
 * *Google Drive File Settings*
 ** *Create directory if it does not exist*
 +
-When selected, creates the folder specified in *Directory path* if it does not exist.
+If selected, creates the folder specified in *Directory path* if it doesn't exist. 
 ** *Directory path* 
 +
-Path to the directory where to download or export the file. 
+Path to the directory to download or export the file. 
 ** *New file name* 
 +
-Filename to use when *Set new file name* is enabled. You must specify the file name including the extension. 
+File name to use if *Set new file name* is enabled. You must specify the file name, including the extension. 
 ** *Overwrite existing file* 
 +
 When selected, overwrites any existing file in the specified download directory that has the same name as the downloaded or exported file.
@@ -99,9 +97,9 @@ include::partial$oauth-inbound-variables.adoc[]
 
 == Outbound Variables 
 
-* *Download Succeeded* (Boolean)
+* *Download Succeeded*
 +
-Confirms if the download was successful. 
+Boolean indicating whether the download was successful (`true`).
 * *Target folder* 
 +
 String containing the directory path to the downloaded or exported file. 
@@ -109,17 +107,28 @@ String containing the directory path to the downloaded or exported file.
 +
 String containing the file name, including the extension. 
 
-== Wizard 
+== Configure Your Authentication Settings 
 
 include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
 
-In *Download Settings*, select between *Download file* or *Export Google Workspace document*, depending on the operation to perform. When exporting a file, you must select the type of Google file to export (Docs, Sheets, or Slides) and the format for the target file. Available export formats depend on the file being exported. 
+== Configure File Download or Export Settings
 
-Provide the *File ID* of the file to download or export. To obtain this ID, use the Search in Google Drive action step. 
+To configure download or export file settings: 
 
-Specify the *Directory path* where you want to download or export the file from your Google Drive. You can instruct this action step to create the target directory if it doesn't exist and to overwrite any existing file in the directory path that contains the same name as the file to download or export. 
+. In *Download Settings*, select between *Download file* or *Export Google Workspace document*, depending on the operation to perform. 
+** When exporting a file, select the type of Google file to export (Docs, Sheets, or Slides) and the format for the target file. 
++
+Available export formats depend on the file being exported. 
 
-To rename the downloaded or exported file, select *Set new file name* and provide the file name to use including its extension. 
+. Provide the file ID of the file to download or export. 
++
+To obtain this ID, use the Search in Google Drive action step. 
+
+. Specify the directory path where you want to download or export the file from your Google Drive. 
++
+You can specify this action step to create the target directory if it doesn't exist and to overwrite any existing file in the directory path that contains the same name as the file to download or export. 
+
+. To rename the downloaded or exported file, select *Set new file name* and provide the file name to use, including its extension. 
 
 == See Also 
 
