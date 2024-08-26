@@ -53,7 +53,7 @@ The model contains the following activities:
 
 . Extract the order ID from the order confirmation.
 . Extract the corresponding tracking number from the legacy system.
-. Return either the tracking number or an information that it couldn't be found.
+. Return either the tracking number or information that it couldn’t be found.
 
 image::extractrackingnumber-bpmn.png["In the flow, activities one and two are sequential. Depending on whether the order id is found, an exclusive gateway branches the flow to the third activity."]
 
