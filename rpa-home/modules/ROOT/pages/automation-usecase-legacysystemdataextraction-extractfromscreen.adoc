@@ -45,7 +45,7 @@ You know that the search is successful when there is a result listed. As you can
 
 image::usecase-legacysystem-screeninteraction-searchpattern-text.png[]
 
-Because it might be that the order has no corresponding tracking number in the system and you don't want to falsely return the initial value of the variable as tracking number, you check this case first using the *Managed* Action Step.
+Because the order might not have a corresponding tracking number in the system and you don't want to falsely return the initial value of the variable as tracking number, you check this case first using the *Managed* Action Step.
 
 In *DoAction*, which works like a try element, you check if the result list is empty. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-noentries-image[the screen], in case of no results, an up arrow is shown directly below the empty space where the results should have been.
 
