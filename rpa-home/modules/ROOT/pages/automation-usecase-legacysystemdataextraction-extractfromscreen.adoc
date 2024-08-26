@@ -51,7 +51,7 @@ In the *DoAction*, which works like a try element, you check if the result list 
 
 You use the *Search Pattern* Action Step to search for this arrow up symbol and limit the search area to the space directly below the column name.
 
-If the bot doesn't find the pattern- which in your case means that the system found a corresponding tracking number - *Search Pattern* returns an error. To continue with the workflow you need to force an OK state then, which you do in the *OnError* section.
+If the bot doesn't find the pattern, which means that the system found a corresponding tracking number, *Search Pattern* returns an error. To continue the workflow, you must force an OK state in the *OnError* section.
 
 image::usecase-legacysystem-screeninteraction-searchpattern-relatedcoordinates.png[]
 
