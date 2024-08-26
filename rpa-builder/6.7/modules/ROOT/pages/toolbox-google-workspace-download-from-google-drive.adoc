@@ -11,6 +11,29 @@ Before downloading a file:
 You can configure your credentials as an xref:toolbox-variable-handling-activity-parameters.adoc#defining-activity-parameters[Activity Parameter] or inline in the wizard. 
 * Obtain the corresponding File ID by using the Search in Google Drive action step. 
 
+== Configure Your Authentication Settings 
+
+include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
+
+== Configure File Download or Export Settings
+
+To configure download or export file settings in the wizard: 
+
+. In *Download Settings*, select between *Download file* or *Export Google Workspace document*, depending on the operation to perform. 
+** When exporting a file, select the type of Google file to export (Docs, Sheets, or Slides) and the format for the target file. 
++
+Available export formats depend on the file being exported. 
+
+. Provide the file ID of the file to download or export. 
++
+To obtain this ID, use the Search in Google Drive action step. 
+
+. Specify the directory path where you want to download or export the file from your Google Drive. 
++
+You can specify this action step to create the target directory if it doesn't exist and to overwrite any existing file in the directory path that contains the same name as the file to download or export. 
+
+. To rename the downloaded or exported file, select *Set new file name* and provide the file name to use, including its extension. 
+
 == Properties 
 
 include::partial$oauth-authentication-settings.adoc[]
@@ -80,10 +103,10 @@ Path to the directory to download or export the file.
 File name to use if *Set new file name* is enabled. You must specify the file name, including the extension. 
 ** *Overwrite existing file* 
 +
-When selected, overwrites any existing file in the specified download directory that has the same name as the downloaded or exported file.
+If selected, overwrites any existing file in the specified download directory that has the same name as the downloaded or exported file.
 ** *Set new file name*
 +
-When selected, renames the downloaded or exported file using the specified *New file name*.
+If selected, renames the downloaded or exported file using the specified *New file name*.
 
 == Inbound Variables 
 
@@ -99,36 +122,13 @@ include::partial$oauth-inbound-variables.adoc[]
 
 * *Download Succeeded*
 +
-Boolean indicating whether the download was successful (`true`).
+Boolean indicating whether the download was successful (`true`)
 * *Target folder* 
 +
-String containing the directory path to the downloaded or exported file. 
+String containing the directory path to the downloaded or exported file
 * *File name* 
 +
-String containing the file name, including the extension. 
-
-== Configure Your Authentication Settings 
-
-include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
-
-== Configure File Download or Export Settings
-
-To configure download or export file settings: 
-
-. In *Download Settings*, select between *Download file* or *Export Google Workspace document*, depending on the operation to perform. 
-** When exporting a file, select the type of Google file to export (Docs, Sheets, or Slides) and the format for the target file. 
-+
-Available export formats depend on the file being exported. 
-
-. Provide the file ID of the file to download or export. 
-+
-To obtain this ID, use the Search in Google Drive action step. 
-
-. Specify the directory path where you want to download or export the file from your Google Drive. 
-+
-You can specify this action step to create the target directory if it doesn't exist and to overwrite any existing file in the directory path that contains the same name as the file to download or export. 
-
-. To rename the downloaded or exported file, select *Set new file name* and provide the file name to use, including its extension. 
+String containing the file name and extension
 
 == See Also 
 

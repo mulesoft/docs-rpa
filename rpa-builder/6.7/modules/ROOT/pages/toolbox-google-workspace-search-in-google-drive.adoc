@@ -10,6 +10,8 @@ include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
 
 == Configure Search Settings 
 
+To configure search settings in the wizard: 
+
 . Enter your search terms in the *Search Query* textbox. 
 +
 The *Insert filters* and *Insert operators* dropdown lists contain the most common filters and operators. However, you can use any supported Google https://developers.google.com/drive/api/guides/ref-search-terms[search query terms and operators].
@@ -53,7 +55,7 @@ Array of strings containing the IDs of the files or folders found
 Array of strings containing the names of the files or folders found
 * *Success* 
 +
-Boolean indicating if at least one result was found `true`
+Boolean indicating if at least one result was found (`true`)
 
 == See Also
 
