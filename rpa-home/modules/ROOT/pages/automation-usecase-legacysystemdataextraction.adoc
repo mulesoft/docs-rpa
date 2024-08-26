@@ -32,7 +32,7 @@ You click the search field, enter the order ID, and click 'Search'.
 [[trackingsystem-noentries-image]]
 image::as400ordertrackingscreen-searchresult-ordernotfound.png["Legacy order tracking system shows no search results.", 75%]
 
-The list of orders is empty now. This could either mean that the order is'nt there or that you mistyped the number. Let's assume that the latter is the case. You try again and the list shows the corresponding entry:
+The list of orders is now empty, which means that either the order isn't there or you mistyped the number. Let's assume that the latter is the case. You try again and the list shows the corresponding entry:
 
 [[trackingsystem-resultentry-image]]
 image::as400ordertrackingscreen-searchresult-orderfound.png["Legacy order tracking system shows one search result.", 75%]
