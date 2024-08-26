@@ -8,7 +8,7 @@ This example illustrates the following tasks:
 * Compare strings.
 * Copy a substring from a text file.
 * Find text on a screen using optical character recognition (OCR).
-* Interact with a screen using mouse actions and key strokes.
+* Interact with a screen using mouse actions and keystrokes.
 * Use activity parameters to transfer data and to determine which path to follow in the model.
 
 ## Example Scenario
