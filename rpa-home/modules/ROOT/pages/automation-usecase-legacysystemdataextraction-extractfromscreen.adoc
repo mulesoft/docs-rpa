@@ -27,7 +27,7 @@ image::usecase-legacysystem-screeninteraction-capturepattern.png["When you captu
 
 image::usecase-legacysystem-screeninteraction-searchpattern.png[]
 
-Finding the pattern returns a coordinate that you use in the next step to determine where to input the order ID. You use the *Mouse Action* Action Step to click into the search field next to the label `Order ID`:
+Finding the pattern returns a coordinate that you use in the next step to determine where to input the order ID. You use the *Mouse Action* Action Step to click the search field next to the `Order ID` label.
 
 image:usecase-legacysystem-screeninteraction-mouseaction.png["The coordinates from the found pattern are used in the Relative To field of the Mouse Action Action Step."]
 
