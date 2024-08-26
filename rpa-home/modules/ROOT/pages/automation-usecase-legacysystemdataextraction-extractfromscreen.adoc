@@ -3,7 +3,7 @@
 // number the headings to correspond to the numbered list of steps
 :sectnums:
 
-With the order ID you can now get the corresponding tracking number from the legacy system:
+With the order ID, you can now get the corresponding tracking number from the legacy system:
 
 . Run your legacy application.
 . Search for the word `Order-ID` on the screen, click in the edit field next to it, enter the order ID and click *Search*.
