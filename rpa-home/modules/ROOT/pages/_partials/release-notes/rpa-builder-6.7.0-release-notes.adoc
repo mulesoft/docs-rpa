@@ -15,12 +15,13 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * Upload files to your Google Workspace with the new Upload to Google Drive action step.
 * Search files or folders in your Google Workspace and retrieve their name and ID with the new Search for Files and Folders in Google Drive action step.
 //enhancements to action steps
+* Mail Session (Outlook with OAuth) is renamed to Mail Session (OAuth) and now supports configuring a Gmail account. 
+//other updates 
 * OAuth Credentials activity parameter now support configuring Google as a mail provider.
 +
 See <<migrating-oauth-credentials>> for instructions to migrate your existing OAuth Credentials activity parameters.
-* Mail Session (Outlook with OAuth) is renamed to Mail Session (OAuth) and now supports configuring a Gmail account. 
 * You can now configure the new Google API Service Account Credentials activity parameter to use for authentication with the Google Drive action steps.
-
+* RPA Builder now uses the system's browser to authenticate the user. 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
 
@@ -38,7 +39,10 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="5a,1a"]
 |===
 | Issue Resolution | ID
-| --description-- | W-
+| Append to Array no longer returns an empty result when appending to arrays that exceed 10100 characters. | W-16194888	
+| RPA Builder no longer crashes when you push an activity paramater into a workflow and a generated Websession activity parameter is available. | W-16438279
+| The RPA Builder installer now links to the English version of the Adoptium OpenJDK download page. | W-15929142	
+
 |===
 
 [[migrating-oauth-credentials]]
