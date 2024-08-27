@@ -19,7 +19,7 @@ include::rpa-builder::partial$hard-soft-requirements.adoc[leveloffset=+1]
 
 For Hardware and Software requirements for earlier RPA Builder versions, refer to the corresponding product documentation:
 
-* xref:6.6@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.5 Hardware and Software Requirements]
+* xref:6.6@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.6 Hardware and Software Requirements]
 * xref:6.5@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.5 Hardware and Software Requirements]
 * xref:6.4@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.4 Hardware and Software Requirements]
 * xref:6.3@rpa-builder::hardware-software-requirements.adoc[RPA Builder 6.3 Hardware and Software Requirements]
