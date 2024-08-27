@@ -1,0 +1,139 @@
+= Mail Session (OAuth)
+
+The *Mail Session (OAuth)* action step is an inclusive element for email operations that enables you to establish a connection to an email server using MS Outlook or Gmail and then perform email operations such as *Read Mail*, *Send Mail*, and *Set Mail* (to change email) by using the corresponding action steps.
+
+== Before You Begin
+
+Before you configure this action step, ensure you have: 
+
+* An Azure account, if you are creating an application for Outlook
+* A Google account, if you are creating an application for Gmail
+
+[[properties]]
+== Properties
+
+include::partial$oauth-credentials-properties.adoc[tags=common-oauth-properties]
+
+* *Incoming Mail Operation* Settings
+** *Protocol used*
++
+(Mail Protocol) The communication protocol to use: IMAP, Exchange, or POP3
+** *Encryption used*
++
+(Encryption) The encryption protocol to use: None, SSL/TLS, or STARTTLS
+** *Server address*
++
+(String) The server address entered in the wizard
+** *Server Port*
++
+(Integer) The selected port
+
+* *Outgoing Mail Operation* Setting
+**  *Encryption used*
++
+(Encryption) The encryption protocol to use: None, SSL/TLS, or STARTTLS
+** *SMTP Server address*
++
+(String) The URL of the selected SMTP email server
+** *SMTP Server Port*
++
+(Integer) The selected port
+** *Send test mail to*
++
+(String) The email address where to send the test email
+
+== Inbound Variables
+
+* *SMTP Server address*
+* *Server address*
+* *SMTP Server Port*
+* *Server Port*
+* *OAuth Credentials*
+* *Auth Endpoint* 
+* *Token Endpoint* 
+* *OAuth Client ID*
+* *Client Secret* 
+* *Redirect URI*
+* *Scopes* 
+* *E-Mail Address*
+* *Refresh Token*
+
+== Outbound Variables
+
+The *Mail Session (OAuth)* action step has no outbound variables.
+
+== Wizard
+
+image:mail-session-outlook-oauth-wizard.png["The Mail Session (OAuth) action step wizard.", 60%, 60%]
+
+You can configure the following settings using the wizard:
+
+* *Operation Mode*
+* *OAuth Authentication*
+* *Incoming Mail*
+* *Outgoing Mail*
+
+=== Operation Mode
+
+In *Operation Mode*, you determine what happens and which area activates in the Mail Session. The following modes are available:
+
+* *Read and send mails*
++
+Enables you to configure the incoming and outgoing mail areas so that you can read and send emails.
+* *Read mails from inbox*
++
+Enables editing for the Incoming Mail section so that you can only read emails.
++
+If you select the *Read mails from inbox* mode, you can't use the Send Mail action step.
+* *Send mails via SMTP*
++
+Enables editing for the Outgoing Mail section so that you can only send emails.
++
+If you select the *Send mails via SMTP* mode, you can't use the Read Mail action step in the Mail Session.
+
+=== OAuth Authentication
+
+Create a set of tokens that don't rely on a user password to authenticate with the email server. After you create the refresh token, you can use it to repeatedly log in to the services without asking for the user's password again.
+
+Follow these steps to authenticate with your credentials:
+
+. Complete the *OAuth Authentication* configuration by specifying the required properties.
++
+Refer to <<properties, OAuth Authentication Settings>> for a description of each property.
+. Click *Authenticate*.
++
+This step starts the authentication process with the OAuth host, which opens the login page in your default browser. 
++
+To enable using different accounts to log in, Mail Session (OAuth) clears credentials stored in browser cookies when you click *Authenticate*. 
+. In the OAuth host's login page, complete the login process.
+. Close the browser.
+
+After completing the last step, the wizard shows that you are authenticated:
+image:email-outlook-authentication.png[The Logged in confirmation message in the authentication settings window, 50%, 50%]
+
+[[generate-oauth-token]]
+==== Generating an OAuth Refresh Token
+
+Instead of authenticating via the *Mail Session (OAuth)* wizard, you can pin the refresh token if you obtain it externally. In this case, you still need to populate or pin the remaining fields.
+
+include::partial$generate-oauth-token-steps.adoc[]
+
+=== Incoming Mail
+
+In the *Incoming Mail* area, you can configure all the settings necessary to import emails from an email server. You can use the *Test Connection Button* to test whether the connection to the email server can be established.
+
+=== Outgoing Mail
+
+The *Outgoing Mail* area opens if you select the *Send mails* checkbox. To send emails, enter the SMTP email server settings here.
+
+To check the connection to the SMTP server and send a test email to the email address specified in the *Sendtest mail to* field, click *Send test mail*.
+
+== See Also
+
+* xref:toolbox-mail-operations-read-mail.adoc[]
+* xref:toolbox-mail-operations-send-mail.adoc[]
+* xref:toolbox-mail-operations-set-mail.adoc[]
+* xref:troubleshooting-azure-oauth-setup.adoc[]
+* https://azure.microsoft.com/en-us/[Azure]
+* https://learn.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-authenticate-an-ews-application-by-using-oauth[Authenticate an EWS application by using OAuth^]
+* https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth[Authenticate an IMAP, POP or SMTP connection using OAuth^]
