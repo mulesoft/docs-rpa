@@ -1,0 +1,136 @@
+= Download from Google Drive 
+
+Download or Export files from your Google Drive. You can export Google Docs, Sheets, and Slides to several supported formats, including PDF.
+
+== Before You Begin 
+
+Before downloading a file: 
+
+* Configure your Google API Service Account Credentials.
++
+You can configure your credentials as an xref:toolbox-variable-handling-activity-parameters.adoc#defining-activity-parameters[Activity Parameter] or inline in the wizard. 
+* Obtain the corresponding File ID by using the Search in Google Drive action step. 
+
+== Configure Your Authentication Settings 
+
+include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
+
+== Configure File Download or Export Settings
+
+To configure download or export file settings in the wizard: 
+
+. In *Download Settings*, select between *Download file* or *Export Google Workspace document*, depending on the operation to perform. 
+** When exporting a file, select the type of Google file to export (Docs, Sheets, or Slides) and the format for the target file. 
++
+Available export formats depend on the file being exported. 
+
+. Provide the file ID of the file to download or export. 
++
+To obtain this ID, use the Search in Google Drive action step. 
+
+. Specify the directory path where you want to download or export the file from your Google Drive. 
++
+You can specify this action step to create the target directory if it doesn't exist and to overwrite any existing file in the directory path that contains the same name as the file to download or export. 
+
+. To rename the downloaded or exported file, select *Set new file name* and provide the file name to use, including its extension. 
+
+== Properties 
+
+include::partial$oauth-authentication-settings.adoc[]
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties]
++
+** *File ID*
++
+ID of the file to download or export.
+** *Google drive file type*
++
+Type of Google file to export. Available types are: 
++
+*** *Google Docs*
+*** *Google Sheets*
+*** *Google Slides*
++
+** *Operation mode*
++
+Operation to perform, either *DownloadFile* or *ExportDocument*.
+** *Docs type* 
++
+File format for exporting Google Docs. Available types: 
++
+*** *Microsoft Word (.docx)*
+*** *OpenDocument (.odt)*
+*** *Rich Text (.rtf)*
+*** *PDF (.pdf)*
+*** *Plain Text (.txt)*
+*** *Web Page (HTML) (.zip)*
+*** *EPUB (.epub)*
++
+** *Sheets Type*
++
+File format for exporting Google Sheets. Available types:
++
+*** *Microsoft Excel (.xlsx)*
+*** *OpenDocument (.ods)*
+*** *PDF (.pdf)*
+*** *Web Page (HTML) (.zip)*
+*** *Comma-Separated Values (first-sheet only) (.csv)*
+*** *Tab-Separated Values (first-sheet only) (.tsv)*
++
+** *Slides Type*
++
+File format for exporting Google Slides. Available types:
++
+*** *Microsoft PowerPoint (.pptx)*
+*** *ODP (.odp)* 
+*** *PDF (.pdf)* 
+*** *Plain Text (.txt)*
+*** *JPEG (first-slide only) (.jpg)*
+*** *PNG (first-slide only) (.png)*
+*** *Scalable Vector Graphics (first-slide only) (.svg)*
+
+* *Google Drive File Settings*
+** *Create directory if it does not exist*
++
+If selected, creates the folder specified in *Directory path* if it doesn't exist. 
+** *Directory path* 
++
+Path to the directory to download or export the file. 
+** *New file name* 
++
+File name to use if *Set new file name* is enabled. You must specify the file name, including the extension. 
+** *Overwrite existing file* 
++
+If selected, overwrites any existing file in the specified download directory that has the same name as the downloaded or exported file.
+** *Set new file name*
++
+If selected, renames the downloaded or exported file using the specified *New file name*.
+
+== Inbound Variables 
+
+* *File ID*
+* *Directory Path* 
+* *Create directory if it does not exist*
+* *Overwrite existing file* 
+* *Set new file name* 
+* *New file name* 
+include::partial$oauth-inbound-variables.adoc[]
+
+== Outbound Variables 
+
+* *Download Succeeded*
++
+Boolean indicating whether the download was successful (`true`)
+* *Target folder* 
++
+String containing the directory path to the downloaded or exported file
+* *File name* 
++
+String containing the file name and extension
+
+== See Also 
+
+* xref:xref:toolbox-variable-handling-activity-parameters.adoc[]
+* xref:toolbox-google-drive-operations.adoc[]
