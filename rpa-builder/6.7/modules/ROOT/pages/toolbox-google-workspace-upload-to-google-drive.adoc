@@ -68,5 +68,5 @@ Returns the Google Drive file ID of the uploaded file
 
 == See Also 
 
-* xref:xref:toolbox-variable-handling-activity-parameters.adoc[]
+* xref:toolbox-variable-handling-activity-parameters.adoc[]
 * xref:toolbox-google-drive-operations.adoc[]

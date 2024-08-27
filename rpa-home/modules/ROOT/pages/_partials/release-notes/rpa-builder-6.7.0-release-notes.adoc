@@ -22,6 +22,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 See <<migrating-oauth-credentials>> for instructions to migrate your existing OAuth Credentials activity parameters.
 * You can now configure the new Google API Service Account Credentials activity parameter to use for authentication with the Google Drive action steps.
 * RPA Builder now uses the system's browser to authenticate the user. 
+
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
 

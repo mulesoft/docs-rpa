@@ -132,5 +132,5 @@ String containing the file name and extension
 
 == See Also 
 
-* xref:xref:toolbox-variable-handling-activity-parameters.adoc[]
+* xref:toolbox-variable-handling-activity-parameters.adoc[]
 * xref:toolbox-google-drive-operations.adoc[]
