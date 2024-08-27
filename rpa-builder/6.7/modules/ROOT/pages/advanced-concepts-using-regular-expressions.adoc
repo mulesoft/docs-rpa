@@ -1,0 +1,16 @@
+= Using Regular Expressions
+
+Regular Expression or Regex are patterns that provide a means to specify and recognize texts. Some action steps support using Regex in their configuration.
+
+RPA Builder uses C# flavor for Regex and includes the Regex Tester tool, which enables you to xref:advanced-concepts-using-regular-expressions-testing-regular-expression.adoc[test regular expressions].
+
+For specific use cases and examples, see xref:advanced-concepts-using-regular-expressions-examples.adoc[Regex Examples].
+
+If you need further information and references, following are some links to get you started with Regex:
+
+* Wikipedia on regular expressions: +
+http://en.wikipedia.org/wiki/Regular_expression[http://en.wikipedia.org/wiki/Regular_expression^]
+* Regex tutorials, examples, and references: +
+http://www.regular-expressions.info/[http://www.regular-expressions.info/^]
+* External Regex tester tool: + 
+http://regexstorm.net/tester[http://regexstorm.net/tester^]

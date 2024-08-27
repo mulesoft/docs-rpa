@@ -1,0 +1,5 @@
+// tag::creditsWarning[]
+
+Calls to IDP from RPA Builder consume automation credits per page processed in addition to the bot minutes consumed by the RPA process. See xref:rpa-home::ms-automation-credits-usage-types.adoc[] for conversion rates and usage details. 
+
+// end::creditsWarning[]

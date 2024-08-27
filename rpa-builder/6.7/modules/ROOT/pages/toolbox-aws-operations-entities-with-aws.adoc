@@ -1,0 +1,56 @@
+
+
+= Entities With AWS
+
+The Entities with AWS action step enables you to use Amazon Comprehend to inspect text for named entities and return information about them.
+
+== Inbound Variables
+
+* *Text*
++
+The ext to analyze and extract entities from.
+* *Json Path*
++
+Json Path Expression to filter the Normalized Json outbound result.
+* *AWS Credentials*
++
+Or, if *Use custom settings* is activated in the wizard:
++
+** *Client Id*
+** *Client Secret*
+** *Session Token*
+** *Use Session Token*
+** *Region Endpoint*
+
+
+== Outbound Variables
+
+* *Normalized Json*
++
+The parsed result based on the normalized result and defined Json path.
+* *Raw Json*
++
+The complete AWS response.
+
+== Wizard
+
+image:entities-with-aws-wizard.png[50%,50%]
+
+include::partial$aws-authentication.adoc[tag=wizard] 
+
+* *Response settings*
+** *JsonPath Expression*
++
+The Json path to the property of the response object. 
+* *Text*
++
+The text to analyze.
+* *Language*
++
+The language of the source text to analyze.
+
+== See Also
+
+* xref:toolbox-aws-operations-credentials-for-aws.adoc[]
+* https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html[Amazon Comprehend^]
+* xref:building-jsonpath-expressions.adoc[]

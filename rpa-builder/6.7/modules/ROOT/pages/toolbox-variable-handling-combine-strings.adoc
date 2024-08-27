@@ -1,0 +1,80 @@
+= Combine Strings
+
+Use *Combine Strings* to combine multiple variables into a single new variable. This action step supports Script variables, environment
+variables, and Pin variables. You can insert text before, after, and between variables.
+
+Link the Pin variables to use with this action step before opening the wizard. Combine Strings supports a maximum of 5 Pin variables. 
+
+To define a single text value as a variable, use the Set Variable action step instead. 
+
+== Properties
+
+*Pattern Text*: Defines the sequence in which variables and texts are concatenated.
+
+== Inbound Variables
+
+//link:#AS_CombineStrings_P_PatternText[*Pattern*]
+*Pattern*: Defines the sequence in which variables and texts are concatenated.
+
+== Outbound Variables
+
+*Combined String*: The combined strings stated as a single string, as defined in *Pattern Text*.
+
+== Reserved values
+
+Because Pin variables use the syntax `{<number>}`, Combine String replaces values such as `{1}` and `{2}` with the corresponding Pin variable or an empty value if there are no variables configured in these slots. 
+
+To use a string that contains `{1}` or other reserved value as part of the text, define a variable containing the string and then reference it in the pattern. 
+
+For example, consider the following Pin variables: 
+
+* `{1}: Workflow Based Variables.constantString`, with value `Value {1} is:`
+
+* `{2}: Workflow Based Variables.variableNumber`, with a numeric value defined at runtime. For this example, assume the value is `123456`.
+
+By setting the pattern text to: `{1} {2}`, the combined string result is `Value {1} is: 123456`.
+
+
+== Wizard
+
+The wizard contains the editable *Pattern* text field, drop-down lists of script and environment variables, and links to the
+Pin variables.
+
+Clicking the name of a variable from the list adds a reference to
+the variable in the text field. You can also enter custom text into the *Pattern* field.
+
+Clicking variable names in the *Insert Available Variables* section of the Wizard inserts variables into the pattern using the following syntax depending on the type of variable: 
+
+* Pin variables: `{[number in the list of all Pin variables]}`. Example: `{1}`.
+* Environment variables: `%[name of variables]%`. Example: `%SYSTEM%`.
+* Script variables: `($[name of variables])`. Example: `$myVariable`.
+
+The Pin variable _Combined String_ contains the result in the form of a single string.
+
+=== Example
+
+The macro `{1}` is bound to variable _ActivityParameters.ap_alpha1_ and macro
+`{2}` is bound to variable _ActivityParameters.ap_alpha2_. The following
+table represents the values of both variables and how they translate to
+a new variable using different pattern texts:
+
+[cols=",,,",options="header",]
+|===
+|*ActivityParameters.ap_alpha1* |*ActivityParameters.ap_alpha2*
+|*Pattern Text* |*Output Variable _(Combined String)_*
+|`mulesoft` |`com` |`www.{1}.{2}` |`www.mulesoft.com`
+
+|`mulesoft` |`Info` |`www.{1}.{2}` |`www.mulesoft.info`
+
+|`Ms` |`Miller` |`Dear {1}. {2},` |`Dear Ms. Miller,`
+
+|`Mr` |`Johnson` |`Dear {1}. {2},` |`Dear Mr. Johnson,`
+
+|`Lorem` |`Ipsum` |`{1}{2}` |`LoremIpsum`
+
+|`Lorem` |`Ipsum` |`{2}{1} - {1}{2}` |`IpsumLorem - LoremIpsum`
+|===
+
+== See Also 
+
+xref:toolbox-variable-handling-set-variable.adoc[]
