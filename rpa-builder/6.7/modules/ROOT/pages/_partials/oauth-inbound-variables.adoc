@@ -1,0 +1,12 @@
+* *Credential Type*
+* *Project ID* 
+* *Private Key ID* 
+* *Private Key* 
+* *Token URI* 
+* *Auth Provider x509 Cert URL* 
+* *Auth URI* 
+* *Client Email* 
+* *Client ID* 
+* *Client x509 Cert URL* 
+* *Universe Domain* 
+* *Google API Service Account Credentials* 

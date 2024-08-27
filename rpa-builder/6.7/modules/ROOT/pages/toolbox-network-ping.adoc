@@ -1,0 +1,109 @@
+= Ping
+
+This _Action Step_ is used for sending a ping to a computer or network
+device. _Ping_ is useful to check if a particular machine is available
+on the network right at the start of a measurement _Workflow_. If not,
+it may be pointless to even try to continue the measurement.The response
+time measured provides a _Measurement Point_.
+
+The Action Step _Ping_ only supports IPv4.
+
+== Properties
+
+*Invert Logic* If it is intentional that the destination host should be
+unreachable and you want to test this, you can invert the logic of the
+_Ping_ _Action Step_ by using this function. If the checkbox is
+selected, then an unsuccessful ping is considered to be the correct
+result.
+
+*Show message box* Defines if a message box with the measured response
+time should be displayed after the _Ping_ action is finished.
+
+*Average over* If you want to use
+more than a single _Ping_ to evaluate the response time, you can change
+the number of _Pings_ sent by editing the value in the text field. The
+resulting response time will be calculated as the average of all
+attempts. If any of those attempts fails, the _Ping_ results in an error
+and the timer will be unavailable.
+
+*Destination Host* Enter the IP or hostname of the machine you want to ping.
+
+*ICMP Packet size* Defines the size of the data package that is used for the _Ping_.
+
+High values may create a lot of network traffic!
+
+*ICMP Retries* Number of times a single _Ping_ shall be repeated if a single _Ping_ failed by exceeding the set ICMP timeout.
+
+*ICMP Timeout* Defines the length of time after which _Ping_ should stop trying to get a response from the destination host.
+
+*Ping delay [ms]* Pause time between _Ping_ retries.
+
+*Ping Threshold [ms]* Defines
+the allowed duration of a _Ping_ response. If the response exceeds this
+duration, the _Ping_ is considered to have failed. This only works if
+_Invert Logic_ is off. If _Error handling_ is set to _Normal_, a failed
+_Ping_ will trigger the error handling.
+
+*Record Timer* If activated, the _Ping_ response time will be recorded
+like a _Timer_ or _Stopwatch_ and thus contribute to the reports in RPA Manager.
+
+*Timer Mode* When "Record Timer" is enabled and the _Ping_ is used in a
+loop, the following mode is for calculating the timer value:
+
+* *Last* The last time measured is saved
+* *Average* The script calculates an average of all times measured and
+saves it
+* *Min* The fastest time measured is saved
+* *Max* The slowest time measured is saved
+
+////
+The Action Step _Ping_ is currently not supported by X1 Server 5.2. This
+means that it is currently not possible to evaluate the data on the
+server. You can still use the Ping in RPA Builder because they
+are still displayed in the _Workflow Run Results_.
+////
+
+== Inbound Variables
+
+*Suffix* can be used if the _Ping_ is within the _Control Block_'s _File
+Controlled Loop_. A suffix is then added to the name of the _Ping_
+during every loop. Each suffix is a column entry in the file that was
+imported in the _File Controlled Loop_.
+
+//link:#AS_Ping_P_DestinationHost[*Destination host*]
+*Destination Host* Enter the IP or hostname of the machine you want to ping.
+
+//link:#AS_Ping_P_ICMPRetries[*ICMP Retries*]
+*ICMP Retries* Number of times a single _Ping_ shall be repeated if a single _Ping_ failed by exceeding the set ICMP timeout.
+
+//link:#AS_Ping_P_ICMPTimeout[*ICMP-Timeout*]
+*ICMP Timeout* Defines the length of time after which _Ping_ should stop trying to get a response from the destination host.
+
+//link:#AS_Ping_P_ICMPPacketSize[*ICMP Packet size*]
+*ICMP Packet size* Defines the size of the data package that is used for the _Ping_.
+
+//link:#AS_Ping_P_AverageOver[*Average over*]
+*Average over* If you want to use
+more than a single _Ping_ to evaluate the response time, you can change
+the number of _Pings_ sent by editing the value in the text field. The
+resulting response time will be calculated as the average of all
+attempts. If any of those attempts fails, the _Ping_ results in an error
+and the timer will be unavailable.
+
+//link:#AS_Ping_P_PingDelay[*Ping Delay*]
+*Ping Delay* Pause time between _Ping_ retries.
+
+//link:#AS_Ping_P_PingThreshold[*Ping Threshold*]
+*Ping Threshold* Defines
+the allowed duration of a _Ping_ response. If the response exceeds this
+duration, the _Ping_ is considered to have failed. This only works if
+_Invert Logic_ is off. If _Error handling_ is set to _Normal_, a failed
+_Ping_ will trigger the error handling.
+
+== Outbound Variables
+
+*Time* provides you the measured time.
+
+== Wizard
+
+See <<Properties>>.
