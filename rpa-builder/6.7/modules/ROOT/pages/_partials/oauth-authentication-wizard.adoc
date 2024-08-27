@@ -1,0 +1,3 @@
+// tag::authentication-info[]
+Configure your authentication settings for the Google API service account in the *Authentication Settings* panel. Select *Pin credentials* to specify the activity parameter containing the credentials, or select *Use custom settings* to provide the information inline. You can either import a JSON file with your Google API credentials information or specify the authentication information manually. 
+// end::authentication-info[]

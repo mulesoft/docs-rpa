@@ -1,0 +1,72 @@
+= Upload to Google Drive 
+
+Upload files to your Google Drive. 
+
+You can specify a target folder from your Google Workspace for the upload.
+
+== Before You Begin 
+
+Before uploading a file: 
+
+* Configure your Google API Service Account Credentials.
++
+You can configure your credentials as an xref:toolbox-variable-handling-activity-parameters.adoc#defining-activity-parameters[Activity Parameter] or inline in the action step wizard. 
+
+== Configure Your Authentication Settings 
+
+include::partial$oauth-authentication-wizard.adoc[tag=authentication-info]
+
+== Configure File Upload Settings
+
+To configure file upload settings in the wizard: 
+
+. Specify the directory path and the name of the file to upload. 
++
+. Provide a Google Drive Folder ID to upload the file into this folder. 
++
+If you don't provide this value, this action step uploads the file to the root folder of your Google Drive. 
+
+== Properties 
+//OAuth common properties
+include::partial$oauth-authentication-settings.adoc[]
+
+* *Common* 
++
+See xref:common-properties.adoc[]
+
+* *File Operation Settings*
+** *Directory path* 
++
+Path to the directory where the file to upload is
++
+You can specify an absolute path or a path relative to the Base Path. 
+** *File name*
++
+Name of the file to upload
+** *Google Drive Folder ID*
++
+ID of the destination Google Drive folder where to upload the file
++
+To get the folder ID, use the Search in Google Drive action step to find the folder. You can also go to the Google Drive folder and extract the ID (the value after `folder/`) from the URL. If you don't specify a folder ID, this action step uploads the file to the root folder. 
+
+== Inbound Variables 
+
+* *Directory path*
+* *File name*
+* *Google Drive Folder ID*
+//OAuth common inbound variables
+include::partial$oauth-inbound-variables.adoc[]
+
+== Outbound Variables
+
+* *Upload successful*
++
+Boolean indicating whether the upload was successful
+* *File ID in Google Drive*
++
+Returns the Google Drive file ID of the uploaded file
+
+== See Also 
+
+* xref:xref:toolbox-variable-handling-activity-parameters.adoc[]
+* xref:toolbox-google-drive-operations.adoc[]
