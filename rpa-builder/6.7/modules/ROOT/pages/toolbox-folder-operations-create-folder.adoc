@@ -1,0 +1,31 @@
+= Create Folder 
+
+Use this action step to create an empty folder in the specified directory path. 
+
+== Properties 
+
+* *Common* 
++
+See xref:common-properties.adoc[Common Properties] for a description.  
+
+* *Folder Operations Settings* 
+** *Directory Path* 
++
+Path to the directory where to create the folder.
+** *Force error if folder exists* 
++
+Causes the workflow to enter an error state and stop its execution if the folder exists. 
+
+== Inbound Variables 
+
+* *Force error if folder exists* 
+* *Directory Path* 
+
+== Outbound Variables 
+
+* *Directory Path* 
+* *IsCreated* 
+
+== See Also 
+
+* xref:toolbox-folder-operations.adoc[]

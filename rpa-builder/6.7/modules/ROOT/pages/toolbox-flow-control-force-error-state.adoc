@@ -1,0 +1,22 @@
+= Force Error State
+
+Forces the _Workflow_ into an error state and writes the error message to the `Error Out` workflow variable.
+
+If you don't handle this error within a _Managed Block_, the _Workflow_ aborts at this point and returns with
+an error. 
+
+== Properties 
+
+* *Error Message*
++
+Custom error message to write into the `Error Out` workflow variable. 
++
+If this field is not set, the action step outputs `Workflow error state manually forced by action step! [No custom message was set.]`
+
+== Inbound Variables 
+
+* *Error Message*
+
+== Outbound Variables
+
+This action step has no outbound variables. 

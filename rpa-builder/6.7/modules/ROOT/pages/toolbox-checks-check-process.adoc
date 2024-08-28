@@ -1,0 +1,53 @@
+= Check Process
+
+This _Action Step_ enables you to check if a process is running or not
+and either kill it or launch another program.
+
+== Properties
+
+* *Config Action*
+** *Action*
++
+Action to perform when the check gives a positive result.
+** *Program to start*
++
+The executable file that launches when the _Start Program_ action is chosen.
+
+* *Process Settings*
+** *Check for*
++
+Establishes whether to check if the process does or does not exist.
+** *Process name/PID*
++
+Name or process ID of the process to check for as listed in the Task Manager.
+
+== Variables
+
+* *Start Process ID*
++
+The Process ID of the _Process_ started (only available when _Action_ is set to _Start program_)
+** Syntax: `PID:[PID]`
+* *Check State*
++
+Returns whether the check was successful or not
+** Syntax: `[Start program OK:/Start Program Error:/] Process '[Process Name]' [exists/does not exist/existed] [and program '[Path To Program/PID:[PID of Process to start]' [successfully started/was not started]]/[[and was killed]/]`
+
+== Wizard
+
+First enter the process to check for in the _Process Name_ field.
+Either enter the process name or its ID manually in the field, then select the process from the drop-down menu there or navigate to an executable file and select it.
+
+Next, select from the _Check for_ drop-down menu whether to check if the process does or does not exist.
+
+Choose an action from the _Action_ drop-down menu to perform if the check is successful:
+
+* *Do nothing* +
+Performs the check and nothing else.
+
+* *Start program* +
+Starts the program defined in the _Program to start_ property.
+
+* *Kill process* +
+Kills the process you checked for. Not applicable if the check was for non-existence.
+
+Check if applications started by the RPA Bot are still running at the end of a workflow. If so, perform a _Kill process_ action to reset the PC into a clean state for the next run.

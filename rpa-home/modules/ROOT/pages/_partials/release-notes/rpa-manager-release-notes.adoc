@@ -2,6 +2,82 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[[august-21-2024]]
+== August 21, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* The new *Process Publish Restriction for Production Phase* permission prevents a user from moving a process from Testing to Production. 
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| The *Categories* page in Process Management no longer shows a duplicate alert. | W-14436611
+| The *Finance Analysis* view no longer shows an incorrect *Process Manager* assignment. | W-14851495
+| *Create Evaluation* now shows an input character counter for the *Name* field. | W-15301328
+| RPA Manager no longer deletes assigned applications during a phase change from *Build* to *Test* or from *Test* to *Production*. | W-16380363
+| You can now update multiple RPA Bots in parallel. | W-16382151
+| You can no longer create a *Category* with an empty name. | W-16393605
+| RPA Bots can no longer receive the same task for executing the same run configuration. | W-16436289
+| Editing a deactivated *Alert Rule* no longer reactivates it. | W-16528085
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user isn't available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions isn't available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+[[august-19-2024]]
+== August 19, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* You can now configure additional types of process executions: interval trigger, cron trigger, and on-demand executions.
++
+These are supported by bots running version 1.7.0 or later.
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user isn't available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions isn't available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+[[july-19-2024]]
+== July 19, 2024
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| RPA Manager now properly saves changes made to the schedule of a process trigger execution for a run configuration in the production phase. | W-16169918
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user isn't available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions isn't available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
 [[july-5-2024]]
 == July 5, 2024
 

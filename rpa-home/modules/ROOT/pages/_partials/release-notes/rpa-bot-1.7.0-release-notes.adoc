@@ -1,0 +1,46 @@
+= RPA Bot 1.7.0 Release Notes
+
+RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== August 19, 2024
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* You can now set a display name for the RPA Bot during the installation. 
+* You can now configure retries for the creation of the Secure Session.
+
+* RPA Bot now automatically detects and uses the proper RDP port.
+* Added support for new scheduling types in RPA Manager. 
+* Updated the FreeRDP library to 3.5.1.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+| Secure Session creation no longer fails when the user name includes a blank space. | W-15456958 
+| Executions no longer fail with `NullReferenceException` errors when multiple sessions run in parallel. | W-15212084 
+| Starting the execution of a process on demand no longer causes a `NullReferenceException`. | W-16185405 
+| Invocable runs no longer show state Suspended when running. | W-16282214 
+| Uninstalling RPA Bot is no longer possible if the RPA Bot Configurator is open.| W-15304241 
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]

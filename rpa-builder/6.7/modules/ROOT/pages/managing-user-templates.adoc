@@ -1,0 +1,87 @@
+= Managing User Templates
+
+RPA Builder enables you to save Action Steps and their settings as templates that you can reuse in the project. You can Import and Export these templates as needed.
+
+Create a set of templates before creating a Workflow to increase the creation speed significantly. Save the templates before configuring the Workflow objects, so the templates stay flexible in use.
+RPA Builder automatically loads templates during start-up and makes them available in the toolbox. You can drag and drop templates to your Workflow to use them.
+
+== Before you Begin
+
+Consider the following when creating a template:
+
+* Search Pattern and Pattern Select Action Steps and all combinations of Action Steps that include them cannot be saved as a template.
+* RPA Builder removes all passwords from templates before creating them.
+
+== Create a Template
+
+You can create a template using the _Context menu_ or the _Workflow Tools_.
+
+. Use any of the following methods to start creating a template:
++
+--
+From the Context Menu::
++
+.. Right-click an Action Step to open its context menu.
+.. Click *Save As Template*.
+Using the Workflow Tools::
++
+.. Select the Action Step you want to save as a template.
+.. In the Workbench Toolbar, click the *Tools* (image:wrench-icon.png[The Tools icon, 2%, 2%]) button.
+.. Click *Save Selected Items as Template*.
+
+After selecting any of these options, a *Save as* dialog opens in which you continue configuring the template.
+--
++
+. Select the path to the folder in which to store the template.
++
+By default, the RPA Builder template folder is `\MuleSoft\RPA\UserTemplates`.
+. Enter a name for the template and click *Save*.
++
+The Template details window that subsequently opens enables you to add additional information to this template.
++
+image:save-as-template.png[The Template details window, 30%, 30%]
++
+When you unselect *Clear user data*, the template keeps the settings configured, so specific measurement Workflow elements, like starting MS Edge with a blank page, can be saved as a template as a whole and reused directly from the User Templates category in the Toolbox.
+
+== Delete, Import, and Export Templates
+
+The Templates Manager enables you to delete, import, and export templates.
+
+image::templates-manager.png[The Templates manager window, 50%, 50%]
+
+To open the Templates Manager, in the top menu bar, go to *Tools* > *Templates Manager*.
+
+Use the corresponding buttons in the menu bar of the Templates Manager to *Delete*, *Import*, or *Export* templates:
+
+* (image:delete-icon-alt.png[The Delete template button, 2%, 2%]) *Delete*
++
+Deletes the selected Template.
+* (image:import-icon.png[The Import template button, 2%, 2%]) *Import*
++
+After you click *Import*, Windows Explorer opens and you can enter the path to the template. Select a template and the following window opens:
++
+image:import-user-template.png[The Import template window, 50%, 50%]
++
+You can verify the template again and change the name if necessary. Click *OK* to import the template into the Template Manager, where it becomes available for further use.
+* (image:export-icon.png[The Export template button, 2%, 2%]) *Export*
++
+When you click *Export* after selecting a template, the following window opens:
++
+image:export-user-template.png[The Export template window, 50%, 50%]
++
+In this window, you can change the name and navigate to the target folder where to save the exported template.
+
+== Example Templates
+
+The following template is a typical template for a normal Transaction with mouse activity:
+
+image:template-transaction-mouse.png[A template showing a transaction with mouse activity, 50%, 50%]
+
+A useful variation of this template could use keystrokes:
+
+image:template-transaction-keystrokes.png[A template showing a transaction with mouse activity and keystrokes, 50%, 50%]
+
+== See Also
+
+* xref:workbench-elements-in-detail.adoc[Workbench Elements in Detail]
+* xref:workbench-toolbar-overview.adoc[Workbench Toolbar Overview]

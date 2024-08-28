@@ -12,6 +12,9 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == RPA Builder
 
+* xref:release-notes/rpa-builder-6.7.0-release-notes.adoc[RPA Builder 6.7.0 Release Notes]
+* xref:release-notes/rpa-builder-6.6.8-release-notes.adoc[RPA Builder 6.6.8 Release Notes]
+* xref:release-notes/rpa-builder-6.6.7-release-notes.adoc[RPA Builder 6.6.7 Release Notes (Internal)]
 * xref:release-notes/rpa-builder-6.6.6-release-notes.adoc[RPA Builder 6.6.6 Release Notes]
 * xref:release-notes/rpa-builder-6.6.5-release-notes.adoc[RPA Builder 6.6.5 Release Notes (Internal)]
 * xref:release-notes/rpa-builder-6.6.4-release-notes.adoc[RPA Builder 6.6.4 Release Notes]
@@ -66,6 +69,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == RPA Bot
 
+* xref:release-notes/rpa-bot-1.7.0-release-notes.adoc[RPA Bot 1.7.0 Release Notes]
 * xref:release-notes/rpa-bot-1.6.2-release-notes.adoc[RPA Bot 1.6.2 Release Notes]
 * xref:release-notes/rpa-bot-1.6.0-release-notes.adoc[RPA Bot 1.6.0 Release Notes]
 * xref:release-notes/rpa-bot-1.5.0-release-notes.adoc[RPA Bot 1.5.0 Release Notes]
