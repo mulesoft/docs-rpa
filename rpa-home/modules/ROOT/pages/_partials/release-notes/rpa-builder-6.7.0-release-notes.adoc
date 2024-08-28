@@ -13,7 +13,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 * Execute macros on an Excel file with the new Execute Excel Macro action step.
 * Download or export files from your Google Workspace with the new Download from Google Drive action step.
 * Upload files to your Google Workspace with the new Upload to Google Drive action step.
-* Search files or folders in your Google Workspace and retrieve their name and ID with the new Search for Files and Folders in Google Drive action step.
+* Search files or folders in your Google Workspace and retrieve their name and ID with the new Search in Google Drive action step.
 //enhancements to action steps
 * Mail Session (Outlook with OAuth) is renamed to Mail Session (OAuth) and now supports configuring a Gmail account. 
 //other updates 
