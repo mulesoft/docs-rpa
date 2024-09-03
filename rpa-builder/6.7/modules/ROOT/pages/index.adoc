@@ -1,0 +1,15 @@
+
+= RPA Builder Overview
+
+RPA Builder is the on-premise development environment that enables you to build the automations by specifying the tasks and steps of the process. With RPA Builder you can import a BPMN diagram generated in RPA Manager, and then drag and drop operations or record keyboard and mouse input to specify the action steps. You can also perform local testing of your workflow and when you finish building the process, you upload it to RPA Manager to move on to the testing phase.
+
+RPA Builder enables you to:
+
+* Download and upload automation assets to RPA Manager.
+* Add the automation logic to the processes.
+* Run local tests for the automations.
+
+== See Also
+
+* xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
+* xref:install-and-configure.adoc[Installing and Configuring RPA Builder]

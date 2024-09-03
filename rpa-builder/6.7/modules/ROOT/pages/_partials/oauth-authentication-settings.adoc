@@ -1,0 +1,32 @@
+
+* *Authentication Settings* 
+** *Auth Provider x509 Cert URL*
++
+Authentication provider certificate URL for the Google API credentials. 
+** *Auth URI* 
++
+OAuth2 authentication URI for the Google API credentials.
+** *Client Email* 
++
+Client email of the Google API credentials. 
+** *Client ID* 
++
+Client ID of the Google API credentials. 
+** *Client x509 Cert URL* 
++
+Client certificate URL for the Google API credentials. 
+** *Credential Type*
++
+Type of Google API credentials. For example, `service_account`.
+** *Google API Service Account Credentials* 
++
+Activity parameter containing all Google API credentials. 
+** *Project ID* 
++
+Project ID of the Google API credentials.
+** *Token URI* 
++
+OAuth2 token URI for the Google API credentials.
+** *Universe Domain* 
++
+Universe domain of the Google API credentials.
