@@ -96,7 +96,7 @@ image::usecase-legacysystem-useactivityparameters.png[]
 
 ## Implement the Activities
 
-The next topics about implementing activities as _Workflows_ on the next pages are ordered following the flow of model:
+The next topics about implementing activities as _Workflows_ on the next pages follow the model flow:
 
 . xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[]
 . xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]

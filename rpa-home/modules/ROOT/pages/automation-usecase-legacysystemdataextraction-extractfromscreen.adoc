@@ -7,7 +7,7 @@ With the order ID, you can now get the corresponding tracking number from the le
 
 . Run your legacy application.
 . Search for the word `Order-ID` on the screen, click in the edit field next to it, enter the order ID, and click *Search*.
-. If there is a result, copy the tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. If there is no result, set the gateway variable `is_orderid_found` to false.
+. If the search returns a result, copy the found tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. If there is no result, set the gateway variable `is_orderid_found` to false.
 
 image::usecase-legacysystem-screeninteraction.png["The Workflow contains the steps in form of Action Steps. Some of the Action Steps are nested."]
 
@@ -59,7 +59,7 @@ If the legacy application returns the tracking number, the number of found patte
 
 image::usecase-legacysystem-screeninteraction-selectcase.png["The Select Case Action Step uses Found Matched Pattern Count as Pin Variable Found Matched Pattern Count. The case compares the value to zero."]
 
-If there is a result, you set the gateway variable `is_orderid_found` to `true`.
+If the search returns a result, you set the gateway variable `is_orderid_found` to `true`.
 
 image::usecase-legacysystem-screeninteraction-selectcase-orderfoundtrue.png[""]
 
