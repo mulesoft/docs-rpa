@@ -64,7 +64,7 @@ The model contains the following activities:
 
 image::extractrackingnumber-bpmn.png["In the model flow, activities one and two are sequential. Depending on whether the order id is found, an exclusive gateway branches the flow to the third activity."]
 
-You include the user tasks in the third activity for illustrational and testing purposes and can later replace them by steps to prepare the returned data for processing in another automation step.
+You include the user tasks in the third activity for illustration and testing purposes and can later replace them with steps to prepare the returned data for processing in another automation step.
 
 After you finish the first draft of the model, you move the project to the build phase.
 
