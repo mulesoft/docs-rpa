@@ -17,7 +17,7 @@ You can use this information to implement the workflow that contains the followi
 image::usecase-legacysystem-extractformpdf-workflow-overview.png["The Workflow contains the steps in the form of Action Steps. Some of the Action Steps are nested."]
 
 == Copying Text From a PDF to a Text File
-To open the PDF, you use the *Read PDF file* Action Step. Then you use the returned `ReadText` as input for *Write to Text File* to save the content as text file on your computer.
+To open the PDF, you use the *Read PDF file* Action Step. Then, you use the returned `ReadText` as input for the *Write to Text File* to save the content as a text file on your computer.
 
 image::usecase-legacysystem-extractformpdf-workflow-pdftotxt.png["An out-filled pin symbol next to the input field shows that the variable is mapped to the text extracted from the PDF in a previous Action Step."]
 
