@@ -9,7 +9,7 @@ With the order ID, you can now get the corresponding tracking number from the le
 . Search for the word `Order-ID` on the screen, click in the edit field next to it, enter the order ID, and click *Search*.
 . If the search returns a result, copy the found tracking number to the activity parameter and set the gateway variable `is_orderid_found` to true. If there is no result, set the gateway variable `is_orderid_found` to false.
 
-image::usecase-legacysystem-screeninteraction.png["The Workflow contains the steps in form of Action Steps. Some of the Action Steps are nested."]
+image::usecase-legacysystem-screeninteraction.png["The Workflow contains the steps in the form of Action Steps. Some of the Action Steps are nested."]
 
 == Run a Legacy Desktop Application
 
