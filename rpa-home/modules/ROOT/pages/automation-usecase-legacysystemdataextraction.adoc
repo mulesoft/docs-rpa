@@ -29,7 +29,7 @@ image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png["Letter containing 
 
 You need to refer the corresponding tracking number in your payment, so you search for the order ID in the order tracking system.
 
-Unfortunately, your order tracking system is old and you can access it only by typing in and reading from a terminal screen:
+Unfortunately, your order tracking system is old and can only be accessed by typing in and reading from a terminal screen:
 
 [[trackingsystem-allentries-image]]
 image::as400ordertrackingscreen.png["Legacy order tracking system showing green glowing text in a terminal. Above a list of orders, there is an entry field for the order id labeled 'Order-ID' and a button labeled 'Search' next to it.", 75%]
