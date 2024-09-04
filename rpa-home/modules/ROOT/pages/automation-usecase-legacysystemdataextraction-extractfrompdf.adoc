@@ -40,7 +40,7 @@ The criteria for deciding whether you found the order ID is that the string `Ord
 
 image::usecase-legacysystem-extractformpdf-workflow-checkcaseandproceed.png["To add a case, you must first pin the compare value to the Action Step."]
 
-== Retrieving a Substring and Saving it to a Variable
+== Retrieving a Substring and Saving It to a Variable
 
 Because you know that the order ID is written after the text `Order ID`, you can remove these first nine characters from the current line (which contains the substring `Order ID`) by using the *Trim left (remove first characters)* operations of the *String Operations* Action Step. The rest of the string is the order ID. You store it in the Activity Parameter with the same name by using the result of the string operation as a Pin Variable in the *Set Variable* Action Step.
 
