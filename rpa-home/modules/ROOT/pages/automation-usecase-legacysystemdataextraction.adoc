@@ -25,7 +25,7 @@ Mythical University orders a travel package for a field excursion. As an account
 An order confirmation from your travel agency Wonderlust Travel typically looks like this:
 
 [[confirmationletter-image]]
-image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png["Letter containing a logo, headers, text and tables. The order ID is contained in a table in a header in the middle of the page. The label says 'Order ID'.", 75%]
+image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png["Letter containing a logo, headers, text, and tables. The order ID is contained in a table in a header in the middle of the page. The label says 'Order ID'.", 75%]
 
 You need to refer the corresponding tracking number in your payment, so you search for the order ID in the order tracking system.
 
