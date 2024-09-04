@@ -1,0 +1,18 @@
+To generate and configure a refresh token:
+
+. In the *Tools* menu, select *Generate OAuth Refresh Token*.
++
+image:generate-oauth-token.png[The Generate OAuth Refresh Token options in the Tools menu, 40%, 40%]
+. Complete the *OAuth Token Creator* form that appears.
++
+image:generate-token-form.png[The OAuth Token Creator Form, 60%, 60%]
++
+If you already configured the Credentials for OAuth Action Step details and clicked the *Save data to generate Tokens via the Tools menu* button, the data automatically populates with the last data you entered in the wizard.
+. Click *Authenticate*.
+. Click *Copy Token to Clipboard*.
+. Paste the token in an alphanumeric activity parameter.
+. Pin the variable to the field *Refresh Token* in the *Credentials for OAuth* wizard.
++
+You can also pin the other values from the *OAuth Token Creator*.
++
+By using an activity parameter, you don't need to upload a new version of your Workflow to RPA Manager if your token expires or your user gets logged out of your email provider. In this case, regenerate the refresh token for the same user with the *OAuth Token Creator* and update the assigned activity parameter on RPA Manager.

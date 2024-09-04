@@ -1,0 +1,124 @@
+= Excel Session
+
+Excel Session is an element that encompasses all Excel operations.
+Excel operations include the reading, modification, and creation of
+entire files and file elements in the Excel format. Excel Session supports reading and writing password protected Excel files.
+
+In Excel Session you define which Excel files to open,
+their location, and how to use them. Use other Action Steps within Excel Session to process the information from the Excel files.
+
+Excel Session opens the Excel files at the beginning of the execution and closes them at the end of the session. An Excel Session may contain a maximum of one embedded Excel Session.
+
+To execute a loop across all the elements in a row or column in an Excel file, use the xref:toolbox-excel-operations-excel-controlled-loop.adoc[] Actions Step. 
+
+[WARNING]
+Never set an Excel Session inside a loop to achieve this result because it negatively impacts performance. 
+
+Using Excel operations does not require having Microsoft Excel installed on the computer.
+
+== Properties
+
+*Destination Excel Operation Settings*
+
+The Destination Excel Operation Settings are only relevant if you have
+selected the mode Read from source and write to different file.
+
+* **Create destination file** (Bool, default: False) Determines whether the
+destination file should be created if it doesn't exist already.
+* *Destination file name* (string, no default) Name of the destination
+file, i.e. the file that will be written.
+* *Different destination directory path for workflow run* If the option
+_Use different destination directory path for workflow run_ is
+activated, the alternative destination directory specified here is used
+at runtime.
+* *Different destination file name for workflow run* If the option _Use
+different destination file name for workflow run_ is activated, the
+alternative file name is used at runtime.
+* *Directory Path* (string, default: `%STWS_BASEPATH%`)Path to the directory where the destination file is located
+
+Only a single file name is used for the destination file, regardless of whether a different
+directory path is used at the time of execution compared to the time of design.
+
+* *Sheet name to be added* (string, no default) Name of the sheet that
+is to be added to the destination file
+* *Use different destination directory path for workflow run* If this
+option is activated, an alternative path is used at runtime.
+* *Use different destination file name for workflow run* If this option
+is activated, an alternative file name is used at runtime.
+
+*Excel Operation Settings*
+
+* **Operation mode**
+(drop-down selection, default: Read only) Type of _Excel Operation_.
+There are three different modes available:
+** *Read only* The source file is read only and cannot be modified
+** *Read and write to the same file* The source file is read and can be
+modified
+** *Read from source and write to different file* The source file is
+read but cannot be modified. Furthermore, a destination file is opened
+and this is where changes are made.
+
+*Source Excel Operation Settings*
+
+* *Different source directory path for workflow run* (string, no
+default) If _Use separate source directory path for Execution_ is
+selected, the path specified here will be used as the path to the
+directory in which the source file is located.
+* *Different source file name for workflow run* If the option _Use
+different source file name for workflow run_ is activated, the
+alternative file name is used at runtime.
+* *Directory Path*
+(string, default: `%STWS_BASEPATH%`)Path to the directory where the source
+file is located
+
+* *Source file name*
+(string, no default) Name of the source file. The file to read and write to when using the _Read and write to the same file_ mode.
+
+* *Use different source directory path for workflow run* (Bool, default: False)
+Determines whether to use a different source directory when executing the Workflow instead of the directory used during design.
+* *Use different source file name for workflow run* (Bool., default:
+False) Determines whether to use an alternative file name when running the workflow instead of the draft name.
+
+== Inbound Variables
+
+* *DirectoryPathSource*
+* *FileNameSource*
+* *Separate source*
+* *DirectoryPathDestination*
+* *FileNameDestination*
+* *CreateDstIfNotExists*
+* *SheetToBeCreated*
+
+== Outbound Variables
+
+This Action Step has no outbound variables.
+
+== Wizard
+
+Use the *Operation Mode* section to choose whether to only read the Excel file, read and modify, or read and then write to a different Excel file. 
+
+The *Source file* is the file to read. Specify the path to the directory where the source file
+is located in the *Directory path* field, either manually or using Environment and Script Variables, the file explorer, or a Pin Variable. 
+
+
+Specify the file to open in the *File name* field, either manually, using the file explorer, or a Pin Variable.  
+
+To specify a different file to use at execution time than the one used during creation, select *Use different source file name for workflow run*. In this case, the file names and extensions must be identical and you must specify both.
+
+If the Excel file requires a password, select *Excel file is password protected* and specify the password to open the file. 
+
+Select *Create Excel file if it doesn't exist* to create the Excel file if the specified file name does not exist in the directory path. 
+
+You can use a second file as the *Destination file*. In this
+case, the source file is read-only and you cannot modify it. The
+destination file is for storing information. If the destination file
+does not exist, Excel Session creates it if you select *Create destination file if it doesn't exist*.
+
+To specify a separate dynamic Excel file to use during the execution, select *Use different source file name for workflow run* and specify the file in the *Different file name* field, either manually, using the file explorer, or with a Pin Variable.
+
+== See Also 
+
+* xref:toolbox-excel-operations-excel-controlled-loop.adoc[]
+* xref:toolbox-excel-operations-read-from-excel-file.adoc[]
+* xref:toolbox-excel-operations-recalculate-excel-file.adoc[]
+* xref:toolbox-excel-operations-write-to-excel-file.adoc[]

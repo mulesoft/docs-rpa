@@ -1,0 +1,15 @@
+= Google Workspace
+
+Access your Google Drive and perform operations such as downloading or exporting, uploading, or searching for files or folders.
+
+These action steps require you to provide your Google API Service Account Credentials. You can specify these credential in the corresponding activity parameter and then link them through a pin variable or specify the values inline in each action step. 
+
+* xref:toolbox-google-workspace-download-from-google-drive.adoc[]
++
+Download files from your Google Drive. You can also export files to a different format. 
+* xref:toolbox-google-workspace-search-in-google-drive.adoc[]
++
+Search for files or folders in your Google Drive.
+* xref:toolbox-google-workspace-upload-to-google-drive.adoc[]
++
+Upload files to your Google Drive.

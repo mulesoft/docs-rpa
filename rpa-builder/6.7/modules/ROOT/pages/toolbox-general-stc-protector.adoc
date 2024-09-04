@@ -1,0 +1,81 @@
+
+
+= STC Protector
+
+When creating a _Workflow_ that needs to run stably and robustly for
+long periods, pop-up windows can be difficult to handle. Mostly they
+appear irregularly, so it is not easy to implement them into a static
+_Workflow_.
+
+To handle these pop-ups, you can use _STC Protector_. Think of it as a
+process running parallel to your actual measurement _Workflow_, checking
+if any window appears onscreen, and then closing it in an instant by
+sending a predefined keystroke sequence.
+
+== Properties
+
+* *Pause between keystrokes, ms* Define how long _the Robot_ should
+pause between each keystroke sequence
+* *Use regular expression for window title* You can further distinguish
+between window titles by selecting this checkbox. For a short
+introduction to regular expressions, see xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
+* *Use window text* Defines if, in addition to the window title, window
+text should also be used to identify the window that the keystrokes
+should be sent to
+* *Window check type* Sets whether the protector reacts if a window
+merely exists or if it has to be active to be handled by _STC
+Protector._
+
+== Wizard
+
+Click _Start_ to begin recording the keystroke sequence for handling
+pop-up windows. Select the pop-up window with the mouse and press the
+combination of keys needed to close it. When you are finished, click
+_Stop_. A new line for this window will appear in the _STC Protector_
+wizard.
+
+The pop-up windows are identified by the window title. Make sure only
+one line exists for each window title!
+
+You can also add pop-up windows that are not actually onscreen. Use the
+*+* button and enter the window title and the combination of keys needed
+to close it.
+
+Some applications open pop-up windows that have the exact same title as
+the main application. In this case, the _STC Protector_ cannot decide
+which window should be handled by means of the title alone. To avoid
+this problem activate _Use window text_ before clicking _Start_. Now
+_STC Protector_ will use text displayed in the window and not only its
+title to decide whether it is a pop-up window to be closed.
+
+You can also distinguish between window titles by using the checkbox
+_Use regular expression for window title_. This function is described in
+detail in Section xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions].
+
+== Example
+
+When there is more than one tab opened in _Internet Explorer_, the
+program asks you if they should all be closed when you wish to exit the
+application. This question is displayed in a pop-up window.
+//image:media\image1.png[image,width=604,height=338]
+////
+When recorded with the _STC Protector_ using window text in addition to
+the window title you will get this:
+
+image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=378,height=302]
+////
+Now, during execution, when the pop-up window appears, the _STC Protector_ will automatically send the *_Enter_* keystroke to it and
+thus close the window.
+
+To ensure that the window is closed as quickly as possible (to avoid any
+interference with the measurement), leave the _Pause between keystrokes_
+setting at "0".
+
+== Troubleshooting
+
+In extremely rare cases, the _Workflow_ seems to stop and do nothing
+more after a pop-up window has been handled. This might be the case when
+the window is not actually closed by the given keystroke sequence, but
+the main application hides it completely from the desktop without
+removing the window handle from the operating system. In such cases, try
+setting _Window Check type_ to _Active_.

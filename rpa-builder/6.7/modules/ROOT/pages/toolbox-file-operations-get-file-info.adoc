@@ -1,0 +1,86 @@
+
+
+= Get File Info
+
+_Get File Info_ fetches information about a file at the specified path.
+You can retrieve the following information: date created, date modified,
+owner, and when the file was last accessed. The information fetched is
+saved in the appropriate variables for further processing. Dates are
+returned in UTC (coordinated universal time) format as follows
+(yyyyMM-ddTHH:mm:ssZ).
+
+== Properties
+
+*File Operation Settings*
+
+* *Directory path* Enter
+the path to the directory where the file is saved. You can specify an
+absolute or relative path. If a relative path is used, then the path
+relates to the _Base Path_ variable.
+* *File Name* Enter the name
+of the file here that require information about.
+
+Placeholders are not permitted. For further information please refer to
+the section on *Invalid characters*.
+
+Other Properties that are the same in all Action Steps are described in
+the section on *Common Properties*. For reasons of
+clarity they are not shown here.
+
+== Inbound Variables
+
+*Directory path* Enter
+the path to the directory where the file is saved. You can specify an
+absolute or relative path. If a relative path is used, then the path
+relates to the _Base Path_ variable.
+
+*File Name* Enter the name
+of the file here that require information about.
+
+== Outbound Variables
+
+*File Size* The _Get_ _File Info.File Size_ variable provides the size
+of the file.
+
+*Creation Date* The _Get_ _File Info.Creation Date_ variable provides
+the date the file was created (format: yyyyMM-ddTHH:mm:ssZ).
+
+*Modification Date* The _Get_ _File Info.Modification Date_ variable
+provides the date of the last change to the file (format:
+yyyyMM-ddTHH:mm:ssZ).
+
+*Last Access Date* The _Get_ _File Info.Last Access Date_ variable
+provides the last access date (format: yyyyMM-ddTHH:mm:ssZ).
+
+*File Owner* The _Get_ _File Info.File Owner_ variable provides the name
+of the owner of the file.
+
+*File Name* The _Get_ _File Info.File Name_ variable provides the name
+of the file.
+
+*Directory path* The _Get_ _File Info.Directory Path_ variable provides
+the path that is used.
+
+== Wizard
+
+* *Directory path* Specify the path to the file that you require
+information about. You can create an absolute path or a path relative to
+the _Base Path_.
+//using the image:media\image1.png[image,width=175,height=22] and
+//image:media\image2.png[image,width=129,height=22] buttons.
+The initial
+value is %STWS_BASEPATH%. Select an existing path.
+//using the image:media\image3.png[image,width=20,height=20] button.
+You can also
+insert variables from the _Workflow_ in order to construct the path. To
+do so, click on the pin and select one of the available variables.
+////
+More information about the environment variables (Insert Environment
+Variable) and script variables (Insert Script Variable) can be found in
+the section *Settings*.
+////
+
+* *File name* Enter the name here of the file that you require
+information about. You can also insert a variable from the Workflow as
+the _File Name_. To do so, click on the pin and select one of the
+available variables.

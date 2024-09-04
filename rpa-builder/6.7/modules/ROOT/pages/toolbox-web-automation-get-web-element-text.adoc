@@ -1,0 +1,49 @@
+= Get Web Element Text
+
+The _Get Element Text_ action step reads the _innerText_ of an element and returns it as the *Element Text* outbound variable, which makes it available for use in subsequent Action Steps through Pin Variables. 
+
+As an example, you can use this action step to copy an email address or other text from a web page and use it in another application.
+
+== Properties
+
+See xref:toolbox-web-automation-common-properties-web-automation.adoc[Common Properties].
+
+== Inbound Variables
+
+//link:#WA_CommonProperties_ElementXPath[*Element XPath*]
+* *Element XPath*
+
+//link:#WA_CommonProperties_WindowTitle[*Window Title*]
+* *Window Title*
+
+== Outbound Variables
+
+* *Element Text* (string, default: blank)
++
+The _innerText_ of the selected element. If the element has no _innerText_, this action step returns a blank string.
+
+== Wizard
+
+//image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=429,height=263]
+
+To extract the text from a web element: 
+
+. Click *Open Browser Wizard*.
+
+. Navigate to the site that contains the text element to extract. 
+. Position the mouse over the text element.
+. When a blue border shows to frame the element, press `F2`.
++
+The properties of the selected element show in the side bar. In addition to the mandatory XPath, you can select other attributes that help define the correct element.
++
+. Click *Accept Selection* (image:check-icon.png["The Accept Selection icon.", 2%,2%]) at the beginning of the sidebar on the browser wizard.
+
+== Example
+
+In this example, the Get Web Element Text action step captures an email address from a MuleSoft Accelerators documentation article:
+
+image:get-web-element-text-example.png["The Browser Wizard showing a blue frame around the selected email address."]
+
+Then, in a subsequent Send Mail action step, the email address is entered as the *To* address through a Pin variable:
+
+image:get-web-element-text-use-variable.png["The Send Mail Wizard using a Pin variable to configure the email address.", 75%, 75%]

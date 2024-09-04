@@ -1,0 +1,26 @@
+
+= Excel Operations
+
+Excel operations enable you to interact with Microsoft Excel files by extracting and manipulating their data.
+
+* xref:toolbox-excel-operations-excel-controlled-loop.adoc[Excel Controlled Loop]
++
+Use Excel Controlled Loop to iterate over data from an Excel file.
+* xref:toolbox-excel-operations-excel-session.adoc[Excel Session]
++
+The Excel Session is an element that encompasses Excel operations, except for Execute Excel Macro. Excel operations include reading, modifying, and creating entire files and file elements in Excel format.
+* xref:toolbox-excel-operations-execute-excel-macro.adoc[]
++
+Run a macro in an Excel file or sheet. This action step doesn’t run inside an Excel Session.
+* xref:toolbox-excel-operations-read-from-excel-file.adoc[Read from Excel File]
++
+Use Read from Excel File to read the contents of an Excel file.
+* xref:toolbox-excel-operations-recalculate-excel-file.adoc[Recalculate Excel File]
++
+Use Recalculate Excel File to recalculate the values of an Excel sheet.
+* xref:toolbox-excel-operations-save-excel-file.adoc[Save Excel File]
++
+Use Save Excel File to save the contents of an Excel file.
+* xref:toolbox-excel-operations-write-to-excel-file.adoc[Write to Excel File]
++
+Use Write to Excel File to write content to the selected Excel file. You can write the content to the same file or to a new destination file.

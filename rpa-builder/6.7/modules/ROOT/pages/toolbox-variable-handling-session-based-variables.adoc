@@ -1,0 +1,48 @@
+= Session Based Variables 
+
+Use Session Based Variables to share variables accross all workflows that run inside the same session.
+
+You can define session variables of the following types: 
+
+* Alphanumeric
+* Integer 
+* Floating-point
+* Boolean
+* Array
+* User account
+* Web Session ID.
+
+Use the Set Variable and the Set Array Variable action steps to overwrite the initial variable values with new values at a later point in the Workflow.
+
+You can include only one instance of Session Based Variables in a Workflow and it must be in the Workflow Initialization section.
+
+== Properties 
+
+See xref:common-properties.adoc[].
+
+== Inbound Variables 
+
+This action step has no inbound variables. 
+
+== Outbound Variables 
+
+All Session Based Variables are outbound variables. Variables are specified in the format _Workflow Based Variables.<variableName>_.
+
+Session Based Variables show in Variable Mappings only for action steps that support that type of variable.
+
+== Wizard 
+
+To create new variables: 
+
+. Click *Add new parameter*.
+. Select the type of variable to create. 
+. Specify the variable's name, description, and value. 
+. Click *OK* 
+
+To delete variables, click the *Delete Variable* (image:delete-icon.png[2%, 2%, The Delete Variable button]) button. 
+
+== See Also 
+
+* xref:toolbox-variable-handling-workflow-based-variables.adoc[]
+* xref:toolbox-variable-handling-set-variable.adoc[]
+* xref:toolbox-variable-handling-set-array-variable.adoc[]
