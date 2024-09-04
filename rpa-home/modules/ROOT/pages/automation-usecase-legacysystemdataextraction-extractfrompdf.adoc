@@ -1,4 +1,4 @@
-# Finding Information in a PDF
+= Finding Information in a PDF
 // number the headings to correspond to the numbered list of steps
 :sectnums:
 
@@ -15,7 +15,7 @@ You can use this information to implement the workflow that contains the followi
 
 image::usecase-legacysystem-extractformpdf-workflow-overview.png["The Workflow contains the steps in form of Action Steps. Some of the Action Steps are nested."]
 
-## Copying Text From a PDF to a Text File
+== Copying Text From a PDF to a Text File
 To open the PDF, you use the *Read PDF file* Action Step. Then you use the returned `ReadText` as input for *Write to Text File* to save the content as text file on your computer.
 
 image::usecase-legacysystem-extractformpdf-workflow-pdftotxt.png["An out-filled pin symbol next to the input field shows that the variable is mapped to the text extracted from the PDF in a previous Action Step."]
@@ -25,13 +25,13 @@ The following image shows the result of storing the text content. Each line of t
 // no alt text because description of image is contained in paragraph
 image::extractorderid-workflow-resultpdftotxt.png["", 75%]
 
-## Looping Over All Lines of a Text File
+== Looping Over All Lines of a Text File
 
 To loop over all lines of the text file, you first need to count the number of lines by reading the entire file using the Action Step *Read from Text File*. You use the returned `line count` as the maximum value for the iteration counter. The counter also functions as the number of the line to read with *Read from Text File* in each iteration. 
 
 image::usecase-legacysystem-extractformpdf-workflow-loopovertextfilelines.png[""]
 
-## Checking a Case and Catching Errors
+== Checking a Case and Catching Errors
 
 Because you don't know which line contains the order ID, you use *Select Case* to differentiate between the two possibilities.  If you find the order ID, you copy it from the text and store it in the activity parameter `order_id`. If you didn’t, which happens in each other line, you still want to complete the loop and the workflow and use *Force OK State* to avoid returning an error.
 
@@ -39,7 +39,7 @@ The criteria for deciding whether you found the order ID is that the string `Ord
 
 image::usecase-legacysystem-extractformpdf-workflow-checkcaseandproceed.png["To add a case, you must first pin the compare value to the Action Step."]
 
-## Retrieving a Substring and Saving it to a Variable
+== Retrieving a Substring and Saving it to a Variable
 
 Because you know that the order ID is written after the text `Order ID`, you can remove these first nine characters from the current line (which contains the substring `Order ID`) by using the *Trim left (remove first characters)* operations of the *String Operations* Action Step. The rest of the string is the order ID. You store it in the Activity Parameter with the same name by using the result of the string operation as a Pin Variable in the *Set Variable* Action Step.
 
@@ -48,11 +48,11 @@ image::usecase-legacysystem-extractformpdf-workflow-cutsubtringoutoftext.png[""]
 // Turn off section numbering
 :sectnums!:
 
-## Next Activity
+== Next Activity
 
 * xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
 
-## See Also
+== See Also
 
 // Features of RPA Manager and RPA Builder used in this topic
 * xref:rpa-builder::toolbox-file-operations-read-pdf-file.adoc[RPA Builder Action Step: Read PDF File]

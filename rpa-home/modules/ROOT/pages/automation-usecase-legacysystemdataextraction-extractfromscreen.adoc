@@ -1,4 +1,4 @@
-# Interacting with a Screen of a Legacy Application
+= Interacting with a Screen of a Legacy Application
 
 // number the headings to correspond to the numbered list of steps
 :sectnums:
@@ -11,13 +11,13 @@ With the order ID, you can now get the corresponding tracking number from the le
 
 image::usecase-legacysystem-screeninteraction.png["The Workflow contains the steps in form of Action Steps. Some of the Action Steps are nested."]
 
-## Run a Legacy Desktop Application
+== Run a Legacy Desktop Application
 
 To run the legacy desktop order-tracking application, select the path to the executable file in the *Run program* Action Step. You set the start mode of the application to `Maximized` to open the application in a maximized window. This process ensures that the UI elements are always in the same position on the screen, which is important because you later use Action Steps that work with screen coordinates. You select `Wait for Window to appear` and specify the window title to ensure that the following Action Steps won't return an error because the window isn't there yet.
 
 image::usecase-legacysystem-screeninteraction-run.png[""]
 
-## Enter Text into a Screen Element and Click a Button
+== Enter Text into a Screen Element and Click a Button
 
 To search for the tracking number, you have to enter the order ID in the search field and click the search button.
 
@@ -39,7 +39,7 @@ You use *Mouse Action* again to start the search. To determine the position of t
 
 image::usecase-legacysystem-screeninteraction-mouseaction-clickbutton.png[""]
 
-## Check the Results
+== Check the Results
 
 The search is successful when a result is listed. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-allentries-image[the screen], the tracking number is listed in the column of the same name, so you search for that column first, using `Tracking No.` as the search pattern:
 
@@ -80,11 +80,11 @@ If the tracking number is not returned by the search, you set the gateway variab
 // Turn off section numbering
 :sectnums!:
 
-## Next Activity
+== Next Activity
 
 * xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
 
-## See Also
+== See Also
 
 // Features of RPA Manager and RPA Builder used in this topic
 * xref:rpa-builder::toolbox-control-run-program.adoc[RPA Builder Action Step: Run Program]
