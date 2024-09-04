@@ -1,7 +1,7 @@
 = Usecase: Extracting Data from a Legacy System
 :page-pagination: next
 
-Extracting data from legacy systems is a common use case for RPA. Companies use legacy applications because they still work, they contain data crucial for daily work, and it's complicated and expensive to replace them. Companies also work with newer applications that use the same data. If the legacy application offers no way to transfer the data automatically, employees must copy and paste data sets manually. This takes up a lot of time, is error-prone, and tedious. Robots can extract the data faster, securer, and don't get bored. 
+Extracting data from legacy systems is a common use case for RPA. Companies use legacy applications because they still work, they contain data crucial for daily work, and it's complicated and expensive to replace them. Companies also work with newer applications that use the same data. If the legacy application offers no way to transfer the data automatically, employees must copy and paste data sets manually. This takes up a lot of time and is error-prone and tedious. Robots can extract the data faster and more securely and don't get bored. 
 
 Examples of data extraction use cases are:
 
