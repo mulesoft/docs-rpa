@@ -1,4 +1,5 @@
 = Finding Information in a PDF
+:page-pagination:
 // number the headings to correspond to the numbered list of steps
 :sectnums:
 
@@ -48,9 +49,6 @@ image::usecase-legacysystem-extractformpdf-workflow-cutsubtringoutoftext.png[""]
 // Turn off section numbering
 :sectnums!:
 
-== Next Activity
-
-* xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
 
 == See Also
 

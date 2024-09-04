@@ -1,14 +1,11 @@
-= React to Different Outcomes
+= Reacting to Different Outcomes
+:page-pagination:
 
 In the model of the process, you use an exclusive gateway to determine how to proceed with different outcomes of the tracking number extraction.
 
 In RPA Builder, you configure the gateway using the `is_ordeid_found` Activity Parameter.
 
 image::usecase-legacysystem-gateway.png["The condition expression is 'is_orderid_found == true'."]
-
-== Next Activity
-
-* xref:automation-usecase-legacysystemdataextraction-returnvalues.adoc[]
 
 == See Also
 

@@ -1,5 +1,5 @@
 = Interacting with a Screen of a Legacy Application
-
+:page-pagination:
 // number the headings to correspond to the numbered list of steps
 :sectnums:
 
@@ -79,10 +79,6 @@ If the tracking number is not returned by the search, you set the gateway variab
 
 // Turn off section numbering
 :sectnums!:
-
-== Next Activity
-
-* xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
 
 == See Also
 

@@ -1,4 +1,5 @@
-= Return Values
+= Returning Values
+:page-pagination: prev
 
 Each value saved to an Activity Parameter is returned at the end of the process. In this example, you use a User Task to inform the user about the outcome of the search in RPA Manager after the process is deployed.
 
