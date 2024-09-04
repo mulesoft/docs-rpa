@@ -20,7 +20,7 @@ This example illustrates the following tasks:
 
 == Example Scenario
 
-Mythical University orders a travel package for a field excursions. As an accountant, you receive an email and save the attached order confirmation to your computer.
+Mythical University orders a travel package for a field excursion. As an accountant, you receive an email and save the attached order confirmation to your computer.
 
 An order confirmation from your travel agency Wonderlust Travel typically looks like this:
 
