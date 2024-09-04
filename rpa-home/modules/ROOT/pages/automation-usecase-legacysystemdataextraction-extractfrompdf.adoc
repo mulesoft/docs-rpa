@@ -23,13 +23,13 @@ image::usecase-legacysystem-extractformpdf-workflow-pdftotxt.png["An out-filled 
 The following image shows the result of storing the text content. Each line of the PDF has a corresponding line in the text file. Images are omitted.
 
 // no alt text because description of image is contained in paragraph
-image::extractorderid-workflow-resultpdftotxt.png['', 75%]
+image::extractorderid-workflow-resultpdftotxt.png["", 75%]
 
 ## Looping Over All Lines of a Text File
 
 To loop over all lines of the text file, you first need to count the number of lines by reading the entire file using the Action Step *Read from Text File*. You use the returned `line count` as the maximum value for the iteration counter. The counter also functions as the number of the line to read with *Read from Text File* in each iteration. 
 
-image::usecase-legacysystem-extractformpdf-workflow-loopovertextfilelines.png[]
+image::usecase-legacysystem-extractformpdf-workflow-loopovertextfilelines.png[""]
 
 ## Checking a Case and Catching Errors
 
@@ -43,7 +43,7 @@ image::usecase-legacysystem-extractformpdf-workflow-checkcaseandproceed.png["To 
 
 Because you know that the order ID is written after the text `Order ID`, you can remove these first nine characters from the current line (which contains the substring `Order ID`) by using the *Trim left (remove first characters)* operations of the *String Operations* Action Step. The rest of the string is the order ID. You store it in the Activity Parameter with the same name by using the result of the string operation as a Pin Variable in the *Set Variable* Action Step.
 
-image::usecase-legacysystem-extractformpdf-workflow-cutsubtringoutoftext.png[]
+image::usecase-legacysystem-extractformpdf-workflow-cutsubtringoutoftext.png[""]
 
 // Turn off section numbering
 :sectnums!:

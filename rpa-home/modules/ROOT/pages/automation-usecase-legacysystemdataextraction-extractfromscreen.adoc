@@ -15,7 +15,7 @@ image::usecase-legacysystem-screeninteraction.png["The Workflow contains the ste
 
 To run the legacy desktop order-tracking application, select the path to the executable file in the *Run program* Action Step. You set the start mode of the application to `Maximized` to open the application in a maximized window. This process ensures that the UI elements are always in the same position on the screen, which is important because you later use Action Steps that work with screen coordinates. You select `Wait for Window to appear` and specify the window title to ensure that the following Action Steps won't return an error because the window isn't there yet.
 
-image::usecase-legacysystem-screeninteraction-run.png[]
+image::usecase-legacysystem-screeninteraction-run.png[""]
 
 ## Enter Text into a Screen Element and Click a Button
 
@@ -25,7 +25,7 @@ To find the search field, you need to find the word `Order ID` next to it on the
 
 image::usecase-legacysystem-screeninteraction-capturepattern.png["When you capture a pattern, the screen freezes. You draw a box around the pattern and the search area on the frozen screen."]
 
-image::usecase-legacysystem-screeninteraction-searchpattern.png[]
+image::usecase-legacysystem-screeninteraction-searchpattern.png[""]
 
 Finding the pattern returns a coordinate that you use in the next step to determine where to input the order ID. You use the *Mouse Action* Action Step to click the search field next to the `Order ID` label.
 
@@ -33,17 +33,17 @@ image:usecase-legacysystem-screeninteraction-mouseaction.png["The coordinates fr
 
 The search field now has the focus, so you can enter the order ID with a simulated keyboard. Instead of recording keystrokes, you use the Activity Parameter `order_id` with the *Enter String* Action Step to copy the order ID into the field:
 
-image::usecase-legacysystem-screeninteraction-enterstring.png[]
+image::usecase-legacysystem-screeninteraction-enterstring.png[""]
 
 You use *Mouse Action* again to start the search. To determine the position of the search button to click, you reuse the location of the `Order id` pattern to record the click position.
 
-image::usecase-legacysystem-screeninteraction-mouseaction-clickbutton.png[]
+image::usecase-legacysystem-screeninteraction-mouseaction-clickbutton.png[""]
 
 ## Check the Results
 
 The search is successful when a result is listed. As you can see on xref:automation-usecase-legacysystemdataextraction.adoc#trackingsystem-allentries-image[the screen], the tracking number is listed in the column of the same name, so you search for that column first, using `Tracking No.` as the search pattern:
 
-image::usecase-legacysystem-screeninteraction-searchpattern-text.png[]
+image::usecase-legacysystem-screeninteraction-searchpattern-text.png[""]
 
 Because the order might not have a corresponding tracking number in the system and you don't want to falsely return the initial value of the variable as tracking number, you check this case first using the *Managed* Action Step.
 
@@ -53,7 +53,7 @@ You use the *Search Pattern* Action Step to search for this arrow up symbol and 
 
 If the bot doesn't find the pattern, which means that the system found a corresponding tracking number, *Search Pattern* returns an error. To continue the workflow, you must force an OK state in the *OnError* section.
 
-image::usecase-legacysystem-screeninteraction-searchpattern-relatedcoordinates.png[]
+image::usecase-legacysystem-screeninteraction-searchpattern-relatedcoordinates.png[""]
 
 If the legacy application returns the tracking number, the number of found patterns matching the arrow up symbol is zero. You use this information as a case differentiator in the *Select Case* Action Step.
 
@@ -65,11 +65,11 @@ image::usecase-legacysystem-screeninteraction-selectcase-orderfoundtrue.png[""]
 
 Then, you use AI-enhanced optical character recognition to extract the tracking number with the *AI OCR (screen-based)* Action Step using the `Recognition Only` search mode.
 
-image::usecase-legacysystem-screeninteraction-aiocr.png[]
+image::usecase-legacysystem-screeninteraction-aiocr.png[""]
 
 As before, you use the pattern `Tracking No.` as the anchor for the search area.
 
-image::usecase-legacysystem-screeninteraction-trackingno-searcharea.png[]
+image::usecase-legacysystem-screeninteraction-trackingno-searcharea.png[""]
 
 You save the extracted tracking number to the Activity Parameter so you can return it at the end of the process.
 

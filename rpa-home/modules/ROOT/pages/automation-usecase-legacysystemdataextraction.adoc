@@ -92,7 +92,7 @@ image::activityparameters.png["The Activity Parameter tab in the Business Proces
 
 To use Activity Parameters in a Workflow, move them from *Available Parameters* to *Used in this Workflow* in the *Activity Parameters* Action Step of the *Workflow Initialization* section. The parameters retain the values set in previous workflows throughout the process.
 
-image::usecase-legacysystem-useactivityparameters.png[]
+image::usecase-legacysystem-useactivityparameters.png[""]
 
 ## Implement the Activities
 
