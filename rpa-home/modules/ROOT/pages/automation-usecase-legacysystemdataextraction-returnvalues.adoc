@@ -1,0 +1,10 @@
+= Returning Values
+:page-pagination: prev
+
+Each value saved to an Activity Parameter is returned at the end of the process. In this example, you use a User Task to inform the user about the outcome of the search in RPA Manager after the process is deployed.
+
+image::usecase-legacysystem-usertask.png["The User Tasks contains the description 'The order with the following oder ID and tracking number was found in the Order Tracker: '. The order ID and tracking number are included as Read-Only Activity Parameters."]
+
+== See Also
+
+* xref:rpa-manager::myrpa-handle.adoc[RPA Manager: Handling User Tasks]

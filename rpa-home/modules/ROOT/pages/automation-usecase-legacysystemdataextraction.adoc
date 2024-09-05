@@ -1,0 +1,114 @@
+= Usecase: Extracting Data from a Legacy System
+:page-pagination: next
+
+Extracting data from legacy systems is a common use case for RPA. Companies use legacy applications because they still work, they contain data crucial for daily work, and it's complicated and expensive to replace them. Companies also work with newer applications that use the same data. If the legacy application offers no way to transfer the data automatically, employees must copy and paste data sets manually. This takes up a lot of time and is error-prone and tedious. Robots can extract the data faster and more securely and don't get bored. 
+
+Examples of data extraction use cases are:
+
+* Retrieve an order ID from a legagy system to get a tracking number from an order tracking application.
+* Retrieve data from a legacy AMS to create a CRM report in Salesforce. (Check out this https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.10/pages/604-0mq/Use%20case%207%20-%20Unlock%20AMS%20through%20hyperautomation%20for%20insurance%20brokers/[Accelerator]!)
+* Migrate all of the data of a legacy application to a state-of-the-art application.
+
+This example illustrates the following tasks:
+
+* Copy the contents from a PDF file to a text file.
+* Compare strings.
+* Copy a substring from a text file.
+* Find text on a screen using optical character recognition (OCR).
+* Interact with a screen using mouse actions and keystrokes.
+* Use activity parameters to transfer data and to determine which path to follow in the model.
+
+== Example Scenario
+
+Mythical University orders a travel package for a field excursion. As an accountant, you receive an email and save the attached order confirmation to your computer.
+
+An order confirmation from your travel agency Wonderlust Travel typically looks like this:
+
+[[confirmationletter-image]]
+image::usecase-1-wonderlusttravels-orderconfirmation-pdf.png["Letter containing a logo, headers, text, and tables. The order ID is contained in a table in a header in the middle of the page. The label says 'Order ID'.", 75%]
+
+You need to refer the corresponding tracking number in your payment, so you search for the order ID in the order tracking system.
+
+Unfortunately, your order tracking system is old and can only be accessed by typing in and reading from a terminal screen:
+
+[[trackingsystem-allentries-image]]
+image::as400ordertrackingscreen.png["Legacy order tracking system showing green glowing text in a terminal. Above a list of orders, there is an entry field for the order ID labeled 'Order-ID' and a button labeled 'Search' next to it.", 75%]
+
+You click the search field, enter the order ID, and click 'Search'.
+
+[[trackingsystem-noentries-image]]
+image::as400ordertrackingscreen-searchresult-ordernotfound.png["Legacy order tracking system shows no search results.", 75%]
+
+The list of orders is now empty, which means that either the order isn't there or you mistyped the number. Let's assume that the latter is the case. You try again and the list shows the corresponding entry:
+
+[[trackingsystem-resultentry-image]]
+image::as400ordertrackingscreen-searchresult-orderfound.png["Legacy order tracking system shows one search result.", 75%]
+
+Now you can copy the tracking number and reference it in your payment.
+
+Because the scientists at Mythical University travel frequently, you repeat this tedious, error-prone, and risky process many times a day. 
+
+You decide to get a bot to do this work.
+
+This example shows how to get the order ID and tracking number from the legacy system automatically. You can use a PDF and MuleSoft RPA as an invocable automation step to do this. The example doesn’t include downloading the attachment and any steps afterward.
+
+== Design a Model of the Process in RPA Manager
+
+In RPA Manager, you open a new project and design a model of the process using the https://www.omg.org/spec/BPMN/2.0/[Business Process Model and Notation (BPMN) standard].
+
+The model contains the following activities:
+
+. Extract the order ID from the order confirmation.
+. Extract the corresponding tracking number from the legacy system.
+. Return either the tracking number or information that it couldn’t be found.
+
+image::extractrackingnumber-bpmn.png["In the model flow, activities one and two are sequential. Depending on whether the order id is found, an exclusive gateway branches the flow to the third activity."]
+
+You include the user tasks in the third activity for illustration and testing purposes and can later replace them with steps to prepare the returned data for processing in another automation step.
+
+After you finish the first draft of the model, you move the project to the build phase.
+
+Then, you open the project in RPA Builder to implement the workflows for the bot activities.
+
+== Create Activity Parameters in RPA Builder
+
+The process uses variables to store and route data. You define these _Activity Parameters_ in RPA Builder.
+
+For your process, you need three Activity Parameters:
+
+* order_id
+** is an alphanumeric variable
+** stores the order ID found in the order confirmation
+** is returned at the end of the process
+* tracking_no
+** is an alphanumeric variable
+** stores the corresponding tracking number found in the order tracker application
+** is returned at the end of the process if it is found
+* is_order_id_found
+** is a boolean variable
+** is set to true if the order id is found in the order tracking system
+** routes the process flow through the gateway accordingly
+
+image::activityparameters.png["The Activity Parameter tab in the Business Process Initialization window on the modelling workbench in RPA Builder shows the three parameters of the process."]
+
+To use Activity Parameters in a Workflow, move them from *Available Parameters* to *Used in this Workflow* in the *Activity Parameters* Action Step of the *Workflow Initialization* section. The parameters retain the values set in previous workflows throughout the process.
+
+image::usecase-legacysystem-useactivityparameters.png[""]
+
+== Implement the Activities
+
+The next topics about implementing activities as _Workflows_ on the next pages follow the model flow:
+
+. xref:automation-usecase-legacysystemdataextraction-extractfrompdf.adoc[]
+. xref:automation-usecase-legacysystemdataextraction-extractfromscreen.adoc[]
+. xref:automation-usecase-legacysystemdataextraction-reacttodifferentoutcomes.adoc[]
+. xref:automation-usecase-legacysystemdataextraction-returnvalues.adoc[]
+
+== See Also
+
+// Another introduction to automation
+* xref:automation-tutorial-introduction.adoc[]
+// Features of RPA Manager and RPA Builder used in this topic
+* xref:create-rpa-project.adoc[]
+* xref:rpa-manager::processautomation-develop.adoc[RPA Manager: Developing Automations]
+* xref:rpa-builder::toolbox-variable-handling-activity-parameters.adoc[RPA Builder: Activity Parameters]
