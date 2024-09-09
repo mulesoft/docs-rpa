@@ -23,7 +23,7 @@ of the file here that require information about.
 Placeholders are not permitted. For further information please refer to
 the section on *Invalid characters*.
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 

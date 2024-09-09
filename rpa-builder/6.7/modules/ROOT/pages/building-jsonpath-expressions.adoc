@@ -2,9 +2,9 @@
 
 JSONPath expressions navigate through a JSON structure in a similar way that XPath expressions reference parts of an XML document. 
 
-To simplify the process of creating JSONPath expressions, use the JSONPath Expression Builder included in RPA Builder. Open this tool by clicking (image:jsonpath-expression-builder-button.png[2.5%, 2.5%, Build JsonPath Expression button.]) in the top menu bar or inside Action Steps that support JSONPath expressions (JSON Query, REST Call, and AWS Action Steps). 
+To simplify the process of creating JSONPath expressions, use the JSONPath Expression Builder included in RPA Builder. Open this tool by clicking (image:jsonpath-expression-builder-button.png[2.5%, 2.5%, Build JsonPath Expression button.]) in the top menu bar or inside action steps that support JSONPath expressions (JSON Query, REST Call, and AWS action steps). 
 
-Opening the JSONPath Expression Builder from the top menu bar enables you to copy the resulting JSONPath expression for further use, instead of assigning it directly within an Action Step.
+Opening the JSONPath Expression Builder from the top menu bar enables you to copy the resulting JSONPath expression for further use, instead of assigning it directly within an action step.
 
 [[jsonpath-builder]]
 == Build an Expression Using the JSONPath Expression Builder

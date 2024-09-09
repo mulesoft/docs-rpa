@@ -1,6 +1,6 @@
 = Queries with AWS
 
-The Queries with AWS Action Step enables you to extract specific data from a document by specifying queries in natural language so that the response contains the data you need, without having to apply further filtering on the JSON output to get the relevant values. 
+The Queries with AWS action step enables you to extract specific data from a document by specifying queries in natural language so that the response contains the data you need, without having to apply further filtering on the JSON output to get the relevant values. 
 
 For example, if you are processing a credit card statement, you can specify queries such as: 
 
@@ -85,9 +85,9 @@ Specifies an alias for the query, for ease of location
 The maximum length allowed for this field is 200 characters. 
 ** *The query results in... otherwise the action step results is...* 
 +
-Specifies the behavior of the Action Step based on the result
+Specifies the behavior of the action step based on the result
 +
-The first dropdown menu enables you to select the expected result of the query: *a single answer*, *one or more results*, or *multiple results*. If this selection matches the query result, the Action Step finishes successfully. When the expected result does not match the actual result from the query, the Action Step results either in *a warning* or *an error*, depending on the value configured in the second dropdown menu. 
+The first dropdown menu enables you to select the expected result of the query: *a single answer*, *one or more results*, or *multiple results*. If this selection matches the query result, the action step finishes successfully. When the expected result does not match the actual result from the query, the action step results either in *a warning* or *an error*, depending on the value configured in the second dropdown menu. 
 * *Analyze Query* 
 +
 Enables you to test the configured query and see the results in the Wizard

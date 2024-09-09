@@ -4,7 +4,7 @@ RPA Builder creates the basic structure of a Workflow when you set up a new proj
 
 image:workflow-elements.png[The Workflow Initialization and Activity Workflow windows, 30%, 30%]
 
-The Workflow is the surrounding container for all Action Steps and Control Blocks. The Workflow element is fixed, cannot be deleted, and does not appear within the Toolbox.
+The Workflow is the surrounding container for all action steps and Control Blocks. The Workflow element is fixed, cannot be deleted, and does not appear within the Toolbox.
 
 Workflow elements fall into different categories. There are elements that affect the entire Workflow, elements that control the Workflow sequence, elements that can simulate inputs, elements that monitor something, and elements that can measure the length of time taken to execute the Workflow and its availability. The Toolbox is structured based on these categories.
 
@@ -41,21 +41,21 @@ The Number of attempts that the Workflow starts before reporting an error.
 
 == Action Steps
 
-Action Steps are the smallest components in a Workflow. They can be combined into logical blocks in Transactions.
+Action steps are the smallest components in a Workflow. They can be combined into logical blocks in Transactions.
 
-There are two ways of editing an Action Step. You can either use an Action Step wizard or edit directly using the Properties grid.
+There are two ways of editing an action step. You can either use an action step wizard or edit directly using the Properties grid.
 
-* The *Wizard* provides special functions (like capturing an image within the Image search wizard), can disable or hide properties that are not currently applicable, and displays all properties in a condensed and more user-friendly view. Configure each Action Step by using its wizard at least once.
+* The *Wizard* provides special functions (like capturing an image within the Image search wizard), can disable or hide properties that are not currently applicable, and displays all properties in a condensed and more user-friendly view. Configure each action step by using its wizard at least once.
 +
 There are three ways to start a wizard:
 +
-** Double-click an Action Step and select *Run Wizard* from the context menu.
-** Click *Run Wizard* (image:run-wizard-icon.png[The Run Wizard icon, 2%, 2%])in the Workbench toolbar while the Action Step is selected.
+** Double-click an action step and select *Run Wizard* from the context menu.
+** Click *Run Wizard* (image:run-wizard-icon.png[The Run Wizard icon, 2%, 2%])in the Workbench toolbar while the action step is selected.
 ** Insert and element using the Quick Creation Mode.
 +
 In this case, the wizard opens automatically for each element inserted.
 
-* Using the *Properties grid* enables you to edit several Action Steps at once. Select multiple Action Steps by using *Ctrl + Click* or *Shift + Click*. The Properties grid only shows the properties that are available on every selected Action Step and you can set those properties for all steps at once.
+* Using the *Properties grid* enables you to edit several action steps at once. Select multiple action steps by using *Ctrl + Click* or *Shift + Click*. The Properties grid only shows the properties that are available on every selected action step and you can set those properties for all steps at once.
 +
 If the Properties grid is not visible, from the top menu bar, click *View* > *Show Workflow Properties*.
 

@@ -38,7 +38,7 @@ either be _Index_, _Text_, or _Value_.
 
 == Outbound Variables
 
-The Action Step _Select Web Element_ possesses no outbound variables.
+The action step _Select Web Element_ possesses no outbound variables.
 
 == Wizard
 

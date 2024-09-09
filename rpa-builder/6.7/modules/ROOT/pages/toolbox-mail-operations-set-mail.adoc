@@ -2,11 +2,11 @@
 
 = Set Mail
 
-With the _Set Mail_ Action Step, you can change the status of an e-mail.
+With the _Set Mail_ action step, you can change the status of an e-mail.
 That is, you can mark it either as read or unread and/or move it to a
 different folder.
 
-You can only use the Set Mail Action Step within the Read Mail Action
+You can only use the Set Mail action step within the Read Mail Action
 Step. You enter the information required for the connection to the mail
 server in the Mail Session.
 
@@ -28,7 +28,7 @@ unread.
 
 == Inbound Variables
 
-*Mail Info* Is made available only by the Read Mail Action Step. This
+*Mail Info* Is made available only by the Read Mail action step. This
 can be used to uniquely identify an e-mail.
 
 //*link:#AS_SetMail_P_TargetFolder[Target folder]*

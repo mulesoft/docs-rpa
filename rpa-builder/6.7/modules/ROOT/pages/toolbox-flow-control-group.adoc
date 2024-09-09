@@ -5,15 +5,15 @@
 Using the _Group_ block gives you a clearer overview when designing your
 Workflows. It provides delineation both graphically and in terms of
 content within a Workflow. For example, you can easily use it to group
-Action Step variables.
+action step variables.
 
-You can, however, also use all other Action Steps. A couple of
-exceptions are the _Transaction_ Action Step and the _Workflow
+You can, however, also use all other action steps. A couple of
+exceptions are the _Transaction_ action step and the _Workflow
 Initialization_ element. It is possible to position multiple _Group_
 blocks inside each other.
 
 The _Group_ block does *not* restrict the availability of variables in
-subsequent transactions such as the _Transaction_ Action Step, for example.
+subsequent transactions such as the _Transaction_ action step, for example.
 
 == Properties
 

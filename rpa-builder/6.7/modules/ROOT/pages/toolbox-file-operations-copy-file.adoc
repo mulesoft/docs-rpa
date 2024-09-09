@@ -1,6 +1,6 @@
 = Copy File
 
-This _Action Step_ copies a file from one directory to another. If the
+This action step copies a file from one directory to another. If the
 file to be copied if not available or the copied file is already located
 in the destination folder, an error message will interrupt the
 _Workflow_.
@@ -32,7 +32,7 @@ existing file with the same name in the destination folder.
 file will be saved under a new name in the destination directory. Enter
 the new name in the *New File Name* field.
 
-// Other Properties that are the same in all Action Steps are described in
+// Other Properties that are the same in all action steps are described in
 // the section on *Common Properties*. For reasons of
 // clarity they are not shown here.
 

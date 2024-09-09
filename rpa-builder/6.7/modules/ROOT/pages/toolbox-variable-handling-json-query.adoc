@@ -1,9 +1,9 @@
 
 = Json Query
 
-Use the Json Query Action Step to parse Json objects and read individual values or elements from the object. The result remains available for the rest of the process run as a source variable.
+Use the Json Query action step to parse Json objects and read individual values or elements from the object. The result remains available for the rest of the process run as a source variable.
 
-Combine this Action Step with REST Call to further refine the resulting JSON output.
+Combine this action step with REST Call to further refine the resulting JSON output.
 
 == Properties
 
@@ -15,7 +15,7 @@ The JsonPath expression. For example, `$.access_token`.
 
 * *Json Object* 
 +
-The Json object from which to extract the value using the JsonPath expression. You can select the result of a REST Call Action Step to serve as an object.
+The Json object from which to extract the value using the JsonPath expression. You can select the result of a REST Call action step to serve as an object.
 
 * *JsonPath Expression* 
 +
@@ -25,7 +25,7 @@ The JsonPath expression to specify the value to extract from the object. For exa
 
 * *IsSucceeded* (boolean) 
 +
-Shows if the Action Step executed successfully or not.
+Shows if the action step executed successfully or not.
 
 * *FirstItem* (array) 
 +

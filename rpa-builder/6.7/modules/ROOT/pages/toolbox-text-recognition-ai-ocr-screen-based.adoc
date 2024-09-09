@@ -2,8 +2,8 @@
 
 = AI OCR (screen-based)
 
-The _AI OCR (screen-based)_ Action Step is a further development of the
-existing OCR Action Steps. In contrast to the other OCR Action Steps, it
+The _AI OCR (screen-based)_ action step is a further development of the
+existing OCR action steps. In contrast to the other OCR action steps, it
 is based on concepts of neural networks. The available languages,
 therefore, are based on trained patterns that take account of the
 characteristics of the relevant language. In many cases, therefore, the
@@ -11,18 +11,18 @@ correct recognition of texts that are, for example, barely legible or
 have little contrast or an unusual font, is improved with this Action
 Step.
 
-In contrast to the AI OCR (file-based) Action Step, which works with
+In contrast to the AI OCR (file-based) action step, which works with
 existing images, e.g. from document scans, the _AI OCR (screen-based)_
-Action Step works _with_ screenshots of the currently active
+action step works _with_ screenshots of the currently active
 desktop__.__ This means, it attempts to extract texts from a previously
 created screen copy.
 
-You should consider the Intelligent OCR 2020 Action Step if more than
+You should consider the Intelligent OCR 2020 action step if more than
 one language is to be recognized at once or if you wish to use your own
 dictionary.
 ////
 In the following Chapter, we will look at the key differences compared
-to the Action Step Legacy OCR. You can find a detailed description of
+to the action step Legacy OCR. You can find a detailed description of
 the properties, variables, etc. in the Chapter entitled
 _Text Recognition – Legacy OCR_.
 ////

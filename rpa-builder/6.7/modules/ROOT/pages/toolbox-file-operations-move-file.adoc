@@ -2,7 +2,7 @@
 
 = Move File
 
-This _Action Step_ moves a file from one directory to another. If the
+This action step moves a file from one directory to another. If the
 file to be moved if not available or the moved file is already located
 in the destination folder, an error message will interrupt the
 _Workflow_.
@@ -28,7 +28,7 @@ This field does not support placeholders. For further information, see xref:tool
 * *Overwrite existing file* This option enables you to overwrite an
 existing file with the same name in the destination folder.
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 

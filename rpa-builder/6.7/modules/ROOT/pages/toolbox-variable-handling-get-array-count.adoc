@@ -2,13 +2,13 @@
 
 = Get Array Count
 
-The _Get Array Count_ Action Step returns the number of elements in an array.
+The _Get Array Count_ action step returns the number of elements in an array.
 
 You can then use this number as the number of iterations in a loop (_Loop_), for example, across the array elements.
 
 == Properties
 
-This Action Step contains no special properties other than the _general_ ones.
+This action step contains no special properties other than the _general_ ones.
 //link:#CommonProperties[+++general+++]
 
 == Inbound Variables
@@ -55,14 +55,14 @@ Service App_ which are performed.
 
 First, in the transaction _130 Process list of done services_, the
 number of services that have been performed is calculated using the _Get
-Array Count_ Action Step before each service is read in a loop and
+Array Count_ action step before each service is read in a loop and
 graphically (see _OCR_) compared
 against the services on a checklist.
 
 If the service is on the checklist, it will be checked off. The
 checklist is used later on in the Workflow to calculate costs.
 
-The configuration values of the individual Action Steps are passed on
+The configuration values of the individual action steps are passed on
 using (Pin) _Variables_.
 
 == See Also 

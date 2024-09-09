@@ -15,7 +15,7 @@ functions.
 * *Use Regex to find Window (Enable Regex) Use this function if you want
 to use Regex when searching the window.*
 
-Other Properties that are the same in all Action Steps in the _Web
+Other Properties that are the same in all action steps in the _Web
 Automation_ are described in the section on
 *Common Properties*. For reasons of clarity they are not shown here.
 
@@ -29,4 +29,4 @@ Automation_ are described in the section on
 
 == Outbound Variables
 
-The Action Step _Clear Element_ possesses no outbound variables.
+The action step _Clear Element_ possesses no outbound variables.

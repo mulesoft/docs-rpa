@@ -2,9 +2,9 @@
 
 = String to Array
 
-The _String to Array_ Action Step allows you to split a string into
-arrays and to process them further in the subsequent Action Steps, such
-as with the _Read from Array_ Action Step.
+The _String to Array_ action step allows you to split a string into
+arrays and to process them further in the subsequent action steps, such
+as with the _Read from Array_ action step.
 
 == Properties
 

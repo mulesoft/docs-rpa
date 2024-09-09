@@ -1,6 +1,6 @@
 = Using the Browser Wizard
 
-The _Browser Wizard_ is part of _Web Automation Action Step_ wizards. It behaves like a normal browser and enables you to select additional elements of a website and determine their _Xpath_. Using the _Browser Wizard_ is required by most _Web Automation_ objects embedded in a _Web Session_.
+The _Browser Wizard_ is part of _Web Automation action step_ wizards. It behaves like a normal browser and enables you to select additional elements of a website and determine their _Xpath_. Using the _Browser Wizard_ is required by most _Web Automation_ objects embedded in a _Web Session_.
 
 image:open-browser-wizard-button.png[The Open Browser Wizard button, 50%, 50%]
 

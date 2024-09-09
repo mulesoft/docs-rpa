@@ -7,7 +7,7 @@ image:generate-oauth-token.png[The Generate OAuth Refresh Token options in the T
 +
 image:generate-token-form.png[The OAuth Token Creator Form, 60%, 60%]
 +
-If you already configured the Credentials for OAuth Action Step details and clicked the *Save data to generate Tokens via the Tools menu* button, the data automatically populates with the last data you entered in the wizard.
+If you already configured the Credentials for OAuth action step details and clicked the *Save data to generate Tokens via the Tools menu* button, the data automatically populates with the last data you entered in the wizard.
 . Click *Authenticate*.
 . Click *Copy Token to Clipboard*.
 . Paste the token in an alphanumeric activity parameter.

@@ -20,7 +20,7 @@ script and environment variables.
 
 == Outbound Variables
 
-The Action Step _Keystrokes to Element_ possesses no outbound variables.
+The action step _Keystrokes to Element_ possesses no outbound variables.
 
 == Wizard
 

@@ -2,7 +2,7 @@
 
 = Extract Images from PDF File
 
-With this Action Step, you can extract images from a PDF file.
+With this action step, you can extract images from a PDF file.
 
 == Properties
 
@@ -83,7 +83,7 @@ first image. The number of each additional image increases by 1.
 
 == Outbound Variables
 
-The _Extract Images from PDF File_ Action Step has no outbound variables.
+The _Extract Images from PDF File_ action step has no outbound variables.
 
 == Wizard
 

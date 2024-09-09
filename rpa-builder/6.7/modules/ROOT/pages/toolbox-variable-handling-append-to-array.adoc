@@ -1,10 +1,10 @@
 = Append to Array 
 
-Use this Action Step to append a value to an existing array variable. 
+Use this action step to append a value to an existing array variable. 
 
 == Properties
 
-The Append to Array Action Step contains the xref:common-properties.adoc[common properties] *Description*, *Error Handling*, and *Name*. 
+The Append to Array action step contains the xref:common-properties.adoc[common properties] *Description*, *Error Handling*, and *Name*. 
 
 == Inbound Variables
 

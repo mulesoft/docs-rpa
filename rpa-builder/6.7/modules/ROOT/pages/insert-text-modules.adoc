@@ -2,19 +2,19 @@
 
 You can insert text modules in some text fields that elements of a Workflow use. Each of the Workflow elements that use text modules has drop-down insert lists in the Wizard that enable you to add the text modules.
 
-image:insert-text-module.png[The Enter String Action Step Wizard showing the differnt text module drop-down menus, 60%, 60%]
+image:insert-text-module.png[The Enter String action step Wizard showing the different text module drop-down menus, 60%, 60%]
 
 Click on the appropriate element to insert the text module into the input field where the cursor is located.
 
 The following Workflow elements use insert lists:
 
 * xref:workflow-initialization.adoc[Workflow Initialization: Settings]
-* xref:toolbox-control-enter-string.adoc[Enter String] Action Step
-* xref:toolbox-control-keystrokes.adoc[Keystrokes] Action Step
-* xref:toolbox-control-run-program.adoc[Run Program] Action Step
-* Some xref:toolbox-file-operations.adoc[File Operation] Action Steps
-* xref:toolbox-flow-control-file-controlled-loop.adoc[File Controlled Loop] Action Step
-* xref:toolbox-variable-handling-combine-strings.adoc[Combine Strings] Action Step
+* xref:toolbox-control-enter-string.adoc[Enter String] action step
+* xref:toolbox-control-keystrokes.adoc[Keystrokes] action step
+* xref:toolbox-control-run-program.adoc[Run Program] action step
+* Some xref:toolbox-file-operations.adoc[File Operation] action steps
+* xref:toolbox-flow-control-file-controlled-loop.adoc[File Controlled Loop] action step
+* xref:toolbox-variable-handling-combine-strings.adoc[Combine Strings] action step
 
 There are four types of insert lists: Insert Special Character, Insert Script Variable, Insert Macro, and
 Insert Environment Variable.
@@ -117,7 +117,7 @@ For example, `{ENTER}` is not written, it emulates the *Enter* key on the keyboa
 
 image:insert-script-variable.png[The Insert Script Variable drop-down menu, 30%, 30%]
 
-Script Variables are macros that the RPA bot replaces with real values during the execution of the Action Step, for example:
+Script Variables are macros that the RPA bot replaces with real values during the execution of the action step, for example:
 
 * `{@UserName}` is replaced by the name of the user who is logged into the system during execution
 * `{@CRLF}` inserts a line break
@@ -174,7 +174,7 @@ If you want to replace these variables on execution only, use Insert Script Vari
 
 === Available Environment Variables
 
-The Environment Variables that you can select depend on the system on which RPA Builder is installed. RPA Builder replaces environment variables with the relevant value when inserted in an Action Step wizard and are not modified if they are subsequently executed or opened. Usually, environment variables include the computer name as well as some system paths.
+The Environment Variables that you can select depend on the system on which RPA Builder is installed. RPA Builder replaces environment variables with the relevant value when inserted in an action step wizard and are not modified if they are subsequently executed or opened. Usually, environment variables include the computer name as well as some system paths.
 
 The following is a non-exhaustive list of available Environment Variables:
 

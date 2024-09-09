@@ -17,8 +17,8 @@ element of the new focus.
 
 ** *Keystrokes*
 +
-The keystrokes to send to the element. The input text is interpreted as AutoIT language. The specific AutoIT buttons can be inserted using _Insert Special Character_ and _Insert Macro_. Like in the _Set Text To App Element_ Action Step, you can use _Insert Script Variable_ and _Insert Environment Variable_ to insert placeholders that are replaced
-at runtime. The behavior here is identical to that in the _Keystrokes_ Action Step.
+The keystrokes to send to the element. The input text is interpreted as AutoIT language. The specific AutoIT buttons can be inserted using _Insert Special Character_ and _Insert Macro_. Like in the _Set Text To App Element_ action step, you can use _Insert Script Variable_ and _Insert Environment Variable_ to insert placeholders that are replaced
+at runtime. The behavior here is identical to that in the _Keystrokes_ action step.
 
 == Inbound Variables
 
@@ -28,7 +28,7 @@ at runtime. The behavior here is identical to that in the _Keystrokes_ Action St
 
 == Outbound Variables
 
-The _Keystrokes to App Element_ Action Step does not have any outbound variables.
+The _Keystrokes to App Element_ action step does not have any outbound variables.
 
 == Wizard
 

@@ -5,7 +5,7 @@ The following are some examples of using Regular Expressions.
 
 == Example 1: Identifying an Exact Window Title
 
-Action Steps identify window titles without using regular expressions
+Action steps identify window titles without using regular expressions
 if the given string can be found in its entirety in an existing window
 title. It does not matter if there are any preceding or following
 characters.

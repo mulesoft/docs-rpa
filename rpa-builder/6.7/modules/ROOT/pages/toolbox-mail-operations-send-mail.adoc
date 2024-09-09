@@ -2,11 +2,11 @@
 
 = Send Mail
 
-With the _Send Mail_ Action Step, you can send a mail with the SMTP
+With the _Send Mail_ action step, you can send a mail with the SMTP
 protocol. You can enter the recipient, the subject, or send attachments
 just as with other mail programs.
 
-You can only use the Send Mail Action Step within a Mail Session. You
+You can only use the Send Mail action step within a Mail Session. You
 enter the information required for the connection to the mail server in
 the Mail Session.
 

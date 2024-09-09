@@ -2,10 +2,10 @@
 
 = Pattern Select
 
-The _Pattern Select Action Step_ enables users to respond flexibly to
+The _Pattern Select action step_ enables users to respond flexibly to
 non-predictable situations.
 
-It is deployed after executing _Action Steps_ which could result in
+It is deployed after executing action steps which could result in
 various states. These states are characterized by the presence of a
 specific search pattern. How the program path will proceed depends on
 whether one of these search patterns is found.
@@ -25,22 +25,22 @@ messages is captured in a screenshot and stored as a _Case_, so that the
 subsequent steps in the _Workflow_ can be executed according to this
 message.
 
-Another use for the _Pattern Select_ _Action Step_ is to close in
+Another use for the _Pattern Select_ action step is to close in
 succession multiple dialog boxes which are not shown on the screen in a
 predictable order or position. In this scenario, the _Pattern Select_
-_Action Step_ will be carried out until all specified windows are
+action step will be carried out until all specified windows are
 closed.
 
 The _Pattern Select_ image search is configurable and can contain up to
 50 search patterns.
 
-The configuration of the _Action Step Pattern Select_ cannot be changed
-in Debug Mode. However, you can change the configuration of the _Action
-Steps_ contained in the _Cases_ and the _DoElse_ block of the _Action
-Step Pattern Select_.
+The configuration of the action step _Pattern Select_ cannot be changed
+in Debug Mode. However, you can change the configuration of the action
+steps contained in the _Cases_ and the _DoElse_ block of the action
+step _Pattern Select_.
 
-If you set a _Breakpoint_ at the _Action Step Pattern Select_, you can
-run through the different _Case_ branches by repeating the Action Step
+If you set a _Breakpoint_ at the action step _Pattern Select_, you can
+run through the different _Case_ branches by repeating the action step
 in _Debug_ mode while changing the displayed search pattern after
 breaking.
 
@@ -50,11 +50,11 @@ breaking.
 
 *Allow multiple matches of a found pattern* If this option is selected,
 the pattern may appear more than once in the _Search Area_. When this
-option is not selected, the _Search Pattern Action Step_ returns an
+option is not selected, the _Search Pattern action step_ returns an
 error if the pattern is found but occurs more than once.
 
 If the coordinates of the pattern found are to be reused subsequently in
-a different _Action Step_ (e.g. for mouse clicks relative to pattern),
+a different action step (e.g. for mouse clicks relative to pattern),
 the coordinates used in the case of multiple identical patterns found
 will be the ones for the pattern furthest to the left within the
 _Search_ _Area_. If multiple identical search images are located on top
@@ -124,10 +124,10 @@ Area_, is performed according to the interval value entered here (or in
 the wizard under _Search Settings_ > _Check whether found match stays in
 same location every [time in ms] milliseconds_). If this is the case,
 the search is successful and ends. Otherwise, the search is repeated
-either until it is successful or the _Action Step_ times out.
+either until it is successful or the action step times out.
 
 A value of 0 means that the position of the pattern found is not
-rechecked after having been found. The _Action Step_ does not then wait
+rechecked after having been found. The action step does not then wait
 beyond its runtime.
 
 == Inbound Variables
@@ -135,9 +135,9 @@ beyond its runtime.
 //*link:#AS_PatternSelect_OV_FindCoordinate[
 *Find Coordinate*
 
-If there is at least one other Action Step that uses patterns before the
-Action Step Search Pattern, the outbound variable _Find coordinate_
-becomes the inbound variable for the subsequent Action Steps.
+If there is at least one other action step that uses patterns before the
+action step Search Pattern, the outbound variable _Find coordinate_
+becomes the inbound variable for the subsequent action steps.
 
 == Outbound Variables
 
@@ -183,7 +183,7 @@ the lower sections of the wizard with names not containing that text.
 The filter text may appear in any position within the pattern name, but
 must be continuous.
 
-*Example:* If the _Search Pattern_ _Action Step_ contains patterns with
+*Example:* If the _Search Pattern_ action step contains patterns with
 the names House, House1, Mouse, and Mouse1, the search filter will find
 all images when use is entered, only House1 and Mouse1 when 1 is
 entered, and House and House1 in the case of H.
@@ -223,10 +223,10 @@ the list.
 
 If a pattern appears multiple times, a successful search will occur as
 above if _Allow multiple matches of a found pattern_ is enabled in the
-_Search Settings_. The _Action Step_ will otherwise return an error if
+_Search Settings_. The action step will otherwise return an error if
 the same pattern appears multiple times.
 
-The order of the _Cases_ in the _Action Step_ corresponds to the order
+The order of the _Cases_ in the action step corresponds to the order
 of the search patterns in the wizard. The _Workflow_ continues with the
 steps for the first _Case_ that arises.
 
@@ -256,21 +256,21 @@ One way of defining a pattern is to take a screenshot that shows it.
 
 The function of the _Capture Pattern_ button is described in xref:adding-a-pattern-from-screen-capture.adoc#add-pattern-from-screen-capture[Adding a Pattern from Screen Capture] 
 
-All patterns captured using the _Pattern Select_ _Action Step_ are
+All patterns captured using the _Pattern Select_ action step are
 transferred to the _Workflow_'s _Pattern Gallery_.
 
 == Add Pattern from Gallery
 
 If the _Pattern Gallery_ for the _Workflow_ already contains patterns,
-they can be added to the list of patterns for the _Action Step_.
+they can be added to the list of patterns for the action step.
 //using the _Add Pattern from Gallery_ button
 //image:media\image6.png[image,width=25,height=23].
 
 The _Select Patterns to add_ window shows all the images that the
 _Workflow_'s _Pattern Gallery_ contains. A white tick on a green
 background in the top right corner indicates patterns which are already
-included in the _Search Pattern_ _Action Step_. Patterns already
-included in another category of the same _Action Step_ are not shown.
+included in the _Search Pattern_ action step. Patterns already
+included in another category of the same action step are not shown.
 
 //image:media\image7.png[image,width=538,height=364]
 
@@ -279,7 +279,7 @@ Use the same method to deselect patterns which should no longer be
 included in the search.
 
 Click OK to confirm the selection and add it to the pattern list for the
-_Action Step_.
+action step.
 
 == Ignore All Matches within These Patterns
 
@@ -320,7 +320,7 @@ _Ignored_. Use the _Move to…_ button in the menu bar to do this.
 //image:media\image10.png[image,width=604,height=246]
 
 The settings needed most frequently for all types of search can be set
-and modified using the _Search Pattern_ _Action Step_ wizard under
+and modified using the _Search Pattern_ action step wizard under
 _Search Settings_.
 
 The _Required matching precision_ in percent is shown as a green zone on
@@ -358,7 +358,7 @@ The Search Area can be set to either a _fixed_ or dynamic (_relative_)
 position. To define a dynamic position, use the _Relative To_ picklist,
 which lists all variables of type _Coordinates_ that are available at
 this point; these include, for example, Outbound Variables from a
-previous _Search Pattern_ Action Step in the same transaction. When a
+previous _Search Pattern_ action step in the same transaction. When a
 coordinate is selected in the wizard as “Relative To”, an offset vector
 is immediately calculated. While the _Workflow_ is being designed, this
 points from the selected coordinate to the top-left corner of the
@@ -493,9 +493,9 @@ image located on the far left of the screen will be used. If there are
 multiple images in the identical lateral position on the left, the
 topmost one will be used.
 
-Directly before editing the _Mouse click_ _Action Step_ the reference
+Directly before editing the _Mouse click_ action step the reference
 pattern must be found by performing the _Test_ function for the _Pattern
-Select_ _Action Step_. Otherwise the previously found search pattern
+Select_ action step. Otherwise the previously found search pattern
 will always be used as the
 
 == See Also 

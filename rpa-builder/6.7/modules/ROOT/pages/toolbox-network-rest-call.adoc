@@ -1,7 +1,7 @@
 
 = REST Call
 
-Use the REST Call Action Step to fetch data directly from a
+Use the REST Call action step to fetch data directly from a
 server and to collect the required information in a simple way.
 
 Define the endpoint according to your needs and assign parameters or
@@ -19,7 +19,7 @@ image:configure-proxy-settings.png[75%, 75%, "The Settings option inside the Wor
 . From the *Workflow Initialization* block, open *Settings*.
 . In the *Network Settings* tab, configure your proxy settings.  
 
-The REST Call Action Step automatically retrieves the necessary information from the network settings.
+The REST Call action step automatically retrieves the necessary information from the network settings.
 
 For more information about the configurable settings, see xref:workflow-initialization.adoc#properties[Workflow Settings Properties].
 
@@ -74,7 +74,7 @@ You can choose between *JsonPath* and *XPath*. Both types enable you to extract 
 scripting, which simplifies further processing because you can access
 the desired result immediately.
 +
-The _Json Query_ Action Step enables you to read individual values from the JSON object and process the result further.
+The _Json Query_ action step enables you to read individual values from the JSON object and process the result further.
 
 ** *Request body* 
 +

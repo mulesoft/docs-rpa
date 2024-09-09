@@ -2,7 +2,7 @@
 
 = Keystrokes
 
-Like the _Enter String_ Action Step, the _Keystrokes_ Action Step
+Like the _Enter String_ action step, the _Keystrokes_ action step
 emulates keyboard inputs. You can use this to enter search criteria or a
 URL in the browser address bar, for example. You can also use it to
 execute hotkeys or macros.
@@ -58,13 +58,13 @@ _Keystrokes Editor_ see further down in this section.
 * *Edit keystroke sequence* Reconfigures an existing
 keystroke sequence manually with the _Keystrokes Editor_
 * *Delete* Deletes the selected keystroke sequence from the list
-* *Clear* Deletes all keystrokes within the _Action Step_
+* *Clear* Deletes all keystrokes within the action step
 * *Hide window when start* Hides the wizard window when _Start_ is
 clicked (if you are using this option, you need to press *_F10_* to stop
 the capture)
 * *Hide main window when start* Hides the RPA Builder window when
 _Start_ is clicked
-* *List of keystrokes* All the keystrokes defined for this _Action Step_
+* *List of keystrokes* All the keystrokes defined for this action step
 are listed here
 * *Use window text* Defines if, in addition to the window title, window
 text should also be used to identify the window that the keystrokes
@@ -122,7 +122,7 @@ Macro_ (complete macros, e.g. to close a window, select all elements,
 etc.).
 
 Finally, you can select and use any defined environment variable for a
-_Keystroke_ _Action Step_ by using the corresponding drop-down menu.
+_Keystroke_ action step by using the corresponding drop-down menu.
 
 If you want to type into an application that was started with
 administrator privileges, RPA Builder has to be started with

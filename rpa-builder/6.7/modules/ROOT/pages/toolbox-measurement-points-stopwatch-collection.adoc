@@ -1,8 +1,8 @@
 = Stopwatch Collection
 
-The Stopwatch Collection Action Step enables you to collect all timer values from the _Stopwatch_ and the _General Timer_ Actions Steps configured in an Activity Workflow. 
+The Stopwatch Collection action step enables you to collect all timer values from the _Stopwatch_ and the _General Timer_ Actions Steps configured in an Activity Workflow. 
 
-Because all Stopwatch values are determined at the end of the workflow, you can only place this Action Step in the Workflow Finalization section. 
+Because all Stopwatch values are determined at the end of the workflow, you can only place this action step in the Workflow Finalization section. 
 
 == Properties
 
@@ -25,7 +25,7 @@ The properties panel does not validate the maximum label length. Ensure that you
 
 == Inbound Variables 
 
-This Action Step contains no inbound variables. 
+This action step contains no inbound variables. 
 
 == Outbound Variables 
 
@@ -54,7 +54,7 @@ The label for the Stopwatch Value in the output JSON.
 +
 The label for the touch time in the output JSON. The touch time is a timestamp from the last time the checkpoint was touched. Maximum length: 50 characters. 
 
-The *Preview JSON Output* section shows a preview of the resulting JSON based on the configured Stopwatch Action Steps in the Workflow.  
+The *Preview JSON Output* section shows a preview of the resulting JSON based on the configured Stopwatch action steps in the Workflow.  
 
 == See Also 
 

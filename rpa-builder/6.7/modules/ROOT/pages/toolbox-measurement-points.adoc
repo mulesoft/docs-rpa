@@ -12,16 +12,16 @@ because they are still displayed in the _Workflow Run Results_.
 Checkpoints are integrated into a Workflow in order to ascertain which part of the Workflow was reached before an error occurred.
 * xref:toolbox-measurement-points-checkpoint-collection.adoc[Checkpoint Collection]
 +
-The Checkpoint Collection Action Step enables you to collect all timer values from the Checkpoint Action Steps configured in an Activity Workflow. 
+The Checkpoint Collection action step enables you to collect all timer values from the Checkpoint action steps configured in an Activity Workflow. 
 * xref:toolbox-measurement-points-general-timer-start.adoc[General Timer Start]
 +
-General timers are used to measure whole Transactions. Use the _General Timer Start_ Action Step to start the timer.
+General timers are used to measure whole Transactions. Use the _General Timer Start_ action step to start the timer.
 * xref:toolbox-measurement-points-general-timer-stop.adoc[General Timer Stop]
 +
-General timers are used to measure whole Transactions. Use the _General Timer Stop_ Action Step to stop the timer.
+General timers are used to measure whole Transactions. Use the _General Timer Stop_ action step to stop the timer.
 * xref:toolbox-measurement-points-stopwatch.adoc[Stopwatch]
 +
 The Stopwatch is basically a combined Start/Stop Timer with a clear graphical representation.
 * xref:toolbox-measurement-points-stopwatch-collection.adoc[Stopwatch Collection]
 +
-The Stopwatch Collection Action Step enables you to collect all timer values from the Stopwatch Action Steps configure in an Activity Workflow. 
+The Stopwatch Collection action step enables you to collect all timer values from the Stopwatch action steps configure in an Activity Workflow. 

@@ -10,7 +10,7 @@ _Checkpoint_ is reached.
 
 == Properties
 
-The Action Step _Checkpoint_ has no properties.
+The action step _Checkpoint_ has no properties.
 
 == Inbound Variables
 

@@ -2,11 +2,11 @@
 
 = Iterate over Files
 
-The _Iterate over Files_ Action Step performs various Action Steps on a
-specified number of files. Drag the Action Steps to be processed into
+The _Iterate over Files_ action step performs various action steps on a
+specified number of files. Drag the action steps to be processed into
 the gray area labeled _Drop Items here_ using drag and drop. The Action
 Steps placed there will be processed from top to bottom in the order
-specified. This means that the Action Steps for processing will be
+specified. This means that the action steps for processing will be
 applied to all files located in a folder and, depending on the settings,
 its sub-folders. It is possible to set various parameters such as the
 maximum number of files to be processed.

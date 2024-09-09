@@ -2,26 +2,26 @@
 
 = Control
 
-Control Action Steps enable you to interact with the system where the automation is running by sending certain instructions and input signals.
+Control action steps enable you to interact with the system where the automation is running by sending certain instructions and input signals.
 
 * xref:toolbox-control-clear-screen.adoc[Clear Screen]
 +
-This Action Step tries to clear any open window from the screen.
+This action step tries to clear any open window from the screen.
 * xref:toolbox-control-enter-string.adoc[Enter String]
 +
-This Action Step emulates keyboard inputs and accepts text transferred from a previously executed Action Step.
+This action step emulates keyboard inputs and accepts text transferred from a previously executed action step.
 * xref:toolbox-control-keystrokes.adoc[Keystrokes]
 +
-This Action Step emulates keyboard inputs.
+This action step emulates keyboard inputs.
 * xref:toolbox-control-mouse-actions.adoc[Mouse Actions]
 +
-The Mouse Actions Action Step emulates mouse moves and clicks.
+The Mouse Actions action step emulates mouse moves and clicks.
 * xref:toolbox-control-run-program.adoc[Run Program]
 +
-This Action Step is used to run a program by directly calling its executable file.
+This action step is used to run a program by directly calling its executable file.
 * xref:toolbox-control-sleep.adoc[Sleep]
 +
-This Action Step causes the Workflow to be paused for the specified duration.
+This action step causes the Workflow to be paused for the specified duration.
 * xref:toolbox-control-window-set-state.adoc[Window Set State]
 +
-This Action Step allows you to change the state of a specific window.
+This action step allows you to change the state of a specific window.
