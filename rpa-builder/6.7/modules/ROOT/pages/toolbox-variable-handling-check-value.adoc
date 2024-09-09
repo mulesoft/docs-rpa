@@ -2,7 +2,7 @@
 
 = Check Value
 
-This _action step_ allows you to compare two numerical or alphanumerical
+This action step allows you to compare two numerical or alphanumerical
 (case-sensitive and case-insensitive) values to each other, using
 different comparison methods.
 

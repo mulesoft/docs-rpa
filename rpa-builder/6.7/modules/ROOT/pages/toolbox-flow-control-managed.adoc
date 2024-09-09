@@ -18,7 +18,7 @@ termination, in the latter case not.
 == *_DoAction_*
 
 This is the default path of the _Managed Block_. The RPA Bot will first
-try to execute all _action steps_ within the _DoAction_ section. If an
+try to execute all action steps within the _DoAction_ section. If an
 error occurs (e.g. an _Image search_ fails), the execution of the
 _DoAction_ section will be aborted and the _OnError_ section will be
 executed. If the _OnError_ section is empty, an error within the
@@ -27,7 +27,7 @@ state.
 
 == *_OnError_*
 
-This section will be executed if an _action step_ within the _DoAction_
+This section will be executed if an action step within the _DoAction_
 section has failed. You can try to handle the error here and restore a
 state in which the rest of the Workflow can still be executed normally,
 even though the _DoAction_ section failed. If all items within the

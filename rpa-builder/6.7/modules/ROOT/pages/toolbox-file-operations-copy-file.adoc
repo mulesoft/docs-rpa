@@ -1,6 +1,6 @@
 = Copy File
 
-This _action step_ copies a file from one directory to another. If the
+This action step copies a file from one directory to another. If the
 file to be copied if not available or the copied file is already located
 in the destination folder, an error message will interrupt the
 _Workflow_.

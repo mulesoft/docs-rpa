@@ -2,7 +2,7 @@
 
 = Variable
 
-This _action step_ makes it possible to set up a simple string variable.
+This action step makes it possible to set up a simple string variable.
 This variable can also be made available globally for the entire
 _Workflow_ under Properties and "Make Variable available in all
 Transactions". Other variables can be used as Inbound Variables and

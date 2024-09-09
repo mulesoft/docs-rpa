@@ -20,7 +20,7 @@ the section on *Common Properties*.
 == Inbound Variables
 
 *Clipboard Text* Enter the text that should be copied to the clipboard
-when this _action step_ is executed. You can also transfer the content
+when this action step is executed. You can also transfer the content
 of a _Workflow_ variable to the clipboard. To do so, click on the pin
 and select one of the available variables.
 

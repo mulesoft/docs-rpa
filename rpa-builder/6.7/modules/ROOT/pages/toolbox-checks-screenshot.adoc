@@ -2,7 +2,7 @@
 
 = Screenshot
 
-This _action step_ takes a screenshot and saves it to the trace folder.
+This action step takes a screenshot and saves it to the trace folder.
 You can use this screenshot to get feedback on what is happening at any point in a
 _Workflow_, which is specially helpful for debugging _Workflows_ running on
 distant machines.

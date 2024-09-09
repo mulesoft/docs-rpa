@@ -4,14 +4,14 @@
 
 The _Set Variable_ action step assigns a new value to a variable. You
 can either enter the new value directly or use an existing variable of
-the same type, e.g. the input variable of another _action step_. The
+the same type, e.g. the input variable of another action step. The
 variables must be of the same type in order to populate one variable
 with the content of another variable, e.g. you can only populate a
 variable of type:Text with another variable of type:Text In order to
-ensure that the types are the same, this _action step_ has to be
+ensure that the types are the same, this action step has to be
 configured in several stages (see step-by-step instructions for the
 wizard below). Validation of variable types is performed when the
-_action step_ is launched.
+action step is launched.
 // but you can also perform validation using the image:media\image1.png[image,width=21,height=25] button in the toolbar.
 
 Variables from the _BasePath_ *cannot* be

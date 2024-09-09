@@ -1,6 +1,6 @@
 = Ping
 
-This _action step_ is used for sending a ping to a computer or network
+This action step is used for sending a ping to a computer or network
 device. _Ping_ is useful to check if a particular machine is available
 on the network right at the start of a measurement _Workflow_. If not,
 it may be pointless to even try to continue the measurement.The response
@@ -12,7 +12,7 @@ The action step _Ping_ only supports IPv4.
 
 *Invert Logic* If it is intentional that the destination host should be
 unreachable and you want to test this, you can invert the logic of the
-_Ping_ _action step_ by using this function. If the checkbox is
+_Ping_ action step by using this function. If the checkbox is
 selected, then an unsuccessful ping is considered to be the correct
 result.
 

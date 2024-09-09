@@ -2,7 +2,7 @@
 
 = Move File
 
-This _action step_ moves a file from one directory to another. If the
+This action step moves a file from one directory to another. If the
 file to be moved if not available or the moved file is already located
 in the destination folder, an error message will interrupt the
 _Workflow_.

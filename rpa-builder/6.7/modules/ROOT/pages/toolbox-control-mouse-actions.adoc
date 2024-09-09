@@ -9,7 +9,7 @@ You can capture mouse actions directly or create and/or edit them in the
 wizard. The speed of mouse actions can also be defined.
 
 Mouse moves can be created relative to a specific coordinate. This
-coordinate may be determined by a previous _action step_ such as a image
+coordinate may be determined by a previous action step such as a image
 or text search, for example.
 
 == Properties
@@ -20,7 +20,7 @@ or text search, for example.
 action is to be performed. If no _Pin_ variable has been assigned, this
 is the top-left corner of the screen.  This anchor point can also be set as a placeholder (<<Inbound Variables>>).
 
-Please note that the _action step_ that returns the coordinates must
+Please note that the action step that returns the coordinates must
 occur within the same _Transaction_ in order to appear here as a
 possible _Pin_ variable.
 

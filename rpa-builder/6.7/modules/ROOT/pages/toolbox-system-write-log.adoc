@@ -2,7 +2,7 @@
 
 = Write Log
 
-This _action step_ can be used to leave a comment or brief description
+This action step can be used to leave a comment or brief description
 at a certain point in the _Workflow_. The comment will be logged in the
 _Trace Log_ and be shown in the _Workflow Run Results_. Note that if you
 set the _Workflow Run Result_ property to _Error_, it will *not* force

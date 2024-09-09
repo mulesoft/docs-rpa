@@ -25,7 +25,7 @@ the newly created file will be opened with the application that is
 associated with the file name of the new file. For example, if the new
 file name ends in *.txt it will normally be opened with Notepad.
 
-Leave this option disabled if you want another _action step_ to be able
+Leave this option disabled if you want another action step to be able
 to access the newly created file – otherwise it will be locked.
 
 Other Properties that are the same in all action steps are described in

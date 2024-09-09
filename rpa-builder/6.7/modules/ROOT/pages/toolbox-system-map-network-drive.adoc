@@ -2,7 +2,7 @@
 
 = Map Network Drive
 
-This _action step_ lets you map and unmap any network location and any
+This action step lets you map and unmap any network location and any
 drive letter.
 
 == Properties

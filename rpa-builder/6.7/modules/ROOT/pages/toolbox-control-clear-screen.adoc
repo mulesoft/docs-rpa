@@ -2,7 +2,7 @@
 
 = Clear Screen
 
-This _action step_ will try to clear any open window from the screen.
+This action step will try to clear any open window from the screen.
 First, it will try to stop these processes: _SAPlogon.exe_, _cmd.exe_,
 and _SAPfewgsrv.exe_. Next, it will try to kill all windows that have
 the state _Visible_ (this may also include minimized windows!), except
