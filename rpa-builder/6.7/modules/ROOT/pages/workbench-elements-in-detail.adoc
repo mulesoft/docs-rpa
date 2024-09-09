@@ -33,22 +33,22 @@ Starts RPA Recorder to record an activity and append it to the workflow dependin
 + 
 * *Disable/Enable*
 +
-Use this option to disable an Action Step and prevent its execution or to enable an Action Step that was previously disabled. Disabled Action Steps are greyed out on the workbench.
+Use this option to disable an action step and prevent its execution or to enable an action step that was previously disabled. Disabled action steps are greyed out on the workbench.
 * *Enable All Selected/Disable All Selected*
 +
-Use this option to disable or enable multiple Action Steps simultaneously.
+Use this option to disable or enable multiple action steps simultaneously.
 * *Save As Template*
 +
-Saves the selected Action Step and its settings as a template that you can use again later. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting Templates.
+Saves the selected action step and its settings as a template that you can use again later. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting Templates.
 * *Select all steps of same type*
 +
-Selects all Action Steps of the same type as the one you have clicked on. This option enables you to change the properties of these Action Steps uniformly.
-* *Mapped to Action Steps*
+Selects all action steps of the same type as the one you have clicked on. This option enables you to change the properties of these action steps uniformly.
+* *Mapped to action steps*
 +
-Shows all incoming Pin variables associated with this Action Step. Click on the name of a variable to select the Action Step that populates that variable.
+Shows all incoming Pin variables associated with this action step. Click on the name of a variable to select the action step that populates that variable.
 * *Set Breakpoint*
 +
-Sets a breakpoint for an Action Step, which causes the Workflow to stop at this point during its execution in Debug mode.
+Sets a breakpoint for an action step, which causes the Workflow to stop at this point during its execution in Debug mode.
 * *Rename*
 +
 Enables you to rename the selected element.

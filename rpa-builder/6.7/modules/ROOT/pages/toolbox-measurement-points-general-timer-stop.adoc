@@ -17,11 +17,11 @@ Name to write to the output file.
 
 == Inbound Variables
 
-The _General Timer Stop_ Action Step has no inbound variables.
+The _General Timer Stop_ action step has no inbound variables.
 
 == Outbound Variables
 
-The _General Timer Stop_ Action Step has no outbound
+The _General Timer Stop_ action step has no outbound
 variables.
 
 == See Also

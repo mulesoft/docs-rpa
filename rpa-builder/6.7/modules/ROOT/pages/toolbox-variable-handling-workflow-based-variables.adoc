@@ -2,7 +2,7 @@
 
 = Workflow Based Variables
 
-The _Workflow Based Variables_ Action Step contains variables which can
+The _Workflow Based Variables_ action step contains variables which can
 be used throughout the entire Workflow and which can be modified.
 
 The variables are typed. They may be structured as text
@@ -10,20 +10,20 @@ The variables are typed. They may be structured as text
 (_floating_-_point numbers_), Boolean values (_Boolean_) and lists
 (_array_).
 
-Use the _Set Variable_ and the _Set Array Variable_ Action Steps to overwrite the
+Use the _Set Variable_ and the _Set Array Variable_ action steps to overwrite the
 initial variable values with new values at a later point in the Workflow.
 
-The _Workflow Based Variables_ Action Step can only appear once in a
+The _Workflow Based Variables_ action step can only appear once in a
 Workflow and must be positioned in the _Workflow Initialization_ section.
 
 == Properties
 
-This Action Step contains no special properties other than the
+This action step contains no special properties other than the
 _common_ ones.
 
 == Inbound Variables
 
-This Action Step possesses no inbound variables.
+This action step possesses no inbound variables.
 
 == Outbound Variables
 
@@ -32,20 +32,20 @@ All _Workflow Based Variables_ are outbound variables.
 They are specified in the format Workflow Based Variables.[name of
 variables].
 
-In the _Variable Mappings_ for an Action Step only those _Workflow Based
+In the _Variable Mappings_ for an action step only those _Workflow Based
 Variables_ of the appropriate type are shown.
 
 The symbols next to the variable names indicate the type.
 
-Action Steps which work with strings will show _Workflow Based
+action steps which work with strings will show _Workflow Based
 Variables_ of all types except _Array_.
 
 //image:media\image1.png[Ein Bild, das Tisch enthält. Automatischgenerierte Beschreibung,width=271,height=132]
 
-Action Steps which work with arrays internally can also use alphanumeric
+Action steps which work with arrays internally can also use alphanumeric
 variables.
 
-That is why such Action Steps will show array and alphanumeric _Workflow
+That is why such action steps will show array and alphanumeric _Workflow
 Based Variables_ to choose from.
 
 //image:media\image2.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=265,height=103]
@@ -80,7 +80,7 @@ the nearest 14th place.
 The elements for array variables must be separated by commas.
 
 The values for array variables are initially saved as strings. That is
-why, when saving the Action Step, all array elements which are not yet
+why, when saving the action step, all array elements which are not yet
 presented in double quotes will automatically be placed in double
 quotes.
 
@@ -112,7 +112,7 @@ pre-populated with meaningful values.
 
 If all Transactions are active, the Workflow Based Variables in
 Transaction 120 are populated with data from the application using the
-_Set Variable_ Action Step.
+_Set Variable_ action step.
 
 In the example, however, only Transactions 130 and above are intended to
 be tested.
@@ -128,8 +128,8 @@ The _Workflow Based Variables_ provide a clear overview and a place for
 all the variables used within a Workflow.
 
 They are already standardized and, by contrast to the variables in the
-_Variable_ Action Step, do not need to be converted to an appropriate
-type for use in a different Action Step.
+_Variable_ action step, do not need to be converted to an appropriate
+type for use in a different action step.
 
 Because they are not first generated within a transaction, any parts of
 the Workflow can be _disabled_ or _enabled_ without breaking the mapping
@@ -140,7 +140,7 @@ means that different scenarios can be effected deliberately in the
 process. This makes it easier to test individual parts of a large
 Workflow.
 
-The _Variable_ Action Step is intended to be used if information is
+The _Variable_ action step is intended to be used if information is
 being stored that is only required within a single Transaction and is
 then not subsequently needed.
 

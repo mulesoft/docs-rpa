@@ -1,6 +1,6 @@
 = Image Search
 
-The _Image search_ Action Step searches for a
+The _Image search_ action step searches for a
 user-defined image, waits until it appears or disappears, and can also
 be used as a relative anchor point for mouse clicks. Image in this
 case does not only mean picture, but also includes the visual
@@ -113,7 +113,7 @@ also increases the likelihood of a false positive. To avoid false positives, do 
 * *Relative To*
 +
 Makes the _Search Area_ relative to a previous _Image
-search_, in the same way as for the _Mouse Clicks Action Step_.
+search_, in the same way as for the _Mouse Clicks action step_.
 * *_Search area_ rect*
 +
 (_Properties grid_ only): Original coordinates
@@ -275,7 +275,7 @@ A newly recorded image search should always be found with 100% accuracy.
 [[search-modes]]
 == The Different Search Modes
 
-The _Image Search_ Action Step supports the following search modes:
+The _Image Search_ action step supports the following search modes:
 
 * *_Color_* +
 The simplest and fastest search algorithm. In the default configuration,
@@ -343,7 +343,7 @@ If you have problems finding the same picture on different machines, ensure that
 all the same.
 
 If you are still having problems, you can decrease the required match
-precision. But be careful, if the required percentage is too low, the Image Search Action Step might find the _Pattern image_ even though it does not exist.
+precision. But be careful, if the required percentage is too low, the Image Search action step might find the _Pattern image_ even though it does not exist.
 
 image::image-search-match-precision.png[Image search match precision settings, 50%, 50%]
 

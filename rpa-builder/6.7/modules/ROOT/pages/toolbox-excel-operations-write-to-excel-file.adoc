@@ -2,11 +2,11 @@
 
 = Write to Excel File
 
-Use the _Write to Excel File_ Action Step if you want to write the
+Use the _Write to Excel File_ action step if you want to write the
 content you have read from an Excel file using the _Read from Excel
-File_ Action Step either to the same or a different destination file.
+File_ action step either to the same or a different destination file.
 
-The _Write to Excel File_ Action Step can only be used inside an Excel
+The _Write to Excel File_ action step can only be used inside an Excel
 Session. Specify the destination file in the xref:toolbox-excel-operations-excel-session.adoc[Excel Session].
 
 == Properties

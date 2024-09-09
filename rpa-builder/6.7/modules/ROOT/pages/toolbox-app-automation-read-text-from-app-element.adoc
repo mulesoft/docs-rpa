@@ -1,13 +1,13 @@
 
 = Read Text from App Element
 
-The _Read Text From App Element_ Action Step lets you read the text from
+The _Read Text From App Element_ action step lets you read the text from
 a selected App Element. The extracted text is then available for further
 processing as an outbound variable.
 
 == Properties
 
-The _Read Text from App Element_ Action Step does not have any special
+The _Read Text from App Element_ action step does not have any special
 properties.
 
 == Inbound Variables
@@ -19,7 +19,7 @@ properties.
 
 * *Read Text*
 +
-Outputs the text that was read by the Action Step.
+Outputs the text that was read by the action step.
 
 * *Has Content*
 +

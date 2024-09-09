@@ -11,9 +11,9 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * The new JSONPath Expression Builder enables users to build JSONPath expressions by importing a JSON file and selecting an element in the UI.
 +
-JSONPath Expression Builder is available in the wizards for Action Steps that support JSONPath expressions and in the menu bar of RPA Builder. 
-* The new Save Excel File Action Step enables users to save the changes to the Excel file being modified inside the Excel Session at any point of the execution.
-* RPA Builder now creates Mouse Action and Search Pattern Action Steps based on a recording from RPA Recorder. 
+JSONPath Expression Builder is available in the wizards for action steps that support JSONPath expressions and in the menu bar of RPA Builder. 
+* The new Save Excel File action step enables users to save the changes to the Excel file being modified inside the Excel Session at any point of the execution.
+* RPA Builder now creates Mouse Action and Search Pattern action steps based on a recording from RPA Recorder. 
 * Excel Session performance is improved and now supports: 
 ** Additional file formats (`XLSM`, `XLSB`, and `XLS`).
 ** Processing files with more than 20,000 rows. 

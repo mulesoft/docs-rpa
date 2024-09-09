@@ -2,21 +2,21 @@
 
 = User Account Decrypter
 
-The Action Step _User Account Decrypter_ allows you to accept the
+The action step _User Account Decrypter_ allows you to accept the
 activity parameter _User Account_ as an inbound variable and further
-process it as log-in data in the subsequent Action Steps.
+process it as log-in data in the subsequent action steps.
 
 Please note that the username and password are displayed in plain text
 in the run results, among other places.
 
 == Properties
 
-The Action Step _User Account Decrypter_ does not have any properties.
+The action step _User Account Decrypter_ does not have any properties.
 
 == Inbound Variables
 
 *User Account* Only one activity parameter of the type _User Account_
-can be connected to this Action Step.
+can be connected to this action step.
 
 == Outbound Variables
 

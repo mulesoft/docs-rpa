@@ -2,11 +2,11 @@
 
 = Read from Excel File
 
-Use the _Read from Excel File_ Action Step to read the contents of an
+Use the _Read from Excel File_ action step to read the contents of an
 Excel file. The result will be saved as a string or an array, which you
-can then use as an Outbound Variable in subsequent Action Steps.
+can then use as an Outbound Variable in subsequent action steps.
 
-The _Read from Excel File_ Action Step can only be used inside an Excel
+The _Read from Excel File_ action step can only be used inside an Excel
 Session. Specify the source file in the xref:toolbox-excel-operations-excel-session.adoc[Excel
 Session].
 

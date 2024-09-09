@@ -3,7 +3,7 @@
 
 = Exit Workflow
 
-The _Exit Workflow_ Action Step allows you to end a Workflow in a
+The _Exit Workflow_ action step allows you to end a Workflow in a
 controlled manner. Use it to end the Workflow with precision at a
 certain point. This means that even if you have entered possible retries
 in _Workflow Properties_ or in the _Workflow Wizard_ under _Workflow
@@ -13,7 +13,7 @@ environment.
 
 == Properties
 
-The _Exit Workflow_ Action Step has precisely one property. This can be
+The _Exit Workflow_ action step has precisely one property. This can be
 set either under Properties or directly within the wizard:
 
 *Exit severity*
@@ -34,11 +34,11 @@ For a description of exit codes, please see *Section Exit Codes*.
 
 == Inbound Variables
 
-The _Exit Workflow_ Action Step possesses no inbound variables.
+The _Exit Workflow_ action step possesses no inbound variables.
 
 == Outbound Variables
 
-The _Exit Workflow_ Action Step possesses no outbound variables.
+The _Exit Workflow_ action step possesses no outbound variables.
 
 == Wizard
 

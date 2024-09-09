@@ -1,6 +1,6 @@
 = Managing User Templates
 
-RPA Builder enables you to save Action Steps and their settings as templates that you can reuse in the project. You can Import and Export these templates as needed.
+RPA Builder enables you to save action steps and their settings as templates that you can reuse in the project. You can Import and Export these templates as needed.
 
 Create a set of templates before creating a Workflow to increase the creation speed significantly. Save the templates before configuring the Workflow objects, so the templates stay flexible in use.
 RPA Builder automatically loads templates during start-up and makes them available in the toolbox. You can drag and drop templates to your Workflow to use them.
@@ -9,7 +9,7 @@ RPA Builder automatically loads templates during start-up and makes them availab
 
 Consider the following when creating a template:
 
-* Search Pattern and Pattern Select Action Steps and all combinations of Action Steps that include them cannot be saved as a template.
+* Search Pattern and Pattern Select action steps and all combinations of action steps that include them cannot be saved as a template.
 * RPA Builder removes all passwords from templates before creating them.
 
 == Create a Template
@@ -21,11 +21,11 @@ You can create a template using the _Context menu_ or the _Workflow Tools_.
 --
 From the Context Menu::
 +
-.. Right-click an Action Step to open its context menu.
+.. Right-click an action step to open its context menu.
 .. Click *Save As Template*.
 Using the Workflow Tools::
 +
-.. Select the Action Step you want to save as a template.
+.. Select the action step you want to save as a template.
 .. In the Workbench Toolbar, click the *Tools* (image:wrench-icon.png[The Tools icon, 2%, 2%]) button.
 .. Click *Save Selected Items as Template*.
 

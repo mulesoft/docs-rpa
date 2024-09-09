@@ -2,7 +2,7 @@
 
 = Convert String
 
-This _Action Step_ converts a given string or variable to any other
+This _action step_ converts a given string or variable to any other
 variable type and makes it available as a set of new variables.
 
 == Properties

@@ -2,7 +2,7 @@
 
 = Clear Screen
 
-This _Action Step_ will try to clear any open window from the screen.
+This _action step_ will try to clear any open window from the screen.
 First, it will try to stop these processes: _SAPlogon.exe_, _cmd.exe_,
 and _SAPfewgsrv.exe_. Next, it will try to kill all windows that have
 the state _Visible_ (this may also include minimized windows!), except
@@ -13,7 +13,7 @@ It is good practice to use a _Clear screen_ at the beginning of each
 _Workflow_. This will provide a clean state to run the _Workflow_ in
 without disturbances and thus improve _Workflow_ reliability.
 
-In draft mode, the Clear Screen Action Step is disabled. No windows are
+In draft mode, the Clear Screen action step is disabled. No windows are
 closed. After testing the Workflow using the Run Workflowt (F7) button,
 a yellow warning appears on the Workbench.
 

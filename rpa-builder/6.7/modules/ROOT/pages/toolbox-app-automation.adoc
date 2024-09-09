@@ -3,17 +3,17 @@
 
 App Automation lets you address elements directly through their XPaths.
 The appearance and coordinates are not relevant, in contrast to the
-Mouse Action and Pattern Search Action Steps. The advantage of this
+Mouse Action and Pattern Search action steps. The advantage of this
 approach is that App Automation works even if the position or design of
 the target application changes on the desktop.
 
 In addition, App Automation makes it easier to create workflows, by
-recording clicks and keyboard inputs to generate Action Steps
+recording clicks and keyboard inputs to generate action steps
 automatically.
 
 == Generating Action Steps
 
-There are two ways to generate Action Steps automatically.
+There are two ways to generate action steps automatically.
 
 * *RPA Manager*
 +
@@ -22,21 +22,21 @@ During the design phase on RPA Manager, you can record a process with a sequence
 After you finish the recording, you can upload it to RPA Manager,
 together with the generated process, and move the process to the Build
 phase. You can then download and open the process in RPA Builder.
-All the recorded information for generating the Action Steps
+All the recorded information for generating the action steps
 automatically is now available.
 
 * *RPA Builder*
 +
-If the _App Session_ does not contain any elements yet, use the wizard to start a local recording, which you can then use to generate App Automation Action Steps automatically. After you click *Start Recording* in the wizard of the App Session and complete the recording, click *Finish*. Click *OK & generate* in RPA Builder to generate the Action Steps, which are added to the App Session automatically.
+If the _App Session_ does not contain any elements yet, use the wizard to start a local recording, which you can then use to generate App Automation action steps automatically. After you click *Start Recording* in the wizard of the App Session and complete the recording, click *Finish*. Click *OK & generate* in RPA Builder to generate the action steps, which are added to the App Session automatically.
 
 == Example
 
-The following example calls Microsoft Excel, opens a new Excel workbook, and inserts text in the first row. The example shows the corresponding clicks and keyboard inputs, together with an example of a filled wizard for a *Click App Element* Action Step:
+The following example calls Microsoft Excel, opens a new Excel workbook, and inserts text in the first row. The example shows the corresponding clicks and keyboard inputs, together with an example of a filled wizard for a *Click App Element* action step:
 
 image::toolbox-app-automation-image1.png[Example]
 
 You can now edit the generated workflow, for example, adding additional
-Action Steps or renaming existing ones.
+action steps or renaming existing ones.
 
 The red highlighting in the wizard preview immediately shows you where
 the click was executed.
@@ -53,13 +53,13 @@ The following types of applications are supported:
 [[app-automation-common-properties]]
 == Common Properties (App Automation)
 
-The _App Automation_ Action Steps also contain the _common properties_ of the other Action Steps. See xref:common-properties.adoc[Common Properties] for a description.
+The _App Automation_ action steps also contain the _common properties_ of the other action steps. See xref:common-properties.adoc[Common Properties] for a description.
 
-The following are properties common to all _App Automation_ Action Steps:
+The following are properties common to all _App Automation_ action steps:
 
 * *Identify Element*
 +
-The wizard contains the _Identify Element_ button in all Action Steps of
+The wizard contains the _Identify Element_ button in all action steps of
 the App Automation. This button sets the wizard to _a Capture Mode,_
 which lets you hover the mouse over a certain element and capture it by
 pressing _F2_.
@@ -72,10 +72,10 @@ following happens:
 selected element.
 ** The preview shows a screen shot with the selected element. The element
 is marked with red crosshairs.
-** If the selected element does not match the Action Step, a warning is
+** If the selected element does not match the action step, a warning is
 displayed below the preview. This is the case, for example, if an
 element that does not support text entry is selected in a _Set Text to
-App Element_ Action Step. In this case, the frame is displayed in red
+App Element_ action step. In this case, the frame is displayed in red
 instead of green.
 
 
@@ -95,4 +95,4 @@ When you select this option, the Window Title is interpreted as a Regex expressi
 +
 You see a preview of the selected element here. It only
 appears if the element was selected using _Identify Element_ or the if
-Action Step was generated automatically.
+action step was generated automatically.

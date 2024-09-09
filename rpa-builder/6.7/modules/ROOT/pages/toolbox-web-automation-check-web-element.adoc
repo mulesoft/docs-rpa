@@ -43,7 +43,7 @@ it to appear.
 
 == Outbound Variables
 
-The Action Step _Check Element_ possesses no outbound variables.
+The action step _Check Element_ possesses no outbound variables.
 
 == Wizard
 

@@ -1,8 +1,8 @@
 = App Session
 
-The _App Session_ Action Step is, similar to the Excel Session, an
-inclusive element for all App Automation Action Steps. These steps can
-only be placed within the App Session. All other Action Steps can also
+The _App Session_ action step is, similar to the Excel Session, an
+inclusive element for all App Automation action steps. These steps can
+only be placed within the App Session. All other action steps can also
 be inserted in the App Session.
 
 Please note that an App Session *cannot* be added to another App
@@ -21,7 +21,7 @@ Specifies the position where to keep the mouse when _Keep out Mouse_ is active. 
 
 * *Repeat keep mouse out*
 +
-Repeats the _Keep out mouse_ property before every step in the App Session. Note here that some Action Steps move the
+Repeats the _Keep out mouse_ property before every step in the App Session. Note here that some action steps move the
 mouse for execution (such as click element with _Left Click_).
 
 == Inbound Variables
@@ -54,4 +54,4 @@ image:rpa-recorder-start-recording.png[Start recording]
 +
 image:rpa-recorder-review-app-recording.png[Review app session recording]
 +
-. Click *OK & generate* in RPA Builder to generate the appropriate Action Steps, which are added to the App Session automatically.
+. Click *OK & generate* in RPA Builder to generate the appropriate action steps, which are added to the App Session automatically.

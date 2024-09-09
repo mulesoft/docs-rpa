@@ -1,7 +1,7 @@
 
 = Set Text to App Element
 
-The _Set Text To App Element_ Action Step can be used to set text
+The _Set Text To App Element_ action step can be used to set text
 directly to a selected App Element.
 
 == Properties
@@ -18,7 +18,7 @@ The text to write to the selected element. You can use _Insert environment varia
 
 == Outbound Variables
 
-The _Set Text to App Element_ Action Step does not have any outbound variables.
+The _Set Text to App Element_ action step does not have any outbound variables.
 
 == Wizard
 

@@ -2,7 +2,7 @@
 
 = Lock Section
 
-The _Lock Section_ Action Step is used to synchronize access if multiple
+The _Lock Section_ action step is used to synchronize access if multiple
 parallel _Workflows_ need to access a file or a mailbox, for example in
 the case of Robotic Applications. Synchronization is achieved by
 preventing other _Workflows_ from accessing the file when it is in use.
@@ -29,7 +29,7 @@ in the world. However, for parallel, identical installations that use
 _Robot Secure_ and individual _Secure Sessions_, there is no guarantee
 that this ID will be unique.
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of clarity they are not shown here.
 
 == Wizard

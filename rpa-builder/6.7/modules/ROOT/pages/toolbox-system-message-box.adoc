@@ -2,7 +2,7 @@
 
 = Message Box
 
-This _Action Step_ is used to display a message box containing
+This _action step_ is used to display a message box containing
 user-defined text and the buttons needed. It can be used at any point in
 a _Workflow_.
 

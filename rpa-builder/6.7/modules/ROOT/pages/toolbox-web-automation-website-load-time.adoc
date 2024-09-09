@@ -1,13 +1,13 @@
 
 = Website Load Time
 
-The _Website Load Time_ Action Step measures the time taken to load a
+The _Website Load Time_ action step measures the time taken to load a
 website and the websites that it references. Referenced websites are
 websites that are embedded within a website and loaded automatically at
 the same time, e.g. visitor counters, analysis pages, Web stores,
 integrated payment systems, etc.
 
-The _Website Load Time_ Action Step logs all data measured in a special
+The _Website Load Time_ action step logs all data measured in a special
 file, identified by a `.har` extension (har = Http ARchive). This file is
 located in Windows under "My Documents -> NameOfRPABuilderProject ->
 Robot -> trace -> http@www-website-xx.har“. The name of the `.har` file is
@@ -43,7 +43,7 @@ shown on the right.
 
 Error message: FAIL to load the address. The error message "FAIL to load
 the address" will be recorded in the `.har` log file if the _Website Load
-Time_ Action Step was unable to load the specified URL.
+Time_ action step was unable to load the specified URL.
 
 It is also possible to perform further processing on the measured values
 for _Website Load Time_ using the _Website Load Time.Result_ variable.
@@ -56,7 +56,7 @@ Step_ has been executed.
 
 * *WebsiteUrl* Enter the URL to be tested, e.g. www.wikipedia.de.
 
-Other Properties that are the same in all Action Steps in the _Web
+Other Properties that are the same in all action steps in the _Web
 Automation_ are described in the section on  *Common Properties*.
 //link:#CommonProperties_WebAutomation[Common Properties.]
 For reasons of clarity they are not shown here.
@@ -82,4 +82,4 @@ URL can also be constructed by inserting variables from the _Workflow_.
 
 Error message: FAIL to load the address. The error message "FAIL to load
 the address" will be recorded in the `.har` log file if the _Website Load
-Time_ Action Step was unable to load the specified URL.
+Time_ action step was unable to load the specified URL.

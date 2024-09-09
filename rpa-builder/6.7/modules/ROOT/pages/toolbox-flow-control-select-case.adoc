@@ -2,10 +2,10 @@
 
 = Select Case
 
-The _Select Case_ Action Step makes it possible to match the contents of
+The _Select Case_ action step makes it possible to match the contents of
 a variable against certain predefined cases. For example, you can search
 the content of a text variable for specific information and specify
-different Action Steps to be executed depending on what is found. The
+different action steps to be executed depending on what is found. The
 “DoElse” component is always present. This is used to provide a default
 action for cases that have not been specified.
 
@@ -24,7 +24,7 @@ value of 100% means identical. The default value is 50%.
 * *Compare Value Bool*
 * *Compare Value Float*
 
-Other properties that are the same in all Action Steps are described in
+Other properties that are the same in all action steps are described in
 section *Common Properties*. For reasons of
 clarity they are not shown here.
 
@@ -92,16 +92,16 @@ this text.
 been created unintentionally using the
 image:media\image4.png[image,width=32,height=30] button.
 . Click OK to close the _Select Case Wizard_.
-. Click on the pin for the _Select Case_ Action Step in the Workflow
+. Click on the pin for the _Select Case_ action step in the Workflow
 (see figure): +
 image:media\image6.png[image,width=341,height=35]
 . In the “Edit Variable Mappings for Select Case” dialog box, select one
 of the available variables in the corresponding drop-down menu. In this
 example, that would be a variable from the drop-down “Compare Value
 String” menu. Confirm your selection with OK.
-. The pin for the _Select Case_ Action Step will now be shown in red.
-. Drag at least one Action Step to be performed into the newly created
-Case in _Select Case_. This Action Step will now be performed if the
+. The pin for the _Select Case_ action step will now be shown in red.
+. Drag at least one action step to be performed into the newly created
+Case in _Select Case_. This action step will now be performed if the
 condition specified for the case is met (steps 5 to 7 above).
 ////
 

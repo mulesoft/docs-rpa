@@ -2,7 +2,7 @@
 
 = Check Regex
 
-Use the Check Regex Action Step to search for a text fragment using a
+Use the Check Regex action step to search for a text fragment using a
 regular expression. The text fragment can be searched for in a variable.
 
 The results of Check Regex provide various Outbound Variables that can
@@ -18,7 +18,7 @@ An introduction to regular expressions is provided in the section on xref:advanc
 displayed if no variable has been specified in the Check Regex wizard as the target of the regular expression search.
 * *Regex Pattern* Enter the regular expression that you want to use as the basis of the search.
 
-Other Properties that are the same in all Action Steps are described in the section on *Common Properties*. For reasons of clarity they are not shown here.
+Other Properties that are the same in all action steps are described in the section on *Common Properties*. For reasons of clarity they are not shown here.
 
 == Inbound Variables
 
@@ -75,7 +75,7 @@ Enter the text that you want to use to test the regular expression into
 the *Test Pattern* field. Click the *Execute Test* button to run the
 test. Matches will be highlighted in the *Test Pattern* field. Click the
 *Apply* button to transfer the tested regular expression to the Check
-Regex Action Step. Click the *Cancel* button to close the Regex
+Regex action step. Click the *Cancel* button to close the Regex
 Tester and discard any changes.
 
 *Text Pattern* Enter the text that the regular expression should be

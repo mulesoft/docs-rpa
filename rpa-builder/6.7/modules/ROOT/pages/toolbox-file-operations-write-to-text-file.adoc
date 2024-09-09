@@ -27,7 +27,7 @@ be written. If this option is not selected, the new text will be
 appended at the end of the existing text.
 * *Text to write* Specify here the text that is to be written.
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 

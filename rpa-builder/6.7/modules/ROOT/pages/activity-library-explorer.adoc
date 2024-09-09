@@ -25,7 +25,7 @@ To delete an activity, select it and click *Delete from Library* (image:delete-i
 The Activity Library enables you to export activities to a package file `(.calw)` and import these activity package files into the Activity Library. 
 
 To export an Activity Library Workflow from the Activity Library to your file system as a `(.calw)` package file, click *Export*(image:activity-library-explorer-toolbar-export.png["The Export button", 2%, 2%]). +
-When you export Activity Library workflows to a file, RPA Builder removes passwords and all sensitive information stored in wizards of Action Steps, User Account Variables, and Activity Parameters (for example, secrets in OAuthCredentials or AWS Credentials) to prevent this information from being shared.
+When you export Activity Library workflows to a file, RPA Builder removes passwords and all sensitive information stored in wizards of action steps, User Account Variables, and Activity Parameters (for example, secrets in OAuthCredentials or AWS Credentials) to prevent this information from being shared.
 
 To import an Activity Library Workflow package `(.calw)` file from your file system to the Activity Library, click *Import* (image:activity-library-explorer-toolbar-import.png["The Import button", 2%, 2%]).
 

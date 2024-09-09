@@ -2,7 +2,7 @@
 
 = Loop
 
-A _Loop_ allows you to repeat the same _Transaction_ and _Action Steps_ two or more times.
+A _Loop_ allows you to repeat the same _Transaction_ and _action steps_ two or more times.
 
 == Properties
 

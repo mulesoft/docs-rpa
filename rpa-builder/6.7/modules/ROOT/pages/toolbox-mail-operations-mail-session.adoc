@@ -1,13 +1,13 @@
 = Mail Session
 
-The _Mail Session_ Action Step is, similar to the Excel Session, an
+The _Mail Session_ action step is, similar to the Excel Session, an
 inclusive element for all mail operations.
 
 The mail operations consist of reading mail (Read Mail), sending mail
 (Send Mail), and changing e-mails (Set Mail), for example, setting the
 status of a mail to _unread_ or moving it to a different folder.
 
-With the _Mail Session_ Action Step, you can establish a connection to a
+With the _Mail Session_ action step, you can establish a connection to a
 mail server.
 
 == Properties
@@ -73,7 +73,7 @@ account for outgoing mail.
 
 == Outbound Variables
 
-The _Mail Session_ Action Step has no outbound variables.
+The _Mail Session_ action step has no outbound variables.
 
 == Wizard
 
@@ -91,8 +91,8 @@ here. This means that you can only read mails.
 here. In this case, mails are sent only.
 
 [NOTE]
-If you have selected the _Send mails via SMTP_ mode, no Read mail Action Step can be used in the Mail Session.
-This is also true if you have selected the _Read mails from inbox_ mode. In this case, no Send Mail Action Step can be used.
+If you have selected the _Send mails via SMTP_ mode, no Read mail action step can be used in the Mail Session.
+This is also true if you have selected the _Read mails from inbox_ mode. In this case, no Send Mail action step can be used.
 
 In the Incoming Mail area, you can make all the settings necessary to
 import e-mails from an e-mail server. Here, you can also find the *Test Connection Button*. You can use this to test whether the connection to

@@ -42,7 +42,7 @@ Click the expander arrows to get more detailed information about an error:
 
 image:workflow-run-error-detail.png[The Activity Workflow window showing the additional details for the Workflow element that failed, 75%, 75%]
 
-This panel provides detailed information about what failed. In this case, the _Web Session (Firefox)_ Action Step cannot start because Firefox is not installed in the computer that is executing the test run for the Workflow.
+This panel provides detailed information about what failed. In this case, the _Web Session (Firefox)_ action step cannot start because Firefox is not installed in the computer that is executing the test run for the Workflow.
 
 The error screenshot shows the desktop as it looked when the error occurred. Click the screenshot to enlarge it.
 

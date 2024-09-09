@@ -1,12 +1,12 @@
 = Window Wait
 
-The _Action Step Window Wait_ pauses the Workflow until a certain window
+The _action step Window Wait_ pauses the Workflow until a certain window
 is displayed or not displayed. This window is recognized by its window
 title and can be specified by _Window Text_ additionally. Different
 modes allow for checking if the window is appearing, disappearing or
 activated.
 
-You can deploy _Window Wait_ after the _Action Step Run Program_ or if
+You can deploy _Window Wait_ after the _action step Run Program_ or if
 you anticipate a dialog window as result of a preceding action. This enables you to continue the _Workflow_ and stop or start a timer at exactly the right moment.
 
 Often the title of a window changes. In particular, the title of
@@ -81,7 +81,7 @@ button _Start_  and then
 click on the window’s frame. After the correct title is adopted in the
 field _Window Title_ click _Stop_.
 
-_Window Title_ and _Window Text_ can also be bound to preceding _Action Steps_ via Pin Variables.
+_Window Title_ and _Window Text_ can also be bound to preceding _action steps_ via Pin Variables.
 
 image:toolbox-checks-window-wait-wizard.png[50%, 50%, The Window wait wizard]
 
@@ -164,7 +164,7 @@ _Actions Step_ returns an error.
 _Window Wait_ checks, if a window matching the
 given criteria is active.
 +
-If this is not the case, the _Action Step_ returns an error immediately.
+If this is not the case, the _action step_ returns an error immediately.
 ** *Window exists (with Activation)*
 +
 _Window Wait_ checks, if a window
@@ -172,13 +172,13 @@ matching the given criteria does exist. This window can be minimized or
 in the background. If such a window is found, it will be activated (and
 be brought to the foreground, even from a minimized state).
 +
-If the window does not exist, the _Action Step_ returns an error immediately.
+If the window does not exist, the _action step_ returns an error immediately.
 ** *Window doesn’t exist*
 +
 _Window Wait_ checks, if a window matching the
 given criteria does not exist.
 +
-If such a window is found, the _Action Step_ returns an error immediately.
+If such a window is found, the _action step_ returns an error immediately.
 ** *Window Appears (without Activation)*
 +
 _Window Wait_ waits at most for
@@ -193,7 +193,7 @@ _Window Wait_ checks, if a
 window matching the given criteria does exist. This window might be
 minimized or might be in the background.
 +
-If the window does not exist, the _Action Step_ returns an error immediately.
+If the window does not exist, the _action step_ returns an error immediately.
 * *Wait Delay*
 ** *Legacy mode* (Compatibility setting)
 +

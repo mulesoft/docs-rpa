@@ -2,7 +2,7 @@
 
 = Map Network Drive
 
-This _Action Step_ lets you map and unmap any network location and any
+This _action step_ lets you map and unmap any network location and any
 drive letter.
 
 == Properties
@@ -33,4 +33,4 @@ warning instead.
 
 == Outbound Variables
 
-The Action Step _Map Network Drive_ possesses no outbound variables.
+The action step _Map Network Drive_ possesses no outbound variables.

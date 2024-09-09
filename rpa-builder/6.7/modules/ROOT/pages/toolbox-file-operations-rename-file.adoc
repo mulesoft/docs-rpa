@@ -2,7 +2,7 @@
 
 = Rename File
 
-This Action Step renames a file. If the renamed file already exists in
+This action step renames a file. If the renamed file already exists in
 the destination folder, the workflow is interrupted with an error
 message.
 
@@ -17,7 +17,7 @@ then the path relates to the Base Path variable.
 * *File Name* Enter the name here of the file that is to be renamed.
 * *New File Name* Here you enter he new name of the file to be renamed.
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 

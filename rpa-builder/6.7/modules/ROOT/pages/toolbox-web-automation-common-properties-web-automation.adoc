@@ -1,11 +1,11 @@
 
 = Common Properties (Web Automation)
 
-The _Web Automation Web Session_ Action Steps share these _Common Properties_:
+The _Web Automation Web Session_ action steps share these _Common Properties_:
 // commonProperties Web Automation
 include::partial$toolbox-web-automation-web-session.adoc[tag=commonProperties]
 
-Additionally, _Web Element_ Action Steps share the following _Properties_:
+Additionally, _Web Element_ action steps share the following _Properties_:
 
 * *Element _XPath_* 
 +

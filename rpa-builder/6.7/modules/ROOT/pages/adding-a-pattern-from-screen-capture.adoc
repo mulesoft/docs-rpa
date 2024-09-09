@@ -1,11 +1,11 @@
 = Using Search Patterns in a Workflow 
 
-The *Capture* functionality provided in the Search Pattern, Pattern Select, and Pattern Gallery Action Steps enables you to create search patterns from a screenshot. Then, you can use these patterns in different elements of your Workflow. The Search Pattern, Pattern Select, and Pattern Gallery Action Steps also share the Pattern Strip module in the wizard, which provides a list of the existing patterns and their associated operations.
+The *Capture* functionality provided in the Search Pattern, Pattern Select, and Pattern Gallery action steps enables you to create search patterns from a screenshot. Then, you can use these patterns in different elements of your Workflow. The Search Pattern, Pattern Select, and Pattern Gallery action steps also share the Pattern Strip module in the wizard, which provides a list of the existing patterns and their associated operations.
 
 [[add-pattern-from-screen-capture]]
 == Adding a Pattern from Screen Capture
 
-You can create search patterns in the Search Pattern, Pattern Select, and Pattern Gallery Action Steps by capturing a screenshot. The menu bars for these Action Steps include a *Capture* button (image:capture-button-icon.png[2%, 2%, The Capture button.]) for this purpose. 
+You can create search patterns in the Search Pattern, Pattern Select, and Pattern Gallery action steps by capturing a screenshot. The menu bars for these action steps include a *Capture* button (image:capture-button-icon.png[2%, 2%, The Capture button.]) for this purpose. 
 
 Clicking *Capture* freezes the screen content like a screenshot and a small window with the title Capture Patterns appears. Then, you can select the search pattern by clicking and dragging to specify the area that contains the pattern. The selection surrounded with a blue rectangle is no longer transparent gray and you can move or resize it using the mouse or the keyboard. Press `Shift+Arrow key` to move the selection. Press `Ctrl+Arrow key` to resize the selection by moving the right and bottom edges.
 
@@ -15,7 +15,7 @@ Select more than one search pattern by clicking and dragging multiple times. If 
 
 image::incorrect-search-pattern.png[20%, 20%, The search pattern area shows a red cross, which indicates that the selection is not suitable as a search pattern.]
 
-Click *Accept selection & continue* to add the applicable pattern to the wizard for the relevant Action Step. The wizard enables you to specify names and color spots for each of the captured patterns.
+Click *Accept selection & continue* to add the applicable pattern to the wizard for the relevant action step. The wizard enables you to specify names and color spots for each of the captured patterns.
 
 To cancel the recording of a search pattern at any time, click the close button (*X*) in the upper right corner of the Capture Patterns window. 
 
@@ -34,7 +34,7 @@ Enables you to reduce the search area from full screen to a smaller area by clic
 Enables you to reuse a search area defined in a previous capture. This option shows only if you already defined a search area when setting up the Workflow. 
 * *Accept selection & continue* 
 +
-Adds the selection into the wizard for the corresponding Action Step and then returns to that Action Step.
+Adds the selection into the wizard for the corresponding action step and then returns to that action step.
 
 After you capture at least one search pattern, the *Delete selected pattern* option shows. This option removes the border around the previously selected pattern (or the last search area defined).
 
@@ -56,7 +56,7 @@ Starts the timer. After a delay, the screen image refreezes and the Capture Patt
 
 By default, RPA Builder only captures the pattern features for search patterns and color plays no role in pattern-based searches. However, sometimes you may find that it is necessary to determine when the color in a certain position in the search pattern is correct. For example, the text of an error message needs to be in red, or a traffic light symbol needs to appear green rather than yellow or red. In order to guarantee this, there is an option to define a Color Spot for a Search Pattern. In the case of a Search Pattern with Color Spot, the pattern-based image search is successful only if the color in a defined position matches a predefined color.
 
-When you hover a search pattern in the wizard for the relevant Action Step, an overlay menu bar shows at the end of the image. 
+When you hover a search pattern in the wizard for the relevant action step, an overlay menu bar shows at the end of the image. 
 
 image:search-pattern-icons.png[20%, 20%, A search pattern with the overlay menu that shows the available actions.]
 
@@ -93,13 +93,13 @@ Determines the color deviation which is permitted for each RGB color channel. Us
 [[pattern-strip]]
 == The Pattern Strip Module
 
-Pattern Strip is a UI module that is used across all the wizards for the Search Pattern, Pattern Select, and Pattern Gallery Action Steps. The Pattern Strip consists of a list of Search Patterns, the associated options, and a menu bar. The menu bar buttons vary according to the Action Step and the quantity and selection status of the search patterns.
+Pattern Strip is a UI module that is used across all the wizards for the Search Pattern, Pattern Select, and Pattern Gallery action steps. The Pattern Strip consists of a list of Search Patterns, the associated options, and a menu bar. The menu bar buttons vary according to the action step and the quantity and selection status of the search patterns.
 
 .Pattern Strip for the Pattern Gallery Action Step:
-image:pattern-strip-pattern-gallery.png[75%, 75%, The Pattern Strip module for the Pattern Gallery Action Step.]
+image:pattern-strip-pattern-gallery.png[75%, 75%, The Pattern Strip module for the Pattern Gallery action step.]
 
 .Pattern Strip for the Pattern Select Action Step:
-image:pattern-strip-pattern-select.png[75%, 75%, The Pattern Strip module for the Pattern Select Action Step.]
+image:pattern-strip-pattern-select.png[75%, 75%, The Pattern Strip module for the Pattern Select action step.]
 
 Use the mouse to click and select search patterns. A white check mark appears on a blue background in the top-right corner to highlight a selected item. Click again to undo the selection.
 
@@ -107,7 +107,7 @@ Buttons for functions relating only to the selected patterns appear on the menu 
 
 === Menu Bar
 
-The Pattern Strip menu bar has general buttons that show in all related Action Steps and buttons that are specific to the Search Pattern, Pattern Select, and Pattern Gallery Action Steps. The following table shows the button images, names, descriptions, and also in which of the related Action Steps they are available:  
+The Pattern Strip menu bar has general buttons that show in all related action steps and buttons that are specific to the Search Pattern, Pattern Select, and Pattern Gallery action steps. The following table shows the button images, names, descriptions, and also in which of the related action steps they are available:  
 
 [%header,cols="1a,7a,1a,1a,1a"]
 |===
@@ -118,22 +118,22 @@ The Pattern Strip menu bar has general buttons that show in all related Action S
 ^.^| image:clear-selection-button-icon.png[25%, 25%, The Clear selection button.] | *Clear Selection*: Removes all selections so that no image is selected. ^.^| Yes ^.^| Yes ^.^| Yes 
 ^.^| image:copy-button-icon.png[25%, 25%, The Copy button.] | *Copy*: Copies the selected patterns to the specified pattern group. ^.^| Yes |  |  
 ^.^| image:delete-selection-button-icon.png[25%, 25%, The Delete Selection button.] | *Delete Selection*: Deletes the selected patterns. ^.^| Yes ^.^| Yes ^.^| Yes 
-^.^| image:delete-unused-button-icon.png[25%, 25%, The Delete Unused button.] | *Delete Unused*: Deletes the patterns that are not being used by any Action Steps. ^.^| Yes |  |  
+^.^| image:delete-unused-button-icon.png[25%, 25%, The Delete Unused button.] | *Delete Unused*: Deletes the patterns that are not being used by any action steps. ^.^| Yes |  |  
 ^.^| image:link-group-button-icon.png[25%, 25%, The Link Group button.] | *Link Group*: Selects a Pattern Group and all search patterns included in that group. If the search patterns inside the linked group change, those changes are also reflected here. |  ^.^| Yes ^.^| Yes 
 ^.^| image:move-button-icon.png[25%, 25%, The Move button.] | *Move*: In the Pattern Gallery, moves the selected patterns to the specified pattern group. In Search Pattern and Pattern Select, moves the selected patterns to the specified to either the Regular, Ignored, or Excluded sections. ^.^| Yes ^.^| Yes ^.^| Yes 
 ^.^| image:select-all-button-icon.png[25%, 25%, The Select All button.] | *Select All*: Selects all patterns in the current pattern group. ^.^| Yes |  |  
-^.^| image:show-usage-button-icon.png[25%, 25%, The Show Usage button.] | *Show Usage*: Shows which Action Steps are using the currently selected patterns. ^.^| Yes |  |  
+^.^| image:show-usage-button-icon.png[25%, 25%, The Show Usage button.] | *Show Usage*: Shows which action steps are using the currently selected patterns. ^.^| Yes |  |  
 |===
 
 === Filtering for Pattern Names and Zooming Search Pattern Images 
 
 image::search-pattern-filter-and-zoom.png[30%, 30%, The Filter box and the Zoom In and Zoom out buttons.]
 
-The Pattern Gallery includes filter options in the main menu bar. Search Pattern and Pattern Select Action Steps show filter options at the beginning of the *Search Patterns* section in a separate menu bar and apply to all Pattern Strips in the wizard equally.
+The Pattern Gallery includes filter options in the main menu bar. Search Pattern and Pattern Select action steps show filter options at the beginning of the *Search Patterns* section in a separate menu bar and apply to all Pattern Strips in the wizard equally.
 
 Entering text into the *Filter...* field hides all patterns in the subsequent sections of the wizard with names that do not contain the specified text. Filtering is applied as you type each letter. The filter text may appear in any position within the pattern name, but must be contiguous to be considered a match. 
 
-For example: Consider a Search Pattern Action Step that contains search patterns with the following names `House`, `House1`, `Mouse`, and `Mouse1`. 
+For example: Consider a Search Pattern action step that contains search patterns with the following names `House`, `House1`, `Mouse`, and `Mouse1`. 
 
 * If you type `use` in the filter, all images show. 
 * If you type `1`, only `House1` and `Mouse1` show.
@@ -147,7 +147,7 @@ When you position the mouse over a pattern, the following buttons appear:
 
 image::search-pattern-icons.png[20%, 20%, A search pattern with the overlay menu that shows the available actions.]
 
-* The *Edit* (image:edit-icon.png[2%, 2%, The Edit button.]) button enables you to rename the search pattern. Alternatively, you can click the name of the search pattern to rename it. This action also changes the name in the Pattern Gallery and all other Action Steps that use this pattern.
+* The *Edit* (image:edit-icon.png[2%, 2%, The Edit button.]) button enables you to rename the search pattern. Alternatively, you can click the name of the search pattern to rename it. This action also changes the name in the Pattern Gallery and all other action steps that use this pattern.
 * The *Recapture Pattern* (image:capture-button-icon.png[2%, 2%, The Recapture Pattern button.]) button enables you to replace the pattern with a new screenshot. Recapturing the pattern ensure that both the pattern name and its position in the list remain the same. 
 * The *Color Spot Picker* (image:color-picker-icon.png[2%, 2%, The Color Spot Picker button.]) button opens a window where you can select the Color Spot within the pattern. See xref:adding-a-pattern-from-screen-capture.adoc#using-color-spot-with-search-patterns[Using Color Spot with Search Patterns] for additional details about the Color Spot functionality. 
 * The *Delete Pattern* (image:delete-unused-button-icon.png[2%, 2%, The Delete Pattern button.]) button deletes the pattern. You can also delete a selected pattern using the  *Delete Selection* (image:delete-selection-button-icon.png[2%, 2%, The Delete Selection button.]) button from the menu bar. 

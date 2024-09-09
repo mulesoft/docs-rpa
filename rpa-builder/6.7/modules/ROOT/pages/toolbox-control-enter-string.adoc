@@ -2,13 +2,13 @@
 
 = Enter String
 
-Like the _Keystrokes_ Action Step, the _Enter String_ Action Step
+Like the _Keystrokes_ action step, the _Enter String_ action step
 emulates keyboard inputs. You can use this to enter search criteria or a
 URL in the browser address bar, for example. You can also use it to
 execute hotkeys or macros.
 
 The text to be entered can be transferred to the _Enter String_ Action
-Step from a previously executed Action Step.
+Step from a previously executed action step.
 
 == Properties
 
@@ -45,7 +45,7 @@ xref:advanced-concepts-using-regular-expressions.adoc[Using Regular Expressions]
 
 == Outbound Variables
 
-The _Enter String_ Action Step possesses no Outbound Variables.
+The _Enter String_ action step possesses no Outbound Variables.
 
 == Wizard
 
@@ -80,8 +80,8 @@ There is a visual explaining Keyboard Settings in the section on Keystrokes.
 
 If you need the _window text_ to specify the input window or want to
 record the text that is to be entered directly via the keyboard, please
-use the _Keystrokes_ Action Step.
+use the _Keystrokes_ action step.
 
 In all other cases, and in particular if the text for inputting is to be
 transferred by means of a Pin Variable, please use the _Enter String_
-Action Step.
+action step.

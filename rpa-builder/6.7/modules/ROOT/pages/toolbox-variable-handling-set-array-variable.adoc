@@ -2,7 +2,7 @@
 
 = Set Array Variable
 
-The Set Array Variable Action Step enables you to assign new values to an array.
+The Set Array Variable action step enables you to assign new values to an array.
 
 One possible use is to copy a list to an array in order to iterate
 through all elements in the list more easily and to process individual
@@ -10,7 +10,7 @@ list elements further.
 
 == Properties
 
-The _Set Array Variable_ Action Step contains no other properties other than the _general_ ones.
+The _Set Array Variable_ action step contains no other properties other than the _general_ ones.
 // link:#CommonProperties[+++general+++] ones.
 
 == Inbound Variables
@@ -25,7 +25,7 @@ makes a Workflow easier to understand.
 
 It is preferable to create an extra array in the _Workflow Based
 Variables_ rather than to overwrite an array created using the
-_Read from Excel File_ Action Step with different values.
+_Read from Excel File_ action step with different values.
 
 *New array value* (array or alphanumeric) Values to overwrite the entire
 array.
@@ -38,7 +38,7 @@ elements in the array (_Array Count_).
 
 == Outbound Variables
 
-The _Set Array Variable_ Action Step possesses no outbound variables.
+The _Set Array Variable_ action step possesses no outbound variables.
 
 == Wizard
 
@@ -52,7 +52,7 @@ comma separated values in the relevant field.
 The elements for array variables must be separated by commas.
 
 The values for array variables are initially saved as strings. That is
-why, when saving the Action Step, all array elements which are not yet
+why, when saving the action step, all array elements which are not yet
 presented in double quotes will automatically be placed in double
 quotes.
 
@@ -83,7 +83,7 @@ For testing purposes, the array _Services_, which is generated via the
 _Workflow Based Variables_ and which contains the services actually
 performed, can be pre-populated with values. Further on in the Workflow,
 services are read from a scanned-in form, e.g. using _OCR_, and the
-array _Services_ in the _Set Array Variable_ Action Step is overwritten
+array _Services_ in the _Set Array Variable_ action step is overwritten
 with the actual values.
 ////
 == Related Elements

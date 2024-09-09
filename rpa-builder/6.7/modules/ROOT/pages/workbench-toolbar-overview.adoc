@@ -40,7 +40,7 @@ Using _Ctrl + Z_ for undo and _Ctrl + Y_ for redo also works.
 [[move-up-down]]
 == Change the Order of Workflow Objects
 To change the order of objects, select the object and move it up or down in the Workflow by clicking *Move up* (image:arrow-up.png[The Move selected object up icon, 2%, 2%]) or *Move down* (image:arrow-down.png[The Move selected object down icon, 2%, 2%]) until the object reaches the desired position. You can also drag and drop elements to rearrange them.
-Action Steps cannot be moved outside of their Transaction. If you want to move an Action Step to another Transaction, use copy and paste instead, and then delete the old one. You can also use _Ctrl + X_ or the *Cut* option from the context menu to remove the Action Step from the Workflow and put it into the clipboard in one step.
+Action steps cannot be moved outside of their Transaction. If you want to move an action step to another Transaction, use copy and paste instead, and then delete the old one. You can also use _Ctrl + X_ or the *Cut* option from the context menu to remove the action step from the Workflow and put it into the clipboard in one step.
 
 [[delete]]
 == Delete Workflow Objects
@@ -49,7 +49,7 @@ To delete an object, select it and click *Delete* (image:delete-icon-alt.png[The
 [[start-wizard]]
 == Starting the Configuration Wizard of a Workflow Object
 
-To configure a Workflow object with the wizard, select it and then click *Wizard* (image:run-wizard-icon.png[The Run wizard for selected object icon, 2%, 2%]). This process works for single Action Steps as well as for complete Transactions. You can also double-click a Workflow object to start its wizard.
+To configure a Workflow object with the wizard, select it and then click *Wizard* (image:run-wizard-icon.png[The Run wizard for selected object icon, 2%, 2%]). This process works for single action steps as well as for complete Transactions. You can also double-click a Workflow object to start its wizard.
 
 [[start-quick-creation]]
 == Start Quick Creation Mode
@@ -60,7 +60,7 @@ image:quick-creation-mode.png[The quick creation mode window, 30%, 30%]
 
 Depending on the state and position your Workflow project is in, Quick Creation Mode provides the Workflow objects that you can use. For every object you insert, the wizard automatically starts so you can configure the different steps without ever losing focus on the actual application you want to automate. You can also insert any possible object at any position later on.
 
-If, for example, you want to add a Window wait Action Step in front of an Image search in a Transaction you have already created, place the blue position indicator where you want to add the Action Step and then click Window wait. You can position the objects with the blue arrow buttons or by clicking on the desired position directly.
+If, for example, you want to add a Window wait action step in front of an Image search in a Transaction you have already created, place the blue position indicator where you want to add the action step and then click Window wait. You can position the objects with the blue arrow buttons or by clicking on the desired position directly.
 
 The blue arrow buttons also enable you to collapse or expand the selected Workflows, Transactions, or Control Blocks to optimize the graphical representation of your Workflow.
 
@@ -78,11 +78,11 @@ To test the created Workflow, click *Run Workflow* (image:play-icon.png[The Run 
 
 When you start a Workflow from within RPA Builder, the workflow runs in design mode so you can already test whether the Workflow behaves as expected or still needs modifications before the production phase.
 
-Note that the STC Guard module does not execute and does not close any windows if an error occurs, and the Clear screen Action Step does not execute in design mode.
+Note that the STC Guard module does not execute and does not close any windows if an error occurs, and the Clear screen action step does not execute in design mode.
 
 [[debug-workflow]]
 == Debug Workflow
-With the *Debug Workflow* (image:debug-icon.png[The Debug Workflow icon, 2%, 2%]) button, you can start a debug run of the active Workflow project. The Workflow Debugger automatically starts if you have set break points in your Workflow or if any error occurs during the debug run. Here you can make changes to Workflow elements and retry certain Action Steps or complete Transactions until they work properly. Then, you can continue to execute the Workflow from the current position without having to start the debug run at the beginning.
+With the *Debug Workflow* (image:debug-icon.png[The Debug Workflow icon, 2%, 2%]) button, you can start a debug run of the active Workflow project. The Workflow Debugger automatically starts if you have set break points in your Workflow or if any error occurs during the debug run. Here you can make changes to Workflow elements and retry certain action steps or complete Transactions until they work properly. Then, you can continue to execute the Workflow from the current position without having to start the debug run at the beginning.
 
 // For more information about the Workflow Debugger see Using Workflow Debuger(5.3).
 
@@ -189,7 +189,7 @@ The analysis information includes the trace file and Workflow Run Results. After
 
 ==== Opening an analysis package
 
-When you import an analysis package into RPA Builder, the corresponding process and the relevant Activity Workflow open automatically. To make searching for the error easier, *Run Result Marking* immediately displays the Action Step in which the error occurred.
+When you import an analysis package into RPA Builder, the corresponding process and the relevant Activity Workflow open automatically. To make searching for the error easier, *Run Result Marking* immediately displays the action step in which the error occurred.
 
 image:run-result-marking.png[The Run Result Marking icon, 40%, 40%]
 

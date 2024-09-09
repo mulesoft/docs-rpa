@@ -26,7 +26,7 @@ want to enter text, set this to _Enter Text_.
 
 == Outbound Variables
 
-The Action Step _Confirm Alert Box_ possesses no outbound variables.
+The action step _Confirm Alert Box_ possesses no outbound variables.
 
 == Wizard
 

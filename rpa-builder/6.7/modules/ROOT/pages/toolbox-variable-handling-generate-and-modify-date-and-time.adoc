@@ -7,7 +7,7 @@ day, month, and hour. You can specify the timestamp as a specific time
 in the future or past, or use the current system time. It is also
 possible to incorporate a time offset in days, hours, minutes, and
 seconds. _Generate date and time_ creates a timestamp that is available in several variables, which you can further process in
-other _Action Steps_.
+other _action steps_.
 
 == Properties
 

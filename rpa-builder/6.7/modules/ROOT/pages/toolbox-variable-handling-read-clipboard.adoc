@@ -2,7 +2,7 @@
 
 = Read Clipboard
 
-This _Action Step_ simply copies the current clipboard content into a
+This _action step_ simply copies the current clipboard content into a
 variable (see Section xref:advanced-concepts-using-variables.adoc[Using Variables]) for further
 usage within the _Workflow_.
 
@@ -24,7 +24,7 @@ contain any data that might otherwise have been stored there from a
 previous action.
 
 The _CTRL+C_ command takes a variable amount of time to perform the
-copy, depending on system load, so this _Action Step_ includes a
+copy, depending on system load, so this _action step_ includes a
 _Timeout_. The buffer is checked every 250 ms to see if it contains any
 data.
 
@@ -46,5 +46,5 @@ clipboard should be cleared after reading or not.
 
 *ClipboardContent* The content of the clipboard.
 
-Note that this _Action Step_ will throw an error if the clipboard
+Note that this _action step_ will throw an error if the clipboard
 contains anything other than text (such as images, files, etc.).

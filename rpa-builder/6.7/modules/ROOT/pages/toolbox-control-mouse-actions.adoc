@@ -2,14 +2,14 @@
 
 = Mouse Actions
 
-The _Mouse Actions_ Action Step emulates mouse moves and clicks.
+The _Mouse Actions_ action step emulates mouse moves and clicks.
 Keyboard inputs can be used to modify the mouse clicks.
 
 You can capture mouse actions directly or create and/or edit them in the
 wizard. The speed of mouse actions can also be defined.
 
 Mouse moves can be created relative to a specific coordinate. This
-coordinate may be determined by a previous _Action Step_ such as a image
+coordinate may be determined by a previous _action step_ such as a image
 or text search, for example.
 
 == Properties
@@ -20,7 +20,7 @@ or text search, for example.
 action is to be performed. If no _Pin_ variable has been assigned, this
 is the top-left corner of the screen.  This anchor point can also be set as a placeholder (<<Inbound Variables>>).
 
-Please note that the _Action Step_ that returns the coordinates must
+Please note that the _action step_ that returns the coordinates must
 occur within the same _Transaction_ in order to appear here as a
 possible _Pin_ variable.
 
@@ -49,7 +49,7 @@ coordinate rather than the top-left corner of the screen.
 
 The _Group_ block possesses no outbound variables.
 
-//The following Action Steps can supply suitable coordinates:
+//The following action steps can supply suitable coordinates:
 
 //image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=368,height=118]
 
@@ -61,7 +61,7 @@ The _Group_ block possesses no outbound variables.
 _Capturing mouse actions_
 
 It is easy to capture the desired mouse action using the wizard for the
-_Mouse Actions_ Action Step.
+_Mouse Actions_ action step.
 
 First click on the image:media\image3.png[image,width=53,height=23]
 button. The capture process now begins. Every mouse action that you
@@ -176,7 +176,7 @@ enabled, the RPA Builder window is hidden while mouse actions are
 captured.
 
 *Relative To* (default: none) The position where the mouse action is to
-be performed can be defined based on a previously executed Action Step
+be performed can be defined based on a previously executed action step
 (see also <<Inbound Variables>>).
 
 *Mouse click timing* (see <<Properties>>).

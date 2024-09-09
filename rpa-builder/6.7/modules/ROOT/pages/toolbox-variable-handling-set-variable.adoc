@@ -2,20 +2,20 @@
 
 = Set Variable
 
-The _Set Variable_ Action Step assigns a new value to a variable. You
+The _Set Variable_ action step assigns a new value to a variable. You
 can either enter the new value directly or use an existing variable of
-the same type, e.g. the input variable of another _Action Step_. The
+the same type, e.g. the input variable of another _action step_. The
 variables must be of the same type in order to populate one variable
 with the content of another variable, e.g. you can only populate a
 variable of type:Text with another variable of type:Text In order to
-ensure that the types are the same, this _Action Step_ has to be
+ensure that the types are the same, this _action step_ has to be
 configured in several stages (see step-by-step instructions for the
 wizard below). Validation of variable types is performed when the
-_Action Step_ is launched.
+_action step_ is launched.
 // but you can also perform validation using the image:media\image1.png[image,width=21,height=25] button in the toolbar.
 
 Variables from the _BasePath_ *cannot* be
-modified using the _Set Variable_ Action Step. Attempting to do so will
+modified using the _Set Variable_ action step. Attempting to do so will
 generate an error message.
 
 Changes to a variable are logged in the _Workflow Run Results_. The logs record both the old
@@ -30,7 +30,7 @@ characters are shown in truncated form.
 field is only displayed when the new value is being entered manually. If
 the new value is based on another variable, the field is not displayed.
 
-Other properties that are the same in all Action Steps are described in
+Other properties that are the same in all action steps are described in
 section 2.2. For reasons of clarity they are not shown here.
 
 == Wizard
@@ -45,19 +45,19 @@ can also insert variables from the workflow.
 //To do so, click the image:media\image2.png[image,width=17,height=24] button and select one of the available variables.
 
 Variables from the _BasePath_ *cannot* be
-modified using the _Set Variable_ Action Step. Attempting to do so will
+modified using the _Set Variable_ action step. Attempting to do so will
 generate an error message.
 
 == Step-By-Step – Configure Set Variable as Follows
 
 [arabic]
-. Drag the _Set Variable_ Action Step to the desired position in the
+. Drag the _Set Variable_ action step to the desired position in the
 workflow.
 . Open the _Set Variable_ wizard.
 . Enter a new value for the variable to be changed in the _Value_ field.
 You can also insert variables from the _Workflow_. To do so, click the
 pin button and select one of the available variables.
-. Click on the pin in the _Set Variable_ Action Step in the _Workflow_.
+. Click on the pin in the _Set Variable_ action step in the _Workflow_.
 . In the "Edit Variable Mappings for …" dialog, select the variable that
 you wish to modify from the "Variable" drop-down menu. The drop-down
 menu will only show variables that are of the same type. +
@@ -66,7 +66,7 @@ of another variable. This menu also only displays variables that are of
 the same type. To use the value specified in the wizard, leave the
 <None> option in the drop-down menu. +
 Confirm your selection with OK.
-. The pin for the _Set Variable_ Action Step will now be shown in red.
+. The pin for the _Set Variable_ action step will now be shown in red.
 . As an extra check, open the _Set Variable_ wizard. The "Variable"
 field should now now show the variable to be changed, followed by its
 type in brackets.

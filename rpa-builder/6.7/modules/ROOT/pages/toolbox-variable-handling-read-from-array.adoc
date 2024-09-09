@@ -2,14 +2,14 @@
 
 = Read from Array
 
-The _Read from Array_ Action Step is used to access the content of an
+The _Read from Array_ action step is used to access the content of an
 array.
 
 You can either return a value at a certain point in the array via an
 index or return the whole array as text. In the latter case, all values
 are listed as comma separated values.
 
-The _Read from Array_ Action Step provides the read values from the
+The _Read from Array_ action step provides the read values from the
 array automatically as various data types. You can decide later in the
 Workflow which data type you wish to use.
 
@@ -30,7 +30,7 @@ number of all elements within the array.
 
 The drop-down _Array to read from_ list contains all the arrays that
 have been created in the Workflow so far. These can be
-_Workflow Based Variables_ or return arrays from the _Read from Excel File_ Action Step.
+_Workflow Based Variables_ or return arrays from the _Read from Excel File_ action step.
 
 //link:#Array_ReadFromArray_IndexTorReadAt[*Index to read at*]
 *Index to read at**(integer, > 0, default: 1) Position within the array where the content
@@ -38,7 +38,7 @@ of the array is to be read from. Indexing starts at 1.
 
 == Outbound Variables
 
-The __Read from Array__Action Step automatically supplies four different
+The __Read from Array__action step automatically supplies four different
 return values. Each one represents one of the possible data types.
 Depending on what you want to use the data for, you will take a
 different data type. In a _Keystroke_, for example, you will use the
@@ -57,8 +57,8 @@ compatible with the desired data type.
 For example, a character string such as "abc" cannot be converted into a
 meaningful integer number.
 
-If you want to use the return value from the Read from Array Action Step
-in another in Action Step, a pre-selection will be made for you as to
+If you want to use the return value from the Read from Array action step
+in another in action step, a pre-selection will be made for you as to
 which data types can meaningfully be used at this point.
 
 The following table provides an overview of the result of converting the
@@ -87,7 +87,7 @@ converting to the data type in the column header.
 The drop-down _Array to read from_ list contains all the arrays that
 have been created in the Workflow so far. These can be
 _Workflow Based Variables_ or return
-arrays from the _Read from Excel File_ Action Step.
+arrays from the _Read from Excel File_ action step.
 
 If you select the checkbox _Get entire array as comma separated values_,
 the whole array will be returned as a string. The individual values
@@ -105,7 +105,7 @@ selected.
 
 == Example
 
-For a detailed example, please refer to the description of the _Get Array Count_ Action Step.
+For a detailed example, please refer to the description of the _Get Array Count_ action step.
 ////
 == Related Elements
 

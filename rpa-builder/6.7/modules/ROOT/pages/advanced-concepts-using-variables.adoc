@@ -5,20 +5,20 @@ Variables are powerful tools that allow you to save and use values
 throughout your Workflow. You can predefine variables (the _Login Data_
 in your _Workflow_ for example) or create variables at runtime (by using
 _Read Clipboard_ for example) and then use these variables within other
-_Action Steps_. Think of a variable as a placeholder for any
+_action steps_. Think of a variable as a placeholder for any
 text/numeric constant, or value. When creating the _Workflow_, you can
 create variables and use them as placeholders. During execution, these
 variables will be resolved to the value you gave them or that you want
 to assign to during execution. For example, if _Read Clipboard_ is used,
 then the clipboard content at that point during execution will be
-transferred to a variable and any _Action Step_ referencing that
+transferred to a variable and any _action step_ referencing that
 variable will then use the value transferred.
 
 == Pin Variables
 
 Pin variables are used by creating a mapping between one set of _Action
-Step_ properties and another _Action Step_ variable. If this option is
-available, a little pin will be shown on the _Action Step_ that can be
+Step_ properties and another _action step_ variable. If this option is
+available, a little pin will be shown on the _action step_ that can be
 mapped to:
 
 image::advanced-concepts-using-variables-pin-variables-image1.png[Example Pin, 25%, 25%]
@@ -34,23 +34,23 @@ Here you can see a list of all _Ping_ properties that can be mapped to.
 Each property has an adjacent drop-down box containing all variables
 which can be mapped to the associated property. To map a variable,
 simply select it from the drop-down box. The variables which can be
-allocated may change depending on the position of the _Action Step_. A
+allocated may change depending on the position of the _action step_. A
 variable can only be allocated to the property "Suffix" within a
 configured _File Controlled Loop_. Other variables are limited to one
 _Transaction_. This limitation can be overcome using the _Variable_
-_Action Step_. When you close the wizard, you will see that there is now
+_action step_. When you close the wizard, you will see that there is now
 an active mapping, indicated by a black pin:
 
 image::advanced-concepts-using-variables-pin-variables-image3.png[Example black pin, 25%, 25%]
 
-You can also view a list of all other _Action Steps_ that a particular
-_Action Step_ has taken variables from.
+You can also view a list of all other _action steps_ that a particular
+_action step_ has taken variables from.
 
-To do this, open the context menu for the _Action Step_ of interest by
+To do this, open the context menu for the _action step_ of interest by
 right-clicking on the _Workbench_, then select the entry _Mapped to
-Action Step_. The list will be displayed as a a sub-menu.
+action step_. The list will be displayed as a a sub-menu.
 
-image::advanced-concepts-using-variables-pin-variables-image4.png[List Mapped to Action Step, 50%, 50%]
+image::advanced-concepts-using-variables-pin-variables-image4.png[List Mapped to action step, 50%, 50%]
 
 Clicking on an element in this sub-menu will take you directly to the
-corresponding _Action Step._
+corresponding _action step._

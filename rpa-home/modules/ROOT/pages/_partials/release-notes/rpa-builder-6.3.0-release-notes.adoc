@@ -37,7 +37,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 |===
 | Issue Resolution | ID
 
-| Renamed the label “Additional Customer Info” to “Custom Message” in the Write Bot Message Action Step. | W-13485502
+| Renamed the label “Additional Customer Info” to “Custom Message” in the Write Bot Message action step. | W-13485502
 | RPA Builder no longer shows a "Script run results can not be loaded" error when reading a file. | W-13577924
 | The lock icon in the repository explorer now updates properly when a process is locked. | W-13221095
 |===

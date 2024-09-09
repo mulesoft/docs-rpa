@@ -1,18 +1,18 @@
 = Ping
 
-This _Action Step_ is used for sending a ping to a computer or network
+This _action step_ is used for sending a ping to a computer or network
 device. _Ping_ is useful to check if a particular machine is available
 on the network right at the start of a measurement _Workflow_. If not,
 it may be pointless to even try to continue the measurement.The response
 time measured provides a _Measurement Point_.
 
-The Action Step _Ping_ only supports IPv4.
+The action step _Ping_ only supports IPv4.
 
 == Properties
 
 *Invert Logic* If it is intentional that the destination host should be
 unreachable and you want to test this, you can invert the logic of the
-_Ping_ _Action Step_ by using this function. If the checkbox is
+_Ping_ _action step_ by using this function. If the checkbox is
 selected, then an unsuccessful ping is considered to be the correct
 result.
 
@@ -57,7 +57,7 @@ saves it
 * *Max* The slowest time measured is saved
 
 ////
-The Action Step _Ping_ is currently not supported by X1 Server 5.2. This
+The action step _Ping_ is currently not supported by X1 Server 5.2. This
 means that it is currently not possible to evaluate the data on the
 server. You can still use the Ping in RPA Builder because they
 are still displayed in the _Workflow Run Results_.
