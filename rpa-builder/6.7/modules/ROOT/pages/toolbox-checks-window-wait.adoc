@@ -1,12 +1,12 @@
 = Window Wait
 
-The _action step Window Wait_ pauses the Workflow until a certain window
+The action step _Window Wait_ pauses the Workflow until a certain window
 is displayed or not displayed. This window is recognized by its window
 title and can be specified by _Window Text_ additionally. Different
 modes allow for checking if the window is appearing, disappearing or
 activated.
 
-You can deploy _Window Wait_ after the _action step Run Program_ or if
+You can deploy _Window Wait_ after the action step _Run Program_ or if
 you anticipate a dialog window as result of a preceding action. This enables you to continue the _Workflow_ and stop or start a timer at exactly the right moment.
 
 Often the title of a window changes. In particular, the title of
@@ -150,7 +150,7 @@ If one or more windows are found, the first from this list will be
 activated.
 +
 If the _Timeout_ is exceeded without the window having appeared, the
-_Actions Step_ returns an error.
+action step returns an error.
 +
 ** *Window Disappears*
 +_Window Wait_ waits at most for the given
@@ -158,7 +158,7 @@ _Timeout_ time until a window matching the search criteria cannot be
 found (anymore).
 +
 If the _Timeout_ is exceeded without the window having appeared, the
-_Actions Step_ returns an error.
+action step returns an error.
 ** *Window is active*
 +
 _Window Wait_ checks, if a window matching the
@@ -186,7 +186,7 @@ the given _Timeout_ time until a window matching the search criteria is
 found.
 +
 If the _Timeout_ is exceeded without the window having appeared, the
-_Actions Step_ returns an error.
+action step returns an error.
 ** *Window exists (without Activation)*
 +
 _Window Wait_ checks, if a

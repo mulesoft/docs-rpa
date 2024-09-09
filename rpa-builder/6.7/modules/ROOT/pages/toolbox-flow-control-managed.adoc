@@ -3,8 +3,7 @@
 = Managed
 
 The _Managed_ block allows you to handle errors within your _Workflow_
-as they happen. It also can be used to make sure that certain _Action
-Steps_ or _Transactions_ are executed, even if an error occurred.
+as they happen. It also can be used to make sure that certain action steps or _Transactions_ are executed, even if an error occurred.
 
 == Properties
 

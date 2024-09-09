@@ -34,12 +34,12 @@ closed.
 The _Pattern Select_ image search is configurable and can contain up to
 50 search patterns.
 
-The configuration of the _action step Pattern Select_ cannot be changed
-in Debug Mode. However, you can change the configuration of the _Action
-Steps_ contained in the _Cases_ and the _DoElse_ block of the _Action
-Step Pattern Select_.
+The configuration of the action step _Pattern Select_ cannot be changed
+in Debug Mode. However, you can change the configuration of the action
+steps contained in the _Cases_ and the _DoElse_ block of the action
+step _Pattern Select_.
 
-If you set a _Breakpoint_ at the _action step Pattern Select_, you can
+If you set a _Breakpoint_ at the action step _Pattern Select_, you can
 run through the different _Case_ branches by repeating the action step
 in _Debug_ mode while changing the displayed search pattern after
 breaking.

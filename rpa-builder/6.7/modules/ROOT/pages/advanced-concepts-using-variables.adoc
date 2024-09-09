@@ -16,8 +16,7 @@ variable will then use the value transferred.
 
 == Pin Variables
 
-Pin variables are used by creating a mapping between one set of _Action
-Step_ properties and another action step variable. If this option is
+Pin variables are used by creating a mapping between one set of action step properties and another action step variable. If this option is
 available, a little pin will be shown on the action step that can be
 mapped to:
 
@@ -53,4 +52,4 @@ action step_. The list will be displayed as a a sub-menu.
 image::advanced-concepts-using-variables-pin-variables-image4.png[List Mapped to action step, 50%, 50%]
 
 Clicking on an element in this sub-menu will take you directly to the
-corresponding _action step._
+corresponding action step.

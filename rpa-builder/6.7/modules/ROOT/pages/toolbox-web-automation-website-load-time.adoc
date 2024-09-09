@@ -47,8 +47,8 @@ Time_ action step was unable to load the specified URL.
 
 It is also possible to perform further processing on the measured values
 for _Website Load Time_ using the _Website Load Time.Result_ variable.
-This variable has the same content as the `.har` file after the _Action
-Step_ has been executed.
+This variable has the same content as the `.har` file after the action
+step has been executed.
 
 == Properties
 

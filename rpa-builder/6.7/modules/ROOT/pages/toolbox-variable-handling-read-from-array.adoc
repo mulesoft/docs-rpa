@@ -38,7 +38,7 @@ of the array is to be read from. Indexing starts at 1.
 
 == Outbound Variables
 
-The __Read from Array__action step automatically supplies four different
+The _Read from Array_ action step automatically supplies four different
 return values. Each one represents one of the possible data types.
 Depending on what you want to use the data for, you will take a
 different data type. In a _Keystroke_, for example, you will use the
