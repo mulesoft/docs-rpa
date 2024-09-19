@@ -76,5 +76,5 @@ If you don't know the permissions and protocols that apply to your case, select 
 
 == See Also 
 
-* xref:toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[]
+* xref:toolbox-mail-operations-mail-session-oauth.adoc[]
 * https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications[Azure Tutorial: Register a web application in Azure Active Directory B2C]
