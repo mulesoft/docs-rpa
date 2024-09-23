@@ -1,6 +1,6 @@
 = Get Web Element Text
 
-The _Get Element Text_ action step reads the _innerText_ of an element and returns it as the *Element Text* outbound variable, which makes it available for use in subsequent Action Steps through Pin Variables. 
+The _Get Element Text_ action step reads the _innerText_ of an element and returns it as the *Element Text* outbound variable, which makes it available for use in subsequent action steps through Pin Variables. 
 
 As an example, you can use this action step to copy an email address or other text from a web page and use it in another application.
 

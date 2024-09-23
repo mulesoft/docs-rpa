@@ -2,7 +2,7 @@
 
 = Math Operations
 
-You can use this Action Step to perform mathematical calculations. You
+You can use this action step to perform mathematical calculations. You
 can enter a formula with fixed values or add values using mapped
 variables. The result can be reused in the course of the workflow.
 

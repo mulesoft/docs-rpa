@@ -2,7 +2,7 @@
 
 = Window Set State
 
-This _Action Step_ allows you to change the state of a specific window.
+This action step allows you to change the state of a specific window.
 
 == Properties
 

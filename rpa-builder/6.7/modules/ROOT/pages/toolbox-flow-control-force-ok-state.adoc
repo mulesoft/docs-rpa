@@ -2,16 +2,16 @@
 
 = Force OK State
 
-This Action Step can reset an error state to OK. A process can thus be
+This action step can reset an error state to OK. A process can thus be
 continued despite an ERROR. In addition to this, it does not have any
 other configurable settings or wizard functions.
 
-Please note that the Action Step is only useful if you set it in the
+Please note that the action step is only useful if you set it in the
 _OnError_ section of a Managed Block. This is because only in this
 section will the error be treated as dealt with and processing the
 Activity Workflow can be continued.
 
-If you place the Action Step at a different point and the error occurs
-with a prior Action Step, the _Force OK State_ Action Step can never be
+If you place the action step at a different point and the error occurs
+with a prior action step, the _Force OK State_ action step can never be
 called. The Activity Workflow will therefore be terminated with Error at
 this point.

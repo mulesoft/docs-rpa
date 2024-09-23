@@ -2,18 +2,18 @@
 
 = Recalculate Excel File
 
-The Recalculate Excel File Action Step can be used to recalculate an
+The Recalculate Excel File action step can be used to recalculate an
 Excel sheet. If a value has subsequently changed, the values in the
 Excel sheet are updated. To be able to continue working with the new
 values, they must be read out again with the _Read from Excel File_
-Action Step.
+action step.
 
-With the Action Step Recalculate Excel File you can determine exactly
+With the action step Recalculate Excel File you can determine exactly
 where a recalculation should take place in the Workflow.
 
 The recalculation is documented in the Workflow Run Results.
 
-The _Read from Excel File_ Action Step can only be used inside an Excel
+The _Read from Excel File_ action step can only be used inside an Excel
 Session. Specify the source and destination file in the
 xref:toolbox-excel-operations-excel-session.adoc[Excel Session].
 
@@ -23,7 +23,7 @@ Please note the operation mode that you have selected in the Excel session:
 the selected Excel sheet.
 * *Read from source and write to different file* The recalculation is
 only performed in the selected destination file.
-* *Read only* The Action Step cannot be executed in Read only mode.
+* *Read only* The action step cannot be executed in Read only mode.
 
 == Properties
 
@@ -47,5 +47,5 @@ to be included in the recalculation.
 
 == Outbound Variables
 
-The Action Step _Recalculate Excel File_ possesses no outbound
+The action step _Recalculate Excel File_ possesses no outbound
 variables.

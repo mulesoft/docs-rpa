@@ -8,7 +8,7 @@ service is running and available on a particular server. This augments
 the classic end-to-end monitoring tools included with RPA Builder
 with some element monitoring checks.
 
-The _Service Check_ plug-in consists of a single new Action Step called
+The _Service Check_ plug-in consists of a single new action step called
 _Service Check_ – this is accessed in the same place as the other Action
 Step elements.
 
@@ -49,7 +49,7 @@ saves it
 * *Min* The fastest time measured is saved
 * *Max* The slowest time measured is saved
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
@@ -89,7 +89,7 @@ _Port_ and attempt to perform a default
 handshake for the chosen protocol. It will try as many times as defined
 in the _Iteration Count_. If you have activated the _Record Timer,_ the response time of the check
 will be recorded as a timer and sent to the server. The name appearing
-in the reporting corresponds to the name of the Action Step.
+in the reporting corresponds to the name of the action step.
 
 If it does not succeed after the defined number of attempts, it will
 fail and try again with the _Backup Host_. If the _Backup Host_ fails too (or the field is empty), the _Error Traces_ will be

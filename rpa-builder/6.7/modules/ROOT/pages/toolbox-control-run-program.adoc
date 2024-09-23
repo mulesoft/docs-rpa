@@ -2,7 +2,7 @@
 
 = Run Program
 
-This _Action Step_ is used to run a program by directly calling its
+This action step is used to run a program by directly calling its
 executable file.
 
 == Properties
@@ -44,13 +44,13 @@ _Maximized_, _Minimized_)
 Defines the working directory of the process started
 
 *Timeout* If _Wait for window_ _to appear_ is set, this defines how long
-the _Action Step_ will wait for the window to appear
+the action step will wait for the window to appear
 
 *Use regular expression* If _Wait for window to appear_ is set, this
 setting defines whether the _Window Title_ field contains a regular
 expression or not
 
-*Wait for window to appear* Defines whether the _Action Step_ should
+*Wait for window to appear* Defines whether the action step should
 wait until the window appears
 
 *Window Title* If _Wait for window_ _to appear_ is set, this defines the

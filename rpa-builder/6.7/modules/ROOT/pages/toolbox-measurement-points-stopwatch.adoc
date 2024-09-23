@@ -20,7 +20,7 @@ that was imported in the _File Controlled Loop_.
 
 == Outbound Variables
 
-The Action Step _Stopwatch_ has no outbound variables.
+The action step _Stopwatch_ has no outbound variables.
 
 == Wizard
 

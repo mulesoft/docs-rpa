@@ -39,13 +39,13 @@ last launched. It also contains information about the executing system.
 +
 Use this dialog to create and test regular
 expressions. You can also access the _Regex Tester_ directly from
-various _Action Steps_. The section on Using Regular Expressions includes a
+various action steps. The section on Using Regular Expressions includes a
 more detailed description of this dialog and of regular expressions in
 general.
 
 * *Generate OAuth Refresh Token*
 +
-Use this menu item to generate an OAuth token that you can use with the Mail Session (Outlook with OAuth) Action Step. This option opens the OAuth Token Creator, in which you specify your OAuth credentials to log in to the authentication server and generate the token.
+Use this menu item to generate an OAuth token that you can use with the Mail Session (Outlook with OAuth) action step. This option opens the OAuth Token Creator, in which you specify your OAuth credentials to log in to the authentication server and generate the token.
 
 * *Templates Manager*
 +
@@ -78,15 +78,15 @@ image::rpa-builder-options-general.png[Option General, 50%, 50%]
 * *Default Settings*
 ** *General timeout default for new projects*
 +
-If you want to use the same timeout for every _Action Step_ containing
+If you want to use the same timeout for every action step containing
 this property, you can enter the value here.
 +
-A timeout is the time span an _Action Step_ waits before reporting an
+A timeout is the time span an action step waits before reporting an
 error in case of failure.
 +
 This value is only used for initialization when creating a new project
-and can be replaced within each _Action Step_ by a value that is valid
-only for that _Action Step_.
+and can be replaced within each action step by a value that is valid
+only for that action step.
 +
 If you want to change the default timeout value for a whole Workflow
 which has already been created, please use the _Default Timeout [sec]_
@@ -194,7 +194,7 @@ show and hide the descriptions of individual Workflow elements on the
 Workbench in RPA Builder. This does not affect the visibility
 of the individual element descriptions for the Properties and tool tips,
 which are always visible. This option can also be modified via the _Show
-Action Step descriptions_ button or the CTRL+D shortcut. It is saved on
+action step descriptions_ button or the CTRL+D shortcut. It is saved on
 an individual user basis.
 
 ** *Show system parameters dialog*
@@ -225,7 +225,7 @@ _Repository_ and _Outline_.
 If any of these views are not visible, you can always show them again by
 using the View menu from the menu bar.
 
-The *_Toolbox_* contains a list of all elements, such as _Action Steps_
+The *_Toolbox_* contains a list of all elements, such as action steps
 and _Control Blocks_, which can be inserted in a _Workflow_.
 
 Elements are organized in categories, so that you can find fitting ones

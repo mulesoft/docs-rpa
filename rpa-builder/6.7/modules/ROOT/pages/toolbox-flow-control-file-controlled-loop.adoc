@@ -51,14 +51,14 @@ Converts all data to type String during runtime. In the wizard, you can convert 
 
 == Inbound Variables
 
-The Action Step File Controlled Loop has no Inbound variables.
+The action step File Controlled Loop has no Inbound variables.
 
 == Outbound Variables
 
-The Action Steps inside _File Controlled Loop_ return the respective column
+The action steps inside _File Controlled Loop_ return the respective column
 contents as variables.
 
-The names of the variables follow the pattern `<Action Step name>.<column name>`.
+The names of the variables follow the pattern `<action step name>.<column name>`.
 
 == Wizard
 
@@ -86,7 +86,7 @@ the *File Content Preview* section of the wizard.
 
 The *File Content Preview* section enables you to apply filters to each column by clicking the *Filter* button (image:filter-icon.png[The filter icon, 2%, 2%]). When you enter text in the *Filter* field, the preview filters out all rows that do not contain the specified text.
 
-image::file-controlled-loop-filter-dialog.png[The filter dialog of the File Controlled Loop Action Step, 30%, 30%]
+image::file-controlled-loop-filter-dialog.png[The filter dialog of the File Controlled Loop action step, 30%, 30%]
 
 Select *Use Regex* to use a regular expression instead of plain text when applying filters. 
 

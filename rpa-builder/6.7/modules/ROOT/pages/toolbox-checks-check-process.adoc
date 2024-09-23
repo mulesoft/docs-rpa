@@ -1,6 +1,6 @@
 = Check Process
 
-This _Action Step_ enables you to check if a process is running or not
+This action step enables you to check if a process is running or not
 and either kill it or launch another program.
 
 == Properties

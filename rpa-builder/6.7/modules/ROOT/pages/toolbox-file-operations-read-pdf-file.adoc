@@ -1,6 +1,6 @@
 = Read PDF File
 
-With the _Read PDF File_ Action Step, you can read text from a PDF file.
+With the _Read PDF File_ action step, you can read text from a PDF file.
 
 == Properties
 
@@ -80,6 +80,6 @@ When you have selected the area, close the window with _Save_.
 
 If you have selected an area to be read with one of the various Read
 Modes, you can use the *Test button* at the bottom right of the wizard
-in the Action Step to display the result.
+in the action step to display the result.
 
 //image:media\image5.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=364,height=256]

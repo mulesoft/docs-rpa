@@ -1,14 +1,14 @@
 = Activity Parameters
 
-The Action Step _Activity Parameters_ enables you to map variables
+The action step _Activity Parameters_ enables you to map variables
 that you can use not only in the Workflow, but also in the activities of
 the business process and gateways. This allows the Activity Parameters to be exchanged
 among the different elements. For example, the BPMN gateway uses the Activity Parameters
 to decide which activity should be executed next.
 
-image:toolbox-activity-parameters.png[The Activity Parameters Action Step, 40%, 40%]
+image:toolbox-activity-parameters.png[The Activity Parameters action step, 40%, 40%]
 
-A Workflow can have one _Activity Parameters_ Action Step and it's automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
+A Workflow can have one _Activity Parameters_ action step and it's automatically placed in the _Workflow Initialization_ section when creating a new Workflow.
 
 Activity Parameters consist of a name, description, and value. Activity parameter names have the following requirements:
 
@@ -88,7 +88,7 @@ already being used in a process.
 
 To connect an Activity Parameter with a Workflow:
 
-. Click the *Edit Variable Mappings* (image:pin-icon.png[The Edit Variable Mappings button, 2%, 2%]) button next to the Action Step for which you want to connect an Activity Parameter.
+. Click the *Edit Variable Mappings* (image:pin-icon.png[The Edit Variable Mappings button, 2%, 2%]) button next to the action step for which you want to connect an Activity Parameter.
 +
 image:rpa-home::activity-workflow-ocr.png[The Activity Workflow window, 40%, 40%]
 . Select the Activity Parameter you want to connect.
@@ -125,12 +125,12 @@ Simply leave this option disabled if the variables or their values contain confi
 
 == Inbound Variables
 
-The Action Step _Activity Parameters_ does not have any inbound
+The action step _Activity Parameters_ does not have any inbound
 variables.
 
 == Outbound Variables
 
-The Action Step _Activity Parameters_ does not have any outbound
+The action step _Activity Parameters_ does not have any outbound
 variables.
 
 == Wizard

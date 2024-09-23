@@ -9,11 +9,11 @@ grid_.
 
 == Properties
 
-_Action Step_ _System Validation_ has no further properties__.__
+_System Validation_ has no further properties__.__
 
 == Variables
 
-_Action Step_ _System Validation_ possesses no variables.
+_System Validation_ possesses no variables.
 
 == Wizard
 

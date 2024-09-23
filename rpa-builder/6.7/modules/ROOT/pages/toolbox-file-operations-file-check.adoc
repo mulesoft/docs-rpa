@@ -1,11 +1,11 @@
 = File Check
 
-Use the _File Check_ Action Step to check whether a file exists
+Use the _File Check_ action step to check whether a file exists
 or not. You can evaluate the result using the _File Check.Check Succeeded_ variable and use it in the later stages of the workflow.
 
 Before the process starts, the specified _Directory Path_
 is checked against the _Allowed Paths_. If the _Directory Path_
-specified in the Action Step is not allowed, the workflow is cancelled
+specified in the action step is not allowed, the workflow is cancelled
 and an error message displayed.
 
 == Properties

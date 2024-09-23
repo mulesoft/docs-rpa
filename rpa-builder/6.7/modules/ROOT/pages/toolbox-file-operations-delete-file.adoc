@@ -3,9 +3,9 @@
 = Delete File
 
 _Delete File_ will delete a file located at the specified path. The
-Action Step can be used, for example, to delete files which were
+action step can be used, for example, to delete files which were
 generated within a _Workflow_. If the file for deletion does not exist,
-the Action Step does *not* terminate the Workflow with an error. There
+the action step does *not* terminate the Workflow with an error. There
 is however an option that enables the generation of an error message in
 the event of a non-existent file.
 
@@ -27,7 +27,7 @@ does not exist. If this option is not enabled and the file does not
 exist, the _Workflow_ will continue and no error message will be
 generated.
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 

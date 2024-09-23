@@ -38,7 +38,7 @@ Example: Transaction 1 includes the keystroke `{CTRLDOWN}` and mouse clicks to s
 Disable warnings for leading and trailing blanks.
 ** *Static analysis image*
 +
-The analysis package contains additional information, so that you can view the cause of a failed image search directly in the window Search Results of the Action Step Search Pattern. If you want to analyze the errors without using RPA Builder, you can activate the option Static analysis image. The analysis image is packed into the analysis folder.
+The analysis package contains additional information, so that you can view the cause of a failed image search directly in the window Search Results of the action step Search Pattern. If you want to analyze the errors without using RPA Builder, you can activate the option Static analysis image. The analysis image is packed into the analysis folder.
 * *Image Processing*
 ** *Color Depth*
 +

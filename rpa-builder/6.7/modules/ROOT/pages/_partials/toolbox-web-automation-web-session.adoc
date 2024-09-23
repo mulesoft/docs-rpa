@@ -86,11 +86,11 @@ To do this, proceed as follows:
 . Create a web session ID in the activity parameter.
 . Link the web session ID with the workflow.
 +
-You will find the web session ID in the _Activity Parameters_ Action Step, which you placed in the
+You will find the web session ID in the _Activity Parameters_ action step, which you placed in the
 Workflow Initialization Block beforehand.
 . Link the web session ID in the corresponding web session.
 . Optionally, ff you want the web session to be closed at a later point in the
-workflow, use the _Close Web Session_ Action Step.
+workflow, use the _Close Web Session_ action step.
 //end::activityWorkflowOverlappingWebSession[]
 
 //tag::closingWebSession[]
@@ -114,7 +114,7 @@ that is, the browser remains open – and can be used further
 //(see the chapter _Cross-Activity Workflow Web Session_).
 * The browsers is closed by using the _Close Web Session_ action step
 +
-The Action Step _Close Web Session_ gives you the additional option of
+The action step _Close Web Session_ gives you the additional option of
 closing the session at a specific point in the Workflow.
 
 //end::closingWebSession[]
@@ -142,7 +142,7 @@ image:web-session-chrome-wizard.png[Web Session (Chrome) Wizard]
 +
 image:rpa-recorder-review-web-recording.png[Review web session recording]
 +
-. Click *OK & generate* in RPA Builder to generate the appropriate Action Steps, which are added to the web session automatically.
+. Click *OK & generate* in RPA Builder to generate the appropriate action steps, which are added to the web session automatically.
 
 === Reuse Web Session 
 
@@ -200,6 +200,6 @@ Use this option to define where you want the mouse to move to. This prevents the
 image:toolbox-variable-web-automation-web-session-images/image4.png[50%, 50%, "An image showing the Keep out mouse, move it to: option."]
 +
 You can also define whether or not you want to execute this action after
-every Action Step.
+every action step.
 
 //end::wizardCommon[]

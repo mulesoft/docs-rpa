@@ -2,10 +2,10 @@
 
 = Read from Text File
 
-The _Read from Text File_ Action Step allows you to read from a text
+The _Read from Text File_ action step allows you to read from a text
 file and you use the _Read_ _Mode_ to specify which part of the file is
 to be read. The button in the Workflow shows the _Read Mode_ that is
-presently active in brackets after the name of the Action Step (in the
+presently active in brackets after the name of the action step (in the
 example above: WholeFile). There is an option to determine whether the
 text should be deleted after reading.
 
@@ -48,7 +48,7 @@ of lines_) should be read in _Read file check mode_. The advantage of
 this option compared to the _Line count_ option is that you do not have
 to define how many lines are to be read when in _Range of lines_ mode.
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 

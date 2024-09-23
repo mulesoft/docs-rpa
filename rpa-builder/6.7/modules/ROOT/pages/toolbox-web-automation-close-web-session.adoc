@@ -2,14 +2,14 @@
 
 = Close Web Session
 
-The Action Step _Close Web Session_ enables you to close a web session.
+The action step _Close Web Session_ enables you to close a web session.
 
-To do so, the Action Step must be mapped to an existing web session ID,
+To do so, the action step must be mapped to an existing web session ID,
 to enable unique identification of the web session to be closed.
 
 //image:media\image1.png[Ein Bild, das Text enthält. Automatischgenerierte Beschreibung,width=290,height=125]
 
-The Action Step _Close Web Session_ can only be placed outside of a web
+The action step _Close Web Session_ can only be placed outside of a web
 session.
 
 == Properties

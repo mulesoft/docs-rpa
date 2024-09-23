@@ -1,15 +1,15 @@
 = Excel Controlled Loop
 
-Use Excel Controlled Loop to read an Excel file and make the data available as variables. This Action Step works in a similar way to the
+Use Excel Controlled Loop to read an Excel file and make the data available as variables. This action step works in a similar way to the
 xref:toolbox-flow-control-file-controlled-loop.adoc[File Controlled Loop] and also forms the
-framework for other Action Steps. The wizard provides setting options for determining the start (Read mode) and the end
+framework for other action steps. The wizard provides setting options for determining the start (Read mode) and the end
 (Terminate loop) of the iteration.
 
-The _Excel Controlled Loop_ Action Step works only within an Excel
+The _Excel Controlled Loop_ action step works only within an Excel
 Session, in which you specify the file to read.
 
 
-Excel Control Loop automatically recognizes the data type of each column. For Date types, the Action Step uses the system's locale settings to read and display the dates to ensure that the format remains unchanged. 
+Excel Control Loop automatically recognizes the data type of each column. For Date types, the action step uses the system's locale settings to read and display the dates to ensure that the format remains unchanged. 
 
 
 == Properties
@@ -109,7 +109,7 @@ Select this option to specify the column in the spreadsheet to start reading fro
 * *Start reading when condition matches* 
 +
 Select this option to determine the read area dynamically by using regular expressions.
-For example, if you specify `^PLZ`, the Action Step reads the
+For example, if you specify `^PLZ`, the action step reads the
 spreadsheet from the cell in which the content starts with `PLZ`.
 
 //image:media\image5.png[image,width=604,height=44]
@@ -136,7 +136,7 @@ under *Terminate loop*, the read operation finishes when the first of these cond
 
 Click *Preview* to display the contents of the selected read area. The preview shows a maximum of 20 rows.
 
-To use the first row as the column header, select *Has a header*. If you don't specify headers, the Action Step automatically creates headers as __Column_1__, __Column_2__, etc.
+To use the first row as the column header, select *Has a header*. If you don't specify headers, the action step automatically creates headers as __Column_1__, __Column_2__, etc.
 
 To change the data type of each column, use the *Type:* dropdown menus in the preview. 
 

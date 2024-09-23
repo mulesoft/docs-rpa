@@ -23,13 +23,13 @@ Command_, then enter the URL to be loaded here.
 
 == Outbound Variables
 
-The Action Step _Navigate_ possesses no outbound variables.
+The action step _Navigate_ possesses no outbound variables.
 
 Please note:
 
-When calling a specific page using the _Navigate_ Action Step, it is
+When calling a specific page using the _Navigate_ action step, it is
 important to note that the initial page build may take longer than the
-execution of the Action Step itself. The page request often loads only a
+execution of the action step itself. The page request often loads only a
 very small, initial HTML page. Therefore, while the page is being loaded
 for the user, the NavigateTo has long been completed.
 

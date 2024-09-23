@@ -25,10 +25,10 @@ the newly created file will be opened with the application that is
 associated with the file name of the new file. For example, if the new
 file name ends in *.txt it will normally be opened with Notepad.
 
-Leave this option disabled if you want another _Action Step_ to be able
+Leave this option disabled if you want another action step to be able
 to access the newly created file – otherwise it will be locked.
 
-Other Properties that are the same in all Action Steps are described in
+Other Properties that are the same in all action steps are described in
 the section on *Common Properties*. For reasons of
 clarity they are not shown here.
 
@@ -92,9 +92,9 @@ whole specified path, if this does not already exist.
 
 == Example
 
-Create an empty file using the _Create File_ Action Step and write text
-to that file using the _Write to Text File_ Action Step. The _Write to
-Text File_ Action Step can be pointed directly to the newly created file
+Create an empty file using the _Create File_ action step and write text
+to that file using the _Write to Text File_ action step. The _Write to
+Text File_ action step can be pointed directly to the newly created file
 using, for example, the _Create File.Directory Path_ and _Create
 File.FileName_ variables. This allows you to create your own log file
 containing text that is of interest to you.

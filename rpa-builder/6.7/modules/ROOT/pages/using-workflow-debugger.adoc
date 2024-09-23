@@ -10,9 +10,9 @@ image:workflow-debugger-window.png[The Workflow Debugger window]
 
 [calloutlist]
 . The first pane in Workflow Debugger shows a condensed view of your Workflow and an arrow indicating which step was the last to execute.
-. The second pane shows the debug information for the selected Action Step. The Debug Information panel contains a combination of configuration settings and runtime information relating to Action Steps already executed.
+. The second pane shows the debug information for the selected action step. The Debug Information panel contains a combination of configuration settings and runtime information relating to action steps already executed.
 
-In this example, the Workflow entered the error state at the Window Wait Action Step. In the Debug Information panel, the *Result* section confirms that the window could not be found. Also, in the *Configuration* section, the *WindowTitle* value is set to `testname`, which caused the error because no window with that title existed during the execution.
+In this example, the Workflow entered the error state at the Window Wait action step. In the Debug Information panel, the *Result* section confirms that the window could not be found. Also, in the *Configuration* section, the *WindowTitle* value is set to `testname`, which caused the error because no window with that title existed during the execution.
 
 == Workflow Debugger Toolbar
 
@@ -20,10 +20,10 @@ The Workflow Debugger Toolbar contains the following buttons:
 
 * (image:reload-workflow-icon.png[The Repeat icon, 2%, 2%]): *Repeat*
 +
-Executes the Action Step again.
+Executes the action step again.
 * (image:edit-and-repeat-icon.png[The Edit & Repeat icon, 2%, 2%]): *Edit & Repeat*
 +
-Opens the wizard for the last Action Step executed and enables you to modify its configuration and settings to fix the error. The Action Step then executes again to ensure it works correctly after the changes. The Workflow Debugger shows again on completion and you can check whether the *Run State* is `OK` or `Error`.
+Opens the wizard for the last action step executed and enables you to modify its configuration and settings to fix the error. The action step then executes again to ensure it works correctly after the changes. The Workflow Debugger shows again on completion and you can check whether the *Run State* is `OK` or `Error`.
 * (image:run-process.png[The Continue icon, 2%, 2%]): *Continue*
 +
 Continues the Workflow execution.
@@ -36,7 +36,7 @@ Use this button to execute the Workflow step-by-step.
 +
 Stops the current debugging run and returns to RPA Builder.
 
-Note that you can call the wizard for an Action Step at any time by double-clicking it.
+Note that you can call the wizard for an action step at any time by double-clicking it.
 
 == Using Breakpoints
 
@@ -44,11 +44,11 @@ Breakpoints enable you to set points in the Workflow where the Workflow Debugger
 
 To add a breakpoint to a Workflow object in the Workbench, right-click the object and select *Set Breakpoint* from the context menu. The breakpoint icon (image:breakpoint-icon.png[The Breakpoint icon, 2%, 2%]) shows next to that element.
 
-image:breakpoint.png[The Workflow window showing a Breakpoint next the to the Window Wait Action Step, 50%, 50%]
+image:breakpoint.png[The Workflow window showing a Breakpoint next the to the Window Wait action step, 50%, 50%]
 
 To remove the breakpoint, right-click the Workflow object again and select *Delete Breakpoint* from the context menu.
 
-Setting a breakpoint for an item that contains other Action Steps (Transaction, Managed Block, etc.) enables you to repeat that item (and all of its contents) as a complete unit. This is useful when you are not quite sure of the root cause of an error. You can repeat the surrounding Transaction until you find out where an error occurs.
+Setting a breakpoint for an item that contains other action steps (Transaction, Managed Block, etc.) enables you to repeat that item (and all of its contents) as a complete unit. This is useful when you are not quite sure of the root cause of an error. You can repeat the surrounding Transaction until you find out where an error occurs.
 
 You can also set and delete breakpoints directly in the Workflow Debugger by clicking on the bar that shows before an object:
 
