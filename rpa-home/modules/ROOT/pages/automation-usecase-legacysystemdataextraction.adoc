@@ -5,7 +5,7 @@ Extracting data from legacy systems is a common use case for RPA. Companies use 
 
 Examples of data extraction use cases are:
 
-* Retrieve an order ID from a legagy system to get a tracking number from an order tracking application.
+* Retrieve an order ID from a legacy system to get a tracking number from an order tracking application.
 * Retrieve data from a legacy AMS to create a CRM report in Salesforce. (Check out this https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.10/pages/604-0mq/Use%20case%207%20-%20Unlock%20AMS%20through%20hyperautomation%20for%20insurance%20brokers/[Accelerator]!)
 * Migrate all of the data of a legacy application to a state-of-the-art application.
 
