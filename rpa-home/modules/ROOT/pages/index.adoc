@@ -93,6 +93,7 @@ MuleSoft RPA provides the following applications that enable you to manage the c
 
 * xref:hardware-software-requirements.adoc[Hardware and Software Requirements]
 * xref:automation-tutorial-introduction.adoc[Tutorial: Build an Automation from Start to Finish]
+* xref:automation-usecase-legacysystemdataextraction.adoc[Use Case: Extracting Data from a Legacy System]
 * xref:rpa-manager::index.adoc[RPA Manager Overview]
 * xref:rpa-builder::index.adoc[RPA Builder Overview]
 * xref:rpa-recorder::index.adoc[RPA Recorder Overview]
