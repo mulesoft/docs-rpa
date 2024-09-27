@@ -8,7 +8,7 @@ Depending on the mail provider you use, ensure you have the following:
 
 * *Outlook*
 ** An Azure account
-** SMTP AUTH enabled for your Microsoft organization or the specific mail when connecting with an Azure environment via SMTP
+** SMTP AUTH enabled for your Microsoft organization or the specific mailbox when connecting with an Azure environment via SMTP
 +
 For configuration instructions, see: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission[Enable or disable authenticated client SMTP submission (SMTP AUTH) in Exchange Online]
  
