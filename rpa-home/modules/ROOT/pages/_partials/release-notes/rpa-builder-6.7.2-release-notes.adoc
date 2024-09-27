@@ -31,7 +31,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="5a,1a"]
 |===
 | Issue Resolution | ID
-| Execute Excel Macro no longer shows an incorrect error message when trying to include it inside an Excel Session. | W-16603539
+| Execute Excel Macro no longer shows an incorrect error message when including it inside an Excel Session. | W-16603539
 | Run Program no longer truncates the command line to 1024 characters. | W-16721834
 | Read Email no longer fails to download and save mail attachments. | W-16723360
 | The logfile no longer shows entire array values to improve readability. | W-16760451
