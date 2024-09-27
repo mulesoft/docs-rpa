@@ -9,11 +9,8 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-//new action steps 
 
-//enhancements to action steps
-* The RPA Builder setup file now includes a digital signature to prevent security warnings. 
-//other updates 
+* The `StNetSh.exe` tool, part of the RPA Builder setup, now includes a digital signature to prevent security warnings. 
 * The Google Chrome driver is updated to version 130. 
 * The MS Edge driver is updated to version 129.
 
