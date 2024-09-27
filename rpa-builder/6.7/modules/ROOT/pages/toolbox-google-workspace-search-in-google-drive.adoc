@@ -57,7 +57,7 @@ Array of strings containing the names of the files or folders found
 +
 String indicating if the search was successful and returned no errors (`True`)
 +
-To confirm if the search returned any results, verify if the *Amount found matches* is higher than zero. The *Success* variable returns (`True`) even when there are no results but the search is successful. 
+To confirm if the search returns any results, verify if the *Amount found matches* is higher than zero. The *Success* variable returns (`True`) even if there are no results in a successful search. 
 
 == See Also
 
