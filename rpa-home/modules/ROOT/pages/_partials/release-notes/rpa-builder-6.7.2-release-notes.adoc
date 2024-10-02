@@ -1,0 +1,59 @@
+= RPA Builder 6.7.2 Release Notes
+
+RPA Builder is the on-premises application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== September 27, 2024
+ 
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+
+* The `StNetSh.exe` tool, part of the RPA Builder setup, now includes a digital signature to prevent security warnings. 
+* The Google Chrome driver is updated to version 130. 
+* The MS Edge driver is updated to version 129.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.6.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+// == Fixed Issues
+
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+| Execute Excel Macro no longer shows an incorrect error message when including it inside an Excel Session. | W-16603539
+| Run Program no longer truncates the command line to 1024 characters. | W-16721834
+| Read Email no longer fails to download and save mail attachments. | W-16723360
+| The logfile no longer shows entire array values to improve readability. | W-16760451
+| RPA Builder no longer causes an error when using Json Query inside a loop. | W-16766643
+| Using the Exchange protocol in Mail Session no longer throws an error. | W-16793354
+
+|===
+
+[[migrating-oauth-credentials]]
+== Migrating OAuth Credentials
+
+As part of the enhancement to Mail Session (OAuth) and the OAuth Credentials activity parameter, RPA Builder 6.7.0 and later versions automatically detect and update any existing OAuth Credentials and remove all existing mappings of this activity parameter. RPA Builder appends `_updated` to migrated activity parameters. 
+
+If your automation projects used OAuth Credentials, follow these steps after upgrading from a version earlier than RPA Builder 6.7.0 to complete the migration process: 
+
+. In RPA Builder, locate the updated OAuth Credentials activity parameters.
+. Add the updated activity parameters to the corresponding workflows and map them to the corresponding Mail Session (OAuth) action steps.
+. In RPA Manager, create a new OAuth Credential global variable in the credential pool. 
+. Map the new global variable with the updated OAuth Credentials activity parameters in the corresponding run configurations.
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center^]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]

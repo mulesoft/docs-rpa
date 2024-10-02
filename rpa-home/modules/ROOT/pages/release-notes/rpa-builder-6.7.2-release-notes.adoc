@@ -1,0 +1,1 @@
+include::partial$release-notes/rpa-builder-6.7.2-release-notes.adoc[]
