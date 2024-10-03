@@ -41,6 +41,8 @@ Pin credentials containing the Client ID and Client Secret of the connected app 
 +
 Execution ID of the document processing operation
 
+include::partial$mulesoft-idp.adoc[tag=commonInboundVariables]
+
 == Outbound Variables
 
 * *Success*
