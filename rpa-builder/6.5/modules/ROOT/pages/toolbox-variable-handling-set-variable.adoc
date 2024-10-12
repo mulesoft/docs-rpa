@@ -68,5 +68,5 @@ the same type. To use the value specified in the wizard, leave the
 Confirm your selection with OK.
 . The pin for the _Set Variable_ Action Step will now be shown in red.
 . As an extra check, open the _Set Variable_ wizard. The "Variable"
-field should now now show the variable to be changed, followed by its
+field should now show the variable to be changed, followed by its
 type in brackets.
