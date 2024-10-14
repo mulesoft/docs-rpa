@@ -18,7 +18,7 @@ path is used, then the path relates to the _Base Path_ variable.
 * *Force error if file exists* If this option has been enabled, an error
 message will interrupt the _Workflow_ if a file with the same name
 already exists. If this option has not been enabled and the file already
-exists, it will be replaced with an empty file and and no acknowledgment
+exists, it will be replaced with an empty file and no acknowledgment
 will be given.
 * *Open with associated application* If this option has been enabled,
 the newly created file will be opened with the application that is
@@ -80,7 +80,7 @@ variables.
 * *Force error if file exists* If this option has been enabled, an error
 message will interrupt the _Workflow_ if a file with the same name
 already exists. If this option has not been enabled and the file already
-exists, it will be replaced with an empty file and and no acknowledgment
+exists, it will be replaced with an empty file and no acknowledgment
 will be given.
 * *Open with associated application* If this option has been enabled,
 the newly created file will be opened with the application that is
