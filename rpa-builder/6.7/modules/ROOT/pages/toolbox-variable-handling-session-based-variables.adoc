@@ -43,7 +43,7 @@ To delete variables, click the *Delete Variable* (image:delete-icon.png[2%, 2%, 
 
 == Sharing Session Based Variables Between Workflows
 
-To share Session Based Variables, ensure you create the variables in each workflow using the same variable name and type. When a workflow updates a variable, any successive workflow that reads the same variable uses the updated value of said variable. 
+To share Session Based Variables, create the variables in each workflow using the same variable name and type. When a workflow updates a variable, any successive workflow that reads the same variable uses the updated value of said variable. 
 
 == See Also 
 
