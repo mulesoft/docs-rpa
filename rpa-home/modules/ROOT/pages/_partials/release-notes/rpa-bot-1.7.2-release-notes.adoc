@@ -22,7 +22,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header%autowidth.spread,cols="2a,1a"]
 |===
 | Issue Resolution | ID
-| RPA Bot no longer closes a secure session unexpectedly. | W-16808007 
+| RPA Bot no longer closes a Secure Session unexpectedly. | W-16808007 
 | RPA Bot no longer stops executing processes unexpectedly. | W-16548283 
 |===
 
