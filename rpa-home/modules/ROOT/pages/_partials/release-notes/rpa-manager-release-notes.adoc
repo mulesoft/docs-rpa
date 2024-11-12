@@ -13,7 +13,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |Issue Resolution |ID
 | Interval scheduling no longer shows incorrect times for the time zones of the logged-in user. | W-16739470
 | Activity parameters within a run configuration are no longer blocked from editing. | W-16821955
-| The list of run configurations in the production phase is now sortable by the _Type_ column. | W-16887965
+| The list of run configurations in the production phase no longer sorts incorrectly when clicking the _Type_ column. | W-16887965
 |===
 
 // == Known Issues
