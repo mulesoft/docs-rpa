@@ -12,7 +12,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | Interval scheduling now shows the correct times for all time zones of the logged-in user. | W-16739470
-| The edit action of activity parameters within a run configuration is selectable again. | W-16821955
+| Activity parameters within a run configuration are no longer blocked from editing. | W-16821955
 | The list of run configurations in the production phase is now sortable by the _Type_ column. | W-16887965
 |===
 
