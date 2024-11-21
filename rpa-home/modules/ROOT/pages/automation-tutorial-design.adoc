@@ -20,13 +20,24 @@ If you see a pop-up window asking for permission, select the checkbox to allow R
 
 After you log in to RPA Recorder, you can start the activity recording process. In this process, you alternate between adding activity steps in RPA Recorder and performing the actual actions in your computer that you want to record and include in the BPMN diagram. This procedure continues until you perform the last action and finish the recording.
 
+=== Before you Begin Recording the Process
+
+To prevent issues during the tutorial, before you start with the recording steps: 
+
+. Navigate to https://blogs.mulesoft.com/signup-for-our-newsletter/.
+. If a Cookie Consent pop-up shows, accept the cookies. 
+
+Performing this action prevents the pop-up from showing during the next steps of the automation tutorial, which could prevent you from finishing the process successfully. 
+
+=== Start the Recording 
+
 To record actions with RPA Recorder and create the BPMN diagram, follow these steps:
 
 . In RPA Recorder, click the *Start Recording* (image:start-recording.png[The start recording icon,1.5%,1.5%]) button and add the first activity step:
 .. In the *activity name* field, write `Open newsletter sign-up page`.
 .. In the drop down menu, select *Web task*.
 .. Click *Add*.
-.. In the browser session that opens, navigate to the +https://www.mulesoft.com/sign-up+ URL.
+.. In the browser session that opens, navigate to `+https://blogs.mulesoft.com/signup-for-our-newsletter/+`.
 . In the RPA Recorder panel, click the *Add activity* (image:add-activity.png[The add activity icon,1.5%,1.5%]) button and add a new activity step:
 +
 image:rpa-recorder-panel.png[The recorder panel of RPA Recorder]
@@ -37,7 +48,7 @@ image:rpa-recorder-panel.png[The recorder panel of RPA Recorder]
 +
 This option creates the `generatedWebSession1` Action Parameter, which enables you to continue using the same web session in subsequent Web tasks. You can also reference this parameter when you create new action steps during the build phase in RPA Builder. 
 .. Click *Add*
-.. In the sign-up page, provide an email address of your choice and click the accept (>) button.
+.. In the sign-up page, provide an email address of your choice and click *Sign up*.
 . In the RPA Recorder panel, click the *Stop recording* (image:stop-recording.png[The stop recording icon,1.5%,1.5%]) button.
 . Confirm that RPA Recorder generates a BPMN diagram as follows:
 +
