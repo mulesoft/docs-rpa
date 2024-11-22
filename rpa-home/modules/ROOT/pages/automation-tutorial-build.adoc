@@ -75,7 +75,9 @@ image:web-session-configuration.png[The Web Session Wizard showing the generated
 image:activity-workflow-ocr.png[The Activity Workflow section with an Intelligent OCR (2020) element]
 . Double-click the *Intelligent OC (2020)* element.
 . In *Search Mode*, select *Text Comparison*.
-. In *Search Text*, write `Thanks for signing up for the newsletter`.
+. In *Search Text*, write `"Thanks\s*for\s*signing\s*up"`.
++
+This regular expression matches the text even if it spans over multiple lines. 
 . Click *OK*.
 . In the top menu bar, click *File* > *Save Project*.
 
