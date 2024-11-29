@@ -4,11 +4,11 @@ RPA Builder is the on-premises application that enables you to build automations
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
-== October 4, 2024
+//TBD Release Date
+== December 9, 2024 
  
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
-
 
 * Submit Document to MuleSoft IDP and Retrieve Results from MuleSoft IDP action steps now include the following inbound variables: 
 ** *Action ID*
@@ -16,6 +16,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 ** *Anypoint URL*
 ** *Organisation ID* 
 * You can now define a custom attribute to read from when using the Get Web Element Text action step. 
+* RPA Builder now shows a detailed error message when an installed service or component is missing.  
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
@@ -25,6 +26,16 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1
 |Application |Version
 |RPA Recorder | 6.6.0 and later
 |RPA Bot | 1.0.0 and later
+|===
+
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+| Read Mail no longer saves attachments outside of the specified folder. | W-16942473
+| Saving mail attachments with invalid file names no longer causes an error. RPA Builder replaces the invalid characters and saves the file with the new name. | W-17201344
+| Read From Excel File no longer parses cell values incorrectly when the value starts with the `n` character.  | W-17246126
 |===
 
 [[migrating-oauth-credentials]]
