@@ -22,7 +22,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header%autowidth.spread,cols="2a,1a"]
 |===
 | Issue Resolution | ID
-| When you create an analysis package on a low-performing system, you may experience a long wait time because the system is processing a lot of data. This issue used to cause a Remoting Exception, but that's been fixed. Now, you can create analysis packages without errors.| W-17318237
+| Remoting Exception no longer occur when you create an analysis package on a low-performing system and experience a long wait time. | W-17318237
 | Null Reference Exceptions no longer occur on closing a Desktop Session. | W-17318518
 | When installing a MuleSoft RPA Bot on a computer with an existing Salesforce RPA Robot, an Internal Error no longer occurs. Instead, the setup prompts you to uninstall the Salesforce RPA Robot first. | W-17334782
 |===
