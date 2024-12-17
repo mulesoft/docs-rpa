@@ -1,0 +1,34 @@
+= RPA Bot 1.7.4 Release Notes
+
+RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== December 16, 2024
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header%autowidth.spread,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+| An Remoting Exception no longer occurs when you create an analysis package on a low-performing system and experience a long wait time. | W-17318237
+| A Null Reference Exception no longer occurs on closing a Desktop Session. | W-17318518
+| An Internal Error no longer occurs when you install a MuleSoft RPA Bot on a computer with an existing Salesforce RPA Robot. Instead, the setup prompts you to uninstall the Salesforce RPA Robot first. | W-17334782
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
