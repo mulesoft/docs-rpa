@@ -20,6 +20,7 @@ See xref:idp::automate-document-processing-with-rpa.adoc[] for configuration ins
 
 This action step has no properties other than *Common* and *Timing*. See xref:common-properties.adoc[] for further details. 
 
+[[inbound-variables]]
 == Inbound Variables
 
 * *Directory Path*
