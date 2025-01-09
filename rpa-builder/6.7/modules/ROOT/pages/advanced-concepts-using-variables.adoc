@@ -47,7 +47,7 @@ action step has taken variables from.
 
 To do this, open the context menu for the action step of interest by
 right-clicking on the _Workbench_, then select the entry _Mapped to
-action step_. The list will be displayed as a a sub-menu.
+action step_. The list will be displayed as a sub-menu.
 
 image::advanced-concepts-using-variables-pin-variables-image4.png[List Mapped to action step, 50%, 50%]
 

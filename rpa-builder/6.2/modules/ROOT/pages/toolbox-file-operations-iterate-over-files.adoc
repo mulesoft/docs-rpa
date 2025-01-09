@@ -100,7 +100,7 @@ A list of invalid characters is provided in section
 Examples of how to construct search expressions are provided at the end
 of this section.
 
-* *Iteration limit* Enable this option to to set a limit on how many
+* *Iteration limit* Enable this option to set a limit on how many
 files can be iteratively processed. Enter your desired limit in the
 adjacent field; the maximum is 100,000.
 * *Force error if iteration limit is exceeded* Set whether the Workflow

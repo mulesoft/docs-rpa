@@ -38,9 +38,9 @@ RPA Builder needs full write access to folders that are critical to its function
 
 * You install RPA Builder as an administrator
 +
-If you don't run the setup file as an administrator, the installation process might not finish successfully. If this happens, ensure you reinstall RPA Builder by running the setup file as an administrator. 
+If you don’t run the setup file as an administrator, the installation process might not finish successfully. If this happens, make sure you reinstall RPA Builder by running the setup file as an administrator. 
 
-* RPA Builder has full write access to the following folders and any subfolders and files inside them: 
+* RPA Builder has full write access to these folders and any subfolders and files inside them: 
 +
 ** `C:\Users\<USERNAME>\Documents\Mulesoft`
 ** `C:\Users\Public\Documents\Mulesoft`
@@ -48,9 +48,37 @@ If you don't run the setup file as an administrator, the installation process mi
 ** `C:\Users\<USERNAME>\AppData\Roaming\MuleSoft`
 ** `C:\ProgramData\Mulesoft\RPABuilder\Cache`
 
-* Your environment is not blocking the execution of any RPA process 
+* Your environment isn’t blocking the execution of any RPA process 
 +
-The operating system can block the execution of certain files. Ensure that all executable (`.exe`) files inside the RPA Builder home directory and its subfolders are allowed to run. 
+The operating system can block the execution of certain files. Make sure that all executable (`.exe`) files inside the RPA Builder home directory and its subfolders are allowed to run. 
+
+=== Check for Software Interference
+
+Some software can prevent RPA Builder from working properly. Resolve any software issues you find before installing RPA Builder.
+
+[%header%autowidth.spread,cols=".^a,.^a,.^a]
+|===
+| Software | Problem | Solution
+a| 
+*Microsoft OneDrive*
+
+https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage[Microsoft OneDrive] is an application for backing up data from a computer.
+a|
+When you turn on Microsoft OneDrive backup for the Documents folder on your computer, it moves this folder to a different location. When RPA Builder starts, it tries to clean up the cache folder, but OneDrive redirects this to the new location where RPA Builder doesn't have permission to write:
+
+* From: `C:\Users\<username>\Documents\Mulesoft\Cache` 
+* To: `C:\Users\<username>\OneDrive\Documents\Mulesoft\Cache`
+
+This causes an error that you can find in the log files:
+
+`System.IO.IOException: Access to the path 'C:\Users\<username>\OneDrive\Documents\Mulesoft\Cache' is denied`.
+
+A user describes this problem in detail in a https://answers.microsoft.com/en-us/msoffice/forum/all/onedrive-remapped-my-folder-structure-please/e801117a-eb2f-4c8b-b21e-2750ac1fc672[Microsoft Community thread].
+a| 
+If you use RPA Builder on a computer that has OneDrive, don't let OneDrive back up your Documents folder. 
+
+The https://support.microsoft.com/en-us/office/back-up-your-folders-with-onedrive-d61a7930-a6fb-4b95-b28a-6552e77c3057?culture=en-us&country=us#ID0EDBH=Windows[Microsoft OneDrive documentation] explains how to exempt the Documents folder from the OneDrive backup.
+|===
 
 == Compatibility 
 

@@ -1,6 +1,6 @@
 = Session Based Variables 
 
-Use Session Based Variables to share variables accross all workflows that run inside the same session.
+Use Session Based Variables to share variables accross all workflows that run inside the same session. 
 
 You can define session variables of the following types: 
 
@@ -40,6 +40,10 @@ To create new variables:
 . Click *OK* 
 
 To delete variables, click the *Delete Variable* (image:delete-icon.png[2%, 2%, The Delete Variable button]) button. 
+
+== Sharing Session Based Variables Between Workflows
+
+To share Session Based Variables, create the variables in each workflow using the same variable name and type. When a workflow updates a variable, any successive workflow that reads the same variable uses the updated value of said variable. 
 
 == See Also 
 

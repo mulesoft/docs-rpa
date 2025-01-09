@@ -59,13 +59,13 @@ If bots should run processes in a hidden session, assign the bot at least one Se
 The number of Secure Sessions that can be assigned and served by the bot depends on the hardware of the computer on which the bot is installed.
 Please refer to the system and hardware requirements topic to assess the maximum number of Secure Sessions for the bot.
 
-Enabling the same setting via the RPA Bot Configurator, limits but not not overwrites this setting.
+Enabling the same setting via the RPA Bot Configurator, limits but not overwrites this setting.
 
 . In the *Bots* view of the *Bot Management* module, click *Secure Session Assignment*.
 . Set the number of sessions the bot can use:
 +
 * Session Assignment >= 1:
-** The bot consumes up to the the specified number of Secure Sessions.
+** The bot consumes up to the specified number of Secure Sessions.
 * Session Assignment = 0
 The bot consumes the Desktop session.
 . Click *Save*.
