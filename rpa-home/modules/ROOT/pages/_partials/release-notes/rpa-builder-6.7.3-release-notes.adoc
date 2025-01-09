@@ -1,6 +1,6 @@
 = RPA Builder 6.7.3 Release Notes
 
-RPA Builder is the on-premise application that enables you to build automations by specifying the action steps of the process.
+RPA Builder is the on-premises application that enables you to build automations by specifying the action steps of the process.
 
 include::partial$release-notes/rn-last-version-message.adoc[] 
 
