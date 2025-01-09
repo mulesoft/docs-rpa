@@ -53,7 +53,7 @@ If your automation projects used OAuth Credentials, follow these steps after upg
 
 . In RPA Builder, locate the updated OAuth Credentials activity parameters.
 . Add the updated activity parameters to the corresponding workflows and map them to the corresponding Mail Session (OAuth) action steps.
-. In RPA Manager, create a new OAuth Credential global variable in the credential pool. 
+. In RPA Manager, create a new OAuth Credentials global variable in the credential pool. 
 . Map the new global variable with the updated OAuth Credentials activity parameters in the corresponding run configurations.
 
 // == See Also
