@@ -33,5 +33,4 @@
 ** xref:invoke-rpa-from-flow-project.adoc[Create An Automation Project]
 ** xref:invoke-rpa-from-flow-build.adoc[Build Your Process in RPA Builder]
 ** xref:invoke-rpa-from-flow-publish.adoc[Publish an Invocable Run Configuration to Salesforce from RPA Manager]
-** xref:invoke-rpa-from-flow-run.adoc[Call the Invocable Actions from Salesforce Flow]
 * xref:glossary.adoc[Glossary]
