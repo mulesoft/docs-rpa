@@ -1,0 +1,46 @@
+= RPA Bot 1.7.8 Release Notes
+
+RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== February 25, 2025
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+//INTERNAL UPDATE? * You can now configure additional command line parameters in the Bot configuration file. 
+* Reported security vulnerabilities are now fixed
+* Updated the FreeRDP library to version 3.10.3
+* Updated Nuget packages to address reported security vulnerabilities
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header%autowidth.spread,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+| Processes running in Secure Sessions no longer fail with error `There are not enough sessions free`. | W-17427528 / W-17529095
+| Updated Nuget packages to address reported security vulnerabilities. | W-17452040
+| An incorrect error message no longer shows in logs. | W-17586187
+| Process executions no longer fail to start with message `Error while trying to evaluate if applications are active`. | W-17764023
+| Remote application tests no longer fail to start the configured application. | W-17774289
+| Error logs no longer repeat the error message every two seconds when the bot reaches the session limit. | W-17853084
+
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
