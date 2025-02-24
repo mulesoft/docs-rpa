@@ -75,7 +75,12 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == RPA Bot
 
+* xref:release-notes/rpa-bot-1.7.8-release-notes.adoc[RPA Bot 1.7.8 Release Notes]
+* xref:release-notes/rpa-bot-1.7.7-release-notes.adoc[RPA Bot 1.7.7 Release Notes (Internal)]
+* xref:release-notes/rpa-bot-1.7.6-release-notes.adoc[RPA Bot 1.7.6 Release Notes (Internal)]
+* xref:release-notes/rpa-bot-1.7.5-release-notes.adoc[RPA Bot 1.7.5 Release Notes (Internal)]
 * xref:release-notes/rpa-bot-1.7.4-release-notes.adoc[RPA Bot 1.7.4 Release Notes]
+* xref:release-notes/rpa-bot-1.7.3-release-notes.adoc[RPA Bot 1.7.3 Release Notes (Internal)]
 * xref:release-notes/rpa-bot-1.7.2-release-notes.adoc[RPA Bot 1.7.2 Release Notes]
 * xref:release-notes/rpa-bot-1.7.1-release-notes.adoc[RPA Bot 1.7.1 Release Notes (Internal)]
 * xref:release-notes/rpa-bot-1.7.0-release-notes.adoc[RPA Bot 1.7.0 Release Notes]
