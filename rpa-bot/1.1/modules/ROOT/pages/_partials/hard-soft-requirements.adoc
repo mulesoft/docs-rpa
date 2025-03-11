@@ -35,6 +35,7 @@ include::rpa-home::partial$windows-versions-support.adoc[]
 * Dedicated Windows Server machine with enough resources to execute several processes simultaneously (2 GB or more RAM per session)
 * The RPA Bot service runs under the _Local System account_ (by default, the setup configures RPA Bot to use this account).
 * If you want to run more than one Secure Session in parallel on a bot, make sure that a terminal server software is installed on the computer of the bot.
+* You can't use Secure Sessions with any operating system running on the Microsoft Azure Virtual Desktop Infrastructure (VDI).
 
 === File System Permission Requirements
 
