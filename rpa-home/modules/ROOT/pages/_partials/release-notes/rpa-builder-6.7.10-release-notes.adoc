@@ -10,6 +10,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * The CefSharp.Common library is upgraded to version 131.3.50 to address reported security vulnerabilities.
+* The Tomcat dependency is upgraded to version 9.0.105 to address reported security vulnerabilities.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
