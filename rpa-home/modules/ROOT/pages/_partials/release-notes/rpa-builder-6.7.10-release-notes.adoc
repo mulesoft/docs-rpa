@@ -32,7 +32,6 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 | The copyright info no longer shows outdated. | W-18213300
 | RPA Builder no longer shows an incorrect error message when an email address is entered in the RPA Manager URL field. | W-18168131
 | RPA Builder no longer shows a `Log file is used by another process` error when trying to export log files. | W-17691093
-| The CefSharp.Common library is upgraded to version 131.3.50 to address reported security vulnerabilities.| W-14234524
 | The browser Wizard no longer fails to display pages that use a specific authorization token. | W-17441100
 | RPA Builder setup no longer fails to start due to error `RPA Builder is running, please close it first and run this setup again` when RPA Builder was closed successfully. | W-17699307
 
