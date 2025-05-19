@@ -1,0 +1,38 @@
+= RPA Bot 1.7.10 Release Notes
+
+RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== May 20, 2025
+
+// == What's New
+//include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
+|===
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header%autowidth.spread,cols="2a,1a"]
+|===
+| Issue Resolution | ID
+| The bot no longer ignores the Analysis Picture Count value when taking screenshots. | W-18356764
+| The bot no longer loses the connection if there are network issues during process streaming. | W-18379559
+| The bot no longer creates an error run result if there are no more sessions available. | W-18347801
+
+|===
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services]
