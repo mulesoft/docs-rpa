@@ -10,7 +10,7 @@ include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
 
 * You can no longer publish an invocable run configuration directly to Salesforce. Use https://help.salesforce.com/s/articleView?id=platform.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Anypoint Exchange] or https://help.salesforce.com/s/articleView?id=platform.api_catalog.htm&type=5[API Catalog] instead.
 +
-Invocable run configurations already published to Salesforce remain there. The *Published to Salesforce* badges are removed from all published invocable run configurations.
+Invocable run configurations already published to Salesforce remain active. The *Published to Salesforce* badges are removed from all published invocable run configurations.
 
 // == Fixed Issues
 include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
