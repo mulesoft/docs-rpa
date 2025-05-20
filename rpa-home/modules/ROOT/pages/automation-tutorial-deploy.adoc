@@ -16,7 +16,8 @@ To create an invocable run configuration for a process:
 . Click *Next* (this process has no activity parameters).
 . Click *Next* (this test has no user tasks).
 . Select *Run in Secure Session* and click *Next*.
-. Select the bot to carry out the execution and click *Save & Publish*. 
+. Select the bot to carry out the execution and click *Save*.
+. In the *Production configurations* table, click *Publish* > *Publish to Anypoint*. 
 
 == Next Steps
 
