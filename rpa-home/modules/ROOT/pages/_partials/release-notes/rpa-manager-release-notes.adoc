@@ -19,7 +19,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
 |===
 |Issue Resolution |ID
 | You can now re-assign bots of deployed invocable run configurations. | W-17807695
-| Invocable confguration runs no longer return an error when they exceed a certain limit of assigned tasks. | W-18380196
+| Process executions no longer return an error when they exceed the number of assigned sessions. | W-18380196
 |===
 
 // == Known Issues
