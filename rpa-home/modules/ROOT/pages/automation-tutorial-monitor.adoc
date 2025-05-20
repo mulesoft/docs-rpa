@@ -6,7 +6,7 @@ After publishing the process to Exchange and executing it from Composer, use the
 
 To see a live stream of the deployed process:
 
-. In Composer, open the flow you created in xref:automation-tutorial-composer.adoc#step-8-1[] for editing and click *Test*. 
+. In Composer, open the flow you created in xref:automation-tutorial-composer.adoc#step-8-1[Step 8.1: Create a New Composer Flow] for editing and click *Test*. 
 . Switch to RPA Manager and open the *Process Monitoring* module.
 . Click on *Process Streaming*.
 . Refresh the page and click *Show process streams*. 
