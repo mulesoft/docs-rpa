@@ -2,6 +2,37 @@
 
 RPA Manager is the cloud-based control plane for your automation projects.
 
+[May-20-2025]]
+== May 20, 2025
+
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
+
+* You can no longer publish an invocable run configuration directly to Salesforce. You can use https://help.salesforce.com/s/articleView?id=platform.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Anypoint Exchange] or  https://help.salesforce.com/s/articleView?id=platform.api_catalog.htm&type=5[API Catalog] instead.
++
+Invocable run configurations already published to Salesforce remain there. The *Published to Salesforce* badges are removed from all published invocable run configurations.
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+2]
+
+[%header,cols="6a,1a"]
+|===
+|Issue Resolution |ID
+| You can now re-assign bots of deployed invocable run configurations. | W-17807695
+| Invocable confguration runs no longer return an error when they exceed a certain limit of assigned tasks. | W-18380196
+|===
+
+// == Known Issues
+include::partial$release-notes/rn-headings.adoc[tag=knownIssues,leveloffset=+2]
+
+[%header,cols="3a,3a,1a"]
+|===
+|Known Issue |Workaround | ID
+| A new Anypoint Platform user isn't available in dropdown lists. | The new Anypoint Platform user must log in at least once to RPA Manager to appear in the lists of available users. | W-13833054
+| A user with recently added RPA Project Manager permissions isn't available in the dropdown menu for project manager assignments. | The user with the RPA Project Manager permissions must log out from RPA Manager and then log in again to appear in the list of available project managers. | W-13833036
+|===
+
+
 [[november-13-2024]]
 == November 13, 2024
 
