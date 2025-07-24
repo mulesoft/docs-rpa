@@ -27,8 +27,8 @@ include::rpa-home::partial$windows-versions-support.adoc[]
  a|
 Any of the following:
 
-* Java Runtime Environment 11 (JRE, 64-bit version) or higher
-* Adoptium 11 (JRE, 64-bit version) or higher
+* Java Runtime Environment 11 (JRE, 64-bit version)
+* Adoptium 11 (JRE, 64-bit version)
 
 |===
 
