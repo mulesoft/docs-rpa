@@ -417,7 +417,8 @@ Deploy configuration to run them fully automatically in a productive environment
 [[trigger-run-once]]
 === Run a Configuration Once
 
-The configuration to run once must either be invocable or marked as <<run-once-tag, *Start Manually*>>.
+The configuration to run once must either be invocable or marked as *Start Manually*.
+See <<production-configuration,Create a Run Configuration>>.
 
 To start the single process run:
 
