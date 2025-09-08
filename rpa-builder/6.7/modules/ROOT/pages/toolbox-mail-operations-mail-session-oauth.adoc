@@ -1,4 +1,6 @@
 = Mail Session (OAuth)
+:page-aliases: toolbox-mail-operations-mail-session-outlook-with-oauth.adoc
+
 
 The *Mail Session (OAuth)* action step is an inclusive element for email operations that enables you to establish a connection to an email server using MS Outlook or Gmail and then perform email operations such as *Read Mail*, *Send Mail*, and *Set Mail* (to change email) by using the corresponding action steps.
 
