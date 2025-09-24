@@ -14,7 +14,7 @@ A quantity of Automation Credits is included with certain MuleSoft Services, wit
 |===
 
 [IMPORTANT]
-Beginning October 24, 2025, the IDP conversion rate is: `1 IDP Document Page = 30 Automation Credits`.
+Beginning October 24, 2025, the multiplier for IDP Document Page will change to `30 Automation Credits`.
 
 // end::conversionRates[]
 
