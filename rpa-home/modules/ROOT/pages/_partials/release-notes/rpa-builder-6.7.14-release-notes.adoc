@@ -1,0 +1,51 @@
+= RPA Builder 6.7.14 Release Notes
+
+RPA Builder is the on-premises application that enables you to build automations by specifying the action steps of the process.
+
+include::partial$release-notes/rn-last-version-message.adoc[] 
+
+== October 21, 2025
+ 
+// == What's New
+include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
+
+* The Tomcat dependency is upgraded to version 9.0.108 to address reported security vulnerabilities.
+
+// == Compatibility
+include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
+
+[%header%autowidth.spread]
+|===
+|Application |Version
+|RPA Recorder | 6.6.0 and later
+|RPA Bot | 1.0.0 and later
+|===
+
+
+// == Fixed Issues
+include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
+
+[%header,cols="5a,1a"]
+|===
+| Issue Resolution | ID
+| The Read mail action no longer fails when saving email attachments with long filenames that exceed Windows file path limitations. | W-19615020
+
+|===
+
+[[migrating-oauth-credentials]]
+== Migrating OAuth Credentials
+
+As part of the enhancement to Mail Session (OAuth) and the OAuth Credentials activity parameter, RPA Builder 6.7.0 and later versions automatically detect and update any existing OAuth Credentials and remove all existing mappings of this activity parameter. RPA Builder appends `_updated` to migrated activity parameters. 
+
+If your automation projects used OAuth Credentials, follow these steps after upgrading from a version earlier than RPA Builder 6.7.0 to complete the migration process: 
+
+. In RPA Builder, locate the updated OAuth Credentials activity parameters.
+. Add the updated activity parameters to the corresponding workflows and map them to the corresponding Mail Session (OAuth) action steps.
+. In RPA Manager, create a new OAuth Credentials global variable in the credential pool. 
+. Map the new global variable with the updated OAuth Credentials activity parameters in the corresponding run configurations.
+
+// == See Also
+include::partial$release-notes/rn-headings.adoc[tag=seeAlso,leveloffset=+1]
+
+* https://help.mulesoft.com/s/[MuleSoft Help Center^]
+* https://www.mulesoft.com/support-and-services[MuleSoft Services^]
