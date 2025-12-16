@@ -1,1 +1,0 @@
-include::partial$release-notes/rpa-bot-1.7.7-release-notes.adoc[]
