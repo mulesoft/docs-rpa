@@ -107,7 +107,7 @@ Open the *Bots* view in the *Bot Management* module to view all bots connected t
 == See Also
 
 * xref:botmanagement-overview.adoc[Bot Management]
-* xref::botmanagement-support.adoc[Supporting Bots]
-//* xref::botmanagement-know.adoc[Getting to Know Bots]
-* xref::botmanagement-manage.adoc[Managing Bots]
-* xref::botmanagement-troubleshoot.adoc[Troubleshooting Bots]
+* xref:botmanagement-support.adoc[Supporting Bots]
+//* xref:botmanagement-know.adoc[Getting to Know Bots]
+* xref:botmanagement-manage.adoc[Managing Bots]
+* xref:botmanagement-troubleshoot.adoc[Troubleshooting Bots]
