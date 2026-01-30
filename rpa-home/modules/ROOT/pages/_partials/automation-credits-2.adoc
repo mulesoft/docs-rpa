@@ -13,7 +13,7 @@ A quantity of Automation Credits is included with certain MuleSoft Services, wit
 | 1 = 80 Automation Credits | 1 = 2 Automation Credits | 1 = 2 Automation Credits | 1 = 100 Automation Credits | 1 = 30 Automation Credits | 1 = 2 Automation Credits
 |===
 
-ℹ️Important
+[IMPORTANT]
 Beginning February 18, 2026, Flow Orchestration will be free for customers in Enterprise and higher editions. For customers in other editions, the https://help.salesforce.com/s/articleView?id=platform.flow_considerations_limit.htm&type=5[General Flow Limits] will apply.
 
 // end::conversionRates[]
