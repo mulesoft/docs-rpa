@@ -20,8 +20,8 @@ There are many free viewers for `.har` files. The following list is not
 comprehensive:
 
 * http://www.softwareishard.com/har/viewer/
-* http://phantomjs.org/network-monitoring.html
-* http://yslow.org/
+* https://phantomjs.org/network-monitoring.html
+* https://yslow.org/
 
 Show the content of the waterfall file using a viewer, e.g.
 _softwareishard_, as described below:
