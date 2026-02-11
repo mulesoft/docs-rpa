@@ -73,7 +73,7 @@ This causes an error that you can find in the log files:
 
 `System.IO.IOException: Access to the path 'C:\Users\<username>\OneDrive\Documents\Mulesoft\Cache' is denied`.
 
-A user describes this problem in detail in a https://answers.microsoft.com/en-us/msoffice/forum/all/onedrive-remapped-my-folder-structure-please/e801117a-eb2f-4c8b-b21e-2750ac1fc672[Microsoft Community thread].
+A user describes this problem in detail in a https://learn.microsoft.com/en-us/answers/questions/5247101/onedrive-remapped-my-folder-structure-please-rever?forum=msoffice-all&referrer=answers[Microsoft Community thread].
 a| 
 If you use RPA Builder on a computer that has OneDrive, don't let OneDrive back up your Documents folder. 
 
