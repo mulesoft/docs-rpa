@@ -77,7 +77,7 @@ To use Secure Sessions you must ensure that all prerequisites are met and all re
 
 Although other terminal server software can work, RPA has been validated with the following terminal server software:
 
-** https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds[Microsoft Remote Desktop Services]
+** https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/overview[Microsoft Remote Desktop Services]
 ** https://www.tsplus-rpa.com/[TSplus MuleSoft RPA Connector]
 * Before deploying a run configuration on a bot that has only one licensed Secure Session, do not disconnect the session, instead sign out the specified user.
 ** Do not sign in to a computer where a bot with one licensed Secure Session is running a process.
