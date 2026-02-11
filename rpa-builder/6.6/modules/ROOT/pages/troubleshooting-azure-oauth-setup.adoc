@@ -10,7 +10,7 @@ If you have issues configuring your Azure account with Mail Session (Outlook wit
 [[register-app]]
 == Register an App in Azure
 
-. Navigate to https://portal.azure.com/Error/UE_404?aspxerrorpath=/ and log in with your Azure account. 
+. Navigate to https://portal.azure.com/ and log in with your Azure account. 
 . Open the *App Registrations* page and create a new registration. 
 ** Select the supported account types. 
 ** Provide a Redirect URI.
