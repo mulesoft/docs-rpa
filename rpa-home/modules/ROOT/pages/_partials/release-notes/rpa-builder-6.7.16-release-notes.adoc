@@ -30,7 +30,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header,cols="5a,1a"]
 |===
 | Issue Resolution | ID
-| RPA Builder no longer experiences memory problems from unused WorkflowRunProtocol functionality during very long workflow runs (over 6 hours). | W-21258536
+| RPA Builder no longer experiences memory problems from unused WorkflowRunProtocol functionality during long workflow runs (over six hours). | W-21258536
 | The page load strategy in the Chrome Web Session is now set correctly. | W-21357835
 |===
 
