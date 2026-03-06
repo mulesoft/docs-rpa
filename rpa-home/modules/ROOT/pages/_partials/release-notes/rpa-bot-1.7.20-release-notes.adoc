@@ -1,6 +1,6 @@
 = RPA Bot 1.7.20 Release Notes
 
-RPA Bot is a software robot that runs in an on-premise environment and executes the assigned automations.
+RPA Bot is a software robot that runs in an on-premises environment and executes the assigned automations.
 
 This version is internal only. All of the features and fixed issues for this version are in version xref:rpa-home::release-notes/rpa-bot-1.7.22-release-notes.adoc[1.7.22].
 
