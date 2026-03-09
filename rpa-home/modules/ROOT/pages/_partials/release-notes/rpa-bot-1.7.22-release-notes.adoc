@@ -15,8 +15,8 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1
 [%header%autowidth.spread]
 |===
 |Application |Version
-|RPA Builder | TBD
-|RPA Recorder | TBD
+|RPA Builder | 6.4.0 and later
+|RPA Recorder | 6.4.0 and later
 |===
 
 // == Fixed Issues

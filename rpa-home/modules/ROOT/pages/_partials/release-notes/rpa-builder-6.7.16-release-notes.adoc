@@ -20,8 +20,8 @@ include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1
 [%header%autowidth.spread]
 |===
 |Application |Version
-|RPA Recorder | TBD
-|RPA Bot | TBD
+|RPA Recorder | 6.6.0 and later
+|RPA Bot | 1.0.0 and later
 |===
 
 // == Fixed Issues
