@@ -1,0 +1,15 @@
+= Usage Summary
+
+Create a usage report for the selected date range. The report shows automation usage for your organization and is useful for reviewing consumption, planning, and billing.
+
+== Create a Usage Report
+
+Follow these steps to create a usage report in RPA Manager:
+
+. Open the *Process Operations* module.
+. Click *Usage Summary*.
+. Specify the desired date range and click *Create Usage Summary*.
+. Optionally, click *Print* (image:print-icon.png[The Print icon, 5%, 5%]) to print or download the report.
+
+== See Also
+* {xref to new Automation Credits location}.
