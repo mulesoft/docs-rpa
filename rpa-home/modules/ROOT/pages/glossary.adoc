@@ -89,12 +89,12 @@ A software robot that runs in an on-premises environment and executes the assign
 RPA API Call::
 An API invocation made by a customer to perform an operation, including, but not limited to lookup, validate, create, update, or delete data in a system as part of an RPA process.
 +
-See the xref:ms-automation-credits-usage-types.adoc[] for additional details.
+See the xref:general::automation-credits-usage-and-rates.adoc[] for additional details.
 
 RPA Bot Minute::
 The number of minutes running process automations across all bot sessions. A single bot may run multiple parallel sessions, with RPA Bot Minutes counting for each parallel session. Multiple bots may be configured to run the same process, with RPA Bot Minutes counting for each of these separate bot sessions. Test runs or process runs in the test phase are also counted towards RPA Bot Minutes.
 +
-See the xref:ms-automation-credits-usage-types.adoc[] for additional details.
+See the xref:general::automation-credits-usage-and-rates.adoc[] for additional details.
 
 RPA Builder::
 An on-premises application that enables you to build automations by specifying the steps of the process.
