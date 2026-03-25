@@ -25,7 +25,7 @@ include::partial$release-notes/rn-headings.adoc[tag=fixedIssues,leveloffset=+1]
 [%header%autowidth.spread,cols="2a,1a"]
 |===
 | Issue Resolution | ID
-| RPA Bot no longer terminates processes when screenshot uploads exceed 30 seconds, ensuring the connection to the Secure Session remains stable during longer upload durations. | W-21523306
+| RPA Bot no longer terminates processes when screenshot uploads exceed 30 seconds, ensuring the connection to the Session Runner (StSec) remains stable during longer upload durations. | W-21523306
 |===
 
 // == See Also
