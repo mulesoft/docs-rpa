@@ -26,7 +26,7 @@ To send a message body rendered as HTML, use one of these patterns:
 Obtain or refresh tokens using xref:toolbox-variable-handling-credentials-for-oauth.adoc[Credentials for OAuth], depending on how your organization issues tokens for Graph. 
 --
 +
-To read values from JSON responses across multiple calls, you can use xref:toolbox-variable-handling-json-query.adoc[Json Query].
+To read values from JSON responses across multiple calls, use xref:toolbox-variable-handling-json-query.adoc[Json Query].
 
 * *SMTP with HTML via PowerShell*
 . From the workflow, run `powershell.exe` (or run a script) using xref:toolbox-control-run-program.adoc[Run Program]. 
