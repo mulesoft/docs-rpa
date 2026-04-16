@@ -30,7 +30,7 @@ To read values from JSON responses across multiple calls, use xref:toolbox-varia
 
 * *SMTP with HTML via PowerShell*
 . From the workflow, run `powershell.exe` (or run a script) using xref:toolbox-control-run-program.adoc[Run Program]. 
-. In the script, use `System.Net.Mail.MailMessage` and set `IsBodyHtml` to `$true`, and configure SMTP and credentials to match your mail server and security policies.
+. In the script, use `System.Net.Mail.MailMessage` and set `IsBodyHtml` to `$true`. Configure SMTP and credentials to match your mail server and security policies.
 
 == Properties
 
