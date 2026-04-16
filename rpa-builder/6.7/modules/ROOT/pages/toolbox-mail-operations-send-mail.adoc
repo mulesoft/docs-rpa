@@ -15,7 +15,7 @@ the Mail Session.
 
 RPA Builder sends the content in *Body* over SMTP as plain text.
 
-To send a message whose body is rendered as HTML, use one of these patterns:
+To send a message body rendered as HTML, use one of these patterns:
 
 * *Microsoft 365 via Microsoft Graph*  
 +
