@@ -10,12 +10,34 @@ You can only use the Send Mail action step within a Mail Session. You
 enter the information required for the connection to the mail server in
 the Mail Session.
 
+[[html-body]]
+== Sending mail with an HTML body
+
+RPA Builder sends the content in *Body* over SMTP as plain text.
+
+To send a message whose body is rendered as HTML, use one of these patterns:
+
+* *Microsoft 365 via Microsoft Graph*  
++
+--
+. Call the Graph https://learn.microsoft.com/en-us/graph/api/user-sendmail[`sendMail` API^] with the xref:toolbox-network-rest-call.adoc[REST Call] action step. 
+. In the JSON request body, set the message body `contentType` to `HTML`. 
+. On REST Call, use the *Authentication* tab to send a bearer access token. +
+Obtain or refresh tokens using xref:toolbox-variable-handling-credentials-for-oauth.adoc[Credentials for OAuth], depending on how your organization issues tokens for Graph. 
+--
++
+To read values from JSON responses across multiple calls, you can use xref:toolbox-variable-handling-json-query.adoc[Json Query].
+
+* *SMTP with HTML via PowerShell*
+. From the workflow, run `powershell.exe` (or run a script) using xref:toolbox-control-run-program.adoc[Run Program]. 
+. In the script, use `System.Net.Mail.MailMessage` and set `IsBodyHtml` to `$true`, and configure SMTP and credentials to match your mail server and security policies.
+
 == Properties
 
 *Send Mail Settings*
 
 *Body* Here, the content of the mail is displayed. A total of 3900
-characters are available.
+characters are available. The body is sent as plain text. For HTML bodies, see <<html-body,Sending mail with an HTML body>>.
 
 *Enter error state when a file does not exist* If this checkbox is selected and if
 one of the attached files is not found in the production run, the Action
@@ -91,7 +113,7 @@ Step is ended with an error.
 
 The wizard is split into two tabs, *Message* and *Attachment*.
 
-In the Message area, you can enter text under *Body*. You can link the content with *Insert Available Variables*, assuming you defined variables in advance either using the Activity Parameters or the Workflow Based Variables. Select the encoding to use between UTF-8, UTF-16, Shift-JIS, and EUC-JP. 
+In the Message area, you can enter text under *Body*. The text is sent as plain text, not as HTML. You can link the content with *Insert Available Variables*, assuming you defined variables in advance either using the Activity Parameters or the Workflow Based Variables. Select the encoding to use between UTF-8, UTF-16, Shift-JIS, and EUC-JP. To send HTML, see <<html-body,Sending mail with an HTML body>>. 
 
 The pin variable
 //with image:media\image2.png[image,width=217,height=19]in the attachments area
@@ -114,3 +136,12 @@ the Chapter entitled *Settings*.
 ////
 
 You can find further explanations under <<Properties>>.
+
+== See also
+
+* xref:toolbox-mail-operations-mail-session.adoc[Mail Session]
+* xref:toolbox-mail-operations-mail-session-oauth.adoc[Mail Session (OAuth)]
+* xref:toolbox-network-rest-call.adoc[REST Call]
+* xref:toolbox-variable-handling-credentials-for-oauth.adoc[Credentials for OAuth]
+* xref:toolbox-variable-handling-json-query.adoc[Json Query]
+* xref:toolbox-control-run-program.adoc[Run Program]
