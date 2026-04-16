@@ -113,7 +113,7 @@ Step is ended with an error.
 
 The wizard is split into two tabs, *Message* and *Attachment*.
 
-In the Message area, you can enter text under *Body*. RPA Builder sends the content as plain text, not as HTML. You can link the content with *Insert Available Variables*, assuming you defined variables in advance either using the Activity Parameters or the Workflow Based Variables. Select the encoding to use between UTF-8, UTF-16, Shift-JIS, and EUC-JP. To send HTML, see <<html-body,Sending mail with an HTML body>>. 
+In the Message area, enter text under *Body*. RPA Builder sends the content as plain text, not as HTML.   If you defined variables in advance either using the Activity Parameters or the Workflow Based Variables, link the content with *Insert Available Variables*. Select the encoding to use between UTF-8, UTF-16, Shift-JIS, and EUC-JP. To send HTML, see <<html-body,Sending mail with an HTML body>>. 
 
 The pin variable
 //with image:media\image2.png[image,width=217,height=19]in the attachments area
