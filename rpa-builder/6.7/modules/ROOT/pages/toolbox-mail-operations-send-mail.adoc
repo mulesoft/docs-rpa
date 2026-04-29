@@ -2,7 +2,7 @@
 
 = Send Mail
 
-With the _Send Mail_ action step, you can send a mail with the SMTP
+Use the Send Mail action step to send a mail with the SMTP
 protocol. You can enter the recipient, the subject, or send attachments
 just as with other mail programs.
 
@@ -10,34 +10,14 @@ You can only use the Send Mail action step within a Mail Session. You
 enter the information required for the connection to the mail server in
 the Mail Session.
 
-[[html-body]]
-== Sending mail with an HTML body
-
-RPA Builder sends the content in *Body* over SMTP as plain text.
-
-To send a message body rendered as HTML, use one of these patterns:
-
-* *Microsoft 365 via Microsoft Graph*  
-+
---
-. Call the Graph https://learn.microsoft.com/en-us/graph/api/user-sendmail[`sendMail` API^] with the xref:toolbox-network-rest-call.adoc[REST Call] action step. 
-. In the JSON request body, set the message body `contentType` to `HTML`. 
-. On REST Call, use the *Authentication* tab to send a bearer access token. +
-Obtain or refresh tokens using xref:toolbox-variable-handling-credentials-for-oauth.adoc[Credentials for OAuth], depending on how your organization issues tokens for Graph. 
---
-+
-To read values from JSON responses across multiple calls, use xref:toolbox-variable-handling-json-query.adoc[Json Query].
-
-* *SMTP with HTML via PowerShell*
-. From the workflow, run `powershell.exe` (or run a script) using xref:toolbox-control-run-program.adoc[Run Program]. 
-. In the script, use `System.Net.Mail.MailMessage` and set `IsBodyHtml` to `$true`. Configure SMTP and credentials to match your mail server and security policies.
+Send Mail doesn't support sending HTML emails and sends the content in *Body* over SMTP as plain text. To send a message body rendered as HTML, use RPA Builder to automate any SMTP CLI tool or any online or local mail client. 
 
 == Properties
 
 *Send Mail Settings*
 
 *Body* Here, the content of the mail is displayed. A total of 3900
-characters are available. RPA Builder sends the body as plain text. For HTML bodies, see <<html-body,Sending mail with an HTML body>>.
+characters are available. RPA Builder sends the body as plain text.
 
 *Enter error state when a file does not exist* If this checkbox is selected and if
 one of the attached files is not found in the production run, the Action
