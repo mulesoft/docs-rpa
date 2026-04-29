@@ -2,7 +2,7 @@
 
 = Send Mail
 
-With the _Send Mail_ action step, you can send a mail with the SMTP
+Use the Send Mail action step to send a mail with the SMTP
 protocol. You can enter the recipient, the subject, or send attachments
 just as with other mail programs.
 
@@ -10,12 +10,14 @@ You can only use the Send Mail action step within a Mail Session. You
 enter the information required for the connection to the mail server in
 the Mail Session.
 
+Send Mail doesn't support sending HTML emails and sends the content in *Body* over SMTP as plain text. To send a message body rendered as HTML, use RPA Builder to automate any SMTP CLI tool or any online or local mail client. 
+
 == Properties
 
 *Send Mail Settings*
 
 *Body* Here, the content of the mail is displayed. A total of 3900
-characters are available.
+characters are available. RPA Builder sends the body as plain text.
 
 *Enter error state when a file does not exist* If this checkbox is selected and if
 one of the attached files is not found in the production run, the Action
@@ -91,7 +93,7 @@ Step is ended with an error.
 
 The wizard is split into two tabs, *Message* and *Attachment*.
 
-In the Message area, you can enter text under *Body*. You can link the content with *Insert Available Variables*, assuming you defined variables in advance either using the Activity Parameters or the Workflow Based Variables. Select the encoding to use between UTF-8, UTF-16, Shift-JIS, and EUC-JP. 
+In the Message area, enter text under *Body*. RPA Builder sends the content as plain text, not as HTML. If you defined variables in advance either using the Activity Parameters or the Workflow Based Variables, link the content with *Insert Available Variables*. Select the encoding to use between UTF-8, UTF-16, Shift-JIS, and EUC-JP. To send HTML, see <<html-body,Sending mail with an HTML body>>. 
 
 The pin variable
 //with image:media\image2.png[image,width=217,height=19]in the attachments area
@@ -114,3 +116,12 @@ the Chapter entitled *Settings*.
 ////
 
 You can find further explanations under <<Properties>>.
+
+== See also
+
+* xref:toolbox-mail-operations-mail-session.adoc[Mail Session]
+* xref:toolbox-mail-operations-mail-session-oauth.adoc[Mail Session (OAuth)]
+* xref:toolbox-network-rest-call.adoc[REST Call]
+* xref:toolbox-variable-handling-credentials-for-oauth.adoc[Credentials for OAuth]
+* xref:toolbox-variable-handling-json-query.adoc[Json Query]
+* xref:toolbox-control-run-program.adoc[Run Program]
