@@ -10,7 +10,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
 * The Tomcat dependency is upgraded to version 9.0.102 to address reported security vulnerabilities.
-
+* The AutoIT version bundled with RPA Builder is upgraded to version 3.3.18.0 to address reported security vulnerabilities.
 
 // == Compatibility
 include::partial$release-notes/rn-headings.adoc[tag=compatibility,leveloffset=+1]
