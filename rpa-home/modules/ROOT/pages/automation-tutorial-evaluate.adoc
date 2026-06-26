@@ -65,7 +65,7 @@ After you finish evaluating a process for automation and confirm that it is suit
 
 . In the navigation panel, click the *Process Evaluation* module.
 . Open the *Process Evaluation* view.
-. Search for the *MuleSoft newsletter sign-up* project in the process list and click the *Approve* (image:approve-icon.png[The approve icon,1.5%,1.5%]) button.
+. Search for the *MuleSoft newsletter sign-up* project in the process list and click the *Approve* (image:approve-icon.png["",1.5%,1.5%]) button.
 . Select the *Project Manager* option.
 . In the *Project Manager* dropdown menu, select your username.
 +

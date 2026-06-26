@@ -9,7 +9,7 @@ Follow these steps to create a usage report in RPA Manager:
 . Open the *Process Operations* module.
 . Click *Usage Summary*.
 . Specify the desired date range and click *Create Usage Summary*.
-. Optionally, click *Print* (image:print-icon.png[The Print icon, 5%, 5%]) to print or download the report.
+. Optionally, click *Print* (image:print-icon.png["", 5%, 5%]) to print or download the report.
 
 == See Also
 * {xref to new Automation Credits location}.

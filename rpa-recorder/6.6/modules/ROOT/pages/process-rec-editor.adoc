@@ -2,7 +2,7 @@
 
 If you start the recorder from RPA Manager, you can view the current process BPMN and all new recorded BPMNs by selecting them from the drop-down menu.
 
-To open the Process Recording Editor, select a process and click *Edit, Merge and Upload Recordings* (image:edit-process-button.png["Edit, Merge and Upload Recordings button", 2%, 2%]).
+To open the Process Recording Editor, select a process and click *Edit, Merge and Upload Recordings* (image:edit-process-button.png["", 2%, 2%]).
 
 image:rpa-recorder-home.png[RPA Recorder Home screen]
 
@@ -25,7 +25,7 @@ image:recorder-editor-panels.png[Process Recording Editor Panels]
 
 To load additional BPMNs into the BPMN modeler:
 
-. Click *Load File* (image:load-file-button.png[Load File button, 2%, 2%]).
+. Click *Load File* (image:load-file-button.png["", 2%, 2%]).
 . Select the BPMN or BPMNs you want to add and click *Open*.
 +
 All recordings are stored in a separate folder per process and recording date.
@@ -38,15 +38,15 @@ After the import, you can edit and rearrange the new BPMN via drag and drop.
 
 To save the edited and merged BPMN locally:
 
-. Click *Save* (image:save-icon.png[Save changes button, 2%, 2%]).
+. Click *Save* (image:save-icon.png["", 2%, 2%]).
 . Select a directory in the *Save As* dialog and specify a file name if different from the auto-generated file name.
 . Click *Save*.
 
 == Upload BPMN to RPA Manager
 
-After merging and editing the BPMN and documentation, click the *Upload to RPA Manager* icon (image:upload-to-server-icon.png[Upload to RPA Manager icon, 2%, 2%]) to upload the new process BMPN. A message opens confirming that the upload is completed.
+After merging and editing the BPMN and documentation, click the *Upload to RPA Manager* icon (image:upload-to-server-icon.png["", 2%, 2%]) to upload the new process BMPN. A message opens confirming that the upload is completed.
 
-To close the Process Recording Editor and RPA Recorder, click *Close* (image:close-icon.png[Close icon, 2%, 2%]).
+To close the Process Recording Editor and RPA Recorder, click *Close* (image:close-icon.png["", 2%, 2%]).
 
 == See Also
 

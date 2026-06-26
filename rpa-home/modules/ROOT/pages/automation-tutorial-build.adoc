@@ -37,7 +37,7 @@ If this panel is not visible, go to the top menu bar and click *View* > *Show Re
 
 To add a new action step into your automation project:
 
-. In RPA Builder, drag the *Create bot task* element (image:create-bot-task-icon.png[The Create bot task icon, 2%, 2%]) from the BPMN editor into your process flow, after the *Sign-up to newsletter* task.
+. In RPA Builder, drag the *Create bot task* element (image:create-bot-task-icon.png["", 2%, 2%]) from the BPMN editor into your process flow, after the *Sign-up to newsletter* task.
 +
 image:add-bot-task-to-process.png[A BPMN diagram with three steps, open the newsletter page, sign up, and confirm sign-up]
 +
@@ -88,13 +88,13 @@ After you add the text recognition task and save the project, perform a local te
 To perform a local test of the created process:
 
 . Ensure your project is open for edit.
-. In the BPMN editor, click the *Run Process* (image:run-process.png[The Run process icon,1.5%,1.5%]) button.
+. In the BPMN editor, click the *Run Process* (image:run-process.png["",1.5%,1.5%]) button.
 +
 This action starts the execution of the process and shows the *Test run information* window:
 +
 image:builder-test-run-information.png[The test run information in RPA Builder, 50%, 50%]
 +
-As the tasks start executing, notice that new entries appear in this window and show a *Task execution succeeded* (image:task-execution-icon.png[Task execution succeeded icon, 2%, 2%]) icon in the *Run state* column when they finish.
+As the tasks start executing, notice that new entries appear in this window and show a *Task execution succeeded* (image:task-execution-icon.png["", 2%, 2%]) icon in the *Run state* column when they finish.
 +
 [IMPORTANT]
 Because the RPA Bot conducts the test using your current Desktop session, do not interact with any elements in the screen until the test finishes. Otherwise, the test could fail. 

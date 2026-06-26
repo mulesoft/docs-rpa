@@ -15,13 +15,13 @@ The *Recording Toolbar* appears on the screen when RPA Recorder starts recording
 [%header,cols="10,20,30,10"]
 |===
 |Icon |Name | Description | Hot Key
-|image:start-recording-icon.png[Start Recording icon, 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
-|image:pause-recording-icon.png[Pause Recording icon, 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
-|image:finish-recording-icon.png[Start Recording icon, 20%, 20%] | Finish Recording Session | Finishes the current recording session and triggers the generation of xref:documents.adoc[Documents]. | --
-|image:take-screenshot-icon.png[Take Screenshot icon, 20%, 20%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
-|image:image-based-mouse-clicks-icon-light.png[Image-Based Mouse Clicks icon, 20%, 20%]|Image-based mouse clicks | Adds the <<Image-Based Mouse Clicks>> to the current recording. | `F3`
-|image:add-comment-icon.png[Add Comment icon, 20%, 20%] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
-|image:add-activity-icon.png[Add Activity icon, 20%, 20%] | Add Activity | Opens the <<Add Activity>> dialog. | `F12`
+|image:start-recording-icon.png["", 20%, 20%] |Start Recording | Starts a new recording session. |`F8`
+|image:pause-recording-icon.png["", 20%, 20%] | Pause Recording | Pauses the current recording session. | `F8`
+|image:finish-recording-icon.png["", 20%, 20%] | Finish Recording Session | Finishes the current recording session and triggers the generation of xref:documents.adoc[Documents]. | --
+|image:take-screenshot-icon.png["", 20%, 20%] | Take Screenshot | Opens the <<Define Screenshot>> dialog.  | `F9`
+|image:image-based-mouse-clicks-icon-light.png["", 20%, 20%]|Image-based mouse clicks | Adds the <<Image-Based Mouse Clicks>> to the current recording. | `F3`
+|image:add-comment-icon.png["", 20%, 20%] | Add Comment | Opens the <<Add Comment>> dialog. | `F11`
+|image:add-activity-icon.png["", 20%, 20%] | Add Activity | Opens the <<Add Activity>> dialog. | `F12`
 |===
 
 == Toast Notifications While Recording
@@ -125,7 +125,7 @@ Use the Web Recording Browser to record website navigation actions. It behaves a
 Japanese keyboard input during Web recording is fully supported.
 
 Adding a Web Task opens the Web Recording Browser. When you add more than one Web Task, you can select *Continue with already existing web session* to display the last loaded page from the previous Web Task and continue from that point.
-Otherwise, you can enter a URL in the address bar of the browser, and it loads this URL when you press *Enter* or click the *Go* button (image:play-icon.png[Go button, 3%, 3%]).
+Otherwise, you can enter a URL in the address bar of the browser, and it loads this URL when you press *Enter* or click the *Go* button (image:play-icon.png["", 3%, 3%]).
 
 image:web-recording-browser-blank.png[Web Recording Browser]
 
@@ -148,7 +148,7 @@ image:add-attribute.png[Add Attribute to XPath, 50%, 50%]
 
 You can save your attribute selection for a web element to use it for future recorded events by checking *Save selection*.
 If you select the saved element while recording the same website later on, the saved attribute displays as already selected in the attribute selection panel and appears as added to the extracted XPath.
-If you don't want to use the saved attributes for a given web element, click the *Default* button (image:default-icon.png[Default button, 3%, 3%]) to revert back to the default extracted XPath for that web element.
+If you don't want to use the saved attributes for a given web element, click the *Default* button (image:default-icon.png["", 3%, 3%]) to revert back to the default extracted XPath for that web element.
 
 === Save Mouse Hover
 

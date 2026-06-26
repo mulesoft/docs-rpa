@@ -26,7 +26,7 @@ From the Context Menu::
 Using the Workflow Tools::
 +
 .. Select the Action Step you want to save as a template.
-.. In the Workbench Toolbar, click the *Tools* (image:wrench-icon.png[The Tools icon, 2%, 2%]) button.
+.. In the Workbench Toolbar, click the *Tools* (image:wrench-icon.png["", 2%, 2%]) button.
 .. Click *Save Selected Items as Template*.
 
 After selecting any of these options, a *Save as* dialog opens in which you continue configuring the template.
@@ -56,14 +56,14 @@ Use the corresponding buttons in the menu bar of the Templates Manager to *Delet
 * (image:delete-icon-alt.png[The Delete template button, 2%, 2%]) *Delete*
 +
 Deletes the selected Template.
-* (image:import-icon.png[The Import template button, 2%, 2%]) *Import*
+* (image:import-icon.png["", 2%, 2%]) *Import*
 +
 After you click *Import*, Windows Explorer opens and you can enter the path to the template. Select a template and the following window opens:
 +
 image:import-user-template.png[The Import template window, 50%, 50%]
 +
 You can verify the template again and change the name if necessary. Click *OK* to import the template into the Template Manager, where it becomes available for further use.
-* (image:export-icon.png[The Export template button, 2%, 2%]) *Export*
+* (image:export-icon.png["", 2%, 2%]) *Export*
 +
 When you click *Export* after selecting a template, the following window opens:
 +

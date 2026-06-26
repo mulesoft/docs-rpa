@@ -48,7 +48,7 @@ The following settings and properties apply to all the File Operations action st
 
 * *Action Step Settings*
 +
-Specify path information for all action steps of the type File Operations in Settings. To access the Settings configuration panel, click (image:settings-icon.png[The Settings icon, 2%, 2%] *Settings*) in the Workflow Initialization block.
+Specify path information for all action steps of the type File Operations in Settings. To access the Settings configuration panel, click (image:settings-icon.png["", 2%, 2%] *Settings*) in the Workflow Initialization block.
 * *Path checking*
 +
 The paths calculated at runtime for File Operations are checked against the list of allowed paths configured in the *Allow File Operation Action Steps only in following paths* option inside *Workflow Settings* -> *File Operation Settings*.

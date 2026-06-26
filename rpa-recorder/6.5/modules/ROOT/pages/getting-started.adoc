@@ -25,7 +25,7 @@ Start RPA Recorder by opening the application from the *Start* menu or by openin
 ** You cannot upload recordings to RPA Manager, you can only save them locally.
 * *RPA Manager*
 +
-To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager. When you start RPA Recorder from RPA Manager:
+To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png["", 2%, 2%]) in RPA Manager. When you start RPA Recorder from RPA Manager:
 +
 ** RPA Recorder requires RPA Manager credentials to log in and start recordings.
 ** You can upload recordings to RPA Manager.
@@ -34,12 +34,12 @@ To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[
 
 If your organization supports Anypoint Identity Access Management (IAM), then follow these steps to log in:
 
-. Click Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manage to open RPA Recorder.
+. Click Record BPMN (image:record-bpmn-icon.png["", 2%, 2%]) in RPA Manage to open RPA Recorder.
 . Provide your MuleSoft Anypoint login credentials for user authentication.
 
 image:anypoint-login.png[RPA Recorder Anypoint Login Screen]
 
-To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
+To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png["", 2%, 2%]).
 
 include::rpa-home::partial$anypoint-sso.adoc[leveloffset=+2]
 
@@ -47,12 +47,12 @@ include::rpa-home::partial$anypoint-sso.adoc[leveloffset=+2]
 
 If your organization does not support Anypoint IAM, then follow these steps to log in:
 
-. Click Record BPMN (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manage to open RPA Recorder.
+. Click Record BPMN (image:record-bpmn-icon.png["", 2%, 2%]) in RPA Manage to open RPA Recorder.
 . Provide your login credentials for user authentication.
 
 image:rpa-recorder-login.png[RPA Recorder Legacy Login Screen, 50%, 50%]
 
-To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png[Logout icon, 2%, 2%]).
+To log out of RPA Recorder, click the *Logout* icon (image:logout-icon.png["", 2%, 2%]).
 
 == Considerations for Process Recording
 
