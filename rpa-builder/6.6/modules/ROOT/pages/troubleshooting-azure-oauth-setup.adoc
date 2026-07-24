@@ -78,3 +78,4 @@ If you don't know the permissions and protocols that apply to your case, select 
 
 * xref:toolbox-mail-operations-mail-session-outlook-with-oauth.adoc[]
 * https://learn.microsoft.com/en-us/azure/active-directory-b2c/tutorial-register-applications[Azure Tutorial: Register a web application in Azure Active Directory B2C]
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]

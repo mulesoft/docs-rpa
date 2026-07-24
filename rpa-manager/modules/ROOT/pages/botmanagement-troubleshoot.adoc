@@ -118,3 +118,4 @@ Restarting a bot only works if that bot has the status OK. Otherwise RPA Manager
 == See Also
 
 * xref:rpa-builder::toolbox-system-write-bot-message.adoc[RPA Builder: Toolbox - Write Bot Message]
+include::release-notes::partial$release-notes/rn-known-issues.adoc[tag=knownIssuesSeeAlsoLink]
