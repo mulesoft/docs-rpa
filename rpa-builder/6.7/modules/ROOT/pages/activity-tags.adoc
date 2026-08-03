@@ -24,9 +24,9 @@ the Activity Library by using the *Activity Tags* tab.
 
 image::upload-workflow-to-activity-library-activity-tags.png[The Upload Workflow to Activity Library window showing the Activity Tags tab, 50%, 50%]
 
-Select an Activity tag and click (image:add-tag.png[The Add Tag button, 1%, 1%]) to add it to the workflow, or click (image:remove-tag.png[The Remove Tag button, 1%, 1%]) to remove the tag from the workflow. 
+Select an Activity tag and click (image:add-tag.png["", 1%, 1%]) to add it to the workflow, or click (image:remove-tag.png["", 1%, 1%]) to remove the tag from the workflow. 
 
-Use (image:add-all-tags.png[The Add All Tags button, 2%, 2%]) to add all tags to the workflow or (image:remove-all-tags.png[The Remove All Tags button, 2%, 2%]) to remove all tags from the workflow.
+Use (image:add-all-tags.png["", 2%, 2%]) to add all tags to the workflow or (image:remove-all-tags.png["", 2%, 2%]) to remove all tags from the workflow.
 
 == See Also 
 

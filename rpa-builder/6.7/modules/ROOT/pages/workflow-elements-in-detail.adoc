@@ -50,7 +50,7 @@ There are two ways of editing an action step. You can either use an action step 
 There are three ways to start a wizard:
 +
 ** Double-click an action step and select *Run Wizard* from the context menu.
-** Click *Run Wizard* (image:run-wizard-icon.png[The Run Wizard icon, 2%, 2%])in the Workbench toolbar while the action step is selected.
+** Click *Run Wizard* (image:run-wizard-icon.png["", 2%, 2%])in the Workbench toolbar while the action step is selected.
 ** Insert and element using the Quick Creation Mode.
 +
 In this case, the wizard opens automatically for each element inserted.

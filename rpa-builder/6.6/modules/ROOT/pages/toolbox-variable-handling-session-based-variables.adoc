@@ -39,7 +39,7 @@ To create new variables:
 . Specify the variable's name, description, and value. 
 . Click *OK* 
 
-To delete variables, click the *Delete Variable* (image:delete-icon.png[2%, 2%, The Delete Variable button]) button. 
+To delete variables, click the *Delete Variable* (image:delete-icon.png["", 2%, The Delete Variable button]) button. 
 
 == See Also 
 

@@ -9,18 +9,18 @@ Some of these actions apply to the selected objects in the Workflow. The unavail
 The Workbench Toolbar contains the following buttons:
 
 * (image:copy-icon.png[The copy icon, 2%, 2%]) <<copy-paste, Copy selected object(s)>>
-* (image:paste-icon.png[The paste icon, 2%, 2%]) <<copy-paste, Paste copied object(s)>>
-* (image:arrow-rotate-left-icon.png[The Undo icon, 2%, 2%]) <<undo-redo, Undo previous action>>
-* (image:arrow-rotate-right-icon.png[The Redo icon, 2%, 2%]) <<undo-redo, Redo action>>
-* (image:arrow-up.png[The Move selected object up icon, 2%, 2%]) <<move-up-down, Move selected object up>>
-* (image:arrow-down.png[The Move selected object down icon, 2%, 2%]) <<move-up-down, Move selected object down>>
+* (image:paste-icon.png["", 2%, 2%]) <<copy-paste, Paste copied object(s)>>
+* (image:arrow-rotate-left-icon.png["", 2%, 2%]) <<undo-redo, Undo previous action>>
+* (image:arrow-rotate-right-icon.png["", 2%, 2%]) <<undo-redo, Redo action>>
+* (image:arrow-up.png["", 2%, 2%]) <<move-up-down, Move selected object up>>
+* (image:arrow-down.png["", 2%, 2%]) <<move-up-down, Move selected object down>>
 * (image:delete-icon-alt.png[The Delete selected object icon, 2%, 2%]) <<delete, Delete selected object(s)>>
-* (image:run-wizard-icon.png[The Run wizard for selected object icon, 2%, 2%]) <<start-wizard, Run wizard for selected object>>
-* (image:quick-creation-icon.png[The Start Quick Creation Mode icon, 2%, 2%]) <<start-quick-creation, Start Quick Creation Mode>>
-* (image:validate-icon.png[The Validate Workflow icon, 2%, 2%]) <<validate, Validate Workflow>>
-* (image:play-icon.png[The Run Workflow icon, 2%, 2%]) <<run-workflow, Run Workflow>>
-* (image:debug-icon.png[The Debug Workflow icon, 2%, 2%]) <<debug-workflow, Debug Workflow>>
-* (image:print-icon.png[The Print icon, 2%, 2%]) <<print-workflow, Print>>
+* (image:run-wizard-icon.png["", 2%, 2%]) <<start-wizard, Run wizard for selected object>>
+* (image:quick-creation-icon.png["", 2%, 2%]) <<start-quick-creation, Start Quick Creation Mode>>
+* (image:validate-icon.png["", 2%, 2%]) <<validate, Validate Workflow>>
+* (image:play-icon.png["", 2%, 2%]) <<run-workflow, Run Workflow>>
+* (image:debug-icon.png["", 2%, 2%]) <<debug-workflow, Debug Workflow>>
+* (image:print-icon.png["", 2%, 2%]) <<print-workflow, Print>>
 * (image:wrench-icon.png[The Tools icon, 2%, 2%]) <<tools, Tools>>
 * (image:record-icon.png[The Record icon, 2%, 2%]) <<record, Record>>
 
@@ -30,7 +30,7 @@ image:search-bar.png[The Search bar, 40%, 40%]
 
 [[copy-paste]]
 == Copy and Paste Workflow Objects
-Clicking *Copy* (image:copy-icon.png[The copy icon, 2%, 2%]) copies the selected Workflow objects and their underlying elements to the clipboard. Select the target object and click *Paste* (image:paste-icon.png[The paste icon, 2%, 2%]) to paste it. You can also use _Ctrl + C_ for copying and _Ctrl + V_ for pasting.
+Clicking *Copy* (image:copy-icon.png[The copy icon, 2%, 2%]) copies the selected Workflow objects and their underlying elements to the clipboard. Select the target object and click *Paste* (image:paste-icon.png["", 2%, 2%]) to paste it. You can also use _Ctrl + C_ for copying and _Ctrl + V_ for pasting.
 
 [[undo-redo]]
 == Undo and Redo Previous Action
@@ -39,7 +39,7 @@ Using _Ctrl + Z_ for undo and _Ctrl + Y_ for redo also works.
 
 [[move-up-down]]
 == Change the Order of Workflow Objects
-To change the order of objects, select the object and move it up or down in the Workflow by clicking *Move up* (image:arrow-up.png[The Move selected object up icon, 2%, 2%]) or *Move down* (image:arrow-down.png[The Move selected object down icon, 2%, 2%]) until the object reaches the desired position. You can also drag and drop elements to rearrange them.
+To change the order of objects, select the object and move it up or down in the Workflow by clicking *Move up* (image:arrow-up.png["", 2%, 2%]) or *Move down* (image:arrow-down.png["", 2%, 2%]) until the object reaches the desired position. You can also drag and drop elements to rearrange them.
 Action Steps cannot be moved outside of their Transaction. If you want to move an Action Step to another Transaction, use copy and paste instead, and then delete the old one. You can also use _Ctrl + X_ or the *Cut* option from the context menu to remove the Action Step from the Workflow and put it into the clipboard in one step.
 
 [[delete]]
@@ -49,12 +49,12 @@ To delete an object, select it and click *Delete* (image:delete-icon-alt.png[The
 [[start-wizard]]
 == Starting the Configuration Wizard of a Workflow Object
 
-To configure a Workflow object with the wizard, select it and then click *Wizard* (image:run-wizard-icon.png[The Run wizard for selected object icon, 2%, 2%]). This process works for single Action Steps as well as for complete Transactions. You can also double-click a Workflow object to start its wizard.
+To configure a Workflow object with the wizard, select it and then click *Wizard* (image:run-wizard-icon.png["", 2%, 2%]). This process works for single Action Steps as well as for complete Transactions. You can also double-click a Workflow object to start its wizard.
 
 [[start-quick-creation]]
 == Start Quick Creation Mode
 
-Use this function to speed up the initial Workflow creation. When you start a new Workflow project from scratch, click *Start Quick Creation Mode* (image:quick-creation-icon.png[The Start Quick Creation Mode icon, 2%, 2%]) to open the Quick Creation Mode interface.
+Use this function to speed up the initial Workflow creation. When you start a new Workflow project from scratch, click *Start Quick Creation Mode* (image:quick-creation-icon.png["", 2%, 2%]) to open the Quick Creation Mode interface.
 
 image:quick-creation-mode.png[The quick creation mode window, 30%, 30%]
 
@@ -64,17 +64,17 @@ If, for example, you want to add a Window wait Action Step in front of an Image 
 
 The blue arrow buttons also enable you to collapse or expand the selected Workflows, Transactions, or Control Blocks to optimize the graphical representation of your Workflow.
 
-If the Quick Creation Mode interface is blocking parts of the application you need to use in the Workflow, click *Switch Monitor Side* (image:switch-monitor-side-icon.png[The Switch Monitor Side icon, 2%, 2%]) and the interface switches from the right to the left side of the screen and vice versa. After you finish creating the Workflow, close Quick Creation Mode by clicking *Exit Quick Creation Mode* (image:exit-quick-creation-mode.png[The Exit Quick Creation Mode icon, 2%, 2%]). After you exit Quick Creation Mode, the standard RPA Builder GUI shows again, including the Workflow you just created.
+If the Quick Creation Mode interface is blocking parts of the application you need to use in the Workflow, click *Switch Monitor Side* (image:switch-monitor-side-icon.png["", 2%, 2%]) and the interface switches from the right to the left side of the screen and vice versa. After you finish creating the Workflow, close Quick Creation Mode by clicking *Exit Quick Creation Mode* (image:exit-quick-creation-mode.png["", 2%, 2%]). After you exit Quick Creation Mode, the standard RPA Builder GUI shows again, including the Workflow you just created.
 
 [[validate]]
 == Validate Workflow
 
-To check if a Workflow is ready for script generation, press *Validation* (image:validate-icon.png[The Validate Workflow icon, 2%, 2%]). If the project contains Workflow objects that are not configured, are wrongly configured, or have errors, RPA Builder shows warnings or general messages as a list in the Validation result window. Double-click an entry in this list to navigate to the corresponding Workflow object.
+To check if a Workflow is ready for script generation, press *Validation* (image:validate-icon.png["", 2%, 2%]). If the project contains Workflow objects that are not configured, are wrongly configured, or have errors, RPA Builder shows warnings or general messages as a list in the Validation result window. Double-click an entry in this list to navigate to the corresponding Workflow object.
 
 [[run-workflow]]
 == Run Workflow
 
-To test the created Workflow, click *Run Workflow* (image:play-icon.png[The Run Workflow icon, 2%, 2%]) to generate or update the script file from the currently active project. The script executes automatically after its creation.
+To test the created Workflow, click *Run Workflow* (image:play-icon.png["", 2%, 2%]) to generate or update the script file from the currently active project. The script executes automatically after its creation.
 
 When you start a Workflow from within RPA Builder, the workflow runs in design mode so you can already test whether the Workflow behaves as expected or still needs modifications before the production phase.
 
@@ -82,13 +82,13 @@ Note that the STC Guard module does not execute and does not close any windows i
 
 [[debug-workflow]]
 == Debug Workflow
-With the *Debug Workflow* (image:debug-icon.png[The Debug Workflow icon, 2%, 2%]) button, you can start a debug run of the active Workflow project. The Workflow Debugger automatically starts if you have set break points in your Workflow or if any error occurs during the debug run. Here you can make changes to Workflow elements and retry certain Action Steps or complete Transactions until they work properly. Then, you can continue to execute the Workflow from the current position without having to start the debug run at the beginning.
+With the *Debug Workflow* (image:debug-icon.png["", 2%, 2%]) button, you can start a debug run of the active Workflow project. The Workflow Debugger automatically starts if you have set break points in your Workflow or if any error occurs during the debug run. Here you can make changes to Workflow elements and retry certain Action Steps or complete Transactions until they work properly. Then, you can continue to execute the Workflow from the current position without having to start the debug run at the beginning.
 
 // For more information about the Workflow Debugger see Using Workflow Debuger(5.3).
 
 [[print-workflow]]
 == Print
-You can document a Workflow project by clicking *Print Workflow* (image:print-icon.png[The Print icon, 2%, 2%]), which opens the printing function and displays a Print Preview:
+You can document a Workflow project by clicking *Print Workflow* (image:print-icon.png["", 2%, 2%]), which opens the printing function and displays a Print Preview:
 
 image:print-preview.png[The print Workflow preview]
 
@@ -158,22 +158,22 @@ image:tools-menu.png[The Tools menu, 30%, 30%]
 
 === Reload Workflow
 
-(image:reload-workflow-icon.png[The Reload Workflow icon, 2%, 2%]): Reverts back to the last saved state of your project.
+(image:reload-workflow-icon.png["", 2%, 2%]): Reverts back to the last saved state of your project.
 
 [WARNING]
 After reloading a Workflow, you cannot use the undo function. Therefore, all unsaved changes in the Workflow are lost.
 
 === Save Selected Items as Template
 
-(image:save-as-template-icon.png[The Save Selected Items as Template icon, 2%, 2%]): To create a template, select the Workflow object you want to save as a template and click Save as template in the context menu. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting User Templates.
+(image:save-as-template-icon.png["", 2%, 2%]): To create a template, select the Workflow object you want to save as a template and click Save as template in the context menu. See xref:managing-user-templates.adoc[Managing User Templates] for additional details about creating, importing, and exporting User Templates.
 
 === Open Trace Log
 
-(image:open-trace-log.png[The Open trace log icon, 2%, 2%]): Shows the content of the log file created during the last test run of this Workflow. Use this option to obtain additional information for failure analysis.
+(image:open-trace-log.png["", 2%, 2%]): Shows the content of the log file created during the last test run of this Workflow. Use this option to obtain additional information for failure analysis.
 
 === Load Analysis Package
 
-(image:load-analysis-package.png[The Load Analysis Package icon, 2%, 2%]): RPA Manager provides analysis packages for Workflow runs that don't execute successfully. RPA Builder can display errors that occur within a Workflow run, whether from a run started by RPA Builder or by reading the analysis package of a run executed in RPA Manager.
+(image:load-analysis-package.png["", 2%, 2%]): RPA Manager provides analysis packages for Workflow runs that don't execute successfully. RPA Builder can display errors that occur within a Workflow run, whether from a run started by RPA Builder or by reading the analysis package of a run executed in RPA Manager.
 
 To load an analysis package:
 
@@ -197,7 +197,7 @@ If the process to open is not in the local cache, RPA Builder downloads it autom
 
 === Clear Run Results Markings
 
-(image:clear-run-results-icon.png[The Clear Run Results Markings icon, 2%, 2%]): Use this menu item to clear the markings of warnings and errors in the Workbench view of the selected project. These markings are shown after a failed local Workflow run or after the import of an analysis package.
+(image:clear-run-results-icon.png["", 2%, 2%]): Use this menu item to clear the markings of warnings and errors in the Workbench view of the selected project. These markings are shown after a failed local Workflow run or after the import of an analysis package.
 Errors and warnings are still displayed in the pane Workflow Run Results.
 
 [[record]]
@@ -208,7 +208,7 @@ Starts RPA Recorder to record an activity. After you finish the recording, RPA B
 [[search-bar]]
 == Search
 
-At the end of the Workbench is the *Search...* (image:search-icon.png[The Search icon, 2%, 2%]) function. If you gave your Workflow elements descriptive names and want to detect them in a Workflow, type the name (or part of it) into the search field and press Enter. The first element with a matching name shows on the Workbench. If there are additional matching occurrences, you can access them by pressing _F3_.
+At the end of the Workbench is the *Search...* (image:search-icon.png["", 2%, 2%]) function. If you gave your Workflow elements descriptive names and want to detect them in a Workflow, type the name (or part of it) into the search field and press Enter. The first element with a matching name shows on the Workbench. If there are additional matching occurrences, you can access them by pressing _F3_.
 
 image:search-bar.png[The Search bar, 40%, 40%]
 

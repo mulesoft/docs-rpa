@@ -46,7 +46,7 @@ Open the *Bot Workflow Library* view in the *Process Automation* module to view 
 View the outline of a bot workflow to better understand how it works:
 
 . Open the *Bot Workflow Library* view in the *Process Automation* module.
-. Click *Details* (image:show-icon.png[eye symbol,1.5%,1.5%]) in the panel of the workflow to view.
+. Click *Details* (image:show-icon.png["",1.5%,1.5%]) in the panel of the workflow to view.
 . Click *Back* to view the list of all bot workflows.
 
 == Managing Bot Workflows

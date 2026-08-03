@@ -197,7 +197,7 @@ Wizard opens when the Web Session Wizard is closed.
 + 
 Use this option to define where you want the mouse to move to. This prevents the mouse from covering certain buttons or texts.
 +
-image:toolbox-variable-web-automation-web-session-images/image4.png[50%, 50%, "An image showing the Keep out mouse, move it to: option."]
+image:toolbox-variable-web-automation-web-session-images/image4.png["", 50%, "An image showing the Keep out mouse, move it to: option."]
 +
 You can also define whether or not you want to execute this action after
 every Action Step.

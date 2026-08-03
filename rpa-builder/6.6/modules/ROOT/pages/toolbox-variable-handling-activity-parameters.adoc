@@ -32,7 +32,7 @@ the values reset to their initial state.
 
 To define the Activity Parameters:
 
-. In the BPMN editor, click the *Business Process Initialization* (image:business-process-initialization-icon.png[The Business Process Initialization button, 2%, 2%]) button.
+. In the BPMN editor, click the *Business Process Initialization* (image:business-process-initialization-icon.png["", 2%, 2%]) button.
 . Click *Activity Parameters*.
 +
 image:toolbox-activity-parameters-config.png[The Activity Parameters config window, 30%, 30%]
@@ -101,7 +101,7 @@ The Wizard lists all Activity Parameters and you can connect them to the Workflo
 To connect an Activity Parameter to a Gateway:
 
 . In the BPMN editor, click any *Gateway* element in your model.
-. In the menu that opens, click the *Set Condition Expression* (image:cogs-icon.png[The Set Condition Expression button, 2%, 2%]) button.
+. In the menu that opens, click the *Set Condition Expression* (image:cogs-icon.png["", 2%, 2%]) button.
 +
 image:set-expression-condition.png[The BPMN editor showing the Gateway settings, 60%, 60%]
 . In the Wizard that opens, click *Build Expression*.
