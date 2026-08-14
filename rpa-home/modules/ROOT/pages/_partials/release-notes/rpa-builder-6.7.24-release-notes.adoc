@@ -9,7 +9,7 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 // == What's New
 include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+1]
 
-* The Tomcat dependency is upgraded to version 9.0.120 to address reported security vulnerabilities.
+* The *Tomcat* dependency is upgraded to version 9.0.120 to address reported security vulnerabilities.
 * The Camunda engine is upgraded to version 7.23.00.
 
 // == Compatibility
