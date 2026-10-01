@@ -14,9 +14,9 @@ The wizard uses this user to query MuleSoft IDP for the available *Action* and *
 * You have IDP document actions published in your organization.
 +
 See xref:idp::publishing-document-actions.adoc[] for additional information.
-* You have a connected app configured to access IDP. 
+* You have a Connected App configured to access IDP. 
 +
-The connected app must have the *Execute Published Actions* scope in Anypoint Platform.
+The Connected App must have the *Execute Published Actions* scope in Anypoint Platform.
 +
 See xref:idp::automate-document-processing-with-rpa.adoc[] for configuration instructions.
 
