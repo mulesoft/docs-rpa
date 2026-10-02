@@ -1,20 +1,24 @@
 = Submit Document to MuleSoft IDP 
 
-Send documents to MuleSoft IDP and process them with your published document actions. Each execution generates an execution ID that you must use when you run the Retrieve Results from MuleSoft IDP action step to query the results of said execution. 
+Send documents to MuleSoft IDP to be processed asynchronously with your published document actions. Each successful execution returns an execution ID that you must use when you run the Retrieve Results from MuleSoft IDP action step to query the results of said execution.
 
 include::partial$mulesoft-idp.adoc[tag=creditsWarning]
 
 == Before You Begin
 
-Before using this action step, ensure that: 
+Before using this action step, ensure that:
 
-* Your Anypoint user account has the Build Actions permission.
+* Your currently logged-in Anypoint user account has read permissions for IDP. 
++
+The wizard uses this user to query MuleSoft IDP for the available *Action* and *Action Version* options.
 * You have IDP document actions published in your organization.
 +
-See xref:idp::publishing-document-actions.adoc[] for additional information. 
-* You have a connected app configured to access IDP.
+See xref:idp::publishing-document-actions.adoc[] for additional information.
+* You have a Connected App configured to access IDP. 
 +
-See xref:idp::automate-document-processing-with-rpa.adoc[] for configuration instructions. 
+The Connected App must have the *Execute Published Actions* scope in Anypoint Platform.
++
+See xref:idp::automate-document-processing-with-rpa.adoc[] for configuration instructions.
 
 == Properties
 
@@ -40,7 +44,7 @@ Client Secret of the connected app configured to call IDP
 Pin credentials containing the Client ID and Client Secret of the connected app configured to call IDP
 * *Execution ID*
 +
-Execution ID of the document processing operation
+Leave this value empty. This action step sets it automatically if it is pinned to an activity parameter; any existing value is overwritten and ignored.
 
 include::partial$mulesoft-idp.adoc[tag=commonInboundVariables]
 
