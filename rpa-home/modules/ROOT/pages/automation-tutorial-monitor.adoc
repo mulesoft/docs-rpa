@@ -30,7 +30,7 @@ To see the active bots and the deployed processes:
 
 The *Bot State and Operation* section shows a list of your configured bots and the current process executions.
 
-image:process-monitor.png[The Bot state and operation window showing process execution results]
+image:process-monitor.png[""]
 
 Note that the *Work done* column shows *1*, which confirms that the execution of the process finished one time.
 

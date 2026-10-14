@@ -13,11 +13,11 @@ If a process execution fails when a bot runs correctly, turn on debug logging to
 If you're not sure why a bot isn't processing, review the execution plans:
 
 . In the module *Bot Management*, open the view *Bot Execution Plans*.
-. In the table, click *Execution timetable* (image:executiontimetable-icon.png[calendar symbol,1.5%,1.5%]) in the row of the bot you want to check.
+. In the table, click *Execution timetable* (image:executiontimetable-icon.png["",1.5%,1.5%]) in the row of the bot you want to check.
 
 The execution timetable shows the effective runtime of all calendar scheduled run configurations assigned to the bot. The execution timetable does not show run configurations using other types of scheduling, such as on-demand, interval or cron-expression.
 
-. Click *Configure Execution Timetable* (image:configure-icon.png[wrench symbol,1.5%,1.5%]) to change the time interval of the table and to select the shown configurations.
+. Click *Configure Execution Timetable* (image:configure-icon.png["",1.5%,1.5%]) to change the time interval of the table and to select the shown configurations.
 . Click *OK*.
 . In the *Execution Timetable*, click a colored bar in the row of the configuration you want to check to view the composition of the effective runtime.
 The bot runs a process when the bot's service time overlaps with the configuration schedule. If the process uses applications, the bot doesn't run the process during the downtimes of any of those applications.
@@ -59,7 +59,7 @@ To view the bot log messages:
 Alternatively, in the *Process Automation* module:
 +
 ** From within a project in the test or production phase, click on a run result number in the *Run Results* panel.
-. Click *Bot Message Log* (image:botmessagelog-icon.png[list symbol,1.5%,1.5%]) in the table row of the bot you want to read messages from.
+. Click *Bot Message Log* (image:botmessagelog-icon.png["",1.5%,1.5%]) in the table row of the bot you want to read messages from.
 
 Bot messages might be concatenated and truncated. To view the complete bot log, download the log files.
 
@@ -74,7 +74,7 @@ This option is only available when the bot has the status OK.
 An IT administrator can configure the content of the package in the RPA Bot Configurator on the computer where the bot is installed.
 
 . Open the *Bots* view of the *Bot Management* module.
-. Click *Download Logfiles* (image:download-icon.png[disk-with-downwards-arrow symbol,1.5%,1.5%]) in the row of the bot you want to read the log files from.
+. Click *Download Logfiles* (image:download-icon.png["",1.5%,1.5%]) in the row of the bot you want to read the log files from.
 . Extract the contents and view the relevant files.
 
 == Turn On Debug Logging
@@ -88,7 +88,7 @@ Then download the log files of the bot and send them to the support team if you 
 To turn on debug logging, complete the following steps:
 
 . Open the *Bots* view of the *Bot Management* module.
-. On the panel of the bot to debug, click *Turn on debug logging* (image:debug-icon.png[bug symbol,1.5%,1.5%]).
+. On the panel of the bot to debug, click *Turn on debug logging* (image:debug-icon.png["",1.5%,1.5%]).
 . In the *Enable time limited debug logging* window, enter a time interval in minutes and click *Start debug logging*.
 
 After the time interval lapses, the log level returns to the default.

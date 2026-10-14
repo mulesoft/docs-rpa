@@ -90,14 +90,14 @@ Applications are not available during downtimes or while deactivated. A member o
 If an application is not available, deactivate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click *Deactivate* (image:deactivate-icon.png[toggle-on symbol,1.5%,1.5%]) on the panel of the application to deactivate.
+. Click *Deactivate* (image:deactivate-icon.png["",1.5%,1.5%]) on the panel of the application to deactivate.
 
 RPA Manager displays an *Inactive* label on the panel of the application.
 
 If a deactivated application becomes available again, activate it:
 
 . Open the *Process Applications* view of the *Process Automation* module.
-. Click *Activate* (image:activate-icon.png[toggle-off symbol,1.5%,1.5%]) on the panel of the application to activate.
+. Click *Activate* (image:activate-icon.png["",1.5%,1.5%]) on the panel of the application to activate.
 
 RPA Manager displays an *Active* label beneath the logo of the application.
 

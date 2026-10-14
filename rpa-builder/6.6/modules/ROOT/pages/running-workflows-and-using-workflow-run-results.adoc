@@ -2,7 +2,7 @@
 
 RPA Builder enables you to test a Workflow by executing a local run. After the Workflow execution finishes, the Workflow Run Results panel shows detailed information about the execution.
 
-To perform a test run of a Workflow in RPA Builder, click *Run Workflow* (image:run-process.png[The Run Workflow icon, 2%, 2%]) on the Workbench toolbar or press _F7_ on your keyboard.
+To perform a test run of a Workflow in RPA Builder, click *Run Workflow* (image:run-process.png["", 2%, 2%]) on the Workbench toolbar or press _F7_ on your keyboard.
 
 The RPA Builder window is hidden while the Workflow executes, so the engine can now use the mouse and keyboard just like a normal user would and you can watch to confirm if the Workflow performs correctly. Do not use the mouse or keyboard while the Workflow runs.
 
@@ -14,7 +14,7 @@ Before using a Workflow for productive measurement, turn off debug message boxes
 
 To pause or exit the Workflow during the execution:
 
-. Click the (image:test-script-tray-icon.png[Test script tray button, 2%, 2%]) tray icon.
+. Click the (image:test-script-tray-icon.png["", 2%, 2%]) tray icon.
 . Select either *Script Paused* or *Exit*.
 +
 image:test-tray-options.png[The test script tray icon showing the Script Paused and Exit options, 25%, 25%]

@@ -24,7 +24,7 @@ To select more than one object, press and hold _Ctrl_ or _Shift_ while clicking 
 
 The context menu consists of the following elements:
 
-* (image:record-icon.png[The Record icon, 2%, 2%]) *Record*
+* (image:record-icon.png["", 2%, 2%]) *Record*
 +
 Starts RPA Recorder to record an activity and append it to the workflow depending of the context:
 +
@@ -54,7 +54,7 @@ Sets a breakpoint for an action step, which causes the Workflow to stop at this 
 Enables you to rename the selected element.
 * *Collapse All*
 +
-Collapses all levels of the Workflow to the highest level shown in the current view. Use the *Collapse All* (image:minus-icon.png[The Collapse All button, 2%, 2%]) button to collapse individual elements.
+Collapses all levels of the Workflow to the highest level shown in the current view. Use the *Collapse All* (image:minus-icon.png["", 2%, 2%]) button to collapse individual elements.
 * *Expand All*
 +
 Fully expands all levels of the Workflow on view. Use the *Expand All* (image:add-icon.png[The Expand All button, 2%, 2%]) button to expand individual elements.

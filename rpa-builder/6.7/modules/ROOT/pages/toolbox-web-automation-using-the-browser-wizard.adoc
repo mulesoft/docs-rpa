@@ -33,12 +33,12 @@ generierte Beschreibung,width=144,height=368]
 
 The following list describes the buttons of the _Browser Wizard_ toolbar:
 
-* (image:back-icon.png[The Back button, 2%, 2%]): Navigates back.
-* (image:forward-icon.png[The Forward button, 2%, 2%]): Navigates forward.
-* (image:reload-icon.png[The Reload button, 2%, 2%]): Reloads the current page.
-* (image:clear-cache-cookies.png[The Clear Cache and delete Cookies button, 2%, 2%]): Clears the browser cache data and Cookies.
-* (image:double-check-icon.png[The Accept Selection and take over Input/Selection button, 2%, 2%]): Confirms the selection and extracts the _XPath_ of the selected element along with the current input as values. This option is available only in the *Keystrokes to Web Element* Wizard.
-* (image:check-icon.png[The back button, 2%, 2%]): Confirms the selection and extracts the _XPath_ of the selected element.
+* (image:back-icon.png["", 2%, 2%]): Navigates back.
+* (image:forward-icon.png["", 2%, 2%]): Navigates forward.
+* (image:reload-icon.png["", 2%, 2%]): Reloads the current page.
+* (image:clear-cache-cookies.png["", 2%, 2%]): Clears the browser cache data and Cookies.
+* (image:double-check-icon.png["", 2%, 2%]): Confirms the selection and extracts the _XPath_ of the selected element along with the current input as values. This option is available only in the *Keystrokes to Web Element* Wizard.
+* (image:check-icon.png["", 2%, 2%]): Confirms the selection and extracts the _XPath_ of the selected element.
 
 == See Also 
 

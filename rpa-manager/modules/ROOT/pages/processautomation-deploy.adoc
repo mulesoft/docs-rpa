@@ -87,7 +87,7 @@ Set a value by entering text or by clicking on a checkbox, and complete your ent
 +
 [[test-configuration-link-globals]]
 
-Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click *Link a global activity parameter* (image:linkglobalvariable-icon.png[symbol,1.5%,1.5%]) and select a variable. RPA Manager displays variables of the same type, assigned to the test phase, and only the credentials to which you're xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
+Alternatively, you can set the value of an activity parameter by linking it with a global variable. To link the parameter to a variable, click *Link a global activity parameter* (image:linkglobalvariable-icon.png["",1.5%,1.5%]) and select a variable. RPA Manager displays variables of the same type, assigned to the test phase, and only the credentials to which you're xref:processautomation-prepare-deployment-credential.adoc#form-create-credential-useraffiliation[affiliated]. If a credential affiliated to another user is already linked, RPA Manager displays a row of stars to hide the data. 
 +
 The variables are typed. You can only enter or link values of the same type. The values entered here are start values, which can be overwritten by other values during the process run.
 * *User Task*
@@ -536,7 +536,7 @@ To publish an invocable run configuration:
 
 . Open the *Process Management* view of the *Process Automation* module and click on the category name of your project.
 . Click on the name of a project to open it.
-. Click *Publish* (image:cloud-upload-icon.png[cloud with arrow up symbol,1.5%,1.5%]).
+. Click *Publish* (image:cloud-upload-icon.png["",1.5%,1.5%]).
 . Click *Publish to Anypoint*.
 
 If you edit your process or project, republish it to Anypoint to create a new version there.

@@ -19,7 +19,7 @@ To upload an activity to the Activity Library:
 
 . In RPA Builder, open a process for editing. 
 . Click an activity to select it and open the context pad. 
-. In the context pad, click *Add to Activity Library* (image:add-to-activity-library-icon.png["Add to Activity Library Icon", 2%, 2%])
+. In the context pad, click *Add to Activity Library* (image:add-to-activity-library-icon.png["", 2%, 2%])
 +
 image:context-pad.png["The context pad of an activity", 50%, 50%]
 . In the *Upload Workflow to Activity Library* window, provide a name and description for the activity. 
@@ -36,7 +36,7 @@ Each activity must have a unique name, which cannot be longer than 60 characters
 To import an activity from the Activity Library to your project: 
 
 . Select an activity in your project. 
-. In the context pad, click *Import Workflow from Activity Library* (image:import-workflow-from-activity-library-icon.png["Import Workflow from Activity Library Icon", 2%, 2%])
+. In the context pad, click *Import Workflow from Activity Library* (image:import-workflow-from-activity-library-icon.png["", 2%, 2%])
 . Select the activity to import and click either *Add as a library reference* or *Add as a local copy*, depending on which method you want to use. 
 
 ** *Add as a library reference*

@@ -27,7 +27,7 @@ Start RPA Recorder by opening the application from the *Start* menu or by openin
 
 === RPA Manager
 
-To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png[Record BPMN icon, 2%, 2%]) in RPA Manager. When you start RPA Recorder from RPA Manager:
+To start RPA Recorder, click the *Record BPMN* icon (image:record-bpmn-icon.png["", 2%, 2%]) in RPA Manager. When you start RPA Recorder from RPA Manager:
 
 * RPA Recorder requires RPA Manager credentials to log in and start recordings.
 * You can upload recordings to RPA Manager.

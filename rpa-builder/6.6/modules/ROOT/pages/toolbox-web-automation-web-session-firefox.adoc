@@ -69,7 +69,7 @@ include::partial$toolbox-web-automation-web-session.adoc[tag=wizardCommon]
 
 === Browser Specific Settings
 
-image:toolbox-variable-web-automation-web-session-images/image6.png[An image showing the browser specific settings.]
+image:toolbox-variable-web-automation-web-session-images/image6.png[""]
 
 See <<browser-specific-settings, Browser Specific Settings>> for a definition of these fields.
 

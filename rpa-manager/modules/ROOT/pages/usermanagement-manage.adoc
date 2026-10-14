@@ -67,7 +67,7 @@ A user needs privileges to view and use the RPA Manager modules. This ensures th
 Instead of editing a project and adding a user to its project team, you can change several project assignments of a user at once:
 
 . Open the *Users* view of the *User Management* module.
-. Click *Assign Project* (image:assignproject-icon.png[process-diagram symbol,1.5%,1.5%]) in the panel of the user whose project assignments you want to change.
+. Click *Assign Project* (image:assignproject-icon.png["",1.5%,1.5%]) in the panel of the user whose project assignments you want to change.
 
 The view *Assign Process* shows you a list of all processes where the user is part of the process team.
 
@@ -98,7 +98,7 @@ The project manager and the project owner cannot be deleted. To change them, use
 Reset a password if the user forgot it. RPA Manager sends an email that contains a new temporary password to the user. The user can then create a new password.
 
 . Open the *Users* view of the *User Management* module.
-. Click *Reset Password* (image:resetpassword-icon.png[key symbol,1.5%,1.5%]) in the panel of the user to edit.
+. Click *Reset Password* (image:resetpassword-icon.png["",1.5%,1.5%]) in the panel of the user to edit.
 
 == Change Your Password
 
@@ -189,7 +189,7 @@ You can <<enable2faforyourself, enable 2FA>> again.
 To disable two-factor authentication for a user:
 
 . Open the *Users* view of the *User Management* module.
-. Click *Deactivate Two-Factor Authentication* (image:userdeactivate2fa-icon.png[user with open lock symbol,1.5%,1.5%]) in the panel of the user whose 2FA want to deactivate.
+. Click *Deactivate Two-Factor Authentication* (image:userdeactivate2fa-icon.png["",1.5%,1.5%]) in the panel of the user whose 2FA want to deactivate.
 . Confirm the deactivation.
 
 The user can <<enable2faforyourself, enable 2FA>> again.

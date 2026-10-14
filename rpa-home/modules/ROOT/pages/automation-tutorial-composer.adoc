@@ -33,7 +33,7 @@ Before you can call an RPA process from Composer, you must configure the connect
 
 To configure the connection between Composer and MuleSoft RPA: 
 
-. Click *Add* (image:add-icon.png[The Add Event button, 2%, 2%]) next to the Scheduler event you previously created. 
+. Click *Add* (image:add-icon.png["", 2%, 2%]) next to the Scheduler event you previously created. 
 . Select *System Action*. 
 . Select *MuleSoft RPA*. 
 + 

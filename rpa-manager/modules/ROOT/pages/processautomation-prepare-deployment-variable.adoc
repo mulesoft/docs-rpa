@@ -100,7 +100,7 @@ You can only enter values of the specified type.
 Before editing a global variable, check its usage to avoid inadvertent side effects:
 
 . Open the *Global Variables* view of the *Process Automation* module.
-. Click *Usage* (image:usage-icon.png[binoculars symbol,1.5%,1.5%]) in the row of the global variable to check.
+. Click *Usage* (image:usage-icon.png["",1.5%,1.5%]) in the row of the global variable to check.
 
 A window with a table shows you the configurations that use the global variable.
 
