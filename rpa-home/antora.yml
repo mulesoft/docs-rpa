@@ -1,5 +1,5 @@
 name: rpa-home
 title: RPA
-version: master
+version: ~
 nav:
 - modules/ROOT/nav.adoc
