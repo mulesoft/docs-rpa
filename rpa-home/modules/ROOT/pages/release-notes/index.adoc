@@ -12,6 +12,8 @@ include::partial$release-notes/rn-last-version-message.adoc[]
 
 == RPA Builder
 
+* xref:release-notes/rpa-builder-6.7.28-release-notes.adoc[RPA Builder 6.7.28 Release Notes]
+* xref:release-notes/rpa-builder-6.7.27-release-notes.adoc[RPA Builder 6.7.27 Release Notes (Internal)]
 * xref:release-notes/rpa-builder-6.7.26-release-notes.adoc[RPA Builder 6.7.26 Release Notes]
 * xref:release-notes/rpa-builder-6.7.25-release-notes.adoc[RPA Builder 6.7.25 Release Notes (Internal)]
 * xref:release-notes/rpa-builder-6.7.24-release-notes.adoc[RPA Builder 6.7.24 Release Notes]
